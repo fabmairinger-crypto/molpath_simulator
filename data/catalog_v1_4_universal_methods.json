@@ -1,0 +1,895 @@
+[
+  {
+    "id": "he_review",
+    "category": "Histologie/IHC",
+    "label": "HE-Reevaluation + Tumorareal markieren",
+    "points": 20,
+    "sections": 1,
+    "tat": 1,
+    "info": "Basis: Tumoranteil, Nekrose, Makrodissektion."
+  },
+  {
+    "id": "ki67",
+    "category": "Histologie/IHC",
+    "label": "Ki67/MIB-1",
+    "points": 45,
+    "sections": 1,
+    "tat": 1,
+    "info": "Proliferationsmarker; selten allein therapieentscheidend."
+  },
+  {
+    "id": "ihc_lung_lineage",
+    "category": "Histologie/IHC",
+    "label": "IHC Lungen-Lineage: TTF-1, Napsin A, p40, CK5/6, CK7",
+    "points": 160,
+    "sections": 5,
+    "tat": 2,
+    "info": "Sichert Adenokarzinom vs. Plattenepithel; meist vor Molekularanforderung bereits erfolgt."
+  },
+  {
+    "id": "pdl1",
+    "category": "Histologie/IHC",
+    "label": "PD-L1 IHC",
+    "points": 90,
+    "sections": 1,
+    "tat": 1,
+    "covers": [
+      "IO-Kontext"
+    ]
+  },
+  {
+    "id": "alk_ihc",
+    "category": "Histologie/IHC",
+    "label": "ALK-IHC als Screening",
+    "points": 80,
+    "sections": 1,
+    "tat": 1,
+    "covers": [
+      "ALK-Surrogat"
+    ]
+  },
+  {
+    "id": "egfr_pcr",
+    "category": "PCR / Einzeltest",
+    "label": "EGFR-Mutation PCR",
+    "points": 120,
+    "sections": 2,
+    "tat": 2,
+    "covers": [
+      "EGFR"
+    ]
+  },
+  {
+    "id": "kras_pcr",
+    "category": "PCR / Einzeltest",
+    "label": "KRAS-Mutation PCR",
+    "points": 120,
+    "sections": 2,
+    "tat": 2,
+    "covers": [
+      "KRAS"
+    ]
+  },
+  {
+    "id": "braf_pcr",
+    "category": "PCR / Einzeltest",
+    "label": "BRAF-V600 PCR",
+    "points": 120,
+    "sections": 2,
+    "tat": 2,
+    "covers": [
+      "BRAF"
+    ]
+  },
+  {
+    "id": "alk_fish",
+    "category": "FISH/ISH",
+    "label": "ALK Break-Apart FISH",
+    "points": 190,
+    "sections": 2,
+    "tat": 4,
+    "covers": [
+      "ALK"
+    ]
+  },
+  {
+    "id": "ros1_fish",
+    "category": "FISH/ISH",
+    "label": "ROS1 Break-Apart FISH",
+    "points": 190,
+    "sections": 2,
+    "tat": 4,
+    "covers": [
+      "ROS1"
+    ]
+  },
+  {
+    "id": "dna_lung_panel",
+    "category": "NGS",
+    "label": "Lungen-Panel DNA-NGS",
+    "points": 450,
+    "sections": 4,
+    "tat": 6,
+    "covers": [
+      "EGFR",
+      "BRAF",
+      "KRAS",
+      "NRAS",
+      "PIK3CA",
+      "MET",
+      "ERBB2/HER2",
+      "RB1",
+      "KEAP1",
+      "STK11",
+      "TP53"
+    ]
+  },
+  {
+    "id": "rna_fusion_panel",
+    "category": "NGS",
+    "label": "RNA-Fusionspanel Lunge",
+    "points": 350,
+    "sections": 4,
+    "tat": 6,
+    "covers": [
+      "ALK",
+      "ROS1",
+      "RET",
+      "NTRK1/2/3",
+      "NRG1",
+      "FGFR1/2/3"
+    ]
+  },
+  {
+    "id": "dna_rna_lung_combo",
+    "category": "NGS",
+    "label": "Kombiniertes Lungen-Panel DNA/RNA",
+    "points": 720,
+    "sections": 7,
+    "tat": 7,
+    "covers": [
+      "DNA-Treiber",
+      "RNA-Fusionen"
+    ]
+  },
+  {
+    "id": "liquid_biopsy",
+    "category": "Liquid Biopsy",
+    "label": "Liquid Biopsy / ctDNA-Panel",
+    "points": 550,
+    "sections": 0,
+    "tat": 6,
+    "covers": [
+      "ctDNA-Treiber"
+    ],
+    "info": "Nicht primär statt Gewebe, wenn geeignetes FFPE-Material vorhanden ist."
+  },
+  {
+    "id": "broad_pan_panel",
+    "category": "NGS",
+    "label": "Multigen PAN-Panel DNA/RNA inkl. TMB/MSI",
+    "points": 950,
+    "sections": 8,
+    "tat": 9,
+    "covers": [
+      "breit"
+    ],
+    "info": "Kann überdimensioniert sein, wenn die klinische Frage klar ist."
+  },
+  {
+    "id": "ihc_crc_lineage",
+    "category": "Histologie/IHC",
+    "label": "IHC CRC-Lineage: CK20, CDX2, SATB2, CK7",
+    "points": 150,
+    "sections": 4,
+    "tat": 2,
+    "info": "Sichert kolorektale Differenzierung/metastatische Zuordnung."
+  },
+  {
+    "id": "mmr_ihc",
+    "category": "Histologie/IHC",
+    "label": "MMR-IHC: MLH1, PMS2, MSH2, MSH6",
+    "points": 150,
+    "sections": 4,
+    "tat": 2,
+    "covers": [
+      "dMMR",
+      "Lynch-Screening",
+      "IO-Kontext"
+    ]
+  },
+  {
+    "id": "msi_pcr_ngs",
+    "category": "PCR / Einzeltest",
+    "label": "MSI-Testung PCR/NGS",
+    "points": 180,
+    "sections": 2,
+    "tat": 3,
+    "covers": [
+      "MSI"
+    ]
+  },
+  {
+    "id": "kras_exon2_only",
+    "category": "PCR / Einzeltest",
+    "label": "KRAS Exon 2 PCR allein",
+    "points": 110,
+    "sections": 2,
+    "tat": 2,
+    "covers": [
+      "KRAS Exon 2"
+    ],
+    "info": "Didaktische Falle: für heutige anti-EGFR-Entscheidungen zu eng."
+  },
+  {
+    "id": "ras_panel_crc",
+    "category": "PCR / Einzeltest",
+    "label": "Erweiterter RAS-Status: KRAS/NRAS Exons 2/3/4",
+    "points": 230,
+    "sections": 3,
+    "tat": 3,
+    "covers": [
+      "KRAS",
+      "NRAS"
+    ]
+  },
+  {
+    "id": "braf_v600e_crc",
+    "category": "PCR / Einzeltest",
+    "label": "BRAF p.V600E-Testung",
+    "points": 120,
+    "sections": 2,
+    "tat": 2,
+    "covers": [
+      "BRAF V600E"
+    ]
+  },
+  {
+    "id": "mlh1_methylation",
+    "category": "PCR / Einzeltest",
+    "label": "MLH1-Promotor-Methylierung",
+    "points": 160,
+    "sections": 2,
+    "tat": 3,
+    "covers": [
+      "sporadische MLH1-Inaktivierung"
+    ]
+  },
+  {
+    "id": "colon_ngs_panel",
+    "category": "NGS",
+    "label": "Colon-/GI-Panel DNA-NGS inkl. RAS/BRAF/PIK3CA/ERBB2",
+    "points": 420,
+    "sections": 4,
+    "tat": 5,
+    "covers": [
+      "KRAS",
+      "NRAS",
+      "BRAF",
+      "PIK3CA",
+      "ERBB2/HER2",
+      "TP53"
+    ]
+  },
+  {
+    "id": "her2_crc_ihc_ish",
+    "category": "FISH/ISH",
+    "label": "HER2 IHC/ISH bei RAS-WT mCRC-Kontext",
+    "points": 210,
+    "sections": 2,
+    "tat": 3,
+    "covers": [
+      "HER2-Amplifikation"
+    ],
+    "info": "Optional/kontextabhängig; nicht primärer Minimalstandard."
+  },
+  {
+    "id": "ihc_ovar_lineage",
+    "category": "Histologie/IHC",
+    "label": "IHC Gyn-Lineage: PAX8, WT1, p53, p16, ER/PR",
+    "points": 180,
+    "sections": 5,
+    "tat": 2,
+    "covers": [
+      "HGSOC-Morphologie",
+      "p53-Muster"
+    ],
+    "info": "Sichert high-grade seröses Ovarialkarzinom und grenzt relevante Differenzialdiagnosen ab."
+  },
+  {
+    "id": "tumor_brca_hrr",
+    "category": "NGS",
+    "label": "Tumor-BRCA1/2 + HRR-Panel",
+    "points": 430,
+    "sections": 4,
+    "tat": 6,
+    "covers": [
+      "BRCA1/2",
+      "HRR",
+      "PARP-Kontext"
+    ],
+    "info": "Somatische BRCA-/HRR-Alterationen für Therapieplanung; Keimbahnrelevanz bleibt separat zu klären."
+  },
+  {
+    "id": "brca_germline_only",
+    "category": "Genetik / Beratung",
+    "label": "Nur Keimbahn-BRCA1/2 ohne Tumor-HRD",
+    "points": 260,
+    "sections": 0,
+    "tat": 8,
+    "covers": [
+      "Keimbahn-BRCA"
+    ],
+    "info": "Didaktische Falle: wichtig für Familie, aber allein unvollständig für Tumor-HRD/PARP-Kontext."
+  },
+  {
+    "id": "hrd_score",
+    "category": "NGS",
+    "label": "HRD-Score / genomische Instabilität",
+    "points": 380,
+    "sections": 4,
+    "tat": 7,
+    "covers": [
+      "HRD",
+      "genomische Narben",
+      "PARP-Kontext"
+    ],
+    "info": "Ergänzt BRCA/HRR um funktionelle HRD-Konstellation."
+  },
+  {
+    "id": "germline_referral",
+    "category": "Genetik / Beratung",
+    "label": "Humangenetische Beratung / Keimbahnabklärung empfehlen",
+    "points": 60,
+    "sections": 0,
+    "tat": 0,
+    "covers": [
+      "Keimbahnkontext",
+      "Familienrelevanz"
+    ],
+    "info": "Keine Laborressource im Block; simuliert die korrekte Weiterleitung bei pathogener/verdächtiger BRCA-Konstellation."
+  },
+  {
+    "id": "tp53_single",
+    "category": "PCR / Einzeltest",
+    "label": "TP53-Einzeltest",
+    "points": 130,
+    "sections": 2,
+    "tat": 3,
+    "covers": [
+      "TP53"
+    ],
+    "info": "Didaktisch meist nicht ausreichend: TP53 ist typisch bei HGSOC, aber nicht der PARP-entscheidende Kernbefund."
+  },
+  {
+    "id": "tmb_ngs",
+    "category": "NGS",
+    "label": "TMB-Bestimmung aus NGS-Daten",
+    "points": 180,
+    "sections": 0,
+    "tat": 1,
+    "covers": [
+      "TMB"
+    ],
+    "info": "Kontextmarker für Immunogenität; nur sinnvoll bei geeigneter Panelgröße und Tumorkontext."
+  },
+  {
+    "id": "immune_context_ihc",
+    "category": "Histologie/IHC",
+    "label": "Immun-Kontext-IHC: CD8/CD3 ± TIL-Einschätzung",
+    "points": 120,
+    "sections": 3,
+    "tat": 2,
+    "covers": [
+      "TILs",
+      "Immunmikromilieu"
+    ],
+    "info": "Didaktischer Zusatz: stützt Hot-vs-cold-Tumor-Muster, ersetzt aber keine MSI/MMR-Diagnostik."
+  },
+  {
+    "id": "idh1_ihc_seq",
+    "category": "Histologie/IHC + Sequenzierung",
+    "label": "IDH1-R132H-IHC + IDH1/2-Sequenzierung bei Bedarf",
+    "points": 180,
+    "sections": 2,
+    "tat": 3,
+    "covers": [
+      "IDH"
+    ],
+    "info": "Klassifikations- und Prognosemarker in der Neuroonkologie."
+  },
+  {
+    "id": "mgmt_methylation",
+    "category": "Epigenetik",
+    "label": "MGMT-Promotor-Methylierung",
+    "points": 220,
+    "sections": 3,
+    "tat": 4,
+    "covers": [
+      "MGMT"
+    ],
+    "info": "Epigenetischer prädiktiver Marker für Temozolomid-Kontext."
+  },
+  {
+    "id": "cns_methylation_classifier",
+    "category": "Epigenetik",
+    "label": "DNA-Methylierungsclassifier ZNS-Tumor",
+    "points": 520,
+    "sections": 5,
+    "tat": 8,
+    "covers": [
+      "Methylom",
+      "Classifier"
+    ],
+    "info": "Hilfreich bei unklarer ZNS-Tumorklassifikation; ergänzt Histologie und molekulare Marker."
+  },
+  {
+    "id": "glioma_ngs_panel",
+    "category": "NGS",
+    "label": "Gliom-/ZNS-NGS-Panel",
+    "points": 420,
+    "sections": 4,
+    "tat": 6,
+    "covers": [
+      "TERT",
+      "CDKN2A/B",
+      "ATRX",
+      "TP53",
+      "EGFR"
+    ],
+    "info": "Ergänzende molekulare Klassifikationsmarker, aber kein Ersatz für MGMT-Methylierung."
+  },
+  {
+    "id": "tmb_msi_neuro",
+    "category": "NGS",
+    "label": "TMB/MSI bei Glioblastom als Primärtest",
+    "points": 250,
+    "sections": 2,
+    "tat": 5,
+    "covers": [
+      "TMB",
+      "MSI"
+    ],
+    "info": "Didaktischer Distraktor: nicht der primäre Standardbaustein für den hier gestellten Temozolomid-/IDH-Kontext."
+  },
+  {
+    "id": "erbb2_variant_ngs",
+    "category": "NGS",
+    "label": "ERBB2-Variante aus Tumor-NGS bewerten",
+    "points": 160,
+    "sections": 0,
+    "tat": 1,
+    "covers": [
+      "ERBB2 VUS"
+    ],
+    "info": "Simulation einer bereits gefundenen seltenen ERBB2-Missense-Variante."
+  },
+  {
+    "id": "her2_ihc",
+    "category": "Histologie/IHC",
+    "label": "HER2-IHC",
+    "points": 75,
+    "sections": 1,
+    "tat": 1,
+    "covers": [
+      "HER2 Protein"
+    ],
+    "info": "Prüft Proteinexpression als Kontextinformation bei ERBB2/HER2-Fragestellung."
+  },
+  {
+    "id": "her2_fish",
+    "category": "FISH/ISH",
+    "label": "HER2/ERBB2-ISH/FISH auf Amplifikation",
+    "points": 190,
+    "sections": 2,
+    "tat": 3,
+    "covers": [
+      "HER2 Amplifikation"
+    ],
+    "info": "Ergänzt IHC/NGS bei HER2/ERBB2-Therapiefrage."
+  },
+  {
+    "id": "vus_literature_review",
+    "category": "Interpretation",
+    "label": "Kurierte VUS-/Evidenzrecherche + Reinterpretationshinweis",
+    "points": 80,
+    "sections": 0,
+    "tat": 1,
+    "covers": [
+      "VUS Curation"
+    ],
+    "info": "Kein Nasslabortest; simuliert strukturierte Variantenbewertung mit Evidenzgrad."
+  },
+  {
+    "id": "direct_her2_therapy",
+    "category": "Fehlentscheidung",
+    "label": "Direkte HER2-Therapieempfehlung aus VUS ableiten",
+    "points": 0,
+    "sections": 0,
+    "tat": 0,
+    "covers": [
+      "Fehlinterpretation"
+    ],
+    "info": "Didaktische Falle: Eine VUS ist keine belastbare Therapieindikation."
+  },
+  {
+    "id": "rebiopsy_tissue",
+    "category": "Material / Präanalytik",
+    "label": "Gewebe-Rebiopsie / neues Tumormaterial anfordern",
+    "points": 120,
+    "sections": 0,
+    "tat": 5,
+    "covers": [
+      "Material"
+    ],
+    "info": "Bei Progress oder nicht beurteilbarer Liquid Biopsy kann neues Gewebe nötig sein."
+  },
+  {
+    "id": "resistance_panel",
+    "category": "NGS",
+    "label": "Resistenz-/Progressionspanel DNA ± RNA",
+    "points": 520,
+    "sections": 5,
+    "tat": 7,
+    "covers": [
+      "Resistenz",
+      "EGFR",
+      "MET",
+      "HER2",
+      "Fusionen"
+    ],
+    "info": "Panel zur Einordnung erworbener Resistenzmechanismen."
+  },
+  {
+    "id": "egfr_t790m_c797s",
+    "category": "PCR/NGS",
+    "label": "EGFR-Resistenzanalyse (z. B. T790M/C797S)",
+    "points": 180,
+    "sections": 2,
+    "tat": 3,
+    "covers": [
+      "EGFR Resistenz"
+    ],
+    "info": "Gezielte Resistenzanalyse bei EGFR-mutiertem NSCLC."
+  },
+  {
+    "id": "fusion_fish",
+    "category": "FISH/ISH",
+    "label": "Break-apart-/Fusions-FISH (ALK/ROS1/RET/NTRK etc.)",
+    "points": 220,
+    "sections": 2,
+    "tat": 3,
+    "covers": [
+      "Fusion"
+    ],
+    "info": "Schnelle orthogonale Fusionsabklärung, aber meist partnerlimitiert."
+  },
+  {
+    "id": "fusion_rna_ngs",
+    "category": "NGS",
+    "label": "RNA-NGS-Fusionspanel erweitert",
+    "points": 380,
+    "sections": 4,
+    "tat": 6,
+    "covers": [
+      "ALK",
+      "ROS1",
+      "RET",
+      "NTRK",
+      "NRG1",
+      "FGFR"
+    ],
+    "info": "RNA-basierter Nachweis exprimierter Fusionen, auch mit seltenen Partnern."
+  },
+  {
+    "id": "kras_stk11_keap1",
+    "category": "NGS",
+    "label": "KRAS/STK11/KEAP1-Kontextanalyse",
+    "points": 300,
+    "sections": 3,
+    "tat": 5,
+    "covers": [
+      "KRAS",
+      "STK11",
+      "KEAP1"
+    ],
+    "info": "Prognostisch/biologisch relevanter Kontext bei NSCLC."
+  },
+  {
+    "id": "braf_melanoma",
+    "category": "PCR/NGS",
+    "label": "BRAF V600-Testung Melanom",
+    "points": 160,
+    "sections": 2,
+    "tat": 2,
+    "covers": [
+      "BRAF V600"
+    ],
+    "info": "Therapieentscheidender Marker für BRAF/MEK-Inhibition."
+  },
+  {
+    "id": "melanoma_io_context",
+    "category": "Histologie/IHC",
+    "label": "Melanom-IO-Kontext: TILs/PD-L1 optional",
+    "points": 120,
+    "sections": 2,
+    "tat": 2,
+    "covers": [
+      "TILs",
+      "PD-L1"
+    ],
+    "info": "Kontextinformation, ersetzt keine klinische Sequenzentscheidung."
+  },
+  {
+    "id": "kit_pdgfra",
+    "category": "PCR/NGS",
+    "label": "KIT/PDGFRA-Mutationsanalyse",
+    "points": 220,
+    "sections": 3,
+    "tat": 4,
+    "covers": [
+      "KIT",
+      "PDGFRA"
+    ],
+    "info": "Zentral für TKI-Auswahl bei GIST."
+  },
+  {
+    "id": "fgfr2_fusion",
+    "category": "NGS/FISH",
+    "label": "FGFR2-Fusionsdiagnostik",
+    "points": 300,
+    "sections": 3,
+    "tat": 5,
+    "covers": [
+      "FGFR2 Fusion"
+    ],
+    "info": "Therapie-/Studienrelevanz beim Cholangiozellulären Karzinom."
+  },
+  {
+    "id": "idh1_chol",
+    "category": "PCR/NGS",
+    "label": "IDH1/2-Testung",
+    "points": 180,
+    "sections": 2,
+    "tat": 3,
+    "covers": [
+      "IDH1",
+      "IDH2"
+    ],
+    "info": "Target-/Studienrelevanz in ausgewählten Tumoren."
+  },
+  {
+    "id": "chol_panel",
+    "category": "NGS",
+    "label": "Cholangio-Panel: FGFR2/IDH1/BRAF/ERBB2/NTRK",
+    "points": 520,
+    "sections": 5,
+    "tat": 7,
+    "covers": [
+      "FGFR2",
+      "IDH1",
+      "BRAF",
+      "ERBB2",
+      "NTRK"
+    ],
+    "info": "Breite molekulare Abklärung beim Cholangiozellulären Karzinom."
+  },
+  {
+    "id": "pik3ca",
+    "category": "PCR/NGS",
+    "label": "PIK3CA-Mutationsanalyse",
+    "points": 160,
+    "sections": 2,
+    "tat": 3,
+    "covers": [
+      "PIK3CA"
+    ],
+    "info": "Therapie-/Resistenzkontext bei ausgewählten Mammakarzinomfällen."
+  },
+  {
+    "id": "prostate_hrr",
+    "category": "NGS",
+    "label": "Prostata-HRR/MMR-Panel",
+    "points": 480,
+    "sections": 4,
+    "tat": 6,
+    "covers": [
+      "BRCA1",
+      "BRCA2",
+      "ATM",
+      "PALB2",
+      "MMR"
+    ],
+    "info": "PARP-/IO-/Keimbahnkontext bei metastasiertem Prostatakarzinom."
+  },
+  {
+    "id": "methylation_mlh1",
+    "category": "Epigenetik",
+    "label": "MLH1-Promotor-Methylierung",
+    "points": 200,
+    "sections": 2,
+    "tat": 4,
+    "covers": [
+      "MLH1 Methylierung"
+    ],
+    "info": "Reflexdiagnostik bei MLH1/PMS2-Verlust."
+  },
+  {
+    "id": "epigenetic_heme_panel",
+    "category": "NGS",
+    "label": "Hämatologisches Panel: DNMT3A/TET2/ASXL1/TP53",
+    "points": 420,
+    "sections": 2,
+    "tat": 5,
+    "covers": [
+      "DNMT3A",
+      "TET2",
+      "ASXL1",
+      "TP53"
+    ],
+    "info": "CHIP-/MDS-/AML-Kontext."
+  },
+  {
+    "id": "vegf_context",
+    "category": "Interpretation",
+    "label": "VEGF/Angiogenese-Kontext biologisch einordnen",
+    "points": 60,
+    "sections": 0,
+    "tat": 1,
+    "covers": [
+      "VEGF",
+      "Angiogenese"
+    ],
+    "info": "Didaktischer Interpretationsbaustein, kein Routinetest."
+  },
+  {
+    "id": "vhl_hif_panel",
+    "category": "NGS",
+    "label": "RCC-Kontext: VHL/HIF/VEGF-Achse",
+    "points": 300,
+    "sections": 3,
+    "tat": 5,
+    "covers": [
+      "VHL",
+      "HIF",
+      "VEGF"
+    ],
+    "info": "Biologische Einordnung beim klarzelligen RCC."
+  },
+  {
+    "id": "tme_stroma_ihc",
+    "category": "Histologie/IHC",
+    "label": "TME/Stroma-IHC: FAP/αSMA/CD8",
+    "points": 180,
+    "sections": 3,
+    "tat": 3,
+    "covers": [
+      "Stroma",
+      "CAF",
+      "CD8"
+    ],
+    "info": "Immune-excluded/stromadominierte Muster stützen."
+  },
+  {
+    "id": "emt_invasion_panel",
+    "category": "Histologie/IHC",
+    "label": "Invasionsfront-/EMT-Kontext: E-Cadherin, Vimentin, β-Catenin",
+    "points": 160,
+    "sections": 3,
+    "tat": 3,
+    "covers": [
+      "EMT",
+      "Invasion"
+    ],
+    "info": "Morphologie zu Hallmark-Interpretation verbinden."
+  },
+  {
+    "id": "vusic",
+    "category": "Interpretation",
+    "label": "Kurierte VUS-/Evidenzrecherche",
+    "points": 80,
+    "sections": 0,
+    "tat": 1,
+    "covers": [
+      "VUS Curation"
+    ],
+    "info": "Strukturierte Variantenbewertung mit Evidenzgrad."
+  },
+  {
+    "id": "orthogonal_confirmation",
+    "category": "Validierung",
+    "label": "Orthogonale Bestätigung / Zweitmethode",
+    "points": 140,
+    "sections": 1,
+    "tat": 3,
+    "covers": [
+      "Bestätigung"
+    ],
+    "info": "Bei Artefaktverdacht, Coverage-Lücke oder unerwartetem Befund."
+  },
+  {
+    "id": "repeat_ngs",
+    "category": "NGS",
+    "label": "NGS-Wiederholung / alternative Library",
+    "points": 420,
+    "sections": 4,
+    "tat": 6,
+    "covers": [
+      "Repeat"
+    ],
+    "info": "Bei Coverage-Lücke oder QC-Problem."
+  },
+  {
+    "id": "coverage_review",
+    "category": "Bioinformatik",
+    "label": "Coverage-/QC-Review therapieentscheidender Regionen",
+    "points": 60,
+    "sections": 0,
+    "tat": 1,
+    "covers": [
+      "Coverage"
+    ],
+    "info": "Prüft, ob ein Negativbefund methodisch belastbar ist."
+  },
+  {
+    "id": "ffpe_artifact_review",
+    "category": "Bioinformatik",
+    "label": "FFPE-Artefakt-Review / UDG-Kontext",
+    "points": 60,
+    "sections": 0,
+    "tat": 1,
+    "covers": [
+      "FFPE Artefakt"
+    ],
+    "info": "C>T/G>A-Artefakte bei niedriger VAF einordnen."
+  },
+  {
+    "id": "tumor_normal_germline",
+    "category": "Humangenetik",
+    "label": "Tumor-Normal-Abklärung / Keimbahnmaterial",
+    "points": 260,
+    "sections": 0,
+    "tat": 5,
+    "covers": [
+      "Keimbahn"
+    ],
+    "info": "Klärt Tumor-only-Keimbahnverdacht."
+  },
+  {
+    "id": "mrd_dpcr",
+    "category": "PCR/dPCR",
+    "label": "qPCR/dPCR-MRD oder sensitiver Einzelmarker",
+    "points": 180,
+    "sections": 1,
+    "tat": 3,
+    "covers": [
+      "MRD",
+      "dPCR"
+    ],
+    "info": "Zielgerichtete sensitive Verlaufsdiagnostik."
+  },
+  {
+    "id": "bisulfite_pcr",
+    "category": "Epigenetik",
+    "label": "Bisulfit-PCR für fokalen Methylierungsmarker",
+    "points": 160,
+    "sections": 2,
+    "tat": 3,
+    "covers": [
+      "Bisulfit-PCR"
+    ],
+    "info": "Gezielter lokaler Methylierungsnachweis."
+  },
+  {
+    "id": "multiomics_summary",
+    "category": "Interpretation",
+    "label": "Multiomics-Kernaussage fürs Tumorboard extrahieren",
+    "points": 90,
+    "sections": 0,
+    "tat": 1,
+    "covers": [
+      "Multiomics"
+    ],
+    "info": "Vom Datenpaket zur klinischen Kernaussage."
+  }
+]

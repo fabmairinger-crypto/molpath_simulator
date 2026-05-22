@@ -1,0 +1,2935 @@
+{
+  "version": "v1.5_AP1b_final",
+  "created": "2026-05-19T08:27:09",
+  "description": "Final standardised case metadata after AP1b decisions.",
+  "records": [
+    {
+      "case_id": "MTB_NSCLC_001_v0_6",
+      "base_id": "MTB_NSCLC_001",
+      "title": "Pulmonale Raumforderung → NSCLC → molekulare Therapieentscheidung",
+      "domain": "MTB",
+      "met_addon_type": "no",
+      "subdomain": "Onkogene Treiber / NSCLC / Resistenz",
+      "case_type": "clinical_decision",
+      "length_class": "Standard",
+      "estimated_minutes": {
+        "min": 8,
+        "max": 12
+      },
+      "difficulty": "Intermediate",
+      "status": "curated-core",
+      "review_flag": "Core/MVP prüfen",
+      "review_priority": "high",
+      "core_decision": "NSCLC → molekulare Therapieentscheidung",
+      "learning_objectives": [
+        "Zentrale klinisch-molekulare Fragestellung aus Anamnese, Histologie und Materialkontext ableiten",
+        "Passende molekulare/IHC-basierte Methode zur Kernentscheidung auswählen",
+        "Musterlösung im MTB klar, limitiert und patientenrelevant kommunizieren"
+      ],
+      "tags": [
+        "NSCLC",
+        "IHC",
+        "DNA-NGS",
+        "RNA-NGS",
+        "PD-L1",
+        "ALK",
+        "Materialbudget",
+        "MTB"
+      ],
+      "ap1b_decision": "MTB; Länge=Standard; Schwierigkeit=Intermediate; Status=curated-core"
+    },
+    {
+      "case_id": "MTB_CRC_001_v0_6",
+      "base_id": "MTB_CRC_001",
+      "title": "Metastasiertes CRC → RAS/BRAF/MMR/MSI vor Systemtherapie",
+      "domain": "MTB",
+      "met_addon_type": "no",
+      "subdomain": "CRC / RAS-BRAF / MSI-Lynch",
+      "case_type": "clinical_decision",
+      "length_class": "Standard",
+      "estimated_minutes": {
+        "min": 8,
+        "max": 12
+      },
+      "difficulty": "Intermediate",
+      "status": "curated-core",
+      "review_flag": "Core/MVP prüfen",
+      "review_priority": "high",
+      "core_decision": "RAS/BRAF/MMR/MSI vor Systemtherapie",
+      "learning_objectives": [
+        "Zentrale klinisch-molekulare Fragestellung aus Anamnese, Histologie und Materialkontext ableiten",
+        "MMR/MSI-Befunde therapeutisch und hereditär korrekt einordnen",
+        "Musterlösung im MTB klar, limitiert und patientenrelevant kommunizieren"
+      ],
+      "tags": [
+        "CRC",
+        "mCRC",
+        "RAS",
+        "BRAF",
+        "MMR",
+        "MSI",
+        "MLH1",
+        "anti-EGFR",
+        "Immuntherapie",
+        "Lynch"
+      ],
+      "ap1b_decision": "MTB; Länge=Standard; Schwierigkeit=Intermediate; Status=curated-core"
+    },
+    {
+      "case_id": "MTB_OVAR_001_v0_7",
+      "base_id": "MTB_OVAR_001",
+      "title": "High-grade seröses Ovarialkarzinom → BRCA/HRD/PARP/Keimbahn-Kontext",
+      "domain": "MTB",
+      "met_addon_type": "no",
+      "subdomain": "HRD / BRCA / PARP / Keimbahn",
+      "case_type": "clinical_decision",
+      "length_class": "Standard",
+      "estimated_minutes": {
+        "min": 10,
+        "max": 14
+      },
+      "difficulty": "Advanced",
+      "status": "curated-core",
+      "review_flag": "Core/MVP prüfen",
+      "review_priority": "high",
+      "core_decision": "BRCA/HRD/PARP/Keimbahn-Kontext",
+      "learning_objectives": [
+        "Zentrale klinisch-molekulare Fragestellung aus Anamnese, Histologie und Materialkontext ableiten",
+        "RNA-basierte Fusionsdiagnostik gegenüber DNA-only- oder Einzeltests korrekt priorisieren",
+        "Musterlösung im MTB klar, limitiert und patientenrelevant kommunizieren"
+      ],
+      "tags": [
+        "Ovarialkarzinom",
+        "HGSOC",
+        "BRCA1",
+        "HRD",
+        "PARP",
+        "Keimbahn",
+        "DNA-Reparatur",
+        "MTB"
+      ],
+      "ap1b_decision": "MTB; Länge=Standard; Schwierigkeit=Advanced; Status=curated-core"
+    },
+    {
+      "case_id": "LAB_RUN_002_v0_8",
+      "base_id": "LAB_RUN_002",
+      "title": "Hotspot-Mutation in der Negativkontrolle → Run-Sperre, Ursachenanalyse und CAPA",
+      "domain": "LAB",
+      "met_addon_type": "no",
+      "subdomain": "Analytik / Kontrollen / Run-Freigabe",
+      "case_type": "qm_capa_decision",
+      "length_class": "Standard",
+      "estimated_minutes": {
+        "min": 10,
+        "max": 15
+      },
+      "difficulty": "Intermediate",
+      "status": "curated-core",
+      "review_flag": "Core/MVP prüfen",
+      "review_priority": "high",
+      "core_decision": "Technisch wirkt der Run zunächst vollständig auswertbar.",
+      "learning_objectives": [
+        "Patientensicherheits- und Qualitätsrisiko des Ereignisses korrekt priorisieren",
+        "Kontroll- und Run-Freigabelogik risikobasiert anwenden",
+        "Freigabe-, Sperr- oder Wiederholungsentscheidung auditfähig begründen"
+      ],
+      "tags": [
+        "Labor",
+        "QM",
+        "NGS",
+        "Kontamination",
+        "Negativkontrolle",
+        "KRAS",
+        "CAPA",
+        "Audit"
+      ],
+      "ap1b_decision": "LAB; Länge=Standard; Schwierigkeit=Intermediate; Status=curated-core"
+    },
+    {
+      "case_id": "RES_HYP_001_v0_9",
+      "base_id": "RES_HYP_001",
+      "title": "Wir messen mal alles → von Omics-Idee zur prüfbaren Hypothese",
+      "domain": "RES",
+      "met_addon_type": "no",
+      "subdomain": "Omics / Analyse / Reproduzierbarkeit",
+      "case_type": "research_design_decision",
+      "length_class": "Standard",
+      "estimated_minutes": {
+        "min": 10,
+        "max": 15
+      },
+      "difficulty": "Intermediate",
+      "status": "curated-core",
+      "review_flag": "Core/MVP prüfen",
+      "review_priority": "high",
+      "core_decision": "",
+      "learning_objectives": [
+        "Vage Projektidee in eine prüfbare, klinisch relevante Forschungsfrage übersetzen",
+        "Explorative Omics-Ergebnisse von validierbaren Hypothesen und Signaturen trennen",
+        "Explorativ vs. konfirmatorisch transparent trennen und Data-Fishing vermeiden"
+      ],
+      "tags": [
+        "RES",
+        "Forschung",
+        "Hypothese",
+        "PICO",
+        "RNA-Seq",
+        "Omics",
+        "Data Fishing",
+        "HARKing",
+        "Studienplanung"
+      ],
+      "ap1b_decision": "RES; Länge=Standard; Schwierigkeit=Intermediate; Status=curated-core"
+    },
+    {
+      "case_id": "MTB_IO_001_v1_0",
+      "base_id": "MTB_IO_001",
+      "title": "TIL-reicher dMMR/MSI-H-Tumor → Immunescape und Lynch-Kontext",
+      "domain": "MTB",
+      "met_addon_type": "no",
+      "subdomain": "Immunescape / IO / MSI-TMB-PD-L1",
+      "case_type": "clinical_decision",
+      "length_class": "Standard",
+      "estimated_minutes": {
+        "min": 8,
+        "max": 12
+      },
+      "difficulty": "Intermediate",
+      "status": "curated-core",
+      "review_flag": "Core/MVP prüfen",
+      "review_priority": "high",
+      "core_decision": "Immunescape und Lynch-Kontext",
+      "learning_objectives": [
+        "Zentrale klinisch-molekulare Fragestellung aus Anamnese, Histologie und Materialkontext ableiten",
+        "MMR/MSI-Befunde therapeutisch und hereditär korrekt einordnen",
+        "Musterlösung im MTB klar, limitiert und patientenrelevant kommunizieren"
+      ],
+      "tags": [
+        "MSI-H",
+        "dMMR",
+        "MSH2",
+        "MSH6",
+        "TILs",
+        "TMB",
+        "PD-L1",
+        "Immuntherapie",
+        "Lynch"
+      ],
+      "ap1b_decision": "MTB; Länge=Standard; Schwierigkeit=Intermediate; Status=curated-core"
+    },
+    {
+      "case_id": "MTB_CNS_001_v1_0",
+      "base_id": "MTB_CNS_001",
+      "title": "Glioblastom → MGMT/IDH/Methylierung und Temozolomid-Kontext",
+      "domain": "MTB",
+      "met_addon_type": "no",
+      "subdomain": "Neuroonkologie / Epigenetik / Methylierung",
+      "case_type": "clinical_decision",
+      "length_class": "Standard",
+      "estimated_minutes": {
+        "min": 8,
+        "max": 12
+      },
+      "difficulty": "Intermediate",
+      "status": "curated-core",
+      "review_flag": "Core/MVP prüfen",
+      "review_priority": "high",
+      "core_decision": "MGMT/IDH/Methylierung und Temozolomid-Kontext",
+      "learning_objectives": [
+        "Zentrale klinisch-molekulare Fragestellung aus Anamnese, Histologie und Materialkontext ableiten",
+        "Epigenetische Marker/Methylierungsprofile als diagnostische oder prädiktive Ebene einordnen",
+        "Musterlösung im MTB klar, limitiert und patientenrelevant kommunizieren"
+      ],
+      "tags": [
+        "Glioblastom",
+        "MGMT",
+        "IDH",
+        "Methylierung",
+        "Temozolomid",
+        "Neuroonkologie",
+        "Epigenetik"
+      ],
+      "ap1b_decision": "MTB; Länge=Standard; Schwierigkeit=Intermediate; Status=curated-core"
+    },
+    {
+      "case_id": "MET_NGS_003_v1_0",
+      "base_id": "MET_NGS_003",
+      "title": "ERBB2-VUS mit Therapieanfrage → Evidenz, Kontext und MTB-Kommunikation",
+      "domain": "MTB",
+      "met_addon_type": "yes",
+      "subdomain": "Methodik / Befundinterpretation",
+      "case_type": "clinical_decision",
+      "length_class": "Standard",
+      "estimated_minutes": {
+        "min": 6,
+        "max": 10
+      },
+      "difficulty": "Advanced",
+      "status": "curated-core",
+      "review_flag": "Core/MVP prüfen",
+      "review_priority": "high",
+      "core_decision": "Evidenz, Kontext und MTB-Kommunikation",
+      "learning_objectives": [
+        "Zentrale klinisch-molekulare Fragestellung aus Anamnese, Histologie und Materialkontext ableiten",
+        "VUS evidenzbasiert kommunizieren und therapeutisches Overcalling vermeiden",
+        "Musterlösung im MTB klar, limitiert und patientenrelevant kommunizieren"
+      ],
+      "tags": [
+        "VUS",
+        "ERBB2",
+        "HER2",
+        "Evidenz",
+        "MTB",
+        "Befundkommunikation"
+      ],
+      "ap1b_decision": "MTB + MET-Zusatztyp; Länge=Standard; Schwierigkeit=Advanced; Status=curated-core"
+    },
+    {
+      "case_id": "LAB_POST_001_v1_0",
+      "base_id": "LAB_POST_001",
+      "title": "Pipeline-Version geändert, kein Change-Log → Bioinformatik-QM und Impact-Analyse",
+      "domain": "LAB",
+      "met_addon_type": "no",
+      "subdomain": "Postanalytik / Bioinformatik / Change-Control",
+      "case_type": "qm_capa_decision",
+      "length_class": "Complex",
+      "estimated_minutes": {
+        "min": 20,
+        "max": 30
+      },
+      "difficulty": "Advanced",
+      "status": "curated-core",
+      "review_flag": "Core/MVP prüfen",
+      "review_priority": "high",
+      "core_decision": "Variant Caller wurde von Version 3.4 auf 4.1 aktualisiert.",
+      "learning_objectives": [
+        "Patientensicherheits- und Qualitätsrisiko des Ereignisses korrekt priorisieren",
+        "Pipeline-/Softwareänderungen über Change-Control, Revalidierung und Versionierung absichern",
+        "Freigabe-, Sperr- oder Wiederholungsentscheidung auditfähig begründen"
+      ],
+      "tags": [
+        "Bioinformatik",
+        "Pipeline",
+        "Versionierung",
+        "Change-Control",
+        "Audit",
+        "NGS, complex_case, AP1b_length_reclass"
+      ],
+      "ap1b_decision": "LAB; Länge=Complex; Schwierigkeit=Advanced; Status=curated-core"
+    },
+    {
+      "case_id": "LAB_DOC_001_v1_0",
+      "base_id": "LAB_DOC_001",
+      "title": "‚PCR wie immer gemacht‘ → Dokumentation, Rückverfolgbarkeit und Auditfähigkeit",
+      "domain": "LAB",
+      "met_addon_type": "no",
+      "subdomain": "Dokumentation / Rückverfolgbarkeit / Audit",
+      "case_type": "qm_capa_decision",
+      "length_class": "Standard",
+      "estimated_minutes": {
+        "min": 5,
+        "max": 8
+      },
+      "difficulty": "Expert",
+      "status": "curated-core",
+      "review_flag": "Core/MVP prüfen",
+      "review_priority": "high",
+      "core_decision": "",
+      "learning_objectives": [
+        "Patientensicherheits- und Qualitätsrisiko des Ereignisses korrekt priorisieren",
+        "Abweichung, Ursachenanalyse und CAPA nachvollziehbar dokumentieren",
+        "Freigabe-, Sperr- oder Wiederholungsentscheidung auditfähig begründen"
+      ],
+      "tags": [
+        "Dokumentation",
+        "Laborbuch",
+        "qPCR",
+        "SOP",
+        "Lot",
+        "Audit",
+        "Rückverfolgbarkeit"
+      ],
+      "ap1b_decision": "LAB; Länge=Standard; Schwierigkeit=Expert; Status=curated-core"
+    },
+    {
+      "case_id": "RES_OMICS_001_v1_0",
+      "base_id": "RES_OMICS_001",
+      "title": "RNA-Seq findet 200 DEGs → vom Genlisten-Friedhof zur validierbaren Signatur",
+      "domain": "RES",
+      "met_addon_type": "no",
+      "subdomain": "Omics / Analyse / Reproduzierbarkeit",
+      "case_type": "research_design_decision",
+      "length_class": "Standard",
+      "estimated_minutes": {
+        "min": 12,
+        "max": 18
+      },
+      "difficulty": "Intermediate",
+      "status": "curated-core",
+      "review_flag": "Core/MVP prüfen",
+      "review_priority": "high",
+      "core_decision": "",
+      "learning_objectives": [
+        "Vage Projektidee in eine prüfbare, klinisch relevante Forschungsfrage übersetzen",
+        "Explorative Omics-Ergebnisse von validierbaren Hypothesen und Signaturen trennen",
+        "Explorativ vs. konfirmatorisch transparent trennen und Data-Fishing vermeiden"
+      ],
+      "tags": [
+        "RNA-Seq",
+        "DEG",
+        "Pathway",
+        "TGFβ",
+        "CAF",
+        "Immuntherapie",
+        "ICI-Resistenz",
+        "Validierung"
+      ],
+      "ap1b_decision": "RES; Länge=Standard; Schwierigkeit=Intermediate; Status=curated-core"
+    },
+    {
+      "case_id": "RES_ETH_001_v1_0",
+      "base_id": "RES_ETH_001",
+      "title": "Restmaterialprojekt ohne klare Einwilligung → Ethik, Datenschutz und Nebenbefunde",
+      "domain": "RES",
+      "met_addon_type": "no",
+      "subdomain": "Ethik / Governance / Materialschutz",
+      "case_type": "research_design_decision",
+      "length_class": "Standard",
+      "estimated_minutes": {
+        "min": 10,
+        "max": 14
+      },
+      "difficulty": "Advanced",
+      "status": "curated-core",
+      "review_flag": "Core/MVP prüfen",
+      "review_priority": "high",
+      "core_decision": "Die Einwilligungslage ist uneinheitlich; Material stammt aus verschiedenen Jahren.",
+      "learning_objectives": [
+        "Vage Projektidee in eine prüfbare, klinisch relevante Forschungsfrage übersetzen",
+        "Ethik, Einwilligung, Datenschutz und Materialschutz vor Projektstart klären",
+        "Explorativ vs. konfirmatorisch transparent trennen und Data-Fishing vermeiden"
+      ],
+      "tags": [
+        "Ethik",
+        "Restmaterial",
+        "FFPE",
+        "Broad Consent",
+        "Datenschutz",
+        "Keimbahn",
+        "Nebenbefund"
+      ],
+      "ap1b_decision": "RES; Länge=Standard; Schwierigkeit=Advanced; Status=curated-core"
+    },
+    {
+      "case_id": "MTB_NSCLC_002_v1_3",
+      "base_id": "MTB_NSCLC_002",
+      "title": "NSCLC mit EGFR-Mutation und Progress unter TKI → Liquid Biopsy negativ: reicht das oder Rebiopsie?",
+      "domain": "MTB",
+      "met_addon_type": "no",
+      "subdomain": "Onkogene Treiber / NSCLC / Resistenz",
+      "case_type": "clinical_decision",
+      "length_class": "Complex",
+      "estimated_minutes": {
+        "min": 20,
+        "max": 30
+      },
+      "difficulty": "Advanced",
+      "status": "beta-standardized",
+      "review_flag": "MVP prüfen",
+      "review_priority": "high",
+      "core_decision": "Liquid Biopsy negativ: reicht das oder Rebiopsie?",
+      "learning_objectives": [
+        "Zentrale klinisch-molekulare Fragestellung aus Anamnese, Histologie und Materialkontext ableiten",
+        "Negative Liquid Biopsy als methodisch limitierten Befund einordnen und Gewebe-Rebiopsie begründen",
+        "Musterlösung im MTB klar, limitiert und patientenrelevant kommunizieren"
+      ],
+      "tags": [
+        "NSCLC",
+        "Liquid",
+        "Biopsy",
+        "KI",
+        "MTB",
+        "MVP",
+        "Standard, complex_case, AP1b_length_reclass"
+      ],
+      "ap1b_decision": "MTB; Länge=Complex; Schwierigkeit=Advanced; Status=beta-standardized"
+    },
+    {
+      "case_id": "MTB_NSCLC_003_v1_3",
+      "base_id": "MTB_NSCLC_003",
+      "title": "ALK/ROS1/RET/NTRK-Fusionsverdacht bei jungem Nie-Raucher → FISH, RNA-NGS oder DNA-NGS?",
+      "domain": "MTB",
+      "met_addon_type": "no",
+      "subdomain": "Onkogene Treiber / NSCLC / Resistenz",
+      "case_type": "clinical_decision",
+      "length_class": "Standard",
+      "estimated_minutes": {
+        "min": 8,
+        "max": 15
+      },
+      "difficulty": "Intermediate",
+      "status": "beta-standardized",
+      "review_flag": "MVP prüfen",
+      "review_priority": "high",
+      "core_decision": "FISH, RNA-NGS oder DNA-NGS?",
+      "learning_objectives": [
+        "Zentrale klinisch-molekulare Fragestellung aus Anamnese, Histologie und Materialkontext ableiten",
+        "RNA-basierte Fusionsdiagnostik gegenüber DNA-only- oder Einzeltests korrekt priorisieren",
+        "Musterlösung im MTB klar, limitiert und patientenrelevant kommunizieren"
+      ],
+      "tags": [
+        "NSCLC",
+        "NGS",
+        "RNA",
+        "FISH",
+        "MTB",
+        "MVP",
+        "Standard"
+      ],
+      "ap1b_decision": "MTB; Länge=Standard; Schwierigkeit=Intermediate; Status=beta-standardized"
+    },
+    {
+      "case_id": "MTB_NSCLC_004_v1_3",
+      "base_id": "MTB_NSCLC_004",
+      "title": "KRAS-mutiertes NSCLC mit STK11/KEAP1-Kontext → Target, Prognose, Immuntherapie-Kontext korrekt gewichten",
+      "domain": "MTB",
+      "met_addon_type": "no",
+      "subdomain": "Onkogene Treiber / NSCLC / Resistenz",
+      "case_type": "clinical_decision",
+      "length_class": "Standard",
+      "estimated_minutes": {
+        "min": 8,
+        "max": 15
+      },
+      "difficulty": "Intermediate",
+      "status": "beta-standardized",
+      "review_flag": "ok",
+      "review_priority": "low",
+      "core_decision": "Target, Prognose, Immuntherapie-Kontext korrekt gewichten",
+      "learning_objectives": [
+        "Zentrale klinisch-molekulare Fragestellung aus Anamnese, Histologie und Materialkontext ableiten",
+        "Immunbiologische Marker nicht isoliert, sondern im Kontext von MSI/TMB/TILs/TME bewerten",
+        "Musterlösung im MTB klar, limitiert und patientenrelevant kommunizieren"
+      ],
+      "tags": [
+        "NSCLC",
+        "Immunescape",
+        "MTB",
+        "Phase",
+        "Standard"
+      ],
+      "ap1b_decision": "MTB; Länge=Standard; Schwierigkeit=Intermediate; Status=beta-standardized"
+    },
+    {
+      "case_id": "MTB_MEL_001_v1_3",
+      "base_id": "MTB_MEL_001",
+      "title": "Melanom: BRAF V600 und Immuntherapie-Sequenz → Schnelle TKI-Therapie vs. Immuncheckpoint-Strategie",
+      "domain": "MTB",
+      "met_addon_type": "no",
+      "subdomain": "Immunescape / IO / MSI-TMB-PD-L1",
+      "case_type": "clinical_decision",
+      "length_class": "Standard",
+      "estimated_minutes": {
+        "min": 8,
+        "max": 15
+      },
+      "difficulty": "Intermediate",
+      "status": "beta-standardized",
+      "review_flag": "ok",
+      "review_priority": "low",
+      "core_decision": "Schnelle TKI-Therapie vs. Immuncheckpoint-Strategie",
+      "learning_objectives": [
+        "Zentrale klinisch-molekulare Fragestellung aus Anamnese, Histologie und Materialkontext ableiten",
+        "Immunbiologische Marker nicht isoliert, sondern im Kontext von MSI/TMB/TILs/TME bewerten",
+        "Musterlösung im MTB klar, limitiert und patientenrelevant kommunizieren"
+      ],
+      "tags": [
+        "BRAF",
+        "KI",
+        "Melanom",
+        "MTB",
+        "Phase",
+        "Standard"
+      ],
+      "ap1b_decision": "MTB; Länge=Standard; Schwierigkeit=Intermediate; Status=beta-standardized"
+    },
+    {
+      "case_id": "MTB_GIST_001_v1_3",
+      "base_id": "MTB_GIST_001",
+      "title": "GIST mit KIT/PDGFRA-Fragestellung → Welcher Marker entscheidet über TKI-Auswahl?",
+      "domain": "MTB",
+      "met_addon_type": "no",
+      "subdomain": "Sonstige klinische Molekularpathologie",
+      "case_type": "clinical_mini_decision",
+      "length_class": "Mini",
+      "estimated_minutes": {
+        "min": 3,
+        "max": 5
+      },
+      "difficulty": "Beginner",
+      "status": "beta-review",
+      "review_flag": "method rules prüfen",
+      "review_priority": "medium",
+      "core_decision": "Welcher Marker entscheidet über TKI-Auswahl?",
+      "learning_objectives": [
+        "Zentrale klinisch-molekulare Fragestellung aus Anamnese, Histologie und Materialkontext ableiten",
+        "Passende molekulare/IHC-basierte Methode zur Kernentscheidung auswählen",
+        "Musterlösung im MTB klar, limitiert und patientenrelevant kommunizieren"
+      ],
+      "tags": [
+        "KI",
+        "KIT",
+        "PDGFRA",
+        "GIST",
+        "MTB",
+        "Phase",
+        "Mini"
+      ],
+      "ap1b_decision": "MTB; Länge=Mini; Schwierigkeit=Beginner; Status=beta-review"
+    },
+    {
+      "case_id": "MTB_CHOL_001_v1_3",
+      "base_id": "MTB_CHOL_001",
+      "title": "Cholangiozelluläres Karzinom mit FGFR2/IDH-Frage → Paneldiagnostik und Studienoptionen",
+      "domain": "MTB",
+      "met_addon_type": "no",
+      "subdomain": "Sonstige klinische Molekularpathologie",
+      "case_type": "clinical_decision",
+      "length_class": "Standard",
+      "estimated_minutes": {
+        "min": 8,
+        "max": 15
+      },
+      "difficulty": "Intermediate",
+      "status": "beta-review",
+      "review_flag": "method rules prüfen",
+      "review_priority": "medium",
+      "core_decision": "Paneldiagnostik und Studienoptionen",
+      "learning_objectives": [
+        "Zentrale klinisch-molekulare Fragestellung aus Anamnese, Histologie und Materialkontext ableiten",
+        "Epigenetische Marker/Methylierungsprofile als diagnostische oder prädiktive Ebene einordnen",
+        "Musterlösung im MTB klar, limitiert und patientenrelevant kommunizieren"
+      ],
+      "tags": [
+        "IDH",
+        "FGFR",
+        "MTB",
+        "Phase",
+        "Standard"
+      ],
+      "ap1b_decision": "MTB; Länge=Standard; Schwierigkeit=Intermediate; Status=beta-review"
+    },
+    {
+      "case_id": "MTB_CRC_002_v1_3",
+      "base_id": "MTB_CRC_002",
+      "title": "MMR-Verlust MLH1/PMS2: sporadisch oder Lynch? → MLH1-Methylierung/BRAF? Humangenetik?",
+      "domain": "MTB",
+      "met_addon_type": "no",
+      "subdomain": "CRC / RAS-BRAF / MSI-Lynch",
+      "case_type": "clinical_decision",
+      "length_class": "Standard",
+      "estimated_minutes": {
+        "min": 8,
+        "max": 15
+      },
+      "difficulty": "Intermediate",
+      "status": "beta-standardized",
+      "review_flag": "MVP prüfen",
+      "review_priority": "high",
+      "core_decision": "MLH1-Methylierung/BRAF? Humangenetik?",
+      "learning_objectives": [
+        "Zentrale klinisch-molekulare Fragestellung aus Anamnese, Histologie und Materialkontext ableiten",
+        "MMR/MSI-Befunde therapeutisch und hereditär korrekt einordnen",
+        "Musterlösung im MTB klar, limitiert und patientenrelevant kommunizieren"
+      ],
+      "tags": [
+        "CRC",
+        "MMR",
+        "MSI",
+        "BRAF",
+        "Methylierung",
+        "Lynch",
+        "MTB",
+        "MVP",
+        "Standard"
+      ],
+      "ap1b_decision": "MTB; Länge=Standard; Schwierigkeit=Intermediate; Status=beta-standardized"
+    },
+    {
+      "case_id": "MTB_CRC_003_v1_3",
+      "base_id": "MTB_CRC_003",
+      "title": "Rechte Kolonkarzinom-Metastase mit BRAF V600E → Prognose, MSI-Kontext, Therapieoption",
+      "domain": "MTB",
+      "met_addon_type": "no",
+      "subdomain": "CRC / RAS-BRAF / MSI-Lynch",
+      "case_type": "clinical_mini_decision",
+      "length_class": "Mini",
+      "estimated_minutes": {
+        "min": 3,
+        "max": 5
+      },
+      "difficulty": "Beginner",
+      "status": "beta-review",
+      "review_flag": "method rules prüfen",
+      "review_priority": "medium",
+      "core_decision": "Prognose, MSI-Kontext, Therapieoption",
+      "learning_objectives": [
+        "Zentrale klinisch-molekulare Fragestellung aus Anamnese, Histologie und Materialkontext ableiten",
+        "MMR/MSI-Befunde therapeutisch und hereditär korrekt einordnen",
+        "Musterlösung im MTB klar, limitiert und patientenrelevant kommunizieren"
+      ],
+      "tags": [
+        "CRC",
+        "MSI",
+        "BRAF",
+        "MTB",
+        "Phase",
+        "Mini"
+      ],
+      "ap1b_decision": "MTB; Länge=Mini; Schwierigkeit=Beginner; Status=beta-review"
+    },
+    {
+      "case_id": "MTB_CRC_004_v1_3",
+      "base_id": "MTB_CRC_004",
+      "title": "Polypenrest statt invasivem Tumor eingeschickt → Befundbar oder neues Material anfordern?",
+      "domain": "MTB",
+      "met_addon_type": "no",
+      "subdomain": "CRC / RAS-BRAF / MSI-Lynch",
+      "case_type": "clinical_mini_decision",
+      "length_class": "Mini",
+      "estimated_minutes": {
+        "min": 3,
+        "max": 5
+      },
+      "difficulty": "Beginner",
+      "status": "beta-standardized",
+      "review_flag": "MVP prüfen",
+      "review_priority": "high",
+      "core_decision": "Befundbar oder neues Material anfordern?",
+      "learning_objectives": [
+        "Zentrale klinisch-molekulare Fragestellung aus Anamnese, Histologie und Materialkontext ableiten",
+        "Passende molekulare/IHC-basierte Methode zur Kernentscheidung auswählen",
+        "Musterlösung im MTB klar, limitiert und patientenrelevant kommunizieren"
+      ],
+      "tags": [
+        "CRC",
+        "MTB-LAB",
+        "MVP",
+        "Mini"
+      ],
+      "ap1b_decision": "MTB; Länge=Mini; Schwierigkeit=Beginner; Status=beta-standardized"
+    },
+    {
+      "case_id": "MTB_CRC_005_v1_3",
+      "base_id": "MTB_CRC_005",
+      "title": "HER2-amplifiziertes RAS-WT-CRC → HER2 als Resistenz-/Target-Kontext",
+      "domain": "MTB",
+      "met_addon_type": "no",
+      "subdomain": "CRC / RAS-BRAF / MSI-Lynch",
+      "case_type": "clinical_decision",
+      "length_class": "Standard",
+      "estimated_minutes": {
+        "min": 8,
+        "max": 15
+      },
+      "difficulty": "Intermediate",
+      "status": "beta-standardized",
+      "review_flag": "ok",
+      "review_priority": "low",
+      "core_decision": "HER2 als Resistenz-/Target-Kontext",
+      "learning_objectives": [
+        "Zentrale klinisch-molekulare Fragestellung aus Anamnese, Histologie und Materialkontext ableiten",
+        "Passende molekulare/IHC-basierte Methode zur Kernentscheidung auswählen",
+        "Musterlösung im MTB klar, limitiert und patientenrelevant kommunizieren"
+      ],
+      "tags": [
+        "CRC",
+        "NGS",
+        "HER2",
+        "MTB",
+        "Phase",
+        "Standard"
+      ],
+      "ap1b_decision": "MTB; Länge=Standard; Schwierigkeit=Intermediate; Status=beta-standardized"
+    },
+    {
+      "case_id": "MTB_OVAR_002_v1_3",
+      "base_id": "MTB_OVAR_002",
+      "title": "BRCA2-Variante unklarer Signifikanz im Ovarialkarzinom → VUS nicht als therapeutisch gesichert verkaufen",
+      "domain": "MTB",
+      "met_addon_type": "no",
+      "subdomain": "HRD / BRCA / PARP / Keimbahn",
+      "case_type": "clinical_decision",
+      "length_class": "Complex",
+      "estimated_minutes": {
+        "min": 20,
+        "max": 30
+      },
+      "difficulty": "Advanced",
+      "status": "beta-standardized",
+      "review_flag": "MVP prüfen",
+      "review_priority": "high",
+      "core_decision": "VUS nicht als therapeutisch gesichert verkaufen",
+      "learning_objectives": [
+        "Zentrale klinisch-molekulare Fragestellung aus Anamnese, Histologie und Materialkontext ableiten",
+        "VUS evidenzbasiert kommunizieren und therapeutisches Overcalling vermeiden",
+        "Musterlösung im MTB klar, limitiert und patientenrelevant kommunizieren"
+      ],
+      "tags": [
+        "BRCA",
+        "HRD",
+        "VUS",
+        "MTB",
+        "MVP",
+        "Standard, complex_case, AP1b_length_reclass"
+      ],
+      "ap1b_decision": "MTB; Länge=Complex; Schwierigkeit=Advanced; Status=beta-standardized"
+    },
+    {
+      "case_id": "MTB_MAMMA_001_v1_3",
+      "base_id": "MTB_MAMMA_001",
+      "title": "Mammakarzinom: BRCA/PIK3CA/ERBB2-Kontext → Klassische Marker vs. Panel-Zusatznutzen",
+      "domain": "MTB",
+      "met_addon_type": "no",
+      "subdomain": "HRD / BRCA / PARP / Keimbahn",
+      "case_type": "clinical_decision",
+      "length_class": "Standard",
+      "estimated_minutes": {
+        "min": 8,
+        "max": 15
+      },
+      "difficulty": "Intermediate",
+      "status": "beta-standardized",
+      "review_flag": "ok",
+      "review_priority": "low",
+      "core_decision": "Klassische Marker vs. Panel-Zusatznutzen",
+      "learning_objectives": [
+        "Zentrale klinisch-molekulare Fragestellung aus Anamnese, Histologie und Materialkontext ableiten",
+        "Tumor-BRCA/HRD und Keimbahnkontext für PARP-Entscheidungen trennen",
+        "Musterlösung im MTB klar, limitiert und patientenrelevant kommunizieren"
+      ],
+      "tags": [
+        "BRCA",
+        "MTB",
+        "Phase",
+        "Standard"
+      ],
+      "ap1b_decision": "MTB; Länge=Standard; Schwierigkeit=Intermediate; Status=beta-standardized"
+    },
+    {
+      "case_id": "MTB_PROST_001_v1_3",
+      "base_id": "MTB_PROST_001",
+      "title": "Metastasiertes Prostatakarzinom: HRR-Gene/MMR → PARP/IO/Studie und Keimbahnfrage",
+      "domain": "MTB",
+      "met_addon_type": "no",
+      "subdomain": "Sonstige klinische Molekularpathologie",
+      "case_type": "clinical_decision",
+      "length_class": "Standard",
+      "estimated_minutes": {
+        "min": 8,
+        "max": 15
+      },
+      "difficulty": "Advanced",
+      "status": "beta-review",
+      "review_flag": "prüfen",
+      "review_priority": "high",
+      "core_decision": "PARP/IO/Studie und Keimbahnfrage",
+      "learning_objectives": [
+        "Zentrale klinisch-molekulare Fragestellung aus Anamnese, Histologie und Materialkontext ableiten",
+        "MMR/MSI-Befunde therapeutisch und hereditär korrekt einordnen",
+        "Musterlösung im MTB klar, limitiert und patientenrelevant kommunizieren"
+      ],
+      "tags": [
+        "MMR",
+        "PARP",
+        "MTB",
+        "Phase",
+        "Standard"
+      ],
+      "ap1b_decision": "MTB; Länge=Standard; Schwierigkeit=Advanced; Status=beta-review"
+    },
+    {
+      "case_id": "MTB_TAML_001_v1_3",
+      "base_id": "MTB_TAML_001",
+      "title": "Therapieassoziierte MDS/AML nach DNA-schädigender Therapie → Instabilität als Chance und Risiko einordnen",
+      "domain": "MTB",
+      "met_addon_type": "no",
+      "subdomain": "Sonstige klinische Molekularpathologie",
+      "case_type": "clinical_mini_decision",
+      "length_class": "Mini",
+      "estimated_minutes": {
+        "min": 3,
+        "max": 5
+      },
+      "difficulty": "Beginner",
+      "status": "beta-review",
+      "review_flag": "method rules prüfen",
+      "review_priority": "medium",
+      "core_decision": "Instabilität als Chance und Risiko einordnen",
+      "learning_objectives": [
+        "Zentrale klinisch-molekulare Fragestellung aus Anamnese, Histologie und Materialkontext ableiten",
+        "Passende molekulare/IHC-basierte Methode zur Kernentscheidung auswählen",
+        "Musterlösung im MTB klar, limitiert und patientenrelevant kommunizieren"
+      ],
+      "tags": [
+        "MTB-RES",
+        "Phase",
+        "Mini"
+      ],
+      "ap1b_decision": "MTB; Länge=Mini; Schwierigkeit=Beginner; Status=beta-review"
+    },
+    {
+      "case_id": "MTB_IO_002_v1_3",
+      "base_id": "MTB_IO_002",
+      "title": "„Cold Tumor“ mit wenig TILs und dichter Stromabarriere → Warum ist PD-1 allein wahrscheinlich schwach?",
+      "domain": "MTB",
+      "met_addon_type": "no",
+      "subdomain": "Immunescape / IO / MSI-TMB-PD-L1",
+      "case_type": "clinical_decision",
+      "length_class": "Standard",
+      "estimated_minutes": {
+        "min": 8,
+        "max": 15
+      },
+      "difficulty": "Intermediate",
+      "status": "beta-standardized",
+      "review_flag": "ok",
+      "review_priority": "low",
+      "core_decision": "Warum ist PD-1 allein wahrscheinlich schwach?",
+      "learning_objectives": [
+        "Zentrale klinisch-molekulare Fragestellung aus Anamnese, Histologie und Materialkontext ableiten",
+        "Immunbiologische Marker nicht isoliert, sondern im Kontext von MSI/TMB/TILs/TME bewerten",
+        "Musterlösung im MTB klar, limitiert und patientenrelevant kommunizieren"
+      ],
+      "tags": [
+        "TME",
+        "Immunescape",
+        "TILs",
+        "MTB",
+        "Phase",
+        "Standard"
+      ],
+      "ap1b_decision": "MTB; Länge=Standard; Schwierigkeit=Intermediate; Status=beta-standardized"
+    },
+    {
+      "case_id": "MTB_IO_003_v1_3",
+      "base_id": "MTB_IO_003",
+      "title": "PD-L1 positiv, aber niedrige TMB und kein Immuninfiltrat → PD-L1 nicht überinterpretieren",
+      "domain": "MTB",
+      "met_addon_type": "no",
+      "subdomain": "Immunescape / IO / MSI-TMB-PD-L1",
+      "case_type": "clinical_mini_decision",
+      "length_class": "Mini",
+      "estimated_minutes": {
+        "min": 3,
+        "max": 5
+      },
+      "difficulty": "Beginner",
+      "status": "beta-standardized",
+      "review_flag": "ok",
+      "review_priority": "low",
+      "core_decision": "PD-L1 nicht überinterpretieren",
+      "learning_objectives": [
+        "Zentrale klinisch-molekulare Fragestellung aus Anamnese, Histologie und Materialkontext ableiten",
+        "Immunbiologische Marker nicht isoliert, sondern im Kontext von MSI/TMB/TILs/TME bewerten",
+        "Musterlösung im MTB klar, limitiert und patientenrelevant kommunizieren"
+      ],
+      "tags": [
+        "Immunescape",
+        "PD-L1",
+        "TMB",
+        "MTB",
+        "Phase",
+        "Mini"
+      ],
+      "ap1b_decision": "MTB; Länge=Mini; Schwierigkeit=Beginner; Status=beta-standardized"
+    },
+    {
+      "case_id": "MTB_IO_004_v1_3",
+      "base_id": "MTB_IO_004",
+      "title": "MSI-H-Karzinom: Therapieoption und Lynch-Abklärung → IO, MMR-IHC, Keimbahnkontext",
+      "domain": "MTB",
+      "met_addon_type": "no",
+      "subdomain": "Immunescape / IO / MSI-TMB-PD-L1",
+      "case_type": "clinical_decision",
+      "length_class": "Standard",
+      "estimated_minutes": {
+        "min": 8,
+        "max": 15
+      },
+      "difficulty": "Advanced",
+      "status": "beta-review",
+      "review_flag": "prüfen",
+      "review_priority": "high",
+      "core_decision": "IO, MMR-IHC, Keimbahnkontext",
+      "learning_objectives": [
+        "Zentrale klinisch-molekulare Fragestellung aus Anamnese, Histologie und Materialkontext ableiten",
+        "MMR/MSI-Befunde therapeutisch und hereditär korrekt einordnen",
+        "Musterlösung im MTB klar, limitiert und patientenrelevant kommunizieren"
+      ],
+      "tags": [
+        "MMR",
+        "MSI",
+        "Immunescape",
+        "Lynch",
+        "MTB",
+        "Phase",
+        "Standard"
+      ],
+      "ap1b_decision": "MTB; Länge=Standard; Schwierigkeit=Advanced; Status=beta-review"
+    },
+    {
+      "case_id": "MTB_IO_005_v1_3",
+      "base_id": "MTB_IO_005",
+      "title": "Antibiotika kurz vor ICI, Mikrobiom-Frage im Tumorboard → Evidenz korrekt begrenzen",
+      "domain": "MTB",
+      "met_addon_type": "no",
+      "subdomain": "Immunescape / IO / MSI-TMB-PD-L1",
+      "case_type": "clinical_mini_decision",
+      "length_class": "Mini",
+      "estimated_minutes": {
+        "min": 3,
+        "max": 5
+      },
+      "difficulty": "Beginner",
+      "status": "beta-review",
+      "review_flag": "method rules prüfen",
+      "review_priority": "medium",
+      "core_decision": "Evidenz korrekt begrenzen",
+      "learning_objectives": [
+        "Zentrale klinisch-molekulare Fragestellung aus Anamnese, Histologie und Materialkontext ableiten",
+        "Passende molekulare/IHC-basierte Methode zur Kernentscheidung auswählen",
+        "Musterlösung im MTB klar, limitiert und patientenrelevant kommunizieren"
+      ],
+      "tags": [
+        "MTB",
+        "Phase",
+        "Mini"
+      ],
+      "ap1b_decision": "MTB; Länge=Mini; Schwierigkeit=Beginner; Status=beta-review"
+    },
+    {
+      "case_id": "MTB_CNS_002_v1_3",
+      "base_id": "MTB_CNS_002",
+      "title": "IDH-mutiertes Gliom mit G-CIMP-Profil → IDH-IHC/Sequenzierung/Methylom einordnen",
+      "domain": "MTB",
+      "met_addon_type": "no",
+      "subdomain": "Neuroonkologie / Epigenetik / Methylierung",
+      "case_type": "clinical_decision",
+      "length_class": "Standard",
+      "estimated_minutes": {
+        "min": 8,
+        "max": 15
+      },
+      "difficulty": "Intermediate",
+      "status": "beta-standardized",
+      "review_flag": "ok",
+      "review_priority": "low",
+      "core_decision": "IDH-IHC/Sequenzierung/Methylom einordnen",
+      "learning_objectives": [
+        "Zentrale klinisch-molekulare Fragestellung aus Anamnese, Histologie und Materialkontext ableiten",
+        "Epigenetische Marker/Methylierungsprofile als diagnostische oder prädiktive Ebene einordnen",
+        "Musterlösung im MTB klar, limitiert und patientenrelevant kommunizieren"
+      ],
+      "tags": [
+        "IDH",
+        "MTB",
+        "Phase",
+        "Standard"
+      ],
+      "ap1b_decision": "MTB; Länge=Standard; Schwierigkeit=Intermediate; Status=beta-standardized"
+    },
+    {
+      "case_id": "MTB_CNS_003_v1_3",
+      "base_id": "MTB_CNS_003",
+      "title": "Histologisch unklarer ZNS-Tumor: Methylierungsclassifier → Wann hilft Methylom-Klassifikation?",
+      "domain": "MTB",
+      "met_addon_type": "no",
+      "subdomain": "Neuroonkologie / Epigenetik / Methylierung",
+      "case_type": "clinical_decision",
+      "length_class": "Standard",
+      "estimated_minutes": {
+        "min": 8,
+        "max": 15
+      },
+      "difficulty": "Advanced",
+      "status": "beta-review",
+      "review_flag": "prüfen",
+      "review_priority": "high",
+      "core_decision": "Wann hilft Methylom-Klassifikation?",
+      "learning_objectives": [
+        "Zentrale klinisch-molekulare Fragestellung aus Anamnese, Histologie und Materialkontext ableiten",
+        "Epigenetische Marker/Methylierungsprofile als diagnostische oder prädiktive Ebene einordnen",
+        "Musterlösung im MTB klar, limitiert und patientenrelevant kommunizieren"
+      ],
+      "tags": [
+        "NGS",
+        "Methylierung",
+        "MTB",
+        "Phase",
+        "Standard"
+      ],
+      "ap1b_decision": "MTB; Länge=Standard; Schwierigkeit=Advanced; Status=beta-review"
+    },
+    {
+      "case_id": "MTB_HEM_001_v1_3",
+      "base_id": "MTB_HEM_001",
+      "title": "MDS/AML mit DNMT3A/TET2/ASXL1 → CHIP vs. hämatologische Neoplasie",
+      "domain": "MTB",
+      "met_addon_type": "no",
+      "subdomain": "Sonstige klinische Molekularpathologie",
+      "case_type": "clinical_decision",
+      "length_class": "Standard",
+      "estimated_minutes": {
+        "min": 8,
+        "max": 15
+      },
+      "difficulty": "Intermediate",
+      "status": "beta-review",
+      "review_flag": "method rules prüfen",
+      "review_priority": "medium",
+      "core_decision": "CHIP vs. hämatologische Neoplasie",
+      "learning_objectives": [
+        "Zentrale klinisch-molekulare Fragestellung aus Anamnese, Histologie und Materialkontext ableiten",
+        "Passende molekulare/IHC-basierte Methode zur Kernentscheidung auswählen",
+        "Musterlösung im MTB klar, limitiert und patientenrelevant kommunizieren"
+      ],
+      "tags": [
+        "MTB",
+        "Phase",
+        "Standard"
+      ],
+      "ap1b_decision": "MTB; Länge=Standard; Schwierigkeit=Intermediate; Status=beta-review"
+    },
+    {
+      "case_id": "MTB_METH_001_v1_3",
+      "base_id": "MTB_METH_001",
+      "title": "MLH1-Promotor-Methylierung bei MSI-H-CRC → sporadisch vs. Lynch",
+      "domain": "MTB",
+      "met_addon_type": "no",
+      "subdomain": "CRC / RAS-BRAF / MSI-Lynch",
+      "case_type": "clinical_mini_decision",
+      "length_class": "Mini",
+      "estimated_minutes": {
+        "min": 3,
+        "max": 5
+      },
+      "difficulty": "Beginner",
+      "status": "beta-standardized",
+      "review_flag": "ok",
+      "review_priority": "low",
+      "core_decision": "sporadisch vs. Lynch",
+      "learning_objectives": [
+        "Zentrale klinisch-molekulare Fragestellung aus Anamnese, Histologie und Materialkontext ableiten",
+        "MMR/MSI-Befunde therapeutisch und hereditär korrekt einordnen",
+        "Musterlösung im MTB klar, limitiert und patientenrelevant kommunizieren"
+      ],
+      "tags": [
+        "CRC",
+        "MSI",
+        "Methylierung",
+        "Lynch",
+        "MTB",
+        "Phase",
+        "Mini"
+      ],
+      "ap1b_decision": "MTB; Länge=Mini; Schwierigkeit=Beginner; Status=beta-standardized"
+    },
+    {
+      "case_id": "MTB_ANGIO_001_v1_3",
+      "base_id": "MTB_ANGIO_001",
+      "title": "mCRC: Bevacizumab und VEGF-Angiogenese → Anti-VEGF biologisch erklären",
+      "domain": "MTB",
+      "met_addon_type": "no",
+      "subdomain": "CRC / RAS-BRAF / MSI-Lynch",
+      "case_type": "clinical_mini_decision",
+      "length_class": "Mini",
+      "estimated_minutes": {
+        "min": 3,
+        "max": 5
+      },
+      "difficulty": "Beginner",
+      "status": "beta-standardized",
+      "review_flag": "ok",
+      "review_priority": "low",
+      "core_decision": "Anti-VEGF biologisch erklären",
+      "learning_objectives": [
+        "Zentrale klinisch-molekulare Fragestellung aus Anamnese, Histologie und Materialkontext ableiten",
+        "Passende molekulare/IHC-basierte Methode zur Kernentscheidung auswählen",
+        "Musterlösung im MTB klar, limitiert und patientenrelevant kommunizieren"
+      ],
+      "tags": [
+        "CRC",
+        "MTB",
+        "Phase",
+        "Mini"
+      ],
+      "ap1b_decision": "MTB; Länge=Mini; Schwierigkeit=Beginner; Status=beta-standardized"
+    },
+    {
+      "case_id": "MTB_RCC_001_v1_3",
+      "base_id": "MTB_RCC_001",
+      "title": "Klarzelliges RCC: VHL/HIF/VEGF-Achse → Warum TKI/IO-Kombination plausibel ist",
+      "domain": "MTB",
+      "met_addon_type": "no",
+      "subdomain": "Sonstige klinische Molekularpathologie",
+      "case_type": "clinical_decision",
+      "length_class": "Standard",
+      "estimated_minutes": {
+        "min": 8,
+        "max": 15
+      },
+      "difficulty": "Intermediate",
+      "status": "beta-review",
+      "review_flag": "method rules prüfen",
+      "review_priority": "medium",
+      "core_decision": "Warum TKI/IO-Kombination plausibel ist",
+      "learning_objectives": [
+        "Zentrale klinisch-molekulare Fragestellung aus Anamnese, Histologie und Materialkontext ableiten",
+        "Passende molekulare/IHC-basierte Methode zur Kernentscheidung auswählen",
+        "Musterlösung im MTB klar, limitiert und patientenrelevant kommunizieren"
+      ],
+      "tags": [
+        "KI",
+        "RCC",
+        "MTB",
+        "Phase",
+        "Standard"
+      ],
+      "ap1b_decision": "MTB; Länge=Standard; Schwierigkeit=Intermediate; Status=beta-review"
+    },
+    {
+      "case_id": "MTB_GBM_ANGIO_001_v1_3",
+      "base_id": "MTB_GBM_ANGIO_001",
+      "title": "Glioblastom mit Gefäßproliferation und Hypoxie → Antiangiogenese: kurzfristiger Effekt vs. Resistenz",
+      "domain": "MTB",
+      "met_addon_type": "no",
+      "subdomain": "Neuroonkologie / Epigenetik / Methylierung",
+      "case_type": "clinical_mini_decision",
+      "length_class": "Mini",
+      "estimated_minutes": {
+        "min": 3,
+        "max": 5
+      },
+      "difficulty": "Beginner",
+      "status": "beta-standardized",
+      "review_flag": "ok",
+      "review_priority": "low",
+      "core_decision": "Antiangiogenese: kurzfristiger Effekt vs. Resistenz",
+      "learning_objectives": [
+        "Zentrale klinisch-molekulare Fragestellung aus Anamnese, Histologie und Materialkontext ableiten",
+        "Passende molekulare/IHC-basierte Methode zur Kernentscheidung auswählen",
+        "Musterlösung im MTB klar, limitiert und patientenrelevant kommunizieren"
+      ],
+      "tags": [
+        "MTB",
+        "Phase",
+        "Mini"
+      ],
+      "ap1b_decision": "MTB; Länge=Mini; Schwierigkeit=Beginner; Status=beta-standardized"
+    },
+    {
+      "case_id": "MTB_TME_001_v1_3",
+      "base_id": "MTB_TME_001",
+      "title": "Stromareicher Tumor mit immune-excluded Pattern → Warum Stroma Therapieantwort beeinflusst",
+      "domain": "MTB",
+      "met_addon_type": "no",
+      "subdomain": "Immunescape / IO / MSI-TMB-PD-L1",
+      "case_type": "clinical_decision",
+      "length_class": "Standard",
+      "estimated_minutes": {
+        "min": 8,
+        "max": 15
+      },
+      "difficulty": "Intermediate",
+      "status": "beta-review",
+      "review_flag": "method rules prüfen",
+      "review_priority": "medium",
+      "core_decision": "Warum Stroma Therapieantwort beeinflusst",
+      "learning_objectives": [
+        "Zentrale klinisch-molekulare Fragestellung aus Anamnese, Histologie und Materialkontext ableiten",
+        "Immunbiologische Marker nicht isoliert, sondern im Kontext von MSI/TMB/TILs/TME bewerten",
+        "Musterlösung im MTB klar, limitiert und patientenrelevant kommunizieren"
+      ],
+      "tags": [
+        "TME",
+        "Immunescape",
+        "MTB",
+        "Phase",
+        "Standard"
+      ],
+      "ap1b_decision": "MTB; Länge=Standard; Schwierigkeit=Intermediate; Status=beta-review"
+    },
+    {
+      "case_id": "MTB_INV_001_v1_3",
+      "base_id": "MTB_INV_001",
+      "title": "EMT-/Invasionsfront-Fall mit Metastasenrisiko → Morphologie → Hallmark → klinische Konsequenz",
+      "domain": "MTB",
+      "met_addon_type": "no",
+      "subdomain": "Sonstige klinische Molekularpathologie",
+      "case_type": "clinical_mini_decision",
+      "length_class": "Mini",
+      "estimated_minutes": {
+        "min": 3,
+        "max": 5
+      },
+      "difficulty": "Beginner",
+      "status": "beta-review",
+      "review_flag": "method rules prüfen",
+      "review_priority": "medium",
+      "core_decision": "Morphologie → Hallmark → klinische Konsequenz",
+      "learning_objectives": [
+        "Zentrale klinisch-molekulare Fragestellung aus Anamnese, Histologie und Materialkontext ableiten",
+        "Passende molekulare/IHC-basierte Methode zur Kernentscheidung auswählen",
+        "Musterlösung im MTB klar, limitiert und patientenrelevant kommunizieren"
+      ],
+      "tags": [
+        "MTB",
+        "Phase",
+        "Mini"
+      ],
+      "ap1b_decision": "MTB; Länge=Mini; Schwierigkeit=Beginner; Status=beta-review"
+    },
+    {
+      "case_id": "MET_NGS_001_v1_3",
+      "base_id": "MET_NGS_001",
+      "title": "Coverage-Loch in therapieentscheidendem Exon → Befund mit Limitation oder Wiederholung?",
+      "domain": "MTB",
+      "met_addon_type": "yes",
+      "subdomain": "Methodik / Befundinterpretation",
+      "case_type": "clinical_mini_decision",
+      "length_class": "Mini",
+      "estimated_minutes": {
+        "min": 3,
+        "max": 5
+      },
+      "difficulty": "Advanced",
+      "status": "beta-standardized",
+      "review_flag": "MVP prüfen",
+      "review_priority": "high",
+      "core_decision": "Befund mit Limitation oder Wiederholung?",
+      "learning_objectives": [
+        "Zentrale klinisch-molekulare Fragestellung aus Anamnese, Histologie und Materialkontext ableiten",
+        "Passende molekulare/IHC-basierte Methode zur Kernentscheidung auswählen",
+        "Musterlösung im MTB klar, limitiert und patientenrelevant kommunizieren"
+      ],
+      "tags": [
+        "NGS",
+        "Labor",
+        "MTB-LAB",
+        "MVP",
+        "Mini"
+      ],
+      "ap1b_decision": "MTB + MET-Zusatztyp; Länge=Mini; Schwierigkeit=Advanced; Status=beta-standardized"
+    },
+    {
+      "case_id": "MET_NGS_002_v1_3",
+      "base_id": "MET_NGS_002",
+      "title": "FFPE-C>T-Artefakt bei niedriger VAF → Artefakt vs. echte Subklonmutation",
+      "domain": "MTB",
+      "met_addon_type": "yes",
+      "subdomain": "Methodik / Befundinterpretation",
+      "case_type": "clinical_mini_decision",
+      "length_class": "Mini",
+      "estimated_minutes": {
+        "min": 3,
+        "max": 5
+      },
+      "difficulty": "Beginner",
+      "status": "beta-standardized",
+      "review_flag": "MVP prüfen",
+      "review_priority": "high",
+      "core_decision": "Artefakt vs. echte Subklonmutation",
+      "learning_objectives": [
+        "Zentrale klinisch-molekulare Fragestellung aus Anamnese, Histologie und Materialkontext ableiten",
+        "Passende molekulare/IHC-basierte Methode zur Kernentscheidung auswählen",
+        "Musterlösung im MTB klar, limitiert und patientenrelevant kommunizieren"
+      ],
+      "tags": [
+        "NGS",
+        "MTB-LAB",
+        "MVP",
+        "Mini"
+      ],
+      "ap1b_decision": "MTB + MET-Zusatztyp; Länge=Mini; Schwierigkeit=Beginner; Status=beta-standardized"
+    },
+    {
+      "case_id": "MET_NGS_004_v1_3",
+      "base_id": "MET_NGS_004",
+      "title": "Tumor-only NGS: Keimbahnverdacht BRCA/TP53 → Humangenetische Abklärung empfehlen?",
+      "domain": "MTB",
+      "met_addon_type": "yes",
+      "subdomain": "HRD / BRCA / PARP / Keimbahn",
+      "case_type": "clinical_decision",
+      "length_class": "Complex",
+      "estimated_minutes": {
+        "min": 20,
+        "max": 30
+      },
+      "difficulty": "Advanced",
+      "status": "beta-review",
+      "review_flag": "prüfen",
+      "review_priority": "high",
+      "core_decision": "Humangenetische Abklärung empfehlen?",
+      "learning_objectives": [
+        "Zentrale klinisch-molekulare Fragestellung aus Anamnese, Histologie und Materialkontext ableiten",
+        "Tumor-BRCA/HRD und Keimbahnkontext für PARP-Entscheidungen trennen",
+        "Musterlösung im MTB klar, limitiert und patientenrelevant kommunizieren"
+      ],
+      "tags": [
+        "BRCA",
+        "NGS",
+        "MTB",
+        "Phase",
+        "Standard, complex_case, AP1b_length_reclass"
+      ],
+      "ap1b_decision": "MTB + MET-Zusatztyp; Länge=Complex; Schwierigkeit=Advanced; Status=beta-review"
+    },
+    {
+      "case_id": "MET_RNA_001_v1_3",
+      "base_id": "MET_RNA_001",
+      "title": "DNA-NGS negativ, aber Fusionsverdacht bleibt → RNA-NGS/FISH ergänzen",
+      "domain": "MTB",
+      "met_addon_type": "yes",
+      "subdomain": "Methodik / Befundinterpretation",
+      "case_type": "clinical_decision",
+      "length_class": "Standard",
+      "estimated_minutes": {
+        "min": 8,
+        "max": 15
+      },
+      "difficulty": "Intermediate",
+      "status": "beta-standardized",
+      "review_flag": "MVP prüfen",
+      "review_priority": "high",
+      "core_decision": "RNA-NGS/FISH ergänzen",
+      "learning_objectives": [
+        "Zentrale klinisch-molekulare Fragestellung aus Anamnese, Histologie und Materialkontext ableiten",
+        "RNA-basierte Fusionsdiagnostik gegenüber DNA-only- oder Einzeltests korrekt priorisieren",
+        "Musterlösung im MTB klar, limitiert und patientenrelevant kommunizieren"
+      ],
+      "tags": [
+        "NGS",
+        "RNA",
+        "FISH",
+        "MTB",
+        "MVP",
+        "Standard"
+      ],
+      "ap1b_decision": "MTB + MET-Zusatztyp; Länge=Standard; Schwierigkeit=Intermediate; Status=beta-standardized"
+    },
+    {
+      "case_id": "MET_LB_001_v1_3",
+      "base_id": "MET_LB_001",
+      "title": "Liquid Biopsy negativ bei Progress → Negativ ≠ sicher negativ",
+      "domain": "MTB",
+      "met_addon_type": "yes",
+      "subdomain": "Methodik / Befundinterpretation",
+      "case_type": "clinical_decision",
+      "length_class": "Standard",
+      "estimated_minutes": {
+        "min": 8,
+        "max": 15
+      },
+      "difficulty": "Advanced",
+      "status": "beta-review",
+      "review_flag": "prüfen",
+      "review_priority": "high",
+      "core_decision": "Negativ ≠ sicher negativ",
+      "learning_objectives": [
+        "Zentrale klinisch-molekulare Fragestellung aus Anamnese, Histologie und Materialkontext ableiten",
+        "Negative Liquid Biopsy als methodisch limitierten Befund einordnen und Gewebe-Rebiopsie begründen",
+        "Musterlösung im MTB klar, limitiert und patientenrelevant kommunizieren"
+      ],
+      "tags": [
+        "Liquid",
+        "Biopsy",
+        "MTB",
+        "Phase",
+        "Standard"
+      ],
+      "ap1b_decision": "MTB + MET-Zusatztyp; Länge=Standard; Schwierigkeit=Advanced; Status=beta-review"
+    },
+    {
+      "case_id": "MET_PCR_001_v1_3",
+      "base_id": "MET_PCR_001",
+      "title": "qPCR/dPCR für MRD statt breites Panel → Zielgerichtete sensitive Methode wählen",
+      "domain": "MTB",
+      "met_addon_type": "yes",
+      "subdomain": "Methodik / Befundinterpretation",
+      "case_type": "clinical_mini_decision",
+      "length_class": "Mini",
+      "estimated_minutes": {
+        "min": 3,
+        "max": 5
+      },
+      "difficulty": "Beginner",
+      "status": "beta-review",
+      "review_flag": "method rules prüfen",
+      "review_priority": "medium",
+      "core_decision": "Zielgerichtete sensitive Methode wählen",
+      "learning_objectives": [
+        "Zentrale klinisch-molekulare Fragestellung aus Anamnese, Histologie und Materialkontext ableiten",
+        "Passende molekulare/IHC-basierte Methode zur Kernentscheidung auswählen",
+        "Musterlösung im MTB klar, limitiert und patientenrelevant kommunizieren"
+      ],
+      "tags": [
+        "MTB-LAB",
+        "Phase",
+        "Mini"
+      ],
+      "ap1b_decision": "MTB + MET-Zusatztyp; Länge=Mini; Schwierigkeit=Beginner; Status=beta-review"
+    },
+    {
+      "case_id": "MET_METH_001_v1_3",
+      "base_id": "MET_METH_001",
+      "title": "Bisulfit-PCR vs. Methylierungsarray → Lokaler Marker vs. globale Klassifikation",
+      "domain": "MTB",
+      "met_addon_type": "yes",
+      "subdomain": "Neuroonkologie / Epigenetik / Methylierung",
+      "case_type": "clinical_mini_decision",
+      "length_class": "Mini",
+      "estimated_minutes": {
+        "min": 3,
+        "max": 5
+      },
+      "difficulty": "Beginner",
+      "status": "beta-standardized",
+      "review_flag": "ok",
+      "review_priority": "low",
+      "core_decision": "Lokaler Marker vs. globale Klassifikation",
+      "learning_objectives": [
+        "Zentrale klinisch-molekulare Fragestellung aus Anamnese, Histologie und Materialkontext ableiten",
+        "Epigenetische Marker/Methylierungsprofile als diagnostische oder prädiktive Ebene einordnen",
+        "Musterlösung im MTB klar, limitiert und patientenrelevant kommunizieren"
+      ],
+      "tags": [
+        "NGS",
+        "Methylierung",
+        "MTB",
+        "Phase",
+        "Mini"
+      ],
+      "ap1b_decision": "MTB + MET-Zusatztyp; Länge=Mini; Schwierigkeit=Beginner; Status=beta-standardized"
+    },
+    {
+      "case_id": "MET_FISH_001_v1_3",
+      "base_id": "MET_FISH_001",
+      "title": "Amplifikation/Fusion: FISH als schnelle Ergänzung → Wann ISH/FISH sinnvoll bleibt",
+      "domain": "MTB",
+      "met_addon_type": "yes",
+      "subdomain": "Methodik / Befundinterpretation",
+      "case_type": "clinical_mini_decision",
+      "length_class": "Mini",
+      "estimated_minutes": {
+        "min": 3,
+        "max": 5
+      },
+      "difficulty": "Beginner",
+      "status": "beta-standardized",
+      "review_flag": "ok",
+      "review_priority": "low",
+      "core_decision": "Wann ISH/FISH sinnvoll bleibt",
+      "learning_objectives": [
+        "Zentrale klinisch-molekulare Fragestellung aus Anamnese, Histologie und Materialkontext ableiten",
+        "RNA-basierte Fusionsdiagnostik gegenüber DNA-only- oder Einzeltests korrekt priorisieren",
+        "Musterlösung im MTB klar, limitiert und patientenrelevant kommunizieren"
+      ],
+      "tags": [
+        "FISH",
+        "MTB-LAB",
+        "Phase",
+        "Mini"
+      ],
+      "ap1b_decision": "MTB + MET-Zusatztyp; Länge=Mini; Schwierigkeit=Beginner; Status=beta-standardized"
+    },
+    {
+      "case_id": "MET_MULTI_001_v1_3",
+      "base_id": "MET_MULTI_001",
+      "title": "Multiomics-Bericht: viel Information, wenig Entscheidung → Kernaussage fürs Tumorboard extrahieren",
+      "domain": "MTB",
+      "met_addon_type": "yes",
+      "subdomain": "Methodik / Befundinterpretation",
+      "case_type": "clinical_decision",
+      "length_class": "Standard",
+      "estimated_minutes": {
+        "min": 8,
+        "max": 15
+      },
+      "difficulty": "Intermediate",
+      "status": "beta-review",
+      "review_flag": "method rules prüfen",
+      "review_priority": "medium",
+      "core_decision": "Kernaussage fürs Tumorboard extrahieren",
+      "learning_objectives": [
+        "Zentrale klinisch-molekulare Fragestellung aus Anamnese, Histologie und Materialkontext ableiten",
+        "Passende molekulare/IHC-basierte Methode zur Kernentscheidung auswählen",
+        "Musterlösung im MTB klar, limitiert und patientenrelevant kommunizieren"
+      ],
+      "tags": [
+        "RNA",
+        "Omics",
+        "MTB-RES",
+        "Phase",
+        "Standard"
+      ],
+      "ap1b_decision": "MTB + MET-Zusatztyp; Länge=Standard; Schwierigkeit=Intermediate; Status=beta-review"
+    },
+    {
+      "case_id": "LAB_PRE_001_v1_3",
+      "base_id": "LAB_PRE_001",
+      "title": "Unbeschriftetes Röhrchen im Eingang → Stoppen, klären, dokumentieren",
+      "domain": "LAB",
+      "met_addon_type": "no",
+      "subdomain": "Präanalytik / Probenmanagement",
+      "case_type": "qm_capa_decision",
+      "length_class": "Mini",
+      "estimated_minutes": {
+        "min": 3,
+        "max": 5
+      },
+      "difficulty": "Beginner",
+      "status": "beta-standardized",
+      "review_flag": "MVP prüfen",
+      "review_priority": "high",
+      "core_decision": "Stoppen, klären, dokumentieren",
+      "learning_objectives": [
+        "Patientensicherheits- und Qualitätsrisiko des Ereignisses korrekt priorisieren",
+        "Präanalytische Identitäts-, Material- und Qualitätsgrenzen erkennen",
+        "Freigabe-, Sperr- oder Wiederholungsentscheidung auditfähig begründen"
+      ],
+      "tags": [
+        "Labor",
+        "LAB",
+        "MVP",
+        "Mini"
+      ],
+      "ap1b_decision": "LAB; Länge=Mini; Schwierigkeit=Beginner; Status=beta-standardized"
+    },
+    {
+      "case_id": "LAB_PRE_002_v1_3",
+      "base_id": "LAB_PRE_002",
+      "title": "FFPE-Block alt, Tumoranteil niedrig, DNA schlecht → Befundbar, eingeschränkt oder neues Material?",
+      "domain": "LAB",
+      "met_addon_type": "no",
+      "subdomain": "Präanalytik / Probenmanagement",
+      "case_type": "qm_capa_decision",
+      "length_class": "Standard",
+      "estimated_minutes": {
+        "min": 8,
+        "max": 15
+      },
+      "difficulty": "Intermediate",
+      "status": "beta-standardized",
+      "review_flag": "MVP prüfen",
+      "review_priority": "high",
+      "core_decision": "Befundbar, eingeschränkt oder neues Material?",
+      "learning_objectives": [
+        "Patientensicherheits- und Qualitätsrisiko des Ereignisses korrekt priorisieren",
+        "Präanalytische Identitäts-, Material- und Qualitätsgrenzen erkennen",
+        "Freigabe-, Sperr- oder Wiederholungsentscheidung auditfähig begründen"
+      ],
+      "tags": [
+        "Labor",
+        "LAB-MTB",
+        "MVP",
+        "Standard"
+      ],
+      "ap1b_decision": "LAB; Länge=Standard; Schwierigkeit=Intermediate; Status=beta-standardized"
+    },
+    {
+      "case_id": "LAB_PRE_003_v1_3",
+      "base_id": "LAB_PRE_003",
+      "title": "Liquid-Biopsy-Blut zu lange unzentrifugiert → Probe ablehnen oder limitiert analysieren?",
+      "domain": "LAB",
+      "met_addon_type": "no",
+      "subdomain": "Präanalytik / Probenmanagement",
+      "case_type": "qm_capa_decision",
+      "length_class": "Mini",
+      "estimated_minutes": {
+        "min": 3,
+        "max": 5
+      },
+      "difficulty": "Beginner",
+      "status": "beta-standardized",
+      "review_flag": "ok",
+      "review_priority": "low",
+      "core_decision": "Probe ablehnen oder limitiert analysieren?",
+      "learning_objectives": [
+        "Patientensicherheits- und Qualitätsrisiko des Ereignisses korrekt priorisieren",
+        "Präanalytische Identitäts-, Material- und Qualitätsgrenzen erkennen",
+        "Freigabe-, Sperr- oder Wiederholungsentscheidung auditfähig begründen"
+      ],
+      "tags": [
+        "Liquid",
+        "Biopsy",
+        "Labor",
+        "LAB",
+        "Phase",
+        "Mini"
+      ],
+      "ap1b_decision": "LAB; Länge=Mini; Schwierigkeit=Beginner; Status=beta-standardized"
+    },
+    {
+      "case_id": "LAB_PRE_004_v1_3",
+      "base_id": "LAB_PRE_004",
+      "title": "Dekalzifiziertes Knochenmaterial für NGS → Methodengrenze erkennen",
+      "domain": "LAB",
+      "met_addon_type": "no",
+      "subdomain": "Präanalytik / Probenmanagement",
+      "case_type": "qm_capa_decision",
+      "length_class": "Mini",
+      "estimated_minutes": {
+        "min": 3,
+        "max": 5
+      },
+      "difficulty": "Beginner",
+      "status": "beta-standardized",
+      "review_flag": "ok",
+      "review_priority": "low",
+      "core_decision": "Methodengrenze erkennen",
+      "learning_objectives": [
+        "Patientensicherheits- und Qualitätsrisiko des Ereignisses korrekt priorisieren",
+        "Präanalytische Identitäts-, Material- und Qualitätsgrenzen erkennen",
+        "Freigabe-, Sperr- oder Wiederholungsentscheidung auditfähig begründen"
+      ],
+      "tags": [
+        "NGS",
+        "Labor",
+        "LAB",
+        "Phase",
+        "Mini"
+      ],
+      "ap1b_decision": "LAB; Länge=Mini; Schwierigkeit=Beginner; Status=beta-standardized"
+    },
+    {
+      "case_id": "LAB_PRE_005_v1_3",
+      "base_id": "LAB_PRE_005",
+      "title": "Forschung möchte 20 Schnitte aus kleinem Biopsieblock → Routinepriorität vs. Forschungsinteresse",
+      "domain": "LAB",
+      "met_addon_type": "no",
+      "subdomain": "Präanalytik / Probenmanagement",
+      "case_type": "qm_capa_decision",
+      "length_class": "Standard",
+      "estimated_minutes": {
+        "min": 8,
+        "max": 15
+      },
+      "difficulty": "Intermediate",
+      "status": "beta-standardized",
+      "review_flag": "ok",
+      "review_priority": "low",
+      "core_decision": "Routinepriorität vs. Forschungsinteresse",
+      "learning_objectives": [
+        "Patientensicherheits- und Qualitätsrisiko des Ereignisses korrekt priorisieren",
+        "Präanalytische Identitäts-, Material- und Qualitätsgrenzen erkennen",
+        "Freigabe-, Sperr- oder Wiederholungsentscheidung auditfähig begründen"
+      ],
+      "tags": [
+        "NGS",
+        "Labor",
+        "LAB-RES",
+        "Phase",
+        "Standard"
+      ],
+      "ap1b_decision": "LAB; Länge=Standard; Schwierigkeit=Intermediate; Status=beta-standardized"
+    },
+    {
+      "case_id": "LAB_RUN_001_v1_3",
+      "base_id": "LAB_RUN_001",
+      "title": "Positivkontrolle schwach, Patientenproben scheinbar okay → Run freigeben, teilfreigeben oder wiederholen?",
+      "domain": "LAB",
+      "met_addon_type": "no",
+      "subdomain": "Analytik / Kontrollen / Run-Freigabe",
+      "case_type": "qm_capa_decision",
+      "length_class": "Standard",
+      "estimated_minutes": {
+        "min": 8,
+        "max": 15
+      },
+      "difficulty": "Intermediate",
+      "status": "beta-standardized",
+      "review_flag": "MVP prüfen",
+      "review_priority": "high",
+      "core_decision": "Run freigeben, teilfreigeben oder wiederholen?",
+      "learning_objectives": [
+        "Patientensicherheits- und Qualitätsrisiko des Ereignisses korrekt priorisieren",
+        "Kontroll- und Run-Freigabelogik risikobasiert anwenden",
+        "Freigabe-, Sperr- oder Wiederholungsentscheidung auditfähig begründen"
+      ],
+      "tags": [
+        "Labor",
+        "LAB",
+        "MVP",
+        "Standard"
+      ],
+      "ap1b_decision": "LAB; Länge=Standard; Schwierigkeit=Intermediate; Status=beta-standardized"
+    },
+    {
+      "case_id": "LAB_RUN_003_v1_3",
+      "base_id": "LAB_RUN_003",
+      "title": "Duplicate-Rate bei zwei Proben erhöht → Ursache, Befundgrenze, Wiederholung",
+      "domain": "LAB",
+      "met_addon_type": "no",
+      "subdomain": "Analytik / Kontrollen / Run-Freigabe",
+      "case_type": "qm_capa_decision",
+      "length_class": "Mini",
+      "estimated_minutes": {
+        "min": 3,
+        "max": 5
+      },
+      "difficulty": "Beginner",
+      "status": "beta-standardized",
+      "review_flag": "ok",
+      "review_priority": "low",
+      "core_decision": "Ursache, Befundgrenze, Wiederholung",
+      "learning_objectives": [
+        "Patientensicherheits- und Qualitätsrisiko des Ereignisses korrekt priorisieren",
+        "Präanalytische Identitäts-, Material- und Qualitätsgrenzen erkennen",
+        "Freigabe-, Sperr- oder Wiederholungsentscheidung auditfähig begründen"
+      ],
+      "tags": [
+        "NGS",
+        "Labor",
+        "LAB",
+        "Phase",
+        "Mini"
+      ],
+      "ap1b_decision": "LAB; Länge=Mini; Schwierigkeit=Beginner; Status=beta-standardized"
+    },
+    {
+      "case_id": "LAB_RUN_004_v1_3",
+      "base_id": "LAB_RUN_004",
+      "title": "Neues NGS-Kit-Lot vor Routineeinsatz → Lot-Verifizierung und Dokumentation",
+      "domain": "LAB",
+      "met_addon_type": "no",
+      "subdomain": "Analytik / Kontrollen / Run-Freigabe",
+      "case_type": "qm_capa_decision",
+      "length_class": "Standard",
+      "estimated_minutes": {
+        "min": 8,
+        "max": 15
+      },
+      "difficulty": "Intermediate",
+      "status": "beta-standardized",
+      "review_flag": "ok",
+      "review_priority": "low",
+      "core_decision": "Lot-Verifizierung und Dokumentation",
+      "learning_objectives": [
+        "Patientensicherheits- und Qualitätsrisiko des Ereignisses korrekt priorisieren",
+        "Kontroll- und Run-Freigabelogik risikobasiert anwenden",
+        "Freigabe-, Sperr- oder Wiederholungsentscheidung auditfähig begründen"
+      ],
+      "tags": [
+        "NGS",
+        "Labor",
+        "KI",
+        "KIT",
+        "LAB",
+        "Phase",
+        "Standard"
+      ],
+      "ap1b_decision": "LAB; Länge=Standard; Schwierigkeit=Intermediate; Status=beta-standardized"
+    },
+    {
+      "case_id": "LAB_RUN_005_v1_3",
+      "base_id": "LAB_RUN_005",
+      "title": "PCR-Inhibition durch Ethanolreste im Eluat → Wiederholung Extraktion?",
+      "domain": "LAB",
+      "met_addon_type": "no",
+      "subdomain": "Analytik / Kontrollen / Run-Freigabe",
+      "case_type": "qm_capa_decision",
+      "length_class": "Mini",
+      "estimated_minutes": {
+        "min": 3,
+        "max": 5
+      },
+      "difficulty": "Beginner",
+      "status": "beta-standardized",
+      "review_flag": "ok",
+      "review_priority": "low",
+      "core_decision": "Wiederholung Extraktion?",
+      "learning_objectives": [
+        "Patientensicherheits- und Qualitätsrisiko des Ereignisses korrekt priorisieren",
+        "Abweichung, Ursachenanalyse und CAPA nachvollziehbar dokumentieren",
+        "Freigabe-, Sperr- oder Wiederholungsentscheidung auditfähig begründen"
+      ],
+      "tags": [
+        "Labor",
+        "LAB",
+        "Phase",
+        "Mini"
+      ],
+      "ap1b_decision": "LAB; Länge=Mini; Schwierigkeit=Beginner; Status=beta-standardized"
+    },
+    {
+      "case_id": "LAB_RUN_006_v1_3",
+      "base_id": "LAB_RUN_006",
+      "title": "Post-PCR-Produkt gelangt in Prä-PCR-Bereich → Sofortmaßnahmen, Flächensanierung, CAPA",
+      "domain": "LAB",
+      "met_addon_type": "no",
+      "subdomain": "Analytik / Kontrollen / Run-Freigabe",
+      "case_type": "qm_planspiel",
+      "length_class": "Planspiel",
+      "estimated_minutes": {
+        "min": 30,
+        "max": 60
+      },
+      "difficulty": "Expert",
+      "status": "beta-review",
+      "review_flag": "planspiel separat",
+      "review_priority": "high",
+      "core_decision": "Sofortmaßnahmen, Flächensanierung, CAPA",
+      "learning_objectives": [
+        "Patientensicherheits- und Qualitätsrisiko des Ereignisses korrekt priorisieren",
+        "Kontroll- und Run-Freigabelogik risikobasiert anwenden",
+        "Freigabe-, Sperr- oder Wiederholungsentscheidung auditfähig begründen"
+      ],
+      "tags": [
+        "Labor",
+        "CAPA",
+        "LAB",
+        "Phase",
+        "Planspiel"
+      ],
+      "ap1b_decision": "LAB; Länge=Planspiel; Schwierigkeit=Expert; Status=beta-review"
+    },
+    {
+      "case_id": "LAB_POST_002_v1_3",
+      "base_id": "LAB_POST_002",
+      "title": "Datenbankversion ClinVar/COSMIC nicht dokumentiert → Auditfest dokumentieren",
+      "domain": "LAB",
+      "met_addon_type": "no",
+      "subdomain": "Postanalytik / Bioinformatik / Change-Control",
+      "case_type": "qm_capa_decision",
+      "length_class": "Mini",
+      "estimated_minutes": {
+        "min": 3,
+        "max": 5
+      },
+      "difficulty": "Expert",
+      "status": "beta-review",
+      "review_flag": "prüfen",
+      "review_priority": "high",
+      "core_decision": "Auditfest dokumentieren",
+      "learning_objectives": [
+        "Patientensicherheits- und Qualitätsrisiko des Ereignisses korrekt priorisieren",
+        "Pipeline-/Softwareänderungen über Change-Control, Revalidierung und Versionierung absichern",
+        "Freigabe-, Sperr- oder Wiederholungsentscheidung auditfähig begründen"
+      ],
+      "tags": [
+        "Labor",
+        "Audit",
+        "Daten",
+        "LAB",
+        "Phase",
+        "Mini"
+      ],
+      "ap1b_decision": "LAB; Länge=Mini; Schwierigkeit=Expert; Status=beta-review"
+    },
+    {
+      "case_id": "LAB_POST_003_v1_3",
+      "base_id": "LAB_POST_003",
+      "title": "Automatischer Report klassifiziert VUS als „actionable“ → Ärztlich-wissenschaftliche Freigabe",
+      "domain": "LAB",
+      "met_addon_type": "yes",
+      "subdomain": "Methodik / Befundinterpretation",
+      "case_type": "qm_capa_decision",
+      "length_class": "Standard",
+      "estimated_minutes": {
+        "min": 8,
+        "max": 15
+      },
+      "difficulty": "Advanced",
+      "status": "beta-standardized",
+      "review_flag": "MVP prüfen",
+      "review_priority": "high",
+      "core_decision": "Ärztlich-wissenschaftliche Freigabe",
+      "learning_objectives": [
+        "Patientensicherheits- und Qualitätsrisiko des Ereignisses korrekt priorisieren",
+        "Abweichung, Ursachenanalyse und CAPA nachvollziehbar dokumentieren",
+        "Freigabe-, Sperr- oder Wiederholungsentscheidung auditfähig begründen"
+      ],
+      "tags": [
+        "VUS",
+        "Labor",
+        "KI",
+        "LAB-MTB",
+        "MVP",
+        "Standard"
+      ],
+      "ap1b_decision": "LAB + MET-Zusatztyp; Länge=Standard; Schwierigkeit=Advanced; Status=beta-standardized"
+    },
+    {
+      "case_id": "LAB_POST_004_v1_3",
+      "base_id": "LAB_POST_004",
+      "title": "Tumorboard verlangt „alles negativ“ → Methodische Grenzen erklären",
+      "domain": "LAB",
+      "met_addon_type": "no",
+      "subdomain": "Postanalytik / Bioinformatik / Change-Control",
+      "case_type": "qm_capa_decision",
+      "length_class": "Mini",
+      "estimated_minutes": {
+        "min": 3,
+        "max": 5
+      },
+      "difficulty": "Beginner",
+      "status": "beta-standardized",
+      "review_flag": "ok",
+      "review_priority": "low",
+      "core_decision": "Methodische Grenzen erklären",
+      "learning_objectives": [
+        "Patientensicherheits- und Qualitätsrisiko des Ereignisses korrekt priorisieren",
+        "Abweichung, Ursachenanalyse und CAPA nachvollziehbar dokumentieren",
+        "Freigabe-, Sperr- oder Wiederholungsentscheidung auditfähig begründen"
+      ],
+      "tags": [
+        "LAB-MTB",
+        "Phase",
+        "Mini"
+      ],
+      "ap1b_decision": "LAB; Länge=Mini; Schwierigkeit=Beginner; Status=beta-standardized"
+    },
+    {
+      "case_id": "LAB_POST_005_v1_3",
+      "base_id": "LAB_POST_005",
+      "title": "Befundfreigabe trotz Coverage-Lücke → Limitation, Nachtestung, Rücksprache",
+      "domain": "LAB",
+      "met_addon_type": "yes",
+      "subdomain": "Methodik / Befundinterpretation",
+      "case_type": "qm_capa_decision",
+      "length_class": "Standard",
+      "estimated_minutes": {
+        "min": 8,
+        "max": 15
+      },
+      "difficulty": "Intermediate",
+      "status": "beta-review",
+      "review_flag": "prüfen",
+      "review_priority": "medium",
+      "core_decision": "Limitation, Nachtestung, Rücksprache",
+      "learning_objectives": [
+        "Patientensicherheits- und Qualitätsrisiko des Ereignisses korrekt priorisieren",
+        "Abweichung, Ursachenanalyse und CAPA nachvollziehbar dokumentieren",
+        "Freigabe-, Sperr- oder Wiederholungsentscheidung auditfähig begründen"
+      ],
+      "tags": [
+        "Labor",
+        "LAB",
+        "Phase",
+        "Standard"
+      ],
+      "ap1b_decision": "LAB + MET-Zusatztyp; Länge=Standard; Schwierigkeit=Intermediate; Status=beta-review"
+    },
+    {
+      "case_id": "LAB_DOC_002_v1_3",
+      "base_id": "LAB_DOC_002",
+      "title": "Probe → Rohdaten → Pipeline → Befund nicht rückverfolgbar → LIMS-/ELN-Kette rekonstruieren",
+      "domain": "LAB",
+      "met_addon_type": "no",
+      "subdomain": "Dokumentation / Rückverfolgbarkeit / Audit",
+      "case_type": "qm_capa_decision",
+      "length_class": "Standard",
+      "estimated_minutes": {
+        "min": 8,
+        "max": 15
+      },
+      "difficulty": "Intermediate",
+      "status": "beta-standardized",
+      "review_flag": "MVP prüfen",
+      "review_priority": "high",
+      "core_decision": "LIMS-/ELN-Kette rekonstruieren",
+      "learning_objectives": [
+        "Patientensicherheits- und Qualitätsrisiko des Ereignisses korrekt priorisieren",
+        "Pipeline-/Softwareänderungen über Change-Control, Revalidierung und Versionierung absichern",
+        "Freigabe-, Sperr- oder Wiederholungsentscheidung auditfähig begründen"
+      ],
+      "tags": [
+        "Labor",
+        "Daten",
+        "LIMS",
+        "Pipeline",
+        "LAB",
+        "MVP",
+        "Standard"
+      ],
+      "ap1b_decision": "LAB; Länge=Standard; Schwierigkeit=Intermediate; Status=beta-standardized"
+    },
+    {
+      "case_id": "LAB_AUDIT_001_v1_3",
+      "base_id": "LAB_AUDIT_001",
+      "title": "Auditor fragt nach SOP-Version und Schulungsnachweis → Dokumente/Kompetenzmatrix zeigen",
+      "domain": "LAB",
+      "met_addon_type": "no",
+      "subdomain": "Labor-QM / CAPA / Audit",
+      "case_type": "qm_capa_decision",
+      "length_class": "Complex",
+      "estimated_minutes": {
+        "min": 20,
+        "max": 30
+      },
+      "difficulty": "Expert",
+      "status": "beta-standardized",
+      "review_flag": "MVP prüfen",
+      "review_priority": "high",
+      "core_decision": "Dokumente/Kompetenzmatrix zeigen",
+      "learning_objectives": [
+        "Patientensicherheits- und Qualitätsrisiko des Ereignisses korrekt priorisieren",
+        "Pipeline-/Softwareänderungen über Change-Control, Revalidierung und Versionierung absichern",
+        "Freigabe-, Sperr- oder Wiederholungsentscheidung auditfähig begründen"
+      ],
+      "tags": [
+        "NGS",
+        "Labor",
+        "Audit",
+        "LAB",
+        "MVP",
+        "Standard, complex_case, AP1b_length_reclass"
+      ],
+      "ap1b_decision": "LAB; Länge=Complex; Schwierigkeit=Expert; Status=beta-standardized"
+    },
+    {
+      "case_id": "LAB_CAPA_001_v1_3",
+      "base_id": "LAB_CAPA_001",
+      "title": "Wiederholte Kontamination in einem Assay → Root Cause, Korrektur, Prävention",
+      "domain": "LAB",
+      "met_addon_type": "no",
+      "subdomain": "Labor-QM / CAPA / Audit",
+      "case_type": "qm_planspiel",
+      "length_class": "Planspiel",
+      "estimated_minutes": {
+        "min": 30,
+        "max": 60
+      },
+      "difficulty": "Expert",
+      "status": "beta-review",
+      "review_flag": "planspiel separat",
+      "review_priority": "high",
+      "core_decision": "Root Cause, Korrektur, Prävention",
+      "learning_objectives": [
+        "Patientensicherheits- und Qualitätsrisiko des Ereignisses korrekt priorisieren",
+        "Abweichung, Ursachenanalyse und CAPA nachvollziehbar dokumentieren",
+        "Freigabe-, Sperr- oder Wiederholungsentscheidung auditfähig begründen"
+      ],
+      "tags": [
+        "Labor",
+        "CAPA",
+        "LAB",
+        "MVP",
+        "Planspiel"
+      ],
+      "ap1b_decision": "LAB; Länge=Planspiel; Schwierigkeit=Expert; Status=beta-review"
+    },
+    {
+      "case_id": "LAB_QM_001_v1_3",
+      "base_id": "LAB_QM_001",
+      "title": "Abweichung wurde informell gelöst, aber nicht gemeldet → Deviation melden statt vertuschen",
+      "domain": "LAB",
+      "met_addon_type": "no",
+      "subdomain": "Labor-QM / CAPA / Audit",
+      "case_type": "qm_capa_decision",
+      "length_class": "Mini",
+      "estimated_minutes": {
+        "min": 3,
+        "max": 5
+      },
+      "difficulty": "Beginner",
+      "status": "beta-standardized",
+      "review_flag": "ok",
+      "review_priority": "low",
+      "core_decision": "Deviation melden statt vertuschen",
+      "learning_objectives": [
+        "Patientensicherheits- und Qualitätsrisiko des Ereignisses korrekt priorisieren",
+        "Abweichung, Ursachenanalyse und CAPA nachvollziehbar dokumentieren",
+        "Freigabe-, Sperr- oder Wiederholungsentscheidung auditfähig begründen"
+      ],
+      "tags": [
+        "Labor",
+        "LAB",
+        "Phase",
+        "Mini"
+      ],
+      "ap1b_decision": "LAB; Länge=Mini; Schwierigkeit=Beginner; Status=beta-standardized"
+    },
+    {
+      "case_id": "LAB_LLM_001_v1_3",
+      "base_id": "LAB_LLM_001",
+      "title": "LLM erstellt SOP-Entwurf mit fachlichen Fehlern → Output prüfen, Datenschutz/QM beachten",
+      "domain": "LAB",
+      "met_addon_type": "no",
+      "subdomain": "Labor-QM / CAPA / Audit",
+      "case_type": "qm_capa_decision",
+      "length_class": "Mini",
+      "estimated_minutes": {
+        "min": 3,
+        "max": 5
+      },
+      "difficulty": "Advanced",
+      "status": "beta-review",
+      "review_flag": "prüfen",
+      "review_priority": "high",
+      "core_decision": "Output prüfen, Datenschutz/QM beachten",
+      "learning_objectives": [
+        "Patientensicherheits- und Qualitätsrisiko des Ereignisses korrekt priorisieren",
+        "Datenintegrität, Datenschutz und Notfallprozesse strukturiert adressieren",
+        "Freigabe-, Sperr- oder Wiederholungsentscheidung auditfähig begründen"
+      ],
+      "tags": [
+        "Labor",
+        "Daten",
+        "LAB",
+        "Phase",
+        "Mini"
+      ],
+      "ap1b_decision": "LAB; Länge=Mini; Schwierigkeit=Advanced; Status=beta-review"
+    },
+    {
+      "case_id": "LAB_DIGI_001_v1_3",
+      "base_id": "LAB_DIGI_001",
+      "title": "WSI-Scan unscharf: trotzdem für Tumoranteilsschätzung nutzen? → Bildqualität und Befundqualität",
+      "domain": "LAB",
+      "met_addon_type": "no",
+      "subdomain": "Labor-QM / CAPA / Audit",
+      "case_type": "qm_capa_decision",
+      "length_class": "Mini",
+      "estimated_minutes": {
+        "min": 3,
+        "max": 5
+      },
+      "difficulty": "Beginner",
+      "status": "beta-standardized",
+      "review_flag": "ok",
+      "review_priority": "low",
+      "core_decision": "Bildqualität und Befundqualität",
+      "learning_objectives": [
+        "Patientensicherheits- und Qualitätsrisiko des Ereignisses korrekt priorisieren",
+        "Abweichung, Ursachenanalyse und CAPA nachvollziehbar dokumentieren",
+        "Freigabe-, Sperr- oder Wiederholungsentscheidung auditfähig begründen"
+      ],
+      "tags": [
+        "Labor",
+        "LAB",
+        "Phase",
+        "Mini"
+      ],
+      "ap1b_decision": "LAB; Länge=Mini; Schwierigkeit=Beginner; Status=beta-standardized"
+    },
+    {
+      "case_id": "LAB_DIGI_002_v1_3",
+      "base_id": "LAB_DIGI_002",
+      "title": "PD-L1-KI-Score ohne lokale Validierung → KI als Assistenz, nicht finaler Befund",
+      "domain": "LAB",
+      "met_addon_type": "no",
+      "subdomain": "Immunescape / IO / MSI-TMB-PD-L1",
+      "case_type": "qm_capa_decision",
+      "length_class": "Standard",
+      "estimated_minutes": {
+        "min": 8,
+        "max": 15
+      },
+      "difficulty": "Intermediate",
+      "status": "beta-standardized",
+      "review_flag": "ok",
+      "review_priority": "low",
+      "core_decision": "KI als Assistenz, nicht finaler Befund",
+      "learning_objectives": [
+        "Patientensicherheits- und Qualitätsrisiko des Ereignisses korrekt priorisieren",
+        "Kontroll- und Run-Freigabelogik risikobasiert anwenden",
+        "Freigabe-, Sperr- oder Wiederholungsentscheidung auditfähig begründen"
+      ],
+      "tags": [
+        "Labor",
+        "KI",
+        "PD-L1",
+        "LAB-MTB",
+        "Phase",
+        "Standard"
+      ],
+      "ap1b_decision": "LAB; Länge=Standard; Schwierigkeit=Intermediate; Status=beta-standardized"
+    },
+    {
+      "case_id": "LAB_DATA_001_v1_3",
+      "base_id": "LAB_DATA_001",
+      "title": "Excel-Export mit Patientendaten im Projektordner → Pseudonymisierung/Need-to-know",
+      "domain": "LAB",
+      "met_addon_type": "no",
+      "subdomain": "Datenmanagement / IT-Sicherheit / Datenschutz",
+      "case_type": "qm_capa_decision",
+      "length_class": "Mini",
+      "estimated_minutes": {
+        "min": 3,
+        "max": 5
+      },
+      "difficulty": "Beginner",
+      "status": "beta-standardized",
+      "review_flag": "MVP prüfen",
+      "review_priority": "high",
+      "core_decision": "Pseudonymisierung/Need-to-know",
+      "learning_objectives": [
+        "Patientensicherheits- und Qualitätsrisiko des Ereignisses korrekt priorisieren",
+        "Kontroll- und Run-Freigabelogik risikobasiert anwenden",
+        "Freigabe-, Sperr- oder Wiederholungsentscheidung auditfähig begründen"
+      ],
+      "tags": [
+        "Labor",
+        "Daten",
+        "LAB-RES",
+        "MVP",
+        "Mini"
+      ],
+      "ap1b_decision": "LAB; Länge=Mini; Schwierigkeit=Beginner; Status=beta-standardized"
+    },
+    {
+      "case_id": "LAB_DATA_002_v1_3",
+      "base_id": "LAB_DATA_002",
+      "title": "Ransomware/Serverausfall im NGS-Archiv → Backup, Notfallplan, Wiederherstellung",
+      "domain": "LAB",
+      "met_addon_type": "no",
+      "subdomain": "Datenmanagement / IT-Sicherheit / Datenschutz",
+      "case_type": "qm_planspiel",
+      "length_class": "Planspiel",
+      "estimated_minutes": {
+        "min": 30,
+        "max": 60
+      },
+      "difficulty": "Expert",
+      "status": "beta-review",
+      "review_flag": "planspiel separat",
+      "review_priority": "high",
+      "core_decision": "Backup, Notfallplan, Wiederherstellung",
+      "learning_objectives": [
+        "Patientensicherheits- und Qualitätsrisiko des Ereignisses korrekt priorisieren",
+        "Datenintegrität, Datenschutz und Notfallprozesse strukturiert adressieren",
+        "Freigabe-, Sperr- oder Wiederholungsentscheidung auditfähig begründen"
+      ],
+      "tags": [
+        "NGS",
+        "Labor",
+        "LAB",
+        "Phase",
+        "Planspiel"
+      ],
+      "ap1b_decision": "LAB; Länge=Planspiel; Schwierigkeit=Expert; Status=beta-review"
+    },
+    {
+      "case_id": "LAB_LIMS_001_v1_3",
+      "base_id": "LAB_LIMS_001",
+      "title": "LIMS-Ausfall während Routinewoche → Papier-Backup, Nachpflege, Freigabeprozess",
+      "domain": "LAB",
+      "met_addon_type": "no",
+      "subdomain": "Labor-QM / CAPA / Audit",
+      "case_type": "qm_planspiel",
+      "length_class": "Planspiel",
+      "estimated_minutes": {
+        "min": 30,
+        "max": 60
+      },
+      "difficulty": "Expert",
+      "status": "beta-review",
+      "review_flag": "planspiel separat",
+      "review_priority": "high",
+      "core_decision": "Papier-Backup, Nachpflege, Freigabeprozess",
+      "learning_objectives": [
+        "Patientensicherheits- und Qualitätsrisiko des Ereignisses korrekt priorisieren",
+        "Abweichung, Ursachenanalyse und CAPA nachvollziehbar dokumentieren",
+        "Freigabe-, Sperr- oder Wiederholungsentscheidung auditfähig begründen"
+      ],
+      "tags": [
+        "Labor",
+        "LIMS",
+        "LAB",
+        "Phase",
+        "Planspiel"
+      ],
+      "ap1b_decision": "LAB; Länge=Planspiel; Schwierigkeit=Expert; Status=beta-review"
+    },
+    {
+      "case_id": "RES_HYP_002_v1_3",
+      "base_id": "RES_HYP_002",
+      "title": "Biomarker X ist „wichtig“ – aber wie operationalisieren? → Population, Marker, Cutoff, Outcome definieren",
+      "domain": "RES",
+      "met_addon_type": "no",
+      "subdomain": "Translationale Projektplanung",
+      "case_type": "research_design_decision",
+      "length_class": "Mini",
+      "estimated_minutes": {
+        "min": 3,
+        "max": 5
+      },
+      "difficulty": "Beginner",
+      "status": "beta-standardized",
+      "review_flag": "MVP prüfen",
+      "review_priority": "high",
+      "core_decision": "Population, Marker, Cutoff, Outcome definieren",
+      "learning_objectives": [
+        "Vage Projektidee in eine prüfbare, klinisch relevante Forschungsfrage übersetzen",
+        "PICO, Endpunkte, Analyseplan und Validierungsstrategie sauber definieren",
+        "Explorativ vs. konfirmatorisch transparent trennen und Data-Fishing vermeiden"
+      ],
+      "tags": [
+        "RES",
+        "MVP",
+        "Mini"
+      ],
+      "ap1b_decision": "RES; Länge=Mini; Schwierigkeit=Beginner; Status=beta-standardized"
+    },
+    {
+      "case_id": "RES_OMICS_002_v1_3",
+      "base_id": "RES_OMICS_002",
+      "title": "Single-Gene-Overinterpretation nach Omics → Netzwerk-/Pathwaykontext prüfen",
+      "domain": "RES",
+      "met_addon_type": "no",
+      "subdomain": "Omics / Analyse / Reproduzierbarkeit",
+      "case_type": "research_design_decision",
+      "length_class": "Mini",
+      "estimated_minutes": {
+        "min": 3,
+        "max": 5
+      },
+      "difficulty": "Beginner",
+      "status": "beta-standardized",
+      "review_flag": "ok",
+      "review_priority": "low",
+      "core_decision": "Netzwerk-/Pathwaykontext prüfen",
+      "learning_objectives": [
+        "Vage Projektidee in eine prüfbare, klinisch relevante Forschungsfrage übersetzen",
+        "Explorative Omics-Ergebnisse von validierbaren Hypothesen und Signaturen trennen",
+        "Explorativ vs. konfirmatorisch transparent trennen und Data-Fishing vermeiden"
+      ],
+      "tags": [
+        "Omics",
+        "RES",
+        "Phase",
+        "Mini"
+      ],
+      "ap1b_decision": "RES; Länge=Mini; Schwierigkeit=Beginner; Status=beta-standardized"
+    },
+    {
+      "case_id": "RES_OMICS_003_v1_3",
+      "base_id": "RES_OMICS_003",
+      "title": "Label-Inflation: alles ist Angiogenese/EMT/Immunevasion → Spezifische Hypothese erzwingen",
+      "domain": "RES",
+      "met_addon_type": "no",
+      "subdomain": "Immunescape / IO / MSI-TMB-PD-L1",
+      "case_type": "research_design_decision",
+      "length_class": "Mini",
+      "estimated_minutes": {
+        "min": 3,
+        "max": 5
+      },
+      "difficulty": "Beginner",
+      "status": "beta-standardized",
+      "review_flag": "ok",
+      "review_priority": "low",
+      "core_decision": "Spezifische Hypothese erzwingen",
+      "learning_objectives": [
+        "Vage Projektidee in eine prüfbare, klinisch relevante Forschungsfrage übersetzen",
+        "PICO, Endpunkte, Analyseplan und Validierungsstrategie sauber definieren",
+        "Explorativ vs. konfirmatorisch transparent trennen und Data-Fishing vermeiden"
+      ],
+      "tags": [
+        "Omics",
+        "Hypothese",
+        "RES",
+        "Phase",
+        "Mini"
+      ],
+      "ap1b_decision": "RES; Länge=Mini; Schwierigkeit=Beginner; Status=beta-standardized"
+    },
+    {
+      "case_id": "RES_IMM_001_v1_3",
+      "base_id": "RES_IMM_001",
+      "title": "ICI-Resistenz: JAK/STAT-Signatur aus RNA-Seq → Von Bioinformatik zur mechanistischen Hypothese",
+      "domain": "RES",
+      "met_addon_type": "no",
+      "subdomain": "Omics / Analyse / Reproduzierbarkeit",
+      "case_type": "research_design_decision",
+      "length_class": "Standard",
+      "estimated_minutes": {
+        "min": 8,
+        "max": 15
+      },
+      "difficulty": "Intermediate",
+      "status": "beta-standardized",
+      "review_flag": "ok",
+      "review_priority": "low",
+      "core_decision": "Von Bioinformatik zur mechanistischen Hypothese",
+      "learning_objectives": [
+        "Vage Projektidee in eine prüfbare, klinisch relevante Forschungsfrage übersetzen",
+        "Explorative Omics-Ergebnisse von validierbaren Hypothesen und Signaturen trennen",
+        "Explorativ vs. konfirmatorisch transparent trennen und Data-Fishing vermeiden"
+      ],
+      "tags": [
+        "RNA",
+        "Hypothese",
+        "RES",
+        "Phase",
+        "Standard"
+      ],
+      "ap1b_decision": "RES; Länge=Standard; Schwierigkeit=Intermediate; Status=beta-standardized"
+    },
+    {
+      "case_id": "RES_MOD_001_v1_3",
+      "base_id": "RES_MOD_001",
+      "title": "Zelllinie zeigt Effekt – aber passt sie zur Tumorentität? → Modellpassung prüfen",
+      "domain": "RES",
+      "met_addon_type": "no",
+      "subdomain": "Translationale Projektplanung",
+      "case_type": "research_design_decision",
+      "length_class": "Standard",
+      "estimated_minutes": {
+        "min": 8,
+        "max": 15
+      },
+      "difficulty": "Intermediate",
+      "status": "beta-standardized",
+      "review_flag": "ok",
+      "review_priority": "low",
+      "core_decision": "Modellpassung prüfen",
+      "learning_objectives": [
+        "Vage Projektidee in eine prüfbare, klinisch relevante Forschungsfrage übersetzen",
+        "PICO, Endpunkte, Analyseplan und Validierungsstrategie sauber definieren",
+        "Explorativ vs. konfirmatorisch transparent trennen und Data-Fishing vermeiden"
+      ],
+      "tags": [
+        "RES",
+        "Phase",
+        "Standard"
+      ],
+      "ap1b_decision": "RES; Länge=Standard; Schwierigkeit=Intermediate; Status=beta-standardized"
+    },
+    {
+      "case_id": "RES_MOD_002_v1_3",
+      "base_id": "RES_MOD_002",
+      "title": "Organoide für einfache Proof-of-Concept-Frage? → Organoid sinnvoll oder Overkill?",
+      "domain": "RES",
+      "met_addon_type": "no",
+      "subdomain": "Translationale Projektplanung",
+      "case_type": "research_design_decision",
+      "length_class": "Mini",
+      "estimated_minutes": {
+        "min": 3,
+        "max": 5
+      },
+      "difficulty": "Beginner",
+      "status": "beta-standardized",
+      "review_flag": "ok",
+      "review_priority": "low",
+      "core_decision": "Organoid sinnvoll oder Overkill?",
+      "learning_objectives": [
+        "Vage Projektidee in eine prüfbare, klinisch relevante Forschungsfrage übersetzen",
+        "PICO, Endpunkte, Analyseplan und Validierungsstrategie sauber definieren",
+        "Explorativ vs. konfirmatorisch transparent trennen und Data-Fishing vermeiden"
+      ],
+      "tags": [
+        "KI",
+        "RES",
+        "Phase",
+        "Mini"
+      ],
+      "ap1b_decision": "RES; Länge=Mini; Schwierigkeit=Beginner; Status=beta-standardized"
+    },
+    {
+      "case_id": "RES_MOD_003_v1_3",
+      "base_id": "RES_MOD_003",
+      "title": "PDO-Biobank als langfristige Plattform → SOP, klinische Daten, QC",
+      "domain": "RES",
+      "met_addon_type": "no",
+      "subdomain": "Omics / Analyse / Reproduzierbarkeit",
+      "case_type": "research_planspiel",
+      "length_class": "Planspiel",
+      "estimated_minutes": {
+        "min": 30,
+        "max": 60
+      },
+      "difficulty": "Expert",
+      "status": "beta-review",
+      "review_flag": "planspiel separat",
+      "review_priority": "high",
+      "core_decision": "SOP, klinische Daten, QC",
+      "learning_objectives": [
+        "Vage Projektidee in eine prüfbare, klinisch relevante Forschungsfrage übersetzen",
+        "PICO, Endpunkte, Analyseplan und Validierungsstrategie sauber definieren",
+        "Explorativ vs. konfirmatorisch transparent trennen und Data-Fishing vermeiden"
+      ],
+      "tags": [
+        "Daten",
+        "RES",
+        "Phase",
+        "Planspiel"
+      ],
+      "ap1b_decision": "RES; Länge=Planspiel; Schwierigkeit=Expert; Status=beta-review"
+    },
+    {
+      "case_id": "RES_VAL_001_v1_3",
+      "base_id": "RES_VAL_001",
+      "title": "Kandidat aus Omics braucht unabhängige Validierung → IHC/qPCR/FISH/externe Kohorte planen",
+      "domain": "RES",
+      "met_addon_type": "no",
+      "subdomain": "Omics / Analyse / Reproduzierbarkeit",
+      "case_type": "research_design_decision",
+      "length_class": "Standard",
+      "estimated_minutes": {
+        "min": 8,
+        "max": 15
+      },
+      "difficulty": "Intermediate",
+      "status": "beta-standardized",
+      "review_flag": "MVP prüfen",
+      "review_priority": "high",
+      "core_decision": "IHC/qPCR/FISH/externe Kohorte planen",
+      "learning_objectives": [
+        "Vage Projektidee in eine prüfbare, klinisch relevante Forschungsfrage übersetzen",
+        "Explorative Omics-Ergebnisse von validierbaren Hypothesen und Signaturen trennen",
+        "Explorativ vs. konfirmatorisch transparent trennen und Data-Fishing vermeiden"
+      ],
+      "tags": [
+        "FISH",
+        "Omics",
+        "RES",
+        "MVP",
+        "Standard"
+      ],
+      "ap1b_decision": "RES; Länge=Standard; Schwierigkeit=Intermediate; Status=beta-standardized"
+    },
+    {
+      "case_id": "RES_VAL_002_v1_3",
+      "base_id": "RES_VAL_002",
+      "title": "Präklinischer Effekt ohne Patientenmaterial → Brücke zur klinischen Realität fehlt",
+      "domain": "RES",
+      "met_addon_type": "no",
+      "subdomain": "Translationale Projektplanung",
+      "case_type": "research_design_decision",
+      "length_class": "Mini",
+      "estimated_minutes": {
+        "min": 3,
+        "max": 5
+      },
+      "difficulty": "Beginner",
+      "status": "beta-standardized",
+      "review_flag": "ok",
+      "review_priority": "low",
+      "core_decision": "Brücke zur klinischen Realität fehlt",
+      "learning_objectives": [
+        "Vage Projektidee in eine prüfbare, klinisch relevante Forschungsfrage übersetzen",
+        "PICO, Endpunkte, Analyseplan und Validierungsstrategie sauber definieren",
+        "Explorativ vs. konfirmatorisch transparent trennen und Data-Fishing vermeiden"
+      ],
+      "tags": [
+        "RES",
+        "Phase",
+        "Mini"
+      ],
+      "ap1b_decision": "RES; Länge=Mini; Schwierigkeit=Beginner; Status=beta-standardized"
+    },
+    {
+      "case_id": "RES_ETH_002_v1_3",
+      "base_id": "RES_ETH_002",
+      "title": "WES-Projekt findet potenzielle Keimbahnvariante → Rückmeldepolicy und Humangenetik",
+      "domain": "RES",
+      "met_addon_type": "no",
+      "subdomain": "Translationale Projektplanung",
+      "case_type": "research_design_decision",
+      "length_class": "Complex",
+      "estimated_minutes": {
+        "min": 20,
+        "max": 30
+      },
+      "difficulty": "Advanced",
+      "status": "beta-review",
+      "review_flag": "prüfen",
+      "review_priority": "high",
+      "core_decision": "Rückmeldepolicy und Humangenetik",
+      "learning_objectives": [
+        "Vage Projektidee in eine prüfbare, klinisch relevante Forschungsfrage übersetzen",
+        "PICO, Endpunkte, Analyseplan und Validierungsstrategie sauber definieren",
+        "Explorativ vs. konfirmatorisch transparent trennen und Data-Fishing vermeiden"
+      ],
+      "tags": [
+        "RES",
+        "Phase",
+        "Standard, complex_case, AP1b_length_reclass"
+      ],
+      "ap1b_decision": "RES; Länge=Complex; Schwierigkeit=Advanced; Status=beta-review"
+    },
+    {
+      "case_id": "RES_ETH_003_v1_3",
+      "base_id": "RES_ETH_003",
+      "title": "Zusatzbiopsien nur für explorative Omics → Nutzen-Belastungs-Abwägung",
+      "domain": "RES",
+      "met_addon_type": "no",
+      "subdomain": "Omics / Analyse / Reproduzierbarkeit",
+      "case_type": "research_design_decision",
+      "length_class": "Standard",
+      "estimated_minutes": {
+        "min": 8,
+        "max": 15
+      },
+      "difficulty": "Intermediate",
+      "status": "beta-standardized",
+      "review_flag": "ok",
+      "review_priority": "low",
+      "core_decision": "Nutzen-Belastungs-Abwägung",
+      "learning_objectives": [
+        "Vage Projektidee in eine prüfbare, klinisch relevante Forschungsfrage übersetzen",
+        "Explorative Omics-Ergebnisse von validierbaren Hypothesen und Signaturen trennen",
+        "Explorativ vs. konfirmatorisch transparent trennen und Data-Fishing vermeiden"
+      ],
+      "tags": [
+        "NGS",
+        "Ethik",
+        "Omics",
+        "RES",
+        "Phase",
+        "Standard"
+      ],
+      "ap1b_decision": "RES; Länge=Standard; Schwierigkeit=Intermediate; Status=beta-standardized"
+    },
+    {
+      "case_id": "RES_DATA_001_v1_3",
+      "base_id": "RES_DATA_001",
+      "title": "Open-Science-Plan kollidiert mit Einwilligung → Data Sharing begrenzen/absichern",
+      "domain": "RES",
+      "met_addon_type": "no",
+      "subdomain": "Ethik / Governance / Materialschutz",
+      "case_type": "research_design_decision",
+      "length_class": "Mini",
+      "estimated_minutes": {
+        "min": 3,
+        "max": 5
+      },
+      "difficulty": "Beginner",
+      "status": "beta-standardized",
+      "review_flag": "ok",
+      "review_priority": "low",
+      "core_decision": "Data Sharing begrenzen/absichern",
+      "learning_objectives": [
+        "Vage Projektidee in eine prüfbare, klinisch relevante Forschungsfrage übersetzen",
+        "Ethik, Einwilligung, Datenschutz und Materialschutz vor Projektstart klären",
+        "Explorativ vs. konfirmatorisch transparent trennen und Data-Fishing vermeiden"
+      ],
+      "tags": [
+        "Daten",
+        "RES",
+        "Phase",
+        "Mini"
+      ],
+      "ap1b_decision": "RES; Länge=Mini; Schwierigkeit=Beginner; Status=beta-standardized"
+    },
+    {
+      "case_id": "RES_AI_001_v1_3",
+      "base_id": "RES_AI_001",
+      "title": "KI-Modell mit biased Training Set → Bias, Transparenz, Verantwortung",
+      "domain": "RES",
+      "met_addon_type": "no",
+      "subdomain": "Translationale Projektplanung",
+      "case_type": "research_design_decision",
+      "length_class": "Standard",
+      "estimated_minutes": {
+        "min": 8,
+        "max": 15
+      },
+      "difficulty": "Intermediate",
+      "status": "beta-standardized",
+      "review_flag": "ok",
+      "review_priority": "low",
+      "core_decision": "Bias, Transparenz, Verantwortung",
+      "learning_objectives": [
+        "Vage Projektidee in eine prüfbare, klinisch relevante Forschungsfrage übersetzen",
+        "PICO, Endpunkte, Analyseplan und Validierungsstrategie sauber definieren",
+        "Explorativ vs. konfirmatorisch transparent trennen und Data-Fishing vermeiden"
+      ],
+      "tags": [
+        "Ethik",
+        "KI",
+        "RES",
+        "Phase",
+        "Standard"
+      ],
+      "ap1b_decision": "RES; Länge=Standard; Schwierigkeit=Intermediate; Status=beta-standardized"
+    },
+    {
+      "case_id": "RES_PM_001_v1_3",
+      "base_id": "RES_PM_001",
+      "title": "Doktorand startet Projekt ohne Daten-/Code-Struktur → raw/processed/code/README etablieren",
+      "domain": "RES",
+      "met_addon_type": "no",
+      "subdomain": "Omics / Analyse / Reproduzierbarkeit",
+      "case_type": "research_design_decision",
+      "length_class": "Mini",
+      "estimated_minutes": {
+        "min": 3,
+        "max": 5
+      },
+      "difficulty": "Beginner",
+      "status": "beta-standardized",
+      "review_flag": "MVP prüfen",
+      "review_priority": "high",
+      "core_decision": "raw/processed/code/README etablieren",
+      "learning_objectives": [
+        "Vage Projektidee in eine prüfbare, klinisch relevante Forschungsfrage übersetzen",
+        "PICO, Endpunkte, Analyseplan und Validierungsstrategie sauber definieren",
+        "Explorativ vs. konfirmatorisch transparent trennen und Data-Fishing vermeiden"
+      ],
+      "tags": [
+        "Daten",
+        "RES",
+        "MVP",
+        "Mini"
+      ],
+      "ap1b_decision": "RES; Länge=Mini; Schwierigkeit=Beginner; Status=beta-standardized"
+    },
+    {
+      "case_id": "RES_PM_002_v1_3",
+      "base_id": "RES_PM_002",
+      "title": "analysis_final_neu_ENDGUELTIG.R → Versionierung und Naming",
+      "domain": "RES",
+      "met_addon_type": "no",
+      "subdomain": "Translationale Projektplanung",
+      "case_type": "research_design_decision",
+      "length_class": "Mini",
+      "estimated_minutes": {
+        "min": 3,
+        "max": 5
+      },
+      "difficulty": "Beginner",
+      "status": "beta-standardized",
+      "review_flag": "ok",
+      "review_priority": "low",
+      "core_decision": "Versionierung und Naming",
+      "learning_objectives": [
+        "Vage Projektidee in eine prüfbare, klinisch relevante Forschungsfrage übersetzen",
+        "PICO, Endpunkte, Analyseplan und Validierungsstrategie sauber definieren",
+        "Explorativ vs. konfirmatorisch transparent trennen und Data-Fishing vermeiden"
+      ],
+      "tags": [
+        "RES",
+        "Phase",
+        "Mini"
+      ],
+      "ap1b_decision": "RES; Länge=Mini; Schwierigkeit=Beginner; Status=beta-standardized"
+    },
+    {
+      "case_id": "RES_ROLE_001_v1_3",
+      "base_id": "RES_ROLE_001",
+      "title": "Autorenschaftskonflikt kurz vor Submission → ICMJE/CRediT/Rollenmatrix",
+      "domain": "RES",
+      "met_addon_type": "no",
+      "subdomain": "Rollen / Autorenschaft / Team",
+      "case_type": "research_design_decision",
+      "length_class": "Standard",
+      "estimated_minutes": {
+        "min": 8,
+        "max": 15
+      },
+      "difficulty": "Expert",
+      "status": "beta-review",
+      "review_flag": "prüfen",
+      "review_priority": "high",
+      "core_decision": "ICMJE/CRediT/Rollenmatrix",
+      "learning_objectives": [
+        "Vage Projektidee in eine prüfbare, klinisch relevante Forschungsfrage übersetzen",
+        "Rollen, Verantwortlichkeiten und Autorenschaft früh transparent festlegen",
+        "Explorativ vs. konfirmatorisch transparent trennen und Data-Fishing vermeiden"
+      ],
+      "tags": [
+        "RES",
+        "Phase",
+        "Standard"
+      ],
+      "ap1b_decision": "RES; Länge=Standard; Schwierigkeit=Expert; Status=beta-review"
+    },
+    {
+      "case_id": "RES_GRANT_001_v1_3",
+      "base_id": "RES_GRANT_001",
+      "title": "Drittmittelidee ohne Arbeitspakete/Budget/Meilensteine → Projektarchitektur aufbauen",
+      "domain": "RES",
+      "met_addon_type": "no",
+      "subdomain": "Förderung / Projektarchitektur",
+      "case_type": "research_planspiel",
+      "length_class": "Planspiel",
+      "estimated_minutes": {
+        "min": 30,
+        "max": 60
+      },
+      "difficulty": "Expert",
+      "status": "beta-review",
+      "review_flag": "planspiel separat",
+      "review_priority": "high",
+      "core_decision": "Projektarchitektur aufbauen",
+      "learning_objectives": [
+        "Vage Projektidee in eine prüfbare, klinisch relevante Forschungsfrage übersetzen",
+        "Arbeitspakete, Meilensteine und Budget logisch aus der Projektfrage ableiten",
+        "Explorativ vs. konfirmatorisch transparent trennen und Data-Fishing vermeiden"
+      ],
+      "tags": [
+        "RES",
+        "Phase",
+        "Planspiel"
+      ],
+      "ap1b_decision": "RES; Länge=Planspiel; Schwierigkeit=Expert; Status=beta-review"
+    },
+    {
+      "case_id": "RES_IMPL_001_v1_3",
+      "base_id": "RES_IMPL_001",
+      "title": "Biomarker publiziert, aber nicht routinefähig → Validierung, Workflow, Kosten, Qualität",
+      "domain": "RES",
+      "met_addon_type": "no",
+      "subdomain": "Translationale Projektplanung",
+      "case_type": "research_design_decision",
+      "length_class": "Standard",
+      "estimated_minutes": {
+        "min": 8,
+        "max": 15
+      },
+      "difficulty": "Intermediate",
+      "status": "beta-standardized",
+      "review_flag": "MVP prüfen",
+      "review_priority": "high",
+      "core_decision": "Validierung, Workflow, Kosten, Qualität",
+      "learning_objectives": [
+        "Vage Projektidee in eine prüfbare, klinisch relevante Forschungsfrage übersetzen",
+        "PICO, Endpunkte, Analyseplan und Validierungsstrategie sauber definieren",
+        "Explorativ vs. konfirmatorisch transparent trennen und Data-Fishing vermeiden"
+      ],
+      "tags": [
+        "RES",
+        "MVP",
+        "Standard"
+      ],
+      "ap1b_decision": "RES; Länge=Standard; Schwierigkeit=Intermediate; Status=beta-standardized"
+    },
+    {
+      "case_id": "RES_TEAM_001_v1_3",
+      "base_id": "RES_TEAM_001",
+      "title": "Klinik, Pathologie, Bioinfo, Labor sprechen aneinander vorbei → Übersetzungslogik und strukturierte Fragen",
+      "domain": "RES",
+      "met_addon_type": "no",
+      "subdomain": "Translationale Projektplanung",
+      "case_type": "research_design_decision",
+      "length_class": "Standard",
+      "estimated_minutes": {
+        "min": 8,
+        "max": 15
+      },
+      "difficulty": "Intermediate",
+      "status": "beta-standardized",
+      "review_flag": "ok",
+      "review_priority": "low",
+      "core_decision": "Übersetzungslogik und strukturierte Fragen",
+      "learning_objectives": [
+        "Vage Projektidee in eine prüfbare, klinisch relevante Forschungsfrage übersetzen",
+        "PICO, Endpunkte, Analyseplan und Validierungsstrategie sauber definieren",
+        "Explorativ vs. konfirmatorisch transparent trennen und Data-Fishing vermeiden"
+      ],
+      "tags": [
+        "NGS",
+        "Labor",
+        "RES",
+        "Phase",
+        "Standard"
+      ],
+      "ap1b_decision": "RES; Länge=Standard; Schwierigkeit=Intermediate; Status=beta-standardized"
+    }
+  ]
+}

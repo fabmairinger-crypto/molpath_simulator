@@ -1,0 +1,821 @@
+[
+  {
+    "ID": "MTB_NSCLC_001",
+    "Titel": "Metastasiertes NSCLC, kleine Biopsie",
+    "Quelle / Kapitelbasis": "Bioanalytik Kap. 10.1; Tumorbiologie Wachstumssignale",
+    "Modus": "MTB",
+    "Dauer": "Standard",
+    "Priorität": "MVP 1",
+    "Kernentscheidung": "DNA-NGS allein oder DNA+RNA-NGS plus PD-L1?"
+  },
+  {
+    "ID": "MTB_NSCLC_002",
+    "Titel": "NSCLC mit EGFR-Mutation und Progress unter TKI",
+    "Quelle / Kapitelbasis": "Tumorbiologie: Resistenz, Heterogenität, Liquid Biopsy",
+    "Modus": "MTB",
+    "Dauer": "Standard",
+    "Priorität": "MVP 2",
+    "Kernentscheidung": "Liquid Biopsy negativ: reicht das oder Rebiopsie?"
+  },
+  {
+    "ID": "MTB_NSCLC_003",
+    "Titel": "ALK/ROS1/RET/NTRK-Fusionsverdacht bei jungem Nie-Raucher",
+    "Quelle / Kapitelbasis": "Bioanalytik: Fusionsnachweis; Tumorbiologie: RTK-Fusionen",
+    "Modus": "MTB",
+    "Dauer": "Standard",
+    "Priorität": "MVP 3",
+    "Kernentscheidung": "FISH, RNA-NGS oder DNA-NGS?"
+  },
+  {
+    "ID": "MTB_NSCLC_004",
+    "Titel": "KRAS-mutiertes NSCLC mit STK11/KEAP1-Kontext",
+    "Quelle / Kapitelbasis": "Bioanalytik Kap. 10.1; Tumorbiologie Immunescape/Metabolik",
+    "Modus": "MTB",
+    "Dauer": "Standard",
+    "Priorität": "Phase 2",
+    "Kernentscheidung": "Target, Prognose, Immuntherapie-Kontext korrekt gewichten"
+  },
+  {
+    "ID": "MTB_MEL_001",
+    "Titel": "Melanom: BRAF V600 und Immuntherapie-Sequenz",
+    "Quelle / Kapitelbasis": "Tumorbiologie: BRAF/MEK vs. IO",
+    "Modus": "MTB",
+    "Dauer": "Standard",
+    "Priorität": "Phase 2",
+    "Kernentscheidung": "Schnelle TKI-Therapie vs. Immuncheckpoint-Strategie"
+  },
+  {
+    "ID": "MTB_GIST_001",
+    "Titel": "GIST mit KIT/PDGFRA-Fragestellung",
+    "Quelle / Kapitelbasis": "Bioanalytik solide Tumoren",
+    "Modus": "MTB",
+    "Dauer": "Mini",
+    "Priorität": "Phase 2",
+    "Kernentscheidung": "Welcher Marker entscheidet über TKI-Auswahl?"
+  },
+  {
+    "ID": "MTB_CHOL_001",
+    "Titel": "Cholangiozelluläres Karzinom mit FGFR2/IDH-Frage",
+    "Quelle / Kapitelbasis": "Bioanalytik solide Tumoren",
+    "Modus": "MTB",
+    "Dauer": "Standard",
+    "Priorität": "Phase 2",
+    "Kernentscheidung": "Paneldiagnostik und Studienoptionen"
+  },
+  {
+    "ID": "MTB_CRC_001",
+    "Titel": "Metastasiertes CRC: RAS/BRAF/MMR/MSI vor Systemtherapie",
+    "Quelle / Kapitelbasis": "Bioanalytik Kap. 10.2",
+    "Modus": "MTB",
+    "Dauer": "Standard",
+    "Priorität": "MVP 4",
+    "Kernentscheidung": "Welche Marker sind vor anti-EGFR/IO nötig?"
+  },
+  {
+    "ID": "MTB_CRC_002",
+    "Titel": "MMR-Verlust MLH1/PMS2: sporadisch oder Lynch?",
+    "Quelle / Kapitelbasis": "Bioanalytik MMR/MSI; Tumorbiologie Genominstabilität",
+    "Modus": "MTB",
+    "Dauer": "Standard",
+    "Priorität": "MVP 5",
+    "Kernentscheidung": "MLH1-Methylierung/BRAF? Humangenetik?"
+  },
+  {
+    "ID": "MTB_CRC_003",
+    "Titel": "Rechte Kolonkarzinom-Metastase mit BRAF V600E",
+    "Quelle / Kapitelbasis": "Tumorbiologie MAPK/Genominstabilität",
+    "Modus": "MTB",
+    "Dauer": "Mini",
+    "Priorität": "Phase 2",
+    "Kernentscheidung": "Prognose, MSI-Kontext, Therapieoption"
+  },
+  {
+    "ID": "MTB_CRC_004",
+    "Titel": "Polypenrest statt invasivem Tumor eingeschickt",
+    "Quelle / Kapitelbasis": "Bioanalytik Stolperfalle falsches Material",
+    "Modus": "MTB/LAB",
+    "Dauer": "Mini",
+    "Priorität": "MVP 6",
+    "Kernentscheidung": "Befundbar oder neues Material anfordern?"
+  },
+  {
+    "ID": "MTB_CRC_005",
+    "Titel": "HER2-amplifiziertes RAS-WT-CRC",
+    "Quelle / Kapitelbasis": "Bioanalytik Panel-NGS/ISH; Targeted Therapy",
+    "Modus": "MTB",
+    "Dauer": "Standard",
+    "Priorität": "Phase 2",
+    "Kernentscheidung": "HER2 als Resistenz-/Target-Kontext"
+  },
+  {
+    "ID": "MTB_OVAR_001",
+    "Titel": "HGSOC: BRCA/HRD vor PARP-Erhaltung",
+    "Quelle / Kapitelbasis": "Tumorbiologie HRD/BRCA; Bioanalytik Mamma/Ovar",
+    "Modus": "MTB",
+    "Dauer": "Standard",
+    "Priorität": "MVP 7",
+    "Kernentscheidung": "Somatisch, Keimbahn, HRD-Score – was wird benötigt?"
+  },
+  {
+    "ID": "MTB_OVAR_002",
+    "Titel": "BRCA2-Variante unklarer Signifikanz im Ovarialkarzinom",
+    "Quelle / Kapitelbasis": "Bioanalytik VUS; Tumorbiologie HRD",
+    "Modus": "MTB",
+    "Dauer": "Standard",
+    "Priorität": "MVP 8",
+    "Kernentscheidung": "VUS nicht als therapeutisch gesichert verkaufen"
+  },
+  {
+    "ID": "MTB_MAMMA_001",
+    "Titel": "Mammakarzinom: BRCA/PIK3CA/ERBB2-Kontext",
+    "Quelle / Kapitelbasis": "Bioanalytik solide Tumoren",
+    "Modus": "MTB",
+    "Dauer": "Standard",
+    "Priorität": "Phase 2",
+    "Kernentscheidung": "Klassische Marker vs. Panel-Zusatznutzen"
+  },
+  {
+    "ID": "MTB_PROST_001",
+    "Titel": "Metastasiertes Prostatakarzinom: HRR-Gene/MMR",
+    "Quelle / Kapitelbasis": "Bioanalytik Prostata; Tumorbiologie Genominstabilität",
+    "Modus": "MTB",
+    "Dauer": "Standard",
+    "Priorität": "Phase 2",
+    "Kernentscheidung": "PARP/IO/Studie und Keimbahnfrage"
+  },
+  {
+    "ID": "MTB_TAML_001",
+    "Titel": "Therapieassoziierte MDS/AML nach DNA-schädigender Therapie",
+    "Quelle / Kapitelbasis": "Tumorbiologie Genominstabilität",
+    "Modus": "MTB/RES",
+    "Dauer": "Mini",
+    "Priorität": "Phase 3",
+    "Kernentscheidung": "Instabilität als Chance und Risiko einordnen"
+  },
+  {
+    "ID": "MTB_IO_001",
+    "Titel": "TIL-reicher dMMR-Tumor mit hoher PD-L1-Expression",
+    "Quelle / Kapitelbasis": "Tumorbiologie Immunescape",
+    "Modus": "MTB",
+    "Dauer": "Standard",
+    "Priorität": "MVP 9",
+    "Kernentscheidung": "Warum spricht die Konstellation für IO-Sensitivität?"
+  },
+  {
+    "ID": "MTB_IO_002",
+    "Titel": "„Cold Tumor“ mit wenig TILs und dichter Stromabarriere",
+    "Quelle / Kapitelbasis": "Tumorbiologie Immunescape/TME",
+    "Modus": "MTB",
+    "Dauer": "Standard",
+    "Priorität": "Phase 2",
+    "Kernentscheidung": "Warum ist PD-1 allein wahrscheinlich schwach?"
+  },
+  {
+    "ID": "MTB_IO_003",
+    "Titel": "PD-L1 positiv, aber niedrige TMB und kein Immuninfiltrat",
+    "Quelle / Kapitelbasis": "Tumorbiologie Immunescape",
+    "Modus": "MTB",
+    "Dauer": "Mini",
+    "Priorität": "Phase 2",
+    "Kernentscheidung": "PD-L1 nicht überinterpretieren"
+  },
+  {
+    "ID": "MTB_IO_004",
+    "Titel": "MSI-H-Karzinom: Therapieoption und Lynch-Abklärung",
+    "Quelle / Kapitelbasis": "Tumorbiologie Genominstabilität/Immunescape",
+    "Modus": "MTB",
+    "Dauer": "Standard",
+    "Priorität": "Phase 2",
+    "Kernentscheidung": "IO, MMR-IHC, Keimbahnkontext"
+  },
+  {
+    "ID": "MTB_IO_005",
+    "Titel": "Antibiotika kurz vor ICI, Mikrobiom-Frage im Tumorboard",
+    "Quelle / Kapitelbasis": "Tumorbiologie Mikrobiom",
+    "Modus": "MTB",
+    "Dauer": "Mini",
+    "Priorität": "Phase 3",
+    "Kernentscheidung": "Evidenz korrekt begrenzen"
+  },
+  {
+    "ID": "MTB_CNS_001",
+    "Titel": "Glioblastom: MGMT-Methylierung vor Temozolomid",
+    "Quelle / Kapitelbasis": "Bioanalytik Epigenetik; Tumorbiologie Epigenetik",
+    "Modus": "MTB",
+    "Dauer": "Standard",
+    "Priorität": "MVP 10",
+    "Kernentscheidung": "Prädiktiver epigenetischer Marker korrekt erklären"
+  },
+  {
+    "ID": "MTB_CNS_002",
+    "Titel": "IDH-mutiertes Gliom mit G-CIMP-Profil",
+    "Quelle / Kapitelbasis": "Tumorbiologie IDH/G-CIMP",
+    "Modus": "MTB",
+    "Dauer": "Standard",
+    "Priorität": "Phase 2",
+    "Kernentscheidung": "IDH-IHC/Sequenzierung/Methylom einordnen"
+  },
+  {
+    "ID": "MTB_CNS_003",
+    "Titel": "Histologisch unklarer ZNS-Tumor: Methylierungsclassifier",
+    "Quelle / Kapitelbasis": "Bioanalytik Methylierungsarrays",
+    "Modus": "MTB",
+    "Dauer": "Standard",
+    "Priorität": "Phase 2",
+    "Kernentscheidung": "Wann hilft Methylom-Klassifikation?"
+  },
+  {
+    "ID": "MTB_HEM_001",
+    "Titel": "MDS/AML mit DNMT3A/TET2/ASXL1",
+    "Quelle / Kapitelbasis": "Bioanalytik Hämato; Tumorbiologie Epigenetik",
+    "Modus": "MTB",
+    "Dauer": "Standard",
+    "Priorität": "Phase 2",
+    "Kernentscheidung": "CHIP vs. hämatologische Neoplasie"
+  },
+  {
+    "ID": "MTB_METH_001",
+    "Titel": "MLH1-Promotor-Methylierung bei MSI-H-CRC",
+    "Quelle / Kapitelbasis": "Bioanalytik Epigenetik/CRC",
+    "Modus": "MTB",
+    "Dauer": "Mini",
+    "Priorität": "Phase 2",
+    "Kernentscheidung": "sporadisch vs. Lynch"
+  },
+  {
+    "ID": "MTB_ANGIO_001",
+    "Titel": "mCRC: Bevacizumab und VEGF-Angiogenese",
+    "Quelle / Kapitelbasis": "Tumorbiologie Angiogenese",
+    "Modus": "MTB",
+    "Dauer": "Mini",
+    "Priorität": "Phase 2",
+    "Kernentscheidung": "Anti-VEGF biologisch erklären"
+  },
+  {
+    "ID": "MTB_RCC_001",
+    "Titel": "Klarzelliges RCC: VHL/HIF/VEGF-Achse",
+    "Quelle / Kapitelbasis": "Tumorbiologie Angiogenese",
+    "Modus": "MTB",
+    "Dauer": "Standard",
+    "Priorität": "Phase 2",
+    "Kernentscheidung": "Warum TKI/IO-Kombination plausibel ist"
+  },
+  {
+    "ID": "MTB_GBM_ANGIO_001",
+    "Titel": "Glioblastom mit Gefäßproliferation und Hypoxie",
+    "Quelle / Kapitelbasis": "Tumorbiologie Angiogenese/Epigenetik",
+    "Modus": "MTB",
+    "Dauer": "Mini",
+    "Priorität": "Phase 3",
+    "Kernentscheidung": "Antiangiogenese: kurzfristiger Effekt vs. Resistenz"
+  },
+  {
+    "ID": "MTB_TME_001",
+    "Titel": "Stromareicher Tumor mit immune-excluded Pattern",
+    "Quelle / Kapitelbasis": "Tumorbiologie TME/Immunescape",
+    "Modus": "MTB",
+    "Dauer": "Standard",
+    "Priorität": "Phase 3",
+    "Kernentscheidung": "Warum Stroma Therapieantwort beeinflusst"
+  },
+  {
+    "ID": "MTB_INV_001",
+    "Titel": "EMT-/Invasionsfront-Fall mit Metastasenrisiko",
+    "Quelle / Kapitelbasis": "Tumorbiologie Invasion/Metastase",
+    "Modus": "MTB",
+    "Dauer": "Mini",
+    "Priorität": "Phase 3",
+    "Kernentscheidung": "Morphologie → Hallmark → klinische Konsequenz"
+  },
+  {
+    "ID": "MET_NGS_001",
+    "Titel": "Coverage-Loch in therapieentscheidendem Exon",
+    "Quelle / Kapitelbasis": "Bioanalytik Kap. 9; Labor Kap. 12/13",
+    "Modus": "MTB/LAB",
+    "Dauer": "Mini",
+    "Priorität": "MVP 11",
+    "Kernentscheidung": "Befund mit Limitation oder Wiederholung?"
+  },
+  {
+    "ID": "MET_NGS_002",
+    "Titel": "FFPE-C>T-Artefakt bei niedriger VAF",
+    "Quelle / Kapitelbasis": "Bioanalytik Fallstricke",
+    "Modus": "MTB/LAB",
+    "Dauer": "Mini",
+    "Priorität": "MVP 12",
+    "Kernentscheidung": "Artefakt vs. echte Subklonmutation"
+  },
+  {
+    "ID": "MET_NGS_003",
+    "Titel": "VUS im Onkogen mit Therapieanfrage",
+    "Quelle / Kapitelbasis": "Bioanalytik Variant Interpretation",
+    "Modus": "MTB",
+    "Dauer": "Standard",
+    "Priorität": "MVP 13",
+    "Kernentscheidung": "Evidenzgrad, kein Overcalling"
+  },
+  {
+    "ID": "MET_NGS_004",
+    "Titel": "Tumor-only NGS: Keimbahnverdacht BRCA/TP53",
+    "Quelle / Kapitelbasis": "Bioanalytik Keimbahn vs. somatisch",
+    "Modus": "MTB",
+    "Dauer": "Standard",
+    "Priorität": "Phase 2",
+    "Kernentscheidung": "Humangenetische Abklärung empfehlen?"
+  },
+  {
+    "ID": "MET_RNA_001",
+    "Titel": "DNA-NGS negativ, aber Fusionsverdacht bleibt",
+    "Quelle / Kapitelbasis": "Bioanalytik RNA/Fusion",
+    "Modus": "MTB",
+    "Dauer": "Standard",
+    "Priorität": "MVP 14",
+    "Kernentscheidung": "RNA-NGS/FISH ergänzen"
+  },
+  {
+    "ID": "MET_LB_001",
+    "Titel": "Liquid Biopsy negativ bei Progress",
+    "Quelle / Kapitelbasis": "Bioanalytik Liquid Biopsy; Tumorbiologie Heterogenität",
+    "Modus": "MTB",
+    "Dauer": "Standard",
+    "Priorität": "Phase 2",
+    "Kernentscheidung": "Negativ ≠ sicher negativ"
+  },
+  {
+    "ID": "MET_PCR_001",
+    "Titel": "qPCR/dPCR für MRD statt breites Panel",
+    "Quelle / Kapitelbasis": "Bioanalytik PCR/dPCR/Hämato",
+    "Modus": "MTB/LAB",
+    "Dauer": "Mini",
+    "Priorität": "Phase 2",
+    "Kernentscheidung": "Zielgerichtete sensitive Methode wählen"
+  },
+  {
+    "ID": "MET_METH_001",
+    "Titel": "Bisulfit-PCR vs. Methylierungsarray",
+    "Quelle / Kapitelbasis": "Bioanalytik Epigenetik",
+    "Modus": "MTB",
+    "Dauer": "Mini",
+    "Priorität": "Phase 2",
+    "Kernentscheidung": "Lokaler Marker vs. globale Klassifikation"
+  },
+  {
+    "ID": "MET_FISH_001",
+    "Titel": "Amplifikation/Fusion: FISH als schnelle Ergänzung",
+    "Quelle / Kapitelbasis": "Bioanalytik Hybridisierung/FISH",
+    "Modus": "MTB/LAB",
+    "Dauer": "Mini",
+    "Priorität": "Phase 2",
+    "Kernentscheidung": "Wann ISH/FISH sinnvoll bleibt"
+  },
+  {
+    "ID": "MET_MULTI_001",
+    "Titel": "Multiomics-Bericht: viel Information, wenig Entscheidung",
+    "Quelle / Kapitelbasis": "Bioanalytik Zukunft/Multiomics",
+    "Modus": "MTB/RES",
+    "Dauer": "Standard",
+    "Priorität": "Phase 3",
+    "Kernentscheidung": "Kernaussage fürs Tumorboard extrahieren"
+  },
+  {
+    "ID": "LAB_PRE_001",
+    "Titel": "Unbeschriftetes Röhrchen im Eingang",
+    "Quelle / Kapitelbasis": "Labor Kap. 3/7/11",
+    "Modus": "LAB",
+    "Dauer": "Mini",
+    "Priorität": "MVP 15",
+    "Kernentscheidung": "Stoppen, klären, dokumentieren"
+  },
+  {
+    "ID": "LAB_PRE_002",
+    "Titel": "FFPE-Block alt, Tumoranteil niedrig, DNA schlecht",
+    "Quelle / Kapitelbasis": "Labor Präanalytik; Bioanalytik Probenqualität",
+    "Modus": "LAB/MTB",
+    "Dauer": "Standard",
+    "Priorität": "MVP 16",
+    "Kernentscheidung": "Befundbar, eingeschränkt oder neues Material?"
+  },
+  {
+    "ID": "LAB_PRE_003",
+    "Titel": "Liquid-Biopsy-Blut zu lange unzentrifugiert",
+    "Quelle / Kapitelbasis": "Labor Präanalytik; Bioanalytik Liquid Biopsy",
+    "Modus": "LAB",
+    "Dauer": "Mini",
+    "Priorität": "Phase 2",
+    "Kernentscheidung": "Probe ablehnen oder limitiert analysieren?"
+  },
+  {
+    "ID": "LAB_PRE_004",
+    "Titel": "Dekalzifiziertes Knochenmaterial für NGS",
+    "Quelle / Kapitelbasis": "Labor Präanalytik",
+    "Modus": "LAB",
+    "Dauer": "Mini",
+    "Priorität": "Phase 2",
+    "Kernentscheidung": "Methodengrenze erkennen"
+  },
+  {
+    "ID": "LAB_PRE_005",
+    "Titel": "Forschung möchte 20 Schnitte aus kleinem Biopsieblock",
+    "Quelle / Kapitelbasis": "Labor/Forschung Materialschutz",
+    "Modus": "LAB/RES",
+    "Dauer": "Standard",
+    "Priorität": "Phase 2",
+    "Kernentscheidung": "Routinepriorität vs. Forschungsinteresse"
+  },
+  {
+    "ID": "LAB_RUN_001",
+    "Titel": "Positivkontrolle schwach, Patientenproben scheinbar okay",
+    "Quelle / Kapitelbasis": "Labor Kontrollen/Analytik",
+    "Modus": "LAB",
+    "Dauer": "Standard",
+    "Priorität": "MVP 17",
+    "Kernentscheidung": "Run freigeben, teilfreigeben oder wiederholen?"
+  },
+  {
+    "ID": "LAB_RUN_002",
+    "Titel": "Negativkontrolle zeigt Hotspot-Mutation",
+    "Quelle / Kapitelbasis": "Labor Hygiene/Kontamination",
+    "Modus": "LAB",
+    "Dauer": "Standard",
+    "Priorität": "MVP 18",
+    "Kernentscheidung": "Kontamination/CAPA/Run sperren"
+  },
+  {
+    "ID": "LAB_RUN_003",
+    "Titel": "Duplicate-Rate bei zwei Proben erhöht",
+    "Quelle / Kapitelbasis": "Labor Dokumentation/NGS-QC",
+    "Modus": "LAB",
+    "Dauer": "Mini",
+    "Priorität": "Phase 2",
+    "Kernentscheidung": "Ursache, Befundgrenze, Wiederholung"
+  },
+  {
+    "ID": "LAB_RUN_004",
+    "Titel": "Neues NGS-Kit-Lot vor Routineeinsatz",
+    "Quelle / Kapitelbasis": "Labor Validierung/Verifizierung",
+    "Modus": "LAB",
+    "Dauer": "Standard",
+    "Priorität": "Phase 2",
+    "Kernentscheidung": "Lot-Verifizierung und Dokumentation"
+  },
+  {
+    "ID": "LAB_RUN_005",
+    "Titel": "PCR-Inhibition durch Ethanolreste im Eluat",
+    "Quelle / Kapitelbasis": "Labor Kontamination/Inhibition",
+    "Modus": "LAB",
+    "Dauer": "Mini",
+    "Priorität": "Phase 2",
+    "Kernentscheidung": "Wiederholung Extraktion?"
+  },
+  {
+    "ID": "LAB_RUN_006",
+    "Titel": "Post-PCR-Produkt gelangt in Prä-PCR-Bereich",
+    "Quelle / Kapitelbasis": "Labor Hygiene/Zonen",
+    "Modus": "LAB",
+    "Dauer": "Planspiel",
+    "Priorität": "Phase 2",
+    "Kernentscheidung": "Sofortmaßnahmen, Flächensanierung, CAPA"
+  },
+  {
+    "ID": "LAB_POST_001",
+    "Titel": "Pipeline-Version geändert, kein Change Log",
+    "Quelle / Kapitelbasis": "Labor Postanalytik/Bioinformatik",
+    "Modus": "LAB",
+    "Dauer": "Standard",
+    "Priorität": "MVP 19",
+    "Kernentscheidung": "Ergebnisse gültig? Reanalyse? CAPA?"
+  },
+  {
+    "ID": "LAB_POST_002",
+    "Titel": "Datenbankversion ClinVar/COSMIC nicht dokumentiert",
+    "Quelle / Kapitelbasis": "Labor/Bioanalytik Reporting",
+    "Modus": "LAB",
+    "Dauer": "Mini",
+    "Priorität": "Phase 2",
+    "Kernentscheidung": "Auditfest dokumentieren"
+  },
+  {
+    "ID": "LAB_POST_003",
+    "Titel": "Automatischer Report klassifiziert VUS als „actionable“",
+    "Quelle / Kapitelbasis": "Labor KI/Reporting; Bioanalytik VUS",
+    "Modus": "LAB/MTB",
+    "Dauer": "Standard",
+    "Priorität": "MVP 20",
+    "Kernentscheidung": "Ärztlich-wissenschaftliche Freigabe"
+  },
+  {
+    "ID": "LAB_POST_004",
+    "Titel": "Tumorboard verlangt „alles negativ“",
+    "Quelle / Kapitelbasis": "Bioanalytik Kommunikation",
+    "Modus": "LAB/MTB",
+    "Dauer": "Mini",
+    "Priorität": "Phase 2",
+    "Kernentscheidung": "Methodische Grenzen erklären"
+  },
+  {
+    "ID": "LAB_POST_005",
+    "Titel": "Befundfreigabe trotz Coverage-Lücke",
+    "Quelle / Kapitelbasis": "Labor Verantwortung",
+    "Modus": "LAB",
+    "Dauer": "Standard",
+    "Priorität": "Phase 2",
+    "Kernentscheidung": "Limitation, Nachtestung, Rücksprache"
+  },
+  {
+    "ID": "LAB_DOC_001",
+    "Titel": "„PCR wie immer gemacht“ – schlechter Laborbucheintrag",
+    "Quelle / Kapitelbasis": "Labor Dokumentation",
+    "Modus": "LAB",
+    "Dauer": "Mini",
+    "Priorität": "MVP 21",
+    "Kernentscheidung": "Eintrag auditfest verbessern"
+  },
+  {
+    "ID": "LAB_DOC_002",
+    "Titel": "Probe → Rohdaten → Pipeline → Befund nicht rückverfolgbar",
+    "Quelle / Kapitelbasis": "Labor Rückverfolgbarkeit",
+    "Modus": "LAB",
+    "Dauer": "Standard",
+    "Priorität": "MVP 22",
+    "Kernentscheidung": "LIMS-/ELN-Kette rekonstruieren"
+  },
+  {
+    "ID": "LAB_AUDIT_001",
+    "Titel": "Auditor fragt nach SOP-Version und Schulungsnachweis",
+    "Quelle / Kapitelbasis": "Labor Akkreditierung/Audit",
+    "Modus": "LAB",
+    "Dauer": "Standard",
+    "Priorität": "MVP 23",
+    "Kernentscheidung": "Dokumente/Kompetenzmatrix zeigen"
+  },
+  {
+    "ID": "LAB_CAPA_001",
+    "Titel": "Wiederholte Kontamination in einem Assay",
+    "Quelle / Kapitelbasis": "Labor CAPA",
+    "Modus": "LAB",
+    "Dauer": "Planspiel",
+    "Priorität": "MVP 24",
+    "Kernentscheidung": "Root Cause, Korrektur, Prävention"
+  },
+  {
+    "ID": "LAB_QM_001",
+    "Titel": "Abweichung wurde informell gelöst, aber nicht gemeldet",
+    "Quelle / Kapitelbasis": "Labor Fehlerkultur",
+    "Modus": "LAB",
+    "Dauer": "Mini",
+    "Priorität": "Phase 2",
+    "Kernentscheidung": "Deviation melden statt vertuschen"
+  },
+  {
+    "ID": "LAB_LLM_001",
+    "Titel": "LLM erstellt SOP-Entwurf mit fachlichen Fehlern",
+    "Quelle / Kapitelbasis": "Labor LLM/digitale Tools",
+    "Modus": "LAB",
+    "Dauer": "Mini",
+    "Priorität": "Phase 2",
+    "Kernentscheidung": "Output prüfen, Datenschutz/QM beachten"
+  },
+  {
+    "ID": "LAB_DIGI_001",
+    "Titel": "WSI-Scan unscharf: trotzdem für Tumoranteilsschätzung nutzen?",
+    "Quelle / Kapitelbasis": "Labor Digitalpathologie",
+    "Modus": "LAB",
+    "Dauer": "Mini",
+    "Priorität": "Phase 3",
+    "Kernentscheidung": "Bildqualität und Befundqualität"
+  },
+  {
+    "ID": "LAB_DIGI_002",
+    "Titel": "PD-L1-KI-Score ohne lokale Validierung",
+    "Quelle / Kapitelbasis": "Labor KI/AI Act",
+    "Modus": "LAB/MTB",
+    "Dauer": "Standard",
+    "Priorität": "Phase 3",
+    "Kernentscheidung": "KI als Assistenz, nicht finaler Befund"
+  },
+  {
+    "ID": "LAB_DATA_001",
+    "Titel": "Excel-Export mit Patientendaten im Projektordner",
+    "Quelle / Kapitelbasis": "Labor Datenschutz",
+    "Modus": "LAB/RES",
+    "Dauer": "Mini",
+    "Priorität": "MVP 25",
+    "Kernentscheidung": "Pseudonymisierung/Need-to-know"
+  },
+  {
+    "ID": "LAB_DATA_002",
+    "Titel": "Ransomware/Serverausfall im NGS-Archiv",
+    "Quelle / Kapitelbasis": "Labor IT-Sicherheit",
+    "Modus": "LAB",
+    "Dauer": "Planspiel",
+    "Priorität": "Phase 3",
+    "Kernentscheidung": "Backup, Notfallplan, Wiederherstellung"
+  },
+  {
+    "ID": "LAB_LIMS_001",
+    "Titel": "LIMS-Ausfall während Routinewoche",
+    "Quelle / Kapitelbasis": "Labor Digitalisierung",
+    "Modus": "LAB",
+    "Dauer": "Planspiel",
+    "Priorität": "Phase 3",
+    "Kernentscheidung": "Papier-Backup, Nachpflege, Freigabeprozess"
+  },
+  {
+    "ID": "RES_HYP_001",
+    "Titel": "„Wir messen mal alles“ ohne Primärhypothese",
+    "Quelle / Kapitelbasis": "Forschung Kap. 2",
+    "Modus": "RES",
+    "Dauer": "Standard",
+    "Priorität": "MVP 26",
+    "Kernentscheidung": "Hypothese/PICO/Explorativ vs. konfirmatorisch"
+  },
+  {
+    "ID": "RES_HYP_002",
+    "Titel": "Biomarker X ist „wichtig“ – aber wie operationalisieren?",
+    "Quelle / Kapitelbasis": "Forschung Kap. 2",
+    "Modus": "RES",
+    "Dauer": "Mini",
+    "Priorität": "MVP 27",
+    "Kernentscheidung": "Population, Marker, Cutoff, Outcome definieren"
+  },
+  {
+    "ID": "RES_OMICS_001",
+    "Titel": "RNA-Seq findet 200 DEGs – welcher Kandidat weiter?",
+    "Quelle / Kapitelbasis": "Forschung Gen→Pathway→Netzwerk",
+    "Modus": "RES",
+    "Dauer": "Standard",
+    "Priorität": "MVP 28",
+    "Kernentscheidung": "Kandidatenmatrix und Validierung"
+  },
+  {
+    "ID": "RES_OMICS_002",
+    "Titel": "Single-Gene-Overinterpretation nach Omics",
+    "Quelle / Kapitelbasis": "Forschung Fallstricke",
+    "Modus": "RES",
+    "Dauer": "Mini",
+    "Priorität": "Phase 2",
+    "Kernentscheidung": "Netzwerk-/Pathwaykontext prüfen"
+  },
+  {
+    "ID": "RES_OMICS_003",
+    "Titel": "Label-Inflation: alles ist Angiogenese/EMT/Immunevasion",
+    "Quelle / Kapitelbasis": "Forschung Fallstricke",
+    "Modus": "RES",
+    "Dauer": "Mini",
+    "Priorität": "Phase 2",
+    "Kernentscheidung": "Spezifische Hypothese erzwingen"
+  },
+  {
+    "ID": "RES_IMM_001",
+    "Titel": "ICI-Resistenz: JAK/STAT-Signatur aus RNA-Seq",
+    "Quelle / Kapitelbasis": "Forschung Beispiel Resistenz gegen Immuntherapie",
+    "Modus": "RES",
+    "Dauer": "Standard",
+    "Priorität": "Phase 2",
+    "Kernentscheidung": "Von Bioinformatik zur mechanistischen Hypothese"
+  },
+  {
+    "ID": "RES_MOD_001",
+    "Titel": "Zelllinie zeigt Effekt – aber passt sie zur Tumorentität?",
+    "Quelle / Kapitelbasis": "Forschung Modelle",
+    "Modus": "RES",
+    "Dauer": "Standard",
+    "Priorität": "Phase 2",
+    "Kernentscheidung": "Modellpassung prüfen"
+  },
+  {
+    "ID": "RES_MOD_002",
+    "Titel": "Organoide für einfache Proof-of-Concept-Frage?",
+    "Quelle / Kapitelbasis": "Forschung Organoide",
+    "Modus": "RES",
+    "Dauer": "Mini",
+    "Priorität": "Phase 2",
+    "Kernentscheidung": "Organoid sinnvoll oder Overkill?"
+  },
+  {
+    "ID": "RES_MOD_003",
+    "Titel": "PDO-Biobank als langfristige Plattform",
+    "Quelle / Kapitelbasis": "Forschung Organoide/Biobank",
+    "Modus": "RES",
+    "Dauer": "Planspiel",
+    "Priorität": "Phase 3",
+    "Kernentscheidung": "SOP, klinische Daten, QC"
+  },
+  {
+    "ID": "RES_VAL_001",
+    "Titel": "Kandidat aus Omics braucht unabhängige Validierung",
+    "Quelle / Kapitelbasis": "Forschung Validierung",
+    "Modus": "RES",
+    "Dauer": "Standard",
+    "Priorität": "MVP 29",
+    "Kernentscheidung": "IHC/qPCR/FISH/externe Kohorte planen"
+  },
+  {
+    "ID": "RES_VAL_002",
+    "Titel": "Präklinischer Effekt ohne Patientenmaterial",
+    "Quelle / Kapitelbasis": "Forschung Translation",
+    "Modus": "RES",
+    "Dauer": "Mini",
+    "Priorität": "Phase 2",
+    "Kernentscheidung": "Brücke zur klinischen Realität fehlt"
+  },
+  {
+    "ID": "RES_ETH_001",
+    "Titel": "Restmaterialprojekt ohne klare Einwilligung",
+    "Quelle / Kapitelbasis": "Forschung Ethik",
+    "Modus": "RES",
+    "Dauer": "Standard",
+    "Priorität": "MVP 30",
+    "Kernentscheidung": "Ethik/Broad Consent/Opt-out klären"
+  },
+  {
+    "ID": "RES_ETH_002",
+    "Titel": "WES-Projekt findet potenzielle Keimbahnvariante",
+    "Quelle / Kapitelbasis": "Forschung Nebenbefunde",
+    "Modus": "RES",
+    "Dauer": "Standard",
+    "Priorität": "Phase 2",
+    "Kernentscheidung": "Rückmeldepolicy und Humangenetik"
+  },
+  {
+    "ID": "RES_ETH_003",
+    "Titel": "Zusatzbiopsien nur für explorative Omics",
+    "Quelle / Kapitelbasis": "Forschung Ethik/Proben",
+    "Modus": "RES",
+    "Dauer": "Standard",
+    "Priorität": "Phase 2",
+    "Kernentscheidung": "Nutzen-Belastungs-Abwägung"
+  },
+  {
+    "ID": "RES_DATA_001",
+    "Titel": "Open-Science-Plan kollidiert mit Einwilligung",
+    "Quelle / Kapitelbasis": "Forschung FAIR/Datenschutz",
+    "Modus": "RES",
+    "Dauer": "Mini",
+    "Priorität": "Phase 2",
+    "Kernentscheidung": "Data Sharing begrenzen/absichern"
+  },
+  {
+    "ID": "RES_AI_001",
+    "Titel": "KI-Modell mit biased Training Set",
+    "Quelle / Kapitelbasis": "Forschung KI/Ethik",
+    "Modus": "RES",
+    "Dauer": "Standard",
+    "Priorität": "Phase 3",
+    "Kernentscheidung": "Bias, Transparenz, Verantwortung"
+  },
+  {
+    "ID": "RES_PM_001",
+    "Titel": "Doktorand startet Projekt ohne Daten-/Code-Struktur",
+    "Quelle / Kapitelbasis": "Forschung Datenorganisation",
+    "Modus": "RES",
+    "Dauer": "Mini",
+    "Priorität": "MVP 31",
+    "Kernentscheidung": "raw/processed/code/README etablieren"
+  },
+  {
+    "ID": "RES_PM_002",
+    "Titel": "analysis_final_neu_ENDGUELTIG.R",
+    "Quelle / Kapitelbasis": "Forschung Codeorganisation",
+    "Modus": "RES",
+    "Dauer": "Mini",
+    "Priorität": "Phase 2",
+    "Kernentscheidung": "Versionierung und Naming"
+  },
+  {
+    "ID": "RES_ROLE_001",
+    "Titel": "Autorenschaftskonflikt kurz vor Submission",
+    "Quelle / Kapitelbasis": "Forschung Rollen/Autorenschaft",
+    "Modus": "RES",
+    "Dauer": "Standard",
+    "Priorität": "Phase 2",
+    "Kernentscheidung": "ICMJE/CRediT/Rollenmatrix"
+  },
+  {
+    "ID": "RES_GRANT_001",
+    "Titel": "Drittmittelidee ohne Arbeitspakete/Budget/Meilensteine",
+    "Quelle / Kapitelbasis": "Forschung Drittmittel",
+    "Modus": "RES",
+    "Dauer": "Planspiel",
+    "Priorität": "Phase 3",
+    "Kernentscheidung": "Projektarchitektur aufbauen"
+  },
+  {
+    "ID": "RES_IMPL_001",
+    "Titel": "Biomarker publiziert, aber nicht routinefähig",
+    "Quelle / Kapitelbasis": "Forschung Translation in Routine",
+    "Modus": "RES",
+    "Dauer": "Standard",
+    "Priorität": "MVP 32",
+    "Kernentscheidung": "Validierung, Workflow, Kosten, Qualität"
+  },
+  {
+    "ID": "RES_TEAM_001",
+    "Titel": "Klinik, Pathologie, Bioinfo, Labor sprechen aneinander vorbei",
+    "Quelle / Kapitelbasis": "Forschung Zusammenarbeit",
+    "Modus": "RES",
+    "Dauer": "Standard",
+    "Priorität": "Phase 2",
+    "Kernentscheidung": "Übersetzungslogik und strukturierte Fragen"
+  }
+]

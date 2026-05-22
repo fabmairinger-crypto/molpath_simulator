@@ -1,0 +1,107 @@
+[
+  {
+    "id": "course_mtb_basics",
+    "title": "MTB Basics",
+    "label": "MTB Basics",
+    "domain": "MTB",
+    "difficulty": "Intermediate",
+    "estimated_minutes": 60,
+    "description": "Grundlagen der molekularpathologischen Tumorboard-Entscheidung: Treiber, Reflexdiagnostik, HRD, Immunescape und Evidenzkommunikation.",
+    "learning_goals": [
+      "Therapierelevante Marker priorisieren",
+      "Reflexdiagnostik korrekt einordnen",
+      "Befundlimitationen und Evidenz im MTB kommunizieren"
+    ],
+    "cases": [
+      "MTB_NSCLC_001_v0_6",
+      "MTB_CRC_001_v0_6",
+      "MTB_OVAR_001_v0_7",
+      "MTB_IO_001_v1_0",
+      "MET_NGS_003_v1_0"
+    ]
+  },
+  {
+    "id": "course_method_pitfalls",
+    "title": "Molecular Methods Pitfalls",
+    "label": "Methodik-Fallen",
+    "domain": "MET",
+    "difficulty": "Advanced",
+    "estimated_minutes": 55,
+    "description": "Typische methodische Fallstricke: Coverage, FFPE-Artefakte, RNA-Fusionen, Liquid Biopsy und Tumor-only-Keimbahnverdacht.",
+    "learning_goals": [
+      "Methodische Limitationen erkennen",
+      "Negativbefunde korrekt einordnen",
+      "Artefakt, VUS und Keimbahnrisiko sauber kommunizieren"
+    ],
+    "cases": [
+      "MET_NGS_001_v1_3",
+      "MET_NGS_002_v1_3",
+      "MET_RNA_001_v1_3",
+      "MET_LB_001_v1_3",
+      "MET_NGS_004_v1_3"
+    ]
+  },
+  {
+    "id": "course_qm_basics",
+    "title": "QM / Labor Basics",
+    "label": "QM Basics",
+    "domain": "LAB",
+    "difficulty": "Intermediate",
+    "estimated_minutes": 60,
+    "description": "Laborleitungs- und QM-Grundlagen: Kontrollen, Run-Freigabe, Probenidentität, Pipeline-Versionierung und SOP-Dokumentation.",
+    "learning_goals": [
+      "Patientensicherheit vor Zeitdruck stellen",
+      "CAPA und Audit-Trail systematisch anwenden",
+      "Freigabeentscheidungen nachvollziehbar dokumentieren"
+    ],
+    "cases": [
+      "LAB_RUN_002_v0_8",
+      "LAB_RUN_001_v1_3",
+      "LAB_PRE_001_v1_3",
+      "LAB_POST_001_v1_0",
+      "LAB_DOC_001_v1_0"
+    ]
+  },
+  {
+    "id": "course_res_basics",
+    "title": "RES Basics",
+    "label": "RES Basics",
+    "domain": "RES",
+    "difficulty": "Intermediate",
+    "estimated_minutes": 60,
+    "description": "Forschungsbasics: Von der vagen Idee zur Hypothese, Omics sauber planen, Ethik/Materialschutz beachten und Translation mitdenken.",
+    "learning_goals": [
+      "PICO/Hypothese vor Methode formulieren",
+      "Explorativ und konfirmatorisch trennen",
+      "Ethik, Daten und Rollen früh klären"
+    ],
+    "cases": [
+      "RES_HYP_001_v0_9",
+      "RES_OMICS_001_v1_0",
+      "RES_ETH_001_v1_0",
+      "RES_ROLE_001_v1_3",
+      "RES_IMPL_001_v1_3"
+    ]
+  },
+  {
+    "id": "course_advanced_integrated",
+    "title": "Advanced Integrated Cases",
+    "label": "Advanced Integrated",
+    "domain": "MIX",
+    "difficulty": "Advanced/Expert",
+    "estimated_minutes": 110,
+    "description": "Komplexe Querschnittsfälle mit Resistenz, VUS, Keimbahnverdacht, Bioinformatik-QM und Ethik-/Rückmeldekonzept.",
+    "learning_goals": [
+      "Mehrschichtige diagnostische Situationen strukturieren",
+      "kritische Fehler vermeiden",
+      "klinische, methodische und ethische Konsequenzen integrieren"
+    ],
+    "cases": [
+      "MTB_NSCLC_002_v1_3",
+      "MTB_OVAR_002_v1_3",
+      "MET_NGS_004_v1_3",
+      "LAB_POST_001_v1_0",
+      "RES_ETH_002_v1_3"
+    ]
+  }
+]

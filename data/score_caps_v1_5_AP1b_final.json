@@ -1,0 +1,937 @@
+{
+  "version": "v1.5_AP1b_final",
+  "created": "2026-05-19T08:27:09",
+  "global_policy": {
+    "minor": "small point penalties, normally no cap",
+    "major": "relevant gap; penalty or cap typically 80/75",
+    "critical": "central clinical/QM/research-governance error; caps typically 70/65/60/55",
+    "fatal": "patient safety, major QM breach, or ethically unacceptable action; caps typically 50/45/40 and may trigger critical_fail",
+    "combination": "strictest cap is the upper bound; additional major/critical/fatal errors subtract points inside that cap; caps never improve a score",
+    "suggested_additional_penalties": {
+      "additional_major": "-3 to -5",
+      "additional_critical": "-5 to -10",
+      "additional_fatal": "-10 to -15",
+      "repeated_minor_max_total": "-10"
+    },
+    "floor_logic": "normal flawed attempts usually do not go below 25-30%; fatal safety/ethics errors may go lower",
+    "pass_fail_flags": [
+      "passed",
+      "borderline",
+      "critical_fail",
+      "incomplete"
+    ],
+    "follow_up_logic": "Nachforderung can rescue part of the case, but does not erase primary-order caps; late therapy-decisive requests usually cap at 80-85."
+  },
+  "records": [
+    {
+      "case_id": "MTB_NSCLC_001_v0_6",
+      "base_id": "MTB_NSCLC_001",
+      "error_class": "major",
+      "critical_error_count": 2,
+      "strictest_score_cap": 75,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 75%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "MTB_CRC_001_v0_6",
+      "base_id": "MTB_CRC_001",
+      "error_class": "major-critical",
+      "critical_error_count": 3,
+      "strictest_score_cap": 70,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 70%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "MTB_OVAR_001_v0_7",
+      "base_id": "MTB_OVAR_001",
+      "error_class": "major-critical",
+      "critical_error_count": 3,
+      "strictest_score_cap": 70,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 70%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "LAB_RUN_002_v0_8",
+      "base_id": "LAB_RUN_002",
+      "error_class": "critical",
+      "critical_error_count": 4,
+      "strictest_score_cap": 55,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 55%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "RES_HYP_001_v0_9",
+      "base_id": "RES_HYP_001",
+      "error_class": "critical",
+      "critical_error_count": 3,
+      "strictest_score_cap": 60,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 60%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "MTB_IO_001_v1_0",
+      "base_id": "MTB_IO_001",
+      "error_class": "major-critical",
+      "critical_error_count": 3,
+      "strictest_score_cap": 70,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 70%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "MTB_CNS_001_v1_0",
+      "base_id": "MTB_CNS_001",
+      "error_class": "major",
+      "critical_error_count": 2,
+      "strictest_score_cap": 75,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 75%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "MET_NGS_003_v1_0",
+      "base_id": "MET_NGS_003",
+      "error_class": "major-critical",
+      "critical_error_count": 3,
+      "strictest_score_cap": 65,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 65%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "LAB_POST_001_v1_0",
+      "base_id": "LAB_POST_001",
+      "error_class": "critical",
+      "critical_error_count": 4,
+      "strictest_score_cap": 55,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 55%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "LAB_DOC_001_v1_0",
+      "base_id": "LAB_DOC_001",
+      "error_class": "critical",
+      "critical_error_count": 3,
+      "strictest_score_cap": 55,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 55%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "RES_OMICS_001_v1_0",
+      "base_id": "RES_OMICS_001",
+      "error_class": "critical",
+      "critical_error_count": 3,
+      "strictest_score_cap": 60,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 60%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "RES_ETH_001_v1_0",
+      "base_id": "RES_ETH_001",
+      "error_class": "critical",
+      "critical_error_count": 4,
+      "strictest_score_cap": 60,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 60%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "MTB_NSCLC_002_v1_3",
+      "base_id": "MTB_NSCLC_002",
+      "error_class": "major-critical",
+      "critical_error_count": 3,
+      "strictest_score_cap": 65,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 65%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "MTB_NSCLC_003_v1_3",
+      "base_id": "MTB_NSCLC_003",
+      "error_class": "major-critical",
+      "critical_error_count": 3,
+      "strictest_score_cap": 70,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 70%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "MTB_NSCLC_004_v1_3",
+      "base_id": "MTB_NSCLC_004",
+      "error_class": "major",
+      "critical_error_count": 2,
+      "strictest_score_cap": 75,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 75%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "MTB_MEL_001_v1_3",
+      "base_id": "MTB_MEL_001",
+      "error_class": "major",
+      "critical_error_count": 2,
+      "strictest_score_cap": 75,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 75%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "MTB_GIST_001_v1_3",
+      "base_id": "MTB_GIST_001",
+      "error_class": "major",
+      "critical_error_count": 2,
+      "strictest_score_cap": 75,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 75%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "MTB_CHOL_001_v1_3",
+      "base_id": "MTB_CHOL_001",
+      "error_class": "major",
+      "critical_error_count": 2,
+      "strictest_score_cap": 75,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 75%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "MTB_CRC_002_v1_3",
+      "base_id": "MTB_CRC_002",
+      "error_class": "major-critical",
+      "critical_error_count": 3,
+      "strictest_score_cap": 70,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 70%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "MTB_CRC_003_v1_3",
+      "base_id": "MTB_CRC_003",
+      "error_class": "major-critical",
+      "critical_error_count": 3,
+      "strictest_score_cap": 70,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 70%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "MTB_CRC_004_v1_3",
+      "base_id": "MTB_CRC_004",
+      "error_class": "major-critical",
+      "critical_error_count": 3,
+      "strictest_score_cap": 65,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 65%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "MTB_CRC_005_v1_3",
+      "base_id": "MTB_CRC_005",
+      "error_class": "major",
+      "critical_error_count": 2,
+      "strictest_score_cap": 75,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 75%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "MTB_OVAR_002_v1_3",
+      "base_id": "MTB_OVAR_002",
+      "error_class": "major-critical",
+      "critical_error_count": 4,
+      "strictest_score_cap": 65,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 65%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "MTB_MAMMA_001_v1_3",
+      "base_id": "MTB_MAMMA_001",
+      "error_class": "major-critical",
+      "critical_error_count": 3,
+      "strictest_score_cap": 70,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 70%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "MTB_PROST_001_v1_3",
+      "base_id": "MTB_PROST_001",
+      "error_class": "major-critical",
+      "critical_error_count": 4,
+      "strictest_score_cap": 70,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 70%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "MTB_TAML_001_v1_3",
+      "base_id": "MTB_TAML_001",
+      "error_class": "major",
+      "critical_error_count": 2,
+      "strictest_score_cap": 75,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 75%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "MTB_IO_002_v1_3",
+      "base_id": "MTB_IO_002",
+      "error_class": "major",
+      "critical_error_count": 2,
+      "strictest_score_cap": 75,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 75%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "MTB_IO_003_v1_3",
+      "base_id": "MTB_IO_003",
+      "error_class": "major",
+      "critical_error_count": 2,
+      "strictest_score_cap": 75,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 75%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "MTB_IO_004_v1_3",
+      "base_id": "MTB_IO_004",
+      "error_class": "major-critical",
+      "critical_error_count": 4,
+      "strictest_score_cap": 70,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 70%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "MTB_IO_005_v1_3",
+      "base_id": "MTB_IO_005",
+      "error_class": "major",
+      "critical_error_count": 2,
+      "strictest_score_cap": 75,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 75%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "MTB_CNS_002_v1_3",
+      "base_id": "MTB_CNS_002",
+      "error_class": "major",
+      "critical_error_count": 2,
+      "strictest_score_cap": 75,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 75%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "MTB_CNS_003_v1_3",
+      "base_id": "MTB_CNS_003",
+      "error_class": "major",
+      "critical_error_count": 2,
+      "strictest_score_cap": 75,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 75%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "MTB_HEM_001_v1_3",
+      "base_id": "MTB_HEM_001",
+      "error_class": "major",
+      "critical_error_count": 2,
+      "strictest_score_cap": 75,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 75%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "MTB_METH_001_v1_3",
+      "base_id": "MTB_METH_001",
+      "error_class": "major-critical",
+      "critical_error_count": 3,
+      "strictest_score_cap": 70,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 70%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "MTB_ANGIO_001_v1_3",
+      "base_id": "MTB_ANGIO_001",
+      "error_class": "major",
+      "critical_error_count": 2,
+      "strictest_score_cap": 75,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 75%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "MTB_RCC_001_v1_3",
+      "base_id": "MTB_RCC_001",
+      "error_class": "major",
+      "critical_error_count": 2,
+      "strictest_score_cap": 75,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 75%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "MTB_GBM_ANGIO_001_v1_3",
+      "base_id": "MTB_GBM_ANGIO_001",
+      "error_class": "major",
+      "critical_error_count": 2,
+      "strictest_score_cap": 75,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 75%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "MTB_TME_001_v1_3",
+      "base_id": "MTB_TME_001",
+      "error_class": "major",
+      "critical_error_count": 2,
+      "strictest_score_cap": 75,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 75%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "MTB_INV_001_v1_3",
+      "base_id": "MTB_INV_001",
+      "error_class": "major",
+      "critical_error_count": 2,
+      "strictest_score_cap": 75,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 75%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "MET_NGS_001_v1_3",
+      "base_id": "MET_NGS_001",
+      "error_class": "major-critical",
+      "critical_error_count": 3,
+      "strictest_score_cap": 65,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 65%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "MET_NGS_002_v1_3",
+      "base_id": "MET_NGS_002",
+      "error_class": "major-critical",
+      "critical_error_count": 3,
+      "strictest_score_cap": 65,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 65%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "MET_NGS_004_v1_3",
+      "base_id": "MET_NGS_004",
+      "error_class": "major-critical",
+      "critical_error_count": 3,
+      "strictest_score_cap": 70,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 70%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "MET_RNA_001_v1_3",
+      "base_id": "MET_RNA_001",
+      "error_class": "major-critical",
+      "critical_error_count": 3,
+      "strictest_score_cap": 70,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 70%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "MET_LB_001_v1_3",
+      "base_id": "MET_LB_001",
+      "error_class": "major-critical",
+      "critical_error_count": 3,
+      "strictest_score_cap": 65,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 65%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "MET_PCR_001_v1_3",
+      "base_id": "MET_PCR_001",
+      "error_class": "major",
+      "critical_error_count": 2,
+      "strictest_score_cap": 75,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 75%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "MET_METH_001_v1_3",
+      "base_id": "MET_METH_001",
+      "error_class": "major",
+      "critical_error_count": 2,
+      "strictest_score_cap": 75,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 75%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "MET_FISH_001_v1_3",
+      "base_id": "MET_FISH_001",
+      "error_class": "major-critical",
+      "critical_error_count": 3,
+      "strictest_score_cap": 70,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 70%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "MET_MULTI_001_v1_3",
+      "base_id": "MET_MULTI_001",
+      "error_class": "major",
+      "critical_error_count": 2,
+      "strictest_score_cap": 75,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 75%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "LAB_PRE_001_v1_3",
+      "base_id": "LAB_PRE_001",
+      "error_class": "critical",
+      "critical_error_count": 3,
+      "strictest_score_cap": 55,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 55%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "LAB_PRE_002_v1_3",
+      "base_id": "LAB_PRE_002",
+      "error_class": "critical",
+      "critical_error_count": 3,
+      "strictest_score_cap": 55,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 55%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "LAB_PRE_003_v1_3",
+      "base_id": "LAB_PRE_003",
+      "error_class": "critical",
+      "critical_error_count": 3,
+      "strictest_score_cap": 55,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 55%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "LAB_PRE_004_v1_3",
+      "base_id": "LAB_PRE_004",
+      "error_class": "critical",
+      "critical_error_count": 3,
+      "strictest_score_cap": 55,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 55%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "LAB_PRE_005_v1_3",
+      "base_id": "LAB_PRE_005",
+      "error_class": "critical",
+      "critical_error_count": 3,
+      "strictest_score_cap": 55,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 55%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "LAB_RUN_001_v1_3",
+      "base_id": "LAB_RUN_001",
+      "error_class": "critical",
+      "critical_error_count": 3,
+      "strictest_score_cap": 55,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 55%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "LAB_RUN_003_v1_3",
+      "base_id": "LAB_RUN_003",
+      "error_class": "critical",
+      "critical_error_count": 3,
+      "strictest_score_cap": 55,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 55%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "LAB_RUN_004_v1_3",
+      "base_id": "LAB_RUN_004",
+      "error_class": "critical",
+      "critical_error_count": 4,
+      "strictest_score_cap": 55,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 55%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "LAB_RUN_005_v1_3",
+      "base_id": "LAB_RUN_005",
+      "error_class": "critical",
+      "critical_error_count": 3,
+      "strictest_score_cap": 55,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 55%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "LAB_RUN_006_v1_3",
+      "base_id": "LAB_RUN_006",
+      "error_class": "critical",
+      "critical_error_count": 4,
+      "strictest_score_cap": 55,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 55%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "LAB_POST_002_v1_3",
+      "base_id": "LAB_POST_002",
+      "error_class": "critical",
+      "critical_error_count": 4,
+      "strictest_score_cap": 55,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 55%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "LAB_POST_003_v1_3",
+      "base_id": "LAB_POST_003",
+      "error_class": "critical",
+      "critical_error_count": 3,
+      "strictest_score_cap": 55,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 55%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "LAB_POST_004_v1_3",
+      "base_id": "LAB_POST_004",
+      "error_class": "critical",
+      "critical_error_count": 3,
+      "strictest_score_cap": 55,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 55%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "LAB_POST_005_v1_3",
+      "base_id": "LAB_POST_005",
+      "error_class": "critical",
+      "critical_error_count": 3,
+      "strictest_score_cap": 55,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 55%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "LAB_DOC_002_v1_3",
+      "base_id": "LAB_DOC_002",
+      "error_class": "critical",
+      "critical_error_count": 4,
+      "strictest_score_cap": 55,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 55%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "LAB_AUDIT_001_v1_3",
+      "base_id": "LAB_AUDIT_001",
+      "error_class": "critical",
+      "critical_error_count": 4,
+      "strictest_score_cap": 55,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 55%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "LAB_CAPA_001_v1_3",
+      "base_id": "LAB_CAPA_001",
+      "error_class": "critical",
+      "critical_error_count": 4,
+      "strictest_score_cap": 55,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 55%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "LAB_QM_001_v1_3",
+      "base_id": "LAB_QM_001",
+      "error_class": "critical",
+      "critical_error_count": 3,
+      "strictest_score_cap": 55,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 55%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "LAB_LLM_001_v1_3",
+      "base_id": "LAB_LLM_001",
+      "error_class": "critical",
+      "critical_error_count": 4,
+      "strictest_score_cap": 55,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 55%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "LAB_DIGI_001_v1_3",
+      "base_id": "LAB_DIGI_001",
+      "error_class": "critical",
+      "critical_error_count": 3,
+      "strictest_score_cap": 55,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 55%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "LAB_DIGI_002_v1_3",
+      "base_id": "LAB_DIGI_002",
+      "error_class": "critical",
+      "critical_error_count": 4,
+      "strictest_score_cap": 55,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 55%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "LAB_DATA_001_v1_3",
+      "base_id": "LAB_DATA_001",
+      "error_class": "critical",
+      "critical_error_count": 3,
+      "strictest_score_cap": 55,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 55%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "LAB_DATA_002_v1_3",
+      "base_id": "LAB_DATA_002",
+      "error_class": "critical",
+      "critical_error_count": 4,
+      "strictest_score_cap": 55,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 55%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "LAB_LIMS_001_v1_3",
+      "base_id": "LAB_LIMS_001",
+      "error_class": "critical",
+      "critical_error_count": 3,
+      "strictest_score_cap": 55,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 55%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "RES_HYP_002_v1_3",
+      "base_id": "RES_HYP_002",
+      "error_class": "critical",
+      "critical_error_count": 3,
+      "strictest_score_cap": 60,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 60%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "RES_OMICS_002_v1_3",
+      "base_id": "RES_OMICS_002",
+      "error_class": "critical",
+      "critical_error_count": 3,
+      "strictest_score_cap": 60,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 60%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "RES_OMICS_003_v1_3",
+      "base_id": "RES_OMICS_003",
+      "error_class": "critical",
+      "critical_error_count": 3,
+      "strictest_score_cap": 60,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 60%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "RES_IMM_001_v1_3",
+      "base_id": "RES_IMM_001",
+      "error_class": "critical",
+      "critical_error_count": 3,
+      "strictest_score_cap": 60,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 60%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "RES_MOD_001_v1_3",
+      "base_id": "RES_MOD_001",
+      "error_class": "critical",
+      "critical_error_count": 3,
+      "strictest_score_cap": 60,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 60%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "RES_MOD_002_v1_3",
+      "base_id": "RES_MOD_002",
+      "error_class": "critical",
+      "critical_error_count": 3,
+      "strictest_score_cap": 60,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 60%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "RES_MOD_003_v1_3",
+      "base_id": "RES_MOD_003",
+      "error_class": "critical",
+      "critical_error_count": 4,
+      "strictest_score_cap": 60,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 60%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "RES_VAL_001_v1_3",
+      "base_id": "RES_VAL_001",
+      "error_class": "critical",
+      "critical_error_count": 3,
+      "strictest_score_cap": 60,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 60%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "RES_VAL_002_v1_3",
+      "base_id": "RES_VAL_002",
+      "error_class": "critical",
+      "critical_error_count": 3,
+      "strictest_score_cap": 60,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 60%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "RES_ETH_002_v1_3",
+      "base_id": "RES_ETH_002",
+      "error_class": "critical",
+      "critical_error_count": 3,
+      "strictest_score_cap": 60,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 60%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "RES_ETH_003_v1_3",
+      "base_id": "RES_ETH_003",
+      "error_class": "critical",
+      "critical_error_count": 3,
+      "strictest_score_cap": 60,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 60%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "RES_DATA_001_v1_3",
+      "base_id": "RES_DATA_001",
+      "error_class": "critical",
+      "critical_error_count": 3,
+      "strictest_score_cap": 60,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 60%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "RES_AI_001_v1_3",
+      "base_id": "RES_AI_001",
+      "error_class": "critical",
+      "critical_error_count": 3,
+      "strictest_score_cap": 60,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 60%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "RES_PM_001_v1_3",
+      "base_id": "RES_PM_001",
+      "error_class": "critical",
+      "critical_error_count": 4,
+      "strictest_score_cap": 60,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 60%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "RES_PM_002_v1_3",
+      "base_id": "RES_PM_002",
+      "error_class": "critical",
+      "critical_error_count": 3,
+      "strictest_score_cap": 60,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 60%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "RES_ROLE_001_v1_3",
+      "base_id": "RES_ROLE_001",
+      "error_class": "critical",
+      "critical_error_count": 4,
+      "strictest_score_cap": 60,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 60%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "RES_GRANT_001_v1_3",
+      "base_id": "RES_GRANT_001",
+      "error_class": "critical",
+      "critical_error_count": 3,
+      "strictest_score_cap": 60,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 60%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "RES_IMPL_001_v1_3",
+      "base_id": "RES_IMPL_001",
+      "error_class": "critical",
+      "critical_error_count": 3,
+      "strictest_score_cap": 60,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 60%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    },
+    {
+      "case_id": "RES_TEAM_001_v1_3",
+      "base_id": "RES_TEAM_001",
+      "error_class": "critical",
+      "critical_error_count": 3,
+      "strictest_score_cap": 60,
+      "combination_rule": "strengster Cap gewinnt; weitere Critical/Fatal-Fehler geben Zusatzabzüge innerhalb des Caps; Cap verbessert nie",
+      "pass_fail_flag_logic": "passed / borderline / critical_fail / incomplete je nach Score, Fatal-Fehlern und Abschlussstatus",
+      "decision": "Strengster Cap 60%; weitere kritische Fehler: Zusatzabzug innerhalb dieses Caps; Cap kann Score nie verbessern."
+    }
+  ]
+}

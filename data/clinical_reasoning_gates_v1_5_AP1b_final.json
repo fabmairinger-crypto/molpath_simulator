@@ -1,0 +1,2196 @@
+{
+  "version": "v1.5_AP1b_final",
+  "created": "2026-05-19T08:27:09",
+  "global_policy": {
+    "mini": "1 gate question",
+    "standard": "2-3 gate questions",
+    "complex": "4 gate questions",
+    "planspiel": "phase-based gates",
+    "allowed_question_types_v1_5": [
+      "single_choice",
+      "multi_select"
+    ],
+    "position": "after case context, before main decision/order/protocol action"
+  },
+  "records": [
+    {
+      "case_id": "MTB_NSCLC_001_v0_6",
+      "base_id": "MTB_NSCLC_001",
+      "required": true,
+      "position": "Nach Fallakte/Anamnese/Histo-Material, vor Anforderung",
+      "gate_count": 2,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Was ist die zentrale klinisch-molekulare Fragestellung in diesem Fall?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_2",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welche Material- und Methodenlimitation ist relevant: Gewebe, Liquid Biopsy, DNA/RNA oder Fusionserfassung?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "2 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "MTB_CRC_001_v0_6",
+      "base_id": "MTB_CRC_001",
+      "required": true,
+      "position": "Nach Fallakte/Anamnese/Histo-Material, vor Anforderung",
+      "gate_count": 2,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Was ist die zentrale klinisch-molekulare Fragestellung in diesem Fall?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_2",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welche Material- und Methodenlimitation ist relevant: Gewebe, Liquid Biopsy, DNA/RNA oder Fusionserfassung?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "2 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "MTB_OVAR_001_v0_7",
+      "base_id": "MTB_OVAR_001",
+      "required": true,
+      "position": "Nach Fallakte/Anamnese/Histo-Material, vor Anforderung",
+      "gate_count": 2,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Was ist die zentrale klinisch-molekulare Fragestellung in diesem Fall?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_2",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welche Material- und Methodenlimitation ist relevant: Gewebe, Liquid Biopsy, DNA/RNA oder Fusionserfassung?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "2 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "LAB_RUN_002_v0_8",
+      "base_id": "LAB_RUN_002",
+      "required": true,
+      "position": "Nach Proben-/Run-/QC-Kontext, vor Freigabe/CAPA-Entscheidung",
+      "gate_count": 2,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welches patientensicherheits- oder qualitätsrelevante Risiko liegt im aktuellen Labor-/Run-Kontext vor?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_2",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welche Sofortmaßnahme schützt vor falsch-positiven oder kontaminierten Ergebnissen?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "2 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "RES_HYP_001_v0_9",
+      "base_id": "RES_HYP_001",
+      "required": true,
+      "position": "Nach Projektidee/Kontext/Materiallage, vor Hypothese/Design/Analyseplan",
+      "gate_count": 2,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Was ist die zentrale Forschungsfrage bzw. was fehlt der vorliegenden Projektidee primär?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_2",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Wie wird die Projektidee in Hypothese/PICO, Endpunkt und Analyseplan übersetzt?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "2 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "MTB_IO_001_v1_0",
+      "base_id": "MTB_IO_001",
+      "required": true,
+      "position": "Nach Fallakte/Anamnese/Histo-Material, vor Anforderung",
+      "gate_count": 2,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Was ist die zentrale klinisch-molekulare Fragestellung in diesem Fall?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_2",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welcher RAS/BRAF/MMR/MSI- oder MLH1-Reflexpfad ist für die Therapie-/Lynch-Frage relevant?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "2 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "MTB_CNS_001_v1_0",
+      "base_id": "MTB_CNS_001",
+      "required": true,
+      "position": "Nach Fallakte/Anamnese/Histo-Material, vor Anforderung",
+      "gate_count": 2,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Was ist die zentrale klinisch-molekulare Fragestellung in diesem Fall?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_2",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welche Rolle spielt Methylierung/IDH/MGMT als diagnostische, prädiktive oder Klassifikations-Ebene?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "2 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "MET_NGS_003_v1_0",
+      "base_id": "MET_NGS_003",
+      "required": true,
+      "position": "Nach Fallakte/Anamnese/Histo-Material, vor Anforderung",
+      "gate_count": 2,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Was ist die zentrale klinisch-molekulare Fragestellung in diesem Fall?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_2",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welche Evidenz reicht aus, und warum darf ein VUS nicht therapeutisch overcalled werden?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "2 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "LAB_POST_001_v1_0",
+      "base_id": "LAB_POST_001",
+      "required": true,
+      "position": "Nach Proben-/Run-/QC-Kontext, vor Freigabe/CAPA-Entscheidung",
+      "gate_count": 4,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welches patientensicherheits- oder qualitätsrelevante Risiko liegt im aktuellen Labor-/Run-Kontext vor?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_2",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welche Change-Control-, Versionierungs- oder Audit-Trail-Anforderung folgt aus dem Ereignis?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_3",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welche Dokumentation, Abweichungsmeldung, CAPA oder SOP-/Versionierungsprüfung ist erforderlich?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_4",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welche Freigabe-, Teilfreigabe-, Sperr- oder Wiederholungsentscheidung ist fachlich begründbar?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "4 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "LAB_DOC_001_v1_0",
+      "base_id": "LAB_DOC_001",
+      "required": true,
+      "position": "Nach Proben-/Run-/QC-Kontext, vor Freigabe/CAPA-Entscheidung",
+      "gate_count": 2,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welches patientensicherheits- oder qualitätsrelevante Risiko liegt im aktuellen Labor-/Run-Kontext vor?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_2",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welche Sofortmaßnahme schützt vor falsch-positiven oder kontaminierten Ergebnissen?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "2 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "RES_OMICS_001_v1_0",
+      "base_id": "RES_OMICS_001",
+      "required": true,
+      "position": "Nach Projektidee/Kontext/Materiallage, vor Hypothese/Design/Analyseplan",
+      "gate_count": 2,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Was ist die zentrale Forschungsfrage bzw. was fehlt der vorliegenden Projektidee primär?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_2",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Wie wird die Projektidee in Hypothese/PICO, Endpunkt und Analyseplan übersetzt?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "2 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "RES_ETH_001_v1_0",
+      "base_id": "RES_ETH_001",
+      "required": true,
+      "position": "Nach Projektidee/Kontext/Materiallage, vor Hypothese/Design/Analyseplan",
+      "gate_count": 2,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Was ist die zentrale Forschungsfrage bzw. was fehlt der vorliegenden Projektidee primär?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_2",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welche Ethik-, Einwilligungs-, Datenschutz- oder Rückmeldepflicht muss vor Projektstart geklärt sein?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "2 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "MTB_NSCLC_002_v1_3",
+      "base_id": "MTB_NSCLC_002",
+      "required": true,
+      "position": "Nach Fallakte/Anamnese/Histo-Material, vor Anforderung",
+      "gate_count": 4,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Was ist die zentrale klinisch-molekulare Fragestellung in diesem Fall?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_2",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welche Material- und Methodenlimitation ist relevant: Gewebe, Liquid Biopsy, DNA/RNA oder Fusionserfassung?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_3",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welche Methodengruppe oder Entscheidung ist primär sinnvoll und was wäre zu eng, niedrigwertig oder irreführend?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_4",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Wo liegt der Twist/Nachforderungs-/Kommunikationspunkt, der den Fall komplex macht?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "4 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "MTB_NSCLC_003_v1_3",
+      "base_id": "MTB_NSCLC_003",
+      "required": true,
+      "position": "Nach Fallakte/Anamnese/Histo-Material, vor Anforderung",
+      "gate_count": 2,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Was ist die zentrale klinisch-molekulare Fragestellung in diesem Fall?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_2",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welche Material- und Methodenlimitation ist relevant: Gewebe, Liquid Biopsy, DNA/RNA oder Fusionserfassung?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "2 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "MTB_NSCLC_004_v1_3",
+      "base_id": "MTB_NSCLC_004",
+      "required": true,
+      "position": "Nach Fallakte/Anamnese/Histo-Material, vor Anforderung",
+      "gate_count": 2,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Was ist die zentrale klinisch-molekulare Fragestellung in diesem Fall?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_2",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welche Material- und Methodenlimitation ist relevant: Gewebe, Liquid Biopsy, DNA/RNA oder Fusionserfassung?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "2 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "MTB_MEL_001_v1_3",
+      "base_id": "MTB_MEL_001",
+      "required": true,
+      "position": "Nach Fallakte/Anamnese/Histo-Material, vor Anforderung",
+      "gate_count": 2,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Was ist die zentrale klinisch-molekulare Fragestellung in diesem Fall?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_2",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welcher RAS/BRAF/MMR/MSI- oder MLH1-Reflexpfad ist für die Therapie-/Lynch-Frage relevant?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "2 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "MTB_GIST_001_v1_3",
+      "base_id": "MTB_GIST_001",
+      "required": true,
+      "position": "Nach Fallakte/Anamnese/Histo-Material, vor Anforderung",
+      "gate_count": 1,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Was ist die zentrale klinisch-molekulare Fragestellung in diesem Fall?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "1 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "MTB_CHOL_001_v1_3",
+      "base_id": "MTB_CHOL_001",
+      "required": true,
+      "position": "Nach Fallakte/Anamnese/Histo-Material, vor Anforderung",
+      "gate_count": 2,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Was ist die zentrale klinisch-molekulare Fragestellung in diesem Fall?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_2",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welche Rolle spielt Methylierung/IDH/MGMT als diagnostische, prädiktive oder Klassifikations-Ebene?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "2 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "MTB_CRC_002_v1_3",
+      "base_id": "MTB_CRC_002",
+      "required": true,
+      "position": "Nach Fallakte/Anamnese/Histo-Material, vor Anforderung",
+      "gate_count": 2,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Was ist die zentrale klinisch-molekulare Fragestellung in diesem Fall?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_2",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welcher RAS/BRAF/MMR/MSI- oder MLH1-Reflexpfad ist für die Therapie-/Lynch-Frage relevant?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "2 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "MTB_CRC_003_v1_3",
+      "base_id": "MTB_CRC_003",
+      "required": true,
+      "position": "Nach Fallakte/Anamnese/Histo-Material, vor Anforderung",
+      "gate_count": 1,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Was ist die zentrale klinisch-molekulare Fragestellung in diesem Fall?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "1 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "MTB_CRC_004_v1_3",
+      "base_id": "MTB_CRC_004",
+      "required": true,
+      "position": "Nach Fallakte/Anamnese/Histo-Material, vor Anforderung",
+      "gate_count": 1,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Was ist die zentrale klinisch-molekulare Fragestellung in diesem Fall?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "1 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "MTB_CRC_005_v1_3",
+      "base_id": "MTB_CRC_005",
+      "required": true,
+      "position": "Nach Fallakte/Anamnese/Histo-Material, vor Anforderung",
+      "gate_count": 2,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Was ist die zentrale klinisch-molekulare Fragestellung in diesem Fall?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_2",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welcher RAS/BRAF/MMR/MSI- oder MLH1-Reflexpfad ist für die Therapie-/Lynch-Frage relevant?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "2 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "MTB_OVAR_002_v1_3",
+      "base_id": "MTB_OVAR_002",
+      "required": true,
+      "position": "Nach Fallakte/Anamnese/Histo-Material, vor Anforderung",
+      "gate_count": 4,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Was ist die zentrale klinisch-molekulare Fragestellung in diesem Fall?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_2",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welche Material- und Methodenlimitation ist relevant: Gewebe, Liquid Biopsy, DNA/RNA oder Fusionserfassung?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_3",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welche Methodengruppe oder Entscheidung ist primär sinnvoll und was wäre zu eng, niedrigwertig oder irreführend?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_4",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Wo liegt der Twist/Nachforderungs-/Kommunikationspunkt, der den Fall komplex macht?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "4 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "MTB_MAMMA_001_v1_3",
+      "base_id": "MTB_MAMMA_001",
+      "required": true,
+      "position": "Nach Fallakte/Anamnese/Histo-Material, vor Anforderung",
+      "gate_count": 2,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Was ist die zentrale klinisch-molekulare Fragestellung in diesem Fall?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_2",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Warum müssen somatische Tumordiagnostik, Keimbahnrelevanz und HRD/HRR-Ebene getrennt bewertet werden?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "2 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "MTB_PROST_001_v1_3",
+      "base_id": "MTB_PROST_001",
+      "required": true,
+      "position": "Nach Fallakte/Anamnese/Histo-Material, vor Anforderung",
+      "gate_count": 2,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Was ist die zentrale klinisch-molekulare Fragestellung in diesem Fall?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_2",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Warum müssen somatische Tumordiagnostik, Keimbahnrelevanz und HRD/HRR-Ebene getrennt bewertet werden?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "2 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "MTB_TAML_001_v1_3",
+      "base_id": "MTB_TAML_001",
+      "required": true,
+      "position": "Nach Fallakte/Anamnese/Histo-Material, vor Anforderung",
+      "gate_count": 1,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Was ist die zentrale klinisch-molekulare Fragestellung in diesem Fall?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "1 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "MTB_IO_002_v1_3",
+      "base_id": "MTB_IO_002",
+      "required": true,
+      "position": "Nach Fallakte/Anamnese/Histo-Material, vor Anforderung",
+      "gate_count": 2,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Was ist die zentrale klinisch-molekulare Fragestellung in diesem Fall?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_2",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welcher RAS/BRAF/MMR/MSI- oder MLH1-Reflexpfad ist für die Therapie-/Lynch-Frage relevant?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "2 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "MTB_IO_003_v1_3",
+      "base_id": "MTB_IO_003",
+      "required": true,
+      "position": "Nach Fallakte/Anamnese/Histo-Material, vor Anforderung",
+      "gate_count": 1,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Was ist die zentrale klinisch-molekulare Fragestellung in diesem Fall?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "1 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "MTB_IO_004_v1_3",
+      "base_id": "MTB_IO_004",
+      "required": true,
+      "position": "Nach Fallakte/Anamnese/Histo-Material, vor Anforderung",
+      "gate_count": 2,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Was ist die zentrale klinisch-molekulare Fragestellung in diesem Fall?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_2",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welcher RAS/BRAF/MMR/MSI- oder MLH1-Reflexpfad ist für die Therapie-/Lynch-Frage relevant?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "2 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "MTB_IO_005_v1_3",
+      "base_id": "MTB_IO_005",
+      "required": true,
+      "position": "Nach Fallakte/Anamnese/Histo-Material, vor Anforderung",
+      "gate_count": 1,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Was ist die zentrale klinisch-molekulare Fragestellung in diesem Fall?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "1 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "MTB_CNS_002_v1_3",
+      "base_id": "MTB_CNS_002",
+      "required": true,
+      "position": "Nach Fallakte/Anamnese/Histo-Material, vor Anforderung",
+      "gate_count": 2,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Was ist die zentrale klinisch-molekulare Fragestellung in diesem Fall?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_2",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welche Rolle spielt Methylierung/IDH/MGMT als diagnostische, prädiktive oder Klassifikations-Ebene?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "2 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "MTB_CNS_003_v1_3",
+      "base_id": "MTB_CNS_003",
+      "required": true,
+      "position": "Nach Fallakte/Anamnese/Histo-Material, vor Anforderung",
+      "gate_count": 2,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Was ist die zentrale klinisch-molekulare Fragestellung in diesem Fall?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_2",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welche Rolle spielt Methylierung/IDH/MGMT als diagnostische, prädiktive oder Klassifikations-Ebene?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "2 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "MTB_HEM_001_v1_3",
+      "base_id": "MTB_HEM_001",
+      "required": true,
+      "position": "Nach Fallakte/Anamnese/Histo-Material, vor Anforderung",
+      "gate_count": 2,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Was ist die zentrale klinisch-molekulare Fragestellung in diesem Fall?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_2",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welche Methode oder Markerklasse folgt logisch aus klinischer Frage, Entität und Vorbefund?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "2 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "MTB_METH_001_v1_3",
+      "base_id": "MTB_METH_001",
+      "required": true,
+      "position": "Nach Fallakte/Anamnese/Histo-Material, vor Anforderung",
+      "gate_count": 1,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Was ist die zentrale klinisch-molekulare Fragestellung in diesem Fall?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "1 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "MTB_ANGIO_001_v1_3",
+      "base_id": "MTB_ANGIO_001",
+      "required": true,
+      "position": "Nach Fallakte/Anamnese/Histo-Material, vor Anforderung",
+      "gate_count": 1,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Was ist die zentrale klinisch-molekulare Fragestellung in diesem Fall?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "1 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "MTB_RCC_001_v1_3",
+      "base_id": "MTB_RCC_001",
+      "required": true,
+      "position": "Nach Fallakte/Anamnese/Histo-Material, vor Anforderung",
+      "gate_count": 2,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Was ist die zentrale klinisch-molekulare Fragestellung in diesem Fall?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_2",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welche Methode oder Markerklasse folgt logisch aus klinischer Frage, Entität und Vorbefund?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "2 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "MTB_GBM_ANGIO_001_v1_3",
+      "base_id": "MTB_GBM_ANGIO_001",
+      "required": true,
+      "position": "Nach Fallakte/Anamnese/Histo-Material, vor Anforderung",
+      "gate_count": 1,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Was ist die zentrale klinisch-molekulare Fragestellung in diesem Fall?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "1 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "MTB_TME_001_v1_3",
+      "base_id": "MTB_TME_001",
+      "required": true,
+      "position": "Nach Fallakte/Anamnese/Histo-Material, vor Anforderung",
+      "gate_count": 2,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Was ist die zentrale klinisch-molekulare Fragestellung in diesem Fall?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_2",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welcher RAS/BRAF/MMR/MSI- oder MLH1-Reflexpfad ist für die Therapie-/Lynch-Frage relevant?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "2 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "MTB_INV_001_v1_3",
+      "base_id": "MTB_INV_001",
+      "required": true,
+      "position": "Nach Fallakte/Anamnese/Histo-Material, vor Anforderung",
+      "gate_count": 1,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Was ist die zentrale klinisch-molekulare Fragestellung in diesem Fall?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "1 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "MET_NGS_001_v1_3",
+      "base_id": "MET_NGS_001",
+      "required": true,
+      "position": "Nach Fallakte/Anamnese/Histo-Material, vor Anforderung",
+      "gate_count": 1,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Was ist die zentrale klinisch-molekulare Fragestellung in diesem Fall?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "1 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "MET_NGS_002_v1_3",
+      "base_id": "MET_NGS_002",
+      "required": true,
+      "position": "Nach Fallakte/Anamnese/Histo-Material, vor Anforderung",
+      "gate_count": 1,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Was ist die zentrale klinisch-molekulare Fragestellung in diesem Fall?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "1 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "MET_NGS_004_v1_3",
+      "base_id": "MET_NGS_004",
+      "required": true,
+      "position": "Nach Fallakte/Anamnese/Histo-Material, vor Anforderung",
+      "gate_count": 4,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Was ist die zentrale klinisch-molekulare Fragestellung in diesem Fall?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_2",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Warum müssen somatische Tumordiagnostik, Keimbahnrelevanz und HRD/HRR-Ebene getrennt bewertet werden?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_3",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welche Methodengruppe oder Entscheidung ist primär sinnvoll und was wäre zu eng, niedrigwertig oder irreführend?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_4",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Wo liegt der Twist/Nachforderungs-/Kommunikationspunkt, der den Fall komplex macht?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "4 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "MET_RNA_001_v1_3",
+      "base_id": "MET_RNA_001",
+      "required": true,
+      "position": "Nach Fallakte/Anamnese/Histo-Material, vor Anforderung",
+      "gate_count": 2,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Was ist die zentrale klinisch-molekulare Fragestellung in diesem Fall?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_2",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welche Methode oder Markerklasse folgt logisch aus klinischer Frage, Entität und Vorbefund?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "2 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "MET_LB_001_v1_3",
+      "base_id": "MET_LB_001",
+      "required": true,
+      "position": "Nach Fallakte/Anamnese/Histo-Material, vor Anforderung",
+      "gate_count": 2,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Was ist die zentrale klinisch-molekulare Fragestellung in diesem Fall?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_2",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welche Methode oder Markerklasse folgt logisch aus klinischer Frage, Entität und Vorbefund?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "2 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "MET_PCR_001_v1_3",
+      "base_id": "MET_PCR_001",
+      "required": true,
+      "position": "Nach Fallakte/Anamnese/Histo-Material, vor Anforderung",
+      "gate_count": 1,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Was ist die zentrale klinisch-molekulare Fragestellung in diesem Fall?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "1 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "MET_METH_001_v1_3",
+      "base_id": "MET_METH_001",
+      "required": true,
+      "position": "Nach Fallakte/Anamnese/Histo-Material, vor Anforderung",
+      "gate_count": 1,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Was ist die zentrale klinisch-molekulare Fragestellung in diesem Fall?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "1 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "MET_FISH_001_v1_3",
+      "base_id": "MET_FISH_001",
+      "required": true,
+      "position": "Nach Fallakte/Anamnese/Histo-Material, vor Anforderung",
+      "gate_count": 1,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Was ist die zentrale klinisch-molekulare Fragestellung in diesem Fall?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "1 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "MET_MULTI_001_v1_3",
+      "base_id": "MET_MULTI_001",
+      "required": true,
+      "position": "Nach Fallakte/Anamnese/Histo-Material, vor Anforderung",
+      "gate_count": 2,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Was ist die zentrale klinisch-molekulare Fragestellung in diesem Fall?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_2",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welche Methode oder Markerklasse folgt logisch aus klinischer Frage, Entität und Vorbefund?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "2 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "LAB_PRE_001_v1_3",
+      "base_id": "LAB_PRE_001",
+      "required": true,
+      "position": "Nach Proben-/Run-/QC-Kontext, vor Freigabe/CAPA-Entscheidung",
+      "gate_count": 1,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welches patientensicherheits- oder qualitätsrelevante Risiko liegt im aktuellen Labor-/Run-Kontext vor?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "1 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "LAB_PRE_002_v1_3",
+      "base_id": "LAB_PRE_002",
+      "required": true,
+      "position": "Nach Proben-/Run-/QC-Kontext, vor Freigabe/CAPA-Entscheidung",
+      "gate_count": 2,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welches patientensicherheits- oder qualitätsrelevante Risiko liegt im aktuellen Labor-/Run-Kontext vor?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_2",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welche präanalytische Stop-/Klärungsentscheidung ist vor weiterer Bearbeitung nötig?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "2 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "LAB_PRE_003_v1_3",
+      "base_id": "LAB_PRE_003",
+      "required": true,
+      "position": "Nach Proben-/Run-/QC-Kontext, vor Freigabe/CAPA-Entscheidung",
+      "gate_count": 1,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welches patientensicherheits- oder qualitätsrelevante Risiko liegt im aktuellen Labor-/Run-Kontext vor?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "1 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "LAB_PRE_004_v1_3",
+      "base_id": "LAB_PRE_004",
+      "required": true,
+      "position": "Nach Proben-/Run-/QC-Kontext, vor Freigabe/CAPA-Entscheidung",
+      "gate_count": 1,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welches patientensicherheits- oder qualitätsrelevante Risiko liegt im aktuellen Labor-/Run-Kontext vor?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "1 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "LAB_PRE_005_v1_3",
+      "base_id": "LAB_PRE_005",
+      "required": true,
+      "position": "Nach Proben-/Run-/QC-Kontext, vor Freigabe/CAPA-Entscheidung",
+      "gate_count": 2,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welches patientensicherheits- oder qualitätsrelevante Risiko liegt im aktuellen Labor-/Run-Kontext vor?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_2",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welche präanalytische Stop-/Klärungsentscheidung ist vor weiterer Bearbeitung nötig?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "2 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "LAB_RUN_001_v1_3",
+      "base_id": "LAB_RUN_001",
+      "required": true,
+      "position": "Nach Proben-/Run-/QC-Kontext, vor Freigabe/CAPA-Entscheidung",
+      "gate_count": 2,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welches patientensicherheits- oder qualitätsrelevante Risiko liegt im aktuellen Labor-/Run-Kontext vor?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_2",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welche Freigabe-, Sperr-, Wiederholungs- oder CAPA-Entscheidung ist auditfähig?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "2 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "LAB_RUN_003_v1_3",
+      "base_id": "LAB_RUN_003",
+      "required": true,
+      "position": "Nach Proben-/Run-/QC-Kontext, vor Freigabe/CAPA-Entscheidung",
+      "gate_count": 1,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welches patientensicherheits- oder qualitätsrelevante Risiko liegt im aktuellen Labor-/Run-Kontext vor?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "1 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "LAB_RUN_004_v1_3",
+      "base_id": "LAB_RUN_004",
+      "required": true,
+      "position": "Nach Proben-/Run-/QC-Kontext, vor Freigabe/CAPA-Entscheidung",
+      "gate_count": 2,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welches patientensicherheits- oder qualitätsrelevante Risiko liegt im aktuellen Labor-/Run-Kontext vor?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_2",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welche Freigabe-, Sperr-, Wiederholungs- oder CAPA-Entscheidung ist auditfähig?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "2 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "LAB_RUN_005_v1_3",
+      "base_id": "LAB_RUN_005",
+      "required": true,
+      "position": "Nach Proben-/Run-/QC-Kontext, vor Freigabe/CAPA-Entscheidung",
+      "gate_count": 1,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welches patientensicherheits- oder qualitätsrelevante Risiko liegt im aktuellen Labor-/Run-Kontext vor?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "1 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "LAB_RUN_006_v1_3",
+      "base_id": "LAB_RUN_006",
+      "required": true,
+      "position": "Nach Proben-/Run-/QC-Kontext, vor Freigabe/CAPA-Entscheidung",
+      "gate_count": 3,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welches patientensicherheits- oder qualitätsrelevante Risiko liegt im aktuellen Labor-/Run-Kontext vor?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_2",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welche Sofortmaßnahme schützt vor falsch-positiven oder kontaminierten Ergebnissen?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_3",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welche Dokumentation, Abweichungsmeldung, CAPA oder SOP-/Versionierungsprüfung ist erforderlich?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "phasenweise Gates; aktuell 3 Kernfragen in AP1b-Tabelle",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "LAB_POST_002_v1_3",
+      "base_id": "LAB_POST_002",
+      "required": true,
+      "position": "Nach Proben-/Run-/QC-Kontext, vor Freigabe/CAPA-Entscheidung",
+      "gate_count": 1,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welches patientensicherheits- oder qualitätsrelevante Risiko liegt im aktuellen Labor-/Run-Kontext vor?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "1 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "LAB_POST_003_v1_3",
+      "base_id": "LAB_POST_003",
+      "required": true,
+      "position": "Nach Proben-/Run-/QC-Kontext, vor Freigabe/CAPA-Entscheidung",
+      "gate_count": 2,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welches patientensicherheits- oder qualitätsrelevante Risiko liegt im aktuellen Labor-/Run-Kontext vor?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_2",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welche Freigabe-, Sperr-, Wiederholungs- oder CAPA-Entscheidung ist auditfähig?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "2 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "LAB_POST_004_v1_3",
+      "base_id": "LAB_POST_004",
+      "required": true,
+      "position": "Nach Proben-/Run-/QC-Kontext, vor Freigabe/CAPA-Entscheidung",
+      "gate_count": 1,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welches patientensicherheits- oder qualitätsrelevante Risiko liegt im aktuellen Labor-/Run-Kontext vor?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "1 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "LAB_POST_005_v1_3",
+      "base_id": "LAB_POST_005",
+      "required": true,
+      "position": "Nach Proben-/Run-/QC-Kontext, vor Freigabe/CAPA-Entscheidung",
+      "gate_count": 2,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welches patientensicherheits- oder qualitätsrelevante Risiko liegt im aktuellen Labor-/Run-Kontext vor?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_2",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welche Freigabe-, Sperr-, Wiederholungs- oder CAPA-Entscheidung ist auditfähig?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "2 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "LAB_DOC_002_v1_3",
+      "base_id": "LAB_DOC_002",
+      "required": true,
+      "position": "Nach Proben-/Run-/QC-Kontext, vor Freigabe/CAPA-Entscheidung",
+      "gate_count": 2,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welches patientensicherheits- oder qualitätsrelevante Risiko liegt im aktuellen Labor-/Run-Kontext vor?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_2",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welche Change-Control-, Versionierungs- oder Audit-Trail-Anforderung folgt aus dem Ereignis?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "2 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "LAB_AUDIT_001_v1_3",
+      "base_id": "LAB_AUDIT_001",
+      "required": true,
+      "position": "Nach Proben-/Run-/QC-Kontext, vor Freigabe/CAPA-Entscheidung",
+      "gate_count": 4,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welches patientensicherheits- oder qualitätsrelevante Risiko liegt im aktuellen Labor-/Run-Kontext vor?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_2",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welche Change-Control-, Versionierungs- oder Audit-Trail-Anforderung folgt aus dem Ereignis?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_3",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welche Dokumentation, Abweichungsmeldung, CAPA oder SOP-/Versionierungsprüfung ist erforderlich?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_4",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welche Freigabe-, Teilfreigabe-, Sperr- oder Wiederholungsentscheidung ist fachlich begründbar?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "4 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "LAB_CAPA_001_v1_3",
+      "base_id": "LAB_CAPA_001",
+      "required": true,
+      "position": "Nach Proben-/Run-/QC-Kontext, vor Freigabe/CAPA-Entscheidung",
+      "gate_count": 3,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welches patientensicherheits- oder qualitätsrelevante Risiko liegt im aktuellen Labor-/Run-Kontext vor?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_2",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welche Sofortmaßnahme schützt vor falsch-positiven oder kontaminierten Ergebnissen?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_3",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welche Dokumentation, Abweichungsmeldung, CAPA oder SOP-/Versionierungsprüfung ist erforderlich?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "phasenweise Gates; aktuell 3 Kernfragen in AP1b-Tabelle",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "LAB_QM_001_v1_3",
+      "base_id": "LAB_QM_001",
+      "required": true,
+      "position": "Nach Proben-/Run-/QC-Kontext, vor Freigabe/CAPA-Entscheidung",
+      "gate_count": 1,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welches patientensicherheits- oder qualitätsrelevante Risiko liegt im aktuellen Labor-/Run-Kontext vor?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "1 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "LAB_LLM_001_v1_3",
+      "base_id": "LAB_LLM_001",
+      "required": true,
+      "position": "Nach Proben-/Run-/QC-Kontext, vor Freigabe/CAPA-Entscheidung",
+      "gate_count": 1,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welches patientensicherheits- oder qualitätsrelevante Risiko liegt im aktuellen Labor-/Run-Kontext vor?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "1 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "LAB_DIGI_001_v1_3",
+      "base_id": "LAB_DIGI_001",
+      "required": true,
+      "position": "Nach Proben-/Run-/QC-Kontext, vor Freigabe/CAPA-Entscheidung",
+      "gate_count": 1,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welches patientensicherheits- oder qualitätsrelevante Risiko liegt im aktuellen Labor-/Run-Kontext vor?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "1 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "LAB_DIGI_002_v1_3",
+      "base_id": "LAB_DIGI_002",
+      "required": true,
+      "position": "Nach Proben-/Run-/QC-Kontext, vor Freigabe/CAPA-Entscheidung",
+      "gate_count": 2,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welches patientensicherheits- oder qualitätsrelevante Risiko liegt im aktuellen Labor-/Run-Kontext vor?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_2",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welche Freigabe-, Sperr-, Wiederholungs- oder CAPA-Entscheidung ist auditfähig?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "2 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "LAB_DATA_001_v1_3",
+      "base_id": "LAB_DATA_001",
+      "required": true,
+      "position": "Nach Proben-/Run-/QC-Kontext, vor Freigabe/CAPA-Entscheidung",
+      "gate_count": 1,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welches patientensicherheits- oder qualitätsrelevante Risiko liegt im aktuellen Labor-/Run-Kontext vor?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "1 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "LAB_DATA_002_v1_3",
+      "base_id": "LAB_DATA_002",
+      "required": true,
+      "position": "Nach Proben-/Run-/QC-Kontext, vor Freigabe/CAPA-Entscheidung",
+      "gate_count": 3,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welches patientensicherheits- oder qualitätsrelevante Risiko liegt im aktuellen Labor-/Run-Kontext vor?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_2",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welche Freigabe-, Sperr-, Wiederholungs- oder CAPA-Entscheidung ist auditfähig?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_3",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welche Dokumentation, Abweichungsmeldung, CAPA oder SOP-/Versionierungsprüfung ist erforderlich?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "phasenweise Gates; aktuell 3 Kernfragen in AP1b-Tabelle",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "LAB_LIMS_001_v1_3",
+      "base_id": "LAB_LIMS_001",
+      "required": true,
+      "position": "Nach Proben-/Run-/QC-Kontext, vor Freigabe/CAPA-Entscheidung",
+      "gate_count": 3,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welches patientensicherheits- oder qualitätsrelevante Risiko liegt im aktuellen Labor-/Run-Kontext vor?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_2",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welche Freigabe-, Sperr-, Wiederholungs- oder CAPA-Entscheidung ist auditfähig?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_3",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welche Dokumentation, Abweichungsmeldung, CAPA oder SOP-/Versionierungsprüfung ist erforderlich?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "phasenweise Gates; aktuell 3 Kernfragen in AP1b-Tabelle",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "RES_HYP_002_v1_3",
+      "base_id": "RES_HYP_002",
+      "required": true,
+      "position": "Nach Projektidee/Kontext/Materiallage, vor Hypothese/Design/Analyseplan",
+      "gate_count": 1,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Was ist die zentrale Forschungsfrage bzw. was fehlt der vorliegenden Projektidee primär?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "1 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "RES_OMICS_002_v1_3",
+      "base_id": "RES_OMICS_002",
+      "required": true,
+      "position": "Nach Projektidee/Kontext/Materiallage, vor Hypothese/Design/Analyseplan",
+      "gate_count": 1,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Was ist die zentrale Forschungsfrage bzw. was fehlt der vorliegenden Projektidee primär?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "1 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "RES_OMICS_003_v1_3",
+      "base_id": "RES_OMICS_003",
+      "required": true,
+      "position": "Nach Projektidee/Kontext/Materiallage, vor Hypothese/Design/Analyseplan",
+      "gate_count": 1,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Was ist die zentrale Forschungsfrage bzw. was fehlt der vorliegenden Projektidee primär?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "1 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "RES_IMM_001_v1_3",
+      "base_id": "RES_IMM_001",
+      "required": true,
+      "position": "Nach Projektidee/Kontext/Materiallage, vor Hypothese/Design/Analyseplan",
+      "gate_count": 2,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Was ist die zentrale Forschungsfrage bzw. was fehlt der vorliegenden Projektidee primär?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_2",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Wie wird die Projektidee in Hypothese/PICO, Endpunkt und Analyseplan übersetzt?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "2 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "RES_MOD_001_v1_3",
+      "base_id": "RES_MOD_001",
+      "required": true,
+      "position": "Nach Projektidee/Kontext/Materiallage, vor Hypothese/Design/Analyseplan",
+      "gate_count": 2,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Was ist die zentrale Forschungsfrage bzw. was fehlt der vorliegenden Projektidee primär?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_2",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welche Forschungsfrage, Hypothese und Ressourcenprüfung machen das Projekt belastbar?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "2 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "RES_MOD_002_v1_3",
+      "base_id": "RES_MOD_002",
+      "required": true,
+      "position": "Nach Projektidee/Kontext/Materiallage, vor Hypothese/Design/Analyseplan",
+      "gate_count": 1,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Was ist die zentrale Forschungsfrage bzw. was fehlt der vorliegenden Projektidee primär?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "1 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "RES_MOD_003_v1_3",
+      "base_id": "RES_MOD_003",
+      "required": true,
+      "position": "Nach Projektidee/Kontext/Materiallage, vor Hypothese/Design/Analyseplan",
+      "gate_count": 3,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Was ist die zentrale Forschungsfrage bzw. was fehlt der vorliegenden Projektidee primär?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_2",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Wie wird die Projektidee in Hypothese/PICO, Endpunkt und Analyseplan übersetzt?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_3",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Wie werden explorative und konfirmatorische Anteile, Endpunkte, Confounder und Validierung getrennt?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "phasenweise Gates; aktuell 3 Kernfragen in AP1b-Tabelle",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "RES_VAL_001_v1_3",
+      "base_id": "RES_VAL_001",
+      "required": true,
+      "position": "Nach Projektidee/Kontext/Materiallage, vor Hypothese/Design/Analyseplan",
+      "gate_count": 2,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Was ist die zentrale Forschungsfrage bzw. was fehlt der vorliegenden Projektidee primär?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_2",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Wie wird die Projektidee in Hypothese/PICO, Endpunkt und Analyseplan übersetzt?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "2 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "RES_VAL_002_v1_3",
+      "base_id": "RES_VAL_002",
+      "required": true,
+      "position": "Nach Projektidee/Kontext/Materiallage, vor Hypothese/Design/Analyseplan",
+      "gate_count": 1,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Was ist die zentrale Forschungsfrage bzw. was fehlt der vorliegenden Projektidee primär?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "1 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "RES_ETH_002_v1_3",
+      "base_id": "RES_ETH_002",
+      "required": true,
+      "position": "Nach Projektidee/Kontext/Materiallage, vor Hypothese/Design/Analyseplan",
+      "gate_count": 4,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Was ist die zentrale Forschungsfrage bzw. was fehlt der vorliegenden Projektidee primär?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_2",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welche Ethik-, Einwilligungs-, Datenschutz- oder Rückmeldepflicht muss vor Projektstart geklärt sein?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_3",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Wie werden explorative und konfirmatorische Anteile, Endpunkte, Confounder und Validierung getrennt?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_4",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welche Ethik-, Governance-, Material- oder Datenmanagementfrage ist der kritische Wendepunkt?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "4 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "RES_ETH_003_v1_3",
+      "base_id": "RES_ETH_003",
+      "required": true,
+      "position": "Nach Projektidee/Kontext/Materiallage, vor Hypothese/Design/Analyseplan",
+      "gate_count": 2,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Was ist die zentrale Forschungsfrage bzw. was fehlt der vorliegenden Projektidee primär?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_2",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welche Ethik-, Einwilligungs-, Datenschutz- oder Rückmeldepflicht muss vor Projektstart geklärt sein?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "2 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "RES_DATA_001_v1_3",
+      "base_id": "RES_DATA_001",
+      "required": true,
+      "position": "Nach Projektidee/Kontext/Materiallage, vor Hypothese/Design/Analyseplan",
+      "gate_count": 1,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Was ist die zentrale Forschungsfrage bzw. was fehlt der vorliegenden Projektidee primär?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "1 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "RES_AI_001_v1_3",
+      "base_id": "RES_AI_001",
+      "required": true,
+      "position": "Nach Projektidee/Kontext/Materiallage, vor Hypothese/Design/Analyseplan",
+      "gate_count": 2,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Was ist die zentrale Forschungsfrage bzw. was fehlt der vorliegenden Projektidee primär?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_2",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welche Ethik-, Einwilligungs-, Datenschutz- oder Rückmeldepflicht muss vor Projektstart geklärt sein?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "2 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "RES_PM_001_v1_3",
+      "base_id": "RES_PM_001",
+      "required": true,
+      "position": "Nach Projektidee/Kontext/Materiallage, vor Hypothese/Design/Analyseplan",
+      "gate_count": 1,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Was ist die zentrale Forschungsfrage bzw. was fehlt der vorliegenden Projektidee primär?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "1 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "RES_PM_002_v1_3",
+      "base_id": "RES_PM_002",
+      "required": true,
+      "position": "Nach Projektidee/Kontext/Materiallage, vor Hypothese/Design/Analyseplan",
+      "gate_count": 1,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Was ist die zentrale Forschungsfrage bzw. was fehlt der vorliegenden Projektidee primär?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "1 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "RES_ROLE_001_v1_3",
+      "base_id": "RES_ROLE_001",
+      "required": true,
+      "position": "Nach Projektidee/Kontext/Materiallage, vor Hypothese/Design/Analyseplan",
+      "gate_count": 2,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Was ist die zentrale Forschungsfrage bzw. was fehlt der vorliegenden Projektidee primär?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_2",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welche Rollen-, Autorenschafts- oder Reporting-Regel muss vor Analyse/Publikation geklärt sein?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "2 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "RES_GRANT_001_v1_3",
+      "base_id": "RES_GRANT_001",
+      "required": true,
+      "position": "Nach Projektidee/Kontext/Materiallage, vor Hypothese/Design/Analyseplan",
+      "gate_count": 3,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Was ist die zentrale Forschungsfrage bzw. was fehlt der vorliegenden Projektidee primär?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_2",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welche Forschungsfrage, Hypothese und Ressourcenprüfung machen das Projekt belastbar?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_3",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Wie werden explorative und konfirmatorische Anteile, Endpunkte, Confounder und Validierung getrennt?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "phasenweise Gates; aktuell 3 Kernfragen in AP1b-Tabelle",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "RES_IMPL_001_v1_3",
+      "base_id": "RES_IMPL_001",
+      "required": true,
+      "position": "Nach Projektidee/Kontext/Materiallage, vor Hypothese/Design/Analyseplan",
+      "gate_count": 2,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Was ist die zentrale Forschungsfrage bzw. was fehlt der vorliegenden Projektidee primär?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_2",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welche Forschungsfrage, Hypothese und Ressourcenprüfung machen das Projekt belastbar?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "2 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    {
+      "case_id": "RES_TEAM_001_v1_3",
+      "base_id": "RES_TEAM_001",
+      "required": true,
+      "position": "Nach Projektidee/Kontext/Materiallage, vor Hypothese/Design/Analyseplan",
+      "gate_count": 2,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Was ist die zentrale Forschungsfrage bzw. was fehlt der vorliegenden Projektidee primär?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_2",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welche Forschungsfrage, Hypothese und Ressourcenprüfung machen das Projekt belastbar?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "2 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    }
+  ]
+}

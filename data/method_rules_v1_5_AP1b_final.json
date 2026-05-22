@@ -1,0 +1,1898 @@
+{
+  "version": "v1.5_AP1b_final",
+  "created": "2026-05-19T08:27:09",
+  "global_policy": {
+    "classes": {
+      "recommended": "belongs to the optimal solution",
+      "optional": "can be useful but is not required",
+      "reflex": "useful only after a defined precondition / previous result",
+      "incomplete": "directionally reasonable but too narrow",
+      "low_value": "technically possible but low clinical/didactic value",
+      "misleading": "points in the wrong diagnostic direction",
+      "invalid": "not feasible or incompatible with material/question"
+    },
+    "visibility": {
+      "learning": "show classification and hints immediately",
+      "training": "show reduced hints",
+      "assessment": "show method-rule classification only after completion",
+      "instructor": "show classification and scoring logic immediately"
+    },
+    "met_handling": "MET remains an add-on type rather than a fourth main simulator domain."
+  },
+  "records": [
+    {
+      "case_id": "MTB_NSCLC_001_v0_6",
+      "base_id": "MTB_NSCLC_001",
+      "recommended": [
+        "he_review",
+        "pdl1",
+        "dna_lung_panel",
+        "rna_fusion_panel",
+        "dna_rna_lung_combo",
+        "ihc_lung_lineage"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [
+        "mmr_ihc",
+        "msi_pcr_ngs",
+        "mlh1_methylation",
+        "methylation_mlh1",
+        "hrd_score",
+        "brca_germline_only"
+      ],
+      "misleading_examples": [
+        "mlh1_methylation",
+        "hrd_score"
+      ],
+      "method_review_flag": "priority review",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=priority review"
+    },
+    {
+      "case_id": "MTB_CRC_001_v0_6",
+      "base_id": "MTB_CRC_001",
+      "recommended": [
+        "he_review",
+        "mmr_ihc",
+        "msi_pcr_ngs",
+        "ras_panel_crc",
+        "braf_v600e_crc",
+        "mlh1_methylation",
+        "colon_ngs_panel"
+      ],
+      "reflex_or_conditional": [
+        "mlh1_methylation",
+        "methylation_mlh1",
+        "her2_crc_ihc_ish"
+      ],
+      "low_value_examples": [
+        "dna_lung_panel",
+        "rna_fusion_panel",
+        "pdl1",
+        "hrd_score"
+      ],
+      "misleading_examples": [
+        "rna_fusion_panel",
+        "hrd_score"
+      ],
+      "method_review_flag": "priority review",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=priority review"
+    },
+    {
+      "case_id": "MTB_OVAR_001_v0_7",
+      "base_id": "MTB_OVAR_001",
+      "recommended": [
+        "he_review",
+        "ihc_ovar_lineage",
+        "tumor_brca_hrr",
+        "hrd_score",
+        "germline_referral"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [
+        "dna_lung_panel",
+        "mlh1_methylation",
+        "kras_exon2_only"
+      ],
+      "misleading_examples": [
+        "tp53_single"
+      ],
+      "method_review_flag": "priority review",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=priority review"
+    },
+    {
+      "case_id": "LAB_RUN_002_v0_8",
+      "base_id": "LAB_RUN_002",
+      "recommended": [
+        "traceability_review",
+        "sop_version_review",
+        "risk_based_hold",
+        "deviation_documentation",
+        "capa_workflow"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [
+        "release_without_review",
+        "comment_only_no_capa"
+      ],
+      "misleading_examples": [
+        "ignore_qc_warning"
+      ],
+      "method_review_flag": "priority review",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=priority review"
+    },
+    {
+      "case_id": "RES_HYP_001_v0_9",
+      "base_id": "RES_HYP_001",
+      "recommended": [
+        "pico_definition",
+        "analysis_plan",
+        "ethics_governance_check",
+        "validation_strategy"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [
+        "measure_everything_without_question",
+        "posthoc_marker_cherry_pick"
+      ],
+      "misleading_examples": [
+        "harking_as_confirmatory",
+        "p_hacking"
+      ],
+      "method_review_flag": "priority review",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=priority review"
+    },
+    {
+      "case_id": "MTB_IO_001_v1_0",
+      "base_id": "MTB_IO_001",
+      "recommended": [
+        "mmr_ihc",
+        "msi_pcr_ngs",
+        "broad_pan_panel",
+        "tmb_ngs"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [],
+      "misleading_examples": [],
+      "method_review_flag": "priority review",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=priority review"
+    },
+    {
+      "case_id": "MTB_CNS_001_v1_0",
+      "base_id": "MTB_CNS_001",
+      "recommended": [
+        "idh1_ihc_seq",
+        "glioma_ngs_panel",
+        "broad_pan_panel",
+        "mgmt_methylation",
+        "cns_methylation_classifier"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [
+        "ras_panel_crc",
+        "dna_lung_panel",
+        "hrd_score"
+      ],
+      "misleading_examples": [
+        "tmb_msi_neuro"
+      ],
+      "method_review_flag": "priority review",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=priority review"
+    },
+    {
+      "case_id": "MET_NGS_003_v1_0",
+      "base_id": "MET_NGS_003",
+      "recommended": [
+        "erbb2_variant_ngs",
+        "broad_pan_panel",
+        "her2_ihc",
+        "her2_fish",
+        "vus_literature_review",
+        "orthogonal_confirmation"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [],
+      "misleading_examples": [
+        "direct_her2_therapy"
+      ],
+      "method_review_flag": "priority review",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=priority review"
+    },
+    {
+      "case_id": "LAB_POST_001_v1_0",
+      "base_id": "LAB_POST_001",
+      "recommended": [
+        "traceability_review",
+        "sop_version_review",
+        "risk_based_hold",
+        "deviation_documentation",
+        "capa_workflow"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [
+        "release_without_review",
+        "comment_only_no_capa"
+      ],
+      "misleading_examples": [
+        "ignore_qc_warning"
+      ],
+      "method_review_flag": "priority review",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=priority review"
+    },
+    {
+      "case_id": "LAB_DOC_001_v1_0",
+      "base_id": "LAB_DOC_001",
+      "recommended": [
+        "traceability_review",
+        "sop_version_review",
+        "risk_based_hold",
+        "deviation_documentation",
+        "capa_workflow"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [
+        "release_without_review",
+        "comment_only_no_capa"
+      ],
+      "misleading_examples": [
+        "ignore_qc_warning"
+      ],
+      "method_review_flag": "priority review",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=priority review"
+    },
+    {
+      "case_id": "RES_OMICS_001_v1_0",
+      "base_id": "RES_OMICS_001",
+      "recommended": [
+        "pico_definition",
+        "analysis_plan",
+        "ethics_governance_check",
+        "validation_strategy"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [
+        "measure_everything_without_question",
+        "posthoc_marker_cherry_pick"
+      ],
+      "misleading_examples": [
+        "harking_as_confirmatory",
+        "p_hacking"
+      ],
+      "method_review_flag": "priority review",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=priority review"
+    },
+    {
+      "case_id": "RES_ETH_001_v1_0",
+      "base_id": "RES_ETH_001",
+      "recommended": [
+        "pico_definition",
+        "analysis_plan",
+        "ethics_governance_check",
+        "validation_strategy"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [
+        "measure_everything_without_question",
+        "posthoc_marker_cherry_pick"
+      ],
+      "misleading_examples": [
+        "harking_as_confirmatory",
+        "p_hacking"
+      ],
+      "method_review_flag": "priority review",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=priority review"
+    },
+    {
+      "case_id": "MTB_NSCLC_002_v1_3",
+      "base_id": "MTB_NSCLC_002",
+      "recommended": [
+        "resistance_panel",
+        "egfr_t790m_c797s",
+        "rebiopsy_tissue",
+        "liquid_biopsy",
+        "dna_lung_panel",
+        "rna_fusion_panel",
+        "dna_rna_lung_combo",
+        "pdl1",
+        "ihc_lung_lineage"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [
+        "mmr_ihc",
+        "msi_pcr_ngs",
+        "mlh1_methylation",
+        "methylation_mlh1",
+        "hrd_score",
+        "brca_germline_only"
+      ],
+      "misleading_examples": [
+        "mlh1_methylation",
+        "hrd_score"
+      ],
+      "method_review_flag": "priority review",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=priority review"
+    },
+    {
+      "case_id": "MTB_NSCLC_003_v1_3",
+      "base_id": "MTB_NSCLC_003",
+      "recommended": [
+        "fusion_rna_ngs",
+        "rna_fusion_panel",
+        "fusion_fish",
+        "dna_lung_panel",
+        "dna_rna_lung_combo",
+        "pdl1",
+        "ihc_lung_lineage"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [
+        "mmr_ihc",
+        "msi_pcr_ngs",
+        "mlh1_methylation",
+        "methylation_mlh1",
+        "hrd_score",
+        "brca_germline_only"
+      ],
+      "misleading_examples": [
+        "mlh1_methylation",
+        "hrd_score"
+      ],
+      "method_review_flag": "priority review",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=priority review"
+    },
+    {
+      "case_id": "MTB_NSCLC_004_v1_3",
+      "base_id": "MTB_NSCLC_004",
+      "recommended": [
+        "kras_stk11_keap1",
+        "dna_lung_panel",
+        "broad_pan_panel",
+        "tmb_ngs",
+        "pdl1",
+        "immune_context_ihc",
+        "rna_fusion_panel",
+        "dna_rna_lung_combo",
+        "ihc_lung_lineage"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [
+        "mmr_ihc",
+        "msi_pcr_ngs",
+        "mlh1_methylation",
+        "methylation_mlh1",
+        "hrd_score",
+        "brca_germline_only"
+      ],
+      "misleading_examples": [
+        "mlh1_methylation",
+        "hrd_score"
+      ],
+      "method_review_flag": "regelbasiert übernehmen",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=regelbasiert übernehmen"
+    },
+    {
+      "case_id": "MTB_MEL_001_v1_3",
+      "base_id": "MTB_MEL_001",
+      "recommended": [
+        "braf_melanoma",
+        "braf_pcr",
+        "broad_pan_panel",
+        "tmb_ngs",
+        "pdl1",
+        "immune_context_ihc"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [],
+      "misleading_examples": [],
+      "method_review_flag": "regelbasiert übernehmen",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=regelbasiert übernehmen"
+    },
+    {
+      "case_id": "MTB_GIST_001_v1_3",
+      "base_id": "MTB_GIST_001",
+      "recommended": [
+        "kit_pdgfra"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [],
+      "misleading_examples": [],
+      "method_review_flag": "method rules prüfen",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=method rules prüfen"
+    },
+    {
+      "case_id": "MTB_CHOL_001_v1_3",
+      "base_id": "MTB_CHOL_001",
+      "recommended": [
+        "chol_panel",
+        "fgfr2_fusion",
+        "idh1_chol",
+        "idh1_ihc_seq",
+        "cns_methylation_classifier",
+        "mgmt_methylation",
+        "glioma_ngs_panel"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [
+        "ras_panel_crc",
+        "dna_lung_panel",
+        "hrd_score"
+      ],
+      "misleading_examples": [
+        "tmb_msi_neuro"
+      ],
+      "method_review_flag": "method rules prüfen",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=method rules prüfen"
+    },
+    {
+      "case_id": "MTB_CRC_002_v1_3",
+      "base_id": "MTB_CRC_002",
+      "recommended": [
+        "mmr_ihc",
+        "msi_pcr_ngs",
+        "colon_ngs_panel",
+        "mlh1_methylation",
+        "methylation_mlh1",
+        "braf_v600e_crc",
+        "ras_panel_crc"
+      ],
+      "reflex_or_conditional": [
+        "mlh1_methylation",
+        "methylation_mlh1",
+        "her2_crc_ihc_ish"
+      ],
+      "low_value_examples": [
+        "dna_lung_panel",
+        "rna_fusion_panel",
+        "pdl1",
+        "hrd_score"
+      ],
+      "misleading_examples": [
+        "rna_fusion_panel",
+        "hrd_score"
+      ],
+      "method_review_flag": "priority review",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=priority review"
+    },
+    {
+      "case_id": "MTB_CRC_003_v1_3",
+      "base_id": "MTB_CRC_003",
+      "recommended": [
+        "braf_melanoma",
+        "braf_pcr",
+        "broad_pan_panel",
+        "mmr_ihc",
+        "msi_pcr_ngs",
+        "colon_ngs_panel",
+        "ras_panel_crc",
+        "braf_v600e_crc"
+      ],
+      "reflex_or_conditional": [
+        "mlh1_methylation",
+        "methylation_mlh1",
+        "her2_crc_ihc_ish"
+      ],
+      "low_value_examples": [
+        "dna_lung_panel",
+        "rna_fusion_panel",
+        "pdl1",
+        "hrd_score"
+      ],
+      "misleading_examples": [
+        "rna_fusion_panel",
+        "hrd_score"
+      ],
+      "method_review_flag": "method rules prüfen",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=method rules prüfen"
+    },
+    {
+      "case_id": "MTB_CRC_004_v1_3",
+      "base_id": "MTB_CRC_004",
+      "recommended": [
+        "mmr_ihc",
+        "msi_pcr_ngs",
+        "colon_ngs_panel",
+        "ras_panel_crc",
+        "braf_v600e_crc"
+      ],
+      "reflex_or_conditional": [
+        "mlh1_methylation",
+        "methylation_mlh1",
+        "her2_crc_ihc_ish"
+      ],
+      "low_value_examples": [
+        "dna_lung_panel",
+        "rna_fusion_panel",
+        "pdl1",
+        "hrd_score"
+      ],
+      "misleading_examples": [
+        "rna_fusion_panel",
+        "hrd_score"
+      ],
+      "method_review_flag": "priority review",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=priority review"
+    },
+    {
+      "case_id": "MTB_CRC_005_v1_3",
+      "base_id": "MTB_CRC_005",
+      "recommended": [
+        "mmr_ihc",
+        "msi_pcr_ngs",
+        "colon_ngs_panel",
+        "her2_crc_ihc_ish",
+        "her2_ihc",
+        "her2_fish",
+        "ras_panel_crc",
+        "braf_v600e_crc"
+      ],
+      "reflex_or_conditional": [
+        "mlh1_methylation",
+        "methylation_mlh1",
+        "her2_crc_ihc_ish"
+      ],
+      "low_value_examples": [
+        "dna_lung_panel",
+        "rna_fusion_panel",
+        "pdl1",
+        "hrd_score"
+      ],
+      "misleading_examples": [
+        "rna_fusion_panel",
+        "hrd_score"
+      ],
+      "method_review_flag": "regelbasiert übernehmen",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=regelbasiert übernehmen"
+    },
+    {
+      "case_id": "MTB_OVAR_002_v1_3",
+      "base_id": "MTB_OVAR_002",
+      "recommended": [
+        "fusion_rna_ngs",
+        "rna_fusion_panel",
+        "fusion_fish",
+        "tumor_brca_hrr",
+        "broad_pan_panel",
+        "hrd_score",
+        "germline_referral",
+        "vusic",
+        "vus_literature_review",
+        "orthogonal_confirmation"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [
+        "dna_lung_panel",
+        "mlh1_methylation",
+        "kras_exon2_only"
+      ],
+      "misleading_examples": [
+        "tp53_single",
+        "direct_her2_therapy"
+      ],
+      "method_review_flag": "priority review",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=priority review"
+    },
+    {
+      "case_id": "MTB_MAMMA_001_v1_3",
+      "base_id": "MTB_MAMMA_001",
+      "recommended": [
+        "tumor_brca_hrr",
+        "her2_ihc",
+        "her2_fish",
+        "pik3ca",
+        "hrd_score",
+        "germline_referral"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [
+        "dna_lung_panel",
+        "mlh1_methylation",
+        "kras_exon2_only"
+      ],
+      "misleading_examples": [],
+      "method_review_flag": "regelbasiert übernehmen",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=regelbasiert übernehmen"
+    },
+    {
+      "case_id": "MTB_PROST_001_v1_3",
+      "base_id": "MTB_PROST_001",
+      "recommended": [
+        "prostate_hrr",
+        "tumor_brca_hrr",
+        "broad_pan_panel",
+        "hrd_score",
+        "germline_referral"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [],
+      "misleading_examples": [],
+      "method_review_flag": "priority review",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=priority review"
+    },
+    {
+      "case_id": "MTB_TAML_001_v1_3",
+      "base_id": "MTB_TAML_001",
+      "recommended": [
+        "epigenetic_heme_panel"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [],
+      "misleading_examples": [],
+      "method_review_flag": "method rules prüfen",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=method rules prüfen"
+    },
+    {
+      "case_id": "MTB_IO_002_v1_3",
+      "base_id": "MTB_IO_002",
+      "recommended": [
+        "tmb_ngs",
+        "pdl1",
+        "immune_context_ihc",
+        "tme_stroma_ihc"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [],
+      "misleading_examples": [],
+      "method_review_flag": "regelbasiert übernehmen",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=regelbasiert übernehmen"
+    },
+    {
+      "case_id": "MTB_IO_003_v1_3",
+      "base_id": "MTB_IO_003",
+      "recommended": [
+        "fusion_rna_ngs",
+        "rna_fusion_panel",
+        "fusion_fish",
+        "tmb_ngs",
+        "pdl1",
+        "immune_context_ihc"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [],
+      "misleading_examples": [],
+      "method_review_flag": "regelbasiert übernehmen",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=regelbasiert übernehmen"
+    },
+    {
+      "case_id": "MTB_IO_004_v1_3",
+      "base_id": "MTB_IO_004",
+      "recommended": [
+        "mmr_ihc",
+        "msi_pcr_ngs",
+        "colon_ngs_panel",
+        "mlh1_methylation",
+        "methylation_mlh1",
+        "braf_v600e_crc",
+        "tmb_ngs",
+        "pdl1",
+        "immune_context_ihc"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [],
+      "misleading_examples": [],
+      "method_review_flag": "priority review",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=priority review"
+    },
+    {
+      "case_id": "MTB_IO_005_v1_3",
+      "base_id": "MTB_IO_005",
+      "recommended": [
+        "tmb_ngs",
+        "pdl1",
+        "immune_context_ihc"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [],
+      "misleading_examples": [],
+      "method_review_flag": "method rules prüfen",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=method rules prüfen"
+    },
+    {
+      "case_id": "MTB_CNS_002_v1_3",
+      "base_id": "MTB_CNS_002",
+      "recommended": [
+        "idh1_ihc_seq",
+        "cns_methylation_classifier",
+        "bisulfite_pcr",
+        "mgmt_methylation",
+        "glioma_ngs_panel"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [
+        "ras_panel_crc",
+        "dna_lung_panel",
+        "hrd_score"
+      ],
+      "misleading_examples": [
+        "tmb_msi_neuro"
+      ],
+      "method_review_flag": "regelbasiert übernehmen",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=regelbasiert übernehmen"
+    },
+    {
+      "case_id": "MTB_CNS_003_v1_3",
+      "base_id": "MTB_CNS_003",
+      "recommended": [
+        "cns_methylation_classifier",
+        "bisulfite_pcr",
+        "idh1_ihc_seq",
+        "mgmt_methylation",
+        "glioma_ngs_panel"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [
+        "ras_panel_crc",
+        "dna_lung_panel",
+        "hrd_score"
+      ],
+      "misleading_examples": [
+        "tmb_msi_neuro"
+      ],
+      "method_review_flag": "priority review",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=priority review"
+    },
+    {
+      "case_id": "MTB_HEM_001_v1_3",
+      "base_id": "MTB_HEM_001",
+      "recommended": [
+        "epigenetic_heme_panel"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [],
+      "misleading_examples": [],
+      "method_review_flag": "method rules prüfen",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=method rules prüfen"
+    },
+    {
+      "case_id": "MTB_METH_001_v1_3",
+      "base_id": "MTB_METH_001",
+      "recommended": [
+        "mmr_ihc",
+        "msi_pcr_ngs",
+        "colon_ngs_panel",
+        "mlh1_methylation",
+        "methylation_mlh1",
+        "braf_v600e_crc",
+        "ras_panel_crc"
+      ],
+      "reflex_or_conditional": [
+        "mlh1_methylation",
+        "methylation_mlh1",
+        "her2_crc_ihc_ish"
+      ],
+      "low_value_examples": [
+        "dna_lung_panel",
+        "rna_fusion_panel",
+        "pdl1",
+        "hrd_score"
+      ],
+      "misleading_examples": [
+        "rna_fusion_panel",
+        "hrd_score"
+      ],
+      "method_review_flag": "regelbasiert übernehmen",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=regelbasiert übernehmen"
+    },
+    {
+      "case_id": "MTB_ANGIO_001_v1_3",
+      "base_id": "MTB_ANGIO_001",
+      "recommended": [
+        "mmr_ihc",
+        "msi_pcr_ngs",
+        "colon_ngs_panel",
+        "vegf_context",
+        "vhl_hif_panel",
+        "ras_panel_crc",
+        "braf_v600e_crc"
+      ],
+      "reflex_or_conditional": [
+        "mlh1_methylation",
+        "methylation_mlh1",
+        "her2_crc_ihc_ish"
+      ],
+      "low_value_examples": [
+        "dna_lung_panel",
+        "rna_fusion_panel",
+        "pdl1",
+        "hrd_score"
+      ],
+      "misleading_examples": [
+        "rna_fusion_panel",
+        "hrd_score"
+      ],
+      "method_review_flag": "regelbasiert übernehmen",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=regelbasiert übernehmen"
+    },
+    {
+      "case_id": "MTB_RCC_001_v1_3",
+      "base_id": "MTB_RCC_001",
+      "recommended": [
+        "vegf_context",
+        "vhl_hif_panel"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [],
+      "misleading_examples": [],
+      "method_review_flag": "method rules prüfen",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=method rules prüfen"
+    },
+    {
+      "case_id": "MTB_GBM_ANGIO_001_v1_3",
+      "base_id": "MTB_GBM_ANGIO_001",
+      "recommended": [
+        "vegf_context",
+        "vhl_hif_panel",
+        "idh1_ihc_seq",
+        "mgmt_methylation",
+        "cns_methylation_classifier",
+        "glioma_ngs_panel"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [
+        "ras_panel_crc",
+        "dna_lung_panel",
+        "hrd_score"
+      ],
+      "misleading_examples": [
+        "tmb_msi_neuro"
+      ],
+      "method_review_flag": "regelbasiert übernehmen",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=regelbasiert übernehmen"
+    },
+    {
+      "case_id": "MTB_TME_001_v1_3",
+      "base_id": "MTB_TME_001",
+      "recommended": [
+        "tmb_ngs",
+        "pdl1",
+        "immune_context_ihc",
+        "tme_stroma_ihc"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [],
+      "misleading_examples": [],
+      "method_review_flag": "method rules prüfen",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=method rules prüfen"
+    },
+    {
+      "case_id": "MTB_INV_001_v1_3",
+      "base_id": "MTB_INV_001",
+      "recommended": [
+        "emt_invasion_panel",
+        "he_review"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [],
+      "misleading_examples": [],
+      "method_review_flag": "method rules prüfen",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=method rules prüfen"
+    },
+    {
+      "case_id": "MET_NGS_001_v1_3",
+      "base_id": "MET_NGS_001",
+      "recommended": [
+        "coverage_review",
+        "repeat_ngs",
+        "orthogonal_confirmation"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [],
+      "misleading_examples": [],
+      "method_review_flag": "priority review",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=priority review"
+    },
+    {
+      "case_id": "MET_NGS_002_v1_3",
+      "base_id": "MET_NGS_002",
+      "recommended": [
+        "ffpe_artifact_review",
+        "orthogonal_confirmation",
+        "repeat_ngs"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [],
+      "misleading_examples": [],
+      "method_review_flag": "priority review",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=priority review"
+    },
+    {
+      "case_id": "MET_NGS_004_v1_3",
+      "base_id": "MET_NGS_004",
+      "recommended": [
+        "tumor_brca_hrr",
+        "broad_pan_panel",
+        "tumor_normal_germline",
+        "germline_referral",
+        "hrd_score"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [
+        "dna_lung_panel",
+        "mlh1_methylation",
+        "kras_exon2_only"
+      ],
+      "misleading_examples": [],
+      "method_review_flag": "priority review",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=priority review"
+    },
+    {
+      "case_id": "MET_RNA_001_v1_3",
+      "base_id": "MET_RNA_001",
+      "recommended": [
+        "fusion_rna_ngs",
+        "rna_fusion_panel",
+        "fusion_fish"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [],
+      "misleading_examples": [],
+      "method_review_flag": "priority review",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=priority review"
+    },
+    {
+      "case_id": "MET_LB_001_v1_3",
+      "base_id": "MET_LB_001",
+      "recommended": [
+        "liquid_biopsy",
+        "rebiopsy_tissue"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [],
+      "misleading_examples": [],
+      "method_review_flag": "priority review",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=priority review"
+    },
+    {
+      "case_id": "MET_PCR_001_v1_3",
+      "base_id": "MET_PCR_001",
+      "recommended": [
+        "mrd_dpcr"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [],
+      "misleading_examples": [],
+      "method_review_flag": "method rules prüfen",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=method rules prüfen"
+    },
+    {
+      "case_id": "MET_METH_001_v1_3",
+      "base_id": "MET_METH_001",
+      "recommended": [
+        "cns_methylation_classifier",
+        "bisulfite_pcr"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [],
+      "misleading_examples": [],
+      "method_review_flag": "regelbasiert übernehmen",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=regelbasiert übernehmen"
+    },
+    {
+      "case_id": "MET_FISH_001_v1_3",
+      "base_id": "MET_FISH_001",
+      "recommended": [
+        "fusion_rna_ngs",
+        "rna_fusion_panel",
+        "fusion_fish"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [],
+      "misleading_examples": [],
+      "method_review_flag": "regelbasiert übernehmen",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=regelbasiert übernehmen"
+    },
+    {
+      "case_id": "MET_MULTI_001_v1_3",
+      "base_id": "MET_MULTI_001",
+      "recommended": [
+        "multiomics_summary"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [],
+      "misleading_examples": [],
+      "method_review_flag": "method rules prüfen",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=method rules prüfen"
+    },
+    {
+      "case_id": "LAB_PRE_001_v1_3",
+      "base_id": "LAB_PRE_001",
+      "recommended": [
+        "traceability_review",
+        "sop_version_review",
+        "risk_based_hold",
+        "deviation_documentation",
+        "capa_workflow"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [
+        "release_without_review",
+        "comment_only_no_capa"
+      ],
+      "misleading_examples": [
+        "ignore_qc_warning"
+      ],
+      "method_review_flag": "priority review",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=priority review"
+    },
+    {
+      "case_id": "LAB_PRE_002_v1_3",
+      "base_id": "LAB_PRE_002",
+      "recommended": [
+        "traceability_review",
+        "sop_version_review",
+        "risk_based_hold",
+        "deviation_documentation",
+        "capa_workflow"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [
+        "release_without_review",
+        "comment_only_no_capa"
+      ],
+      "misleading_examples": [
+        "ignore_qc_warning"
+      ],
+      "method_review_flag": "priority review",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=priority review"
+    },
+    {
+      "case_id": "LAB_PRE_003_v1_3",
+      "base_id": "LAB_PRE_003",
+      "recommended": [
+        "traceability_review",
+        "sop_version_review",
+        "risk_based_hold",
+        "deviation_documentation",
+        "capa_workflow"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [
+        "release_without_review",
+        "comment_only_no_capa"
+      ],
+      "misleading_examples": [
+        "ignore_qc_warning"
+      ],
+      "method_review_flag": "regelbasiert übernehmen",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=regelbasiert übernehmen"
+    },
+    {
+      "case_id": "LAB_PRE_004_v1_3",
+      "base_id": "LAB_PRE_004",
+      "recommended": [
+        "traceability_review",
+        "sop_version_review",
+        "risk_based_hold",
+        "deviation_documentation",
+        "capa_workflow"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [
+        "release_without_review",
+        "comment_only_no_capa"
+      ],
+      "misleading_examples": [
+        "ignore_qc_warning"
+      ],
+      "method_review_flag": "regelbasiert übernehmen",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=regelbasiert übernehmen"
+    },
+    {
+      "case_id": "LAB_PRE_005_v1_3",
+      "base_id": "LAB_PRE_005",
+      "recommended": [
+        "traceability_review",
+        "sop_version_review",
+        "risk_based_hold",
+        "deviation_documentation",
+        "capa_workflow"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [
+        "release_without_review",
+        "comment_only_no_capa"
+      ],
+      "misleading_examples": [
+        "ignore_qc_warning"
+      ],
+      "method_review_flag": "regelbasiert übernehmen",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=regelbasiert übernehmen"
+    },
+    {
+      "case_id": "LAB_RUN_001_v1_3",
+      "base_id": "LAB_RUN_001",
+      "recommended": [
+        "traceability_review",
+        "sop_version_review",
+        "risk_based_hold",
+        "deviation_documentation",
+        "capa_workflow"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [
+        "release_without_review",
+        "comment_only_no_capa"
+      ],
+      "misleading_examples": [
+        "ignore_qc_warning"
+      ],
+      "method_review_flag": "priority review",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=priority review"
+    },
+    {
+      "case_id": "LAB_RUN_003_v1_3",
+      "base_id": "LAB_RUN_003",
+      "recommended": [
+        "traceability_review",
+        "sop_version_review",
+        "risk_based_hold",
+        "deviation_documentation",
+        "capa_workflow"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [
+        "release_without_review",
+        "comment_only_no_capa"
+      ],
+      "misleading_examples": [
+        "ignore_qc_warning"
+      ],
+      "method_review_flag": "regelbasiert übernehmen",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=regelbasiert übernehmen"
+    },
+    {
+      "case_id": "LAB_RUN_004_v1_3",
+      "base_id": "LAB_RUN_004",
+      "recommended": [
+        "traceability_review",
+        "sop_version_review",
+        "risk_based_hold",
+        "deviation_documentation",
+        "capa_workflow"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [
+        "release_without_review",
+        "comment_only_no_capa"
+      ],
+      "misleading_examples": [
+        "ignore_qc_warning"
+      ],
+      "method_review_flag": "regelbasiert übernehmen",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=regelbasiert übernehmen"
+    },
+    {
+      "case_id": "LAB_RUN_005_v1_3",
+      "base_id": "LAB_RUN_005",
+      "recommended": [
+        "traceability_review",
+        "sop_version_review",
+        "risk_based_hold",
+        "deviation_documentation",
+        "capa_workflow"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [
+        "release_without_review",
+        "comment_only_no_capa"
+      ],
+      "misleading_examples": [
+        "ignore_qc_warning"
+      ],
+      "method_review_flag": "regelbasiert übernehmen",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=regelbasiert übernehmen"
+    },
+    {
+      "case_id": "LAB_RUN_006_v1_3",
+      "base_id": "LAB_RUN_006",
+      "recommended": [
+        "traceability_review",
+        "sop_version_review",
+        "risk_based_hold",
+        "deviation_documentation",
+        "capa_workflow"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [
+        "release_without_review",
+        "comment_only_no_capa"
+      ],
+      "misleading_examples": [
+        "ignore_qc_warning"
+      ],
+      "method_review_flag": "priority review",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=priority review"
+    },
+    {
+      "case_id": "LAB_POST_002_v1_3",
+      "base_id": "LAB_POST_002",
+      "recommended": [
+        "traceability_review",
+        "sop_version_review",
+        "risk_based_hold",
+        "deviation_documentation",
+        "capa_workflow"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [
+        "release_without_review",
+        "comment_only_no_capa"
+      ],
+      "misleading_examples": [
+        "ignore_qc_warning"
+      ],
+      "method_review_flag": "priority review",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=priority review"
+    },
+    {
+      "case_id": "LAB_POST_003_v1_3",
+      "base_id": "LAB_POST_003",
+      "recommended": [
+        "traceability_review",
+        "sop_version_review",
+        "risk_based_hold",
+        "deviation_documentation",
+        "capa_workflow"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [
+        "release_without_review",
+        "comment_only_no_capa"
+      ],
+      "misleading_examples": [
+        "ignore_qc_warning"
+      ],
+      "method_review_flag": "priority review",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=priority review"
+    },
+    {
+      "case_id": "LAB_POST_004_v1_3",
+      "base_id": "LAB_POST_004",
+      "recommended": [
+        "traceability_review",
+        "sop_version_review",
+        "risk_based_hold",
+        "deviation_documentation",
+        "capa_workflow"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [
+        "release_without_review",
+        "comment_only_no_capa"
+      ],
+      "misleading_examples": [
+        "ignore_qc_warning"
+      ],
+      "method_review_flag": "regelbasiert übernehmen",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=regelbasiert übernehmen"
+    },
+    {
+      "case_id": "LAB_POST_005_v1_3",
+      "base_id": "LAB_POST_005",
+      "recommended": [
+        "traceability_review",
+        "sop_version_review",
+        "risk_based_hold",
+        "deviation_documentation",
+        "capa_workflow"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [
+        "release_without_review",
+        "comment_only_no_capa"
+      ],
+      "misleading_examples": [
+        "ignore_qc_warning"
+      ],
+      "method_review_flag": "regelbasiert übernehmen",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=regelbasiert übernehmen"
+    },
+    {
+      "case_id": "LAB_DOC_002_v1_3",
+      "base_id": "LAB_DOC_002",
+      "recommended": [
+        "traceability_review",
+        "sop_version_review",
+        "risk_based_hold",
+        "deviation_documentation",
+        "capa_workflow"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [
+        "release_without_review",
+        "comment_only_no_capa"
+      ],
+      "misleading_examples": [
+        "ignore_qc_warning"
+      ],
+      "method_review_flag": "priority review",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=priority review"
+    },
+    {
+      "case_id": "LAB_AUDIT_001_v1_3",
+      "base_id": "LAB_AUDIT_001",
+      "recommended": [
+        "traceability_review",
+        "sop_version_review",
+        "risk_based_hold",
+        "deviation_documentation",
+        "capa_workflow"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [
+        "release_without_review",
+        "comment_only_no_capa"
+      ],
+      "misleading_examples": [
+        "ignore_qc_warning"
+      ],
+      "method_review_flag": "priority review",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=priority review"
+    },
+    {
+      "case_id": "LAB_CAPA_001_v1_3",
+      "base_id": "LAB_CAPA_001",
+      "recommended": [
+        "traceability_review",
+        "sop_version_review",
+        "risk_based_hold",
+        "deviation_documentation",
+        "capa_workflow"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [
+        "release_without_review",
+        "comment_only_no_capa"
+      ],
+      "misleading_examples": [
+        "ignore_qc_warning"
+      ],
+      "method_review_flag": "priority review",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=priority review"
+    },
+    {
+      "case_id": "LAB_QM_001_v1_3",
+      "base_id": "LAB_QM_001",
+      "recommended": [
+        "traceability_review",
+        "sop_version_review",
+        "risk_based_hold",
+        "deviation_documentation",
+        "capa_workflow"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [
+        "release_without_review",
+        "comment_only_no_capa"
+      ],
+      "misleading_examples": [
+        "ignore_qc_warning"
+      ],
+      "method_review_flag": "regelbasiert übernehmen",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=regelbasiert übernehmen"
+    },
+    {
+      "case_id": "LAB_LLM_001_v1_3",
+      "base_id": "LAB_LLM_001",
+      "recommended": [
+        "traceability_review",
+        "sop_version_review",
+        "risk_based_hold",
+        "deviation_documentation",
+        "capa_workflow"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [
+        "release_without_review",
+        "comment_only_no_capa"
+      ],
+      "misleading_examples": [
+        "ignore_qc_warning"
+      ],
+      "method_review_flag": "priority review",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=priority review"
+    },
+    {
+      "case_id": "LAB_DIGI_001_v1_3",
+      "base_id": "LAB_DIGI_001",
+      "recommended": [
+        "traceability_review",
+        "sop_version_review",
+        "risk_based_hold",
+        "deviation_documentation",
+        "capa_workflow"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [
+        "release_without_review",
+        "comment_only_no_capa"
+      ],
+      "misleading_examples": [
+        "ignore_qc_warning"
+      ],
+      "method_review_flag": "regelbasiert übernehmen",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=regelbasiert übernehmen"
+    },
+    {
+      "case_id": "LAB_DIGI_002_v1_3",
+      "base_id": "LAB_DIGI_002",
+      "recommended": [
+        "traceability_review",
+        "sop_version_review",
+        "risk_based_hold",
+        "deviation_documentation",
+        "capa_workflow"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [
+        "release_without_review",
+        "comment_only_no_capa"
+      ],
+      "misleading_examples": [
+        "ignore_qc_warning"
+      ],
+      "method_review_flag": "regelbasiert übernehmen",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=regelbasiert übernehmen"
+    },
+    {
+      "case_id": "LAB_DATA_001_v1_3",
+      "base_id": "LAB_DATA_001",
+      "recommended": [
+        "traceability_review",
+        "sop_version_review",
+        "risk_based_hold",
+        "deviation_documentation",
+        "capa_workflow"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [
+        "release_without_review",
+        "comment_only_no_capa"
+      ],
+      "misleading_examples": [
+        "ignore_qc_warning"
+      ],
+      "method_review_flag": "priority review",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=priority review"
+    },
+    {
+      "case_id": "LAB_DATA_002_v1_3",
+      "base_id": "LAB_DATA_002",
+      "recommended": [
+        "traceability_review",
+        "sop_version_review",
+        "risk_based_hold",
+        "deviation_documentation",
+        "capa_workflow"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [
+        "release_without_review",
+        "comment_only_no_capa"
+      ],
+      "misleading_examples": [
+        "ignore_qc_warning"
+      ],
+      "method_review_flag": "priority review",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=priority review"
+    },
+    {
+      "case_id": "LAB_LIMS_001_v1_3",
+      "base_id": "LAB_LIMS_001",
+      "recommended": [
+        "traceability_review",
+        "sop_version_review",
+        "risk_based_hold",
+        "deviation_documentation",
+        "capa_workflow"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [
+        "release_without_review",
+        "comment_only_no_capa"
+      ],
+      "misleading_examples": [
+        "ignore_qc_warning"
+      ],
+      "method_review_flag": "priority review",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=priority review"
+    },
+    {
+      "case_id": "RES_HYP_002_v1_3",
+      "base_id": "RES_HYP_002",
+      "recommended": [
+        "pico_definition",
+        "analysis_plan",
+        "ethics_governance_check",
+        "validation_strategy"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [
+        "measure_everything_without_question",
+        "posthoc_marker_cherry_pick"
+      ],
+      "misleading_examples": [
+        "harking_as_confirmatory",
+        "p_hacking"
+      ],
+      "method_review_flag": "priority review",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=priority review"
+    },
+    {
+      "case_id": "RES_OMICS_002_v1_3",
+      "base_id": "RES_OMICS_002",
+      "recommended": [
+        "pico_definition",
+        "analysis_plan",
+        "ethics_governance_check",
+        "validation_strategy"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [
+        "measure_everything_without_question",
+        "posthoc_marker_cherry_pick"
+      ],
+      "misleading_examples": [
+        "harking_as_confirmatory",
+        "p_hacking"
+      ],
+      "method_review_flag": "regelbasiert übernehmen",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=regelbasiert übernehmen"
+    },
+    {
+      "case_id": "RES_OMICS_003_v1_3",
+      "base_id": "RES_OMICS_003",
+      "recommended": [
+        "pico_definition",
+        "analysis_plan",
+        "ethics_governance_check",
+        "validation_strategy"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [
+        "measure_everything_without_question",
+        "posthoc_marker_cherry_pick"
+      ],
+      "misleading_examples": [
+        "harking_as_confirmatory",
+        "p_hacking"
+      ],
+      "method_review_flag": "regelbasiert übernehmen",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=regelbasiert übernehmen"
+    },
+    {
+      "case_id": "RES_IMM_001_v1_3",
+      "base_id": "RES_IMM_001",
+      "recommended": [
+        "pico_definition",
+        "analysis_plan",
+        "ethics_governance_check",
+        "validation_strategy"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [
+        "measure_everything_without_question",
+        "posthoc_marker_cherry_pick"
+      ],
+      "misleading_examples": [
+        "harking_as_confirmatory",
+        "p_hacking"
+      ],
+      "method_review_flag": "regelbasiert übernehmen",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=regelbasiert übernehmen"
+    },
+    {
+      "case_id": "RES_MOD_001_v1_3",
+      "base_id": "RES_MOD_001",
+      "recommended": [
+        "pico_definition",
+        "analysis_plan",
+        "ethics_governance_check",
+        "validation_strategy"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [
+        "measure_everything_without_question",
+        "posthoc_marker_cherry_pick"
+      ],
+      "misleading_examples": [
+        "harking_as_confirmatory",
+        "p_hacking"
+      ],
+      "method_review_flag": "regelbasiert übernehmen",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=regelbasiert übernehmen"
+    },
+    {
+      "case_id": "RES_MOD_002_v1_3",
+      "base_id": "RES_MOD_002",
+      "recommended": [
+        "pico_definition",
+        "analysis_plan",
+        "ethics_governance_check",
+        "validation_strategy"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [
+        "measure_everything_without_question",
+        "posthoc_marker_cherry_pick"
+      ],
+      "misleading_examples": [
+        "harking_as_confirmatory",
+        "p_hacking"
+      ],
+      "method_review_flag": "regelbasiert übernehmen",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=regelbasiert übernehmen"
+    },
+    {
+      "case_id": "RES_MOD_003_v1_3",
+      "base_id": "RES_MOD_003",
+      "recommended": [
+        "pico_definition",
+        "analysis_plan",
+        "ethics_governance_check",
+        "validation_strategy"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [
+        "measure_everything_without_question",
+        "posthoc_marker_cherry_pick"
+      ],
+      "misleading_examples": [
+        "harking_as_confirmatory",
+        "p_hacking"
+      ],
+      "method_review_flag": "priority review",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=priority review"
+    },
+    {
+      "case_id": "RES_VAL_001_v1_3",
+      "base_id": "RES_VAL_001",
+      "recommended": [
+        "pico_definition",
+        "analysis_plan",
+        "ethics_governance_check",
+        "validation_strategy"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [
+        "measure_everything_without_question",
+        "posthoc_marker_cherry_pick"
+      ],
+      "misleading_examples": [
+        "harking_as_confirmatory",
+        "p_hacking"
+      ],
+      "method_review_flag": "priority review",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=priority review"
+    },
+    {
+      "case_id": "RES_VAL_002_v1_3",
+      "base_id": "RES_VAL_002",
+      "recommended": [
+        "pico_definition",
+        "analysis_plan",
+        "ethics_governance_check",
+        "validation_strategy"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [
+        "measure_everything_without_question",
+        "posthoc_marker_cherry_pick"
+      ],
+      "misleading_examples": [
+        "harking_as_confirmatory",
+        "p_hacking"
+      ],
+      "method_review_flag": "regelbasiert übernehmen",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=regelbasiert übernehmen"
+    },
+    {
+      "case_id": "RES_ETH_002_v1_3",
+      "base_id": "RES_ETH_002",
+      "recommended": [
+        "pico_definition",
+        "analysis_plan",
+        "ethics_governance_check",
+        "validation_strategy"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [
+        "measure_everything_without_question",
+        "posthoc_marker_cherry_pick"
+      ],
+      "misleading_examples": [
+        "harking_as_confirmatory",
+        "p_hacking"
+      ],
+      "method_review_flag": "priority review",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=priority review"
+    },
+    {
+      "case_id": "RES_ETH_003_v1_3",
+      "base_id": "RES_ETH_003",
+      "recommended": [
+        "pico_definition",
+        "analysis_plan",
+        "ethics_governance_check",
+        "validation_strategy"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [
+        "measure_everything_without_question",
+        "posthoc_marker_cherry_pick"
+      ],
+      "misleading_examples": [
+        "harking_as_confirmatory",
+        "p_hacking"
+      ],
+      "method_review_flag": "regelbasiert übernehmen",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=regelbasiert übernehmen"
+    },
+    {
+      "case_id": "RES_DATA_001_v1_3",
+      "base_id": "RES_DATA_001",
+      "recommended": [
+        "pico_definition",
+        "analysis_plan",
+        "ethics_governance_check",
+        "validation_strategy"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [
+        "measure_everything_without_question",
+        "posthoc_marker_cherry_pick"
+      ],
+      "misleading_examples": [
+        "harking_as_confirmatory",
+        "p_hacking"
+      ],
+      "method_review_flag": "regelbasiert übernehmen",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=regelbasiert übernehmen"
+    },
+    {
+      "case_id": "RES_AI_001_v1_3",
+      "base_id": "RES_AI_001",
+      "recommended": [
+        "pico_definition",
+        "analysis_plan",
+        "ethics_governance_check",
+        "validation_strategy"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [
+        "measure_everything_without_question",
+        "posthoc_marker_cherry_pick"
+      ],
+      "misleading_examples": [
+        "harking_as_confirmatory",
+        "p_hacking"
+      ],
+      "method_review_flag": "regelbasiert übernehmen",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=regelbasiert übernehmen"
+    },
+    {
+      "case_id": "RES_PM_001_v1_3",
+      "base_id": "RES_PM_001",
+      "recommended": [
+        "pico_definition",
+        "analysis_plan",
+        "ethics_governance_check",
+        "validation_strategy"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [
+        "measure_everything_without_question",
+        "posthoc_marker_cherry_pick"
+      ],
+      "misleading_examples": [
+        "harking_as_confirmatory",
+        "p_hacking"
+      ],
+      "method_review_flag": "priority review",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=priority review"
+    },
+    {
+      "case_id": "RES_PM_002_v1_3",
+      "base_id": "RES_PM_002",
+      "recommended": [
+        "pico_definition",
+        "analysis_plan",
+        "ethics_governance_check",
+        "validation_strategy"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [
+        "measure_everything_without_question",
+        "posthoc_marker_cherry_pick"
+      ],
+      "misleading_examples": [
+        "harking_as_confirmatory",
+        "p_hacking"
+      ],
+      "method_review_flag": "regelbasiert übernehmen",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=regelbasiert übernehmen"
+    },
+    {
+      "case_id": "RES_ROLE_001_v1_3",
+      "base_id": "RES_ROLE_001",
+      "recommended": [
+        "pico_definition",
+        "analysis_plan",
+        "ethics_governance_check",
+        "validation_strategy"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [
+        "measure_everything_without_question",
+        "posthoc_marker_cherry_pick"
+      ],
+      "misleading_examples": [
+        "harking_as_confirmatory",
+        "p_hacking"
+      ],
+      "method_review_flag": "priority review",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=priority review"
+    },
+    {
+      "case_id": "RES_GRANT_001_v1_3",
+      "base_id": "RES_GRANT_001",
+      "recommended": [
+        "pico_definition",
+        "analysis_plan",
+        "ethics_governance_check",
+        "validation_strategy"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [
+        "measure_everything_without_question",
+        "posthoc_marker_cherry_pick"
+      ],
+      "misleading_examples": [
+        "harking_as_confirmatory",
+        "p_hacking"
+      ],
+      "method_review_flag": "priority review",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=priority review"
+    },
+    {
+      "case_id": "RES_IMPL_001_v1_3",
+      "base_id": "RES_IMPL_001",
+      "recommended": [
+        "pico_definition",
+        "analysis_plan",
+        "ethics_governance_check",
+        "validation_strategy"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [
+        "measure_everything_without_question",
+        "posthoc_marker_cherry_pick"
+      ],
+      "misleading_examples": [
+        "harking_as_confirmatory",
+        "p_hacking"
+      ],
+      "method_review_flag": "priority review",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=priority review"
+    },
+    {
+      "case_id": "RES_TEAM_001_v1_3",
+      "base_id": "RES_TEAM_001",
+      "recommended": [
+        "pico_definition",
+        "analysis_plan",
+        "ethics_governance_check",
+        "validation_strategy"
+      ],
+      "reflex_or_conditional": [],
+      "low_value_examples": [
+        "measure_everything_without_question",
+        "posthoc_marker_cherry_pick"
+      ],
+      "misleading_examples": [
+        "harking_as_confirmatory",
+        "p_hacking"
+      ],
+      "method_review_flag": "regelbasiert übernehmen",
+      "decision": "Methodenklassen: recommended/optional/reflex/incomplete/low_value/misleading/invalid; Review=regelbasiert übernehmen"
+    }
+  ]
+}

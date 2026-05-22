@@ -1,0 +1,1941 @@
+[
+  {
+    "version": "v1.7b",
+    "case_id": "MTB_NSCLC_001_v0_6",
+    "title": "Metastasiertes Lungenadenokarzinom, kleine Biopsie: vollständige prädiktive Diagnostik ohne Materialverschwendung",
+    "domain": "MTB",
+    "target_course": "MTB Basics",
+    "deep_dive_priority": "signature",
+    "target_role": "Pathologieassistenz / MTB-Einstieg",
+    "estimated_minutes_deep": "12-15",
+    "learning_objectives": [
+      "Treiber-, Fusions- und PD-L1-Diagnostik beim metastasierten NSCLC parallel und materialschonend planen.",
+      "DNA-only-Strategien bei fusionsrelevanter Fragestellung als potenziell unvollständig erkennen.",
+      "Befundlimitationen bei kleiner Biopsie und begrenztem Tumoranteil klar im MTB kommunizieren."
+    ],
+    "opening_scene": "Montagmorgen, Tumorboard-Vorbereitung: Eine Bronchialbiopsie eines neu metastasierten Lungenkarzinoms liegt vor. Die Onkologie möchte innerhalb einer Woche wissen, ob eine zielgerichtete Therapie oder Immuntherapie infrage kommt. Das Material ist sichtbar knapp, aber die Therapieentscheidung hängt jetzt an der Pathologie.",
+    "case_briefing": "68-jähriger Patient, ehemaliger Raucher, multiple pulmonale und ossäre Metastasen. Klinische Anfrage: 'Bitte molekulare Therapierbarkeit prüfen, Erstlinientherapie soll im MTB festgelegt werden.' Vorbefund aus der Pathologie: Adenokarzinom der Lunge, nicht-kleinzellig, keine Resektionsoption.",
+    "context_cards": [
+      {
+        "title": "Klinischer Druck",
+        "content": "Der Patient ist symptomatisch, aber klinisch stabil. Eine Entscheidung über TKI vs. Immun-/Chemotherapie soll in 7 Tagen fallen.",
+        "teaching_point": "Zeitdruck rechtfertigt parallele, nicht sequentielle Diagnostik."
+      },
+      {
+        "title": "Histologie",
+        "content": "Kleine Bronchialbiopsie mit invasivem Adenokarzinom. TTF-1 und Napsin A positiv, p40/CK5/6 negativ, CK7 positiv. Ki-67 ca. 35–40%.",
+        "teaching_point": "Die Entität ist ausreichend eingegrenzt; jetzt geht es um prädiktive Marker."
+      },
+      {
+        "title": "Material",
+        "content": "Tumorareal ca. 25%, fokal Nekrose. Nach Diagnostik bleiben geschätzt 8 unstained Slides. RNA-Qualität ist nicht garantiert, aber noch plausibel nutzbar.",
+        "teaching_point": "Material Stewardship ist Teil der richtigen Entscheidung."
+      },
+      {
+        "title": "MTB-Frage",
+        "content": "Die Onkologie fragt explizit nach EGFR/ALK/ROS1/RET/NTRK/MET/HER2/BRAF/KRAS und PD-L1.",
+        "teaching_point": "Die Anfrage spricht gegen eine reine EGFR-PCR als alleinige Strategie."
+      }
+    ],
+    "pre_results": [
+      {
+        "title": "HE",
+        "content": "invasives Lungenadenokarzinom, mäßig differenziert, kleine Biopsie."
+      },
+      {
+        "title": "IHC",
+        "content": "TTF-1+, Napsin A+, CK7+, p40−, CK5/6−; PD-L1 noch nicht erfolgt."
+      },
+      {
+        "title": "Material-QC",
+        "content": "Tumorzellanteil ausreichend, aber knapp; RNA-Fusionsdiagnostik sollte nicht durch unnötige Zusatztests gefährdet werden."
+      }
+    ],
+    "material_or_resource_constraints": [
+      "maximal 8 Schnitte verfügbar; unnötige IHC-/Methylierungs-/HRD-Tests reduzieren die Chance auf vollständige Molekulardiagnostik.",
+      "TAT-Ziel: 7 Kalendertage bis MTB.",
+      "DNA und RNA sollten möglichst aus demselben markierten Tumorareal gewonnen werden."
+    ],
+    "reasoning_gate_upgrade": [
+      {
+        "id": "central_question",
+        "type": "single_choice",
+        "prompt": "Was ist die zentrale klinische Fragestellung?",
+        "options": [
+          {
+            "id": "driver_fusion_pdl1",
+            "label": "Vollständige prädiktive Erstliniendiagnostik mit Treibern, Fusionen und PD-L1"
+          },
+          {
+            "id": "lynch",
+            "label": "Lynch-Syndrom-Abklärung"
+          },
+          {
+            "id": "hrd",
+            "label": "HRD/PARP-Indikation"
+          },
+          {
+            "id": "infection",
+            "label": "Infektionsdiagnostik"
+          }
+        ],
+        "correct": [
+          "driver_fusion_pdl1"
+        ],
+        "rationale": "Beim metastasierten Lungenadenokarzinom steht die therapieentscheidende Treiber-/Fusions-/PD-L1-Diagnostik im Vordergrund."
+      },
+      {
+        "id": "material_risk",
+        "type": "single_choice",
+        "prompt": "Was ist das wichtigste Materialrisiko?",
+        "options": [
+          {
+            "id": "small_biopsy",
+            "label": "Kleine Biopsie mit begrenztem Tumorareal und potenzieller RNA-Fragilität"
+          },
+          {
+            "id": "no_relevance",
+            "label": "Material spielt bei NGS praktisch keine Rolle"
+          },
+          {
+            "id": "plasma_replaces",
+            "label": "Plasma ersetzt Gewebe grundsätzlich"
+          },
+          {
+            "id": "methylation_first",
+            "label": "Methylierung sollte grundsätzlich zuerst erfolgen"
+          }
+        ],
+        "correct": [
+          "small_biopsy"
+        ],
+        "rationale": "Die vollständige Diagnostik muss materialschonend und priorisiert geplant werden."
+      },
+      {
+        "id": "dna_only_limit",
+        "type": "single_choice",
+        "prompt": "Warum ist DNA-NGS allein in diesem Fall riskant?",
+        "options": [
+          {
+            "id": "fusion_gap",
+            "label": "Relevante Genfusionen können unzureichend erfasst werden, RNA-Fusionsdiagnostik ergänzt die Aussage"
+          },
+          {
+            "id": "no_mutations",
+            "label": "DNA-NGS detektiert keine Mutationen"
+          },
+          {
+            "id": "pdl1_in_dna",
+            "label": "PD-L1 wird zuverlässig aus DNA abgeleitet"
+          },
+          {
+            "id": "crc_only",
+            "label": "Fusionen sind nur beim CRC relevant"
+          }
+        ],
+        "correct": [
+          "fusion_gap"
+        ],
+        "rationale": "DNA-NGS ist für SNV/Indels stark, aber RNA-basierte Verfahren sind für relevante Fusionen häufig die bessere Ergänzung."
+      }
+    ],
+    "decision_task": "Wähle eine materialschonende Primäranforderung, die die Erstlinientherapie im MTB belastbar unterstützt.",
+    "expected_path": [
+      "PD-L1-IHC parallel anfordern.",
+      "DNA-basiertes Lungen-/Solid-Tumor-Panel für SNV/Indels/CNV inkl. EGFR, KRAS, BRAF, MET, ERBB2.",
+      "RNA-Fusionspanel für ALK, ROS1, RET, NTRK und weitere relevante Fusionen.",
+      "Tumorareal markieren und unnötige entitätsfremde Zusatzdiagnostik vermeiden.",
+      "Befund mit Methodengrenzen und Materialqualität berichten."
+    ],
+    "acceptable_alternatives": [
+      "Bei extremem Zeitdruck kann EGFR-Schnelltest zusätzlich erfolgen, ersetzt aber nicht die Panel-/Fusionsdiagnostik.",
+      "ALK-IHC/FISH kann als schnelle Ergänzung sinnvoll sein, aber nicht als alleinige umfassende Strategie."
+    ],
+    "low_value_traps": [
+      {
+        "label": "MLH1-Methylierung",
+        "why_bad": "Ohne dMMR-/CRC-/Lynch-Kontext entitätsfremd und materialverbrauchend."
+      },
+      {
+        "label": "HRD-Score",
+        "why_bad": "Für die primäre NSCLC-Erstlinienentscheidung nicht zielführend."
+      },
+      {
+        "label": "EGFR-PCR allein",
+        "why_bad": "Kann EGFR beantworten, lässt aber viele therapeutisch relevante Alterationen offen."
+      }
+    ],
+    "twist": {
+      "title": "DNA-negativ ist nicht automatisch treibernegativ",
+      "content": "Wenn nur DNA-NGS und PD-L1 angefordert werden, ergibt sich ein Teilbefund: kein EGFR/KRAS/BRAF/METex14-Nachweis, PD-L1 TPS 5%. Erst bei RNA-Fusionsdiagnostik wird eine EML4::ALK-Fusion detektiert.",
+      "why_critical": "Die therapeutisch entscheidende Alteration wäre bei zu enger Primäranforderung verzögert oder verpasst worden."
+    },
+    "result_packages": [
+      {
+        "id": "optimal",
+        "title": "Vollständige Primäranforderung",
+        "result": "PD-L1 TPS 5%; DNA-Panel ohne EGFR/KRAS/BRAF/METex14; RNA-Panel mit EML4::ALK-Fusion.",
+        "feedback": "Sehr gute Strategie: vollständige prädiktive Diagnostik bei kleinem Material und direkter therapeutischer Konsequenz."
+      },
+      {
+        "id": "incomplete_dna_only",
+        "title": "DNA-NGS + PD-L1 ohne RNA",
+        "result": "Teilbefund ohne SNV/Indel-Treiber, PD-L1 TPS 5%; Fusionsstatus nicht ausreichend beurteilt.",
+        "feedback": "Richtige Richtung, aber unvollständig. Nachforderung RNA rettet den Fall, kostet aber Material und TAT."
+      },
+      {
+        "id": "overdiagnostic",
+        "title": "Breite, entitätsfremde Zusatzdiagnostik",
+        "result": "Vollständige Zielmarker ggf. verfügbar, aber unnötiger Materialverbrauch durch MMR/MLH1/HRD etc.",
+        "feedback": "Diagnostisch nicht katastrophal, aber Material Stewardship und Kommunikation leiden deutlich."
+      }
+    ],
+    "followup_logic": [
+      {
+        "trigger": "RNA-Fusionsdiagnostik primär fehlt",
+        "action": "Nachforderung RNA-Fusionspanel anbieten",
+        "consequence": "Ergebnis wird vollständig, aber Score-Cap wegen vermeidbarer Verzögerung."
+      },
+      {
+        "trigger": "entitätsfremde Tests gewählt",
+        "action": "im Bericht als low value/misleading ausweisen",
+        "consequence": "Abzug bei Method Selection, Material Stewardship und Communication."
+      }
+    ],
+    "debrief_points": [
+      "Beim metastasierten NSCLC ist die klinische Frage breit prädiktiv, nicht nur EGFR-orientiert.",
+      "Fusionen sind ein klassischer Grund, DNA-only-Strategien kritisch zu hinterfragen.",
+      "Kleine Biopsie heißt nicht weniger Diagnostik, sondern bessere Priorisierung."
+    ],
+    "instructor_notes": {
+      "model_answer": "Optimale Lösung: PD-L1-IHC + DNA-NGS + RNA-Fusionspanel parallel, mit Materialhinweis und klarer MTB-Kommunikation. EGFR-Schnelltest nur als Zusatz bei Zeitdruck.",
+      "scoring_focus": [
+        "Clinical Reasoning: Erstlinienfrage erkannt",
+        "Method Selection: DNA/RNA/PD-L1 korrekt kombiniert",
+        "Material Stewardship: entitätsfremde Tests vermieden"
+      ],
+      "discussion_questions": [
+        "Wann wäre Liquid Biopsy zusätzlich sinnvoll?",
+        "Wie kommuniziert man 'kein Treiber nachgewiesen' ohne RNA-Fusionsergebnis?",
+        "Welche Rolle spielt PD-L1 bei nachgewiesener ALK-Fusion?"
+      ]
+    },
+    "report_additions": [
+      "Twist / kritischer Wendepunkt: DNA-only hätte ALK verzögert",
+      "Typische Fehler: EGFR-only, RNA vergessen, Material durch Low-value-Tests verbraucht",
+      "Musterpfad: PD-L1 + DNA + RNA parallel"
+    ]
+  },
+  {
+    "version": "v1.7b",
+    "case_id": "MTB_NSCLC_002_v1_3",
+    "title": "EGFR-mutiertes NSCLC mit Progress unter Osimertinib: negative Liquid Biopsy richtig einordnen",
+    "domain": "MTB",
+    "target_course": "Advanced Integrated",
+    "deep_dive_priority": "complex_anchor",
+    "target_role": "fortgeschrittene MTB-Rolle",
+    "estimated_minutes_deep": "20-30",
+    "learning_objectives": [
+      "Negative ctDNA/Liquid-Biopsy-Befunde als abhängig von Tumor-Shedding und Nachweisgrenze einordnen.",
+      "Rebiopsie bei klinisch relevanter Resistenzfrage fachlich begründen.",
+      "Resistenzmechanismen unter EGFR-TKI strukturiert diagnostisch abklären."
+    ],
+    "opening_scene": "Im molekularen Tumorboard wird ein Patient mit bekannter EGFR-Exon-19-Deletion vorgestellt. Nach 14 Monaten Osimertinib zeigt das CT einen deutlichen Progress. Eine Liquid Biopsy wurde bereits extern veranlasst und ist negativ. Die Onkologie fragt: 'Können wir daraus schließen, dass kein molekularer Resistenzmechanismus vorliegt?'",
+    "case_briefing": "64-jähriger Patient mit metastasiertem Lungenadenokarzinom, initial EGFR Exon-19-Deletion. Unter Osimertinib gutes Ansprechen, jetzt multiple neue Leberläsionen und Wachstum der Primärläsion. Allgemeinzustand erlaubt eine Rebiopsie einer Lebermetastase.",
+    "context_cards": [
+      {
+        "title": "Vortherapie",
+        "content": "Osimertinib seit 14 Monaten. Kein vorangegangener Platin-Doublet-Zyklus. Aktuell rascher radiologischer Progress.",
+        "teaching_point": "Progress unter zielgerichteter Therapie erzeugt eine Resistenzfrage, keine reine Re-Staging-Frage."
+      },
+      {
+        "title": "Liquid Biopsy",
+        "content": "Externes Plasma-NGS: 'No pathogenic variant detected'. Bericht weist ctDNA-Fraktion <0,2% aus.",
+        "teaching_point": "Ein negativer Befund bei niedriger ctDNA-Fraktion ist kein sicherer Ausschluss."
+      },
+      {
+        "title": "Rebiopsie-Möglichkeit",
+        "content": "Interventionelle Radiologie hält eine Punktion der Lebermetastase für machbar. Materialrisiko moderat.",
+        "teaching_point": "Wenn Gewebe verfügbar ist, sollte es bei relevanter Resistenzfrage erwogen werden."
+      },
+      {
+        "title": "Differenzialdiagnostische Ebene",
+        "content": "Neben sekundären EGFR-Veränderungen kommen MET-Amplifikation, Bypass-Signale oder histologische Transformation infrage.",
+        "teaching_point": "Resistenzdiagnostik ist nicht nur SNV-Suche."
+      }
+    ],
+    "pre_results": [
+      {
+        "title": "Initialbefund",
+        "content": "Lungenadenokarzinom, EGFR Exon-19-Deletion, ALK/ROS1 negativ, PD-L1 TPS 20%."
+      },
+      {
+        "title": "Aktueller Plasma-Befund",
+        "content": "Kein Nachweis der bekannten EGFR-Deletion, keine Resistenzmutation; ctDNA-Fraktion sehr niedrig."
+      },
+      {
+        "title": "Bildgebung",
+        "content": "neue Lebermetastasen, Progress der Primärläsion, keine isolierte oligometastatische Situation."
+      }
+    ],
+    "material_or_resource_constraints": [
+      "Rebiopsie ist invasiv, aber technisch möglich.",
+      "Eine Therapieumstellung ohne Resistenzklärung kann relevante Optionen verpassen.",
+      "Negative Liquid Biopsy muss mit Tumor-Shedding und Nachweisgrenze kommuniziert werden."
+    ],
+    "reasoning_gate_upgrade": [
+      {
+        "id": "lb_negative",
+        "type": "single_choice",
+        "prompt": "Was bedeutet die negative Liquid Biopsy in diesem Kontext?",
+        "options": [
+          {
+            "id": "not_exclusion",
+            "label": "Kein sicherer Ausschluss eines Resistenzmechanismus, besonders bei niedriger ctDNA-Fraktion"
+          },
+          {
+            "id": "true_negative",
+            "label": "Sicherer Ausschluss aller Resistenzmechanismen"
+          },
+          {
+            "id": "germline_only",
+            "label": "Hinweis auf Keimbahnmutation"
+          },
+          {
+            "id": "no_need",
+            "label": "Weitere Diagnostik grundsätzlich unnötig"
+          }
+        ],
+        "correct": [
+          "not_exclusion"
+        ],
+        "rationale": "ctDNA-negative Befunde können durch niedriges Tumor-Shedding bedingt sein."
+      },
+      {
+        "id": "next_best_step",
+        "type": "single_choice",
+        "prompt": "Was ist der beste nächste diagnostische Schritt, wenn Gewebe erreichbar ist?",
+        "options": [
+          {
+            "id": "rebiopsy",
+            "label": "Gewebe-Rebiopsie mit Histologie und breiter Resistenzdiagnostik"
+          },
+          {
+            "id": "stop",
+            "label": "keine weitere Diagnostik"
+          },
+          {
+            "id": "mlh1",
+            "label": "MLH1-Methylierung"
+          },
+          {
+            "id": "pdl1_only",
+            "label": "nur PD-L1 wiederholen"
+          }
+        ],
+        "correct": [
+          "rebiopsy"
+        ],
+        "rationale": "Bei Progress unter EGFR-TKI ist Gewebe wichtig, wenn es sicher verfügbar ist."
+      },
+      {
+        "id": "resistance_scope",
+        "type": "multi_select",
+        "prompt": "Welche Ebenen sollten bei Rebiopsie berücksichtigt werden?",
+        "options": [
+          {
+            "id": "egfr_secondary",
+            "label": "sekundäre EGFR-Veränderungen"
+          },
+          {
+            "id": "bypass",
+            "label": "Bypass-Mechanismen wie MET-Amplifikation"
+          },
+          {
+            "id": "histology",
+            "label": "histologische Transformation"
+          },
+          {
+            "id": "methylation_crc",
+            "label": "CRC-Reflexdiagnostik"
+          }
+        ],
+        "correct": [
+          "egfr_secondary",
+          "bypass",
+          "histology"
+        ],
+        "rationale": "Resistenz kann genetisch, kopienzahlbasiert oder histologisch sein."
+      },
+      {
+        "id": "communication",
+        "type": "single_choice",
+        "prompt": "Wie sollte der Plasma-Befund im MTB kommuniziert werden?",
+        "options": [
+          {
+            "id": "limited_negative",
+            "label": "negativ mit klarer Limitation und Rebiopsieempfehlung"
+          },
+          {
+            "id": "definitive_negative",
+            "label": "definitiv negativ, keine Resistenz"
+          },
+          {
+            "id": "therapy_target",
+            "label": "als eigenständiges Target"
+          },
+          {
+            "id": "discard",
+            "label": "gar nicht erwähnen"
+          }
+        ],
+        "correct": [
+          "limited_negative"
+        ],
+        "rationale": "Die Limitation ist entscheidend für die klinische Interpretation."
+      }
+    ],
+    "decision_task": "Entscheide, ob die negative Liquid Biopsy ausreicht oder ob Rebiopsie und weiterführende Resistenzdiagnostik empfohlen werden sollen.",
+    "expected_path": [
+      "Negative Liquid Biopsy nicht als sicheren Ausschluss interpretieren.",
+      "Rebiopsie der progredienten Läsion empfehlen, wenn klinisch vertretbar.",
+      "Histologische Reevaluation inkl. Transformation ausschließen.",
+      "DNA-NGS/CNV-Analyse und ggf. RNA/Fusions-/Bypass-Diagnostik je nach Panel anfordern.",
+      "Befund im MTB als methodisch limitiert und handlungsorientiert darstellen."
+    ],
+    "acceptable_alternatives": [
+      "Wenn Rebiopsie nicht machbar ist: wiederholte Liquid Biopsy mit klarer Einschränkung und klinischer Verlaufskontrolle.",
+      "MET-FISH/IHC kann als fokussierte Ergänzung sinnvoll sein, ersetzt aber nicht immer breite Resistenzdiagnostik."
+    ],
+    "low_value_traps": [
+      {
+        "label": "Plasma-negativ = kein Resistenzmechanismus",
+        "why_bad": "Das ist die zentrale Falle und kann zu falscher Therapieplanung führen."
+      },
+      {
+        "label": "PD-L1 allein wiederholen",
+        "why_bad": "Beantwortet die Resistenzfrage unter EGFR-TKI nicht."
+      },
+      {
+        "label": "entitätsfremde Methylierungsdiagnostik",
+        "why_bad": "Hilft bei dieser Resistenzfrage nicht."
+      }
+    ],
+    "twist": {
+      "title": "Der Tumor sheddert kaum ctDNA",
+      "content": "Die Rebiopsie zeigt weiterhin Adenokarzinom mit EGFR Exon-19-Deletion und zusätzlich eine MET-Amplifikation. Die negative Liquid Biopsy war wegen niedriger ctDNA-Fraktion nicht ausreichend aussagekräftig.",
+      "why_critical": "Ohne Rebiopsie wäre ein potenziell relevanter Resistenzmechanismus übersehen worden."
+    },
+    "result_packages": [
+      {
+        "id": "optimal_rebiopsy",
+        "title": "Rebiopsie + Resistenzpanel",
+        "result": "Gewebe-NGS/CNV: EGFR Exon-19-Deletion weiterhin nachweisbar, MET-Amplifikation; keine kleinzellige Transformation.",
+        "feedback": "Sehr gute Entscheidung: methodische Limitation der Liquid Biopsy korrekt eingeordnet."
+      },
+      {
+        "id": "liquid_only",
+        "title": "Liquid Biopsy als ausreichend gewertet",
+        "result": "Kein Resistenzmechanismus berichtet; spätere Gewebediagnostik zeigt MET-Amplifikation.",
+        "feedback": "Kritischer Fehler: negative Liquid Biopsy wurde überinterpretiert."
+      },
+      {
+        "id": "rebiopsy_without_scope",
+        "title": "Rebiopsie, aber zu enger Test",
+        "result": "Histologie bestätigt Adenokarzinom; Resistenzmechanismus bleibt unvollständig geklärt.",
+        "feedback": "Richtiger Impuls, aber Diagnostikumfang für Resistenzfrage zu eng."
+      }
+    ],
+    "followup_logic": [
+      {
+        "trigger": "nur Liquid Biopsy gewählt",
+        "action": "Warnung im Abschlussbericht und Score-Cap wegen Überinterpretation",
+        "consequence": "maximaler Score begrenzt, Communication und Clinical Reasoning betroffen."
+      },
+      {
+        "trigger": "Rebiopsie gewählt, aber MET/CNV/Transformation nicht bedacht",
+        "action": "Nachforderung/Ergänzung anbieten",
+        "consequence": "Teilrettung möglich, aber TAT- und Methodikabzug."
+      }
+    ],
+    "debrief_points": [
+      "Liquid Biopsy ist stark, aber negativ nicht automatisch sicher negativ.",
+      "Resistenzdiagnostik muss die biologische Breite des Progresses abdecken.",
+      "Die Qualität des negativen Befunds hängt an ctDNA-Fraktion und Kontext."
+    ],
+    "instructor_notes": {
+      "model_answer": "Empfehlung: Rebiopsie der progredienten Läsion mit Histologie und breiter Resistenzdiagnostik; Liquid-Biopsy-Befund als limitiert negativ kommunizieren.",
+      "scoring_focus": [
+        "Clinical Reasoning: negative LB korrekt interpretiert",
+        "Method Selection: Gewebe + Resistenzpanel",
+        "Communication: Limitation klar formuliert"
+      ],
+      "discussion_questions": [
+        "Wann akzeptiert man eine Liquid Biopsy als ausreichend?",
+        "Wie berichtet man niedrige ctDNA-Fraktion?",
+        "Wie verändert eine histologische Transformation die Therapie?"
+      ]
+    },
+    "report_additions": [
+      "Twist / kritischer Wendepunkt: ctDNA-negativ trotz Gewebemechanismus",
+      "Critical Error: negative Liquid Biopsy als sicherer Ausschluss",
+      "Musterpfad: Rebiopsie bei machbarer Läsion"
+    ]
+  },
+  {
+    "version": "v1.7b",
+    "case_id": "MTB_CRC_002_v1_3",
+    "title": "Kolorektales Karzinom mit MLH1/PMS2-Verlust: Reflexdiagnostik statt vorschnellem Lynch-Label",
+    "domain": "MTB",
+    "target_course": "MTB Basics",
+    "deep_dive_priority": "course_anchor",
+    "target_role": "Pathologieassistenz / Gastro-MTB",
+    "estimated_minutes_deep": "12-15",
+    "learning_objectives": [
+      "MMR-IHC-Muster interpretieren und MLH1/PMS2-Verlust korrekt einordnen.",
+      "Reflexdiagnostik zur Abgrenzung sporadisch vs. Lynch begründen.",
+      "Therapie- und Familienrelevanz von dMMR/MSI-H differenziert kommunizieren."
+    ],
+    "opening_scene": "Im Gastro-MTB wird ein rechtsseitiges Kolonkarzinom vorgestellt. Die MMR-IHC zeigt MLH1/PMS2-Verlust. Die Frage aus der Klinik lautet: 'Ist das Lynch? Und was bedeutet das therapeutisch?'",
+    "case_briefing": "49-jährige Patientin mit pT3 pN2 rechtsseitigem Kolonkarzinom und Lebermetastasen. Histologisch muzinöse Anteile und auffällige tumorinfiltrierende Lymphozyten. MMR-IHC wurde aufgrund Alter und Morphologie durchgeführt.",
+    "context_cards": [
+      {
+        "title": "IHC-Muster",
+        "content": "MLH1 und PMS2 nukleär verloren; MSH2 und MSH6 erhalten. Interne Kontrollen positiv.",
+        "teaching_point": "MLH1 stabilisiert PMS2; gemeinsamer Verlust spricht oft primär für MLH1-Achse."
+      },
+      {
+        "title": "Klinischer Kontext",
+        "content": "Alter 49 Jahre, keine vollständige Familienanamnese verfügbar. Onkologie erwägt Immuncheckpoint-Inhibition im metastasierten Setting.",
+        "teaching_point": "Der Befund hat therapeutische und hereditäre Dimension."
+      },
+      {
+        "title": "Reflexdiagnostik",
+        "content": "MLH1-Promotor-Methylierung und/oder BRAF V600E können eine sporadische MLH1-Inaktivierung stützen.",
+        "teaching_point": "Nicht jeder MLH1/PMS2-Verlust ist automatisch Lynch."
+      }
+    ],
+    "pre_results": [
+      {
+        "title": "HE",
+        "content": "rechtsseitiges Adenokarzinom mit muzinösen Anteilen, TIL-reich."
+      },
+      {
+        "title": "MMR-IHC",
+        "content": "MLH1−/PMS2−, MSH2+/MSH6+; interne Positivkontrollen intakt."
+      },
+      {
+        "title": "Molekularstatus",
+        "content": "RAS/BRAF und MLH1-Methylierung noch nicht angefordert."
+      }
+    ],
+    "material_or_resource_constraints": [
+      "Ausreichend FFPE-Material vorhanden, Reflexdiagnostik technisch möglich.",
+      "Therapieentscheidung und humangenetische Beratung hängen an sauberer Einordnung.",
+      "Vorschnelle Formulierungen können Patientin und Familie unnötig verunsichern."
+    ],
+    "reasoning_gate_upgrade": [
+      {
+        "id": "mmr_pattern",
+        "type": "single_choice",
+        "prompt": "Wie ist das MLH1/PMS2-Verlustmuster primär zu interpretieren?",
+        "options": [
+          {
+            "id": "mlh1_axis",
+            "label": "Hinweis auf Störung der MLH1/PMS2-Achse, weitere Einordnung nötig"
+          },
+          {
+            "id": "def_lynch",
+            "label": "beweist sicher Lynch-Syndrom"
+          },
+          {
+            "id": "no_msi",
+            "label": "spricht gegen MSI"
+          },
+          {
+            "id": "her2",
+            "label": "primär HER2-Amplifikation"
+          }
+        ],
+        "correct": [
+          "mlh1_axis"
+        ],
+        "rationale": "Das IHC-Muster zeigt dMMR, aber die Ursache bleibt offen."
+      },
+      {
+        "id": "reflex",
+        "type": "multi_select",
+        "prompt": "Welche Reflexschritte sind sinnvoll?",
+        "options": [
+          {
+            "id": "mlh1_methylation",
+            "label": "MLH1-Promotor-Methylierung"
+          },
+          {
+            "id": "braf_v600e",
+            "label": "BRAF V600E"
+          },
+          {
+            "id": "genetic_counseling_if_unmethylated",
+            "label": "Humangenetik bei fehlender sporadischer Erklärung"
+          },
+          {
+            "id": "alk_fish",
+            "label": "ALK-FISH"
+          }
+        ],
+        "correct": [
+          "mlh1_methylation",
+          "braf_v600e",
+          "genetic_counseling_if_unmethylated"
+        ],
+        "rationale": "Reflexdiagnostik soll sporadisch vs. Lynch strukturieren."
+      },
+      {
+        "id": "therapy",
+        "type": "single_choice",
+        "prompt": "Welche therapeutische Relevanz hat dMMR/MSI-H im metastasierten Setting?",
+        "options": [
+          {
+            "id": "io_relevance",
+            "label": "prädiktive Relevanz für Immuncheckpoint-Inhibition"
+          },
+          {
+            "id": "anti_egfr_only",
+            "label": "alleiniger Marker für anti-EGFR"
+          },
+          {
+            "id": "parp_only",
+            "label": "primär PARP-Indikation"
+          },
+          {
+            "id": "none",
+            "label": "keine Relevanz"
+          }
+        ],
+        "correct": [
+          "io_relevance"
+        ],
+        "rationale": "dMMR/MSI-H kann eine wichtige prädiktive Information für Immuntherapie sein."
+      }
+    ],
+    "decision_task": "Lege die sinnvolle Reflexdiagnostik und die MTB-Kommunikation für MLH1/PMS2-Verlust fest.",
+    "expected_path": [
+      "dMMR/MSI-H als therapeutisch relevant kommunizieren.",
+      "MLH1-Promotor-Methylierung und BRAF V600E als Reflexdiagnostik anfordern.",
+      "Bei fehlender Methylierung/BRAF-WT: humangenetische Abklärung empfehlen.",
+      "RAS/BRAF für Systemtherapie/anti-EGFR-Kontext vollständig klären.",
+      "Befundformulierung: Hinweis auf Lynch möglich, aber nicht allein durch IHC bewiesen."
+    ],
+    "acceptable_alternatives": [
+      "MSI-PCR/NGS zusätzlich zur IHC als Bestätigung, insbesondere bei diskordanten Befunden.",
+      "Direkte humangenetische Mitbeurteilung kann parallel vorbereitet werden, ersetzt aber nicht die Reflexdiagnostik."
+    ],
+    "low_value_traps": [
+      {
+        "label": "Lynch sicher diagnostizieren nur aus IHC",
+        "why_bad": "Überinterpretiert den Befund und überspringt sporadische Ursachen."
+      },
+      {
+        "label": "EGFR-Mutationsanalyse",
+        "why_bad": "Für anti-EGFR beim CRC sind RAS/BRAF und Kontext relevant, nicht EGFR-Mutation als Standard."
+      },
+      {
+        "label": "Lungen-Fusionspanel",
+        "why_bad": "Entitätsfremd und ohne Bezug zur Kernfrage."
+      }
+    ],
+    "twist": {
+      "title": "Reflexbefund entscheidet die Richtung",
+      "content": "MLH1-Promotor-Methylierung ist nicht nachweisbar, BRAF V600E ist negativ. Damit bleibt der Lynch-Verdacht bestehen und eine humangenetische Beratung/Keimbahndiagnostik ist indiziert.",
+      "why_critical": "Ohne Reflexdiagnostik wäre entweder zu früh beruhigt oder zu früh Lynch behauptet worden."
+    },
+    "result_packages": [
+      {
+        "id": "optimal_reflex",
+        "title": "MMR + Reflexdiagnostik",
+        "result": "MLH1/PMS2-Verlust bestätigt; MLH1-Methylierung negativ, BRAF V600E negativ; Empfehlung Humangenetik, MSI-H/dMMR therapeutisch relevant.",
+        "feedback": "Sehr gut: therapeutische und hereditäre Dimension getrennt, aber zusammenhängend kommuniziert."
+      },
+      {
+        "id": "ihc_only",
+        "title": "Nur MMR-IHC",
+        "result": "dMMR bekannt, Ursache unklar.",
+        "feedback": "Teilbefund: für Therapie hilfreich, für Lynch-Einordnung unvollständig."
+      },
+      {
+        "id": "overcall_lynch",
+        "title": "Lynch vorschnell behauptet",
+        "result": "Befund überinterpretiert, Reflexdiagnostik fehlt.",
+        "feedback": "Kritischer Kommunikationsfehler: IHC ist Hinweis, nicht alleinige Keimbahndiagnose."
+      }
+    ],
+    "followup_logic": [
+      {
+        "trigger": "MLH1-Methylierung/BRAF fehlen",
+        "action": "Reflexdiagnostik nachfordern",
+        "consequence": "Korrektur möglich, aber Verzögerung in Therapie-/Familienkommunikation."
+      },
+      {
+        "trigger": "Lynch sicher behauptet",
+        "action": "Score-Cap wegen Overcalling und Kommunikationsrisiko",
+        "consequence": "Communication und Clinical Reasoning stark betroffen."
+      }
+    ],
+    "debrief_points": [
+      "MMR-IHC ist ein Startpunkt, nicht das Ende der Lynch-Abklärung.",
+      "dMMR/MSI-H hat gleichzeitig therapeutische und hereditäre Relevanz.",
+      "Reflexdiagnostik schützt vor Über- und Unterdiagnostik."
+    ],
+    "instructor_notes": {
+      "model_answer": "MLH1/PMS2-Verlust → MLH1-Methylierung/BRAF-Reflex; bei fehlender sporadischer Erklärung Humangenetik. Therapie: dMMR/MSI-H als IO-relevanter Marker kommunizieren.",
+      "scoring_focus": [
+        "Reflexlogik",
+        "getrennte Therapie-/Keimbahnkommunikation",
+        "kein Overcalling"
+      ],
+      "discussion_questions": [
+        "Wie formuliert man den Befund für Patient:innen?",
+        "Wann reicht MMR-IHC, wann MSI-Test?",
+        "Wie ändert ein methylierter MLH1-Promotor die Empfehlung?"
+      ]
+    },
+    "report_additions": [
+      "Twist: Reflexbefund kippt Richtung Lynch-Verdacht",
+      "Typische Fehler: IHC overcall, Reflex vergessen",
+      "Musterpfad: dMMR → Reflex → ggf. Humangenetik"
+    ]
+  },
+  {
+    "version": "v1.7b",
+    "case_id": "MTB_OVAR_002_v1_3",
+    "title": "HGSOC mit BRCA2-VUS: PARP-Wunsch, Evidenzgrenzen und Keimbahnkommunikation",
+    "domain": "MTB",
+    "target_course": "Advanced Integrated",
+    "deep_dive_priority": "complex_anchor",
+    "target_role": "Gyn-MTB / Molekularpathologie",
+    "estimated_minutes_deep": "20-30",
+    "learning_objectives": [
+      "VUS von pathogenen/likely pathogenen BRCA/HRR-Varianten therapeutisch trennen.",
+      "Tumor-, HRD- und Keimbahnebene sauber kommunizieren.",
+      "PARP-Indikation nicht auf eine ungesicherte VUS stützen."
+    ],
+    "opening_scene": "Die Gyn-Onkologie stellt eine Patientin nach Platinansprechen vor. Im Tumorpanel wurde eine BRCA2-Variante unklarer Signifikanz gefunden. Die Frage lautet: 'Können wir das als BRCA-positiv werten und PARP-Erhaltung begründen?'",
+    "case_briefing": "59-jährige Patientin mit high-grade serösem Ovarialkarzinom, FIGO IIIC, gutes partielles Ansprechen auf Platin-basierte Erstlinientherapie. Familienanamnese: eine Tante mit Mammakarzinom, Details unklar. Tumorpanel: TP53 pathogene Mutation, BRCA2-Missense-Variante als VUS klassifiziert.",
+    "context_cards": [
+      {
+        "title": "Tumorbiologie",
+        "content": "HGSOC ist häufig TP53-alteriert; HRD/BRCA-Status kann therapeutisch relevant sein.",
+        "teaching_point": "Nicht jede BRCA-Variante ist automatisch HRD- oder PARP-begründend."
+      },
+      {
+        "title": "Variante",
+        "content": "BRCA2-Missense-Variante, VAF 48%, keine gesicherte funktionelle Evidenz, keine klare Loss-of-function-Konsequenz.",
+        "teaching_point": "VAF und Genname allein reichen nicht für Pathogenität."
+      },
+      {
+        "title": "HRD",
+        "content": "HRD-Score liegt noch nicht vor. Genomische Narben wurden im bisherigen Tumorpanel nicht ausreichend bewertet.",
+        "teaching_point": "HRD kann unabhängig von einer einzelnen VUS relevant sein."
+      },
+      {
+        "title": "Keimbahn",
+        "content": "Eine humangenetische Abklärung kann aufgrund Entität/Familienkontext sinnvoll sein, muss aber getrennt von der somatischen VUS-Therapieaussage kommuniziert werden.",
+        "teaching_point": "Keimbahnklärung macht eine VUS nicht automatisch therapeutisch gesichert."
+      }
+    ],
+    "pre_results": [
+      {
+        "title": "Histologie",
+        "content": "high-grade seröses Karzinom, p53 aberrant, WT1+, PAX8+."
+      },
+      {
+        "title": "Tumor-NGS",
+        "content": "TP53 pathogene Mutation; BRCA2 c.X p.Y als VUS; keine gesicherte biallelische Inaktivierung berichtet."
+      },
+      {
+        "title": "Therapie-Kontext",
+        "content": "Platinansprechen vorhanden, PARP-Erhaltung wird diskutiert; HRD-Score nicht bestimmt."
+      }
+    ],
+    "material_or_resource_constraints": [
+      "FFPE-Material ausreichend für HRD-/erweitertes HRR-Profil, aber nicht unbegrenzt.",
+      "Therapieentscheidung darf nicht auf einer falsch hochgestuften VUS beruhen.",
+      "Keimbahnthemen benötigen humangenetische Beratung und geeignete Probe."
+    ],
+    "reasoning_gate_upgrade": [
+      {
+        "id": "vus_meaning",
+        "type": "single_choice",
+        "prompt": "Wie ist eine BRCA2-VUS therapeutisch zu werten?",
+        "options": [
+          {
+            "id": "not_actionable",
+            "label": "nicht als gesichert pathogene BRCA-Alteration verwenden"
+          },
+          {
+            "id": "pathogenic",
+            "label": "als pathogene BRCA-Mutation werten"
+          },
+          {
+            "id": "ignore_gene",
+            "label": "BRCA2 ist beim Ovar irrelevant"
+          },
+          {
+            "id": "germline_confirm",
+            "label": "Keimbahnnachweis macht sie automatisch pathogen"
+          }
+        ],
+        "correct": [
+          "not_actionable"
+        ],
+        "rationale": "VUS sind keine gesichert therapeutisch verwertbaren Varianten."
+      },
+      {
+        "id": "next_tests",
+        "type": "multi_select",
+        "prompt": "Welche nächsten Schritte sind sinnvoll?",
+        "options": [
+          {
+            "id": "hrd_score",
+            "label": "HRD-Status/Genomic-Scar-Testung prüfen"
+          },
+          {
+            "id": "variant_reclassification",
+            "label": "Datenbank-/Literatur-/Klassifikationsprüfung dokumentieren"
+          },
+          {
+            "id": "genetic_counseling",
+            "label": "Humangenetische Beratung/Keimbahnanalyse getrennt empfehlen"
+          },
+          {
+            "id": "parp_vus",
+            "label": "PARP allein wegen VUS empfehlen"
+          }
+        ],
+        "correct": [
+          "hrd_score",
+          "variant_reclassification",
+          "genetic_counseling"
+        ],
+        "rationale": "Die Lösung trennt Therapieevidenz, HRD und Keimbahn."
+      },
+      {
+        "id": "communication",
+        "type": "single_choice",
+        "prompt": "Welche Befundkommunikation ist korrekt?",
+        "options": [
+          {
+            "id": "clear_vus",
+            "label": "BRCA2-VUS: unklare Signifikanz, nicht gleichzusetzen mit pathogener BRCA-Alteration"
+          },
+          {
+            "id": "brca_positive",
+            "label": "BRCA-positiv"
+          },
+          {
+            "id": "no_report",
+            "label": "VUS gar nicht erwähnen trotz Therapieanfrage"
+          },
+          {
+            "id": "family_pathogenic",
+            "label": "Familie sicher betroffen"
+          }
+        ],
+        "correct": [
+          "clear_vus"
+        ],
+        "rationale": "Klare, nicht überdehnende Kommunikation ist hier der Kern."
+      },
+      {
+        "id": "hrd_context",
+        "type": "single_choice",
+        "prompt": "Welche Rolle kann HRD spielen?",
+        "options": [
+          {
+            "id": "independent_context",
+            "label": "HRD kann zusätzlich zur Variantenbewertung für PARP-Kontext relevant sein"
+          },
+          {
+            "id": "crc_only",
+            "label": "HRD ist nur bei CRC relevant"
+          },
+          {
+            "id": "never",
+            "label": "HRD ist nie therapeutisch relevant"
+          },
+          {
+            "id": "vus_enough",
+            "label": "HRD wird durch VUS automatisch bewiesen"
+          }
+        ],
+        "correct": [
+          "independent_context"
+        ],
+        "rationale": "HRD ist eine eigene Ebene und nicht automatisch durch eine VUS belegt."
+      }
+    ],
+    "decision_task": "Formuliere eine fachlich saubere Empfehlung zur BRCA2-VUS, HRD-Testung, PARP-Kontext und Keimbahnabklärung.",
+    "expected_path": [
+      "BRCA2-VUS nicht als pathogene/therapeutisch gesicherte Mutation berichten.",
+      "HRD-Status bzw. geeignete HRR/Genomic-Scar-Testung ergänzen, wenn für Therapie relevant.",
+      "VUS-Klassifikation mit Evidenzstand dokumentieren und keine Therapieempfehlung allein daraus ableiten.",
+      "Humangenetische Beratung/Keimbahnanalyse getrennt empfehlen, insbesondere bei Entität/Familienkontext.",
+      "MTB-Kommunikation: VUS ≠ BRCA-positiv; therapeutische Entscheidung nach Leitlinie/HRD/klinischem Kontext."
+    ],
+    "acceptable_alternatives": [
+      "Bei bereits extern vorhandenem HRD-positivem Befund kann PARP-Kontext unabhängig von VUS diskutiert werden.",
+      "Wenn Material nicht reicht: Priorisierung HRD vs. erweitertes HRR nach klinischer Fragestellung."
+    ],
+    "low_value_traps": [
+      {
+        "label": "VUS als PARP-Indikation verkaufen",
+        "why_bad": "Therapeutisches Overcalling mit potenziell falscher Patientinnenberatung."
+      },
+      {
+        "label": "Keimbahn-VUS als pathologisch deklarieren",
+        "why_bad": "Keimbahnkontext ändert die Klassifikation nicht automatisch."
+      },
+      {
+        "label": "TP53-Einzeltest als HRD-Ersatz",
+        "why_bad": "TP53 passt zur Entität, beantwortet aber HRD/PARP-Frage nicht."
+      }
+    ],
+    "twist": {
+      "title": "Die VUS bleibt eine VUS",
+      "content": "Die humangenetische Analyse weist dieselbe BRCA2-Variante nach, aber auch dort bleibt sie als VUS klassifiziert. Der später ergänzte HRD-Score ist negativ. Damit ist eine PARP-Begründung über diese Variante nicht belastbar.",
+      "why_critical": "Der Wunsch nach einer therapeutischen Option darf die Evidenzklassifikation nicht verändern."
+    },
+    "result_packages": [
+      {
+        "id": "optimal_vus_handled",
+        "title": "VUS sauber eingeordnet + HRD/Keimbahn getrennt",
+        "result": "BRCA2-VUS bleibt unklar; HRD negativ; Empfehlung: keine therapeutische Gleichsetzung mit pathogener BRCA-Mutation, Humangenetik mit VUS-Kommunikation.",
+        "feedback": "Sehr gute Evidenz- und Kommunikationsdisziplin."
+      },
+      {
+        "id": "overcall_parp",
+        "title": "VUS als BRCA-positiv gewertet",
+        "result": "Befund suggeriert gesicherte PARP-Basis, obwohl Evidenz fehlt.",
+        "feedback": "Kritischer Fehler: VUS-Overcalling."
+      },
+      {
+        "id": "ignore_germline",
+        "title": "Keimbahnkontext nicht adressiert",
+        "result": "Therapiefrage teilweise bearbeitet, Familien-/Beratungsebene fehlt.",
+        "feedback": "Somatische und hereditäre Dimension wurden nicht sauber getrennt."
+      }
+    ],
+    "followup_logic": [
+      {
+        "trigger": "VUS overcalled",
+        "action": "Score-Cap und Berichtswarnung",
+        "consequence": "Biological Interpretation und Communication kritisch betroffen."
+      },
+      {
+        "trigger": "HRD fehlt",
+        "action": "Nachforderung HRD möglich",
+        "consequence": "Therapieeinordnung verbessert sich, aber Verzögerung bleibt."
+      }
+    ],
+    "debrief_points": [
+      "VUS ist eine Evidenzkategorie, kein therapeutisches Wunschlabel.",
+      "Somatisch, HRD und Keimbahn sind drei miteinander verbundene, aber getrennte Ebenen.",
+      "Gute Befundkommunikation schützt vor Übertherapie und falscher Familienberatung."
+    ],
+    "instructor_notes": {
+      "model_answer": "BRCA2-VUS nicht als pathogene Alteration werten; HRD/HRR-Kontext ergänzen; Humangenetik anbieten, aber VUS-Status transparent kommunizieren.",
+      "scoring_focus": [
+        "kein Overcalling",
+        "HRD-Kontext",
+        "Keimbahnkommunikation"
+      ],
+      "discussion_questions": [
+        "Wie formuliert man VUS im Befund?",
+        "Was ändert ein negativer HRD-Score?",
+        "Wie geht man mit Therapieerwartungen im MTB um?"
+      ]
+    },
+    "report_additions": [
+      "Twist: Keimbahn bestätigt VUS, aber nicht Pathogenität",
+      "Critical Error: VUS als therapeutisch gesichert",
+      "Musterpfad: Klassifikation + HRD + Humangenetik getrennt"
+    ]
+  },
+  {
+    "version": "v1.7b",
+    "case_id": "MET_NGS_003_v1_0",
+    "title": "ERBB2-VUS mit Therapieanfrage: Evidenzgrad, Kontext und klare MTB-Kommunikation",
+    "domain": "MTB/MET",
+    "target_course": "Methodik-Fallen",
+    "deep_dive_priority": "method_anchor",
+    "target_role": "Befundinterpretation / MTB-Kommunikation",
+    "estimated_minutes_deep": "12-15",
+    "learning_objectives": [
+      "VUS von therapeutisch verwertbaren Alterationen abgrenzen.",
+      "Onkogen-Name, VAF und Therapiewunsch nicht mit Evidenz gleichsetzen.",
+      "Vertretbare Zusatzdiagnostik und klinische Studienoptionen nüchtern kommunizieren."
+    ],
+    "opening_scene": "Ein externer Onkologe ruft vor dem MTB an: 'Im Bericht steht ERBB2. Können wir anti-HER2 behandeln?' Der Fall ist molekular auffällig, aber nicht eindeutig. Du musst eine kurze, belastbare MTB-Aussage vorbereiten.",
+    "case_briefing": "Metastasiertes Adenokarzinom unklarer Primärlokalisation, derzeit palliatives Setting. Tumor-NGS zeigt eine ERBB2-Missense-Variante mit VAF 31%, klassifiziert als VUS. Keine ERBB2-Amplifikation im CNV-Profil, HER2-IHC bisher nicht durchgeführt.",
+    "context_cards": [
+      {
+        "title": "Variante",
+        "content": "ERBB2 p.XYZ, selten, keine gesicherte aktivierende Funktion, keine ausreichende klinische Evidenz.",
+        "teaching_point": "Genname ≠ Actionability."
+      },
+      {
+        "title": "Therapieerwartung",
+        "content": "Die Klinik sucht nach einer Off-label-Option, weil Standardlinien ausgeschöpft sind.",
+        "teaching_point": "Therapiedruck erhöht das Risiko von Overcalling."
+      },
+      {
+        "title": "Orthogonale Ebene",
+        "content": "HER2-IHC/ISH könnte eine Amplifikation/Überexpression prüfen, beantwortet aber die VUS-Pathogenität nicht automatisch.",
+        "teaching_point": "Zusatzdiagnostik kann Kontext schaffen, aber keine VUS magisch aufwerten."
+      }
+    ],
+    "pre_results": [
+      {
+        "title": "NGS",
+        "content": "ERBB2-VUS, VAF 31%; sonst keine gesichert therapierbaren Alterationen."
+      },
+      {
+        "title": "CNV",
+        "content": "kein Hinweis auf ERBB2-Amplifikation im Panel-CNV-Profil."
+      },
+      {
+        "title": "Klinik",
+        "content": "Therapieanfrage explizit anti-HER2, Off-label-Option wird diskutiert."
+      }
+    ],
+    "material_or_resource_constraints": [
+      "Ausreichend Material für HER2-IHC/ISH vorhanden.",
+      "Therapieentscheidung soll nicht auf VUS allein beruhen.",
+      "Evidenzgrad muss im Bericht klar erkennbar sein."
+    ],
+    "reasoning_gate_upgrade": [
+      {
+        "id": "vus_actionability",
+        "type": "single_choice",
+        "prompt": "Was bedeutet die ERBB2-VUS für die Therapie?",
+        "options": [
+          {
+            "id": "not_actionable_alone",
+            "label": "allein nicht ausreichend für eine gesicherte anti-HER2-Therapieempfehlung"
+          },
+          {
+            "id": "actionable",
+            "label": "automatisch therapeutisch verwertbar"
+          },
+          {
+            "id": "benign",
+            "label": "automatisch benigne"
+          },
+          {
+            "id": "germline",
+            "label": "beweist Keimbahnrisiko"
+          }
+        ],
+        "correct": [
+          "not_actionable_alone"
+        ],
+        "rationale": "VUS haben keine gesicherte klinische Actionability."
+      },
+      {
+        "id": "context_tests",
+        "type": "multi_select",
+        "prompt": "Welche Kontextprüfungen können sinnvoll sein?",
+        "options": [
+          {
+            "id": "database_lit",
+            "label": "Datenbank-/Literatur-/Evidenzprüfung"
+          },
+          {
+            "id": "her2_ihc_ish",
+            "label": "HER2-IHC/ISH bei passender Entität"
+          },
+          {
+            "id": "mtb_trial",
+            "label": "Studienoption nur mit klarer Evidenzkennzeichnung"
+          },
+          {
+            "id": "mlh1",
+            "label": "MLH1-Methylierung"
+          }
+        ],
+        "correct": [
+          "database_lit",
+          "her2_ihc_ish",
+          "mtb_trial"
+        ],
+        "rationale": "Zusatzdiagnostik dient Kontext und Kommunikation, nicht automatischer Aufwertung."
+      },
+      {
+        "id": "reporting",
+        "type": "single_choice",
+        "prompt": "Welche MTB-Formulierung ist angemessen?",
+        "options": [
+          {
+            "id": "vus_limited",
+            "label": "ERBB2-VUS, derzeit keine gesicherte prädiktive Bedeutung; ggf. HER2-Status ergänzen/Studien prüfen"
+          },
+          {
+            "id": "recommend_drug",
+            "label": "anti-HER2-Therapie empfohlen"
+          },
+          {
+            "id": "hide_vus",
+            "label": "VUS verschweigen"
+          },
+          {
+            "id": "pathogenic",
+            "label": "pathogene ERBB2-Mutation"
+          }
+        ],
+        "correct": [
+          "vus_limited"
+        ],
+        "rationale": "Die Formulierung muss Evidenz und Limitierung klar machen."
+      }
+    ],
+    "decision_task": "Erstelle die methodisch und kommunikativ korrekte MTB-Empfehlung für eine ERBB2-VUS mit Therapieanfrage.",
+    "expected_path": [
+      "VUS als nicht gesichert actionable kommunizieren.",
+      "Evidenzprüfung dokumentieren.",
+      "HER2-IHC/ISH bei plausibler Entität als Kontextdiagnostik erwägen.",
+      "Keine Therapieempfehlung allein auf VUS stützen.",
+      "Studien-/Off-label-Diskussion nur mit klarer Evidenzlimitation."
+    ],
+    "acceptable_alternatives": [
+      "Wenn HER2-IHC 3+ oder ISH-amplifiziert ist, kann die Diskussion auf HER2-Überexpression/Amplifikation verlagert werden.",
+      "Bei sehr hoher klinischer Not kann MTB eine Studienoption formulieren, aber nicht als gesicherte Biomarkerindikation."
+    ],
+    "low_value_traps": [
+      {
+        "label": "Onkogen-VUS als Target",
+        "why_bad": "Klassischer Overcalling-Fehler."
+      },
+      {
+        "label": "VAF als Pathogenitätsbeweis",
+        "why_bad": "VAF sagt nicht automatisch funktionelle Relevanz."
+      },
+      {
+        "label": "VUS aus Bericht entfernen",
+        "why_bad": "Verschleiert relevante Unsicherheit statt sie zu erklären."
+      }
+    ],
+    "twist": {
+      "title": "HER2-IHC ist negativ",
+      "content": "Die nachgeforderte HER2-IHC zeigt 0/1+, ISH ist nicht amplifiziert. Damit bleibt die ERBB2-VUS ohne stützende orthogonale Evidenz.",
+      "why_critical": "Der Fall zeigt, dass Kontextdiagnostik Overcalling nicht ersetzen darf."
+    },
+    "result_packages": [
+      {
+        "id": "optimal_vus",
+        "title": "VUS korrekt begrenzt",
+        "result": "ERBB2-VUS ohne HER2-Überexpression/Amplifikation; keine gesicherte anti-HER2-Indikation aus Molekularbefund.",
+        "feedback": "Sehr gut: Evidenz, Kontext und Kommunikation sauber getrennt."
+      },
+      {
+        "id": "overcall",
+        "title": "VUS als Target empfohlen",
+        "result": "Therapieempfehlung basiert auf ungesicherter Variante.",
+        "feedback": "Kritischer Fehler: potenziell falsche Therapieableitung."
+      },
+      {
+        "id": "undercommunicate",
+        "title": "VUS nicht erklärt",
+        "result": "Befund bleibt unverständlich, Klinik kann ihn überinterpretieren.",
+        "feedback": "Kommunikationsdefizit trotz korrekter Methodik."
+      }
+    ],
+    "followup_logic": [
+      {
+        "trigger": "HER2-Kontext fehlt",
+        "action": "HER2-IHC/ISH optional ergänzen",
+        "consequence": "Kontext besser, aber VUS bleibt VUS."
+      },
+      {
+        "trigger": "VUS als Therapie empfohlen",
+        "action": "Score-Cap wegen Overcalling",
+        "consequence": "Biological Interpretation und Communication kritisch."
+      }
+    ],
+    "debrief_points": [
+      "VUS sind im MTB häufig und müssen aktiv erklärt werden.",
+      "Evidenzgrad ist Teil der Diagnosequalität.",
+      "Orthogonale Tests können helfen, aber nicht jede Unsicherheit lösen."
+    ],
+    "instructor_notes": {
+      "model_answer": "Keine gesicherte anti-HER2-Empfehlung allein auf ERBB2-VUS. Evidenzprüfung, ggf. HER2-IHC/ISH, klare Kommunikation der Unsicherheit.",
+      "scoring_focus": [
+        "VUS nicht overcallen",
+        "Kontextdiagnostik sinnvoll",
+        "MTB-Sprache präzise"
+      ],
+      "discussion_questions": [
+        "Wie viel Unsicherheit gehört in den Befund?",
+        "Wann ist Off-label vertretbar?",
+        "Wie erklärt man VUS laienverständlich?"
+      ]
+    },
+    "report_additions": [
+      "Twist: HER2-IHC/ISH stützt VUS nicht",
+      "Typischer Fehler: Gene name bias",
+      "Musterpfad: Evidenzprüfung + klare Limitierung"
+    ]
+  },
+  {
+    "version": "v1.7b",
+    "case_id": "LAB_RUN_002_v0_8",
+    "title": "Hotspot-Mutation in der Negativkontrolle: Run-Sperre, Ursachenanalyse und CAPA",
+    "domain": "LAB",
+    "target_course": "QM Basics",
+    "deep_dive_priority": "qm_anchor",
+    "target_role": "Laborleitung / QM",
+    "estimated_minutes_deep": "12-15",
+    "learning_objectives": [
+      "Positive Negativkontrolle als Patientensicherheitsrisiko erkennen.",
+      "Run-Freigabe, Sperre, Wiederholung und CAPA auditfähig begründen.",
+      "Kontaminationsquellen systematisch statt rein ad hoc bearbeiten."
+    ],
+    "opening_scene": "Freitag, 15:40 Uhr. Ein NGS-Run mit 18 Patientenproben ist technisch fast fertig ausgewertet. Zwei Befunde werden dringend erwartet. Kurz vor Freigabe fällt auf: Die Negativkontrolle zeigt KRAS p.G12D mit VAF 1,8%.",
+    "case_briefing": "Der Run enthält FFPE-Proben aus CRC, NSCLC und Pankreaskarzinomen. Die Positivkontrolle ist plausibel, Coverage ist insgesamt gut. Mehrere Patientenproben zeigen ebenfalls niedrige KRAS-Hotspot-Signale. Die technische Assistenz fragt, ob man 'die Patientenproben mit plausiblen VAFs' trotzdem freigeben kann.",
+    "context_cards": [
+      {
+        "title": "QC-Ereignis",
+        "content": "Negativkontrolle: KRAS p.G12D, 1,8% VAF, ausreichend Reads, keine Low-Coverage-Warnung.",
+        "teaching_point": "Eine positive Negativkontrolle ist kein kosmetisches Problem."
+      },
+      {
+        "title": "Run-Kontext",
+        "content": "KRAS-positive Positivkontrolle wurde am gleichen Tag verarbeitet. Prä- und Post-PCR-Zonen sind räumlich getrennt, aber das Pipettierprotokoll wurde nicht vollständig kommentiert.",
+        "teaching_point": "Ursachenanalyse beginnt mit Prozess und Dokumentation."
+      },
+      {
+        "title": "Klinischer Druck",
+        "content": "Zwei CRC-Befunde sind für die Therapiefreigabe angefragt. Verzögerung ist unangenehm, aber falsche Freigabe wäre schlimmer.",
+        "teaching_point": "Patientensicherheit schlägt TAT-Komfort."
+      }
+    ],
+    "pre_results": [
+      {
+        "title": "Run-QC",
+        "content": "Mean coverage ausreichend, Base quality gut, Positivkontrolle korrekt."
+      },
+      {
+        "title": "Negativkontrolle",
+        "content": "KRAS p.G12D bei 1,8% VAF nachweisbar."
+      },
+      {
+        "title": "Dokumentation",
+        "content": "Plattenlayout vorhanden, aber Abweichungs-/Kommentarspur unvollständig."
+      }
+    ],
+    "material_or_resource_constraints": [
+      "Patientenergebnisse dürfen bei Kontaminationsverdacht nicht ungeprüft freigegeben werden.",
+      "Wiederholung benötigt Rest-DNA und mindestens 1–2 Werktage.",
+      "CAPA muss nachvollziehbar sein, nicht nur 'Run wiederholt'."
+    ],
+    "reasoning_gate_upgrade": [
+      {
+        "id": "risk",
+        "type": "single_choice",
+        "prompt": "Was ist das zentrale Risiko?",
+        "options": [
+          {
+            "id": "false_positive",
+            "label": "falsch-positive Patientenvarianten durch Kontamination"
+          },
+          {
+            "id": "false_negative",
+            "label": "ausschließlich falsch-negative Varianten"
+          },
+          {
+            "id": "no_risk",
+            "label": "keine Relevanz bei guter Coverage"
+          },
+          {
+            "id": "report_text",
+            "label": "nur Berichtstextproblem"
+          }
+        ],
+        "correct": [
+          "false_positive"
+        ],
+        "rationale": "Hotspot in der Negativkontrolle gefährdet die Interpretierbarkeit des Runs."
+      },
+      {
+        "id": "release",
+        "type": "single_choice",
+        "prompt": "Welche Freigabeentscheidung ist primär korrekt?",
+        "options": [
+          {
+            "id": "hold_run",
+            "label": "Run/Betroffene Ergebnisse sperren bis Klärung"
+          },
+          {
+            "id": "release_all",
+            "label": "alle plausiblen Patientenproben freigeben"
+          },
+          {
+            "id": "delete_ntc",
+            "label": "Negativkontrolle ignorieren"
+          },
+          {
+            "id": "phone_only",
+            "label": "nur telefonisch warnen"
+          }
+        ],
+        "correct": [
+          "hold_run"
+        ],
+        "rationale": "Patientensicherheit verlangt Sperre/Klärung."
+      },
+      {
+        "id": "capa",
+        "type": "multi_select",
+        "prompt": "Welche Maßnahmen gehören zur auditfähigen Reaktion?",
+        "options": [
+          {
+            "id": "deviation",
+            "label": "Abweichung dokumentieren"
+          },
+          {
+            "id": "root_cause",
+            "label": "Ursachenanalyse mit Layout/Workflow/Reagenzien"
+          },
+          {
+            "id": "repeat",
+            "label": "Wiederholung betroffener Proben/Kontrollen"
+          },
+          {
+            "id": "no_doc",
+            "label": "keine Dokumentation nötig"
+          }
+        ],
+        "correct": [
+          "deviation",
+          "root_cause",
+          "repeat"
+        ],
+        "rationale": "CAPA ist mehr als Wiederholung."
+      }
+    ],
+    "decision_task": "Entscheide, ob der Run freigegeben, teilfreigegeben oder gesperrt wird und welche CAPA-Maßnahmen nötig sind.",
+    "expected_path": [
+      "Run bzw. betroffene Ergebnisse vor Freigabe sperren.",
+      "Abweichung anlegen und Laborleitung/QM informieren.",
+      "Plattenlayout, Kontrollen, Reagenzien, Arbeitszonen und Pipettierhistorie prüfen.",
+      "Betroffene Proben/Kontrollen wiederholen, idealerweise ab geeignetem Prozessschritt.",
+      "CAPA: Sofortmaßnahme, Ursache, Korrektur, Prävention, Wirksamkeitskontrolle."
+    ],
+    "acceptable_alternatives": [
+      "Teilfreigabe nur, wenn klar unabhängige Proben/Marker nicht betroffen sind und dies dokumentiert begründet werden kann.",
+      "Wiederholung ab Extraktion oder Library je nach Root-Cause-Hypothese."
+    ],
+    "low_value_traps": [
+      {
+        "label": "Run vollständig freigeben",
+        "why_bad": "Critical Fail: Kontaminationssignal ignoriert."
+      },
+      {
+        "label": "Nur NTC ausblenden",
+        "why_bad": "Entfernt das Problem aus der Darstellung, nicht aus dem Prozess."
+      },
+      {
+        "label": "Wiederholung ohne CAPA",
+        "why_bad": "Behebt ggf. Ergebnis, aber nicht Systemursache/Auditfähigkeit."
+      }
+    ],
+    "twist": {
+      "title": "Die Kontamination ist nicht isoliert",
+      "content": "Bei Prüfung des Plattenlayouts liegen zwei low-VAF-KRAS-positive Patientenproben in unmittelbarer Nähe der Positivkontrolle. Nach Wiederholung ist eine der Varianten nicht reproduzierbar.",
+      "why_critical": "Ohne Run-Sperre wäre ein potenziell falscher Patientenbefund freigegeben worden."
+    },
+    "result_packages": [
+      {
+        "id": "optimal_qm",
+        "title": "Run gesperrt + CAPA",
+        "result": "Abweichung dokumentiert, Wiederholung zeigt eine nicht reproduzierbare Low-VAF-Variante, CAPA eingeleitet.",
+        "feedback": "Sehr gute Patientensicherheits- und Auditentscheidung."
+      },
+      {
+        "id": "release",
+        "title": "Run freigegeben",
+        "result": "Später fällt eine diskordante Wiederholung auf; Befundrückruf nötig.",
+        "feedback": "Fataler QM-/Patientensicherheitsfehler."
+      },
+      {
+        "id": "repeat_only",
+        "title": "Nur wiederholt",
+        "result": "Ergebnis korrigiert, aber Ursache/Prävention nicht dokumentiert.",
+        "feedback": "Technisch teilweise gerettet, aber CAPA/Audit unzureichend."
+      }
+    ],
+    "followup_logic": [
+      {
+        "trigger": "Run freigegeben",
+        "action": "critical_fail setzen",
+        "consequence": "Score-Cap 55 oder niedriger, Patient Safety betroffen."
+      },
+      {
+        "trigger": "CAPA fehlt",
+        "action": "CAPA-Nachforderung",
+        "consequence": "Score kann steigen, Auditfähigkeit bleibt limitiert."
+      }
+    ],
+    "debrief_points": [
+      "Kontrollen sind Entscheidungsinstrumente, keine Formalität.",
+      "TAT-Druck rechtfertigt keine ungeklärte Freigabe.",
+      "CAPA dokumentiert Lernen aus Fehlern und schützt Wiederholbarkeit."
+    ],
+    "instructor_notes": {
+      "model_answer": "Run sperren/hold, Abweichung dokumentieren, Root Cause analysieren, betroffene Proben wiederholen, CAPA inklusive Prävention und Wirksamkeit.",
+      "scoring_focus": [
+        "Patient Safety",
+        "Process Decision",
+        "CAPA/Audit Readiness"
+      ],
+      "discussion_questions": [
+        "Wann ist Teilfreigabe vertretbar?",
+        "Ab welchem VAF ist eine NTC-Kontamination relevant?",
+        "Was gehört in eine gute CAPA?"
+      ]
+    },
+    "report_additions": [
+      "Twist: eine Patientenvariante nicht reproduzierbar",
+      "Critical Fail: Freigabe trotz positiver NTC",
+      "Musterpfad: Hold → Abweichung → RCA → Wiederholung → CAPA"
+    ]
+  },
+  {
+    "version": "v1.7b",
+    "case_id": "LAB_POST_001_v1_0",
+    "title": "Pipeline-Version geändert, kein Change-Log: Bioinformatik-QM und Impact-Analyse",
+    "domain": "LAB",
+    "target_course": "Advanced Integrated",
+    "deep_dive_priority": "complex_anchor",
+    "target_role": "Laborleitung / Bioinformatik-QM",
+    "estimated_minutes_deep": "20-30",
+    "learning_objectives": [
+      "Pipeline-/Softwareänderungen als qualitätsrelevante Methodenänderung erkennen.",
+      "Impact-Analyse, Versionierung und Revalidierung/Verifizierung ableiten.",
+      "Befundfreigabe bei diskordanten Pipeline-Ergebnissen auditfähig steuern."
+    ],
+    "opening_scene": "Ein Bioinformatik-Update wurde 'nur kurz' eingespielt, weil der neue Caller bessere Indel-Erkennung verspricht. Am nächsten Tag unterscheiden sich mehrere Variantenlisten von alten Ergebnissen. Ein Change-Log existiert nicht.",
+    "case_briefing": "Molekularpathologisches NGS-Panel, 48 Patientenfälle im aktuellen Batch. Variant Caller von 3.4 auf 4.1 aktualisiert. Referenzdatenbank und Annotation wurden ebenfalls minor aktualisiert. Die Änderung wurde nicht vorab in der QM-Dokumentation freigegeben.",
+    "context_cards": [
+      {
+        "title": "Diskordanz",
+        "content": "Bei 6/48 Fällen unterscheiden sich reportable variants. Ein Fall betrifft eine potenziell therapieentscheidende MET-Splice-Region.",
+        "teaching_point": "Nicht jede Softwareänderung ist rein technisch."
+      },
+      {
+        "title": "Versionierung",
+        "content": "Im Berichtsentwurf ist keine Pipeline-Version angegeben; alte Reports enthalten nur 'NGS Pipeline'.",
+        "teaching_point": "Ohne Versionierung fehlt Rückverfolgbarkeit."
+      },
+      {
+        "title": "Teamkonflikt",
+        "content": "Bioinformatik sagt: 'Der neue Caller ist besser.' QM fragt: 'Wo ist die Verifizierung?' Klinik wartet auf Befunde.",
+        "teaching_point": "Besser ist nicht gleich freigegeben."
+      },
+      {
+        "title": "Risiko",
+        "content": "Sowohl falsch-positive als auch falsch-negative Änderungen sind möglich; Impact ist nicht auf einen Fall begrenzt.",
+        "teaching_point": "Impact-Analyse muss systematisch erfolgen."
+      }
+    ],
+    "pre_results": [
+      {
+        "title": "Alter Lauf",
+        "content": "Validierte Pipeline v3.4 mit dokumentierter Leistungsfähigkeit."
+      },
+      {
+        "title": "Neuer Lauf",
+        "content": "v4.1 ruft zusätzliche Indels/Splice-Varianten, darunter ein potenziell reportables MET-Ereignis."
+      },
+      {
+        "title": "Dokumentation",
+        "content": "kein Change-Control-Eintrag, keine Freigabe, keine definierte Vergleichsmatrix."
+      }
+    ],
+    "material_or_resource_constraints": [
+      "Klinischer TAT-Druck, aber potenzieller Einfluss auf Befundqualität.",
+      "Vergleichsdatensätze und Alt-Runs sind verfügbar.",
+      "Re-Analyse früherer Fälle könnte nötig werden, wenn systematischer Einfluss besteht."
+    ],
+    "reasoning_gate_upgrade": [
+      {
+        "id": "change_type",
+        "type": "single_choice",
+        "prompt": "Wie ist die Pipelineänderung zu bewerten?",
+        "options": [
+          {
+            "id": "qm_relevant",
+            "label": "qualitätsrelevante Methoden-/Auswertungsänderung mit Change-Control-Bedarf"
+          },
+          {
+            "id": "cosmetic",
+            "label": "rein kosmetische Änderung"
+          },
+          {
+            "id": "ignore",
+            "label": "irrelevant, wenn Software neuer ist"
+          },
+          {
+            "id": "clinical_only",
+            "label": "nur klinische Entscheidung"
+          }
+        ],
+        "correct": [
+          "qm_relevant"
+        ],
+        "rationale": "Pipelineversionen beeinflussen berichtete Varianten und benötigen Kontrolle."
+      },
+      {
+        "id": "immediate",
+        "type": "single_choice",
+        "prompt": "Was ist die richtige Sofortmaßnahme?",
+        "options": [
+          {
+            "id": "hold_impact",
+            "label": "Freigabe betroffener Befunde pausieren und Impact-Analyse starten"
+          },
+          {
+            "id": "release_new",
+            "label": "alle neuen Calls freigeben"
+          },
+          {
+            "id": "rollback_silent",
+            "label": "heimlich zurückrollen ohne Doku"
+          },
+          {
+            "id": "delete_old",
+            "label": "alte Ergebnisse löschen"
+          }
+        ],
+        "correct": [
+          "hold_impact"
+        ],
+        "rationale": "Freigabe ohne Impact wäre riskant."
+      },
+      {
+        "id": "documentation",
+        "type": "multi_select",
+        "prompt": "Was muss dokumentiert werden?",
+        "options": [
+          {
+            "id": "version",
+            "label": "exakte Pipeline-/Caller-/DB-Versionen"
+          },
+          {
+            "id": "validation",
+            "label": "Verifizierungs-/Vergleichsergebnisse"
+          },
+          {
+            "id": "approval",
+            "label": "Freigabe/Change-Control"
+          },
+          {
+            "id": "none",
+            "label": "nichts, wenn Ergebnis plausibel"
+          }
+        ],
+        "correct": [
+          "version",
+          "validation",
+          "approval"
+        ],
+        "rationale": "Rückverfolgbarkeit ist Kern der Postanalytik."
+      },
+      {
+        "id": "affected_cases",
+        "type": "single_choice",
+        "prompt": "Wie geht man mit potenziell betroffenen Fällen um?",
+        "options": [
+          {
+            "id": "case_review",
+            "label": "betroffene Fälle identifizieren und medizinisch/QM-seitig bewerten"
+          },
+          {
+            "id": "ignore_past",
+            "label": "alte Fälle nie prüfen"
+          },
+          {
+            "id": "report_all",
+            "label": "alle neuen Varianten ohne Prüfung reporten"
+          },
+          {
+            "id": "annotation_only",
+            "label": "nur Annotation ändern"
+          }
+        ],
+        "correct": [
+          "case_review"
+        ],
+        "rationale": "Impact-Analyse ist fall- und markerbezogen."
+      }
+    ],
+    "decision_task": "Entscheide, wie mit der ungeplanten Pipelineänderung, den diskordanten Calls und der Befundfreigabe umzugehen ist.",
+    "expected_path": [
+      "Freigabe diskordanter/entscheidungsrelevanter Befunde pausieren.",
+      "Change-Control nachholen: Änderung, Grund, Versionen, Verantwortliche dokumentieren.",
+      "Verifizierung mit definiertem Referenz-/Altfallset durchführen.",
+      "Diskordante Calls medizinisch-technisch bewerten und ggf. orthogonal bestätigen.",
+      "Berichtsvorlagen mit Pipeline-Version/Auswertungsstand korrigieren.",
+      "Entscheiden, ob frühere Fälle reevaluiert werden müssen."
+    ],
+    "acceptable_alternatives": [
+      "Temporärer Rollback auf validierte Pipeline für Routinefreigabe, während v4.1 verifiziert wird.",
+      "Teilfreigabe nicht betroffener Befunde, wenn Trennung auditfähig dokumentiert ist."
+    ],
+    "low_value_traps": [
+      {
+        "label": "Neue Pipeline ist automatisch besser",
+        "why_bad": "ohne Verifizierung keine Routinefreigabe."
+      },
+      {
+        "label": "Silent rollback",
+        "why_bad": "verschleiert das Ereignis und zerstört Audit-Trail."
+      },
+      {
+        "label": "Nur Bioinformatik entscheidet",
+        "why_bad": "klinisch-reportable Änderungen brauchen Laborleitung/QM/ärztliche Bewertung."
+      }
+    ],
+    "twist": {
+      "title": "Ein alter negativer Fall wäre heute positiv",
+      "content": "Die Impact-Analyse zeigt, dass v4.1 eine MET-Splice-Region in einem aktuellen Fall plausibel ruft, aber auch zwei alte low-quality Artefakte neu als Varianten markiert. Die Änderung verbessert einen Bereich, erzeugt aber neue Review-Bedürfnisse.",
+      "why_critical": "Der Fall zeigt, warum Verifizierung nicht Innovationsbremse, sondern Patientenschutz ist."
+    },
+    "result_packages": [
+      {
+        "id": "optimal_change_control",
+        "title": "Change-Control + Impact",
+        "result": "Befunde pausiert, v4.1 mit Altfallset geprüft, MET-Call orthogonal bestätigt, Artefaktfilter angepasst, Versionierung dokumentiert.",
+        "feedback": "Sehr gute Balance aus Innovation und QM."
+      },
+      {
+        "id": "release_without_validation",
+        "title": "Neue Pipeline direkt freigegeben",
+        "result": "Später werden diskordante Artefakte entdeckt, Reports müssen korrigiert werden.",
+        "feedback": "Kritischer Postanalytik-/QM-Fehler."
+      },
+      {
+        "id": "rollback_no_doc",
+        "title": "Stiller Rollback",
+        "result": "Routine läuft weiter, aber Ereignis ist nicht nachvollziehbar; Audit-Finding wahrscheinlich.",
+        "feedback": "Prozess scheinbar gerettet, Auditfähigkeit verloren."
+      }
+    ],
+    "followup_logic": [
+      {
+        "trigger": "keine Versionierung",
+        "action": "Audit-Trail-Abzug und Cap",
+        "consequence": "Documentation und Process Decision betroffen."
+      },
+      {
+        "trigger": "Befund freigegeben ohne Impact",
+        "action": "critical_fail möglich",
+        "consequence": "Score-Cap und Berichtswarnung."
+      }
+    ],
+    "debrief_points": [
+      "Bioinformatik-Pipelines sind Teil der Methode.",
+      "Change-Control schützt nicht vor Fortschritt, sondern vor unkontrolliertem Fortschritt.",
+      "Versionierung muss im Befund-/Archivkontext rückverfolgbar sein."
+    ],
+    "instructor_notes": {
+      "model_answer": "Hold/Impact-Analyse, Change-Control, Verifizierung, Versionierung, medizinische Bewertung diskordanter Fälle, ggf. Rollback auf validierten Stand bis Freigabe.",
+      "scoring_focus": [
+        "Process Decision",
+        "Documentation",
+        "Patient Safety",
+        "CAPA/Audit"
+      ],
+      "discussion_questions": [
+        "Was ist minimale Verifizierung für Pipeline-Update?",
+        "Wann müssen Altbefunde reevaluiert werden?",
+        "Wie dokumentiert man Annotation-Datenbanken?"
+      ]
+    },
+    "report_additions": [
+      "Twist: bessere Sensitivität + neue Artefaktlast",
+      "Critical Error: Freigabe ohne Verifizierung",
+      "Musterpfad: Hold → Impact → Change-Control → Verifizierung → Freigabe"
+    ]
+  },
+  {
+    "version": "v1.7b",
+    "case_id": "RES_HYP_001_v0_9",
+    "title": "Wir messen mal alles: aus Omics-Idee eine prüfbare translationale Hypothese bauen",
+    "domain": "RES",
+    "target_course": "RES Basics",
+    "deep_dive_priority": "res_anchor",
+    "target_role": "Doktorand:in / PI / Projektplanung",
+    "estimated_minutes_deep": "12-15",
+    "learning_objectives": [
+      "Vage Omics-Ideen in PICO/Hypothese/Endpunkt übersetzen.",
+      "Explorative und konfirmatorische Anteile sauber trennen.",
+      "Material-, Ethik-, Confounder- und Analyseplan früh berücksichtigen."
+    ],
+    "opening_scene": "Eine Arbeitsgruppe kommt mit 40 FFPE-Tumoren und sagt: 'Wir machen RNA-Seq und schauen mal, was bei Immunescape oder Stroma rauskommt.' Die Doktorandin soll daraus ein Projekt machen, das publizierbar und klinisch sinnvoll ist.",
+    "case_briefing": "Retrospektive Tumorkohorte, gemischte Stadien, teilweise ICI-behandelt, Follow-up unvollständig. Material liegt in der Pathologie, aber nicht alle Einwilligungen sind gleich. Es gibt Budget für eine Plattform, aber nicht für endlose Nachmessungen.",
+    "context_cards": [
+      {
+        "title": "Projektidee",
+        "content": "'RNA-Seq von allen 40 Fällen, dann Heatmaps, DEGs und vielleicht eine Signatur.'",
+        "teaching_point": "Technologie ist noch keine Forschungsfrage."
+      },
+      {
+        "title": "Kohorte",
+        "content": "40 Fälle, unterschiedliche Stadien, Therapieformen und Fixationsjahre. Nur 26 Fälle haben vollständiges PFS/OS-Follow-up.",
+        "teaching_point": "Machbarkeit und Confounder bestimmen die Fragestellung mit."
+      },
+      {
+        "title": "Material/Ethik",
+        "content": "Ein Teil der Blöcke ist klein; bei 8 Fällen ist die Sekundärnutzung nur für bestimmte Fragestellungen abgedeckt.",
+        "teaching_point": "Ethik und Materialschutz sind Designparameter."
+      },
+      {
+        "title": "Analyse",
+        "content": "Bioinformatik kann DESeq2/Pathway-Analyse leisten, fordert aber vorab primäre Fragestellung, Gruppen, Covariates und Plan für multiple Tests.",
+        "teaching_point": "Analyseplan verhindert Datenfriedhof."
+      }
+    ],
+    "pre_results": [
+      {
+        "title": "Vorwissen",
+        "content": "Hypothese im Raum: stromal/immune-excluded Muster könnten mit schlechterem ICI-Ansprechen assoziiert sein."
+      },
+      {
+        "title": "Datenlage",
+        "content": "Response-Daten bei ICI nur für 28 Fälle vollständig; Batch nach Jahrgang und Zentrum wahrscheinlich."
+      },
+      {
+        "title": "Ressourcen",
+        "content": "Budget reicht für RNA-Expression plus fokussierte Validierung, nicht für unbegrenztes Multi-Omics."
+      }
+    ],
+    "material_or_resource_constraints": [
+      "Patientenmaterial ist begrenzt und muss routine-/ethikkonform genutzt werden.",
+      "Kleine Fallzahl begrenzt konfirmatorische Aussagen.",
+      "Batch-Effekte und Therapieheterogenität müssen im Plan adressiert werden."
+    ],
+    "reasoning_gate_upgrade": [
+      {
+        "id": "main_problem",
+        "type": "single_choice",
+        "prompt": "Was fehlt der ursprünglichen Idee primär?",
+        "options": [
+          {
+            "id": "hypothesis",
+            "label": "klare klinische Frage, prüfbare Hypothese und definierter Endpunkt"
+          },
+          {
+            "id": "more_genes",
+            "label": "ein größeres Genpanel"
+          },
+          {
+            "id": "more_heatmaps",
+            "label": "mehr Visualisierungen"
+          },
+          {
+            "id": "no_bioinfo",
+            "label": "nur Bioinformatikleistung"
+          }
+        ],
+        "correct": [
+          "hypothesis"
+        ],
+        "rationale": "Ohne Frage/Endpunkt erzeugt Omics leicht einen Datenfriedhof."
+      },
+      {
+        "id": "pico",
+        "type": "multi_select",
+        "prompt": "Welche Elemente gehören in eine prüfbare PICO-Struktur?",
+        "options": [
+          {
+            "id": "population",
+            "label": "definierte Population"
+          },
+          {
+            "id": "exposure",
+            "label": "Marker/Signatur/Exposition"
+          },
+          {
+            "id": "comparator",
+            "label": "Vergleichsgruppe"
+          },
+          {
+            "id": "outcome",
+            "label": "klinischer/biologischer Endpunkt"
+          },
+          {
+            "id": "color_palette",
+            "label": "Farbpalette"
+          }
+        ],
+        "correct": [
+          "population",
+          "exposure",
+          "comparator",
+          "outcome"
+        ],
+        "rationale": "PICO zwingt zur Operationalisierung."
+      },
+      {
+        "id": "analysis",
+        "type": "multi_select",
+        "prompt": "Was muss vor der Messung geplant werden?",
+        "options": [
+          {
+            "id": "primary_endpoint",
+            "label": "primärer Endpunkt"
+          },
+          {
+            "id": "covariates",
+            "label": "Confounder/Covariates"
+          },
+          {
+            "id": "multiple_testing",
+            "label": "Umgang mit multiplen Tests/FDR"
+          },
+          {
+            "id": "validation",
+            "label": "Validierungsstrategie"
+          },
+          {
+            "id": "posthoc_only",
+            "label": "nur Post-hoc-Story"
+          }
+        ],
+        "correct": [
+          "primary_endpoint",
+          "covariates",
+          "multiple_testing",
+          "validation"
+        ],
+        "rationale": "Omics braucht Plan und Transparenz."
+      },
+      {
+        "id": "ethics",
+        "type": "single_choice",
+        "prompt": "Wie ist mit uneinheitlicher Einwilligung umzugehen?",
+        "options": [
+          {
+            "id": "check_ethics",
+            "label": "Ethik-/Einwilligungsumfang vor Nutzung prüfen und ggf. Projekt anpassen"
+          },
+          {
+            "id": "ignore",
+            "label": "ignorieren, da FFPE vorhanden"
+          },
+          {
+            "id": "publish_later",
+            "label": "erst nach Publikation klären"
+          },
+          {
+            "id": "anonymize_all",
+            "label": "Anonymisierung löst immer alles"
+          }
+        ],
+        "correct": [
+          "check_ethics"
+        ],
+        "rationale": "Sekundärnutzung ist Teil der Projektverantwortung."
+      }
+    ],
+    "decision_task": "Formuliere aus der vagen Omics-Idee ein tragfähiges translationales Projekt mit Hypothese, PICO, Design, Analyseplan und Validierungslogik.",
+    "expected_path": [
+      "Klinische Frage definieren, z. B. immune-excluded/stromale Signatur und ICI-Ansprechen.",
+      "Population, Vergleichsgruppen und primären Endpunkt festlegen.",
+      "Explorativen RNA-Seq-Anteil von konfirmatorischer Validierung trennen.",
+      "Covariates/Batch-Effekte und multiple Tests planen.",
+      "Material- und Ethikstatus prüfen, ggf. Kohorte einschränken.",
+      "Validierung über IHC/NanoString/zweite Kohorte oder fokussierte Signatur vorsehen."
+    ],
+    "acceptable_alternatives": [
+      "Als rein explorative Pilotstudie deklarieren, wenn Fallzahl/Endpunkte nicht für konfirmatorische Aussagen reichen.",
+      "Fokussierte Panel-/NanoString-Strategie statt RNA-Seq, wenn Material/Ressourcen begrenzt sind."
+    ],
+    "low_value_traps": [
+      {
+        "label": "RNA-Seq ohne Hypothese",
+        "why_bad": "Datenfriedhof mit hohem False-positive-Risiko."
+      },
+      {
+        "label": "DEG-Liste als Endpunkt",
+        "why_bad": "Beschreibt Daten, beantwortet aber keine klinische Frage."
+      },
+      {
+        "label": "HARKing",
+        "why_bad": "Nachträgliche Hypothese als vorab geplant verkaufen ist wissenschaftlich unsauber."
+      }
+    ],
+    "twist": {
+      "title": "Die Kohorte trägt die große Story nicht",
+      "content": "Nach Datenprüfung bleiben nur 26 Fälle mit vollständigem Outcome und verwertbarer RNA. Ein konfirmatorischer Claim wäre überzogen; als explorative Hypothesengenerierung mit fokussierter Validierung ist das Projekt tragfähig.",
+      "why_critical": "Gute Forschung bedeutet auch, die Aussagekraft bewusst zu begrenzen."
+    },
+    "result_packages": [
+      {
+        "id": "optimal_project",
+        "title": "Hypothesengetriebene Pilotstudie",
+        "result": "PICO definiert, explorativ/konfirmatorisch getrennt, RNA-Seq plus fokussierte Validierung, Ethik geprüft.",
+        "feedback": "Sehr gute Projektarchitektur mit realistischer Aussagekraft."
+      },
+      {
+        "id": "measure_all",
+        "title": "Alles messen ohne Plan",
+        "result": "Viele DEGs, keine belastbare Story, multiple Tests unkontrolliert.",
+        "feedback": "Klassischer Datenfriedhof."
+      },
+      {
+        "id": "overclaim",
+        "title": "Explorativ als konfirmatorisch verkauft",
+        "result": "Marker wirkt spannend, aber ohne Validierung und Fallzahlplanung überinterpretiert.",
+        "feedback": "HARKing-/Overclaiming-Risiko."
+      }
+    ],
+    "followup_logic": [
+      {
+        "trigger": "keine Hypothese",
+        "action": "Projektplan muss vor Messung überarbeitet werden",
+        "consequence": "Score-Cap für RES-Design."
+      },
+      {
+        "trigger": "Ethik unklar",
+        "action": "Ethik-/Einwilligungsprüfung vor Freigabe",
+        "consequence": "Governance-Cap bei Ignorieren."
+      }
+    ],
+    "debrief_points": [
+      "Omics ist ein Werkzeug, keine Fragestellung.",
+      "Explorativ ist legitim, wenn es als explorativ berichtet wird.",
+      "Kleine, saubere Projekte sind besser als große Datenfriedhöfe."
+    ],
+    "instructor_notes": {
+      "model_answer": "Ausgangspunkt in PICO übersetzen; primären Endpunkt und Gruppen definieren; explorative RNA-Seq plus Validierung; Ethik, Material, Batch und FDR planen; Aussagekraft bewusst begrenzen.",
+      "scoring_focus": [
+        "Hypothesis/PICO",
+        "Study Design",
+        "Analysis Plan",
+        "Governance"
+      ],
+      "discussion_questions": [
+        "Wann ist RNA-Seq die richtige Methode?",
+        "Was wäre eine realistische Validierung?",
+        "Wie kommuniziert man negative Ergebnisse?"
+      ]
+    },
+    "report_additions": [
+      "Twist: Kohorte erlaubt Pilot, nicht großen Claim",
+      "Typische Fehler: Data Fishing, HARKing, fehlende Ethik",
+      "Musterpfad: Frage → PICO → Design → Analyse → Validierung"
+    ]
+  }
+]

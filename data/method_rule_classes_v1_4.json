@@ -1,0 +1,12 @@
+{
+  "version": "v1.4",
+  "feature": "Universal Method Catalogue",
+  "classes": [
+    "recommended",
+    "optional",
+    "reflex",
+    "low_value",
+    "invalid"
+  ],
+  "description": "All routine molecular/pathology methods are visible in patient-care ordering. Each method is evaluated per case; low-value and invalid selections affect method, material and communication scores."
+}

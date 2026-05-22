@@ -1,0 +1,65 @@
+{
+  "version": "v1.7b",
+  "status": "review_ready_not_app_patch",
+  "created": "2026-05-19",
+  "deep_dive_case_count": 8,
+  "target_next_step": "v1.7c review table and approval before app patch",
+  "cases": [
+    {
+      "case_id": "MTB_NSCLC_001_v0_6",
+      "title": "Metastasiertes Lungenadenokarzinom, kleine Biopsie: vollständige prädiktive Diagnostik ohne Materialverschwendung",
+      "domain": "MTB",
+      "target_course": "MTB Basics",
+      "priority": "signature"
+    },
+    {
+      "case_id": "MTB_NSCLC_002_v1_3",
+      "title": "EGFR-mutiertes NSCLC mit Progress unter Osimertinib: negative Liquid Biopsy richtig einordnen",
+      "domain": "MTB",
+      "target_course": "Advanced Integrated",
+      "priority": "complex_anchor"
+    },
+    {
+      "case_id": "MTB_CRC_002_v1_3",
+      "title": "Kolorektales Karzinom mit MLH1/PMS2-Verlust: Reflexdiagnostik statt vorschnellem Lynch-Label",
+      "domain": "MTB",
+      "target_course": "MTB Basics",
+      "priority": "course_anchor"
+    },
+    {
+      "case_id": "MTB_OVAR_002_v1_3",
+      "title": "HGSOC mit BRCA2-VUS: PARP-Wunsch, Evidenzgrenzen und Keimbahnkommunikation",
+      "domain": "MTB",
+      "target_course": "Advanced Integrated",
+      "priority": "complex_anchor"
+    },
+    {
+      "case_id": "MET_NGS_003_v1_0",
+      "title": "ERBB2-VUS mit Therapieanfrage: Evidenzgrad, Kontext und klare MTB-Kommunikation",
+      "domain": "MTB/MET",
+      "target_course": "Methodik-Fallen",
+      "priority": "method_anchor"
+    },
+    {
+      "case_id": "LAB_RUN_002_v0_8",
+      "title": "Hotspot-Mutation in der Negativkontrolle: Run-Sperre, Ursachenanalyse und CAPA",
+      "domain": "LAB",
+      "target_course": "QM Basics",
+      "priority": "qm_anchor"
+    },
+    {
+      "case_id": "LAB_POST_001_v1_0",
+      "title": "Pipeline-Version geändert, kein Change-Log: Bioinformatik-QM und Impact-Analyse",
+      "domain": "LAB",
+      "target_course": "Advanced Integrated",
+      "priority": "complex_anchor"
+    },
+    {
+      "case_id": "RES_HYP_001_v0_9",
+      "title": "Wir messen mal alles: aus Omics-Idee eine prüfbare translationale Hypothese bauen",
+      "domain": "RES",
+      "target_course": "RES Basics",
+      "priority": "res_anchor"
+    }
+  ]
+}
