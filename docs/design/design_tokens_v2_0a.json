@@ -1,0 +1,91 @@
+{
+  "version": "v2.0a",
+  "status": "designsystem_specification",
+  "base_version": "v1.8e_QA_freeze",
+  "design_direction": "Premium Medical Learning Cockpit",
+  "colors": {
+    "base": {
+      "bg": "#F6F8FA",
+      "surface": "#FFFFFF",
+      "surface_soft": "#F9FBFC",
+      "border": "#DCE3E8",
+      "text": "#1F2933",
+      "text_soft": "#52616B",
+      "muted": "#8A98A5",
+      "primary": "#0E4F5C",
+      "primary_2": "#0B6B78",
+      "primary_soft": "#E4F2F4",
+      "success": "#2E7D5B",
+      "success_soft": "#E8F4EE",
+      "warning": "#B7791F",
+      "warning_soft": "#FFF4D8",
+      "danger": "#B23A48",
+      "danger_soft": "#FCE8EB"
+    },
+    "domains": {
+      "MTB": "#2563EB",
+      "LAB": "#D97706",
+      "RES": "#7C3AED",
+      "MET": "#0891B2"
+    },
+    "modes": {
+      "learning": "#0E4F5C",
+      "training": "#2563EB",
+      "assessment": "#374151",
+      "instructor": "#7C3AED"
+    }
+  },
+  "typography": {
+    "font_stack": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+    "sizes_px": {
+      "app_title": 26,
+      "page_title": 23,
+      "section_header": 17,
+      "card_title": 16,
+      "body": 14,
+      "small": 12,
+      "badge": 11
+    }
+  },
+  "layout": {
+    "desktop_first": true,
+    "sidebar_width_px": 340,
+    "card_radius_px": 20,
+    "card_shadow": "0 8px 24px rgba(15, 23, 42, 0.06)",
+    "header": true,
+    "start_dashboard": true,
+    "stepper": true
+  },
+  "steppers": {
+    "MTB": [
+      "Fallakte",
+      "Kontext",
+      "Reasoning",
+      "Anforderung",
+      "Befund",
+      "Debrief"
+    ],
+    "LAB": [
+      "Run",
+      "QC",
+      "Entscheidung",
+      "CAPA",
+      "Audit",
+      "Debrief"
+    ],
+    "RES": [
+      "Idee",
+      "Kontext",
+      "Hypothese",
+      "Design",
+      "Analyse",
+      "Debrief"
+    ]
+  },
+  "implementation_sequence": [
+    "v2.0b_layout_patch",
+    "v2.0c_case_view_patch",
+    "v2.0d_report_polish",
+    "v2.0e_QA_freeze"
+  ]
+}
