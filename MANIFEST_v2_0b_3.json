@@ -1,0 +1,13 @@
+{
+  "version": "v2.0b.3 Branding Logo Patch",
+  "base": "v2.0b.2 Layout Cleanup",
+  "entrypoint": "index.html",
+  "changes": [
+    "larger sidebar patho logo",
+    "transparent larger easyGene logo",
+    "minor topbar logo scaling"
+  ],
+  "engine_changed": false,
+  "cases_changed": false,
+  "created_at": "2026-05-19T14:53:14"
+}

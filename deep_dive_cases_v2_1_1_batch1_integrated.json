@@ -1,0 +1,631 @@
+[
+  {
+    "version": "v2.1_batch1_content_expansion",
+    "case_id": "MTB_CRC_001_v0_6",
+    "title": "mCRC: RAS/BRAF/MMR/MSI vor Systemtherapie",
+    "domain": "MTB",
+    "target_course": "MTB Basics",
+    "deep_dive_priority": "signature",
+    "target_role": "Pathologieassistenz / MTB-Training",
+    "estimated_minutes_deep": "12-15",
+    "learning_objectives": [
+      "Take-home: Beim mCRC gehören RAS/BRAF und MMR/MSI zusammen in die frühe Therapieplanung; MLH1/PMS2-Verlust braucht Reflexdiagnostik, nicht nur einen IO-Hinweis."
+    ],
+    "opening_scene": "Im Tumorboard soll bei einem metastasierten kolorektalen Karzinom die Erstlinientherapie festgelegt werden. Die Onkologie fragt: Ist der Patient anti-EGFR-geeignet – oder spricht MMR/MSI für eine andere Strategie?",
+    "case_briefing": "62-jähriger Patient mit rechtsseitigem, metastasiertem Adenokarzinom des Kolons und synchronen Lebermetastasen. Systemische Erstlinientherapie soll zeitnah geplant werden. Verfügbar ist FFPE-Material aus dem Primärtumor mit ausreichendem Tumoranteil, aber begrenzter Schnittzahl. Die klinische Frage lautet: RAS/BRAF/MMR/MSI für anti-EGFR-, Immuntherapie- und Lynch/sporadisch-Kontext.",
+    "context_cards": [
+      {
+        "title": "Klinischer Kontext",
+        "content": "Rechtsseitiges mCRC mit Lebermetastasen; Erstlinienentscheidung im MTB."
+      },
+      {
+        "title": "Material",
+        "content": "FFPE-Primärtumor, Tumorzellanteil ca. 55–60 %, begrenzte Schnittzahl."
+      },
+      {
+        "title": "Vorbefund",
+        "content": "Adenokarzinom des Kolons, keine vorliegende Molekulardiagnostik."
+      }
+    ],
+    "pre_results": [
+      {
+        "title": "Vorbefunde / Datenlage",
+        "content": "HE-Review: invasives Adenokarzinom, ausreichender Tumoranteil. IHC/Prädiktivmarker noch nicht vollständig durchgeführt. Material reicht für priorisierte molekulare Diagnostik, aber nicht für beliebige Zusatztests."
+      }
+    ],
+    "material_or_resource_constraints": [
+      "Therapieentscheidung zeitkritisch; Material soll für klinisch relevante Marker priorisiert werden.",
+      "Entitätsfremde Tests verbrauchen Schnittmaterial und TAT ohne Nutzen."
+    ],
+    "reasoning_gate_upgrade": [
+      {
+        "id": "central_question",
+        "type": "single_choice",
+        "prompt": "Was ist die zentrale molekulare Fragestellung?",
+        "options": [
+          {
+            "id": "crc_full_biomarker",
+            "label": "Prädiktive Systemtherapie-Stratifizierung: erweitertes RAS/BRAF plus MMR/MSI"
+          },
+          {
+            "id": "egfr_only",
+            "label": "EGFR-/ALK-/ROS1-Fusionsdiagnostik wie beim NSCLC priorisieren"
+          },
+          {
+            "id": "pdl1_only",
+            "label": "PD-L1-IHC als primären Immuntherapie-Entscheider nutzen"
+          },
+          {
+            "id": "hrd_parp",
+            "label": "HRD/PARP-Indikation als Hauptfrage behandeln"
+          }
+        ],
+        "correct": [
+          "crc_full_biomarker"
+        ],
+        "rationale": "Anti-EGFR-, IO-, BRAF- und Lynch/sporadisch-Kontext müssen früh getrennt adressiert werden."
+      },
+      {
+        "id": "ras_scope",
+        "type": "single_choice",
+        "prompt": "Warum reicht KRAS Exon 2 allein nicht aus?",
+        "options": [
+          {
+            "id": "extended_ras_braf_mmr",
+            "label": "Anti-EGFR-Stratifizierung braucht erweitertes RAS; zusätzlich sind BRAF und MMR/MSI therapierelevant."
+          },
+          {
+            "id": "kras_exon2_enough",
+            "label": "KRAS Exon 2 reicht als vollständige anti-EGFR-Stratifizierung"
+          },
+          {
+            "id": "ras_only",
+            "label": "Bei RAS-WT sind BRAF und MMR/MSI für die Erstlinie irrelevant"
+          },
+          {
+            "id": "pdl1_replaces_msi",
+            "label": "PD-L1 ersetzt MMR/MSI als IO-Marker beim CRC"
+          }
+        ],
+        "correct": [
+          "extended_ras_braf_mmr"
+        ],
+        "rationale": "KRAS Exon 2-only ist ein klassischer unvollständiger Pfad."
+      },
+      {
+        "id": "mlh1_reflex",
+        "type": "single_choice",
+        "prompt": "Was bedeutet MLH1/PMS2-Verlust im mCRC-Kontext?",
+        "options": [
+          {
+            "id": "mlh1_braf_reflex",
+            "label": "Reflexdiagnostik mit MLH1-Promotor-Methylierung ± BRAF-Kontext und Lynch/sporadisch-Einordnung."
+          },
+          {
+            "id": "direct_lynch",
+            "label": "MLH1/PMS2-Verlust beweist immer direkt Lynch-Syndrom"
+          },
+          {
+            "id": "ignore_mlh1",
+            "label": "MLH1/PMS2-Verlust ist therapeutisch und hereditär irrelevant"
+          },
+          {
+            "id": "lung_fusion",
+            "label": "RNA-Fusionspanel Lunge ist der sinnvolle Reflexschritt"
+          }
+        ],
+        "correct": [
+          "mlh1_braf_reflex"
+        ],
+        "rationale": "dMMR ist prädiktiv und potenziell hereditär relevant."
+      }
+    ],
+    "decision_task": "Wähle eine prädiktive Primärdiagnostik für mCRC, die anti-EGFR-Eignung, BRAF-Kontext und MSI/dMMR/Immuntherapie sowie Lynch/sporadisch-Frage sauber adressiert.",
+    "expected_path": "HE-/Tumoranteil-Review → erweitertes RAS/KRAS/NRAS → BRAF V600E → MMR-IHC und/oder MSI-PCR/NGS → bei MLH1/PMS2-Verlust MLH1-Promotor-Methylierung ± BRAF-Kontext → MTB-Kommunikation: anti-EGFR, IO und Lynch/sporadisch getrennt darstellen.",
+    "acceptable_alternatives": "Breiteres Colon-NGS ist akzeptabel, wenn es RAS/BRAF und ggf. weitere klinisch relevante Alterationen abdeckt. HER2-IHC/ISH kann optional im RAS-WT-Kontext bzw. späterer Therapielinie sinnvoll sein.",
+    "low_value_traps": [
+      {
+        "label": "nur KRAS Exon 2",
+        "why_bad": "unvollständige anti-EGFR-Stratifizierung."
+      },
+      {
+        "label": "RAS-WT = automatisch anti-EGFR",
+        "why_bad": "MSI/BRAF/Lokalisation und klinischer Kontext werden ignoriert."
+      },
+      {
+        "label": "PD-L1-IHC",
+        "why_bad": "bei CRC kein primärer IO-Entscheider."
+      },
+      {
+        "label": "HRD-Score/RNA-Fusionspanel Lunge",
+        "why_bad": "entitätsfremd, low value oder misleading."
+      }
+    ],
+    "twist": {
+      "title": "RAS-Wildtyp reicht nicht als Therapieantwort",
+      "content": "Der Fall ist RAS-Wildtyp, zeigt aber dMMR/MSI-H und BRAF V600E. Wer nur RAS testet, würde anti-EGFR-Eignung diskutieren, aber immuntherapeutische, prognostische und hereditäre Einordnung verpassen.",
+      "why_critical": "Der therapeutisch relevante Kontext entsteht nicht durch einen Einzelmarker, sondern durch die Kombination aus RAS/BRAF und MMR/MSI einschließlich Reflexdiagnostik."
+    },
+    "result_packages": [
+      {
+        "id": "optimal",
+        "title": "Vollständiger mCRC-Biomarkerpfad",
+        "class": "optimal",
+        "result": "RAS-WT, BRAF V600E, MLH1/PMS2-Verlust, MSI-H. MLH1-Methylierung positiv → eher sporadische dMMR-Konstellation. Anti-EGFR nur kontextabhängig; IO-/BRAF-Kontext und Prognose im MTB adressieren."
+      },
+      {
+        "id": "partial_ras_only",
+        "title": "RAS-only-Pfad",
+        "class": "incomplete",
+        "result": "RAS-WT wird erkannt, aber BRAF/MSI/MMR fehlen. Befund ist für die Systemtherapie unvollständig; Nachforderung erforderlich."
+      },
+      {
+        "id": "wrong_overdiagnostic",
+        "title": "Entitätsfremde Diagnostik",
+        "class": "wrong",
+        "result": "Material/TAT wird durch HRD, Lungenfusionen oder PD-L1 verbraucht, ohne die zentrale CRC-Frage zu beantworten."
+      }
+    ],
+    "followup_logic": [
+      {
+        "trigger": "Unvollständiger oder unsicherer Primärpfad",
+        "action": "Wenn MMR/MSI oder BRAF initial fehlen, Nachforderung klar begründen. Bei MLH1/PMS2-Verlust Reflexdiagnostik MLH1-Methylierung ± BRAF V600E zur Einordnung sporadisch vs. Lynch. Humangenetik bei nicht-sporadischem Muster empfehlen.",
+        "consequence": "Nachforderung oder erneute MTB-Besprechung mit finaler Einordnung."
+      }
+    ],
+    "debrief_points": [
+      "mCRC braucht mehr als RAS.",
+      "MMR/MSI ist prädiktiv für IO und kann hereditäre Konsequenzen haben.",
+      "MLH1/PMS2-Verlust muss reflexartig eingeordnet werden.",
+      "Take-home: Beim mCRC gehören RAS/BRAF und MMR/MSI zusammen in die frühe Therapieplanung; MLH1/PMS2-Verlust braucht Reflexdiagnostik, nicht nur einen IO-Hinweis."
+    ],
+    "instructor_notes": {
+      "model_answer": "Optimale Lösung: erweiterte RAS/BRAF-Diagnostik plus MMR-IHC/MSI-Testung; bei MLH1/PMS2-Verlust MLH1-Methylierung/BRAF-Kontext; klare MTB-Kommunikation zu anti-EGFR, IO und Lynch/sporadisch.",
+      "scoring_focus": [
+        "Clinical Reasoning: Systemtherapiefrage erkannt.",
+        "Method Selection: RAS/BRAF/MMR/MSI priorisiert.",
+        "Communication: anti-EGFR, IO und Lynch/sporadisch getrennt kommuniziert."
+      ],
+      "discussion_questions": [
+        "Warum reicht KRAS Exon 2 heute nicht?",
+        "Wie unterscheiden sich prädiktive und hereditäre Konsequenzen von dMMR/MSI-H?",
+        "Wie kommuniziert man MLH1/PMS2-Verlust im MTB?"
+      ]
+    },
+    "report_additions": {
+      "batch": "Batch1 v2.1 content expansion"
+    },
+    "is_signature_case": true
+  },
+  {
+    "version": "v2.1_batch1_content_expansion",
+    "case_id": "MTB_OVAR_001_v0_7",
+    "title": "HGSOC mit alter BRCA1-Variante: FFPE-Artefakt, Liquid Biopsy und PARP-Kontext",
+    "domain": "MTB",
+    "target_course": "MTB Basics",
+    "deep_dive_priority": "signature",
+    "target_role": "Pathologieassistenz / MTB-Training",
+    "estimated_minutes_deep": "18-25",
+    "learning_objectives": [
+      "Take-home: Eine pathogene BRCA1-LoF ist nur dann klinisch verwertbar, wenn Materialqualität, Artefaktmuster und VAF plausibel sind oder der Befund bestätigt wurde.",
+      "HRD/BRCA und Keimbahnkommunikation müssen getrennt, aber zusammenhängend dargestellt werden."
+    ],
+    "opening_scene": "Eine Patientin mit high-grade serösem Ovarialkarzinom stellt sich drei Jahre nach Primärdiagnose mit Rezidiv/Progress vor. Für die Therapieplanung wird nachträglich ein BRCA-/HRD-Kontext angefragt. Verfügbar ist zunächst nur das alte Resektatmaterial.",
+    "case_briefing": "61-jährige Patientin, HGSOC FIGO IIIC, Resektat vor drei Jahren. Aktuell Progress/Rezidiv, erneute systemische Therapieplanung mit Frage nach PARP-/HRD-/BRCA-Kontext. Altes FFPE-Resektat: Tumorzellanteil ca. 70 %, DNA formal ausreichend, Restmaterial begrenzt. In der initialen Tumor-BRCA/HRR/HRD-Analyse fällt eine formal pathogene BRCA1-LoF-Variante auf, gleichzeitig aber ein ausgeprägtes C>T/G>A-Muster.",
+    "context_cards": [
+      {
+        "title": "Klinische Situation",
+        "content": "Rezidiv/Progress drei Jahre nach Erstdiagnose; aktuelle Therapieplanung."
+      },
+      {
+        "title": "Material",
+        "content": "altes FFPE-Resektat, TZA ca. 70 %, DNA formal ausreichend, aber begrenztes Restmaterial."
+      },
+      {
+        "title": "Erste Analyse",
+        "content": "Tumor-BRCA/HRR/HRD-Panel durchgeführt; HRD/genomic-scar aus der ersten Runde technisch mitbewertet, aber Materialartefakte beeinflussen die Vertrauenswürdigkeit des Variantenbefunds."
+      }
+    ],
+    "pre_results": [
+      {
+        "title": "Runde 1: altes FFPE-Resektat",
+        "content": "Runde 1: Coverage BRCA1-Region ca. 100×; BRCA1-LoF-Variante (z. B. Frameshift/Nonsense) mit VAF ca. 12 %; auffällig viele C>T/G>A-Varianten im gesamten Panel. TZA ca. 70 %. HRD/genomic-scar wurde in derselben Runde mit erhoben, muss aber im Kontext der Materialqualität und Variantenzuverlässigkeit interpretiert werden."
+      },
+      {
+        "title": "Runde 2: aktuelle Liquid Biopsy",
+        "content": "Bei unzureichendem Restmaterial und klinisch schwieriger Rebiopsie wird eine aktuelle Liquid Biopsy diskutiert. Bei ausreichender ctDNA wird die BRCA1-LoF-Alteration erneut nachgewiesen, ohne breites C>T/G>A-Artefaktmuster."
+      }
+    ],
+    "material_or_resource_constraints": [
+      "Altes FFPE-Material, begrenztes Restmaterial, keine einfache Wiederholung möglich.",
+      "Aktuelle Gewebebiopsie klinisch schwierig.",
+      "Liquid Biopsy ist als aktuelles alternatives Material diskutierbar, ersetzt aber nicht unkritisch alle gewebebasierten HRD-Aussagen."
+    ],
+    "reasoning_gate_upgrade": [
+      {
+        "id": "central_question",
+        "type": "single_choice",
+        "prompt": "Was ist die zentrale Therapiefrage?",
+        "options": [
+          {
+            "id": "brca_hrd_limitations",
+            "label": "BRCA/HRD-Status für PARP-/Rezidivtherapie im Kontext technischer Limitationen klären."
+          },
+          {
+            "id": "tp53_confirm",
+            "label": "Nur TP53-Status des HGSOC bestätigen"
+          },
+          {
+            "id": "lynch_primary",
+            "label": "Primär Lynch-Syndrom über MLH1-Methylierung abklären"
+          },
+          {
+            "id": "fusion_priority",
+            "label": "RNA-Fusionsdiagnostik priorisieren"
+          }
+        ],
+        "correct": [
+          "brca_hrd_limitations"
+        ],
+        "rationale": "Der Fall prüft nicht nur BRCA/HRD, sondern Befundbelastbarkeit."
+      },
+      {
+        "id": "artifact_pattern",
+        "type": "single_choice",
+        "prompt": "Was ist am initialen BRCA1-Befund problematisch?",
+        "options": [
+          {
+            "id": "ffpe_artifact_pattern",
+            "label": "Niedrige VAF bei hohem TZA plus viele C>T/G>A-Varianten sprechen für mögliches FFPE-Artefakt."
+          },
+          {
+            "id": "pathogenic_always_true",
+            "label": "Jede pathogene BRCA1-LoF ist unabhängig vom Kontext sofort therapieentscheidend"
+          },
+          {
+            "id": "coverage_rules_out",
+            "label": "Coverage um 100× schließt Artefakte sicher aus"
+          },
+          {
+            "id": "ct_irrelevant",
+            "label": "C>T/G>A-Muster sind bei altem FFPE diagnostisch irrelevant"
+          }
+        ],
+        "correct": [
+          "ffpe_artifact_pattern"
+        ],
+        "rationale": "Coverage 100× macht Artefakte nicht unmöglich; Kontext zählt."
+      },
+      {
+        "id": "next_step",
+        "type": "single_choice",
+        "prompt": "Was ist der sinnvolle nächste Schritt?",
+        "options": [
+          {
+            "id": "confirm_alternative_material",
+            "label": "Befund nicht final als therapieentscheidend freigeben; Bestätigung/Wiederholung und alternatives aktuelles Material prüfen."
+          },
+          {
+            "id": "release_parp",
+            "label": "BRCA1 sofort als sicher pathogen und PARP-relevant berichten"
+          },
+          {
+            "id": "stop_all",
+            "label": "BRCA/HRD abbrechen, weil altes Material immer unbrauchbar ist"
+          },
+          {
+            "id": "tp53_only",
+            "label": "Nur TP53 nachtesten"
+          }
+        ],
+        "correct": [
+          "confirm_alternative_material"
+        ],
+        "rationale": "Direktes Overcalling ist ein kritischer Fehler."
+      },
+      {
+        "id": "liquid_biopsy_role",
+        "type": "single_choice",
+        "prompt": "Bei unzureichendem Restmaterial: Was kann eine aktuelle Liquid Biopsy beitragen?",
+        "options": [
+          {
+            "id": "lb_confirm_ctdna",
+            "label": "Bei ausreichender ctDNA eine aktuelle tumorassoziierte BRCA-Alteration bestätigen; negative LB schließt nicht sicher aus."
+          },
+          {
+            "id": "lb_replaces_hrd",
+            "label": "Liquid Biopsy ersetzt vollständig und unkritisch alle gewebebasierten HRD-Aussagen"
+          },
+          {
+            "id": "negative_excludes",
+            "label": "Eine negative Liquid Biopsy schließt BRCA/HRD sicher aus"
+          },
+          {
+            "id": "lb_useless",
+            "label": "Liquid Biopsy ist beim Ovar grundsätzlich sinnlos"
+          }
+        ],
+        "correct": [
+          "lb_confirm_ctdna"
+        ],
+        "rationale": "Liquid Biopsy bestätigt die aktuelle Variante, ersetzt aber HRD/genomic-scar nicht unkritisch."
+      }
+    ],
+    "decision_task": "Entscheide, ob die BRCA1-LoF-Variante aus altem FFPE direkt therapieentscheidend berichtet werden darf, ob Bestätigung/Nachforderung nötig ist und wie Liquid Biopsy, HRD-Kontext und Keimbahnrelevanz im MTB kommuniziert werden.",
+    "expected_path": "Initialen BRCA1-Befund nicht unkritisch finalisieren → Artefaktmuster und VAF-Plausibilität benennen → Wiederholung/orthogonale Bestätigung prüfen → bei unzureichendem Restmaterial aktuelle Probe/Liquid Biopsy empfehlen → bei positiver ctDNA-Bestätigung BRCA1-LoF als plausibel tumorassoziiert einordnen → HRD/genomic-scar-Kontext mit Materiallimitation kommunizieren → Keimbahnabklärung empfehlen.",
+    "acceptable_alternatives": "Wenn aktuelles Tumorgewebe verfügbar ist, ist eine Gewebe-Rebiopsie/Bestätigung bevorzugt. Liquid Biopsy ist sinnvoll, wenn Gewebe nicht verfügbar ist und ctDNA ausreichend nachweisbar ist. Orthogonale Bestätigung kann je nach Laborworkflow ddPCR/ampliconbasiert oder erneutes NGS umfassen.",
+    "low_value_traps": [
+      {
+        "label": "BRCA1-LoF direkt als sichere PARP-Indikation berichten",
+        "why_bad": "technische Artefaktlage ignoriert."
+      },
+      {
+        "label": "C>T/G>A-Muster ignorieren",
+        "why_bad": "klassischer FFPE-Schadenshinweis."
+      },
+      {
+        "label": "negative Liquid Biopsy als Ausschluss",
+        "why_bad": "ctDNA-negativ schließt Tumoralteration nicht sicher aus."
+      },
+      {
+        "label": "TP53-Einzeltest als Ersatz",
+        "why_bad": "HGSOC-typisch, aber therapeutisch unzureichend."
+      }
+    ],
+    "twist": {
+      "title": "Pathogene BRCA1-Variante ≠ automatisch belastbarer Befund",
+      "content": "Die Variante ist formal eine LoF-Variante, aber das alte FFPE-Material zeigt ein starkes C>T/G>A-Artefaktmuster und eine bei hohem TZA auffällig niedrige VAF. Erst eine aktuelle Liquid Biopsy mit ausreichender ctDNA bestätigt die BRCA1-LoF-Alteration ohne breites Artefaktmuster.",
+      "why_critical": "Die therapeutische Relevanz hängt nicht nur von der Variantennomenklatur ab, sondern von Materialqualität, Mutationsspektrum, VAF-Plausibilität und Bestätigung. Ein Artefakt kann sonst zu falscher Therapieableitung führen."
+    },
+    "result_packages": [
+      {
+        "id": "optimal",
+        "title": "Artefakt erkannt und bestätigt",
+        "class": "optimal",
+        "result": "Initiale FFPE-Analyse wird als artefaktverdächtig limitiert. Restmaterial unzureichend; aktuelle Liquid Biopsy zeigt ausreichende ctDNA und bestätigt BRCA1-LoF. HRD/genomic-scar-Kontext aus erster Runde wird mit Materiallimitation berichtet. Keimbahnabklärung empfohlen."
+      },
+      {
+        "id": "partial_no_confirmation",
+        "title": "BRCA/HRD aus altem Material ohne Bestätigung",
+        "class": "incomplete",
+        "result": "Formal pathogene BRCA1-LoF wird gesehen, aber Artefaktmuster bleibt ungeklärt. Befund ist für Therapieentscheidung nur eingeschränkt belastbar; Nachforderung/Bestätigung erforderlich."
+      },
+      {
+        "id": "wrong_overcall",
+        "title": "Artefaktverdächtige BRCA1-LoF direkt verwertet",
+        "class": "wrong",
+        "result": "Kritischer Fehler: technische Limitation wird ignoriert, BRCA1 wird unkritisch als therapieentscheidend berichtet."
+      }
+    ],
+    "followup_logic": [
+      {
+        "trigger": "Unvollständiger oder unsicherer Primärpfad",
+        "action": "Runde 1: Artefaktverdacht → Wiederholung/Bestätigung anstoßen. Runde 2: Restmaterial insuffizient → aktuelle Liquid Biopsy anfordern. Runde 3: ctDNA-positiv mit BRCA1-LoF → finales MTB mit technischer Limitation, HRD-Kontext und Keimbahnempfehlung.",
+        "consequence": "Nachforderung oder erneute MTB-Besprechung mit finaler Einordnung."
+      }
+    ],
+    "debrief_points": [
+      "LoF-Nomenklatur ersetzt keine technische Plausibilitätsprüfung.",
+      "C>T/G>A-Muster, VAF und TZA müssen zusammen bewertet werden.",
+      "Liquid Biopsy kann bei ausreichender ctDNA eine aktuelle Tumoralteration bestätigen, aber negative LB schließt nicht sicher aus.",
+      "Take-home: Eine pathogene BRCA1-LoF ist nur dann klinisch verwertbar, wenn Materialqualität, Artefaktmuster und VAF plausibel sind oder der Befund bestätigt wurde. HRD/BRCA und Keimbahnkommunikation müssen getrennt, aber zusammenhängend dargestellt werden."
+    ],
+    "instructor_notes": {
+      "model_answer": "Optimale Lösung: BRCA1-LoF aus altem FFPE wegen Artefaktmuster nicht unkritisch finalisieren; Bestätigung anfordern; bei insuffizientem Restmaterial aktuelle Liquid Biopsy nutzen; bestätigte BRCA1-LoF im PARP-/HRD-Kontext mit Limitationen berichten; Keimbahnabklärung empfehlen.",
+      "scoring_focus": [
+        "Clinical Reasoning: Artefaktmuster und VAF-Plausibilität erkannt.",
+        "Method Selection: Bestätigung/alternatives Material statt Overcall.",
+        "Communication: Limitation, HRD-Kontext und Keimbahnrelevanz klar getrennt."
+      ],
+      "discussion_questions": [
+        "Wie plausibel ist 12 % VAF bei 70 % TZA für eine klonale BRCA1-LoF?",
+        "Welche Muster sprechen für FFPE-Schäden?",
+        "Wann hilft Liquid Biopsy und wann nicht?",
+        "Wie kommuniziert man einen bestätigten, aber technisch komplexen BRCA/HRD-Befund im MTB?"
+      ]
+    },
+    "report_additions": {
+      "batch": "Batch1 v2.1 content expansion"
+    },
+    "is_signature_case": true
+  },
+  {
+    "version": "v2.1_batch1_content_expansion",
+    "case_id": "MTB_IO_001_v1_0",
+    "title": "dMMR/MSI-H Endometriumkarzinom: Immunescape, IO und Lynch-Kontext",
+    "domain": "MTB",
+    "target_course": "MTB Basics",
+    "deep_dive_priority": "signature",
+    "target_role": "Pathologieassistenz / MTB-Training",
+    "estimated_minutes_deep": "12-15",
+    "learning_objectives": [
+      "Take-home: dMMR/MSI-H ist nicht nur ein Immuntherapie-Biomarker.",
+      "Je nach IHC-Verlustmuster muss auch der hereditäre Kontext aktiv adressiert werden."
+    ],
+    "opening_scene": "Im molekularen Tumorboard liegt ein rezidiviertes endometrioides Endometriumkarzinom mit ausgeprägtem lymphozytärem Infiltrat vor. Die Onkologie fragt, ob eine Immuncheckpoint-Inhibition biologisch und diagnostisch begründbar ist.",
+    "case_briefing": "66-jährige Patientin mit rezidiviertem endometrioidem Endometriumkarzinom. Histologisch TIL-reiches Tumormikromilieu. MMR-IHC zeigt Verlust von MSH2 und MSH6. Die Fragestellung umfasst IO-Sensitivität, MSI/dMMR-Bestätigung und mögliche Lynch-/Keimbahnkonsequenz.",
+    "context_cards": [
+      {
+        "title": "Tumorbiologie",
+        "content": "TIL-reiches entzündliches Mikromilieu, Verdacht auf hohe Immunogenität."
+      },
+      {
+        "title": "MMR-IHC",
+        "content": "MSH2/MSH6-Verlust bei erhaltener MLH1/PMS2-Expression."
+      },
+      {
+        "title": "Klinische Frage",
+        "content": "Therapieoption Immuncheckpoint-Inhibition und hereditäre Dimension sollen im MTB eingeordnet werden."
+      }
+    ],
+    "pre_results": [
+      {
+        "title": "Vorbefunde / Datenlage",
+        "content": "Vorbefund: Endometriumkarzinom, TIL-reich. IHC: MSH2/MSH6-Verlust. PD-L1 kann positiv sein, ist aber nicht die zentrale Entscheidungsgrundlage. MSI-PCR/NGS bzw. Panel/TMB kann ergänzen."
+      }
+    ],
+    "material_or_resource_constraints": [
+      "Es geht nicht nur um Therapieprädiktion, sondern auch um die richtige Konsequenz aus dem MSH2/MSH6-Verlust.",
+      "Die hereditäre Dimension darf nicht im IO-Fokus verloren gehen."
+    ],
+    "reasoning_gate_upgrade": [
+      {
+        "id": "dmmr_biology",
+        "type": "single_choice",
+        "prompt": "Was ist die zentrale biologische Aussage von dMMR/MSI-H?",
+        "options": [
+          {
+            "id": "neoantigen_io",
+            "label": "Erhöhte Neoantigenlast/Immunogenität und damit plausible IO-Sensitivität."
+          },
+          {
+            "id": "angiogenesis",
+            "label": "dMMR zeigt primär VEGF-getriebene Angiogenese"
+          },
+          {
+            "id": "parp_only",
+            "label": "dMMR ist vor allem eine PARP/HRD-Konstellation"
+          },
+          {
+            "id": "no_therapy",
+            "label": "dMMR/MSI-H hat keine therapeutische Relevanz"
+          }
+        ],
+        "correct": [
+          "neoantigen_io"
+        ],
+        "rationale": "dMMR/MSI-H ist stärkerer Kontext als isoliertes PD-L1."
+      },
+      {
+        "id": "pdl1_weight",
+        "type": "single_choice",
+        "prompt": "Warum ist PD-L1 allein nicht ausreichend?",
+        "options": [
+          {
+            "id": "dmmr_stronger_than_pdl1",
+            "label": "PD-L1 ist kontextabhängig; dMMR/MSI ist hier der stärkere prädiktive und biologische Marker."
+          },
+          {
+            "id": "pdl1_alone",
+            "label": "PD-L1 allein reicht als Hauptargument und MMR/MSI ist optional"
+          },
+          {
+            "id": "tmb_only",
+            "label": "TMB isoliert ersetzt MMR-IHC und MSI-Bestätigung"
+          },
+          {
+            "id": "mlh1_methylation_all",
+            "label": "MLH1-Methylierung ist bei jedem MMR-Verlust der erste Reflex"
+          }
+        ],
+        "correct": [
+          "dmmr_stronger_than_pdl1"
+        ],
+        "rationale": "PD-L1-overfocus ist die zentrale Falle."
+      },
+      {
+        "id": "msh2_msh6_linch",
+        "type": "single_choice",
+        "prompt": "Was bedeutet MSH2/MSH6-Verlust zusätzlich?",
+        "options": [
+          {
+            "id": "lynch_referral",
+            "label": "Humangenetik-/Lynch-Abklärung dringend erwägen und im Befund/MTB kommunizieren."
+          },
+          {
+            "id": "sporadic_mlh1",
+            "label": "MSH2/MSH6-Verlust spricht primär für sporadische MLH1-Methylierung"
+          },
+          {
+            "id": "ignore_family",
+            "label": "Hereditäre Konsequenzen sind im Tumorboard nicht zu erwähnen"
+          },
+          {
+            "id": "pdl1_family",
+            "label": "PD-L1-Status entscheidet über Familienabklärung"
+          }
+        ],
+        "correct": [
+          "lynch_referral"
+        ],
+        "rationale": "Der Biomarker ist nicht nur therapeutisch."
+      }
+    ],
+    "decision_task": "Ordne die dMMR/MSI-H-Konstellation biologisch ein, wähle sinnvolle Bestätigung/Ergänzung und formuliere eine MTB-Empfehlung, die Therapieoption und Lynch-/Humangenetik-Kontext sauber trennt.",
+    "expected_path": "MMR-IHC prüfen → MSI-PCR/NGS bestätigen oder ergänzen → ggf. TMB/Panel als Zusatzkontext → IO-Sensitivität biologisch erklären → bei MSH2/MSH6-Verlust Humangenetik/Lynch-Abklärung empfehlen → Befundkommunikation: Therapieprädiktion und Familienrelevanz getrennt adressieren.",
+    "acceptable_alternatives": "Bei eindeutigem dMMR-IHC kann je nach Labor/Leitlinie direkt berichtet oder MSI-Testung ergänzend durchgeführt werden. TMB kann ergänzen, ersetzt aber nicht die MMR/MSI-Logik. PD-L1 ist optionaler Kontext, nicht Hauptentscheidung.",
+    "low_value_traps": [
+      {
+        "label": "PD-L1 als alleinige Entscheidungsgrundlage",
+        "why_bad": "dMMR/MSI-H wird untergewichtet."
+      },
+      {
+        "label": "dMMR nur als IO-Marker behandeln",
+        "why_bad": "Lynch-/Keimbahnkontext wird verpasst."
+      },
+      {
+        "label": "TMB isoliert überinterpretieren",
+        "why_bad": "Methodik und Kontext fehlen."
+      },
+      {
+        "label": "breites Panel ohne MMR/MSI",
+        "why_bad": "falsche Priorisierung."
+      }
+    ],
+    "twist": {
+      "title": "Der Biomarker ist nicht nur therapeutisch",
+      "content": "Die dMMR/MSI-H-Konstellation spricht für Immuncheckpoint-Inhibition. Der MSH2/MSH6-Verlust ist zugleich ein Hinweis auf ein mögliches Lynch-Syndrom und erfordert humangenetische Abklärung.",
+      "why_critical": "Wer nur 'IO möglich' kommuniziert, verpasst eine relevante familiäre und präventive Dimension der Diagnose."
+    },
+    "result_packages": [
+      {
+        "id": "optimal",
+        "title": "dMMR/MSI-H plus Lynch-Kontext erkannt",
+        "class": "optimal",
+        "result": "MSH2/MSH6-Verlust und MSI-H bestätigen IO-Sensitivität. Humangenetik/Lynch-Abklärung empfohlen. PD-L1 nur als Zusatzkontext."
+      },
+      {
+        "id": "partial_io_only",
+        "title": "IO erkannt, hereditärer Kontext verpasst",
+        "class": "incomplete",
+        "result": "Immuntherapie wird diskutiert, aber MSH2/MSH6-Verlust nicht als Lynch-Hinweis adressiert. Befundkommunikation unvollständig."
+      },
+      {
+        "id": "wrong_pdl1_only",
+        "title": "PD-L1-overfocused",
+        "class": "wrong",
+        "result": "PD-L1 wird übergewichtet; dMMR/MSI-H als biologisch starker Marker wird nicht ausreichend berücksichtigt."
+      }
+    ],
+    "followup_logic": [
+      {
+        "trigger": "Unvollständiger oder unsicherer Primärpfad",
+        "action": "Falls MSI/dMMR-Bestätigung fehlt, nachfordern. Bei MSH2/MSH6-Verlust humangenetische Beratung/Keimbahnabklärung empfehlen. Bei unklarer IHC Wiederholung oder orthogonale MSI-Testung erwägen.",
+        "consequence": "Nachforderung oder erneute MTB-Besprechung mit finaler Einordnung."
+      }
+    ],
+    "debrief_points": [
+      "dMMR/MSI-H verbindet Immunbiologie und hereditäre Tumordisposition.",
+      "PD-L1 ist in dieser Konstellation nicht der Hauptanker.",
+      "MSH2/MSH6-Verlust hat andere Reflexkonsequenzen als MLH1/PMS2-Verlust.",
+      "Take-home: dMMR/MSI-H ist nicht nur ein Immuntherapie-Biomarker. Je nach IHC-Verlustmuster muss auch der hereditäre Kontext aktiv adressiert werden."
+    ],
+    "instructor_notes": {
+      "model_answer": "Optimale Lösung: MMR-IHC/MSI-H als prädiktiven IO-Kontext einordnen; MSH2/MSH6-Verlust als Lynch-Hinweis kommunizieren; MSI/PCR/NGS oder Panel/TMB sinnvoll ergänzen; PD-L1 nicht überinterpretieren.",
+      "scoring_focus": [
+        "Clinical Reasoning: Immunescape/dMMR verstanden.",
+        "Method Selection: MMR/MSI priorisiert.",
+        "Communication: Therapie und Keimbahn-/Familienrelevanz getrennt dargestellt."
+      ],
+      "discussion_questions": [
+        "Warum ist dMMR/MSI-H immunologisch relevant?",
+        "Warum reicht PD-L1 in diesem Fall nicht als Hauptargument?",
+        "Wie unterscheidet sich MSH2/MSH6-Verlust von MLH1/PMS2-Verlust in der Reflexdiagnostik?"
+      ]
+    },
+    "report_additions": {
+      "batch": "Batch1 v2.1 content expansion"
+    },
+    "is_signature_case": true
+  }
+]

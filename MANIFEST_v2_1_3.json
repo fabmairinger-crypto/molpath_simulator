@@ -1,0 +1,578 @@
+{
+  "version": "v2.1.3",
+  "title": "MolPath Simulator v2.1.3 – Complex Phase + CRC Bundle Logic Patch",
+  "created_at": "2026-05-21T14:14:47",
+  "basis": "v2.1.1 Batch1 Content Fix / v2.0b.5 stable layout layer",
+  "key_changes": [
+    "Ovar two-round complex phase logic",
+    "CRC alternative bundle logic",
+    "phase-specific budget/TAT handling",
+    "hidden follow-up phase unlock"
+  ],
+  "files": [
+    {
+      "path": "CHANGELOG_v1_5_1.md",
+      "size_bytes": 1046
+    },
+    {
+      "path": "CHANGELOG_v1_5_2.md",
+      "size_bytes": 885
+    },
+    {
+      "path": "CHANGELOG_v1_6.md",
+      "size_bytes": 775
+    },
+    {
+      "path": "CHANGELOG_v1_7d.md",
+      "size_bytes": 1132
+    },
+    {
+      "path": "CHANGELOG_v1_7d_1.md",
+      "size_bytes": 807
+    },
+    {
+      "path": "CHANGELOG_v1_7e.md",
+      "size_bytes": 736
+    },
+    {
+      "path": "CHANGELOG_v1_8a.md",
+      "size_bytes": 745
+    },
+    {
+      "path": "CHANGELOG_v1_8b.md",
+      "size_bytes": 1323
+    },
+    {
+      "path": "CHANGELOG_v1_8e.md",
+      "size_bytes": 822
+    },
+    {
+      "path": "CHANGELOG_v2_0b_1.md",
+      "size_bytes": 780
+    },
+    {
+      "path": "CHANGELOG_v2_0b_2.md",
+      "size_bytes": 607
+    },
+    {
+      "path": "CHANGELOG_v2_0b_3.md",
+      "size_bytes": 543
+    },
+    {
+      "path": "CHANGELOG_v2_0b_5.md",
+      "size_bytes": 1025
+    },
+    {
+      "path": "CHANGELOG_v2_1_1.md",
+      "size_bytes": 595
+    },
+    {
+      "path": "CHANGELOG_v2_1_3.md",
+      "size_bytes": 1960,
+      "sha256": "2543ad5f44c69b57691041a19d92465ef21dec873447a00d1638cf151d1d5499"
+    },
+    {
+      "path": "MANIFEST_v1_4_1.json",
+      "size_bytes": 1917
+    },
+    {
+      "path": "MANIFEST_v1_5.json",
+      "size_bytes": 883
+    },
+    {
+      "path": "MANIFEST_v1_5_1.json",
+      "size_bytes": 929
+    },
+    {
+      "path": "MANIFEST_v1_5_2.json",
+      "size_bytes": 2575
+    },
+    {
+      "path": "MANIFEST_v1_6.json",
+      "size_bytes": 8923
+    },
+    {
+      "path": "MANIFEST_v1_7d.json",
+      "size_bytes": 9730
+    },
+    {
+      "path": "MANIFEST_v1_7d_1.json",
+      "size_bytes": 3766
+    },
+    {
+      "path": "MANIFEST_v1_7e.json",
+      "size_bytes": 15660
+    },
+    {
+      "path": "MANIFEST_v1_8a.json",
+      "size_bytes": 12114
+    },
+    {
+      "path": "MANIFEST_v1_8b.json",
+      "size_bytes": 12918
+    },
+    {
+      "path": "MANIFEST_v1_8e.json",
+      "size_bytes": 19414
+    },
+    {
+      "path": "MANIFEST_v2_0b_1.json",
+      "size_bytes": 5169
+    },
+    {
+      "path": "MANIFEST_v2_0b_2.json",
+      "size_bytes": 351
+    },
+    {
+      "path": "MANIFEST_v2_0b_3.json",
+      "size_bytes": 329
+    },
+    {
+      "path": "MANIFEST_v2_0b_5.json",
+      "size_bytes": 609
+    },
+    {
+      "path": "MANIFEST_v2_1_1.json",
+      "size_bytes": 733
+    },
+    {
+      "path": "MOLPATH_DESIGNSYSTEM_v2_0a.md",
+      "size_bytes": 10735
+    },
+    {
+      "path": "MolPath_Case_Content_Master_v2_1_Batch1_expanded.xlsx",
+      "size_bytes": 217629
+    },
+    {
+      "path": "QA_REPORT_v1_5_2.md",
+      "size_bytes": 1475
+    },
+    {
+      "path": "QA_REPORT_v1_6.md",
+      "size_bytes": 542
+    },
+    {
+      "path": "QA_REPORT_v1_7d.md",
+      "size_bytes": 694
+    },
+    {
+      "path": "QA_REPORT_v1_7d_1.md",
+      "size_bytes": 894
+    },
+    {
+      "path": "QA_REPORT_v1_7e.md",
+      "size_bytes": 1396
+    },
+    {
+      "path": "QA_REPORT_v1_8a.md",
+      "size_bytes": 861
+    },
+    {
+      "path": "QA_REPORT_v1_8b.md",
+      "size_bytes": 1135
+    },
+    {
+      "path": "QA_REPORT_v1_8e.md",
+      "size_bytes": 1349
+    },
+    {
+      "path": "QA_REPORT_v2_0b_1.md",
+      "size_bytes": 607
+    },
+    {
+      "path": "QA_REPORT_v2_0b_2.md",
+      "size_bytes": 530
+    },
+    {
+      "path": "QA_REPORT_v2_0b_3.md",
+      "size_bytes": 397
+    },
+    {
+      "path": "QA_REPORT_v2_0b_5.md",
+      "size_bytes": 921
+    },
+    {
+      "path": "QA_REPORT_v2_1_1.md",
+      "size_bytes": 1234
+    },
+    {
+      "path": "QA_REPORT_v2_1_3.md",
+      "size_bytes": 1241,
+      "sha256": "92f1be6f26a1e7205cf9ac8bec781c02763e27d8e36dae91eaf8520c86ad8657"
+    },
+    {
+      "path": "README_START_HERE.md",
+      "size_bytes": 1002
+    },
+    {
+      "path": "app/molpath_simulator_v1_4_universal_methods.html",
+      "size_bytes": 1918019
+    },
+    {
+      "path": "app/molpath_simulator_v1_5_1_methods_ui_patch.html",
+      "size_bytes": 2198840
+    },
+    {
+      "path": "app/molpath_simulator_v1_5_2_QA_freeze.html",
+      "size_bytes": 2198940
+    },
+    {
+      "path": "app/molpath_simulator_v1_5_harmonized_case_library.html",
+      "size_bytes": 2191553
+    },
+    {
+      "path": "app/molpath_simulator_v1_6_course_session_logic.html",
+      "size_bytes": 2221367
+    },
+    {
+      "path": "app/molpath_simulator_v1_7d_1_clinical_reasoning_fix.html",
+      "size_bytes": 2303104
+    },
+    {
+      "path": "app/molpath_simulator_v1_7d_signature_cases_patch.html",
+      "size_bytes": 2303104
+    },
+    {
+      "path": "app/molpath_simulator_v1_7e_QA_freeze.html",
+      "size_bytes": 2303104
+    },
+    {
+      "path": "app/molpath_simulator_v1_8a_reports_patch.html",
+      "size_bytes": 2323421
+    },
+    {
+      "path": "app/molpath_simulator_v1_8b_teaching_course_reports.html",
+      "size_bytes": 2350015
+    },
+    {
+      "path": "app/molpath_simulator_v1_8e_QA_freeze.html",
+      "size_bytes": 2349997
+    },
+    {
+      "path": "app/molpath_simulator_v2_0b_1_layout_hotfix.html",
+      "size_bytes": 2372526
+    },
+    {
+      "path": "app/molpath_simulator_v2_0b_2_layout_cleanup.html",
+      "size_bytes": 2372585
+    },
+    {
+      "path": "app/molpath_simulator_v2_0b_3_branding_logo_patch.html",
+      "size_bytes": 2415143
+    },
+    {
+      "path": "app/molpath_simulator_v2_1_3_complex_phase_crc_bundle_patch.html",
+      "size_bytes": 2557364,
+      "sha256": "eb1a02e9461d1c6444b86c20fbc9df07ced2eeba28fc28af2b282cff6aed4f1f"
+    },
+    {
+      "path": "archive/README_archive.md",
+      "size_bytes": 124
+    },
+    {
+      "path": "archive/molpath_simulator_prototype.html",
+      "size_bytes": 61774
+    },
+    {
+      "path": "archive/molpath_simulator_prototype_v2_branding.html",
+      "size_bytes": 65872
+    },
+    {
+      "path": "archive/molpath_simulator_prototype_v3_layout.html",
+      "size_bytes": 2464373
+    },
+    {
+      "path": "archive/molpath_simulator_v0_4_1_request_engine_fixed.html",
+      "size_bytes": 1433322
+    },
+    {
+      "path": "archive/molpath_simulator_v0_4_request_engine.html",
+      "size_bytes": 1433319
+    },
+    {
+      "path": "archive/molpath_simulator_v0_5_case_engine.html",
+      "size_bytes": 31566
+    },
+    {
+      "path": "archive/molpath_simulator_v0_6_1_followup_engine.html",
+      "size_bytes": 48724
+    },
+    {
+      "path": "archive/molpath_simulator_v0_6_crc_engine.html",
+      "size_bytes": 43526
+    },
+    {
+      "path": "archive/molpath_simulator_v0_7_ovar_engine.html",
+      "size_bytes": 60629
+    },
+    {
+      "path": "archive/molpath_simulator_v0_8_lab_qm_engine.html",
+      "size_bytes": 1455678
+    },
+    {
+      "path": "archive/molpath_simulator_v0_9_res_engine.html",
+      "size_bytes": 1471924
+    },
+    {
+      "path": "archive/molpath_simulator_v1_0_core12_engine.html",
+      "size_bytes": 1509712
+    },
+    {
+      "path": "archive/molpath_simulator_v1_1_1_sidebar_layout.html",
+      "size_bytes": 1518905
+    },
+    {
+      "path": "archive/molpath_simulator_v1_1_learning_assessment_modes.html",
+      "size_bytes": 1518553
+    },
+    {
+      "path": "archive/molpath_simulator_v1_2_result_reports.html",
+      "size_bytes": 1534649
+    },
+    {
+      "path": "archive/molpath_simulator_v1_3_full_inventory.html",
+      "size_bytes": 1908791
+    },
+    {
+      "path": "archive/molpath_simulator_v1_4_universal_methods.html",
+      "size_bytes": 1918907
+    },
+    {
+      "path": "archive/molpath_simulator_v1_5_1_methods_ui_patch.html",
+      "size_bytes": 2198857
+    },
+    {
+      "path": "archive/molpath_simulator_v1_5_2_QA_freeze.html",
+      "size_bytes": 2198940
+    },
+    {
+      "path": "archive/molpath_simulator_v1_5_harmonized_case_library.html",
+      "size_bytes": 2191570
+    },
+    {
+      "path": "archive/molpath_simulator_v1_6_course_session_logic.html",
+      "size_bytes": 2221367
+    },
+    {
+      "path": "archive/molpath_simulator_v1_7d_1_clinical_reasoning_fix.html",
+      "size_bytes": 2303104
+    },
+    {
+      "path": "archive/molpath_simulator_v1_7e_QA_freeze.html",
+      "size_bytes": 2303104
+    },
+    {
+      "path": "archive/molpath_simulator_v1_8a_reports_patch.html",
+      "size_bytes": 2323421
+    },
+    {
+      "path": "archive/molpath_simulator_v2_0b_3_branding_logo_patch.html",
+      "size_bytes": 2415143
+    },
+    {
+      "path": "archive/molpath_simulator_v2_0b_5_safe_layout_patch.html",
+      "size_bytes": 2426305
+    },
+    {
+      "path": "assets/logos/logo_eg.png",
+      "size_bytes": 785004
+    },
+    {
+      "path": "assets/logos/logo_eg_transparent.png",
+      "size_bytes": 785004
+    },
+    {
+      "path": "assets/logos/logo_patho.png",
+      "size_bytes": 51447
+    },
+    {
+      "path": "assets/profile/Fabibild1_new.jpeg",
+      "size_bytes": 240237
+    },
+    {
+      "path": "data/case_audit_v1_5_AP1b_final.csv",
+      "size_bytes": 145102
+    },
+    {
+      "path": "data/case_metadata_v1_5_AP1b_final.json",
+      "size_bytes": 105925
+    },
+    {
+      "path": "data/cases_v1_3.json",
+      "size_bytes": 560431
+    },
+    {
+      "path": "data/cases_v1_4_universal_methods.json",
+      "size_bytes": 560431
+    },
+    {
+      "path": "data/catalog_v1_3.json",
+      "size_bytes": 20076
+    },
+    {
+      "path": "data/catalog_v1_4_universal_methods.json",
+      "size_bytes": 20076
+    },
+    {
+      "path": "data/clinical_reasoning_gates_v1_5_AP1b_final.json",
+      "size_bytes": 88087
+    },
+    {
+      "path": "data/courses_v1_6.json",
+      "size_bytes": 3376
+    },
+    {
+      "path": "data/deep_dive_cases_v1_7b.json",
+      "size_bytes": 80261
+    },
+    {
+      "path": "data/deep_dive_integration_index_v1_7b.json",
+      "size_bytes": 2243
+    },
+    {
+      "path": "data/fallinventar_rows_imported_v1_3.json",
+      "size_bytes": 26867
+    },
+    {
+      "path": "data/method_rule_classes_v1_4.json",
+      "size_bytes": 382
+    },
+    {
+      "path": "data/method_rules_v1_5_AP1b_final.json",
+      "size_bytes": 58815
+    },
+    {
+      "path": "data/score_caps_v1_5_AP1b_final.json",
+      "size_bytes": 54680
+    },
+    {
+      "path": "deep_dive_cases_v2_1_1_batch1_integrated.json",
+      "size_bytes": 30900
+    },
+    {
+      "path": "design_tokens_v2_0a.json",
+      "size_bytes": 1982
+    },
+    {
+      "path": "docs/DEEP_DIVE_STORIES_MASTER_v1_7b.md",
+      "size_bytes": 1402
+    },
+    {
+      "path": "docs/curation/AP1b_DECISION_LOG.md",
+      "size_bytes": 3499
+    },
+    {
+      "path": "docs/curation/CHANGELOG_case_audit_v1_5_AP1b.md",
+      "size_bytes": 1871
+    },
+    {
+      "path": "docs/curation/molpath_simulator_v1_5_AP1b_final.xlsx",
+      "size_bytes": 73405
+    },
+    {
+      "path": "docs/curation/v1_5_IMPLEMENTATION_SPEC.md",
+      "size_bytes": 2269
+    },
+    {
+      "path": "docs/design/MOLPATH_DESIGNSYSTEM_v2_0a.md",
+      "size_bytes": 10735
+    },
+    {
+      "path": "docs/design/design_tokens_v2_0a.json",
+      "size_bytes": 1982
+    },
+    {
+      "path": "docs/design/molpath_design_tokens_v2_0a.css",
+      "size_bytes": 3346
+    },
+    {
+      "path": "docs/sources/Fallinventar.docx",
+      "size_bytes": 38594
+    },
+    {
+      "path": "docs/templates/Auftrag-Histo-4.pdf",
+      "size_bytes": 370371
+    },
+    {
+      "path": "docs/templates/Auftrag-NGS-01-25-V2.pdf",
+      "size_bytes": 150531
+    },
+    {
+      "path": "docs/templates/Auftrag-PCR-01-25-V2.pdf",
+      "size_bytes": 3358463
+    },
+    {
+      "path": "exports/README_exports.md",
+      "size_bytes": 116
+    },
+    {
+      "path": "index.html",
+      "size_bytes": 2557364,
+      "sha256": "eb1a02e9461d1c6444b86c20fbc9df07ced2eeba28fc28af2b282cff6aed4f1f"
+    },
+    {
+      "path": "molpath_design_tokens_v2_0a.css",
+      "size_bytes": 3346
+    },
+    {
+      "path": "review/deep_dive_quick_review_v1_7b.csv",
+      "size_bytes": 8743
+    },
+    {
+      "path": "review/deep_dive_review_table_v1_7b.csv",
+      "size_bytes": 2678
+    },
+    {
+      "path": "v152_syntax_check.json",
+      "size_bytes": 53
+    },
+    {
+      "path": "v16_syntax_check.json",
+      "size_bytes": 148
+    },
+    {
+      "path": "v17d_syntax_check.json",
+      "size_bytes": 102
+    },
+    {
+      "path": "v17e_syntax_check.json",
+      "size_bytes": 149
+    },
+    {
+      "path": "v18a_syntax_check.json",
+      "size_bytes": 145
+    },
+    {
+      "path": "v18b_syntax_check.json",
+      "size_bytes": 138
+    },
+    {
+      "path": "v18e_syntax_check.json",
+      "size_bytes": 148
+    },
+    {
+      "path": "v1_5_final/index.html",
+      "size_bytes": 2198940
+    },
+    {
+      "path": "v1_7_final/README_v1_7_final.md",
+      "size_bytes": 420
+    },
+    {
+      "path": "v1_7_final/index.html",
+      "size_bytes": 2303104
+    },
+    {
+      "path": "v1_8_final/README_v1_8_final.md",
+      "size_bytes": 411
+    },
+    {
+      "path": "v1_8_final/index.html",
+      "size_bytes": 2349997
+    },
+    {
+      "path": "v20b3_syntax_check.json",
+      "size_bytes": 53
+    }
+  ]
+}

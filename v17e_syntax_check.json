@@ -1,0 +1,6 @@
+{
+  "file": "molpath_simulator_v1_7e_QA_freeze.html",
+  "check": "node --check extracted script",
+  "status": "passed",
+  "timestamp": "2026-05-19"
+}

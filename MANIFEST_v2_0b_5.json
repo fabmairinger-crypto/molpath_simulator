@@ -1,0 +1,15 @@
+{
+  "version": "v2.0b.5_safe_layout_patch",
+  "created_at": "2026-05-20T06:33:38",
+  "base": "v2.0b.3_branding_logo_patch",
+  "discarded_base": "v2.0b.4_course_layout_default_free_due_to_visible_js_text",
+  "main_file": "index.html",
+  "single_html": "molpath_simulator_v2_0b_5_safe_layout_patch.html",
+  "changes": [
+    "sidebar branding redesigned according to mockup",
+    "default mode set to free play on load",
+    "course dashboard and selector moved to main area below cockpit",
+    "method info/tooltips hidden in training and assessment modes",
+    "all v1.8e/v2.0b.3 functionality preserved"
+  ]
+}

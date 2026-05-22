@@ -1,0 +1,337 @@
+{
+  "version": "v1.6",
+  "title": "MolPath Simulator v1.6 – Course / Session Logic",
+  "created_at": "2026-05-19T09:40:56.666698",
+  "base_version": "v1.5.2 QA Freeze",
+  "features": [
+    "course mode",
+    "course dashboard",
+    "localStorage progress",
+    "course report",
+    "course JSON export"
+  ],
+  "case_count": 91,
+  "course_count": 5,
+  "files": [
+    {
+      "path": "index.html",
+      "size_bytes": 2221252,
+      "sha256_16": "afaf09f5b52015db"
+    },
+    {
+      "path": "README_START_HERE.md",
+      "size_bytes": 713,
+      "sha256_16": "9f7d57cb27fe822c"
+    },
+    {
+      "path": "MANIFEST_v1_4_1.json",
+      "size_bytes": 1917,
+      "sha256_16": "b406db2da13d0743"
+    },
+    {
+      "path": "MANIFEST_v1_5.json",
+      "size_bytes": 883,
+      "sha256_16": "cace1519a7c5acc8"
+    },
+    {
+      "path": "CHANGELOG_v1_5_1.md",
+      "size_bytes": 1046,
+      "sha256_16": "a3b48cdc62488efc"
+    },
+    {
+      "path": "MANIFEST_v1_5_1.json",
+      "size_bytes": 929,
+      "sha256_16": "acdcad14afb24d34"
+    },
+    {
+      "path": "QA_REPORT_v1_5_2.md",
+      "size_bytes": 1475,
+      "sha256_16": "a6eeedd0a3fa8b1f"
+    },
+    {
+      "path": "CHANGELOG_v1_5_2.md",
+      "size_bytes": 885,
+      "sha256_16": "827fae75e10e433c"
+    },
+    {
+      "path": "MANIFEST_v1_5_2.json",
+      "size_bytes": 2575,
+      "sha256_16": "368ace3f88e26937"
+    },
+    {
+      "path": "v152_syntax_check.json",
+      "size_bytes": 53,
+      "sha256_16": "53b3790c87ca15db"
+    },
+    {
+      "path": "CHANGELOG_v1_6.md",
+      "size_bytes": 775,
+      "sha256_16": "749662881d72d287"
+    },
+    {
+      "path": "QA_REPORT_v1_6.md",
+      "size_bytes": 542,
+      "sha256_16": "4792ca7428e79362"
+    },
+    {
+      "path": "v16_syntax_check.json",
+      "size_bytes": 148,
+      "sha256_16": "64fd1ae62224e5c8"
+    },
+    {
+      "path": "app/molpath_simulator_v1_4_universal_methods.html",
+      "size_bytes": 1918019,
+      "sha256_16": "90cb7b3245a5f254"
+    },
+    {
+      "path": "app/molpath_simulator_v1_5_harmonized_case_library.html",
+      "size_bytes": 2191553,
+      "sha256_16": "f94a7a3716584917"
+    },
+    {
+      "path": "app/molpath_simulator_v1_5_1_methods_ui_patch.html",
+      "size_bytes": 2198840,
+      "sha256_16": "24a64ef3608fff7f"
+    },
+    {
+      "path": "app/molpath_simulator_v1_5_2_QA_freeze.html",
+      "size_bytes": 2198940,
+      "sha256_16": "134bb071dbf8703e"
+    },
+    {
+      "path": "app/molpath_simulator_v1_6_course_session_logic.html",
+      "size_bytes": 2221252,
+      "sha256_16": "afaf09f5b52015db"
+    },
+    {
+      "path": "data/catalog_v1_3.json",
+      "size_bytes": 20076,
+      "sha256_16": "4001e0e203f79b46"
+    },
+    {
+      "path": "data/cases_v1_3.json",
+      "size_bytes": 560431,
+      "sha256_16": "aaed62f7091c9706"
+    },
+    {
+      "path": "data/fallinventar_rows_imported_v1_3.json",
+      "size_bytes": 26867,
+      "sha256_16": "bffb22ca4f88316b"
+    },
+    {
+      "path": "data/catalog_v1_4_universal_methods.json",
+      "size_bytes": 20076,
+      "sha256_16": "4001e0e203f79b46"
+    },
+    {
+      "path": "data/cases_v1_4_universal_methods.json",
+      "size_bytes": 560431,
+      "sha256_16": "aaed62f7091c9706"
+    },
+    {
+      "path": "data/method_rule_classes_v1_4.json",
+      "size_bytes": 382,
+      "sha256_16": "58b5c9f2424ac556"
+    },
+    {
+      "path": "data/case_audit_v1_5_AP1b_final.csv",
+      "size_bytes": 145102,
+      "sha256_16": "960de005c6e15210"
+    },
+    {
+      "path": "data/case_metadata_v1_5_AP1b_final.json",
+      "size_bytes": 105925,
+      "sha256_16": "55daaaef3113885b"
+    },
+    {
+      "path": "data/clinical_reasoning_gates_v1_5_AP1b_final.json",
+      "size_bytes": 88087,
+      "sha256_16": "deece3a9b5596e04"
+    },
+    {
+      "path": "data/score_caps_v1_5_AP1b_final.json",
+      "size_bytes": 54680,
+      "sha256_16": "0e53f47bb860b2cc"
+    },
+    {
+      "path": "data/method_rules_v1_5_AP1b_final.json",
+      "size_bytes": 58815,
+      "sha256_16": "8b4b6bc732763498"
+    },
+    {
+      "path": "data/courses_v1_6.json",
+      "size_bytes": 3376,
+      "sha256_16": "e800857cad64ba18"
+    },
+    {
+      "path": "exports/README_exports.md",
+      "size_bytes": 116,
+      "sha256_16": "d4d065a793d2bc20"
+    },
+    {
+      "path": "archive/molpath_simulator_prototype.html",
+      "size_bytes": 61774,
+      "sha256_16": "a801d7686156192e"
+    },
+    {
+      "path": "archive/molpath_simulator_prototype_v2_branding.html",
+      "size_bytes": 65872,
+      "sha256_16": "2286239ef5875be3"
+    },
+    {
+      "path": "archive/molpath_simulator_prototype_v3_layout.html",
+      "size_bytes": 2464373,
+      "sha256_16": "5521b4f3993e0b57"
+    },
+    {
+      "path": "archive/molpath_simulator_v0_4_request_engine.html",
+      "size_bytes": 1433319,
+      "sha256_16": "5edc7f2f9f52c669"
+    },
+    {
+      "path": "archive/molpath_simulator_v0_4_1_request_engine_fixed.html",
+      "size_bytes": 1433322,
+      "sha256_16": "d01642b4ecf9c763"
+    },
+    {
+      "path": "archive/molpath_simulator_v0_5_case_engine.html",
+      "size_bytes": 31566,
+      "sha256_16": "3d1452d0266d6357"
+    },
+    {
+      "path": "archive/molpath_simulator_v0_6_crc_engine.html",
+      "size_bytes": 43526,
+      "sha256_16": "21259b1228c18a83"
+    },
+    {
+      "path": "archive/molpath_simulator_v0_6_1_followup_engine.html",
+      "size_bytes": 48724,
+      "sha256_16": "47591e3851d8d51d"
+    },
+    {
+      "path": "archive/molpath_simulator_v0_7_ovar_engine.html",
+      "size_bytes": 60629,
+      "sha256_16": "29efd188f88ccf8d"
+    },
+    {
+      "path": "archive/molpath_simulator_v0_8_lab_qm_engine.html",
+      "size_bytes": 1455678,
+      "sha256_16": "e0df8c35d8243615"
+    },
+    {
+      "path": "archive/molpath_simulator_v0_9_res_engine.html",
+      "size_bytes": 1471924,
+      "sha256_16": "87ce0837771966ce"
+    },
+    {
+      "path": "archive/molpath_simulator_v1_0_core12_engine.html",
+      "size_bytes": 1509712,
+      "sha256_16": "000226f4cbc35600"
+    },
+    {
+      "path": "archive/molpath_simulator_v1_1_learning_assessment_modes.html",
+      "size_bytes": 1518553,
+      "sha256_16": "be515daca432311c"
+    },
+    {
+      "path": "archive/molpath_simulator_v1_1_1_sidebar_layout.html",
+      "size_bytes": 1518905,
+      "sha256_16": "47e1c514fdabe4f7"
+    },
+    {
+      "path": "archive/molpath_simulator_v1_2_result_reports.html",
+      "size_bytes": 1534649,
+      "sha256_16": "99c6bef11c60681e"
+    },
+    {
+      "path": "archive/molpath_simulator_v1_3_full_inventory.html",
+      "size_bytes": 1908791,
+      "sha256_16": "66e74768a278297d"
+    },
+    {
+      "path": "archive/README_archive.md",
+      "size_bytes": 124,
+      "sha256_16": "4fd3bd3d2c391974"
+    },
+    {
+      "path": "archive/molpath_simulator_v1_4_universal_methods.html",
+      "size_bytes": 1918907,
+      "sha256_16": "582dbdef961ae377"
+    },
+    {
+      "path": "archive/molpath_simulator_v1_5_harmonized_case_library.html",
+      "size_bytes": 2191570,
+      "sha256_16": "d9fd304eb9963cbc"
+    },
+    {
+      "path": "archive/molpath_simulator_v1_5_1_methods_ui_patch.html",
+      "size_bytes": 2198857,
+      "sha256_16": "bd90b8079b6a8112"
+    },
+    {
+      "path": "archive/molpath_simulator_v1_5_2_QA_freeze.html",
+      "size_bytes": 2198940,
+      "sha256_16": "134bb071dbf8703e"
+    },
+    {
+      "path": "v1_5_final/index.html",
+      "size_bytes": 2198940,
+      "sha256_16": "134bb071dbf8703e"
+    },
+    {
+      "path": "docs/templates/Auftrag-Histo-4.pdf",
+      "size_bytes": 370371,
+      "sha256_16": "fbc4015666f57e12"
+    },
+    {
+      "path": "docs/templates/Auftrag-NGS-01-25-V2.pdf",
+      "size_bytes": 150531,
+      "sha256_16": "10e6afb003e1b3e2"
+    },
+    {
+      "path": "docs/templates/Auftrag-PCR-01-25-V2.pdf",
+      "size_bytes": 3358463,
+      "sha256_16": "ca9756eb5740e926"
+    },
+    {
+      "path": "docs/sources/Fallinventar.docx",
+      "size_bytes": 38594,
+      "sha256_16": "fd1b8c8e6679d340"
+    },
+    {
+      "path": "docs/curation/molpath_simulator_v1_5_AP1b_final.xlsx",
+      "size_bytes": 73405,
+      "sha256_16": "c1623c4aeb593191"
+    },
+    {
+      "path": "docs/curation/AP1b_DECISION_LOG.md",
+      "size_bytes": 3499,
+      "sha256_16": "868f34c0f34dacbc"
+    },
+    {
+      "path": "docs/curation/v1_5_IMPLEMENTATION_SPEC.md",
+      "size_bytes": 2269,
+      "sha256_16": "c38b34e4bf419321"
+    },
+    {
+      "path": "docs/curation/CHANGELOG_case_audit_v1_5_AP1b.md",
+      "size_bytes": 1871,
+      "sha256_16": "2c3d07a023e8628d"
+    },
+    {
+      "path": "assets/logos/logo_patho.png",
+      "size_bytes": 51447,
+      "sha256_16": "272641ba367ac66d"
+    },
+    {
+      "path": "assets/logos/logo_eg.png",
+      "size_bytes": 753253,
+      "sha256_16": "ccc5356f5755513b"
+    },
+    {
+      "path": "assets/profile/Fabibild1_new.jpeg",
+      "size_bytes": 240237,
+      "sha256_16": "00df77cb0798a4f1"
+    }
+  ]
+}

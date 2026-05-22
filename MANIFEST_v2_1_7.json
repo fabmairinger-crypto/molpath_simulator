@@ -1,0 +1,768 @@
+{
+  "version": "v2.1.7",
+  "name": "MolPath Simulator v2.1.7 Syntax Escape Fix",
+  "base": "v2.1.6",
+  "created": "2026-05-22",
+  "files": [
+    {
+      "path": "CHANGELOG_v1_5_1.md",
+      "size": 1046,
+      "sha256": "a3b48cdc62488efcdae58c0d5db009caaf30500b05bb6daeb43e072b58409923"
+    },
+    {
+      "path": "CHANGELOG_v1_5_2.md",
+      "size": 885,
+      "sha256": "827fae75e10e433cda272c008525fb9a06c38727cd9690482f36ecda04ae126d"
+    },
+    {
+      "path": "CHANGELOG_v1_6.md",
+      "size": 775,
+      "sha256": "749662881d72d28725a858eecdcec911a69dbb025783496201c9234111f311f5"
+    },
+    {
+      "path": "CHANGELOG_v1_7d.md",
+      "size": 1132,
+      "sha256": "12f3ac07b8eb5bef868de4ef423c305b21847561b9a19086f9a954e0d6cb859d"
+    },
+    {
+      "path": "CHANGELOG_v1_7d_1.md",
+      "size": 807,
+      "sha256": "979872c7c6fe9e390d0a44f4e051cff8a26d92477eb28dae00cb8f36e03f1567"
+    },
+    {
+      "path": "CHANGELOG_v1_7e.md",
+      "size": 736,
+      "sha256": "9559411154a2fea613f41eee564be4190af5e091452c9168c97f0ddd140c4bf0"
+    },
+    {
+      "path": "CHANGELOG_v1_8a.md",
+      "size": 745,
+      "sha256": "d7bb2066429b11cbfd0881f62f2c95f4eb253969b4093d70851ae19712318ecf"
+    },
+    {
+      "path": "CHANGELOG_v1_8b.md",
+      "size": 1323,
+      "sha256": "22e91bb0cfde5a8b6f8d4ffe6856031a0637b01098ac0080d6d133def896e6b1"
+    },
+    {
+      "path": "CHANGELOG_v1_8e.md",
+      "size": 822,
+      "sha256": "0dfb69558b6b5af81327ff57c6463e4a1c400caeb0cb2af02c9e4eb8afc65713"
+    },
+    {
+      "path": "CHANGELOG_v2_0b_1.md",
+      "size": 780,
+      "sha256": "703fdda98b35d13f60d9a5660fc07d691b672218045a571fd8b270bca80c9e21"
+    },
+    {
+      "path": "CHANGELOG_v2_0b_2.md",
+      "size": 607,
+      "sha256": "6b395a618b1c7808a9baa929a70d84ab499a0108d9e8670f044ac6e053c4b682"
+    },
+    {
+      "path": "CHANGELOG_v2_0b_3.md",
+      "size": 543,
+      "sha256": "d5a4f2652877ff412b912d6123d844bde4c70dacb1b944ccffc84273e488ecf0"
+    },
+    {
+      "path": "CHANGELOG_v2_0b_5.md",
+      "size": 1025,
+      "sha256": "f2e2c96145f68eb5510d1fe1f54d081da7d62852dd96475bc7f83de5f8159a98"
+    },
+    {
+      "path": "CHANGELOG_v2_1_1.md",
+      "size": 595,
+      "sha256": "e9caf54f24aba172718ff3c712ec52f9352dfb5e51b99d9ffe967bec5c5bbd67"
+    },
+    {
+      "path": "CHANGELOG_v2_1_3.md",
+      "size": 1960,
+      "sha256": "2543ad5f44c69b57691041a19d92465ef21dec873447a00d1638cf151d1d5499"
+    },
+    {
+      "path": "CHANGELOG_v2_1_4.md",
+      "size": 380,
+      "sha256": "0f04da49a49daf857c3e8769ceee69db258a248d13196d447837322499e21021"
+    },
+    {
+      "path": "CHANGELOG_v2_1_5.md",
+      "size": 466,
+      "sha256": "1cedf7747bd5a71f24b5a5048390867e8f76f931490e53259a570f9ded762f1e"
+    },
+    {
+      "path": "CHANGELOG_v2_1_6.md",
+      "size": 633,
+      "sha256": "152e2bd236b748af49deeda6fb0d83b361484d6b0df51199c746e36d2149c851"
+    },
+    {
+      "path": "MANIFEST_v1_4_1.json",
+      "size": 1917,
+      "sha256": "b406db2da13d074368fc2703925b420dc8b4241ebad3de498c4f7f409343e3d7"
+    },
+    {
+      "path": "MANIFEST_v1_5.json",
+      "size": 883,
+      "sha256": "cace1519a7c5acc8ff7dd66fa0a6ab90df6a908d538a6cf9bbfb4e0a5c4865e0"
+    },
+    {
+      "path": "MANIFEST_v1_5_1.json",
+      "size": 929,
+      "sha256": "acdcad14afb24d34cbd1db5450f9ab97c7e017a5b178b955debb5e8ebeef7e6f"
+    },
+    {
+      "path": "MANIFEST_v1_5_2.json",
+      "size": 2575,
+      "sha256": "368ace3f88e269379eb6e99f4754042b9427282d3e4053bb77d60f117f814efe"
+    },
+    {
+      "path": "MANIFEST_v1_6.json",
+      "size": 8923,
+      "sha256": "9e0873c6b8455bd25ff9c03f003bb79911ab7b212ebafde0e2f528fb309ce970"
+    },
+    {
+      "path": "MANIFEST_v1_7d.json",
+      "size": 9730,
+      "sha256": "f9a7a0d1ff4fd18fd9f6aed0dd39938e2d8ffd05a7c314516f4eca8c1888412d"
+    },
+    {
+      "path": "MANIFEST_v1_7d_1.json",
+      "size": 3766,
+      "sha256": "f4e56f2e97911342eede94f414ad8fd02bd75d5adb83b91b70e4b611ab7caa81"
+    },
+    {
+      "path": "MANIFEST_v1_7e.json",
+      "size": 15660,
+      "sha256": "811554ce37283a05a741599d91c4c9e691dbf61b6588174b4e5835cb837047a1"
+    },
+    {
+      "path": "MANIFEST_v1_8a.json",
+      "size": 12114,
+      "sha256": "d3b8d1a5d9459a1fda219e9d275df40a3e775624efc30a5ba49c2f645aadfd12"
+    },
+    {
+      "path": "MANIFEST_v1_8b.json",
+      "size": 12918,
+      "sha256": "88f364304dd8df25802f133ef240014d38b4d78fac870c1d0024b5cf7b3a7fd5"
+    },
+    {
+      "path": "MANIFEST_v1_8e.json",
+      "size": 19414,
+      "sha256": "540f5aeb41a5521d2e34e9483ef3d3c5fad6d417db9eea0a0745a2ea50ed1e99"
+    },
+    {
+      "path": "MANIFEST_v2_0b_1.json",
+      "size": 5169,
+      "sha256": "4b501fe4957dd4fb30eed0cc57d0d79dc48e98304d884b095c05f105bc16fcba"
+    },
+    {
+      "path": "MANIFEST_v2_0b_2.json",
+      "size": 351,
+      "sha256": "98e4d0112ab1b722a98e634f87e9caaca26258314054c2618851fee54faaf2fe"
+    },
+    {
+      "path": "MANIFEST_v2_0b_3.json",
+      "size": 329,
+      "sha256": "e95a568fd84f13044d52f9e4f620bb846565f7ed0c6bb540bd3e882915a8ee9b"
+    },
+    {
+      "path": "MANIFEST_v2_0b_5.json",
+      "size": 609,
+      "sha256": "5708c6a14e9d83ba05af56e47627501fd69706013b39411b62189bc74de7540c"
+    },
+    {
+      "path": "MANIFEST_v2_1_1.json",
+      "size": 733,
+      "sha256": "bad01ad48a7ac3efdcb572f00327b17884eefac40d368b3d6a450a48aad33bca"
+    },
+    {
+      "path": "MANIFEST_v2_1_3.json",
+      "size": 13401,
+      "sha256": "874587fc9ec322e0ec4cefeb480ead7fc3aeb8dbe1f36d542b54cf63bbd0cb21"
+    },
+    {
+      "path": "MANIFEST_v2_1_4.json",
+      "size": 405,
+      "sha256": "2d2544d28aa3a05c3ace3053911bd1a050362910628bcb3f19d30446267e2899"
+    },
+    {
+      "path": "MANIFEST_v2_1_5.json",
+      "size": 26070,
+      "sha256": "3354724d3050561f03069043d5f8a04c479007eb35a523643a240963834c5815"
+    },
+    {
+      "path": "MANIFEST_v2_1_6.json",
+      "size": 519,
+      "sha256": "07d62033d93731308f7db3c36e4ec5b0bd710243926659df0757a5ea688f2d08"
+    },
+    {
+      "path": "MOLPATH_DESIGNSYSTEM_v2_0a.md",
+      "size": 10735,
+      "sha256": "fd6ac68573dc37233dcdfb7296482a14b370eff85f8ab3503feadc0411341b3a"
+    },
+    {
+      "path": "MolPath_Case_Content_Master_v2_1_Batch1_expanded.xlsx",
+      "size": 217629,
+      "sha256": "4a11622c386598ebdf9e3d7ca6aec022ea90b8d30392c7941adeb5ed844e1b93"
+    },
+    {
+      "path": "QA_REPORT_v1_5_2.md",
+      "size": 1475,
+      "sha256": "a6eeedd0a3fa8b1f0078243ff483a29a88d61348ea0bd76db60779838febff78"
+    },
+    {
+      "path": "QA_REPORT_v1_6.md",
+      "size": 542,
+      "sha256": "4792ca7428e79362fae0e07bcad3299095c8575f3bfd00cb4bf238eeafc54779"
+    },
+    {
+      "path": "QA_REPORT_v1_7d.md",
+      "size": 694,
+      "sha256": "f506af75b6fecf0baaf0c7ce43df8e2e709db90916875fd5c054ab26fa385564"
+    },
+    {
+      "path": "QA_REPORT_v1_7d_1.md",
+      "size": 894,
+      "sha256": "8438885f0d90dd5d670638a4fb7b6143d91567939e23bc470ab1e36ca9b86414"
+    },
+    {
+      "path": "QA_REPORT_v1_7e.md",
+      "size": 1396,
+      "sha256": "f73bfd95ef9b24f9c5b98a783dceaeca794634cc6b63b8a06f0027a94c241c4f"
+    },
+    {
+      "path": "QA_REPORT_v1_8a.md",
+      "size": 861,
+      "sha256": "416ed18645b6578b0078d862fbaf424323747c9a3868887f90368e258e9efc1a"
+    },
+    {
+      "path": "QA_REPORT_v1_8b.md",
+      "size": 1135,
+      "sha256": "257e5c35b1b07c468afe51a6042509d7426e09f904f28d75f5209b1d1dd9b3d2"
+    },
+    {
+      "path": "QA_REPORT_v1_8e.md",
+      "size": 1349,
+      "sha256": "2296556b39f27908a0ec69801ef76cd8e81b4fbe63074af44384d2c6925c2f10"
+    },
+    {
+      "path": "QA_REPORT_v2_0b_1.md",
+      "size": 607,
+      "sha256": "72085530714ce4e666869d2639ebd1597156fa7e2269508c56992a2c521e504a"
+    },
+    {
+      "path": "QA_REPORT_v2_0b_2.md",
+      "size": 530,
+      "sha256": "86ae15300eabfa8cf133d59294fc51d940927c46b675ee42a0211a48423477cb"
+    },
+    {
+      "path": "QA_REPORT_v2_0b_3.md",
+      "size": 397,
+      "sha256": "3e88863124351f3fd17c7170530747672a3826c48bd446f0e78e44934dee04bb"
+    },
+    {
+      "path": "QA_REPORT_v2_0b_5.md",
+      "size": 921,
+      "sha256": "5f6d726abbf2ff29c38dfdd431d5cfbacaac74de8bd27e85e6b850b971b55dab"
+    },
+    {
+      "path": "QA_REPORT_v2_1_1.md",
+      "size": 1234,
+      "sha256": "2be6b5b6fc7bb8e51f26e993e57159188637f5bd2491ec2edd48614a67729b62"
+    },
+    {
+      "path": "QA_REPORT_v2_1_3.md",
+      "size": 1241,
+      "sha256": "92f1be6f26a1e7205cf9ac8bec781c02763e27d8e36dae91eaf8520c86ad8657"
+    },
+    {
+      "path": "QA_REPORT_v2_1_4.md",
+      "size": 721,
+      "sha256": "1480a923fd724d27c3fb12a98443284a6aed2b9fe05da9671793c5798451b5b2"
+    },
+    {
+      "path": "QA_REPORT_v2_1_5.md",
+      "size": 1052,
+      "sha256": "3ef5b390d3dd6890950dc42622af06a38a76743a2376a86c3b735a915da43b56"
+    },
+    {
+      "path": "QA_REPORT_v2_1_6.md",
+      "size": 869,
+      "sha256": "a78d8429890bc08ae0c40139ec9ae53840c7db306f4007f9ca1aa2cd9b828cf5"
+    },
+    {
+      "path": "README_START_HERE.md",
+      "size": 1002,
+      "sha256": "50147c10ffd11861a4b2d044bde5edbbc333d362e5ec7b1319eb68b2cc2fac26"
+    },
+    {
+      "path": "app/molpath_simulator_v1_4_universal_methods.html",
+      "size": 1918019,
+      "sha256": "90cb7b3245a5f254b282d6e64b37daaaff5e13e7e62c9456f1132c6bb35c04b0"
+    },
+    {
+      "path": "app/molpath_simulator_v1_5_1_methods_ui_patch.html",
+      "size": 2198840,
+      "sha256": "24a64ef3608fff7f995aaa0bed842f087b3a7d80dafc20f646139698e484f7ce"
+    },
+    {
+      "path": "app/molpath_simulator_v1_5_2_QA_freeze.html",
+      "size": 2198940,
+      "sha256": "134bb071dbf8703ee676354b71445fd21de8a6c79519dbb09c8f867e099dc7d0"
+    },
+    {
+      "path": "app/molpath_simulator_v1_5_harmonized_case_library.html",
+      "size": 2191553,
+      "sha256": "f94a7a371658491741cc9dc5a24e20abc2191546dd03ee1981ca0ea0176af31e"
+    },
+    {
+      "path": "app/molpath_simulator_v1_6_course_session_logic.html",
+      "size": 2221367,
+      "sha256": "adf8a1e3fb75f10a9e28778471d8db2657413b415fa1c41a173a236dac3d65bf"
+    },
+    {
+      "path": "app/molpath_simulator_v1_7d_1_clinical_reasoning_fix.html",
+      "size": 2303104,
+      "sha256": "55530a6c0112edfdf0aac0c2cd79bba5798e6b83f258dee1a787a64acee1aabb"
+    },
+    {
+      "path": "app/molpath_simulator_v1_7d_signature_cases_patch.html",
+      "size": 2303104,
+      "sha256": "55530a6c0112edfdf0aac0c2cd79bba5798e6b83f258dee1a787a64acee1aabb"
+    },
+    {
+      "path": "app/molpath_simulator_v1_7e_QA_freeze.html",
+      "size": 2303104,
+      "sha256": "55530a6c0112edfdf0aac0c2cd79bba5798e6b83f258dee1a787a64acee1aabb"
+    },
+    {
+      "path": "app/molpath_simulator_v1_8a_reports_patch.html",
+      "size": 2323421,
+      "sha256": "f7835bdb36072a2f19ede2c8ff621ce54aa2c4170c23b7bd7067a1a9018f15b3"
+    },
+    {
+      "path": "app/molpath_simulator_v1_8b_teaching_course_reports.html",
+      "size": 2350015,
+      "sha256": "70f90b9b1706b1dcf04715ae9b2465f49bcac9bdbbf27cccbedf63cdfca5c209"
+    },
+    {
+      "path": "app/molpath_simulator_v1_8e_QA_freeze.html",
+      "size": 2349997,
+      "sha256": "65d973d921f29da43f7892eaabe7daadcfad34e9cd75786307f977665557eba3"
+    },
+    {
+      "path": "app/molpath_simulator_v2_0b_1_layout_hotfix.html",
+      "size": 2372526,
+      "sha256": "403a8c7457ea8ccd2a8bb8aa2735048f5da690168bad170abf446b5fe6367e7c"
+    },
+    {
+      "path": "app/molpath_simulator_v2_0b_2_layout_cleanup.html",
+      "size": 2372585,
+      "sha256": "45e289ad9703a658a48ba869f8d93570bc1f04eb7467c430435298772fb5814b"
+    },
+    {
+      "path": "app/molpath_simulator_v2_0b_3_branding_logo_patch.html",
+      "size": 2415143,
+      "sha256": "360fea5c7cd33c5d62f2c93eadf27b1ec9bbb0c75807bec473db33d8a391d02a"
+    },
+    {
+      "path": "app/molpath_simulator_v2_1_3_complex_phase_crc_bundle_patch.html",
+      "size": 2557364,
+      "sha256": "eb1a02e9461d1c6444b86c20fbc9df07ced2eeba28fc28af2b282cff6aed4f1f"
+    },
+    {
+      "path": "archive/README_archive.md",
+      "size": 124,
+      "sha256": "4fd3bd3d2c391974697a8adea70969cf223ad7ae6daa2c7d282419d0ee5d0af2"
+    },
+    {
+      "path": "archive/molpath_simulator_prototype.html",
+      "size": 61774,
+      "sha256": "a801d7686156192e68e724d109e7afce38ea30e07693654ab725236127dba89b"
+    },
+    {
+      "path": "archive/molpath_simulator_prototype_v2_branding.html",
+      "size": 65872,
+      "sha256": "2286239ef5875be3cc97da41694c97c1a254e012cc0c1377c814f98cd3fd2202"
+    },
+    {
+      "path": "archive/molpath_simulator_prototype_v3_layout.html",
+      "size": 2464373,
+      "sha256": "5521b4f3993e0b578e8a19b6ffcecc26df516fd60595f118c5db69c820ac69b5"
+    },
+    {
+      "path": "archive/molpath_simulator_v0_4_1_request_engine_fixed.html",
+      "size": 1433322,
+      "sha256": "d01642b4ecf9c763ea3f1124a6d358a41a3cf574cf241225d84a6522a8444fc5"
+    },
+    {
+      "path": "archive/molpath_simulator_v0_4_request_engine.html",
+      "size": 1433319,
+      "sha256": "5edc7f2f9f52c66962474aab2d527e0eebf03cd5f94ba023fb9b84dac301c802"
+    },
+    {
+      "path": "archive/molpath_simulator_v0_5_case_engine.html",
+      "size": 31566,
+      "sha256": "3d1452d0266d63570ad4263c66fe6dda7bd23d18ae4ad3cd9c64901f4c302e9d"
+    },
+    {
+      "path": "archive/molpath_simulator_v0_6_1_followup_engine.html",
+      "size": 48724,
+      "sha256": "47591e3851d8d51da75fd040545e59c17b12a4fcbead7ca7bdb590a3c792f732"
+    },
+    {
+      "path": "archive/molpath_simulator_v0_6_crc_engine.html",
+      "size": 43526,
+      "sha256": "21259b1228c18a83511f4e2f9c8b18a867a00bcbe1d567af950f480a8b13ccd9"
+    },
+    {
+      "path": "archive/molpath_simulator_v0_7_ovar_engine.html",
+      "size": 60629,
+      "sha256": "29efd188f88ccf8d545e3d3c3a00229da0813c952050a530b512a741901feaa2"
+    },
+    {
+      "path": "archive/molpath_simulator_v0_8_lab_qm_engine.html",
+      "size": 1455678,
+      "sha256": "e0df8c35d82436155c97371cb6cf11543a13e29fbdd08826bff0c806e01244b5"
+    },
+    {
+      "path": "archive/molpath_simulator_v0_9_res_engine.html",
+      "size": 1471924,
+      "sha256": "87ce0837771966ce19a025ec08e885fea413da0bb3e15f7575d94f0a1baaa475"
+    },
+    {
+      "path": "archive/molpath_simulator_v1_0_core12_engine.html",
+      "size": 1509712,
+      "sha256": "000226f4cbc3560074b34b793461ed8ca0a1ada76d8c9dc40af395f57a1e9070"
+    },
+    {
+      "path": "archive/molpath_simulator_v1_1_1_sidebar_layout.html",
+      "size": 1518905,
+      "sha256": "47e1c514fdabe4f7f03575d1cc409644ac5d845139b255103fdc0fe1b3625121"
+    },
+    {
+      "path": "archive/molpath_simulator_v1_1_learning_assessment_modes.html",
+      "size": 1518553,
+      "sha256": "be515daca432311c090237e0263968977f8858155a377e14f009b0e5a32a9311"
+    },
+    {
+      "path": "archive/molpath_simulator_v1_2_result_reports.html",
+      "size": 1534649,
+      "sha256": "99c6bef11c60681ea9154d8067279411045acaff5c6c28375b1eee53d501df91"
+    },
+    {
+      "path": "archive/molpath_simulator_v1_3_full_inventory.html",
+      "size": 1908791,
+      "sha256": "66e74768a278297d12da6ba1b4aaa6f18563aacf8562a0cf4a6a0a0c5a21c36b"
+    },
+    {
+      "path": "archive/molpath_simulator_v1_4_universal_methods.html",
+      "size": 1918907,
+      "sha256": "582dbdef961ae377b7ee73cdb5844d1e8b6fc1c4e63698cef98c02b8cc646f51"
+    },
+    {
+      "path": "archive/molpath_simulator_v1_5_1_methods_ui_patch.html",
+      "size": 2198857,
+      "sha256": "bd90b8079b6a8112439eac7ed4be808cc61a3b89afd048e3346f45660b832a77"
+    },
+    {
+      "path": "archive/molpath_simulator_v1_5_2_QA_freeze.html",
+      "size": 2198940,
+      "sha256": "134bb071dbf8703ee676354b71445fd21de8a6c79519dbb09c8f867e099dc7d0"
+    },
+    {
+      "path": "archive/molpath_simulator_v1_5_harmonized_case_library.html",
+      "size": 2191570,
+      "sha256": "d9fd304eb9963cbc221a527c5faaec1cf09f1d93003ea864f492b9abec1bba60"
+    },
+    {
+      "path": "archive/molpath_simulator_v1_6_course_session_logic.html",
+      "size": 2221367,
+      "sha256": "adf8a1e3fb75f10a9e28778471d8db2657413b415fa1c41a173a236dac3d65bf"
+    },
+    {
+      "path": "archive/molpath_simulator_v1_7d_1_clinical_reasoning_fix.html",
+      "size": 2303104,
+      "sha256": "55530a6c0112edfdf0aac0c2cd79bba5798e6b83f258dee1a787a64acee1aabb"
+    },
+    {
+      "path": "archive/molpath_simulator_v1_7e_QA_freeze.html",
+      "size": 2303104,
+      "sha256": "55530a6c0112edfdf0aac0c2cd79bba5798e6b83f258dee1a787a64acee1aabb"
+    },
+    {
+      "path": "archive/molpath_simulator_v1_8a_reports_patch.html",
+      "size": 2323421,
+      "sha256": "f7835bdb36072a2f19ede2c8ff621ce54aa2c4170c23b7bd7067a1a9018f15b3"
+    },
+    {
+      "path": "archive/molpath_simulator_v2_0b_3_branding_logo_patch.html",
+      "size": 2415143,
+      "sha256": "360fea5c7cd33c5d62f2c93eadf27b1ec9bbb0c75807bec473db33d8a391d02a"
+    },
+    {
+      "path": "archive/molpath_simulator_v2_0b_5_safe_layout_patch.html",
+      "size": 2426305,
+      "sha256": "7348dec344155a9197a7d41ff89de236d7983bb970f3a94864a67b33ec23bf6d"
+    },
+    {
+      "path": "assets/logos/logo_eg.png",
+      "size": 785004,
+      "sha256": "2c19b1d393e33309995f8d227fc1542afe5c1f3ba0e625cfc3d32e3bb627bfef"
+    },
+    {
+      "path": "assets/logos/logo_eg_transparent.png",
+      "size": 785004,
+      "sha256": "2c19b1d393e33309995f8d227fc1542afe5c1f3ba0e625cfc3d32e3bb627bfef"
+    },
+    {
+      "path": "assets/logos/logo_patho.png",
+      "size": 51447,
+      "sha256": "272641ba367ac66dfb9d8a5c7a68dd0cbda1b9b5b2a7bf90d66bcea9d8880302"
+    },
+    {
+      "path": "assets/profile/Fabibild1_new.jpeg",
+      "size": 240237,
+      "sha256": "00df77cb0798a4f1cb3e91310742ce422d47150df45d00ba6f8c970f6bbcbd7f"
+    },
+    {
+      "path": "data/case_audit_v1_5_AP1b_final.csv",
+      "size": 145102,
+      "sha256": "960de005c6e15210951f1a06c84baa66e96a243df677ac8e251645d514304dcc"
+    },
+    {
+      "path": "data/case_metadata_v1_5_AP1b_final.json",
+      "size": 105925,
+      "sha256": "55daaaef3113885b3b5bc0c84d2bbdeefb106f4720cfd04c5d8d8929ccbcd3da"
+    },
+    {
+      "path": "data/cases_v1_3.json",
+      "size": 560431,
+      "sha256": "aaed62f7091c9706f0ea1cc6a5526a74ce7d5ca696d366f14ffbf99d043d7723"
+    },
+    {
+      "path": "data/cases_v1_4_universal_methods.json",
+      "size": 560431,
+      "sha256": "aaed62f7091c9706f0ea1cc6a5526a74ce7d5ca696d366f14ffbf99d043d7723"
+    },
+    {
+      "path": "data/catalog_v1_3.json",
+      "size": 20076,
+      "sha256": "4001e0e203f79b46835e53ea09f9d748176f341536cc1f8767ddb0e040d22698"
+    },
+    {
+      "path": "data/catalog_v1_4_universal_methods.json",
+      "size": 20076,
+      "sha256": "4001e0e203f79b46835e53ea09f9d748176f341536cc1f8767ddb0e040d22698"
+    },
+    {
+      "path": "data/clinical_reasoning_gates_v1_5_AP1b_final.json",
+      "size": 88087,
+      "sha256": "deece3a9b5596e0463b8dcb7ddc902338cbd8f2369404d42b2d235c4e2a974e8"
+    },
+    {
+      "path": "data/courses_v1_6.json",
+      "size": 3376,
+      "sha256": "e800857cad64ba18b12de410ab4d2cabc1b869011864c35b7a6f5668d3c76d41"
+    },
+    {
+      "path": "data/deep_dive_cases_v1_7b.json",
+      "size": 80261,
+      "sha256": "6a7a097b61ce39a2883f6c1148e99bd9748a051238ac3cc18ede7fde49a86062"
+    },
+    {
+      "path": "data/deep_dive_integration_index_v1_7b.json",
+      "size": 2243,
+      "sha256": "000cd2bea2607bb9d4906f4adb9af5c217c19bb002dde1ecee0c98de77f8688a"
+    },
+    {
+      "path": "data/fallinventar_rows_imported_v1_3.json",
+      "size": 26867,
+      "sha256": "bffb22ca4f88316badc373203a3e3874cd0def7eea4950a34856291844f61c5f"
+    },
+    {
+      "path": "data/method_rule_classes_v1_4.json",
+      "size": 382,
+      "sha256": "58b5c9f2424ac55635a5328945fec07cae2b669f64500905378085ffb19949db"
+    },
+    {
+      "path": "data/method_rules_v1_5_AP1b_final.json",
+      "size": 58815,
+      "sha256": "8b4b6bc732763498df7006a24471956234fcc3c7ec0fe83c665c05bc0496cfbb"
+    },
+    {
+      "path": "data/score_caps_v1_5_AP1b_final.json",
+      "size": 54680,
+      "sha256": "0e53f47bb860b2ccb6f4b20bac0d5a60c08d6aa3d2cd1125999a7a5cdf7ae5a0"
+    },
+    {
+      "path": "deep_dive_cases_v2_1_1_batch1_integrated.json",
+      "size": 30900,
+      "sha256": "cc8581b982e2bc7e5e36f3272d805512b9f7147eb2ed8a9d534f789c424309ad"
+    },
+    {
+      "path": "design_tokens_v2_0a.json",
+      "size": 1982,
+      "sha256": "5d226fd5940d20a581afec0c26875bfe10e9ea4bb62d9552c6104b78967b3e93"
+    },
+    {
+      "path": "docs/DEEP_DIVE_STORIES_MASTER_v1_7b.md",
+      "size": 1402,
+      "sha256": "9dc4f5846f5617a32b7a5096b1a98b83f9e25c47f046d08f336ac6cc4bed785e"
+    },
+    {
+      "path": "docs/curation/AP1b_DECISION_LOG.md",
+      "size": 3499,
+      "sha256": "868f34c0f34dacbcf4781381c1b02e57e9957fcf27d37bb0f253941d67e8c87c"
+    },
+    {
+      "path": "docs/curation/CHANGELOG_case_audit_v1_5_AP1b.md",
+      "size": 1871,
+      "sha256": "2c3d07a023e8628d4c7b4eb252cfdfa39c9aae96484854789c9c8303011e5b9c"
+    },
+    {
+      "path": "docs/curation/molpath_simulator_v1_5_AP1b_final.xlsx",
+      "size": 73405,
+      "sha256": "c1623c4aeb5931911ff3c6cef6c63881349a25992ff2ba123e2a778a3d5084e2"
+    },
+    {
+      "path": "docs/curation/v1_5_IMPLEMENTATION_SPEC.md",
+      "size": 2269,
+      "sha256": "c38b34e4bf41932164cd11bce524031f7fc68af5b54e8423390f1dba4808638e"
+    },
+    {
+      "path": "docs/design/MOLPATH_DESIGNSYSTEM_v2_0a.md",
+      "size": 10735,
+      "sha256": "fd6ac68573dc37233dcdfb7296482a14b370eff85f8ab3503feadc0411341b3a"
+    },
+    {
+      "path": "docs/design/design_tokens_v2_0a.json",
+      "size": 1982,
+      "sha256": "5d226fd5940d20a581afec0c26875bfe10e9ea4bb62d9552c6104b78967b3e93"
+    },
+    {
+      "path": "docs/design/molpath_design_tokens_v2_0a.css",
+      "size": 3346,
+      "sha256": "b7eb0c0f1427b985514406b1e555549830b4c7c1492578f61e01d10fe94a67ff"
+    },
+    {
+      "path": "docs/sources/Fallinventar.docx",
+      "size": 38594,
+      "sha256": "fd1b8c8e6679d340ec265044a0bba201fe811fb52eb148271f6baf664d51c23e"
+    },
+    {
+      "path": "docs/templates/Auftrag-Histo-4.pdf",
+      "size": 370371,
+      "sha256": "fbc4015666f57e12c788d451c9bace02f61500a31490542ecd2f8e089f058787"
+    },
+    {
+      "path": "docs/templates/Auftrag-NGS-01-25-V2.pdf",
+      "size": 150531,
+      "sha256": "10e6afb003e1b3e2dac34fe5255ccbd28ffc5a1333ed114cedfde34feade74f5"
+    },
+    {
+      "path": "docs/templates/Auftrag-PCR-01-25-V2.pdf",
+      "size": 3358463,
+      "sha256": "ca9756eb5740e9262bfae8ff0282f0c6c873714b54bdd6153d7c24a641af4973"
+    },
+    {
+      "path": "exports/README_exports.md",
+      "size": 116,
+      "sha256": "d4d065a793d2bc207b6138d7d3a7dbb5592ec69a4e395206890f471b9a4d1e65"
+    },
+    {
+      "path": "index.html",
+      "size": 2689655,
+      "sha256": "bfb95b218adb33caf1b12592f83b1829d196344007ebd8826e822c6cc6a8c5cd"
+    },
+    {
+      "path": "molpath_design_tokens_v2_0a.css",
+      "size": 3346,
+      "sha256": "b7eb0c0f1427b985514406b1e555549830b4c7c1492578f61e01d10fe94a67ff"
+    },
+    {
+      "path": "molpath_simulator_v2_1_4_case_switch_wire_fix.html",
+      "size": 2601065,
+      "sha256": "7716c593fffee077c2dc75b82d3c95161fc5bc20130cf5f13d08ca201cae68e7"
+    },
+    {
+      "path": "molpath_simulator_v2_1_5_syntax_leak_fix.html",
+      "size": 2600959,
+      "sha256": "2c947e2c27f0adc6ee2417b4109dd43f5569420836a524c414dfd6868ce846ed"
+    },
+    {
+      "path": "review/deep_dive_quick_review_v1_7b.csv",
+      "size": 8743,
+      "sha256": "497995ae5c7fe6e027fad815c41397c9c48a9bccff34dbbfd77ef5e4001584cb"
+    },
+    {
+      "path": "review/deep_dive_review_table_v1_7b.csv",
+      "size": 2678,
+      "sha256": "ae65e7250b1e20930b73ec4dd5f259e04db7a7e6b6ef2b301363fa012150ef01"
+    },
+    {
+      "path": "v152_syntax_check.json",
+      "size": 53,
+      "sha256": "53b3790c87ca15dba61fc27495cf997e00b1a5fabc356f5eab167ebf320d4ece"
+    },
+    {
+      "path": "v16_syntax_check.json",
+      "size": 148,
+      "sha256": "64fd1ae62224e5c8dfd83f7a85e05400e4112767a96f46815af0334ff332e54b"
+    },
+    {
+      "path": "v17d_syntax_check.json",
+      "size": 102,
+      "sha256": "69e80fb8268a3b90044865e9ae0edae7401db123f48dc72525ae16e24809f52f"
+    },
+    {
+      "path": "v17e_syntax_check.json",
+      "size": 149,
+      "sha256": "941bae1d014aa169ff96ededeac50dfffcf8780b6cbb688f27b51c65ea6e6048"
+    },
+    {
+      "path": "v18a_syntax_check.json",
+      "size": 145,
+      "sha256": "175fd10ac2adb31b4035b79bc4ffcecc35820dd5230756a4c67d08a978a22d0a"
+    },
+    {
+      "path": "v18b_syntax_check.json",
+      "size": 138,
+      "sha256": "e692791dbc3b0079e1334219b6ced39e8f50fc9f1e339e1b89124cfba4276665"
+    },
+    {
+      "path": "v18e_syntax_check.json",
+      "size": 148,
+      "sha256": "f75dd2a940dee97347c60f8e7baccb97db4a8ba6728805ce8336bf789579b29f"
+    },
+    {
+      "path": "v1_5_final/index.html",
+      "size": 2198940,
+      "sha256": "134bb071dbf8703ee676354b71445fd21de8a6c79519dbb09c8f867e099dc7d0"
+    },
+    {
+      "path": "v1_7_final/README_v1_7_final.md",
+      "size": 420,
+      "sha256": "f942f50fa9d5b3a6239f5bf088dc3206b65a16ebb278dce2a4f8184328e41c13"
+    },
+    {
+      "path": "v1_7_final/index.html",
+      "size": 2303104,
+      "sha256": "55530a6c0112edfdf0aac0c2cd79bba5798e6b83f258dee1a787a64acee1aabb"
+    },
+    {
+      "path": "v1_8_final/README_v1_8_final.md",
+      "size": 411,
+      "sha256": "d9be7ea43681708ad1676e62b6be48849b55e98ab900d1ff94962c57f5563d59"
+    },
+    {
+      "path": "v1_8_final/index.html",
+      "size": 2349997,
+      "sha256": "65d973d921f29da43f7892eaabe7daadcfad34e9cd75786307f977665557eba3"
+    },
+    {
+      "path": "v20b3_syntax_check.json",
+      "size": 53,
+      "sha256": "53b3790c87ca15dba61fc27495cf997e00b1a5fabc356f5eab167ebf320d4ece"
+    }
+  ]
+}

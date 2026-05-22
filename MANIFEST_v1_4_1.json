@@ -1,0 +1,52 @@
+{
+  "package": "molpath_simulator_v1_4_1_universal_methods_full_package",
+  "active_version": "v1.4 Universal Method Catalogue",
+  "start_file": "index.html",
+  "contains": {
+    "current_app": [
+      "index.html",
+      "app/molpath_simulator_v1_4_universal_methods.html"
+    ],
+    "data": [
+      "data/catalog_v1_3.json",
+      "data/cases_v1_3.json",
+      "data/fallinventar_rows_imported_v1_3.json",
+      "data/catalog_v1_4_universal_methods.json",
+      "data/cases_v1_4_universal_methods.json",
+      "data/method_rule_classes_v1_4.json"
+    ],
+    "assets": [
+      "assets/logos/logo_patho.png",
+      "assets/logos/logo_eg.png",
+      "assets/profile/Fabibild1_new.jpeg"
+    ],
+    "docs": [
+      "docs/templates/Auftrag-Histo-4.pdf",
+      "docs/templates/Auftrag-NGS-01-25-V2.pdf",
+      "docs/templates/Auftrag-PCR-01-25-V2.pdf",
+      "docs/sources/Fallinventar.docx"
+    ],
+    "archive_html_versions": [
+      "molpath_simulator_prototype.html",
+      "molpath_simulator_prototype_v2_branding.html",
+      "molpath_simulator_prototype_v3_layout.html",
+      "molpath_simulator_v0_4_request_engine.html",
+      "molpath_simulator_v0_4_1_request_engine_fixed.html",
+      "molpath_simulator_v0_5_case_engine.html",
+      "molpath_simulator_v0_6_crc_engine.html",
+      "molpath_simulator_v0_6_1_followup_engine.html",
+      "molpath_simulator_v0_7_ovar_engine.html",
+      "molpath_simulator_v0_8_lab_qm_engine.html",
+      "molpath_simulator_v0_9_res_engine.html",
+      "molpath_simulator_v1_0_core12_engine.html",
+      "molpath_simulator_v1_1_learning_assessment_modes.html",
+      "molpath_simulator_v1_1_1_sidebar_layout.html",
+      "molpath_simulator_v1_2_result_reports.html",
+      "molpath_simulator_v1_3_full_inventory.html"
+    ],
+    "empty_runtime_folders": [
+      "exports/"
+    ]
+  },
+  "note": "exports is intentionally empty and reserved for user-generated reports/downloads."
+}

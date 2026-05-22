@@ -1,0 +1,14 @@
+{
+  "version": "v2.0b.2 Layout Cleanup",
+  "base": "v2.0b.1 Layout Hotfix / v1.8e QA Freeze",
+  "files": {
+    "index.html": "molpath_simulator_v2_0b_2_layout_cleanup.html"
+  },
+  "changes": [
+    "remove_obsolete_roadmap",
+    "fix_empty_topbar_case_badge",
+    "fix_asset_scope",
+    "fix_dashboard_case_counts"
+  ],
+  "omissions": "none intended"
+}

@@ -1,0 +1,28 @@
+{
+  "version": "v1.5_harmonized_case_library",
+  "created": "2026-05-19T08:44:44",
+  "base": "v1.4.1 universal methods full package",
+  "includes": [
+    "all v1.4.1 functionality",
+    "91 cases",
+    "71 methods",
+    "AP1b final audit artifacts",
+    "clinical reasoning gates",
+    "score caps",
+    "method rules",
+    "assets",
+    "templates",
+    "archive",
+    "exports placeholder"
+  ],
+  "files": {
+    "index": "index.html",
+    "app": "app/molpath_simulator_v1_5_harmonized_case_library.html",
+    "audit": "data/case_audit_v1_5_AP1b_final.csv",
+    "metadata": "data/case_metadata_v1_5_AP1b_final.json",
+    "gates": "data/clinical_reasoning_gates_v1_5_AP1b_final.json",
+    "score_caps": "data/score_caps_v1_5_AP1b_final.json",
+    "method_rules": "data/method_rules_v1_5_AP1b_final.json"
+  },
+  "validated": "JavaScript syntax checked with node --check after patch"
+}

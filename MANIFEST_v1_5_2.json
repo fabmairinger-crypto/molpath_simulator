@@ -1,0 +1,54 @@
+{
+  "version": "v1.5.2",
+  "name": "MolPath Simulator – QA Freeze",
+  "base_version": "v1.5.1 Methods UI Patch",
+  "entrypoint": "index.html",
+  "main_app": "app/molpath_simulator_v1_5_2_QA_freeze.html",
+  "release_type": "QA freeze / AP1 finalization",
+  "feature_changes": "No new functional features; versioning, QA documentation, manifest, archive/final package structure.",
+  "features_preserved": [
+    "91 cases",
+    "MTB/LAB/RES domains",
+    "Learning/Training/Assessment/Instructor modes",
+    "Clinical reasoning gates",
+    "Score caps and combination logic",
+    "Universal method catalogue",
+    "Method search and category filter",
+    "Collapsible method categories",
+    "Rule filter only in learning and instructor mode",
+    "Result reports",
+    "Instructor reports",
+    "JSON export",
+    "Assets and templates",
+    "Archive and exports folders",
+    "AP1b final curation data"
+  ],
+  "qa_status": {
+    "assessment_no_solution_leak": "checked_ok",
+    "complex_twist_section": "checked_ok",
+    "methods_ui_complete": "checked_ok",
+    "method_rule_visibility_by_mode": "checked_ok",
+    "clinical_reasoning_gates": "sample_checked_ok",
+    "score_caps_reports": "sample_checked_ok",
+    "package_structure": "checked_ok",
+    "javascript_syntax_check": "checked_ok"
+  },
+  "file_hashes": {
+    "index.html": "134bb071dbf8703ee676354b71445fd21de8a6c79519dbb09c8f867e099dc7d0",
+    "app/molpath_simulator_v1_5_2_QA_freeze.html": "134bb071dbf8703ee676354b71445fd21de8a6c79519dbb09c8f867e099dc7d0",
+    "QA_REPORT_v1_5_2.md": "a6eeedd0a3fa8b1f0078243ff483a29a88d61348ea0bd76db60779838febff78",
+    "CHANGELOG_v1_5_2.md": "827fae75e10e433cda272c008525fb9a06c38727cd9690482f36ecda04ae126d",
+    "data/case_audit_v1_5_AP1b_final.csv": "960de005c6e15210951f1a06c84baa66e96a243df677ac8e251645d514304dcc",
+    "data/case_metadata_v1_5_AP1b_final.json": "55daaaef3113885b3b5bc0c84d2bbdeefb106f4720cfd04c5d8d8929ccbcd3da",
+    "data/clinical_reasoning_gates_v1_5_AP1b_final.json": "deece3a9b5596e0463b8dcb7ddc902338cbd8f2369404d42b2d235c4e2a974e8",
+    "data/score_caps_v1_5_AP1b_final.json": "0e53f47bb860b2ccb6f4b20bac0d5a60c08d6aa3d2cd1125999a7a5cdf7ae5a0",
+    "data/method_rules_v1_5_AP1b_final.json": "8b4b6bc732763498df7006a24471956234fcc3c7ec0fe83c665c05bc0496cfbb",
+    "v152_syntax_check.json": "53b3790c87ca15dba61fc27495cf997e00b1a5fabc356f5eab167ebf320d4ece"
+  },
+  "changes": [
+    "QA freeze marker added",
+    "Documentation and manifest added",
+    "Duplicate totals() function header cleaned up",
+    "No intentional feature omissions"
+  ]
+}

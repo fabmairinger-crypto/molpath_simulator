@@ -1,0 +1,29 @@
+{
+  "version": "v1.5.1",
+  "name": "MolPath Simulator – Methods UI Patch",
+  "base_version": "v1.5 Harmonized Case Library",
+  "entrypoint": "index.html",
+  "main_app": "app/molpath_simulator_v1_5_1_methods_ui_patch.html",
+  "included_previous_version": "archive/molpath_simulator_v1_5_harmonized_case_library.html",
+  "features_preserved": [
+    "91 cases",
+    "MTB/LAB/RES domains",
+    "Learning/Training/Assessment/Instructor modes",
+    "Clinical reasoning gates",
+    "Score caps and combination logic",
+    "Universal method catalogue",
+    "Method rules",
+    "Result reports",
+    "Instructor reports",
+    "JSON export",
+    "Assets and templates",
+    "Archive and exports folders"
+  ],
+  "changes": [
+    "Restored method search UI",
+    "Restored method category filter",
+    "Rule filter visible only in learning and instructor mode",
+    "Collapsible method categories",
+    "Syntax cleanup for totals()"
+  ]
+}
