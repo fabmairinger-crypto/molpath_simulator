@@ -1,40 +1,11 @@
-# MolPath Simulator v1.8e – QA-Freeze
+# MolPath Simulator v2.2.4a – Start here
 
-Start: `index.html` öffnen.
+Open:
 
-Dieser Stand ist der stabile v1.8-Abschlussstand nach v1.8b-Funktionalitätsprüfung.
+`molpath_simulator_v2_2_4a_translation_quarantine.html`
 
-Enthalten sind Fallbibliothek, Kursmodus, Signature Cases, Berichte 2.0, Teaching Sheets und Kursbericht 2.0.
+This build intentionally restores the last clean translation state while retaining the current application baseline. The defective v2.2.4 translation additions are archived only for audit purposes in:
 
+`quarantine/i18n_additions_v2_2_4_REJECTED_DO_NOT_LOAD.json`
 
----
-
-Vorherige README:
-
-# MolPath Simulator v1.8b – Teaching Sheets + Kursbericht 2.0
-
-Start: `index.html` im Browser öffnen.
-
-## Neu in v1.8b
-
-- Teaching Sheet pro Fall
-- Kursbericht 2.0 nur im Kursmodus
-- Kursdatenexport im Kursmodus
-- Domänenprofil für neu abgeschlossene Kursfälle
-- Export-/Berichtsbereich erweitert
-
-## Weiterhin enthalten
-
-- 91 Fälle
-- 8 Signature-/Deep-Dive-Fälle
-- Kurs-/Session-Logik
-- Methoden-UI mit Suche, Filtern und Klappboxen
-- Clinical-Reasoning-Gates
-- Score-Caps / Method Rules
-- Fallbericht 2.0 und Dozentenbericht 2.0
-- Archive, Exports, Daten, Assets und Templates
-
-## Sichtbarkeit
-
-- Teaching Sheet: nach Fallabschluss; im Dozentenmodus jederzeit.
-- Kursbericht 2.0: nur im Kursmodus.
+Do not copy or inject that JSON into the app. The next production step is the hash-based master translation registry and production workbook.

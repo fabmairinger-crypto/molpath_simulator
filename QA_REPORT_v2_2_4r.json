@@ -1,0 +1,41 @@
+{
+  "version": "v2.2.4r RES Omics Signature 03 Translation",
+  "case_id": "RES_OMICS_001_v1_0",
+  "base_index_sha256": "cdfa9354143567dfe362196f4848d01f0bef6e8dacb0b1d8b9fbdab9ad9a716a",
+  "patched_index_sha256": "74f8225ff015cf1406ff66804687e4ed634d2de2a14f0c34cfc3dc0405810b47",
+  "translation_messages": 86,
+  "runtime_locations": 96,
+  "languages": [
+    "en",
+    "ro",
+    "el",
+    "es",
+    "fr"
+  ],
+  "syntax_scripts_total": 28,
+  "syntax_pass": true,
+  "isolation_pass": true,
+  "source_presence": {
+    "base_case": true,
+    "metadata": true,
+    "reasoning_gate": true
+  },
+  "shape_errors": [],
+  "protected_token_errors": [],
+  "runtime_language_cycle": [
+    "de",
+    "en",
+    "ro",
+    "el",
+    "es",
+    "fr",
+    "de"
+  ],
+  "runtime_model_cycle_pass": true,
+  "curation_reference": "Deep Dive 08 RES/Hypothesis terminology",
+  "notes": [
+    "Signature03 script inserted outside all template strings and before </body>.",
+    "No score, correctness flag, ID, logic or method identifier changed.",
+    "Research display labels are translated through the exact-message dictionary without renaming runtime object keys."
+  ]
+}

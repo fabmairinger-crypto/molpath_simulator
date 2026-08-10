@@ -1,0 +1,153 @@
+{
+  "static": {
+    "dd10_marker_count": 1,
+    "case_id_count": 36,
+    "old_version_count": 1,
+    "new_version_count": 16,
+    "deepdive09_present": true,
+    "deepdive08_present": true,
+    "deepdive01_present": true,
+    "method_patch_present": true,
+    "new_mutation_observer_literal": false
+  },
+  "runtime": {
+    "attempted": true,
+    "passed": true,
+    "node_syntax": true,
+    "language_checks": {
+      "en": {
+        "title": "High-grade serous ovarian carcinoma → BRCA/HRD/PARP/germline context",
+        "expected": "High-grade serous ovarian carcinoma → BRCA/HRD/PARP/germline context",
+        "twist": "Pathogenic BRCA1 variant ≠ automatically a robust finding",
+        "expectedTwist": "Pathogenic BRCA1 variant ≠ automatically a robust finding",
+        "brief": "61-year-old woman, HGSOC FIGO IIIC, resection three years ago. Current progression/recurrence and renewed systemic treatment planning with the question of PARP/HRD/BRCA context. Old FFPE resection specimen: tumour cell content approx. 70%, DNA formally sufficient, limited residual material. Initial tumour BRCA/HRR/HRD analysis shows a formally pathogenic BRCA1 loss-of-function variant, but also a pronounced C>T/G>A pattern.",
+        "expectedBrief": "61-year-old woman, HGSOC FIGO IIIC, resection three years ago. Current progression/recurrence and renewed systemic treatment planning with the question of PARP/HRD/BRCA context. Old FFPE resection specimen: tumour cell content approx. 70%, DNA formally sufficient, limited residual material. Initial tumour BRCA/HRR/HRD analysis shows a formally pathogenic BRCA1 loss-of-function variant, but also a pronounced C>T/G>A pattern.",
+        "ok": true
+      },
+      "ro": {
+        "title": "Carcinom ovarian seros de grad înalt → context BRCA/HRD/PARP/linie germinală",
+        "expected": "Carcinom ovarian seros de grad înalt → context BRCA/HRD/PARP/linie germinală",
+        "twist": "Variantă BRCA1 patogenă ≠ rezultat automat robust",
+        "expectedTwist": "Variantă BRCA1 patogenă ≠ rezultat automat robust",
+        "brief": "Pacientă de 61 de ani, HGSOC FIGO IIIC, rezecție în urmă cu trei ani. În prezent progresie/recidivă și o nouă planificare a tratamentului sistemic, cu întrebarea privind contextul PARP/HRD/BRCA. Piesă de rezecție FFPE veche: procent tumoral aprox. 70 %, ADN formal suficient, material rezidual limitat. Analiza tumorală inițială BRCA/HRR/HRD evidențiază o variantă BRCA1 formal patogenă cu pierdere de funcție, dar și un tipar C>T/G>A pronunțat.",
+        "expectedBrief": "Pacientă de 61 de ani, HGSOC FIGO IIIC, rezecție în urmă cu trei ani. În prezent progresie/recidivă și o nouă planificare a tratamentului sistemic, cu întrebarea privind contextul PARP/HRD/BRCA. Piesă de rezecție FFPE veche: procent tumoral aprox. 70 %, ADN formal suficient, material rezidual limitat. Analiza tumorală inițială BRCA/HRR/HRD evidențiază o variantă BRCA1 formal patogenă cu pierdere de funcție, dar și un tipar C>T/G>A pronunțat.",
+        "ok": true
+      },
+      "el": {
+        "title": "Υψηλού βαθμού ορώδες καρκίνωμα ωοθήκης → πλαίσιο BRCA/HRD/PARP/βλαστικής σειράς",
+        "expected": "Υψηλού βαθμού ορώδες καρκίνωμα ωοθήκης → πλαίσιο BRCA/HRD/PARP/βλαστικής σειράς",
+        "twist": "Παθογόνος παραλλαγή BRCA1 ≠ αυτομάτως αξιόπιστο εύρημα",
+        "expectedTwist": "Παθογόνος παραλλαγή BRCA1 ≠ αυτομάτως αξιόπιστο εύρημα",
+        "brief": "Γυναίκα 61 ετών, HGSOC FIGO IIIC, εκτομή πριν από τρία χρόνια. Τώρα πρόοδος/υποτροπή και νέος σχεδιασμός συστηματικής θεραπείας με ερώτημα για το πλαίσιο PARP/HRD/BRCA. Παλαιό παρασκεύασμα εκτομής FFPE: ποσοστό νεοπλασματικών κυττάρων περ. 70 %, τυπικά επαρκές DNA, περιορισμένο υπόλοιπο υλικό. Η αρχική ανάλυση όγκου BRCA/HRR/HRD δείχνει μια τυπικά παθογόνο παραλλαγή απώλειας λειτουργίας BRCA1, αλλά ταυτόχρονα έντονο πρότυπο C>T/G>A.",
+        "expectedBrief": "Γυναίκα 61 ετών, HGSOC FIGO IIIC, εκτομή πριν από τρία χρόνια. Τώρα πρόοδος/υποτροπή και νέος σχεδιασμός συστηματικής θεραπείας με ερώτημα για το πλαίσιο PARP/HRD/BRCA. Παλαιό παρασκεύασμα εκτομής FFPE: ποσοστό νεοπλασματικών κυττάρων περ. 70 %, τυπικά επαρκές DNA, περιορισμένο υπόλοιπο υλικό. Η αρχική ανάλυση όγκου BRCA/HRR/HRD δείχνει μια τυπικά παθογόνο παραλλαγή απώλειας λειτουργίας BRCA1, αλλά ταυτόχρονα έντονο πρότυπο C>T/G>A.",
+        "ok": true
+      },
+      "es": {
+        "title": "Carcinoma seroso de alto grado de ovario → contexto BRCA/HRD/PARP/línea germinal",
+        "expected": "Carcinoma seroso de alto grado de ovario → contexto BRCA/HRD/PARP/línea germinal",
+        "twist": "Variante patogénica de BRCA1 ≠ hallazgo automáticamente robusto",
+        "expectedTwist": "Variante patogénica de BRCA1 ≠ hallazgo automáticamente robusto",
+        "brief": "Mujer de 61 años, HGSOC FIGO IIIC, resección hace tres años. Actualmente progresión/recidiva y nueva planificación del tratamiento sistémico con la cuestión del contexto PARP/HRD/BRCA. Pieza de resección FFPE antigua: porcentaje tumoral aprox. 70 %, ADN formalmente suficiente, material residual limitado. En el análisis tumoral inicial BRCA/HRR/HRD aparece una variante BRCA1 formalmente patogénica con pérdida de función, pero al mismo tiempo un patrón C>T/G>A marcado.",
+        "expectedBrief": "Mujer de 61 años, HGSOC FIGO IIIC, resección hace tres años. Actualmente progresión/recidiva y nueva planificación del tratamiento sistémico con la cuestión del contexto PARP/HRD/BRCA. Pieza de resección FFPE antigua: porcentaje tumoral aprox. 70 %, ADN formalmente suficiente, material residual limitado. En el análisis tumoral inicial BRCA/HRR/HRD aparece una variante BRCA1 formalmente patogénica con pérdida de función, pero al mismo tiempo un patrón C>T/G>A marcado.",
+        "ok": true
+      },
+      "fr": {
+        "title": "Carcinome séreux ovarien de haut grade → contexte BRCA/HRD/PARP/constitutionnel",
+        "expected": "Carcinome séreux ovarien de haut grade → contexte BRCA/HRD/PARP/constitutionnel",
+        "twist": "Variant BRCA1 pathogène ≠ résultat automatiquement robuste",
+        "expectedTwist": "Variant BRCA1 pathogène ≠ résultat automatiquement robuste",
+        "brief": "Patiente de 61 ans, HGSOC FIGO IIIC, résection il y a trois ans. Progression/récidive actuelle et nouvelle planification d’un traitement systémique avec la question du contexte PARP/HRD/BRCA. Ancienne pièce de résection FFPE : cellularité tumorale env. 70 %, ADN formellement suffisant, matériel résiduel limité. L’analyse tumorale initiale BRCA/HRR/HRD met en évidence un variant BRCA1 formellement pathogène avec perte de fonction, mais aussi un profil C>T/G>A marqué.",
+        "expectedBrief": "Patiente de 61 ans, HGSOC FIGO IIIC, résection il y a trois ans. Progression/récidive actuelle et nouvelle planification d’un traitement systémique avec la question du contexte PARP/HRD/BRCA. Ancienne pièce de résection FFPE : cellularité tumorale env. 70 %, ADN formellement suffisant, matériel résiduel limité. L’analyse tumorale initiale BRCA/HRR/HRD met en évidence un variant BRCA1 formellement pathogène avec perte de fonction, mais aussi un profil C>T/G>A marqué.",
+        "ok": true
+      },
+      "de": {
+        "title": "High-grade seröses Ovarialkarzinom → BRCA/HRD/PARP/Keimbahn-Kontext",
+        "expected": "High-grade seröses Ovarialkarzinom → BRCA/HRD/PARP/Keimbahn-Kontext",
+        "twist": "Pathogene BRCA1-Variante ≠ automatisch belastbarer Befund",
+        "expectedTwist": "Pathogene BRCA1-Variante ≠ automatisch belastbarer Befund",
+        "brief": "61-jährige Patientin, HGSOC FIGO IIIC, Resektat vor drei Jahren. Aktuell Progress/Rezidiv, erneute systemische Therapieplanung mit Frage nach PARP-/HRD-/BRCA-Kontext. Altes FFPE-Resektat: Tumorzellanteil ca. 70 %, DNA formal ausreichend, Restmaterial begrenzt. In der initialen Tumor-BRCA/HRR/HRD-Analyse fällt eine formal pathogene BRCA1-LoF-Variante auf, gleichzeitig aber ein ausgeprägtes C>T/G>A-Muster.",
+        "expectedBrief": "61-jährige Patientin, HGSOC FIGO IIIC, Resektat vor drei Jahren. Aktuell Progress/Rezidiv, erneute systemische Therapieplanung mit Frage nach PARP-/HRD-/BRCA-Kontext. Altes FFPE-Resektat: Tumorzellanteil ca. 70 %, DNA formal ausreichend, Restmaterial begrenzt. In der initialen Tumor-BRCA/HRR/HRD-Analyse fällt eine formal pathogene BRCA1-LoF-Variante auf, gleichzeitig aber ein ausgeprägtes C>T/G>A-Muster.",
+        "ok": true
+      }
+    },
+    "versions": {
+      "en": "v2.2.4n HGSOC Deep Dive 10 Translation",
+      "ro": "v2.2.4n HGSOC Deep Dive 10 Translation",
+      "el": "v2.2.4n HGSOC Deep Dive 10 Translation",
+      "es": "v2.2.4n HGSOC Deep Dive 10 Translation",
+      "fr": "v2.2.4n HGSOC Deep Dive 10 Translation",
+      "de": "v2.2.4n HGSOC Deep Dive 10 Translation"
+    },
+    "technical_fields": {
+      "en": {
+        "mode": "patient_care",
+        "logic": "ovar",
+        "difficulty": "intermediate",
+        "metaDomain": "MTB",
+        "metaDifficulty": "Advanced",
+        "status": "curated-core",
+        "targetCourse": "MTB Basics",
+        "priority": "signature",
+        "signature": true
+      },
+      "ro": {
+        "mode": "patient_care",
+        "logic": "ovar",
+        "difficulty": "intermediate",
+        "metaDomain": "MTB",
+        "metaDifficulty": "Advanced",
+        "status": "curated-core",
+        "targetCourse": "MTB Basics",
+        "priority": "signature",
+        "signature": true
+      },
+      "el": {
+        "mode": "patient_care",
+        "logic": "ovar",
+        "difficulty": "intermediate",
+        "metaDomain": "MTB",
+        "metaDifficulty": "Advanced",
+        "status": "curated-core",
+        "targetCourse": "MTB Basics",
+        "priority": "signature",
+        "signature": true
+      },
+      "es": {
+        "mode": "patient_care",
+        "logic": "ovar",
+        "difficulty": "intermediate",
+        "metaDomain": "MTB",
+        "metaDifficulty": "Advanced",
+        "status": "curated-core",
+        "targetCourse": "MTB Basics",
+        "priority": "signature",
+        "signature": true
+      },
+      "fr": {
+        "mode": "patient_care",
+        "logic": "ovar",
+        "difficulty": "intermediate",
+        "metaDomain": "MTB",
+        "metaDifficulty": "Advanced",
+        "status": "curated-core",
+        "targetCourse": "MTB Basics",
+        "priority": "signature",
+        "signature": true
+      },
+      "de": {
+        "mode": "patient_care",
+        "logic": "ovar",
+        "difficulty": "intermediate",
+        "metaDomain": "MTB",
+        "metaDifficulty": "Advanced",
+        "status": "curated-core",
+        "targetCourse": "MTB Basics",
+        "priority": "signature",
+        "signature": true
+      }
+    },
+    "exception": null,
+    "wrapper": true,
+    "technical_fields_preserved": true
+  }
+}

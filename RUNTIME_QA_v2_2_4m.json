@@ -1,0 +1,153 @@
+{
+  "static": {
+    "dd09_marker_count": 1,
+    "case_id_count": 29,
+    "old_version_count": 1,
+    "new_version_count": 14,
+    "deepdive08_present": true,
+    "deepdive07_present": true,
+    "deepdive01_present": true,
+    "method_patch_present": true,
+    "new_mutation_observer_literal": false
+  },
+  "runtime": {
+    "attempted": true,
+    "passed": true,
+    "node_syntax": true,
+    "language_checks": {
+      "en": {
+        "title": "Metastatic CRC → RAS/BRAF/MMR/MSI before systemic therapy",
+        "expected": "Metastatic CRC → RAS/BRAF/MMR/MSI before systemic therapy",
+        "twist": "RAS wild type is not a sufficient treatment answer",
+        "expectedTwist": "RAS wild type is not a sufficient treatment answer",
+        "brief": "62-year-old man with right-sided metastatic colon adenocarcinoma and synchronous liver metastases. First-line systemic therapy should be planned promptly. FFPE material from the primary tumor is available, with sufficient tumor content but a limited number of sections. The clinical question is: RAS/BRAF/MMR/MSI for the anti-EGFR, immunotherapy and Lynch-versus-sporadic context.",
+        "expectedBrief": "62-year-old man with right-sided metastatic colon adenocarcinoma and synchronous liver metastases. First-line systemic therapy should be planned promptly. FFPE material from the primary tumor is available, with sufficient tumor content but a limited number of sections. The clinical question is: RAS/BRAF/MMR/MSI for the anti-EGFR, immunotherapy and Lynch-versus-sporadic context.",
+        "ok": true
+      },
+      "ro": {
+        "title": "CRC metastatic → RAS/BRAF/MMR/MSI înainte de terapia sistemică",
+        "expected": "CRC metastatic → RAS/BRAF/MMR/MSI înainte de terapia sistemică",
+        "twist": "Tipul sălbatic RAS nu este un răspuns terapeutic suficient",
+        "expectedTwist": "Tipul sălbatic RAS nu este un răspuns terapeutic suficient",
+        "brief": "Pacient de 62 de ani cu adenocarcinom metastatic al colonului drept și metastaze hepatice sincrone. Terapia sistemică de primă linie trebuie planificată rapid. Este disponibil material FFPE din tumora primară, cu conținut tumoral suficient, dar cu un număr limitat de secțiuni. Întrebarea clinică este: RAS/BRAF/MMR/MSI pentru contextul anti-EGFR, imunoterapie și Lynch versus sporadic.",
+        "expectedBrief": "Pacient de 62 de ani cu adenocarcinom metastatic al colonului drept și metastaze hepatice sincrone. Terapia sistemică de primă linie trebuie planificată rapid. Este disponibil material FFPE din tumora primară, cu conținut tumoral suficient, dar cu un număr limitat de secțiuni. Întrebarea clinică este: RAS/BRAF/MMR/MSI pentru contextul anti-EGFR, imunoterapie și Lynch versus sporadic.",
+        "ok": true
+      },
+      "el": {
+        "title": "Μεταστατικό CRC → RAS/BRAF/MMR/MSI πριν από τη συστηματική θεραπεία",
+        "expected": "Μεταστατικό CRC → RAS/BRAF/MMR/MSI πριν από τη συστηματική θεραπεία",
+        "twist": "Το RAS άγριου τύπου δεν αποτελεί επαρκή θεραπευτική απάντηση",
+        "expectedTwist": "Το RAS άγριου τύπου δεν αποτελεί επαρκή θεραπευτική απάντηση",
+        "brief": "Άνδρας 62 ετών με μεταστατικό αδενοκαρκίνωμα δεξιού κόλου και σύγχρονες ηπατικές μεταστάσεις. Η συστηματική θεραπεία πρώτης γραμμής πρέπει να σχεδιαστεί άμεσα. Υπάρχει διαθέσιμο υλικό FFPE από τον πρωτοπαθή όγκο με επαρκή περιεκτικότητα σε όγκο αλλά περιορισμένο αριθμό τομών. Το κλινικό ερώτημα είναι: RAS/BRAF/MMR/MSI για το πλαίσιο anti-EGFR, ανοσοθεραπείας και Lynch έναντι σποραδικού.",
+        "expectedBrief": "Άνδρας 62 ετών με μεταστατικό αδενοκαρκίνωμα δεξιού κόλου και σύγχρονες ηπατικές μεταστάσεις. Η συστηματική θεραπεία πρώτης γραμμής πρέπει να σχεδιαστεί άμεσα. Υπάρχει διαθέσιμο υλικό FFPE από τον πρωτοπαθή όγκο με επαρκή περιεκτικότητα σε όγκο αλλά περιορισμένο αριθμό τομών. Το κλινικό ερώτημα είναι: RAS/BRAF/MMR/MSI για το πλαίσιο anti-EGFR, ανοσοθεραπείας και Lynch έναντι σποραδικού.",
+        "ok": true
+      },
+      "es": {
+        "title": "CCR metastásico → RAS/BRAF/MMR/MSI antes del tratamiento sistémico",
+        "expected": "CCR metastásico → RAS/BRAF/MMR/MSI antes del tratamiento sistémico",
+        "twist": "El RAS de tipo salvaje no es una respuesta terapéutica suficiente",
+        "expectedTwist": "El RAS de tipo salvaje no es una respuesta terapéutica suficiente",
+        "brief": "Varón de 62 años con adenocarcinoma metastásico de colon derecho y metástasis hepáticas sincrónicas. Debe planificarse pronto el tratamiento sistémico de primera línea. Hay material FFPE disponible del tumor primario, con contenido tumoral suficiente pero un número limitado de cortes. La pregunta clínica es: RAS/BRAF/MMR/MSI para el contexto anti-EGFR, inmunoterapia y Lynch frente a esporádico.",
+        "expectedBrief": "Varón de 62 años con adenocarcinoma metastásico de colon derecho y metástasis hepáticas sincrónicas. Debe planificarse pronto el tratamiento sistémico de primera línea. Hay material FFPE disponible del tumor primario, con contenido tumoral suficiente pero un número limitado de cortes. La pregunta clínica es: RAS/BRAF/MMR/MSI para el contexto anti-EGFR, inmunoterapia y Lynch frente a esporádico.",
+        "ok": true
+      },
+      "fr": {
+        "title": "CCR métastatique → RAS/BRAF/MMR/MSI avant traitement systémique",
+        "expected": "CCR métastatique → RAS/BRAF/MMR/MSI avant traitement systémique",
+        "twist": "Un RAS de type sauvage ne suffit pas comme réponse thérapeutique",
+        "expectedTwist": "Un RAS de type sauvage ne suffit pas comme réponse thérapeutique",
+        "brief": "Patient de 62 ans avec adénocarcinome métastatique du côlon droit et métastases hépatiques synchrones. Le traitement systémique de première ligne doit être planifié rapidement. Du matériel FFPE de la tumeur primitive est disponible, avec une cellularité tumorale suffisante mais un nombre limité de coupes. La question clinique est : RAS/BRAF/MMR/MSI pour le contexte anti-EGFR, immunothérapie et Lynch versus sporadique.",
+        "expectedBrief": "Patient de 62 ans avec adénocarcinome métastatique du côlon droit et métastases hépatiques synchrones. Le traitement systémique de première ligne doit être planifié rapidement. Du matériel FFPE de la tumeur primitive est disponible, avec une cellularité tumorale suffisante mais un nombre limité de coupes. La question clinique est : RAS/BRAF/MMR/MSI pour le contexte anti-EGFR, immunothérapie et Lynch versus sporadique.",
+        "ok": true
+      },
+      "de": {
+        "title": "Metastasiertes CRC → RAS/BRAF/MMR/MSI vor Systemtherapie",
+        "expected": "Metastasiertes CRC → RAS/BRAF/MMR/MSI vor Systemtherapie",
+        "twist": "RAS-Wildtyp reicht nicht als Therapieantwort",
+        "expectedTwist": "RAS-Wildtyp reicht nicht als Therapieantwort",
+        "brief": "62-jähriger Patient mit rechtsseitigem, metastasiertem Adenokarzinom des Kolons und synchronen Lebermetastasen. Systemische Erstlinientherapie soll zeitnah geplant werden. Verfügbar ist FFPE-Material aus dem Primärtumor mit ausreichendem Tumoranteil, aber begrenzter Schnittzahl. Die klinische Frage lautet: RAS/BRAF/MMR/MSI für anti-EGFR-, Immuntherapie- und Lynch/sporadisch-Kontext.",
+        "expectedBrief": "62-jähriger Patient mit rechtsseitigem, metastasiertem Adenokarzinom des Kolons und synchronen Lebermetastasen. Systemische Erstlinientherapie soll zeitnah geplant werden. Verfügbar ist FFPE-Material aus dem Primärtumor mit ausreichendem Tumoranteil, aber begrenzter Schnittzahl. Die klinische Frage lautet: RAS/BRAF/MMR/MSI für anti-EGFR-, Immuntherapie- und Lynch/sporadisch-Kontext.",
+        "ok": true
+      }
+    },
+    "versions": {
+      "en": "v2.2.4m mCRC Deep Dive 09 Translation",
+      "ro": "v2.2.4m mCRC Deep Dive 09 Translation",
+      "el": "v2.2.4m mCRC Deep Dive 09 Translation",
+      "es": "v2.2.4m mCRC Deep Dive 09 Translation",
+      "fr": "v2.2.4m mCRC Deep Dive 09 Translation",
+      "de": "v2.2.4m mCRC Deep Dive 09 Translation"
+    },
+    "technical_fields": {
+      "en": {
+        "mode": "patient_care",
+        "logic": "crc",
+        "difficulty": "intermediate",
+        "metaDomain": "MTB",
+        "metaDifficulty": "Intermediate",
+        "status": "curated-core",
+        "targetCourse": "MTB Basics",
+        "priority": "signature",
+        "signature": true
+      },
+      "ro": {
+        "mode": "patient_care",
+        "logic": "crc",
+        "difficulty": "intermediate",
+        "metaDomain": "MTB",
+        "metaDifficulty": "Intermediate",
+        "status": "curated-core",
+        "targetCourse": "MTB Basics",
+        "priority": "signature",
+        "signature": true
+      },
+      "el": {
+        "mode": "patient_care",
+        "logic": "crc",
+        "difficulty": "intermediate",
+        "metaDomain": "MTB",
+        "metaDifficulty": "Intermediate",
+        "status": "curated-core",
+        "targetCourse": "MTB Basics",
+        "priority": "signature",
+        "signature": true
+      },
+      "es": {
+        "mode": "patient_care",
+        "logic": "crc",
+        "difficulty": "intermediate",
+        "metaDomain": "MTB",
+        "metaDifficulty": "Intermediate",
+        "status": "curated-core",
+        "targetCourse": "MTB Basics",
+        "priority": "signature",
+        "signature": true
+      },
+      "fr": {
+        "mode": "patient_care",
+        "logic": "crc",
+        "difficulty": "intermediate",
+        "metaDomain": "MTB",
+        "metaDifficulty": "Intermediate",
+        "status": "curated-core",
+        "targetCourse": "MTB Basics",
+        "priority": "signature",
+        "signature": true
+      },
+      "de": {
+        "mode": "patient_care",
+        "logic": "crc",
+        "difficulty": "intermediate",
+        "metaDomain": "MTB",
+        "metaDifficulty": "Intermediate",
+        "status": "curated-core",
+        "targetCourse": "MTB Basics",
+        "priority": "signature",
+        "signature": true
+      }
+    },
+    "exception": null,
+    "wrapper": true,
+    "technical_fields_preserved": true
+  }
+}

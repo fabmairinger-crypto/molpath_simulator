@@ -1,0 +1,224 @@
+{
+  "static": {
+    "signature01_marker_count": 1,
+    "deepdive11_marker_count": 1,
+    "deepdive10_marker_count": 1,
+    "deepdive09_marker_count": 1,
+    "case_id_present": true,
+    "new_mutation_observer_literal": false,
+    "additional_language_change_listener": false,
+    "base_reconstruction_sha256": "7c1d89a57e88fbdf44f1a627e06fb1c5a53f6c9151ad61647ca9392c15a3cc10",
+    "expected_base_sha256": "7c1d89a57e88fbdf44f1a627e06fb1c5a53f6c9151ad61647ca9392c15a3cc10",
+    "base_reconstruction_exact": true,
+    "patched_index_sha256": "b8ff19d88f33e80ffdba983bdea01328f2dbe90d9a5b75d5b8b8f5aada08e033",
+    "source_objects_match_review_payload": true,
+    "node_syntax_passed": true
+  },
+  "runtime": {
+    "passed": true,
+    "results": [
+      {
+        "lang": "de",
+        "ok": true,
+        "mismatches": [],
+        "technical_ok": true,
+        "snapshot": {
+          "title": "Glioblastom → MGMT/IDH/Methylierung und Temozolomid-Kontext",
+          "story": "68-jähriger Patient nach subtotaler Resektion eines hirneigenen Tumors.",
+          "interpretation": "Glioblastom, IDH-Wildtyp, MGMT-methyliert: IDH-WT prognostisch ungünstiger; MGMT-Methylierung spricht für Temozolomid-Sensitivität.",
+          "metaTitle": "Glioblastom → MGMT/IDH/Methylierung und Temozolomid-Kontext",
+          "learning": "Epigenetische Marker/Methylierungsprofile als diagnostische oder prädiktive Ebene einordnen",
+          "gate1": "Was ist die zentrale klinisch-molekulare Fragestellung in diesem Fall?",
+          "gate2": "Welche Rolle spielt Methylierung/IDH/MGMT als diagnostische, prädiktive oder Klassifikations-Ebene?",
+          "technical": {
+            "id": "MTB_CNS_001_v1_0",
+            "mode": "patient_care",
+            "logic": "generic_patient",
+            "difficulty": "beginner_intermediate",
+            "metaDomain": "MTB",
+            "metaDifficulty": "Intermediate",
+            "status": "curated-core",
+            "gateType": "single_choice_or_multiselect",
+            "scoreDomain": "clinical_reasoning",
+            "cap": 80
+          }
+        }
+      },
+      {
+        "lang": "en",
+        "ok": true,
+        "mismatches": [],
+        "technical_ok": true,
+        "snapshot": {
+          "title": "Glioblastoma → MGMT/IDH/methylation and temozolomide context",
+          "story": "68-year-old patient after subtotal resection of a primary brain tumour.",
+          "interpretation": "Glioblastoma, IDH-wildtype, MGMT-methylated: IDH-WT is prognostically less favourable; MGMT methylation supports temozolomide sensitivity.",
+          "metaTitle": "Glioblastoma → MGMT/IDH/methylation and temozolomide context",
+          "learning": "Interpret epigenetic markers/methylation profiles as a diagnostic or predictive layer",
+          "gate1": "What is the central clinical-molecular question in this case?",
+          "gate2": "What role do methylation/IDH/MGMT play as a diagnostic, predictive or classification layer?",
+          "technical": {
+            "id": "MTB_CNS_001_v1_0",
+            "mode": "patient_care",
+            "logic": "generic_patient",
+            "difficulty": "beginner_intermediate",
+            "metaDomain": "MTB",
+            "metaDifficulty": "Intermediate",
+            "status": "curated-core",
+            "gateType": "single_choice_or_multiselect",
+            "scoreDomain": "clinical_reasoning",
+            "cap": 80
+          }
+        }
+      },
+      {
+        "lang": "ro",
+        "ok": true,
+        "mismatches": [],
+        "technical_ok": true,
+        "snapshot": {
+          "title": "Glioblastom → context MGMT/IDH/metilare și temozolomidă",
+          "story": "Pacient în vârstă de 68 de ani după rezecția subtotală a unei tumori cerebrale primare.",
+          "interpretation": "Glioblastom, IDH wild-type, MGMT metilat: IDH-WT este asociat cu un prognostic mai nefavorabil; metilarea MGMT susține sensibilitatea la temozolomidă.",
+          "metaTitle": "Glioblastom → context MGMT/IDH/metilare și temozolomidă",
+          "learning": "Încadrarea markerilor epigenetici/profilelor de metilare ca nivel diagnostic sau predictiv",
+          "gate1": "Care este întrebarea clinico-moleculară centrală în acest caz?",
+          "gate2": "Ce rol au metilarea/IDH/MGMT ca nivel diagnostic, predictiv sau de clasificare?",
+          "technical": {
+            "id": "MTB_CNS_001_v1_0",
+            "mode": "patient_care",
+            "logic": "generic_patient",
+            "difficulty": "beginner_intermediate",
+            "metaDomain": "MTB",
+            "metaDifficulty": "Intermediate",
+            "status": "curated-core",
+            "gateType": "single_choice_or_multiselect",
+            "scoreDomain": "clinical_reasoning",
+            "cap": 80
+          }
+        }
+      },
+      {
+        "lang": "el",
+        "ok": true,
+        "mismatches": [],
+        "technical_ok": true,
+        "snapshot": {
+          "title": "Γλοιοβλάστωμα → πλαίσιο MGMT/IDH/μεθυλίωσης και τεμοζολομίδης",
+          "story": "Ασθενής 68 ετών μετά από υφολική εκτομή πρωτοπαθούς όγκου του εγκεφάλου.",
+          "interpretation": "Γλοιοβλάστωμα, IDH-wildtype, MGMT-μεθυλιωμένο: το IDH-WT συνδέεται με δυσμενέστερη πρόγνωση· η μεθυλίωση MGMT υποστηρίζει ευαισθησία στην τεμοζολομίδη.",
+          "metaTitle": "Γλοιοβλάστωμα → πλαίσιο MGMT/IDH/μεθυλίωσης και τεμοζολομίδης",
+          "learning": "Ερμηνεία των επιγενετικών δεικτών/προφίλ μεθυλίωσης ως διαγνωστικού ή προβλεπτικού επιπέδου",
+          "gate1": "Ποιο είναι το κεντρικό κλινικομοριακό ερώτημα σε αυτό το περιστατικό;",
+          "gate2": "Ποιος είναι ο ρόλος της μεθυλίωσης/IDH/MGMT ως διαγνωστικού, προβλεπτικού ή ταξινομικού επιπέδου;",
+          "technical": {
+            "id": "MTB_CNS_001_v1_0",
+            "mode": "patient_care",
+            "logic": "generic_patient",
+            "difficulty": "beginner_intermediate",
+            "metaDomain": "MTB",
+            "metaDifficulty": "Intermediate",
+            "status": "curated-core",
+            "gateType": "single_choice_or_multiselect",
+            "scoreDomain": "clinical_reasoning",
+            "cap": 80
+          }
+        }
+      },
+      {
+        "lang": "es",
+        "ok": true,
+        "mismatches": [],
+        "technical_ok": true,
+        "snapshot": {
+          "title": "Glioblastoma → contexto de MGMT/IDH/metilación y temozolomida",
+          "story": "Paciente de 68 años tras resección subtotal de un tumor cerebral primario.",
+          "interpretation": "Glioblastoma, IDH wild-type, MGMT metilado: IDH-WT se asocia a un pronóstico más desfavorable; la metilación de MGMT apoya la sensibilidad a temozolomida.",
+          "metaTitle": "Glioblastoma → contexto de MGMT/IDH/metilación y temozolomida",
+          "learning": "Interpretar los marcadores epigenéticos/perfiles de metilación como nivel diagnóstico o predictivo",
+          "gate1": "¿Cuál es la pregunta clínico-molecular central en este caso?",
+          "gate2": "¿Qué papel desempeñan la metilación/IDH/MGMT como nivel diagnóstico, predictivo o de clasificación?",
+          "technical": {
+            "id": "MTB_CNS_001_v1_0",
+            "mode": "patient_care",
+            "logic": "generic_patient",
+            "difficulty": "beginner_intermediate",
+            "metaDomain": "MTB",
+            "metaDifficulty": "Intermediate",
+            "status": "curated-core",
+            "gateType": "single_choice_or_multiselect",
+            "scoreDomain": "clinical_reasoning",
+            "cap": 80
+          }
+        }
+      },
+      {
+        "lang": "fr",
+        "ok": true,
+        "mismatches": [],
+        "technical_ok": true,
+        "snapshot": {
+          "title": "Glioblastome → contexte MGMT/IDH/méthylation et témozolomide",
+          "story": "Patient de 68 ans après résection subtotale d’une tumeur cérébrale primitive.",
+          "interpretation": "Glioblastome, IDH de type sauvage, MGMT méthylé : l’IDH-WT est associé à un pronostic plus défavorable ; la méthylation de MGMT est en faveur d’une sensibilité au témozolomide.",
+          "metaTitle": "Glioblastome → contexte MGMT/IDH/méthylation et témozolomide",
+          "learning": "Interpréter les marqueurs épigénétiques/profils de méthylation comme niveau diagnostique ou prédictif",
+          "gate1": "Quelle est la question clinico-moléculaire centrale dans ce cas ?",
+          "gate2": "Quel rôle jouent la méthylation/IDH/MGMT comme niveau diagnostique, prédictif ou de classification ?",
+          "technical": {
+            "id": "MTB_CNS_001_v1_0",
+            "mode": "patient_care",
+            "logic": "generic_patient",
+            "difficulty": "beginner_intermediate",
+            "metaDomain": "MTB",
+            "metaDifficulty": "Intermediate",
+            "status": "curated-core",
+            "gateType": "single_choice_or_multiselect",
+            "scoreDomain": "clinical_reasoning",
+            "cap": 80
+          }
+        }
+      },
+      {
+        "lang": "de",
+        "ok": true,
+        "mismatches": [],
+        "technical_ok": true,
+        "snapshot": {
+          "title": "Glioblastom → MGMT/IDH/Methylierung und Temozolomid-Kontext",
+          "story": "68-jähriger Patient nach subtotaler Resektion eines hirneigenen Tumors.",
+          "interpretation": "Glioblastom, IDH-Wildtyp, MGMT-methyliert: IDH-WT prognostisch ungünstiger; MGMT-Methylierung spricht für Temozolomid-Sensitivität.",
+          "metaTitle": "Glioblastom → MGMT/IDH/Methylierung und Temozolomid-Kontext",
+          "learning": "Epigenetische Marker/Methylierungsprofile als diagnostische oder prädiktive Ebene einordnen",
+          "gate1": "Was ist die zentrale klinisch-molekulare Fragestellung in diesem Fall?",
+          "gate2": "Welche Rolle spielt Methylierung/IDH/MGMT als diagnostische, prädiktive oder Klassifikations-Ebene?",
+          "technical": {
+            "id": "MTB_CNS_001_v1_0",
+            "mode": "patient_care",
+            "logic": "generic_patient",
+            "difficulty": "beginner_intermediate",
+            "metaDomain": "MTB",
+            "metaDifficulty": "Intermediate",
+            "status": "curated-core",
+            "gateType": "single_choice_or_multiselect",
+            "scoreDomain": "clinical_reasoning",
+            "cap": 80
+          }
+        }
+      }
+    ],
+    "dictCounts": {
+      "en": 72,
+      "ro": 71,
+      "el": 72,
+      "es": 72,
+      "fr": 72
+    },
+    "version": "v2.2.4p CNS Signature 01 Translation",
+    "wrapper": true
+  },
+  "notes": {
+    "browser_visual_navigation": "not_claimed",
+    "runtime_harness": "isolated Node harness; actual v8 source objects were separately verified identical to reviewed DE payload"
+  }
+}

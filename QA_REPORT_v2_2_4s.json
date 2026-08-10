@@ -1,0 +1,36 @@
+{
+  "version": "v2.2.4s",
+  "runtime_label": "v2.2.4s RES Ethics Signature 04 Translation",
+  "case_id": "RES_ETH_001_v1_0",
+  "languages": [
+    "de",
+    "en",
+    "ro",
+    "el",
+    "es",
+    "fr"
+  ],
+  "review": {
+    "unique_visible_source_strings": 83,
+    "all_visible_source_locations": 108,
+    "translated_messages": 79,
+    "translated_runtime_locations": 102,
+    "exact_reuse_count": 15,
+    "newly_curated_count": 64,
+    "review_payload_hash_sha256": "40e691b51f5367f63cf2f88de23ed425593af92851058f0364113f19dc7a8ed4"
+  },
+  "runtime_payload_hash_sha256": "c89b653c04518716786db8879289ae8b03e734ce5da1eb085e2f160e439c3d80",
+  "checks": {
+    "source_alignment_case_meta_gate_mismatches": 0,
+    "effective_dictionary_conflicts_vs_signature03": 0,
+    "javascript_blocks_total": 29,
+    "javascript_syntax_pass": 29,
+    "runtime_model_cycle_pass": true,
+    "protected_tokens_pass": true,
+    "structure_preservation_pass": true,
+    "template_escape_safety_pass": true,
+    "patch_isolation_pass": true
+  },
+  "base_index_sha256": "74f8225ff015cf1406ff66804687e4ed634d2de2a14f0c34cfc3dc0405810b47",
+  "patched_index_sha256": "9c249f286884082b32415dc744a2489cd8269e0731e3c669914c94a801ec3faa"
+}

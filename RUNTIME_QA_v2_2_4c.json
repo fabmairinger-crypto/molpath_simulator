@@ -1,0 +1,123 @@
+{
+  "version": "v2.2.4c UI Residue Translation Patch",
+  "viewport": "1600x900",
+  "method": "Chromium DOM/runtime test using in-memory document and mocked localStorage",
+  "results": [
+    {
+      "language": "en",
+      "home": {
+        "patch_loaded": true,
+        "version_badge": true,
+        "mode_pill": true,
+        "course_pill": true,
+        "dashboard_title": true,
+        "course_button": true,
+        "generic_sources_removed": true
+      },
+      "instructor": {
+        "mode_pill": true,
+        "version_not_reset": true,
+        "score_labels": true,
+        "mtb_heading": true,
+        "teaching_sheet": true,
+        "generic_sources_removed": true
+      },
+      "errors": [],
+      "visible_overflow": [],
+      "pass": true
+    },
+    {
+      "language": "ro",
+      "home": {
+        "patch_loaded": true,
+        "version_badge": true,
+        "mode_pill": true,
+        "course_pill": true,
+        "dashboard_title": true,
+        "course_button": true,
+        "generic_sources_removed": true
+      },
+      "instructor": {
+        "mode_pill": true,
+        "version_not_reset": true,
+        "score_labels": true,
+        "mtb_heading": true,
+        "teaching_sheet": true,
+        "generic_sources_removed": true
+      },
+      "errors": [],
+      "visible_overflow": [],
+      "pass": true
+    },
+    {
+      "language": "el",
+      "home": {
+        "patch_loaded": true,
+        "version_badge": true,
+        "mode_pill": true,
+        "course_pill": true,
+        "dashboard_title": true,
+        "course_button": true,
+        "generic_sources_removed": true
+      },
+      "instructor": {
+        "mode_pill": true,
+        "version_not_reset": true,
+        "score_labels": true,
+        "mtb_heading": true,
+        "teaching_sheet": true,
+        "generic_sources_removed": true
+      },
+      "errors": [],
+      "visible_overflow": [],
+      "pass": true
+    },
+    {
+      "language": "es",
+      "home": {
+        "patch_loaded": true,
+        "version_badge": true,
+        "mode_pill": true,
+        "course_pill": true,
+        "dashboard_title": true,
+        "course_button": true,
+        "generic_sources_removed": true
+      },
+      "instructor": {
+        "mode_pill": true,
+        "version_not_reset": true,
+        "score_labels": true,
+        "mtb_heading": true,
+        "teaching_sheet": true,
+        "generic_sources_removed": true
+      },
+      "errors": [],
+      "visible_overflow": [],
+      "pass": true
+    },
+    {
+      "language": "fr",
+      "home": {
+        "patch_loaded": true,
+        "version_badge": true,
+        "mode_pill": true,
+        "course_pill": true,
+        "dashboard_title": true,
+        "course_button": true,
+        "generic_sources_removed": true
+      },
+      "instructor": {
+        "mode_pill": true,
+        "version_not_reset": true,
+        "score_labels": true,
+        "mtb_heading": true,
+        "teaching_sheet": true,
+        "generic_sources_removed": true
+      },
+      "errors": [],
+      "visible_overflow": [],
+      "pass": true
+    }
+  ],
+  "all_pass": true
+}

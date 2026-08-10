@@ -1,0 +1,18 @@
+{
+  "title": "MolPath Simulator v2.0b.5 – Safe Layout Patch",
+  "cases": 91,
+  "case_options": 91,
+  "active_case": "MTB_OVAR_001_v0_7",
+  "dict_counts": {
+    "en": 452,
+    "ro": 452,
+    "el": 452,
+    "es": 452,
+    "fr": 452
+  },
+  "buttons": 11,
+  "sidebar_visible": "block",
+  "main_visible": "block",
+  "body_text_length": 23990,
+  "step_text": "1\nAuftrag\n2\nKontext\n3\nHisto/IHC\n4\nMaterial\n5\nRunde 1: Anforderung\n6\nLaborlauf 1\n7\nBefundbewertung"
+}

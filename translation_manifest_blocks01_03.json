@@ -1,0 +1,227 @@
+{
+  "version": "v2.2.4b Translation Integration Test – Blocks 01–03",
+  "created_at": "2026-08-06T08:10:03.444732+00:00",
+  "base_file": "molpath_simulator_v2_2_4a_translation_quarantine.html",
+  "base_sha256": "2af253fa3495dd8f955b005a8c926907aba64e09aa8f33f5f5083cd65ae64341",
+  "patched_file": "molpath_simulator_v2_2_4b_i18n_blocks01_03_integration_test.html",
+  "patched_sha256": "5992947d04d75e02a38c99296bf087136945dcbd61b150ad8e7162f8fed73790",
+  "patch_js": "v224b_i18n_blocks01_03_patch.js",
+  "patch_js_sha256": "ec6d5865be6a7e37cfc7105534892b6f67d5d32ffc963f5fb1d22fc1f9041068",
+  "blocks": [
+    {
+      "block_id": "BLOCK01_UI",
+      "version": "1.0",
+      "hash": "d98e269dc37f0507f38f69aa613451ccefa9ca5731b2f4e2fb1f5fd0bee6d4d8",
+      "messages": 134,
+      "templates": 0
+    },
+    {
+      "block_id": "BLOCK02_ORDER_CART_RESOURCES",
+      "version": "1.0",
+      "hash": "ae78dca1690fe1649c70827da3006b3de8cfce6bbe3dd358c20d2e027d68e7d5",
+      "messages": 110,
+      "templates": 12
+    },
+    {
+      "block_id": "BLOCK03_RUNTIME_REPORTS_FEEDBACK",
+      "version": "1.0",
+      "hash": "198762f152e740e7582e0a67617f4ef5640b5020d354670baaf49b261c408d9d",
+      "messages": 102,
+      "templates": 13
+    }
+  ],
+  "raw_message_records": 346,
+  "unique_source_messages": 331,
+  "exact_dictionary_entries": 306,
+  "template_entries": 25,
+  "contextual_overrides": [
+    "Material",
+    "Laborlauf",
+    "empfohlen",
+    "optional"
+  ],
+  "collisions": [
+    {
+      "source_de": "Phase",
+      "previous_block": "BLOCK01_UI",
+      "new_block": "BLOCK02_ORDER_CART_RESOURCES",
+      "different_translations": {}
+    },
+    {
+      "source_de": "Laborlauf",
+      "previous_block": "BLOCK01_UI",
+      "new_block": "BLOCK02_ORDER_CART_RESOURCES",
+      "different_translations": {
+        "en": [
+          "Laboratory run",
+          "Analytical run"
+        ],
+        "ro": [
+          "Rulare de laborator",
+          "Serie analitică"
+        ],
+        "el": [
+          "Εργαστηριακή εκτέλεση",
+          "Αναλυτική σειρά"
+        ]
+      }
+    },
+    {
+      "source_de": "empfohlen",
+      "previous_block": "BLOCK01_UI",
+      "new_block": "BLOCK02_ORDER_CART_RESOURCES",
+      "different_translations": {
+        "ro": [
+          "recomandat",
+          "recomandată"
+        ],
+        "el": [
+          "συνιστάται",
+          "συνιστώμενη"
+        ],
+        "fr": [
+          "recommandé",
+          "recommandée"
+        ]
+      }
+    },
+    {
+      "source_de": "optional",
+      "previous_block": "BLOCK01_UI",
+      "new_block": "BLOCK02_ORDER_CART_RESOURCES",
+      "different_translations": {
+        "ro": [
+          "opțional",
+          "opțională"
+        ],
+        "el": [
+          "προαιρετικό",
+          "προαιρετική"
+        ],
+        "fr": [
+          "optionnel",
+          "optionnelle"
+        ]
+      }
+    },
+    {
+      "source_de": "Budget",
+      "previous_block": "BLOCK01_UI",
+      "new_block": "BLOCK02_ORDER_CART_RESOURCES",
+      "different_translations": {}
+    },
+    {
+      "source_de": "Material",
+      "previous_block": "BLOCK01_UI",
+      "new_block": "BLOCK02_ORDER_CART_RESOURCES",
+      "different_translations": {
+        "en": [
+          "Material",
+          "Specimen use"
+        ],
+        "ro": [
+          "Material",
+          "Consum de material"
+        ],
+        "el": [
+          "Υλικό",
+          "Χρήση υλικού"
+        ],
+        "es": [
+          "Material",
+          "Uso de material"
+        ],
+        "fr": [
+          "Matériel",
+          "Utilisation du matériel"
+        ]
+      }
+    },
+    {
+      "source_de": "TAT",
+      "previous_block": "BLOCK01_UI",
+      "new_block": "BLOCK02_ORDER_CART_RESOURCES",
+      "different_translations": {}
+    },
+    {
+      "source_de": "ja",
+      "previous_block": "BLOCK01_UI",
+      "new_block": "BLOCK03_RUNTIME_REPORTS_FEEDBACK",
+      "different_translations": {}
+    },
+    {
+      "source_de": "nein",
+      "previous_block": "BLOCK01_UI",
+      "new_block": "BLOCK03_RUNTIME_REPORTS_FEEDBACK",
+      "different_translations": {}
+    },
+    {
+      "source_de": "Dozentenbericht",
+      "previous_block": "BLOCK01_UI",
+      "new_block": "BLOCK03_RUNTIME_REPORTS_FEEDBACK",
+      "different_translations": {}
+    },
+    {
+      "source_de": "Modus",
+      "previous_block": "BLOCK01_UI",
+      "new_block": "BLOCK03_RUNTIME_REPORTS_FEEDBACK",
+      "different_translations": {}
+    },
+    {
+      "source_de": "Design",
+      "previous_block": "BLOCK01_UI",
+      "new_block": "BLOCK03_RUNTIME_REPORTS_FEEDBACK",
+      "different_translations": {}
+    },
+    {
+      "source_de": "Feedback",
+      "previous_block": "BLOCK01_UI",
+      "new_block": "BLOCK03_RUNTIME_REPORTS_FEEDBACK",
+      "different_translations": {}
+    },
+    {
+      "source_de": "Punkte",
+      "previous_block": "BLOCK02_ORDER_CART_RESOURCES",
+      "new_block": "BLOCK03_RUNTIME_REPORTS_FEEDBACK",
+      "different_translations": {}
+    },
+    {
+      "source_de": "Score",
+      "previous_block": "BLOCK01_UI",
+      "new_block": "BLOCK03_RUNTIME_REPORTS_FEEDBACK",
+      "different_translations": {}
+    }
+  ],
+  "status": "integration_test_in_review",
+  "runtime_behavior": {
+    "exact_dictionary_merge": true,
+    "parameterized_template_resolution": true,
+    "context_sensitive_collision_resolution": true,
+    "application_logic_changed": false,
+    "translation_runtime_extended": true
+  },
+  "patch_location": "before_last_closing_body_html",
+  "template_value_localization": "exact_dictionary_lookup_for_captured_placeholders",
+  "automated_qa": {
+    "node_syntax_check": true,
+    "patch_applicator_reproducible": true,
+    "chromium_console_errors": 0,
+    "chromium_page_errors": 0,
+    "order_screen_languages_passed": [
+      "en",
+      "ro",
+      "el",
+      "es",
+      "fr"
+    ],
+    "german_restore_passed": true,
+    "report_shell_en_passed": true,
+    "report_shell_fr_passed": true,
+    "viewport_overflow_flags": 0,
+    "viewport": "1440x1000",
+    "note": "Automated browser QA loaded the concatenated single-file app through document content because direct file/http navigation is restricted in the execution environment."
+  },
+  "qa_report_sha256": "11d2204e1dc74f0a01c6d2f56c5b4fb246aee72749da59215e3833b3069f7d32",
+  "playwright_qa_sha256": "1e4f3aae6dc5e1bb92949675dda573667b0e2a5aee888f4cdc12d61e001fa550",
+  "report_qa_sha256": "3ca7ae32eefb4764e822062883fffd0d096dd942de9c31f805d47e3de5b96bc4"
+}

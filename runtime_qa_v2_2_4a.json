@@ -1,0 +1,36 @@
+{
+  "version": "2.2.4a",
+  "static": {
+    "javascriptBlocksChecked": 11,
+    "syntaxFailures": 0,
+    "rejectedHybridStringsInExecutable": 0,
+    "rejectedJsonReferencedByExecutable": false,
+    "retainedCoreMatchesV223": true
+  },
+  "runtimeParity": {
+    "dictionaryCountsV223": {
+      "en": 452,
+      "ro": 452,
+      "el": 452,
+      "es": 452,
+      "fr": 452
+    },
+    "dictionaryCountsV224a": {
+      "en": 452,
+      "ro": 452,
+      "el": 452,
+      "es": 452,
+      "fr": 452
+    },
+    "rejectedHybridStringsInRuntimeDictionaries": false,
+    "consoleSignatureMatchesV223": true,
+    "caseReportTranslations": {
+      "en": "Show case report",
+      "ro": "Afișează raportul cazului",
+      "el": "Εμφάνιση αναφοράς περιστατικού",
+      "es": "Mostrar informe del caso",
+      "fr": "Afficher le rapport de cas"
+    }
+  },
+  "outputSha256": "2af253fa3495dd8f955b005a8c926907aba64e09aa8f33f5f5083cd65ae64341"
+}

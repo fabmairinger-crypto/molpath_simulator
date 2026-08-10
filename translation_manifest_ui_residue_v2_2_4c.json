@@ -1,0 +1,31 @@
+{
+  "version": "v2.2.4c UI Residue Translation Patch",
+  "base_index": "v6/index.html",
+  "base_sha256": "5992947d04d75e02a38c99296bf087136945dcbd61b150ad8e7162f8fed73790",
+  "patched_sha256": "c443ac7134a92a5e61aa61cf7e42937ea288d3d778427b10e48f553458bfb54b",
+  "generic_exact_entries_per_language": 29,
+  "dynamic_templates": 2,
+  "source_score_label_edits": 1,
+  "other_source_edit_counts": {
+    ">Teaching Sheet</button>": 1,
+    "toast('Modus: '+modeMeta().label)": 1,
+    "Fallbericht 2.0, Dozentenbericht 2.0, Teaching Sheet und ${courseActive?": 1,
+    "Fall abgeschlossen: Bericht und Teaching Sheet sind verfügbar.": 1,
+    "Berichte/Teaching Sheet werden nach Fallabschluss freigeschaltet.": 1,
+    "Geführte Fälle, freie Methodenauswahl, Clinical-Reasoning-Gates, Kurse, Berichte und Teaching Sheets auf stabiler v1.8-Engine.": 1
+  },
+  "deferred": [
+    "case titles and case metadata",
+    "learning objectives",
+    "case narrative",
+    "optimal solution content",
+    "case-specific MTB statements",
+    "case-specific twist/turning-point text"
+  ],
+  "files": [
+    "index.html",
+    "v224c_ui_residue_patch.js",
+    "QA_REPORT_v2_2_4c.md",
+    "ROLLBACK_v2_2_4c.md"
+  ]
+}

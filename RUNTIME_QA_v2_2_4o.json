@@ -1,0 +1,153 @@
+{
+  "static": {
+    "dd11_marker_count": 1,
+    "case_id_count": 28,
+    "old_version_count": 1,
+    "new_version_count": 18,
+    "deepdive10_present": true,
+    "deepdive09_present": true,
+    "deepdive01_present": true,
+    "method_patch_present": true,
+    "new_mutation_observer_literal": false
+  },
+  "runtime": {
+    "attempted": true,
+    "passed": true,
+    "node_syntax": true,
+    "language_checks": {
+      "en": {
+        "title": "TIL-rich dMMR/MSI-H tumour → immune escape and Lynch context",
+        "expected": "TIL-rich dMMR/MSI-H tumour → immune escape and Lynch context",
+        "twist": "The biomarker is not only therapeutic",
+        "expectedTwist": "The biomarker is not only therapeutic",
+        "brief": "66-year-old woman with recurrent endometrioid endometrial carcinoma. Histology shows a TIL-rich tumour microenvironment. MMR IHC shows loss of MSH2 and MSH6. The question encompasses IO sensitivity, confirmation of MSI/dMMR and possible Lynch/germline implications.",
+        "expectedBrief": "66-year-old woman with recurrent endometrioid endometrial carcinoma. Histology shows a TIL-rich tumour microenvironment. MMR IHC shows loss of MSH2 and MSH6. The question encompasses IO sensitivity, confirmation of MSI/dMMR and possible Lynch/germline implications.",
+        "ok": true
+      },
+      "ro": {
+        "title": "Tumor dMMR/MSI-H bogat în TIL-uri → evaziune imună și context Lynch",
+        "expected": "Tumor dMMR/MSI-H bogat în TIL-uri → evaziune imună și context Lynch",
+        "twist": "Biomarkerul nu are doar relevanță terapeutică",
+        "expectedTwist": "Biomarkerul nu are doar relevanță terapeutică",
+        "brief": "Pacientă de 66 de ani cu carcinom endometrioid endometrial recidivat. Histologic, micromediu tumoral bogat în TIL-uri. IHC MMR arată pierderea MSH2 și MSH6. Întrebarea include sensibilitatea la IO, confirmarea MSI/dMMR și posibile consecințe Lynch/germinale.",
+        "expectedBrief": "Pacientă de 66 de ani cu carcinom endometrioid endometrial recidivat. Histologic, micromediu tumoral bogat în TIL-uri. IHC MMR arată pierderea MSH2 și MSH6. Întrebarea include sensibilitatea la IO, confirmarea MSI/dMMR și posibile consecințe Lynch/germinale.",
+        "ok": true
+      },
+      "el": {
+        "title": "Όγκος dMMR/MSI-H πλούσιος σε TILs → ανοσοδιαφυγή και πλαίσιο Lynch",
+        "expected": "Όγκος dMMR/MSI-H πλούσιος σε TILs → ανοσοδιαφυγή και πλαίσιο Lynch",
+        "twist": "Ο βιοδείκτης δεν έχει μόνο θεραπευτική σημασία",
+        "expectedTwist": "Ο βιοδείκτης δεν έχει μόνο θεραπευτική σημασία",
+        "brief": "Γυναίκα 66 ετών με υποτροπιάζον ενδομητριοειδές καρκίνωμα ενδομητρίου. Ιστολογικά, μικροπεριβάλλον όγκου πλούσιο σε TILs. Η IHC MMR δείχνει απώλεια MSH2 και MSH6. Το ερώτημα περιλαμβάνει ευαισθησία σε IO, επιβεβαίωση MSI/dMMR και πιθανές συνέπειες Lynch/βλαστικής σειράς.",
+        "expectedBrief": "Γυναίκα 66 ετών με υποτροπιάζον ενδομητριοειδές καρκίνωμα ενδομητρίου. Ιστολογικά, μικροπεριβάλλον όγκου πλούσιο σε TILs. Η IHC MMR δείχνει απώλεια MSH2 και MSH6. Το ερώτημα περιλαμβάνει ευαισθησία σε IO, επιβεβαίωση MSI/dMMR και πιθανές συνέπειες Lynch/βλαστικής σειράς.",
+        "ok": true
+      },
+      "es": {
+        "title": "Tumor dMMR/MSI-H rico en TIL → evasión inmunitaria y contexto de Lynch",
+        "expected": "Tumor dMMR/MSI-H rico en TIL → evasión inmunitaria y contexto de Lynch",
+        "twist": "El biomarcador no es solo terapéutico",
+        "expectedTwist": "El biomarcador no es solo terapéutico",
+        "brief": "Mujer de 66 años con carcinoma endometrioide de endometrio recurrente. Histológicamente, microambiente tumoral rico en TIL. La IHC de MMR muestra pérdida de MSH2 y MSH6. La pregunta incluye sensibilidad a IO, confirmación de MSI/dMMR y posibles implicaciones Lynch/germinales.",
+        "expectedBrief": "Mujer de 66 años con carcinoma endometrioide de endometrio recurrente. Histológicamente, microambiente tumoral rico en TIL. La IHC de MMR muestra pérdida de MSH2 y MSH6. La pregunta incluye sensibilidad a IO, confirmación de MSI/dMMR y posibles implicaciones Lynch/germinales.",
+        "ok": true
+      },
+      "fr": {
+        "title": "Tumeur dMMR/MSI-H riche en TIL → échappement immunitaire et contexte de Lynch",
+        "expected": "Tumeur dMMR/MSI-H riche en TIL → échappement immunitaire et contexte de Lynch",
+        "twist": "Le biomarqueur n’a pas qu’une portée thérapeutique",
+        "expectedTwist": "Le biomarqueur n’a pas qu’une portée thérapeutique",
+        "brief": "Patiente de 66 ans avec carcinome endométrioïde de l’endomètre récidivant. Histologiquement, microenvironnement tumoral riche en TIL. L’IHC MMR montre une perte de MSH2 et MSH6. La question porte sur la sensibilité à l’IO, la confirmation MSI/dMMR et les éventuelles implications Lynch/germinales.",
+        "expectedBrief": "Patiente de 66 ans avec carcinome endométrioïde de l’endomètre récidivant. Histologiquement, microenvironnement tumoral riche en TIL. L’IHC MMR montre une perte de MSH2 et MSH6. La question porte sur la sensibilité à l’IO, la confirmation MSI/dMMR et les éventuelles implications Lynch/germinales.",
+        "ok": true
+      },
+      "de": {
+        "title": "TIL-reicher dMMR/MSI-H-Tumor → Immunescape und Lynch-Kontext",
+        "expected": "TIL-reicher dMMR/MSI-H-Tumor → Immunescape und Lynch-Kontext",
+        "twist": "Der Biomarker ist nicht nur therapeutisch",
+        "expectedTwist": "Der Biomarker ist nicht nur therapeutisch",
+        "brief": "66-jährige Patientin mit rezidiviertem endometrioidem Endometriumkarzinom. Histologisch TIL-reiches Tumormikromilieu. MMR-IHC zeigt Verlust von MSH2 und MSH6. Die Fragestellung umfasst IO-Sensitivität, MSI/dMMR-Bestätigung und mögliche Lynch-/Keimbahnkonsequenz.",
+        "expectedBrief": "66-jährige Patientin mit rezidiviertem endometrioidem Endometriumkarzinom. Histologisch TIL-reiches Tumormikromilieu. MMR-IHC zeigt Verlust von MSH2 und MSH6. Die Fragestellung umfasst IO-Sensitivität, MSI/dMMR-Bestätigung und mögliche Lynch-/Keimbahnkonsequenz.",
+        "ok": true
+      }
+    },
+    "versions": {
+      "en": "v2.2.4o dMMR MSI-H Deep Dive 11 Translation",
+      "ro": "v2.2.4o dMMR MSI-H Deep Dive 11 Translation",
+      "el": "v2.2.4o dMMR MSI-H Deep Dive 11 Translation",
+      "es": "v2.2.4o dMMR MSI-H Deep Dive 11 Translation",
+      "fr": "v2.2.4o dMMR MSI-H Deep Dive 11 Translation",
+      "de": "v2.2.4o dMMR MSI-H Deep Dive 11 Translation"
+    },
+    "technical_fields": {
+      "en": {
+        "mode": "patient_care",
+        "logic": "generic_patient",
+        "difficulty": "beginner_intermediate",
+        "metaDomain": "MTB",
+        "metaDifficulty": "Intermediate",
+        "status": "curated-core",
+        "targetCourse": "MTB Basics",
+        "priority": "signature",
+        "signature": true
+      },
+      "ro": {
+        "mode": "patient_care",
+        "logic": "generic_patient",
+        "difficulty": "beginner_intermediate",
+        "metaDomain": "MTB",
+        "metaDifficulty": "Intermediate",
+        "status": "curated-core",
+        "targetCourse": "MTB Basics",
+        "priority": "signature",
+        "signature": true
+      },
+      "el": {
+        "mode": "patient_care",
+        "logic": "generic_patient",
+        "difficulty": "beginner_intermediate",
+        "metaDomain": "MTB",
+        "metaDifficulty": "Intermediate",
+        "status": "curated-core",
+        "targetCourse": "MTB Basics",
+        "priority": "signature",
+        "signature": true
+      },
+      "es": {
+        "mode": "patient_care",
+        "logic": "generic_patient",
+        "difficulty": "beginner_intermediate",
+        "metaDomain": "MTB",
+        "metaDifficulty": "Intermediate",
+        "status": "curated-core",
+        "targetCourse": "MTB Basics",
+        "priority": "signature",
+        "signature": true
+      },
+      "fr": {
+        "mode": "patient_care",
+        "logic": "generic_patient",
+        "difficulty": "beginner_intermediate",
+        "metaDomain": "MTB",
+        "metaDifficulty": "Intermediate",
+        "status": "curated-core",
+        "targetCourse": "MTB Basics",
+        "priority": "signature",
+        "signature": true
+      },
+      "de": {
+        "mode": "patient_care",
+        "logic": "generic_patient",
+        "difficulty": "beginner_intermediate",
+        "metaDomain": "MTB",
+        "metaDifficulty": "Intermediate",
+        "status": "curated-core",
+        "targetCourse": "MTB Basics",
+        "priority": "signature",
+        "signature": true
+      }
+    },
+    "exception": null,
+    "wrapper": true,
+    "technical_fields_preserved": true
+  }
+}

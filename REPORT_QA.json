@@ -1,0 +1,14 @@
+{
+  "console_errors": [],
+  "page_errors": [],
+  "en": {
+    "Report package": true,
+    "Interpretation / limitation": true,
+    "Proceed to the MTB": true
+  },
+  "fr": {
+    "Dossier de compte rendu": true,
+    "Interprétation / limite": true,
+    "Passer au MTB": true
+  }
+}
