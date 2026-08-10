@@ -1,0 +1,46 @@
+{
+  "product": "MolPath Simulator",
+  "version": "v2.3.0",
+  "release_name": "UI Polish",
+  "base_version": "v2.2.4s",
+  "patch_type": "patch-only / UI-only",
+  "runtime_changed_files": [
+    "index.html"
+  ],
+  "archive_files": [
+    "CHANGELOG_v2_3_0.md",
+    "MANIFEST_v2_3_0.json",
+    "QA_REPORT_v2_3_0.md",
+    "QA_REPORT_v2_3_0.json",
+    "ROLLBACK_v2_3_0.md",
+    "SHA256SUMS.txt",
+    "v230_ui_polish_patch.htmlfrag"
+  ],
+  "scope": [
+    "sidebar branding",
+    "language selector placement/cleanup",
+    "visible version source",
+    "hero case-type badge",
+    "topbar simplification",
+    "dashboard copy cleanup",
+    "LAB icon",
+    "mode headings"
+  ],
+  "languages": [
+    "de",
+    "en",
+    "ro",
+    "el",
+    "es",
+    "fr"
+  ],
+  "case_logic_changed": false,
+  "translation_payloads_changed": false,
+  "scoring_changed": false,
+  "course_logic_changed": false,
+  "sha256": {
+    "base_index_html": "9c249f286884082b32415dc744a2489cd8269e0731e3c669914c94a801ec3faa",
+    "index.html": "3b96d2a030ddf81b1d190af03f67075c2bcf4f02c4b147c5e3dd4cda3bbb5c27",
+    "v230_ui_polish_patch.htmlfrag": "90b4260845b5cd87b735c92361eb5d60a12f8d9c462614b89510f25f863da9b1"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "version": "v2.3.0",
+  "base": "v2.2.4s",
+  "status": "PASS",
+  "checks": {
+    "patch_isolation_exact": true,
+    "javascript_blocks_checked": 30,
+    "javascript_syntax_failures": 0,
+    "patch_block_count": 1,
+    "style_block_count": 1,
+    "language_runtime_harness": [
+      "de",
+      "en",
+      "ro",
+      "el",
+      "es",
+      "fr"
+    ],
+    "language_runtime_harness_pass": true,
+    "language_panel_reparented_below_brand": true,
+    "translation_debug_ui_removed": true,
+    "top_case_pill_hidden": true,
+    "top_version_v2_3_0": true,
+    "hero_case_type_badge": true,
+    "signature_case_ids_checked": 4,
+    "dashboard_engine_copy_removed": true,
+    "lab_icon_normalized": true,
+    "browser_visual_smoke": "not executed: Chromium navigation is blocked by the container administrator policy"
+  },
+  "sha256": {
+    "base_index_html": "9c249f286884082b32415dc744a2489cd8269e0731e3c669914c94a801ec3faa",
+    "patched_index_html": "3b96d2a030ddf81b1d190af03f67075c2bcf4f02c4b147c5e3dd4cda3bbb5c27",
+    "ui_patch_fragment": "90b4260845b5cd87b735c92361eb5d60a12f8d9c462614b89510f25f863da9b1"
+  }
+}

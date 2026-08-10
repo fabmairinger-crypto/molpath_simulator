@@ -1,0 +1,173 @@
+<style id="v230UiPolishStyles">
+/* MolPath Simulator v2.3.0 — focused UI polish */
+body.v230-ui .sidebar .brand{
+  grid-template-columns:104px minmax(0,1fr)!important;
+  gap:16px!important;
+  align-items:center!important;
+  margin:2px 0 14px!important;
+}
+body.v230-ui .sidebar .brand img#pathoLogo{
+  width:104px!important;
+  height:104px!important;
+}
+body.v230-ui .sidebar .brand .v20b5-wordmark{
+  min-height:104px!important;
+}
+body.v230-ui .sidebar .brand .v20b5-wordmark h1{
+  font-size:1.66rem!important;
+}
+body.v230-ui .sidebar .brand .v20b5-wordmark .powered{
+  margin:8px 0 0!important;
+  gap:8px!important;
+}
+body.v230-ui .sidebar .brand .v20b5-wordmark .powered img#easyLogo{
+  height:44px!important;
+  max-width:132px!important;
+}
+body.v230-ui .sidebar > #molpathI18nPanel{
+  display:block!important;
+  width:100%!important;
+  margin:0 0 18px!important;
+  padding:14px!important;
+  border-radius:16px!important;
+}
+body.v230-ui #molpathI18nPanel label{
+  margin:0 0 7px!important;
+}
+body.v230-ui #molpathI18nPanel .i18n-chip,
+body.v230-ui #molpathI18nPanel .i18n-note{
+  display:none!important;
+}
+body.v230-ui #v20bCasePill{
+  display:none!important;
+}
+body.v230-ui #versionBadge.v230-hero-badge{
+  background:rgba(255,255,255,.16)!important;
+  border:1px solid rgba(255,255,255,.24)!important;
+  color:#fff!important;
+  box-shadow:none!important;
+}
+body.v230-ui .v20b-domain-card.qm .icon{
+  font-size:.86rem!important;
+  letter-spacing:.02em!important;
+  white-space:nowrap!important;
+}
+@media(max-width:980px){
+  body.v230-ui .sidebar .brand{grid-template-columns:92px minmax(0,1fr)!important}
+  body.v230-ui .sidebar .brand img#pathoLogo{width:92px!important;height:92px!important}
+  body.v230-ui .sidebar .brand .v20b5-wordmark{min-height:92px!important}
+  body.v230-ui .sidebar .brand .v20b5-wordmark h1{font-size:1.5rem!important}
+}
+</style>
+<script id="v230UiPolishPatch">
+(function(){
+'use strict';
+const APP_VERSION='v2.3.0';
+const SIGNATURE_IDS=new Set([
+  'MTB_CNS_001_v1_0',
+  'LAB_DOC_001_v1_0',
+  'RES_OMICS_001_v1_0',
+  'RES_ETH_001_v1_0'
+]);
+const COPY={
+  de:{language:'Sprache',feedback:'Feedbackmodus',navigation:'Navigation',course:'Kurs',free:'Freies Spielen',dashboard:'Geführte Fälle, freie Methodenauswahl, Clinical-Reasoning-Gates, Kurse, Berichte und Lehrblätter.',deep:'Deep Dive',signature:'Signature Case',mtb:'MTB Case',lab:'LAB Case',res:'RES Case',method:'Methoden-Case'},
+  en:{language:'Language',feedback:'Feedback mode',navigation:'Navigation',course:'Course',free:'Free play',dashboard:'Guided cases, free method selection, clinical reasoning stages, courses, reports and teaching sheets.',deep:'Deep Dive',signature:'Signature Case',mtb:'MTB Case',lab:'LAB Case',res:'RES Case',method:'Methods Case'},
+  ro:{language:'Limbă',feedback:'Mod de feedback',navigation:'Navigare',course:'Curs',free:'Joc liber',dashboard:'Cazuri ghidate, selecție liberă a metodelor, etape de raționament clinic, cursuri, rapoarte și fișe didactice.',deep:'Deep Dive',signature:'Caz Signature',mtb:'Caz MTB',lab:'Caz LAB',res:'Caz RES',method:'Caz metodologic'},
+  el:{language:'Γλώσσα',feedback:'Λειτουργία ανατροφοδότησης',navigation:'Πλοήγηση',course:'Μάθημα',free:'Ελεύθερη εξάσκηση',dashboard:'Καθοδηγούμενα περιστατικά, ελεύθερη επιλογή μεθόδων, στάδια κλινικού συλλογισμού, μαθήματα, αναφορές και εκπαιδευτικά φύλλα.',deep:'Deep Dive',signature:'Signature Case',mtb:'Περιστατικό MTB',lab:'Περιστατικό LAB',res:'Περιστατικό RES',method:'Περιστατικό μεθοδολογίας'},
+  es:{language:'Idioma',feedback:'Modo de feedback',navigation:'Navegación',course:'Curso',free:'Juego libre',dashboard:'Casos guiados, selección libre de métodos, etapas de razonamiento clínico, cursos, informes y fichas docentes.',deep:'Deep Dive',signature:'Caso Signature',mtb:'Caso MTB',lab:'Caso LAB',res:'Caso RES',method:'Caso metodológico'},
+  fr:{language:'Langue',feedback:'Mode de feedback',navigation:'Navigation',course:'Cours',free:'Mode libre',dashboard:'Cas guidés, libre sélection des méthodes, étapes de raisonnement clinique, cours, rapports et fiches pédagogiques.',deep:'Deep Dive',signature:'Cas Signature',mtb:'Cas MTB',lab:'Cas LAB',res:'Cas RES',method:'Cas méthodologique'}
+};
+window.MOLPATH_APP_VERSION=APP_VERSION;
+window.MolPathApp=Object.freeze({version:APP_VERSION,release:'UI Polish'});
+function lang(){
+  const v=(document.body&&document.body.getAttribute('data-molpath-lang'))||localStorage.getItem('molpath_lang')||'de';
+  return COPY[v]?v:'de';
+}
+function t(){return COPY[lang()]||COPY.de;}
+function active(){try{return (typeof activeCase!=='undefined'&&activeCase)?activeCase:null;}catch(_e){return null;}}
+function isDeep(c){
+  if(!c)return false;
+  try{if(typeof DEEP_DIVE_MAP_V17!=='undefined'&&DEEP_DIVE_MAP_V17&&DEEP_DIVE_MAP_V17[c.id])return true;}catch(_e){}
+  try{if(Array.isArray(DEEP_DIVE_CASES_V17)&&DEEP_DIVE_CASES_V17.some(x=>x&&x.case_id===c.id))return true;}catch(_e){}
+  return false;
+}
+function heroLabel(){
+  const c=active(), L=t();
+  if(!c)return 'MolPath';
+  if(isDeep(c))return L.deep;
+  if(SIGNATURE_IDS.has(c.id))return L.signature;
+  if(c.mode==='patient_care')return L.mtb;
+  if(c.mode==='lab_qm')return L.lab;
+  if(c.mode==='research')return L.res;
+  return L.method;
+}
+function ensureBrand(){
+  const sidebar=document.querySelector('.sidebar');
+  const brand=sidebar&&sidebar.querySelector('.brand');
+  if(!sidebar||!brand)return;
+  const powered=sidebar.querySelector(':scope > .powered')||brand.querySelector('.powered');
+  let wordmark=brand.querySelector('.v20b5-wordmark');
+  const h1=brand.querySelector('h1');
+  if(!wordmark){
+    wordmark=document.createElement('div');wordmark.className='v20b5-wordmark';
+    if(h1){brand.insertBefore(wordmark,h1);wordmark.appendChild(h1);}else brand.appendChild(wordmark);
+  }
+  if(powered&&powered.parentElement!==wordmark)wordmark.appendChild(powered);
+  const panel=document.getElementById('molpathI18nPanel');
+  if(panel&&panel.parentElement===wordmark)brand.insertAdjacentElement('afterend',panel);
+  else if(panel&&panel.parentElement===sidebar&&brand.nextElementSibling!==panel)brand.insertAdjacentElement('afterend',panel);
+}
+function polishLanguage(){
+  const p=document.getElementById('molpathI18nPanel');if(!p)return;
+  p.setAttribute('data-i18n-skip','1');
+  const lab=p.querySelector('label[for="molpathLangSelect"]');
+  if(lab){lab.setAttribute('data-i18n-skip','1');const desired=t().language;if(lab.textContent!==desired)lab.textContent=desired;}
+  p.querySelectorAll('.i18n-chip,.i18n-note').forEach(el=>el.remove());
+}
+function polishModes(){
+  const feedback=document.querySelector('.sidebar .mode-panel > h2');
+  if(feedback){feedback.setAttribute('data-i18n-skip','1');if(feedback.textContent!==t().feedback)feedback.textContent=t().feedback;}
+  const nav=document.querySelector('#courseModePanel > h2');
+  if(nav){nav.setAttribute('data-i18n-skip','1');if(nav.textContent!==t().navigation)nav.textContent=t().navigation;}
+}
+function polishDashboard(){
+  const p=document.querySelector('#v20bHomeDashboard .v20b-dash-head p.muted');
+  if(p){p.setAttribute('data-i18n-skip','1');if(p.textContent!==t().dashboard)p.textContent=t().dashboard;}
+  const qm=document.querySelector('#v20bHomeDashboard .v20b-domain-card.qm .icon');
+  if(qm){qm.setAttribute('data-i18n-skip','1');if(qm.textContent!=='LAB')qm.textContent='LAB';}
+}
+function stampVersion(){
+  if(document.title!=='MolPath Simulator '+APP_VERSION)document.title='MolPath Simulator '+APP_VERSION;
+  const top=document.getElementById('v20bVersion')||document.querySelector('.v20b-topstatus .v20b-pill.primary');
+  if(top){top.setAttribute('data-i18n-skip','1');top.className='v20b-pill primary';if(top.textContent!==APP_VERSION)top.textContent=APP_VERSION;}
+  const casePill=document.getElementById('v20bCasePill');if(casePill){casePill.setAttribute('data-i18n-skip','1');casePill.textContent='';casePill.style.display='none';}
+  const coursePill=document.getElementById('v20bCoursePill');
+  if(coursePill){
+    let activeCourse=false, course=null;
+    try{activeCourse=!!(window.v16CourseIsActive&&v16CourseIsActive());}catch(_e){}
+    try{course=window.v16Course?v16Course():null;}catch(_e){}
+    const label=(activeCourse&&course)?(t().course+' · '+(course.label||course.title||course.id||'')):t().free;
+    coursePill.setAttribute('data-i18n-skip','1');coursePill.className='v20b-pill';
+    if(coursePill.textContent!==label)coursePill.textContent=label;
+  }
+  const hero=document.getElementById('versionBadge');
+  if(hero){const x=heroLabel();hero.setAttribute('data-i18n-skip','1');hero.className='badge v230-hero-badge';if(hero.textContent!==x)hero.textContent=x;}
+}
+let raf=0;
+function apply(){
+  if(!document.body)return;
+  document.body.classList.add('v230-ui');
+  ensureBrand();polishLanguage();polishModes();polishDashboard();stampVersion();
+}
+function schedule(){if(raf)return;raf=requestAnimationFrame(function(){raf=0;apply();});}
+const prevRender=window.render;
+if(typeof prevRender==='function'){
+  window.render=function(){const out=prevRender.apply(this,arguments);setTimeout(schedule,0);return out;};
+}
+function boot(){apply();setTimeout(apply,0);setTimeout(apply,120);}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot,{once:true});else boot();
+const mo=new MutationObserver(schedule);
+if(document.body)mo.observe(document.body,{childList:true,subtree:true,attributes:true,attributeFilter:['data-molpath-lang']});
+window.MolPathUiPolish230=Object.freeze({version:APP_VERSION,signatureIds:[...SIGNATURE_IDS],scope:'branding-language-version-dashboard-mode-labels'});
+})();
+</script>
