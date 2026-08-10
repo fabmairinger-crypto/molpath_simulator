@@ -1,0 +1,24 @@
+{
+  "release": "v2.3.0a",
+  "display_version": "v2.3.0",
+  "name": "Version Badge Hotfix",
+  "base": "v2.3.0 UI Polish",
+  "base_index_sha256": "3b96d2a030ddf81b1d190af03f67075c2bcf4f02c4b147c5e3dd4cda3bbb5c27",
+  "index_sha256": "34bd88417daa91e8c4067b1d8df6e5105200264299a40cbdd6e90c4917c93944",
+  "changed_runtime_files": [
+    "index.html"
+  ],
+  "archive_files": [
+    "CHANGELOG_v2_3_0a.md",
+    "MANIFEST_v2_3_0a.json",
+    "QA_REPORT_v2_3_0a.md",
+    "SHA256SUMS.txt"
+  ],
+  "code_changes": [
+    "Legacy v2.2.4c observer version constant updated to v2.3.0",
+    "Legacy observer no longer targets hero #versionBadge"
+  ],
+  "runtime_behavior_changed": false,
+  "ui_behavior_changed": true,
+  "translations_changed": false
+}
