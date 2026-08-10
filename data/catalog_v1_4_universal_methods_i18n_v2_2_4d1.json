@@ -1,0 +1,3077 @@
+{
+  "block_id": "BLOCK04_METHOD_CATALOG",
+  "version": "1.0",
+  "created_at": "2026-08-06T11:21:00+02:00",
+  "status": "READY_FOR_USER_REVIEW",
+  "source_file": "v6/data/catalog_v1_4_universal_methods.json",
+  "source_sha256": "4001e0e203f79b46835e53ea09f9d748176f341536cc1f8767ddb0e040d22698",
+  "method_count": 71,
+  "category_count": 17,
+  "translated_info_count": 55,
+  "manual_check_count": 22,
+  "languages": [
+    "de",
+    "en",
+    "ro",
+    "el",
+    "es",
+    "fr"
+  ],
+  "protected_tokens": [
+    "ALK",
+    "BRAF",
+    "BRCA1/2",
+    "CD3",
+    "CD8",
+    "CDX2",
+    "CK5/6",
+    "CK7",
+    "CK20",
+    "ctDNA",
+    "EGFR",
+    "EMT",
+    "ERBB2",
+    "FAP",
+    "FFPE",
+    "FGFR2",
+    "FISH",
+    "HER2",
+    "HIF",
+    "HRD",
+    "HRR",
+    "IDH1",
+    "IDH1/2",
+    "IHC",
+    "ISH",
+    "KIT",
+    "KRAS",
+    "MLH1",
+    "MMR",
+    "MGMT",
+    "MSI",
+    "NGS",
+    "NTRK",
+    "NRAS",
+    "PARP",
+    "PCR",
+    "PD-L1",
+    "PDGFRA",
+    "PIK3CA",
+    "PMS2",
+    "QC",
+    "RAS",
+    "RET",
+    "ROS1",
+    "SATB2",
+    "STK11",
+    "T790M/C797S",
+    "TIL",
+    "TMB",
+    "TP53",
+    "UDG",
+    "VAF",
+    "VEGF",
+    "VHL",
+    "VUS",
+    "WT1",
+    "αSMA",
+    "β-catenin"
+  ],
+  "localized_abbreviations": {
+    "DNA": {
+      "en": "DNA",
+      "ro": "ADN",
+      "el": "DNA",
+      "es": "ADN",
+      "fr": "ADN"
+    },
+    "RNA": {
+      "en": "RNA",
+      "ro": "ARN",
+      "el": "RNA",
+      "es": "ARN",
+      "fr": "ARN"
+    }
+  },
+  "categories": [
+    {
+      "de": "Histologie/IHC",
+      "en": "Histology/IHC",
+      "ro": "Histologie/IHC",
+      "el": "Ιστολογία/IHC",
+      "es": "Histología/IHC",
+      "fr": "Histologie/IHC"
+    },
+    {
+      "de": "PCR / Einzeltest",
+      "en": "PCR / single-gene test",
+      "ro": "PCR / test genic individual",
+      "el": "PCR / έλεγχος μεμονωμένου γονιδίου",
+      "es": "PCR / prueba de gen único",
+      "fr": "PCR / test monogénique"
+    },
+    {
+      "de": "FISH/ISH",
+      "en": "FISH/ISH",
+      "ro": "FISH/ISH",
+      "el": "FISH/ISH",
+      "es": "FISH/ISH",
+      "fr": "FISH/ISH"
+    },
+    {
+      "de": "NGS",
+      "en": "NGS",
+      "ro": "NGS",
+      "el": "NGS",
+      "es": "NGS",
+      "fr": "NGS"
+    },
+    {
+      "de": "Liquid Biopsy",
+      "en": "Liquid biopsy",
+      "ro": "Biopsie lichidă",
+      "el": "Υγρή βιοψία",
+      "es": "Biopsia líquida",
+      "fr": "Biopsie liquide"
+    },
+    {
+      "de": "Genetik / Beratung",
+      "en": "Genetics / counselling",
+      "ro": "Genetică / consiliere",
+      "el": "Γενετική / συμβουλευτική",
+      "es": "Genética / asesoramiento",
+      "fr": "Génétique / conseil"
+    },
+    {
+      "de": "Histologie/IHC + Sequenzierung",
+      "en": "Histology/IHC + sequencing",
+      "ro": "Histologie/IHC + secvențiere",
+      "el": "Ιστολογία/IHC + αλληλούχηση",
+      "es": "Histología/IHC + secuenciación",
+      "fr": "Histologie/IHC + séquençage"
+    },
+    {
+      "de": "Epigenetik",
+      "en": "Epigenetics",
+      "ro": "Epigenetică",
+      "el": "Επιγενετική",
+      "es": "Epigenética",
+      "fr": "Épigénétique"
+    },
+    {
+      "de": "Interpretation",
+      "en": "Interpretation",
+      "ro": "Interpretare",
+      "el": "Ερμηνεία",
+      "es": "Interpretación",
+      "fr": "Interprétation"
+    },
+    {
+      "de": "Fehlentscheidung",
+      "en": "Incorrect decision",
+      "ro": "Decizie eronată",
+      "el": "Εσφαλμένη απόφαση",
+      "es": "Decisión incorrecta",
+      "fr": "Décision erronée"
+    },
+    {
+      "de": "Material / Präanalytik",
+      "en": "Specimen / preanalytics",
+      "ro": "Material / preanalitică",
+      "el": "Υλικό / προαναλυτική φάση",
+      "es": "Material / preanalítica",
+      "fr": "Matériel / phase préanalytique"
+    },
+    {
+      "de": "PCR/NGS",
+      "en": "PCR/NGS",
+      "ro": "PCR/NGS",
+      "el": "PCR/NGS",
+      "es": "PCR/NGS",
+      "fr": "PCR/NGS"
+    },
+    {
+      "de": "NGS/FISH",
+      "en": "NGS/FISH",
+      "ro": "NGS/FISH",
+      "el": "NGS/FISH",
+      "es": "NGS/FISH",
+      "fr": "NGS/FISH"
+    },
+    {
+      "de": "Validierung",
+      "en": "Validation",
+      "ro": "Validare",
+      "el": "Επικύρωση",
+      "es": "Validación",
+      "fr": "Validation"
+    },
+    {
+      "de": "Bioinformatik",
+      "en": "Bioinformatics",
+      "ro": "Bioinformatică",
+      "el": "Βιοπληροφορική",
+      "es": "Bioinformática",
+      "fr": "Bio-informatique"
+    },
+    {
+      "de": "Humangenetik",
+      "en": "Medical genetics",
+      "ro": "Genetică medicală",
+      "el": "Ιατρική γενετική",
+      "es": "Genética médica",
+      "fr": "Génétique médicale"
+    },
+    {
+      "de": "PCR/dPCR",
+      "en": "PCR/dPCR",
+      "ro": "PCR/dPCR",
+      "el": "PCR/dPCR",
+      "es": "PCR/dPCR",
+      "fr": "PCR/dPCR"
+    }
+  ],
+  "methods": [
+    {
+      "id": "he_review",
+      "category_de": "Histologie/IHC",
+      "category": {
+        "de": "Histologie/IHC",
+        "en": "Histology/IHC",
+        "ro": "Histologie/IHC",
+        "el": "Ιστολογία/IHC",
+        "es": "Histología/IHC",
+        "fr": "Histologie/IHC"
+      },
+      "label": {
+        "de": "HE-Reevaluation + Tumorareal markieren",
+        "en": "H&E re-evaluation and marking of the tumour area",
+        "ro": "Reevaluare H&E și marcarea ariei tumorale",
+        "el": "Επανεκτίμηση H&E και επισήμανση της νεοπλασματικής περιοχής",
+        "es": "Reevaluación H&E y marcado del área tumoral",
+        "fr": "Réévaluation H&E et repérage de la zone tumorale"
+      },
+      "info": {
+        "de": "Basis: Tumoranteil, Nekrose, Makrodissektion.",
+        "en": "Baseline assessment: tumour cell content, necrosis and macrodissection.",
+        "ro": "Evaluare de bază: procent tumoral, necroză și macrodisecție.",
+        "el": "Βασική αξιολόγηση: ποσοστό νεοπλασματικών κυττάρων, νέκρωση και μακροδιατομή.",
+        "es": "Evaluación inicial: porcentaje tumoral, necrosis y macrodissección.",
+        "fr": "Évaluation de base : cellularité tumorale, nécrose et macrodissection."
+      },
+      "points": 20,
+      "sections": 1,
+      "tat_days": 1,
+      "manual_check": "YES",
+      "curation_note": "Confirm whether H&E or HE should be displayed consistently across all languages.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "3072b0681a28be689a73f77cba961633d9ea23d7094479a75cc12b06089574e4",
+      "en_hash_sha256": "68185b662f60743c47614297c008f303dc0c78dfa4abf3583d859d2fb237d7ce",
+      "ro_hash_sha256": "88c8a9585d0d3f5df819b492e57b769cf56ea486e848d174fa2a64e4f9fa42cd",
+      "el_hash_sha256": "186ec5e2fc54910fed24478f630b180c030c8b4a37bed0fa688a9c0c3edbbc47",
+      "es_hash_sha256": "e3bb910b9c5979dc8b8d9b1443dde08e44c71c77e67be8263132f8c9c97c4fae",
+      "fr_hash_sha256": "58e4b9728e1db804833428ec03a172b391a828f236f4e3a4046aa948cf78cfcb"
+    },
+    {
+      "id": "ki67",
+      "category_de": "Histologie/IHC",
+      "category": {
+        "de": "Histologie/IHC",
+        "en": "Histology/IHC",
+        "ro": "Histologie/IHC",
+        "el": "Ιστολογία/IHC",
+        "es": "Histología/IHC",
+        "fr": "Histologie/IHC"
+      },
+      "label": {
+        "de": "Ki67/MIB-1",
+        "en": "Ki67/MIB-1",
+        "ro": "Ki67/MIB-1",
+        "el": "Ki67/MIB-1",
+        "es": "Ki67/MIB-1",
+        "fr": "Ki67/MIB-1"
+      },
+      "info": {
+        "de": "Proliferationsmarker; selten allein therapieentscheidend.",
+        "en": "Proliferation marker; rarely determines treatment on its own.",
+        "ro": "Marker de proliferare; rareori determină singur decizia terapeutică.",
+        "el": "Δείκτης κυτταρικού πολλαπλασιασμού· σπάνια καθορίζει μόνος του τη θεραπευτική απόφαση.",
+        "es": "Marcador de proliferación; rara vez determina por sí solo la decisión terapéutica.",
+        "fr": "Marqueur de prolifération ; il détermine rarement à lui seul la décision thérapeutique."
+      },
+      "points": 45,
+      "sections": 1,
+      "tat_days": 1,
+      "manual_check": "",
+      "curation_note": "Context-curated method label and explanatory text.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "fa66effd7c8cf3f53ea2e9262a143b271b374d0f096313869ef04e194f6f8085",
+      "en_hash_sha256": "908f29a5816c74efb5c631405d1a5865be4ec64888070ba20f942954ba836cfd",
+      "ro_hash_sha256": "1f2de8f61e6f15d10adb317bd60567cdbe341fd487e2c2cc5d064d77b49051b9",
+      "el_hash_sha256": "7840d6a4e45d8cda079f4fc16f89f19d6fc7f19929afbe8d2a568bac2e5c5ef6",
+      "es_hash_sha256": "d0c1ad3291d98ee7544c63cae9ff608d0718722a0c6fb70b183b441385a340fd",
+      "fr_hash_sha256": "f7faa0958460b96698b80f4ac2605fc5a0ec4991c94b965aa476744484409e2b"
+    },
+    {
+      "id": "ihc_lung_lineage",
+      "category_de": "Histologie/IHC",
+      "category": {
+        "de": "Histologie/IHC",
+        "en": "Histology/IHC",
+        "ro": "Histologie/IHC",
+        "el": "Ιστολογία/IHC",
+        "es": "Histología/IHC",
+        "fr": "Histologie/IHC"
+      },
+      "label": {
+        "de": "IHC Lungen-Lineage: TTF-1, Napsin A, p40, CK5/6, CK7",
+        "en": "Lung lineage IHC: TTF-1, Napsin A, p40, CK5/6, CK7",
+        "ro": "IHC pentru diferențiere pulmonară: TTF-1, Napsin A, p40, CK5/6, CK7",
+        "el": "IHC πνευμονικής διαφοροποίησης: TTF-1, Napsin A, p40, CK5/6, CK7",
+        "es": "IHC de diferenciación pulmonar: TTF-1, Napsin A, p40, CK5/6, CK7",
+        "fr": "IHC de différenciation pulmonaire : TTF-1, Napsin A, p40, CK5/6, CK7"
+      },
+      "info": {
+        "de": "Sichert Adenokarzinom vs. Plattenepithel; meist vor Molekularanforderung bereits erfolgt.",
+        "en": "Distinguishes adenocarcinoma from squamous-cell carcinoma; usually already completed before molecular testing is requested.",
+        "ro": "Diferențiază adenocarcinomul de carcinomul scuamos; de obicei este deja efectuată înaintea solicitării testării moleculare.",
+        "el": "Διακρίνει το αδενοκαρκίνωμα από το πλακώδες καρκίνωμα· συνήθως έχει ήδη ολοκληρωθεί πριν ζητηθεί μοριακός έλεγχος.",
+        "es": "Distingue el adenocarcinoma del carcinoma escamoso; normalmente ya se ha realizado antes de solicitar estudios moleculares.",
+        "fr": "Distingue l’adénocarcinome du carcinome épidermoïde ; elle est généralement déjà réalisée avant la demande d’analyses moléculaires."
+      },
+      "points": 160,
+      "sections": 5,
+      "tat_days": 2,
+      "manual_check": "YES",
+      "curation_note": "Lineage was localized as differentiation in RO/EL/ES/FR for natural clinical wording.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "169de8b9ce95ac972e1090567a21eff4e0373b9f71eeb9edef347944f9bb11da",
+      "en_hash_sha256": "298f83fa8c3898b9ec0cf82c5614d3934c89ade3ca99573106a031e35ffe38e6",
+      "ro_hash_sha256": "b1c3b9352a14eb233976cb069217a745e67b83316d87ef33a5a9ebac10fb259e",
+      "el_hash_sha256": "6067cb27308adc495a853416232c9e4c88001d94204c194b4e5c4f6d9e23d972",
+      "es_hash_sha256": "805d60eee1a9cf7262b894424c34a908a1f886c12d1c99dbf0de5a8a7b657995",
+      "fr_hash_sha256": "6a3928952892d1776c520a837dfd16b5a63311cc89f80bf6e7951a5093e50762"
+    },
+    {
+      "id": "pdl1",
+      "category_de": "Histologie/IHC",
+      "category": {
+        "de": "Histologie/IHC",
+        "en": "Histology/IHC",
+        "ro": "Histologie/IHC",
+        "el": "Ιστολογία/IHC",
+        "es": "Histología/IHC",
+        "fr": "Histologie/IHC"
+      },
+      "label": {
+        "de": "PD-L1 IHC",
+        "en": "PD-L1 IHC",
+        "ro": "IHC PD-L1",
+        "el": "IHC PD-L1",
+        "es": "IHC de PD-L1",
+        "fr": "IHC PD-L1"
+      },
+      "info": {
+        "de": "",
+        "en": "",
+        "ro": "",
+        "el": "",
+        "es": "",
+        "fr": ""
+      },
+      "points": 90,
+      "sections": 1,
+      "tat_days": 1,
+      "manual_check": "",
+      "curation_note": "Context-curated method label and explanatory text.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "b70a484dd5ecd9036699faf9940568a2f5edf9cdb135767fc073d72f9c71475b",
+      "en_hash_sha256": "98617b0988f8b6739535473a8417057917c3b8e7bbf5a57791fb88e078a934f1",
+      "ro_hash_sha256": "ec0be15d402039eb83ea8fa6bff3765adeca894b4a486827245f85dc763f5d6d",
+      "el_hash_sha256": "ec0be15d402039eb83ea8fa6bff3765adeca894b4a486827245f85dc763f5d6d",
+      "es_hash_sha256": "f3b4a13876d672f30ca37905a5584beaa32299c2967f0c459fd26d08f7be2c38",
+      "fr_hash_sha256": "ec0be15d402039eb83ea8fa6bff3765adeca894b4a486827245f85dc763f5d6d"
+    },
+    {
+      "id": "alk_ihc",
+      "category_de": "Histologie/IHC",
+      "category": {
+        "de": "Histologie/IHC",
+        "en": "Histology/IHC",
+        "ro": "Histologie/IHC",
+        "el": "Ιστολογία/IHC",
+        "es": "Histología/IHC",
+        "fr": "Histologie/IHC"
+      },
+      "label": {
+        "de": "ALK-IHC als Screening",
+        "en": "ALK IHC screening",
+        "ro": "Screening IHC pentru ALK",
+        "el": "Έλεγχος διαλογής ALK με IHC",
+        "es": "Cribado de ALK mediante IHC",
+        "fr": "Dépistage d’ALK par IHC"
+      },
+      "info": {
+        "de": "",
+        "en": "",
+        "ro": "",
+        "el": "",
+        "es": "",
+        "fr": ""
+      },
+      "points": 80,
+      "sections": 1,
+      "tat_days": 1,
+      "manual_check": "",
+      "curation_note": "Context-curated method label and explanatory text.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "d4ba62c063ccc27122cdc71def5fef3527ac7bd734545726d867e55018351c4c",
+      "en_hash_sha256": "3c017d2536daf995ff06ccc36c67cdf198fd265b9b0d7940fc780b2ce081ea6a",
+      "ro_hash_sha256": "5d954e24af5f22fd885b3f874b6ea5a4de26572a267ff91176d675a6b60c1257",
+      "el_hash_sha256": "3470e12fa19a4af2939d572e0218e0fa75bc550d331cabb73edda8d44248526a",
+      "es_hash_sha256": "a8e6847d4da870bb3e058528c7f47bc9bc00a17e6c454818d5e73e3ab24e4b86",
+      "fr_hash_sha256": "8100a7c8e658ce821a511636c3b444b7ae446f70d7782ad1340443f2e78b8a44"
+    },
+    {
+      "id": "egfr_pcr",
+      "category_de": "PCR / Einzeltest",
+      "category": {
+        "de": "PCR / Einzeltest",
+        "en": "PCR / single-gene test",
+        "ro": "PCR / test genic individual",
+        "el": "PCR / έλεγχος μεμονωμένου γονιδίου",
+        "es": "PCR / prueba de gen único",
+        "fr": "PCR / test monogénique"
+      },
+      "label": {
+        "de": "EGFR-Mutation PCR",
+        "en": "EGFR mutation PCR",
+        "ro": "PCR pentru mutații EGFR",
+        "el": "PCR για μεταλλάξεις EGFR",
+        "es": "PCR de mutaciones en EGFR",
+        "fr": "PCR des mutations d’EGFR"
+      },
+      "info": {
+        "de": "",
+        "en": "",
+        "ro": "",
+        "el": "",
+        "es": "",
+        "fr": ""
+      },
+      "points": 120,
+      "sections": 2,
+      "tat_days": 2,
+      "manual_check": "",
+      "curation_note": "Context-curated method label and explanatory text.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "9c93f41b9ba230c4c8e83c9adbed5324209facca0569d1cf9ac27a601b35b0f8",
+      "en_hash_sha256": "ff6936326b443c5bda47491da87c540701bcb2d430c2bb439313f40df0e1a627",
+      "ro_hash_sha256": "45db95b7c4fa5174bc93b47cf3b9645b9ddcad639198a2449e4c41190a7068f8",
+      "el_hash_sha256": "7130a8fd75014b2246d00bef05d10aefc458808ddc79448bb036bb026729f23b",
+      "es_hash_sha256": "825a567d43e90b4c3fa5ee3244be12fff1a13e084ec944b90f5309dc06247c6e",
+      "fr_hash_sha256": "550e4da9386a547a9adc6a04e723d47b517e8d03c8b97a578fe31eb1abcce8a7"
+    },
+    {
+      "id": "kras_pcr",
+      "category_de": "PCR / Einzeltest",
+      "category": {
+        "de": "PCR / Einzeltest",
+        "en": "PCR / single-gene test",
+        "ro": "PCR / test genic individual",
+        "el": "PCR / έλεγχος μεμονωμένου γονιδίου",
+        "es": "PCR / prueba de gen único",
+        "fr": "PCR / test monogénique"
+      },
+      "label": {
+        "de": "KRAS-Mutation PCR",
+        "en": "KRAS mutation PCR",
+        "ro": "PCR pentru mutații KRAS",
+        "el": "PCR για μεταλλάξεις KRAS",
+        "es": "PCR de mutaciones en KRAS",
+        "fr": "PCR des mutations de KRAS"
+      },
+      "info": {
+        "de": "",
+        "en": "",
+        "ro": "",
+        "el": "",
+        "es": "",
+        "fr": ""
+      },
+      "points": 120,
+      "sections": 2,
+      "tat_days": 2,
+      "manual_check": "",
+      "curation_note": "Context-curated method label and explanatory text.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "168d1fbed09fc743154009fbc6ae9bd5274a4e5da70981a5cf62272bb3245969",
+      "en_hash_sha256": "04a25a12fd7351b84cbc10386dbdba12a9acf37baea97a8939c5439a2a98e6f2",
+      "ro_hash_sha256": "3922e86d4e5c36df6303f594a2276f75176e66e4c8345056c325550c85053018",
+      "el_hash_sha256": "ceaa6f8dd17786c6e885a4ab8360f14d649f435a951d34404dce034a9e0e47b4",
+      "es_hash_sha256": "e00f58fba21b51626efcac706db4d3502134b29e0c70ad845953b36d88afd68f",
+      "fr_hash_sha256": "7ef2cbe9e3bd4289da2b1a8eb4fd8dab063ff8ba12c6dd7764f797836f4bf38e"
+    },
+    {
+      "id": "braf_pcr",
+      "category_de": "PCR / Einzeltest",
+      "category": {
+        "de": "PCR / Einzeltest",
+        "en": "PCR / single-gene test",
+        "ro": "PCR / test genic individual",
+        "el": "PCR / έλεγχος μεμονωμένου γονιδίου",
+        "es": "PCR / prueba de gen único",
+        "fr": "PCR / test monogénique"
+      },
+      "label": {
+        "de": "BRAF-V600 PCR",
+        "en": "BRAF V600 PCR",
+        "ro": "PCR pentru BRAF V600",
+        "el": "PCR για BRAF V600",
+        "es": "PCR de BRAF V600",
+        "fr": "PCR de BRAF V600"
+      },
+      "info": {
+        "de": "",
+        "en": "",
+        "ro": "",
+        "el": "",
+        "es": "",
+        "fr": ""
+      },
+      "points": 120,
+      "sections": 2,
+      "tat_days": 2,
+      "manual_check": "",
+      "curation_note": "Context-curated method label and explanatory text.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "0e253ab946133acb3438f865a012285313cb8ab8ad56543d71ffce2b8071962f",
+      "en_hash_sha256": "97d0b4aa5e2ba251b8ecf2f8f0be209fd4a9d351564e3fc86dce04e45199a8af",
+      "ro_hash_sha256": "08b901430c560367bc41762e18655655a06d8f5974374cff8481b8ae057bb330",
+      "el_hash_sha256": "e44433eda70af61cbf154187adf0adf8b5ea8449b72ab6cf0c22da98999f9f34",
+      "es_hash_sha256": "9a73cde4b9ddb4e8ae3d00ccbc45af4234021639784a9d9b26764db630c7e419",
+      "fr_hash_sha256": "9a73cde4b9ddb4e8ae3d00ccbc45af4234021639784a9d9b26764db630c7e419"
+    },
+    {
+      "id": "alk_fish",
+      "category_de": "FISH/ISH",
+      "category": {
+        "de": "FISH/ISH",
+        "en": "FISH/ISH",
+        "ro": "FISH/ISH",
+        "el": "FISH/ISH",
+        "es": "FISH/ISH",
+        "fr": "FISH/ISH"
+      },
+      "label": {
+        "de": "ALK Break-Apart FISH",
+        "en": "ALK break-apart FISH",
+        "ro": "FISH break-apart pentru ALK",
+        "el": "FISH break-apart για ALK",
+        "es": "FISH break-apart de ALK",
+        "fr": "FISH break-apart d’ALK"
+      },
+      "info": {
+        "de": "",
+        "en": "",
+        "ro": "",
+        "el": "",
+        "es": "",
+        "fr": ""
+      },
+      "points": 190,
+      "sections": 2,
+      "tat_days": 4,
+      "manual_check": "YES",
+      "curation_note": "Break-apart retained as an established assay term.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "153a239f05a648e47270f769283a7599c6345783167f8c05488663b3720e9f74",
+      "en_hash_sha256": "e41f05943795c150ed837bad4fe91cd9f53651a2d201a328dc7545405ce06727",
+      "ro_hash_sha256": "2d2ce9022a69ae9caced49d7a469ae8e4b9d07a4b9ae797c13e32c6e7fabc4c2",
+      "el_hash_sha256": "e4f3d5689dfe0ee7ec9f562f34c6b77684b5596e32ddfb33a100aa378b0442f5",
+      "es_hash_sha256": "78f2c21d07c041720d4e511360841f619eec5b35d261a95b9ac2de378ae9acbc",
+      "fr_hash_sha256": "46a293a58df6dcd7628742aebb26d04169e5352a36b5c5a6a4f11baebf22b584"
+    },
+    {
+      "id": "ros1_fish",
+      "category_de": "FISH/ISH",
+      "category": {
+        "de": "FISH/ISH",
+        "en": "FISH/ISH",
+        "ro": "FISH/ISH",
+        "el": "FISH/ISH",
+        "es": "FISH/ISH",
+        "fr": "FISH/ISH"
+      },
+      "label": {
+        "de": "ROS1 Break-Apart FISH",
+        "en": "ROS1 break-apart FISH",
+        "ro": "FISH break-apart pentru ROS1",
+        "el": "FISH break-apart για ROS1",
+        "es": "FISH break-apart de ROS1",
+        "fr": "FISH break-apart de ROS1"
+      },
+      "info": {
+        "de": "",
+        "en": "",
+        "ro": "",
+        "el": "",
+        "es": "",
+        "fr": ""
+      },
+      "points": 190,
+      "sections": 2,
+      "tat_days": 4,
+      "manual_check": "YES",
+      "curation_note": "Break-apart retained as an established assay term.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "f085e0bd8a75d0246688873fa8f09c4f0be3152b4cd0d6b102463f2a8bb05da3",
+      "en_hash_sha256": "de5756ec97a9af0b8561cf350ad2d8f22896487a2e58386b5e72442616957ab0",
+      "ro_hash_sha256": "0550fea39e3b834f5471674451e6a647633fcb55a6ce6cafc714829110faff5d",
+      "el_hash_sha256": "a655e04428ee0dcee12c9e6951b56266deac5621afea944c103a93351530028c",
+      "es_hash_sha256": "b66d5c1cf745733ce9fa49dafbd8c8de085d7a402ce2e56632802b5c8d0f6102",
+      "fr_hash_sha256": "b66d5c1cf745733ce9fa49dafbd8c8de085d7a402ce2e56632802b5c8d0f6102"
+    },
+    {
+      "id": "dna_lung_panel",
+      "category_de": "NGS",
+      "category": {
+        "de": "NGS",
+        "en": "NGS",
+        "ro": "NGS",
+        "el": "NGS",
+        "es": "NGS",
+        "fr": "NGS"
+      },
+      "label": {
+        "de": "Lungen-Panel DNA-NGS",
+        "en": "Lung cancer DNA NGS panel",
+        "ro": "Panel NGS ADN pentru cancer pulmonar",
+        "el": "Panel NGS DNA για καρκίνο πνεύμονα",
+        "es": "Panel NGS de ADN para cáncer de pulmón",
+        "fr": "Panel NGS ADN pour cancer du poumon"
+      },
+      "info": {
+        "de": "",
+        "en": "",
+        "ro": "",
+        "el": "",
+        "es": "",
+        "fr": ""
+      },
+      "points": 450,
+      "sections": 4,
+      "tat_days": 6,
+      "manual_check": "",
+      "curation_note": "Context-curated method label and explanatory text.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "be6ad3adfbc768f04581f67f955a268556a8cef998d7c06d42bcacc54b032a29",
+      "en_hash_sha256": "d7692146198b8b120613d7b956622b48d9b96fca5ec4f103e8635c134738d35a",
+      "ro_hash_sha256": "aba570e4bb89d8fbcf546bf296d689e01cdb1c9233163ea20f713e39c68f85b7",
+      "el_hash_sha256": "89084390397a05dab4942768dcbe83cd26e7ef1e200fe8b14323ab726abfca8b",
+      "es_hash_sha256": "6fecd2d5bd32946901ff89d57497c217606b6e57e52ef00bceed2f3754cf4644",
+      "fr_hash_sha256": "bd31454306bbd7009d359d48e37f07432168cac8511cdb05a774182c54b1a11f"
+    },
+    {
+      "id": "rna_fusion_panel",
+      "category_de": "NGS",
+      "category": {
+        "de": "NGS",
+        "en": "NGS",
+        "ro": "NGS",
+        "el": "NGS",
+        "es": "NGS",
+        "fr": "NGS"
+      },
+      "label": {
+        "de": "RNA-Fusionspanel Lunge",
+        "en": "Lung cancer RNA fusion panel",
+        "ro": "Panel ARN pentru fuziuni în cancerul pulmonar",
+        "el": "Panel RNA συντήξεων για καρκίνο πνεύμονα",
+        "es": "Panel de fusiones de ARN para cáncer de pulmón",
+        "fr": "Panel ARN de fusions pour cancer du poumon"
+      },
+      "info": {
+        "de": "",
+        "en": "",
+        "ro": "",
+        "el": "",
+        "es": "",
+        "fr": ""
+      },
+      "points": 350,
+      "sections": 4,
+      "tat_days": 6,
+      "manual_check": "",
+      "curation_note": "Context-curated method label and explanatory text.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "90f786a4802d651e024e5a2266065bce3cdad1cce375a65a9ecee2211a93f3ba",
+      "en_hash_sha256": "8a2f396a99b25dddc0e009956849fd5fc0e48d157407184132310773fa71d7ef",
+      "ro_hash_sha256": "dfb3e13bcc31c66d8f74f9aea962e429b020615074f7c6a50e915ecbc0848fc2",
+      "el_hash_sha256": "ec9707b4f44e59b52aa4a2c41d5d87a4e52fae9b68ee6698bbf26d93de4bb7e4",
+      "es_hash_sha256": "0cc19fdba9e5165082f497e1456a1a015daa16f092eff8312f6b5e464f34efe0",
+      "fr_hash_sha256": "211f592406ce71bd7deea57414dfdb5b57ce320efad5981ebee5d3478cb9f307"
+    },
+    {
+      "id": "dna_rna_lung_combo",
+      "category_de": "NGS",
+      "category": {
+        "de": "NGS",
+        "en": "NGS",
+        "ro": "NGS",
+        "el": "NGS",
+        "es": "NGS",
+        "fr": "NGS"
+      },
+      "label": {
+        "de": "Kombiniertes Lungen-Panel DNA/RNA",
+        "en": "Combined lung cancer DNA/RNA panel",
+        "ro": "Panel combinat ADN/ARN pentru cancer pulmonar",
+        "el": "Συνδυασμένο panel DNA/RNA για καρκίνο πνεύμονα",
+        "es": "Panel combinado de ADN/ARN para cáncer de pulmón",
+        "fr": "Panel combiné ADN/ARN pour cancer du poumon"
+      },
+      "info": {
+        "de": "",
+        "en": "",
+        "ro": "",
+        "el": "",
+        "es": "",
+        "fr": ""
+      },
+      "points": 720,
+      "sections": 7,
+      "tat_days": 7,
+      "manual_check": "",
+      "curation_note": "Context-curated method label and explanatory text.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "62c1678e672a1ed1b72cbab30d41de6550ad9b5b089729066c06cd65507c3fe9",
+      "en_hash_sha256": "6912f5b9904c833ee2e50db65617016edf0317b99b38f9d4cd53cb83fbc1be9d",
+      "ro_hash_sha256": "9164c3e57777b6cba453cfe200be0afd1e7870edd53a76e1db1b8a3e724494be",
+      "el_hash_sha256": "d1f214d5ec8c2a971a0ab5dd351a31194cca53dbe4f4ddeb611d6d583f67c7a3",
+      "es_hash_sha256": "ad78f3fce25d5eb3c758567322176e3480284b0c171b0658136d7982c06a49a9",
+      "fr_hash_sha256": "f40d3784d5b50053fa5b7a79240bba8790faad93e90593e2f8a3e97fa57c1cfe"
+    },
+    {
+      "id": "liquid_biopsy",
+      "category_de": "Liquid Biopsy",
+      "category": {
+        "de": "Liquid Biopsy",
+        "en": "Liquid biopsy",
+        "ro": "Biopsie lichidă",
+        "el": "Υγρή βιοψία",
+        "es": "Biopsia líquida",
+        "fr": "Biopsie liquide"
+      },
+      "label": {
+        "de": "Liquid Biopsy / ctDNA-Panel",
+        "en": "Liquid biopsy / ctDNA panel",
+        "ro": "Biopsie lichidă / panel ctDNA",
+        "el": "Υγρή βιοψία / panel ctDNA",
+        "es": "Biopsia líquida / panel de ctDNA",
+        "fr": "Biopsie liquide / panel ctDNA"
+      },
+      "info": {
+        "de": "Nicht primär statt Gewebe, wenn geeignetes FFPE-Material vorhanden ist.",
+        "en": "Not intended as a primary substitute for tissue when suitable FFPE material is available.",
+        "ro": "Nu este destinat să înlocuiască inițial țesutul atunci când este disponibil material FFPE adecvat.",
+        "el": "Δεν προορίζεται ως αρχικό υποκατάστατο ιστού όταν υπάρχει κατάλληλο υλικό FFPE.",
+        "es": "No debe sustituir de entrada al tejido cuando se dispone de material FFPE adecuado.",
+        "fr": "Ne doit pas remplacer d’emblée le tissu lorsqu’un matériel FFPE approprié est disponible."
+      },
+      "points": 550,
+      "sections": 0,
+      "tat_days": 6,
+      "manual_check": "YES",
+      "curation_note": "Confirm whether ctDNA remains untranslated globally.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "5bce4823eb1b0b9f60e920d15ac072780f27f1787e8f23e0d0cf9579d5cbfacf",
+      "en_hash_sha256": "f8e1bae53de7bdfa4969a2a3c3c59fbd2159e7cf9093cc294672b46c8588a529",
+      "ro_hash_sha256": "381840778441809e2bba9d8423bda0a6d8b90763405ab20958b65b856f5147f2",
+      "el_hash_sha256": "534f59c628f3a328ff8e10407113f2ddbf44ca63d9bcefdccbe9f587877ac991",
+      "es_hash_sha256": "4d4b5f2f835c832a5e85007b73590cf70964461f6530d4e4a2545ab1f0953bc9",
+      "fr_hash_sha256": "3c06316f04a1b1918903c03579cf1ff3c510c15842df79a601f42daa5cc4a8a9"
+    },
+    {
+      "id": "broad_pan_panel",
+      "category_de": "NGS",
+      "category": {
+        "de": "NGS",
+        "en": "NGS",
+        "ro": "NGS",
+        "el": "NGS",
+        "es": "NGS",
+        "fr": "NGS"
+      },
+      "label": {
+        "de": "Multigen PAN-Panel DNA/RNA inkl. TMB/MSI",
+        "en": "Broad pan-cancer DNA/RNA panel including TMB/MSI",
+        "ro": "Panel pan-cancer larg ADN/ARN, inclusiv TMB/MSI",
+        "el": "Ευρύ pan-cancer panel DNA/RNA με TMB/MSI",
+        "es": "Panel pan-cáncer amplio de ADN/ARN, incluido TMB/MSI",
+        "fr": "Large panel pan-cancer ADN/ARN incluant TMB/MSI"
+      },
+      "info": {
+        "de": "Kann überdimensioniert sein, wenn die klinische Frage klar ist.",
+        "en": "May be excessive when the clinical question is well defined.",
+        "ro": "Poate fi supradimensionat atunci când întrebarea clinică este clar definită.",
+        "el": "Μπορεί να είναι υπερβολικά εκτεταμένο όταν το κλινικό ερώτημα είναι σαφώς καθορισμένο.",
+        "es": "Puede resultar excesivo cuando la pregunta clínica está bien definida.",
+        "fr": "Peut être surdimensionné lorsque la question clinique est clairement définie."
+      },
+      "points": 950,
+      "sections": 8,
+      "tat_days": 9,
+      "manual_check": "YES",
+      "curation_note": "Pan-cancer wording and TMB/MSI protected.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "41a83f773bdc86f40fd4f0f4d17bf4eab4c1e2323a3b12e2f62191d3356920f2",
+      "en_hash_sha256": "8b0ab218288f9e301754aaa3ab5dda953a0d31828b5c0824379cf5a0db4d48b1",
+      "ro_hash_sha256": "5e66fe5e4490c2453a4a358a3b6859b6646699929f82d96019e2ad578277a714",
+      "el_hash_sha256": "40c6375d08cf25c221af990c80b6d6e44454a3c3c41ecda6b49028c92f32b740",
+      "es_hash_sha256": "3ec4df931f9237464a8b3c5a14f397e844a92bd2a80098dbdd338b45e6700152",
+      "fr_hash_sha256": "775d83c756a0fda44bc9a58f556db0b1377a2e9911df39bd449671026d38acc7"
+    },
+    {
+      "id": "ihc_crc_lineage",
+      "category_de": "Histologie/IHC",
+      "category": {
+        "de": "Histologie/IHC",
+        "en": "Histology/IHC",
+        "ro": "Histologie/IHC",
+        "el": "Ιστολογία/IHC",
+        "es": "Histología/IHC",
+        "fr": "Histologie/IHC"
+      },
+      "label": {
+        "de": "IHC CRC-Lineage: CK20, CDX2, SATB2, CK7",
+        "en": "Colorectal lineage IHC: CK20, CDX2, SATB2, CK7",
+        "ro": "IHC pentru diferențiere colorectală: CK20, CDX2, SATB2, CK7",
+        "el": "IHC ορθοκολικής διαφοροποίησης: CK20, CDX2, SATB2, CK7",
+        "es": "IHC de diferenciación colorrectal: CK20, CDX2, SATB2, CK7",
+        "fr": "IHC de différenciation colorectale : CK20, CDX2, SATB2, CK7"
+      },
+      "info": {
+        "de": "Sichert kolorektale Differenzierung/metastatische Zuordnung.",
+        "en": "Confirms colorectal differentiation and helps assign metastatic origin.",
+        "ro": "Confirmă diferențierea colorectală și ajută la stabilirea originii metastatice.",
+        "el": "Επιβεβαιώνει την ορθοκολική διαφοροποίηση και συμβάλλει στον προσδιορισμό της μεταστατικής προέλευσης.",
+        "es": "Confirma la diferenciación colorrectal y ayuda a establecer el origen metastásico.",
+        "fr": "Confirme la différenciation colorectale et contribue à déterminer l’origine métastatique."
+      },
+      "points": 150,
+      "sections": 4,
+      "tat_days": 2,
+      "manual_check": "",
+      "curation_note": "Context-curated method label and explanatory text.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "8c38f403287a634d51a115d4f627334b334ebfa137e845a248b66e60872073c2",
+      "en_hash_sha256": "d144ca064a15f60786abf5ada69c4dd2791a7a8a8d9b06fe7cfe369dbd9d8620",
+      "ro_hash_sha256": "10de196dea03e5a5298520e9931af5f44503eef35e4b56f5769fb956ea3af05e",
+      "el_hash_sha256": "f1ec48161fbbc655435271e271f598c5f5feb8fb6380c7c806455fef6ca26c29",
+      "es_hash_sha256": "a4a433f485669a151e0cfc71e74d361a5fa5c72e809887f06805fe8b6380f442",
+      "fr_hash_sha256": "d2c7ad4af49109954c8418372d8843288bb5587def0e9160ff01a862d8197192"
+    },
+    {
+      "id": "mmr_ihc",
+      "category_de": "Histologie/IHC",
+      "category": {
+        "de": "Histologie/IHC",
+        "en": "Histology/IHC",
+        "ro": "Histologie/IHC",
+        "el": "Ιστολογία/IHC",
+        "es": "Histología/IHC",
+        "fr": "Histologie/IHC"
+      },
+      "label": {
+        "de": "MMR-IHC: MLH1, PMS2, MSH2, MSH6",
+        "en": "MMR IHC: MLH1, PMS2, MSH2, MSH6",
+        "ro": "IHC MMR: MLH1, PMS2, MSH2, MSH6",
+        "el": "IHC MMR: MLH1, PMS2, MSH2, MSH6",
+        "es": "IHC de MMR: MLH1, PMS2, MSH2, MSH6",
+        "fr": "IHC MMR : MLH1, PMS2, MSH2, MSH6"
+      },
+      "info": {
+        "de": "",
+        "en": "",
+        "ro": "",
+        "el": "",
+        "es": "",
+        "fr": ""
+      },
+      "points": 150,
+      "sections": 4,
+      "tat_days": 2,
+      "manual_check": "",
+      "curation_note": "Context-curated method label and explanatory text.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "f07d4956fee64ddd79c5f91aa67dcc9e45a9a015626dab460402e5f65907eaed",
+      "en_hash_sha256": "6fd92a912811168a2939827e37db6d193efea45794421ee6a4151166518e3ef8",
+      "ro_hash_sha256": "6bcd00ee51afbae5179512eeba0b8bfefaf06749e4d5aa39459f218ac996d7da",
+      "el_hash_sha256": "6bcd00ee51afbae5179512eeba0b8bfefaf06749e4d5aa39459f218ac996d7da",
+      "es_hash_sha256": "6cfb5ebad44a5d4022d05c34f7ffca4b7c74e3e57cb283e77d6cbeb562af205b",
+      "fr_hash_sha256": "fa8eb82123acdf92c2f4b7603c9bcad0934ad31e85fd047a7cad8dfeb3ff12cf"
+    },
+    {
+      "id": "msi_pcr_ngs",
+      "category_de": "PCR / Einzeltest",
+      "category": {
+        "de": "PCR / Einzeltest",
+        "en": "PCR / single-gene test",
+        "ro": "PCR / test genic individual",
+        "el": "PCR / έλεγχος μεμονωμένου γονιδίου",
+        "es": "PCR / prueba de gen único",
+        "fr": "PCR / test monogénique"
+      },
+      "label": {
+        "de": "MSI-Testung PCR/NGS",
+        "en": "MSI testing by PCR/NGS",
+        "ro": "Testare MSI prin PCR/NGS",
+        "el": "Έλεγχος MSI με PCR/NGS",
+        "es": "Estudio de MSI mediante PCR/NGS",
+        "fr": "Analyse MSI par PCR/NGS"
+      },
+      "info": {
+        "de": "",
+        "en": "",
+        "ro": "",
+        "el": "",
+        "es": "",
+        "fr": ""
+      },
+      "points": 180,
+      "sections": 2,
+      "tat_days": 3,
+      "manual_check": "",
+      "curation_note": "Context-curated method label and explanatory text.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "6b671609df989c4047b5ced52042667cfc0c0416eaf6fc1d70fd8777f3a1cef6",
+      "en_hash_sha256": "7643d20f000c073a7e2dd3f41f2410efd2eebcb624c3c34258c2f490f4f84e18",
+      "ro_hash_sha256": "e3b597770a98996636db259cd51c425fae9fee4bb7dbaf16af760c46450a1052",
+      "el_hash_sha256": "7ddb62ae227b583924548e1dd59fc388729ff8b91f1201216e942c10c67f0529",
+      "es_hash_sha256": "a8608fb240b02faf3120dce2274b9cf9fbfb54fd9f52794d9094d831a6e9ed94",
+      "fr_hash_sha256": "7e675fd52b98f18a3813bcfbd25c6a83e92085d85e738efa7a1cb76057c41298"
+    },
+    {
+      "id": "kras_exon2_only",
+      "category_de": "PCR / Einzeltest",
+      "category": {
+        "de": "PCR / Einzeltest",
+        "en": "PCR / single-gene test",
+        "ro": "PCR / test genic individual",
+        "el": "PCR / έλεγχος μεμονωμένου γονιδίου",
+        "es": "PCR / prueba de gen único",
+        "fr": "PCR / test monogénique"
+      },
+      "label": {
+        "de": "KRAS Exon 2 PCR allein",
+        "en": "KRAS exon 2 PCR only",
+        "ro": "Doar PCR pentru exonul 2 al KRAS",
+        "el": "Μόνο PCR για το εξόνιο 2 του KRAS",
+        "es": "Solo PCR del exón 2 de KRAS",
+        "fr": "PCR limitée à l’exon 2 de KRAS"
+      },
+      "info": {
+        "de": "Didaktische Falle: für heutige anti-EGFR-Entscheidungen zu eng.",
+        "en": "Teaching trap: too narrow for current anti-EGFR treatment decisions.",
+        "ro": "Capcană didactică: prea restrânsă pentru deciziile actuale privind terapia anti-EGFR.",
+        "el": "Διδακτική παγίδα: υπερβολικά περιορισμένη για τις σύγχρονες αποφάσεις anti-EGFR θεραπείας.",
+        "es": "Trampa didáctica: demasiado limitada para las decisiones actuales sobre terapia anti-EGFR.",
+        "fr": "Piège pédagogique : trop limitée pour les décisions actuelles concernant les traitements anti-EGFR."
+      },
+      "points": 110,
+      "sections": 2,
+      "tat_days": 2,
+      "manual_check": "",
+      "curation_note": "Context-curated method label and explanatory text.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "22257cb096662f316a16789f126f7c801f367da25588eaf7677dcde3658a9909",
+      "en_hash_sha256": "7e9191462af7fcf0482044a9c37ab5f22ed411aacfad361b9b566cb80dd94667",
+      "ro_hash_sha256": "459e0e92819a0330365a3a27a80ec111a287c8dd903299e208f337d2f7463d96",
+      "el_hash_sha256": "70ce664675174b1f2e841704dd899621f81177ec75beedf5f7a9ede1d5cdc80d",
+      "es_hash_sha256": "4bf5475ac0a91277d0b684111273134bac4651ec7cab8b00226fb00e30867e27",
+      "fr_hash_sha256": "a2fc31c876073255c8c27fda2c0382117a87d3acb265a75d70e17928d93aaf75"
+    },
+    {
+      "id": "ras_panel_crc",
+      "category_de": "PCR / Einzeltest",
+      "category": {
+        "de": "PCR / Einzeltest",
+        "en": "PCR / single-gene test",
+        "ro": "PCR / test genic individual",
+        "el": "PCR / έλεγχος μεμονωμένου γονιδίου",
+        "es": "PCR / prueba de gen único",
+        "fr": "PCR / test monogénique"
+      },
+      "label": {
+        "de": "Erweiterter RAS-Status: KRAS/NRAS Exons 2/3/4",
+        "en": "Extended RAS status: KRAS/NRAS exons 2/3/4",
+        "ro": "Status RAS extins: exonii 2/3/4 din KRAS/NRAS",
+        "el": "Εκτεταμένος έλεγχος RAS: εξόνια 2/3/4 των KRAS/NRAS",
+        "es": "Estado RAS ampliado: exones 2/3/4 de KRAS/NRAS",
+        "fr": "Statut RAS étendu : exons 2/3/4 de KRAS/NRAS"
+      },
+      "info": {
+        "de": "",
+        "en": "",
+        "ro": "",
+        "el": "",
+        "es": "",
+        "fr": ""
+      },
+      "points": 230,
+      "sections": 3,
+      "tat_days": 3,
+      "manual_check": "",
+      "curation_note": "Context-curated method label and explanatory text.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "c4e535141e25f7b9719868e963c6943cad0ef6854d98d397642c74d7beabc925",
+      "en_hash_sha256": "562671f57448e3609516b0be9a4132c1e4396efa23b290edebc554621a19cfc8",
+      "ro_hash_sha256": "56e3b7856794125a3ab5ed73ca220e22d205979c1d0996a9413f3fb89563a000",
+      "el_hash_sha256": "64f150a6d3c5f8ff7b6d78b4f362b342ba8a9db4133e77e4d6d7178b11b8fff3",
+      "es_hash_sha256": "f02d373febd66db2fef8e6e79ad2983daeb06c800e8abaa9c4c4b1bbe1fd57a4",
+      "fr_hash_sha256": "98381f6e85a3f89d855b2e72031809a4e8d87b7e30213b3df0e4989e033fa684"
+    },
+    {
+      "id": "braf_v600e_crc",
+      "category_de": "PCR / Einzeltest",
+      "category": {
+        "de": "PCR / Einzeltest",
+        "en": "PCR / single-gene test",
+        "ro": "PCR / test genic individual",
+        "el": "PCR / έλεγχος μεμονωμένου γονιδίου",
+        "es": "PCR / prueba de gen único",
+        "fr": "PCR / test monogénique"
+      },
+      "label": {
+        "de": "BRAF p.V600E-Testung",
+        "en": "BRAF p.V600E testing",
+        "ro": "Testare BRAF p.V600E",
+        "el": "Έλεγχος BRAF p.V600E",
+        "es": "Estudio de BRAF p.V600E",
+        "fr": "Analyse de BRAF p.V600E"
+      },
+      "info": {
+        "de": "",
+        "en": "",
+        "ro": "",
+        "el": "",
+        "es": "",
+        "fr": ""
+      },
+      "points": 120,
+      "sections": 2,
+      "tat_days": 2,
+      "manual_check": "",
+      "curation_note": "Context-curated method label and explanatory text.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "14f4f3fa6fe6e3fe56c5938f17682fc7a365e1e0dcbc2b4343a5c8e3b65b161f",
+      "en_hash_sha256": "d41ce7f191a3e9385f01311234b8da1a70627111f969663cdde006773f86471d",
+      "ro_hash_sha256": "f5915417b953bd3f489d5fe7551111a377483b3b89bceae99910d59a1de4cd4b",
+      "el_hash_sha256": "a1bb58f323aa1d7e1e019d37e61118da317163091e3efb2acdf7911cd8240099",
+      "es_hash_sha256": "29f69c0d9fcc8b44efcef5c08a0c8cb3e4e0aee09924d69de1a345ee01b17328",
+      "fr_hash_sha256": "bbf85a8c54ac2f3480f8a090f5d9a5ec37618bb1750ea862451da6450bfaa82d"
+    },
+    {
+      "id": "mlh1_methylation",
+      "category_de": "PCR / Einzeltest",
+      "category": {
+        "de": "PCR / Einzeltest",
+        "en": "PCR / single-gene test",
+        "ro": "PCR / test genic individual",
+        "el": "PCR / έλεγχος μεμονωμένου γονιδίου",
+        "es": "PCR / prueba de gen único",
+        "fr": "PCR / test monogénique"
+      },
+      "label": {
+        "de": "MLH1-Promotor-Methylierung",
+        "en": "MLH1 promoter methylation",
+        "ro": "Metilarea promotorului MLH1",
+        "el": "Μεθυλίωση υποκινητή MLH1",
+        "es": "Metilación del promotor de MLH1",
+        "fr": "Méthylation du promoteur de MLH1"
+      },
+      "info": {
+        "de": "",
+        "en": "",
+        "ro": "",
+        "el": "",
+        "es": "",
+        "fr": ""
+      },
+      "points": 160,
+      "sections": 2,
+      "tat_days": 3,
+      "manual_check": "",
+      "curation_note": "Context-curated method label and explanatory text.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "496ef7231ffb607ebdfc5dd20cf3ca91931c26ebe460dbbb952a75454ebf9b04",
+      "en_hash_sha256": "dd9ec167afcf1ebc88136914b9dbc0a05f3149d337a15b6560f721d681bcb49b",
+      "ro_hash_sha256": "8344a2310916c3e2732188c420edff63b7a8bb6fc982c9085cc2ee1a1ffb3672",
+      "el_hash_sha256": "80b92e46f577a0d506fa51d7eea473a238885058ff09b304f4fed58c7a10d28c",
+      "es_hash_sha256": "b968f1cefb03b02a4f4d9db783d27c6ce65d7a9819c64a5b5508632ce86be61a",
+      "fr_hash_sha256": "de368a74e4ecf07a5e5d64762cfa15c6972f3747dda124fdac379d125287081a"
+    },
+    {
+      "id": "colon_ngs_panel",
+      "category_de": "NGS",
+      "category": {
+        "de": "NGS",
+        "en": "NGS",
+        "ro": "NGS",
+        "el": "NGS",
+        "es": "NGS",
+        "fr": "NGS"
+      },
+      "label": {
+        "de": "Colon-/GI-Panel DNA-NGS inkl. RAS/BRAF/PIK3CA/ERBB2",
+        "en": "Colorectal/GI DNA NGS panel including RAS/BRAF/PIK3CA/ERBB2",
+        "ro": "Panel NGS ADN colorectal/GI, inclusiv RAS/BRAF/PIK3CA/ERBB2",
+        "el": "Panel NGS DNA ορθοκολικού/GI με RAS/BRAF/PIK3CA/ERBB2",
+        "es": "Panel NGS de ADN colorrectal/GI, incluido RAS/BRAF/PIK3CA/ERBB2",
+        "fr": "Panel NGS ADN colorectal/GI incluant RAS/BRAF/PIK3CA/ERBB2"
+      },
+      "info": {
+        "de": "",
+        "en": "",
+        "ro": "",
+        "el": "",
+        "es": "",
+        "fr": ""
+      },
+      "points": 420,
+      "sections": 4,
+      "tat_days": 5,
+      "manual_check": "",
+      "curation_note": "Context-curated method label and explanatory text.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "9aef7f87b3cbf265a6d6408b25f5993502e3791bfb6d84a48dba961fa9f58c78",
+      "en_hash_sha256": "022ab6b053f224a01391adb3ae26274262a01aabf4cdfcc13ae1525b43a099c8",
+      "ro_hash_sha256": "dd45bf676699a462073bc47621aeb2d08a6a92e3d1721e16809a6929f07c4d24",
+      "el_hash_sha256": "c0e1c777608d8e53b88a33a5459fca3d5def3c3caebf466602009fdec5691d79",
+      "es_hash_sha256": "bf37ad01c6189c56681559737cfe1e2b1b9055fd9ddc77b399d9edc05c016f99",
+      "fr_hash_sha256": "d4cd7d938a7e333edf3ff033b9b2ddaf590b292bfc4c92a0e360b5ab151f2226"
+    },
+    {
+      "id": "her2_crc_ihc_ish",
+      "category_de": "FISH/ISH",
+      "category": {
+        "de": "FISH/ISH",
+        "en": "FISH/ISH",
+        "ro": "FISH/ISH",
+        "el": "FISH/ISH",
+        "es": "FISH/ISH",
+        "fr": "FISH/ISH"
+      },
+      "label": {
+        "de": "HER2 IHC/ISH bei RAS-WT mCRC-Kontext",
+        "en": "HER2 IHC/ISH in the RAS-WT mCRC setting",
+        "ro": "IHC/ISH HER2 în contextul mCRC RAS-WT",
+        "el": "IHC/ISH HER2 σε πλαίσιο mCRC RAS-WT",
+        "es": "IHC/ISH de HER2 en el contexto de mCRC RAS-WT",
+        "fr": "IHC/ISH HER2 dans le contexte d’un mCRC RAS-WT"
+      },
+      "info": {
+        "de": "Optional/kontextabhängig; nicht primärer Minimalstandard.",
+        "en": "Optional and context dependent; not part of the primary minimum standard.",
+        "ro": "Opțională și dependentă de context; nu face parte din standardul minim inițial.",
+        "el": "Προαιρετική και εξαρτώμενη από το πλαίσιο· δεν αποτελεί μέρος του αρχικού ελάχιστου προτύπου.",
+        "es": "Opcional y dependiente del contexto; no forma parte del estándar mínimo inicial.",
+        "fr": "Optionnelle et dépendante du contexte ; ne fait pas partie du standard minimal initial."
+      },
+      "points": 210,
+      "sections": 2,
+      "tat_days": 3,
+      "manual_check": "YES",
+      "curation_note": "RAS-WT and mCRC are retained technical abbreviations.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "4d2fab4f531ba2e0d77d19215dbeb1dd7ddca648ef7d4076b058145872c72129",
+      "en_hash_sha256": "8e1c858c4856a91ce1a713dd1f59744d8ccf2f6c66347c2a3a5bcae3ed71af95",
+      "ro_hash_sha256": "cbb5ececd53e884cdca9323e85889ebb6b0971ec69187ca106ab8240e57a1b4b",
+      "el_hash_sha256": "35a9c5971aa87153d404df6978363ebc364f23183a7faf0e59225f9f6c374adc",
+      "es_hash_sha256": "780a74ba07fbe17000568a1bb68227f293b9aa5703c13cb0f72ff124ecb7bc57",
+      "fr_hash_sha256": "8e7f74efcfff619838b9d7c25860eb72626ad3a3c2c42e0c80db4a8ad542eb06"
+    },
+    {
+      "id": "ihc_ovar_lineage",
+      "category_de": "Histologie/IHC",
+      "category": {
+        "de": "Histologie/IHC",
+        "en": "Histology/IHC",
+        "ro": "Histologie/IHC",
+        "el": "Ιστολογία/IHC",
+        "es": "Histología/IHC",
+        "fr": "Histologie/IHC"
+      },
+      "label": {
+        "de": "IHC Gyn-Lineage: PAX8, WT1, p53, p16, ER/PR",
+        "en": "Gynaecologic lineage IHC: PAX8, WT1, p53, p16, ER/PR",
+        "ro": "IHC pentru diferențiere ginecologică: PAX8, WT1, p53, p16, ER/PR",
+        "el": "IHC γυναικολογικής διαφοροποίησης: PAX8, WT1, p53, p16, ER/PR",
+        "es": "IHC de diferenciación ginecológica: PAX8, WT1, p53, p16, ER/PR",
+        "fr": "IHC de différenciation gynécologique : PAX8, WT1, p53, p16, ER/PR"
+      },
+      "info": {
+        "de": "Sichert high-grade seröses Ovarialkarzinom und grenzt relevante Differenzialdiagnosen ab.",
+        "en": "Supports a diagnosis of high-grade serous ovarian carcinoma and distinguishes relevant differential diagnoses.",
+        "ro": "Susține diagnosticul de carcinom ovarian seros de grad înalt și diferențiază diagnosticele diferențiale relevante.",
+        "el": "Υποστηρίζει τη διάγνωση υψηλού βαθμού ορώδους καρκινώματος ωοθήκης και διακρίνει σημαντικές διαφορικές διαγνώσεις.",
+        "es": "Apoya el diagnóstico de carcinoma seroso de ovario de alto grado y diferencia los diagnósticos diferenciales relevantes.",
+        "fr": "Étaye le diagnostic de carcinome séreux de haut grade de l’ovaire et distingue les principaux diagnostics différentiels."
+      },
+      "points": 180,
+      "sections": 5,
+      "tat_days": 2,
+      "manual_check": "",
+      "curation_note": "Context-curated method label and explanatory text.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "abe94402d1c4e8aa3c5163309f373945e0ba133c24353dd0262b8a019407025e",
+      "en_hash_sha256": "94c24bea12545216424354887ce99a12aa8e77fcfbb42365f809dad3e0a8ff5c",
+      "ro_hash_sha256": "45963bef1acfbe736102acd68da6f25fd552156736588a28a9f844d60ce956ff",
+      "el_hash_sha256": "93dd7862956c5f92831e7c13c16e2c2f5a5af3b53b9214d5096c30fd59af5024",
+      "es_hash_sha256": "f6ee9c16fc08fe1e03465e83cbfb46c28492579b424d7d319941d7cc059251f8",
+      "fr_hash_sha256": "5c5a5113b930be2de38ac6b4bcc2d14fe39b192ba6360a1140d10a1226fbe14f"
+    },
+    {
+      "id": "tumor_brca_hrr",
+      "category_de": "NGS",
+      "category": {
+        "de": "NGS",
+        "en": "NGS",
+        "ro": "NGS",
+        "el": "NGS",
+        "es": "NGS",
+        "fr": "NGS"
+      },
+      "label": {
+        "de": "Tumor-BRCA1/2 + HRR-Panel",
+        "en": "Tumour BRCA1/2 and HRR panel",
+        "ro": "Panel tumoral BRCA1/2 și HRR",
+        "el": "Νεοπλασματικό panel BRCA1/2 και HRR",
+        "es": "Panel tumoral de BRCA1/2 y HRR",
+        "fr": "Panel tumoral BRCA1/2 et HRR"
+      },
+      "info": {
+        "de": "Somatische BRCA-/HRR-Alterationen für Therapieplanung; Keimbahnrelevanz bleibt separat zu klären.",
+        "en": "Somatic BRCA/HRR alterations for treatment planning; potential germline relevance must be assessed separately.",
+        "ro": "Alterări somatice BRCA/HRR pentru planificarea tratamentului; posibila relevanță germinală trebuie evaluată separat.",
+        "el": "Σωματικές αλλοιώσεις BRCA/HRR για θεραπευτικό σχεδιασμό· η πιθανή σημασία για τη βλαστική σειρά πρέπει να αξιολογηθεί ξεχωριστά.",
+        "es": "Alteraciones somáticas de BRCA/HRR para la planificación terapéutica; la posible relevancia germinal debe evaluarse por separado.",
+        "fr": "Altérations somatiques de BRCA/HRR pour la planification thérapeutique ; la pertinence germinale potentielle doit être évaluée séparément."
+      },
+      "points": 430,
+      "sections": 4,
+      "tat_days": 6,
+      "manual_check": "",
+      "curation_note": "Context-curated method label and explanatory text.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "e0bec8e5f1b1e74a3082b42302508e0ee8f76d97617834df64ecdb0592bd420e",
+      "en_hash_sha256": "8fd4e3ba0d0c08c9fee69532435ad578d67d9ce2c317c7aa14c9e5c04a452f92",
+      "ro_hash_sha256": "1fa6631d98ccd805e886200a63407525ec532bdb55641287b7bd569024187c0b",
+      "el_hash_sha256": "6d201fcdb2a9e59846a02e28bfa4f1cd01fc9a005de59f3cfc77944239f52945",
+      "es_hash_sha256": "afa635f37979d284c3aa2e330b9d2b09a18fedc5c8708381e88f1bf997d2e8ae",
+      "fr_hash_sha256": "ab2b898d5aa6cd80812e16424dffeb2b99846ae5ab618b6256d076434b29d6da"
+    },
+    {
+      "id": "brca_germline_only",
+      "category_de": "Genetik / Beratung",
+      "category": {
+        "de": "Genetik / Beratung",
+        "en": "Genetics / counselling",
+        "ro": "Genetică / consiliere",
+        "el": "Γενετική / συμβουλευτική",
+        "es": "Genética / asesoramiento",
+        "fr": "Génétique / conseil"
+      },
+      "label": {
+        "de": "Nur Keimbahn-BRCA1/2 ohne Tumor-HRD",
+        "en": "Germline BRCA1/2 only, without tumour HRD",
+        "ro": "Doar BRCA1/2 germinal, fără HRD tumoral",
+        "el": "Μόνο BRCA1/2 βλαστικής σειράς, χωρίς νεοπλασματικό HRD",
+        "es": "Solo BRCA1/2 germinal, sin HRD tumoral",
+        "fr": "BRCA1/2 germinal seul, sans HRD tumorale"
+      },
+      "info": {
+        "de": "Didaktische Falle: wichtig für Familie, aber allein unvollständig für Tumor-HRD/PARP-Kontext.",
+        "en": "Teaching trap: important for the family, but insufficient on its own for the tumour HRD/PARP context.",
+        "ro": "Capcană didactică: important pentru familie, dar insuficient singur pentru contextul tumoral HRD/PARP.",
+        "el": "Διδακτική παγίδα: σημαντικό για την οικογένεια, αλλά ανεπαρκές μόνο του για το νεοπλασματικό πλαίσιο HRD/PARP.",
+        "es": "Trampa didáctica: importante para la familia, pero insuficiente por sí solo para el contexto tumoral HRD/PARP.",
+        "fr": "Piège pédagogique : important pour la famille, mais insuffisant à lui seul dans le contexte tumoral HRD/PARP."
+      },
+      "points": 260,
+      "sections": 0,
+      "tat_days": 8,
+      "manual_check": "",
+      "curation_note": "Context-curated method label and explanatory text.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "f2899c44e9b2973a3a0820eb8c7da0b3625e72ac08e5c2c2a09441929db7ab19",
+      "en_hash_sha256": "cd427d5a24d0679b66e2f92b0d852ccb401e0e2521d1d4dcd2cf5aef6b9ea837",
+      "ro_hash_sha256": "21fb35247e7732fadd8849af12333aee12bc919b1874c3325848f82f1f404a13",
+      "el_hash_sha256": "5815f1ecb77f8e31059242cad256880337fd493af0a99b96579f254f9ccce7d5",
+      "es_hash_sha256": "41a3849f635e650055ba09dbac7593669618351459a8da1fceceb4167dfb373f",
+      "fr_hash_sha256": "a07cf0640e9887f8fe41ff1c52fda0ec176ff5f832ca88e56dbe0a94e41e6e66"
+    },
+    {
+      "id": "hrd_score",
+      "category_de": "NGS",
+      "category": {
+        "de": "NGS",
+        "en": "NGS",
+        "ro": "NGS",
+        "el": "NGS",
+        "es": "NGS",
+        "fr": "NGS"
+      },
+      "label": {
+        "de": "HRD-Score / genomische Instabilität",
+        "en": "HRD score / genomic instability",
+        "ro": "Scor HRD / instabilitate genomică",
+        "el": "Βαθμολογία HRD / γονιδιωματική αστάθεια",
+        "es": "Puntuación HRD / inestabilidad genómica",
+        "fr": "Score HRD / instabilité génomique"
+      },
+      "info": {
+        "de": "Ergänzt BRCA/HRR um funktionelle HRD-Konstellation.",
+        "en": "Complements BRCA/HRR testing by assessing a functional HRD pattern.",
+        "ro": "Completează testarea BRCA/HRR prin evaluarea unui profil funcțional HRD.",
+        "el": "Συμπληρώνει τον έλεγχο BRCA/HRR αξιολογώντας ένα λειτουργικό πρότυπο HRD.",
+        "es": "Complementa el estudio de BRCA/HRR mediante la evaluación de un patrón funcional de HRD.",
+        "fr": "Complète l’analyse BRCA/HRR par l’évaluation d’un profil fonctionnel de HRD."
+      },
+      "points": 380,
+      "sections": 4,
+      "tat_days": 7,
+      "manual_check": "",
+      "curation_note": "Context-curated method label and explanatory text.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "b1b7585fde3825770f38be846841da07fc67f5156c8aca224504ff8692af1641",
+      "en_hash_sha256": "a1ee303aa674d24c19693ba0a8a5f3394709af3dc6bec8ced4b2aab9314d19ea",
+      "ro_hash_sha256": "c9ae052e0dc6c1950deb6a3497c5724ef948d8ec1a2168ab2ebff7dbc3a58a0d",
+      "el_hash_sha256": "16b3db0b3bd24107f5efe7a381982f6480ef9b25fb6df24313cba5c4de833515",
+      "es_hash_sha256": "c82de084f4f1d228622d2cafd1dba023f4b941a6e0203d2ac7eeeac2b6a27dad",
+      "fr_hash_sha256": "4273575e7b0bf39792f9fb9033d5505f0aca0efcbf897aefbf88aee903235e1b"
+    },
+    {
+      "id": "germline_referral",
+      "category_de": "Genetik / Beratung",
+      "category": {
+        "de": "Genetik / Beratung",
+        "en": "Genetics / counselling",
+        "ro": "Genetică / consiliere",
+        "el": "Γενετική / συμβουλευτική",
+        "es": "Genética / asesoramiento",
+        "fr": "Génétique / conseil"
+      },
+      "label": {
+        "de": "Humangenetische Beratung / Keimbahnabklärung empfehlen",
+        "en": "Recommend medical-genetics counselling / germline testing",
+        "ro": "Recomandați consiliere genetică medicală / testare germinală",
+        "el": "Σύσταση για συμβουλευτική ιατρικής γενετικής / έλεγχο βλαστικής σειράς",
+        "es": "Recomendar asesoramiento en genética médica / estudio germinal",
+        "fr": "Recommander un conseil en génétique médicale / une analyse germinale"
+      },
+      "info": {
+        "de": "Keine Laborressource im Block; simuliert die korrekte Weiterleitung bei pathogener/verdächtiger BRCA-Konstellation.",
+        "en": "Not a tissue-consuming laboratory test in this model; represents appropriate referral when a pathogenic or suspicious BRCA finding is identified.",
+        "ro": "Nu este un test de laborator care consumă material în acest model; simulează trimiterea adecvată atunci când este identificată o constatare BRCA patogenă sau suspectă.",
+        "el": "Δεν αποτελεί εξέταση που καταναλώνει ιστό σε αυτό το μοντέλο· προσομοιώνει την κατάλληλη παραπομπή όταν εντοπίζεται παθογόνο ή ύποπτο εύρημα BRCA.",
+        "es": "No es una prueba de laboratorio que consuma tejido en este modelo; representa la derivación adecuada cuando se identifica un hallazgo BRCA patogénico o sospechoso.",
+        "fr": "Il ne s’agit pas d’un examen consommant du tissu dans ce modèle ; cette option représente l’orientation appropriée en présence d’un résultat BRCA pathogène ou suspect."
+      },
+      "points": 60,
+      "sections": 0,
+      "tat_days": 0,
+      "manual_check": "YES",
+      "curation_note": "This is a simulated referral, not a tissue-consuming method.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "03af046b6569457c855ef7792ae159b919c384b9942855c7c29addc20cfbb351",
+      "en_hash_sha256": "42137a3105ed2481c6aea8a1168c1239e12779169246bf66c270d764cc24ab07",
+      "ro_hash_sha256": "cd1994cf69ebaf96c3e8f080415f2ed234770db4e1e93c03a202a6de2f64f6ef",
+      "el_hash_sha256": "f53d65d6e7075b8b7ad0f83be40b70858f995eaeb2d08ce93edd2a5d167008fe",
+      "es_hash_sha256": "b6aa7c50b296595081c7ed778be30600de9a42d9f91887e2931a148b387b8474",
+      "fr_hash_sha256": "3b7c779d905782e15fa6a9f8604366f5a49a1481b27abaca86d410b5fd329a97"
+    },
+    {
+      "id": "tp53_single",
+      "category_de": "PCR / Einzeltest",
+      "category": {
+        "de": "PCR / Einzeltest",
+        "en": "PCR / single-gene test",
+        "ro": "PCR / test genic individual",
+        "el": "PCR / έλεγχος μεμονωμένου γονιδίου",
+        "es": "PCR / prueba de gen único",
+        "fr": "PCR / test monogénique"
+      },
+      "label": {
+        "de": "TP53-Einzeltest",
+        "en": "TP53 single-gene test",
+        "ro": "Test pentru o singură genă TP53",
+        "el": "Έλεγχος μεμονωμένου γονιδίου TP53",
+        "es": "Prueba de gen único TP53",
+        "fr": "Test monogénique TP53"
+      },
+      "info": {
+        "de": "Didaktisch meist nicht ausreichend: TP53 ist typisch bei HGSOC, aber nicht der PARP-entscheidende Kernbefund.",
+        "en": "Usually insufficient for this teaching scenario: TP53 is typical in HGSOC but is not the core PARP-defining finding.",
+        "ro": "De obicei insuficient în acest scenariu didactic: TP53 este tipic în HGSOC, dar nu reprezintă constatarea centrală pentru decizia privind PARP.",
+        "el": "Συνήθως ανεπαρκής σε αυτό το διδακτικό σενάριο: το TP53 είναι τυπικό στο HGSOC, αλλά δεν αποτελεί το βασικό εύρημα που καθορίζει το PARP.",
+        "es": "Por lo general es insuficiente en este escenario didáctico: TP53 es típico del HGSOC, pero no constituye el hallazgo central para la decisión sobre PARP.",
+        "fr": "Généralement insuffisant dans ce scénario pédagogique : TP53 est typique du HGSOC, mais ne constitue pas l’élément central pour la décision concernant PARP."
+      },
+      "points": 130,
+      "sections": 2,
+      "tat_days": 3,
+      "manual_check": "",
+      "curation_note": "Context-curated method label and explanatory text.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "879cbb57c5cd7b5437167ea40a1e6f559b74f6477c93de245399db8a2067daa7",
+      "en_hash_sha256": "2982a005f4839598d3a84e025a39301242e0ca5aaf09ca3c67b615c8024710c4",
+      "ro_hash_sha256": "a237be494d394c6cfad7d74c422c1ffe0cdabfdf4207183a0713c8be529161cb",
+      "el_hash_sha256": "7926dab327210e0fd9fe781ada7bb54e04a74fd27fee268ed382dfaca58c1819",
+      "es_hash_sha256": "43ba2010da87126f9e5b8afcbaa84d85477728a1469845b920002f92687a19eb",
+      "fr_hash_sha256": "18d025c7b54d3e56f745f4aefa52f462aa9bd5d3aa87005e518135ad89cbc870"
+    },
+    {
+      "id": "tmb_ngs",
+      "category_de": "NGS",
+      "category": {
+        "de": "NGS",
+        "en": "NGS",
+        "ro": "NGS",
+        "el": "NGS",
+        "es": "NGS",
+        "fr": "NGS"
+      },
+      "label": {
+        "de": "TMB-Bestimmung aus NGS-Daten",
+        "en": "TMB assessment from NGS data",
+        "ro": "Evaluarea TMB din date NGS",
+        "el": "Αξιολόγηση TMB από δεδομένα NGS",
+        "es": "Evaluación de TMB a partir de datos NGS",
+        "fr": "Évaluation de la TMB à partir des données NGS"
+      },
+      "info": {
+        "de": "Kontextmarker für Immunogenität; nur sinnvoll bei geeigneter Panelgröße und Tumorkontext.",
+        "en": "Contextual marker of immunogenicity; meaningful only with a suitable panel size and tumour context.",
+        "ro": "Marker contextual al imunogenității; relevant numai cu o dimensiune adecvată a panelului și în contextul tumoral corespunzător.",
+        "el": "Δείκτης ανοσογονικότητας που εξαρτάται από το πλαίσιο· έχει νόημα μόνο με κατάλληλο μέγεθος panel και νεοπλασματικό πλαίσιο.",
+        "es": "Marcador contextual de inmunogenicidad; solo es interpretable con un tamaño de panel adecuado y el contexto tumoral correspondiente.",
+        "fr": "Marqueur contextuel d’immunogénicité ; pertinent uniquement avec une taille de panel adaptée et dans le contexte tumoral approprié."
+      },
+      "points": 180,
+      "sections": 0,
+      "tat_days": 1,
+      "manual_check": "YES",
+      "curation_note": "TMB is retained as the global abbreviation.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "29dcc827d24c3be8f4022fb2208eef122ae1683ac30f41feb3bea5a738cb4a0b",
+      "en_hash_sha256": "41230964dfec033b2e5812e3032af8e669aab0c743bd7adf1c9c540db7e0e5a3",
+      "ro_hash_sha256": "3b118f8a7df140b9b5fa50510d2d5c2d5bd75a2a6c9849c7824b3d3309629148",
+      "el_hash_sha256": "db9d5e9f3832ad7773cf9341c46023fc1349ffb260c1261683e73b2f1906f581",
+      "es_hash_sha256": "72afbe37c206405d1e55732875c279d122e359506f915844a406e8672c143567",
+      "fr_hash_sha256": "7303f8b293833a4ee1cfec419ceeab254903fa7cc12e92b3ca760d94ca066d81"
+    },
+    {
+      "id": "immune_context_ihc",
+      "category_de": "Histologie/IHC",
+      "category": {
+        "de": "Histologie/IHC",
+        "en": "Histology/IHC",
+        "ro": "Histologie/IHC",
+        "el": "Ιστολογία/IHC",
+        "es": "Histología/IHC",
+        "fr": "Histologie/IHC"
+      },
+      "label": {
+        "de": "Immun-Kontext-IHC: CD8/CD3 ± TIL-Einschätzung",
+        "en": "Immune-context IHC: CD8/CD3 ± TIL assessment",
+        "ro": "IHC pentru contextul imun: CD8/CD3 ± evaluarea TIL",
+        "el": "IHC ανοσολογικού πλαισίου: CD8/CD3 ± αξιολόγηση TIL",
+        "es": "IHC del contexto inmunitario: CD8/CD3 ± evaluación de TIL",
+        "fr": "IHC du contexte immunitaire : CD8/CD3 ± évaluation des TIL"
+      },
+      "info": {
+        "de": "Didaktischer Zusatz: stützt Hot-vs-cold-Tumor-Muster, ersetzt aber keine MSI/MMR-Diagnostik.",
+        "en": "Teaching add-on: supports a hot-versus-cold tumour pattern but does not replace MSI/MMR testing.",
+        "ro": "Componentă didactică suplimentară: susține un profil tumoral „hot” versus „cold”, dar nu înlocuiește testarea MSI/MMR.",
+        "el": "Συμπληρωματικό διδακτικό στοιχείο: υποστηρίζει πρότυπο «θερμού» έναντι «ψυχρού» όγκου, αλλά δεν αντικαθιστά τον έλεγχο MSI/MMR.",
+        "es": "Complemento didáctico: apoya un patrón tumoral «caliente» frente a «frío», pero no sustituye al estudio de MSI/MMR.",
+        "fr": "Complément pédagogique : étaye un profil tumoral « chaud » versus « froid », mais ne remplace pas l’analyse MSI/MMR."
+      },
+      "points": 120,
+      "sections": 3,
+      "tat_days": 2,
+      "manual_check": "YES",
+      "curation_note": "Hot/cold terminology is partly localized; confirm preferred teaching style.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "db1769e4ab6a6b5205a1ed2ea63825bd4cbb9402f74593fef7fc7be8bb61df50",
+      "en_hash_sha256": "743f09904dd1639d8b6902c628f560a25169a55e437afd677cfbdefbecaccf9b",
+      "ro_hash_sha256": "51e0ed838987e1f926d24b55003db6d37fd36d19a94268370923e34620a713db",
+      "el_hash_sha256": "c329deab65274da7235d2059962512922821f8dfbd3381f6670284cab4c15e8f",
+      "es_hash_sha256": "628c00826ae5e94bb3869db6f8f9eeab29df86bdfe18838822ebe30e0d73d402",
+      "fr_hash_sha256": "947d3fc9ce1e0a0123c5f6544c609c518d758f6452bd3f67ae3cb05db2a16f83"
+    },
+    {
+      "id": "idh1_ihc_seq",
+      "category_de": "Histologie/IHC + Sequenzierung",
+      "category": {
+        "de": "Histologie/IHC + Sequenzierung",
+        "en": "Histology/IHC + sequencing",
+        "ro": "Histologie/IHC + secvențiere",
+        "el": "Ιστολογία/IHC + αλληλούχηση",
+        "es": "Histología/IHC + secuenciación",
+        "fr": "Histologie/IHC + séquençage"
+      },
+      "label": {
+        "de": "IDH1-R132H-IHC + IDH1/2-Sequenzierung bei Bedarf",
+        "en": "IDH1 R132H IHC and IDH1/2 sequencing as needed",
+        "ro": "IHC IDH1 R132H și secvențiere IDH1/2 la nevoie",
+        "el": "IHC IDH1 R132H και αλληλούχηση IDH1/2 κατά περίπτωση",
+        "es": "IHC de IDH1 R132H y secuenciación de IDH1/2 según necesidad",
+        "fr": "IHC IDH1 R132H et séquençage d’IDH1/2 si nécessaire"
+      },
+      "info": {
+        "de": "Klassifikations- und Prognosemarker in der Neuroonkologie.",
+        "en": "Classification and prognostic marker in neuro-oncology.",
+        "ro": "Marker de clasificare și prognostic în neuro-oncologie.",
+        "el": "Δείκτης ταξινόμησης και πρόγνωσης στη νευρο-ογκολογία.",
+        "es": "Marcador de clasificación y pronóstico en neurooncología.",
+        "fr": "Marqueur de classification et de pronostic en neuro-oncologie."
+      },
+      "points": 180,
+      "sections": 2,
+      "tat_days": 3,
+      "manual_check": "",
+      "curation_note": "Context-curated method label and explanatory text.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "33f16838e8c37959cb66ec4571abca8be50a3546c542fbfd3165f2dea15886f3",
+      "en_hash_sha256": "fcf69685e14a167dd329a62ad704f582f464222dbcfd73a99865d9c28b667ce5",
+      "ro_hash_sha256": "33e39476ace795f2cbc64e6a5efd40b757a1702ddceab6943f2f4937c26d5322",
+      "el_hash_sha256": "4b25f4f71442884ae357e4d9c40a415f3053cc8ca67cbf5aff2469519d5f9790",
+      "es_hash_sha256": "10a8a2f662f6c188c873fcc6dad56baa5ca6bf7e4a60a22d04b6b0901d758ded",
+      "fr_hash_sha256": "c5a5250c77eaa64810476e0d048db73d20fd66f91bb482d499f0950ee8c2a1b6"
+    },
+    {
+      "id": "mgmt_methylation",
+      "category_de": "Epigenetik",
+      "category": {
+        "de": "Epigenetik",
+        "en": "Epigenetics",
+        "ro": "Epigenetică",
+        "el": "Επιγενετική",
+        "es": "Epigenética",
+        "fr": "Épigénétique"
+      },
+      "label": {
+        "de": "MGMT-Promotor-Methylierung",
+        "en": "MGMT promoter methylation",
+        "ro": "Metilarea promotorului MGMT",
+        "el": "Μεθυλίωση υποκινητή MGMT",
+        "es": "Metilación del promotor de MGMT",
+        "fr": "Méthylation du promoteur de MGMT"
+      },
+      "info": {
+        "de": "Epigenetischer prädiktiver Marker für Temozolomid-Kontext.",
+        "en": "Epigenetic predictive marker in the temozolomide setting.",
+        "ro": "Marker epigenetic predictiv în contextul tratamentului cu temozolomidă.",
+        "el": "Επιγενετικός προγνωστικός δείκτης ανταπόκρισης στο πλαίσιο θεραπείας με τεμοζολομίδη.",
+        "es": "Marcador epigenético predictivo en el contexto del tratamiento con temozolomida.",
+        "fr": "Marqueur épigénétique prédictif dans le contexte du traitement par témozolomide."
+      },
+      "points": 220,
+      "sections": 3,
+      "tat_days": 4,
+      "manual_check": "",
+      "curation_note": "Context-curated method label and explanatory text.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "aecbe272434a800986ea0e9d84bd8315f9611503d268567bda5d86ec2a9e830a",
+      "en_hash_sha256": "cb2a09aaf822cf24930b1ffb01c127ff24593661251f2435a51a6e22df7e29b0",
+      "ro_hash_sha256": "e99d66b3cdfbd55b50bacb735720b493401fbd4a0015a5805cdbd702581fd18b",
+      "el_hash_sha256": "33ef39f6e8ef096b7721ee7319b131fdc59ec06f0e650af91cbe1ed599968408",
+      "es_hash_sha256": "99738e87f5fdaf690ee8b55c6f78ba8ebca7994391ce481d36b8dd61d3002be8",
+      "fr_hash_sha256": "521333c2b9f6d993468a3330e94f341d3afb682a9b02fd4cccca75c0f617da8a"
+    },
+    {
+      "id": "cns_methylation_classifier",
+      "category_de": "Epigenetik",
+      "category": {
+        "de": "Epigenetik",
+        "en": "Epigenetics",
+        "ro": "Epigenetică",
+        "el": "Επιγενετική",
+        "es": "Epigenética",
+        "fr": "Épigénétique"
+      },
+      "label": {
+        "de": "DNA-Methylierungsclassifier ZNS-Tumor",
+        "en": "CNS tumour DNA methylation classifier",
+        "ro": "Clasificator de metilare ADN pentru tumori SNC",
+        "el": "Ταξινομητής μεθυλίωσης DNA όγκων ΚΝΣ",
+        "es": "Clasificador de metilación del ADN para tumores del SNC",
+        "fr": "Classificateur de méthylation de l’ADN des tumeurs du SNC"
+      },
+      "info": {
+        "de": "Hilfreich bei unklarer ZNS-Tumorklassifikation; ergänzt Histologie und molekulare Marker.",
+        "en": "Helpful for classifying diagnostically challenging CNS tumours; complements histology and molecular markers.",
+        "ro": "Util pentru clasificarea tumorilor SNC dificil de încadrat; completează histologia și markerii moleculari.",
+        "el": "Χρήσιμος για την ταξινόμηση διαγνωστικά δυσχερών όγκων ΚΝΣ· συμπληρώνει την ιστολογία και τους μοριακούς δείκτες.",
+        "es": "Útil para clasificar tumores del SNC de diagnóstico difícil; complementa la histología y los marcadores moleculares.",
+        "fr": "Utile pour classer les tumeurs du SNC difficiles à caractériser ; complète l’histologie et les marqueurs moléculaires."
+      },
+      "points": 520,
+      "sections": 5,
+      "tat_days": 8,
+      "manual_check": "YES",
+      "curation_note": "Classifier localized as a diagnostic classifier, not a generic software classifier.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "2f37976ea729163663de316e3ffdd23e1c62151e7008b93cddfef0f601a1b643",
+      "en_hash_sha256": "64d4b31acf89ee50637d77c52e87e1f57661bfe33f322abcf379a2dee4cd74a1",
+      "ro_hash_sha256": "73564364af26d2e3a89e0ce658eb60c6dc722b33cc12b692a1b1f070940a6ef8",
+      "el_hash_sha256": "21cf730e2ad4e79fdda7c8a3f20db02422d41a2c05a81909e81a1c20a95c90ef",
+      "es_hash_sha256": "8f9e113b51fe3220bb9474b6db9f57581c4e41d00aa42f517755479f636f88e9",
+      "fr_hash_sha256": "da81459ea9590d0e498b2013f41822626f4e1310f5bb5c5e321fe50ef09fc53f"
+    },
+    {
+      "id": "glioma_ngs_panel",
+      "category_de": "NGS",
+      "category": {
+        "de": "NGS",
+        "en": "NGS",
+        "ro": "NGS",
+        "el": "NGS",
+        "es": "NGS",
+        "fr": "NGS"
+      },
+      "label": {
+        "de": "Gliom-/ZNS-NGS-Panel",
+        "en": "Glioma/CNS NGS panel",
+        "ro": "Panel NGS pentru gliom/SNC",
+        "el": "Panel NGS γλοιώματος/ΚΝΣ",
+        "es": "Panel NGS para glioma/SNC",
+        "fr": "Panel NGS gliome/SNC"
+      },
+      "info": {
+        "de": "Ergänzende molekulare Klassifikationsmarker, aber kein Ersatz für MGMT-Methylierung.",
+        "en": "Provides additional molecular classification markers but does not replace MGMT methylation testing.",
+        "ro": "Oferă markeri moleculari suplimentari de clasificare, dar nu înlocuiește testarea metilării MGMT.",
+        "el": "Παρέχει συμπληρωματικούς μοριακούς δείκτες ταξινόμησης, αλλά δεν αντικαθιστά τον έλεγχο μεθυλίωσης MGMT.",
+        "es": "Aporta marcadores moleculares de clasificación adicionales, pero no sustituye al estudio de metilación de MGMT.",
+        "fr": "Apporte des marqueurs moléculaires de classification complémentaires, mais ne remplace pas l’analyse de la méthylation de MGMT."
+      },
+      "points": 420,
+      "sections": 4,
+      "tat_days": 6,
+      "manual_check": "",
+      "curation_note": "Context-curated method label and explanatory text.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "46bfa17995ee6d8afefc0796f48734e544bcc1465592b548670fa8d5eb0e8caf",
+      "en_hash_sha256": "b71f67c2d03a293ec8e3ca7057002703f4f50a537d01a15bf039c6bc45c12812",
+      "ro_hash_sha256": "f609686cf8a2815ac8bef79a943d90332f89bd4e3631f910ff8f90d29481db18",
+      "el_hash_sha256": "31f5263674be090631820614fa33323c9f6e41fb411ae8e85d133aed326b91da",
+      "es_hash_sha256": "10ceabe67291df0a098b7827f5114d78a0e6cd2cfdfef9b4f4ad572209030e45",
+      "fr_hash_sha256": "9cf536ed016d1029f20ba85b4e935128555ae28a9113a9ce364fc4be4d0559d7"
+    },
+    {
+      "id": "tmb_msi_neuro",
+      "category_de": "NGS",
+      "category": {
+        "de": "NGS",
+        "en": "NGS",
+        "ro": "NGS",
+        "el": "NGS",
+        "es": "NGS",
+        "fr": "NGS"
+      },
+      "label": {
+        "de": "TMB/MSI bei Glioblastom als Primärtest",
+        "en": "TMB/MSI in glioblastoma as an initial test",
+        "ro": "TMB/MSI în glioblastom ca test inițial",
+        "el": "TMB/MSI στο γλοιοβλάστωμα ως αρχικός έλεγχος",
+        "es": "TMB/MSI en glioblastoma como prueba inicial",
+        "fr": "TMB/MSI dans le glioblastome en première intention"
+      },
+      "info": {
+        "de": "Didaktischer Distraktor: nicht der primäre Standardbaustein für den hier gestellten Temozolomid-/IDH-Kontext.",
+        "en": "Teaching distractor: not a primary standard component for the temozolomide/IDH question posed here.",
+        "ro": "Distractor didactic: nu este o componentă standard inițială pentru întrebarea privind temozolomida/IDH formulată aici.",
+        "el": "Διδακτικός περισπασμός: δεν αποτελεί αρχικό πρότυπο για το ερώτημα τεμοζολομίδης/IDH που τίθεται εδώ.",
+        "es": "Distractor didáctico: no es un componente estándar inicial para la cuestión de temozolomida/IDH planteada aquí.",
+        "fr": "Distracteur pédagogique : ne constitue pas un élément standard de première intention pour la question témozolomide/IDH posée ici."
+      },
+      "points": 250,
+      "sections": 2,
+      "tat_days": 5,
+      "manual_check": "",
+      "curation_note": "Context-curated method label and explanatory text.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "1fb5fb68c3d490db6385046ce53895a9f5b541968d0185e070b24f153effe1fc",
+      "en_hash_sha256": "24671b83f38e92ddcbff720aa9443e11877d94470073435ea8cb3d70fc18c6c1",
+      "ro_hash_sha256": "95108cee3000f22e4b27bd1182a013cdee2eb739b18d867a6bd30333e0e39685",
+      "el_hash_sha256": "4ef97e77a6f22bd5070b098b91deb2c00b095b10ae84fe4583778f9bf0039859",
+      "es_hash_sha256": "fc97be528b05a7c5fe47a2a60e01e067997a247a970b1d8f3e38a9cc712607d5",
+      "fr_hash_sha256": "55754205139be576a9faf7b96cf54498b5b7592b65f4bbadc777ae41d37a3ac1"
+    },
+    {
+      "id": "erbb2_variant_ngs",
+      "category_de": "NGS",
+      "category": {
+        "de": "NGS",
+        "en": "NGS",
+        "ro": "NGS",
+        "el": "NGS",
+        "es": "NGS",
+        "fr": "NGS"
+      },
+      "label": {
+        "de": "ERBB2-Variante aus Tumor-NGS bewerten",
+        "en": "Evaluate an ERBB2 variant detected by tumour NGS",
+        "ro": "Evaluarea unei variante ERBB2 detectate prin NGS tumoral",
+        "el": "Αξιολόγηση παραλλαγής ERBB2 που ανιχνεύθηκε με νεοπλασματικό NGS",
+        "es": "Evaluar una variante ERBB2 detectada mediante NGS tumoral",
+        "fr": "Évaluer un variant ERBB2 détecté par NGS tumoral"
+      },
+      "info": {
+        "de": "Simulation einer bereits gefundenen seltenen ERBB2-Missense-Variante.",
+        "en": "Simulates assessment of a previously identified rare ERBB2 missense variant.",
+        "ro": "Simulează evaluarea unei variante missense rare ERBB2 identificate anterior.",
+        "el": "Προσομοιώνει την αξιολόγηση μιας ήδη εντοπισμένης σπάνιας missense παραλλαγής ERBB2.",
+        "es": "Simula la evaluación de una variante missense rara de ERBB2 identificada previamente.",
+        "fr": "Simule l’évaluation d’un variant faux-sens rare d’ERBB2 déjà identifié."
+      },
+      "points": 160,
+      "sections": 0,
+      "tat_days": 1,
+      "manual_check": "YES",
+      "curation_note": "Missense terminology localized where natural.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "0c93356d3f08ddc35a7ed01d2a734a3e20b3882316f6405733e9141b3ffacba0",
+      "en_hash_sha256": "5059701e2f766cb05350da97eb8c66900363db11277f1f561ca083289b1c0cf3",
+      "ro_hash_sha256": "ba6b7f7871c907558cd793fac3443ec28d4902585a64193ade8bb70785249b99",
+      "el_hash_sha256": "f941e9ff3436a8bf61853c798c894d1a484000c5ba4cbc80b4c9903002dea3be",
+      "es_hash_sha256": "074bce1e29684ca88512f6b66ef5f5b8fd418c416266cb5d9c34ca6a0556f613",
+      "fr_hash_sha256": "66385c8986f9b502caeee48f73b12f0d56668bbff50eca7405c9e42ed63d4273"
+    },
+    {
+      "id": "her2_ihc",
+      "category_de": "Histologie/IHC",
+      "category": {
+        "de": "Histologie/IHC",
+        "en": "Histology/IHC",
+        "ro": "Histologie/IHC",
+        "el": "Ιστολογία/IHC",
+        "es": "Histología/IHC",
+        "fr": "Histologie/IHC"
+      },
+      "label": {
+        "de": "HER2-IHC",
+        "en": "HER2 IHC",
+        "ro": "IHC HER2",
+        "el": "IHC HER2",
+        "es": "IHC de HER2",
+        "fr": "IHC HER2"
+      },
+      "info": {
+        "de": "Prüft Proteinexpression als Kontextinformation bei ERBB2/HER2-Fragestellung.",
+        "en": "Assesses protein expression as contextual information in an ERBB2/HER2 question.",
+        "ro": "Evaluează expresia proteică drept informație contextuală într-o întrebare ERBB2/HER2.",
+        "el": "Αξιολογεί την πρωτεϊνική έκφραση ως πληροφορία πλαισίου σε ερώτημα ERBB2/HER2.",
+        "es": "Evalúa la expresión proteica como información contextual en una cuestión ERBB2/HER2.",
+        "fr": "Évalue l’expression protéique comme information contextuelle dans une question ERBB2/HER2."
+      },
+      "points": 75,
+      "sections": 1,
+      "tat_days": 1,
+      "manual_check": "",
+      "curation_note": "Context-curated method label and explanatory text.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "ad77489909c02645c222e51ac1ac923e8d4678c8cdaf15dc9071372a772bdcd5",
+      "en_hash_sha256": "6296d7ca71d0f99b9a5cf353edd9a8fbb062dfdb524d70b8a1af0adef3054943",
+      "ro_hash_sha256": "073ae4c5936f197b5cc626f2e273dc804cf950780d895c91be168a88fb68246a",
+      "el_hash_sha256": "d131ca694ebc48de0133eaf7c4abbcdd22c2f5264ff489c9d2bebe62808378bb",
+      "es_hash_sha256": "bc3b38e247a4cb6575002e86ea4b174660758e35955ac162cf9f88219eb6580a",
+      "fr_hash_sha256": "e44ffc9d73082c2647babbb6592e9b9039b293ba99f4d8df2d910e975adebd49"
+    },
+    {
+      "id": "her2_fish",
+      "category_de": "FISH/ISH",
+      "category": {
+        "de": "FISH/ISH",
+        "en": "FISH/ISH",
+        "ro": "FISH/ISH",
+        "el": "FISH/ISH",
+        "es": "FISH/ISH",
+        "fr": "FISH/ISH"
+      },
+      "label": {
+        "de": "HER2/ERBB2-ISH/FISH auf Amplifikation",
+        "en": "HER2/ERBB2 ISH/FISH for amplification",
+        "ro": "ISH/FISH HER2/ERBB2 pentru amplificare",
+        "el": "ISH/FISH HER2/ERBB2 για ενίσχυση",
+        "es": "ISH/FISH de HER2/ERBB2 para amplificación",
+        "fr": "ISH/FISH HER2/ERBB2 pour recherche d’amplification"
+      },
+      "info": {
+        "de": "Ergänzt IHC/NGS bei HER2/ERBB2-Therapiefrage.",
+        "en": "Complements IHC/NGS in a HER2/ERBB2 treatment question.",
+        "ro": "Completează IHC/NGS într-o întrebare terapeutică HER2/ERBB2.",
+        "el": "Συμπληρώνει την IHC/NGS σε θεραπευτικό ερώτημα HER2/ERBB2.",
+        "es": "Complementa la IHC/NGS en una cuestión terapéutica HER2/ERBB2.",
+        "fr": "Complète l’IHC/NGS dans une question thérapeutique HER2/ERBB2."
+      },
+      "points": 190,
+      "sections": 2,
+      "tat_days": 3,
+      "manual_check": "",
+      "curation_note": "Context-curated method label and explanatory text.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "f01b8410ab9505438756789190194de2534af82f6a07f1d140a1ce1bad26b26b",
+      "en_hash_sha256": "50e47913d927288d5989422e64ebb2617db7da556a4db0cef283be1aba2058fb",
+      "ro_hash_sha256": "39dba29f4348f75cd76b01342c20c096b610fdecf2aa126b3db1f7a67fa605ff",
+      "el_hash_sha256": "b45d2218c203845f456d425603a630a5de21ed929dc5a317ab3ab87b1108b7af",
+      "es_hash_sha256": "3865066b7a6159664d416131a8f2c025b43591bbeafb71a83e9d00c94e992f40",
+      "fr_hash_sha256": "de1599a60ca0949d3c3e58518b0967a5d0f8a20168cec805383bfacc3b8b5af5"
+    },
+    {
+      "id": "vus_literature_review",
+      "category_de": "Interpretation",
+      "category": {
+        "de": "Interpretation",
+        "en": "Interpretation",
+        "ro": "Interpretare",
+        "el": "Ερμηνεία",
+        "es": "Interpretación",
+        "fr": "Interprétation"
+      },
+      "label": {
+        "de": "Kurierte VUS-/Evidenzrecherche + Reinterpretationshinweis",
+        "en": "Curated VUS/evidence review and reinterpretation note",
+        "ro": "Revizuire curată a VUS/dovezilor și notă privind reinterpretarea",
+        "el": "Επιμελημένη ανασκόπηση VUS/τεκμηρίων και σημείωση επανερμηνείας",
+        "es": "Revisión curada de VUS/evidencia y nota de reinterpretación",
+        "fr": "Revue documentée du VUS/des preuves et note de réinterprétation"
+      },
+      "info": {
+        "de": "Kein Nasslabortest; simuliert strukturierte Variantenbewertung mit Evidenzgrad.",
+        "en": "Not a wet-lab test; represents structured variant assessment with an evidence level.",
+        "ro": "Nu este un test de laborator umed; simulează evaluarea structurată a variantei cu nivel de dovezi.",
+        "el": "Δεν είναι εξέταση υγρού εργαστηρίου· προσομοιώνει δομημένη αξιολόγηση παραλλαγής με επίπεδο τεκμηρίων.",
+        "es": "No es una prueba de laboratorio húmedo; representa una evaluación estructurada de la variante con nivel de evidencia.",
+        "fr": "Il ne s’agit pas d’un test de laboratoire humide ; cette option représente une évaluation structurée du variant avec un niveau de preuve."
+      },
+      "points": 80,
+      "sections": 0,
+      "tat_days": 1,
+      "manual_check": "YES",
+      "curation_note": "VUS remains protected; wording describes evidence curation and reinterpretation.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "445bb12be451aef16e8fdcf8cd6390d38861ecda3cc1fe9ddb1f02395b92722f",
+      "en_hash_sha256": "31ef2e4eed55cd3b559be7b979910be44dd3271d743bbfd2ef2476b617e82819",
+      "ro_hash_sha256": "0b1c77cdea1375be9ff754f3a81ba0d5aa2643327c133bc3c9c7dcac5903c265",
+      "el_hash_sha256": "f9a1d1e3ed751c18ecdd3e7dd1fa06071d5086853242d4f382f7e38ddf7079d3",
+      "es_hash_sha256": "16b1c1919c6e2e566077e32e0523b7e01d3ad503dbd52cdf89f41324c6df84f9",
+      "fr_hash_sha256": "3fc12d654a22ad26d1ef0c7c4fb5cfe4b362ee9540adb9292949ae9a60432439"
+    },
+    {
+      "id": "direct_her2_therapy",
+      "category_de": "Fehlentscheidung",
+      "category": {
+        "de": "Fehlentscheidung",
+        "en": "Incorrect decision",
+        "ro": "Decizie eronată",
+        "el": "Εσφαλμένη απόφαση",
+        "es": "Decisión incorrecta",
+        "fr": "Décision erronée"
+      },
+      "label": {
+        "de": "Direkte HER2-Therapieempfehlung aus VUS ableiten",
+        "en": "Derive a direct HER2 treatment recommendation from a VUS",
+        "ro": "Formularea unei recomandări terapeutice HER2 directe pe baza unui VUS",
+        "el": "Άμεση σύσταση θεραπείας HER2 βάσει VUS",
+        "es": "Derivar una recomendación terapéutica HER2 directa a partir de un VUS",
+        "fr": "Déduire une recommandation thérapeutique HER2 directe à partir d’un VUS"
+      },
+      "info": {
+        "de": "Didaktische Falle: Eine VUS ist keine belastbare Therapieindikation.",
+        "en": "Teaching trap: a VUS is not a reliable treatment indication.",
+        "ro": "Capcană didactică: un VUS nu reprezintă o indicație terapeutică fiabilă.",
+        "el": "Διδακτική παγίδα: ένα VUS δεν αποτελεί αξιόπιστη θεραπευτική ένδειξη.",
+        "es": "Trampa didáctica: un VUS no constituye una indicación terapéutica fiable.",
+        "fr": "Piège pédagogique : un VUS ne constitue pas une indication thérapeutique fiable."
+      },
+      "points": 0,
+      "sections": 0,
+      "tat_days": 0,
+      "manual_check": "",
+      "curation_note": "Context-curated method label and explanatory text.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "86a1200b10b3f0a45670c74e21391200fbf83c817eb39bd82a3effe0726bc837",
+      "en_hash_sha256": "eb1fca44a31b60b8d0e095f35060230fb7d7d79c500271486e78a34d98bd262c",
+      "ro_hash_sha256": "f1c1adcf7cc579fe85812a033c506025b03ca5e6e5b7b6beba8dfeb8bf3068f6",
+      "el_hash_sha256": "8274893edef54affe738aa717a12cc4df0f5a8258e737524d28bbf347cdf27a1",
+      "es_hash_sha256": "0dc2b030da92ae9c8541d330fa5ec3dddce629359076a83f359e2a903f512d23",
+      "fr_hash_sha256": "8844cee4161422de7a841cb423f9c48eaf333a4d2fd1fe76de6c4c77cc9c4d75"
+    },
+    {
+      "id": "rebiopsy_tissue",
+      "category_de": "Material / Präanalytik",
+      "category": {
+        "de": "Material / Präanalytik",
+        "en": "Specimen / preanalytics",
+        "ro": "Material / preanalitică",
+        "el": "Υλικό / προαναλυτική φάση",
+        "es": "Material / preanalítica",
+        "fr": "Matériel / phase préanalytique"
+      },
+      "label": {
+        "de": "Gewebe-Rebiopsie / neues Tumormaterial anfordern",
+        "en": "Tissue rebiopsy / request new tumour material",
+        "ro": "Rebiopsie tisulară / solicitarea unui material tumoral nou",
+        "el": "Επαναβιοψία ιστού / αίτημα νέου νεοπλασματικού υλικού",
+        "es": "Rebiopsia tisular / solicitar nuevo material tumoral",
+        "fr": "Rebiopsie tissulaire / demander un nouveau matériel tumoral"
+      },
+      "info": {
+        "de": "Bei Progress oder nicht beurteilbarer Liquid Biopsy kann neues Gewebe nötig sein.",
+        "en": "At progression or after a non-informative liquid biopsy, new tissue may be required.",
+        "ro": "La progresie sau după o biopsie lichidă neinformativă poate fi necesar material tisular nou.",
+        "el": "Σε εξέλιξη της νόσου ή μετά από μη πληροφοριακή υγρή βιοψία μπορεί να απαιτείται νέο ιστικό υλικό.",
+        "es": "En caso de progresión o tras una biopsia líquida no informativa puede ser necesario obtener nuevo tejido.",
+        "fr": "En cas de progression ou après une biopsie liquide non informative, un nouveau prélèvement tissulaire peut être nécessaire."
+      },
+      "points": 120,
+      "sections": 0,
+      "tat_days": 5,
+      "manual_check": "",
+      "curation_note": "Context-curated method label and explanatory text.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "32cb4f4e5fa9f8269a82162c874d603c8571a67fecdc4f4ecb8326c9864586eb",
+      "en_hash_sha256": "fcb0a19bbad74d27c6ef1bc7e64960041dfedfd42e1ed48f9f82bb22bd6d7ce7",
+      "ro_hash_sha256": "3162e3a5e77f54e50573d07a6db2db55e733d412dc212d82f36dd0d67567444e",
+      "el_hash_sha256": "0da281111e69e37769f5aec907775309a189a0ebf98654bb995f21d5c34d469b",
+      "es_hash_sha256": "e56023f9dd5eef02dd7cd6ba2af65cdb8d3fe89aa32347cbf37709cec5333dcc",
+      "fr_hash_sha256": "fc61d865d1795683683594d1d1fd53b8afe69c0e38c904f7b8f7079007803066"
+    },
+    {
+      "id": "resistance_panel",
+      "category_de": "NGS",
+      "category": {
+        "de": "NGS",
+        "en": "NGS",
+        "ro": "NGS",
+        "el": "NGS",
+        "es": "NGS",
+        "fr": "NGS"
+      },
+      "label": {
+        "de": "Resistenz-/Progressionspanel DNA ± RNA",
+        "en": "DNA ± RNA resistance/progression panel",
+        "ro": "Panel ADN ± ARN pentru rezistență/progresie",
+        "el": "Panel DNA ± RNA για αντοχή/εξέλιξη",
+        "es": "Panel de ADN ± ARN para resistencia/progresión",
+        "fr": "Panel ADN ± ARN de résistance/progression"
+      },
+      "info": {
+        "de": "Panel zur Einordnung erworbener Resistenzmechanismen.",
+        "en": "Panel for characterising acquired resistance mechanisms.",
+        "ro": "Panel pentru caracterizarea mecanismelor de rezistență dobândită.",
+        "el": "Panel για τον χαρακτηρισμό επίκτητων μηχανισμών αντοχής.",
+        "es": "Panel para caracterizar mecanismos de resistencia adquirida.",
+        "fr": "Panel destiné à caractériser les mécanismes de résistance acquise."
+      },
+      "points": 520,
+      "sections": 5,
+      "tat_days": 7,
+      "manual_check": "",
+      "curation_note": "Context-curated method label and explanatory text.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "38e8083183726f38f5807d1f02e20de90af54507d451e1ae272d3de2f3d85cbe",
+      "en_hash_sha256": "13c62c022ec1753c467cddba3f4a22a9dc4c464fa3fdf18ac9041958ffceaa9c",
+      "ro_hash_sha256": "b00343ff8b485cc8b8e655c365bd2f43758eb8ecc04b83fcd728c1f8a2c007c7",
+      "el_hash_sha256": "49223cc005332313309e3b319583ab586ac32c56dce8477c13ebe52bcc1188e0",
+      "es_hash_sha256": "006c590217fb162e7a87df714dbb5b67d8939e9f54fcf51fff855bce7fc57a70",
+      "fr_hash_sha256": "af7c0c7513aecfcd2ed02f3f355e40963d31f39d8b56710e9edaf02554b9bb1a"
+    },
+    {
+      "id": "egfr_t790m_c797s",
+      "category_de": "PCR/NGS",
+      "category": {
+        "de": "PCR/NGS",
+        "en": "PCR/NGS",
+        "ro": "PCR/NGS",
+        "el": "PCR/NGS",
+        "es": "PCR/NGS",
+        "fr": "PCR/NGS"
+      },
+      "label": {
+        "de": "EGFR-Resistenzanalyse (z. B. T790M/C797S)",
+        "en": "EGFR resistance analysis (e.g. T790M/C797S)",
+        "ro": "Analiza rezistenței EGFR (de ex. T790M/C797S)",
+        "el": "Ανάλυση αντοχής EGFR (π.χ. T790M/C797S)",
+        "es": "Análisis de resistencia de EGFR (p. ej., T790M/C797S)",
+        "fr": "Analyse de résistance d’EGFR (p. ex. T790M/C797S)"
+      },
+      "info": {
+        "de": "Gezielte Resistenzanalyse bei EGFR-mutiertem NSCLC.",
+        "en": "Targeted resistance analysis in EGFR-mutant NSCLC.",
+        "ro": "Analiză țintită a rezistenței în NSCLC cu mutație EGFR.",
+        "el": "Στοχευμένη ανάλυση αντοχής σε NSCLC με μετάλλαξη EGFR.",
+        "es": "Análisis dirigido de resistencia en NSCLC con mutación de EGFR.",
+        "fr": "Analyse ciblée des mécanismes de résistance dans un NSCLC muté EGFR."
+      },
+      "points": 180,
+      "sections": 2,
+      "tat_days": 3,
+      "manual_check": "",
+      "curation_note": "Context-curated method label and explanatory text.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "1d0477fe874ac9b1f31d137bdd3b539a634759d5ae1c3fc0a8f4c1569c8f9984",
+      "en_hash_sha256": "ade00b615e1c63319f71e00abcdc7889faa9a8f2514e88c0ec50b5419f741489",
+      "ro_hash_sha256": "213b187108416293a3833a0ddea435fce0f34db029f95b2cd2fd4ccc89ac8ce1",
+      "el_hash_sha256": "479e92beef2cd2f30c581f7e5b308bfd9642540e6db15f4db813d6354f25d744",
+      "es_hash_sha256": "a0d2b9bab5ccf6c8646bdfb7657a5cddf65384c38da0d21072211e7410c94b74",
+      "fr_hash_sha256": "b82740a7d3b3c671ab9bef83db91e466c70f9686527063eee0322e31654dd7dc"
+    },
+    {
+      "id": "fusion_fish",
+      "category_de": "FISH/ISH",
+      "category": {
+        "de": "FISH/ISH",
+        "en": "FISH/ISH",
+        "ro": "FISH/ISH",
+        "el": "FISH/ISH",
+        "es": "FISH/ISH",
+        "fr": "FISH/ISH"
+      },
+      "label": {
+        "de": "Break-apart-/Fusions-FISH (ALK/ROS1/RET/NTRK etc.)",
+        "en": "Break-apart/fusion FISH (ALK/ROS1/RET/NTRK etc.)",
+        "ro": "FISH break-apart/de fuziune (ALK/ROS1/RET/NTRK etc.)",
+        "el": "FISH break-apart/σύντηξης (ALK/ROS1/RET/NTRK κ.λπ.)",
+        "es": "FISH break-apart/de fusión (ALK/ROS1/RET/NTRK, etc.)",
+        "fr": "FISH break-apart/de fusion (ALK/ROS1/RET/NTRK, etc.)"
+      },
+      "info": {
+        "de": "Schnelle orthogonale Fusionsabklärung, aber meist partnerlimitiert.",
+        "en": "Rapid orthogonal assessment of fusions, but usually limited with respect to the fusion partner.",
+        "ro": "Evaluare ortogonală rapidă a fuziunilor, dar de obicei limitată în privința partenerului de fuziune.",
+        "el": "Ταχεία ορθογώνια διερεύνηση συντήξεων, αλλά συνήθως με περιορισμένη πληροφορία για τον εταίρο σύντηξης.",
+        "es": "Evaluación ortogonal rápida de fusiones, aunque suele estar limitada respecto al gen socio de la fusión.",
+        "fr": "Évaluation orthogonale rapide des fusions, mais généralement limitée concernant le partenaire de fusion."
+      },
+      "points": 220,
+      "sections": 2,
+      "tat_days": 3,
+      "manual_check": "YES",
+      "curation_note": "Break-apart retained and fusion-partner limitation made explicit.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "7e27b8a1eb645f1cca8822add0a14325e64465a8e3a6180a15a447275f33dfac",
+      "en_hash_sha256": "22962bcbbefa1ba0b00b66286215d975e17cfe6674ba235593b5a45ac391673b",
+      "ro_hash_sha256": "0e9921b7cb0a5255a4ee6a18c6223d05c2f39665c8ddf3bed1b7d6b02a982abf",
+      "el_hash_sha256": "5b12e95700964c07ff308a6db0ab59f023e11f0da91088d6480f37a08420465f",
+      "es_hash_sha256": "3554d80d5044f7038ce8c277126d28c27f5c3b9c1f316cb9efc0fc1e49800a7d",
+      "fr_hash_sha256": "f5ec1b1420ecb0e5851bc1765088c87f380670c5bca1a329908e105a13fb9f51"
+    },
+    {
+      "id": "fusion_rna_ngs",
+      "category_de": "NGS",
+      "category": {
+        "de": "NGS",
+        "en": "NGS",
+        "ro": "NGS",
+        "el": "NGS",
+        "es": "NGS",
+        "fr": "NGS"
+      },
+      "label": {
+        "de": "RNA-NGS-Fusionspanel erweitert",
+        "en": "Expanded RNA NGS fusion panel",
+        "ro": "Panel NGS ARN extins pentru fuziuni",
+        "el": "Εκτεταμένο panel NGS RNA συντήξεων",
+        "es": "Panel NGS de ARN ampliado para fusiones",
+        "fr": "Panel NGS ARN étendu de fusions"
+      },
+      "info": {
+        "de": "RNA-basierter Nachweis exprimierter Fusionen, auch mit seltenen Partnern.",
+        "en": "RNA-based detection of expressed fusions, including rare fusion partners.",
+        "ro": "Detectarea pe bază de ARN a fuziunilor exprimate, inclusiv cu parteneri rari.",
+        "el": "Ανίχνευση εκφραζόμενων συντήξεων με βάση το RNA, συμπεριλαμβανομένων σπάνιων εταίρων.",
+        "es": "Detección basada en ARN de fusiones expresadas, incluidos socios de fusión raros.",
+        "fr": "Détection fondée sur l’ARN des fusions exprimées, y compris avec des partenaires rares."
+      },
+      "points": 380,
+      "sections": 4,
+      "tat_days": 6,
+      "manual_check": "",
+      "curation_note": "Context-curated method label and explanatory text.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "f3d72afbce8781d833b1da843582a7de6960f77ba1f23964065070e2077a73da",
+      "en_hash_sha256": "fd15e3c18bf819bd5bd8888e83d404765cc9d74c2624664c45a69e4553a7cb54",
+      "ro_hash_sha256": "258bf5c43ee85eb07b562079eec16d3909071719694f337a047065f70ba6da39",
+      "el_hash_sha256": "1ad13ca2ad2ea0c03ca84057662d231b810d5a628392f4665df41bdf9e7f80f5",
+      "es_hash_sha256": "ffff3a4a238a1f2131d25a048bb19675134f7cecf63b785e7d608c0a8b293462",
+      "fr_hash_sha256": "26d86d0a1568d3ea437fd09e5ebaf6974cd7d05335ae91a1798e7f0cdefccf7f"
+    },
+    {
+      "id": "kras_stk11_keap1",
+      "category_de": "NGS",
+      "category": {
+        "de": "NGS",
+        "en": "NGS",
+        "ro": "NGS",
+        "el": "NGS",
+        "es": "NGS",
+        "fr": "NGS"
+      },
+      "label": {
+        "de": "KRAS/STK11/KEAP1-Kontextanalyse",
+        "en": "KRAS/STK11/KEAP1 contextual analysis",
+        "ro": "Analiza contextului KRAS/STK11/KEAP1",
+        "el": "Ανάλυση πλαισίου KRAS/STK11/KEAP1",
+        "es": "Análisis del contexto KRAS/STK11/KEAP1",
+        "fr": "Analyse du contexte KRAS/STK11/KEAP1"
+      },
+      "info": {
+        "de": "Prognostisch/biologisch relevanter Kontext bei NSCLC.",
+        "en": "Prognostically and biologically relevant context in NSCLC.",
+        "ro": "Context relevant prognostic și biologic în NSCLC.",
+        "el": "Προγνωστικά και βιολογικά σημαντικό πλαίσιο στο NSCLC.",
+        "es": "Contexto pronóstico y biológicamente relevante en NSCLC.",
+        "fr": "Contexte pronostique et biologique pertinent dans le NSCLC."
+      },
+      "points": 300,
+      "sections": 3,
+      "tat_days": 5,
+      "manual_check": "",
+      "curation_note": "Context-curated method label and explanatory text.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "f1ca8f4460b9703cf80e908c123f69e884377a14a57b5a8690df11a4f1dd4b85",
+      "en_hash_sha256": "0bb61b2aaf1c131d85f0a8e316fddaf7d8d615972ba17470401f7859a1a0dbe6",
+      "ro_hash_sha256": "91a3fbdfdf5cdb96f5b9f6b9e407144fc50217c1e3a22140d51dcc6d8aff6d88",
+      "el_hash_sha256": "e9099eb836276b8dffb39a8a107563c919767913da88800f1985a3eefc91328e",
+      "es_hash_sha256": "496f4582226fac497e5ab7eb6c636135111db41a8f78de5ce9e96a71f652c4f5",
+      "fr_hash_sha256": "7ff839f55ddc6cb05a21016e5996c941d29f256133ac3cf8f7845b926f883168"
+    },
+    {
+      "id": "braf_melanoma",
+      "category_de": "PCR/NGS",
+      "category": {
+        "de": "PCR/NGS",
+        "en": "PCR/NGS",
+        "ro": "PCR/NGS",
+        "el": "PCR/NGS",
+        "es": "PCR/NGS",
+        "fr": "PCR/NGS"
+      },
+      "label": {
+        "de": "BRAF V600-Testung Melanom",
+        "en": "BRAF V600 testing in melanoma",
+        "ro": "Testarea BRAF V600 în melanom",
+        "el": "Έλεγχος BRAF V600 στο μελάνωμα",
+        "es": "Estudio de BRAF V600 en melanoma",
+        "fr": "Analyse de BRAF V600 dans le mélanome"
+      },
+      "info": {
+        "de": "Therapieentscheidender Marker für BRAF/MEK-Inhibition.",
+        "en": "Treatment-defining marker for BRAF/MEK inhibition.",
+        "ro": "Marker determinant pentru tratamentul cu inhibitori BRAF/MEK.",
+        "el": "Δείκτης που καθορίζει θεραπεία με αναστολείς BRAF/MEK.",
+        "es": "Marcador determinante para el tratamiento con inhibidores de BRAF/MEK.",
+        "fr": "Marqueur déterminant pour un traitement par inhibiteurs de BRAF/MEK."
+      },
+      "points": 160,
+      "sections": 2,
+      "tat_days": 2,
+      "manual_check": "",
+      "curation_note": "Context-curated method label and explanatory text.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "58434f0be3f4072d680925b260deffa6c62e124ee577d613e4b25c1f4aa300ea",
+      "en_hash_sha256": "6a9614e0fcc946f06ce1e5d5e3ec14b0e4bbd893dbb10297b2439c412177ef7c",
+      "ro_hash_sha256": "b38f0c6a86465d954c132b8e03f084ec8347078925e1719349e28adc4d483f56",
+      "el_hash_sha256": "0a4db1f03673831adffa63797aa0a3237136e7bbada0121fae72058805e2ed02",
+      "es_hash_sha256": "3b18832d5da5ca58f6fb20673234f3ffbf9ba9d5e1b81777262f0a3e93c77a1a",
+      "fr_hash_sha256": "e19f905c1cfffc6170b629e3b7d23e247c3f6c19e807f6246292a3aaf7233d3b"
+    },
+    {
+      "id": "melanoma_io_context",
+      "category_de": "Histologie/IHC",
+      "category": {
+        "de": "Histologie/IHC",
+        "en": "Histology/IHC",
+        "ro": "Histologie/IHC",
+        "el": "Ιστολογία/IHC",
+        "es": "Histología/IHC",
+        "fr": "Histologie/IHC"
+      },
+      "label": {
+        "de": "Melanom-IO-Kontext: TILs/PD-L1 optional",
+        "en": "Melanoma immunotherapy context: TILs/PD-L1 optional",
+        "ro": "Context de imunoterapie în melanom: TIL/PD-L1 opțional",
+        "el": "Πλαίσιο ανοσοθεραπείας μελανώματος: TIL/PD-L1 προαιρετικά",
+        "es": "Contexto de inmunoterapia en melanoma: TIL/PD-L1 opcional",
+        "fr": "Contexte d’immunothérapie du mélanome : TIL/PD-L1 optionnels"
+      },
+      "info": {
+        "de": "Kontextinformation, ersetzt keine klinische Sequenzentscheidung.",
+        "en": "Provides contextual information but does not replace the clinical treatment-sequencing decision.",
+        "ro": "Oferă informații contextuale, dar nu înlocuiește decizia clinică privind secvențierea tratamentului.",
+        "el": "Παρέχει πληροφορίες πλαισίου, αλλά δεν αντικαθιστά την κλινική απόφαση για την αλληλουχία θεραπειών.",
+        "es": "Aporta información contextual, pero no sustituye la decisión clínica sobre la secuencia terapéutica.",
+        "fr": "Apporte une information contextuelle, mais ne remplace pas la décision clinique de séquençage thérapeutique."
+      },
+      "points": 120,
+      "sections": 2,
+      "tat_days": 2,
+      "manual_check": "YES",
+      "curation_note": "IO was expanded as immunotherapy in translations.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "20b6767eae920859719e81d820ac9a557bf1382dd7ff301f85829a7ba9d51956",
+      "en_hash_sha256": "6d3e8f9cfcdf9a79d0ed973de7932877e2c1bb81ea38c7bff5fe3b0b04cfa2a9",
+      "ro_hash_sha256": "0cee1c48d0ff0c372fcd279eda527f42b250936b68b699dcd39c160f863eb61d",
+      "el_hash_sha256": "d0b37ed047eeebb155de13c78c4d9b19ce5f396fb3a363b50f68ff9d87720532",
+      "es_hash_sha256": "904d19b62c5fd987b26ba8e08f10e57d9af9fc43970049c2702ddcaa77c9378c",
+      "fr_hash_sha256": "c0e2a88468d09d076086821211ca724302c6c229b61171fd57bc5e4688ddab33"
+    },
+    {
+      "id": "kit_pdgfra",
+      "category_de": "PCR/NGS",
+      "category": {
+        "de": "PCR/NGS",
+        "en": "PCR/NGS",
+        "ro": "PCR/NGS",
+        "el": "PCR/NGS",
+        "es": "PCR/NGS",
+        "fr": "PCR/NGS"
+      },
+      "label": {
+        "de": "KIT/PDGFRA-Mutationsanalyse",
+        "en": "KIT/PDGFRA mutation analysis",
+        "ro": "Analiza mutațiilor KIT/PDGFRA",
+        "el": "Ανάλυση μεταλλάξεων KIT/PDGFRA",
+        "es": "Análisis de mutaciones en KIT/PDGFRA",
+        "fr": "Analyse des mutations de KIT/PDGFRA"
+      },
+      "info": {
+        "de": "Zentral für TKI-Auswahl bei GIST.",
+        "en": "Central to selecting a TKI in GIST.",
+        "ro": "Element central pentru alegerea unui TKI în GIST.",
+        "el": "Κεντρική για την επιλογή TKI στο GIST.",
+        "es": "Fundamental para seleccionar un TKI en GIST.",
+        "fr": "Centrale pour le choix d’un TKI dans les GIST."
+      },
+      "points": 220,
+      "sections": 3,
+      "tat_days": 4,
+      "manual_check": "",
+      "curation_note": "Context-curated method label and explanatory text.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "d2fdab84cc0d89dd86a8e821fc309cf36106dd72d5ba414170d11351b8fa1fdb",
+      "en_hash_sha256": "727c63ae4f88560a818213b779b377fb27b1fb2d0330b6c22818ba7618d663ff",
+      "ro_hash_sha256": "f1e1b446700c89201774ee1b0cb9c01ede6d10009d3d94a1caae66d898928f49",
+      "el_hash_sha256": "5ca88e2e7ce0de6d285a763a38bc86d95b10719d5382d0ebf2832208afbd7d87",
+      "es_hash_sha256": "2426182a8135324fa5cf92d9ffb2591afca8fe14e093da4dd789fe5d88aa813d",
+      "fr_hash_sha256": "2132c997a23b40e8364ea691f995cbe904d4553d060ec8d030bb44535a61ae48"
+    },
+    {
+      "id": "fgfr2_fusion",
+      "category_de": "NGS/FISH",
+      "category": {
+        "de": "NGS/FISH",
+        "en": "NGS/FISH",
+        "ro": "NGS/FISH",
+        "el": "NGS/FISH",
+        "es": "NGS/FISH",
+        "fr": "NGS/FISH"
+      },
+      "label": {
+        "de": "FGFR2-Fusionsdiagnostik",
+        "en": "FGFR2 fusion testing",
+        "ro": "Testarea fuziunilor FGFR2",
+        "el": "Έλεγχος συντήξεων FGFR2",
+        "es": "Estudio de fusiones de FGFR2",
+        "fr": "Recherche de fusions de FGFR2"
+      },
+      "info": {
+        "de": "Therapie-/Studienrelevanz beim Cholangiozellulären Karzinom.",
+        "en": "Relevant to treatment and clinical-trial options in cholangiocarcinoma.",
+        "ro": "Relevantă pentru opțiunile terapeutice și de studiu clinic în colangiocarcinom.",
+        "el": "Σχετικός με θεραπευτικές επιλογές και κλινικές μελέτες στο χολαγγειοκαρκίνωμα.",
+        "es": "Relevante para opciones terapéuticas y ensayos clínicos en colangiocarcinoma.",
+        "fr": "Pertinente pour les options thérapeutiques et les essais cliniques dans le cholangiocarcinome."
+      },
+      "points": 300,
+      "sections": 3,
+      "tat_days": 5,
+      "manual_check": "",
+      "curation_note": "Context-curated method label and explanatory text.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "f238e89a84dbaf39d231146088b1a127abddb481d1db8e2c1b0eae9cbfa333f3",
+      "en_hash_sha256": "9eb989b755aedf2ea6ac0b6da33e3ce85ee80898c8fe30933c77ac686b03ea07",
+      "ro_hash_sha256": "0ee2fb9b68fc6276eecdbbdf63344de3d08e6cfe29913eaad5fdd7cc34b742e1",
+      "el_hash_sha256": "62c61c4e0a4d335e0c4041ab880e471662f44502e86257d136eb3f7c550a613d",
+      "es_hash_sha256": "5c973d48317112cf0c1449250775872ef776ea28fc886da2f44ff8e00efe4126",
+      "fr_hash_sha256": "2360fa316a8bec387e9a72dbf92e05ed5419e53d89479a99276594b72c9da461"
+    },
+    {
+      "id": "idh1_chol",
+      "category_de": "PCR/NGS",
+      "category": {
+        "de": "PCR/NGS",
+        "en": "PCR/NGS",
+        "ro": "PCR/NGS",
+        "el": "PCR/NGS",
+        "es": "PCR/NGS",
+        "fr": "PCR/NGS"
+      },
+      "label": {
+        "de": "IDH1/2-Testung",
+        "en": "IDH1/2 testing",
+        "ro": "Testare IDH1/2",
+        "el": "Έλεγχος IDH1/2",
+        "es": "Estudio de IDH1/2",
+        "fr": "Analyse d’IDH1/2"
+      },
+      "info": {
+        "de": "Target-/Studienrelevanz in ausgewählten Tumoren.",
+        "en": "Relevant to targeted-treatment and clinical-trial options in selected tumours.",
+        "ro": "Relevantă pentru opțiuni de tratament țintit și studii clinice în anumite tumori.",
+        "el": "Σχετικός με στοχευμένες θεραπευτικές επιλογές και κλινικές μελέτες σε επιλεγμένους όγκους.",
+        "es": "Relevante para opciones de tratamiento dirigido y ensayos clínicos en tumores seleccionados.",
+        "fr": "Pertinente pour les options de traitement ciblé et les essais cliniques dans certaines tumeurs."
+      },
+      "points": 180,
+      "sections": 2,
+      "tat_days": 3,
+      "manual_check": "",
+      "curation_note": "Context-curated method label and explanatory text.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "faa4a3b402a8cddb8d80d2f9c7a2c0ccdc884d7c3fbfb4708759144c895b0c46",
+      "en_hash_sha256": "3551e1c6bed4af2fe90838f28fc7bcca200161c640d138a8bafde05ac7b7250f",
+      "ro_hash_sha256": "407b87d30ad7af1578b2d03f63590a03a9023140782e350f9710ce8a9460dbda",
+      "el_hash_sha256": "08bd0aa04e94a3346931767e56695bc7abd58fdf8fc5d1de5d43584e123d07c8",
+      "es_hash_sha256": "afb90c0219ce42ebece2e52515ed74b2e32c4a6b739c1fda51039c6e5e439c79",
+      "fr_hash_sha256": "a4b7d12901d312039babdd23fff11ccc8bbd6293bb582515995b4d152d6a2453"
+    },
+    {
+      "id": "chol_panel",
+      "category_de": "NGS",
+      "category": {
+        "de": "NGS",
+        "en": "NGS",
+        "ro": "NGS",
+        "el": "NGS",
+        "es": "NGS",
+        "fr": "NGS"
+      },
+      "label": {
+        "de": "Cholangio-Panel: FGFR2/IDH1/BRAF/ERBB2/NTRK",
+        "en": "Cholangiocarcinoma panel: FGFR2/IDH1/BRAF/ERBB2/NTRK",
+        "ro": "Panel pentru colangiocarcinom: FGFR2/IDH1/BRAF/ERBB2/NTRK",
+        "el": "Panel χολαγγειοκαρκινώματος: FGFR2/IDH1/BRAF/ERBB2/NTRK",
+        "es": "Panel para colangiocarcinoma: FGFR2/IDH1/BRAF/ERBB2/NTRK",
+        "fr": "Panel cholangiocarcinome : FGFR2/IDH1/BRAF/ERBB2/NTRK"
+      },
+      "info": {
+        "de": "Breite molekulare Abklärung beim Cholangiozellulären Karzinom.",
+        "en": "Broad molecular work-up in cholangiocarcinoma.",
+        "ro": "Caracterizare moleculară largă în colangiocarcinom.",
+        "el": "Ευρεία μοριακή διερεύνηση στο χολαγγειοκαρκίνωμα.",
+        "es": "Caracterización molecular amplia del colangiocarcinoma.",
+        "fr": "Bilan moléculaire large dans le cholangiocarcinome."
+      },
+      "points": 520,
+      "sections": 5,
+      "tat_days": 7,
+      "manual_check": "",
+      "curation_note": "Context-curated method label and explanatory text.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "904cc3a21176854b7e4077bfe584bea206d735131477356a9770fd717bdcb94f",
+      "en_hash_sha256": "57abf342a89db6550afebb26886b0d1699d1c289447ed3c308bbfda76e17ae69",
+      "ro_hash_sha256": "eaa49522739ae8eb1e2e515e2d277e579319a7c5252590d20c96ce45dc1b8db8",
+      "el_hash_sha256": "04afd3cc5a102d42dcb2adab034388cbcb593db340ecae9178d7d6677c03e25d",
+      "es_hash_sha256": "5e89d9933a539c3e0c30a4c41c9eee1914f7a67e4593153c3f7a2b1b3c59e2bd",
+      "fr_hash_sha256": "2377eebf01bf32e6407d388b93a2d3705ff70a4d6290ce0f5b626d0afe027be1"
+    },
+    {
+      "id": "pik3ca",
+      "category_de": "PCR/NGS",
+      "category": {
+        "de": "PCR/NGS",
+        "en": "PCR/NGS",
+        "ro": "PCR/NGS",
+        "el": "PCR/NGS",
+        "es": "PCR/NGS",
+        "fr": "PCR/NGS"
+      },
+      "label": {
+        "de": "PIK3CA-Mutationsanalyse",
+        "en": "PIK3CA mutation analysis",
+        "ro": "Analiza mutațiilor PIK3CA",
+        "el": "Ανάλυση μεταλλάξεων PIK3CA",
+        "es": "Análisis de mutaciones en PIK3CA",
+        "fr": "Analyse des mutations de PIK3CA"
+      },
+      "info": {
+        "de": "Therapie-/Resistenzkontext bei ausgewählten Mammakarzinomfällen.",
+        "en": "Relevant to treatment and resistance in selected breast-cancer settings.",
+        "ro": "Relevantă pentru tratament și rezistență în anumite contexte de cancer mamar.",
+        "el": "Σχετική με θεραπεία και αντοχή σε επιλεγμένα πλαίσια καρκίνου μαστού.",
+        "es": "Relevante para el tratamiento y la resistencia en determinados contextos de cáncer de mama.",
+        "fr": "Pertinente pour le traitement et la résistance dans certains contextes de cancer du sein."
+      },
+      "points": 160,
+      "sections": 2,
+      "tat_days": 3,
+      "manual_check": "",
+      "curation_note": "Context-curated method label and explanatory text.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "7fb1cde7ff0e9dbf47d55499dd4b300e912cf99829043ff6d5b600ab4be0adf6",
+      "en_hash_sha256": "92d13c966a977b5ecf2a2d336bb5e8413532ef6d12d7c53ebf9f72b6c26a2cb7",
+      "ro_hash_sha256": "6faf03bd9a2f945c942330a56dcc694a4cec8ff83acdb852566286bda73d19ea",
+      "el_hash_sha256": "83e8bb892fe2edfeeedee219921a403b1c6c1cc2bf6f0923139b1356bb0afa83",
+      "es_hash_sha256": "5ba5fd8fca5728f0e8987b6876e6c7333b590e3df4e75d1a165bbbdf13732961",
+      "fr_hash_sha256": "a65b32b909ba94243ddea92d28f9094d389ed3552f751d4eec3809aa63ab8795"
+    },
+    {
+      "id": "prostate_hrr",
+      "category_de": "NGS",
+      "category": {
+        "de": "NGS",
+        "en": "NGS",
+        "ro": "NGS",
+        "el": "NGS",
+        "es": "NGS",
+        "fr": "NGS"
+      },
+      "label": {
+        "de": "Prostata-HRR/MMR-Panel",
+        "en": "Prostate HRR/MMR panel",
+        "ro": "Panel HRR/MMR pentru prostată",
+        "el": "Panel HRR/MMR προστάτη",
+        "es": "Panel HRR/MMR para próstata",
+        "fr": "Panel HRR/MMR prostate"
+      },
+      "info": {
+        "de": "PARP-/IO-/Keimbahnkontext bei metastasiertem Prostatakarzinom.",
+        "en": "Provides PARP, immunotherapy and germline context in metastatic prostate cancer.",
+        "ro": "Oferă context pentru PARP, imunoterapie și testare germinală în cancerul de prostată metastatic.",
+        "el": "Παρέχει πλαίσιο για PARP, ανοσοθεραπεία και έλεγχο βλαστικής σειράς σε μεταστατικό καρκίνο προστάτη.",
+        "es": "Aporta contexto para PARP, inmunoterapia y estudio germinal en cáncer de próstata metastásico.",
+        "fr": "Apporte le contexte PARP, immunothérapie et germinal dans le cancer de la prostate métastatique."
+      },
+      "points": 480,
+      "sections": 4,
+      "tat_days": 6,
+      "manual_check": "",
+      "curation_note": "Context-curated method label and explanatory text.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "052f5c8fc5d002c73fa498e8e6cf214240c56074c1d899fed5e91b0af0e3d17b",
+      "en_hash_sha256": "c411da120c6c146284ee0f983fb39959ef25f9d85de05f7342dfb14c7a7b6159",
+      "ro_hash_sha256": "a3d48d91120d21e98161376e119a98f5f733d6550ed66ee9272ac74223c56023",
+      "el_hash_sha256": "21f1930c2e8e748099a5dae5dffbbe979b7168db94f8222137626e0d17f86802",
+      "es_hash_sha256": "aaf7039847a38caccb94db0567de579b69e62d300e39f978986e864954a96728",
+      "fr_hash_sha256": "50920e82ce8e5e81655614d5c03b0ba37b752a5f2573e1c44ebb378280ed3591"
+    },
+    {
+      "id": "methylation_mlh1",
+      "category_de": "Epigenetik",
+      "category": {
+        "de": "Epigenetik",
+        "en": "Epigenetics",
+        "ro": "Epigenetică",
+        "el": "Επιγενετική",
+        "es": "Epigenética",
+        "fr": "Épigénétique"
+      },
+      "label": {
+        "de": "MLH1-Promotor-Methylierung",
+        "en": "MLH1 promoter methylation",
+        "ro": "Metilarea promotorului MLH1",
+        "el": "Μεθυλίωση υποκινητή MLH1",
+        "es": "Metilación del promotor de MLH1",
+        "fr": "Méthylation du promoteur de MLH1"
+      },
+      "info": {
+        "de": "Reflexdiagnostik bei MLH1/PMS2-Verlust.",
+        "en": "Reflex testing after loss of MLH1/PMS2.",
+        "ro": "Test reflex după pierderea MLH1/PMS2.",
+        "el": "Αντανακλαστικός έλεγχος μετά από απώλεια MLH1/PMS2.",
+        "es": "Prueba refleja tras la pérdida de MLH1/PMS2.",
+        "fr": "Analyse réflexe après perte de MLH1/PMS2."
+      },
+      "points": 200,
+      "sections": 2,
+      "tat_days": 4,
+      "manual_check": "YES",
+      "curation_note": "Reflex testing terminology requires native review in EL/ES/FR.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "fbc3612a694093ed4dbff209be725fa5148cca53a32e3a67e32830068f7f0c76",
+      "en_hash_sha256": "24127f15800ba7bffd8d17a36c65c07c09d37772892d7038ae2907c75ec5533e",
+      "ro_hash_sha256": "8fb86c7facd364b78d47b1db7ef89b179e7351d1ec4733711bff303210dbb985",
+      "el_hash_sha256": "a7ac399a2492b01b79477b564d6d2f652f3e497d52990a742e1c8f118d6310ed",
+      "es_hash_sha256": "e4a57a0ae3caeb2f25d6b83479b32b10e355c8002e117b3510a33b076a93473c",
+      "fr_hash_sha256": "f40dd6ee6a0edbbbd9536ff9e2a0d400c02e8f133089471cfc197cdecea887b7"
+    },
+    {
+      "id": "epigenetic_heme_panel",
+      "category_de": "NGS",
+      "category": {
+        "de": "NGS",
+        "en": "NGS",
+        "ro": "NGS",
+        "el": "NGS",
+        "es": "NGS",
+        "fr": "NGS"
+      },
+      "label": {
+        "de": "Hämatologisches Panel: DNMT3A/TET2/ASXL1/TP53",
+        "en": "Haematology panel: DNMT3A/TET2/ASXL1/TP53",
+        "ro": "Panel hematologic: DNMT3A/TET2/ASXL1/TP53",
+        "el": "Αιματολογικό panel: DNMT3A/TET2/ASXL1/TP53",
+        "es": "Panel hematológico: DNMT3A/TET2/ASXL1/TP53",
+        "fr": "Panel hématologique : DNMT3A/TET2/ASXL1/TP53"
+      },
+      "info": {
+        "de": "CHIP-/MDS-/AML-Kontext.",
+        "en": "Context for distinguishing CHIP from MDS/AML.",
+        "ro": "Context pentru diferențierea CHIP de MDS/AML.",
+        "el": "Πλαίσιο για τη διάκριση CHIP από MDS/AML.",
+        "es": "Contexto para diferenciar CHIP de MDS/AML.",
+        "fr": "Contexte permettant de distinguer CHIP de MDS/AML."
+      },
+      "points": 420,
+      "sections": 2,
+      "tat_days": 5,
+      "manual_check": "",
+      "curation_note": "Context-curated method label and explanatory text.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "5af4538b33f575dfaeabcf8aaa8aa6f3ea3f3b7e3644cf7475a9079c2b125ea8",
+      "en_hash_sha256": "e3413ce6827157682a8b2ce23fb99aad30d4be886fde9c2b60e45b975399d58c",
+      "ro_hash_sha256": "68ce4d534b73c585fbf41903bcb1ac904c3e81e2c90fc323dbb3fe0a9890c7b4",
+      "el_hash_sha256": "82eba1b09ed8de5f64c759e643cb39661c3867eb3992d3997af66ec8cf2b4b2c",
+      "es_hash_sha256": "eb38f9b1e14cee2d35db5fcd8019be80119b26b242553ba6f0bdea20dd65b1bf",
+      "fr_hash_sha256": "94689a527f474edf5d6ea35842ddb23d547796544fea67b2227b4d6006152cc8"
+    },
+    {
+      "id": "vegf_context",
+      "category_de": "Interpretation",
+      "category": {
+        "de": "Interpretation",
+        "en": "Interpretation",
+        "ro": "Interpretare",
+        "el": "Ερμηνεία",
+        "es": "Interpretación",
+        "fr": "Interprétation"
+      },
+      "label": {
+        "de": "VEGF/Angiogenese-Kontext biologisch einordnen",
+        "en": "Biological interpretation of the VEGF/angiogenesis context",
+        "ro": "Interpretarea biologică a contextului VEGF/angiogeneză",
+        "el": "Βιολογική ερμηνεία του πλαισίου VEGF/αγγειογένεσης",
+        "es": "Interpretación biológica del contexto VEGF/angiogénesis",
+        "fr": "Interprétation biologique du contexte VEGF/angiogenèse"
+      },
+      "info": {
+        "de": "Didaktischer Interpretationsbaustein, kein Routinetest.",
+        "en": "Teaching interpretation component, not a routine test.",
+        "ro": "Componentă didactică de interpretare, nu un test de rutină.",
+        "el": "Διδακτικό στοιχείο ερμηνείας, όχι εξέταση ρουτίνας.",
+        "es": "Componente didáctico de interpretación, no una prueba rutinaria.",
+        "fr": "Élément pédagogique d’interprétation, et non examen de routine."
+      },
+      "points": 60,
+      "sections": 0,
+      "tat_days": 1,
+      "manual_check": "",
+      "curation_note": "Context-curated method label and explanatory text.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "43bc45342213967555ce61c1575b470cc8d582dc41835420f62e55930de63292",
+      "en_hash_sha256": "463ae33c8408a730b1c80b632e5afcd8b57397fe0d846ef10e69247a7f92fca5",
+      "ro_hash_sha256": "0bb157dfedde95b4925b0ac4e3965cc9bfb22cd99d7679c78e4c6b6891b0ceea",
+      "el_hash_sha256": "7b130ecbaa61aa0f232b9b4df889cdf0f37227e83c5d2c1f15a2c99ec3f83dbd",
+      "es_hash_sha256": "0b6679cb18e4e28a30a92c18b741a7531bd8f6af85b11d55b8b23a7b87c9fcc0",
+      "fr_hash_sha256": "f914eba0ae690d53bb732af745dfe4ed13afa4774b3e5c00d3e81f9d5d4ca39c"
+    },
+    {
+      "id": "vhl_hif_panel",
+      "category_de": "NGS",
+      "category": {
+        "de": "NGS",
+        "en": "NGS",
+        "ro": "NGS",
+        "el": "NGS",
+        "es": "NGS",
+        "fr": "NGS"
+      },
+      "label": {
+        "de": "RCC-Kontext: VHL/HIF/VEGF-Achse",
+        "en": "RCC context: VHL/HIF/VEGF axis",
+        "ro": "Context RCC: axa VHL/HIF/VEGF",
+        "el": "Πλαίσιο RCC: άξονας VHL/HIF/VEGF",
+        "es": "Contexto de RCC: eje VHL/HIF/VEGF",
+        "fr": "Contexte RCC : axe VHL/HIF/VEGF"
+      },
+      "info": {
+        "de": "Biologische Einordnung beim klarzelligen RCC.",
+        "en": "Biological interpretation in clear-cell RCC.",
+        "ro": "Interpretare biologică în RCC cu celule clare.",
+        "el": "Βιολογική ερμηνεία στο διαυγοκυτταρικό RCC.",
+        "es": "Interpretación biológica en RCC de células claras.",
+        "fr": "Interprétation biologique dans le RCC à cellules claires."
+      },
+      "points": 300,
+      "sections": 3,
+      "tat_days": 5,
+      "manual_check": "",
+      "curation_note": "Context-curated method label and explanatory text.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "5719b2e45d3a5774438d5e6ddbde27eb601d5a45632335138f2df95658fb2e4e",
+      "en_hash_sha256": "dba7bc349e3af1da71b4e593f911ab95a0a08c65adf9f898a6ffa07402fe9e94",
+      "ro_hash_sha256": "64f6417eed55396a6fb02d1eedecc47b271c286eda64296f478eff72f06e6132",
+      "el_hash_sha256": "63b12e31ae7695498762fb1cd8ef933eb230bc45a35dfa7839ac703f6230f2d3",
+      "es_hash_sha256": "cad582522fcd7bb152756d0a24e7fc893b5976edd4c4d85fb1edbef944372ea9",
+      "fr_hash_sha256": "2c5f72ab2299b75288cc4c791c4b2121a9bc7047c7b45e0840aa6d4d89b72537"
+    },
+    {
+      "id": "tme_stroma_ihc",
+      "category_de": "Histologie/IHC",
+      "category": {
+        "de": "Histologie/IHC",
+        "en": "Histology/IHC",
+        "ro": "Histologie/IHC",
+        "el": "Ιστολογία/IHC",
+        "es": "Histología/IHC",
+        "fr": "Histologie/IHC"
+      },
+      "label": {
+        "de": "TME/Stroma-IHC: FAP/αSMA/CD8",
+        "en": "TME/stromal IHC: FAP/αSMA/CD8",
+        "ro": "IHC TME/stromă: FAP/αSMA/CD8",
+        "el": "IHC TME/στρώματος: FAP/αSMA/CD8",
+        "es": "IHC de TME/estroma: FAP/αSMA/CD8",
+        "fr": "IHC TME/stroma : FAP/αSMA/CD8"
+      },
+      "info": {
+        "de": "Immune-excluded/stromadominierte Muster stützen.",
+        "en": "Supports an immune-excluded or stroma-dominant pattern.",
+        "ro": "Susține un profil immune-excluded sau dominat de stromă.",
+        "el": "Υποστηρίζει πρότυπο immune-excluded ή κυριαρχούμενο από το στρώμα.",
+        "es": "Apoya un patrón immune-excluded o con predominio estromal.",
+        "fr": "Étaye un profil immune-excluded ou à prédominance stromale."
+      },
+      "points": 180,
+      "sections": 3,
+      "tat_days": 3,
+      "manual_check": "YES",
+      "curation_note": "Immune-excluded retained as an established phenotype label.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "16c7aaccd8ce6a8a191797092b943189464f40e48a4adb534a50497a097c01e6",
+      "en_hash_sha256": "6b3461b329c877668a13ca718c14b8b5eac9387e2534b3f2121f1ccc2bfbbcd1",
+      "ro_hash_sha256": "a9fcc323ce6f648684684c784706c15be660389fc8ab0c24366add41dbda9092",
+      "el_hash_sha256": "19ab1a518f8302adbb5a4c0b7dd30d6afbc51df296695c4ac419911d630e5af2",
+      "es_hash_sha256": "22731fdb2bfedd6316e0dfce3f518d79b90e5ad2eabff5fcb044501b414a5701",
+      "fr_hash_sha256": "ce58e0e6a14b2814d5a2220185e2d22a74303715591b67f261997c3ff5a073f0"
+    },
+    {
+      "id": "emt_invasion_panel",
+      "category_de": "Histologie/IHC",
+      "category": {
+        "de": "Histologie/IHC",
+        "en": "Histology/IHC",
+        "ro": "Histologie/IHC",
+        "el": "Ιστολογία/IHC",
+        "es": "Histología/IHC",
+        "fr": "Histologie/IHC"
+      },
+      "label": {
+        "de": "Invasionsfront-/EMT-Kontext: E-Cadherin, Vimentin, β-Catenin",
+        "en": "Invasive-front/EMT context: E-cadherin, vimentin, β-catenin",
+        "ro": "Contextul frontului invaziv/EMT: E-caderină, vimentină, β-catenină",
+        "el": "Πλαίσιο διηθητικού μετώπου/EMT: E-cadherin, vimentin, β-catenin",
+        "es": "Contexto del frente invasivo/EMT: E-cadherina, vimentina, β-catenina",
+        "fr": "Contexte du front invasif/EMT : E-cadhérine, vimentine, β-caténine"
+      },
+      "info": {
+        "de": "Morphologie zu Hallmark-Interpretation verbinden.",
+        "en": "Links morphology to hallmark interpretation.",
+        "ro": "Leagă morfologia de interpretarea hallmark-urilor.",
+        "el": "Συνδέει τη μορφολογία με την ερμηνεία των hallmarks.",
+        "es": "Relaciona la morfología con la interpretación de los hallmarks.",
+        "fr": "Relie la morphologie à l’interprétation des hallmarks."
+      },
+      "points": 160,
+      "sections": 3,
+      "tat_days": 3,
+      "manual_check": "YES",
+      "curation_note": "Hallmark and EMT terminology intentionally retained.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "688cdd2d39b4dc83f26223feae677105cd43125ba0c5d2a166f79c6025a3c362",
+      "en_hash_sha256": "7da737d5ac08cbf15b4a9110187806fcfed576e80af650f499f9838f1669e3d3",
+      "ro_hash_sha256": "1c9ca5134c850e6f132f674bdc3255e08978550ffb527bd18135d6b984cf0a79",
+      "el_hash_sha256": "04f865ed7658549702b6f9ff3268e5262b31cdafc476f9b189bc9955ab736f8f",
+      "es_hash_sha256": "1208c2028f9e6da37bf7d5083d0643c0d421f675926cd4d5ff5a1d158ffc44e7",
+      "fr_hash_sha256": "3b28e9bba219968fe33194ef3e99ef3ca138028f6a4a691fb553b2921c3e6e34"
+    },
+    {
+      "id": "vusic",
+      "category_de": "Interpretation",
+      "category": {
+        "de": "Interpretation",
+        "en": "Interpretation",
+        "ro": "Interpretare",
+        "el": "Ερμηνεία",
+        "es": "Interpretación",
+        "fr": "Interprétation"
+      },
+      "label": {
+        "de": "Kurierte VUS-/Evidenzrecherche",
+        "en": "Curated VUS/evidence review",
+        "ro": "Revizuire curată a VUS/dovezilor",
+        "el": "Επιμελημένη ανασκόπηση VUS/τεκμηρίων",
+        "es": "Revisión curada de VUS/evidencia",
+        "fr": "Revue documentée du VUS/des preuves"
+      },
+      "info": {
+        "de": "Strukturierte Variantenbewertung mit Evidenzgrad.",
+        "en": "Structured variant assessment with an evidence level.",
+        "ro": "Evaluare structurată a variantei cu nivel de dovezi.",
+        "el": "Δομημένη αξιολόγηση παραλλαγής με επίπεδο τεκμηρίων.",
+        "es": "Evaluación estructurada de la variante con nivel de evidencia.",
+        "fr": "Évaluation structurée du variant avec un niveau de preuve."
+      },
+      "points": 80,
+      "sections": 0,
+      "tat_days": 1,
+      "manual_check": "",
+      "curation_note": "Context-curated method label and explanatory text.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "1e3ef56c73166ccf237643d32a6b5195a049879c7e33497711dcada47cd9b85e",
+      "en_hash_sha256": "1f81002963875fe2d9a00aa3d8a1f5b6ace3facdc3d0cca00ea7d306f5af2b15",
+      "ro_hash_sha256": "a69ae22982b9db18a9c0997e406774beb8a429b74568a99f274ae226d05209c3",
+      "el_hash_sha256": "acf8ec62765213c198dfd804e9fa74e51dc60e7c8022ca91426425c0b517c460",
+      "es_hash_sha256": "ed018976ee83671d108fae2188fb58212b9771bbbd02244f43272455311eb529",
+      "fr_hash_sha256": "8802d8345a3c73d741a67bf92a19f7711a56dd042b75eaf9b897eb07d013accb"
+    },
+    {
+      "id": "orthogonal_confirmation",
+      "category_de": "Validierung",
+      "category": {
+        "de": "Validierung",
+        "en": "Validation",
+        "ro": "Validare",
+        "el": "Επικύρωση",
+        "es": "Validación",
+        "fr": "Validation"
+      },
+      "label": {
+        "de": "Orthogonale Bestätigung / Zweitmethode",
+        "en": "Orthogonal confirmation / second method",
+        "ro": "Confirmare ortogonală / a doua metodă",
+        "el": "Ορθογώνια επιβεβαίωση / δεύτερη μέθοδος",
+        "es": "Confirmación ortogonal / segundo método",
+        "fr": "Confirmation orthogonale / seconde méthode"
+      },
+      "info": {
+        "de": "Bei Artefaktverdacht, Coverage-Lücke oder unerwartetem Befund.",
+        "en": "Used when an artefact, a coverage gap or an unexpected result is suspected.",
+        "ro": "Utilizată când se suspectează un artefact, o lacună de coverage sau un rezultat neașteptat.",
+        "el": "Χρησιμοποιείται όταν υπάρχει υποψία τεχνουργήματος, κενού κάλυψης ή μη αναμενόμενου αποτελέσματος.",
+        "es": "Se utiliza ante sospecha de artefacto, laguna de cobertura o resultado inesperado.",
+        "fr": "Utilisée en cas de suspicion d’artéfact, de lacune de couverture ou de résultat inattendu."
+      },
+      "points": 140,
+      "sections": 1,
+      "tat_days": 3,
+      "manual_check": "YES",
+      "curation_note": "Orthogonal confirmation is a technical validation term.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "6b564efad13b7c6f8e373da3b516168713887ab7176475944d8bcd97914927ab",
+      "en_hash_sha256": "bbb1ec678df591f28d57b552677e077c338d57817c4d40df34493aee888be123",
+      "ro_hash_sha256": "70593ab6ba836dd3ac64b80385cb2983140afe137d2bedaf827389ce2c46437b",
+      "el_hash_sha256": "27cfc78f9e63426c4bdde6725a669177c119eb57e3461bb85ab314d986dc374c",
+      "es_hash_sha256": "c4901349ec4e999b6c83c9a9cd1d04c7de8631198dbe60d531d0ad82fe822183",
+      "fr_hash_sha256": "ed80c9044d9ffd838d54f11019eba31c97bb340552da27a4f518f73615d7e522"
+    },
+    {
+      "id": "repeat_ngs",
+      "category_de": "NGS",
+      "category": {
+        "de": "NGS",
+        "en": "NGS",
+        "ro": "NGS",
+        "el": "NGS",
+        "es": "NGS",
+        "fr": "NGS"
+      },
+      "label": {
+        "de": "NGS-Wiederholung / alternative Library",
+        "en": "Repeat NGS / alternative library preparation",
+        "ro": "Repetarea NGS / preparare alternativă a bibliotecii",
+        "el": "Επανάληψη NGS / εναλλακτική προετοιμασία βιβλιοθήκης",
+        "es": "Repetición de NGS / preparación alternativa de la biblioteca",
+        "fr": "Répétition du NGS / préparation de librairie alternative"
+      },
+      "info": {
+        "de": "Bei Coverage-Lücke oder QC-Problem.",
+        "en": "Used for a coverage gap or QC problem.",
+        "ro": "Utilizată în caz de lacună de coverage sau problemă QC.",
+        "el": "Χρησιμοποιείται σε κενό κάλυψης ή πρόβλημα QC.",
+        "es": "Se utiliza ante una laguna de cobertura o un problema de QC.",
+        "fr": "Utilisée en cas de lacune de couverture ou de problème de QC."
+      },
+      "points": 420,
+      "sections": 4,
+      "tat_days": 6,
+      "manual_check": "",
+      "curation_note": "Context-curated method label and explanatory text.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "c5fba92b4ea4bddc068e2f7d2205a89545b3dc150602b3bd436803680386885e",
+      "en_hash_sha256": "880888281f509849579d68048a6851a221f1031e349835ea87f78b8b87c9d9fe",
+      "ro_hash_sha256": "b2ad7c23f979b138ad5a18a1a9de47d098ea8f855ca808f0404f97dff43bd28a",
+      "el_hash_sha256": "f15c929106293966d2beb4a603a7a6d220a81e1d8eca03c9ed92328065e374ce",
+      "es_hash_sha256": "97fa3906ad15e1ba3a770b4711a0c7f181c304c151487028b8fc6528149954cc",
+      "fr_hash_sha256": "c915cfe501a430d79c30f95a9492f9703ba8fe5442c2da3b82e8aec33b2302cd"
+    },
+    {
+      "id": "coverage_review",
+      "category_de": "Bioinformatik",
+      "category": {
+        "de": "Bioinformatik",
+        "en": "Bioinformatics",
+        "ro": "Bioinformatică",
+        "el": "Βιοπληροφορική",
+        "es": "Bioinformática",
+        "fr": "Bio-informatique"
+      },
+      "label": {
+        "de": "Coverage-/QC-Review therapieentscheidender Regionen",
+        "en": "Coverage/QC review of treatment-relevant regions",
+        "ro": "Revizuirea coverage/QC a regiunilor relevante terapeutic",
+        "el": "Ανασκόπηση κάλυψης/QC θεραπευτικά σχετικών περιοχών",
+        "es": "Revisión de cobertura/QC de regiones terapéuticamente relevantes",
+        "fr": "Revue couverture/QC des régions pertinentes pour le traitement"
+      },
+      "info": {
+        "de": "Prüft, ob ein Negativbefund methodisch belastbar ist.",
+        "en": "Assesses whether a negative result is methodologically reliable.",
+        "ro": "Evaluează dacă un rezultat negativ este fiabil din punct de vedere metodologic.",
+        "el": "Αξιολογεί αν ένα αρνητικό αποτέλεσμα είναι μεθοδολογικά αξιόπιστο.",
+        "es": "Evalúa si un resultado negativo es metodológicamente fiable.",
+        "fr": "Évalue si un résultat négatif est méthodologiquement fiable."
+      },
+      "points": 60,
+      "sections": 0,
+      "tat_days": 1,
+      "manual_check": "YES",
+      "curation_note": "Coverage translated selectively; English loanword retained in Romanian.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "e92a562388606a7cf4e7c4973c1ba3ab5a6073cadf6f6d8ad66f363c58d4b47f",
+      "en_hash_sha256": "9e3d2b67172ce9094efc1e4b50c8243f5ba49f98bf1563a2b96d351a6c3c25e5",
+      "ro_hash_sha256": "b44177d3d481e4463ab1b1b5899147157ce41c9dbdc8ee45a00d4a6925bfb0de",
+      "el_hash_sha256": "624dadcec1f5f898a254108b8fc3d537d342621121a49d57617bda51b9609e09",
+      "es_hash_sha256": "3ba9ad0bbad11b880cc17733e7a887be6ef3014b71794a725525d320dccf87c1",
+      "fr_hash_sha256": "77955081f64956ca676b286b564df73a98f0725d297f071953b0081dab252823"
+    },
+    {
+      "id": "ffpe_artifact_review",
+      "category_de": "Bioinformatik",
+      "category": {
+        "de": "Bioinformatik",
+        "en": "Bioinformatics",
+        "ro": "Bioinformatică",
+        "el": "Βιοπληροφορική",
+        "es": "Bioinformática",
+        "fr": "Bio-informatique"
+      },
+      "label": {
+        "de": "FFPE-Artefakt-Review / UDG-Kontext",
+        "en": "FFPE artefact review / UDG context",
+        "ro": "Revizuirea artefactelor FFPE / context UDG",
+        "el": "Ανασκόπηση τεχνουργημάτων FFPE / πλαίσιο UDG",
+        "es": "Revisión de artefactos FFPE / contexto UDG",
+        "fr": "Revue des artéfacts FFPE / contexte UDG"
+      },
+      "info": {
+        "de": "C>T/G>A-Artefakte bei niedriger VAF einordnen.",
+        "en": "Assesses low-VAF C>T/G>A artefacts.",
+        "ro": "Evaluează artefactele C>T/G>A la VAF scăzută.",
+        "el": "Αξιολογεί τεχνουργήματα C>T/G>A σε χαμηλό VAF.",
+        "es": "Evalúa artefactos C>T/G>A con VAF baja.",
+        "fr": "Évalue les artéfacts C>T/G>A à faible VAF."
+      },
+      "points": 60,
+      "sections": 0,
+      "tat_days": 1,
+      "manual_check": "",
+      "curation_note": "Context-curated method label and explanatory text.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "fa582952fbcd06dcd2a1ea680a881f611cdcf1c950968dbaf4d690af0b3a4b0a",
+      "en_hash_sha256": "e8d74a1436cd3ce3f7d31cb78d87e65a3706503b45b1dee1102c4d64dbfa5b80",
+      "ro_hash_sha256": "518fc3cc5137fe768033e4dabb2418a1a31730717e46277477425c44ef442742",
+      "el_hash_sha256": "2783ef4a918740b85a41c6063ee614d9c37f839855cbe71263eeaabd4e9f3f8b",
+      "es_hash_sha256": "027c5e7ad0d8e84b340a867a04a6e12b74adfe65562bbf9d319446979eceff55",
+      "fr_hash_sha256": "03b27c3cded8e985f23a5cbaadd6cf95f6fcb5a2b2caf8a68e7481f67f66eb89"
+    },
+    {
+      "id": "tumor_normal_germline",
+      "category_de": "Humangenetik",
+      "category": {
+        "de": "Humangenetik",
+        "en": "Medical genetics",
+        "ro": "Genetică medicală",
+        "el": "Ιατρική γενετική",
+        "es": "Genética médica",
+        "fr": "Génétique médicale"
+      },
+      "label": {
+        "de": "Tumor-Normal-Abklärung / Keimbahnmaterial",
+        "en": "Tumour-normal analysis / germline sample",
+        "ro": "Analiză tumoră-normal / probă germinală",
+        "el": "Ανάλυση όγκου-φυσιολογικού / δείγμα βλαστικής σειράς",
+        "es": "Análisis tumor-normal / muestra germinal",
+        "fr": "Analyse tumeur-normal / échantillon germinal"
+      },
+      "info": {
+        "de": "Klärt Tumor-only-Keimbahnverdacht.",
+        "en": "Clarifies a suspected germline finding from tumour-only sequencing.",
+        "ro": "Clarifică suspiciunea unei constatări germinale provenite din secvențiere tumor-only.",
+        "el": "Διευκρινίζει υποψία ευρήματος βλαστικής σειράς από αλληλούχηση μόνο όγκου.",
+        "es": "Aclara una sospecha de hallazgo germinal derivada de una secuenciación solo tumoral.",
+        "fr": "Clarifie la suspicion d’un résultat germinal issue d’un séquençage tumoral seul."
+      },
+      "points": 260,
+      "sections": 0,
+      "tat_days": 5,
+      "manual_check": "YES",
+      "curation_note": "Tumour-normal and tumour-only concepts require consistent global style.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "48057bf1b0b245f108a426b352a979e8b4c256f5ad5e136de09614fecff321cb",
+      "en_hash_sha256": "172d3c9e93eb753323f5f14a8cbd9f91dbfc70590029d986346bd3b56ed7cfca",
+      "ro_hash_sha256": "0950a605d0ba943fdc476cca7586f1487fcc684a8f3d0eca33f22fc3fae7e93c",
+      "el_hash_sha256": "204d66e55c25f16f37a8d79b7ec8e52a4157e7924f86790f61032e8d76fa9d00",
+      "es_hash_sha256": "22b057fb6743a2b926686d788a2b077490c71482fc07fdd463530a650ab72cbe",
+      "fr_hash_sha256": "21e483f3bcfe9bd041798a338583c1e6fa4a5039c59458e86f1376f4416f798a"
+    },
+    {
+      "id": "mrd_dpcr",
+      "category_de": "PCR/dPCR",
+      "category": {
+        "de": "PCR/dPCR",
+        "en": "PCR/dPCR",
+        "ro": "PCR/dPCR",
+        "el": "PCR/dPCR",
+        "es": "PCR/dPCR",
+        "fr": "PCR/dPCR"
+      },
+      "label": {
+        "de": "qPCR/dPCR-MRD oder sensitiver Einzelmarker",
+        "en": "qPCR/dPCR for MRD or a sensitive single-marker assay",
+        "ro": "qPCR/dPCR pentru MRD sau test sensibil cu marker unic",
+        "el": "qPCR/dPCR για MRD ή ευαίσθητος έλεγχος μεμονωμένου δείκτη",
+        "es": "qPCR/dPCR para MRD o ensayo sensible de marcador único",
+        "fr": "qPCR/dPCR pour MRD ou test sensible à marqueur unique"
+      },
+      "info": {
+        "de": "Zielgerichtete sensitive Verlaufsdiagnostik.",
+        "en": "Targeted, highly sensitive monitoring.",
+        "ro": "Monitorizare țintită, cu sensibilitate ridicată.",
+        "el": "Στοχευμένη παρακολούθηση υψηλής ευαισθησίας.",
+        "es": "Monitorización dirigida de alta sensibilidad.",
+        "fr": "Suivi ciblé à haute sensibilité."
+      },
+      "points": 180,
+      "sections": 1,
+      "tat_days": 3,
+      "manual_check": "",
+      "curation_note": "Context-curated method label and explanatory text.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "250d64f76d82479ee871eb8d32e305567c731036cb865c0721bb9f78ff73694e",
+      "en_hash_sha256": "89505d727997f58664c0fa4fa2306458a16d6f96562f14dd0925a46b0d3e64ca",
+      "ro_hash_sha256": "c0e07a1601e181c526f5c9d6a8184aaa37a48e45f02be708321583f7fdb245d7",
+      "el_hash_sha256": "f8b4c50f12b62958fc9ce49b4c8f6ceef653628e18c2f43ba31491ab3727df69",
+      "es_hash_sha256": "1cd199e10f8b249023b15f82681c6978e811a806be8592ccf2938f5c682e7b59",
+      "fr_hash_sha256": "ad6dfc36d2d7e2ed8033e22472111c8b33b89daa8c5c161cf05b773aeb985aac"
+    },
+    {
+      "id": "bisulfite_pcr",
+      "category_de": "Epigenetik",
+      "category": {
+        "de": "Epigenetik",
+        "en": "Epigenetics",
+        "ro": "Epigenetică",
+        "el": "Επιγενετική",
+        "es": "Epigenética",
+        "fr": "Épigénétique"
+      },
+      "label": {
+        "de": "Bisulfit-PCR für fokalen Methylierungsmarker",
+        "en": "Bisulfite PCR for a focal methylation marker",
+        "ro": "PCR cu bisulfit pentru un marker focal de metilare",
+        "el": "PCR διθειώδους για εστιακό δείκτη μεθυλίωσης",
+        "es": "PCR con bisulfito para un marcador focal de metilación",
+        "fr": "PCR au bisulfite pour un marqueur focal de méthylation"
+      },
+      "info": {
+        "de": "Gezielter lokaler Methylierungsnachweis.",
+        "en": "Targeted local methylation analysis.",
+        "ro": "Analiză țintită a metilării locale.",
+        "el": "Στοχευμένη τοπική ανάλυση μεθυλίωσης.",
+        "es": "Análisis dirigido de metilación local.",
+        "fr": "Analyse ciblée d’une méthylation locale."
+      },
+      "points": 160,
+      "sections": 2,
+      "tat_days": 3,
+      "manual_check": "",
+      "curation_note": "Context-curated method label and explanatory text.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "085d5c848f04146d36f4f7e44c9ab6c5b214d5f933b5c3cba88fd383502153a8",
+      "en_hash_sha256": "86278d88512094e0667588abc430bd1d514d0302937f67e55f3997d5e3ffde52",
+      "ro_hash_sha256": "277481b7c7561fc015e0c2b201a7b3442641fb82028bc93f6ea08a606f378da7",
+      "el_hash_sha256": "a4bf36e3fb195cd0c1a8c6c6a2b55fd730892ec2ba67aa7350184c98c2a3ac39",
+      "es_hash_sha256": "3f030788fc02a9953d2bb7eb79b3aa1a40a5ff6a3a958869db92a529b66e7855",
+      "fr_hash_sha256": "5b95f4696de79ef8e7c4d2d5850238c5b570780deb0cbbce48b9f468f652b88e"
+    },
+    {
+      "id": "multiomics_summary",
+      "category_de": "Interpretation",
+      "category": {
+        "de": "Interpretation",
+        "en": "Interpretation",
+        "ro": "Interpretare",
+        "el": "Ερμηνεία",
+        "es": "Interpretación",
+        "fr": "Interprétation"
+      },
+      "label": {
+        "de": "Multiomics-Kernaussage fürs Tumorboard extrahieren",
+        "en": "Extract the key multi-omics message for the tumour board",
+        "ro": "Extragerea mesajului-cheie multiomic pentru tumor board",
+        "el": "Εξαγωγή του βασικού multi-omics μηνύματος για το ογκολογικό συμβούλιο",
+        "es": "Extraer el mensaje clave multiómico para el comité de tumores",
+        "fr": "Extraire le message multi-omique clé pour la RCP moléculaire"
+      },
+      "info": {
+        "de": "Vom Datenpaket zur klinischen Kernaussage.",
+        "en": "Converts a complex data package into a clinically actionable core statement.",
+        "ro": "Transformă un pachet complex de date într-o concluzie centrală utilă clinic.",
+        "el": "Μετατρέπει ένα σύνθετο πακέτο δεδομένων σε κεντρικό συμπέρασμα με κλινική χρησιμότητα.",
+        "es": "Convierte un paquete de datos complejo en una conclusión central clínicamente útil.",
+        "fr": "Transforme un ensemble complexe de données en un message central cliniquement exploitable."
+      },
+      "points": 90,
+      "sections": 0,
+      "tat_days": 1,
+      "manual_check": "YES",
+      "curation_note": "French uses RCP moléculaire as the natural equivalent of a molecular tumour board.",
+      "status": "IN_REVIEW",
+      "source_hash_sha256": "dca92a9c3989b6c025f297ed490a315d99b012b9ef031919bb6c371d90bfd687",
+      "en_hash_sha256": "c21159ad1b3d2fb3b62ac35871a46e747a44f0500e376325287659e28a8b7ec0",
+      "ro_hash_sha256": "7702ffd0252212efa09b202881a58497d4d9d5cb2ed8814ae26923d53c625604",
+      "el_hash_sha256": "6cea76fbd6876d41397a84c756338ef87a0e5840be43a8b3dde9a54b27bbe67f",
+      "es_hash_sha256": "2d72fe20942a805d7fdd19987f550c1d9b67667361a19e11c161fca893c713d9",
+      "fr_hash_sha256": "0b0e2e31777bf815691c4dc7a719aedc24ddceac91dec33d890fd5d9bb362902"
+    }
+  ],
+  "block_hash_sha256": "02c815a81f1f91ec25eaee337fb8403169770b66a35b10c7e3e2dffd33880324"
+}
