@@ -1,0 +1,23 @@
+{
+  "version": "v2.2.3",
+  "name": "Clean Translation Rebuild",
+  "baseline": "v2.2.1 Translation Registry & Full Text Audit",
+  "translation_source": "v2.2.2 message catalog only",
+  "architecture": "stable HTML unchanged except version labels; one additive dictionary merge script appended before </body>",
+  "languages": [
+    "de",
+    "en",
+    "ro",
+    "el",
+    "es",
+    "fr"
+  ],
+  "base_dictionary_entries_per_target_language": 105,
+  "new_entries_per_target_language": 347,
+  "total_entries_per_target_language": 452,
+  "case_engine_changed": false,
+  "render_logic_changed": false,
+  "course_logic_changed": false,
+  "report_logic_changed": false,
+  "sha256_html": "bb3a6e709c47f6a433fd9624ee336e0d695e4b361a6cf20a83346a3433ebe81b"
+}

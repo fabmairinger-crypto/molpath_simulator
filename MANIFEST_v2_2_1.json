@@ -1,0 +1,42 @@
+{
+  "version": "v2.2.1",
+  "name": "MolPath Simulator Translation Registry & Full Text Audit",
+  "base_version": "v2.2.0 Multilingual Foundation",
+  "standalone_html": "molpath_simulator_v2_2_1_translation_registry.html",
+  "package_zip": "molpath_simulator_v2_2_1_translation_registry_package.zip",
+  "registry_hash": "1bfc013f457d30abcfd2fe7875e72a38430adf2a52d25c3889dd6251109b9764",
+  "registry_keys": 6029,
+  "unique_messages": 3373,
+  "languages": [
+    "de",
+    "en",
+    "ro",
+    "el",
+    "es",
+    "fr"
+  ],
+  "source_counts": {
+    "cases": 91,
+    "methods": 71,
+    "courses": 5,
+    "deep_dive_v17": 8,
+    "deep_dive_v21": 3
+  },
+  "files": [
+    "molpath_simulator_v2_2_1_translation_registry.html",
+    "i18n_key_registry_v2_2_1.csv",
+    "i18n_key_registry_v2_2_1.json",
+    "i18n_message_catalog_v2_2_1.json",
+    "i18n_coverage_v2_2_1.csv",
+    "i18n_glossary_v2_2_1.json",
+    "I18N_FULL_TEXT_AUDIT_v2_2_1.md",
+    "CHANGELOG_v2_2_1.md",
+    "QA_REPORT_v2_2_1.md"
+  ],
+  "qa": {
+    "javascript_syntax": "pass",
+    "script_blocks": 9,
+    "browser_interaction": "not_run"
+  },
+  "runtime_behavior_changed": false
+}

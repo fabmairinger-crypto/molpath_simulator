@@ -1,0 +1,29 @@
+{
+  "version": "v2.2.4i ERBB2 VUS Deep Dive 05 Translation",
+  "base": "v2.2.4h HGSOC Deep Dive 04 Translation",
+  "case_id": "MET_NGS_003_v1_0",
+  "review_block_hash_sha256": "b5d1aed02c01c61da884aaca87fef17ec2c6ef1ad900a5ae8699edb558f1706b",
+  "index_sha256": "c963683a7e3c9e8e9a7a9985a0902808782f52ad610a012d1d2a5fe882bb2875",
+  "patch_js_sha256": "caa311737cbbffe487f05b8fd162ac37b37cecb1035512a7714c649c606e8976",
+  "messages": 160,
+  "source_locations": 167,
+  "languages": [
+    "en",
+    "ro",
+    "el",
+    "es",
+    "fr"
+  ],
+  "runtime_corrections": [
+    "MTB + MET-Zusatztyp; Länge=Standard; Schwierigkeit=Advanced; Status=curated-core",
+    "ERBB2-Variantenbewertung",
+    "VUS-/Evidenzkurationsschritt"
+  ],
+  "logic_changed": false,
+  "method_values_changed": false,
+  "scores_changed": false,
+  "save_data_changed": false,
+  "deep_dives_01_04_preserved": true,
+  "new_mutation_observer_added": false,
+  "new_language_change_listener_added": false
+}

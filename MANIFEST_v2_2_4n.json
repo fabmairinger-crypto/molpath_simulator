@@ -1,0 +1,20 @@
+{
+  "version": "v2.2.4n HGSOC Deep Dive 10 Translation",
+  "base_package": "molpath_v2_2_4m_crc_deepdive09_translation_full_package.zip",
+  "case_id": "MTB_OVAR_001_v0_7",
+  "review_block_hash_sha256": "35bed3b5f467416d0dac628215404e7ab232220367e13ee02466574104ef1934",
+  "index_sha256": "813b1489b3d1097d8e490c1fb5ef85cee882458502aae9701299f6eebbe39149",
+  "messages": 146,
+  "source_locations": 157,
+  "languages": [
+    "en",
+    "ro",
+    "el",
+    "es",
+    "fr"
+  ],
+  "source_content_flags_preserved": "base case age/scenario mismatch; unrelated RNA-fusion learning objective retained source-faithfully",
+  "technical_fields_preserved": true,
+  "no_new_mutation_observer": true,
+  "runtime_qa_passed": true
+}

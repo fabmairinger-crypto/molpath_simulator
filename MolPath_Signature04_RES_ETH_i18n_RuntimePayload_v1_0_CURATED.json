@@ -1,0 +1,1831 @@
+{
+  "block_id": "SIGNATURE04_RES_ETH_BASE",
+  "case_id": "RES_ETH_001_v1_0",
+  "version": "1.0",
+  "created_at": "2026-08-10T15:32:00+02:00",
+  "status": "CURATED_AND_APPROVED_FOR_RUNTIME_INTEGRATION",
+  "de": {
+    "metadata": {
+      "case_id": "RES_ETH_001_v1_0",
+      "base_id": "RES_ETH_001",
+      "title": "Restmaterialprojekt ohne klare Einwilligung → Ethik, Datenschutz und Nebenbefunde",
+      "domain": "RES",
+      "met_addon_type": "no",
+      "subdomain": "Ethik / Governance / Materialschutz",
+      "case_type": "research_design_decision",
+      "length_class": "Standard",
+      "estimated_minutes": {
+        "min": 10,
+        "max": 14
+      },
+      "difficulty": "Advanced",
+      "status": "curated-core",
+      "review_flag": "Core/MVP prüfen",
+      "review_priority": "high",
+      "core_decision": "Die Einwilligungslage ist uneinheitlich; Material stammt aus verschiedenen Jahren.",
+      "learning_objectives": [
+        "Vage Projektidee in eine prüfbare, klinisch relevante Forschungsfrage übersetzen",
+        "Ethik, Einwilligung, Datenschutz und Materialschutz vor Projektstart klären",
+        "Explorativ vs. konfirmatorisch transparent trennen und Data-Fishing vermeiden"
+      ],
+      "tags": [
+        "Ethik",
+        "Restmaterial",
+        "FFPE",
+        "Broad Consent",
+        "Datenschutz",
+        "Keimbahn",
+        "Nebenbefund"
+      ],
+      "ap1b_decision": "RES; Länge=Standard; Schwierigkeit=Advanced; Status=curated-core"
+    },
+    "base_case": {
+      "id": "RES_ETH_001_v1_0",
+      "title": "Restmaterialprojekt ohne klare Einwilligung → Ethik, Datenschutz und Nebenbefunde",
+      "short": "Restmaterial / Ethik",
+      "mode": "research",
+      "logic": "res_ethics",
+      "difficulty": "beginner_intermediate",
+      "estimated_time_min": "10–14",
+      "tags": [
+        "Ethik",
+        "Restmaterial",
+        "FFPE",
+        "Broad Consent",
+        "Datenschutz",
+        "Keimbahn",
+        "Nebenbefund"
+      ],
+      "research_intro": {
+        "Projektidee": "120 retrospektive FFPE-Tumorblöcke aus der Routine sollen mit erweitertem DNA/RNA-Panel untersucht werden.",
+        "Ziel": "Neue Resistenzmarker identifizieren.",
+        "Problem": "Die Einwilligungslage ist uneinheitlich; Material stammt aus verschiedenen Jahren.",
+        "Gefahr": "Restmaterial wird als frei verfügbar missverstanden."
+      },
+      "research_context": {
+        "Material": "Routine-FFPE-Blöcke, teils klein, Diagnostikreserve unklar.",
+        "Daten": "Klinische Daten und Follow-up sollen aus Archiv/Informationssystemen gezogen werden.",
+        "Genetik": "Tumor-only-Panel kann Keimbahnverdacht erzeugen.",
+        "Data Sharing": "Publikation und ggf. externe Validierung geplant."
+      },
+      "hypothesis_options": [
+        {
+          "id": "start_now",
+          "label": "Direkt starten, weil es Restmaterial ist.",
+          "kind": "bad",
+          "feedback": "Falsch: Restmaterial bleibt patientenbezogenes Material mit Governance-Anforderungen.",
+          "score": {
+            "question": 1,
+            "hypothesis": 1
+          }
+        },
+        {
+          "id": "governance_first",
+          "label": "Vor Start Ethik, Einwilligung/Broad Consent/Opt-out, Datenschutz, Materialfreigabe und Nebenbefundpolicy klären.",
+          "kind": "optimal",
+          "feedback": "Optimal: Governance ist Voraussetzung, nicht Nachtrag.",
+          "score": {
+            "question": 10,
+            "hypothesis": 8,
+            "design": 8,
+            "translation": 6
+          }
+        },
+        {
+          "id": "anonymize",
+          "label": "Einfach anonymisieren, dann ist alles unproblematisch.",
+          "kind": "partial",
+          "feedback": "Zu einfach: echte Anonymisierung kann Follow-up und Rückmeldung verhindern und ersetzt nicht Material-/Ethikprüfung.",
+          "score": {
+            "question": 4,
+            "design": 3
+          }
+        }
+      ],
+      "pico_options": [
+        {
+          "id": "vague",
+          "label": "P: Archivblöcke; I: Panel; C: keine; O: interessante Resistenzmarker.",
+          "kind": "bad",
+          "feedback": "Zu vage und governance-blind.",
+          "score": {
+            "hypothesis": 2
+          }
+        },
+        {
+          "id": "resistance_defined",
+          "label": "P: definierte Tumorentität mit dokumentierter Therapieresistenz; I: molekulare Alterationen/Signaturen; C: therapieansprechende Fälle; O: Resistenz/Outcome.",
+          "kind": "optimal",
+          "feedback": "Gut: Forschungsidee wird operationalisiert.",
+          "score": {
+            "question": 8,
+            "hypothesis": 12,
+            "design": 6
+          }
+        },
+        {
+          "id": "all_tumors",
+          "label": "Alle Tumoren und alle Outcomes zusammenwerfen, um möglichst viele Fälle zu haben.",
+          "kind": "bad",
+          "feedback": "Inhomogenität gefährdet Interpretierbarkeit.",
+          "score": {
+            "design": 1
+          }
+        }
+      ],
+      "design_options": [
+        {
+          "id": "ethics",
+          "label": "Ethikvotum/Amendment vor Start einholen",
+          "correct": true,
+          "feedback": "Richtig."
+        },
+        {
+          "id": "consent",
+          "label": "Einwilligung/Broad Consent/Opt-out und Rechtsgrundlage prüfen",
+          "correct": true,
+          "feedback": "Richtig."
+        },
+        {
+          "id": "material_guard",
+          "label": "Pathologische Materialfreigabe und Diagnostikreserve sichern",
+          "correct": true,
+          "feedback": "Richtig."
+        },
+        {
+          "id": "no_pi",
+          "label": "Ohne PI/Verantwortlichkeiten starten",
+          "correct": false,
+          "feedback": "Falsch."
+        },
+        {
+          "id": "ignore_old",
+          "label": "Alte Fälle pauschal ohne Prüfung nutzen",
+          "correct": false,
+          "feedback": "Falsch."
+        }
+      ],
+      "method_options": [
+        {
+          "id": "pseudonym",
+          "label": "Pseudonymisierung mit Schlüsselmanagement und rollenbasiertem Zugriff",
+          "correct": true,
+          "feedback": "Richtig."
+        },
+        {
+          "id": "side_findings",
+          "label": "Nebenbefund-/Keimbahnverdachtsprozess definieren",
+          "correct": true,
+          "feedback": "Richtig."
+        },
+        {
+          "id": "data_sharing",
+          "label": "Data-Sharing-Konzept mit Einwilligung/Datenschutz abgleichen",
+          "correct": true,
+          "feedback": "Richtig."
+        },
+        {
+          "id": "whatsapp",
+          "label": "Falllisten und Bilder über private Messenger abstimmen",
+          "correct": false,
+          "feedback": "Falsch."
+        },
+        {
+          "id": "no_key",
+          "label": "Pseudonymisierungsschlüssel offen im Projektordner speichern",
+          "correct": false,
+          "feedback": "Falsch."
+        }
+      ],
+      "analysis_options": [
+        {
+          "id": "analysis_plan",
+          "label": "Analyseplan vor Datenzugriff skizzieren",
+          "correct": true,
+          "feedback": "Richtig."
+        },
+        {
+          "id": "min_data",
+          "label": "Minimaldatensatz und Zugriffskonzept definieren",
+          "correct": true,
+          "feedback": "Richtig."
+        },
+        {
+          "id": "audit_trail",
+          "label": "Datenzugriffe und Materialverbrauch dokumentieren",
+          "correct": true,
+          "feedback": "Richtig."
+        },
+        {
+          "id": "publish_ids",
+          "label": "Einzelfälle mit potenziell reidentifizierbarer Fallnummer publizieren",
+          "correct": false,
+          "feedback": "Falsch."
+        },
+        {
+          "id": "return_ad_hoc",
+          "label": "Pathogene BRCA1-Tumor-only-Variante ad hoc direkt an Patientin melden",
+          "correct": false,
+          "feedback": "Falsch ohne definierten Prozess."
+        }
+      ],
+      "pitfall_options": [
+        {
+          "id": "leftover_false",
+          "label": "Warnsignal: ‚Restmaterial = frei verfügbar‘",
+          "correct": true,
+          "feedback": "Richtig erkannt."
+        },
+        {
+          "id": "governance_good",
+          "label": "Gut: Ethik, Datenschutz, Materialschutz und Nebenbefunde vor Start klären",
+          "correct": true,
+          "feedback": "Richtig."
+        },
+        {
+          "id": "anonym_all",
+          "label": "Anonymisierung löst automatisch jedes Problem",
+          "correct": false,
+          "feedback": "Falsch."
+        },
+        {
+          "id": "diagnostic_reserve",
+          "label": "Diagnostische Restreserve hat Vorrang vor Forschungsneugier",
+          "correct": true,
+          "feedback": "Richtig."
+        }
+      ],
+      "expected_output": {
+        "Startvoraussetzung": "Ethikvotum/Amendment, Einwilligungs-/Opt-out-Prüfung, Datenschutzkonzept, Materialfreigabe.",
+        "Materialschutz": "Diagnostische Restreserve sichern; Verbrauch dokumentieren.",
+        "Datenschutz": "Pseudonymisierung, Schlüsselmanagement, Rollen-/Zugriffskonzept.",
+        "Genetik": "Nebenbefund- und Keimbahnverdachtsprozess vorab definieren.",
+        "Translation": "Nur governance-sicher erhobene Daten sind publizierbar und vertrauenswürdig."
+      },
+      "optimal_summary": "Optimale Lösung: Projekt nicht starten, bevor Ethik, Einwilligung, Datenschutz, Materialschutz und Nebenbefundmanagement definiert sind."
+    },
+    "reasoning_gate": {
+      "case_id": "RES_ETH_001_v1_0",
+      "base_id": "RES_ETH_001",
+      "required": true,
+      "position": "Nach Projektidee/Kontext/Materiallage, vor Hypothese/Design/Analyseplan",
+      "gate_count": 2,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Was ist die zentrale Forschungsfrage bzw. was fehlt der vorliegenden Projektidee primär?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_2",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welche Ethik-, Einwilligungs-, Datenschutz- oder Rückmeldepflicht muss vor Projektstart geklärt sein?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "2 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    },
+    "display_labels": {
+      "Projektidee": "Projektidee",
+      "Ziel": "Ziel",
+      "Problem": "Problem",
+      "Gefahr": "Gefahr",
+      "Material": "Material",
+      "Daten": "Daten",
+      "Genetik": "Genetik",
+      "Data Sharing": "Data Sharing",
+      "Startvoraussetzung": "Startvoraussetzung",
+      "Materialschutz": "Materialschutz",
+      "Datenschutz": "Datenschutz",
+      "Translation": "Translation"
+    }
+  },
+  "languages": {
+    "en": {
+      "metadata": {
+        "case_id": "RES_ETH_001_v1_0",
+        "base_id": "RES_ETH_001",
+        "title": "Residual tissue project without clear consent → ethics, data protection and incidental findings",
+        "domain": "RES",
+        "met_addon_type": "no",
+        "subdomain": "Ethics / Governance / Preservation of material",
+        "case_type": "research_design_decision",
+        "length_class": "Standard",
+        "estimated_minutes": {
+          "min": 10,
+          "max": 14
+        },
+        "difficulty": "Advanced",
+        "status": "curated-core",
+        "review_flag": "Review core/MVP",
+        "review_priority": "high",
+        "core_decision": "Consent coverage is inconsistent; the material comes from different years.",
+        "learning_objectives": [
+          "Translate a vague project idea into a testable, clinically relevant research question",
+          "Clarify ethics, consent, data protection and preservation of material before the project starts",
+          "Clearly separate exploratory from confirmatory work and avoid data fishing"
+        ],
+        "tags": [
+          "Ethics",
+          "Residual material",
+          "FFPE",
+          "Broad Consent",
+          "Data protection",
+          "Germline",
+          "Incidental finding"
+        ],
+        "ap1b_decision": "RES; Length=Standard; Difficulty=Advanced; Status=curated-core"
+      },
+      "base_case": {
+        "id": "RES_ETH_001_v1_0",
+        "title": "Residual tissue project without clear consent → ethics, data protection and incidental findings",
+        "short": "Residual material / Ethics",
+        "mode": "research",
+        "logic": "res_ethics",
+        "difficulty": "beginner_intermediate",
+        "estimated_time_min": "10–14",
+        "tags": [
+          "Ethics",
+          "Residual material",
+          "FFPE",
+          "Broad Consent",
+          "Data protection",
+          "Germline",
+          "Incidental finding"
+        ],
+        "research_intro": {
+          "Projektidee": "120 retrospective routine FFPE tumour blocks are to be analysed with an expanded DNA/RNA panel.",
+          "Ziel": "Identify new resistance markers.",
+          "Problem": "Consent coverage is inconsistent; the material comes from different years.",
+          "Gefahr": "Residual material is mistakenly regarded as freely available."
+        },
+        "research_context": {
+          "Material": "Routine FFPE blocks, some small; the diagnostic reserve is unclear.",
+          "Daten": "Clinical data and follow-up are to be retrieved from archives/information systems.",
+          "Genetik": "A tumor-only panel can raise suspicion of a germline finding.",
+          "Data Sharing": "Publication and, if applicable, external validation are planned."
+        },
+        "hypothesis_options": [
+          {
+            "id": "start_now",
+            "label": "Start immediately because it is residual material.",
+            "kind": "bad",
+            "feedback": "Incorrect: residual material remains patient-linked material subject to governance requirements.",
+            "score": {
+              "question": 1,
+              "hypothesis": 1
+            }
+          },
+          {
+            "id": "governance_first",
+            "label": "Before starting, clarify ethics, consent/Broad Consent/Opt-out, data protection, approval for material use and the incidental-findings policy.",
+            "kind": "optimal",
+            "feedback": "Optimal: governance is a prerequisite, not an afterthought.",
+            "score": {
+              "question": 10,
+              "hypothesis": 8,
+              "design": 8,
+              "translation": 6
+            }
+          },
+          {
+            "id": "anonymize",
+            "label": "Simply anonymise the data and everything is unproblematic.",
+            "kind": "partial",
+            "feedback": "Too simplistic: true anonymisation can prevent follow-up and return of results and does not replace review of material use and ethics.",
+            "score": {
+              "question": 4,
+              "design": 3
+            }
+          }
+        ],
+        "pico_options": [
+          {
+            "id": "vague",
+            "label": "P: archival blocks; I: panel; C: none; O: interesting resistance markers.",
+            "kind": "bad",
+            "feedback": "Too vague and blind to governance requirements.",
+            "score": {
+              "hypothesis": 2
+            }
+          },
+          {
+            "id": "resistance_defined",
+            "label": "P: defined tumour entity with documented treatment resistance; I: molecular alterations/signatures; C: treatment-responsive cases; O: resistance/outcome.",
+            "kind": "optimal",
+            "feedback": "Good: the research idea is operationalised.",
+            "score": {
+              "question": 8,
+              "hypothesis": 12,
+              "design": 6
+            }
+          },
+          {
+            "id": "all_tumors",
+            "label": "Pool all tumours and all outcomes to maximise the number of cases.",
+            "kind": "bad",
+            "feedback": "Heterogeneity compromises interpretability.",
+            "score": {
+              "design": 1
+            }
+          }
+        ],
+        "design_options": [
+          {
+            "id": "ethics",
+            "label": "Obtain ethics committee approval/an amendment before starting",
+            "correct": true,
+            "feedback": "Correct."
+          },
+          {
+            "id": "consent",
+            "label": "Review consent/Broad Consent/Opt-out and the legal basis",
+            "correct": true,
+            "feedback": "Correct."
+          },
+          {
+            "id": "material_guard",
+            "label": "Obtain pathology approval for material use and safeguard the diagnostic reserve",
+            "correct": true,
+            "feedback": "Correct."
+          },
+          {
+            "id": "no_pi",
+            "label": "Start without a PI/defined responsibilities",
+            "correct": false,
+            "feedback": "Incorrect."
+          },
+          {
+            "id": "ignore_old",
+            "label": "Use old cases across the board without review",
+            "correct": false,
+            "feedback": "Incorrect."
+          }
+        ],
+        "method_options": [
+          {
+            "id": "pseudonym",
+            "label": "Pseudonymisation with key management and role-based access",
+            "correct": true,
+            "feedback": "Correct."
+          },
+          {
+            "id": "side_findings",
+            "label": "Define a process for incidental findings/suspected germline findings",
+            "correct": true,
+            "feedback": "Correct."
+          },
+          {
+            "id": "data_sharing",
+            "label": "Align the data-sharing concept with consent and data protection requirements",
+            "correct": true,
+            "feedback": "Correct."
+          },
+          {
+            "id": "whatsapp",
+            "label": "Coordinate case lists and images via private messaging apps",
+            "correct": false,
+            "feedback": "Incorrect."
+          },
+          {
+            "id": "no_key",
+            "label": "Store the pseudonymisation key openly in the project folder",
+            "correct": false,
+            "feedback": "Incorrect."
+          }
+        ],
+        "analysis_options": [
+          {
+            "id": "analysis_plan",
+            "label": "Outline the analysis plan before accessing the data",
+            "correct": true,
+            "feedback": "Correct."
+          },
+          {
+            "id": "min_data",
+            "label": "Define the minimum data set and access concept",
+            "correct": true,
+            "feedback": "Correct."
+          },
+          {
+            "id": "audit_trail",
+            "label": "Document data access and material consumption",
+            "correct": true,
+            "feedback": "Correct."
+          },
+          {
+            "id": "publish_ids",
+            "label": "Publish individual cases with a potentially re-identifiable case number",
+            "correct": false,
+            "feedback": "Incorrect."
+          },
+          {
+            "id": "return_ad_hoc",
+            "label": "Report a pathogenic BRCA1 tumor-only variant directly to the patient on an ad hoc basis",
+            "correct": false,
+            "feedback": "Incorrect without a defined process."
+          }
+        ],
+        "pitfall_options": [
+          {
+            "id": "leftover_false",
+            "label": "Warning sign: “residual material = freely available”",
+            "correct": true,
+            "feedback": "Correctly identified."
+          },
+          {
+            "id": "governance_good",
+            "label": "Good: clarify ethics, data protection, preservation of material and incidental findings before starting",
+            "correct": true,
+            "feedback": "Correct."
+          },
+          {
+            "id": "anonym_all",
+            "label": "Anonymisation automatically solves every problem",
+            "correct": false,
+            "feedback": "Incorrect."
+          },
+          {
+            "id": "diagnostic_reserve",
+            "label": "The diagnostic reserve takes priority over research curiosity",
+            "correct": true,
+            "feedback": "Correct."
+          }
+        ],
+        "expected_output": {
+          "Startvoraussetzung": "Ethics committee approval/amendment, consent/Opt-out review, data protection concept, approval for material use.",
+          "Materialschutz": "Safeguard the diagnostic reserve; document material consumption.",
+          "Datenschutz": "Pseudonymisation, key management, role/access concept.",
+          "Genetik": "Define the process for incidental findings and suspected germline findings in advance.",
+          "Translation": "Only data collected under sound governance are publishable and trustworthy."
+        },
+        "optimal_summary": "Optimal solution: do not start the project until ethics, consent, data protection, preservation of material and incidental-findings management have been defined."
+      },
+      "reasoning_gate": {
+        "case_id": "RES_ETH_001_v1_0",
+        "base_id": "RES_ETH_001",
+        "required": true,
+        "position": "After the project idea/context/material situation, before the hypothesis/design/analysis plan",
+        "gate_count": 2,
+        "question_types": "Single Choice; Multi Select",
+        "questions": [
+          {
+            "id": "gate_1",
+            "type": "single_choice_or_multiselect",
+            "prompt": "What is the central research question, or what is primarily missing from the current project idea?",
+            "answer_key_status": "to_be_generated_in_v1_5_patch"
+          },
+          {
+            "id": "gate_2",
+            "type": "single_choice_or_multiselect",
+            "prompt": "Which ethics, consent, data-protection or return-of-results obligation must be clarified before the project starts?",
+            "answer_key_status": "to_be_generated_in_v1_5_patch"
+          }
+        ],
+        "score_domain": "clinical_reasoning",
+        "decision": "2 gate questions; Single Choice / Multi Select; before the main decision",
+        "failed_core_question_cap": 80
+      },
+      "display_labels": {
+        "Projektidee": "Project idea",
+        "Ziel": "Objective",
+        "Problem": "Problem",
+        "Gefahr": "Risk",
+        "Material": "Tissue material",
+        "Daten": "Data",
+        "Genetik": "Genetics",
+        "Data Sharing": "Data sharing",
+        "Startvoraussetzung": "Prerequisites to start",
+        "Materialschutz": "Preservation of material",
+        "Datenschutz": "Data protection",
+        "Translation": "Translation"
+      }
+    },
+    "ro": {
+      "metadata": {
+        "case_id": "RES_ETH_001_v1_0",
+        "base_id": "RES_ETH_001",
+        "title": "Proiect cu material rezidual fără consimțământ clar → etică, protecția datelor și constatări incidentale",
+        "domain": "RES",
+        "met_addon_type": "no",
+        "subdomain": "Etică / Guvernanță / Protejarea materialului",
+        "case_type": "research_design_decision",
+        "length_class": "Standard",
+        "estimated_minutes": {
+          "min": 10,
+          "max": 14
+        },
+        "difficulty": "Advanced",
+        "status": "curated-core",
+        "review_flag": "Verificare core/MVP",
+        "review_priority": "high",
+        "core_decision": "Acoperirea prin consimțământ este neuniformă; materialul provine din ani diferiți.",
+        "learning_objectives": [
+          "Transformați o idee vagă de proiect într-o întrebare de cercetare testabilă și relevantă clinic",
+          "Clarificați etica, consimțământul, protecția datelor și protejarea materialului înainte de începerea proiectului",
+          "Separați transparent componentele exploratorii de cele confirmatorii și evitați data fishing"
+        ],
+        "tags": [
+          "Etică",
+          "Material rezidual",
+          "FFPE",
+          "Broad Consent",
+          "Protecția datelor",
+          "Linie germinală",
+          "Constatare incidentală"
+        ],
+        "ap1b_decision": "RES; Lungime=Standard; Dificultate=Avansat; Status=curated-core"
+      },
+      "base_case": {
+        "id": "RES_ETH_001_v1_0",
+        "title": "Proiect cu material rezidual fără consimțământ clar → etică, protecția datelor și constatări incidentale",
+        "short": "Material rezidual / Etică",
+        "mode": "research",
+        "logic": "res_ethics",
+        "difficulty": "beginner_intermediate",
+        "estimated_time_min": "10–14",
+        "tags": [
+          "Etică",
+          "Material rezidual",
+          "FFPE",
+          "Broad Consent",
+          "Protecția datelor",
+          "Linie germinală",
+          "Constatare incidentală"
+        ],
+        "research_intro": {
+          "Projektidee": "120 de blocuri tumorale FFPE retrospective din rutina diagnostică urmează să fie analizate cu un panel DNA/RNA extins.",
+          "Ziel": "Identificarea unor noi markeri de rezistență.",
+          "Problem": "Acoperirea prin consimțământ este neuniformă; materialul provine din ani diferiți.",
+          "Gefahr": "Materialul rezidual este considerat în mod eronat ca fiind liber disponibil."
+        },
+        "research_context": {
+          "Material": "Blocuri FFPE de rutină, unele mici; rezerva pentru diagnostic este neclară.",
+          "Daten": "Datele clinice și follow-up-ul urmează să fie extrase din arhive/sisteme informatice.",
+          "Genetik": "Un panel tumor-only poate ridica suspiciunea unei variante germinale.",
+          "Data Sharing": "Sunt planificate publicarea și, dacă este cazul, validarea externă."
+        },
+        "hypothesis_options": [
+          {
+            "id": "start_now",
+            "label": "Începeți direct, deoarece este material rezidual.",
+            "kind": "bad",
+            "feedback": "Incorect: materialul rezidual rămâne material asociat pacientului, supus cerințelor de guvernanță.",
+            "score": {
+              "question": 1,
+              "hypothesis": 1
+            }
+          },
+          {
+            "id": "governance_first",
+            "label": "Înainte de începere, clarificați etica, consimțământul/Broad Consent/Opt-out, protecția datelor, aprobarea utilizării materialului și politica privind constatările incidentale.",
+            "kind": "optimal",
+            "feedback": "Optim: guvernanța este o condiție prealabilă, nu un adaos ulterior.",
+            "score": {
+              "question": 10,
+              "hypothesis": 8,
+              "design": 8,
+              "translation": 6
+            }
+          },
+          {
+            "id": "anonymize",
+            "label": "Pur și simplu anonimizați datele și atunci totul devine lipsit de probleme.",
+            "kind": "partial",
+            "feedback": "Prea simplist: anonimizarea reală poate împiedica follow-up-ul și returnarea rezultatelor și nu înlocuiește evaluarea utilizării materialului și a aspectelor etice.",
+            "score": {
+              "question": 4,
+              "design": 3
+            }
+          }
+        ],
+        "pico_options": [
+          {
+            "id": "vague",
+            "label": "P: blocuri de arhivă; I: panel; C: niciun comparator; O: markeri de rezistență interesanți.",
+            "kind": "bad",
+            "feedback": "Prea vag și ignoră cerințele de guvernanță.",
+            "score": {
+              "hypothesis": 2
+            }
+          },
+          {
+            "id": "resistance_defined",
+            "label": "P: entitate tumorală definită cu rezistență la tratament documentată; I: alterări/semnături moleculare; C: cazuri care răspund la tratament; O: rezistență/outcome.",
+            "kind": "optimal",
+            "feedback": "Bine: ideea de cercetare este operaționalizată.",
+            "score": {
+              "question": 8,
+              "hypothesis": 12,
+              "design": 6
+            }
+          },
+          {
+            "id": "all_tumors",
+            "label": "Combinați toate tumorile și toate outcome-urile pentru a obține cât mai multe cazuri.",
+            "kind": "bad",
+            "feedback": "Eterogenitatea compromite interpretabilitatea.",
+            "score": {
+              "design": 1
+            }
+          }
+        ],
+        "design_options": [
+          {
+            "id": "ethics",
+            "label": "Obțineți avizul comisiei de etică/un amendament înainte de începere",
+            "correct": true,
+            "feedback": "Corect."
+          },
+          {
+            "id": "consent",
+            "label": "Verificați consimțământul/Broad Consent/Opt-out și temeiul juridic",
+            "correct": true,
+            "feedback": "Corect."
+          },
+          {
+            "id": "material_guard",
+            "label": "Obțineți aprobarea anatomiei patologice pentru utilizarea materialului și protejați rezerva pentru diagnostic",
+            "correct": true,
+            "feedback": "Corect."
+          },
+          {
+            "id": "no_pi",
+            "label": "Începeți fără PI/responsabilități definite",
+            "correct": false,
+            "feedback": "Incorect."
+          },
+          {
+            "id": "ignore_old",
+            "label": "Utilizați în bloc cazurile vechi fără verificare",
+            "correct": false,
+            "feedback": "Incorect."
+          }
+        ],
+        "method_options": [
+          {
+            "id": "pseudonym",
+            "label": "Pseudonimizare cu managementul cheii și acces bazat pe roluri",
+            "correct": true,
+            "feedback": "Corect."
+          },
+          {
+            "id": "side_findings",
+            "label": "Definiți un proces pentru constatările incidentale/suspiciunea de variante germinale",
+            "correct": true,
+            "feedback": "Corect."
+          },
+          {
+            "id": "data_sharing",
+            "label": "Aliniați conceptul de partajare a datelor cu consimțământul și cerințele de protecție a datelor",
+            "correct": true,
+            "feedback": "Corect."
+          },
+          {
+            "id": "whatsapp",
+            "label": "Coordonați listele de cazuri și imaginile prin aplicații private de mesagerie",
+            "correct": false,
+            "feedback": "Incorect."
+          },
+          {
+            "id": "no_key",
+            "label": "Stocați cheia de pseudonimizare neprotejată în folderul proiectului",
+            "correct": false,
+            "feedback": "Incorect."
+          }
+        ],
+        "analysis_options": [
+          {
+            "id": "analysis_plan",
+            "label": "Schițați planul de analiză înainte de accesarea datelor",
+            "correct": true,
+            "feedback": "Corect."
+          },
+          {
+            "id": "min_data",
+            "label": "Definiți setul minim de date și conceptul de acces",
+            "correct": true,
+            "feedback": "Corect."
+          },
+          {
+            "id": "audit_trail",
+            "label": "Documentați accesul la date și consumul de material",
+            "correct": true,
+            "feedback": "Corect."
+          },
+          {
+            "id": "publish_ids",
+            "label": "Publicați cazuri individuale cu un număr de caz care poate permite reidentificarea",
+            "correct": false,
+            "feedback": "Incorect."
+          },
+          {
+            "id": "return_ad_hoc",
+            "label": "Comunicați ad hoc direct pacientei o variantă patogenă BRCA1 identificată prin tumor-only",
+            "correct": false,
+            "feedback": "Incorect în absența unui proces definit."
+          }
+        ],
+        "pitfall_options": [
+          {
+            "id": "leftover_false",
+            "label": "Semnal de alarmă: „material rezidual = liber disponibil”",
+            "correct": true,
+            "feedback": "Corect identificat."
+          },
+          {
+            "id": "governance_good",
+            "label": "Bine: clarificați etica, protecția datelor, protejarea materialului și constatările incidentale înainte de începere",
+            "correct": true,
+            "feedback": "Corect."
+          },
+          {
+            "id": "anonym_all",
+            "label": "Anonimizarea rezolvă automat orice problemă",
+            "correct": false,
+            "feedback": "Incorect."
+          },
+          {
+            "id": "diagnostic_reserve",
+            "label": "Rezerva pentru diagnostic are prioritate față de curiozitatea de cercetare",
+            "correct": true,
+            "feedback": "Corect."
+          }
+        ],
+        "expected_output": {
+          "Startvoraussetzung": "Avizul comisiei de etică/amendament, verificarea consimțământului/Opt-out, concept de protecție a datelor, aprobarea utilizării materialului.",
+          "Materialschutz": "Protejați rezerva pentru diagnostic; documentați consumul de material.",
+          "Datenschutz": "Pseudonimizare, managementul cheii, concept de roluri/acces.",
+          "Genetik": "Definiți în prealabil procesul pentru constatările incidentale și suspiciunea de variante germinale.",
+          "Translation": "Doar datele colectate într-un cadru de guvernanță solid sunt publicabile și de încredere."
+        },
+        "optimal_summary": "Soluție optimă: nu începeți proiectul înainte de a defini etica, consimțământul, protecția datelor, protejarea materialului și gestionarea constatărilor incidentale."
+      },
+      "reasoning_gate": {
+        "case_id": "RES_ETH_001_v1_0",
+        "base_id": "RES_ETH_001",
+        "required": true,
+        "position": "După ideea de proiect/context/situația materialului, înainte de ipoteză/design/planul de analiză",
+        "gate_count": 2,
+        "question_types": "Alegere unică; selecție multiplă",
+        "questions": [
+          {
+            "id": "gate_1",
+            "type": "single_choice_or_multiselect",
+            "prompt": "Care este întrebarea centrală de cercetare sau ce lipsește în principal din ideea actuală de proiect?",
+            "answer_key_status": "to_be_generated_in_v1_5_patch"
+          },
+          {
+            "id": "gate_2",
+            "type": "single_choice_or_multiselect",
+            "prompt": "Ce obligație privind etica, consimțământul, protecția datelor sau returnarea rezultatelor trebuie clarificată înainte de începerea proiectului?",
+            "answer_key_status": "to_be_generated_in_v1_5_patch"
+          }
+        ],
+        "score_domain": "clinical_reasoning",
+        "decision": "2 întrebări-gate; alegere unică / selecție multiplă; înainte de decizia principală",
+        "failed_core_question_cap": 80
+      },
+      "display_labels": {
+        "Projektidee": "Ideea proiectului",
+        "Ziel": "Obiectiv",
+        "Problem": "Problemă",
+        "Gefahr": "Risc",
+        "Material": "Material tisular",
+        "Daten": "Date",
+        "Genetik": "Genetică",
+        "Data Sharing": "Partajarea datelor",
+        "Startvoraussetzung": "Condiții pentru începere",
+        "Materialschutz": "Protejarea materialului",
+        "Datenschutz": "Protecția datelor",
+        "Translation": "Translație"
+      }
+    },
+    "el": {
+      "metadata": {
+        "case_id": "RES_ETH_001_v1_0",
+        "base_id": "RES_ETH_001",
+        "title": "Έργο με υπολειμματικό υλικό χωρίς σαφή συγκατάθεση → δεοντολογία, προστασία δεδομένων και τυχαία ευρήματα",
+        "domain": "RES",
+        "met_addon_type": "no",
+        "subdomain": "Δεοντολογία / Διακυβέρνηση / Προστασία υλικού",
+        "case_type": "research_design_decision",
+        "length_class": "Τυπική",
+        "estimated_minutes": {
+          "min": 10,
+          "max": 14
+        },
+        "difficulty": "Advanced",
+        "status": "curated-core",
+        "review_flag": "Έλεγχος core/MVP",
+        "review_priority": "high",
+        "core_decision": "Η κάλυψη από συγκατάθεση είναι ανομοιογενής· το υλικό προέρχεται από διαφορετικά έτη.",
+        "learning_objectives": [
+          "Μετατρέψτε μια ασαφή ιδέα έργου σε ελέγξιμο, κλινικά σχετικό ερευνητικό ερώτημα",
+          "Διευκρινίστε τη δεοντολογία, τη συγκατάθεση, την προστασία δεδομένων και την προστασία του υλικού πριν από την έναρξη του έργου",
+          "Διαχωρίστε με διαφάνεια το διερευνητικό από το επιβεβαιωτικό σκέλος και αποφύγετε το data fishing"
+        ],
+        "tags": [
+          "Δεοντολογία",
+          "Υπολειμματικό υλικό",
+          "FFPE",
+          "Broad Consent",
+          "Προστασία δεδομένων",
+          "Βλαστική σειρά",
+          "Τυχαίο εύρημα"
+        ],
+        "ap1b_decision": "RES; Μήκος=Τυπική; Δυσκολία=Προχωρημένο; Κατάσταση=curated-core"
+      },
+      "base_case": {
+        "id": "RES_ETH_001_v1_0",
+        "title": "Έργο με υπολειμματικό υλικό χωρίς σαφή συγκατάθεση → δεοντολογία, προστασία δεδομένων και τυχαία ευρήματα",
+        "short": "Υπολειμματικό υλικό / Δεοντολογία",
+        "mode": "research",
+        "logic": "res_ethics",
+        "difficulty": "beginner_intermediate",
+        "estimated_time_min": "10–14",
+        "tags": [
+          "Δεοντολογία",
+          "Υπολειμματικό υλικό",
+          "FFPE",
+          "Broad Consent",
+          "Προστασία δεδομένων",
+          "Βλαστική σειρά",
+          "Τυχαίο εύρημα"
+        ],
+        "research_intro": {
+          "Projektidee": "120 αναδρομικά μπλοκ όγκων FFPE από τη διαγνωστική ρουτίνα πρόκειται να αναλυθούν με διευρυμένο panel DNA/RNA.",
+          "Ziel": "Εντοπισμός νέων δεικτών αντοχής.",
+          "Problem": "Η κάλυψη από συγκατάθεση είναι ανομοιογενής· το υλικό προέρχεται από διαφορετικά έτη.",
+          "Gefahr": "Το υπολειμματικό υλικό θεωρείται λανθασμένα ως ελεύθερα διαθέσιμο."
+        },
+        "research_context": {
+          "Material": "Μπλοκ FFPE ρουτίνας, ορισμένα μικρά· η διαγνωστική εφεδρεία υλικού είναι ασαφής.",
+          "Daten": "Τα κλινικά δεδομένα και το follow-up πρόκειται να αντληθούν από αρχεία/πληροφοριακά συστήματα.",
+          "Genetik": "Ένα tumor-only panel μπορεί να εγείρει υποψία ευρήματος βλαστικής σειράς.",
+          "Data Sharing": "Προβλέπονται δημοσίευση και, κατά περίπτωση, εξωτερική επικύρωση."
+        },
+        "hypothesis_options": [
+          {
+            "id": "start_now",
+            "label": "Ξεκινήστε άμεσα επειδή πρόκειται για υπολειμματικό υλικό.",
+            "kind": "bad",
+            "feedback": "Λάθος: το υπολειμματικό υλικό παραμένει υλικό που συνδέεται με ασθενή και υπόκειται σε απαιτήσεις διακυβέρνησης.",
+            "score": {
+              "question": 1,
+              "hypothesis": 1
+            }
+          },
+          {
+            "id": "governance_first",
+            "label": "Πριν από την έναρξη, διευκρινίστε τη δεοντολογία, τη συγκατάθεση/Broad Consent/Opt-out, την προστασία δεδομένων, την έγκριση χρήσης υλικού και την πολιτική για τα τυχαία ευρήματα.",
+            "kind": "optimal",
+            "feedback": "Βέλτιστο: η διακυβέρνηση αποτελεί προϋπόθεση, όχι εκ των υστέρων προσθήκη.",
+            "score": {
+              "question": 10,
+              "hypothesis": 8,
+              "design": 8,
+              "translation": 6
+            }
+          },
+          {
+            "id": "anonymize",
+            "label": "Απλώς ανωνυμοποιήστε τα δεδομένα και τότε όλα είναι χωρίς πρόβλημα.",
+            "kind": "partial",
+            "feedback": "Υπερβολικά απλουστευμένο: η πραγματική ανωνυμοποίηση μπορεί να εμποδίσει το follow-up και την επιστροφή αποτελεσμάτων και δεν υποκαθιστά τον έλεγχο χρήσης υλικού και δεοντολογίας.",
+            "score": {
+              "question": 4,
+              "design": 3
+            }
+          }
+        ],
+        "pico_options": [
+          {
+            "id": "vague",
+            "label": "P: αρχειακά μπλοκ· I: panel· C: κανένας συγκριτικός παράγοντας· O: ενδιαφέροντες δείκτες αντοχής.",
+            "kind": "bad",
+            "feedback": "Υπερβολικά ασαφές και αγνοεί τις απαιτήσεις διακυβέρνησης.",
+            "score": {
+              "hypothesis": 2
+            }
+          },
+          {
+            "id": "resistance_defined",
+            "label": "P: καθορισμένη οντότητα όγκου με τεκμηριωμένη αντοχή στη θεραπεία· I: μοριακές αλλοιώσεις/υπογραφές· C: περιστατικά που ανταποκρίνονται στη θεραπεία· O: αντοχή/outcome.",
+            "kind": "optimal",
+            "feedback": "Καλό: η ερευνητική ιδέα αποκτά επιχειρησιακό ορισμό.",
+            "score": {
+              "question": 8,
+              "hypothesis": 12,
+              "design": 6
+            }
+          },
+          {
+            "id": "all_tumors",
+            "label": "Συγχωνεύστε όλους τους όγκους και όλα τα outcomes ώστε να έχετε όσο το δυνατόν περισσότερα περιστατικά.",
+            "kind": "bad",
+            "feedback": "Η ετερογένεια υπονομεύει την ερμηνευσιμότητα.",
+            "score": {
+              "design": 1
+            }
+          }
+        ],
+        "design_options": [
+          {
+            "id": "ethics",
+            "label": "Λάβετε έγκριση επιτροπής δεοντολογίας/τροποποίηση πριν από την έναρξη",
+            "correct": true,
+            "feedback": "Σωστό."
+          },
+          {
+            "id": "consent",
+            "label": "Ελέγξτε τη συγκατάθεση/Broad Consent/Opt-out και τη νομική βάση",
+            "correct": true,
+            "feedback": "Σωστό."
+          },
+          {
+            "id": "material_guard",
+            "label": "Εξασφαλίστε έγκριση της παθολογοανατομίας για τη χρήση του υλικού και διαφυλάξτε τη διαγνωστική εφεδρεία",
+            "correct": true,
+            "feedback": "Σωστό."
+          },
+          {
+            "id": "no_pi",
+            "label": "Ξεκινήστε χωρίς PI/καθορισμένες αρμοδιότητες",
+            "correct": false,
+            "feedback": "Λάθος."
+          },
+          {
+            "id": "ignore_old",
+            "label": "Χρησιμοποιήστε συλλήβδην παλαιά περιστατικά χωρίς έλεγχο",
+            "correct": false,
+            "feedback": "Λάθος."
+          }
+        ],
+        "method_options": [
+          {
+            "id": "pseudonym",
+            "label": "Ψευδωνυμοποίηση με διαχείριση κλειδιού και πρόσβαση βάσει ρόλων",
+            "correct": true,
+            "feedback": "Σωστό."
+          },
+          {
+            "id": "side_findings",
+            "label": "Ορίστε διαδικασία για τυχαία ευρήματα/υποψία ευρήματος βλαστικής σειράς",
+            "correct": true,
+            "feedback": "Σωστό."
+          },
+          {
+            "id": "data_sharing",
+            "label": "Εναρμονίστε το σχέδιο κοινοποίησης δεδομένων με τη συγκατάθεση και τις απαιτήσεις προστασίας δεδομένων",
+            "correct": true,
+            "feedback": "Σωστό."
+          },
+          {
+            "id": "whatsapp",
+            "label": "Συντονίστε λίστες περιστατικών και εικόνες μέσω ιδιωτικών εφαρμογών μηνυμάτων",
+            "correct": false,
+            "feedback": "Λάθος."
+          },
+          {
+            "id": "no_key",
+            "label": "Αποθηκεύστε το κλειδί ψευδωνυμοποίησης χωρίς προστασία στον φάκελο του έργου",
+            "correct": false,
+            "feedback": "Λάθος."
+          }
+        ],
+        "analysis_options": [
+          {
+            "id": "analysis_plan",
+            "label": "Σκιαγραφήστε το σχέδιο ανάλυσης πριν από την πρόσβαση στα δεδομένα",
+            "correct": true,
+            "feedback": "Σωστό."
+          },
+          {
+            "id": "min_data",
+            "label": "Ορίστε το ελάχιστο σύνολο δεδομένων και το μοντέλο πρόσβασης",
+            "correct": true,
+            "feedback": "Σωστό."
+          },
+          {
+            "id": "audit_trail",
+            "label": "Τεκμηριώστε την πρόσβαση στα δεδομένα και την κατανάλωση υλικού",
+            "correct": true,
+            "feedback": "Σωστό."
+          },
+          {
+            "id": "publish_ids",
+            "label": "Δημοσιεύστε μεμονωμένα περιστατικά με αριθμό περιστατικού που ενδέχεται να επιτρέπει επαναταυτοποίηση",
+            "correct": false,
+            "feedback": "Λάθος."
+          },
+          {
+            "id": "return_ad_hoc",
+            "label": "Κοινοποιήστε ad hoc απευθείας στην ασθενή μια παθογόνο παραλλαγή BRCA1 από tumor-only ανάλυση",
+            "correct": false,
+            "feedback": "Λάθος χωρίς καθορισμένη διαδικασία."
+          }
+        ],
+        "pitfall_options": [
+          {
+            "id": "leftover_false",
+            "label": "Προειδοποιητικό σημάδι: «υπολειμματικό υλικό = ελεύθερα διαθέσιμο»",
+            "correct": true,
+            "feedback": "Σωστά αναγνωρίστηκε."
+          },
+          {
+            "id": "governance_good",
+            "label": "Καλό: διευκρινίστε τη δεοντολογία, την προστασία δεδομένων, την προστασία του υλικού και τα τυχαία ευρήματα πριν από την έναρξη",
+            "correct": true,
+            "feedback": "Σωστό."
+          },
+          {
+            "id": "anonym_all",
+            "label": "Η ανωνυμοποίηση λύνει αυτόματα κάθε πρόβλημα",
+            "correct": false,
+            "feedback": "Λάθος."
+          },
+          {
+            "id": "diagnostic_reserve",
+            "label": "Η διαγνωστική εφεδρεία υλικού υπερισχύει της ερευνητικής περιέργειας",
+            "correct": true,
+            "feedback": "Σωστό."
+          }
+        ],
+        "expected_output": {
+          "Startvoraussetzung": "Έγκριση επιτροπής δεοντολογίας/τροποποίηση, έλεγχος συγκατάθεσης/Opt-out, σχέδιο προστασίας δεδομένων, έγκριση χρήσης υλικού.",
+          "Materialschutz": "Διαφυλάξτε τη διαγνωστική εφεδρεία υλικού· τεκμηριώστε την κατανάλωση υλικού.",
+          "Datenschutz": "Ψευδωνυμοποίηση, διαχείριση κλειδιού, μοντέλο ρόλων/πρόσβασης.",
+          "Genetik": "Ορίστε εκ των προτέρων τη διαδικασία για τυχαία ευρήματα και υποψία ευρημάτων βλαστικής σειράς.",
+          "Translation": "Μόνο δεδομένα που συλλέγονται σε ασφαλές πλαίσιο διακυβέρνησης είναι δημοσιεύσιμα και αξιόπιστα."
+        },
+        "optimal_summary": "Βέλτιστη λύση: μην ξεκινήσετε το έργο πριν καθοριστούν η δεοντολογία, η συγκατάθεση, η προστασία δεδομένων, η προστασία του υλικού και η διαχείριση τυχαίων ευρημάτων."
+      },
+      "reasoning_gate": {
+        "case_id": "RES_ETH_001_v1_0",
+        "base_id": "RES_ETH_001",
+        "required": true,
+        "position": "Μετά την ιδέα έργου/το πλαίσιο/την κατάσταση του υλικού, πριν από την υπόθεση/τον σχεδιασμό/το σχέδιο ανάλυσης",
+        "gate_count": 2,
+        "question_types": "Μοναδική επιλογή· πολλαπλή επιλογή",
+        "questions": [
+          {
+            "id": "gate_1",
+            "type": "single_choice_or_multiselect",
+            "prompt": "Ποιο είναι το κεντρικό ερευνητικό ερώτημα ή τι λείπει κυρίως από την παρούσα ιδέα έργου;",
+            "answer_key_status": "to_be_generated_in_v1_5_patch"
+          },
+          {
+            "id": "gate_2",
+            "type": "single_choice_or_multiselect",
+            "prompt": "Ποια υποχρέωση σχετικά με τη δεοντολογία, τη συγκατάθεση, την προστασία δεδομένων ή την επιστροφή αποτελεσμάτων πρέπει να διευκρινιστεί πριν από την έναρξη του έργου;",
+            "answer_key_status": "to_be_generated_in_v1_5_patch"
+          }
+        ],
+        "score_domain": "clinical_reasoning",
+        "decision": "2 ερωτήσεις-gate· μοναδική επιλογή / πολλαπλή επιλογή· πριν από την κύρια απόφαση",
+        "failed_core_question_cap": 80
+      },
+      "display_labels": {
+        "Projektidee": "Ιδέα έργου",
+        "Ziel": "Στόχος",
+        "Problem": "Πρόβλημα",
+        "Gefahr": "Κίνδυνος",
+        "Material": "Ιστικό υλικό",
+        "Daten": "Δεδομένα",
+        "Genetik": "Γενετική",
+        "Data Sharing": "Κοινοποίηση δεδομένων",
+        "Startvoraussetzung": "Προϋποθέσεις έναρξης",
+        "Materialschutz": "Προστασία υλικού",
+        "Datenschutz": "Προστασία δεδομένων",
+        "Translation": "Μεταφραστική αξιοποίηση"
+      }
+    },
+    "es": {
+      "metadata": {
+        "case_id": "RES_ETH_001_v1_0",
+        "base_id": "RES_ETH_001",
+        "title": "Proyecto con material residual sin consentimiento claro → ética, protección de datos y hallazgos incidentales",
+        "domain": "RES",
+        "met_addon_type": "no",
+        "subdomain": "Ética / Gobernanza / Protección del material",
+        "case_type": "research_design_decision",
+        "length_class": "Estándar",
+        "estimated_minutes": {
+          "min": 10,
+          "max": 14
+        },
+        "difficulty": "Advanced",
+        "status": "curated-core",
+        "review_flag": "Revisar core/MVP",
+        "review_priority": "high",
+        "core_decision": "La cobertura del consentimiento es heterogénea; el material procede de distintos años.",
+        "learning_objectives": [
+          "Convertir una idea de proyecto vaga en una pregunta de investigación comprobable y clínicamente relevante",
+          "Aclarar la ética, el consentimiento, la protección de datos y la protección del material antes de iniciar el proyecto",
+          "Separar de forma transparente lo exploratorio de lo confirmatorio y evitar el data fishing"
+        ],
+        "tags": [
+          "Ética",
+          "Material residual",
+          "FFPE",
+          "Broad Consent",
+          "Protección de datos",
+          "Línea germinal",
+          "Hallazgo incidental"
+        ],
+        "ap1b_decision": "RES; Longitud=Estándar; Dificultad=Avanzado; Estado=curated-core"
+      },
+      "base_case": {
+        "id": "RES_ETH_001_v1_0",
+        "title": "Proyecto con material residual sin consentimiento claro → ética, protección de datos y hallazgos incidentales",
+        "short": "Material residual / Ética",
+        "mode": "research",
+        "logic": "res_ethics",
+        "difficulty": "beginner_intermediate",
+        "estimated_time_min": "10–14",
+        "tags": [
+          "Ética",
+          "Material residual",
+          "FFPE",
+          "Broad Consent",
+          "Protección de datos",
+          "Línea germinal",
+          "Hallazgo incidental"
+        ],
+        "research_intro": {
+          "Projektidee": "Se analizarán 120 bloques tumorales FFPE retrospectivos de la rutina diagnóstica mediante un panel ampliado de DNA/RNA.",
+          "Ziel": "Identificar nuevos marcadores de resistencia.",
+          "Problem": "La cobertura del consentimiento es heterogénea; el material procede de distintos años.",
+          "Gefahr": "El material residual se interpreta erróneamente como libremente disponible."
+        },
+        "research_context": {
+          "Material": "Bloques FFPE de rutina, algunos pequeños; la reserva para diagnóstico no está clara.",
+          "Daten": "Los datos clínicos y el seguimiento se obtendrán de archivos/sistemas de información.",
+          "Genetik": "Un panel tumor-only puede generar sospecha de un hallazgo de línea germinal.",
+          "Data Sharing": "Se prevén publicación y, en su caso, validación externa."
+        },
+        "hypothesis_options": [
+          {
+            "id": "start_now",
+            "label": "Empezar directamente porque es material residual.",
+            "kind": "bad",
+            "feedback": "Incorrecto: el material residual sigue siendo material vinculado al paciente y sujeto a requisitos de gobernanza.",
+            "score": {
+              "question": 1,
+              "hypothesis": 1
+            }
+          },
+          {
+            "id": "governance_first",
+            "label": "Antes de iniciar, aclarar la ética, el consentimiento/Broad Consent/Opt-out, la protección de datos, la autorización para utilizar el material y la política sobre hallazgos incidentales.",
+            "kind": "optimal",
+            "feedback": "Óptimo: la gobernanza es un requisito previo, no un añadido posterior.",
+            "score": {
+              "question": 10,
+              "hypothesis": 8,
+              "design": 8,
+              "translation": 6
+            }
+          },
+          {
+            "id": "anonymize",
+            "label": "Basta con anonimizar los datos y todo deja de ser problemático.",
+            "kind": "partial",
+            "feedback": "Demasiado simplista: una anonimización real puede impedir el seguimiento y la devolución de resultados y no sustituye la revisión del uso del material y de la ética.",
+            "score": {
+              "question": 4,
+              "design": 3
+            }
+          }
+        ],
+        "pico_options": [
+          {
+            "id": "vague",
+            "label": "P: bloques de archivo; I: panel; C: ninguno; O: marcadores de resistencia interesantes.",
+            "kind": "bad",
+            "feedback": "Demasiado vago e ignora los requisitos de gobernanza.",
+            "score": {
+              "hypothesis": 2
+            }
+          },
+          {
+            "id": "resistance_defined",
+            "label": "P: entidad tumoral definida con resistencia al tratamiento documentada; I: alteraciones/firmas moleculares; C: casos con respuesta al tratamiento; O: resistencia/desenlace.",
+            "kind": "optimal",
+            "feedback": "Bien: la idea de investigación se operacionaliza.",
+            "score": {
+              "question": 8,
+              "hypothesis": 12,
+              "design": 6
+            }
+          },
+          {
+            "id": "all_tumors",
+            "label": "Agrupar todos los tumores y todos los desenlaces para disponer del mayor número posible de casos.",
+            "kind": "bad",
+            "feedback": "La heterogeneidad compromete la interpretabilidad.",
+            "score": {
+              "design": 1
+            }
+          }
+        ],
+        "design_options": [
+          {
+            "id": "ethics",
+            "label": "Obtener la aprobación del comité de ética/una enmienda antes de iniciar",
+            "correct": true,
+            "feedback": "Correcto."
+          },
+          {
+            "id": "consent",
+            "label": "Revisar el consentimiento/Broad Consent/Opt-out y la base jurídica",
+            "correct": true,
+            "feedback": "Correcto."
+          },
+          {
+            "id": "material_guard",
+            "label": "Obtener la autorización de anatomía patológica para utilizar el material y preservar la reserva diagnóstica",
+            "correct": true,
+            "feedback": "Correcto."
+          },
+          {
+            "id": "no_pi",
+            "label": "Empezar sin PI/responsabilidades definidas",
+            "correct": false,
+            "feedback": "Incorrecto."
+          },
+          {
+            "id": "ignore_old",
+            "label": "Utilizar de forma indiscriminada casos antiguos sin revisión",
+            "correct": false,
+            "feedback": "Incorrecto."
+          }
+        ],
+        "method_options": [
+          {
+            "id": "pseudonym",
+            "label": "Seudonimización con gestión de claves y acceso basado en roles",
+            "correct": true,
+            "feedback": "Correcto."
+          },
+          {
+            "id": "side_findings",
+            "label": "Definir un proceso para hallazgos incidentales/sospecha de hallazgos de línea germinal",
+            "correct": true,
+            "feedback": "Correcto."
+          },
+          {
+            "id": "data_sharing",
+            "label": "Alinear el concepto de compartición de datos con el consentimiento y los requisitos de protección de datos",
+            "correct": true,
+            "feedback": "Correcto."
+          },
+          {
+            "id": "whatsapp",
+            "label": "Coordinar listas de casos e imágenes mediante aplicaciones privadas de mensajería",
+            "correct": false,
+            "feedback": "Incorrecto."
+          },
+          {
+            "id": "no_key",
+            "label": "Guardar la clave de seudonimización sin protección en la carpeta del proyecto",
+            "correct": false,
+            "feedback": "Incorrecto."
+          }
+        ],
+        "analysis_options": [
+          {
+            "id": "analysis_plan",
+            "label": "Esbozar el plan de análisis antes de acceder a los datos",
+            "correct": true,
+            "feedback": "Correcto."
+          },
+          {
+            "id": "min_data",
+            "label": "Definir el conjunto mínimo de datos y el concepto de acceso",
+            "correct": true,
+            "feedback": "Correcto."
+          },
+          {
+            "id": "audit_trail",
+            "label": "Documentar los accesos a los datos y el consumo de material",
+            "correct": true,
+            "feedback": "Correcto."
+          },
+          {
+            "id": "publish_ids",
+            "label": "Publicar casos individuales con un número de caso potencialmente reidentificable",
+            "correct": false,
+            "feedback": "Incorrecto."
+          },
+          {
+            "id": "return_ad_hoc",
+            "label": "Comunicar ad hoc directamente a la paciente una variante patogénica BRCA1 detectada mediante tumor-only",
+            "correct": false,
+            "feedback": "Incorrecto sin un proceso definido."
+          }
+        ],
+        "pitfall_options": [
+          {
+            "id": "leftover_false",
+            "label": "Señal de alarma: «material residual = libremente disponible»",
+            "correct": true,
+            "feedback": "Correctamente identificado."
+          },
+          {
+            "id": "governance_good",
+            "label": "Bien: aclarar la ética, la protección de datos, la protección del material y los hallazgos incidentales antes de iniciar",
+            "correct": true,
+            "feedback": "Correcto."
+          },
+          {
+            "id": "anonym_all",
+            "label": "La anonimización resuelve automáticamente cualquier problema",
+            "correct": false,
+            "feedback": "Incorrecto."
+          },
+          {
+            "id": "diagnostic_reserve",
+            "label": "La reserva diagnóstica tiene prioridad sobre la curiosidad investigadora",
+            "correct": true,
+            "feedback": "Correcto."
+          }
+        ],
+        "expected_output": {
+          "Startvoraussetzung": "Aprobación del comité de ética/enmienda, revisión del consentimiento/Opt-out, concepto de protección de datos y autorización para utilizar el material.",
+          "Materialschutz": "Preservar la reserva diagnóstica; documentar el consumo de material.",
+          "Datenschutz": "Seudonimización, gestión de claves y concepto de roles/acceso.",
+          "Genetik": "Definir de antemano el proceso para hallazgos incidentales y sospecha de hallazgos de línea germinal.",
+          "Translation": "Solo los datos obtenidos bajo una gobernanza sólida son publicables y fiables."
+        },
+        "optimal_summary": "Solución óptima: no iniciar el proyecto hasta haber definido la ética, el consentimiento, la protección de datos, la protección del material y la gestión de hallazgos incidentales."
+      },
+      "reasoning_gate": {
+        "case_id": "RES_ETH_001_v1_0",
+        "base_id": "RES_ETH_001",
+        "required": true,
+        "position": "Después de la idea de proyecto/contexto/situación del material, antes de la hipótesis/diseño/plan de análisis",
+        "gate_count": 2,
+        "question_types": "Elección única; selección múltiple",
+        "questions": [
+          {
+            "id": "gate_1",
+            "type": "single_choice_or_multiselect",
+            "prompt": "¿Cuál es la pregunta central de investigación o qué falta principalmente en la idea de proyecto actual?",
+            "answer_key_status": "to_be_generated_in_v1_5_patch"
+          },
+          {
+            "id": "gate_2",
+            "type": "single_choice_or_multiselect",
+            "prompt": "¿Qué obligación relativa a la ética, el consentimiento, la protección de datos o la devolución de resultados debe aclararse antes de iniciar el proyecto?",
+            "answer_key_status": "to_be_generated_in_v1_5_patch"
+          }
+        ],
+        "score_domain": "clinical_reasoning",
+        "decision": "2 preguntas-gate; elección única / selección múltiple; antes de la decisión principal",
+        "failed_core_question_cap": 80
+      },
+      "display_labels": {
+        "Projektidee": "Idea del proyecto",
+        "Ziel": "Objetivo",
+        "Problem": "Problema",
+        "Gefahr": "Riesgo",
+        "Material": "Tejido",
+        "Daten": "Datos",
+        "Genetik": "Genética",
+        "Data Sharing": "Compartición de datos",
+        "Startvoraussetzung": "Requisitos previos al inicio",
+        "Materialschutz": "Protección del material",
+        "Datenschutz": "Protección de datos",
+        "Translation": "Traslación"
+      }
+    },
+    "fr": {
+      "metadata": {
+        "case_id": "RES_ETH_001_v1_0",
+        "base_id": "RES_ETH_001",
+        "title": "Projet sur du matériel résiduel sans consentement clair → éthique, protection des données et découvertes fortuites",
+        "domain": "RES",
+        "met_addon_type": "no",
+        "subdomain": "Éthique / Gouvernance / Préservation du matériel",
+        "case_type": "research_design_decision",
+        "length_class": "Standard",
+        "estimated_minutes": {
+          "min": 10,
+          "max": 14
+        },
+        "difficulty": "Advanced",
+        "status": "curated-core",
+        "review_flag": "Vérifier core/MVP",
+        "review_priority": "high",
+        "core_decision": "La couverture par le consentement est hétérogène ; le matériel provient de différentes années.",
+        "learning_objectives": [
+          "Transformer une idée de projet vague en une question de recherche testable et cliniquement pertinente",
+          "Clarifier l’éthique, le consentement, la protection des données et la préservation du matériel avant le démarrage du projet",
+          "Séparer clairement l’exploratoire du confirmatoire et éviter le data fishing"
+        ],
+        "tags": [
+          "Éthique",
+          "Matériel résiduel",
+          "FFPE",
+          "Broad Consent",
+          "Protection des données",
+          "Germinal",
+          "Découverte fortuite"
+        ],
+        "ap1b_decision": "RES ; Longueur=Standard ; Difficulté=Avancée ; Statut=curated-core"
+      },
+      "base_case": {
+        "id": "RES_ETH_001_v1_0",
+        "title": "Projet sur du matériel résiduel sans consentement clair → éthique, protection des données et découvertes fortuites",
+        "short": "Matériel résiduel / Éthique",
+        "mode": "research",
+        "logic": "res_ethics",
+        "difficulty": "beginner_intermediate",
+        "estimated_time_min": "10–14",
+        "tags": [
+          "Éthique",
+          "Matériel résiduel",
+          "FFPE",
+          "Broad Consent",
+          "Protection des données",
+          "Germinal",
+          "Découverte fortuite"
+        ],
+        "research_intro": {
+          "Projektidee": "120 blocs tumoraux FFPE rétrospectifs issus de la routine diagnostique doivent être analysés par un panel DNA/RNA élargi.",
+          "Ziel": "Identifier de nouveaux marqueurs de résistance.",
+          "Problem": "La couverture par le consentement est hétérogène ; le matériel provient de différentes années.",
+          "Gefahr": "Le matériel résiduel est considéré à tort comme librement disponible."
+        },
+        "research_context": {
+          "Material": "Blocs FFPE de routine, certains de petite taille ; la réserve diagnostique n’est pas claire.",
+          "Daten": "Les données cliniques et le suivi doivent être extraits des archives/systèmes d’information.",
+          "Genetik": "Un panel tumor-only peut faire suspecter un variant germinal.",
+          "Data Sharing": "Une publication et, le cas échéant, une validation externe sont prévues."
+        },
+        "hypothesis_options": [
+          {
+            "id": "start_now",
+            "label": "Commencer immédiatement puisqu’il s’agit de matériel résiduel.",
+            "kind": "bad",
+            "feedback": "Incorrect : le matériel résiduel reste lié au patient et soumis à des exigences de gouvernance.",
+            "score": {
+              "question": 1,
+              "hypothesis": 1
+            }
+          },
+          {
+            "id": "governance_first",
+            "label": "Avant le démarrage, clarifier l’éthique, le consentement/Broad Consent/Opt-out, la protection des données, l’autorisation d’utilisation du matériel et la politique relative aux découvertes fortuites.",
+            "kind": "optimal",
+            "feedback": "Optimal : la gouvernance est un prérequis, pas un ajout a posteriori.",
+            "score": {
+              "question": 10,
+              "hypothesis": 8,
+              "design": 8,
+              "translation": 6
+            }
+          },
+          {
+            "id": "anonymize",
+            "label": "Il suffit d’anonymiser les données et tout devient alors sans problème.",
+            "kind": "partial",
+            "feedback": "Trop simpliste : une véritable anonymisation peut empêcher le suivi et la restitution des résultats et ne remplace pas l’examen de l’utilisation du matériel et de l’éthique.",
+            "score": {
+              "question": 4,
+              "design": 3
+            }
+          }
+        ],
+        "pico_options": [
+          {
+            "id": "vague",
+            "label": "P : blocs d’archives ; I : panel ; C : aucun comparateur ; O : marqueurs de résistance intéressants.",
+            "kind": "bad",
+            "feedback": "Trop vague et aveugle aux exigences de gouvernance.",
+            "score": {
+              "hypothesis": 2
+            }
+          },
+          {
+            "id": "resistance_defined",
+            "label": "P : entité tumorale définie avec résistance thérapeutique documentée ; I : altérations/signatures moléculaires ; C : cas répondant au traitement ; O : résistance/critère de jugement.",
+            "kind": "optimal",
+            "feedback": "Bien : l’idée de recherche est opérationnalisée.",
+            "score": {
+              "question": 8,
+              "hypothesis": 12,
+              "design": 6
+            }
+          },
+          {
+            "id": "all_tumors",
+            "label": "Regrouper toutes les tumeurs et tous les critères de jugement afin d’avoir le plus grand nombre possible de cas.",
+            "kind": "bad",
+            "feedback": "L’hétérogénéité compromet l’interprétabilité.",
+            "score": {
+              "design": 1
+            }
+          }
+        ],
+        "design_options": [
+          {
+            "id": "ethics",
+            "label": "Obtenir l’avis du comité d’éthique/un amendement avant le démarrage",
+            "correct": true,
+            "feedback": "Correct."
+          },
+          {
+            "id": "consent",
+            "label": "Vérifier le consentement/Broad Consent/Opt-out et la base juridique",
+            "correct": true,
+            "feedback": "Correct."
+          },
+          {
+            "id": "material_guard",
+            "label": "Obtenir l’autorisation de l’anatomopathologie pour l’utilisation du matériel et préserver la réserve diagnostique",
+            "correct": true,
+            "feedback": "Correct."
+          },
+          {
+            "id": "no_pi",
+            "label": "Commencer sans PI/responsabilités définies",
+            "correct": false,
+            "feedback": "Incorrect."
+          },
+          {
+            "id": "ignore_old",
+            "label": "Utiliser systématiquement d’anciens cas sans vérification",
+            "correct": false,
+            "feedback": "Incorrect."
+          }
+        ],
+        "method_options": [
+          {
+            "id": "pseudonym",
+            "label": "Pseudonymisation avec gestion de la clé et accès fondé sur les rôles",
+            "correct": true,
+            "feedback": "Correct."
+          },
+          {
+            "id": "side_findings",
+            "label": "Définir un processus pour les découvertes fortuites/la suspicion de variants germinaux",
+            "correct": true,
+            "feedback": "Correct."
+          },
+          {
+            "id": "data_sharing",
+            "label": "Aligner le concept de partage des données sur le consentement et les exigences de protection des données",
+            "correct": true,
+            "feedback": "Correct."
+          },
+          {
+            "id": "whatsapp",
+            "label": "Coordonner les listes de cas et les images via des messageries privées",
+            "correct": false,
+            "feedback": "Incorrect."
+          },
+          {
+            "id": "no_key",
+            "label": "Enregistrer la clé de pseudonymisation sans protection dans le dossier du projet",
+            "correct": false,
+            "feedback": "Incorrect."
+          }
+        ],
+        "analysis_options": [
+          {
+            "id": "analysis_plan",
+            "label": "Esquisser le plan d’analyse avant d’accéder aux données",
+            "correct": true,
+            "feedback": "Correct."
+          },
+          {
+            "id": "min_data",
+            "label": "Définir le jeu minimal de données et le concept d’accès",
+            "correct": true,
+            "feedback": "Correct."
+          },
+          {
+            "id": "audit_trail",
+            "label": "Documenter les accès aux données et la consommation de matériel",
+            "correct": true,
+            "feedback": "Correct."
+          },
+          {
+            "id": "publish_ids",
+            "label": "Publier des cas individuels avec un numéro de cas potentiellement réidentifiable",
+            "correct": false,
+            "feedback": "Incorrect."
+          },
+          {
+            "id": "return_ad_hoc",
+            "label": "Restituer ad hoc directement à la patiente un variant pathogène BRCA1 identifié en tumor-only",
+            "correct": false,
+            "feedback": "Incorrect en l’absence d’un processus défini."
+          }
+        ],
+        "pitfall_options": [
+          {
+            "id": "leftover_false",
+            "label": "Signal d’alerte : « matériel résiduel = librement disponible »",
+            "correct": true,
+            "feedback": "Correctement identifié."
+          },
+          {
+            "id": "governance_good",
+            "label": "Bien : clarifier l’éthique, la protection des données, la préservation du matériel et les découvertes fortuites avant le démarrage",
+            "correct": true,
+            "feedback": "Correct."
+          },
+          {
+            "id": "anonym_all",
+            "label": "L’anonymisation résout automatiquement tous les problèmes",
+            "correct": false,
+            "feedback": "Incorrect."
+          },
+          {
+            "id": "diagnostic_reserve",
+            "label": "La réserve diagnostique prime sur la curiosité de recherche",
+            "correct": true,
+            "feedback": "Correct."
+          }
+        ],
+        "expected_output": {
+          "Startvoraussetzung": "Avis du comité d’éthique/amendement, vérification du consentement/Opt-out, concept de protection des données, autorisation d’utilisation du matériel.",
+          "Materialschutz": "Préserver la réserve diagnostique ; documenter la consommation de matériel.",
+          "Datenschutz": "Pseudonymisation, gestion de la clé, concept de rôles/d’accès.",
+          "Genetik": "Définir à l’avance le processus pour les découvertes fortuites et la suspicion de variants germinaux.",
+          "Translation": "Seules les données recueillies dans un cadre de gouvernance robuste sont publiables et fiables."
+        },
+        "optimal_summary": "Solution optimale : ne pas démarrer le projet avant d’avoir défini l’éthique, le consentement, la protection des données, la préservation du matériel et la gestion des découvertes fortuites."
+      },
+      "reasoning_gate": {
+        "case_id": "RES_ETH_001_v1_0",
+        "base_id": "RES_ETH_001",
+        "required": true,
+        "position": "Après l’idée de projet/le contexte/la situation du matériel, avant l’hypothèse/le design/le plan d’analyse",
+        "gate_count": 2,
+        "question_types": "Choix unique ; sélection multiple",
+        "questions": [
+          {
+            "id": "gate_1",
+            "type": "single_choice_or_multiselect",
+            "prompt": "Quelle est la question de recherche centrale, ou quel élément manque principalement à l’idée de projet actuelle ?",
+            "answer_key_status": "to_be_generated_in_v1_5_patch"
+          },
+          {
+            "id": "gate_2",
+            "type": "single_choice_or_multiselect",
+            "prompt": "Quelle obligation relative à l’éthique, au consentement, à la protection des données ou à la restitution des résultats doit être clarifiée avant le démarrage du projet?",
+            "answer_key_status": "to_be_generated_in_v1_5_patch"
+          }
+        ],
+        "score_domain": "clinical_reasoning",
+        "decision": "2 questions-gate ; choix unique / sélection multiple ; avant la décision principale",
+        "failed_core_question_cap": 80
+      },
+      "display_labels": {
+        "Projektidee": "Idée de projet",
+        "Ziel": "Objectif",
+        "Problem": "Problème",
+        "Gefahr": "Risque",
+        "Material": "Matériel tissulaire",
+        "Daten": "Données",
+        "Genetik": "Génétique",
+        "Data Sharing": "Partage des données",
+        "Startvoraussetzung": "Prérequis au démarrage",
+        "Materialschutz": "Préservation du matériel",
+        "Datenschutz": "Protection des données",
+        "Translation": "Translation"
+      }
+    }
+  },
+  "curation": {
+    "terminology_references": [
+      "Deep Dive 08 RES/Hypothesis",
+      "Signature 03 RES/Omics"
+    ],
+    "principles": [
+      "Preserve FFPE, DNA/RNA, BRCA1, tumor-only, Broad Consent, Opt-out, PI and P/I/C/O technical terms.",
+      "Use data protection terminology rather than generic privacy wording for the governance context.",
+      "Render Nebenbefund as incidental finding/discovery and Rückmeldung as return/restitution of results in the genetics context.",
+      "Keep consent, ethics approval/amendment, material preservation and data-sharing obligations distinct.",
+      "Do not modify scoring, IDs, correctness flags, logic, metadata enums or case structure."
+    ],
+    "manual_focus": [
+      "Broad Consent/Opt-out and legal basis",
+      "true anonymisation versus pseudonymisation",
+      "diagnostic reserve and material approval",
+      "tumor-only suspected germline findings and return of results",
+      "data sharing and re-identification risk"
+    ]
+  },
+  "source_review_block_hash_sha256": "40e691b51f5367f63cf2f88de23ed425593af92851058f0364113f19dc7a8ed4",
+  "block_hash_sha256": "c89b653c04518716786db8879289ae8b03e734ce5da1eb085e2f160e439c3d80"
+}

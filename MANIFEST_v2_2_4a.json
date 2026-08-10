@@ -1,0 +1,20 @@
+{
+  "version": "2.2.4a",
+  "purpose": "Isolate and quarantine the defective v2.2.4 translation additions without changing application, case, scoring, course, report or render logic.",
+  "applicationBaseline": "2.2.3 Clean Translation Rebuild",
+  "sourceArtifact": "molpath_simulator_v2_2_4_menu_cart_case_library_translation.html",
+  "sourceSha256": "f0dd2e5e3a35b34ef31661c02ba30540ea573b4a9c94171a95dab9fdf30cd621",
+  "retainedBaselineArtifact": "molpath_simulator_v2_2_3_clean_translation_rebuild.html",
+  "retainedBaselineSha256": "bb3a6e709c47f6a433fd9624ee336e0d695e4b361a6cf20a83346a3433ebe81b",
+  "outputArtifact": "molpath_simulator_v2_2_4a_translation_quarantine.html",
+  "outputSha256": "2af253fa3495dd8f955b005a8c926907aba64e09aa8f33f5f5083cd65ae64341",
+  "quarantinedArtifact": "quarantine/i18n_additions_v2_2_4_REJECTED_DO_NOT_LOAD.json",
+  "quarantinedArtifactSha256": "ebc2281a44d8311db1d00fc0c3f3ce31c5d1ddc72cdedbe026c306bbf64b1c2d",
+  "translationDictionaryMutatedByPatch": false,
+  "appLogicChanged": false,
+  "caseDataChanged": false,
+  "scoringChanged": false,
+  "coursesChanged": false,
+  "reportsChanged": false,
+  "createdUtc": "2026-07-10T12:03:05+00:00"
+}

@@ -1,0 +1,1384 @@
+{
+  "case_id": "RES_ETH_001_v1_0",
+  "unique_source_strings_total": 83,
+  "translated_message_count": 79,
+  "source_location_count": 102,
+  "all_visible_source_locations": 108,
+  "languages": [
+    "en",
+    "ro",
+    "el",
+    "es",
+    "fr"
+  ],
+  "block_hash_sha256": "40e691b51f5367f63cf2f88de23ed425593af92851058f0364113f19dc7a8ed4",
+  "messages": [
+    {
+      "id": "S04_001",
+      "source_de": "Restmaterialprojekt ohne klare Einwilligung → Ethik, Datenschutz und Nebenbefunde",
+      "locations": [
+        "metadata.title",
+        "base_case.title"
+      ],
+      "translations": {
+        "en": "Residual tissue project without clear consent → ethics, data protection and incidental findings",
+        "ro": "Proiect cu material rezidual fără consimțământ clar → etică, protecția datelor și constatări incidentale",
+        "el": "Έργο με υπολειμματικό υλικό χωρίς σαφή συγκατάθεση → δεοντολογία, προστασία δεδομένων και τυχαία ευρήματα",
+        "es": "Proyecto con material residual sin consentimiento claro → ética, protección de datos y hallazgos incidentales",
+        "fr": "Projet sur du matériel résiduel sans consentement clair → éthique, protection des données et découvertes fortuites"
+      },
+      "origin": "Signature 04 curated",
+      "curation_note": "Restmaterial is rendered as residual tissue/material; Nebenbefund as incidental finding/discovery.",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_002",
+      "source_de": "Ethik / Governance / Materialschutz",
+      "locations": [
+        "metadata.subdomain"
+      ],
+      "translations": {
+        "en": "Ethics / Governance / Preservation of material",
+        "ro": "Etică / Guvernanță / Protejarea materialului",
+        "el": "Δεοντολογία / Διακυβέρνηση / Προστασία υλικού",
+        "es": "Ética / Gobernanza / Protección del material",
+        "fr": "Éthique / Gouvernance / Préservation du matériel"
+      },
+      "origin": "Signature 04 curated",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_003",
+      "source_de": "Standard",
+      "locations": [
+        "metadata.length_class"
+      ],
+      "translations": {
+        "en": "Standard",
+        "ro": "Standard",
+        "el": "Τυπική",
+        "es": "Estándar",
+        "fr": "Standard"
+      },
+      "origin": "Signature 03",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_004",
+      "source_de": "Core/MVP prüfen",
+      "locations": [
+        "metadata.review_flag"
+      ],
+      "translations": {
+        "en": "Review core/MVP",
+        "ro": "Verificare core/MVP",
+        "el": "Έλεγχος core/MVP",
+        "es": "Revisar core/MVP",
+        "fr": "Vérifier core/MVP"
+      },
+      "origin": "Signature 03",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_005",
+      "source_de": "Die Einwilligungslage ist uneinheitlich; Material stammt aus verschiedenen Jahren.",
+      "locations": [
+        "metadata.core_decision",
+        "base_case.research_intro.Problem"
+      ],
+      "translations": {
+        "en": "Consent coverage is inconsistent; the material comes from different years.",
+        "ro": "Acoperirea prin consimțământ este neuniformă; materialul provine din ani diferiți.",
+        "el": "Η κάλυψη από συγκατάθεση είναι ανομοιογενής· το υλικό προέρχεται από διαφορετικά έτη.",
+        "es": "La cobertura del consentimiento es heterogénea; el material procede de distintos años.",
+        "fr": "La couverture par le consentement est hétérogène ; le matériel provient de différentes années."
+      },
+      "origin": "Signature 04 curated",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_006",
+      "source_de": "Vage Projektidee in eine prüfbare, klinisch relevante Forschungsfrage übersetzen",
+      "locations": [
+        "metadata.learning_objectives[0]"
+      ],
+      "translations": {
+        "en": "Translate a vague project idea into a testable, clinically relevant research question",
+        "ro": "Transformați o idee vagă de proiect într-o întrebare de cercetare testabilă și relevantă clinic",
+        "el": "Μετατρέψτε μια ασαφή ιδέα έργου σε ελέγξιμο, κλινικά σχετικό ερευνητικό ερώτημα",
+        "es": "Convertir una idea de proyecto vaga en una pregunta de investigación comprobable y clínicamente relevante",
+        "fr": "Transformer une idée de projet vague en une question de recherche testable et cliniquement pertinente"
+      },
+      "origin": "Signature 03",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_007",
+      "source_de": "Ethik, Einwilligung, Datenschutz und Materialschutz vor Projektstart klären",
+      "locations": [
+        "metadata.learning_objectives[1]"
+      ],
+      "translations": {
+        "en": "Clarify ethics, consent, data protection and preservation of material before the project starts",
+        "ro": "Clarificați etica, consimțământul, protecția datelor și protejarea materialului înainte de începerea proiectului",
+        "el": "Διευκρινίστε τη δεοντολογία, τη συγκατάθεση, την προστασία δεδομένων και την προστασία του υλικού πριν από την έναρξη του έργου",
+        "es": "Aclarar la ética, el consentimiento, la protección de datos y la protección del material antes de iniciar el proyecto",
+        "fr": "Clarifier l’éthique, le consentement, la protection des données et la préservation du matériel avant le démarrage du projet"
+      },
+      "origin": "Signature 04 curated",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_008",
+      "source_de": "Explorativ vs. konfirmatorisch transparent trennen und Data-Fishing vermeiden",
+      "locations": [
+        "metadata.learning_objectives[2]"
+      ],
+      "translations": {
+        "en": "Clearly separate exploratory from confirmatory work and avoid data fishing",
+        "ro": "Separați transparent componentele exploratorii de cele confirmatorii și evitați data fishing",
+        "el": "Διαχωρίστε με διαφάνεια το διερευνητικό από το επιβεβαιωτικό σκέλος και αποφύγετε το data fishing",
+        "es": "Separar de forma transparente lo exploratorio de lo confirmatorio y evitar el data fishing",
+        "fr": "Séparer clairement l’exploratoire du confirmatoire et éviter le data fishing"
+      },
+      "origin": "Signature 03",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_009",
+      "source_de": "Ethik",
+      "locations": [
+        "metadata.tags[0]",
+        "base_case.tags[0]"
+      ],
+      "translations": {
+        "en": "Ethics",
+        "ro": "Etică",
+        "el": "Δεοντολογία",
+        "es": "Ética",
+        "fr": "Éthique"
+      },
+      "origin": "Signature 04 curated",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_010",
+      "source_de": "Restmaterial",
+      "locations": [
+        "metadata.tags[1]",
+        "base_case.tags[1]"
+      ],
+      "translations": {
+        "en": "Residual material",
+        "ro": "Material rezidual",
+        "el": "Υπολειμματικό υλικό",
+        "es": "Material residual",
+        "fr": "Matériel résiduel"
+      },
+      "origin": "Signature 04 curated",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_011",
+      "source_de": "Datenschutz",
+      "locations": [
+        "metadata.tags[4]",
+        "base_case.tags[4]",
+        "display_labels.Datenschutz"
+      ],
+      "translations": {
+        "en": "Data protection",
+        "ro": "Protecția datelor",
+        "el": "Προστασία δεδομένων",
+        "es": "Protección de datos",
+        "fr": "Protection des données"
+      },
+      "origin": "Signature 04 curated",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_012",
+      "source_de": "Keimbahn",
+      "locations": [
+        "metadata.tags[5]",
+        "base_case.tags[5]"
+      ],
+      "translations": {
+        "en": "Germline",
+        "ro": "Linie germinală",
+        "el": "Βλαστική σειρά",
+        "es": "Línea germinal",
+        "fr": "Germinal"
+      },
+      "origin": "Signature 04 curated",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_013",
+      "source_de": "Nebenbefund",
+      "locations": [
+        "metadata.tags[6]",
+        "base_case.tags[6]"
+      ],
+      "translations": {
+        "en": "Incidental finding",
+        "ro": "Constatare incidentală",
+        "el": "Τυχαίο εύρημα",
+        "es": "Hallazgo incidental",
+        "fr": "Découverte fortuite"
+      },
+      "origin": "Signature 04 curated",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_014",
+      "source_de": "RES; Länge=Standard; Schwierigkeit=Advanced; Status=curated-core",
+      "locations": [
+        "metadata.ap1b_decision"
+      ],
+      "translations": {
+        "en": "RES; Length=Standard; Difficulty=Advanced; Status=curated-core",
+        "ro": "RES; Lungime=Standard; Dificultate=Avansat; Status=curated-core",
+        "el": "RES; Μήκος=Τυπική; Δυσκολία=Προχωρημένο; Κατάσταση=curated-core",
+        "es": "RES; Longitud=Estándar; Dificultad=Avanzado; Estado=curated-core",
+        "fr": "RES ; Longueur=Standard ; Difficulté=Avancée ; Statut=curated-core"
+      },
+      "origin": "Signature 04 curated",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_015",
+      "source_de": "Restmaterial / Ethik",
+      "locations": [
+        "base_case.short"
+      ],
+      "translations": {
+        "en": "Residual material / Ethics",
+        "ro": "Material rezidual / Etică",
+        "el": "Υπολειμματικό υλικό / Δεοντολογία",
+        "es": "Material residual / Ética",
+        "fr": "Matériel résiduel / Éthique"
+      },
+      "origin": "Signature 04 curated",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_016",
+      "source_de": "120 retrospektive FFPE-Tumorblöcke aus der Routine sollen mit erweitertem DNA/RNA-Panel untersucht werden.",
+      "locations": [
+        "base_case.research_intro.Projektidee"
+      ],
+      "translations": {
+        "en": "120 retrospective routine FFPE tumour blocks are to be analysed with an expanded DNA/RNA panel.",
+        "ro": "120 de blocuri tumorale FFPE retrospective din rutina diagnostică urmează să fie analizate cu un panel DNA/RNA extins.",
+        "el": "120 αναδρομικά μπλοκ όγκων FFPE από τη διαγνωστική ρουτίνα πρόκειται να αναλυθούν με διευρυμένο panel DNA/RNA.",
+        "es": "Se analizarán 120 bloques tumorales FFPE retrospectivos de la rutina diagnóstica mediante un panel ampliado de DNA/RNA.",
+        "fr": "120 blocs tumoraux FFPE rétrospectifs issus de la routine diagnostique doivent être analysés par un panel DNA/RNA élargi."
+      },
+      "origin": "Signature 04 curated",
+      "curation_note": "DNA/RNA and FFPE are preserved as technical tokens.",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_017",
+      "source_de": "Neue Resistenzmarker identifizieren.",
+      "locations": [
+        "base_case.research_intro.Ziel"
+      ],
+      "translations": {
+        "en": "Identify new resistance markers.",
+        "ro": "Identificarea unor noi markeri de rezistență.",
+        "el": "Εντοπισμός νέων δεικτών αντοχής.",
+        "es": "Identificar nuevos marcadores de resistencia.",
+        "fr": "Identifier de nouveaux marqueurs de résistance."
+      },
+      "origin": "Signature 04 curated",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_018",
+      "source_de": "Restmaterial wird als frei verfügbar missverstanden.",
+      "locations": [
+        "base_case.research_intro.Gefahr"
+      ],
+      "translations": {
+        "en": "Residual material is mistakenly regarded as freely available.",
+        "ro": "Materialul rezidual este considerat în mod eronat ca fiind liber disponibil.",
+        "el": "Το υπολειμματικό υλικό θεωρείται λανθασμένα ως ελεύθερα διαθέσιμο.",
+        "es": "El material residual se interpreta erróneamente como libremente disponible.",
+        "fr": "Le matériel résiduel est considéré à tort comme librement disponible."
+      },
+      "origin": "Signature 04 curated",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_019",
+      "source_de": "Routine-FFPE-Blöcke, teils klein, Diagnostikreserve unklar.",
+      "locations": [
+        "base_case.research_context.Material"
+      ],
+      "translations": {
+        "en": "Routine FFPE blocks, some small; the diagnostic reserve is unclear.",
+        "ro": "Blocuri FFPE de rutină, unele mici; rezerva pentru diagnostic este neclară.",
+        "el": "Μπλοκ FFPE ρουτίνας, ορισμένα μικρά· η διαγνωστική εφεδρεία υλικού είναι ασαφής.",
+        "es": "Bloques FFPE de rutina, algunos pequeños; la reserva para diagnóstico no está clara.",
+        "fr": "Blocs FFPE de routine, certains de petite taille ; la réserve diagnostique n’est pas claire."
+      },
+      "origin": "Signature 04 curated",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_020",
+      "source_de": "Klinische Daten und Follow-up sollen aus Archiv/Informationssystemen gezogen werden.",
+      "locations": [
+        "base_case.research_context.Daten"
+      ],
+      "translations": {
+        "en": "Clinical data and follow-up are to be retrieved from archives/information systems.",
+        "ro": "Datele clinice și follow-up-ul urmează să fie extrase din arhive/sisteme informatice.",
+        "el": "Τα κλινικά δεδομένα και το follow-up πρόκειται να αντληθούν από αρχεία/πληροφοριακά συστήματα.",
+        "es": "Los datos clínicos y el seguimiento se obtendrán de archivos/sistemas de información.",
+        "fr": "Les données cliniques et le suivi doivent être extraits des archives/systèmes d’information."
+      },
+      "origin": "Signature 04 curated",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_021",
+      "source_de": "Tumor-only-Panel kann Keimbahnverdacht erzeugen.",
+      "locations": [
+        "base_case.research_context.Genetik"
+      ],
+      "translations": {
+        "en": "A tumor-only panel can raise suspicion of a germline finding.",
+        "ro": "Un panel tumor-only poate ridica suspiciunea unei variante germinale.",
+        "el": "Ένα tumor-only panel μπορεί να εγείρει υποψία ευρήματος βλαστικής σειράς.",
+        "es": "Un panel tumor-only puede generar sospecha de un hallazgo de línea germinal.",
+        "fr": "Un panel tumor-only peut faire suspecter un variant germinal."
+      },
+      "origin": "Signature 04 curated",
+      "curation_note": "Keep tumor-only as a technical workflow term.",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_022",
+      "source_de": "Publikation und ggf. externe Validierung geplant.",
+      "locations": [
+        "base_case.research_context.Data Sharing"
+      ],
+      "translations": {
+        "en": "Publication and, if applicable, external validation are planned.",
+        "ro": "Sunt planificate publicarea și, dacă este cazul, validarea externă.",
+        "el": "Προβλέπονται δημοσίευση και, κατά περίπτωση, εξωτερική επικύρωση.",
+        "es": "Se prevén publicación y, en su caso, validación externa.",
+        "fr": "Une publication et, le cas échéant, une validation externe sont prévues."
+      },
+      "origin": "Signature 04 curated",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_023",
+      "source_de": "Direkt starten, weil es Restmaterial ist.",
+      "locations": [
+        "base_case.hypothesis_options[0].label"
+      ],
+      "translations": {
+        "en": "Start immediately because it is residual material.",
+        "ro": "Începeți direct, deoarece este material rezidual.",
+        "el": "Ξεκινήστε άμεσα επειδή πρόκειται για υπολειμματικό υλικό.",
+        "es": "Empezar directamente porque es material residual.",
+        "fr": "Commencer immédiatement puisqu’il s’agit de matériel résiduel."
+      },
+      "origin": "Signature 04 curated",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_024",
+      "source_de": "Falsch: Restmaterial bleibt patientenbezogenes Material mit Governance-Anforderungen.",
+      "locations": [
+        "base_case.hypothesis_options[0].feedback"
+      ],
+      "translations": {
+        "en": "Incorrect: residual material remains patient-linked material subject to governance requirements.",
+        "ro": "Incorect: materialul rezidual rămâne material asociat pacientului, supus cerințelor de guvernanță.",
+        "el": "Λάθος: το υπολειμματικό υλικό παραμένει υλικό που συνδέεται με ασθενή και υπόκειται σε απαιτήσεις διακυβέρνησης.",
+        "es": "Incorrecto: el material residual sigue siendo material vinculado al paciente y sujeto a requisitos de gobernanza.",
+        "fr": "Incorrect : le matériel résiduel reste lié au patient et soumis à des exigences de gouvernance."
+      },
+      "origin": "Signature 04 curated",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_025",
+      "source_de": "Vor Start Ethik, Einwilligung/Broad Consent/Opt-out, Datenschutz, Materialfreigabe und Nebenbefundpolicy klären.",
+      "locations": [
+        "base_case.hypothesis_options[1].label"
+      ],
+      "translations": {
+        "en": "Before starting, clarify ethics, consent/Broad Consent/Opt-out, data protection, approval for material use and the incidental-findings policy.",
+        "ro": "Înainte de începere, clarificați etica, consimțământul/Broad Consent/Opt-out, protecția datelor, aprobarea utilizării materialului și politica privind constatările incidentale.",
+        "el": "Πριν από την έναρξη, διευκρινίστε τη δεοντολογία, τη συγκατάθεση/Broad Consent/Opt-out, την προστασία δεδομένων, την έγκριση χρήσης υλικού και την πολιτική για τα τυχαία ευρήματα.",
+        "es": "Antes de iniciar, aclarar la ética, el consentimiento/Broad Consent/Opt-out, la protección de datos, la autorización para utilizar el material y la política sobre hallazgos incidentales.",
+        "fr": "Avant le démarrage, clarifier l’éthique, le consentement/Broad Consent/Opt-out, la protection des données, l’autorisation d’utilisation du matériel et la politique relative aux découvertes fortuites."
+      },
+      "origin": "Signature 04 curated",
+      "curation_note": "Broad Consent and Opt-out are preserved as project terminology; Nebenbefundpolicy is localized as incidental-findings policy.",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_026",
+      "source_de": "Optimal: Governance ist Voraussetzung, nicht Nachtrag.",
+      "locations": [
+        "base_case.hypothesis_options[1].feedback"
+      ],
+      "translations": {
+        "en": "Optimal: governance is a prerequisite, not an afterthought.",
+        "ro": "Optim: guvernanța este o condiție prealabilă, nu un adaos ulterior.",
+        "el": "Βέλτιστο: η διακυβέρνηση αποτελεί προϋπόθεση, όχι εκ των υστέρων προσθήκη.",
+        "es": "Óptimo: la gobernanza es un requisito previo, no un añadido posterior.",
+        "fr": "Optimal : la gouvernance est un prérequis, pas un ajout a posteriori."
+      },
+      "origin": "Signature 04 curated",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_027",
+      "source_de": "Einfach anonymisieren, dann ist alles unproblematisch.",
+      "locations": [
+        "base_case.hypothesis_options[2].label"
+      ],
+      "translations": {
+        "en": "Simply anonymise the data and everything is unproblematic.",
+        "ro": "Pur și simplu anonimizați datele și atunci totul devine lipsit de probleme.",
+        "el": "Απλώς ανωνυμοποιήστε τα δεδομένα και τότε όλα είναι χωρίς πρόβλημα.",
+        "es": "Basta con anonimizar los datos y todo deja de ser problemático.",
+        "fr": "Il suffit d’anonymiser les données et tout devient alors sans problème."
+      },
+      "origin": "Signature 04 curated",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_028",
+      "source_de": "Zu einfach: echte Anonymisierung kann Follow-up und Rückmeldung verhindern und ersetzt nicht Material-/Ethikprüfung.",
+      "locations": [
+        "base_case.hypothesis_options[2].feedback"
+      ],
+      "translations": {
+        "en": "Too simplistic: true anonymisation can prevent follow-up and return of results and does not replace review of material use and ethics.",
+        "ro": "Prea simplist: anonimizarea reală poate împiedica follow-up-ul și returnarea rezultatelor și nu înlocuiește evaluarea utilizării materialului și a aspectelor etice.",
+        "el": "Υπερβολικά απλουστευμένο: η πραγματική ανωνυμοποίηση μπορεί να εμποδίσει το follow-up και την επιστροφή αποτελεσμάτων και δεν υποκαθιστά τον έλεγχο χρήσης υλικού και δεοντολογίας.",
+        "es": "Demasiado simplista: una anonimización real puede impedir el seguimiento y la devolución de resultados y no sustituye la revisión del uso del material y de la ética.",
+        "fr": "Trop simpliste : une véritable anonymisation peut empêcher le suivi et la restitution des résultats et ne remplace pas l’examen de l’utilisation du matériel et de l’éthique."
+      },
+      "origin": "Signature 04 curated",
+      "curation_note": "Rückmeldung is rendered as return/restitution of results in this genetics/ethics context.",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_029",
+      "source_de": "P: Archivblöcke; I: Panel; C: keine; O: interessante Resistenzmarker.",
+      "locations": [
+        "base_case.pico_options[0].label"
+      ],
+      "translations": {
+        "en": "P: archival blocks; I: panel; C: none; O: interesting resistance markers.",
+        "ro": "P: blocuri de arhivă; I: panel; C: niciun comparator; O: markeri de rezistență interesanți.",
+        "el": "P: αρχειακά μπλοκ· I: panel· C: κανένας συγκριτικός παράγοντας· O: ενδιαφέροντες δείκτες αντοχής.",
+        "es": "P: bloques de archivo; I: panel; C: ninguno; O: marcadores de resistencia interesantes.",
+        "fr": "P : blocs d’archives ; I : panel ; C : aucun comparateur ; O : marqueurs de résistance intéressants."
+      },
+      "origin": "Signature 04 curated",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_030",
+      "source_de": "Zu vage und governance-blind.",
+      "locations": [
+        "base_case.pico_options[0].feedback"
+      ],
+      "translations": {
+        "en": "Too vague and blind to governance requirements.",
+        "ro": "Prea vag și ignoră cerințele de guvernanță.",
+        "el": "Υπερβολικά ασαφές και αγνοεί τις απαιτήσεις διακυβέρνησης.",
+        "es": "Demasiado vago e ignora los requisitos de gobernanza.",
+        "fr": "Trop vague et aveugle aux exigences de gouvernance."
+      },
+      "origin": "Signature 04 curated",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_031",
+      "source_de": "P: definierte Tumorentität mit dokumentierter Therapieresistenz; I: molekulare Alterationen/Signaturen; C: therapieansprechende Fälle; O: Resistenz/Outcome.",
+      "locations": [
+        "base_case.pico_options[1].label"
+      ],
+      "translations": {
+        "en": "P: defined tumour entity with documented treatment resistance; I: molecular alterations/signatures; C: treatment-responsive cases; O: resistance/outcome.",
+        "ro": "P: entitate tumorală definită cu rezistență la tratament documentată; I: alterări/semnături moleculare; C: cazuri care răspund la tratament; O: rezistență/outcome.",
+        "el": "P: καθορισμένη οντότητα όγκου με τεκμηριωμένη αντοχή στη θεραπεία· I: μοριακές αλλοιώσεις/υπογραφές· C: περιστατικά που ανταποκρίνονται στη θεραπεία· O: αντοχή/outcome.",
+        "es": "P: entidad tumoral definida con resistencia al tratamiento documentada; I: alteraciones/firmas moleculares; C: casos con respuesta al tratamiento; O: resistencia/desenlace.",
+        "fr": "P : entité tumorale définie avec résistance thérapeutique documentée ; I : altérations/signatures moléculaires ; C : cas répondant au traitement ; O : résistance/critère de jugement."
+      },
+      "origin": "Signature 04 curated",
+      "curation_note": "Outcome terminology follows the previously curated RES convention per language.",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_032",
+      "source_de": "Gut: Forschungsidee wird operationalisiert.",
+      "locations": [
+        "base_case.pico_options[1].feedback"
+      ],
+      "translations": {
+        "en": "Good: the research idea is operationalised.",
+        "ro": "Bine: ideea de cercetare este operaționalizată.",
+        "el": "Καλό: η ερευνητική ιδέα αποκτά επιχειρησιακό ορισμό.",
+        "es": "Bien: la idea de investigación se operacionaliza.",
+        "fr": "Bien : l’idée de recherche est opérationnalisée."
+      },
+      "origin": "Signature 04 curated",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_033",
+      "source_de": "Alle Tumoren und alle Outcomes zusammenwerfen, um möglichst viele Fälle zu haben.",
+      "locations": [
+        "base_case.pico_options[2].label"
+      ],
+      "translations": {
+        "en": "Pool all tumours and all outcomes to maximise the number of cases.",
+        "ro": "Combinați toate tumorile și toate outcome-urile pentru a obține cât mai multe cazuri.",
+        "el": "Συγχωνεύστε όλους τους όγκους και όλα τα outcomes ώστε να έχετε όσο το δυνατόν περισσότερα περιστατικά.",
+        "es": "Agrupar todos los tumores y todos los desenlaces para disponer del mayor número posible de casos.",
+        "fr": "Regrouper toutes les tumeurs et tous les critères de jugement afin d’avoir le plus grand nombre possible de cas."
+      },
+      "origin": "Signature 04 curated",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_034",
+      "source_de": "Inhomogenität gefährdet Interpretierbarkeit.",
+      "locations": [
+        "base_case.pico_options[2].feedback"
+      ],
+      "translations": {
+        "en": "Heterogeneity compromises interpretability.",
+        "ro": "Eterogenitatea compromite interpretabilitatea.",
+        "el": "Η ετερογένεια υπονομεύει την ερμηνευσιμότητα.",
+        "es": "La heterogeneidad compromete la interpretabilidad.",
+        "fr": "L’hétérogénéité compromet l’interprétabilité."
+      },
+      "origin": "Signature 04 curated",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_035",
+      "source_de": "Ethikvotum/Amendment vor Start einholen",
+      "locations": [
+        "base_case.design_options[0].label"
+      ],
+      "translations": {
+        "en": "Obtain ethics committee approval/an amendment before starting",
+        "ro": "Obțineți avizul comisiei de etică/un amendament înainte de începere",
+        "el": "Λάβετε έγκριση επιτροπής δεοντολογίας/τροποποίηση πριν από την έναρξη",
+        "es": "Obtener la aprobación del comité de ética/una enmienda antes de iniciar",
+        "fr": "Obtenir l’avis du comité d’éthique/un amendement avant le démarrage"
+      },
+      "origin": "Signature 04 curated",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_036",
+      "source_de": "Richtig.",
+      "locations": [
+        "base_case.design_options[0].feedback",
+        "base_case.design_options[1].feedback",
+        "base_case.design_options[2].feedback",
+        "base_case.method_options[0].feedback",
+        "base_case.method_options[1].feedback",
+        "base_case.method_options[2].feedback",
+        "base_case.analysis_options[0].feedback",
+        "base_case.analysis_options[1].feedback",
+        "base_case.analysis_options[2].feedback",
+        "base_case.pitfall_options[1].feedback",
+        "base_case.pitfall_options[3].feedback"
+      ],
+      "translations": {
+        "en": "Correct.",
+        "ro": "Corect.",
+        "el": "Σωστό.",
+        "es": "Correcto.",
+        "fr": "Correct."
+      },
+      "origin": "Signature 03",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_037",
+      "source_de": "Einwilligung/Broad Consent/Opt-out und Rechtsgrundlage prüfen",
+      "locations": [
+        "base_case.design_options[1].label"
+      ],
+      "translations": {
+        "en": "Review consent/Broad Consent/Opt-out and the legal basis",
+        "ro": "Verificați consimțământul/Broad Consent/Opt-out și temeiul juridic",
+        "el": "Ελέγξτε τη συγκατάθεση/Broad Consent/Opt-out και τη νομική βάση",
+        "es": "Revisar el consentimiento/Broad Consent/Opt-out y la base jurídica",
+        "fr": "Vérifier le consentement/Broad Consent/Opt-out et la base juridique"
+      },
+      "origin": "Signature 04 curated",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_038",
+      "source_de": "Pathologische Materialfreigabe und Diagnostikreserve sichern",
+      "locations": [
+        "base_case.design_options[2].label"
+      ],
+      "translations": {
+        "en": "Obtain pathology approval for material use and safeguard the diagnostic reserve",
+        "ro": "Obțineți aprobarea anatomiei patologice pentru utilizarea materialului și protejați rezerva pentru diagnostic",
+        "el": "Εξασφαλίστε έγκριση της παθολογοανατομίας για τη χρήση του υλικού και διαφυλάξτε τη διαγνωστική εφεδρεία",
+        "es": "Obtener la autorización de anatomía patológica para utilizar el material y preservar la reserva diagnóstica",
+        "fr": "Obtenir l’autorisation de l’anatomopathologie pour l’utilisation du matériel et préserver la réserve diagnostique"
+      },
+      "origin": "Signature 04 curated",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_039",
+      "source_de": "Ohne PI/Verantwortlichkeiten starten",
+      "locations": [
+        "base_case.design_options[3].label"
+      ],
+      "translations": {
+        "en": "Start without a PI/defined responsibilities",
+        "ro": "Începeți fără PI/responsabilități definite",
+        "el": "Ξεκινήστε χωρίς PI/καθορισμένες αρμοδιότητες",
+        "es": "Empezar sin PI/responsabilidades definidas",
+        "fr": "Commencer sans PI/responsabilités définies"
+      },
+      "origin": "Signature 04 curated",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_040",
+      "source_de": "Falsch.",
+      "locations": [
+        "base_case.design_options[3].feedback",
+        "base_case.design_options[4].feedback",
+        "base_case.method_options[3].feedback",
+        "base_case.method_options[4].feedback",
+        "base_case.analysis_options[3].feedback",
+        "base_case.pitfall_options[2].feedback"
+      ],
+      "translations": {
+        "en": "Incorrect.",
+        "ro": "Incorect.",
+        "el": "Λάθος.",
+        "es": "Incorrecto.",
+        "fr": "Incorrect."
+      },
+      "origin": "Signature 03",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_041",
+      "source_de": "Alte Fälle pauschal ohne Prüfung nutzen",
+      "locations": [
+        "base_case.design_options[4].label"
+      ],
+      "translations": {
+        "en": "Use old cases across the board without review",
+        "ro": "Utilizați în bloc cazurile vechi fără verificare",
+        "el": "Χρησιμοποιήστε συλλήβδην παλαιά περιστατικά χωρίς έλεγχο",
+        "es": "Utilizar de forma indiscriminada casos antiguos sin revisión",
+        "fr": "Utiliser systématiquement d’anciens cas sans vérification"
+      },
+      "origin": "Signature 04 curated",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_042",
+      "source_de": "Pseudonymisierung mit Schlüsselmanagement und rollenbasiertem Zugriff",
+      "locations": [
+        "base_case.method_options[0].label"
+      ],
+      "translations": {
+        "en": "Pseudonymisation with key management and role-based access",
+        "ro": "Pseudonimizare cu managementul cheii și acces bazat pe roluri",
+        "el": "Ψευδωνυμοποίηση με διαχείριση κλειδιού και πρόσβαση βάσει ρόλων",
+        "es": "Seudonimización con gestión de claves y acceso basado en roles",
+        "fr": "Pseudonymisation avec gestion de la clé et accès fondé sur les rôles"
+      },
+      "origin": "Signature 04 curated",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_043",
+      "source_de": "Nebenbefund-/Keimbahnverdachtsprozess definieren",
+      "locations": [
+        "base_case.method_options[1].label"
+      ],
+      "translations": {
+        "en": "Define a process for incidental findings/suspected germline findings",
+        "ro": "Definiți un proces pentru constatările incidentale/suspiciunea de variante germinale",
+        "el": "Ορίστε διαδικασία για τυχαία ευρήματα/υποψία ευρήματος βλαστικής σειράς",
+        "es": "Definir un proceso para hallazgos incidentales/sospecha de hallazgos de línea germinal",
+        "fr": "Définir un processus pour les découvertes fortuites/la suspicion de variants germinaux"
+      },
+      "origin": "Signature 04 curated",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_044",
+      "source_de": "Data-Sharing-Konzept mit Einwilligung/Datenschutz abgleichen",
+      "locations": [
+        "base_case.method_options[2].label"
+      ],
+      "translations": {
+        "en": "Align the data-sharing concept with consent and data protection requirements",
+        "ro": "Aliniați conceptul de partajare a datelor cu consimțământul și cerințele de protecție a datelor",
+        "el": "Εναρμονίστε το σχέδιο κοινοποίησης δεδομένων με τη συγκατάθεση και τις απαιτήσεις προστασίας δεδομένων",
+        "es": "Alinear el concepto de compartición de datos con el consentimiento y los requisitos de protección de datos",
+        "fr": "Aligner le concept de partage des données sur le consentement et les exigences de protection des données"
+      },
+      "origin": "Signature 04 curated",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_045",
+      "source_de": "Falllisten und Bilder über private Messenger abstimmen",
+      "locations": [
+        "base_case.method_options[3].label"
+      ],
+      "translations": {
+        "en": "Coordinate case lists and images via private messaging apps",
+        "ro": "Coordonați listele de cazuri și imaginile prin aplicații private de mesagerie",
+        "el": "Συντονίστε λίστες περιστατικών και εικόνες μέσω ιδιωτικών εφαρμογών μηνυμάτων",
+        "es": "Coordinar listas de casos e imágenes mediante aplicaciones privadas de mensajería",
+        "fr": "Coordonner les listes de cas et les images via des messageries privées"
+      },
+      "origin": "Signature 04 curated",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_046",
+      "source_de": "Pseudonymisierungsschlüssel offen im Projektordner speichern",
+      "locations": [
+        "base_case.method_options[4].label"
+      ],
+      "translations": {
+        "en": "Store the pseudonymisation key openly in the project folder",
+        "ro": "Stocați cheia de pseudonimizare neprotejată în folderul proiectului",
+        "el": "Αποθηκεύστε το κλειδί ψευδωνυμοποίησης χωρίς προστασία στον φάκελο του έργου",
+        "es": "Guardar la clave de seudonimización sin protección en la carpeta del proyecto",
+        "fr": "Enregistrer la clé de pseudonymisation sans protection dans le dossier du projet"
+      },
+      "origin": "Signature 04 curated",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_047",
+      "source_de": "Analyseplan vor Datenzugriff skizzieren",
+      "locations": [
+        "base_case.analysis_options[0].label"
+      ],
+      "translations": {
+        "en": "Outline the analysis plan before accessing the data",
+        "ro": "Schițați planul de analiză înainte de accesarea datelor",
+        "el": "Σκιαγραφήστε το σχέδιο ανάλυσης πριν από την πρόσβαση στα δεδομένα",
+        "es": "Esbozar el plan de análisis antes de acceder a los datos",
+        "fr": "Esquisser le plan d’analyse avant d’accéder aux données"
+      },
+      "origin": "Signature 04 curated",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_048",
+      "source_de": "Minimaldatensatz und Zugriffskonzept definieren",
+      "locations": [
+        "base_case.analysis_options[1].label"
+      ],
+      "translations": {
+        "en": "Define the minimum data set and access concept",
+        "ro": "Definiți setul minim de date și conceptul de acces",
+        "el": "Ορίστε το ελάχιστο σύνολο δεδομένων και το μοντέλο πρόσβασης",
+        "es": "Definir el conjunto mínimo de datos y el concepto de acceso",
+        "fr": "Définir le jeu minimal de données et le concept d’accès"
+      },
+      "origin": "Signature 04 curated",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_049",
+      "source_de": "Datenzugriffe und Materialverbrauch dokumentieren",
+      "locations": [
+        "base_case.analysis_options[2].label"
+      ],
+      "translations": {
+        "en": "Document data access and material consumption",
+        "ro": "Documentați accesul la date și consumul de material",
+        "el": "Τεκμηριώστε την πρόσβαση στα δεδομένα και την κατανάλωση υλικού",
+        "es": "Documentar los accesos a los datos y el consumo de material",
+        "fr": "Documenter les accès aux données et la consommation de matériel"
+      },
+      "origin": "Signature 04 curated",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_050",
+      "source_de": "Einzelfälle mit potenziell reidentifizierbarer Fallnummer publizieren",
+      "locations": [
+        "base_case.analysis_options[3].label"
+      ],
+      "translations": {
+        "en": "Publish individual cases with a potentially re-identifiable case number",
+        "ro": "Publicați cazuri individuale cu un număr de caz care poate permite reidentificarea",
+        "el": "Δημοσιεύστε μεμονωμένα περιστατικά με αριθμό περιστατικού που ενδέχεται να επιτρέπει επαναταυτοποίηση",
+        "es": "Publicar casos individuales con un número de caso potencialmente reidentificable",
+        "fr": "Publier des cas individuels avec un numéro de cas potentiellement réidentifiable"
+      },
+      "origin": "Signature 04 curated",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_051",
+      "source_de": "Pathogene BRCA1-Tumor-only-Variante ad hoc direkt an Patientin melden",
+      "locations": [
+        "base_case.analysis_options[4].label"
+      ],
+      "translations": {
+        "en": "Report a pathogenic BRCA1 tumor-only variant directly to the patient on an ad hoc basis",
+        "ro": "Comunicați ad hoc direct pacientei o variantă patogenă BRCA1 identificată prin tumor-only",
+        "el": "Κοινοποιήστε ad hoc απευθείας στην ασθενή μια παθογόνο παραλλαγή BRCA1 από tumor-only ανάλυση",
+        "es": "Comunicar ad hoc directamente a la paciente una variante patogénica BRCA1 detectada mediante tumor-only",
+        "fr": "Restituer ad hoc directement à la patiente un variant pathogène BRCA1 identifié en tumor-only"
+      },
+      "origin": "Signature 04 curated",
+      "curation_note": "BRCA1 and tumor-only are preserved; “melden” is rendered as report/communicate/return in the patient-return context.",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_052",
+      "source_de": "Falsch ohne definierten Prozess.",
+      "locations": [
+        "base_case.analysis_options[4].feedback"
+      ],
+      "translations": {
+        "en": "Incorrect without a defined process.",
+        "ro": "Incorect în absența unui proces definit.",
+        "el": "Λάθος χωρίς καθορισμένη διαδικασία.",
+        "es": "Incorrecto sin un proceso definido.",
+        "fr": "Incorrect en l’absence d’un processus défini."
+      },
+      "origin": "Signature 04 curated",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_053",
+      "source_de": "Warnsignal: ‚Restmaterial = frei verfügbar‘",
+      "locations": [
+        "base_case.pitfall_options[0].label"
+      ],
+      "translations": {
+        "en": "Warning sign: “residual material = freely available”",
+        "ro": "Semnal de alarmă: „material rezidual = liber disponibil”",
+        "el": "Προειδοποιητικό σημάδι: «υπολειμματικό υλικό = ελεύθερα διαθέσιμο»",
+        "es": "Señal de alarma: «material residual = libremente disponible»",
+        "fr": "Signal d’alerte : « matériel résiduel = librement disponible »"
+      },
+      "origin": "Signature 04 curated",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_054",
+      "source_de": "Richtig erkannt.",
+      "locations": [
+        "base_case.pitfall_options[0].feedback"
+      ],
+      "translations": {
+        "en": "Correctly identified.",
+        "ro": "Corect identificat.",
+        "el": "Σωστά αναγνωρίστηκε.",
+        "es": "Correctamente identificado.",
+        "fr": "Correctement identifié."
+      },
+      "origin": "Signature 03",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_055",
+      "source_de": "Gut: Ethik, Datenschutz, Materialschutz und Nebenbefunde vor Start klären",
+      "locations": [
+        "base_case.pitfall_options[1].label"
+      ],
+      "translations": {
+        "en": "Good: clarify ethics, data protection, preservation of material and incidental findings before starting",
+        "ro": "Bine: clarificați etica, protecția datelor, protejarea materialului și constatările incidentale înainte de începere",
+        "el": "Καλό: διευκρινίστε τη δεοντολογία, την προστασία δεδομένων, την προστασία του υλικού και τα τυχαία ευρήματα πριν από την έναρξη",
+        "es": "Bien: aclarar la ética, la protección de datos, la protección del material y los hallazgos incidentales antes de iniciar",
+        "fr": "Bien : clarifier l’éthique, la protection des données, la préservation du matériel et les découvertes fortuites avant le démarrage"
+      },
+      "origin": "Signature 04 curated",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_056",
+      "source_de": "Anonymisierung löst automatisch jedes Problem",
+      "locations": [
+        "base_case.pitfall_options[2].label"
+      ],
+      "translations": {
+        "en": "Anonymisation automatically solves every problem",
+        "ro": "Anonimizarea rezolvă automat orice problemă",
+        "el": "Η ανωνυμοποίηση λύνει αυτόματα κάθε πρόβλημα",
+        "es": "La anonimización resuelve automáticamente cualquier problema",
+        "fr": "L’anonymisation résout automatiquement tous les problèmes"
+      },
+      "origin": "Signature 04 curated",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_057",
+      "source_de": "Diagnostische Restreserve hat Vorrang vor Forschungsneugier",
+      "locations": [
+        "base_case.pitfall_options[3].label"
+      ],
+      "translations": {
+        "en": "The diagnostic reserve takes priority over research curiosity",
+        "ro": "Rezerva pentru diagnostic are prioritate față de curiozitatea de cercetare",
+        "el": "Η διαγνωστική εφεδρεία υλικού υπερισχύει της ερευνητικής περιέργειας",
+        "es": "La reserva diagnóstica tiene prioridad sobre la curiosidad investigadora",
+        "fr": "La réserve diagnostique prime sur la curiosité de recherche"
+      },
+      "origin": "Signature 04 curated",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_058",
+      "source_de": "Ethikvotum/Amendment, Einwilligungs-/Opt-out-Prüfung, Datenschutzkonzept, Materialfreigabe.",
+      "locations": [
+        "base_case.expected_output.Startvoraussetzung"
+      ],
+      "translations": {
+        "en": "Ethics committee approval/amendment, consent/Opt-out review, data protection concept, approval for material use.",
+        "ro": "Avizul comisiei de etică/amendament, verificarea consimțământului/Opt-out, concept de protecție a datelor, aprobarea utilizării materialului.",
+        "el": "Έγκριση επιτροπής δεοντολογίας/τροποποίηση, έλεγχος συγκατάθεσης/Opt-out, σχέδιο προστασίας δεδομένων, έγκριση χρήσης υλικού.",
+        "es": "Aprobación del comité de ética/enmienda, revisión del consentimiento/Opt-out, concepto de protección de datos y autorización para utilizar el material.",
+        "fr": "Avis du comité d’éthique/amendement, vérification du consentement/Opt-out, concept de protection des données, autorisation d’utilisation du matériel."
+      },
+      "origin": "Signature 04 curated",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_059",
+      "source_de": "Diagnostische Restreserve sichern; Verbrauch dokumentieren.",
+      "locations": [
+        "base_case.expected_output.Materialschutz"
+      ],
+      "translations": {
+        "en": "Safeguard the diagnostic reserve; document material consumption.",
+        "ro": "Protejați rezerva pentru diagnostic; documentați consumul de material.",
+        "el": "Διαφυλάξτε τη διαγνωστική εφεδρεία υλικού· τεκμηριώστε την κατανάλωση υλικού.",
+        "es": "Preservar la reserva diagnóstica; documentar el consumo de material.",
+        "fr": "Préserver la réserve diagnostique ; documenter la consommation de matériel."
+      },
+      "origin": "Signature 04 curated",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_060",
+      "source_de": "Pseudonymisierung, Schlüsselmanagement, Rollen-/Zugriffskonzept.",
+      "locations": [
+        "base_case.expected_output.Datenschutz"
+      ],
+      "translations": {
+        "en": "Pseudonymisation, key management, role/access concept.",
+        "ro": "Pseudonimizare, managementul cheii, concept de roluri/acces.",
+        "el": "Ψευδωνυμοποίηση, διαχείριση κλειδιού, μοντέλο ρόλων/πρόσβασης.",
+        "es": "Seudonimización, gestión de claves y concepto de roles/acceso.",
+        "fr": "Pseudonymisation, gestion de la clé, concept de rôles/d’accès."
+      },
+      "origin": "Signature 04 curated",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_061",
+      "source_de": "Nebenbefund- und Keimbahnverdachtsprozess vorab definieren.",
+      "locations": [
+        "base_case.expected_output.Genetik"
+      ],
+      "translations": {
+        "en": "Define the process for incidental findings and suspected germline findings in advance.",
+        "ro": "Definiți în prealabil procesul pentru constatările incidentale și suspiciunea de variante germinale.",
+        "el": "Ορίστε εκ των προτέρων τη διαδικασία για τυχαία ευρήματα και υποψία ευρημάτων βλαστικής σειράς.",
+        "es": "Definir de antemano el proceso para hallazgos incidentales y sospecha de hallazgos de línea germinal.",
+        "fr": "Définir à l’avance le processus pour les découvertes fortuites et la suspicion de variants germinaux."
+      },
+      "origin": "Signature 04 curated",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_062",
+      "source_de": "Nur governance-sicher erhobene Daten sind publizierbar und vertrauenswürdig.",
+      "locations": [
+        "base_case.expected_output.Translation"
+      ],
+      "translations": {
+        "en": "Only data collected under sound governance are publishable and trustworthy.",
+        "ro": "Doar datele colectate într-un cadru de guvernanță solid sunt publicabile și de încredere.",
+        "el": "Μόνο δεδομένα που συλλέγονται σε ασφαλές πλαίσιο διακυβέρνησης είναι δημοσιεύσιμα και αξιόπιστα.",
+        "es": "Solo los datos obtenidos bajo una gobernanza sólida son publicables y fiables.",
+        "fr": "Seules les données recueillies dans un cadre de gouvernance robuste sont publiables et fiables."
+      },
+      "origin": "Signature 04 curated",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_063",
+      "source_de": "Optimale Lösung: Projekt nicht starten, bevor Ethik, Einwilligung, Datenschutz, Materialschutz und Nebenbefundmanagement definiert sind.",
+      "locations": [
+        "base_case.optimal_summary"
+      ],
+      "translations": {
+        "en": "Optimal solution: do not start the project until ethics, consent, data protection, preservation of material and incidental-findings management have been defined.",
+        "ro": "Soluție optimă: nu începeți proiectul înainte de a defini etica, consimțământul, protecția datelor, protejarea materialului și gestionarea constatărilor incidentale.",
+        "el": "Βέλτιστη λύση: μην ξεκινήσετε το έργο πριν καθοριστούν η δεοντολογία, η συγκατάθεση, η προστασία δεδομένων, η προστασία του υλικού και η διαχείριση τυχαίων ευρημάτων.",
+        "es": "Solución óptima: no iniciar el proyecto hasta haber definido la ética, el consentimiento, la protección de datos, la protección del material y la gestión de hallazgos incidentales.",
+        "fr": "Solution optimale : ne pas démarrer le projet avant d’avoir défini l’éthique, le consentement, la protection des données, la préservation du matériel et la gestion des découvertes fortuites."
+      },
+      "origin": "Signature 04 curated",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_064",
+      "source_de": "Nach Projektidee/Kontext/Materiallage, vor Hypothese/Design/Analyseplan",
+      "locations": [
+        "reasoning_gate.position"
+      ],
+      "translations": {
+        "en": "After the project idea/context/material situation, before the hypothesis/design/analysis plan",
+        "ro": "După ideea de proiect/context/situația materialului, înainte de ipoteză/design/planul de analiză",
+        "el": "Μετά την ιδέα έργου/το πλαίσιο/την κατάσταση του υλικού, πριν από την υπόθεση/τον σχεδιασμό/το σχέδιο ανάλυσης",
+        "es": "Después de la idea de proyecto/contexto/situación del material, antes de la hipótesis/diseño/plan de análisis",
+        "fr": "Après l’idée de projet/le contexte/la situation du matériel, avant l’hypothèse/le design/le plan d’analyse"
+      },
+      "origin": "Signature 03",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_065",
+      "source_de": "Single Choice; Multi Select",
+      "locations": [
+        "reasoning_gate.question_types"
+      ],
+      "translations": {
+        "en": "Single Choice; Multi Select",
+        "ro": "Alegere unică; selecție multiplă",
+        "el": "Μοναδική επιλογή· πολλαπλή επιλογή",
+        "es": "Elección única; selección múltiple",
+        "fr": "Choix unique ; sélection multiple"
+      },
+      "origin": "Signature 03",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_066",
+      "source_de": "Was ist die zentrale Forschungsfrage bzw. was fehlt der vorliegenden Projektidee primär?",
+      "locations": [
+        "reasoning_gate.questions[0].prompt"
+      ],
+      "translations": {
+        "en": "What is the central research question, or what is primarily missing from the current project idea?",
+        "ro": "Care este întrebarea centrală de cercetare sau ce lipsește în principal din ideea actuală de proiect?",
+        "el": "Ποιο είναι το κεντρικό ερευνητικό ερώτημα ή τι λείπει κυρίως από την παρούσα ιδέα έργου;",
+        "es": "¿Cuál es la pregunta central de investigación o qué falta principalmente en la idea de proyecto actual?",
+        "fr": "Quelle est la question de recherche centrale, ou quel élément manque principalement à l’idée de projet actuelle ?"
+      },
+      "origin": "Signature 03",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_067",
+      "source_de": "Welche Ethik-, Einwilligungs-, Datenschutz- oder Rückmeldepflicht muss vor Projektstart geklärt sein?",
+      "locations": [
+        "reasoning_gate.questions[1].prompt"
+      ],
+      "translations": {
+        "en": "Which ethics, consent, data-protection or return-of-results obligation must be clarified before the project starts?",
+        "ro": "Ce obligație privind etica, consimțământul, protecția datelor sau returnarea rezultatelor trebuie clarificată înainte de începerea proiectului?",
+        "el": "Ποια υποχρέωση σχετικά με τη δεοντολογία, τη συγκατάθεση, την προστασία δεδομένων ή την επιστροφή αποτελεσμάτων πρέπει να διευκρινιστεί πριν από την έναρξη του έργου;",
+        "es": "¿Qué obligación relativa a la ética, el consentimiento, la protección de datos o la devolución de resultados debe aclararse antes de iniciar el proyecto?",
+        "fr": "Quelle obligation relative à l’éthique, au consentement, à la protection des données ou à la restitution des résultats doit être clarifiée avant le démarrage du projet?"
+      },
+      "origin": "Signature 04 curated",
+      "curation_note": "Rückmeldepflicht is curated as return/restitution-of-results obligation, matching the incidental/germline-finding context.",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_068",
+      "source_de": "2 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "locations": [
+        "reasoning_gate.decision"
+      ],
+      "translations": {
+        "en": "2 gate questions; Single Choice / Multi Select; before the main decision",
+        "ro": "2 întrebări-gate; alegere unică / selecție multiplă; înainte de decizia principală",
+        "el": "2 ερωτήσεις-gate· μοναδική επιλογή / πολλαπλή επιλογή· πριν από την κύρια απόφαση",
+        "es": "2 preguntas-gate; elección única / selección múltiple; antes de la decisión principal",
+        "fr": "2 questions-gate ; choix unique / sélection multiple ; avant la décision principale"
+      },
+      "origin": "Signature 03",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_069",
+      "source_de": "Projektidee",
+      "locations": [
+        "display_labels.Projektidee"
+      ],
+      "translations": {
+        "en": "Project idea",
+        "ro": "Ideea proiectului",
+        "el": "Ιδέα έργου",
+        "es": "Idea del proyecto",
+        "fr": "Idée de projet"
+      },
+      "origin": "Deep Dive 08",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_070",
+      "source_de": "Ziel",
+      "locations": [
+        "display_labels.Ziel"
+      ],
+      "translations": {
+        "en": "Objective",
+        "ro": "Obiectiv",
+        "el": "Στόχος",
+        "es": "Objetivo",
+        "fr": "Objectif"
+      },
+      "origin": "Signature 04 curated",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_071",
+      "source_de": "Problem",
+      "locations": [
+        "display_labels.Problem"
+      ],
+      "translations": {
+        "en": "Problem",
+        "ro": "Problemă",
+        "el": "Πρόβλημα",
+        "es": "Problema",
+        "fr": "Problème"
+      },
+      "origin": "Signature 04 curated",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_072",
+      "source_de": "Gefahr",
+      "locations": [
+        "display_labels.Gefahr"
+      ],
+      "translations": {
+        "en": "Risk",
+        "ro": "Risc",
+        "el": "Κίνδυνος",
+        "es": "Riesgo",
+        "fr": "Risque"
+      },
+      "origin": "Signature 03",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_073",
+      "source_de": "Material",
+      "locations": [
+        "display_labels.Material"
+      ],
+      "translations": {
+        "en": "Tissue material",
+        "ro": "Material tisular",
+        "el": "Ιστικό υλικό",
+        "es": "Tejido",
+        "fr": "Matériel tissulaire"
+      },
+      "origin": "Deep Dive 08",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_074",
+      "source_de": "Daten",
+      "locations": [
+        "display_labels.Daten"
+      ],
+      "translations": {
+        "en": "Data",
+        "ro": "Date",
+        "el": "Δεδομένα",
+        "es": "Datos",
+        "fr": "Données"
+      },
+      "origin": "Signature 04 curated",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_075",
+      "source_de": "Genetik",
+      "locations": [
+        "display_labels.Genetik"
+      ],
+      "translations": {
+        "en": "Genetics",
+        "ro": "Genetică",
+        "el": "Γενετική",
+        "es": "Genética",
+        "fr": "Génétique"
+      },
+      "origin": "Signature 04 curated",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_076",
+      "source_de": "Data Sharing",
+      "locations": [
+        "display_labels.Data Sharing"
+      ],
+      "translations": {
+        "en": "Data sharing",
+        "ro": "Partajarea datelor",
+        "el": "Κοινοποίηση δεδομένων",
+        "es": "Compartición de datos",
+        "fr": "Partage des données"
+      },
+      "origin": "Signature 04 curated",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_077",
+      "source_de": "Startvoraussetzung",
+      "locations": [
+        "display_labels.Startvoraussetzung"
+      ],
+      "translations": {
+        "en": "Prerequisites to start",
+        "ro": "Condiții pentru începere",
+        "el": "Προϋποθέσεις έναρξης",
+        "es": "Requisitos previos al inicio",
+        "fr": "Prérequis au démarrage"
+      },
+      "origin": "Signature 04 curated",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_078",
+      "source_de": "Materialschutz",
+      "locations": [
+        "display_labels.Materialschutz"
+      ],
+      "translations": {
+        "en": "Preservation of material",
+        "ro": "Protejarea materialului",
+        "el": "Προστασία υλικού",
+        "es": "Protección del material",
+        "fr": "Préservation du matériel"
+      },
+      "origin": "Signature 04 curated",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    },
+    {
+      "id": "S04_079",
+      "source_de": "Translation",
+      "locations": [
+        "display_labels.Translation"
+      ],
+      "translations": {
+        "en": "Translation",
+        "ro": "Translație",
+        "el": "Μεταφραστική αξιοποίηση",
+        "es": "Traslación",
+        "fr": "Translation"
+      },
+      "origin": "Signature 03",
+      "curation_note": "",
+      "status": "REVIEW_READY"
+    }
+  ],
+  "status": "REVIEW_READY_NOT_PATCHED"
+}

@@ -1,0 +1,65 @@
+{
+  "version": "v2.2.4r",
+  "runtime_label": "v2.2.4r RES Omics Signature 03 Translation",
+  "case_id": "RES_OMICS_001_v1_0",
+  "patch_type": "patch-only",
+  "base_version": "v2.2.4q",
+  "base_index_sha256": "cdfa9354143567dfe362196f4848d01f0bef6e8dacb0b1d8b9fbdab9ad9a716a",
+  "changed_runtime_files": [
+    "index.html"
+  ],
+  "added_patch_artifacts": [
+    "v224r_res_omics_signature03_translation.js",
+    "CHANGELOG_v2_2_4r.md",
+    "MANIFEST_v2_2_4r.json",
+    "QA_REPORT_v2_2_4r.md",
+    "QA_REPORT_v2_2_4r.json",
+    "ROLLBACK_v2_2_4r.md",
+    "SHA256SUMS.txt"
+  ],
+  "translation": {
+    "languages": [
+      "en",
+      "ro",
+      "el",
+      "es",
+      "fr"
+    ],
+    "unique_messages": 86,
+    "runtime_locations": 96,
+    "payload_hash_sha256": "694d0f578ab2108f210d16d874c7c2ac1b3374f0f7f244aa509e7aec176e8de0"
+  },
+  "qa": {
+    "syntax_pass": true,
+    "runtime_model_cycle_pass": true,
+    "protected_tokens_pass": true,
+    "isolation_pass": true,
+    "template_escape_safety_pass": true
+  },
+  "files": {
+    "index.html": {
+      "bytes": 5674157,
+      "sha256": "74f8225ff015cf1406ff66804687e4ed634d2de2a14f0c34cfc3dc0405810b47"
+    },
+    "v224r_res_omics_signature03_translation.js": {
+      "bytes": 63078,
+      "sha256": "2cde7a258908b0633ece4fb6e2857b958c5c83cfcdaec45c3ad48548a75bfce0"
+    },
+    "CHANGELOG_v2_2_4r.md": {
+      "bytes": 952,
+      "sha256": "9eafc9a0816e05ac7f1eff16f29f43e06dfa9ba7bf0deb2e0c7a34f03f7e77f2"
+    },
+    "QA_REPORT_v2_2_4r.md": {
+      "bytes": 572,
+      "sha256": "2c54f48cd487273675d951f2135412388db12e8d8cb3da43289fe4db7efcfe50"
+    },
+    "QA_REPORT_v2_2_4r.json": {
+      "bytes": 1146,
+      "sha256": "9ecd6186490fd75bc8490c6e53a069035d76c80ff86f7259c67a1d2e2f1d203f"
+    },
+    "ROLLBACK_v2_2_4r.md": {
+      "bytes": 202,
+      "sha256": "0da2f5cccdd934e355830b8ac966b1b61536512b442e0958a2393a689c998e8c"
+    }
+  }
+}

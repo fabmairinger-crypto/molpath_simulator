@@ -1,0 +1,20 @@
+{
+  "version": "v2.2.4o dMMR MSI-H Deep Dive 11 Translation",
+  "base_package": "molpath_v2_2_4n_ovar_deepdive10_translation_full_package.zip",
+  "case_id": "MTB_IO_001_v1_0",
+  "review_block_hash_sha256": "ebd0ecaf067cae61c4f45071fe74a1d12429d6873bce0d526c1ea20c8d4b6503",
+  "index_sha256": "7c1d89a57e88fbdf44f1a627e06fb1c5a53f6c9151ad61647ca9392c15a3cc10",
+  "messages": 148,
+  "source_locations": 163,
+  "languages": [
+    "en",
+    "ro",
+    "el",
+    "es",
+    "fr"
+  ],
+  "source_content_flags_preserved": "generic/CUP-like base case vs recurrent endometrial signature Deep Dive retained source-faithfully",
+  "technical_fields_preserved": true,
+  "no_new_mutation_observer": true,
+  "runtime_qa_passed": true
+}

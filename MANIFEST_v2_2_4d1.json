@@ -1,0 +1,31 @@
+{
+  "version": "v2.2.4d1 Method Catalog Escape Hotfix",
+  "created_at": "2026-08-06T11:58:00+02:00",
+  "base": "v2.2.4c UI Residue Translation Patch",
+  "fix": "Insert method runtime before the real final </body>, not inside reportDocumentHtml() template literal.",
+  "methods": 71,
+  "categories": 17,
+  "translated_info_texts": 55,
+  "languages": [
+    "de",
+    "en",
+    "ro",
+    "el",
+    "es",
+    "fr"
+  ],
+  "resource_values_changed": false,
+  "application_logic_changed": false,
+  "qa": {
+    "method_patch_marker_count": 1,
+    "blocks01_03_marker_count": 1,
+    "ui_residue_marker_count": 1,
+    "visible_raw_openReportWindow": false,
+    "visible_raw_case_registry": false,
+    "final_body_insertion": true,
+    "script_element_count": 14,
+    "index_sha256": "b2bae23d3e5078d7bd01c4a25340c2386ad90386674e46e7ca431f2cdab8de87",
+    "base_index_sha256": "c443ac7134a92a5e61aa61cf7e42937ea288d3d778427b10e48f553458bfb54b",
+    "runtime_js_sha256": "881f20455b3a549aacbf062a98f29402f01fde4c7d659bcec72672cef8197a0d"
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "version": "v2.2.4s",
+  "runtime_label": "v2.2.4s RES Ethics Signature 04 Translation",
+  "case_id": "RES_ETH_001_v1_0",
+  "patch_type": "patch-only",
+  "base_version": "v2.2.4r",
+  "base_index_sha256": "74f8225ff015cf1406ff66804687e4ed634d2de2a14f0c34cfc3dc0405810b47",
+  "changed_runtime_files": [
+    "index.html"
+  ],
+  "added_patch_artifacts": [
+    "v224s_res_eth_signature04_translation.js",
+    "MolPath_Signature04_RES_ETH_i18n_RuntimePayload_v1_0_CURATED.json",
+    "MolPath_Signature04_RES_ETH_Review_v1_0.xlsx",
+    "MolPath_Signature04_RES_ETH_TranslationCatalog_v1_0_REVIEW.json",
+    "CHANGELOG_v2_2_4s.md",
+    "QA_REPORT_v2_2_4s.md",
+    "QA_REPORT_v2_2_4s.json",
+    "ROLLBACK_v2_2_4s.md",
+    "MANIFEST_v2_2_4s.json",
+    "SHA256SUMS.txt"
+  ],
+  "translation": {
+    "languages": [
+      "en",
+      "ro",
+      "el",
+      "es",
+      "fr"
+    ],
+    "visible_source_strings": 83,
+    "visible_source_locations": 108,
+    "translated_messages": 79,
+    "translated_runtime_locations": 102,
+    "review_payload_hash_sha256": "40e691b51f5367f63cf2f88de23ed425593af92851058f0364113f19dc7a8ed4",
+    "runtime_payload_hash_sha256": "c89b653c04518716786db8879289ae8b03e734ce5da1eb085e2f160e439c3d80"
+  },
+  "qa": {
+    "syntax_pass": true,
+    "runtime_model_cycle_pass": true,
+    "protected_tokens_pass": true,
+    "source_alignment_pass": true,
+    "effective_dictionary_conflict_pass": true,
+    "isolation_pass": true,
+    "template_escape_safety_pass": true
+  },
+  "files": {
+    "index.html": {
+      "bytes": 5738341,
+      "sha256": "9c249f286884082b32415dc744a2489cd8269e0731e3c669914c94a801ec3faa"
+    },
+    "v224s_res_eth_signature04_translation.js": {
+      "bytes": 64122,
+      "sha256": "bf03de2d19b9b17b23baaeb2e4b7f617ac591051596f2b80ee877682c1bd0f00"
+    },
+    "MolPath_Signature04_RES_ETH_i18n_RuntimePayload_v1_0_CURATED.json": {
+      "bytes": 80118,
+      "sha256": "77ce7bf0f3b1f5eea1ecc780bcc75524183b48b6fc3043e0bca658c3d47228c6"
+    },
+    "MolPath_Signature04_RES_ETH_Review_v1_0.xlsx": {
+      "bytes": 30334,
+      "sha256": "0de7d0a5b374bf7de916743f65ec97d9d70d78235ac58ee2a722fbc03d80bec1"
+    },
+    "MolPath_Signature04_RES_ETH_TranslationCatalog_v1_0_REVIEW.json": {
+      "bytes": 63635,
+      "sha256": "7c050920b9e9390b9405510834c7641442a004ef91b86b746cb17b22bda51453"
+    },
+    "CHANGELOG_v2_2_4s.md": {
+      "bytes": 1162,
+      "sha256": "333bd2ec585add7eede28927c3e77a7d7d22a7eb9795e66b4c90e5b808a7c296"
+    },
+    "QA_REPORT_v2_2_4s.md": {
+      "bytes": 1010,
+      "sha256": "fd49068aaf76ba70408e7ed7cd977c82ac4ba28b2fddf0496c96844fc6f84123"
+    },
+    "QA_REPORT_v2_2_4s.json": {
+      "bytes": 1212,
+      "sha256": "c9833eb78199dd22e8ebe1182f82978f04da43403f133f41506734e69fb6b40f"
+    },
+    "ROLLBACK_v2_2_4s.md": {
+      "bytes": 200,
+      "sha256": "e3fe4386f9dce37af0de466713c59467a1710538d72fdfa415c047548c0f8218"
+    }
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "file": "/mnt/data/molpath_v2_2_4b_i18n_blocks01_03_integration/molpath_simulator_v2_2_4b_i18n_blocks01_03_integration_test.html",
+  "languages": {
+    "en": {
+      "expected_present": {
+        "Select tests": true,
+        "Cart": true,
+        "Start analytical run": true,
+        "All method groups": true
+      },
+      "german_leaks": [],
+      "overflow_count": 0,
+      "overflow_samples": []
+    },
+    "ro": {
+      "expected_present": {
+        "Selectați analizele": true,
+        "Coș": true,
+        "Porniți seria analitică": true,
+        "Toate grupele de metode": true
+      },
+      "german_leaks": [],
+      "overflow_count": 0,
+      "overflow_samples": []
+    },
+    "el": {
+      "expected_present": {
+        "Επιλογή εξετάσεων": true,
+        "Καλάθι": true,
+        "Έναρξη αναλυτικής σειράς": true,
+        "Όλες οι ομάδες μεθόδων": true
+      },
+      "german_leaks": [],
+      "overflow_count": 0,
+      "overflow_samples": []
+    },
+    "es": {
+      "expected_present": {
+        "Seleccionar pruebas": true,
+        "Carrito": true,
+        "Iniciar la serie analítica": true,
+        "Todos los grupos de métodos": true
+      },
+      "german_leaks": [],
+      "overflow_count": 0,
+      "overflow_samples": []
+    },
+    "fr": {
+      "expected_present": {
+        "Sélectionner les analyses": true,
+        "Panier": true,
+        "Démarrer la série analytique": true,
+        "Tous les groupes de méthodes": true
+      },
+      "german_leaks": [],
+      "overflow_count": 0,
+      "overflow_samples": []
+    }
+  },
+  "console_errors": [],
+  "page_errors": [],
+  "title": "MolPath Simulator v2.2.4b Translation Integration Test – Blocks 01–03",
+  "integration_meta": {
+    "version": "v2.2.4b Translation Integration Test – Blocks 01–03",
+    "base": "v2.2.4a Translation Quarantine Baseline",
+    "blocks": [
+      "BLOCK01_UI",
+      "BLOCK02_ORDER_CART_RESOURCES",
+      "BLOCK03_RUNTIME_REPORTS_FEEDBACK"
+    ],
+    "exactEntries": 306,
+    "templateEntries": 25,
+    "contextualEntries": 4,
+    "status": "integration_test_in_review"
+  },
+  "translation_block": {
+    "version": "v2.2.4b Translation Integration Test – Blocks 01–03",
+    "blockIds": [
+      "BLOCK01_UI",
+      "BLOCK02_ORDER_CART_RESOURCES",
+      "BLOCK03_RUNTIME_REPORTS_FEEDBACK"
+    ],
+    "exactEntries": 306,
+    "templateEntries": 25,
+    "status": "integration_test_in_review"
+  },
+  "template_checks": {
+    "en_sections": "3/10 sections",
+    "ro_points": "500 puncte",
+    "el_days": "5 εργάσιμες ημέρες",
+    "es_completion": "Finalización (Modo de evaluación): Bien, con pequeñas lagunas. Puntuación 75%. Fallzusammenfassung",
+    "fr_missing": "Composants CAPA manquants : SOP, Audit"
+  },
+  "context_checks": {
+    "material_cart": "Specimen use",
+    "material_generic": null,
+    "recommended_ro": "recomandată"
+  },
+  "german_restored": true
+}

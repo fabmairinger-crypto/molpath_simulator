@@ -1,0 +1,32 @@
+{
+  "version": "v2.2.4g CRC Deep Dive 03 Translation",
+  "base": "v2.2.4f NSCLC Deep Dive 02 Translation",
+  "case_id": "MTB_CRC_002_v1_3",
+  "review_block_hash_sha256": "4dde55d5f2fc68fc8c175d966509f42376a08994b9a155ecbcfb9e0dbe687e9f",
+  "index_sha256": "456dd464925f968633e8d1214a8301b175c9b009a4ae053979f11b1fd85d0b82",
+  "patch_js_sha256": "887b94e9a50d88c34e032023a354d29f39eb00c078b50ea2d99f34bbbb2de282",
+  "messages": 158,
+  "source_locations": 171,
+  "languages": [
+    "en",
+    "ro",
+    "el",
+    "es",
+    "fr"
+  ],
+  "runtime_corrections": [
+    "Intermediate",
+    "MVP prüfen",
+    "MTB; Länge=Standard; Schwierigkeit=Intermediate; Status=beta-standardized",
+    "MLH1-Methylierung/BRAF fehlen",
+    "Lynch sicher behauptet"
+  ],
+  "logic_changed": false,
+  "method_values_changed": false,
+  "scores_changed": false,
+  "save_data_changed": false,
+  "deep_dive_01_preserved": true,
+  "deep_dive_02_preserved": true,
+  "new_mutation_observer_added": false,
+  "new_language_change_listener_added": false
+}

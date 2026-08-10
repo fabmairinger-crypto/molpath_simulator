@@ -1,0 +1,43 @@
+{
+  "version": "v2.2.4f NSCLC Deep Dive 02 Translation",
+  "base": "v2.2.4e1 NSCLC Interaction Hotfix",
+  "case_id": "MTB_NSCLC_002_v1_3",
+  "review_block_hash_sha256": "05d96db690ef074de60adf51ea0fa9d72f00ec337a673863d7af89619bf951f2",
+  "index_sha256": "af9fb77d837d67879b518837fb703e6bb652c8c9b3eccf76a68897f4457b6fc5",
+  "patch_js_sha256": "3408226cc5023b595ca4174a704a07a54db4ae5a976c6e23fa9e4a301ca36567",
+  "messages": 145,
+  "source_locations": 148,
+  "languages": [
+    "en",
+    "ro",
+    "el",
+    "es",
+    "fr"
+  ],
+  "runtime_corrections": [
+    "Resistenzdiagnostik bei Progress",
+    "Gewebe-Rebiopsie bei negativer Liquid Biopsy",
+    "Liquid Biopsy richtig einordnen",
+    "Progressionspanel: erworbener Resistenzmechanismus wird plausibilisiert; Liquid Biopsy allein ist bei negativem Ergebnis nicht ausreichend.",
+    "Rebiopsie liefert beurteilbares Tumormaterial für Resistenzanalyse.",
+    "Negative Liquid Biopsy wird nur mit ctDNA-/Materialkontext interpretiert; Rebiopsie bleibt Option.",
+    "Fallabhängige QC verwertbar, sofern die gewählte Methode material- und fragestellungsgerecht ist.",
+    "Integrierte Interpretation vollständig: Liquid Biopsy negativ: reicht das oder Rebiopsie? Die gewählten Methoden beantworten die Kernfrage mit angemessener Aussagekraft und Limitationen.",
+    "Teilbefund: Für die Kernentscheidung („Liquid Biopsy negativ: reicht das oder Rebiopsie?“) fehlen noch zentrale Bausteine oder die Methode ist zu eng gewählt.",
+    "Resistenzdiagnostik bei Progress in der MTB-Kernaussage korrekt einordnen",
+    "Gewebe-Rebiopsie bei negativer Liquid Biopsy in der MTB-Kernaussage korrekt einordnen",
+    "Liquid Biopsy richtig einordnen in der MTB-Kernaussage korrekt einordnen",
+    "Aussagegrenzen und ggf. Nachforderung klar kommunizieren",
+    "Falschaussage: Ein isolierter Marker reicht ohne Kontext sicher aus",
+    "Optimale Lösung: Liquid Biopsy negativ: reicht das oder Rebiopsie? – mit fallgerechter Methodenkombination, Material-/QC-Bewertung und klarer MTB-Kommunikation.",
+    "nur Liquid Biopsy gewählt",
+    "Rebiopsie gewählt, aber MET/CNV/Transformation nicht bedacht",
+    "MVP prüfen",
+    "MTB; Länge=Complex; Schwierigkeit=Advanced; Status=beta-standardized"
+  ],
+  "logic_changed": false,
+  "method_values_changed": false,
+  "scores_changed": false,
+  "save_data_changed": false,
+  "deep_dive_01_preserved": true
+}

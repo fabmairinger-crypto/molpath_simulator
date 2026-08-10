@@ -1,0 +1,27 @@
+{
+  "version": "v2.2.4e1 NSCLC Interaction Hotfix",
+  "base": "v2.2.4d1 Method Catalog Escape Hotfix",
+  "case_id": "MTB_NSCLC_001_v0_6",
+  "review_block_hash_sha256": "fe15866ff7477bb490c6df8eb54d50248d50c269cde286b2e676b534f65948ce",
+  "index_sha256": "d7a83fd860b39e9121c7957125b446fd7780619a1c0fbcb2a08987a4c711700f",
+  "patch_js_sha256": "f49e24fedf404cdb7091adcd592da425487800b8f8128084823b9115f4449607",
+  "messages": 148,
+  "source_locations": 153,
+  "languages": [
+    "en",
+    "ro",
+    "el",
+    "es",
+    "fr"
+  ],
+  "runtime_corrections": [
+    "RNA-Fusionsdiagnostik primär fehlt",
+    "entitätsfremde Tests gewählt",
+    "Core/MVP prüfen",
+    "MTB; Länge=Standard; Schwierigkeit=Intermediate; Status=curated-core"
+  ],
+  "logic_changed": false,
+  "method_values_changed": false,
+  "scores_changed": false,
+  "save_data_changed": false
+}

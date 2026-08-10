@@ -1,0 +1,27 @@
+{
+  "version": "v2.2.4j LAB Run QC Deep Dive 06 Translation",
+  "base": "v2.2.4i ERBB2 VUS Deep Dive 05 Translation",
+  "case_id": "LAB_RUN_002_v0_8",
+  "review_block_hash_sha256": "1964cc5235d1fdaae6392b5344d20f542d55235a528b323fb767477d4bd39166",
+  "index_sha256": "d58ded509c788b2ffae30d6a2c96241f7377ffbbd5546428d2aa7e8f9dd9571a",
+  "patch_js_sha256": "133de5d65036b121222234a861ce12a05532f2ad3a4e7c74dc32ff7c109c799a",
+  "messages": 147,
+  "source_locations": 159,
+  "languages": [
+    "en",
+    "ro",
+    "el",
+    "es",
+    "fr"
+  ],
+  "runtime_corrections": [
+    "LAB; Länge=Standard; Schwierigkeit=Intermediate; Status=curated-core"
+  ],
+  "logic_changed": false,
+  "method_values_changed": false,
+  "scores_changed": false,
+  "save_data_changed": false,
+  "deep_dives_01_05_preserved": true,
+  "new_mutation_observer_added": false,
+  "new_language_change_listener_added": false
+}

@@ -1,0 +1,20 @@
+{
+  "version": "v2.2.4m mCRC Deep Dive 09 Translation",
+  "base_package": "molpath_v2_2_4l_res_hyp_deepdive08_translation_full_package.zip",
+  "case_id": "MTB_CRC_001_v0_6",
+  "review_block_hash_sha256": "1ffaf7f35e93a83ac246783709d10bbc5f1b7a57701df2a5ba4b826dec4b510e",
+  "index_sha256": "b937f29427ab842e5796e1cfac1730182177bebac08bf983350f5ddd5939f25b",
+  "messages": 136,
+  "source_locations": 149,
+  "languages": [
+    "en",
+    "ro",
+    "el",
+    "es",
+    "fr"
+  ],
+  "source_discrepancy_preserved": "base case 58-year-old woman/left-sided; Deep Dive 62-year-old man/right-sided",
+  "technical_fields_preserved": true,
+  "no_new_mutation_observer": true,
+  "runtime_qa_passed": true
+}

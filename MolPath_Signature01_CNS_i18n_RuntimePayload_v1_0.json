@@ -1,0 +1,1776 @@
+{
+  "block_hash_sha256": "1e74b5118f69aa53ff54d92541b6482c494094c4f21af1ed7bf3de6622016f35",
+  "block_id": "SIGNATURE01_CNS_BASE",
+  "case_id": "MTB_CNS_001_v1_0",
+  "version": "1.0",
+  "created_at": "2026-08-10T14:20:00+02:00",
+  "status": "READY_FOR_USER_REVIEW",
+  "source_manifest": {
+    "case_metadata": {
+      "path": "data/case_metadata_v1_5_AP1b_final.json",
+      "sha256": "55daaaef3113885b3b5bc0c84d2bbdeefb106f4720cfd04c5d8d8929ccbcd3da"
+    },
+    "base_case": {
+      "path": "data/cases_v1_4_universal_methods.json",
+      "sha256": "aaed62f7091c9706f0ea1cc6a5526a74ce7d5ca696d366f14ffbf99d043d7723"
+    },
+    "reasoning_gates": {
+      "path": "data/clinical_reasoning_gates_v1_5_AP1b_final.json",
+      "sha256": "deece3a9b5596e0463b8dcb7ddc902338cbd8f2369404d42b2d235c4e2a974e8"
+    },
+    "message_catalog": {
+      "path": "i18n_message_catalog_v2_2_3.json",
+      "sha256": "4cd851992eed4fc35d6361a24810640196adf3e292cf49edc02fff27b0430ee6"
+    },
+    "glossary": {
+      "path": "i18n_glossary_v2_2_3.json",
+      "sha256": "e6d06e5a34a083602119cddca8584980671692377d3ee367d5c3388ac62f5a08"
+    },
+    "index": {
+      "path": "index.html",
+      "sha256": "7c1d89a57e88fbdf44f1a627e06fb1c5a53f6c9151ad61647ca9392c15a3cc10"
+    }
+  },
+  "de": {
+    "metadata": {
+      "case_id": "MTB_CNS_001_v1_0",
+      "base_id": "MTB_CNS_001",
+      "title": "Glioblastom → MGMT/IDH/Methylierung und Temozolomid-Kontext",
+      "domain": "MTB",
+      "met_addon_type": "no",
+      "subdomain": "Neuroonkologie / Epigenetik / Methylierung",
+      "case_type": "clinical_decision",
+      "length_class": "Standard",
+      "estimated_minutes": {
+        "min": 8,
+        "max": 12
+      },
+      "difficulty": "Intermediate",
+      "status": "curated-core",
+      "review_flag": "Core/MVP prüfen",
+      "review_priority": "high",
+      "core_decision": "MGMT/IDH/Methylierung und Temozolomid-Kontext",
+      "learning_objectives": [
+        "Zentrale klinisch-molekulare Fragestellung aus Anamnese, Histologie und Materialkontext ableiten",
+        "Epigenetische Marker/Methylierungsprofile als diagnostische oder prädiktive Ebene einordnen",
+        "Musterlösung im MTB klar, limitiert und patientenrelevant kommunizieren"
+      ],
+      "tags": [
+        "Glioblastom",
+        "MGMT",
+        "IDH",
+        "Methylierung",
+        "Temozolomid",
+        "Neuroonkologie",
+        "Epigenetik"
+      ],
+      "ap1b_decision": "MTB; Länge=Standard; Schwierigkeit=Intermediate; Status=curated-core"
+    },
+    "base_case": {
+      "id": "MTB_CNS_001_v1_0",
+      "title": "Glioblastom → MGMT/IDH/Methylierung und Temozolomid-Kontext",
+      "short": "CNS MGMT/IDH",
+      "mode": "patient_care",
+      "logic": "generic_patient",
+      "difficulty": "beginner_intermediate",
+      "estimated_time_min": "8–12",
+      "budget": {
+        "points_max": 950,
+        "sections_max": 14,
+        "tat_goal": 9
+      },
+      "allowed_tests": [
+        "he_review",
+        "ki67",
+        "idh1_ihc_seq",
+        "mgmt_methylation",
+        "cns_methylation_classifier",
+        "glioma_ngs_panel",
+        "tmb_msi_neuro",
+        "broad_pan_panel"
+      ],
+      "story": [
+        {
+          "id": "intake",
+          "title": "Initialer Auftrag",
+          "items": [
+            [
+              "Einsender",
+              "Neuroonkologie / Neuropathologie"
+            ],
+            [
+              "Klinische Information",
+              "68-jähriger Patient nach subtotaler Resektion eines hirneigenen Tumors."
+            ],
+            [
+              "Fragestellung",
+              "Klassifikation, Prognose und Temozolomid-Nutzen einschätzen."
+            ],
+            [
+              "Was ist noch unklar?",
+              "IDH-Status, MGMT-Methylierung und ggf. Methylierungsklasse."
+            ]
+          ]
+        },
+        {
+          "id": "history",
+          "title": "Anamnese und klinischer Kontext",
+          "items": [
+            [
+              "Klinik",
+              "Krampfanfall und progressive Aphasie, MRT mit ringförmig kontrastmittelaufnehmender Raumforderung."
+            ],
+            [
+              "Therapieplanung",
+              "Radiochemotherapie wird diskutiert."
+            ],
+            [
+              "Material",
+              "Resektat liegt vor, ausreichend Tumor."
+            ],
+            [
+              "MTB-Zeitdruck",
+              "Befund soll vor Therapieplanung finalisiert werden."
+            ]
+          ]
+        },
+        {
+          "id": "histo",
+          "title": "Histologie + Vor-IHC",
+          "items": [
+            [
+              "HE",
+              "Hochgradig glialer Tumor mit Nekrosen und mikrovaskulärer Proliferation."
+            ],
+            [
+              "Ki67",
+              "hoch, ca. 30–40 %."
+            ],
+            [
+              "Arbeitsdiagnose",
+              "Glioblastom wahrscheinlich."
+            ],
+            [
+              "Noch offen",
+              "Molekulare WHO-Integration: IDH, MGMT, ggf. Methylom/Classifier."
+            ]
+          ]
+        },
+        {
+          "id": "material",
+          "title": "Materialprüfung",
+          "items": [
+            [
+              "Material",
+              "FFPE-Resektat, Block T3."
+            ],
+            [
+              "Tumoranteil",
+              "ca. 80 %."
+            ],
+            [
+              "Nekrose",
+              "vorhanden, aber vitale Tumorareale markierbar."
+            ],
+            [
+              "Verfügbare Schnitte",
+              "14 Schnitte planbar."
+            ],
+            [
+              "Materialfalle",
+              "MGMT ist epigenetisch; ein reines DNA-NGS-Panel beantwortet die Temozolomid-Frage nicht."
+            ]
+          ]
+        }
+      ],
+      "required_groups": [
+        {
+          "id": "idh",
+          "label": "IDH-Status",
+          "tests": [
+            "idh1_ihc_seq",
+            "glioma_ngs_panel",
+            "broad_pan_panel"
+          ],
+          "suggest": "idh1_ihc_seq"
+        },
+        {
+          "id": "mgmt",
+          "label": "MGMT-Promotor-Methylierung",
+          "tests": [
+            "mgmt_methylation"
+          ],
+          "suggest": "mgmt_methylation"
+        },
+        {
+          "id": "classifier",
+          "label": "Methylierungsklassifikation",
+          "tests": [
+            "cns_methylation_classifier"
+          ],
+          "suggest": "cns_methylation_classifier"
+        }
+      ],
+      "result_sections": [
+        {
+          "label": "IDH",
+          "test_any": [
+            "idh1_ihc_seq",
+            "glioma_ngs_panel",
+            "broad_pan_panel"
+          ],
+          "result": "IDH1-R132H-IHC negativ; IDH1/2-Sequenzierung Wildtyp."
+        },
+        {
+          "label": "MGMT",
+          "test_any": [
+            "mgmt_methylation"
+          ],
+          "result": "MGMT-Promotor methyliert."
+        },
+        {
+          "label": "Methylierungsclassifier",
+          "test_any": [
+            "cns_methylation_classifier"
+          ],
+          "result": "Methylierungsklasse: Glioblastom, IDH-Wildtyp, hoher classifier score."
+        },
+        {
+          "label": "Gliom-NGS",
+          "test_any": [
+            "glioma_ngs_panel",
+            "broad_pan_panel"
+          ],
+          "result": "TERT-Promotor-Mutation; EGFR-Amplifikationssignal; kompatibel mit GBM-Kontext."
+        },
+        {
+          "label": "TMB/MSI",
+          "test_any": [
+            "tmb_msi_neuro"
+          ],
+          "result": "Kein primärer Entscheidungsanker für diesen Temozolomid-/IDH-Kontext."
+        }
+      ],
+      "always_findings": [
+        [
+          "QC",
+          "Tumoranteil hoch; epigenetische und DNA-basierte Analysen verwertbar."
+        ]
+      ],
+      "complete_interpretation": "Glioblastom, IDH-Wildtyp, MGMT-methyliert: IDH-WT prognostisch ungünstiger; MGMT-Methylierung spricht für Temozolomid-Sensitivität.",
+      "partial_interpretation": "Teilbefund: Für Therapieplanung/Klassifikation fehlen IDH-, MGMT- oder Methylierungsclassifier-Bausteine.",
+      "bad_tests": [
+        "tmb_msi_neuro"
+      ],
+      "mtb_checks": [
+        [
+          "idh",
+          "IDH-Wildtyp korrekt einordnen"
+        ],
+        [
+          "mgmt",
+          "MGMT-Methylierung als epigenetischen prädiktiven Marker erklären"
+        ],
+        [
+          "classifier",
+          "Methylierungsclassifier in die WHO-/Diagnoseintegration einordnen"
+        ],
+        [
+          "tmz",
+          "Temozolomid-Kontext nennen"
+        ],
+        [
+          "bad",
+          "Falschaussage: MGMT ist eine klassische Treibermutation"
+        ]
+      ],
+      "optimal_summary": "Optimale Lösung: IDH-Status, MGMT-Promotor-Methylierung und Methylierungsklassifikation integriert bewerten; MGMT nicht als Mutation missverstehen.",
+      "tags": [
+        "Glioblastom",
+        "MGMT",
+        "IDH",
+        "Methylierung",
+        "Temozolomid",
+        "Neuroonkologie",
+        "Epigenetik"
+      ]
+    },
+    "reasoning_gate": {
+      "case_id": "MTB_CNS_001_v1_0",
+      "base_id": "MTB_CNS_001",
+      "required": true,
+      "position": "Nach Fallakte/Anamnese/Histo-Material, vor Anforderung",
+      "gate_count": 2,
+      "question_types": "Single Choice; Multi Select",
+      "questions": [
+        {
+          "id": "gate_1",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Was ist die zentrale klinisch-molekulare Fragestellung in diesem Fall?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        },
+        {
+          "id": "gate_2",
+          "type": "single_choice_or_multiselect",
+          "prompt": "Welche Rolle spielt Methylierung/IDH/MGMT als diagnostische, prädiktive oder Klassifikations-Ebene?",
+          "answer_key_status": "to_be_generated_in_v1_5_patch"
+        }
+      ],
+      "score_domain": "clinical_reasoning",
+      "decision": "2 Gate-Frage(n); Single Choice / Multi Select; vor Hauptentscheidung",
+      "failed_core_question_cap": 80
+    }
+  },
+  "languages": {
+    "en": {
+      "metadata": {
+        "case_id": "MTB_CNS_001_v1_0",
+        "base_id": "MTB_CNS_001",
+        "title": "Glioblastoma → MGMT/IDH/methylation and temozolomide context",
+        "domain": "MTB",
+        "met_addon_type": "no",
+        "subdomain": "Neuro-oncology / epigenetics / methylation",
+        "case_type": "clinical_decision",
+        "length_class": "Standard",
+        "estimated_minutes": {
+          "min": 8,
+          "max": 12
+        },
+        "difficulty": "Intermediate",
+        "status": "curated-core",
+        "review_flag": "Core/MVP prüfen",
+        "review_priority": "high",
+        "core_decision": "MGMT/IDH/methylation and temozolomide context",
+        "learning_objectives": [
+          "Derive the central clinical-molecular question from the history, histology and tissue context",
+          "Interpret epigenetic markers/methylation profiles as a diagnostic or predictive layer",
+          "Communicate the reference answer clearly in the MTB, including limitations and patient relevance"
+        ],
+        "tags": [
+          "Glioblastoma",
+          "MGMT",
+          "IDH",
+          "Methylation",
+          "Temozolomide",
+          "Neuro-oncology",
+          "Epigenetics"
+        ],
+        "ap1b_decision": "MTB; Length=Standard; Difficulty=Intermediate; Status=curated-core"
+      },
+      "base_case": {
+        "id": "MTB_CNS_001_v1_0",
+        "title": "Glioblastoma → MGMT/IDH/methylation and temozolomide context",
+        "short": "CNS MGMT/IDH",
+        "mode": "patient_care",
+        "logic": "generic_patient",
+        "difficulty": "beginner_intermediate",
+        "estimated_time_min": "8–12",
+        "budget": {
+          "points_max": 950,
+          "sections_max": 14,
+          "tat_goal": 9
+        },
+        "allowed_tests": [
+          "he_review",
+          "ki67",
+          "idh1_ihc_seq",
+          "mgmt_methylation",
+          "cns_methylation_classifier",
+          "glioma_ngs_panel",
+          "tmb_msi_neuro",
+          "broad_pan_panel"
+        ],
+        "story": [
+          {
+            "id": "intake",
+            "title": "Initial request",
+            "items": [
+              [
+                "Referrer",
+                "Neuro-oncology / neuropathology"
+              ],
+              [
+                "Clinical information",
+                "68-year-old patient after subtotal resection of a primary brain tumour."
+              ],
+              [
+                "Clinical question",
+                "Assess classification, prognosis and potential benefit from temozolomide."
+              ],
+              [
+                "What remains unclear?",
+                "IDH status, MGMT methylation and, if applicable, methylation class."
+              ]
+            ]
+          },
+          {
+            "id": "history",
+            "title": "Medical history and clinical context",
+            "items": [
+              [
+                "Clinical context",
+                "Seizure and progressive aphasia; MRI shows a ring-enhancing mass."
+              ],
+              [
+                "Treatment planning",
+                "Chemoradiotherapy is being discussed."
+              ],
+              [
+                "Tissue material",
+                "Resection specimen available; sufficient tumour tissue."
+              ],
+              [
+                "MTB time pressure",
+                "The report should be finalised before treatment planning."
+              ]
+            ]
+          },
+          {
+            "id": "histo",
+            "title": "Histology and initial IHC",
+            "items": [
+              [
+                "H&E",
+                "High-grade glial tumour with necrosis and microvascular proliferation."
+              ],
+              [
+                "Ki67",
+                "high, approx. 30–40%."
+              ],
+              [
+                "Working diagnosis",
+                "Glioblastoma likely."
+              ],
+              [
+                "Still pending",
+                "Molecular WHO integration: IDH, MGMT and, if applicable, methylome/classifier."
+              ]
+            ]
+          },
+          {
+            "id": "material",
+            "title": "Tissue assessment",
+            "items": [
+              [
+                "Tissue material",
+                "FFPE resection specimen, block T3."
+              ],
+              [
+                "Tumour cell content",
+                "approx. 80%."
+              ],
+              [
+                "Necrosis",
+                "present, but viable tumour areas can be marked."
+              ],
+              [
+                "Available sections",
+                "14 unstained sections can be planned."
+              ],
+              [
+                "Tissue-use pitfall",
+                "MGMT is epigenetic; a DNA-NGS-only panel does not answer the temozolomide question."
+              ]
+            ]
+          }
+        ],
+        "required_groups": [
+          {
+            "id": "idh",
+            "label": "IDH status",
+            "tests": [
+              "idh1_ihc_seq",
+              "glioma_ngs_panel",
+              "broad_pan_panel"
+            ],
+            "suggest": "idh1_ihc_seq"
+          },
+          {
+            "id": "mgmt",
+            "label": "MGMT promoter methylation",
+            "tests": [
+              "mgmt_methylation"
+            ],
+            "suggest": "mgmt_methylation"
+          },
+          {
+            "id": "classifier",
+            "label": "Methylation classification",
+            "tests": [
+              "cns_methylation_classifier"
+            ],
+            "suggest": "cns_methylation_classifier"
+          }
+        ],
+        "result_sections": [
+          {
+            "label": "IDH",
+            "test_any": [
+              "idh1_ihc_seq",
+              "glioma_ngs_panel",
+              "broad_pan_panel"
+            ],
+            "result": "IDH1-R132H IHC negative; IDH1/2 sequencing wild type."
+          },
+          {
+            "label": "MGMT",
+            "test_any": [
+              "mgmt_methylation"
+            ],
+            "result": "MGMT promoter methylated."
+          },
+          {
+            "label": "Methylation classifier",
+            "test_any": [
+              "cns_methylation_classifier"
+            ],
+            "result": "Methylation class: glioblastoma, IDH-wildtype, high classifier score."
+          },
+          {
+            "label": "Glioma NGS",
+            "test_any": [
+              "glioma_ngs_panel",
+              "broad_pan_panel"
+            ],
+            "result": "TERT promoter mutation; EGFR amplification signal; compatible with the GBM context."
+          },
+          {
+            "label": "TMB/MSI",
+            "test_any": [
+              "tmb_msi_neuro"
+            ],
+            "result": "Not a primary decision anchor in this temozolomide/IDH context."
+          }
+        ],
+        "always_findings": [
+          [
+            "QC",
+            "High tumour cell content; epigenetic and DNA-based analyses are technically evaluable."
+          ]
+        ],
+        "complete_interpretation": "Glioblastoma, IDH-wildtype, MGMT-methylated: IDH-WT is prognostically less favourable; MGMT methylation supports temozolomide sensitivity.",
+        "partial_interpretation": "Partial result: IDH, MGMT or methylation-classifier components are missing for treatment planning/classification.",
+        "bad_tests": [
+          "tmb_msi_neuro"
+        ],
+        "mtb_checks": [
+          [
+            "idh",
+            "Correctly interpret IDH-wildtype"
+          ],
+          [
+            "mgmt",
+            "Explain MGMT methylation as an epigenetic predictive marker"
+          ],
+          [
+            "classifier",
+            "Place the methylation classifier within WHO/diagnostic integration"
+          ],
+          [
+            "tmz",
+            "State the temozolomide context"
+          ],
+          [
+            "bad",
+            "Incorrect statement: MGMT is a classic driver mutation"
+          ]
+        ],
+        "optimal_summary": "Optimal solution: integrate IDH status, MGMT promoter methylation and methylation classification; do not misinterpret MGMT as a mutation.",
+        "tags": [
+          "Glioblastoma",
+          "MGMT",
+          "IDH",
+          "Methylation",
+          "Temozolomide",
+          "Neuro-oncology",
+          "Epigenetics"
+        ]
+      },
+      "reasoning_gate": {
+        "case_id": "MTB_CNS_001_v1_0",
+        "base_id": "MTB_CNS_001",
+        "required": true,
+        "position": "After case file/history/histology-tissue review, before ordering",
+        "gate_count": 2,
+        "question_types": "Single choice; multiple select",
+        "questions": [
+          {
+            "id": "gate_1",
+            "type": "single_choice_or_multiselect",
+            "prompt": "What is the central clinical-molecular question in this case?",
+            "answer_key_status": "to_be_generated_in_v1_5_patch"
+          },
+          {
+            "id": "gate_2",
+            "type": "single_choice_or_multiselect",
+            "prompt": "What role do methylation/IDH/MGMT play as a diagnostic, predictive or classification layer?",
+            "answer_key_status": "to_be_generated_in_v1_5_patch"
+          }
+        ],
+        "score_domain": "clinical_reasoning",
+        "decision": "2 gate questions; single choice / multiple select; before the main decision",
+        "failed_core_question_cap": 80
+      }
+    },
+    "ro": {
+      "metadata": {
+        "case_id": "MTB_CNS_001_v1_0",
+        "base_id": "MTB_CNS_001",
+        "title": "Glioblastom → context MGMT/IDH/metilare și temozolomidă",
+        "domain": "MTB",
+        "met_addon_type": "no",
+        "subdomain": "Neuro-oncologie / epigenetică / metilare",
+        "case_type": "clinical_decision",
+        "length_class": "Standard",
+        "estimated_minutes": {
+          "min": 8,
+          "max": 12
+        },
+        "difficulty": "Intermediate",
+        "status": "curated-core",
+        "review_flag": "Core/MVP prüfen",
+        "review_priority": "high",
+        "core_decision": "Context MGMT/IDH/metilare și temozolomidă",
+        "learning_objectives": [
+          "Formulați întrebarea clinico-moleculară centrală pe baza anamnezei, histologiei și contextului materialului tisular",
+          "Încadrarea markerilor epigenetici/profilelor de metilare ca nivel diagnostic sau predictiv",
+          "Comunicați clar soluția de referință în MTB, cu limitările și relevanța pentru pacient"
+        ],
+        "tags": [
+          "Glioblastom",
+          "MGMT",
+          "IDH",
+          "Metilare",
+          "Temozolomidă",
+          "Neuro-oncologie",
+          "Epigenetică"
+        ],
+        "ap1b_decision": "MTB; Durată=Standard; Dificultate=Intermediar; Status=curated-core"
+      },
+      "base_case": {
+        "id": "MTB_CNS_001_v1_0",
+        "title": "Glioblastom → context MGMT/IDH/metilare și temozolomidă",
+        "short": "CNS MGMT/IDH",
+        "mode": "patient_care",
+        "logic": "generic_patient",
+        "difficulty": "beginner_intermediate",
+        "estimated_time_min": "8–12",
+        "budget": {
+          "points_max": 950,
+          "sections_max": 14,
+          "tat_goal": 9
+        },
+        "allowed_tests": [
+          "he_review",
+          "ki67",
+          "idh1_ihc_seq",
+          "mgmt_methylation",
+          "cns_methylation_classifier",
+          "glioma_ngs_panel",
+          "tmb_msi_neuro",
+          "broad_pan_panel"
+        ],
+        "story": [
+          {
+            "id": "intake",
+            "title": "Solicitare inițială",
+            "items": [
+              [
+                "Solicitant",
+                "Neuro-oncologie / neuropatologie"
+              ],
+              [
+                "Informații clinice",
+                "Pacient în vârstă de 68 de ani după rezecția subtotală a unei tumori cerebrale primare."
+              ],
+              [
+                "Întrebare clinică",
+                "Evaluarea clasificării, prognosticului și a beneficiului potențial al temozolomidei."
+              ],
+              [
+                "Ce rămâne neclar?",
+                "Statusul IDH, metilarea MGMT și, dacă este cazul, clasa de metilare."
+              ]
+            ]
+          },
+          {
+            "id": "history",
+            "title": "Anamneză și context clinic",
+            "items": [
+              [
+                "Context clinic",
+                "Criză epileptică și afazie progresivă; RMN-ul evidențiază o formațiune expansivă cu priză de contrast inelară."
+              ],
+              [
+                "Planificarea tratamentului",
+                "Se discută radiochimioterapia."
+              ],
+              [
+                "Material tisular",
+                "Piesa de rezecție este disponibilă; țesut tumoral suficient."
+              ],
+              [
+                "Presiune de timp pentru MTB",
+                "Raportul trebuie finalizat înainte de planificarea tratamentului."
+              ]
+            ]
+          },
+          {
+            "id": "histo",
+            "title": "Histologie și IHC inițială",
+            "items": [
+              [
+                "H&E",
+                "Tumor glial de grad înalt cu necroză și proliferare microvasculară."
+              ],
+              [
+                "Ki67",
+                "ridicat, aprox. 30–40%."
+              ],
+              [
+                "Diagnostic de lucru",
+                "Glioblastom probabil."
+              ],
+              [
+                "Încă neefectuat",
+                "Integrare moleculară conform OMS: IDH, MGMT și, dacă este cazul, metilom/clasificator."
+              ]
+            ]
+          },
+          {
+            "id": "material",
+            "title": "Evaluarea materialului tisular",
+            "items": [
+              [
+                "Material tisular",
+                "Piesă de rezecție FFPE, bloc T3."
+              ],
+              [
+                "Procent tumoral",
+                "aprox. 80%."
+              ],
+              [
+                "Necroză",
+                "prezentă, dar pot fi marcate zone tumorale viabile."
+              ],
+              [
+                "Secțiuni disponibile",
+                "Pot fi planificate 14 secțiuni necolorate."
+              ],
+              [
+                "Capcană privind utilizarea materialului",
+                "MGMT este un marker epigenetic; un panel exclusiv DNA-NGS nu răspunde la întrebarea privind temozolomida."
+              ]
+            ]
+          }
+        ],
+        "required_groups": [
+          {
+            "id": "idh",
+            "label": "Status IDH",
+            "tests": [
+              "idh1_ihc_seq",
+              "glioma_ngs_panel",
+              "broad_pan_panel"
+            ],
+            "suggest": "idh1_ihc_seq"
+          },
+          {
+            "id": "mgmt",
+            "label": "Metilarea promotorului MGMT",
+            "tests": [
+              "mgmt_methylation"
+            ],
+            "suggest": "mgmt_methylation"
+          },
+          {
+            "id": "classifier",
+            "label": "Clasificare prin metilare",
+            "tests": [
+              "cns_methylation_classifier"
+            ],
+            "suggest": "cns_methylation_classifier"
+          }
+        ],
+        "result_sections": [
+          {
+            "label": "IDH",
+            "test_any": [
+              "idh1_ihc_seq",
+              "glioma_ngs_panel",
+              "broad_pan_panel"
+            ],
+            "result": "IHC IDH1-R132H negativă; secvențiere IDH1/2 de tip wild-type."
+          },
+          {
+            "label": "MGMT",
+            "test_any": [
+              "mgmt_methylation"
+            ],
+            "result": "Promotorul MGMT este metilat."
+          },
+          {
+            "label": "Clasificator de metilare",
+            "test_any": [
+              "cns_methylation_classifier"
+            ],
+            "result": "Clasă de metilare: glioblastom, IDH wild-type, scor ridicat al clasificatorului."
+          },
+          {
+            "label": "NGS pentru gliom",
+            "test_any": [
+              "glioma_ngs_panel",
+              "broad_pan_panel"
+            ],
+            "result": "Mutație a promotorului TERT; semnal de amplificare EGFR; compatibil cu contextul GBM."
+          },
+          {
+            "label": "TMB/MSI",
+            "test_any": [
+              "tmb_msi_neuro"
+            ],
+            "result": "Nu reprezintă un reper decizional principal în acest context temozolomidă/IDH."
+          }
+        ],
+        "always_findings": [
+          [
+            "QC",
+            "Procent tumoral ridicat; analizele epigenetice și cele bazate pe DNA sunt tehnic evaluabile."
+          ]
+        ],
+        "complete_interpretation": "Glioblastom, IDH wild-type, MGMT metilat: IDH-WT este asociat cu un prognostic mai nefavorabil; metilarea MGMT susține sensibilitatea la temozolomidă.",
+        "partial_interpretation": "Rezultat parțial: pentru planificarea tratamentului/clasificare lipsesc componentele IDH, MGMT sau ale clasificatorului de metilare.",
+        "bad_tests": [
+          "tmb_msi_neuro"
+        ],
+        "mtb_checks": [
+          [
+            "idh",
+            "Interpretarea corectă a statusului IDH wild-type"
+          ],
+          [
+            "mgmt",
+            "Explicarea metilării MGMT ca marker predictiv epigenetic"
+          ],
+          [
+            "classifier",
+            "Încadrarea clasificatorului de metilare în integrarea OMS/diagnostică"
+          ],
+          [
+            "tmz",
+            "Menționarea contextului temozolomidei"
+          ],
+          [
+            "bad",
+            "Afirmație incorectă: MGMT este o mutație driver clasică"
+          ]
+        ],
+        "optimal_summary": "Soluție optimă: evaluarea integrată a statusului IDH, metilării promotorului MGMT și clasificării prin metilare; MGMT nu trebuie interpretat greșit ca mutație.",
+        "tags": [
+          "Glioblastom",
+          "MGMT",
+          "IDH",
+          "Metilare",
+          "Temozolomidă",
+          "Neuro-oncologie",
+          "Epigenetică"
+        ]
+      },
+      "reasoning_gate": {
+        "case_id": "MTB_CNS_001_v1_0",
+        "base_id": "MTB_CNS_001",
+        "required": true,
+        "position": "După dosarul cazului/anamneză/histologie-evaluarea materialului, înainte de solicitarea analizelor",
+        "gate_count": 2,
+        "question_types": "Alegere unică; selecție multiplă",
+        "questions": [
+          {
+            "id": "gate_1",
+            "type": "single_choice_or_multiselect",
+            "prompt": "Care este întrebarea clinico-moleculară centrală în acest caz?",
+            "answer_key_status": "to_be_generated_in_v1_5_patch"
+          },
+          {
+            "id": "gate_2",
+            "type": "single_choice_or_multiselect",
+            "prompt": "Ce rol au metilarea/IDH/MGMT ca nivel diagnostic, predictiv sau de clasificare?",
+            "answer_key_status": "to_be_generated_in_v1_5_patch"
+          }
+        ],
+        "score_domain": "clinical_reasoning",
+        "decision": "2 întrebări-gate; alegere unică / selecție multiplă; înainte de decizia principală",
+        "failed_core_question_cap": 80
+      }
+    },
+    "el": {
+      "metadata": {
+        "case_id": "MTB_CNS_001_v1_0",
+        "base_id": "MTB_CNS_001",
+        "title": "Γλοιοβλάστωμα → πλαίσιο MGMT/IDH/μεθυλίωσης και τεμοζολομίδης",
+        "domain": "MTB",
+        "met_addon_type": "no",
+        "subdomain": "Νευροογκολογία / επιγενετική / μεθυλίωση",
+        "case_type": "clinical_decision",
+        "length_class": "Standard",
+        "estimated_minutes": {
+          "min": 8,
+          "max": 12
+        },
+        "difficulty": "Intermediate",
+        "status": "curated-core",
+        "review_flag": "Core/MVP prüfen",
+        "review_priority": "high",
+        "core_decision": "Πλαίσιο MGMT/IDH/μεθυλίωσης και τεμοζολομίδης",
+        "learning_objectives": [
+          "Διατυπώστε το κεντρικό κλινικομοριακό ερώτημα από το ιστορικό, την ιστολογία και το πλαίσιο του ιστικού υλικού",
+          "Ερμηνεία των επιγενετικών δεικτών/προφίλ μεθυλίωσης ως διαγνωστικού ή προβλεπτικού επιπέδου",
+          "Επικοινωνήστε με σαφήνεια την ενδεικτική λύση στο MTB, μαζί με τους περιορισμούς και τη σημασία για τον ασθενή"
+        ],
+        "tags": [
+          "Γλοιοβλάστωμα",
+          "MGMT",
+          "IDH",
+          "Μεθυλίωση",
+          "Τεμοζολομίδη",
+          "Νευροογκολογία",
+          "Επιγενετική"
+        ],
+        "ap1b_decision": "MTB; Διάρκεια=Standard; Δυσκολία=Intermediate; Κατάσταση=curated-core"
+      },
+      "base_case": {
+        "id": "MTB_CNS_001_v1_0",
+        "title": "Γλοιοβλάστωμα → πλαίσιο MGMT/IDH/μεθυλίωσης και τεμοζολομίδης",
+        "short": "CNS MGMT/IDH",
+        "mode": "patient_care",
+        "logic": "generic_patient",
+        "difficulty": "beginner_intermediate",
+        "estimated_time_min": "8–12",
+        "budget": {
+          "points_max": 950,
+          "sections_max": 14,
+          "tat_goal": 9
+        },
+        "allowed_tests": [
+          "he_review",
+          "ki67",
+          "idh1_ihc_seq",
+          "mgmt_methylation",
+          "cns_methylation_classifier",
+          "glioma_ngs_panel",
+          "tmb_msi_neuro",
+          "broad_pan_panel"
+        ],
+        "story": [
+          {
+            "id": "intake",
+            "title": "Αρχικό αίτημα",
+            "items": [
+              [
+                "Αποστέλλων ιατρός/τμήμα",
+                "Νευροογκολογία / Νευροπαθολογία"
+              ],
+              [
+                "Κλινικές πληροφορίες",
+                "Ασθενής 68 ετών μετά από υφολική εκτομή πρωτοπαθούς όγκου του εγκεφάλου."
+              ],
+              [
+                "Κλινικό ερώτημα",
+                "Αξιολόγηση της ταξινόμησης, της πρόγνωσης και του δυνητικού οφέλους από την τεμοζολομίδη."
+              ],
+              [
+                "Τι παραμένει ασαφές;",
+                "Κατάσταση IDH, μεθυλίωση MGMT και, κατά περίπτωση, κλάση μεθυλίωσης."
+              ]
+            ]
+          },
+          {
+            "id": "history",
+            "title": "Ιατρικό ιστορικό και κλινικό πλαίσιο",
+            "items": [
+              [
+                "Κλινικό πλαίσιο",
+                "Επιληπτική κρίση και προοδευτική αφασία· η MRI δείχνει χωροκατακτητική βλάβη με δακτυλιοειδή πρόσληψη σκιαγραφικού."
+              ],
+              [
+                "Σχεδιασμός θεραπείας",
+                "Συζητείται χημειοακτινοθεραπεία."
+              ],
+              [
+                "Ιστικό υλικό",
+                "Υπάρχει διαθέσιμο παρασκεύασμα εκτομής με επαρκή νεοπλασματικό ιστό."
+              ],
+              [
+                "Χρονική πίεση για το MTB",
+                "Η έκθεση πρέπει να οριστικοποιηθεί πριν από τον σχεδιασμό της θεραπείας."
+              ]
+            ]
+          },
+          {
+            "id": "histo",
+            "title": "Ιστολογία και αρχική IHC",
+            "items": [
+              [
+                "H&E",
+                "Γλοιακός όγκος υψηλού βαθμού με νέκρωση και μικροαγγειακό πολλαπλασιασμό."
+              ],
+              [
+                "Ki67",
+                "υψηλό, περίπου 30–40%."
+              ],
+              [
+                "Προσωρινή διάγνωση",
+                "Πιθανό γλοιοβλάστωμα."
+              ],
+              [
+                "Εκκρεμεί",
+                "Μοριακή ολοκλήρωση κατά WHO: IDH, MGMT και, κατά περίπτωση, μεθυλίωμα/ταξινομητής."
+              ]
+            ]
+          },
+          {
+            "id": "material",
+            "title": "Αξιολόγηση ιστικού υλικού",
+            "items": [
+              [
+                "Ιστικό υλικό",
+                "Παρασκεύασμα εκτομής FFPE, κύβος T3."
+              ],
+              [
+                "Ποσοστό νεοπλασματικών κυττάρων",
+                "περίπου 80%."
+              ],
+              [
+                "Νέκρωση",
+                "παρούσα, αλλά μπορούν να επισημανθούν βιώσιμες νεοπλασματικές περιοχές."
+              ],
+              [
+                "Διαθέσιμες τομές",
+                "Μπορούν να προγραμματιστούν 14 άχρωμες τομές."
+              ],
+              [
+                "Παγίδα στη χρήση του ιστικού υλικού",
+                "Το MGMT είναι επιγενετικός δείκτης· ένα αποκλειστικά DNA-NGS panel δεν απαντά στο ερώτημα της τεμοζολομίδης."
+              ]
+            ]
+          }
+        ],
+        "required_groups": [
+          {
+            "id": "idh",
+            "label": "Κατάσταση IDH",
+            "tests": [
+              "idh1_ihc_seq",
+              "glioma_ngs_panel",
+              "broad_pan_panel"
+            ],
+            "suggest": "idh1_ihc_seq"
+          },
+          {
+            "id": "mgmt",
+            "label": "Μεθυλίωση προαγωγέα MGMT",
+            "tests": [
+              "mgmt_methylation"
+            ],
+            "suggest": "mgmt_methylation"
+          },
+          {
+            "id": "classifier",
+            "label": "Ταξινόμηση μεθυλίωσης",
+            "tests": [
+              "cns_methylation_classifier"
+            ],
+            "suggest": "cns_methylation_classifier"
+          }
+        ],
+        "result_sections": [
+          {
+            "label": "IDH",
+            "test_any": [
+              "idh1_ihc_seq",
+              "glioma_ngs_panel",
+              "broad_pan_panel"
+            ],
+            "result": "IHC IDH1-R132H αρνητική· αλληλούχηση IDH1/2 wild type."
+          },
+          {
+            "label": "MGMT",
+            "test_any": [
+              "mgmt_methylation"
+            ],
+            "result": "Ο προαγωγέας MGMT είναι μεθυλιωμένος."
+          },
+          {
+            "label": "Ταξινομητής μεθυλίωσης",
+            "test_any": [
+              "cns_methylation_classifier"
+            ],
+            "result": "Κλάση μεθυλίωσης: γλοιοβλάστωμα, IDH-wildtype, υψηλό classifier score."
+          },
+          {
+            "label": "NGS γλοιώματος",
+            "test_any": [
+              "glioma_ngs_panel",
+              "broad_pan_panel"
+            ],
+            "result": "Μετάλλαξη προαγωγέα TERT· σήμα ενίσχυσης EGFR· συμβατό με το πλαίσιο GBM."
+          },
+          {
+            "label": "TMB/MSI",
+            "test_any": [
+              "tmb_msi_neuro"
+            ],
+            "result": "Δεν αποτελεί πρωτεύον σημείο αναφοράς για τη λήψη απόφασης σε αυτό το πλαίσιο τεμοζολομίδης/IDH."
+          }
+        ],
+        "always_findings": [
+          [
+            "QC",
+            "Υψηλό ποσοστό νεοπλασματικών κυττάρων· οι επιγενετικές και DNA-βασισμένες αναλύσεις είναι τεχνικά αξιολογήσιμες."
+          ]
+        ],
+        "complete_interpretation": "Γλοιοβλάστωμα, IDH-wildtype, MGMT-μεθυλιωμένο: το IDH-WT συνδέεται με δυσμενέστερη πρόγνωση· η μεθυλίωση MGMT υποστηρίζει ευαισθησία στην τεμοζολομίδη.",
+        "partial_interpretation": "Μερικό αποτέλεσμα: για τον σχεδιασμό θεραπείας/την ταξινόμηση λείπουν στοιχεία IDH, MGMT ή του ταξινομητή μεθυλίωσης.",
+        "bad_tests": [
+          "tmb_msi_neuro"
+        ],
+        "mtb_checks": [
+          [
+            "idh",
+            "Ορθή ερμηνεία του IDH-wildtype"
+          ],
+          [
+            "mgmt",
+            "Εξήγηση της μεθυλίωσης MGMT ως επιγενετικού προβλεπτικού δείκτη"
+          ],
+          [
+            "classifier",
+            "Ένταξη του ταξινομητή μεθυλίωσης στην ολοκλήρωση WHO/διάγνωσης"
+          ],
+          [
+            "tmz",
+            "Αναφορά του πλαισίου της τεμοζολομίδης"
+          ],
+          [
+            "bad",
+            "Λανθασμένη δήλωση: το MGMT είναι κλασική driver μετάλλαξη"
+          ]
+        ],
+        "optimal_summary": "Βέλτιστη λύση: ολοκληρωμένη αξιολόγηση της κατάστασης IDH, της μεθυλίωσης του προαγωγέα MGMT και της ταξινόμησης μεθυλίωσης· το MGMT δεν πρέπει να παρερμηνεύεται ως μετάλλαξη.",
+        "tags": [
+          "Γλοιοβλάστωμα",
+          "MGMT",
+          "IDH",
+          "Μεθυλίωση",
+          "Τεμοζολομίδη",
+          "Νευροογκολογία",
+          "Επιγενετική"
+        ]
+      },
+      "reasoning_gate": {
+        "case_id": "MTB_CNS_001_v1_0",
+        "base_id": "MTB_CNS_001",
+        "required": true,
+        "position": "Μετά τον φάκελο περιστατικού/ιστορικό/ιστολογία-υλικό, πριν από την παραγγελία εξετάσεων",
+        "gate_count": 2,
+        "question_types": "Μονή επιλογή· πολλαπλή επιλογή",
+        "questions": [
+          {
+            "id": "gate_1",
+            "type": "single_choice_or_multiselect",
+            "prompt": "Ποιο είναι το κεντρικό κλινικομοριακό ερώτημα σε αυτό το περιστατικό;",
+            "answer_key_status": "to_be_generated_in_v1_5_patch"
+          },
+          {
+            "id": "gate_2",
+            "type": "single_choice_or_multiselect",
+            "prompt": "Ποιος είναι ο ρόλος της μεθυλίωσης/IDH/MGMT ως διαγνωστικού, προβλεπτικού ή ταξινομικού επιπέδου;",
+            "answer_key_status": "to_be_generated_in_v1_5_patch"
+          }
+        ],
+        "score_domain": "clinical_reasoning",
+        "decision": "2 ερωτήσεις-gate· μονή επιλογή / πολλαπλή επιλογή· πριν από την κύρια απόφαση",
+        "failed_core_question_cap": 80
+      }
+    },
+    "es": {
+      "metadata": {
+        "case_id": "MTB_CNS_001_v1_0",
+        "base_id": "MTB_CNS_001",
+        "title": "Glioblastoma → contexto de MGMT/IDH/metilación y temozolomida",
+        "domain": "MTB",
+        "met_addon_type": "no",
+        "subdomain": "Neurooncología / epigenética / metilación",
+        "case_type": "clinical_decision",
+        "length_class": "Standard",
+        "estimated_minutes": {
+          "min": 8,
+          "max": 12
+        },
+        "difficulty": "Intermediate",
+        "status": "curated-core",
+        "review_flag": "Core/MVP prüfen",
+        "review_priority": "high",
+        "core_decision": "Contexto de MGMT/IDH/metilación y temozolomida",
+        "learning_objectives": [
+          "Deducir la pregunta clínico-molecular central a partir de la anamnesis, la histología y el contexto del tejido",
+          "Interpretar los marcadores epigenéticos/perfiles de metilación como nivel diagnóstico o predictivo",
+          "Comunicar con claridad la solución de referencia en el MTB, incluidas las limitaciones y la relevancia para el paciente"
+        ],
+        "tags": [
+          "Glioblastoma",
+          "MGMT",
+          "IDH",
+          "Metilación",
+          "Temozolomida",
+          "Neurooncología",
+          "Epigenética"
+        ],
+        "ap1b_decision": "MTB; Duración=Estándar; Dificultad=Intermedia; Estado=curated-core"
+      },
+      "base_case": {
+        "id": "MTB_CNS_001_v1_0",
+        "title": "Glioblastoma → contexto de MGMT/IDH/metilación y temozolomida",
+        "short": "CNS MGMT/IDH",
+        "mode": "patient_care",
+        "logic": "generic_patient",
+        "difficulty": "beginner_intermediate",
+        "estimated_time_min": "8–12",
+        "budget": {
+          "points_max": 950,
+          "sections_max": 14,
+          "tat_goal": 9
+        },
+        "allowed_tests": [
+          "he_review",
+          "ki67",
+          "idh1_ihc_seq",
+          "mgmt_methylation",
+          "cns_methylation_classifier",
+          "glioma_ngs_panel",
+          "tmb_msi_neuro",
+          "broad_pan_panel"
+        ],
+        "story": [
+          {
+            "id": "intake",
+            "title": "Solicitud inicial",
+            "items": [
+              [
+                "Solicitante",
+                "Neurooncología / neuropatología"
+              ],
+              [
+                "Información clínica",
+                "Paciente de 68 años tras resección subtotal de un tumor cerebral primario."
+              ],
+              [
+                "Pregunta clínica",
+                "Evaluar la clasificación, el pronóstico y el posible beneficio de la temozolomida."
+              ],
+              [
+                "¿Qué sigue sin estar claro?",
+                "Estado de IDH, metilación de MGMT y, si procede, clase de metilación."
+              ]
+            ]
+          },
+          {
+            "id": "history",
+            "title": "Anamnesis y contexto clínico",
+            "items": [
+              [
+                "Contexto clínico",
+                "Crisis epiléptica y afasia progresiva; la RM muestra una lesión ocupante de espacio con realce anular."
+              ],
+              [
+                "Planificación del tratamiento",
+                "Se está considerando radioquimioterapia."
+              ],
+              [
+                "Tejido",
+                "Se dispone de la pieza de resección; tejido tumoral suficiente."
+              ],
+              [
+                "Presión de tiempo para el MTB",
+                "El informe debe finalizarse antes de la planificación del tratamiento."
+              ]
+            ]
+          },
+          {
+            "id": "histo",
+            "title": "Histología e IHC inicial",
+            "items": [
+              [
+                "H&E",
+                "Tumor glial de alto grado con necrosis y proliferación microvascular."
+              ],
+              [
+                "Ki67",
+                "alto, aprox. 30–40 %."
+              ],
+              [
+                "Diagnóstico de trabajo",
+                "Glioblastoma probable."
+              ],
+              [
+                "Pendiente",
+                "Integración molecular según la OMS: IDH, MGMT y, si procede, metiloma/clasificador."
+              ]
+            ]
+          },
+          {
+            "id": "material",
+            "title": "Evaluación del tejido",
+            "items": [
+              [
+                "Tejido",
+                "Pieza de resección FFPE, bloque T3."
+              ],
+              [
+                "Porcentaje tumoral",
+                "aprox. 80 %."
+              ],
+              [
+                "Necrosis",
+                "presente, pero pueden marcarse áreas tumorales viables."
+              ],
+              [
+                "Cortes disponibles",
+                "Pueden planificarse 14 cortes sin teñir."
+              ],
+              [
+                "Riesgo de agotamiento del tejido",
+                "MGMT es un marcador epigenético; un panel basado únicamente en DNA-NGS no responde a la cuestión de la temozolomida."
+              ]
+            ]
+          }
+        ],
+        "required_groups": [
+          {
+            "id": "idh",
+            "label": "Estado de IDH",
+            "tests": [
+              "idh1_ihc_seq",
+              "glioma_ngs_panel",
+              "broad_pan_panel"
+            ],
+            "suggest": "idh1_ihc_seq"
+          },
+          {
+            "id": "mgmt",
+            "label": "Metilación del promotor de MGMT",
+            "tests": [
+              "mgmt_methylation"
+            ],
+            "suggest": "mgmt_methylation"
+          },
+          {
+            "id": "classifier",
+            "label": "Clasificación por metilación",
+            "tests": [
+              "cns_methylation_classifier"
+            ],
+            "suggest": "cns_methylation_classifier"
+          }
+        ],
+        "result_sections": [
+          {
+            "label": "IDH",
+            "test_any": [
+              "idh1_ihc_seq",
+              "glioma_ngs_panel",
+              "broad_pan_panel"
+            ],
+            "result": "IHC de IDH1-R132H negativa; secuenciación de IDH1/2 tipo wild-type."
+          },
+          {
+            "label": "MGMT",
+            "test_any": [
+              "mgmt_methylation"
+            ],
+            "result": "Promotor de MGMT metilado."
+          },
+          {
+            "label": "Clasificador de metilación",
+            "test_any": [
+              "cns_methylation_classifier"
+            ],
+            "result": "Clase de metilación: glioblastoma, IDH wild-type, puntuación alta del clasificador."
+          },
+          {
+            "label": "NGS de glioma",
+            "test_any": [
+              "glioma_ngs_panel",
+              "broad_pan_panel"
+            ],
+            "result": "Mutación del promotor de TERT; señal de amplificación de EGFR; compatible con el contexto de GBM."
+          },
+          {
+            "label": "TMB/MSI",
+            "test_any": [
+              "tmb_msi_neuro"
+            ],
+            "result": "No es un eje principal de decisión en este contexto de temozolomida/IDH."
+          }
+        ],
+        "always_findings": [
+          [
+            "QC",
+            "Porcentaje tumoral alto; los análisis epigenéticos y basados en DNA son técnicamente evaluables."
+          ]
+        ],
+        "complete_interpretation": "Glioblastoma, IDH wild-type, MGMT metilado: IDH-WT se asocia a un pronóstico más desfavorable; la metilación de MGMT apoya la sensibilidad a temozolomida.",
+        "partial_interpretation": "Resultado parcial: para la planificación terapéutica/clasificación faltan componentes de IDH, MGMT o del clasificador de metilación.",
+        "bad_tests": [
+          "tmb_msi_neuro"
+        ],
+        "mtb_checks": [
+          [
+            "idh",
+            "Interpretar correctamente IDH wild-type"
+          ],
+          [
+            "mgmt",
+            "Explicar la metilación de MGMT como marcador predictivo epigenético"
+          ],
+          [
+            "classifier",
+            "Integrar el clasificador de metilación en la integración OMS/diagnóstica"
+          ],
+          [
+            "tmz",
+            "Mencionar el contexto de temozolomida"
+          ],
+          [
+            "bad",
+            "Afirmación incorrecta: MGMT es una mutación driver clásica"
+          ]
+        ],
+        "optimal_summary": "Solución óptima: evaluar de forma integrada el estado de IDH, la metilación del promotor de MGMT y la clasificación por metilación; no interpretar erróneamente MGMT como una mutación.",
+        "tags": [
+          "Glioblastoma",
+          "MGMT",
+          "IDH",
+          "Metilación",
+          "Temozolomida",
+          "Neurooncología",
+          "Epigenética"
+        ]
+      },
+      "reasoning_gate": {
+        "case_id": "MTB_CNS_001_v1_0",
+        "base_id": "MTB_CNS_001",
+        "required": true,
+        "position": "Tras revisar el caso/anamnesis/histología-material, antes de solicitar pruebas",
+        "gate_count": 2,
+        "question_types": "Elección única; selección múltiple",
+        "questions": [
+          {
+            "id": "gate_1",
+            "type": "single_choice_or_multiselect",
+            "prompt": "¿Cuál es la pregunta clínico-molecular central en este caso?",
+            "answer_key_status": "to_be_generated_in_v1_5_patch"
+          },
+          {
+            "id": "gate_2",
+            "type": "single_choice_or_multiselect",
+            "prompt": "¿Qué papel desempeñan la metilación/IDH/MGMT como nivel diagnóstico, predictivo o de clasificación?",
+            "answer_key_status": "to_be_generated_in_v1_5_patch"
+          }
+        ],
+        "score_domain": "clinical_reasoning",
+        "decision": "2 preguntas-gate; elección única / selección múltiple; antes de la decisión principal",
+        "failed_core_question_cap": 80
+      }
+    },
+    "fr": {
+      "metadata": {
+        "case_id": "MTB_CNS_001_v1_0",
+        "base_id": "MTB_CNS_001",
+        "title": "Glioblastome → contexte MGMT/IDH/méthylation et témozolomide",
+        "domain": "MTB",
+        "met_addon_type": "no",
+        "subdomain": "Neuro-oncologie / épigénétique / méthylation",
+        "case_type": "clinical_decision",
+        "length_class": "Standard",
+        "estimated_minutes": {
+          "min": 8,
+          "max": 12
+        },
+        "difficulty": "Intermediate",
+        "status": "curated-core",
+        "review_flag": "Core/MVP prüfen",
+        "review_priority": "high",
+        "core_decision": "Contexte MGMT/IDH/méthylation et témozolomide",
+        "learning_objectives": [
+          "Dégager la question clinico-moléculaire centrale à partir de l’anamnèse, de l’histologie et du contexte tissulaire",
+          "Interpréter les marqueurs épigénétiques/profils de méthylation comme niveau diagnostique ou prédictif",
+          "Communiquer clairement la solution de référence en MTB, avec ses limites et sa pertinence pour le patient"
+        ],
+        "tags": [
+          "Glioblastome",
+          "MGMT",
+          "IDH",
+          "Méthylation",
+          "Témozolomide",
+          "Neuro-oncologie",
+          "Épigénétique"
+        ],
+        "ap1b_decision": "MTB ; Durée=Standard ; Difficulté=Intermédiaire ; Statut=curated-core"
+      },
+      "base_case": {
+        "id": "MTB_CNS_001_v1_0",
+        "title": "Glioblastome → contexte MGMT/IDH/méthylation et témozolomide",
+        "short": "CNS MGMT/IDH",
+        "mode": "patient_care",
+        "logic": "generic_patient",
+        "difficulty": "beginner_intermediate",
+        "estimated_time_min": "8–12",
+        "budget": {
+          "points_max": 950,
+          "sections_max": 14,
+          "tat_goal": 9
+        },
+        "allowed_tests": [
+          "he_review",
+          "ki67",
+          "idh1_ihc_seq",
+          "mgmt_methylation",
+          "cns_methylation_classifier",
+          "glioma_ngs_panel",
+          "tmb_msi_neuro",
+          "broad_pan_panel"
+        ],
+        "story": [
+          {
+            "id": "intake",
+            "title": "Demande initiale",
+            "items": [
+              [
+                "Prescripteur",
+                "Neuro-oncologie / neuropathologie"
+              ],
+              [
+                "Informations cliniques",
+                "Patient de 68 ans après résection subtotale d’une tumeur cérébrale primitive."
+              ],
+              [
+                "Question clinique",
+                "Évaluer la classification, le pronostic et le bénéfice potentiel du témozolomide."
+              ],
+              [
+                "Que reste-t-il à clarifier ?",
+                "Statut IDH, méthylation de MGMT et, le cas échéant, classe de méthylation."
+              ]
+            ]
+          },
+          {
+            "id": "history",
+            "title": "Anamnèse et contexte clinique",
+            "items": [
+              [
+                "Contexte clinique",
+                "Crise épileptique et aphasie progressive ; l’IRM montre une lésion expansive à rehaussement annulaire."
+              ],
+              [
+                "Planification thérapeutique",
+                "Une radiochimiothérapie est discutée."
+              ],
+              [
+                "Matériel tissulaire",
+                "La pièce de résection est disponible ; tissu tumoral suffisant."
+              ],
+              [
+                "Contrainte de délai pour le MTB",
+                "Le compte rendu doit être finalisé avant la planification thérapeutique."
+              ]
+            ]
+          },
+          {
+            "id": "histo",
+            "title": "Histologie et IHC initiale",
+            "items": [
+              [
+                "H&E",
+                "Tumeur gliale de haut grade avec nécrose et prolifération microvasculaire."
+              ],
+              [
+                "Ki67",
+                "élevé, env. 30–40 %."
+              ],
+              [
+                "Diagnostic de travail",
+                "Glioblastome probable."
+              ],
+              [
+                "À compléter",
+                "Intégration moléculaire selon l’OMS : IDH, MGMT et, le cas échéant, méthylome/classifieur."
+              ]
+            ]
+          },
+          {
+            "id": "material",
+            "title": "Évaluation du matériel tissulaire",
+            "items": [
+              [
+                "Matériel tissulaire",
+                "Pièce de résection FFPE, bloc T3."
+              ],
+              [
+                "Cellularité tumorale",
+                "env. 80 %."
+              ],
+              [
+                "Nécrose",
+                "présente, mais des zones tumorales viables peuvent être repérées."
+              ],
+              [
+                "Coupes disponibles",
+                "14 coupes non colorées peuvent être planifiées."
+              ],
+              [
+                "Piège lié à l’utilisation du tissu",
+                "MGMT est un marqueur épigénétique ; un panel reposant uniquement sur le DNA-NGS ne répond pas à la question du témozolomide."
+              ]
+            ]
+          }
+        ],
+        "required_groups": [
+          {
+            "id": "idh",
+            "label": "Statut IDH",
+            "tests": [
+              "idh1_ihc_seq",
+              "glioma_ngs_panel",
+              "broad_pan_panel"
+            ],
+            "suggest": "idh1_ihc_seq"
+          },
+          {
+            "id": "mgmt",
+            "label": "Méthylation du promoteur de MGMT",
+            "tests": [
+              "mgmt_methylation"
+            ],
+            "suggest": "mgmt_methylation"
+          },
+          {
+            "id": "classifier",
+            "label": "Classification par méthylation",
+            "tests": [
+              "cns_methylation_classifier"
+            ],
+            "suggest": "cns_methylation_classifier"
+          }
+        ],
+        "result_sections": [
+          {
+            "label": "IDH",
+            "test_any": [
+              "idh1_ihc_seq",
+              "glioma_ngs_panel",
+              "broad_pan_panel"
+            ],
+            "result": "IHC IDH1-R132H négative ; séquençage IDH1/2 de type sauvage."
+          },
+          {
+            "label": "MGMT",
+            "test_any": [
+              "mgmt_methylation"
+            ],
+            "result": "Promoteur de MGMT méthylé."
+          },
+          {
+            "label": "Classifieur de méthylation",
+            "test_any": [
+              "cns_methylation_classifier"
+            ],
+            "result": "Classe de méthylation : glioblastome, IDH de type sauvage, score élevé du classifieur."
+          },
+          {
+            "label": "NGS du gliome",
+            "test_any": [
+              "glioma_ngs_panel",
+              "broad_pan_panel"
+            ],
+            "result": "Mutation du promoteur de TERT ; signal d’amplification d’EGFR ; compatible avec le contexte de GBM."
+          },
+          {
+            "label": "TMB/MSI",
+            "test_any": [
+              "tmb_msi_neuro"
+            ],
+            "result": "Ne constitue pas un élément décisionnel principal dans ce contexte témozolomide/IDH."
+          }
+        ],
+        "always_findings": [
+          [
+            "QC",
+            "Cellularité tumorale élevée ; les analyses épigénétiques et les analyses DNA sont techniquement interprétables."
+          ]
+        ],
+        "complete_interpretation": "Glioblastome, IDH de type sauvage, MGMT méthylé : l’IDH-WT est associé à un pronostic plus défavorable ; la méthylation de MGMT est en faveur d’une sensibilité au témozolomide.",
+        "partial_interpretation": "Résultat partiel : des éléments IDH, MGMT ou du classifieur de méthylation manquent pour la planification thérapeutique/classification.",
+        "bad_tests": [
+          "tmb_msi_neuro"
+        ],
+        "mtb_checks": [
+          [
+            "idh",
+            "Interpréter correctement le statut IDH de type sauvage"
+          ],
+          [
+            "mgmt",
+            "Expliquer la méthylation de MGMT comme marqueur prédictif épigénétique"
+          ],
+          [
+            "classifier",
+            "Intégrer le classifieur de méthylation dans l’intégration OMS/diagnostique"
+          ],
+          [
+            "tmz",
+            "Mentionner le contexte du témozolomide"
+          ],
+          [
+            "bad",
+            "Affirmation incorrecte : MGMT est une mutation driver classique"
+          ]
+        ],
+        "optimal_summary": "Solution optimale : évaluer de façon intégrée le statut IDH, la méthylation du promoteur de MGMT et la classification par méthylation ; ne pas interpréter à tort MGMT comme une mutation.",
+        "tags": [
+          "Glioblastome",
+          "MGMT",
+          "IDH",
+          "Méthylation",
+          "Témozolomide",
+          "Neuro-oncologie",
+          "Épigénétique"
+        ]
+      },
+      "reasoning_gate": {
+        "case_id": "MTB_CNS_001_v1_0",
+        "base_id": "MTB_CNS_001",
+        "required": true,
+        "position": "Après le dossier du cas/l’anamnèse/l’histologie-évaluation du matériel, avant la prescription des analyses",
+        "gate_count": 2,
+        "question_types": "Choix unique ; sélection multiple",
+        "questions": [
+          {
+            "id": "gate_1",
+            "type": "single_choice_or_multiselect",
+            "prompt": "Quelle est la question clinico-moléculaire centrale dans ce cas ?",
+            "answer_key_status": "to_be_generated_in_v1_5_patch"
+          },
+          {
+            "id": "gate_2",
+            "type": "single_choice_or_multiselect",
+            "prompt": "Quel rôle jouent la méthylation/IDH/MGMT comme niveau diagnostique, prédictif ou de classification ?",
+            "answer_key_status": "to_be_generated_in_v1_5_patch"
+          }
+        ],
+        "score_domain": "clinical_reasoning",
+        "decision": "2 questions-gate ; choix unique / sélection multiple ; avant la décision principale",
+        "failed_core_question_cap": 80
+      }
+    }
+  }
+}

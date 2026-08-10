@@ -1,0 +1,17 @@
+{
+  "version": "2.2.4",
+  "baseline": "2.2.3",
+  "artifact": "molpath_simulator_v2_2_4_menu_cart_case_library_translation.html",
+  "languages": [
+    "de",
+    "en",
+    "ro",
+    "el",
+    "es",
+    "fr"
+  ],
+  "case_titles": 91,
+  "subdomains": 18,
+  "core_decisions": 88,
+  "dictionary_pairs_added": 803
+}

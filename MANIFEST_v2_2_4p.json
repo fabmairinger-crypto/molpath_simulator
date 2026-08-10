@@ -1,0 +1,28 @@
+{
+  "version": "v2.2.4p CNS Signature 01 Translation",
+  "base_package": "v8.zip",
+  "case_id": "MTB_CNS_001_v1_0",
+  "review_block_hash_sha256": "1e74b5118f69aa53ff54d92541b6482c494094c4f21af1ed7bf3de6622016f35",
+  "index_sha256": "b8ff19d88f33e80ffdba983bdea01328f2dbe90d9a5b75d5b8b8f5aada08e033",
+  "messages": 78,
+  "source_locations": 89,
+  "languages": [
+    "en",
+    "ro",
+    "el",
+    "es",
+    "fr"
+  ],
+  "runtime_objects": [
+    "cases",
+    "V15_META_RECORDS",
+    "V15_GATE_RECORDS"
+  ],
+  "technical_fields_preserved": true,
+  "no_new_mutation_observer": true,
+  "runtime_qa_passed": true,
+  "source_objects_match_review_payload": true,
+  "base_reconstruction_exact": true,
+  "qa_report": "QA_REPORT_v2_2_4p.md",
+  "runtime_qa": "RUNTIME_QA_v2_2_4p.json"
+}

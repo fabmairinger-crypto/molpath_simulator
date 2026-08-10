@@ -1,0 +1,2396 @@
+{
+  "block_id": "DEEPDIVE09_CRC_BASE",
+  "case_id": "MTB_CRC_001_v0_6",
+  "version": "1.0",
+  "created_at": "2026-08-10T10:15:00+02:00",
+  "status": "READY_FOR_USER_REVIEW",
+  "block_hash_sha256": "1ffaf7f35e93a83ac246783709d10bbc5f1b7a57701df2a5ba4b826dec4b510e",
+  "source_manifest": {
+    "case_metadata": {
+      "path": "data/case_metadata_v1_5_AP1b_final.json",
+      "sha256": "55daaaef3113885b3b5bc0c84d2bbdeefb106f4720cfd04c5d8d8929ccbcd3da"
+    },
+    "base_case": {
+      "path": "data/cases_v1_4_universal_methods.json",
+      "sha256": "aaed62f7091c9706f0ea1cc6a5526a74ce7d5ca696d366f14ffbf99d043d7723"
+    },
+    "message_catalog": {
+      "path": "i18n_message_catalog_v2_2_3.json",
+      "sha256": "4cd851992eed4fc35d6361a24810640196adf3e292cf49edc02fff27b0430ee6"
+    },
+    "index": {
+      "path": "index.html",
+      "sha256": "d58ded509c788b2ffae30d6a2c96241f7377ffbbd5546428d2aa7e8f9dd9571a"
+    },
+    "deep_dive": {
+      "path": "index.html#V21_DEEP_DIVE_BATCH1",
+      "sha256": "d58ded509c788b2ffae30d6a2c96241f7377ffbbd5546428d2aa7e8f9dd9571a"
+    }
+  },
+  "de": {
+    "metadata": {
+      "case_id": "MTB_CRC_001_v0_6",
+      "base_id": "MTB_CRC_001",
+      "title": "Metastasiertes CRC → RAS/BRAF/MMR/MSI vor Systemtherapie",
+      "domain": "MTB",
+      "met_addon_type": "no",
+      "subdomain": "CRC / RAS-BRAF / MSI-Lynch",
+      "case_type": "clinical_decision",
+      "length_class": "Standard",
+      "estimated_minutes": {
+        "min": 8,
+        "max": 12
+      },
+      "difficulty": "Intermediate",
+      "status": "curated-core",
+      "review_flag": "Core/MVP prüfen",
+      "review_priority": "high",
+      "core_decision": "RAS/BRAF/MMR/MSI vor Systemtherapie",
+      "learning_objectives": [
+        "Zentrale klinisch-molekulare Fragestellung aus Anamnese, Histologie und Materialkontext ableiten",
+        "MMR/MSI-Befunde therapeutisch und hereditär korrekt einordnen",
+        "Musterlösung im MTB klar, limitiert und patientenrelevant kommunizieren"
+      ],
+      "tags": [
+        "CRC",
+        "mCRC",
+        "RAS",
+        "BRAF",
+        "MMR",
+        "MSI",
+        "MLH1",
+        "anti-EGFR",
+        "Immuntherapie",
+        "Lynch"
+      ],
+      "ap1b_decision": "MTB; Länge=Standard; Schwierigkeit=Intermediate; Status=curated-core"
+    },
+    "base_case": {
+      "id": "MTB_CRC_001_v0_6",
+      "title": "Metastasiertes CRC → RAS/BRAF/MMR/MSI vor Systemtherapie",
+      "short": "mCRC Basisdiagnostik",
+      "mode": "patient_care",
+      "logic": "crc",
+      "difficulty": "intermediate",
+      "estimated_time_min": "8–12",
+      "budget": {
+        "points_max": 850,
+        "sections_max": 14,
+        "tat_goal": 7
+      },
+      "allowed_tests": [
+        "he_review",
+        "ihc_crc_lineage",
+        "ki67",
+        "mmr_ihc",
+        "msi_pcr_ngs",
+        "kras_exon2_only",
+        "ras_panel_crc",
+        "braf_v600e_crc",
+        "mlh1_methylation",
+        "colon_ngs_panel",
+        "her2_crc_ihc_ish",
+        "broad_pan_panel"
+      ],
+      "story": [
+        {
+          "id": "intake",
+          "title": "Initialer Auftrag",
+          "items": [
+            [
+              "Einsender",
+              "Viszeralonkologie / Tumorboard"
+            ],
+            [
+              "Klinische Information",
+              "58-jährige Patientin mit neu diagnostiziertem Adenokarzinom im Sigma und multiplen Lebermetastasen."
+            ],
+            [
+              "Fragestellung",
+              "Therapieplanung: anti-EGFR möglich? Immuntherapie relevant? Hinweis auf hereditären Kontext?"
+            ],
+            [
+              "Was ist noch unklar?",
+              "Zu Beginn ist nicht sicher, welche molekularen Marker für die erste Systemtherapie vollständig vorliegen müssen."
+            ]
+          ]
+        },
+        {
+          "id": "history",
+          "title": "Anamnese und klinischer Kontext",
+          "items": [
+            [
+              "Tumorlokalisation",
+              "linksseitiger Kolontumor / Sigma."
+            ],
+            [
+              "Stadium / Situation",
+              "Metastasiert, systemische Therapie geplant; ECOG 1."
+            ],
+            [
+              "Familienanamnese",
+              "Mutter mit Endometriumkarzinom im höheren Lebensalter; keine gesicherte Lynch-Diagnose bekannt."
+            ],
+            [
+              "MTB-Zeitdruck",
+              "Therapiefestlegung innerhalb der nächsten Woche gewünscht."
+            ]
+          ]
+        },
+        {
+          "id": "histo",
+          "title": "Histologie + Vor-IHC",
+          "items": [
+            [
+              "HE",
+              "Invasives kolorektales Adenokarzinom, mäßig differenziert."
+            ],
+            [
+              "IHC-Lineage",
+              "CK20 positiv, CDX2/SATB2 positiv; CK7 negativ."
+            ],
+            [
+              "Arbeitsdiagnose",
+              "Metastasiertes kolorektales Adenokarzinom, linksseitig."
+            ],
+            [
+              "Noch offen",
+              "RAS/BRAF-Status, MMR/MSI und ggf. Reflexdiagnostik bei MLH1/PMS2-Verlust."
+            ]
+          ]
+        },
+        {
+          "id": "material",
+          "title": "Materialprüfung",
+          "items": [
+            [
+              "Material",
+              "FFPE-Primärtumor, Block A4."
+            ],
+            [
+              "Tumoranteil",
+              "ca. 50 %, gut geeignet für DNA-basierte Analysen."
+            ],
+            [
+              "Nekrose",
+              "gering."
+            ],
+            [
+              "Verfügbare ungefärbte Schnitte",
+              "14 Schnitte planbar."
+            ],
+            [
+              "DNA-Prognose",
+              "gut."
+            ],
+            [
+              "Materialfalle",
+              "KRAS Exon 2 allein ist zu eng; MMR/MSI und BRAF/MLH1-Kontext dürfen nicht fehlen."
+            ]
+          ]
+        }
+      ],
+      "optimal_tests": [
+        "he_review",
+        "mmr_ihc",
+        "msi_pcr_ngs",
+        "ras_panel_crc",
+        "braf_v600e_crc",
+        "mlh1_methylation"
+      ],
+      "acceptable_alternatives": [
+        "colon_ngs_panel"
+      ],
+      "result_truth": {
+        "ras": "KRAS/NRAS Wildtyp",
+        "braf": "BRAF p.V600E nachweisbar",
+        "mmr": "Verlust MLH1/PMS2; MSH2/MSH6 erhalten",
+        "msi": "MSI-high",
+        "mlh1": "MLH1-Promotor-Methylierung positiv",
+        "qc": "DNA-Qualität gut; IHC auswertbar"
+      },
+      "tags": [
+        "CRC",
+        "mCRC",
+        "RAS",
+        "BRAF",
+        "MMR",
+        "MSI",
+        "MLH1",
+        "anti-EGFR",
+        "Immuntherapie",
+        "Lynch"
+      ]
+    },
+    "deep_dive": {
+      "version": "v2.1_batch1_content_expansion",
+      "case_id": "MTB_CRC_001_v0_6",
+      "title": "mCRC: RAS/BRAF/MMR/MSI vor Systemtherapie",
+      "domain": "MTB",
+      "target_course": "MTB Basics",
+      "deep_dive_priority": "signature",
+      "target_role": "Pathologieassistenz / MTB-Training",
+      "estimated_minutes_deep": "12-15",
+      "learning_objectives": [
+        "Take-home: Beim mCRC gehören RAS/BRAF und MMR/MSI zusammen in die frühe Therapieplanung; MLH1/PMS2-Verlust braucht Reflexdiagnostik, nicht nur einen IO-Hinweis."
+      ],
+      "opening_scene": "Im Tumorboard soll bei einem metastasierten kolorektalen Karzinom die Erstlinientherapie festgelegt werden. Die Onkologie fragt: Ist der Patient anti-EGFR-geeignet – oder spricht MMR/MSI für eine andere Strategie?",
+      "case_briefing": "62-jähriger Patient mit rechtsseitigem, metastasiertem Adenokarzinom des Kolons und synchronen Lebermetastasen. Systemische Erstlinientherapie soll zeitnah geplant werden. Verfügbar ist FFPE-Material aus dem Primärtumor mit ausreichendem Tumoranteil, aber begrenzter Schnittzahl. Die klinische Frage lautet: RAS/BRAF/MMR/MSI für anti-EGFR-, Immuntherapie- und Lynch/sporadisch-Kontext.",
+      "context_cards": [
+        {
+          "title": "Klinischer Kontext",
+          "content": "Rechtsseitiges mCRC mit Lebermetastasen; Erstlinienentscheidung im MTB."
+        },
+        {
+          "title": "Material",
+          "content": "FFPE-Primärtumor, Tumorzellanteil ca. 55–60 %, begrenzte Schnittzahl."
+        },
+        {
+          "title": "Vorbefund",
+          "content": "Adenokarzinom des Kolons, keine vorliegende Molekulardiagnostik."
+        }
+      ],
+      "pre_results": [
+        {
+          "title": "Vorbefunde / Datenlage",
+          "content": "HE-Review: invasives Adenokarzinom, ausreichender Tumoranteil. IHC/Prädiktivmarker noch nicht vollständig durchgeführt. Material reicht für priorisierte molekulare Diagnostik, aber nicht für beliebige Zusatztests."
+        }
+      ],
+      "material_or_resource_constraints": [
+        "Therapieentscheidung zeitkritisch; Material soll für klinisch relevante Marker priorisiert werden.",
+        "Entitätsfremde Tests verbrauchen Schnittmaterial und TAT ohne Nutzen."
+      ],
+      "reasoning_gate_upgrade": [
+        {
+          "id": "central_question",
+          "type": "single_choice",
+          "prompt": "Was ist die zentrale molekulare Fragestellung?",
+          "options": [
+            {
+              "id": "crc_full_biomarker",
+              "label": "Prädiktive Systemtherapie-Stratifizierung: erweitertes RAS/BRAF plus MMR/MSI"
+            },
+            {
+              "id": "egfr_only",
+              "label": "EGFR-/ALK-/ROS1-Fusionsdiagnostik wie beim NSCLC priorisieren"
+            },
+            {
+              "id": "pdl1_only",
+              "label": "PD-L1-IHC als primären Immuntherapie-Entscheider nutzen"
+            },
+            {
+              "id": "hrd_parp",
+              "label": "HRD/PARP-Indikation als Hauptfrage behandeln"
+            }
+          ],
+          "correct": [
+            "crc_full_biomarker"
+          ],
+          "rationale": "Anti-EGFR-, IO-, BRAF- und Lynch/sporadisch-Kontext müssen früh getrennt adressiert werden."
+        },
+        {
+          "id": "ras_scope",
+          "type": "single_choice",
+          "prompt": "Warum reicht KRAS Exon 2 allein nicht aus?",
+          "options": [
+            {
+              "id": "extended_ras_braf_mmr",
+              "label": "Anti-EGFR-Stratifizierung braucht erweitertes RAS; zusätzlich sind BRAF und MMR/MSI therapierelevant."
+            },
+            {
+              "id": "kras_exon2_enough",
+              "label": "KRAS Exon 2 reicht als vollständige anti-EGFR-Stratifizierung"
+            },
+            {
+              "id": "ras_only",
+              "label": "Bei RAS-WT sind BRAF und MMR/MSI für die Erstlinie irrelevant"
+            },
+            {
+              "id": "pdl1_replaces_msi",
+              "label": "PD-L1 ersetzt MMR/MSI als IO-Marker beim CRC"
+            }
+          ],
+          "correct": [
+            "extended_ras_braf_mmr"
+          ],
+          "rationale": "KRAS Exon 2-only ist ein klassischer unvollständiger Pfad."
+        },
+        {
+          "id": "mlh1_reflex",
+          "type": "single_choice",
+          "prompt": "Was bedeutet MLH1/PMS2-Verlust im mCRC-Kontext?",
+          "options": [
+            {
+              "id": "mlh1_braf_reflex",
+              "label": "Reflexdiagnostik mit MLH1-Promotor-Methylierung ± BRAF-Kontext und Lynch/sporadisch-Einordnung."
+            },
+            {
+              "id": "direct_lynch",
+              "label": "MLH1/PMS2-Verlust beweist immer direkt Lynch-Syndrom"
+            },
+            {
+              "id": "ignore_mlh1",
+              "label": "MLH1/PMS2-Verlust ist therapeutisch und hereditär irrelevant"
+            },
+            {
+              "id": "lung_fusion",
+              "label": "RNA-Fusionspanel Lunge ist der sinnvolle Reflexschritt"
+            }
+          ],
+          "correct": [
+            "mlh1_braf_reflex"
+          ],
+          "rationale": "dMMR ist prädiktiv und potenziell hereditär relevant."
+        }
+      ],
+      "decision_task": "Wähle eine prädiktive Primärdiagnostik für mCRC, die anti-EGFR-Eignung, BRAF-Kontext und MSI/dMMR/Immuntherapie sowie Lynch/sporadisch-Frage sauber adressiert.",
+      "expected_path": "HE-/Tumoranteil-Review → erweitertes RAS/KRAS/NRAS → BRAF V600E → MMR-IHC und/oder MSI-PCR/NGS → bei MLH1/PMS2-Verlust MLH1-Promotor-Methylierung ± BRAF-Kontext → MTB-Kommunikation: anti-EGFR, IO und Lynch/sporadisch getrennt darstellen.",
+      "acceptable_alternatives": "Breiteres Colon-NGS ist akzeptabel, wenn es RAS/BRAF und ggf. weitere klinisch relevante Alterationen abdeckt. HER2-IHC/ISH kann optional im RAS-WT-Kontext bzw. späterer Therapielinie sinnvoll sein.",
+      "low_value_traps": [
+        {
+          "label": "nur KRAS Exon 2",
+          "why_bad": "unvollständige anti-EGFR-Stratifizierung."
+        },
+        {
+          "label": "RAS-WT = automatisch anti-EGFR",
+          "why_bad": "MSI/BRAF/Lokalisation und klinischer Kontext werden ignoriert."
+        },
+        {
+          "label": "PD-L1-IHC",
+          "why_bad": "bei CRC kein primärer IO-Entscheider."
+        },
+        {
+          "label": "HRD-Score/RNA-Fusionspanel Lunge",
+          "why_bad": "entitätsfremd, low value oder misleading."
+        }
+      ],
+      "twist": {
+        "title": "RAS-Wildtyp reicht nicht als Therapieantwort",
+        "content": "Der Fall ist RAS-Wildtyp, zeigt aber dMMR/MSI-H und BRAF V600E. Wer nur RAS testet, würde anti-EGFR-Eignung diskutieren, aber immuntherapeutische, prognostische und hereditäre Einordnung verpassen.",
+        "why_critical": "Der therapeutisch relevante Kontext entsteht nicht durch einen Einzelmarker, sondern durch die Kombination aus RAS/BRAF und MMR/MSI einschließlich Reflexdiagnostik."
+      },
+      "result_packages": [
+        {
+          "id": "optimal",
+          "title": "Vollständiger mCRC-Biomarkerpfad",
+          "class": "optimal",
+          "result": "RAS-WT, BRAF V600E, MLH1/PMS2-Verlust, MSI-H. MLH1-Methylierung positiv → eher sporadische dMMR-Konstellation. Anti-EGFR nur kontextabhängig; IO-/BRAF-Kontext und Prognose im MTB adressieren."
+        },
+        {
+          "id": "partial_ras_only",
+          "title": "RAS-only-Pfad",
+          "class": "incomplete",
+          "result": "RAS-WT wird erkannt, aber BRAF/MSI/MMR fehlen. Befund ist für die Systemtherapie unvollständig; Nachforderung erforderlich."
+        },
+        {
+          "id": "wrong_overdiagnostic",
+          "title": "Entitätsfremde Diagnostik",
+          "class": "wrong",
+          "result": "Material/TAT wird durch HRD, Lungenfusionen oder PD-L1 verbraucht, ohne die zentrale CRC-Frage zu beantworten."
+        }
+      ],
+      "followup_logic": [
+        {
+          "trigger": "Unvollständiger oder unsicherer Primärpfad",
+          "action": "Wenn MMR/MSI oder BRAF initial fehlen, Nachforderung klar begründen. Bei MLH1/PMS2-Verlust Reflexdiagnostik MLH1-Methylierung ± BRAF V600E zur Einordnung sporadisch vs. Lynch. Humangenetik bei nicht-sporadischem Muster empfehlen.",
+          "consequence": "Nachforderung oder erneute MTB-Besprechung mit finaler Einordnung."
+        }
+      ],
+      "debrief_points": [
+        "mCRC braucht mehr als RAS.",
+        "MMR/MSI ist prädiktiv für IO und kann hereditäre Konsequenzen haben.",
+        "MLH1/PMS2-Verlust muss reflexartig eingeordnet werden.",
+        "Take-home: Beim mCRC gehören RAS/BRAF und MMR/MSI zusammen in die frühe Therapieplanung; MLH1/PMS2-Verlust braucht Reflexdiagnostik, nicht nur einen IO-Hinweis."
+      ],
+      "instructor_notes": {
+        "model_answer": "Optimale Lösung: erweiterte RAS/BRAF-Diagnostik plus MMR-IHC/MSI-Testung; bei MLH1/PMS2-Verlust MLH1-Methylierung/BRAF-Kontext; klare MTB-Kommunikation zu anti-EGFR, IO und Lynch/sporadisch.",
+        "scoring_focus": [
+          "Clinical Reasoning: Systemtherapiefrage erkannt.",
+          "Method Selection: RAS/BRAF/MMR/MSI priorisiert.",
+          "Communication: anti-EGFR, IO und Lynch/sporadisch getrennt kommuniziert."
+        ],
+        "discussion_questions": [
+          "Warum reicht KRAS Exon 2 heute nicht?",
+          "Wie unterscheiden sich prädiktive und hereditäre Konsequenzen von dMMR/MSI-H?",
+          "Wie kommuniziert man MLH1/PMS2-Verlust im MTB?"
+        ]
+      },
+      "report_additions": {
+        "batch": "Batch1 v2.1 content expansion"
+      },
+      "is_signature_case": true
+    }
+  },
+  "languages": {
+    "en": {
+      "metadata": {
+        "case_id": "MTB_CRC_001_v0_6",
+        "base_id": "MTB_CRC_001",
+        "title": "Metastatic CRC → RAS/BRAF/MMR/MSI before systemic therapy",
+        "domain": "MTB",
+        "met_addon_type": "no",
+        "subdomain": "CRC / RAS-BRAF / MSI-Lynch",
+        "case_type": "clinical_decision",
+        "length_class": "Standard",
+        "estimated_minutes": {
+          "min": 8,
+          "max": 12
+        },
+        "difficulty": "Intermediate",
+        "status": "curated-core",
+        "review_flag": "Core/MVP prüfen",
+        "review_priority": "high",
+        "core_decision": "RAS/BRAF/MMR/MSI before systemic therapy",
+        "learning_objectives": [
+          "Derive the central clinical-molecular question from the history, histology and tissue context",
+          "Correctly interpret the therapeutic and hereditary implications of MMR/MSI findings.",
+          "Communicate the reference answer clearly in the MTB, including limitations and patient relevance"
+        ],
+        "tags": [
+          "CRC",
+          "mCRC",
+          "RAS",
+          "BRAF",
+          "MMR",
+          "MSI",
+          "MLH1",
+          "anti-EGFR",
+          "Immunotherapy",
+          "Lynch"
+        ],
+        "ap1b_decision": "MTB; Length=Standard; Difficulty=Intermediate; Status=curated-core"
+      },
+      "base_case": {
+        "id": "MTB_CRC_001_v0_6",
+        "title": "Metastatic CRC → RAS/BRAF/MMR/MSI before systemic therapy",
+        "short": "mCRC basic diagnostics",
+        "mode": "patient_care",
+        "logic": "crc",
+        "difficulty": "intermediate",
+        "estimated_time_min": "8–12",
+        "budget": {
+          "points_max": 850,
+          "sections_max": 14,
+          "tat_goal": 7
+        },
+        "allowed_tests": [
+          "he_review",
+          "ihc_crc_lineage",
+          "ki67",
+          "mmr_ihc",
+          "msi_pcr_ngs",
+          "kras_exon2_only",
+          "ras_panel_crc",
+          "braf_v600e_crc",
+          "mlh1_methylation",
+          "colon_ngs_panel",
+          "her2_crc_ihc_ish",
+          "broad_pan_panel"
+        ],
+        "story": [
+          {
+            "id": "intake",
+            "title": "Initial request",
+            "items": [
+              [
+                "Referrer",
+                "Visceral oncology / Tumor Board"
+              ],
+              [
+                "Clinical information",
+                "58-year-old woman with newly diagnosed sigmoid adenocarcinoma and multiple liver metastases."
+              ],
+              [
+                "Clinical question",
+                "Treatment planning: is anti-EGFR therapy possible? Is immunotherapy relevant? Any indication of a hereditary context?"
+              ],
+              [
+                "What remains unclear?",
+                "At the outset, it is unclear which molecular markers must be fully available for first-line systemic therapy."
+              ]
+            ]
+          },
+          {
+            "id": "history",
+            "title": "Medical history and clinical context",
+            "items": [
+              [
+                "Tumor location",
+                "Left-sided colon tumor / sigmoid colon."
+              ],
+              [
+                "Stage / clinical situation",
+                "Metastatic disease; systemic therapy planned; ECOG 1."
+              ],
+              [
+                "Family history",
+                "Mother with endometrial carcinoma at an older age; no confirmed diagnosis of Lynch syndrome is known."
+              ],
+              [
+                "MTB time pressure",
+                "Treatment decision requested within the next week."
+              ]
+            ]
+          },
+          {
+            "id": "histo",
+            "title": "Histology and initial IHC",
+            "items": [
+              [
+                "H&E",
+                "Invasive colorectal adenocarcinoma, moderately differentiated."
+              ],
+              [
+                "IHC lineage",
+                "CK20 positive, CDX2/SATB2 positive; CK7 negative."
+              ],
+              [
+                "Working diagnosis",
+                "Metastatic colorectal adenocarcinoma, left-sided."
+              ],
+              [
+                "Still pending",
+                "RAS/BRAF status, MMR/MSI and, where applicable, reflex testing in case of MLH1/PMS2 loss."
+              ]
+            ]
+          },
+          {
+            "id": "material",
+            "title": "Tissue assessment",
+            "items": [
+              [
+                "Tissue material",
+                "FFPE primary tumor, block A4."
+              ],
+              [
+                "Tumour cell content",
+                "approx. 50%, well suited for DNA-based analyses."
+              ],
+              [
+                "Necrosis",
+                "low."
+              ],
+              [
+                "Available unstained sections",
+                "14 unstained sections can be planned."
+              ],
+              [
+                "DNA outlook",
+                "good."
+              ],
+              [
+                "Tissue-use pitfall",
+                "KRAS exon 2 alone is too narrow; MMR/MSI and the BRAF/MLH1 context must not be omitted."
+              ]
+            ]
+          }
+        ],
+        "optimal_tests": [
+          "he_review",
+          "mmr_ihc",
+          "msi_pcr_ngs",
+          "ras_panel_crc",
+          "braf_v600e_crc",
+          "mlh1_methylation"
+        ],
+        "acceptable_alternatives": [
+          "colon_ngs_panel"
+        ],
+        "result_truth": {
+          "ras": "KRAS/NRAS wild type",
+          "braf": "BRAF p.V600E detected",
+          "mmr": "Loss of MLH1/PMS2; MSH2/MSH6 retained",
+          "msi": "MSI-high",
+          "mlh1": "MLH1 promoter methylation positive",
+          "qc": "Good DNA quality; IHC interpretable"
+        },
+        "tags": [
+          "CRC",
+          "mCRC",
+          "RAS",
+          "BRAF",
+          "MMR",
+          "MSI",
+          "MLH1",
+          "anti-EGFR",
+          "Immunotherapy",
+          "Lynch"
+        ]
+      },
+      "deep_dive": {
+        "version": "v2.1_batch1_content_expansion",
+        "case_id": "MTB_CRC_001_v0_6",
+        "title": "mCRC: RAS/BRAF/MMR/MSI before systemic therapy",
+        "domain": "MTB",
+        "target_course": "MTB Basics",
+        "deep_dive_priority": "signature",
+        "target_role": "Pathology assistance / MTB training",
+        "estimated_minutes_deep": "12-15",
+        "learning_objectives": [
+          "Take-home: In mCRC, RAS/BRAF and MMR/MSI belong together in early treatment planning; MLH1/PMS2 loss requires reflex testing, not merely an immunotherapy signal."
+        ],
+        "opening_scene": "At the Tumor Board, first-line treatment must be defined for metastatic colorectal carcinoma. Oncology asks: is the patient eligible for anti-EGFR therapy—or does MMR/MSI point toward a different strategy?",
+        "case_briefing": "62-year-old man with right-sided metastatic colon adenocarcinoma and synchronous liver metastases. First-line systemic therapy should be planned promptly. FFPE material from the primary tumor is available, with sufficient tumor content but a limited number of sections. The clinical question is: RAS/BRAF/MMR/MSI for the anti-EGFR, immunotherapy and Lynch-versus-sporadic context.",
+        "context_cards": [
+          {
+            "title": "Clinical context",
+            "content": "Right-sided mCRC with liver metastases; first-line decision at the MTB."
+          },
+          {
+            "title": "Tissue material",
+            "content": "FFPE primary tumor, tumor cell content approx. 55–60%, limited number of sections."
+          },
+          {
+            "title": "Previous result",
+            "content": "Colon adenocarcinoma; no molecular diagnostics available yet."
+          }
+        ],
+        "pre_results": [
+          {
+            "title": "Previous findings / available data",
+            "content": "H&E review: invasive adenocarcinoma with sufficient tumor content. IHC/predictive markers have not yet been completed. Material is sufficient for prioritized molecular diagnostics, but not for arbitrary add-on tests."
+          }
+        ],
+        "material_or_resource_constraints": [
+          "The treatment decision is time-critical; material should be prioritized for clinically relevant markers.",
+          "Tests unrelated to the tumor entity consume tissue sections and TAT without benefit."
+        ],
+        "reasoning_gate_upgrade": [
+          {
+            "id": "central_question",
+            "type": "single_choice",
+            "prompt": "What is the central molecular question?",
+            "options": [
+              {
+                "id": "crc_full_biomarker",
+                "label": "Predictive stratification for systemic therapy: extended RAS/BRAF plus MMR/MSI"
+              },
+              {
+                "id": "egfr_only",
+                "label": "Prioritize EGFR/ALK/ROS1 fusion diagnostics as in NSCLC"
+              },
+              {
+                "id": "pdl1_only",
+                "label": "Use PD-L1 IHC as the primary decision marker for immunotherapy"
+              },
+              {
+                "id": "hrd_parp",
+                "label": "Treat an HRD/PARP indication as the main question"
+              }
+            ],
+            "correct": [
+              "crc_full_biomarker"
+            ],
+            "rationale": "The anti-EGFR, immunotherapy, BRAF and Lynch-versus-sporadic contexts must be addressed separately at an early stage."
+          },
+          {
+            "id": "ras_scope",
+            "type": "single_choice",
+            "prompt": "Why is KRAS exon 2 alone insufficient?",
+            "options": [
+              {
+                "id": "extended_ras_braf_mmr",
+                "label": "Anti-EGFR stratification requires extended RAS testing; BRAF and MMR/MSI are also therapeutically relevant."
+              },
+              {
+                "id": "kras_exon2_enough",
+                "label": "KRAS exon 2 is sufficient for complete anti-EGFR stratification"
+              },
+              {
+                "id": "ras_only",
+                "label": "In RAS-WT disease, BRAF and MMR/MSI are irrelevant to first-line treatment"
+              },
+              {
+                "id": "pdl1_replaces_msi",
+                "label": "PD-L1 replaces MMR/MSI as the immunotherapy marker in CRC"
+              }
+            ],
+            "correct": [
+              "extended_ras_braf_mmr"
+            ],
+            "rationale": "KRAS exon 2-only is a classic incomplete pathway."
+          },
+          {
+            "id": "mlh1_reflex",
+            "type": "single_choice",
+            "prompt": "What does loss of MLH1/PMS2 mean in the mCRC context?",
+            "options": [
+              {
+                "id": "mlh1_braf_reflex",
+                "label": "Reflex testing with MLH1 promoter methylation ± BRAF context and classification as Lynch versus sporadic."
+              },
+              {
+                "id": "direct_lynch",
+                "label": "Loss of MLH1/PMS2 always directly proves Lynch syndrome"
+              },
+              {
+                "id": "ignore_mlh1",
+                "label": "Loss of MLH1/PMS2 is therapeutically and hereditarily irrelevant"
+              },
+              {
+                "id": "lung_fusion",
+                "label": "A lung RNA fusion panel is the appropriate reflex step"
+              }
+            ],
+            "correct": [
+              "mlh1_braf_reflex"
+            ],
+            "rationale": "dMMR is predictive and potentially relevant to hereditary risk."
+          }
+        ],
+        "decision_task": "Select primary predictive diagnostics for mCRC that properly address anti-EGFR eligibility, the BRAF context, MSI/dMMR/immunotherapy and the Lynch-versus-sporadic question.",
+        "expected_path": "H&E/tumor-content review → extended RAS/KRAS/NRAS → BRAF V600E → MMR IHC and/or MSI PCR/NGS → if MLH1/PMS2 loss: MLH1 promoter methylation ± BRAF context → MTB communication: present anti-EGFR, immunotherapy and Lynch-versus-sporadic implications separately.",
+        "acceptable_alternatives": "A broader colon NGS panel is acceptable if it covers RAS/BRAF and, where appropriate, other clinically relevant alterations. HER2 IHC/ISH may be useful optionally in the RAS-WT context or in a later treatment line.",
+        "low_value_traps": [
+          {
+            "label": "KRAS exon 2 only",
+            "why_bad": "incomplete anti-EGFR stratification."
+          },
+          {
+            "label": "RAS-WT = automatically anti-EGFR",
+            "why_bad": "MSI/BRAF, tumor location and the clinical context are ignored."
+          },
+          {
+            "label": "PD-L1 IHC",
+            "why_bad": "not a primary immunotherapy decision marker in CRC."
+          },
+          {
+            "label": "HRD score/lung RNA fusion panel",
+            "why_bad": "unrelated to the entity, low value or misleading."
+          }
+        ],
+        "twist": {
+          "title": "RAS wild type is not a sufficient treatment answer",
+          "content": "The case is RAS wild type but shows dMMR/MSI-H and BRAF V600E. Testing RAS alone would lead to discussion of anti-EGFR eligibility while missing the immunotherapeutic, prognostic and hereditary interpretation.",
+          "why_critical": "The therapeutically relevant context does not arise from a single marker, but from the combination of RAS/BRAF and MMR/MSI, including reflex testing."
+        },
+        "result_packages": [
+          {
+            "id": "optimal",
+            "title": "Complete mCRC biomarker pathway",
+            "class": "optimal",
+            "result": "RAS-WT, BRAF V600E, MLH1/PMS2 loss, MSI-H. MLH1 methylation positive → more consistent with a sporadic dMMR constellation. Anti-EGFR only in context; address immunotherapy/BRAF context and prognosis at the MTB."
+          },
+          {
+            "id": "partial_ras_only",
+            "title": "RAS-only pathway",
+            "class": "incomplete",
+            "result": "RAS-WT is identified, but BRAF/MSI/MMR are missing. The report is incomplete for systemic treatment; additional testing is required."
+          },
+          {
+            "id": "wrong_overdiagnostic",
+            "title": "Diagnostics unrelated to the tumor entity",
+            "class": "wrong",
+            "result": "Material/TAT is consumed by HRD, lung fusion testing or PD-L1 without answering the central CRC question."
+          }
+        ],
+        "followup_logic": [
+          {
+            "trigger": "Incomplete or uncertain primary pathway",
+            "action": "If MMR/MSI or BRAF are initially missing, clearly justify additional testing. In case of MLH1/PMS2 loss, perform reflex testing with MLH1 methylation ± BRAF V600E to distinguish sporadic from Lynch-associated disease. Recommend clinical genetics when no sporadic pattern is established.",
+            "consequence": "Additional testing or repeat MTB discussion with final interpretation."
+          }
+        ],
+        "debrief_points": [
+          "mCRC requires more than RAS.",
+          "MMR/MSI is predictive for immunotherapy and may have hereditary implications.",
+          "Loss of MLH1/PMS2 requires reflex classification.",
+          "Take-home: In mCRC, RAS/BRAF and MMR/MSI belong together in early treatment planning; MLH1/PMS2 loss requires reflex testing, not merely an immunotherapy signal."
+        ],
+        "instructor_notes": {
+          "model_answer": "Optimal solution: extended RAS/BRAF diagnostics plus MMR IHC/MSI testing; in case of MLH1/PMS2 loss, MLH1 methylation/BRAF context; clear MTB communication on anti-EGFR, immunotherapy and Lynch versus sporadic disease.",
+          "scoring_focus": [
+            "Clinical Reasoning: systemic-treatment question identified.",
+            "Method Selection: RAS/BRAF/MMR/MSI prioritized.",
+            "Communication: anti-EGFR, immunotherapy and Lynch-versus-sporadic implications communicated separately."
+          ],
+          "discussion_questions": [
+            "Why is KRAS exon 2 alone no longer sufficient?",
+            "How do the predictive and hereditary implications of dMMR/MSI-H differ?",
+            "How should loss of MLH1/PMS2 be communicated at the MTB?"
+          ]
+        },
+        "report_additions": {
+          "batch": "Batch1 v2.1 content expansion"
+        },
+        "is_signature_case": true
+      }
+    },
+    "ro": {
+      "metadata": {
+        "case_id": "MTB_CRC_001_v0_6",
+        "base_id": "MTB_CRC_001",
+        "title": "CRC metastatic → RAS/BRAF/MMR/MSI înainte de terapia sistemică",
+        "domain": "MTB",
+        "met_addon_type": "no",
+        "subdomain": "CRC / RAS-BRAF / MSI-Lynch",
+        "case_type": "clinical_decision",
+        "length_class": "Standard",
+        "estimated_minutes": {
+          "min": 8,
+          "max": 12
+        },
+        "difficulty": "Intermediate",
+        "status": "curated-core",
+        "review_flag": "Core/MVP prüfen",
+        "review_priority": "high",
+        "core_decision": "RAS/BRAF/MMR/MSI înainte de terapia sistemică",
+        "learning_objectives": [
+          "Formulați întrebarea clinico-moleculară centrală pe baza anamnezei, histologiei și contextului materialului tisular",
+          "Interpretați corect implicațiile terapeutice și ereditare ale rezultatelor MMR/MSI.",
+          "Comunicați clar soluția de referință în MTB, cu limitările și relevanța pentru pacient"
+        ],
+        "tags": [
+          "CRC",
+          "mCRC",
+          "RAS",
+          "BRAF",
+          "MMR",
+          "MSI",
+          "MLH1",
+          "anti-EGFR",
+          "Imunoterapie",
+          "Lynch"
+        ],
+        "ap1b_decision": "MTB; Durată=Standard; Dificultate=Intermediar; Status=curated-core"
+      },
+      "base_case": {
+        "id": "MTB_CRC_001_v0_6",
+        "title": "CRC metastatic → RAS/BRAF/MMR/MSI înainte de terapia sistemică",
+        "short": "Diagnosticul de bază în mCRC",
+        "mode": "patient_care",
+        "logic": "crc",
+        "difficulty": "intermediate",
+        "estimated_time_min": "8–12",
+        "budget": {
+          "points_max": 850,
+          "sections_max": 14,
+          "tat_goal": 7
+        },
+        "allowed_tests": [
+          "he_review",
+          "ihc_crc_lineage",
+          "ki67",
+          "mmr_ihc",
+          "msi_pcr_ngs",
+          "kras_exon2_only",
+          "ras_panel_crc",
+          "braf_v600e_crc",
+          "mlh1_methylation",
+          "colon_ngs_panel",
+          "her2_crc_ihc_ish",
+          "broad_pan_panel"
+        ],
+        "story": [
+          {
+            "id": "intake",
+            "title": "Solicitare inițială",
+            "items": [
+              [
+                "Solicitant",
+                "Oncologie viscerală / comisie oncologică"
+              ],
+              [
+                "Informații clinice",
+                "Pacientă de 58 de ani cu adenocarcinom de sigmoid recent diagnosticat și metastaze hepatice multiple."
+              ],
+              [
+                "Întrebare clinică",
+                "Planificarea tratamentului: este posibilă terapia anti-EGFR? Este relevantă imunoterapia? Există indicii pentru un context ereditar?"
+              ],
+              [
+                "Ce rămâne neclar?",
+                "La început nu este clar ce markeri moleculari trebuie să fie disponibili complet pentru prima linie de terapie sistemică."
+              ]
+            ]
+          },
+          {
+            "id": "history",
+            "title": "Anamneză și context clinic",
+            "items": [
+              [
+                "Localizarea tumorii",
+                "Tumor de colon stâng / sigmoid."
+              ],
+              [
+                "Stadiu / situație clinică",
+                "Boală metastatică; terapie sistemică planificată; ECOG 1."
+              ],
+              [
+                "Antecedente familiale",
+                "Mamă cu carcinom endometrial la vârstă înaintată; nu este cunoscut un diagnostic confirmat de sindrom Lynch."
+              ],
+              [
+                "Presiune de timp pentru MTB",
+                "Se dorește stabilirea tratamentului în cursul săptămânii următoare."
+              ]
+            ]
+          },
+          {
+            "id": "histo",
+            "title": "Histologie și IHC inițială",
+            "items": [
+              [
+                "H&E",
+                "Adenocarcinom colorectal invaziv, moderat diferențiat."
+              ],
+              [
+                "Profil de lignée IHC",
+                "CK20 pozitiv, CDX2/SATB2 pozitiv; CK7 negativ."
+              ],
+              [
+                "Diagnostic de lucru",
+                "Adenocarcinom colorectal metastatic, cu localizare stângă."
+              ],
+              [
+                "Încă neefectuat",
+                "Status RAS/BRAF, MMR/MSI și, dacă este cazul, testare reflexă în caz de pierdere MLH1/PMS2."
+              ]
+            ]
+          },
+          {
+            "id": "material",
+            "title": "Evaluarea materialului tisular",
+            "items": [
+              [
+                "Material tisular",
+                "Tumor primar FFPE, bloc A4."
+              ],
+              [
+                "Procent tumoral",
+                "aprox. 50 %, adecvat pentru analize bazate pe ADN."
+              ],
+              [
+                "Necroză",
+                "redusă."
+              ],
+              [
+                "Secțiuni necolorate disponibile",
+                "Pot fi planificate 14 secțiuni necolorate."
+              ],
+              [
+                "Prognostic ADN",
+                "bună."
+              ],
+              [
+                "Capcană privind utilizarea materialului",
+                "KRAS exonul 2 singur este prea restrictiv; MMR/MSI și contextul BRAF/MLH1 nu trebuie omise."
+              ]
+            ]
+          }
+        ],
+        "optimal_tests": [
+          "he_review",
+          "mmr_ihc",
+          "msi_pcr_ngs",
+          "ras_panel_crc",
+          "braf_v600e_crc",
+          "mlh1_methylation"
+        ],
+        "acceptable_alternatives": [
+          "colon_ngs_panel"
+        ],
+        "result_truth": {
+          "ras": "KRAS/NRAS de tip sălbatic",
+          "braf": "BRAF p.V600E detectabilă",
+          "mmr": "Pierdere MLH1/PMS2; MSH2/MSH6 păstrate",
+          "msi": "MSI-high",
+          "mlh1": "Metilarea promotorului MLH1 pozitivă",
+          "qc": "Calitate bună a ADN-ului; IHC interpretabilă"
+        },
+        "tags": [
+          "CRC",
+          "mCRC",
+          "RAS",
+          "BRAF",
+          "MMR",
+          "MSI",
+          "MLH1",
+          "anti-EGFR",
+          "Imunoterapie",
+          "Lynch"
+        ]
+      },
+      "deep_dive": {
+        "version": "v2.1_batch1_content_expansion",
+        "case_id": "MTB_CRC_001_v0_6",
+        "title": "mCRC: RAS/BRAF/MMR/MSI înainte de terapia sistemică",
+        "domain": "MTB",
+        "target_course": "MTB Basics",
+        "deep_dive_priority": "signature",
+        "target_role": "Asistență în patologie / training MTB",
+        "estimated_minutes_deep": "12-15",
+        "learning_objectives": [
+          "Mesaj-cheie: în mCRC, RAS/BRAF și MMR/MSI trebuie evaluate împreună în planificarea terapeutică precoce; pierderea MLH1/PMS2 necesită testare reflexă, nu doar un indiciu pentru imunoterapie."
+        ],
+        "opening_scene": "În comisia oncologică trebuie stabilită terapia de primă linie pentru un carcinom colorectal metastatic. Oncologia întreabă: pacientul este eligibil pentru terapia anti-EGFR sau MMR/MSI indică o altă strategie?",
+        "case_briefing": "Pacient de 62 de ani cu adenocarcinom metastatic al colonului drept și metastaze hepatice sincrone. Terapia sistemică de primă linie trebuie planificată rapid. Este disponibil material FFPE din tumora primară, cu conținut tumoral suficient, dar cu un număr limitat de secțiuni. Întrebarea clinică este: RAS/BRAF/MMR/MSI pentru contextul anti-EGFR, imunoterapie și Lynch versus sporadic.",
+        "context_cards": [
+          {
+            "title": "Context clinic",
+            "content": "mCRC de colon drept cu metastaze hepatice; decizia de primă linie în MTB."
+          },
+          {
+            "title": "Material tisular",
+            "content": "Tumor primar FFPE, conținut de celule tumorale aprox. 55–60 %, număr limitat de secțiuni."
+          },
+          {
+            "title": "Rezultat anterior",
+            "content": "Adenocarcinom de colon; nu există încă diagnostic molecular disponibil."
+          }
+        ],
+        "pre_results": [
+          {
+            "title": "Rezultate anterioare / date disponibile",
+            "content": "Revizuire H&E: adenocarcinom invaziv cu conținut tumoral suficient. IHC/markerii predictivi nu au fost încă evaluați complet. Materialul este suficient pentru diagnosticul molecular prioritizat, dar nu pentru teste suplimentare fără indicație."
+          }
+        ],
+        "material_or_resource_constraints": [
+          "Decizia terapeutică este urgentă; materialul trebuie prioritizat pentru markeri relevanți clinic.",
+          "Testele fără legătură cu entitatea tumorală consumă secțiuni și TAT fără beneficiu."
+        ],
+        "reasoning_gate_upgrade": [
+          {
+            "id": "central_question",
+            "type": "single_choice",
+            "prompt": "Care este întrebarea moleculară centrală?",
+            "options": [
+              {
+                "id": "crc_full_biomarker",
+                "label": "Stratificare predictivă pentru terapia sistemică: RAS extins/BRAF plus MMR/MSI"
+              },
+              {
+                "id": "egfr_only",
+                "label": "Prioritizați diagnosticul fuziunilor EGFR/ALK/ROS1 ca în NSCLC"
+              },
+              {
+                "id": "pdl1_only",
+                "label": "Utilizați IHC PD-L1 ca marker principal de decizie pentru imunoterapie"
+              },
+              {
+                "id": "hrd_parp",
+                "label": "Tratați indicația HRD/PARP ca întrebare principală"
+              }
+            ],
+            "correct": [
+              "crc_full_biomarker"
+            ],
+            "rationale": "Contextele anti-EGFR, imunoterapie, BRAF și Lynch versus sporadic trebuie abordate separat încă de la început."
+          },
+          {
+            "id": "ras_scope",
+            "type": "single_choice",
+            "prompt": "De ce nu este suficient KRAS exonul 2 singur?",
+            "options": [
+              {
+                "id": "extended_ras_braf_mmr",
+                "label": "Stratificarea anti-EGFR necesită testare RAS extinsă; BRAF și MMR/MSI sunt de asemenea relevante terapeutic."
+              },
+              {
+                "id": "kras_exon2_enough",
+                "label": "KRAS exonul 2 este suficient pentru stratificarea anti-EGFR completă"
+              },
+              {
+                "id": "ras_only",
+                "label": "În boala RAS-WT, BRAF și MMR/MSI sunt irelevante pentru prima linie de tratament"
+              },
+              {
+                "id": "pdl1_replaces_msi",
+                "label": "PD-L1 înlocuiește MMR/MSI ca marker pentru imunoterapie în CRC"
+              }
+            ],
+            "correct": [
+              "extended_ras_braf_mmr"
+            ],
+            "rationale": "Testarea exclusivă a KRAS exonul 2 este un traseu clasic incomplet."
+          },
+          {
+            "id": "mlh1_reflex",
+            "type": "single_choice",
+            "prompt": "Ce înseamnă pierderea MLH1/PMS2 în contextul mCRC?",
+            "options": [
+              {
+                "id": "mlh1_braf_reflex",
+                "label": "Testare reflexă prin metilarea promotorului MLH1 ± context BRAF și încadrare Lynch versus sporadic."
+              },
+              {
+                "id": "direct_lynch",
+                "label": "Pierderea MLH1/PMS2 dovedește întotdeauna direct sindromul Lynch"
+              },
+              {
+                "id": "ignore_mlh1",
+                "label": "Pierderea MLH1/PMS2 este irelevantă terapeutic și ereditar"
+              },
+              {
+                "id": "lung_fusion",
+                "label": "Un panel ARN de fuziuni pulmonare este pasul reflex adecvat"
+              }
+            ],
+            "correct": [
+              "mlh1_braf_reflex"
+            ],
+            "rationale": "dMMR este predictiv și potențial relevant pentru riscul ereditar."
+          }
+        ],
+        "decision_task": "Selectați diagnosticul predictiv primar pentru mCRC care abordează corect eligibilitatea anti-EGFR, contextul BRAF, MSI/dMMR/imunoterapia și întrebarea Lynch versus sporadic.",
+        "expected_path": "Revizuire H&E/conținut tumoral → RAS extins/KRAS/NRAS → BRAF V600E → IHC MMR și/sau MSI PCR/NGS → la pierdere MLH1/PMS2: metilarea promotorului MLH1 ± context BRAF → comunicare MTB: prezentați separat implicațiile anti-EGFR, imunoterapie și Lynch versus sporadic.",
+        "acceptable_alternatives": "Un panel NGS colorectal mai larg este acceptabil dacă acoperă RAS/BRAF și, după caz, alte modificări relevante clinic. IHC/ISH HER2 poate fi utilă opțional în context RAS-WT sau într-o linie terapeutică ulterioară.",
+        "low_value_traps": [
+          {
+            "label": "doar KRAS exonul 2",
+            "why_bad": "stratificare anti-EGFR incompletă."
+          },
+          {
+            "label": "RAS-WT = automat anti-EGFR",
+            "why_bad": "Sunt ignorate MSI/BRAF, localizarea tumorii și contextul clinic."
+          },
+          {
+            "label": "IHC PD-L1",
+            "why_bad": "nu este un marker principal de decizie pentru imunoterapie în CRC."
+          },
+          {
+            "label": "Scor HRD/panel ARN de fuziuni pulmonare",
+            "why_bad": "fără legătură cu entitatea, cu valoare redusă sau înșelător."
+          }
+        ],
+        "twist": {
+          "title": "Tipul sălbatic RAS nu este un răspuns terapeutic suficient",
+          "content": "Cazul este RAS de tip sălbatic, dar prezintă dMMR/MSI-H și BRAF V600E. Testarea doar a RAS ar duce la discutarea eligibilității anti-EGFR, dar ar omite interpretarea imunoterapeutică, prognostică și ereditară.",
+          "why_critical": "Contextul relevant terapeutic nu rezultă dintr-un singur marker, ci din combinația RAS/BRAF și MMR/MSI, inclusiv testarea reflexă."
+        },
+        "result_packages": [
+          {
+            "id": "optimal",
+            "title": "Traseu complet de biomarkeri pentru mCRC",
+            "class": "optimal",
+            "result": "RAS-WT, BRAF V600E, pierdere MLH1/PMS2, MSI-H. Metilare MLH1 pozitivă → mai compatibilă cu o constelație dMMR sporadică. Anti-EGFR doar în context; abordați în MTB contextul imunoterapiei/BRAF și prognosticul."
+          },
+          {
+            "id": "partial_ras_only",
+            "title": "Traseu doar RAS",
+            "class": "incomplete",
+            "result": "RAS-WT este identificat, dar lipsesc BRAF/MSI/MMR. Raportul este incomplet pentru tratamentul sistemic; sunt necesare teste suplimentare."
+          },
+          {
+            "id": "wrong_overdiagnostic",
+            "title": "Diagnostic fără legătură cu entitatea tumorală",
+            "class": "wrong",
+            "result": "Materialul/TAT este consumat de HRD, testarea fuziunilor pulmonare sau PD-L1 fără a răspunde întrebării centrale privind CRC."
+          }
+        ],
+        "followup_logic": [
+          {
+            "trigger": "Traseu primar incomplet sau incert",
+            "action": "Dacă MMR/MSI sau BRAF lipsesc inițial, justificați clar testarea suplimentară. În caz de pierdere MLH1/PMS2, efectuați testare reflexă cu metilarea MLH1 ± BRAF V600E pentru diferențierea dintre contextul sporadic și Lynch. Recomandați genetică medicală dacă nu este demonstrat un tipar sporadic.",
+            "consequence": "Testare suplimentară sau rediscutare în MTB cu interpretare finală."
+          }
+        ],
+        "debrief_points": [
+          "mCRC necesită mai mult decât RAS.",
+          "MMR/MSI este predictiv pentru imunoterapie și poate avea implicații ereditare.",
+          "Pierderea MLH1/PMS2 necesită încadrare prin testare reflexă.",
+          "Mesaj-cheie: în mCRC, RAS/BRAF și MMR/MSI trebuie evaluate împreună în planificarea terapeutică precoce; pierderea MLH1/PMS2 necesită testare reflexă, nu doar un indiciu pentru imunoterapie."
+        ],
+        "instructor_notes": {
+          "model_answer": "Soluția optimă: diagnostic RAS/BRAF extins plus IHC MMR/testare MSI; în caz de pierdere MLH1/PMS2, metilare MLH1/context BRAF; comunicare clară în MTB privind anti-EGFR, imunoterapia și Lynch versus sporadic.",
+          "scoring_focus": [
+            "Raționament clinic: întrebarea privind tratamentul sistemic a fost identificată.",
+            "Selecția metodelor: RAS/BRAF/MMR/MSI prioritizate.",
+            "Comunicare: implicațiile anti-EGFR, imunoterapie și Lynch versus sporadic au fost comunicate separat."
+          ],
+          "discussion_questions": [
+            "De ce KRAS exonul 2 singur nu mai este suficient?",
+            "Care este diferența dintre implicațiile predictive și cele ereditare ale dMMR/MSI-H?",
+            "Cum trebuie comunicată pierderea MLH1/PMS2 în MTB?"
+          ]
+        },
+        "report_additions": {
+          "batch": "Extindere de conținut Batch1 v2.1"
+        },
+        "is_signature_case": true
+      }
+    },
+    "el": {
+      "metadata": {
+        "case_id": "MTB_CRC_001_v0_6",
+        "base_id": "MTB_CRC_001",
+        "title": "Μεταστατικό CRC → RAS/BRAF/MMR/MSI πριν από τη συστηματική θεραπεία",
+        "domain": "MTB",
+        "met_addon_type": "no",
+        "subdomain": "CRC / RAS-BRAF / MSI-Lynch",
+        "case_type": "clinical_decision",
+        "length_class": "Standard",
+        "estimated_minutes": {
+          "min": 8,
+          "max": 12
+        },
+        "difficulty": "Intermediate",
+        "status": "curated-core",
+        "review_flag": "Core/MVP prüfen",
+        "review_priority": "high",
+        "core_decision": "RAS/BRAF/MMR/MSI πριν από τη συστηματική θεραπεία",
+        "learning_objectives": [
+          "Διατυπώστε το κεντρικό κλινικομοριακό ερώτημα από το ιστορικό, την ιστολογία και το πλαίσιο του ιστικού υλικού",
+          "Ερμηνεύστε σωστά τις θεραπευτικές και κληρονομικές προεκτάσεις των ευρημάτων MMR/MSI.",
+          "Επικοινωνήστε με σαφήνεια την ενδεικτική λύση στο MTB, μαζί με τους περιορισμούς και τη σημασία για τον ασθενή"
+        ],
+        "tags": [
+          "CRC",
+          "mCRC",
+          "RAS",
+          "BRAF",
+          "MMR",
+          "MSI",
+          "MLH1",
+          "anti-EGFR",
+          "Ανοσοθεραπεία",
+          "Lynch"
+        ],
+        "ap1b_decision": "MTB; Διάρκεια=Standard; Δυσκολία=Intermediate; Κατάσταση=curated-core"
+      },
+      "base_case": {
+        "id": "MTB_CRC_001_v0_6",
+        "title": "Μεταστατικό CRC → RAS/BRAF/MMR/MSI πριν από τη συστηματική θεραπεία",
+        "short": "Βασική διαγνωστική προσέγγιση στο mCRC",
+        "mode": "patient_care",
+        "logic": "crc",
+        "difficulty": "intermediate",
+        "estimated_time_min": "8–12",
+        "budget": {
+          "points_max": 850,
+          "sections_max": 14,
+          "tat_goal": 7
+        },
+        "allowed_tests": [
+          "he_review",
+          "ihc_crc_lineage",
+          "ki67",
+          "mmr_ihc",
+          "msi_pcr_ngs",
+          "kras_exon2_only",
+          "ras_panel_crc",
+          "braf_v600e_crc",
+          "mlh1_methylation",
+          "colon_ngs_panel",
+          "her2_crc_ihc_ish",
+          "broad_pan_panel"
+        ],
+        "story": [
+          {
+            "id": "intake",
+            "title": "Αρχικό αίτημα",
+            "items": [
+              [
+                "Αποστέλλων ιατρός/τμήμα",
+                "Σπλαχνική ογκολογία / Ογκολογικό συμβούλιο"
+              ],
+              [
+                "Κλινικές πληροφορίες",
+                "Γυναίκα 58 ετών με νεοδιαγνωσθέν αδενοκαρκίνωμα σιγμοειδούς και πολλαπλές ηπατικές μεταστάσεις."
+              ],
+              [
+                "Κλινικό ερώτημα",
+                "Σχεδιασμός θεραπείας: είναι δυνατή η θεραπεία anti-EGFR; Είναι σχετική η ανοσοθεραπεία; Υπάρχει ένδειξη κληρονομικού υπόβαθρου;"
+              ],
+              [
+                "Τι παραμένει ασαφές;",
+                "Αρχικά δεν είναι σαφές ποιοι μοριακοί δείκτες πρέπει να είναι πλήρως διαθέσιμοι για τη συστηματική θεραπεία πρώτης γραμμής."
+              ]
+            ]
+          },
+          {
+            "id": "history",
+            "title": "Ιατρικό ιστορικό και κλινικό πλαίσιο",
+            "items": [
+              [
+                "Εντόπιση όγκου",
+                "Όγκος αριστερού κόλου / σιγμοειδούς."
+              ],
+              [
+                "Στάδιο / κλινική κατάσταση",
+                "Μεταστατική νόσος· προγραμματίζεται συστηματική θεραπεία· ECOG 1."
+              ],
+              [
+                "Οικογενειακό ιστορικό",
+                "Μητέρα με καρκίνωμα ενδομητρίου σε μεγαλύτερη ηλικία· δεν υπάρχει γνωστή επιβεβαιωμένη διάγνωση συνδρόμου Lynch."
+              ],
+              [
+                "Χρονική πίεση για το MTB",
+                "Ζητείται καθορισμός της θεραπείας εντός της επόμενης εβδομάδας."
+              ]
+            ]
+          },
+          {
+            "id": "histo",
+            "title": "Ιστολογία και αρχική IHC",
+            "items": [
+              [
+                "H&E",
+                "Διηθητικό αδενοκαρκίνωμα παχέος εντέρου, μέτρια διαφοροποιημένο."
+              ],
+              [
+                "IHC προέλευσης",
+                "CK20 θετικό, CDX2/SATB2 θετικά· CK7 αρνητικό."
+              ],
+              [
+                "Προσωρινή διάγνωση",
+                "Μεταστατικό αδενοκαρκίνωμα παχέος εντέρου, αριστερής εντόπισης."
+              ],
+              [
+                "Εκκρεμεί",
+                "Κατάσταση RAS/BRAF, MMR/MSI και, όπου ενδείκνυται, αντανακλαστικός έλεγχος σε απώλεια MLH1/PMS2."
+              ]
+            ]
+          },
+          {
+            "id": "material",
+            "title": "Αξιολόγηση ιστικού υλικού",
+            "items": [
+              [
+                "Ιστικό υλικό",
+                "Πρωτοπαθής όγκος FFPE, κύβος A4."
+              ],
+              [
+                "Ποσοστό νεοπλασματικών κυττάρων",
+                "περ. 50 %, κατάλληλο για αναλύσεις με βάση το DNA."
+              ],
+              [
+                "Νέκρωση",
+                "μικρή."
+              ],
+              [
+                "Διαθέσιμες μη χρωματισμένες τομές",
+                "Μπορούν να προγραμματιστούν 14 άχρωμες τομές."
+              ],
+              [
+                "Εκτίμηση DNA",
+                "καλή."
+              ],
+              [
+                "Παγίδα στη χρήση του ιστικού υλικού",
+                "Το KRAS εξόνιο 2 μόνο του είναι υπερβολικά περιορισμένο· δεν πρέπει να παραλειφθούν τα MMR/MSI και το πλαίσιο BRAF/MLH1."
+              ]
+            ]
+          }
+        ],
+        "optimal_tests": [
+          "he_review",
+          "mmr_ihc",
+          "msi_pcr_ngs",
+          "ras_panel_crc",
+          "braf_v600e_crc",
+          "mlh1_methylation"
+        ],
+        "acceptable_alternatives": [
+          "colon_ngs_panel"
+        ],
+        "result_truth": {
+          "ras": "KRAS/NRAS άγριου τύπου",
+          "braf": "BRAF p.V600E ανιχνεύεται",
+          "mmr": "Απώλεια MLH1/PMS2· MSH2/MSH6 διατηρημένα",
+          "msi": "MSI-high",
+          "mlh1": "Θετική μεθυλίωση του υποκινητή MLH1",
+          "qc": "Καλή ποιότητα DNA· η IHC είναι αξιολογήσιμη"
+        },
+        "tags": [
+          "CRC",
+          "mCRC",
+          "RAS",
+          "BRAF",
+          "MMR",
+          "MSI",
+          "MLH1",
+          "anti-EGFR",
+          "Ανοσοθεραπεία",
+          "Lynch"
+        ]
+      },
+      "deep_dive": {
+        "version": "v2.1_batch1_content_expansion",
+        "case_id": "MTB_CRC_001_v0_6",
+        "title": "mCRC: RAS/BRAF/MMR/MSI πριν από τη συστηματική θεραπεία",
+        "domain": "MTB",
+        "target_course": "MTB Basics",
+        "deep_dive_priority": "signature",
+        "target_role": "Υποστήριξη παθολογοανατομίας / εκπαίδευση MTB",
+        "estimated_minutes_deep": "12-15",
+        "learning_objectives": [
+          "Κεντρικό μήνυμα: στο mCRC, τα RAS/BRAF και MMR/MSI πρέπει να αξιολογούνται μαζί στον πρώιμο θεραπευτικό σχεδιασμό· η απώλεια MLH1/PMS2 απαιτεί αντανακλαστικό έλεγχο και όχι απλώς ένδειξη για ανοσοθεραπεία."
+        ],
+        "opening_scene": "Στο Ογκολογικό Συμβούλιο πρέπει να καθοριστεί η θεραπεία πρώτης γραμμής για μεταστατικό καρκίνωμα παχέος εντέρου. Η ογκολογική ομάδα ρωτά: είναι ο ασθενής κατάλληλος για θεραπεία anti-EGFR ή τα MMR/MSI υποδεικνύουν διαφορετική στρατηγική;",
+        "case_briefing": "Άνδρας 62 ετών με μεταστατικό αδενοκαρκίνωμα δεξιού κόλου και σύγχρονες ηπατικές μεταστάσεις. Η συστηματική θεραπεία πρώτης γραμμής πρέπει να σχεδιαστεί άμεσα. Υπάρχει διαθέσιμο υλικό FFPE από τον πρωτοπαθή όγκο με επαρκή περιεκτικότητα σε όγκο αλλά περιορισμένο αριθμό τομών. Το κλινικό ερώτημα είναι: RAS/BRAF/MMR/MSI για το πλαίσιο anti-EGFR, ανοσοθεραπείας και Lynch έναντι σποραδικού.",
+        "context_cards": [
+          {
+            "title": "Κλινικό πλαίσιο",
+            "content": "mCRC δεξιού κόλου με ηπατικές μεταστάσεις· απόφαση πρώτης γραμμής στο MTB."
+          },
+          {
+            "title": "Ιστικό υλικό",
+            "content": "Πρωτοπαθής όγκος FFPE, ποσοστό νεοπλασματικών κυττάρων περ. 55–60 %, περιορισμένος αριθμός τομών."
+          },
+          {
+            "title": "Προηγούμενο εύρημα",
+            "content": "Αδενοκαρκίνωμα κόλου· δεν υπάρχουν ακόμη διαθέσιμα μοριακά διαγνωστικά δεδομένα."
+          }
+        ],
+        "pre_results": [
+          {
+            "title": "Προηγούμενα ευρήματα / διαθέσιμα δεδομένα",
+            "content": "Επανεκτίμηση H&E: διηθητικό αδενοκαρκίνωμα με επαρκή περιεκτικότητα σε όγκο. Η IHC/οι προγνωστικοί δείκτες δεν έχουν ακόμη ολοκληρωθεί. Το υλικό επαρκεί για ιεραρχημένο μοριακό έλεγχο, όχι όμως για αυθαίρετες πρόσθετες εξετάσεις."
+          }
+        ],
+        "material_or_resource_constraints": [
+          "Η θεραπευτική απόφαση είναι χρονικά επείγουσα· το υλικό πρέπει να δοθεί κατά προτεραιότητα σε κλινικά σχετικούς δείκτες.",
+          "Εξετάσεις άσχετες με την οντότητα καταναλώνουν τομές και TAT χωρίς όφελος."
+        ],
+        "reasoning_gate_upgrade": [
+          {
+            "id": "central_question",
+            "type": "single_choice",
+            "prompt": "Ποιο είναι το κεντρικό μοριακό ερώτημα;",
+            "options": [
+              {
+                "id": "crc_full_biomarker",
+                "label": "Προγνωστική διαστρωμάτωση για συστηματική θεραπεία: διευρυμένος έλεγχος RAS/BRAF συν MMR/MSI"
+              },
+              {
+                "id": "egfr_only",
+                "label": "Δώστε προτεραιότητα στη διαγνωστική διερεύνηση συντήξεων EGFR/ALK/ROS1 όπως στο NSCLC"
+              },
+              {
+                "id": "pdl1_only",
+                "label": "Χρησιμοποιήστε IHC PD-L1 ως κύριο δείκτη απόφασης για ανοσοθεραπεία"
+              },
+              {
+                "id": "hrd_parp",
+                "label": "Αντιμετωπίστε την ένδειξη HRD/PARP ως κύριο ερώτημα"
+              }
+            ],
+            "correct": [
+              "crc_full_biomarker"
+            ],
+            "rationale": "Τα πλαίσια anti-EGFR, ανοσοθεραπείας, BRAF και Lynch έναντι σποραδικού πρέπει να εξεταστούν ξεχωριστά από νωρίς."
+          },
+          {
+            "id": "ras_scope",
+            "type": "single_choice",
+            "prompt": "Γιατί δεν αρκεί μόνο το KRAS εξόνιο 2;",
+            "options": [
+              {
+                "id": "extended_ras_braf_mmr",
+                "label": "Η διαστρωμάτωση για anti-EGFR απαιτεί διευρυμένο έλεγχο RAS· τα BRAF και MMR/MSI είναι επίσης θεραπευτικά σημαντικά."
+              },
+              {
+                "id": "kras_exon2_enough",
+                "label": "Το KRAS εξόνιο 2 αρκεί για πλήρη διαστρωμάτωση anti-EGFR"
+              },
+              {
+                "id": "ras_only",
+                "label": "Σε νόσο RAS-WT, τα BRAF και MMR/MSI είναι άσχετα με τη θεραπεία πρώτης γραμμής"
+              },
+              {
+                "id": "pdl1_replaces_msi",
+                "label": "Το PD-L1 αντικαθιστά τα MMR/MSI ως δείκτη ανοσοθεραπείας στο CRC"
+              }
+            ],
+            "correct": [
+              "extended_ras_braf_mmr"
+            ],
+            "rationale": "Ο έλεγχος μόνο του KRAS εξονίου 2 αποτελεί κλασική ελλιπή διαδρομή."
+          },
+          {
+            "id": "mlh1_reflex",
+            "type": "single_choice",
+            "prompt": "Τι σημαίνει η απώλεια MLH1/PMS2 στο πλαίσιο του mCRC;",
+            "options": [
+              {
+                "id": "mlh1_braf_reflex",
+                "label": "Αντανακλαστικός έλεγχος με μεθυλίωση υποκινητή MLH1 ± πλαίσιο BRAF και ταξινόμηση Lynch έναντι σποραδικού."
+              },
+              {
+                "id": "direct_lynch",
+                "label": "Η απώλεια MLH1/PMS2 αποδεικνύει πάντοτε άμεσα σύνδρομο Lynch"
+              },
+              {
+                "id": "ignore_mlh1",
+                "label": "Η απώλεια MLH1/PMS2 δεν έχει θεραπευτική ούτε κληρονομική σημασία"
+              },
+              {
+                "id": "lung_fusion",
+                "label": "Ένα πάνελ RNA συντήξεων πνεύμονα είναι το κατάλληλο αντανακλαστικό βήμα"
+              }
+            ],
+            "correct": [
+              "mlh1_braf_reflex"
+            ],
+            "rationale": "Το dMMR είναι προγνωστικό και δυνητικά σχετικό με κληρονομικό κίνδυνο."
+          }
+        ],
+        "decision_task": "Επιλέξτε πρωτογενή προγνωστική διαγνωστική για mCRC που να καλύπτει σωστά την καταλληλότητα για anti-EGFR, το πλαίσιο BRAF, MSI/dMMR/ανοσοθεραπεία και το ερώτημα Lynch έναντι σποραδικού.",
+        "expected_path": "Επανεκτίμηση H&E/περιεκτικότητας σε όγκο → διευρυμένος έλεγχος RAS/KRAS/NRAS → BRAF V600E → IHC MMR και/ή MSI PCR/NGS → σε απώλεια MLH1/PMS2: μεθυλίωση υποκινητή MLH1 ± πλαίσιο BRAF → επικοινωνία στο MTB: ξεχωριστή παρουσίαση των συνεπειών anti-EGFR, ανοσοθεραπείας και Lynch έναντι σποραδικού.",
+        "acceptable_alternatives": "Ένα ευρύτερο πάνελ NGS παχέος εντέρου είναι αποδεκτό εφόσον καλύπτει RAS/BRAF και, όπου ενδείκνυται, άλλες κλινικά σχετικές αλλοιώσεις. IHC/ISH HER2 μπορεί προαιρετικά να είναι χρήσιμη σε πλαίσιο RAS-WT ή σε μεταγενέστερη γραμμή θεραπείας.",
+        "low_value_traps": [
+          {
+            "label": "μόνο KRAS εξόνιο 2",
+            "why_bad": "ελλιπής διαστρωμάτωση anti-EGFR."
+          },
+          {
+            "label": "RAS-WT = αυτόματα anti-EGFR",
+            "why_bad": "Αγνοούνται τα MSI/BRAF, η εντόπιση του όγκου και το κλινικό πλαίσιο."
+          },
+          {
+            "label": "IHC PD-L1",
+            "why_bad": "δεν αποτελεί πρωτεύοντα δείκτη απόφασης για ανοσοθεραπεία στο CRC."
+          },
+          {
+            "label": "Score HRD/πάνελ RNA συντήξεων πνεύμονα",
+            "why_bad": "άσχετο με την οντότητα, χαμηλής αξίας ή παραπλανητικό."
+          }
+        ],
+        "twist": {
+          "title": "Το RAS άγριου τύπου δεν αποτελεί επαρκή θεραπευτική απάντηση",
+          "content": "Η περίπτωση είναι RAS άγριου τύπου, αλλά εμφανίζει dMMR/MSI-H και BRAF V600E. Ο έλεγχος μόνο του RAS θα οδηγούσε σε συζήτηση για καταλληλότητα anti-EGFR, αλλά θα παρέλειπε την ανοσοθεραπευτική, προγνωστική και κληρονομική ερμηνεία.",
+          "why_critical": "Το θεραπευτικά σχετικό πλαίσιο δεν προκύπτει από έναν μεμονωμένο δείκτη, αλλά από τον συνδυασμό RAS/BRAF και MMR/MSI, συμπεριλαμβανομένου του αντανακλαστικού ελέγχου."
+        },
+        "result_packages": [
+          {
+            "id": "optimal",
+            "title": "Πλήρης διαδρομή βιοδεικτών mCRC",
+            "class": "optimal",
+            "result": "RAS-WT, BRAF V600E, απώλεια MLH1/PMS2, MSI-H. Θετική μεθυλίωση MLH1 → περισσότερο συμβατή με σποραδική κατάσταση dMMR. Anti-EGFR μόνο εντός του συνολικού πλαισίου· στο MTB να συζητηθούν το πλαίσιο ανοσοθεραπείας/BRAF και η πρόγνωση."
+          },
+          {
+            "id": "partial_ras_only",
+            "title": "Διαδρομή μόνο RAS",
+            "class": "incomplete",
+            "result": "Αναγνωρίζεται RAS-WT, αλλά λείπουν BRAF/MSI/MMR. Η έκθεση είναι ελλιπής για τη συστηματική θεραπεία· απαιτείται συμπληρωματικός έλεγχος."
+          },
+          {
+            "id": "wrong_overdiagnostic",
+            "title": "Διαγνωστικός έλεγχος άσχετος με την οντότητα",
+            "class": "wrong",
+            "result": "Υλικό/TAT καταναλώνεται για HRD, έλεγχο συντήξεων πνεύμονα ή PD-L1 χωρίς να απαντάται το κεντρικό ερώτημα του CRC."
+          }
+        ],
+        "followup_logic": [
+          {
+            "trigger": "Ελλιπής ή αβέβαιη πρωτογενής διαδρομή",
+            "action": "Εάν αρχικά λείπουν MMR/MSI ή BRAF, αιτιολογήστε σαφώς τον συμπληρωματικό έλεγχο. Σε απώλεια MLH1/PMS2, πραγματοποιήστε αντανακλαστικό έλεγχο με μεθυλίωση MLH1 ± BRAF V600E για διάκριση σποραδικής από Lynch-σχετιζόμενη νόσο. Συστήστε κλινική γενετική όταν δεν τεκμηριώνεται σποραδικό πρότυπο.",
+            "consequence": "Συμπληρωματικός έλεγχος ή νέα συζήτηση στο MTB με τελική ερμηνεία."
+          }
+        ],
+        "debrief_points": [
+          "Το mCRC απαιτεί περισσότερα από το RAS.",
+          "Το MMR/MSI είναι προγνωστικό για ανοσοθεραπεία και μπορεί να έχει κληρονομικές συνέπειες.",
+          "Η απώλεια MLH1/PMS2 απαιτεί αντανακλαστική διερεύνηση και ταξινόμηση.",
+          "Κεντρικό μήνυμα: στο mCRC, τα RAS/BRAF και MMR/MSI πρέπει να αξιολογούνται μαζί στον πρώιμο θεραπευτικό σχεδιασμό· η απώλεια MLH1/PMS2 απαιτεί αντανακλαστικό έλεγχο και όχι απλώς ένδειξη για ανοσοθεραπεία."
+        ],
+        "instructor_notes": {
+          "model_answer": "Βέλτιστη λύση: διευρυμένος έλεγχος RAS/BRAF συν IHC MMR/έλεγχος MSI· σε απώλεια MLH1/PMS2, μεθυλίωση MLH1/πλαίσιο BRAF· σαφής επικοινωνία στο MTB για anti-EGFR, ανοσοθεραπεία και Lynch έναντι σποραδικού.",
+          "scoring_focus": [
+            "Κλινικός συλλογισμός: αναγνωρίστηκε το ερώτημα της συστηματικής θεραπείας.",
+            "Επιλογή μεθόδων: δόθηκε προτεραιότητα στα RAS/BRAF/MMR/MSI.",
+            "Επικοινωνία: οι επιπτώσεις anti-EGFR, ανοσοθεραπείας και Lynch έναντι σποραδικού επικοινωνήθηκαν ξεχωριστά."
+          ],
+          "discussion_questions": [
+            "Γιατί δεν αρκεί πλέον μόνο το KRAS εξόνιο 2;",
+            "Πώς διαφέρουν οι προγνωστικές και οι κληρονομικές συνέπειες του dMMR/MSI-H;",
+            "Πώς πρέπει να επικοινωνείται η απώλεια MLH1/PMS2 στο MTB;"
+          ]
+        },
+        "report_additions": {
+          "batch": "Επέκταση περιεχομένου Batch1 v2.1"
+        },
+        "is_signature_case": true
+      }
+    },
+    "es": {
+      "metadata": {
+        "case_id": "MTB_CRC_001_v0_6",
+        "base_id": "MTB_CRC_001",
+        "title": "CCR metastásico → RAS/BRAF/MMR/MSI antes del tratamiento sistémico",
+        "domain": "MTB",
+        "met_addon_type": "no",
+        "subdomain": "CCR / RAS-BRAF / MSI-Lynch",
+        "case_type": "clinical_decision",
+        "length_class": "Standard",
+        "estimated_minutes": {
+          "min": 8,
+          "max": 12
+        },
+        "difficulty": "Intermediate",
+        "status": "curated-core",
+        "review_flag": "Core/MVP prüfen",
+        "review_priority": "high",
+        "core_decision": "RAS/BRAF/MMR/MSI antes del tratamiento sistémico",
+        "learning_objectives": [
+          "Deducir la pregunta clínico-molecular central a partir de la anamnesis, la histología y el contexto del tejido",
+          "Interpretar correctamente las implicaciones terapéuticas y hereditarias de los hallazgos MMR/MSI.",
+          "Comunicar con claridad la solución de referencia en el MTB, incluidas las limitaciones y la relevancia para el paciente"
+        ],
+        "tags": [
+          "CCR",
+          "mCCR",
+          "RAS",
+          "BRAF",
+          "MMR",
+          "MSI",
+          "MLH1",
+          "anti-EGFR",
+          "Inmunoterapia",
+          "Lynch"
+        ],
+        "ap1b_decision": "MTB; Duración=Estándar; Dificultad=Intermedia; Estado=curated-core"
+      },
+      "base_case": {
+        "id": "MTB_CRC_001_v0_6",
+        "title": "CCR metastásico → RAS/BRAF/MMR/MSI antes del tratamiento sistémico",
+        "short": "Diagnóstico básico del mCCR",
+        "mode": "patient_care",
+        "logic": "crc",
+        "difficulty": "intermediate",
+        "estimated_time_min": "8–12",
+        "budget": {
+          "points_max": 850,
+          "sections_max": 14,
+          "tat_goal": 7
+        },
+        "allowed_tests": [
+          "he_review",
+          "ihc_crc_lineage",
+          "ki67",
+          "mmr_ihc",
+          "msi_pcr_ngs",
+          "kras_exon2_only",
+          "ras_panel_crc",
+          "braf_v600e_crc",
+          "mlh1_methylation",
+          "colon_ngs_panel",
+          "her2_crc_ihc_ish",
+          "broad_pan_panel"
+        ],
+        "story": [
+          {
+            "id": "intake",
+            "title": "Solicitud inicial",
+            "items": [
+              [
+                "Solicitante",
+                "Oncología digestiva / comité de tumores"
+              ],
+              [
+                "Información clínica",
+                "Paciente de 58 años con adenocarcinoma de sigma de nuevo diagnóstico y múltiples metástasis hepáticas."
+              ],
+              [
+                "Pregunta clínica",
+                "Planificación terapéutica: ¿es posible una terapia anti-EGFR? ¿Es relevante la inmunoterapia? ¿Hay indicios de un contexto hereditario?"
+              ],
+              [
+                "¿Qué sigue sin estar claro?",
+                "Al inicio no está claro qué marcadores moleculares deben estar disponibles de forma completa para la primera línea de tratamiento sistémico."
+              ]
+            ]
+          },
+          {
+            "id": "history",
+            "title": "Anamnesis y contexto clínico",
+            "items": [
+              [
+                "Localización tumoral",
+                "Tumor de colon izquierdo / sigma."
+              ],
+              [
+                "Estadio / situación clínica",
+                "Enfermedad metastásica; tratamiento sistémico planificado; ECOG 1."
+              ],
+              [
+                "Antecedentes familiares",
+                "Madre con carcinoma endometrial a edad avanzada; no consta un diagnóstico confirmado de síndrome de Lynch."
+              ],
+              [
+                "Presión de tiempo para el MTB",
+                "Se solicita definir el tratamiento durante la próxima semana."
+              ]
+            ]
+          },
+          {
+            "id": "histo",
+            "title": "Histología e IHC inicial",
+            "items": [
+              [
+                "H&E",
+                "Adenocarcinoma colorrectal invasivo, moderadamente diferenciado."
+              ],
+              [
+                "Linaje por IHQ",
+                "CK20 positivo, CDX2/SATB2 positivos; CK7 negativo."
+              ],
+              [
+                "Diagnóstico de trabajo",
+                "Adenocarcinoma colorrectal metastásico, de localización izquierda."
+              ],
+              [
+                "Pendiente",
+                "Estado de RAS/BRAF, MMR/MSI y, cuando proceda, pruebas reflejas ante pérdida de MLH1/PMS2."
+              ]
+            ]
+          },
+          {
+            "id": "material",
+            "title": "Evaluación del tejido",
+            "items": [
+              [
+                "Tejido",
+                "Tumor primario FFPE, bloque A4."
+              ],
+              [
+                "Porcentaje tumoral",
+                "aprox. 50 %, adecuado para análisis basados en ADN."
+              ],
+              [
+                "Necrosis",
+                "escasa."
+              ],
+              [
+                "Cortes sin teñir disponibles",
+                "Pueden planificarse 14 cortes sin teñir."
+              ],
+              [
+                "Previsión para ADN",
+                "buena."
+              ],
+              [
+                "Riesgo de agotamiento del tejido",
+                "KRAS exón 2 por sí solo es demasiado limitado; no deben faltar MMR/MSI ni el contexto BRAF/MLH1."
+              ]
+            ]
+          }
+        ],
+        "optimal_tests": [
+          "he_review",
+          "mmr_ihc",
+          "msi_pcr_ngs",
+          "ras_panel_crc",
+          "braf_v600e_crc",
+          "mlh1_methylation"
+        ],
+        "acceptable_alternatives": [
+          "colon_ngs_panel"
+        ],
+        "result_truth": {
+          "ras": "KRAS/NRAS de tipo salvaje",
+          "braf": "BRAF p.V600E detectable",
+          "mmr": "Pérdida de MLH1/PMS2; MSH2/MSH6 conservados",
+          "msi": "MSI-high",
+          "mlh1": "Metilación del promotor de MLH1 positiva",
+          "qc": "Buena calidad del ADN; IHQ interpretable"
+        },
+        "tags": [
+          "CCR",
+          "mCCR",
+          "RAS",
+          "BRAF",
+          "MMR",
+          "MSI",
+          "MLH1",
+          "anti-EGFR",
+          "Inmunoterapia",
+          "Lynch"
+        ]
+      },
+      "deep_dive": {
+        "version": "v2.1_batch1_content_expansion",
+        "case_id": "MTB_CRC_001_v0_6",
+        "title": "mCCR: RAS/BRAF/MMR/MSI antes del tratamiento sistémico",
+        "domain": "MTB",
+        "target_course": "MTB Basics",
+        "deep_dive_priority": "signature",
+        "target_role": "Asistencia en anatomía patológica / formación MTB",
+        "estimated_minutes_deep": "12-15",
+        "learning_objectives": [
+          "Mensaje clave: en el mCCR, RAS/BRAF y MMR/MSI deben valorarse conjuntamente en la planificación terapéutica inicial; la pérdida de MLH1/PMS2 requiere pruebas reflejas, no solo una señal a favor de inmunoterapia."
+        ],
+        "opening_scene": "En el comité de tumores debe definirse el tratamiento de primera línea de un carcinoma colorrectal metastásico. Oncología pregunta: ¿es el paciente candidato a terapia anti-EGFR o MMR/MSI apuntan a otra estrategia?",
+        "case_briefing": "Varón de 62 años con adenocarcinoma metastásico de colon derecho y metástasis hepáticas sincrónicas. Debe planificarse pronto el tratamiento sistémico de primera línea. Hay material FFPE disponible del tumor primario, con contenido tumoral suficiente pero un número limitado de cortes. La pregunta clínica es: RAS/BRAF/MMR/MSI para el contexto anti-EGFR, inmunoterapia y Lynch frente a esporádico.",
+        "context_cards": [
+          {
+            "title": "Contexto clínico",
+            "content": "mCCR de colon derecho con metástasis hepáticas; decisión de primera línea en el comité de tumores."
+          },
+          {
+            "title": "Tejido",
+            "content": "Tumor primario FFPE, contenido de células tumorales aprox. 55–60 %, número limitado de cortes."
+          },
+          {
+            "title": "Resultado previo",
+            "content": "Adenocarcinoma de colon; todavía no hay diagnóstico molecular disponible."
+          }
+        ],
+        "pre_results": [
+          {
+            "title": "Hallazgos previos / datos disponibles",
+            "content": "Revisión H&E: adenocarcinoma invasivo con contenido tumoral suficiente. La IHQ/los marcadores predictivos aún no se han completado. El material es suficiente para un diagnóstico molecular priorizado, pero no para pruebas adicionales indiscriminadas."
+          }
+        ],
+        "material_or_resource_constraints": [
+          "La decisión terapéutica es urgente; el material debe priorizarse para marcadores clínicamente relevantes.",
+          "Las pruebas ajenas a la entidad consumen cortes y TAT sin aportar beneficio."
+        ],
+        "reasoning_gate_upgrade": [
+          {
+            "id": "central_question",
+            "type": "single_choice",
+            "prompt": "¿Cuál es la pregunta molecular central?",
+            "options": [
+              {
+                "id": "crc_full_biomarker",
+                "label": "Estratificación predictiva para tratamiento sistémico: RAS ampliado/BRAF más MMR/MSI"
+              },
+              {
+                "id": "egfr_only",
+                "label": "Priorizar el diagnóstico de fusiones EGFR/ALK/ROS1 como en el CPNM"
+              },
+              {
+                "id": "pdl1_only",
+                "label": "Utilizar IHQ de PD-L1 como marcador principal para decidir inmunoterapia"
+              },
+              {
+                "id": "hrd_parp",
+                "label": "Tratar una indicación HRD/PARP como cuestión principal"
+              }
+            ],
+            "correct": [
+              "crc_full_biomarker"
+            ],
+            "rationale": "Los contextos anti-EGFR, inmunoterapia, BRAF y Lynch frente a esporádico deben abordarse por separado desde el principio."
+          },
+          {
+            "id": "ras_scope",
+            "type": "single_choice",
+            "prompt": "¿Por qué KRAS exón 2 por sí solo no es suficiente?",
+            "options": [
+              {
+                "id": "extended_ras_braf_mmr",
+                "label": "La estratificación anti-EGFR requiere un estudio ampliado de RAS; BRAF y MMR/MSI también son relevantes terapéuticamente."
+              },
+              {
+                "id": "kras_exon2_enough",
+                "label": "KRAS exón 2 es suficiente para una estratificación anti-EGFR completa"
+              },
+              {
+                "id": "ras_only",
+                "label": "En enfermedad RAS-WT, BRAF y MMR/MSI son irrelevantes para la primera línea"
+              },
+              {
+                "id": "pdl1_replaces_msi",
+                "label": "PD-L1 sustituye a MMR/MSI como marcador de inmunoterapia en el CCR"
+              }
+            ],
+            "correct": [
+              "extended_ras_braf_mmr"
+            ],
+            "rationale": "El enfoque limitado a KRAS exón 2 es una vía clásicamente incompleta."
+          },
+          {
+            "id": "mlh1_reflex",
+            "type": "single_choice",
+            "prompt": "¿Qué significa la pérdida de MLH1/PMS2 en el contexto del mCCR?",
+            "options": [
+              {
+                "id": "mlh1_braf_reflex",
+                "label": "Pruebas reflejas con metilación del promotor de MLH1 ± contexto BRAF y clasificación Lynch frente a esporádico."
+              },
+              {
+                "id": "direct_lynch",
+                "label": "La pérdida de MLH1/PMS2 demuestra siempre directamente un síndrome de Lynch"
+              },
+              {
+                "id": "ignore_mlh1",
+                "label": "La pérdida de MLH1/PMS2 es irrelevante desde el punto de vista terapéutico y hereditario"
+              },
+              {
+                "id": "lung_fusion",
+                "label": "Un panel de fusiones de ARN de pulmón es el paso reflejo adecuado"
+              }
+            ],
+            "correct": [
+              "mlh1_braf_reflex"
+            ],
+            "rationale": "dMMR es predictivo y potencialmente relevante para el riesgo hereditario."
+          }
+        ],
+        "decision_task": "Seleccione un diagnóstico predictivo primario para mCCR que aborde correctamente la elegibilidad para anti-EGFR, el contexto BRAF, MSI/dMMR/inmunoterapia y la cuestión Lynch frente a esporádico.",
+        "expected_path": "Revisión H&E/contenido tumoral → RAS ampliado/KRAS/NRAS → BRAF V600E → IHQ de MMR y/o MSI por PCR/NGS → ante pérdida de MLH1/PMS2: metilación del promotor de MLH1 ± contexto BRAF → comunicación en el comité: presentar por separado las implicaciones anti-EGFR, inmunoterapia y Lynch frente a esporádico.",
+        "acceptable_alternatives": "Un panel NGS colorrectal más amplio es aceptable si cubre RAS/BRAF y, cuando proceda, otras alteraciones clínicamente relevantes. La IHQ/ISH de HER2 puede ser útil de forma opcional en contexto RAS-WT o en una línea terapéutica posterior.",
+        "low_value_traps": [
+          {
+            "label": "solo KRAS exón 2",
+            "why_bad": "estratificación anti-EGFR incompleta."
+          },
+          {
+            "label": "RAS-WT = automáticamente anti-EGFR",
+            "why_bad": "Se ignoran MSI/BRAF, la localización tumoral y el contexto clínico."
+          },
+          {
+            "label": "IHQ de PD-L1",
+            "why_bad": "no es un marcador principal de decisión para inmunoterapia en el CCR."
+          },
+          {
+            "label": "Puntuación HRD/panel de fusiones de ARN de pulmón",
+            "why_bad": "ajeno a la entidad, de bajo valor o engañoso."
+          }
+        ],
+        "twist": {
+          "title": "El RAS de tipo salvaje no es una respuesta terapéutica suficiente",
+          "content": "El caso es RAS de tipo salvaje, pero presenta dMMR/MSI-H y BRAF V600E. Analizar solo RAS llevaría a discutir la elegibilidad anti-EGFR, pero se perderían la interpretación inmunoterapéutica, pronóstica y hereditaria.",
+          "why_critical": "El contexto terapéuticamente relevante no procede de un único marcador, sino de la combinación de RAS/BRAF y MMR/MSI, incluidas las pruebas reflejas."
+        },
+        "result_packages": [
+          {
+            "id": "optimal",
+            "title": "Vía completa de biomarcadores del mCCR",
+            "class": "optimal",
+            "result": "RAS-WT, BRAF V600E, pérdida de MLH1/PMS2, MSI-H. Metilación de MLH1 positiva → más compatible con una constelación dMMR esporádica. Anti-EGFR solo según el contexto; abordar en el comité el contexto de inmunoterapia/BRAF y el pronóstico."
+          },
+          {
+            "id": "partial_ras_only",
+            "title": "Vía solo RAS",
+            "class": "incomplete",
+            "result": "Se identifica RAS-WT, pero faltan BRAF/MSI/MMR. El informe es incompleto para el tratamiento sistémico; se requieren pruebas adicionales."
+          },
+          {
+            "id": "wrong_overdiagnostic",
+            "title": "Diagnóstico ajeno a la entidad tumoral",
+            "class": "wrong",
+            "result": "Se consumen material/TAT en HRD, pruebas de fusiones pulmonares o PD-L1 sin responder a la pregunta central del CCR."
+          }
+        ],
+        "followup_logic": [
+          {
+            "trigger": "Vía primaria incompleta o incierta",
+            "action": "Si inicialmente faltan MMR/MSI o BRAF, justificar claramente las pruebas adicionales. Ante pérdida de MLH1/PMS2, realizar pruebas reflejas con metilación de MLH1 ± BRAF V600E para distinguir un patrón esporádico de uno asociado a Lynch. Recomendar genética clínica si no se demuestra un patrón esporádico.",
+            "consequence": "Pruebas adicionales o nueva discusión en el comité con interpretación final."
+          }
+        ],
+        "debrief_points": [
+          "El mCCR requiere más que RAS.",
+          "MMR/MSI es predictivo para inmunoterapia y puede tener implicaciones hereditarias.",
+          "La pérdida de MLH1/PMS2 requiere una clasificación mediante pruebas reflejas.",
+          "Mensaje clave: en el mCCR, RAS/BRAF y MMR/MSI deben valorarse conjuntamente en la planificación terapéutica inicial; la pérdida de MLH1/PMS2 requiere pruebas reflejas, no solo una señal a favor de inmunoterapia."
+        ],
+        "instructor_notes": {
+          "model_answer": "Solución óptima: diagnóstico ampliado de RAS/BRAF más IHQ de MMR/prueba de MSI; ante pérdida de MLH1/PMS2, metilación de MLH1/contexto BRAF; comunicación clara en el comité sobre anti-EGFR, inmunoterapia y Lynch frente a esporádico.",
+          "scoring_focus": [
+            "Razonamiento clínico: se identificó la cuestión del tratamiento sistémico.",
+            "Selección de métodos: se priorizaron RAS/BRAF/MMR/MSI.",
+            "Comunicación: se comunicaron por separado las implicaciones anti-EGFR, inmunoterapia y Lynch frente a esporádico."
+          ],
+          "discussion_questions": [
+            "¿Por qué KRAS exón 2 por sí solo ya no es suficiente?",
+            "¿En qué se diferencian las implicaciones predictivas y hereditarias de dMMR/MSI-H?",
+            "¿Cómo debe comunicarse la pérdida de MLH1/PMS2 en el comité de tumores?"
+          ]
+        },
+        "report_additions": {
+          "batch": "Ampliación de contenido Batch1 v2.1"
+        },
+        "is_signature_case": true
+      }
+    },
+    "fr": {
+      "metadata": {
+        "case_id": "MTB_CRC_001_v0_6",
+        "base_id": "MTB_CRC_001",
+        "title": "CCR métastatique → RAS/BRAF/MMR/MSI avant traitement systémique",
+        "domain": "MTB",
+        "met_addon_type": "no",
+        "subdomain": "CCR / RAS-BRAF / MSI-Lynch",
+        "case_type": "clinical_decision",
+        "length_class": "Standard",
+        "estimated_minutes": {
+          "min": 8,
+          "max": 12
+        },
+        "difficulty": "Intermediate",
+        "status": "curated-core",
+        "review_flag": "Core/MVP prüfen",
+        "review_priority": "high",
+        "core_decision": "RAS/BRAF/MMR/MSI avant traitement systémique",
+        "learning_objectives": [
+          "Dégager la question clinico-moléculaire centrale à partir de l’anamnèse, de l’histologie et du contexte tissulaire",
+          "Interpréter correctement les implications thérapeutiques et héréditaires des résultats MMR/MSI.",
+          "Communiquer clairement la solution de référence en MTB, avec ses limites et sa pertinence pour le patient"
+        ],
+        "tags": [
+          "CCR",
+          "mCCR",
+          "RAS",
+          "BRAF",
+          "MMR",
+          "MSI",
+          "MLH1",
+          "anti-EGFR",
+          "Immunothérapie",
+          "Lynch"
+        ],
+        "ap1b_decision": "RCP moléculaire ; Durée=Standard ; Difficulté=Intermédiaire ; Statut=curated-core"
+      },
+      "base_case": {
+        "id": "MTB_CRC_001_v0_6",
+        "title": "CCR métastatique → RAS/BRAF/MMR/MSI avant traitement systémique",
+        "short": "Bilan diagnostique de base du mCCR",
+        "mode": "patient_care",
+        "logic": "crc",
+        "difficulty": "intermediate",
+        "estimated_time_min": "8–12",
+        "budget": {
+          "points_max": 850,
+          "sections_max": 14,
+          "tat_goal": 7
+        },
+        "allowed_tests": [
+          "he_review",
+          "ihc_crc_lineage",
+          "ki67",
+          "mmr_ihc",
+          "msi_pcr_ngs",
+          "kras_exon2_only",
+          "ras_panel_crc",
+          "braf_v600e_crc",
+          "mlh1_methylation",
+          "colon_ngs_panel",
+          "her2_crc_ihc_ish",
+          "broad_pan_panel"
+        ],
+        "story": [
+          {
+            "id": "intake",
+            "title": "Demande initiale",
+            "items": [
+              [
+                "Prescripteur",
+                "Oncologie digestive / RCP"
+              ],
+              [
+                "Informations cliniques",
+                "Patiente de 58 ans avec adénocarcinome sigmoïdien nouvellement diagnostiqué et métastases hépatiques multiples."
+              ],
+              [
+                "Question clinique",
+                "Planification thérapeutique : un traitement anti-EGFR est-il possible ? L’immunothérapie est-elle pertinente ? Existe-t-il un indice en faveur d’un contexte héréditaire ?"
+              ],
+              [
+                "Que reste-t-il à clarifier ?",
+                "Au départ, on ne sait pas précisément quels marqueurs moléculaires doivent être disponibles de façon complète pour la première ligne de traitement systémique."
+              ]
+            ]
+          },
+          {
+            "id": "history",
+            "title": "Anamnèse et contexte clinique",
+            "items": [
+              [
+                "Localisation tumorale",
+                "Tumeur du côlon gauche / sigmoïde."
+              ],
+              [
+                "Stade / situation clinique",
+                "Maladie métastatique ; traitement systémique prévu ; ECOG 1."
+              ],
+              [
+                "Antécédents familiaux",
+                "Mère atteinte d’un carcinome de l’endomètre à un âge avancé ; aucun diagnostic confirmé de syndrome de Lynch n’est connu."
+              ],
+              [
+                "Contrainte de délai pour le MTB",
+                "Une décision thérapeutique est souhaitée au cours de la semaine suivante."
+              ]
+            ]
+          },
+          {
+            "id": "histo",
+            "title": "Histologie et IHC initiale",
+            "items": [
+              [
+                "H&E",
+                "Adénocarcinome colorectal invasif, moyennement différencié."
+              ],
+              [
+                "Profil de lignée en IHC",
+                "CK20 positif, CDX2/SATB2 positifs ; CK7 négatif."
+              ],
+              [
+                "Diagnostic de travail",
+                "Adénocarcinome colorectal métastatique, de localisation gauche."
+              ],
+              [
+                "À compléter",
+                "Statut RAS/BRAF, MMR/MSI et, le cas échéant, analyses réflexes en cas de perte de MLH1/PMS2."
+              ]
+            ]
+          },
+          {
+            "id": "material",
+            "title": "Évaluation du matériel tissulaire",
+            "items": [
+              [
+                "Matériel tissulaire",
+                "Tumeur primitive FFPE, bloc A4."
+              ],
+              [
+                "Cellularité tumorale",
+                "env. 50 %, bien adapté aux analyses basées sur l’ADN."
+              ],
+              [
+                "Nécrose",
+                "faible."
+              ],
+              [
+                "Coupes non colorées disponibles",
+                "14 coupes non colorées peuvent être planifiées."
+              ],
+              [
+                "Prévision pour l’ADN",
+                "bonne."
+              ],
+              [
+                "Piège lié à l’utilisation du tissu",
+                "KRAS exon 2 seul est trop restrictif ; MMR/MSI et le contexte BRAF/MLH1 ne doivent pas être omis."
+              ]
+            ]
+          }
+        ],
+        "optimal_tests": [
+          "he_review",
+          "mmr_ihc",
+          "msi_pcr_ngs",
+          "ras_panel_crc",
+          "braf_v600e_crc",
+          "mlh1_methylation"
+        ],
+        "acceptable_alternatives": [
+          "colon_ngs_panel"
+        ],
+        "result_truth": {
+          "ras": "KRAS/NRAS de type sauvage",
+          "braf": "BRAF p.V600E détectable",
+          "mmr": "Perte de MLH1/PMS2 ; MSH2/MSH6 conservés",
+          "msi": "MSI-high",
+          "mlh1": "Méthylation du promoteur de MLH1 positive",
+          "qc": "Bonne qualité de l’ADN ; IHC interprétable"
+        },
+        "tags": [
+          "CCR",
+          "mCCR",
+          "RAS",
+          "BRAF",
+          "MMR",
+          "MSI",
+          "MLH1",
+          "anti-EGFR",
+          "Immunothérapie",
+          "Lynch"
+        ]
+      },
+      "deep_dive": {
+        "version": "v2.1_batch1_content_expansion",
+        "case_id": "MTB_CRC_001_v0_6",
+        "title": "mCCR : RAS/BRAF/MMR/MSI avant traitement systémique",
+        "domain": "MTB",
+        "target_course": "MTB Basics",
+        "deep_dive_priority": "signature",
+        "target_role": "Assistance en anatomopathologie / formation RCP moléculaire",
+        "estimated_minutes_deep": "12-15",
+        "learning_objectives": [
+          "À retenir : dans le mCCR, RAS/BRAF et MMR/MSI doivent être évalués ensemble dès la planification thérapeutique initiale ; une perte de MLH1/PMS2 nécessite des analyses réflexes, et pas seulement un signal en faveur d’une immunothérapie."
+        ],
+        "opening_scene": "En RCP, il faut définir le traitement de première ligne d’un carcinome colorectal métastatique. L’oncologie demande : le patient est-il éligible à un traitement anti-EGFR, ou MMR/MSI orientent-ils vers une autre stratégie ?",
+        "case_briefing": "Patient de 62 ans avec adénocarcinome métastatique du côlon droit et métastases hépatiques synchrones. Le traitement systémique de première ligne doit être planifié rapidement. Du matériel FFPE de la tumeur primitive est disponible, avec une cellularité tumorale suffisante mais un nombre limité de coupes. La question clinique est : RAS/BRAF/MMR/MSI pour le contexte anti-EGFR, immunothérapie et Lynch versus sporadique.",
+        "context_cards": [
+          {
+            "title": "Contexte clinique",
+            "content": "mCCR du côlon droit avec métastases hépatiques ; décision de première ligne en RCP."
+          },
+          {
+            "title": "Matériel tissulaire",
+            "content": "Tumeur primitive FFPE, cellularité tumorale d’environ 55–60 %, nombre limité de coupes."
+          },
+          {
+            "title": "Résultat antérieur",
+            "content": "Adénocarcinome colique ; aucun bilan moléculaire disponible à ce stade."
+          }
+        ],
+        "pre_results": [
+          {
+            "title": "Résultats antérieurs / données disponibles",
+            "content": "Relecture H&E : adénocarcinome invasif avec cellularité tumorale suffisante. L’IHC/les marqueurs prédictifs ne sont pas encore complets. Le matériel suffit pour un bilan moléculaire priorisé, mais pas pour des examens complémentaires non ciblés."
+          }
+        ],
+        "material_or_resource_constraints": [
+          "La décision thérapeutique est urgente ; le matériel doit être priorisé pour les marqueurs cliniquement pertinents.",
+          "Des examens sans rapport avec l’entité consomment des coupes et du TAT sans bénéfice."
+        ],
+        "reasoning_gate_upgrade": [
+          {
+            "id": "central_question",
+            "type": "single_choice",
+            "prompt": "Quelle est la question moléculaire centrale ?",
+            "options": [
+              {
+                "id": "crc_full_biomarker",
+                "label": "Stratification prédictive pour le traitement systémique : RAS étendu/BRAF plus MMR/MSI"
+              },
+              {
+                "id": "egfr_only",
+                "label": "Prioriser la recherche de fusions EGFR/ALK/ROS1 comme dans le CBNPC"
+              },
+              {
+                "id": "pdl1_only",
+                "label": "Utiliser l’IHC PD-L1 comme principal marqueur décisionnel pour l’immunothérapie"
+              },
+              {
+                "id": "hrd_parp",
+                "label": "Faire de l’indication HRD/PARP la question principale"
+              }
+            ],
+            "correct": [
+              "crc_full_biomarker"
+            ],
+            "rationale": "Les contextes anti-EGFR, immunothérapie, BRAF et Lynch versus sporadique doivent être abordés séparément dès le début."
+          },
+          {
+            "id": "ras_scope",
+            "type": "single_choice",
+            "prompt": "Pourquoi KRAS exon 2 seul ne suffit-il pas ?",
+            "options": [
+              {
+                "id": "extended_ras_braf_mmr",
+                "label": "La stratification anti-EGFR nécessite un test RAS étendu ; BRAF et MMR/MSI sont également pertinents sur le plan thérapeutique."
+              },
+              {
+                "id": "kras_exon2_enough",
+                "label": "KRAS exon 2 suffit pour une stratification anti-EGFR complète"
+              },
+              {
+                "id": "ras_only",
+                "label": "En situation RAS-WT, BRAF et MMR/MSI sont sans pertinence pour la première ligne"
+              },
+              {
+                "id": "pdl1_replaces_msi",
+                "label": "PD-L1 remplace MMR/MSI comme marqueur d’immunothérapie dans le CCR"
+              }
+            ],
+            "correct": [
+              "extended_ras_braf_mmr"
+            ],
+            "rationale": "La stratégie limitée à KRAS exon 2 est une voie classiquement incomplète."
+          },
+          {
+            "id": "mlh1_reflex",
+            "type": "single_choice",
+            "prompt": "Que signifie la perte de MLH1/PMS2 dans le contexte du mCCR ?",
+            "options": [
+              {
+                "id": "mlh1_braf_reflex",
+                "label": "Analyses réflexes avec méthylation du promoteur de MLH1 ± contexte BRAF et distinction Lynch versus sporadique."
+              },
+              {
+                "id": "direct_lynch",
+                "label": "La perte de MLH1/PMS2 prouve toujours directement un syndrome de Lynch"
+              },
+              {
+                "id": "ignore_mlh1",
+                "label": "La perte de MLH1/PMS2 est sans pertinence thérapeutique ni héréditaire"
+              },
+              {
+                "id": "lung_fusion",
+                "label": "Un panel ARN de fusions pulmonaires est l’étape réflexe appropriée"
+              }
+            ],
+            "correct": [
+              "mlh1_braf_reflex"
+            ],
+            "rationale": "Le dMMR est prédictif et potentiellement pertinent sur le plan héréditaire."
+          }
+        ],
+        "decision_task": "Choisissez un bilan prédictif initial du mCCR qui traite correctement l’éligibilité à un traitement anti-EGFR, le contexte BRAF, MSI/dMMR/immunothérapie et la question Lynch versus sporadique.",
+        "expected_path": "Relecture H&E/cellularité tumorale → RAS étendu/KRAS/NRAS → BRAF V600E → IHC MMR et/ou MSI par PCR/NGS → en cas de perte de MLH1/PMS2 : méthylation du promoteur de MLH1 ± contexte BRAF → communication en RCP : présenter séparément les implications anti-EGFR, immunothérapie et Lynch versus sporadique.",
+        "acceptable_alternatives": "Un panel NGS colorectal plus large est acceptable s’il couvre RAS/BRAF et, le cas échéant, d’autres altérations cliniquement pertinentes. Une IHC/ISH HER2 peut être utile en option dans un contexte RAS-WT ou à une ligne thérapeutique ultérieure.",
+        "low_value_traps": [
+          {
+            "label": "KRAS exon 2 uniquement",
+            "why_bad": "stratification anti-EGFR incomplète."
+          },
+          {
+            "label": "RAS-WT = automatiquement anti-EGFR",
+            "why_bad": "MSI/BRAF, la localisation tumorale et le contexte clinique sont ignorés."
+          },
+          {
+            "label": "IHC PD-L1",
+            "why_bad": "ce n’est pas un marqueur décisionnel principal pour l’immunothérapie dans le CCR."
+          },
+          {
+            "label": "Score HRD/panel ARN de fusions pulmonaires",
+            "why_bad": "sans rapport avec l’entité, de faible valeur ou trompeur."
+          }
+        ],
+        "twist": {
+          "title": "Un RAS de type sauvage ne suffit pas comme réponse thérapeutique",
+          "content": "Le cas est RAS de type sauvage, mais présente un dMMR/MSI-H et BRAF V600E. Tester uniquement RAS conduirait à discuter l’éligibilité à un traitement anti-EGFR, tout en manquant l’interprétation immunothérapeutique, pronostique et héréditaire.",
+          "why_critical": "Le contexte thérapeutiquement pertinent ne repose pas sur un marqueur isolé, mais sur la combinaison de RAS/BRAF et MMR/MSI, y compris les analyses réflexes."
+        },
+        "result_packages": [
+          {
+            "id": "optimal",
+            "title": "Parcours complet des biomarqueurs du mCCR",
+            "class": "optimal",
+            "result": "RAS-WT, BRAF V600E, perte de MLH1/PMS2, MSI-H. Méthylation de MLH1 positive → constellation dMMR plutôt sporadique. Anti-EGFR uniquement selon le contexte ; aborder en RCP le contexte immunothérapie/BRAF et le pronostic."
+          },
+          {
+            "id": "partial_ras_only",
+            "title": "Parcours RAS seul",
+            "class": "incomplete",
+            "result": "RAS-WT est identifié, mais BRAF/MSI/MMR manquent. Le compte rendu est incomplet pour le traitement systémique ; des analyses complémentaires sont nécessaires."
+          },
+          {
+            "id": "wrong_overdiagnostic",
+            "title": "Bilan diagnostique sans rapport avec l’entité",
+            "class": "wrong",
+            "result": "Le matériel/le TAT sont consommés par HRD, la recherche de fusions pulmonaires ou PD-L1 sans répondre à la question centrale du CCR."
+          }
+        ],
+        "followup_logic": [
+          {
+            "trigger": "Parcours initial incomplet ou incertain",
+            "action": "Si MMR/MSI ou BRAF manquent initialement, justifier clairement les analyses complémentaires. En cas de perte de MLH1/PMS2, réaliser des analyses réflexes avec méthylation de MLH1 ± BRAF V600E afin de distinguer une situation sporadique d’une situation associée à Lynch. Recommander une consultation de génétique clinique en l’absence de profil sporadique établi.",
+            "consequence": "Analyses complémentaires ou nouvelle discussion en RCP avec interprétation finale."
+          }
+        ],
+        "debrief_points": [
+          "Le mCCR nécessite plus que RAS.",
+          "MMR/MSI est prédictif pour l’immunothérapie et peut avoir des implications héréditaires.",
+          "La perte de MLH1/PMS2 nécessite une caractérisation réflexe.",
+          "À retenir : dans le mCCR, RAS/BRAF et MMR/MSI doivent être évalués ensemble dès la planification thérapeutique initiale ; une perte de MLH1/PMS2 nécessite des analyses réflexes, et pas seulement un signal en faveur d’une immunothérapie."
+        ],
+        "instructor_notes": {
+          "model_answer": "Solution optimale : bilan RAS/BRAF étendu plus IHC MMR/test MSI ; en cas de perte de MLH1/PMS2, méthylation de MLH1/contexte BRAF ; communication claire en RCP sur anti-EGFR, immunothérapie et Lynch versus sporadique.",
+          "scoring_focus": [
+            "Raisonnement clinique : la question du traitement systémique a été identifiée.",
+            "Sélection des méthodes : RAS/BRAF/MMR/MSI ont été priorisés.",
+            "Communication : les implications anti-EGFR, immunothérapie et Lynch versus sporadique ont été communiquées séparément."
+          ],
+          "discussion_questions": [
+            "Pourquoi KRAS exon 2 seul ne suffit-il plus ?",
+            "En quoi les implications prédictives et héréditaires du dMMR/MSI-H diffèrent-elles ?",
+            "Comment communiquer une perte de MLH1/PMS2 en RCP ?"
+          ]
+        },
+        "report_additions": {
+          "batch": "Extension de contenu Batch1 v2.1"
+        },
+        "is_signature_case": true
+      }
+    }
+  }
+}

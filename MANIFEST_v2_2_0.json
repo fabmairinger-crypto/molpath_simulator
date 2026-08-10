@@ -1,0 +1,21 @@
+{
+  "version": "v2.2.0",
+  "name": "MolPath Simulator v2.2.0 Multilingual Foundation",
+  "basis": "v2.1.7 syntax escape fix package",
+  "languages": [
+    "de",
+    "en",
+    "ro",
+    "el",
+    "es",
+    "fr"
+  ],
+  "files": [
+    "index.html",
+    "molpath_simulator_v2_2_0_multilingual_foundation.html",
+    "i18n_text_inventory_v2_2_0.csv",
+    "QA_REPORT_v2_2_0.md",
+    "CHANGELOG_v2_2_0.md"
+  ],
+  "scope": "runtime i18n foundation with partial UI translation memory and German fallback"
+}

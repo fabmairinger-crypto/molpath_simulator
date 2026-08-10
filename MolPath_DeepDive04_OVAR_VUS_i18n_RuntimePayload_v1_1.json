@@ -1,0 +1,3171 @@
+{
+  "block_id": "DEEPDIVE04_OVAR_BRCA2_VUS",
+  "case_id": "MTB_OVAR_002_v1_3",
+  "version": "1.0",
+  "created_at": "2026-08-06T15:05:00+02:00",
+  "status": "READY_FOR_USER_REVIEW",
+  "block_hash_sha256": "ec9a793372a87589d3336db38714420621e74a0b968a713bd56269cc543035d1",
+  "source_manifest": {
+    "case_metadata": {
+      "path": "data/case_metadata_v1_5_AP1b_final.json",
+      "sha256": "55daaaef3113885b3b5bc0c84d2bbdeefb106f4720cfd04c5d8d8929ccbcd3da"
+    },
+    "base_case": {
+      "path": "data/cases_v1_4_universal_methods.json",
+      "sha256": "aaed62f7091c9706f0ea1cc6a5526a74ce7d5ca696d366f14ffbf99d043d7723"
+    },
+    "deep_dive": {
+      "path": "data/deep_dive_cases_v1_7b.json",
+      "sha256": "6a7a097b61ce39a2883f6c1148e99bd9748a051238ac3cc18ede7fde49a86062"
+    },
+    "message_catalog": {
+      "path": "i18n_message_catalog_v2_2_3.json",
+      "sha256": "4cd851992eed4fc35d6361a24810640196adf3e292cf49edc02fff27b0430ee6"
+    }
+  },
+  "de": {
+    "metadata": {
+      "case_id": "MTB_OVAR_002_v1_3",
+      "base_id": "MTB_OVAR_002",
+      "title": "BRCA2-Variante unklarer Signifikanz im Ovarialkarzinom → VUS nicht als therapeutisch gesichert verkaufen",
+      "domain": "MTB",
+      "met_addon_type": "no",
+      "subdomain": "HRD / BRCA / PARP / Keimbahn",
+      "case_type": "clinical_decision",
+      "length_class": "Complex",
+      "estimated_minutes": {
+        "min": 20,
+        "max": 30
+      },
+      "difficulty": "Advanced",
+      "status": "beta-standardized",
+      "review_flag": "MVP prüfen",
+      "review_priority": "high",
+      "core_decision": "VUS nicht als therapeutisch gesichert verkaufen",
+      "learning_objectives": [
+        "Zentrale klinisch-molekulare Fragestellung aus Anamnese, Histologie und Materialkontext ableiten",
+        "VUS evidenzbasiert kommunizieren und therapeutisches Overcalling vermeiden",
+        "Musterlösung im MTB klar, limitiert und patientenrelevant kommunizieren"
+      ],
+      "tags": [
+        "BRCA",
+        "HRD",
+        "VUS",
+        "MTB",
+        "MVP",
+        "Standard, complex_case, AP1b_length_reclass"
+      ],
+      "ap1b_decision": "MTB; Länge=Complex; Schwierigkeit=Advanced; Status=beta-standardized"
+    },
+    "base_case": {
+      "id": "MTB_OVAR_002_v1_3",
+      "title": "BRCA2-Variante unklarer Signifikanz im Ovarialkarzinom → VUS nicht als therapeutisch gesichert verkaufen",
+      "short": "BRCA2-Variante unklarer Signifikan…",
+      "mode": "patient_care",
+      "logic": "generic_patient",
+      "difficulty": "intermediate",
+      "estimated_time_min": "8–15",
+      "budget": {
+        "points_max": 1050,
+        "sections_max": 16,
+        "tat_goal": 10
+      },
+      "allowed_tests": [
+        "he_review",
+        "fusion_rna_ngs",
+        "rna_fusion_panel",
+        "fusion_fish",
+        "tumor_brca_hrr",
+        "broad_pan_panel",
+        "hrd_score",
+        "germline_referral",
+        "vusic"
+      ],
+      "story": [
+        {
+          "id": "intake",
+          "title": "Initialer Auftrag",
+          "items": [
+            [
+              "Fall-ID",
+              "MTB_OVAR_002"
+            ],
+            [
+              "Einsender",
+              "Onkologie / Pathologie / Molekulares Tumorboard"
+            ],
+            [
+              "Klinische Frage",
+              "VUS nicht als therapeutisch gesichert verkaufen"
+            ],
+            [
+              "Quelle / Kapitelbasis",
+              "Bioanalytik VUS; Tumorbiologie HRD"
+            ]
+          ]
+        },
+        {
+          "id": "history",
+          "title": "Anamnese und klinischer Kontext",
+          "items": [
+            [
+              "Klinischer Rahmen",
+              "BRCA2-Variante unklarer Signifikanz im Ovarialkarzinom"
+            ],
+            [
+              "Entscheidungsdruck",
+              "Der Fall soll in einem Tumorboard oder einer fallbezogenen Besprechung eingeordnet werden."
+            ],
+            [
+              "Didaktische Falle",
+              "Ein Einzelmarker oder eine Einzelmethode kann die Kernentscheidung häufig nicht ausreichend beantworten."
+            ],
+            [
+              "Ziel",
+              "Aus Morphologie, Material, Methode und Biologie eine belastbare Empfehlung ableiten."
+            ]
+          ]
+        },
+        {
+          "id": "histo",
+          "title": "Histologie + Vorinformation",
+          "items": [
+            [
+              "Morphologie",
+              "Tumor-/Materialkontext ist plausibel, aber für die Kernentscheidung nicht ausreichend."
+            ],
+            [
+              "Vor-IHC",
+              "Basisdiagnostik liegt vor bzw. ist nachzufordern, wenn sie für die Interpretation nötig ist."
+            ],
+            [
+              "Offene Frage",
+              "VUS nicht als therapeutisch gesichert verkaufen"
+            ],
+            [
+              "Hinweis",
+              "Die Entscheidung soll nicht reflexartig, sondern methodisch begründet getroffen werden."
+            ]
+          ]
+        },
+        {
+          "id": "material",
+          "title": "Materialprüfung",
+          "items": [
+            [
+              "Material",
+              "FFPE-Gewebe bzw. fallabhängiges Routine-/Progressionsmaterial."
+            ],
+            [
+              "Tumoranteil",
+              "ausreichend bis grenzwertig, abhängig von gewählter Methode."
+            ],
+            [
+              "Schnittbudget",
+              "didaktisch begrenzt; unnötige Zusatztests kosten Material und TAT."
+            ],
+            [
+              "Präanalytik",
+              "Materialqualität, Aussagegrenzen und Nachforderung aktiv berücksichtigen."
+            ]
+          ]
+        }
+      ],
+      "required_groups": [
+        {
+          "id": "fusion",
+          "label": "Fusionsdiagnostik",
+          "tests": [
+            "fusion_rna_ngs",
+            "rna_fusion_panel",
+            "fusion_fish"
+          ],
+          "suggest": "fusion_rna_ngs"
+        },
+        {
+          "id": "brca_hrr",
+          "label": "Tumor-BRCA/HRR",
+          "tests": [
+            "tumor_brca_hrr",
+            "broad_pan_panel"
+          ],
+          "suggest": "tumor_brca_hrr"
+        },
+        {
+          "id": "hrd",
+          "label": "HRD-/PARP-Kontext",
+          "tests": [
+            "hrd_score",
+            "germline_referral"
+          ],
+          "suggest": "hrd_score"
+        },
+        {
+          "id": "vus",
+          "label": "VUS-Evidenzbewertung",
+          "tests": [
+            "vusic",
+            "germline_referral"
+          ],
+          "suggest": "vusic"
+        }
+      ],
+      "result_sections": [
+        {
+          "label": "Fusionsdiagnostik",
+          "test_any": [
+            "fusion_rna_ngs",
+            "rna_fusion_panel",
+            "fusion_fish"
+          ],
+          "result": "RNA-basierte Fusionsdiagnostik weist eine exprimierte, therapeutisch relevante Fusion nach."
+        },
+        {
+          "label": "Tumor-BRCA/HRR",
+          "test_any": [
+            "tumor_brca_hrr",
+            "broad_pan_panel"
+          ],
+          "result": "BRCA/HRR-Kontext wird therapeutisch eingeordnet."
+        },
+        {
+          "label": "HRD-/PARP-Kontext",
+          "test_any": [
+            "hrd_score",
+            "germline_referral"
+          ],
+          "result": "HRD/PARP-Relevanz plus Keimbahn-/Familienkontext wird adressiert."
+        },
+        {
+          "label": "VUS-Evidenzbewertung",
+          "test_any": [
+            "vusic",
+            "germline_referral"
+          ],
+          "result": "VUS wird nicht als gesicherte therapeutische Indikation überinterpretiert."
+        }
+      ],
+      "always_findings": [
+        [
+          "QC",
+          "Fallabhängige QC verwertbar, sofern die gewählte Methode material- und fragestellungsgerecht ist."
+        ]
+      ],
+      "complete_interpretation": "Integrierte Interpretation vollständig: VUS nicht als therapeutisch gesichert verkaufen Die gewählten Methoden beantworten die Kernfrage mit angemessener Aussagekraft und Limitationen.",
+      "partial_interpretation": "Teilbefund: Für die Kernentscheidung („VUS nicht als therapeutisch gesichert verkaufen“) fehlen noch zentrale Bausteine oder die Methode ist zu eng gewählt.",
+      "mtb_checks": [
+        [
+          "fusion",
+          "Fusionsdiagnostik in der MTB-Kernaussage korrekt einordnen"
+        ],
+        [
+          "brca_hrr",
+          "Tumor-BRCA/HRR in der MTB-Kernaussage korrekt einordnen"
+        ],
+        [
+          "hrd",
+          "HRD-/PARP-Kontext in der MTB-Kernaussage korrekt einordnen"
+        ],
+        [
+          "vus",
+          "VUS-Evidenzbewertung in der MTB-Kernaussage korrekt einordnen"
+        ],
+        [
+          "limits",
+          "Aussagegrenzen und ggf. Nachforderung klar kommunizieren"
+        ],
+        [
+          "bad",
+          "Falschaussage: Ein isolierter Marker reicht ohne Kontext sicher aus"
+        ]
+      ],
+      "optimal_summary": "Optimale Lösung: VUS nicht als therapeutisch gesichert verkaufen – mit fallgerechter Methodenkombination, Material-/QC-Bewertung und klarer MTB-Kommunikation.",
+      "tags": [
+        "BRCA",
+        "HRD",
+        "VUS",
+        "MTB",
+        "MVP",
+        "Standard"
+      ]
+    },
+    "deep_dive": {
+      "version": "v1.7b",
+      "case_id": "MTB_OVAR_002_v1_3",
+      "title": "HGSOC mit BRCA2-VUS: PARP-Wunsch, Evidenzgrenzen und Keimbahnkommunikation",
+      "domain": "MTB",
+      "target_course": "Advanced Integrated",
+      "deep_dive_priority": "complex_anchor",
+      "target_role": "Gyn-MTB / Molekularpathologie",
+      "estimated_minutes_deep": "20-30",
+      "learning_objectives": [
+        "VUS von pathogenen/likely pathogenen BRCA/HRR-Varianten therapeutisch trennen.",
+        "Tumor-, HRD- und Keimbahnebene sauber kommunizieren.",
+        "PARP-Indikation nicht auf eine ungesicherte VUS stützen."
+      ],
+      "opening_scene": "Die Gyn-Onkologie stellt eine Patientin nach Platinansprechen vor. Im Tumorpanel wurde eine BRCA2-Variante unklarer Signifikanz gefunden. Die Frage lautet: 'Können wir das als BRCA-positiv werten und PARP-Erhaltung begründen?'",
+      "case_briefing": "59-jährige Patientin mit high-grade serösem Ovarialkarzinom, FIGO IIIC, gutes partielles Ansprechen auf Platin-basierte Erstlinientherapie. Familienanamnese: eine Tante mit Mammakarzinom, Details unklar. Tumorpanel: TP53 pathogene Mutation, BRCA2-Missense-Variante als VUS klassifiziert.",
+      "context_cards": [
+        {
+          "title": "Tumorbiologie",
+          "content": "HGSOC ist häufig TP53-alteriert; HRD/BRCA-Status kann therapeutisch relevant sein.",
+          "teaching_point": "Nicht jede BRCA-Variante ist automatisch HRD- oder PARP-begründend."
+        },
+        {
+          "title": "Variante",
+          "content": "BRCA2-Missense-Variante, VAF 48%, keine gesicherte funktionelle Evidenz, keine klare Loss-of-function-Konsequenz.",
+          "teaching_point": "VAF und Genname allein reichen nicht für Pathogenität."
+        },
+        {
+          "title": "HRD",
+          "content": "HRD-Score liegt noch nicht vor. Genomische Narben wurden im bisherigen Tumorpanel nicht ausreichend bewertet.",
+          "teaching_point": "HRD kann unabhängig von einer einzelnen VUS relevant sein."
+        },
+        {
+          "title": "Keimbahn",
+          "content": "Eine humangenetische Abklärung kann aufgrund Entität/Familienkontext sinnvoll sein, muss aber getrennt von der somatischen VUS-Therapieaussage kommuniziert werden.",
+          "teaching_point": "Keimbahnklärung macht eine VUS nicht automatisch therapeutisch gesichert."
+        }
+      ],
+      "pre_results": [
+        {
+          "title": "Histologie",
+          "content": "high-grade seröses Karzinom, p53 aberrant, WT1+, PAX8+."
+        },
+        {
+          "title": "Tumor-NGS",
+          "content": "TP53 pathogene Mutation; BRCA2 c.X p.Y als VUS; keine gesicherte biallelische Inaktivierung berichtet."
+        },
+        {
+          "title": "Therapie-Kontext",
+          "content": "Platinansprechen vorhanden, PARP-Erhaltung wird diskutiert; HRD-Score nicht bestimmt."
+        }
+      ],
+      "material_or_resource_constraints": [
+        "FFPE-Material ausreichend für HRD-/erweitertes HRR-Profil, aber nicht unbegrenzt.",
+        "Therapieentscheidung darf nicht auf einer falsch hochgestuften VUS beruhen.",
+        "Keimbahnthemen benötigen humangenetische Beratung und geeignete Probe."
+      ],
+      "reasoning_gate_upgrade": [
+        {
+          "id": "vus_meaning",
+          "type": "single_choice",
+          "prompt": "Wie ist eine BRCA2-VUS therapeutisch zu werten?",
+          "options": [
+            {
+              "id": "not_actionable",
+              "label": "nicht als gesichert pathogene BRCA-Alteration verwenden"
+            },
+            {
+              "id": "pathogenic",
+              "label": "als pathogene BRCA-Mutation werten"
+            },
+            {
+              "id": "ignore_gene",
+              "label": "BRCA2 ist beim Ovar irrelevant"
+            },
+            {
+              "id": "germline_confirm",
+              "label": "Keimbahnnachweis macht sie automatisch pathogen"
+            }
+          ],
+          "correct": [
+            "not_actionable"
+          ],
+          "rationale": "VUS sind keine gesichert therapeutisch verwertbaren Varianten."
+        },
+        {
+          "id": "next_tests",
+          "type": "multi_select",
+          "prompt": "Welche nächsten Schritte sind sinnvoll?",
+          "options": [
+            {
+              "id": "hrd_score",
+              "label": "HRD-Status/Genomic-Scar-Testung prüfen"
+            },
+            {
+              "id": "variant_reclassification",
+              "label": "Datenbank-/Literatur-/Klassifikationsprüfung dokumentieren"
+            },
+            {
+              "id": "genetic_counseling",
+              "label": "Humangenetische Beratung/Keimbahnanalyse getrennt empfehlen"
+            },
+            {
+              "id": "parp_vus",
+              "label": "PARP allein wegen VUS empfehlen"
+            }
+          ],
+          "correct": [
+            "hrd_score",
+            "variant_reclassification",
+            "genetic_counseling"
+          ],
+          "rationale": "Die Lösung trennt Therapieevidenz, HRD und Keimbahn."
+        },
+        {
+          "id": "communication",
+          "type": "single_choice",
+          "prompt": "Welche Befundkommunikation ist korrekt?",
+          "options": [
+            {
+              "id": "clear_vus",
+              "label": "BRCA2-VUS: unklare Signifikanz, nicht gleichzusetzen mit pathogener BRCA-Alteration"
+            },
+            {
+              "id": "brca_positive",
+              "label": "BRCA-positiv"
+            },
+            {
+              "id": "no_report",
+              "label": "VUS gar nicht erwähnen trotz Therapieanfrage"
+            },
+            {
+              "id": "family_pathogenic",
+              "label": "Familie sicher betroffen"
+            }
+          ],
+          "correct": [
+            "clear_vus"
+          ],
+          "rationale": "Klare, nicht überdehnende Kommunikation ist hier der Kern."
+        },
+        {
+          "id": "hrd_context",
+          "type": "single_choice",
+          "prompt": "Welche Rolle kann HRD spielen?",
+          "options": [
+            {
+              "id": "independent_context",
+              "label": "HRD kann zusätzlich zur Variantenbewertung für PARP-Kontext relevant sein"
+            },
+            {
+              "id": "crc_only",
+              "label": "HRD ist nur bei CRC relevant"
+            },
+            {
+              "id": "never",
+              "label": "HRD ist nie therapeutisch relevant"
+            },
+            {
+              "id": "vus_enough",
+              "label": "HRD wird durch VUS automatisch bewiesen"
+            }
+          ],
+          "correct": [
+            "independent_context"
+          ],
+          "rationale": "HRD ist eine eigene Ebene und nicht automatisch durch eine VUS belegt."
+        }
+      ],
+      "decision_task": "Formuliere eine fachlich saubere Empfehlung zur BRCA2-VUS, HRD-Testung, PARP-Kontext und Keimbahnabklärung.",
+      "expected_path": [
+        "BRCA2-VUS nicht als pathogene/therapeutisch gesicherte Mutation berichten.",
+        "HRD-Status bzw. geeignete HRR/Genomic-Scar-Testung ergänzen, wenn für Therapie relevant.",
+        "VUS-Klassifikation mit Evidenzstand dokumentieren und keine Therapieempfehlung allein daraus ableiten.",
+        "Humangenetische Beratung/Keimbahnanalyse getrennt empfehlen, insbesondere bei Entität/Familienkontext.",
+        "MTB-Kommunikation: VUS ≠ BRCA-positiv; therapeutische Entscheidung nach Leitlinie/HRD/klinischem Kontext."
+      ],
+      "acceptable_alternatives": [
+        "Bei bereits extern vorhandenem HRD-positivem Befund kann PARP-Kontext unabhängig von VUS diskutiert werden.",
+        "Wenn Material nicht reicht: Priorisierung HRD vs. erweitertes HRR nach klinischer Fragestellung."
+      ],
+      "low_value_traps": [
+        {
+          "label": "VUS als PARP-Indikation verkaufen",
+          "why_bad": "Therapeutisches Overcalling mit potenziell falscher Patientinnenberatung."
+        },
+        {
+          "label": "Keimbahn-VUS als pathologisch deklarieren",
+          "why_bad": "Keimbahnkontext ändert die Klassifikation nicht automatisch."
+        },
+        {
+          "label": "TP53-Einzeltest als HRD-Ersatz",
+          "why_bad": "TP53 passt zur Entität, beantwortet aber HRD/PARP-Frage nicht."
+        }
+      ],
+      "twist": {
+        "title": "Die VUS bleibt eine VUS",
+        "content": "Die humangenetische Analyse weist dieselbe BRCA2-Variante nach, aber auch dort bleibt sie als VUS klassifiziert. Der später ergänzte HRD-Score ist negativ. Damit ist eine PARP-Begründung über diese Variante nicht belastbar.",
+        "why_critical": "Der Wunsch nach einer therapeutischen Option darf die Evidenzklassifikation nicht verändern."
+      },
+      "result_packages": [
+        {
+          "id": "optimal_vus_handled",
+          "title": "VUS sauber eingeordnet + HRD/Keimbahn getrennt",
+          "result": "BRCA2-VUS bleibt unklar; HRD negativ; Empfehlung: keine therapeutische Gleichsetzung mit pathogener BRCA-Mutation, Humangenetik mit VUS-Kommunikation.",
+          "feedback": "Sehr gute Evidenz- und Kommunikationsdisziplin."
+        },
+        {
+          "id": "overcall_parp",
+          "title": "VUS als BRCA-positiv gewertet",
+          "result": "Befund suggeriert gesicherte PARP-Basis, obwohl Evidenz fehlt.",
+          "feedback": "Kritischer Fehler: VUS-Overcalling."
+        },
+        {
+          "id": "ignore_germline",
+          "title": "Keimbahnkontext nicht adressiert",
+          "result": "Therapiefrage teilweise bearbeitet, Familien-/Beratungsebene fehlt.",
+          "feedback": "Somatische und hereditäre Dimension wurden nicht sauber getrennt."
+        }
+      ],
+      "followup_logic": [
+        {
+          "trigger": "VUS overcalled",
+          "action": "Score-Cap und Berichtswarnung",
+          "consequence": "Biological Interpretation und Communication kritisch betroffen."
+        },
+        {
+          "trigger": "HRD fehlt",
+          "action": "Nachforderung HRD möglich",
+          "consequence": "Therapieeinordnung verbessert sich, aber Verzögerung bleibt."
+        }
+      ],
+      "debrief_points": [
+        "VUS ist eine Evidenzkategorie, kein therapeutisches Wunschlabel.",
+        "Somatisch, HRD und Keimbahn sind drei miteinander verbundene, aber getrennte Ebenen.",
+        "Gute Befundkommunikation schützt vor Übertherapie und falscher Familienberatung."
+      ],
+      "instructor_notes": {
+        "model_answer": "BRCA2-VUS nicht als pathogene Alteration werten; HRD/HRR-Kontext ergänzen; Humangenetik anbieten, aber VUS-Status transparent kommunizieren.",
+        "scoring_focus": [
+          "kein Overcalling",
+          "HRD-Kontext",
+          "Keimbahnkommunikation"
+        ],
+        "discussion_questions": [
+          "Wie formuliert man VUS im Befund?",
+          "Was ändert ein negativer HRD-Score?",
+          "Wie geht man mit Therapieerwartungen im MTB um?"
+        ]
+      },
+      "report_additions": [
+        "Twist: Keimbahn bestätigt VUS, aber nicht Pathogenität",
+        "Critical Error: VUS als therapeutisch gesichert",
+        "Musterpfad: Klassifikation + HRD + Humangenetik getrennt"
+      ]
+    }
+  },
+  "languages": {
+    "en": {
+      "metadata": {
+        "case_id": "MTB_OVAR_002_v1_3",
+        "base_id": "MTB_OVAR_002",
+        "title": "BRCA2 variant of uncertain significance in ovarian carcinoma → do not present a VUS as therapeutically established",
+        "domain": "MTB",
+        "met_addon_type": "no",
+        "subdomain": "HRD / BRCA / PARP / germline",
+        "case_type": "clinical_decision",
+        "length_class": "Complex",
+        "estimated_minutes": {
+          "min": 20,
+          "max": 30
+        },
+        "difficulty": "Advanced",
+        "status": "beta-standardized",
+        "review_flag": "Review for MVP",
+        "review_priority": "high",
+        "core_decision": "Do not present a VUS as therapeutically established",
+        "learning_objectives": [
+          "Derive the central clinical-molecular question from the history, histology and tissue context",
+          "Communicate VUS based on evidence and avoid therapeutic overcalling",
+          "Communicate the reference answer clearly in the MTB, including limitations and patient relevance"
+        ],
+        "tags": [
+          "BRCA",
+          "HRD",
+          "VUS",
+          "MTB",
+          "MVP",
+          "Standard, complex case, AP1b length reclassification"
+        ],
+        "ap1b_decision": "MTB; length=complex; difficulty=advanced; status=beta-standardized"
+      },
+      "base_case": {
+        "id": "MTB_OVAR_002_v1_3",
+        "title": "BRCA2 variant of uncertain significance in ovarian carcinoma → do not present a VUS as therapeutically established",
+        "short": "BRCA2 variant of uncertain signif…",
+        "mode": "patient_care",
+        "logic": "generic_patient",
+        "difficulty": "intermediate",
+        "estimated_time_min": "8–15",
+        "budget": {
+          "points_max": 1050,
+          "sections_max": 16,
+          "tat_goal": 10
+        },
+        "allowed_tests": [
+          "he_review",
+          "fusion_rna_ngs",
+          "rna_fusion_panel",
+          "fusion_fish",
+          "tumor_brca_hrr",
+          "broad_pan_panel",
+          "hrd_score",
+          "germline_referral",
+          "vusic"
+        ],
+        "story": [
+          {
+            "id": "intake",
+            "title": "Initial request",
+            "items": [
+              [
+                "Case ID",
+                "MTB_OVAR_002"
+              ],
+              [
+                "Referrer",
+                "Oncology / pathology / molecular tumour board"
+              ],
+              [
+                "Clinical question",
+                "Do not present a VUS as therapeutically established"
+              ],
+              [
+                "Source / chapter basis",
+                "Bioanalytics: VUS; tumour biology: HRD"
+              ]
+            ]
+          },
+          {
+            "id": "history",
+            "title": "Medical history and clinical context",
+            "items": [
+              [
+                "Clinical context",
+                "BRCA2 variant of uncertain significance in ovarian carcinoma"
+              ],
+              [
+                "Decision pressure",
+                "The case is to be assessed in a tumour board or a case-specific discussion."
+              ],
+              [
+                "Educational pitfall",
+                "A single marker or a single method is often insufficient to answer the key clinical question."
+              ],
+              [
+                "Objective",
+                "Derive a robust recommendation from morphology, tissue, method and biology."
+              ]
+            ]
+          },
+          {
+            "id": "histo",
+            "title": "Histology + prior information",
+            "items": [
+              [
+                "Morphology",
+                "The tumour and tissue context is plausible but insufficient for the key decision."
+              ],
+              [
+                "Prior IHC",
+                "Baseline diagnostic work-up is available or should be requested if required for interpretation."
+              ],
+              [
+                "Open question",
+                "Do not present a VUS as therapeutically established"
+              ],
+              [
+                "Note",
+                "The decision should not be reflexive; it should be based on methodological reasoning."
+              ]
+            ]
+          },
+          {
+            "id": "material",
+            "title": "Tissue assessment",
+            "items": [
+              [
+                "Tissue material",
+                "FFPE tissue or case-dependent routine/progression material."
+              ],
+              [
+                "Tumour cell content",
+                "adequate to borderline, depending on the selected method."
+              ],
+              [
+                "Section budget",
+                "Limited for educational purposes; unnecessary additional tests consume tissue and increase TAT."
+              ],
+              [
+                "Preanalytics",
+                "Actively consider tissue quality, limitations of interpretation and the need for additional testing."
+              ]
+            ]
+          }
+        ],
+        "required_groups": [
+          {
+            "id": "fusion",
+            "label": "Fusion testing",
+            "tests": [
+              "fusion_rna_ngs",
+              "rna_fusion_panel",
+              "fusion_fish"
+            ],
+            "suggest": "fusion_rna_ngs"
+          },
+          {
+            "id": "brca_hrr",
+            "label": "Tumour BRCA/HRR",
+            "tests": [
+              "tumor_brca_hrr",
+              "broad_pan_panel"
+            ],
+            "suggest": "tumor_brca_hrr"
+          },
+          {
+            "id": "hrd",
+            "label": "HRD/PARP context",
+            "tests": [
+              "hrd_score",
+              "germline_referral"
+            ],
+            "suggest": "hrd_score"
+          },
+          {
+            "id": "vus",
+            "label": "VUS evidence assessment",
+            "tests": [
+              "vusic",
+              "germline_referral"
+            ],
+            "suggest": "vusic"
+          }
+        ],
+        "result_sections": [
+          {
+            "label": "Fusion testing",
+            "test_any": [
+              "fusion_rna_ngs",
+              "rna_fusion_panel",
+              "fusion_fish"
+            ],
+            "result": "RNA-based fusion testing detects an expressed, therapeutically relevant fusion."
+          },
+          {
+            "label": "Tumour BRCA/HRR",
+            "test_any": [
+              "tumor_brca_hrr",
+              "broad_pan_panel"
+            ],
+            "result": "The BRCA/HRR context is interpreted for therapeutic relevance."
+          },
+          {
+            "label": "HRD/PARP context",
+            "test_any": [
+              "hrd_score",
+              "germline_referral"
+            ],
+            "result": "HRD/PARP relevance and the germline/familial context are addressed."
+          },
+          {
+            "label": "VUS evidence assessment",
+            "test_any": [
+              "vusic",
+              "germline_referral"
+            ],
+            "result": "The VUS is not overinterpreted as an established therapeutic indication."
+          }
+        ],
+        "always_findings": [
+          [
+            "QC",
+            "Case-specific QC is interpretable provided that the selected method is appropriate for the specimen and the clinical question."
+          ]
+        ],
+        "complete_interpretation": "Complete integrated interpretation: do not present a VUS as therapeutically established. The selected methods address the core question with appropriate validity and limitations.",
+        "partial_interpretation": "Partial result: key elements are still missing for the core decision (‘do not present a VUS as therapeutically established’), or the chosen method is too narrow.",
+        "mtb_checks": [
+          [
+            "fusion",
+            "Correctly interpret fusion testing in the key MTB statement"
+          ],
+          [
+            "brca_hrr",
+            "Correctly interpret tumour BRCA/HRR in the key MTB statement"
+          ],
+          [
+            "hrd",
+            "Correctly interpret the HRD/PARP context in the key MTB statement"
+          ],
+          [
+            "vus",
+            "Correctly interpret the VUS evidence assessment in the key MTB statement"
+          ],
+          [
+            "limits",
+            "Clearly communicate the limitations and any need for additional testing"
+          ],
+          [
+            "bad",
+            "Incorrect statement: an isolated marker is definitively sufficient without context"
+          ]
+        ],
+        "optimal_summary": "Optimal solution: do not present a VUS as therapeutically established — use a case-appropriate combination of methods, specimen/QC assessment and clear MTB communication.",
+        "tags": [
+          "BRCA",
+          "HRD",
+          "VUS",
+          "MTB",
+          "MVP",
+          "Standard"
+        ]
+      },
+      "deep_dive": {
+        "version": "v1.7b",
+        "case_id": "MTB_OVAR_002_v1_3",
+        "title": "HGSOC with a BRCA2 VUS: request for PARP therapy, limits of evidence and germline communication",
+        "domain": "MTB",
+        "target_course": "Advanced Integrated",
+        "deep_dive_priority": "complex_anchor",
+        "target_role": "Gynaecological MTB / molecular pathology",
+        "estimated_minutes_deep": "20–30",
+        "learning_objectives": [
+          "Therapeutically distinguish a VUS from pathogenic/likely pathogenic BRCA/HRR variants.",
+          "Clearly communicate the tumour, HRD and germline levels.",
+          "Do not base a PARP indication on an unconfirmed VUS."
+        ],
+        "opening_scene": "The gynaecological oncology team presents a patient after a response to platinum. A BRCA2 variant of uncertain significance was found on the tumour panel. The question is: 'Can we consider this BRCA-positive and use it to justify PARP maintenance therapy?'",
+        "case_briefing": "A 59-year-old woman with high-grade serous ovarian carcinoma, FIGO IIIC, and a good partial response to platinum-based first-line therapy. Family history: an aunt with breast cancer; details are unclear. Tumour panel: pathogenic TP53 mutation and a BRCA2 missense variant classified as a VUS.",
+        "context_cards": [
+          {
+            "title": "Tumour biology",
+            "content": "HGSOC frequently harbours TP53 alterations; HRD/BRCA status may be therapeutically relevant.",
+            "teaching_point": "Not every BRCA variant automatically establishes HRD or supports PARP therapy."
+          },
+          {
+            "title": "Variant",
+            "content": "BRCA2 missense variant, VAF 48%, with no established functional evidence and no clear loss-of-function consequence.",
+            "teaching_point": "VAF and the gene name alone are insufficient to establish pathogenicity."
+          },
+          {
+            "title": "HRD",
+            "content": "The HRD score is not yet available. Genomic scars were not adequately assessed by the previous tumour panel.",
+            "teaching_point": "HRD may be relevant independently of an individual VUS."
+          },
+          {
+            "title": "Germline",
+            "content": "Clinical genetic evaluation may be appropriate because of the tumour entity and family context, but it must be communicated separately from the therapeutic interpretation of the somatic VUS.",
+            "teaching_point": "Germline evaluation does not automatically make a VUS therapeutically established."
+          }
+        ],
+        "pre_results": [
+          {
+            "title": "Histology",
+            "content": "High-grade serous carcinoma, aberrant p53, WT1+, PAX8+."
+          },
+          {
+            "title": "Tumour NGS",
+            "content": "Pathogenic TP53 mutation; BRCA2 c.X p.Y classified as a VUS; no established biallelic inactivation reported."
+          },
+          {
+            "title": "Therapeutic context",
+            "content": "Response to platinum is present, PARP maintenance is being discussed; the HRD score has not been determined."
+          }
+        ],
+        "material_or_resource_constraints": [
+          "The FFPE material is sufficient for HRD testing/an extended HRR profile, but it is not unlimited.",
+          "A treatment decision must not be based on an incorrectly upgraded VUS.",
+          "Germline questions require clinical genetic counselling and an appropriate specimen."
+        ],
+        "reasoning_gate_upgrade": [
+          {
+            "id": "vus_meaning",
+            "type": "single_choice",
+            "prompt": "How should a BRCA2 VUS be interpreted therapeutically?",
+            "options": [
+              {
+                "id": "not_actionable",
+                "label": "do not use it as an established pathogenic BRCA alteration"
+              },
+              {
+                "id": "pathogenic",
+                "label": "interpret it as a pathogenic BRCA mutation"
+              },
+              {
+                "id": "ignore_gene",
+                "label": "BRCA2 is irrelevant in ovarian cancer"
+              },
+              {
+                "id": "germline_confirm",
+                "label": "Detection in the germline automatically makes it pathogenic"
+              }
+            ],
+            "correct": [
+              "not_actionable"
+            ],
+            "rationale": "VUS are not variants with established therapeutic actionability."
+          },
+          {
+            "id": "next_tests",
+            "type": "multi_select",
+            "prompt": "Which next steps are appropriate?",
+            "options": [
+              {
+                "id": "hrd_score",
+                "label": "Assess HRD status/genomic-scar testing"
+              },
+              {
+                "id": "variant_reclassification",
+                "label": "Document the database, literature and classification review"
+              },
+              {
+                "id": "genetic_counseling",
+                "label": "Recommend clinical genetic counselling/germline testing separately"
+              },
+              {
+                "id": "parp_vus",
+                "label": "Recommend PARP therapy solely because of the VUS"
+              }
+            ],
+            "correct": [
+              "hrd_score",
+              "variant_reclassification",
+              "genetic_counseling"
+            ],
+            "rationale": "The solution separates therapeutic evidence, HRD and the germline level."
+          },
+          {
+            "id": "communication",
+            "type": "single_choice",
+            "prompt": "Which report wording is correct?",
+            "options": [
+              {
+                "id": "clear_vus",
+                "label": "BRCA2 VUS: uncertain significance; not equivalent to a pathogenic BRCA alteration"
+              },
+              {
+                "id": "brca_positive",
+                "label": "BRCA-positive"
+              },
+              {
+                "id": "no_report",
+                "label": "Do not mention the VUS at all despite the treatment query"
+              },
+              {
+                "id": "family_pathogenic",
+                "label": "The family is definitely affected"
+              }
+            ],
+            "correct": [
+              "clear_vus"
+            ],
+            "rationale": "Clear communication that does not overstate the evidence is the key here."
+          },
+          {
+            "id": "hrd_context",
+            "type": "single_choice",
+            "prompt": "What role can HRD play?",
+            "options": [
+              {
+                "id": "independent_context",
+                "label": "HRD may be relevant to the PARP context in addition to variant assessment"
+              },
+              {
+                "id": "crc_only",
+                "label": "HRD is relevant only in CRC"
+              },
+              {
+                "id": "never",
+                "label": "HRD is never therapeutically relevant"
+              },
+              {
+                "id": "vus_enough",
+                "label": "HRD is automatically proven by a VUS"
+              }
+            ],
+            "correct": [
+              "independent_context"
+            ],
+            "rationale": "HRD is a separate level and is not automatically established by a VUS."
+          }
+        ],
+        "decision_task": "Formulate a technically sound recommendation regarding the BRCA2 VUS, HRD testing, the PARP context and germline evaluation.",
+        "expected_path": [
+          "Do not report the BRCA2 VUS as a pathogenic or therapeutically established mutation.",
+          "Add HRD status or appropriate HRR/genomic-scar testing when therapeutically relevant.",
+          "Document the VUS classification and level of evidence, and do not derive a treatment recommendation from it alone.",
+          "Recommend clinical genetic counselling/germline testing separately, particularly in view of the tumour entity and family context.",
+          "MTB communication: VUS ≠ BRCA-positive; make the treatment decision according to guidelines, HRD and the clinical context."
+        ],
+        "acceptable_alternatives": [
+          "If an external HRD-positive result is already available, the PARP context can be discussed independently of the VUS.",
+          "If material is insufficient, prioritise HRD versus extended HRR according to the clinical question."
+        ],
+        "low_value_traps": [
+          {
+            "label": "Present the VUS as an indication for PARP therapy",
+            "why_bad": "Therapeutic overcalling with potentially incorrect counselling of the patient."
+          },
+          {
+            "label": "Declare the germline VUS pathogenic",
+            "why_bad": "The germline context does not automatically change the classification."
+          },
+          {
+            "label": "Use a single-gene TP53 test as a substitute for HRD testing",
+            "why_bad": "TP53 fits the tumour entity but does not answer the HRD/PARP question."
+          }
+        ],
+        "twist": {
+          "title": "The VUS remains a VUS",
+          "content": "Clinical genetic testing detects the same BRCA2 variant, but it also remains classified as a VUS in that setting. The subsequently added HRD score is negative. Therefore, this variant does not provide a robust basis for PARP therapy.",
+          "why_critical": "The desire for a therapeutic option must not change the evidence classification."
+        },
+        "result_packages": [
+          {
+            "id": "optimal_vus_handled",
+            "title": "VUS correctly classified + HRD and germline levels kept separate",
+            "result": "The BRCA2 VUS remains uncertain; HRD is negative. Recommendation: do not equate it therapeutically with a pathogenic BRCA mutation; refer to clinical genetics with transparent VUS communication.",
+            "feedback": "Very good discipline in the use of evidence and communication."
+          },
+          {
+            "id": "overcall_parp",
+            "title": "VUS interpreted as BRCA-positive",
+            "result": "The report suggests an established basis for PARP therapy despite insufficient evidence.",
+            "feedback": "Critical error: overcalling the VUS."
+          },
+          {
+            "id": "ignore_germline",
+            "title": "Germline context not addressed",
+            "result": "The treatment question is partially addressed, but the familial/counselling level is missing.",
+            "feedback": "The somatic and hereditary dimensions were not clearly separated."
+          }
+        ],
+        "followup_logic": [
+          {
+            "trigger": "VUS overinterpreted",
+            "action": "Score cap and report warning",
+            "consequence": "Biological Interpretation and Communication are critically affected."
+          },
+          {
+            "trigger": "HRD testing missing",
+            "action": "Additional HRD testing can be requested",
+            "consequence": "The therapeutic assessment improves, but the delay remains."
+          }
+        ],
+        "debrief_points": [
+          "A VUS is an evidence category, not a label for a desired therapy.",
+          "Somatic findings, HRD and the germline level are three connected but distinct levels.",
+          "Good report communication protects against overtreatment and incorrect counselling of the family."
+        ],
+        "instructor_notes": {
+          "model_answer": "Do not interpret the BRCA2 VUS as a pathogenic alteration; add the HRD/HRR context; offer clinical genetics while communicating the VUS status transparently.",
+          "scoring_focus": [
+            "no overcalling",
+            "HRD context",
+            "Germline communication"
+          ],
+          "discussion_questions": [
+            "How should a VUS be worded in the report?",
+            "What does a negative HRD score change?",
+            "How should treatment expectations be managed in the MTB?"
+          ]
+        },
+        "report_additions": [
+          "Twist: germline testing confirms the VUS, but not pathogenicity",
+          "Critical error: VUS treated as therapeutically established",
+          "Reference pathway: classification + HRD + clinical genetics kept separate"
+        ]
+      },
+      "payload_hash_sha256": "b1775c9d318685658c77573bc45dbfc3266fb7ab16567201a7cfa6b3197ccc9e"
+    },
+    "ro": {
+      "metadata": {
+        "case_id": "MTB_OVAR_002_v1_3",
+        "base_id": "MTB_OVAR_002",
+        "title": "Variantă BRCA2 cu semnificație incertă în carcinomul ovarian → nu prezentați o VUS drept bază terapeutică dovedită",
+        "domain": "MTB",
+        "met_addon_type": "no",
+        "subdomain": "HRD / BRCA / PARP / linie germinală",
+        "case_type": "clinical_decision",
+        "length_class": "Complex",
+        "estimated_minutes": {
+          "min": 20,
+          "max": 30
+        },
+        "difficulty": "Avansat",
+        "status": "beta-standardized",
+        "review_flag": "De revizuit pentru MVP",
+        "review_priority": "high",
+        "core_decision": "Nu prezentați o VUS drept bază terapeutică dovedită",
+        "learning_objectives": [
+          "Formulați întrebarea clinico-moleculară centrală pe baza anamnezei, histologiei și contextului materialului tisular",
+          "Comunicați VUS pe baza dovezilor și evitați supraevaluarea terapeutică",
+          "Comunicați clar soluția de referință în MTB, cu limitările și relevanța pentru pacient"
+        ],
+        "tags": [
+          "BRCA",
+          "HRD",
+          "VUS",
+          "MTB",
+          "MVP",
+          "Standard, caz complex, reclasificare a duratei AP1b"
+        ],
+        "ap1b_decision": "MTB; lungime=complexă; dificultate=avansată; stare=beta-standardized"
+      },
+      "base_case": {
+        "id": "MTB_OVAR_002_v1_3",
+        "title": "Variantă BRCA2 cu semnificație incertă în carcinomul ovarian → nu prezentați o VUS drept bază terapeutică dovedită",
+        "short": "Variantă BRCA2 cu semnificație incert…",
+        "mode": "patient_care",
+        "logic": "generic_patient",
+        "difficulty": "intermediate",
+        "estimated_time_min": "8–15",
+        "budget": {
+          "points_max": 1050,
+          "sections_max": 16,
+          "tat_goal": 10
+        },
+        "allowed_tests": [
+          "he_review",
+          "fusion_rna_ngs",
+          "rna_fusion_panel",
+          "fusion_fish",
+          "tumor_brca_hrr",
+          "broad_pan_panel",
+          "hrd_score",
+          "germline_referral",
+          "vusic"
+        ],
+        "story": [
+          {
+            "id": "intake",
+            "title": "Solicitare inițială",
+            "items": [
+              [
+                "ID caz",
+                "MTB_OVAR_002"
+              ],
+              [
+                "Solicitant",
+                "Oncologie / anatomie patologică / tumor board molecular"
+              ],
+              [
+                "Întrebare clinică",
+                "Nu prezentați o VUS drept bază terapeutică dovedită"
+              ],
+              [
+                "Sursă / capitol de referință",
+                "Bioanalitică: VUS; biologia tumorală: HRD"
+              ]
+            ]
+          },
+          {
+            "id": "history",
+            "title": "Anamneză și context clinic",
+            "items": [
+              [
+                "Context clinic",
+                "Variantă BRCA2 cu semnificație incertă în carcinomul ovarian"
+              ],
+              [
+                "Presiunea deciziei",
+                "Cazul trebuie evaluat într-un tumor board sau într-o discuție dedicată cazului."
+              ],
+              [
+                "Capcană didactică",
+                "Un singur marker sau o singură metodă este adesea insuficientă pentru a răspunde deciziei centrale."
+              ],
+              [
+                "Obiectiv",
+                "Formulați o recomandare solidă pe baza morfologiei, materialului tisular, metodei și biologiei."
+              ]
+            ]
+          },
+          {
+            "id": "histo",
+            "title": "Histologie + informații anterioare",
+            "items": [
+              [
+                "Morfologie",
+                "Contextul tumoral și al materialului este plauzibil, dar insuficient pentru decizia centrală."
+              ],
+              [
+                "IHC anterioară",
+                "Diagnosticul de bază este disponibil sau trebuie solicitat dacă este necesar pentru interpretare."
+              ],
+              [
+                "Întrebare deschisă",
+                "Nu prezentați o VUS drept bază terapeutică dovedită"
+              ],
+              [
+                "Notă",
+                "Decizia nu trebuie luată reflex, ci trebuie fundamentată metodologic."
+              ]
+            ]
+          },
+          {
+            "id": "material",
+            "title": "Evaluarea materialului tisular",
+            "items": [
+              [
+                "Material tisular",
+                "Țesut FFPE sau material de rutină/de progresie, în funcție de caz."
+              ],
+              [
+                "Procent tumoral",
+                "adecvat până la limită, în funcție de metoda aleasă."
+              ],
+              [
+                "Buget de secțiuni",
+                "Limitat în scop didactic; testele suplimentare inutile consumă material și cresc TAT."
+              ],
+              [
+                "Preanalitică",
+                "Luați în considerare în mod activ calitatea materialului, limitele de interpretare și necesitatea unor analize suplimentare."
+              ]
+            ]
+          }
+        ],
+        "required_groups": [
+          {
+            "id": "fusion",
+            "label": "Testare pentru fuziuni",
+            "tests": [
+              "fusion_rna_ngs",
+              "rna_fusion_panel",
+              "fusion_fish"
+            ],
+            "suggest": "fusion_rna_ngs"
+          },
+          {
+            "id": "brca_hrr",
+            "label": "BRCA/HRR tumoral",
+            "tests": [
+              "tumor_brca_hrr",
+              "broad_pan_panel"
+            ],
+            "suggest": "tumor_brca_hrr"
+          },
+          {
+            "id": "hrd",
+            "label": "Context HRD/PARP",
+            "tests": [
+              "hrd_score",
+              "germline_referral"
+            ],
+            "suggest": "hrd_score"
+          },
+          {
+            "id": "vus",
+            "label": "Evaluarea dovezilor pentru VUS",
+            "tests": [
+              "vusic",
+              "germline_referral"
+            ],
+            "suggest": "vusic"
+          }
+        ],
+        "result_sections": [
+          {
+            "label": "Testare pentru fuziuni",
+            "test_any": [
+              "fusion_rna_ngs",
+              "rna_fusion_panel",
+              "fusion_fish"
+            ],
+            "result": "Testarea fuziunilor bazată pe ARN detectează o fuziune exprimată, relevantă terapeutic."
+          },
+          {
+            "label": "BRCA/HRR tumoral",
+            "test_any": [
+              "tumor_brca_hrr",
+              "broad_pan_panel"
+            ],
+            "result": "Contextul BRCA/HRR este interpretat din punct de vedere terapeutic."
+          },
+          {
+            "label": "Context HRD/PARP",
+            "test_any": [
+              "hrd_score",
+              "germline_referral"
+            ],
+            "result": "Sunt abordate relevanța HRD/PARP și contextul germinal/familial."
+          },
+          {
+            "label": "Evaluarea dovezilor pentru VUS",
+            "test_any": [
+              "vusic",
+              "germline_referral"
+            ],
+            "result": "VUS nu este supraevaluată ca indicație terapeutică dovedită."
+          }
+        ],
+        "always_findings": [
+          [
+            "QC",
+            "QC specifică cazului este interpretabilă dacă metoda aleasă este adecvată materialului și întrebării clinice."
+          ]
+        ],
+        "complete_interpretation": "Interpretare integrată completă: nu prezentați o VUS drept bază terapeutică dovedită. Metodele selectate răspund întrebării centrale cu o putere de concluzie adecvată și cu limitările necesare.",
+        "partial_interpretation": "Rezultat parțial: pentru decizia centrală („nu prezentați o VUS drept bază terapeutică dovedită”) lipsesc încă elemente esențiale sau metoda aleasă este prea limitată.",
+        "mtb_checks": [
+          [
+            "fusion",
+            "Încadrați corect testarea fuziunilor în mesajul-cheie al MTB"
+          ],
+          [
+            "brca_hrr",
+            "Încadrați corect BRCA/HRR tumoral în mesajul-cheie al MTB"
+          ],
+          [
+            "hrd",
+            "Încadrați corect contextul HRD/PARP în mesajul-cheie al MTB"
+          ],
+          [
+            "vus",
+            "Încadrați corect evaluarea dovezilor pentru VUS în mesajul-cheie al MTB"
+          ],
+          [
+            "limits",
+            "Comunicați clar limitele interpretării și eventuala necesitate de teste suplimentare"
+          ],
+          [
+            "bad",
+            "Afirmație incorectă: un marker izolat este cu siguranță suficient fără context"
+          ]
+        ],
+        "optimal_summary": "Soluție optimă: nu prezentați o VUS drept bază terapeutică dovedită — utilizați o combinație de metode adecvată cazului, evaluarea materialului/QC și comunicare clară în MTB.",
+        "tags": [
+          "BRCA",
+          "HRD",
+          "VUS",
+          "MTB",
+          "MVP",
+          "Standard"
+        ]
+      },
+      "deep_dive": {
+        "version": "v1.7b",
+        "case_id": "MTB_OVAR_002_v1_3",
+        "title": "HGSOC cu o VUS BRCA2: solicitare de tratament PARP, limitele dovezilor și comunicarea privind linia germinală",
+        "domain": "MTB",
+        "target_course": "Avansat integrat",
+        "deep_dive_priority": "complex_anchor",
+        "target_role": "MTB ginecologic / patologie moleculară",
+        "estimated_minutes_deep": "20–30",
+        "learning_objectives": [
+          "Diferențiați terapeutic o VUS de variantele BRCA/HRR patogene/probabil patogene.",
+          "Comunicați clar nivelurile tumoral, HRD și germinal.",
+          "Nu fundamentați o indicație PARP pe o VUS neconfirmată."
+        ],
+        "opening_scene": "Echipa de oncologie ginecologică prezintă o pacientă după răspuns la tratamentul cu platină. Panelul tumoral a identificat o variantă BRCA2 cu semnificație incertă. Întrebarea este: «Putem considera cazul BRCA-pozitiv și justifica tratamentul de întreținere cu PARP?»",
+        "case_briefing": "Pacientă de 59 de ani cu carcinom ovarian seros de grad înalt, FIGO IIIC, cu răspuns parțial bun la terapia de primă linie pe bază de platină. Antecedente familiale: o mătușă cu cancer mamar; detaliile sunt neclare. Panel tumoral: mutație TP53 patogenă și variantă missense BRCA2 clasificată drept VUS.",
+        "context_cards": [
+          {
+            "title": "Biologie tumorală",
+            "content": "HGSOC prezintă frecvent alterări TP53; statutul HRD/BRCA poate fi relevant terapeutic.",
+            "teaching_point": "Nu orice variantă BRCA demonstrează automat HRD sau susține terapia PARP."
+          },
+          {
+            "title": "Variantă",
+            "content": "Variantă missense BRCA2, VAF 48%, fără dovezi funcționale confirmate și fără o consecință clară de pierdere a funcției.",
+            "teaching_point": "VAF și numele genei nu sunt suficiente, singure, pentru stabilirea patogenității."
+          },
+          {
+            "title": "HRD",
+            "content": "Scorul HRD nu este încă disponibil. Cicatricile genomice nu au fost evaluate adecvat în panelul tumoral anterior.",
+            "teaching_point": "HRD poate fi relevantă independent de o VUS individuală."
+          },
+          {
+            "title": "Linie germinală",
+            "content": "Evaluarea de genetică medicală poate fi adecvată având în vedere entitatea tumorală și contextul familial, dar trebuie comunicată separat de interpretarea terapeutică a VUS somatice.",
+            "teaching_point": "Evaluarea germinală nu transformă automat o VUS într-o bază terapeutică dovedită."
+          }
+        ],
+        "pre_results": [
+          {
+            "title": "Histologie",
+            "content": "Carcinom seros de grad înalt, p53 aberant, WT1+, PAX8+."
+          },
+          {
+            "title": "NGS tumoral",
+            "content": "Mutație TP53 patogenă; BRCA2 c.X p.Y clasificată drept VUS; nu a fost raportată o inactivare bialelică confirmată."
+          },
+          {
+            "title": "Context terapeutic",
+            "content": "Există răspuns la platină, se discută întreținerea cu PARP; scorul HRD nu a fost determinat."
+          }
+        ],
+        "material_or_resource_constraints": [
+          "Materialul FFPE este suficient pentru testarea HRD/un profil HRR extins, dar nu este nelimitat.",
+          "Decizia terapeutică nu trebuie să se bazeze pe o VUS reclasificată nejustificat la un nivel superior.",
+          "Întrebările privind linia germinală necesită consiliere genetică medicală și o probă adecvată."
+        ],
+        "reasoning_gate_upgrade": [
+          {
+            "id": "vus_meaning",
+            "type": "single_choice",
+            "prompt": "Cum trebuie interpretată terapeutic o VUS BRCA2?",
+            "options": [
+              {
+                "id": "not_actionable",
+                "label": "nu o utilizați ca alterare BRCA patogenă confirmată"
+              },
+              {
+                "id": "pathogenic",
+                "label": "interpretați-o ca mutație BRCA patogenă"
+              },
+              {
+                "id": "ignore_gene",
+                "label": "BRCA2 este irelevant în cancerul ovarian"
+              },
+              {
+                "id": "germline_confirm",
+                "label": "Detectarea în linia germinală o face automat patogenă"
+              }
+            ],
+            "correct": [
+              "not_actionable"
+            ],
+            "rationale": "VUS nu sunt variante cu relevanță terapeutică dovedită."
+          },
+          {
+            "id": "next_tests",
+            "type": "multi_select",
+            "prompt": "Care sunt pașii următori adecvați?",
+            "options": [
+              {
+                "id": "hrd_score",
+                "label": "Evaluați statutul HRD/testarea cicatricilor genomice"
+              },
+              {
+                "id": "variant_reclassification",
+                "label": "Documentați verificarea bazelor de date, a literaturii și a clasificării"
+              },
+              {
+                "id": "genetic_counseling",
+                "label": "Recomandați separat consilierea genetică medicală/testarea germinală"
+              },
+              {
+                "id": "parp_vus",
+                "label": "Recomandați terapia PARP exclusiv din cauza VUS"
+              }
+            ],
+            "correct": [
+              "hrd_score",
+              "variant_reclassification",
+              "genetic_counseling"
+            ],
+            "rationale": "Soluția separă dovezile terapeutice, HRD și nivelul germinal."
+          },
+          {
+            "id": "communication",
+            "type": "single_choice",
+            "prompt": "Care formulare a rezultatului este corectă?",
+            "options": [
+              {
+                "id": "clear_vus",
+                "label": "VUS BRCA2: semnificație incertă; nu este echivalentă cu o alterare BRCA patogenă"
+              },
+              {
+                "id": "brca_positive",
+                "label": "BRCA-pozitiv"
+              },
+              {
+                "id": "no_report",
+                "label": "Nu menționați deloc VUS, în pofida solicitării terapeutice"
+              },
+              {
+                "id": "family_pathogenic",
+                "label": "Familia este cu certitudine afectată"
+              }
+            ],
+            "correct": [
+              "clear_vus"
+            ],
+            "rationale": "Comunicarea clară, fără a exagera dovezile, este esențială aici."
+          },
+          {
+            "id": "hrd_context",
+            "type": "single_choice",
+            "prompt": "Ce rol poate avea HRD?",
+            "options": [
+              {
+                "id": "independent_context",
+                "label": "HRD poate fi relevantă pentru contextul PARP, în plus față de evaluarea variantei"
+              },
+              {
+                "id": "crc_only",
+                "label": "HRD este relevantă numai în CRC"
+              },
+              {
+                "id": "never",
+                "label": "HRD nu este niciodată relevantă terapeutic"
+              },
+              {
+                "id": "vus_enough",
+                "label": "HRD este demonstrată automat de o VUS"
+              }
+            ],
+            "correct": [
+              "independent_context"
+            ],
+            "rationale": "HRD reprezintă un nivel distinct și nu este demonstrată automat de o VUS."
+          }
+        ],
+        "decision_task": "Formulați o recomandare corectă din punct de vedere profesional privind VUS BRCA2, testarea HRD, contextul PARP și evaluarea germinală.",
+        "expected_path": [
+          "Nu raportați VUS BRCA2 drept mutație patogenă sau bază terapeutică dovedită.",
+          "Completați cu statutul HRD sau cu testare HRR/a cicatricilor genomice adecvată, dacă este relevantă terapeutic.",
+          "Documentați clasificarea VUS și nivelul dovezilor și nu formulați o recomandare terapeutică doar pe această bază.",
+          "Recomandați separat consilierea genetică medicală/testarea germinală, în special având în vedere entitatea tumorală și contextul familial.",
+          "Comunicare în MTB: VUS ≠ BRCA-pozitiv; decizia terapeutică trebuie bazată pe ghiduri, HRD și contextul clinic."
+        ],
+        "acceptable_alternatives": [
+          "Dacă există deja un rezultat extern HRD-pozitiv, contextul PARP poate fi discutat independent de VUS.",
+          "Dacă materialul este insuficient, prioritizați HRD față de HRR extins în funcție de întrebarea clinică."
+        ],
+        "low_value_traps": [
+          {
+            "label": "Prezentați VUS drept indicație pentru terapia PARP",
+            "why_bad": "Supraevaluare terapeutică, cu potențial de consiliere incorectă a pacientei."
+          },
+          {
+            "label": "Declarați VUS germinală drept patogenă",
+            "why_bad": "Contextul germinal nu modifică automat clasificarea."
+          },
+          {
+            "label": "Utilizați un test unic TP53 ca înlocuitor pentru testarea HRD",
+            "why_bad": "TP53 este compatibil cu entitatea tumorală, dar nu răspunde întrebării HRD/PARP."
+          }
+        ],
+        "twist": {
+          "title": "VUS rămâne o VUS",
+          "content": "Testarea de genetică medicală detectează aceeași variantă BRCA2, dar și în acest context rămâne clasificată drept VUS. Scorul HRD completat ulterior este negativ. Prin urmare, această variantă nu oferă o bază solidă pentru terapia PARP.",
+          "why_critical": "Dorința de a avea o opțiune terapeutică nu trebuie să modifice clasificarea dovezilor."
+        },
+        "result_packages": [
+          {
+            "id": "optimal_vus_handled",
+            "title": "VUS încadrată corect + nivelurile HRD și germinal separate",
+            "result": "VUS BRCA2 rămâne incertă; HRD este negativă. Recomandare: nu o echivalați terapeutic cu o mutație BRCA patogenă; trimitere la genetică medicală cu comunicarea transparentă a statutului VUS.",
+            "feedback": "Foarte bună disciplină în utilizarea dovezilor și comunicare."
+          },
+          {
+            "id": "overcall_parp",
+            "title": "VUS interpretată drept BRCA-pozitiv",
+            "result": "Raportul sugerează o bază terapeutică PARP dovedită, deși dovezile sunt insuficiente.",
+            "feedback": "Eroare critică: supraevaluarea VUS."
+          },
+          {
+            "id": "ignore_germline",
+            "title": "Contextul germinal nu a fost abordat",
+            "result": "Întrebarea terapeutică este abordată parțial, dar lipsește nivelul familial/de consiliere.",
+            "feedback": "Dimensiunile somatică și ereditară nu au fost separate clar."
+          }
+        ],
+        "followup_logic": [
+          {
+            "trigger": "VUS supra-interpretată",
+            "action": "Limitarea scorului și avertisment în raport",
+            "consequence": "Biological Interpretation și Communication sunt afectate critic."
+          },
+          {
+            "trigger": "Lipsește testarea HRD",
+            "action": "Poate fi solicitată testare HRD suplimentară",
+            "consequence": "Evaluarea terapeutică se îmbunătățește, dar întârzierea rămâne."
+          }
+        ],
+        "debrief_points": [
+          "O VUS este o categorie de dovezi, nu o etichetă pentru terapia dorită.",
+          "Constatările somatice, HRD și nivelul germinal sunt trei niveluri interconectate, dar distincte.",
+          "Comunicarea corectă a rezultatului protejează împotriva supratratamentului și a consilierii familiale incorecte."
+        ],
+        "instructor_notes": {
+          "model_answer": "Nu interpretați VUS BRCA2 drept alterare patogenă; completați contextul HRD/HRR; oferiți evaluare de genetică medicală, comunicând transparent statutul VUS.",
+          "scoring_focus": [
+            "fără suprainterpretare",
+            "Context HRD",
+            "Comunicare privind linia germinală"
+          ],
+          "discussion_questions": [
+            "Cum trebuie formulată o VUS în raport?",
+            "Ce schimbă un scor HRD negativ?",
+            "Cum trebuie gestionate așteptările terapeutice în MTB?"
+          ]
+        },
+        "report_additions": [
+          "Twist: testarea germinală confirmă VUS, dar nu patogenitatea",
+          "Eroare critică: VUS considerată terapeutic dovedită",
+          "Parcurs de referință: clasificare + HRD + genetică medicală separate"
+        ]
+      },
+      "payload_hash_sha256": "c874e6fee98542db0a46ff433600fa7aeb2777642e248e6020a4cb29062109f9"
+    },
+    "el": {
+      "metadata": {
+        "case_id": "MTB_OVAR_002_v1_3",
+        "base_id": "MTB_OVAR_002",
+        "title": "Παραλλαγή BRCA2 αβέβαιης σημασίας σε καρκίνωμα ωοθήκης → μην παρουσιάζετε μια VUS ως θεραπευτικά τεκμηριωμένη",
+        "domain": "MTB",
+        "met_addon_type": "no",
+        "subdomain": "HRD / BRCA / PARP / βλαστική σειρά",
+        "case_type": "clinical_decision",
+        "length_class": "Σύνθετο",
+        "estimated_minutes": {
+          "min": 20,
+          "max": 30
+        },
+        "difficulty": "Προχωρημένο",
+        "status": "beta-standardized",
+        "review_flag": "Έλεγχος για MVP",
+        "review_priority": "high",
+        "core_decision": "Μην παρουσιάζετε μια VUS ως θεραπευτικά τεκμηριωμένη",
+        "learning_objectives": [
+          "Διατυπώστε το κεντρικό κλινικομοριακό ερώτημα από το ιστορικό, την ιστολογία και το πλαίσιο του ιστικού υλικού",
+          "Επικοινωνήστε τις VUS βάσει τεκμηρίων και αποφύγετε τη θεραπευτική υπερερμηνεία",
+          "Επικοινωνήστε με σαφήνεια την ενδεικτική λύση στο MTB, μαζί με τους περιορισμούς και τη σημασία για τον ασθενή"
+        ],
+        "tags": [
+          "BRCA",
+          "HRD",
+          "VUS",
+          "MTB",
+          "MVP",
+          "Τυπικό, σύνθετο περιστατικό, επαναταξινόμηση διάρκειας AP1b"
+        ],
+        "ap1b_decision": "MTB· διάρκεια=σύνθετη· δυσκολία=προχωρημένη· κατάσταση=beta-standardized"
+      },
+      "base_case": {
+        "id": "MTB_OVAR_002_v1_3",
+        "title": "Παραλλαγή BRCA2 αβέβαιης σημασίας σε καρκίνωμα ωοθήκης → μην παρουσιάζετε μια VUS ως θεραπευτικά τεκμηριωμένη",
+        "short": "Παραλλαγή BRCA2 αβέβαιης σημασί…",
+        "mode": "patient_care",
+        "logic": "generic_patient",
+        "difficulty": "intermediate",
+        "estimated_time_min": "8–15",
+        "budget": {
+          "points_max": 1050,
+          "sections_max": 16,
+          "tat_goal": 10
+        },
+        "allowed_tests": [
+          "he_review",
+          "fusion_rna_ngs",
+          "rna_fusion_panel",
+          "fusion_fish",
+          "tumor_brca_hrr",
+          "broad_pan_panel",
+          "hrd_score",
+          "germline_referral",
+          "vusic"
+        ],
+        "story": [
+          {
+            "id": "intake",
+            "title": "Αρχικό αίτημα",
+            "items": [
+              [
+                "Αναγνωριστικό περιστατικού",
+                "MTB_OVAR_002"
+              ],
+              [
+                "Αποστέλλων ιατρός/τμήμα",
+                "Ογκολογία / παθολογική ανατομική / μοριακό ογκολογικό συμβούλιο"
+              ],
+              [
+                "Κλινικό ερώτημα",
+                "Μην παρουσιάζετε μια VUS ως θεραπευτικά τεκμηριωμένη"
+              ],
+              [
+                "Πηγή / κεφάλαιο αναφοράς",
+                "Βιοαναλυτική: VUS· βιολογία όγκου: HRD"
+              ]
+            ]
+          },
+          {
+            "id": "history",
+            "title": "Ιατρικό ιστορικό και κλινικό πλαίσιο",
+            "items": [
+              [
+                "Κλινικό πλαίσιο",
+                "Παραλλαγή BRCA2 αβέβαιης σημασίας σε καρκίνωμα ωοθήκης"
+              ],
+              [
+                "Πίεση λήψης απόφασης",
+                "Το περιστατικό πρέπει να αξιολογηθεί σε ογκολογικό συμβούλιο ή σε ειδική συζήτηση περιστατικού."
+              ],
+              [
+                "Διδακτική παγίδα",
+                "Ένας μεμονωμένος δείκτης ή μία μόνο μέθοδος συχνά δεν επαρκεί για να απαντήσει στο κεντρικό κλινικό ερώτημα."
+              ],
+              [
+                "Στόχος",
+                "Διατυπώστε μια τεκμηριωμένη σύσταση με βάση τη μορφολογία, το ιστικό υλικό, τη μέθοδο και τη βιολογία."
+              ]
+            ]
+          },
+          {
+            "id": "histo",
+            "title": "Ιστολογία + προηγούμενες πληροφορίες",
+            "items": [
+              [
+                "Μορφολογία",
+                "Το πλαίσιο του όγκου και του ιστικού υλικού είναι εύλογο, αλλά δεν επαρκεί για την κύρια απόφαση."
+              ],
+              [
+                "Προηγούμενη IHC",
+                "Ο βασικός διαγνωστικός έλεγχος είναι διαθέσιμος ή πρέπει να ζητηθεί εφόσον απαιτείται για την ερμηνεία."
+              ],
+              [
+                "Ανοιχτό ερώτημα",
+                "Μην παρουσιάζετε μια VUS ως θεραπευτικά τεκμηριωμένη"
+              ],
+              [
+                "Σημείωση",
+                "Η απόφαση δεν πρέπει να λαμβάνεται αντανακλαστικά, αλλά να τεκμηριώνεται μεθοδολογικά."
+              ]
+            ]
+          },
+          {
+            "id": "material",
+            "title": "Αξιολόγηση ιστικού υλικού",
+            "items": [
+              [
+                "Ιστικό υλικό",
+                "Ιστός FFPE ή υλικό ρουτίνας/εξέλιξης ανάλογα με το περιστατικό."
+              ],
+              [
+                "Ποσοστό νεοπλασματικών κυττάρων",
+                "επαρκές έως οριακό, ανάλογα με την επιλεγμένη μέθοδο."
+              ],
+              [
+                "Απόθεμα τομών",
+                "Περιορισμένο για διδακτικούς λόγους· οι περιττές πρόσθετες εξετάσεις καταναλώνουν ιστό και αυξάνουν το TAT."
+              ],
+              [
+                "Προαναλυτική φάση",
+                "Λάβετε ενεργά υπόψη την ποιότητα του υλικού, τα όρια ερμηνείας και την ανάγκη συμπληρωματικού ελέγχου."
+              ]
+            ]
+          }
+        ],
+        "required_groups": [
+          {
+            "id": "fusion",
+            "label": "Έλεγχος γονιδιακών συντήξεων",
+            "tests": [
+              "fusion_rna_ngs",
+              "rna_fusion_panel",
+              "fusion_fish"
+            ],
+            "suggest": "fusion_rna_ngs"
+          },
+          {
+            "id": "brca_hrr",
+            "label": "BRCA/HRR όγκου",
+            "tests": [
+              "tumor_brca_hrr",
+              "broad_pan_panel"
+            ],
+            "suggest": "tumor_brca_hrr"
+          },
+          {
+            "id": "hrd",
+            "label": "Πλαίσιο HRD/PARP",
+            "tests": [
+              "hrd_score",
+              "germline_referral"
+            ],
+            "suggest": "hrd_score"
+          },
+          {
+            "id": "vus",
+            "label": "Αξιολόγηση τεκμηρίων για VUS",
+            "tests": [
+              "vusic",
+              "germline_referral"
+            ],
+            "suggest": "vusic"
+          }
+        ],
+        "result_sections": [
+          {
+            "label": "Έλεγχος γονιδιακών συντήξεων",
+            "test_any": [
+              "fusion_rna_ngs",
+              "rna_fusion_panel",
+              "fusion_fish"
+            ],
+            "result": "Ο έλεγχος συντήξεων βάσει RNA ανιχνεύει μια εκφραζόμενη, θεραπευτικά σημαντική σύντηξη."
+          },
+          {
+            "label": "BRCA/HRR όγκου",
+            "test_any": [
+              "tumor_brca_hrr",
+              "broad_pan_panel"
+            ],
+            "result": "Το πλαίσιο BRCA/HRR αξιολογείται ως προς τη θεραπευτική του σημασία."
+          },
+          {
+            "label": "Πλαίσιο HRD/PARP",
+            "test_any": [
+              "hrd_score",
+              "germline_referral"
+            ],
+            "result": "Αντιμετωπίζονται η σημασία HRD/PARP και το πλαίσιο βλαστικής σειράς/οικογένειας."
+          },
+          {
+            "label": "Αξιολόγηση τεκμηρίων για VUS",
+            "test_any": [
+              "vusic",
+              "germline_referral"
+            ],
+            "result": "Η VUS δεν υπερερμηνεύεται ως τεκμηριωμένη θεραπευτική ένδειξη."
+          }
+        ],
+        "always_findings": [
+          [
+            "QC",
+            "Ο ειδικός για το περιστατικό QC είναι αξιοποιήσιμος, εφόσον η επιλεγμένη μέθοδος είναι κατάλληλη για το υλικό και το κλινικό ερώτημα."
+          ]
+        ],
+        "complete_interpretation": "Πλήρης ολοκληρωμένη ερμηνεία: μην παρουσιάζετε μια VUS ως θεραπευτικά τεκμηριωμένη. Οι επιλεγμένες μέθοδοι απαντούν στο βασικό ερώτημα με κατάλληλη αξιοπιστία και σαφείς περιορισμούς.",
+        "partial_interpretation": "Μερικό αποτέλεσμα: για τη βασική απόφαση («μην παρουσιάζετε μια VUS ως θεραπευτικά τεκμηριωμένη») λείπουν ακόμη κρίσιμα στοιχεία ή η επιλεγμένη μέθοδος είναι υπερβολικά περιορισμένη.",
+        "mtb_checks": [
+          [
+            "fusion",
+            "Εντάξτε σωστά τον έλεγχο συντήξεων στο βασικό μήνυμα του MTB"
+          ],
+          [
+            "brca_hrr",
+            "Εντάξτε σωστά το BRCA/HRR του όγκου στο βασικό μήνυμα του MTB"
+          ],
+          [
+            "hrd",
+            "Εντάξτε σωστά το πλαίσιο HRD/PARP στο βασικό μήνυμα του MTB"
+          ],
+          [
+            "vus",
+            "Εντάξτε σωστά την αξιολόγηση τεκμηρίων για VUS στο βασικό μήνυμα του MTB"
+          ],
+          [
+            "limits",
+            "Επικοινωνήστε με σαφήνεια τους περιορισμούς και τυχόν ανάγκη συμπληρωματικού ελέγχου"
+          ],
+          [
+            "bad",
+            "Λανθασμένη δήλωση: ένας μεμονωμένος δείκτης επαρκεί με βεβαιότητα χωρίς πλαίσιο"
+          ]
+        ],
+        "optimal_summary": "Βέλτιστη λύση: μην παρουσιάζετε μια VUS ως θεραπευτικά τεκμηριωμένη — χρησιμοποιήστε κατάλληλο για το περιστατικό συνδυασμό μεθόδων, αξιολόγηση υλικού/QC και σαφή επικοινωνία στο MTB.",
+        "tags": [
+          "BRCA",
+          "HRD",
+          "VUS",
+          "MTB",
+          "MVP",
+          "Τυπική"
+        ]
+      },
+      "deep_dive": {
+        "version": "v1.7b",
+        "case_id": "MTB_OVAR_002_v1_3",
+        "title": "HGSOC με VUS στο BRCA2: αίτημα για θεραπεία PARP, όρια τεκμηρίων και επικοινωνία για τη βλαστική σειρά",
+        "domain": "MTB",
+        "target_course": "Προχωρημένο ολοκληρωμένο",
+        "deep_dive_priority": "complex_anchor",
+        "target_role": "Γυναικολογικό MTB / μοριακή παθολογοανατομία",
+        "estimated_minutes_deep": "20–30",
+        "learning_objectives": [
+          "Διαχωρίστε θεραπευτικά μια VUS από παθογόνες/πιθανώς παθογόνες παραλλαγές BRCA/HRR.",
+          "Επικοινωνήστε με σαφήνεια τα επίπεδα όγκου, HRD και βλαστικής σειράς.",
+          "Μη βασίζετε ένδειξη για PARP σε μη τεκμηριωμένη VUS."
+        ],
+        "opening_scene": "Η γυναικολογική ογκολογική ομάδα παρουσιάζει ασθενή μετά από ανταπόκριση σε πλατινούχο θεραπεία. Στο πάνελ όγκου ανιχνεύθηκε παραλλαγή BRCA2 αβέβαιης σημασίας. Το ερώτημα είναι: «Μπορούμε να τη θεωρήσουμε BRCA-θετική και να τεκμηριώσουμε θεραπεία συντήρησης με PARP;»",
+        "case_briefing": "Γυναίκα 59 ετών με υψηλού βαθμού ορώδες καρκίνωμα ωοθήκης, FIGO IIIC, και καλή μερική ανταπόκριση σε πρώτης γραμμής πλατινούχο θεραπεία. Οικογενειακό ιστορικό: θεία με καρκίνο μαστού, χωρίς σαφείς λεπτομέρειες. Πάνελ όγκου: παθογόνος μετάλλαξη TP53 και missense παραλλαγή BRCA2 ταξινομημένη ως VUS.",
+        "context_cards": [
+          {
+            "title": "Βιολογία όγκου",
+            "content": "Το HGSOC φέρει συχνά αλλοιώσεις TP53· η κατάσταση HRD/BRCA μπορεί να έχει θεραπευτική σημασία.",
+            "teaching_point": "Δεν τεκμηριώνει κάθε παραλλαγή BRCA αυτομάτως HRD ή θεραπεία PARP."
+          },
+          {
+            "title": "Παραλλαγή",
+            "content": "Missense παραλλαγή BRCA2, VAF 48%, χωρίς τεκμηριωμένα λειτουργικά δεδομένα και χωρίς σαφή συνέπεια απώλειας λειτουργίας.",
+            "teaching_point": "Η VAF και το όνομα του γονιδίου από μόνα τους δεν αρκούν για την τεκμηρίωση παθογένειας."
+          },
+          {
+            "title": "HRD",
+            "content": "Η βαθμολογία HRD δεν είναι ακόμη διαθέσιμη. Οι γονιδιωματικές ουλές δεν αξιολογήθηκαν επαρκώς στο προηγούμενο πάνελ όγκου.",
+            "teaching_point": "Η HRD μπορεί να είναι σημαντική ανεξάρτητα από μια μεμονωμένη VUS."
+          },
+          {
+            "title": "Βλαστική σειρά",
+            "content": "Η αξιολόγηση από κλινική γενετική μπορεί να είναι σκόπιμη λόγω της οντότητας και του οικογενειακού πλαισίου, αλλά πρέπει να επικοινωνείται χωριστά από τη θεραπευτική ερμηνεία της σωματικής VUS.",
+            "teaching_point": "Η διερεύνηση της βλαστικής σειράς δεν καθιστά αυτομάτως μια VUS θεραπευτικά τεκμηριωμένη."
+          }
+        ],
+        "pre_results": [
+          {
+            "title": "Ιστολογία",
+            "content": "Υψηλού βαθμού ορώδες καρκίνωμα, ανώμαλο πρότυπο p53, WT1+, PAX8+."
+          },
+          {
+            "title": "NGS όγκου",
+            "content": "Παθογόνος μετάλλαξη TP53· BRCA2 c.X p.Y ταξινομημένη ως VUS· δεν έχει αναφερθεί τεκμηριωμένη διαλληλική αδρανοποίηση."
+          },
+          {
+            "title": "Θεραπευτικό πλαίσιο",
+            "content": "Υπάρχει ανταπόκριση στην πλατίνα και συζητείται συντήρηση με PARP· η βαθμολογία HRD δεν έχει προσδιοριστεί."
+          }
+        ],
+        "material_or_resource_constraints": [
+          "Το υλικό FFPE επαρκεί για έλεγχο HRD/διευρυμένο προφίλ HRR, αλλά δεν είναι απεριόριστο.",
+          "Η θεραπευτική απόφαση δεν πρέπει να βασίζεται σε VUS που αναβαθμίστηκε εσφαλμένα.",
+          "Τα ζητήματα βλαστικής σειράς απαιτούν συμβουλευτική κλινικής γενετικής και κατάλληλο δείγμα."
+        ],
+        "reasoning_gate_upgrade": [
+          {
+            "id": "vus_meaning",
+            "type": "single_choice",
+            "prompt": "Πώς πρέπει να αξιολογηθεί θεραπευτικά μια VUS στο BRCA2;",
+            "options": [
+              {
+                "id": "not_actionable",
+                "label": "να μη χρησιμοποιηθεί ως τεκμηριωμένη παθογόνος αλλοίωση BRCA"
+              },
+              {
+                "id": "pathogenic",
+                "label": "να αξιολογηθεί ως παθογόνος μετάλλαξη BRCA"
+              },
+              {
+                "id": "ignore_gene",
+                "label": "Το BRCA2 δεν έχει σημασία στον καρκίνο ωοθήκης"
+              },
+              {
+                "id": "germline_confirm",
+                "label": "Η ανίχνευση στη βλαστική σειρά την καθιστά αυτομάτως παθογόνο"
+              }
+            ],
+            "correct": [
+              "not_actionable"
+            ],
+            "rationale": "Οι VUS δεν είναι παραλλαγές με τεκμηριωμένη θεραπευτική αξιοποιησιμότητα."
+          },
+          {
+            "id": "next_tests",
+            "type": "multi_select",
+            "prompt": "Ποια επόμενα βήματα είναι κατάλληλα;",
+            "options": [
+              {
+                "id": "hrd_score",
+                "label": "Αξιολογήστε την κατάσταση HRD/τον έλεγχο γονιδιωματικών ουλών"
+              },
+              {
+                "id": "variant_reclassification",
+                "label": "Τεκμηριώστε τον έλεγχο βάσεων δεδομένων, βιβλιογραφίας και ταξινόμησης"
+              },
+              {
+                "id": "genetic_counseling",
+                "label": "Συστήστε χωριστά συμβουλευτική κλινικής γενετικής/έλεγχο βλαστικής σειράς"
+              },
+              {
+                "id": "parp_vus",
+                "label": "Συστήστε θεραπεία PARP αποκλειστικά λόγω της VUS"
+              }
+            ],
+            "correct": [
+              "hrd_score",
+              "variant_reclassification",
+              "genetic_counseling"
+            ],
+            "rationale": "Η λύση διαχωρίζει τα θεραπευτικά τεκμήρια, την HRD και το επίπεδο της βλαστικής σειράς."
+          },
+          {
+            "id": "communication",
+            "type": "single_choice",
+            "prompt": "Ποια διατύπωση του αποτελέσματος είναι σωστή;",
+            "options": [
+              {
+                "id": "clear_vus",
+                "label": "VUS στο BRCA2: αβέβαιη σημασία· δεν ισοδυναμεί με παθογόνο αλλοίωση BRCA"
+              },
+              {
+                "id": "brca_positive",
+                "label": "BRCA-θετικό"
+              },
+              {
+                "id": "no_report",
+                "label": "Να μην αναφερθεί καθόλου η VUS παρά το θεραπευτικό ερώτημα"
+              },
+              {
+                "id": "family_pathogenic",
+                "label": "Η οικογένεια επηρεάζεται με βεβαιότητα"
+              }
+            ],
+            "correct": [
+              "clear_vus"
+            ],
+            "rationale": "Το κλειδί εδώ είναι η σαφής επικοινωνία χωρίς υπέρβαση των τεκμηρίων."
+          },
+          {
+            "id": "hrd_context",
+            "type": "single_choice",
+            "prompt": "Ποιον ρόλο μπορεί να διαδραματίσει η HRD;",
+            "options": [
+              {
+                "id": "independent_context",
+                "label": "Η HRD μπορεί να είναι σημαντική για το πλαίσιο PARP επιπλέον της αξιολόγησης της παραλλαγής"
+              },
+              {
+                "id": "crc_only",
+                "label": "Η HRD έχει σημασία μόνο στο CRC"
+              },
+              {
+                "id": "never",
+                "label": "Η HRD δεν έχει ποτέ θεραπευτική σημασία"
+              },
+              {
+                "id": "vus_enough",
+                "label": "Η HRD αποδεικνύεται αυτομάτως από μια VUS"
+              }
+            ],
+            "correct": [
+              "independent_context"
+            ],
+            "rationale": "Η HRD αποτελεί ξεχωριστό επίπεδο και δεν τεκμηριώνεται αυτομάτως από μια VUS."
+          }
+        ],
+        "decision_task": "Διατυπώστε επιστημονικά ορθή σύσταση σχετικά με τη VUS στο BRCA2, τον έλεγχο HRD, το πλαίσιο PARP και τη διερεύνηση της βλαστικής σειράς.",
+        "expected_path": [
+          "Μην αναφέρετε τη VUS στο BRCA2 ως παθογόνο ή θεραπευτικά τεκμηριωμένη μετάλλαξη.",
+          "Συμπληρώστε την κατάσταση HRD ή κατάλληλο έλεγχο HRR/γονιδιωματικών ουλών, εφόσον είναι θεραπευτικά σημαντικός.",
+          "Τεκμηριώστε την ταξινόμηση της VUS και το επίπεδο τεκμηρίων και μην εξάγετε θεραπευτική σύσταση αποκλειστικά από αυτήν.",
+          "Συστήστε χωριστά συμβουλευτική κλινικής γενετικής/έλεγχο βλαστικής σειράς, ιδιαίτερα λόγω της οντότητας και του οικογενειακού πλαισίου.",
+          "Επικοινωνία στο MTB: VUS ≠ BRCA-θετικό· η θεραπευτική απόφαση να βασίζεται στις κατευθυντήριες οδηγίες, την HRD και το κλινικό πλαίσιο."
+        ],
+        "acceptable_alternatives": [
+          "Εάν υπάρχει ήδη εξωτερικό θετικό αποτέλεσμα HRD, το πλαίσιο PARP μπορεί να συζητηθεί ανεξάρτητα από τη VUS.",
+          "Εάν το υλικό δεν επαρκεί, ιεραρχήστε HRD έναντι διευρυμένου HRR ανάλογα με το κλινικό ερώτημα."
+        ],
+        "low_value_traps": [
+          {
+            "label": "Παρουσιάστε τη VUS ως ένδειξη για θεραπεία PARP",
+            "why_bad": "Θεραπευτική υπερερμηνεία με δυνητικά εσφαλμένη συμβουλευτική της ασθενούς."
+          },
+          {
+            "label": "Χαρακτηρίστε τη VUS της βλαστικής σειράς ως παθογόνο",
+            "why_bad": "Το πλαίσιο της βλαστικής σειράς δεν αλλάζει αυτομάτως την ταξινόμηση."
+          },
+          {
+            "label": "Χρησιμοποιήστε μεμονωμένο έλεγχο TP53 ως υποκατάστατο του ελέγχου HRD",
+            "why_bad": "Το TP53 ταιριάζει με την οντότητα, αλλά δεν απαντά στο ερώτημα HRD/PARP."
+          }
+        ],
+        "twist": {
+          "title": "Η VUS παραμένει VUS",
+          "content": "Ο έλεγχος κλινικής γενετικής ανιχνεύει την ίδια παραλλαγή BRCA2, αλλά και εκεί παραμένει ταξινομημένη ως VUS. Η βαθμολογία HRD που προστέθηκε αργότερα είναι αρνητική. Επομένως, η παραλλαγή αυτή δεν αποτελεί αξιόπιστη βάση για θεραπεία PARP.",
+          "why_critical": "Η επιθυμία για θεραπευτική επιλογή δεν πρέπει να μεταβάλλει την ταξινόμηση των τεκμηρίων."
+        },
+        "result_packages": [
+          {
+            "id": "optimal_vus_handled",
+            "title": "Ορθή ταξινόμηση της VUS + διαχωρισμός HRD και βλαστικής σειράς",
+            "result": "Η VUS στο BRCA2 παραμένει αβέβαιη· η HRD είναι αρνητική. Σύσταση: να μην εξισωθεί θεραπευτικά με παθογόνο μετάλλαξη BRCA· παραπομπή σε κλινική γενετική με διαφανή επικοινωνία του καθεστώτος VUS.",
+            "feedback": "Πολύ καλή πειθαρχία στη χρήση τεκμηρίων και στην επικοινωνία."
+          },
+          {
+            "id": "overcall_parp",
+            "title": "Η VUS αξιολογήθηκε ως BRCA-θετική",
+            "result": "Η έκθεση υποδηλώνει τεκμηριωμένη βάση για θεραπεία PARP παρά την ανεπαρκή τεκμηρίωση.",
+            "feedback": "Κρίσιμο σφάλμα: υπερερμηνεία της VUS."
+          },
+          {
+            "id": "ignore_germline",
+            "title": "Το πλαίσιο της βλαστικής σειράς δεν αντιμετωπίστηκε",
+            "result": "Το θεραπευτικό ερώτημα αντιμετωπίζεται εν μέρει, αλλά λείπει το επίπεδο οικογένειας/συμβουλευτικής.",
+            "feedback": "Η σωματική και η κληρονομική διάσταση δεν διαχωρίστηκαν με σαφήνεια."
+          }
+        ],
+        "followup_logic": [
+          {
+            "trigger": "Υπερερμηνεία της VUS",
+            "action": "Ανώτατο όριο βαθμολογίας και προειδοποίηση στην έκθεση",
+            "consequence": "Τα Biological Interpretation και Communication επηρεάζονται κρίσιμα."
+          },
+          {
+            "trigger": "Λείπει ο έλεγχος HRD",
+            "action": "Μπορεί να ζητηθεί συμπληρωματικός έλεγχος HRD",
+            "consequence": "Η θεραπευτική αξιολόγηση βελτιώνεται, αλλά η καθυστέρηση παραμένει."
+          }
+        ],
+        "debrief_points": [
+          "Η VUS είναι κατηγορία τεκμηρίων, όχι ετικέτα για μια επιθυμητή θεραπεία.",
+          "Τα σωματικά ευρήματα, η HRD και το επίπεδο της βλαστικής σειράς είναι τρία συνδεδεμένα αλλά διακριτά επίπεδα.",
+          "Η καλή επικοινωνία του αποτελέσματος προστατεύει από υπερθεραπεία και εσφαλμένη συμβουλευτική της οικογένειας."
+        ],
+        "instructor_notes": {
+          "model_answer": "Μην αξιολογείτε τη VUS στο BRCA2 ως παθογόνο αλλοίωση· συμπληρώστε το πλαίσιο HRD/HRR· προσφέρετε κλινική γενετική με διαφανή επικοινωνία του καθεστώτος VUS.",
+          "scoring_focus": [
+            "χωρίς υπερδιάγνωση",
+            "Πλαίσιο HRD",
+            "Επικοινωνία για τη βλαστική σειρά"
+          ],
+          "discussion_questions": [
+            "Πώς πρέπει να διατυπώνεται μια VUS στην έκθεση;",
+            "Τι αλλάζει μια αρνητική βαθμολογία HRD;",
+            "Πώς πρέπει να διαχειρίζονται οι θεραπευτικές προσδοκίες στο MTB;"
+          ]
+        },
+        "report_additions": [
+          "Twist: ο έλεγχος βλαστικής σειράς επιβεβαιώνει τη VUS, όχι όμως την παθογένεια",
+          "Κρίσιμο σφάλμα: η VUS θεωρείται θεραπευτικά τεκμηριωμένη",
+          "Διαδρομή αναφοράς: χωριστά ταξινόμηση + HRD + κλινική γενετική"
+        ]
+      },
+      "payload_hash_sha256": "7bb4c47385f31e6c420bf9541d96b4ad01b388c31b51954607cb6e994ce1c60e"
+    },
+    "es": {
+      "metadata": {
+        "case_id": "MTB_OVAR_002_v1_3",
+        "base_id": "MTB_OVAR_002",
+        "title": "Variante BRCA2 de significado incierto en carcinoma de ovario → no presentar una VUS como terapéuticamente establecida",
+        "domain": "MTB",
+        "met_addon_type": "no",
+        "subdomain": "HRD / BRCA / PARP / línea germinal",
+        "case_type": "clinical_decision",
+        "length_class": "Complejo",
+        "estimated_minutes": {
+          "min": 20,
+          "max": 30
+        },
+        "difficulty": "Avanzado",
+        "status": "beta-standardized",
+        "review_flag": "Revisar para MVP",
+        "review_priority": "high",
+        "core_decision": "No presentar una VUS como terapéuticamente establecida",
+        "learning_objectives": [
+          "Deducir la pregunta clínico-molecular central a partir de la anamnesis, la histología y el contexto del tejido",
+          "Comunicar las VUS basándose en la evidencia y evitar la sobreinterpretación terapéutica",
+          "Comunicar con claridad la solución de referencia en el MTB, incluidas las limitaciones y la relevancia para el paciente"
+        ],
+        "tags": [
+          "BRCA",
+          "HRD",
+          "VUS",
+          "MTB",
+          "MVP",
+          "Estándar, caso complejo, reclasificación de duración AP1b"
+        ],
+        "ap1b_decision": "MTB; duración=compleja; dificultad=avanzada; estado=beta-standardized"
+      },
+      "base_case": {
+        "id": "MTB_OVAR_002_v1_3",
+        "title": "Variante BRCA2 de significado incierto en carcinoma de ovario → no presentar una VUS como terapéuticamente establecida",
+        "short": "Variante BRCA2 de significado inciert…",
+        "mode": "patient_care",
+        "logic": "generic_patient",
+        "difficulty": "intermediate",
+        "estimated_time_min": "8–15",
+        "budget": {
+          "points_max": 1050,
+          "sections_max": 16,
+          "tat_goal": 10
+        },
+        "allowed_tests": [
+          "he_review",
+          "fusion_rna_ngs",
+          "rna_fusion_panel",
+          "fusion_fish",
+          "tumor_brca_hrr",
+          "broad_pan_panel",
+          "hrd_score",
+          "germline_referral",
+          "vusic"
+        ],
+        "story": [
+          {
+            "id": "intake",
+            "title": "Solicitud inicial",
+            "items": [
+              [
+                "ID del caso",
+                "MTB_OVAR_002"
+              ],
+              [
+                "Solicitante",
+                "Oncología / anatomía patológica / comité molecular de tumores"
+              ],
+              [
+                "Pregunta clínica",
+                "No presentar una VUS como terapéuticamente establecida"
+              ],
+              [
+                "Fuente / capítulo de referencia",
+                "Bioanalítica: VUS; biología tumoral: HRD"
+              ]
+            ]
+          },
+          {
+            "id": "history",
+            "title": "Anamnesis y contexto clínico",
+            "items": [
+              [
+                "Contexto clínico",
+                "Variante BRCA2 de significado incierto en carcinoma de ovario"
+              ],
+              [
+                "Presión de decisión",
+                "El caso debe valorarse en un comité de tumores o en una sesión específica del caso."
+              ],
+              [
+                "Trampa didáctica",
+                "Un único marcador o un único método a menudo no basta para responder a la decisión central."
+              ],
+              [
+                "Objetivo",
+                "Formular una recomendación sólida a partir de la morfología, el tejido, el método y la biología."
+              ]
+            ]
+          },
+          {
+            "id": "histo",
+            "title": "Histología + información previa",
+            "items": [
+              [
+                "Morfología",
+                "El contexto tumoral y del material es plausible, pero insuficiente para la decisión central."
+              ],
+              [
+                "IHC previa",
+                "El estudio diagnóstico básico está disponible o debe solicitarse si es necesario para la interpretación."
+              ],
+              [
+                "Pregunta abierta",
+                "No presentar una VUS como terapéuticamente establecida"
+              ],
+              [
+                "Nota",
+                "La decisión no debe tomarse de forma refleja, sino con una justificación metodológica."
+              ]
+            ]
+          },
+          {
+            "id": "material",
+            "title": "Evaluación del tejido",
+            "items": [
+              [
+                "Tejido",
+                "Tejido FFPE o material de rutina/progresión según el caso."
+              ],
+              [
+                "Porcentaje tumoral",
+                "adecuado a límite, según el método elegido."
+              ],
+              [
+                "Reserva de cortes",
+                "Limitado con fines didácticos; las pruebas adicionales innecesarias consumen tejido y aumentan el TAT."
+              ],
+              [
+                "Preanalítica",
+                "Considerar activamente la calidad del material, los límites de interpretación y la necesidad de pruebas adicionales."
+              ]
+            ]
+          }
+        ],
+        "required_groups": [
+          {
+            "id": "fusion",
+            "label": "Estudio de fusiones",
+            "tests": [
+              "fusion_rna_ngs",
+              "rna_fusion_panel",
+              "fusion_fish"
+            ],
+            "suggest": "fusion_rna_ngs"
+          },
+          {
+            "id": "brca_hrr",
+            "label": "BRCA/HRR tumoral",
+            "tests": [
+              "tumor_brca_hrr",
+              "broad_pan_panel"
+            ],
+            "suggest": "tumor_brca_hrr"
+          },
+          {
+            "id": "hrd",
+            "label": "Contexto HRD/PARP",
+            "tests": [
+              "hrd_score",
+              "germline_referral"
+            ],
+            "suggest": "hrd_score"
+          },
+          {
+            "id": "vus",
+            "label": "Evaluación de la evidencia de una VUS",
+            "tests": [
+              "vusic",
+              "germline_referral"
+            ],
+            "suggest": "vusic"
+          }
+        ],
+        "result_sections": [
+          {
+            "label": "Estudio de fusiones",
+            "test_any": [
+              "fusion_rna_ngs",
+              "rna_fusion_panel",
+              "fusion_fish"
+            ],
+            "result": "El estudio de fusiones basado en ARN detecta una fusión expresada y terapéuticamente relevante."
+          },
+          {
+            "label": "BRCA/HRR tumoral",
+            "test_any": [
+              "tumor_brca_hrr",
+              "broad_pan_panel"
+            ],
+            "result": "El contexto BRCA/HRR se interpreta desde el punto de vista terapéutico."
+          },
+          {
+            "label": "Contexto HRD/PARP",
+            "test_any": [
+              "hrd_score",
+              "germline_referral"
+            ],
+            "result": "Se abordan la relevancia de HRD/PARP y el contexto germinal/familiar."
+          },
+          {
+            "label": "Evaluación de la evidencia de una VUS",
+            "test_any": [
+              "vusic",
+              "germline_referral"
+            ],
+            "result": "La VUS no se sobreinterpreta como una indicación terapéutica establecida."
+          }
+        ],
+        "always_findings": [
+          [
+            "QC",
+            "El QC específico del caso es interpretable siempre que el método elegido sea adecuado para la muestra y la pregunta clínica."
+          ]
+        ],
+        "complete_interpretation": "Interpretación integrada completa: no presentar una VUS como terapéuticamente establecida. Los métodos seleccionados responden a la cuestión central con una validez y unas limitaciones adecuadas.",
+        "partial_interpretation": "Resultado parcial: aún faltan elementos centrales para la decisión principal («no presentar una VUS como terapéuticamente establecida») o el método elegido es demasiado limitado.",
+        "mtb_checks": [
+          [
+            "fusion",
+            "Interpretar correctamente el estudio de fusiones en el mensaje clave del MTB"
+          ],
+          [
+            "brca_hrr",
+            "Interpretar correctamente BRCA/HRR tumoral en el mensaje clave del MTB"
+          ],
+          [
+            "hrd",
+            "Interpretar correctamente el contexto HRD/PARP en el mensaje clave del MTB"
+          ],
+          [
+            "vus",
+            "Interpretar correctamente la evaluación de la evidencia de una VUS en el mensaje clave del MTB"
+          ],
+          [
+            "limits",
+            "Comunicar claramente las limitaciones y, si procede, la necesidad de pruebas adicionales"
+          ],
+          [
+            "bad",
+            "Afirmación incorrecta: un marcador aislado es definitivamente suficiente sin contexto"
+          ]
+        ],
+        "optimal_summary": "Solución óptima: no presentar una VUS como terapéuticamente establecida — utilizar una combinación de métodos adecuada al caso, evaluación de la muestra/QC y comunicación clara en el MTB.",
+        "tags": [
+          "BRCA",
+          "HRD",
+          "VUS",
+          "MTB",
+          "MVP",
+          "Estándar"
+        ]
+      },
+      "deep_dive": {
+        "version": "v1.7b",
+        "case_id": "MTB_OVAR_002_v1_3",
+        "title": "HGSOC con una VUS en BRCA2: solicitud de tratamiento con PARP, límites de la evidencia y comunicación germinal",
+        "domain": "MTB",
+        "target_course": "Avanzado integrado",
+        "deep_dive_priority": "complex_anchor",
+        "target_role": "MTB ginecológico / patología molecular",
+        "estimated_minutes_deep": "20–30",
+        "learning_objectives": [
+          "Diferenciar terapéuticamente una VUS de las variantes BRCA/HRR patogénicas/probablemente patogénicas.",
+          "Comunicar claramente los niveles tumoral, de HRD y germinal.",
+          "No basar una indicación de PARP en una VUS no confirmada."
+        ],
+        "opening_scene": "El equipo de oncología ginecológica presenta a una paciente tras respuesta al platino. En el panel tumoral se detectó una variante BRCA2 de significado incierto. La pregunta es: «¿Podemos considerarla BRCA-positiva y justificar un mantenimiento con PARP?»",
+        "case_briefing": "Mujer de 59 años con carcinoma seroso de alto grado de ovario, FIGO IIIC, y buena respuesta parcial al tratamiento de primera línea basado en platino. Antecedentes familiares: una tía con cáncer de mama; detalles poco claros. Panel tumoral: mutación patogénica de TP53 y variante missense de BRCA2 clasificada como VUS.",
+        "context_cards": [
+          {
+            "title": "Biología tumoral",
+            "content": "El HGSOC presenta con frecuencia alteraciones de TP53; el estado HRD/BRCA puede ser terapéuticamente relevante.",
+            "teaching_point": "No toda variante BRCA demuestra automáticamente HRD ni justifica un tratamiento con PARP."
+          },
+          {
+            "title": "Variante",
+            "content": "Variante missense de BRCA2, VAF 48%, sin evidencia funcional establecida ni una consecuencia clara de pérdida de función.",
+            "teaching_point": "La VAF y el nombre del gen por sí solos no bastan para establecer patogenicidad."
+          },
+          {
+            "title": "HRD",
+            "content": "La puntuación HRD aún no está disponible. Las cicatrices genómicas no se evaluaron adecuadamente en el panel tumoral previo.",
+            "teaching_point": "La HRD puede ser relevante con independencia de una VUS concreta."
+          },
+          {
+            "title": "Línea germinal",
+            "content": "La evaluación por genética clínica puede ser apropiada por la entidad tumoral y el contexto familiar, pero debe comunicarse por separado de la interpretación terapéutica de la VUS somática.",
+            "teaching_point": "El estudio germinal no convierte automáticamente una VUS en una alteración terapéuticamente establecida."
+          }
+        ],
+        "pre_results": [
+          {
+            "title": "Histología",
+            "content": "Carcinoma seroso de alto grado, p53 aberrante, WT1+, PAX8+."
+          },
+          {
+            "title": "NGS tumoral",
+            "content": "Mutación patogénica de TP53; BRCA2 c.X p.Y clasificada como VUS; no se ha descrito una inactivación bialélica establecida."
+          },
+          {
+            "title": "Contexto terapéutico",
+            "content": "Existe respuesta al platino y se plantea mantenimiento con PARP; no se ha determinado la puntuación HRD."
+          }
+        ],
+        "material_or_resource_constraints": [
+          "El material FFPE es suficiente para el estudio de HRD/un perfil HRR ampliado, pero no es ilimitado.",
+          "La decisión terapéutica no debe basarse en una VUS reclasificada indebidamente a una categoría superior.",
+          "Las cuestiones germinales requieren asesoramiento genético clínico y una muestra adecuada."
+        ],
+        "reasoning_gate_upgrade": [
+          {
+            "id": "vus_meaning",
+            "type": "single_choice",
+            "prompt": "¿Cómo debe valorarse terapéuticamente una VUS de BRCA2?",
+            "options": [
+              {
+                "id": "not_actionable",
+                "label": "no utilizarla como una alteración BRCA patogénica establecida"
+              },
+              {
+                "id": "pathogenic",
+                "label": "interpretarla como una mutación BRCA patogénica"
+              },
+              {
+                "id": "ignore_gene",
+                "label": "BRCA2 es irrelevante en el cáncer de ovario"
+              },
+              {
+                "id": "germline_confirm",
+                "label": "Su detección en línea germinal la convierte automáticamente en patogénica"
+              }
+            ],
+            "correct": [
+              "not_actionable"
+            ],
+            "rationale": "Las VUS no son variantes con utilidad terapéutica establecida."
+          },
+          {
+            "id": "next_tests",
+            "type": "multi_select",
+            "prompt": "¿Cuáles son los siguientes pasos adecuados?",
+            "options": [
+              {
+                "id": "hrd_score",
+                "label": "Evaluar el estado HRD/el estudio de cicatrices genómicas"
+              },
+              {
+                "id": "variant_reclassification",
+                "label": "Documentar la revisión de bases de datos, literatura y clasificación"
+              },
+              {
+                "id": "genetic_counseling",
+                "label": "Recomendar por separado asesoramiento genético clínico/estudio germinal"
+              },
+              {
+                "id": "parp_vus",
+                "label": "Recomendar tratamiento con PARP únicamente por la VUS"
+              }
+            ],
+            "correct": [
+              "hrd_score",
+              "variant_reclassification",
+              "genetic_counseling"
+            ],
+            "rationale": "La solución separa la evidencia terapéutica, la HRD y el nivel germinal."
+          },
+          {
+            "id": "communication",
+            "type": "single_choice",
+            "prompt": "¿Qué comunicación del resultado es correcta?",
+            "options": [
+              {
+                "id": "clear_vus",
+                "label": "VUS de BRCA2: significado incierto; no equivale a una alteración BRCA patogénica"
+              },
+              {
+                "id": "brca_positive",
+                "label": "BRCA-positivo"
+              },
+              {
+                "id": "no_report",
+                "label": "No mencionar en absoluto la VUS pese a la consulta terapéutica"
+              },
+              {
+                "id": "family_pathogenic",
+                "label": "La familia está afectada con certeza"
+              }
+            ],
+            "correct": [
+              "clear_vus"
+            ],
+            "rationale": "La clave aquí es una comunicación clara que no exagere la evidencia."
+          },
+          {
+            "id": "hrd_context",
+            "type": "single_choice",
+            "prompt": "¿Qué papel puede desempeñar la HRD?",
+            "options": [
+              {
+                "id": "independent_context",
+                "label": "La HRD puede ser relevante para el contexto de PARP además de la evaluación de la variante"
+              },
+              {
+                "id": "crc_only",
+                "label": "La HRD solo es relevante en el CCR"
+              },
+              {
+                "id": "never",
+                "label": "La HRD nunca es terapéuticamente relevante"
+              },
+              {
+                "id": "vus_enough",
+                "label": "La HRD queda demostrada automáticamente por una VUS"
+              }
+            ],
+            "correct": [
+              "independent_context"
+            ],
+            "rationale": "La HRD es un nivel independiente y no queda demostrada automáticamente por una VUS."
+          }
+        ],
+        "decision_task": "Formular una recomendación técnicamente rigurosa sobre la VUS de BRCA2, el estudio de HRD, el contexto de PARP y la evaluación germinal.",
+        "expected_path": [
+          "No informar la VUS de BRCA2 como una mutación patogénica o terapéuticamente establecida.",
+          "Añadir el estado HRD o un estudio adecuado de HRR/cicatrices genómicas cuando sea terapéuticamente relevante.",
+          "Documentar la clasificación de la VUS y el nivel de evidencia, y no derivar una recomendación terapéutica únicamente de ella.",
+          "Recomendar por separado asesoramiento genético clínico/estudio germinal, especialmente por la entidad tumoral y el contexto familiar.",
+          "Comunicación en el MTB: VUS ≠ BRCA-positivo; tomar la decisión terapéutica según las guías, la HRD y el contexto clínico."
+        ],
+        "acceptable_alternatives": [
+          "Si ya se dispone de un resultado externo HRD-positivo, el contexto de PARP puede discutirse con independencia de la VUS.",
+          "Si el material es insuficiente, priorizar HRD frente a HRR ampliado según la pregunta clínica."
+        ],
+        "low_value_traps": [
+          {
+            "label": "Presentar la VUS como indicación de tratamiento con PARP",
+            "why_bad": "Sobreinterpretación terapéutica con posible asesoramiento incorrecto de la paciente."
+          },
+          {
+            "label": "Declarar patogénica la VUS germinal",
+            "why_bad": "El contexto germinal no modifica automáticamente la clasificación."
+          },
+          {
+            "label": "Utilizar una prueba aislada de TP53 como sustituto del estudio de HRD",
+            "why_bad": "TP53 es compatible con la entidad tumoral, pero no responde a la cuestión HRD/PARP."
+          }
+        ],
+        "twist": {
+          "title": "La VUS sigue siendo una VUS",
+          "content": "El estudio de genética clínica detecta la misma variante BRCA2, pero también en ese contexto sigue clasificada como VUS. La puntuación HRD añadida posteriormente es negativa. Por tanto, esta variante no constituye una base sólida para justificar un tratamiento con PARP.",
+          "why_critical": "El deseo de disponer de una opción terapéutica no debe modificar la clasificación de la evidencia."
+        },
+        "result_packages": [
+          {
+            "id": "optimal_vus_handled",
+            "title": "VUS correctamente clasificada + HRD y nivel germinal separados",
+            "result": "La VUS de BRCA2 sigue siendo incierta; HRD negativa. Recomendación: no equipararla terapéuticamente con una mutación BRCA patogénica; derivar a genética clínica comunicando de forma transparente el estado de VUS.",
+            "feedback": "Muy buena disciplina en el uso de la evidencia y la comunicación."
+          },
+          {
+            "id": "overcall_parp",
+            "title": "VUS interpretada como BRCA-positiva",
+            "result": "El informe sugiere una base establecida para PARP pese a la falta de evidencia.",
+            "feedback": "Error crítico: sobreinterpretación de la VUS."
+          },
+          {
+            "id": "ignore_germline",
+            "title": "No se abordó el contexto germinal",
+            "result": "La cuestión terapéutica se aborda parcialmente, pero falta el nivel familiar/de asesoramiento.",
+            "feedback": "Las dimensiones somática y hereditaria no se separaron claramente."
+          }
+        ],
+        "followup_logic": [
+          {
+            "trigger": "VUS sobreinterpretada",
+            "action": "Límite de puntuación y advertencia en el informe",
+            "consequence": "Biological Interpretation y Communication están gravemente afectados."
+          },
+          {
+            "trigger": "Falta el estudio de HRD",
+            "action": "Puede solicitarse un estudio adicional de HRD",
+            "consequence": "La valoración terapéutica mejora, pero persiste el retraso."
+          }
+        ],
+        "debrief_points": [
+          "Una VUS es una categoría de evidencia, no una etiqueta para la terapia deseada.",
+          "Los hallazgos somáticos, la HRD y el nivel germinal son tres niveles relacionados pero distintos.",
+          "Una buena comunicación del resultado protege frente al sobretratamiento y el asesoramiento familiar incorrecto."
+        ],
+        "instructor_notes": {
+          "model_answer": "No interpretar la VUS de BRCA2 como una alteración patogénica; añadir el contexto HRD/HRR; ofrecer genética clínica comunicando de forma transparente el estado de VUS.",
+          "scoring_focus": [
+            "sin sobreinterpretación",
+            "Contexto HRD",
+            "Comunicación germinal"
+          ],
+          "discussion_questions": [
+            "¿Cómo debe formularse una VUS en el informe?",
+            "¿Qué cambia una puntuación HRD negativa?",
+            "¿Cómo deben gestionarse las expectativas terapéuticas en el MTB?"
+          ]
+        },
+        "report_additions": [
+          "Giro: el estudio germinal confirma la VUS, pero no su patogenicidad",
+          "Error crítico: VUS considerada terapéuticamente establecida",
+          "Ruta de referencia: clasificación + HRD + genética clínica por separado"
+        ]
+      },
+      "payload_hash_sha256": "bf07e300621d4fa317681215fad85fa96b6dc5c1c29cf81b2be5dae63afd63fe"
+    },
+    "fr": {
+      "metadata": {
+        "case_id": "MTB_OVAR_002_v1_3",
+        "base_id": "MTB_OVAR_002",
+        "title": "Variant BRCA2 de signification incerta dans un carcinome ovarien → ne pas présenter une VUS comme thérapeutiquement établie",
+        "domain": "MTB",
+        "met_addon_type": "no",
+        "subdomain": "HRD / BRCA / PARP / constitutionnel",
+        "case_type": "clinical_decision",
+        "length_class": "Complexe",
+        "estimated_minutes": {
+          "min": 20,
+          "max": 30
+        },
+        "difficulty": "Avancé",
+        "status": "beta-standardized",
+        "review_flag": "À vérifier pour le MVP",
+        "review_priority": "high",
+        "core_decision": "Ne pas présenter une VUS comme thérapeutiquement établie",
+        "learning_objectives": [
+          "Dégager la question clinico-moléculaire centrale à partir de l’anamnèse, de l’histologie et du contexte tissulaire",
+          "Communiquer les VUS sur la base des preuves et éviter la surinterprétation thérapeutique",
+          "Communiquer clairement la solution de référence en MTB, avec ses limites et sa pertinence pour le patient"
+        ],
+        "tags": [
+          "BRCA",
+          "HRD",
+          "VUS",
+          "MTB",
+          "MVP",
+          "Standard, cas complexe, reclassement de durée AP1b"
+        ],
+        "ap1b_decision": "MTB ; durée=complexe ; difficulté=avancée ; statut=beta-standardized"
+      },
+      "base_case": {
+        "id": "MTB_OVAR_002_v1_3",
+        "title": "Variant BRCA2 de signification incerta dans un carcinome ovarien → ne pas présenter une VUS comme thérapeutiquement établie",
+        "short": "Variant BRCA2 de signification incert…",
+        "mode": "patient_care",
+        "logic": "generic_patient",
+        "difficulty": "intermediate",
+        "estimated_time_min": "8–15",
+        "budget": {
+          "points_max": 1050,
+          "sections_max": 16,
+          "tat_goal": 10
+        },
+        "allowed_tests": [
+          "he_review",
+          "fusion_rna_ngs",
+          "rna_fusion_panel",
+          "fusion_fish",
+          "tumor_brca_hrr",
+          "broad_pan_panel",
+          "hrd_score",
+          "germline_referral",
+          "vusic"
+        ],
+        "story": [
+          {
+            "id": "intake",
+            "title": "Demande initiale",
+            "items": [
+              [
+                "ID du cas",
+                "MTB_OVAR_002"
+              ],
+              [
+                "Prescripteur",
+                "Oncologie / anatomopathologie / RCP moléculaire"
+              ],
+              [
+                "Question clinique",
+                "Ne pas présenter une VUS comme thérapeutiquement établie"
+              ],
+              [
+                "Source / chapitre de référence",
+                "Bioanalyse : VUS ; biologie tumorale : HRD"
+              ]
+            ]
+          },
+          {
+            "id": "history",
+            "title": "Anamnèse et contexte clinique",
+            "items": [
+              [
+                "Contexte clinique",
+                "Variant BRCA2 de signification incerta dans un carcinome ovarien"
+              ],
+              [
+                "Contrainte décisionnelle",
+                "Le cas doit être évalué en RCP ou lors d’une discussion dédiée au cas."
+              ],
+              [
+                "Piège pédagogique",
+                "Un marqueur isolé ou une seule méthode ne suffit souvent pas à répondre à la question décisionnelle centrale."
+              ],
+              [
+                "Objectif",
+                "Formuler une recommandation robuste à partir de la morphologie, du matériel tissulaire, de la méthode et de la biologie."
+              ]
+            ]
+          },
+          {
+            "id": "histo",
+            "title": "Histologie + informations préalables",
+            "items": [
+              [
+                "Morphologie",
+                "Le contexte tumoral et tissulaire est plausible, mais insuffisant pour la décision centrale."
+              ],
+              [
+                "IHC préalable",
+                "Le bilan diagnostique de base est disponible ou doit être demandé s’il est nécessaire à l’interprétation."
+              ],
+              [
+                "Question en suspens",
+                "Ne pas présenter une VUS comme thérapeutiquement établie"
+              ],
+              [
+                "Remarque",
+                "La décision ne doit pas être réflexe, mais méthodologiquement argumentée."
+              ]
+            ]
+          },
+          {
+            "id": "material",
+            "title": "Évaluation du matériel tissulaire",
+            "items": [
+              [
+                "Matériel tissulaire",
+                "Tissu FFPE ou matériel de routine/de progression selon le cas."
+              ],
+              [
+                "Cellularité tumorale",
+                "adéquat à limite, selon la méthode choisie."
+              ],
+              [
+                "Capital de coupes",
+                "Limité à des fins pédagogiques ; les analyses complémentaires inutiles consomment du tissu et allongent le TAT."
+              ],
+              [
+                "Phase préanalytique",
+                "Prendre activement en compte la qualité du matériel, les limites d’interprétation et la nécessité d’analyses complémentaires."
+              ]
+            ]
+          }
+        ],
+        "required_groups": [
+          {
+            "id": "fusion",
+            "label": "Analyse des fusions",
+            "tests": [
+              "fusion_rna_ngs",
+              "rna_fusion_panel",
+              "fusion_fish"
+            ],
+            "suggest": "fusion_rna_ngs"
+          },
+          {
+            "id": "brca_hrr",
+            "label": "BRCA/HRR tumoral",
+            "tests": [
+              "tumor_brca_hrr",
+              "broad_pan_panel"
+            ],
+            "suggest": "tumor_brca_hrr"
+          },
+          {
+            "id": "hrd",
+            "label": "Contexte HRD/PARP",
+            "tests": [
+              "hrd_score",
+              "germline_referral"
+            ],
+            "suggest": "hrd_score"
+          },
+          {
+            "id": "vus",
+            "label": "Évaluation des preuves concernant une VUS",
+            "tests": [
+              "vusic",
+              "germline_referral"
+            ],
+            "suggest": "vusic"
+          }
+        ],
+        "result_sections": [
+          {
+            "label": "Analyse des fusions",
+            "test_any": [
+              "fusion_rna_ngs",
+              "rna_fusion_panel",
+              "fusion_fish"
+            ],
+            "result": "L’analyse des fusions fondée sur l’ARN met en évidence une fusion exprimée et pertinente sur le plan thérapeutique."
+          },
+          {
+            "label": "BRCA/HRR tumoral",
+            "test_any": [
+              "tumor_brca_hrr",
+              "broad_pan_panel"
+            ],
+            "result": "Le contexte BRCA/HRR est interprété sur le plan thérapeutique."
+          },
+          {
+            "label": "Contexte HRD/PARP",
+            "test_any": [
+              "hrd_score",
+              "germline_referral"
+            ],
+            "result": "La pertinence de HRD/PARP ainsi que le contexte constitutionnel/familial sont abordés."
+          },
+          {
+            "label": "Évaluation des preuves concernant une VUS",
+            "test_any": [
+              "vusic",
+              "germline_referral"
+            ],
+            "result": "La VUS n’est pas surinterprétée comme une indication thérapeutique établie."
+          }
+        ],
+        "always_findings": [
+          [
+            "QC",
+            "Le QC propre au cas est interprétable si la méthode choisie est adaptée au prélèvement et à la question clinique."
+          ]
+        ],
+        "complete_interpretation": "Interprétation intégrée complète : ne pas présenter une VUS comme thérapeutiquement établie. Les méthodes choisies répondent à la question centrale avec une valeur probante et des limites appropriées.",
+        "partial_interpretation": "Résultat partiel : des éléments essentiels manquent encore pour la décision centrale (« ne pas présenter une VUS comme thérapeutiquement établie »), ou la méthode choisie est trop limitée.",
+        "mtb_checks": [
+          [
+            "fusion",
+            "Interpréter correctement l’analyse des fusions dans le message clé de la RCP"
+          ],
+          [
+            "brca_hrr",
+            "Interpréter correctement le statut BRCA/HRR tumoral dans le message clé de la RCP"
+          ],
+          [
+            "hrd",
+            "Interpréter correctement le contexte HRD/PARP dans le message clé de la RCP"
+          ],
+          [
+            "vus",
+            "Interpréter correctement l’évaluation des preuves concernant une VUS dans le message clé de la RCP"
+          ],
+          [
+            "limits",
+            "Communiquer clairement les limites et, le cas échéant, la nécessité d’analyses complémentaires"
+          ],
+          [
+            "bad",
+            "Affirmation erronée : un marqueur isolé suffit avec certitude sans contexte"
+          ]
+        ],
+        "optimal_summary": "Solution optimale : ne pas présenter une VUS comme thérapeutiquement établie — utiliser une combinaison de méthodes adaptée au cas, une évaluation du prélèvement/QC et une communication claire en RCP.",
+        "tags": [
+          "BRCA",
+          "HRD",
+          "VUS",
+          "MTB",
+          "MVP",
+          "Standard"
+        ]
+      },
+      "deep_dive": {
+        "version": "v1.7b",
+        "case_id": "MTB_OVAR_002_v1_3",
+        "title": "HGSOC avec une VUS de BRCA2 : demande de traitement par PARP, limites des preuves et communication constitutionnelle",
+        "domain": "MTB",
+        "target_course": "Avancé intégré",
+        "deep_dive_priority": "complex_anchor",
+        "target_role": "RCP gynécologique / pathologie moléculaire",
+        "estimated_minutes_deep": "20–30",
+        "learning_objectives": [
+          "Distinguer sur le plan thérapeutique une VUS des variants BRCA/HRR pathogènes/probablement pathogènes.",
+          "Communiquer clairement les niveaux tumoral, HRD et constitutionnel.",
+          "Ne pas fonder une indication de PARP sur une VUS non établie."
+        ],
+        "opening_scene": "L’équipe d’oncologie gynécologique présente une patiente après une réponse au platine. Un variant BRCA2 de signification incertaine a été identifié dans le panel tumoral. La question est : « Peut-on la considérer comme BRCA-positive et justifier un traitement d’entretien par PARP ? »",
+        "case_briefing": "Patiente de 59 ans présentant un carcinome séreux ovarien de haut grade, FIGO IIIC, avec une bonne réponse partielle au traitement de première ligne à base de platine. Antécédents familiaux : une tante atteinte d’un cancer du sein, détails imprécis. Panel tumoral : mutation pathogène de TP53 et variant faux-sens de BRCA2 classé VUS.",
+        "context_cards": [
+          {
+            "title": "Biologie tumorale",
+            "content": "Le HGSOC présente fréquemment des altérations de TP53 ; le statut HRD/BRCA peut avoir une pertinence thérapeutique.",
+            "teaching_point": "Tout variant BRCA ne démontre pas automatiquement une HRD et ne justifie pas à lui seul un traitement par PARP."
+          },
+          {
+            "title": "Variant",
+            "content": "Variant faux-sens de BRCA2, VAF 48 %, sans preuve fonctionnelle établie ni conséquence claire de perte de fonction.",
+            "teaching_point": "La VAF et le nom du gène ne suffisent pas à eux seuls pour établir la pathogénicité."
+          },
+          {
+            "title": "HRD",
+            "content": "Le score HRD n’est pas encore disponible. Les cicatrices génomiques n’ont pas été évaluées de manière adéquate dans le panel tumoral antérieur.",
+            "teaching_point": "La HRD peut être pertinente indépendamment d’une VUS particulière."
+          },
+          {
+            "title": "Constitutionnel",
+            "content": "Une évaluation en génétique clinique peut être pertinente compte tenu de l’entité tumorale et du contexte familial, mais elle doit être communiquée séparément de l’interprétation thérapeutique de la VUS somatique.",
+            "teaching_point": "L’exploration constitutionnelle ne rend pas automatiquement une VUS thérapeutiquement établie."
+          }
+        ],
+        "pre_results": [
+          {
+            "title": "Histologie",
+            "content": "Carcinome séreux de haut grade, p53 aberrant, WT1+, PAX8+."
+          },
+          {
+            "title": "NGS tumoral",
+            "content": "Mutation pathogène de TP53 ; BRCA2 c.X p.Y classé VUS ; aucune inactivation biallélique établie n’est rapportée."
+          },
+          {
+            "title": "Contexte thérapeutique",
+            "content": "Une réponse au platine est observée et un entretien par PARP est discuté ; le score HRD n’a pas été déterminé."
+          }
+        ],
+        "material_or_resource_constraints": [
+          "Le matériel FFPE est suffisant pour une analyse HRD/un profil HRR élargi, mais il n’est pas illimité.",
+          "La décision thérapeutique ne doit pas reposer sur une VUS reclassée à tort dans une catégorie supérieure.",
+          "Les questions constitutionnelles nécessitent un conseil en génétique clinique et un prélèvement approprié."
+        ],
+        "reasoning_gate_upgrade": [
+          {
+            "id": "vus_meaning",
+            "type": "single_choice",
+            "prompt": "Comment interpréter une VUS de BRCA2 sur le plan thérapeutique ?",
+            "options": [
+              {
+                "id": "not_actionable",
+                "label": "ne pas l’utiliser comme une altération BRCA pathogène établie"
+              },
+              {
+                "id": "pathogenic",
+                "label": "l’interpréter comme une mutation BRCA pathogène"
+              },
+              {
+                "id": "ignore_gene",
+                "label": "BRCA2 n’est pas pertinent dans le cancer de l’ovaire"
+              },
+              {
+                "id": "germline_confirm",
+                "label": "Sa détection constitutionnelle la rend automatiquement pathogène"
+              }
+            ],
+            "correct": [
+              "not_actionable"
+            ],
+            "rationale": "Les VUS ne sont pas des variants dont l’utilité thérapeutique est établie."
+          },
+          {
+            "id": "next_tests",
+            "type": "multi_select",
+            "prompt": "Quelles sont les étapes suivantes appropriées ?",
+            "options": [
+              {
+                "id": "hrd_score",
+                "label": "Évaluer le statut HRD/l’analyse des cicatrices génomiques"
+              },
+              {
+                "id": "variant_reclassification",
+                "label": "Documenter la revue des bases de données, de la littérature et de la classification"
+              },
+              {
+                "id": "genetic_counseling",
+                "label": "Recommander séparément un conseil en génétique clinique/une analyse constitutionnelle"
+              },
+              {
+                "id": "parp_vus",
+                "label": "Recommander un traitement par PARP sur la seule base de la VUS"
+              }
+            ],
+            "correct": [
+              "hrd_score",
+              "variant_reclassification",
+              "genetic_counseling"
+            ],
+            "rationale": "La solution distingue les preuves thérapeutiques, la HRD et le niveau constitutionnel."
+          },
+          {
+            "id": "communication",
+            "type": "single_choice",
+            "prompt": "Quelle formulation du compte rendu est correcte ?",
+            "options": [
+              {
+                "id": "clear_vus",
+                "label": "VUS de BRCA2 : signification incertaine ; ne correspond pas à une altération BRCA pathogène"
+              },
+              {
+                "id": "brca_positive",
+                "label": "BRCA-positif"
+              },
+              {
+                "id": "no_report",
+                "label": "Ne pas mentionner du tout la VUS malgré la demande thérapeutique"
+              },
+              {
+                "id": "family_pathogenic",
+                "label": "La famille est nécessairement concernée"
+              }
+            ],
+            "correct": [
+              "clear_vus"
+            ],
+            "rationale": "L’essentiel ici est une communication claire qui ne dépasse pas les preuves disponibles."
+          },
+          {
+            "id": "hrd_context",
+            "type": "single_choice",
+            "prompt": "Quel rôle la HRD peut-elle jouer ?",
+            "options": [
+              {
+                "id": "independent_context",
+                "label": "La HRD peut être pertinente pour le contexte PARP en complément de l’évaluation du variant"
+              },
+              {
+                "id": "crc_only",
+                "label": "La HRD n’est pertinente que dans le CCR"
+              },
+              {
+                "id": "never",
+                "label": "La HRD n’a jamais de pertinence thérapeutique"
+              },
+              {
+                "id": "vus_enough",
+                "label": "La HRD est automatiquement démontrée par une VUS"
+              }
+            ],
+            "correct": [
+              "independent_context"
+            ],
+            "rationale": "La HRD constitue un niveau distinct et n’est pas automatiquement établie par une VUS."
+          }
+        ],
+        "decision_task": "Formuler une recommandation rigoureuse concernant la VUS de BRCA2, l’analyse HRD, le contexte PARP et l’évaluation constitutionnelle.",
+        "expected_path": [
+          "Ne pas rendre compte de la VUS de BRCA2 comme d’une mutation pathogène ou thérapeutiquement établie.",
+          "Compléter par le statut HRD ou une analyse HRR/des cicatrices génomiques appropriée lorsque cela est pertinent sur le plan thérapeutique.",
+          "Documenter la classification de la VUS et le niveau de preuve, sans en déduire à elle seule une recommandation thérapeutique.",
+          "Recommander séparément un conseil en génétique clinique/une analyse constitutionnelle, notamment au regard de l’entité tumorale et du contexte familial.",
+          "Communication en RCP : VUS ≠ BRCA-positif ; la décision thérapeutique doit reposer sur les recommandations, la HRD et le contexte clinique."
+        ],
+        "acceptable_alternatives": [
+          "Si un résultat externe HRD-positif est déjà disponible, le contexte PARP peut être discuté indépendamment de la VUS.",
+          "Si le matériel est insuffisant, prioriser la HRD ou un profil HRR élargi selon la question clinique."
+        ],
+        "low_value_traps": [
+          {
+            "label": "Présenter la VUS comme une indication de traitement par PARP",
+            "why_bad": "Surinterprétation thérapeutique pouvant conduire à un conseil erroné à la patiente."
+          },
+          {
+            "label": "Déclarer pathogène la VUS constitutionnelle",
+            "why_bad": "Le contexte constitutionnel ne modifie pas automatiquement la classification."
+          },
+          {
+            "label": "Utiliser une analyse isolée de TP53 comme substitut à l’analyse HRD",
+            "why_bad": "TP53 est cohérent avec l’entité tumorale, mais ne répond pas à la question HRD/PARP."
+          }
+        ],
+        "twist": {
+          "title": "La VUS reste une VUS",
+          "content": "L’analyse de génétique clinique met en évidence le même variant BRCA2, mais celui-ci reste également classé VUS dans ce contexte. Le score HRD réalisé secondairement est négatif. Ce variant ne constitue donc pas une base solide pour justifier un traitement par PARP.",
+          "why_critical": "Le souhait de disposer d’une option thérapeutique ne doit pas modifier la classification des preuves."
+        },
+        "result_packages": [
+          {
+            "id": "optimal_vus_handled",
+            "title": "VUS correctement classée + niveaux HRD et constitutionnel distingués",
+            "result": "La VUS de BRCA2 reste incertaine ; HRD négative. Recommandation : ne pas l’assimiler sur le plan thérapeutique à une mutation BRCA pathogène ; adresser en génétique clinique avec une communication transparente du statut VUS.",
+            "feedback": "Très bonne rigueur dans l’utilisation des preuves et la communication."
+          },
+          {
+            "id": "overcall_parp",
+            "title": "VUS interprétée comme BRCA-positive",
+            "result": "Le compte rendu suggère une base établie pour un traitement par PARP malgré l’insuffisance des preuves.",
+            "feedback": "Erreur critique : surinterprétation de la VUS."
+          },
+          {
+            "id": "ignore_germline",
+            "title": "Contexte constitutionnel non abordé",
+            "result": "La question thérapeutique est partiellement traitée, mais la dimension familiale/de conseil manque.",
+            "feedback": "Les dimensions somatique et héréditaire n’ont pas été clairement distinguées."
+          }
+        ],
+        "followup_logic": [
+          {
+            "trigger": "VUS surinterprétée",
+            "action": "Plafonnement du score et avertissement dans le compte rendu",
+            "consequence": "Biological Interpretation et Communication sont gravement affectés."
+          },
+          {
+            "trigger": "L’analyse HRD manque",
+            "action": "Une analyse HRD complémentaire peut être demandée",
+            "consequence": "L’évaluation thérapeutique s’améliore, mais le retard persiste."
+          }
+        ],
+        "debrief_points": [
+          "Une VUS est une catégorie de preuve, pas une étiquette destinée à justifier le traitement souhaité.",
+          "Les données somatiques, la HRD et le niveau constitutionnel sont trois niveaux liés mais distincts.",
+          "Une bonne communication du résultat protège contre le surtraitement et un conseil familial erroné."
+        ],
+        "instructor_notes": {
+          "model_answer": "Ne pas interpréter la VUS de BRCA2 comme une altération pathogène ; compléter le contexte HRD/HRR ; proposer une consultation de génétique clinique en communiquant de façon transparente le statut VUS.",
+          "scoring_focus": [
+            "absence de surinterprétation",
+            "Contexte HRD",
+            "Communication constitutionnelle"
+          ],
+          "discussion_questions": [
+            "Comment formuler une VUS dans le compte rendu ?",
+            "Que change un score HRD négatif ?",
+            "Comment gérer les attentes thérapeutiques en RCP ?"
+          ]
+        },
+        "report_additions": [
+          "Rebondissement : l’analyse constitutionnelle confirme la VUS, mais pas sa pathogénicité",
+          "Erreur critique : VUS considérée comme thérapeutiquement établie",
+          "Parcours de référence : classification + HRD + génétique clinique distinguées"
+        ]
+      },
+      "payload_hash_sha256": "5ffb64360fef7ee32fcb83094b052ad8d4e47a1c49147d1cd13952bb9bdb6c0a"
+    }
+  }
+}
