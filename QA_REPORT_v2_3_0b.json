@@ -1,0 +1,51 @@
+{
+  "release": "v2.3.0b",
+  "base": "v2.3.0a",
+  "base_index_sha256": "34bd88417daa91e8c4067b1d8df6e5105200264299a40cbdd6e90c4917c93944",
+  "patched_index_sha256": "fa15c75c389e4c3b7a8aedb748d2b8b67a5768857a4aa64f12ff650f78a2319d",
+  "checks": {
+    "base_executable_script_blocks": 30,
+    "base_script_syntax_pass": 30,
+    "patched_executable_script_blocks": 31,
+    "patched_script_syntax_pass": 31,
+    "new_payload_script_syntax": "PASS",
+    "patch_is_single_additive_block": "PASS",
+    "base_restored_exactly_when_patch_block_removed": "PASS",
+    "case_inventory_preserved": 91,
+    "deep_dive_count_before": 11,
+    "deep_dive_count_after_simulated": 15,
+    "four_target_ids_integrated": "PASS",
+    "target_case_flags_signature_and_deep_dive": "PASS",
+    "gate_counts": {
+      "MTB_CNS_001_v1_0": 3,
+      "LAB_DOC_001_v1_0": 4,
+      "RES_OMICS_001_v1_0": 4,
+      "RES_ETH_001_v1_0": 4
+    },
+    "expected_path_arrays": "PASS",
+    "base_case_logic_modified": false,
+    "method_rules_modified": false,
+    "score_caps_modified": false,
+    "course_logic_modified": false,
+    "assets_added": false,
+    "translations_added_for_new_deep_dive_content": false
+  },
+  "integration_harness": {
+    "result": "PASS",
+    "mock_case_count": 91,
+    "mock_existing_deep_dives": 11,
+    "post_integration_deep_dives": 15,
+    "render_called_once": true
+  },
+  "browser_smoke_test": {
+    "status": "NOT_EXECUTED_ENVIRONMENT_LIMITATION",
+    "reason": "Headless Chromium navigation to local/file and loopback HTTP was blocked by the execution environment; CLI dump-dom did not complete within the test timeout.",
+    "required_user_regression": "Open patched index locally and smoke-test the four promoted cases plus one existing Deep Dive."
+  },
+  "target_case_ids": [
+    "MTB_CNS_001_v1_0",
+    "LAB_DOC_001_v1_0",
+    "RES_OMICS_001_v1_0",
+    "RES_ETH_001_v1_0"
+  ]
+}

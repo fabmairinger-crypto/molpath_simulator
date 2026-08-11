@@ -1,0 +1,161 @@
+{
+  "release": "v2.3.0c",
+  "base": "v2.3.0b",
+  "scope": "i18n for 4 newly curated Signature Deep Dives",
+  "cases": [
+    "MTB_CNS_001_v1_0",
+    "LAB_DOC_001_v1_0",
+    "RES_OMICS_001_v1_0",
+    "RES_ETH_001_v1_0"
+  ],
+  "languages": [
+    "de",
+    "en",
+    "ro",
+    "el",
+    "es",
+    "fr"
+  ],
+  "translation_validation": {
+    "MTB_CNS_001": {
+      "source_strings": 109,
+      "languages": {
+        "en": {
+          "lines": 109,
+          "empty": 0
+        },
+        "ro": {
+          "lines": 109,
+          "empty": 0
+        },
+        "el": {
+          "lines": 109,
+          "empty": 0
+        },
+        "es": {
+          "lines": 109,
+          "empty": 0
+        },
+        "fr": {
+          "lines": 109,
+          "empty": 0
+        }
+      }
+    },
+    "LAB_DOC_001": {
+      "source_strings": 135,
+      "languages": {
+        "en": {
+          "lines": 135,
+          "empty": 0
+        },
+        "ro": {
+          "lines": 135,
+          "empty": 0
+        },
+        "el": {
+          "lines": 135,
+          "empty": 0
+        },
+        "es": {
+          "lines": 135,
+          "empty": 0
+        },
+        "fr": {
+          "lines": 135,
+          "empty": 0
+        }
+      }
+    },
+    "RES_OMICS_001": {
+      "source_strings": 133,
+      "languages": {
+        "en": {
+          "lines": 133,
+          "empty": 0
+        },
+        "ro": {
+          "lines": 133,
+          "empty": 0
+        },
+        "el": {
+          "lines": 133,
+          "empty": 0
+        },
+        "es": {
+          "lines": 133,
+          "empty": 0
+        },
+        "fr": {
+          "lines": 133,
+          "empty": 0
+        }
+      }
+    },
+    "RES_ETH_001": {
+      "source_strings": 137,
+      "languages": {
+        "en": {
+          "lines": 137,
+          "empty": 0
+        },
+        "ro": {
+          "lines": 137,
+          "empty": 0
+        },
+        "el": {
+          "lines": 137,
+          "empty": 0
+        },
+        "es": {
+          "lines": 137,
+          "empty": 0
+        },
+        "fr": {
+          "lines": 137,
+          "empty": 0
+        }
+      }
+    }
+  },
+  "checks": {
+    "patch_isolation": "PASS",
+    "technical_identifiers_unchanged_all_locales": "PASS",
+    "translation_line_alignment_all_20_locale_files": "PASS",
+    "empty_translations": "0",
+    "version_constant_updated": "PASS",
+    "assets_added": 0,
+    "base_case_logic_changed": false,
+    "method_rules_changed": false,
+    "score_caps_changed": false,
+    "courses_changed": false,
+    "reports_engine_changed": false,
+    "translation_entries": 2570,
+    "curated_source_strings": 514,
+    "browser_visual_smoke": "NOT RUN — Chromium local HTTP navigation blocked by environment administrator policy (ERR_BLOCKED_BY_ADMINISTRATOR)"
+  },
+  "runtime_syntax": {
+    "status": "PASS",
+    "executable_script_blocks": 32,
+    "passed": 32,
+    "failed": 0
+  },
+  "runtime_harness": {
+    "status": "PASS",
+    "case_count": 91,
+    "deep_dive_count": 15,
+    "deep_dive_map_count": 15,
+    "localized_cases": 4,
+    "languages_tested": [
+      "de",
+      "en",
+      "ro",
+      "el",
+      "es",
+      "fr"
+    ],
+    "title_opening_and_case_title_checks": "24/24 PASS",
+    "technical_gate_result_identifiers": "24/24 PASS",
+    "de_roundtrip": "4/4 byte-equivalent JSON payloads after DE→all locales→DE"
+  }
+}

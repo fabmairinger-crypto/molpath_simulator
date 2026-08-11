@@ -1,0 +1,36 @@
+{
+  "release": "v2.3.0c",
+  "base_release": "v2.3.0b",
+  "patch_type": "patch-only",
+  "summary": "Adds EN/RO/EL/ES/FR localization for the four v2.3.0b Signature-to-Deep-Dive cases; German curated content remains the source of truth.",
+  "changed_runtime_files": [
+    "index.html"
+  ],
+  "case_ids": [
+    "MTB_CNS_001_v1_0",
+    "LAB_DOC_001_v1_0",
+    "RES_OMICS_001_v1_0",
+    "RES_ETH_001_v1_0"
+  ],
+  "languages_added": [
+    "en",
+    "ro",
+    "el",
+    "es",
+    "fr"
+  ],
+  "assets_added": [],
+  "logic_changes": [],
+  "notes": [
+    "Existing base-case translators remain in place.",
+    "No method rules, score caps, courses, reports or case IDs changed.",
+    "Localized Deep Dive strings are applied only inside the four Deep Dive payloads."
+  ],
+  "qa_status": "PASS",
+  "runtime_index_sha256": "c4934af1613cd2f55aabfd2c0ebd528ad45f1a81f11fab2f1469fc12d0df1e66",
+  "translation_counts": {
+    "curated_de_strings": 514,
+    "target_localized_strings": 2570
+  },
+  "browser_smoke_test": "blocked by environment policy; see QA report"
+}

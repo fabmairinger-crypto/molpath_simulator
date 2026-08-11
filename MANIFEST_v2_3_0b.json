@@ -1,0 +1,41 @@
+{
+  "release": "v2.3.0b",
+  "display_version": "v2.3.0",
+  "name": "Signature Deep Dive Expansion",
+  "base": "v2.3.0a Version Badge Hotfix",
+  "base_index_sha256": "34bd88417daa91e8c4067b1d8df6e5105200264299a40cbdd6e90c4917c93944",
+  "index_sha256": "fa15c75c389e4c3b7a8aedb748d2b8b67a5768857a4aa64f12ff650f78a2319d",
+  "changed_runtime_files": [
+    "index.html"
+  ],
+  "archive_files": [
+    "CHANGELOG_v2_3_0b.md",
+    "MANIFEST_v2_3_0b.json",
+    "QA_REPORT_v2_3_0b.md",
+    "QA_REPORT_v2_3_0b.json",
+    "SHA256SUMS.txt"
+  ],
+  "deep_dive_case_ids": [
+    "MTB_CNS_001_v1_0",
+    "LAB_DOC_001_v1_0",
+    "RES_OMICS_001_v1_0",
+    "RES_ETH_001_v1_0"
+  ],
+  "deep_dive_count_before": 11,
+  "deep_dive_count_after": 15,
+  "signature_cases_promoted": 4,
+  "source_language": "de",
+  "new_deep_dive_translations": "deferred_until_content_freeze",
+  "assets_changed": false,
+  "base_case_logic_changed": false,
+  "method_rules_changed": false,
+  "score_caps_changed": false,
+  "course_logic_changed": false,
+  "reports_engine_changed": false,
+  "integration_strategy": "additive payload into existing DEEP_DIVE_CASES_V17 / DEEP_DIVE_MAP_V17; existing v1.7 renderer and gate/report hooks reused",
+  "qa": {
+    "static_script_syntax": "31/31 PASS",
+    "integration_harness": "PASS",
+    "browser_smoke_test": "pending_manual_due_environment_navigation_block"
+  }
+}

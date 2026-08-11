@@ -1,0 +1,13 @@
+{
+  "version": "v2.4.0d",
+  "patch_name": "NSCLC MTB Checklist Hotfix",
+  "base": "v2.4.0c NSCLC Premium UI Polish",
+  "case_scope": [
+    "MTB_NSCLC_001_v0_6"
+  ],
+  "changed_runtime_files": [
+    "index.html"
+  ],
+  "assets_changed": false,
+  "change": "Remove duplicate post-final Assessment checklist in MTB rendering; keep the first checklist."
+}

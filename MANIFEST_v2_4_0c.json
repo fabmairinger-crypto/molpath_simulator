@@ -1,0 +1,15 @@
+{
+  "version": "v2.4.0c",
+  "base": "v2.4.0b NSCLC Premium Hotfix",
+  "scope": "MTB_NSCLC_001_v0_6 premium UI polish",
+  "changed_runtime_files": [
+    "index.html"
+  ],
+  "unchanged_assets": "Reuse assets/mtb_nsclc_001 from v2.4.0b; not duplicated in this patch.",
+  "changes": [
+    "horizontal clickable premium timeline replaces old stepper for pilot",
+    "remove duplicate vertical timeline",
+    "assessment-safe result cards",
+    "debrief only after MTB completion"
+  ]
+}

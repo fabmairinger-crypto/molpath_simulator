@@ -1,0 +1,17 @@
+{
+  "version": "v2.4.0a",
+  "patch_name": "NSCLC Premium Pilot Patch",
+  "base": "v2.3.0c Signature Deep-Dive i18n Patch",
+  "runtime_files": [
+    "index.html"
+  ],
+  "asset_dir": "assets/mtb_nsclc_001",
+  "case_ids": [
+    "MTB_NSCLC_001_v0_6"
+  ],
+  "notes": [
+    "Premium integration limited to one flagship case.",
+    "Existing Deep-Dive texts and mechanics preserved.",
+    "Timeline and result cards are dynamic HTML/CSS, not static image assets."
+  ]
+}

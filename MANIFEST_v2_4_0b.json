@@ -1,0 +1,27 @@
+{
+  "version": "v2.4.0b",
+  "base": "v2.3.0c",
+  "scope": "MTB_NSCLC_001 premium display hotfix",
+  "runtime_files": [
+    "index.html"
+  ],
+  "assets": [
+    "assets/mtb_nsclc_001/ct_thorax_001.webp",
+    "assets/mtb_nsclc_001/he_detail_001.webp",
+    "assets/mtb_nsclc_001/he_overview_001.webp",
+    "assets/mtb_nsclc_001/ihc_napsina_001.webp",
+    "assets/mtb_nsclc_001/ihc_p40_001.webp",
+    "assets/mtb_nsclc_001/ihc_pdl1_001.webp",
+    "assets/mtb_nsclc_001/ihc_ttf1_001.webp",
+    "assets/mtb_nsclc_001/referral_pink_001.webp"
+  ],
+  "changed_logic": "presentation only",
+  "preserved": [
+    "deep-dive content",
+    "reasoning gates",
+    "method selection",
+    "scoring",
+    "follow-up logic",
+    "i18n payloads"
+  ]
+}
