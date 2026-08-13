@@ -1,0 +1,17 @@
+MolPath Simulator v2.4.0z1 — Patch-only
+Basis: v2.4.0z
+
+FILES
+- index.html
+- CHANGELOG_v240z1.md
+- MANIFEST_v240z1.txt
+
+TRANSLATION MAPPINGS
+- en: 2222
+- ro: 2222
+- el: 2222
+- es: 2222
+- fr: 2222
+
+SHA256 index.html
+623baab38b28a952f50f016295375802213193d9bb86740e4fb6093bd8bbc159
