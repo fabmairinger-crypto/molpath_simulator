@@ -1,0 +1,133 @@
+MolPath Simulator v2.4.0y — QA
+
+BASE: v2.4.0x APPROVED
+PATCH: LAB Block 5 / C5
+
+STATIC / REGISTRATION
+- index.html written: PASS
+- prior v2.4.0x marker preserved: PASS
+- v2.4.0y marker unique: PASS
+- all 5 target case IDs present: PASS
+- final document closing </body></html> intact: PASS
+
+NODE RUNTIME SMOKE TEST
+- patch JS parses/executes: PASS
+- 5/5 base case objects set deep_dive=true: PASS
+- 5/5 signature_case=false: PASS
+- 5/5 Signature Case tag absent: PASS
+- 5/5 registered in DEEP_DIVE_MAP_V17: PASS
+- all have reasoning gates, twist, result packages, follow-up/debrief, model answer: PASS
+- freeze reports LAB 27/27, remaining 0, total Deep Dive 73/91, Signature 15: PASS
+
+CONTENT SCOPE
+- C1–C4 additive patches preserved: PASS
+- MTB/MET logic/translation untouched: PASS by additive patch scope
+- no assets added: PASS
+- non-DE LAB translation deferred until this 27/27 content freeze: PASS
+
+NODE OUTPUT
+{
+  "freeze": {
+    "version": "v2.4.0y",
+    "caseIds": [
+      "LAB_DIGI_001_v1_3",
+      "LAB_DIGI_002_v1_3",
+      "LAB_DATA_001_v1_3",
+      "LAB_DATA_002_v1_3",
+      "LAB_LIMS_001_v1_3"
+    ],
+    "deepDiveAdded": 5,
+    "labDeepDiveStatus": "27/27",
+    "labRemaining": 0,
+    "deepDiveTotalExpected": 73,
+    "signatureExpected": 15,
+    "languageStatus": "DE LAB master content freeze complete 27/27; non-DE LAB translation is next block"
+  },
+  "cases": {
+    "LAB_DIGI_001_v1_3": {
+      "deep": true,
+      "signature": true,
+      "hasSignatureTag": false,
+      "deepTitle": "WSI-QC: Scharf genug ist aufgabenabhängig",
+      "decision": 4,
+      "rootCause": 5,
+      "capa": 6,
+      "audit": 5,
+      "gates": 3,
+      "isSignatureDeep": false,
+      "twist": true,
+      "results": 3,
+      "followup": 3,
+      "debrief": 3,
+      "modelAnswer": true
+    },
+    "LAB_DIGI_002_v1_3": {
+      "deep": true,
+      "signature": true,
+      "hasSignatureTag": false,
+      "deepTitle": "PD-L1-KI: Assistenz braucht lokale Evidenz",
+      "decision": 4,
+      "rootCause": 5,
+      "capa": 6,
+      "audit": 5,
+      "gates": 3,
+      "isSignatureDeep": false,
+      "twist": true,
+      "results": 3,
+      "followup": 3,
+      "debrief": 3,
+      "modelAnswer": true
+    },
+    "LAB_DATA_001_v1_3": {
+      "deep": true,
+      "signature": true,
+      "hasSignatureTag": false,
+      "deepTitle": "Datenschutz im Projektordner: pseudonymisiert ist mehr als „Name gelöscht“",
+      "decision": 4,
+      "rootCause": 5,
+      "capa": 6,
+      "audit": 5,
+      "gates": 2,
+      "isSignatureDeep": false,
+      "twist": true,
+      "results": 3,
+      "followup": 3,
+      "debrief": 3,
+      "modelAnswer": true
+    },
+    "LAB_DATA_002_v1_3": {
+      "deep": true,
+      "signature": true,
+      "hasSignatureTag": false,
+      "deepTitle": "Cyber-Notfall im NGS-Labor: Restore ist erst nach Integritätsnachweis klinisch nutzbar",
+      "decision": 4,
+      "rootCause": 7,
+      "capa": 7,
+      "audit": 5,
+      "gates": 4,
+      "isSignatureDeep": false,
+      "twist": true,
+      "results": 3,
+      "followup": 4,
+      "debrief": 4,
+      "modelAnswer": true
+    },
+    "LAB_LIMS_001_v1_3": {
+      "deep": true,
+      "signature": true,
+      "hasSignatureTag": false,
+      "deepTitle": "LIMS-Downtime: eine kontrollierte Zwischenwelt mit nur einer Wahrheit",
+      "decision": 4,
+      "rootCause": 6,
+      "capa": 7,
+      "audit": 5,
+      "gates": 4,
+      "isSignatureDeep": false,
+      "twist": true,
+      "results": 3,
+      "followup": 4,
+      "debrief": 4,
+      "modelAnswer": true
+    }
+  }
+}

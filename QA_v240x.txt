@@ -1,0 +1,134 @@
+MolPath Simulator v2.4.0x — QA
+
+BASE: v2.4.0w APPROVED
+PATCH: LAB Block 4 / C4
+
+STATIC / REGISTRATION
+- index.html written: PASS
+- prior v2.4.0w marker preserved: PASS
+- v2.4.0x marker unique: PASS
+- all 5 target case IDs present: PASS
+- final document closing </body></html> intact: PASS
+
+NODE RUNTIME SMOKE TEST
+- patch JS parses/executes: PASS
+- 5/5 base case objects set deep_dive=true: PASS
+- 5/5 signature_case=false: PASS
+- 5/5 Signature Case tag absent: PASS
+- 5/5 registered in DEEP_DIVE_MAP_V17: PASS
+- all have reasoning gates, twist, result packages, follow-up/debrief, model answer: PASS
+- freeze reports LAB 22/27, remaining 5, total Deep Dive 68/91, Signature 15: PASS
+
+CONTENT SCOPE
+- LAB_DOC_001 unchanged: PASS by additive patch scope
+- MTB/MET logic/translation untouched: PASS by additive patch scope
+- no assets added: PASS
+- non-DE LAB translation deferred: PASS
+
+NODE OUTPUT
+{
+  "freeze": {
+    "version": "v2.4.0x",
+    "caseIds": [
+      "LAB_DOC_002_v1_3",
+      "LAB_AUDIT_001_v1_3",
+      "LAB_CAPA_001_v1_3",
+      "LAB_QM_001_v1_3",
+      "LAB_LLM_001_v1_3"
+    ],
+    "deepDiveAdded": 5,
+    "labDeepDiveStatus": "22/27",
+    "labRemaining": 5,
+    "deepDiveTotalExpected": 68,
+    "signatureExpected": 15,
+    "languageStatus": "DE LAB master block 4; non-DE LAB translation deferred until LAB 27/27 content freeze"
+  },
+  "cases": {
+    "LAB_DOC_002_v1_3": {
+      "deep": true,
+      "signature": false,
+      "hasSignatureTag": false,
+      "deepTitle": "Traceability ist eine Beweiskette – kein Dateiname",
+      "decision": 4,
+      "rootCause": 8,
+      "capa": 6,
+      "audit": 5,
+      "gates": 3,
+      "isSignatureDeep": false,
+      "twist": true,
+      "results": 3,
+      "followup": 3,
+      "debrief": 3,
+      "modelAnswer": true
+    },
+    "LAB_AUDIT_001_v1_3": {
+      "deep": true,
+      "signature": false,
+      "hasSignatureTag": false,
+      "deepTitle": "Auditfest heißt: damaliger Prozess + damalige Kompetenz",
+      "decision": 4,
+      "rootCause": 7,
+      "capa": 6,
+      "audit": 5,
+      "gates": 3,
+      "isSignatureDeep": false,
+      "twist": true,
+      "results": 3,
+      "followup": 3,
+      "debrief": 3,
+      "modelAnswer": true
+    },
+    "LAB_CAPA_001_v1_3": {
+      "deep": true,
+      "signature": false,
+      "hasSignatureTag": false,
+      "deepTitle": "CAPA-Planspiel: Wiederholte KRAS-Kontamination",
+      "decision": 4,
+      "rootCause": 8,
+      "capa": 7,
+      "audit": 5,
+      "gates": 4,
+      "isSignatureDeep": false,
+      "twist": true,
+      "results": 3,
+      "followup": 4,
+      "debrief": 4,
+      "modelAnswer": true
+    },
+    "LAB_QM_001_v1_3": {
+      "deep": true,
+      "signature": false,
+      "hasSignatureTag": false,
+      "deepTitle": "Near Miss: sichtbar machen, bevor etwas passiert",
+      "decision": 4,
+      "rootCause": 5,
+      "capa": 6,
+      "audit": 4,
+      "gates": 2,
+      "isSignatureDeep": false,
+      "twist": true,
+      "results": 2,
+      "followup": 2,
+      "debrief": 3,
+      "modelAnswer": true
+    },
+    "LAB_LLM_001_v1_3": {
+      "deep": true,
+      "signature": false,
+      "hasSignatureTag": false,
+      "deepTitle": "LLM im Labor: Textgenerator ist keine Fachinstanz",
+      "decision": 4,
+      "rootCause": 6,
+      "capa": 7,
+      "audit": 5,
+      "gates": 4,
+      "isSignatureDeep": false,
+      "twist": true,
+      "results": 3,
+      "followup": 3,
+      "debrief": 4,
+      "modelAnswer": true
+    }
+  },
+  "deepCount": 5
+}

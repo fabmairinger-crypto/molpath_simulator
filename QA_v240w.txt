@@ -1,0 +1,107 @@
+MolPath Simulator v2.4.0w — QA
+STATUS: PASS
+
+[PASS] Patch marker unique — 1
+[PASS] All case IDs in output
+[PASS] Runtime deep count — 4
+[PASS] Freeze LAB status — 17/27
+[PASS] Freeze total status — 63
+[PASS] All deep flags true
+[PASS] All signature flags false
+[PASS] All have >=4 reasoning gates
+[PASS] All have decision/root cause/CAPA/audit depth
+[PASS] All have twist/result/followup/debrief/model
+[PASS] Previous C2 patch preserved
+[PASS] Previous C1 patch preserved
+[PASS] Existing LAB_POST_001 preserved
+[PASS] Body closes after patch
+
+Node runtime snapshot:
+{
+  "freeze": {
+    "version": "v2.4.0w",
+    "caseIds": [
+      "LAB_POST_002_v1_3",
+      "LAB_POST_003_v1_3",
+      "LAB_POST_004_v1_3",
+      "LAB_POST_005_v1_3"
+    ],
+    "deepDiveAdded": 4,
+    "labDeepDiveStatus": "17/27",
+    "labRemaining": 10,
+    "deepDiveTotalExpected": 63,
+    "signatureExpected": 15,
+    "languageStatus": "DE LAB master block 3; non-DE LAB translation deferred until LAB 27/27 content freeze"
+  },
+  "cases": {
+    "LAB_POST_002_v1_3": {
+      "deep": true,
+      "signature": false,
+      "hasSignatureTag": false,
+      "deepTitle": "Datenbankversion nicht dokumentiert: Wissensstand, Provenienz und Reproduzierbarkeit",
+      "decision": 4,
+      "rootCause": 7,
+      "capa": 6,
+      "audit": 5,
+      "gates": 4,
+      "isSignatureDeep": false,
+      "twist": true,
+      "results": 3,
+      "followup": 2,
+      "debrief": 3,
+      "modelAnswer": true
+    },
+    "LAB_POST_003_v1_3": {
+      "deep": true,
+      "signature": false,
+      "hasSignatureTag": false,
+      "deepTitle": "VUS als „actionable“ im Auto-Report: Human Oversight und variantenspezifische Evidenz",
+      "decision": 4,
+      "rootCause": 7,
+      "capa": 6,
+      "audit": 5,
+      "gates": 4,
+      "isSignatureDeep": false,
+      "twist": true,
+      "results": 3,
+      "followup": 2,
+      "debrief": 3,
+      "modelAnswer": true
+    },
+    "LAB_POST_004_v1_3": {
+      "deep": true,
+      "signature": false,
+      "hasSignatureTag": false,
+      "deepTitle": "„Alles negativ“? Wie ein Negativbefund klinisch klar und methodisch ehrlich bleibt",
+      "decision": 4,
+      "rootCause": 7,
+      "capa": 6,
+      "audit": 5,
+      "gates": 4,
+      "isSignatureDeep": false,
+      "twist": true,
+      "results": 3,
+      "followup": 2,
+      "debrief": 3,
+      "modelAnswer": true
+    },
+    "LAB_POST_005_v1_3": {
+      "deep": true,
+      "signature": false,
+      "hasSignatureTag": false,
+      "deepTitle": "Coverage-Lücke vor Freigabe: lokale Sensitivität schlägt grünes Global-QC",
+      "decision": 4,
+      "rootCause": 7,
+      "capa": 6,
+      "audit": 5,
+      "gates": 4,
+      "isSignatureDeep": false,
+      "twist": true,
+      "results": 3,
+      "followup": 2,
+      "debrief": 3,
+      "modelAnswer": true
+    }
+  },
+  "deepCount": 4
+}
