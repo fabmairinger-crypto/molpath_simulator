@@ -1,0 +1,104 @@
+{
+  "package": "MolPath Simulator LAB Block 3 patch-only",
+  "version": "v2.4.0w",
+  "base_version": "v2.4.0v APPROVED",
+  "changed_files": [
+    "index.html"
+  ],
+  "metadata_files": [
+    "CHANGELOG_v240w.md",
+    "MANIFEST_v240w.json",
+    "QA_v240w.txt"
+  ],
+  "case_ids": [
+    "LAB_POST_002_v1_3",
+    "LAB_POST_003_v1_3",
+    "LAB_POST_004_v1_3",
+    "LAB_POST_005_v1_3"
+  ],
+  "deep_dive_added": 4,
+  "preserved_existing_deep_dive": [
+    "LAB_POST_001_v1_0"
+  ],
+  "lab_status_after": "17/27",
+  "lab_remaining": 10,
+  "signature_status": "15/15 unchanged",
+  "deep_dive_total_after": "63/91",
+  "translation_scope": "DE master only; existing translations untouched; LAB translation deferred until content freeze",
+  "sha256": {
+    "index.html": "95e78289f1351d387131bd5f9bb5c260e9312d68c3708728bf57a5829d990922"
+  },
+  "qa_status": "PASS",
+  "qa_checks": [
+    {
+      "name": "Patch marker unique",
+      "status": "PASS",
+      "detail": "1"
+    },
+    {
+      "name": "All case IDs in output",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Runtime deep count",
+      "status": "PASS",
+      "detail": "4"
+    },
+    {
+      "name": "Freeze LAB status",
+      "status": "PASS",
+      "detail": "17/27"
+    },
+    {
+      "name": "Freeze total status",
+      "status": "PASS",
+      "detail": "63"
+    },
+    {
+      "name": "All deep flags true",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "All signature flags false",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "All have >=4 reasoning gates",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "All have decision/root cause/CAPA/audit depth",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "All have twist/result/followup/debrief/model",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Previous C2 patch preserved",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Previous C1 patch preserved",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Existing LAB_POST_001 preserved",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Body closes after patch",
+      "status": "PASS",
+      "detail": ""
+    }
+  ]
+}

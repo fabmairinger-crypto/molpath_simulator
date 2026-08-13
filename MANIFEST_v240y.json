@@ -1,0 +1,29 @@
+{
+  "package": "MolPath Simulator LAB Block 5 patch-only",
+  "version": "v2.4.0y",
+  "base_version": "v2.4.0x APPROVED",
+  "changed_files": [
+    "index.html"
+  ],
+  "metadata_files": [
+    "CHANGELOG_v240y.md",
+    "MANIFEST_v240y.json",
+    "QA_v240y.txt"
+  ],
+  "case_ids": [
+    "LAB_DIGI_001_v1_3",
+    "LAB_DIGI_002_v1_3",
+    "LAB_DATA_001_v1_3",
+    "LAB_DATA_002_v1_3",
+    "LAB_LIMS_001_v1_3"
+  ],
+  "deep_dive_added": 5,
+  "lab_status_after": "27/27",
+  "lab_remaining": 0,
+  "signature_status": "15/15 unchanged",
+  "deep_dive_total_after": "73/91",
+  "translation_scope": "DE LAB master content freeze complete; existing translations untouched; LAB translation EN/RO/EL/ES/FR next",
+  "sha256": {
+    "index.html": "98af45232f99a9a662df4d4ccbb4179b6ed63d7b837ee3d3adb1c33ecf3f19d6"
+  }
+}

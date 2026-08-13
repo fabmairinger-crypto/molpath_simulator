@@ -1,0 +1,11 @@
+MolPath Simulator v2.4.0y1 – Patch-only
+Basis: v2.4.0y
+
+FILES
+- index.html
+- CHANGELOG_v240y1.md
+- MANIFEST_v240y1.txt
+
+SCOPE
+LAB C4+C5 rendering/schema compatibility hotfix only.
+10 affected Deep-Dive cases. No content or gameplay redesign.

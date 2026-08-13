@@ -1,13 +1,9 @@
-# MANIFEST — v2.4.0s patch-only
+# MANIFEST — v2.4.0t FINAL
 
-Basis: v2.4.0r
+| File | SHA-256 |
+|---|---|
+| `index.html` | `49c7b801ad210e0851d2b3b7ca49acd33ec8d3c35a68e893a5d9df6d8c2d85bf` |
+| `CHANGELOG.md` | — |
+| `QA_REPORT.md` | — |
 
-Enthaltene Dateien:
-- `index.html` — aktualisierte App-Datei mit 10 MET-Deep-Dives
-- `CHANGELOG.md`
-- `QA_REPORT.md`
-- `MANIFEST.md`
-
-SHA-256 `index.html`: `173d4852fff2b4c31c1bebcf4e20233c1c5dc9adb819d104eb6efb75ae4f47f5`
-
-Keine Assets geändert. Keine vollständige App-/Source-ZIP enthalten.
+Build: consolidated multilingual Patient Care content freeze.
