@@ -1,0 +1,26 @@
+MolPath Simulator v2.4.0z — Patch-only manifest
+Base version: v2.4.0y1
+Purpose: LAB/QM Deep-Dive translation completion
+
+Changed application files:
+- index.html
+
+Documentation:
+- CHANGELOG_v240z.md
+- MANIFEST_v240z.txt
+
+Translation scope:
+- 24 newly created LAB Deep Dives
+- EN / RO / EL / ES / FR
+- 2,222 source strings per target language
+- Existing translations preserved by non-overwriting merge
+
+Content invariants:
+- LAB Deep Dive remains 27/27
+- German content/logic unchanged
+- Signature count expected 15 and unchanged
+- v2.4.0y1 C4/C5 schema compatibility fix retained
+
+SHA256:
+index.html  66103ac39d0a0ce76eb5988474de9e82de06564242a6fe90189b4f5d8ff44f8a
+CHANGELOG_v240z.md  9508637e670c59da6a75682060530c940e0533356d262b697dddf059c6169e90
