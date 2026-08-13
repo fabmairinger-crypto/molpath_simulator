@@ -1,0 +1,35 @@
+{
+  "version": "v2.4.0i",
+  "build_basis": "v2.4.0h",
+  "case": "RES_OMICS_001_v1_0",
+  "patch_type": "patch-only / premium presentation layer",
+  "changed_runtime_files": [
+    "index.html"
+  ],
+  "new_assets": [
+    "assets/res_omics_001/discovery_volcano_001.png",
+    "assets/res_omics_001/discovery_heatmap_001.png",
+    "assets/res_omics_001/pathway_enrichment_001.png",
+    "assets/res_omics_001/validation_single_gene_fail_001.png",
+    "assets/res_omics_001/validation_signature_001.png"
+  ],
+  "asset_policy": {
+    "source_type": "synthetic",
+    "educational_only": true,
+    "real_patient_data": false
+  },
+  "logic_changes": false,
+  "story_changes": false,
+  "step_changes": false,
+  "scoring_changes": false,
+  "build_basis_sha256": "367fae442a9ed28b86dac424d1383a90197d84a16803ed813fbf92643b78e5f4",
+  "runtime_sha256": "1e2a1ccc18a327bdfe2ab62b0b475929f2cb70e564b153d974ac89d0e7d281cd",
+  "qa": {
+    "top_level_script_syntax": "38/38 PASS",
+    "premium_state_mock": "PASS",
+    "optimal_configured_path": "180/180 = 100%",
+    "validation_media_visibility": "0 before completion / 2 after completion",
+    "discovery_media_visibility": "3 during case",
+    "browser_cli": "Chromium CLI unavailable for deterministic dump-dom in this container; user-app smoke test recommended"
+  }
+}

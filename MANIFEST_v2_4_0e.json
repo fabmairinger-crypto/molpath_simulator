@@ -1,0 +1,30 @@
+{
+  "version": "v2.4.0e",
+  "patch_name": "LAB_RUN_002 QA / Assessment Integrity Hotfix",
+  "base": "v2.4.0d",
+  "case_scope": [
+    "LAB_RUN_002_v0_8"
+  ],
+  "changed_runtime_files": [
+    "index.html"
+  ],
+  "assets_added": [],
+  "assets_changed": false,
+  "content_logic_changed": false,
+  "qa_fixes": [
+    "Assessment pre-completion hint suppression for LAB_RUN_002",
+    "Assessment Clinical-Reasoning feedback suppression until finalization",
+    "Assessment KPI decision-quality leak suppression",
+    "LAB_RUN_002 non-optimal release decisions classified as critical_fail under existing 55% cap",
+    "Final feedback/report classification aligned with cap status",
+    "LAB Deep-Dive Debrief shown after final Audit completion",
+    "Generic LAB desktop step grid corrected to seven columns"
+  ],
+  "patch_files": [
+    "index.html",
+    "CHANGELOG_v2_4_0e.md",
+    "MANIFEST_v2_4_0e.json",
+    "QA_REPORT_v2_4_0e.md",
+    "SHA256SUMS.txt"
+  ]
+}

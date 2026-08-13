@@ -1,0 +1,27 @@
+{
+  "release": "v2.4.0h",
+  "base": "v2.4.0g",
+  "case_id": "RES_OMICS_001_v1_0",
+  "patch_type": "QA / assessment integrity / score calibration",
+  "patch_only": true,
+  "assets_added": [],
+  "changed_runtime_files": [
+    "index.html"
+  ],
+  "documentation": [
+    "CHANGELOG_v2_4_0h.md",
+    "MANIFEST_v2_4_0h.json",
+    "QA_REPORT_v2_4_0h.md",
+    "SHA256SUMS.txt"
+  ],
+  "logic_scope": {
+    "story_changed": false,
+    "steps_changed": false,
+    "decision_options_changed": false,
+    "gate_questions_changed": false,
+    "score_caps_changed": false,
+    "case_specific_score_calibration": true,
+    "assessment_gate_reveal_guard": true,
+    "post_completion_debrief_hook": true
+  }
+}

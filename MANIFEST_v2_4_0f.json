@@ -1,0 +1,35 @@
+{
+  "version": "v2.4.0f",
+  "patch_name": "LAB_RUN_002 Final Production / Premium UI",
+  "base": "v2.4.0e LAB_RUN_002 QA Hotfix",
+  "case_scope": ["LAB_RUN_002_v0_8"],
+  "changed_runtime_files": ["index.html"],
+  "added_assets": [
+    {
+      "path": "assets/lab_run_002/run_qc_dashboard_001.png",
+      "role": "synthetic_run_qc_dashboard",
+      "source_type": "synthetic",
+      "educational_only": true,
+      "runtime": "learning_instructor_and_post_completion"
+    },
+    {
+      "path": "assets/lab_run_002/ntc_variant_viewer_001.png",
+      "role": "synthetic_ntc_variant_viewer",
+      "source_type": "synthetic",
+      "educational_only": true,
+      "runtime": "learning_instructor_and_post_completion"
+    },
+    {
+      "path": "assets/lab_run_002/plate_layout_reference_001.png",
+      "role": "synthetic_plate_layout_reference",
+      "source_type": "synthetic",
+      "educational_only": true,
+      "runtime": "reference_only_not_surfaced",
+      "reason": "Static well positions do not exactly match the curated deep-dive twist; runtime uses a native dynamic plate map instead."
+    }
+  ],
+  "logic_changed": false,
+  "story_changed": false,
+  "scoring_changed": false,
+  "assessment_integrity_preserved": true
+}

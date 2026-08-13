@@ -1,0 +1,19 @@
+{
+  "version": "v2.4.0g",
+  "patch_name": "LAB_RUN_002 Assessment Media Visibility Hotfix",
+  "base": "v2.4.0f LAB_RUN_002 Final Production / Premium UI",
+  "apply_over": "v2.4.0f",
+  "case_scope": ["LAB_RUN_002_v0_8"],
+  "changed_runtime_files": ["index.html"],
+  "added_assets": [],
+  "changed_assets": [],
+  "required_existing_assets": [
+    "assets/lab_run_002/run_qc_dashboard_001.png",
+    "assets/lab_run_002/ntc_variant_viewer_001.png"
+  ],
+  "logic_changed": false,
+  "story_changed": false,
+  "scoring_changed": false,
+  "assessment_media_policy_changed": true,
+  "assessment_answer_reveal_policy_changed": false
+}
