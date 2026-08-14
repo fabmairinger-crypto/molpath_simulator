@@ -1,0 +1,13 @@
+MolPath Simulator v2.4.0z7a — RES T1 escape hotfix patch-only
+
+Files:
+- index.html
+  SHA256: 0ad483352503d93acfb0d01f54ea35a6f7f2037f312a2d435770be065eb96cd6
+- CHANGELOG_v240z7a.md
+- MANIFEST_v240z7a.txt
+
+Base:
+- v2.4.0z7 RES T1 i18n patch
+
+Change type:
+- Escape/script-placement integration hotfix only
