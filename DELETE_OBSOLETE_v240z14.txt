@@ -1,0 +1,6 @@
+# Remove these obsolete MTB_CRC_001 assets from the target installation after applying the patch.
+# They are no longer referenced by v2.4.0z14.
+assets/mtb_crc_001/biomarker_board_pending_001.png
+assets/mtb_crc_001/biomarker_dashboard_001.png
+assets/mtb_crc_001/braf_variant_view_001.png
+assets/mtb_crc_001/msi_profile_001.png
