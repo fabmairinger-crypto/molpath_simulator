@@ -1,54 +1,47 @@
-# MolPath Simulator v2.4.0z13 — Signature Flagship Expansion B01 (CRC)
+# MolPath Simulator v2.4.0z13
+## MTB_CRC_002 Flagship / Premium Asset Integration
 
 Base: **v2.4.0z12**
 
-## Scope
-First production batch of the expansion from **15 Signature Cases** to a uniformly premium / flagship presentation layer.
+### Scope
+Only `MTB_CRC_002_v1_3` is upgraded in this patch. No global workflow, course, savegame or scoring-framework changes are introduced outside this case.
 
-Reference standard was derived from the three already completed Flagships:
-- `MTB_NSCLC_001_v0_6`
-- `LAB_RUN_002_v0_8`
-- `RES_OMICS_001_v1_0`
+### Premium case file
+Eight approved synthetic assets are integrated:
+1. referral / request form
+2. oncology / molecular request letter
+3. H&E overview
+4. H&E zoom from the representative tumour area
+5. MMR IHC four-marker panel
+6. MSI NGS 9-locus report
+7. MLH1 promoter methylation qMSP / melt-curve report
+8. BRAF p.V600E qPCR report
 
-## Signature audit
-- Canonical Signature set validated: **15/15**.
-- Existing Flagship level before this patch: **3/15**.
-- `MET_NGS_003_v1_0` had an effective metadata inconsistency: a later method Deep-Dive payload carried `is_signature_case:false`, while canonical runtime Signature logic still treated the case as Signature.
-- v2.4.0z13 explicitly repairs `MET_NGS_003_v1_0` to `signature_case=true` and `is_signature_case=true` without changing its content or scoring.
+### Progressive evidence logic
+- referral + clinical letter: visible from case intake
+- H&E overview + zoom: visible at histology
+- MMR IHC asset: only after `mmr_ihc` was selected and the laboratory run/report exists
+- MSI NGS asset: only after `msi_pcr_ngs` was selected and the laboratory run/report exists
+- MLH1 methylation asset: only after `mlh1_methylation` or `methylation_mlh1` was selected and the laboratory run/report exists
+- BRAF qPCR asset: only after `braf_v600e_crc` was selected and the laboratory run/report exists
 
-## B01 — CRC Flagship cases
+### Case logic
+The flagship completion path now explicitly requires four case-defining components:
+- MMR IHC
+- dedicated MSI testing
+- MLH1 promoter methylation
+- BRAF p.V600E
 
-### `MTB_CRC_001_v0_6`
-Added:
-- CRC Precision Oncology cockpit.
-- Signature-specific decision axes for RAS/BRAF, MMR/MSI and MLH1 reflex logic.
-- Synthetic pretreatment biomarker board.
-- Integrated post-result biomarker dashboard.
-- Synthetic BRAF p.V600E read-level evidence view.
-- Synthetic MSI instability profile.
-- Assessment-safe progressive evidence locking.
-- Final flagship integration chain.
+The pre-test Clinical Reasoning gate was rewritten so that it asks for strategy and conditional reflex logic without revealing assay results before testing.
 
-### `MTB_CRC_002_v1_3`
-Added:
-- CRC Precision Oncology cockpit.
-- Signature-specific decision axes for MMR phenotype, reflex etiology and hereditary communication.
-- Synthetic four-panel MMR-IHC evidence image: MLH1/PMS2 loss, MSH2/MSH6 retained, with internal-control concept.
-- Synthetic MSI confirmation profile.
-- Synthetic MLH1/BRAF reflex work-up visualization.
-- Assessment-safe locking of interpretive reflex evidence until completion.
-- Final flagship integration chain.
+### Story / result consistency
+The previous Deep-Dive reference outcome (`MLH1 unmethylated / BRAF V600E negative`) is not used in the Flagship debrief. The approved premium assets define the Flagship outcome as:
+- MLH1/PMS2 loss; MSH2/MSH6 retained
+- MSI-H, 7/9 loci unstable
+- MLH1 promoter methylation positive
+- BRAF p.V600E positive
 
-## Architecture
-- The existing Deep-Dive narrative, scoring, gate correctness, test-selection logic and global premium timeline remain authoritative and unchanged.
-- The new layer is deliberately additive: case-specific cockpit + evidence orchestration + result visualization.
-- No new polling loop or MutationObserver was introduced.
-- New premium UI labels cover DE / EN / RO / EL / ES / FR.
-- New media are explicitly labelled synthetic / educational and contain no real patient data.
+This supports a strongly sporadic MLH1-inactivation context while retaining the teaching point that IHC alone does not diagnose or exclude Lynch syndrome.
 
-## Planned next batches
-- B02: `MTB_NSCLC_002` + `MET_NGS_003`
-- B03: `MTB_OVAR_001` + `MTB_OVAR_002`
-- B04: `MTB_IO_001` + `MTB_CNS_001`
-- B05: `LAB_POST_001` + `LAB_DOC_001`
-- B06: `RES_HYP_001` + `RES_ETH_001`
+### Assessment protection
+No MMR/MSI/MLH1/BRAF premium result image is shown before the corresponding assay has actually been run. The final integrated debrief remains completion-gated (instructor mode excepted).

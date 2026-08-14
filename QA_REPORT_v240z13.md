@@ -1,26 +1,27 @@
-# QA Report — MolPath Simulator v2.4.0z13
+# QA Report – v2.4.0z13 MTB_CRC_002 Flagship
 
-## Static / syntax QA
-- Inline JavaScript blocks checked with `node --check`: **67 / 67 passed**.
-- New v2.4.0z13 script standalone syntax check: **passed**.
-- New Flagship script occurrence in `index.html`: **1**.
-- New visual assets: **7 / 7 present and valid PNG** (1400 × 850 px).
-- No new `MutationObserver`, `setInterval` or polling loop in the z13 layer.
+## Static / mock QA
+- `v240z13_crc002_flagship.js`: `node --check` PASS
+- all 8 referenced assets present and non-empty: PASS
+- external patch script referenced once from the final document body: PASS
+- mock runtime test: PASS
+  - MMR-only selection exposes MMR asset only
+  - MSI / MLH1 / BRAF assets remain hidden when not selected
+  - full four-test selection resolves `missingTests()` to empty
+  - full four-test report contains all four assay assets
 
-## Signature QA
-- Canonical expected Signature set: **15**.
-- z12 metadata audit contained **14 yes + 1 erroneous no** (`MET_NGS_003_v1_0`).
-- z13 audit artifact now contains **15 yes**.
-- Runtime z13 layer explicitly restores Signature metadata for `MET_NGS_003_v1_0`.
+## Runtime smoke test requested on target system
+Please smoke-test in the normal local app runtime:
+1. open `MTB_CRC_002`
+2. verify intake shows referral + clinical letter
+3. verify Histo shows H&E overview + zoom, but no MMR result
+4. order MMR only -> run -> report: only MMR premium result should appear
+5. reset; order MMR + MSI + MLH1 + BRAF -> run -> report: all four premium result assets should appear
+6. assessment mode: no result asset before laboratory run
+7. language switch: core app remains functional and premium chrome re-renders
 
-## Content / behavior QA
-- B01 cases: `MTB_CRC_001_v0_6`, `MTB_CRC_002_v1_3`.
-- Base Deep-Dive payloads remain unchanged.
-- Base scoring and reasoning gates remain unchanged.
-- Global premium timeline remains unchanged.
-- Assessment mode: post-result / interpretive premium evidence is gated until case completion.
-- `MTB_CRC_002`: MMR-IHC stays visible before completion because it is an explicit pre-existing finding in the case briefing.
-- Responsive breakpoint included for cockpit, decision frame and media grid.
+## Known asset-content note
+The approved pink referral currently contains a different synthetic patient identifier/name/date set than the other seven assets. It is retained exactly as approved for this functional patch and should be harmonized before final content freeze.
 
-## Runtime-browser note
-The environment blocked local Chromium/Playwright navigation by administrator policy, so visual runtime QA could not be automated here. Static JS parsing, asset validation and wiring checks passed; the patch should still receive the normal local application smoke test after installation.
+## Headless browser note
+A local Chromium smoke attempt was started against a full overlaid test build, but the container Chromium process did not return a DOM within the allowed runtime and emitted environment/DBus errors. Therefore browser-runtime QA remains to be performed in the normal desktop environment.
