@@ -1,0 +1,22 @@
+{
+  "version": "v2.4.0z13a",
+  "base": "v2.4.0z13",
+  "scope": "MTB_CRC_002 duplicate evidence rendering hotfix",
+  "files": [
+    {
+      "path": "CHANGELOG_v240z13a.md",
+      "bytes": 558,
+      "sha256": "34b44d6dbdc9d16a0c5d8310cc7f62681361abf3fecc9d24d1a3700075b3a6a5"
+    },
+    {
+      "path": "QA_REPORT_v240z13a.md",
+      "bytes": 547,
+      "sha256": "1497f0cd68b2548be2352870ece5c14c8c996630fb8c345e23b8f51405279963"
+    },
+    {
+      "path": "v240z13_crc002_flagship.js",
+      "bytes": 34291,
+      "sha256": "39066d9bc06406bba269ff145eb133cf97fdc27097f4d350279d6627d4633aa6"
+    }
+  ]
+}

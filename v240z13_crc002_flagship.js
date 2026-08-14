@@ -1,10 +1,10 @@
-/* MolPath Simulator v2.4.0z13 — MTB_CRC_002 Flagship / premium asset integration
+/* MolPath Simulator v2.4.0z13a — MTB_CRC_002 Flagship duplicate-evidence hotfix
    Base: v2.4.0z12
    Scope: MTB_CRC_002 only. Progressive, test-dependent evidence; no global workflow changes.
 */
 (function(){
 'use strict';
-const CRC2_VERSION='v2.4.0z13';
+const CRC2_VERSION='v2.4.0z13a';
 const CRC2_CASE='MTB_CRC_002_v1_3';
 const CRC2_ASSETS=Object.freeze({
   referral:'assets/mtb_crc_002/referral_pink_001.png',
@@ -246,7 +246,9 @@ v17DebriefBlock=function(d){
   if(!active())return PREV_DEBRIEF.apply(this,arguments);
   if(!(complete()||isInstructor()))return '';
   const full=allCoreDone();
-  return `<div class="v17-debrief crc2-debrief"><h3>${esc2(T().integration)}</h3><p>${esc2(full?T().fullOutcome:T().partialOutcome)}</p><h4>${esc2(T().key)}</h4><p>${esc2(T().keyText)}</p>${full?assayEvidence():''}</div>`;
+  /* Assay snapshots are rendered exactly once by renderReport/renderMtb below.
+     The debrief intentionally contains interpretation only, preventing duplicate evidence blocks. */
+  return `<div class="v17-debrief crc2-debrief"><h3>${esc2(T().integration)}</h3><p>${esc2(full?T().fullOutcome:T().partialOutcome)}</p><h4>${esc2(T().key)}</h4><p>${esc2(T().keyText)}</p></div>`;
 };
 
 const PREV_DEEP_ADDON=v17DeepReportAddon;
@@ -273,7 +275,7 @@ renderMtb=function(){
 function styles(){
   if(document.getElementById('crc2FlagshipStyles'))return;
   const st=document.createElement('style');st.id='crc2FlagshipStyles';st.textContent=`
-  #v20bVersion{font-size:0!important}#v20bVersion::after{content:'v2.4.0z13'!important;font-size:.72rem!important;line-height:1.1}
+  #v20bVersion{font-size:0!important}#v20bVersion::after{content:'v2.4.0z13a'!important;font-size:.72rem!important;line-height:1.1}
   .crc2-opening{border:1px solid #9bc8d7;border-radius:18px;background:linear-gradient(135deg,#eef9ff,#fff);padding:15px 17px;margin:10px 0 14px;box-shadow:0 8px 22px rgba(15,76,117,.07)}
   .crc2-block{border:1px solid var(--line);border-radius:18px;background:#fff;padding:14px;margin:14px 0;box-shadow:0 8px 22px rgba(15,35,55,.045)}
   .crc2-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:10px}.crc2-head h4{margin:0;color:var(--primary)}
