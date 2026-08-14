@@ -1,0 +1,181 @@
+{
+  "CRC1": [
+    {
+      "name": "PCR",
+      "missing": [],
+      "findings": [
+        [
+          "Extended RAS",
+          "KRAS/NRAS Wildtyp"
+        ],
+        [
+          "BRAF p.V600E · qPCR",
+          "BRAF p.V600E nachweisbar"
+        ],
+        [
+          "MMR-IHC",
+          "MLH1/PMS2-Verlust; MSH2/MSH6 erhalten; interne Positivkontrollen intakt."
+        ],
+        [
+          "MSI-NGS (9 Loci)",
+          "MSI-H; 7/9 Loci instabil."
+        ],
+        [
+          "MLH1-Promotor-Methylierung",
+          "Nachgewiesen / positiv."
+        ],
+        [
+          "QC",
+          "Durchgeführte Assays technisch valide; assay-spezifische Kontrollen bestanden."
+        ]
+      ],
+      "ngs": false,
+      "pcrBraf": true,
+      "ras": true
+    },
+    {
+      "name": "ColonNGS",
+      "missing": [],
+      "findings": [
+        [
+          "Colon-/GI-NGS · RAS/BRAF",
+          "Extended RAS (KRAS/NRAS) Wildtyp; BRAF p.V600E nachweisbar."
+        ],
+        [
+          "MMR-IHC",
+          "MLH1/PMS2-Verlust; MSH2/MSH6 erhalten; interne Positivkontrollen intakt."
+        ],
+        [
+          "MSI-NGS (9 Loci)",
+          "MSI-H; 7/9 Loci instabil."
+        ],
+        [
+          "MLH1-Promotor-Methylierung",
+          "Nachgewiesen / positiv."
+        ],
+        [
+          "QC",
+          "Durchgeführte Assays technisch valide; assay-spezifische Kontrollen bestanden."
+        ]
+      ],
+      "ngs": true,
+      "pcrBraf": false,
+      "ras": false
+    },
+    {
+      "name": "BroadNGS",
+      "missing": [],
+      "findings": [
+        [
+          "Breites NGS · RAS/BRAF",
+          "Extended RAS (KRAS/NRAS) Wildtyp; BRAF p.V600E nachweisbar."
+        ],
+        [
+          "MMR-IHC",
+          "MLH1/PMS2-Verlust; MSH2/MSH6 erhalten; interne Positivkontrollen intakt."
+        ],
+        [
+          "MSI-NGS (9 Loci)",
+          "MSI-H; 7/9 Loci instabil."
+        ],
+        [
+          "MLH1-Promotor-Methylierung",
+          "Nachgewiesen / positiv."
+        ],
+        [
+          "QC",
+          "Durchgeführte Assays technisch valide; assay-spezifische Kontrollen bestanden."
+        ]
+      ],
+      "ngs": false,
+      "pcrBraf": false,
+      "ras": false
+    }
+  ],
+  "CRC2": [
+    {
+      "name": "PCR",
+      "missing": [],
+      "findings": [
+        [
+          "MMR-IHC",
+          "MLH1/PMS2 loss; MSH2/MSH6 retained; internal controls positive."
+        ],
+        [
+          "MSI-NGS (9 loci)",
+          "MSI-H; 7/9 loci unstable."
+        ],
+        [
+          "MLH1 promoter methylation",
+          "Detected / positive."
+        ],
+        [
+          "BRAF p.V600E · qPCR",
+          "Detected / positive."
+        ],
+        [
+          "QC",
+          "Performed assays technically valid; assay-specific controls passed."
+        ]
+      ],
+      "ngs": false,
+      "pcrBraf": true
+    },
+    {
+      "name": "ColonNGS",
+      "missing": [],
+      "findings": [
+        [
+          "MMR-IHC",
+          "MLH1/PMS2 loss; MSH2/MSH6 retained; internal controls positive."
+        ],
+        [
+          "MSI-NGS (9 loci)",
+          "MSI-H; 7/9 loci unstable."
+        ],
+        [
+          "MLH1 promoter methylation",
+          "Detected / positive."
+        ],
+        [
+          "Colon-/GI-NGS · RAS/BRAF",
+          "BRAF p.V600E detected / positive; KRAS/NRAS wild type."
+        ],
+        [
+          "QC",
+          "Performed assays technically valid; assay-specific controls passed."
+        ]
+      ],
+      "ngs": true,
+      "pcrBraf": false
+    },
+    {
+      "name": "BroadNGS",
+      "missing": [],
+      "findings": [
+        [
+          "MMR-IHC",
+          "MLH1/PMS2 loss; MSH2/MSH6 retained; internal controls positive."
+        ],
+        [
+          "MSI-NGS (9 loci)",
+          "MSI-H; 7/9 loci unstable."
+        ],
+        [
+          "MLH1 promoter methylation",
+          "Detected / positive."
+        ],
+        [
+          "Breites NGS · BRAF/RAS",
+          "BRAF p.V600E detected / positive; KRAS/NRAS wild type."
+        ],
+        [
+          "QC",
+          "Performed assays technically valid; assay-specific controls passed."
+        ]
+      ],
+      "ngs": false,
+      "pcrBraf": false
+    }
+  ]
+}

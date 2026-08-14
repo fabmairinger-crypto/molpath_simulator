@@ -1,11 +1,11 @@
-/* MolPath Simulator v2.4.0z14 — MTB_CRC_001 Premium / Flagship
+/* MolPath Simulator v2.4.0z14a — MTB_CRC_001 NGS evidence hotfix
    Base: v2.4.0z13a
    Scope: MTB_CRC_001 only. New approved synthetic assets, progressive evidence, coherent case identity.
    Important: CRC NGS panels that cover RAS + BRAF remain equivalent to dedicated RAS/BRAF assays for completeness/scoring.
 */
 (function(){
 'use strict';
-const CRC1_VERSION='v2.4.0z14';
+const CRC1_VERSION='v2.4.0z14a';
 const CRC1_CASE='MTB_CRC_001_v0_6';
 const CRC1_ASSETS=Object.freeze({
   referral:'assets/mtb_crc_001/referral_pink_001.png',
@@ -15,6 +15,7 @@ const CRC1_ASSETS=Object.freeze({
   mmr:'assets/mtb_crc_001/mmr_ihc_panel_001.png',
   ras:'assets/mtb_crc_001/extended_ras_report_001.png',
   braf:'assets/mtb_crc_001/braf_v600e_qpcr_001.png',
+  ngsRasBraf:'assets/mtb_crc_001/colon_ngs_ras_braf_001.png',
   msi:'assets/mtb_crc_001/msi_ngs_9loci_001.png',
   mlh1:'assets/mtb_crc_001/mlh1_methylation_qmsp_001.png'
 });
@@ -45,7 +46,7 @@ const COPY={
   histo:'Digitale Histologie',heOverview:'HE Übersicht · Primärtumor',heZoom:'HE Zoom · repräsentatives Tumorareal',histoNote:'Mäßig differenziertes kolorektales Adenokarzinom mit infiltrativen Drüsen, Desmoplasie und luminalem „dirty necrosis“-Muster. Molekulare Ergebnisse werden hier nicht vorweggenommen.',
   material:'Material / Präanalytik',materialText:'Für die Molekulardiagnostik steht repräsentatives FFPE-Gewebe einer Lebermetastase mit etwa 45–50 % Tumorzellgehalt zur Verfügung. Das Primärtumor-HE dient der morphologischen Einordnung; die prädiktiven Analysen können am Metastasenmaterial erfolgen.',
   task:'Decision Task',taskText:'Welche Primärdiagnostik beantwortet vor Systemtherapie vollständig die RAS-/BRAF-, MMR/MSI- und bei MLH1/PMS2-Verlust die sporadisch-versus-Lynch-Frage?',
-  evidence:'Assay Evidence / Originalansichten',mmr:'MMR-IHC · 4er-Panel',ras:'Extended RAS · KRAS/NRAS',braf:'BRAF p.V600E · qPCR',brafNgs:'BRAF p.V600E · Colon-NGS',msi:'MSI-NGS · 9-Locus-Report',mlh1:'MLH1-Promotor-Methylierung · qMSP / Schmelzkurve',
+  evidence:'Assay Evidence / Originalansichten',mmr:'MMR-IHC · 4er-Panel',ras:'Extended RAS · KRAS/NRAS',braf:'BRAF p.V600E · qPCR',brafNgs:'BRAF p.V600E · Colon-NGS',ngsRasBraf:'Colon-/GI-NGS · Extended RAS + BRAF',msi:'MSI-NGS · 9-Locus-Report',mlh1:'MLH1-Promotor-Methylierung · qMSP / Schmelzkurve',
   noSpecific:'Für die gewählten Tests liegt kein spezifischer Premium-Snapshot vor.',synthetic:'Synthetisches Trainingsasset · educational only · keine realen Patientendaten',
   integration:'Flagship Integration',fullOutcome:'Extended RAS ist Wildtyp, gleichzeitig liegen BRAF p.V600E und dMMR/MSI-H vor. RAS-Wildtyp beseitigt damit nur eine RAS-basierte anti-EGFR-Ausschlusskonstellation, ist aber keine alleinige Therapieentscheidung. BRAF- und MSI/MMR-Kontext müssen integriert werden. MLH1/PMS2-Verlust mit positiver MLH1-Promotor-Methylierung stützt zusätzlich einen sporadischen MLH1-silencierten Entstehungsweg.',
   partialOutcome:'Der mCRC-Biomarkerpfad ist noch unvollständig. Für eine belastbare Therapie- und Lynch/sporadisch-Einordnung fehlen noch RAS/BRAF-, MMR/MSI- oder Reflexbausteine.',
@@ -60,7 +61,7 @@ const COPY={
   histo:'Digital histology',heOverview:'H&E overview · primary tumour',heZoom:'H&E zoom · representative tumour area',histoNote:'Moderately differentiated colorectal adenocarcinoma with infiltrative glands, desmoplasia and luminal dirty necrosis. Molecular results are not pre-revealed here.',
   material:'Material / preanalytics',materialText:'Representative FFPE tissue from a liver metastasis with approximately 45–50% tumour cells is available for molecular diagnostics. The primary-tumour H&E establishes morphology; predictive analyses can be performed on metastatic tissue.',
   task:'Decision task',taskText:'Which primary diagnostic strategy completely addresses RAS/BRAF, MMR/MSI and—if MLH1/PMS2 loss is found—the sporadic-versus-Lynch question before systemic therapy?',
-  evidence:'Assay evidence / original views',mmr:'MMR IHC · four-marker panel',ras:'Extended RAS · KRAS/NRAS',braf:'BRAF p.V600E · qPCR',brafNgs:'BRAF p.V600E · colon NGS',msi:'MSI NGS · 9-locus report',mlh1:'MLH1 promoter methylation · qMSP / melt curve',
+  evidence:'Assay evidence / original views',mmr:'MMR IHC · four-marker panel',ras:'Extended RAS · KRAS/NRAS',braf:'BRAF p.V600E · qPCR',brafNgs:'BRAF p.V600E · colon NGS',ngsRasBraf:'Colon/GI NGS · Extended RAS + BRAF',msi:'MSI NGS · 9-locus report',mlh1:'MLH1 promoter methylation · qMSP / melt curve',
   noSpecific:'No specific premium snapshot is available for the selected tests.',synthetic:'Synthetic training asset · educational only · no real patient data',
   integration:'Flagship integration',fullOutcome:'Extended RAS is wild type, while BRAF p.V600E and dMMR/MSI-H are present. RAS wild type therefore removes only a RAS-based anti-EGFR exclusion; it is not a stand-alone treatment decision. BRAF and MSI/MMR context must be integrated. MLH1/PMS2 loss with positive MLH1 promoter methylation additionally supports a sporadic MLH1-silenced pathway.',
   partialOutcome:'The mCRC biomarker pathway is still incomplete. RAS/BRAF, MMR/MSI or reflex components are missing for a robust treatment and Lynch-versus-sporadic interpretation.',
@@ -75,7 +76,7 @@ const COPY={
   histo:'Histologie digitală',heOverview:'HE – vedere de ansamblu · tumoră primară',heZoom:'HE – zoom · zonă tumorală reprezentativă',histoNote:'Adenocarcinom colorectal moderat diferențiat cu glande infiltrative, desmoplazie și necroză luminală de tip dirty necrosis. Rezultatele moleculare nu sunt dezvăluite anticipat.',
   material:'Material / preanalitic',materialText:'Pentru diagnosticul molecular este disponibil țesut FFPE reprezentativ dintr-o metastază hepatică, cu aproximativ 45–50% celule tumorale. HE-ul tumorii primare oferă încadrarea morfologică.',
   task:'Sarcina decizională',taskText:'Ce strategie diagnostică primară acoperă complet RAS/BRAF, MMR/MSI și, la pierderea MLH1/PMS2, diferențierea sporadic versus Lynch?',
-  evidence:'Dovezi de assay / vizualizări originale',mmr:'MMR-IHC · panel cu 4 markeri',ras:'Extended RAS · KRAS/NRAS',braf:'BRAF p.V600E · qPCR',brafNgs:'BRAF p.V600E · Colon-NGS',msi:'MSI-NGS · raport 9 loci',mlh1:'Metilarea promotorului MLH1 · qMSP / curbă de topire',
+  evidence:'Dovezi de assay / vizualizări originale',mmr:'MMR-IHC · panel cu 4 markeri',ras:'Extended RAS · KRAS/NRAS',braf:'BRAF p.V600E · qPCR',brafNgs:'BRAF p.V600E · Colon-NGS',ngsRasBraf:'Colon-/GI-NGS · Extended RAS + BRAF',msi:'MSI-NGS · raport 9 loci',mlh1:'Metilarea promotorului MLH1 · qMSP / curbă de topire',
   noSpecific:'Nu există un snapshot premium specific pentru testele selectate.',synthetic:'Asset sintetic de instruire · doar educațional · fără date reale de pacient',
   integration:'Integrare flagship',fullOutcome:'Extended RAS este wild type, dar sunt prezente BRAF p.V600E și dMMR/MSI-H. RAS wild type elimină doar o excludere anti-EGFR bazată pe RAS și nu reprezintă singur decizia terapeutică. Contextul BRAF și MSI/MMR trebuie integrat. Pierderea MLH1/PMS2 împreună cu metilarea pozitivă a promotorului MLH1 susține suplimentar o cale sporadică de silențiere MLH1.',
   partialOutcome:'Calea biomarkerilor mCRC este încă incompletă. Lipsesc componente RAS/BRAF, MMR/MSI sau reflex pentru o interpretare robustă.',key:'Mesaj cheie',keyText:'În mCRC, „RAS wild type” nu încheie interpretarea: BRAF și MMR/MSI fac parte din aceeași decizie precoce, iar pierderea MLH1/PMS2 necesită testare reflex.',ngsEq:'Un panel Colon-NGS adecvat care acoperă KRAS/NRAS și BRAF îndeplinește complet ambele cerințe; testele individuale separate nu sunt necesare suplimentar.',deepOpening:'În MTB trebuie stabilită terapia de primă linie pentru un carcinom colorectal metastatic stâng. Întrebarea este ce markeri trebuie integrați pentru tratament și contextul ereditar.',deepBrief:'Pacientă de 58 de ani cu adenocarcinom sigmoid și metastaze hepatice multiple. ECOG 1. Morfologia tumorii primare este stabilită; pentru diagnosticul molecular este disponibil țesut FFPE reprezentativ dintr-o metastază hepatică.'
@@ -86,7 +87,7 @@ const COPY={
   histo:'Ψηφιακή ιστολογία',heOverview:'HE επισκόπηση · πρωτοπαθής όγκος',heZoom:'HE zoom · αντιπροσωπευτική περιοχή όγκου',histoNote:'Μέτρια διαφοροποιημένο αδενοκαρκίνωμα παχέος εντέρου με διηθητικούς αδένες, δεσμοπλασία και αυλική νέκρωση. Τα μοριακά αποτελέσματα δεν προαποκαλύπτονται.',
   material:'Υλικό / προαναλυτική φάση',materialText:'Διατίθεται αντιπροσωπευτικό FFPE υλικό ηπατικής μετάστασης με περίπου 45–50% νεοπλασματικά κύτταρα. Η HE του πρωτοπαθούς όγκου τεκμηριώνει τη μορφολογία.',
   task:'Στόχος απόφασης',taskText:'Ποια πρωτογενής διαγνωστική στρατηγική καλύπτει πλήρως RAS/BRAF, MMR/MSI και, σε απώλεια MLH1/PMS2, τη διάκριση σποραδικού έναντι Lynch;',
-  evidence:'Στοιχεία assay / πρωτότυπες προβολές',mmr:'MMR-IHC · panel 4 δεικτών',ras:'Extended RAS · KRAS/NRAS',braf:'BRAF p.V600E · qPCR',brafNgs:'BRAF p.V600E · Colon-NGS',msi:'MSI-NGS · αναφορά 9 loci',mlh1:'Μεθυλίωση υποκινητή MLH1 · qMSP / καμπύλη τήξης',
+  evidence:'Στοιχεία assay / πρωτότυπες προβολές',mmr:'MMR-IHC · panel 4 δεικτών',ras:'Extended RAS · KRAS/NRAS',braf:'BRAF p.V600E · qPCR',brafNgs:'BRAF p.V600E · Colon-NGS',ngsRasBraf:'Colon-/GI-NGS · Extended RAS + BRAF',msi:'MSI-NGS · αναφορά 9 loci',mlh1:'Μεθυλίωση υποκινητή MLH1 · qMSP / καμπύλη τήξης',
   noSpecific:'Δεν υπάρχει ειδικό premium snapshot για τα επιλεγμένα τεστ.',synthetic:'Συνθετικό εκπαιδευτικό asset · μόνο για εκπαίδευση · χωρίς πραγματικά δεδομένα ασθενών',
   integration:'Flagship integration',fullOutcome:'Το Extended RAS είναι wild type, ενώ υπάρχουν BRAF p.V600E και dMMR/MSI-H. Το RAS wild type αφαιρεί μόνο έναν RAS-βασισμένο αποκλεισμό anti-EGFR και δεν αποτελεί μόνο του θεραπευτική απόφαση. Το πλαίσιο BRAF και MSI/MMR πρέπει να ενσωματωθεί. Η απώλεια MLH1/PMS2 με θετική μεθυλίωση του υποκινητή MLH1 υποστηρίζει επιπλέον σποραδική σίγαση MLH1.',partialOutcome:'Η διαδρομή βιοδεικτών mCRC παραμένει ατελής. Λείπουν στοιχεία RAS/BRAF, MMR/MSI ή reflex.',key:'Κεντρικό μήνυμα',keyText:'Στο mCRC, το «RAS wild type» δεν είναι το τέλος της ερμηνείας: BRAF και MMR/MSI ανήκουν στην ίδια πρώιμη απόφαση και η απώλεια MLH1/PMS2 απαιτεί reflex έλεγχο.',ngsEq:'Κατάλληλο Colon-NGS που καλύπτει KRAS/NRAS και BRAF ικανοποιεί πλήρως και τις δύο απαιτήσεις χωρίς ανάγκη πρόσθετων μεμονωμένων assays.',deepOpening:'Στο MTB πρέπει να καθοριστεί θεραπεία πρώτης γραμμής για αριστερό μεταστατικό καρκίνο παχέος εντέρου. Η ερώτηση είναι ποιοι δείκτες πρέπει να συνεκτιμηθούν για θεραπεία και κληρονομικότητα.',deepBrief:'Γυναίκα 58 ετών με αδενοκαρκίνωμα σιγμοειδούς και πολλαπλές ηπατικές μεταστάσεις. ECOG 1. Η μορφολογία του πρωτοπαθούς είναι τεκμηριωμένη και διατίθεται FFPE υλικό ηπατικής μετάστασης για μοριακή διάγνωση.'
  },
@@ -96,7 +97,7 @@ const COPY={
   histo:'Histología digital',heOverview:'HE panorámica · tumor primario',heZoom:'HE zoom · área tumoral representativa',histoNote:'Adenocarcinoma colorrectal moderadamente diferenciado con glándulas infiltrativas, desmoplasia y necrosis luminal tipo dirty necrosis. No se anticipan resultados moleculares.',
   material:'Material / preanalítica',materialText:'Para el diagnóstico molecular hay tejido FFPE representativo de una metástasis hepática con aproximadamente 45–50% de células tumorales. La HE del primario establece la morfología.',
   task:'Tarea de decisión',taskText:'¿Qué estrategia diagnóstica primaria cubre por completo RAS/BRAF, MMR/MSI y, ante pérdida de MLH1/PMS2, la distinción esporádico frente a Lynch?',
-  evidence:'Evidencia de ensayos / vistas originales',mmr:'MMR-IHC · panel de 4 marcadores',ras:'Extended RAS · KRAS/NRAS',braf:'BRAF p.V600E · qPCR',brafNgs:'BRAF p.V600E · Colon-NGS',msi:'MSI-NGS · informe de 9 loci',mlh1:'Metilación del promotor MLH1 · qMSP / curva de fusión',
+  evidence:'Evidencia de ensayos / vistas originales',mmr:'MMR-IHC · panel de 4 marcadores',ras:'Extended RAS · KRAS/NRAS',braf:'BRAF p.V600E · qPCR',brafNgs:'BRAF p.V600E · Colon-NGS',ngsRasBraf:'Colon-/GI-NGS · Extended RAS + BRAF',msi:'MSI-NGS · informe de 9 loci',mlh1:'Metilación del promotor MLH1 · qMSP / curva de fusión',
   noSpecific:'No hay un snapshot premium específico para las pruebas seleccionadas.',synthetic:'Asset sintético de entrenamiento · solo uso educativo · sin datos reales de pacientes',
   integration:'Integración flagship',fullOutcome:'Extended RAS es wild type, mientras que están presentes BRAF p.V600E y dMMR/MSI-H. RAS wild type solo elimina una exclusión anti-EGFR basada en RAS y no constituye por sí mismo una decisión terapéutica. Deben integrarse BRAF y MSI/MMR. La pérdida de MLH1/PMS2 con metilación positiva del promotor MLH1 apoya además una vía esporádica de silenciamiento de MLH1.',partialOutcome:'La vía de biomarcadores del mCRC sigue incompleta. Faltan componentes RAS/BRAF, MMR/MSI o reflex.',key:'Mensaje clave',keyText:'En mCRC, “RAS wild type” no termina la interpretación: BRAF y MMR/MSI forman parte de la misma decisión temprana y la pérdida de MLH1/PMS2 requiere estudio reflex.',ngsEq:'Un panel Colon-NGS adecuado que cubra KRAS/NRAS y BRAF satisface por completo ambos requisitos; no son necesarios ensayos individuales adicionales.',deepOpening:'El MTB debe definir la primera línea para un carcinoma colorrectal metastásico izquierdo. La cuestión es qué marcadores, en conjunto, determinan tratamiento y posible contexto hereditario.',deepBrief:'Mujer de 58 años con adenocarcinoma sigmoide y múltiples metástasis hepáticas. ECOG 1. La morfología del primario está establecida y se dispone de tejido FFPE representativo de una metástasis hepática para diagnóstico molecular.'
  },
@@ -106,7 +107,7 @@ const COPY={
   histo:'Histologie numérique',heOverview:'HE vue d’ensemble · tumeur primitive',heZoom:'HE zoom · zone tumorale représentative',histoNote:'Adénocarcinome colorectal modérément différencié avec glandes infiltrantes, desmoplasie et nécrose luminale de type dirty necrosis. Les résultats moléculaires ne sont pas révélés à l’avance.',
   material:'Matériel / pré-analytique',materialText:'Un tissu FFPE représentatif d’une métastase hépatique, avec environ 45–50 % de cellules tumorales, est disponible pour le diagnostic moléculaire. L’HE de la tumeur primitive documente la morphologie.',
   task:'Tâche décisionnelle',taskText:'Quelle stratégie diagnostique initiale couvre complètement RAS/BRAF, MMR/MSI et, en cas de perte MLH1/PMS2, la distinction sporadique versus Lynch ?',
-  evidence:'Preuves d’essai / vues originales',mmr:'MMR-IHC · panel 4 marqueurs',ras:'Extended RAS · KRAS/NRAS',braf:'BRAF p.V600E · qPCR',brafNgs:'BRAF p.V600E · Colon-NGS',msi:'MSI-NGS · rapport 9 loci',mlh1:'Méthylation du promoteur MLH1 · qMSP / courbe de fusion',
+  evidence:'Preuves d’essai / vues originales',mmr:'MMR-IHC · panel 4 marqueurs',ras:'Extended RAS · KRAS/NRAS',braf:'BRAF p.V600E · qPCR',brafNgs:'BRAF p.V600E · Colon-NGS',ngsRasBraf:'Colon-/GI-NGS · Extended RAS + BRAF',msi:'MSI-NGS · rapport 9 loci',mlh1:'Méthylation du promoteur MLH1 · qMSP / courbe de fusion',
   noSpecific:'Aucun snapshot premium spécifique n’est disponible pour les tests sélectionnés.',synthetic:'Asset synthétique d’entraînement · usage éducatif uniquement · aucune donnée réelle de patient',
   integration:'Intégration flagship',fullOutcome:'Extended RAS est sauvage, alors que BRAF p.V600E et dMMR/MSI-H sont présents. RAS sauvage ne fait donc que lever une exclusion anti-EGFR fondée sur RAS et ne constitue pas à lui seul une décision thérapeutique. Le contexte BRAF et MSI/MMR doit être intégré. La perte MLH1/PMS2 avec méthylation positive du promoteur MLH1 soutient en outre une voie sporadique de silençage de MLH1.',partialOutcome:'Le parcours biomarqueur du mCRC reste incomplet. Des éléments RAS/BRAF, MMR/MSI ou reflex manquent encore.',key:'Message clé',keyText:'Dans le mCRC, « RAS sauvage » ne termine pas l’interprétation : BRAF et MMR/MSI appartiennent à la même décision précoce, et la perte MLH1/PMS2 nécessite un bilan reflex.',ngsEq:'Un panel Colon-NGS adapté couvrant KRAS/NRAS et BRAF satisfait complètement les deux exigences ; des tests individuels séparés ne sont pas nécessaires.',deepOpening:'La RCP moléculaire doit définir la première ligne d’un cancer colorectal métastatique gauche. La question est de savoir quels marqueurs doivent être intégrés pour le traitement et le contexte héréditaire.',deepBrief:'Patiente de 58 ans avec adénocarcinome sigmoïdien et multiples métastases hépatiques. ECOG 1. La morphologie du primitif est établie et un tissu FFPE représentatif d’une métastase hépatique est disponible pour le diagnostic moléculaire.'
  }
@@ -123,15 +124,15 @@ function histology(){return `<div class="crc1-block"><div class="crc1-head"><h4>
 function contextCards(){return `<div class="crc1-grid crc1-grid-3"><div class="crc1-card"><b>01</b><p>${esc1(T().context1)}</p></div><div class="crc1-card"><b>02</b><p>${esc1(T().context2)}</p></div><div class="crc1-card"><b>03</b><p>${esc1(T().context3)}</p></div></div>`}
 function materialBox(){return `<div class="crc1-block"><div class="crc1-head"><h4>${esc1(T().material)}</h4><span class="crc1-pill ok">FFPE</span></div><p>${esc1(T().materialText)}</p><div class="crc1-facts"><div><b>Tumor</b><span>45–50 %</span></div><div><b>Primary</b><span>Sigma</span></div><div><b>Molecular</b><span>Liver metastasis</span></div><div><b>Strategy</b><span>RAS/BRAF + MMR/MSI</span></div></div></div>`}
 function decisionBox(){return `<div class="crc1-task"><h4>${esc1(T().task)}</h4><p>${esc1(T().taskText)}</p><div class="crc1-method-note">${esc1(T().ngsEq)}</div></div>`}
-function ngsBrafCard(){return `<div class="crc1-ngs-result"><span class="crc1-pill ok">NGS</span><div><b>${esc1(T().brafNgs)}</b><strong>BRAF p.V600E detected</strong><small>${esc1(T().ngsEq)}</small></div></div>`}
-
 function assayEvidence(){
   if(!reportReady())return '';
   const out=[];
   if(selected('mmr_ihc'))out.push(asset(T().mmr,CRC1_ASSETS.mmr,'wide'));
-  if(hasRas())out.push(asset(T().ras,CRC1_ASSETS.ras,'doc result-doc'));
+  /* A CRC NGS panel is one assay: show one integrated RAS+BRAF report, not the dedicated RAS report plus a synthetic BRAF text card. */
+  if(selected('colon_ngs_panel'))out.push(asset(T().ngsRasBraf||'Colon-/GI-NGS · Extended RAS + BRAF',CRC1_ASSETS.ngsRasBraf,'wide'));
+  /* broad_pan_panel remains diagnostically equivalent, but this Colon-/GI-specific screenshot is not shown for that different assay. */
+  if(selected('ras_panel_crc'))out.push(asset(T().ras,CRC1_ASSETS.ras,'doc result-doc'));
   if(selected('braf_v600e_crc'))out.push(asset(T().braf,CRC1_ASSETS.braf,'wide'));
-  else if(viaNgs()&&hasBraf())out.push(ngsBrafCard());
   if(selected('msi_pcr_ngs'))out.push(asset(T().msi,CRC1_ASSETS.msi,'wide'));
   if(selected('mlh1_methylation')||selected('methylation_mlh1'))out.push(asset(T().mlh1,CRC1_ASSETS.mlh1,'wide'));
   if(!out.length)return `<div class="crc1-block"><div class="crc1-head"><h4>${esc1(T().evidence)}</h4></div><div class="crc1-note">${esc1(T().noSpecific)}</div></div>`;
@@ -141,6 +142,14 @@ function integrationBox(){const full=allCoreDone();return `<div class="crc1-inte
 
 function applyCaseLogic(){
   const c=caseObj(); if(!c)return;
+  /* Diagnostic equivalence: a suitable CRC NGS panel covers both Extended RAS and BRAF. */
+  c.required_groups=[
+    {id:'ras',label:'Extended RAS',tests:['ras_panel_crc','colon_ngs_panel','broad_pan_panel'],suggest:'ras_panel_crc'},
+    {id:'braf',label:'BRAF p.V600E',tests:['braf_v600e_crc','colon_ngs_panel','broad_pan_panel'],suggest:'braf_v600e_crc'},
+    {id:'mmr',label:'MMR-IHC',tests:['mmr_ihc'],suggest:'mmr_ihc'},
+    {id:'msi',label:'MSI-Testung',tests:['msi_pcr_ngs'],suggest:'msi_pcr_ngs'},
+    {id:'mlh1',label:'MLH1-Promotor-Methylierung',tests:['mlh1_methylation','methylation_mlh1'],suggest:'mlh1_methylation'}
+  ];
   c.story=[
     {id:'intake',title:'Initialer Auftrag',items:[['Einsender','Viszeralonkologie / Tumorboard'],['Klinische Information','58-jährige Patientin mit Adenokarzinom im Sigma und multiplen Lebermetastasen.'],['Fragestellung','Therapieplanung vor Systemtherapie: RAS/BRAF, MMR/MSI und hereditärer Kontext.'],['Was ist noch unklar?','Welche Marker gemeinsam eine vollständige Therapieentscheidung erlauben.']]},
     {id:'history',title:'Anamnese und klinischer Kontext',items:[['Tumorlokalisation','linksseitiger Kolontumor / Sigma.'],['Stadium / Situation','Metastasiert mit multiplen Lebermetastasen; ECOG 1.'],['Familienanamnese','Mutter mit Endometriumkarzinom im höheren Lebensalter; keine gesicherte Lynch-Diagnose bekannt.'],['MTB-Zeitdruck','Therapiefestlegung innerhalb der nächsten Woche gewünscht.']]},
@@ -203,9 +212,11 @@ const PREV_BUILD=buildReport;
 buildReport=function(){
   const out=PREV_BUILD.apply(this,arguments);if(!active())return out;
   const keep=[];
-  if(hasRas())keep.push([viaNgs()?'Colon-NGS · Extended RAS':'Extended RAS','KRAS/NRAS Wildtyp']);
-  else if(selected('kras_exon2_only'))keep.push(['KRAS Exon 2','Wildtyp, aber kein vollständiger Extended-RAS-Status.']);
-  if(hasBraf())keep.push([viaNgs()&&!selected('braf_v600e_crc')?'Colon-NGS · BRAF':'BRAF p.V600E','BRAF p.V600E nachweisbar']);
+  if(selected('colon_ngs_panel'))keep.push(['Colon-/GI-NGS · RAS/BRAF','Extended RAS (KRAS/NRAS) Wildtyp; BRAF p.V600E nachweisbar.']);
+  else if(selected('broad_pan_panel'))keep.push(['Breites NGS · RAS/BRAF','Extended RAS (KRAS/NRAS) Wildtyp; BRAF p.V600E nachweisbar.']);
+  if(selected('ras_panel_crc'))keep.push(['Extended RAS','KRAS/NRAS Wildtyp']);
+  else if(!viaNgs()&&selected('kras_exon2_only'))keep.push(['KRAS Exon 2','Wildtyp, aber kein vollständiger Extended-RAS-Status.']);
+  if(selected('braf_v600e_crc'))keep.push(['BRAF p.V600E · qPCR','BRAF p.V600E nachweisbar']);
   if(selected('mmr_ihc'))keep.push(['MMR-IHC','MLH1/PMS2-Verlust; MSH2/MSH6 erhalten; interne Positivkontrollen intakt.']);
   if(selected('msi_pcr_ngs'))keep.push(['MSI-NGS (9 Loci)','MSI-H; 7/9 Loci instabil.']);
   if(selected('mlh1_methylation')||selected('methylation_mlh1'))keep.push(['MLH1-Promotor-Methylierung','Nachgewiesen / positiv.']);
@@ -235,7 +246,7 @@ renderMtb=function(){const html=PREV_MTB.apply(this,arguments);if(!active()||!re
 function styles(){
   if(document.getElementById('crc1FlagshipStyles'))return;
   const st=document.createElement('style');st.id='crc1FlagshipStyles';st.textContent=`
-  #v20bVersion{font-size:0!important}#v20bVersion::after{content:'v2.4.0z14'!important;font-size:.72rem!important;line-height:1.1}
+  #v20bVersion{font-size:0!important}#v20bVersion::after{content:'v2.4.0z14a'!important;font-size:.72rem!important;line-height:1.1}
   .crc1-opening{border:1px solid #9bc8d7;border-radius:18px;background:linear-gradient(135deg,#eef9ff,#fff);padding:15px 17px;margin:10px 0 14px;box-shadow:0 8px 22px rgba(15,76,117,.07)}
   .crc1-block{border:1px solid var(--line);border-radius:18px;background:#fff;padding:14px;margin:14px 0;box-shadow:0 8px 22px rgba(15,35,55,.045)}
   .crc1-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:10px}.crc1-head h4{margin:0;color:var(--primary)}
@@ -259,5 +270,5 @@ const PREV_I18N_AFTER=window.MolPathI18nAfterApply;
 window.MolPathI18nAfterApply=function(l){try{if(typeof PREV_I18N_AFTER==='function')PREV_I18N_AFTER(l)}catch(_){}applyCaseLogic();stamp()};
 function boot(){styles();applyCaseLogic();stamp();try{if(typeof render==='function')render()}catch(err){console.error(CRC1_VERSION+' CRC001 flagship boot failed',err)}setTimeout(stamp,100)}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot,{once:true});else setTimeout(boot,0);
-window.MolPathCRC001Flagship=Object.freeze({version:CRC1_VERSION,base:'v2.4.0z13a',caseId:CRC1_CASE,assetCount:9,patient:'58F, sigmoid/left-sided, multiple liver metastases',molecularMaterial:'liver metastasis FFPE',rasBrafEquivalence:['ras_panel_crc + braf_v600e_crc','colon_ngs_panel','broad_pan_panel'],testGated:['mmr_ihc','ras_panel_crc|colon_ngs_panel|broad_pan_panel','braf_v600e_crc|colon_ngs_panel|broad_pan_panel','msi_pcr_ngs','mlh1_methylation']});
+window.MolPathCRC001Flagship=Object.freeze({version:CRC1_VERSION,base:'v2.4.0z14',caseId:CRC1_CASE,assetCount:10,patient:'58F, sigmoid/left-sided, multiple liver metastases',molecularMaterial:'liver metastasis FFPE',rasBrafEquivalence:['ras_panel_crc + braf_v600e_crc','colon_ngs_panel','broad_pan_panel'],testGated:['mmr_ihc','ras_panel_crc|colon_ngs_panel|broad_pan_panel','braf_v600e_crc|colon_ngs_panel|broad_pan_panel','msi_pcr_ngs','mlh1_methylation']});
 })();

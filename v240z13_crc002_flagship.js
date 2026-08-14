@@ -1,10 +1,10 @@
-/* MolPath Simulator v2.4.0z13a — MTB_CRC_002 Flagship duplicate-evidence hotfix
+/* MolPath Simulator v2.4.0z14a — MTB_CRC_002 NGS/BRAF equivalence hotfix
    Base: v2.4.0z12
    Scope: MTB_CRC_002 only. Progressive, test-dependent evidence; no global workflow changes.
 */
 (function(){
 'use strict';
-const CRC2_VERSION='v2.4.0z13a';
+const CRC2_VERSION='v2.4.0z14a';
 const CRC2_CASE='MTB_CRC_002_v1_3';
 const CRC2_ASSETS=Object.freeze({
   referral:'assets/mtb_crc_002/referral_pink_001.png',
@@ -14,13 +14,16 @@ const CRC2_ASSETS=Object.freeze({
   mmr:'assets/mtb_crc_002/mmr_ihc_panel_001.png',
   msi:'assets/mtb_crc_002/msi_ngs_9loci_001.png',
   mlh1:'assets/mtb_crc_002/mlh1_methylation_qmsp_001.png',
-  braf:'assets/mtb_crc_002/braf_v600e_qpcr_001.png'
+  braf:'assets/mtb_crc_002/braf_v600e_qpcr_001.png',
+  ngsBraf:'assets/mtb_crc_002/colon_ngs_braf_001.png'
 });
 window.MolPathCRC002FlagshipAssets=CRC2_ASSETS;
 
 function active(){try{return !!activeCase&&activeCase.id===CRC2_CASE}catch(_){return false}}
 function caseObj(){try{return cases.find(c=>c.id===CRC2_CASE)||null}catch(_){return null}}
 function selected(id){try{return !!state?.selected?.has(id)}catch(_){return false}}
+function viaNgs(){return selected('colon_ngs_panel')||selected('broad_pan_panel')}
+function hasBraf(){return selected('braf_v600e_crc')||viaNgs()}
 function reportReady(){try{return !!state?.report}catch(_){return false}}
 function complete(){try{return !!caseIsComplete()}catch(_){return !!state?.finalized}}
 function esc2(v){try{return esc(v==null?'':String(v))}catch(_){return String(v==null?'':v)}}
@@ -39,7 +42,7 @@ const COPY={
   histo:'Digitale Histologie',heOverview:'HE Übersicht',heZoom:'HE Zoom / repräsentatives Tumorareal',histoNote:'Der Zoom stammt aus dem markierten Tumorareal der Übersicht. MMR-IHC ist an dieser Stelle noch kein vorweggenommenes Ergebnis.',
   material:'Material / Präanalytik',materialText:'FFPE-Resektat mit repräsentativem Tumorareal und ausreichendem Tumoranteil. Material reicht für MMR-IHC sowie gezielte molekulare Reflexdiagnostik; unnötige Zusatztests sollen vermieden werden.',
   task:'Decision Task',taskText:'Welche Diagnostik benötigen Sie, um MMR/MSI-Status, die mögliche sporadische MLH1-Inaktivierung und die Lynch-Frage fachlich sauber zu trennen?',
-  evidence:'Assay Evidence / Originalansichten',mmr:'MMR-IHC 4er-Panel',msi:'MSI-NGS · 9-Locus-Report',mlh1:'MLH1-Promotor-Methylierung · qMSP / Schmelzkurve',braf:'BRAF p.V600E · qPCR',
+  evidence:'Assay Evidence / Originalansichten',mmr:'MMR-IHC 4er-Panel',msi:'MSI-NGS · 9-Locus-Report',mlh1:'MLH1-Promotor-Methylierung · qMSP / Schmelzkurve',braf:'BRAF p.V600E · qPCR',brafNgs:'Colon-/GI-NGS · BRAF/RAS',
   noSpecific:'Für die gewählten Tests liegt kein spezifischer Premium-Snapshot vor.',synthetic:'Synthetisches Trainingsasset · educational only · keine realen Patientendaten',
   integration:'Flagship Integration',fullOutcome:'MLH1/PMS2-Verlust + MSI-H (7/9 instabile Loci) + nachweisbare MLH1-Promotor-Methylierung + BRAF p.V600E stützen in dieser Fallkonstellation stark eine sporadische MLH1-Inaktivierung. Ein Lynch-Syndrom wird durch die IHC nicht bewiesen; eine humangenetische Abklärung richtet sich nach verbleibendem klinischem/Familienverdacht.',
   partialOutcome:'Die ätiologische Einordnung ist noch unvollständig. Fehlende MMR/MSI- bzw. Reflexbausteine müssen vor einer Aussage „sporadisch“ oder „Lynch“ ergänzt werden.',
@@ -52,7 +55,7 @@ const COPY={
   histo:'Digital histology',heOverview:'H&E overview',heZoom:'H&E zoom / representative tumour area',histoNote:'The zoom is derived from the marked tumour area in the overview. MMR IHC is not pre-revealed at this stage.',
   material:'Material / preanalytics',materialText:'FFPE resection with a representative tumour area and adequate tumour fraction. Material is sufficient for MMR IHC and targeted molecular reflex testing; unnecessary add-on tests should be avoided.',
   task:'Decision task',taskText:'Which diagnostics are required to separate MMR/MSI status, possible sporadic MLH1 inactivation and the Lynch question correctly?',
-  evidence:'Assay evidence / original views',mmr:'MMR IHC four-marker panel',msi:'MSI NGS · 9-locus report',mlh1:'MLH1 promoter methylation · qMSP / melt curve',braf:'BRAF p.V600E · qPCR',
+  evidence:'Assay evidence / original views',mmr:'MMR IHC four-marker panel',msi:'MSI NGS · 9-locus report',mlh1:'MLH1 promoter methylation · qMSP / melt curve',braf:'BRAF p.V600E · qPCR',brafNgs:'Colon-/GI-NGS · BRAF/RAS',
   noSpecific:'No specific premium snapshot is available for the selected tests.',synthetic:'Synthetic training asset · educational only · no real patient data',
   integration:'Flagship integration',fullOutcome:'MLH1/PMS2 loss + MSI-H (7/9 unstable loci) + detectable MLH1 promoter methylation + BRAF p.V600E strongly support sporadic MLH1 inactivation in this case. Lynch syndrome is not proven by IHC; germline evaluation depends on any remaining clinical or family-history suspicion.',
   partialOutcome:'The aetiologic classification remains incomplete. Missing MMR/MSI or reflex components must be added before calling the case “sporadic” or “Lynch”.',
@@ -65,7 +68,7 @@ const COPY={
   histo:'Histologie digitală',heOverview:'HE – vedere de ansamblu',heZoom:'HE – zoom / zonă tumorală reprezentativă',histoNote:'Zoom-ul provine din zona tumorală marcată în imaginea de ansamblu. Rezultatul MMR-IHC nu este dezvăluit anticipat.',
   material:'Material / preanalitic',materialText:'Rezecție FFPE cu zonă tumorală reprezentativă și fracție tumorală adecvată. Material suficient pentru MMR-IHC și testare moleculară reflex țintită.',
   task:'Sarcina decizională',taskText:'Ce teste sunt necesare pentru a separa corect statusul MMR/MSI, o posibilă inactivare sporadică MLH1 și întrebarea Lynch?',
-  evidence:'Dovezi de assay / vizualizări originale',mmr:'Panel MMR-IHC cu 4 markeri',msi:'MSI-NGS · raport 9 loci',mlh1:'Metilarea promotorului MLH1 · qMSP / curbă de topire',braf:'BRAF p.V600E · qPCR',
+  evidence:'Dovezi de assay / vizualizări originale',mmr:'Panel MMR-IHC cu 4 markeri',msi:'MSI-NGS · raport 9 loci',mlh1:'Metilarea promotorului MLH1 · qMSP / curbă de topire',braf:'BRAF p.V600E · qPCR',brafNgs:'Colon-/GI-NGS · BRAF/RAS',
   noSpecific:'Nu există un snapshot premium specific pentru testele selectate.',synthetic:'Asset sintetic de instruire · doar educațional · fără date reale de pacient',
   integration:'Integrare flagship',fullOutcome:'Pierderea MLH1/PMS2 + MSI-H (7/9 loci instabile) + metilarea promotorului MLH1 detectabilă + BRAF p.V600E susțin puternic o inactivare sporadică MLH1 în acest caz. Sindromul Lynch nu este demonstrat doar prin IHC.',
   partialOutcome:'Clasificarea etiologică este încă incompletă. Componentele MMR/MSI sau reflex lipsă trebuie completate înainte de o concluzie „sporadic” sau „Lynch”.',
@@ -78,7 +81,7 @@ const COPY={
   histo:'Ψηφιακή ιστολογία',heOverview:'HE επισκόπηση',heZoom:'HE zoom / αντιπροσωπευτική περιοχή όγκου',histoNote:'Το zoom προέρχεται από τη σημειωμένη περιοχή όγκου της επισκόπησης. Το αποτέλεσμα MMR-IHC δεν αποκαλύπτεται προκαταβολικά.',
   material:'Υλικό / προαναλυτική φάση',materialText:'FFPE εκτομή με αντιπροσωπευτική περιοχή όγκου και επαρκές ποσοστό όγκου. Το υλικό επαρκεί για MMR-IHC και στοχευμένο reflex μοριακό έλεγχο.',
   task:'Decision task',taskText:'Ποια διαγνωστικά βήματα απαιτούνται για σωστό διαχωρισμό MMR/MSI, πιθανής σποραδικής αδρανοποίησης MLH1 και του ερωτήματος Lynch;',
-  evidence:'Assay evidence / πρωτογενείς προβολές',mmr:'MMR-IHC panel 4 δεικτών',msi:'MSI-NGS · αναφορά 9 loci',mlh1:'Μεθυλίωση προαγωγέα MLH1 · qMSP / καμπύλη τήξης',braf:'BRAF p.V600E · qPCR',
+  evidence:'Assay evidence / πρωτογενείς προβολές',mmr:'MMR-IHC panel 4 δεικτών',msi:'MSI-NGS · αναφορά 9 loci',mlh1:'Μεθυλίωση προαγωγέα MLH1 · qMSP / καμπύλη τήξης',braf:'BRAF p.V600E · qPCR',brafNgs:'Colon-/GI-NGS · BRAF/RAS',
   noSpecific:'Δεν υπάρχει ειδικό premium snapshot για τις επιλεγμένες εξετάσεις.',synthetic:'Συνθετικό εκπαιδευτικό asset · μόνο για εκπαίδευση · χωρίς πραγματικά δεδομένα ασθενών',
   integration:'Flagship integration',fullOutcome:'Απώλεια MLH1/PMS2 + MSI-H (7/9 ασταθή loci) + ανιχνεύσιμη μεθυλίωση του προαγωγέα MLH1 + BRAF p.V600E υποστηρίζουν ισχυρά σποραδική αδρανοποίηση MLH1 σε αυτή την περίπτωση. Το σύνδρομο Lynch δεν αποδεικνύεται μόνο από την IHC.',
   partialOutcome:'Η αιτιολογική ταξινόμηση παραμένει ελλιπής. Τα ελλείποντα MMR/MSI ή reflex στοιχεία πρέπει να συμπληρωθούν πριν χαρακτηριστεί η περίπτωση «σποραδική» ή «Lynch».',
@@ -91,7 +94,7 @@ const COPY={
   histo:'Histología digital',heOverview:'HE – visión general',heZoom:'HE – zoom / área tumoral representativa',histoNote:'El zoom procede del área tumoral marcada en la imagen general. El resultado de MMR-IHC no se adelanta en este momento.',
   material:'Material / preanalítica',materialText:'Resección FFPE con área tumoral representativa y fracción tumoral adecuada. Material suficiente para MMR-IHC y pruebas moleculares reflejas dirigidas.',
   task:'Tarea de decisión',taskText:'¿Qué pruebas se necesitan para separar correctamente el estado MMR/MSI, una posible inactivación esporádica de MLH1 y la cuestión de Lynch?',
-  evidence:'Evidencia del ensayo / vistas originales',mmr:'Panel MMR-IHC de 4 marcadores',msi:'MSI-NGS · informe de 9 loci',mlh1:'Metilación del promotor MLH1 · qMSP / curva de fusión',braf:'BRAF p.V600E · qPCR',
+  evidence:'Evidencia del ensayo / vistas originales',mmr:'Panel MMR-IHC de 4 marcadores',msi:'MSI-NGS · informe de 9 loci',mlh1:'Metilación del promotor MLH1 · qMSP / curva de fusión',braf:'BRAF p.V600E · qPCR',brafNgs:'Colon-/GI-NGS · BRAF/RAS',
   noSpecific:'No existe un snapshot premium específico para las pruebas seleccionadas.',synthetic:'Asset sintético de entrenamiento · solo educativo · sin datos reales de pacientes',
   integration:'Integración flagship',fullOutcome:'La pérdida de MLH1/PMS2 + MSI-H (7/9 loci inestables) + metilación detectable del promotor MLH1 + BRAF p.V600E apoyan fuertemente una inactivación esporádica de MLH1 en este caso. El síndrome de Lynch no queda demostrado por la IHC.',
   partialOutcome:'La clasificación etiológica sigue incompleta. Deben completarse los componentes MMR/MSI o reflejos que falten antes de concluir «esporádico» o «Lynch».',
@@ -104,7 +107,7 @@ const COPY={
   histo:'Histologie numérique',heOverview:'HE – vue d’ensemble',heZoom:'HE – zoom / zone tumorale représentative',histoNote:'Le zoom provient de la zone tumorale marquée sur la vue d’ensemble. Le résultat MMR-IHC n’est pas dévoilé à ce stade.',
   material:'Matériel / pré-analytique',materialText:'Résection FFPE avec zone tumorale représentative et fraction tumorale suffisante. Le matériel permet MMR-IHC et des tests moléculaires réflexes ciblés.',
   task:'Tâche décisionnelle',taskText:'Quels examens sont nécessaires pour distinguer correctement le statut MMR/MSI, une éventuelle inactivation sporadique de MLH1 et la question Lynch ?',
-  evidence:'Données d’assay / vues originales',mmr:'Panel MMR-IHC 4 marqueurs',msi:'MSI-NGS · rapport 9 loci',mlh1:'Méthylation du promoteur MLH1 · qMSP / courbe de fusion',braf:'BRAF p.V600E · qPCR',
+  evidence:'Données d’assay / vues originales',mmr:'Panel MMR-IHC 4 marqueurs',msi:'MSI-NGS · rapport 9 loci',mlh1:'Méthylation du promoteur MLH1 · qMSP / courbe de fusion',braf:'BRAF p.V600E · qPCR',brafNgs:'Colon-/GI-NGS · BRAF/RAS',
   noSpecific:'Aucun snapshot premium spécifique n’est disponible pour les tests sélectionnés.',synthetic:'Asset synthétique d’entraînement · usage éducatif uniquement · aucune donnée réelle de patient',
   integration:'Intégration flagship',fullOutcome:'Perte MLH1/PMS2 + MSI-H (7/9 loci instables) + méthylation détectable du promoteur MLH1 + BRAF p.V600E soutiennent fortement une inactivation sporadique de MLH1 dans ce cas. Le syndrome de Lynch n’est pas prouvé par l’IHC seule.',
   partialOutcome:'La classification étiologique reste incomplète. Les éléments MMR/MSI ou réflexes manquants doivent être complétés avant de conclure « sporadique » ou « Lynch ».',
@@ -129,11 +132,13 @@ function assayEvidence(){
   if(selected('mmr_ihc'))out.push(asset(T().mmr,CRC2_ASSETS.mmr,'wide'));
   if(selected('msi_pcr_ngs'))out.push(asset(T().msi,CRC2_ASSETS.msi,'wide'));
   if(selected('mlh1_methylation')||selected('methylation_mlh1'))out.push(asset(T().mlh1,CRC2_ASSETS.mlh1,'wide'));
+  if(selected('colon_ngs_panel'))out.push(asset(T().brafNgs||'Colon-/GI-NGS · BRAF/RAS',CRC2_ASSETS.ngsBraf,'wide'));
+  /* broad_pan_panel also satisfies BRAF, but does not reuse a Colon-/GI-specific screenshot. */
   if(selected('braf_v600e_crc'))out.push(asset(T().braf,CRC2_ASSETS.braf,'wide'));
   if(!out.length)return `<div class="crc2-block"><div class="crc2-head"><h4>${esc2(T().evidence)}</h4></div><div class="crc2-note">${esc2(T().noSpecific)}</div></div>`;
   return `<div class="crc2-block"><div class="crc2-head"><h4>${esc2(T().evidence)}</h4><span class="crc2-pill ok">TEST-GATED</span></div><div class="crc2-grid crc2-grid-results">${out.join('')}</div></div>`;
 }
-function allCoreDone(){return selected('mmr_ihc')&&selected('msi_pcr_ngs')&&(selected('mlh1_methylation')||selected('methylation_mlh1'))&&selected('braf_v600e_crc')}
+function allCoreDone(){return selected('mmr_ihc')&&selected('msi_pcr_ngs')&&(selected('mlh1_methylation')||selected('methylation_mlh1'))&&hasBraf()}
 function integrationBox(){const full=allCoreDone();return `<div class="crc2-integration ${full?'full':'partial'}"><h4>${esc2(T().integration)}</h4><p>${esc2(full?T().fullOutcome:T().partialOutcome)}</p><div class="crc2-key"><b>${esc2(T().key)}:</b> ${esc2(T().keyText)}</div></div>`}
 
 function applyCaseLogic(){
@@ -142,13 +147,13 @@ function applyCaseLogic(){
     {id:'mmr',label:'MMR-IHC',tests:['mmr_ihc'],suggest:'mmr_ihc'},
     {id:'msi',label:'MSI-NGS',tests:['msi_pcr_ngs'],suggest:'msi_pcr_ngs'},
     {id:'mlh1',label:'MLH1 promoter methylation',tests:['mlh1_methylation','methylation_mlh1'],suggest:'mlh1_methylation'},
-    {id:'braf',label:'BRAF p.V600E',tests:['braf_v600e_crc'],suggest:'braf_v600e_crc'}
+    {id:'braf',label:'BRAF p.V600E',tests:['braf_v600e_crc','colon_ngs_panel','broad_pan_panel'],suggest:'braf_v600e_crc'}
   ];
   c.result_sections=[
     {label:'MMR-IHC',test_any:['mmr_ihc'],result:'MLH1/PMS2 loss; MSH2/MSH6 retained; internal positive controls intact.'},
     {label:'MSI-NGS (9 loci)',test_any:['msi_pcr_ngs'],result:'MSI-H; 7/9 loci unstable.'},
     {label:'MLH1 promoter methylation',test_any:['mlh1_methylation','methylation_mlh1'],result:'MLH1 promoter methylation detected / positive.'},
-    {label:'BRAF p.V600E',test_any:['braf_v600e_crc'],result:'BRAF p.V600E detected / positive.'}
+    {label:'BRAF p.V600E',test_any:['braf_v600e_crc','colon_ngs_panel','broad_pan_panel'],result:'BRAF p.V600E detected / positive.'}
   ];
   c.always_findings=[['QC','All performed assays meet the case-specific quality criteria; internal controls are valid.']];
   c.complete_interpretation=T().fullOutcome;
@@ -172,7 +177,7 @@ missingTests=function(){
   if(!selected('mmr_ihc'))miss.push('mmr_ihc');
   if(!selected('msi_pcr_ngs'))miss.push('msi_pcr_ngs');
   if(!(selected('mlh1_methylation')||selected('methylation_mlh1')))miss.push('mlh1_methylation');
-  if(!selected('braf_v600e_crc'))miss.push('braf_v600e_crc');
+  if(!hasBraf())miss.push('braf_v600e_crc|colon_ngs_panel|broad_pan_panel');
   return miss;
 };
 
@@ -231,7 +236,9 @@ buildReport=function(){
   if(selected('mmr_ihc'))keep.push(['MMR-IHC','MLH1/PMS2 loss; MSH2/MSH6 retained; internal controls positive.']);
   if(selected('msi_pcr_ngs'))keep.push(['MSI-NGS (9 loci)','MSI-H; 7/9 loci unstable.']);
   if(selected('mlh1_methylation')||selected('methylation_mlh1'))keep.push(['MLH1 promoter methylation','Detected / positive.']);
-  if(selected('braf_v600e_crc'))keep.push(['BRAF p.V600E','Detected / positive.']);
+  if(selected('colon_ngs_panel'))keep.push(['Colon-/GI-NGS · RAS/BRAF','BRAF p.V600E detected / positive; KRAS/NRAS wild type.']);
+  else if(selected('broad_pan_panel'))keep.push(['Breites NGS · BRAF/RAS','BRAF p.V600E detected / positive; KRAS/NRAS wild type.']);
+  if(selected('braf_v600e_crc'))keep.push(['BRAF p.V600E · qPCR','Detected / positive.']);
   keep.push(['QC','Performed assays technically valid; assay-specific controls passed.']);
   out.findings=keep;
   out.kind=missingTests().length?'partial':'complete';
@@ -275,7 +282,7 @@ renderMtb=function(){
 function styles(){
   if(document.getElementById('crc2FlagshipStyles'))return;
   const st=document.createElement('style');st.id='crc2FlagshipStyles';st.textContent=`
-  #v20bVersion{font-size:0!important}#v20bVersion::after{content:'v2.4.0z13a'!important;font-size:.72rem!important;line-height:1.1}
+  #v20bVersion{font-size:0!important}#v20bVersion::after{content:'v2.4.0z14a'!important;font-size:.72rem!important;line-height:1.1}
   .crc2-opening{border:1px solid #9bc8d7;border-radius:18px;background:linear-gradient(135deg,#eef9ff,#fff);padding:15px 17px;margin:10px 0 14px;box-shadow:0 8px 22px rgba(15,76,117,.07)}
   .crc2-block{border:1px solid var(--line);border-radius:18px;background:#fff;padding:14px;margin:14px 0;box-shadow:0 8px 22px rgba(15,35,55,.045)}
   .crc2-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:10px}.crc2-head h4{margin:0;color:var(--primary)}
@@ -304,5 +311,5 @@ window.MolPathI18nAfterApply=function(l){try{if(typeof PREV_I18N_AFTER==='functi
 function boot(){styles();applyCaseLogic();stamp();try{if(typeof render==='function')render()}catch(err){console.error(CRC2_VERSION+' CRC002 flagship boot failed',err)}setTimeout(stamp,100)}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot,{once:true});else setTimeout(boot,0);
 
-window.MolPathCRC002Flagship=Object.freeze({version:CRC2_VERSION,base:'v2.4.0z12',caseId:CRC2_CASE,assetCount:8,testGated:['mmr_ihc','msi_pcr_ngs','mlh1_methylation','braf_v600e_crc']});
+window.MolPathCRC002Flagship=Object.freeze({version:CRC2_VERSION,base:'v2.4.0z14',caseId:CRC2_CASE,assetCount:9,testGated:['mmr_ihc','msi_pcr_ngs','mlh1_methylation','braf_v600e_crc|colon_ngs_panel|broad_pan_panel']});
 })();

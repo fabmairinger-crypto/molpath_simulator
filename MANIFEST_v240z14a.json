@@ -1,0 +1,54 @@
+{
+  "version": "v2.4.0z14a",
+  "base_version": "v2.4.0z14",
+  "type": "patch-only",
+  "scope": [
+    "MTB_CRC_001 NGS evidence",
+    "MTB_CRC_002 BRAF/NGS equivalence"
+  ],
+  "changed_runtime_files": [
+    "v3/v240z14_crc001_flagship.js",
+    "v3/v240z13_crc002_flagship.js"
+  ],
+  "new_assets": [
+    "v3/assets/mtb_crc_001/colon_ngs_ras_braf_001.png",
+    "v3/assets/mtb_crc_002/colon_ngs_braf_001.png"
+  ],
+  "files": [
+    {
+      "path": "v3/CHANGELOG_v240z14a.md",
+      "bytes": 1400,
+      "sha256": "7ca49806899133b129c79cfe2e36b09e983226b0366529337673db2a881dfe7f"
+    },
+    {
+      "path": "v3/QA_REPORT_v240z14a.md",
+      "bytes": 1226,
+      "sha256": "a98119aa44d2a5c276dedccf9205376c7aab433e13323c99e364f3eab9629e3d"
+    },
+    {
+      "path": "v3/QA_RUNTIME_RESULTS_v240z14a.json",
+      "bytes": 4214,
+      "sha256": "c7010e3e603f24fe304af1b95fc4fc3e6f4f882665d6bc90b56ed04f8d794ab5"
+    },
+    {
+      "path": "v3/assets/mtb_crc_001/colon_ngs_ras_braf_001.png",
+      "bytes": 1683519,
+      "sha256": "ce4b7db2f71123de841570ef67b18dcde1e15ed4b8be93f0e72a524a678e8e70"
+    },
+    {
+      "path": "v3/assets/mtb_crc_002/colon_ngs_braf_001.png",
+      "bytes": 1596896,
+      "sha256": "aa15dd78fb5ac181586745fd0963b187a72f0d035df6396cedbf8a8ef40732db"
+    },
+    {
+      "path": "v3/v240z13_crc002_flagship.js",
+      "bytes": 35295,
+      "sha256": "418400a04e7ba8c027db8cdc4921a7da71eec42b73b3ab9b54145564f5f3a995"
+    },
+    {
+      "path": "v3/v240z14_crc001_flagship.js",
+      "bytes": 45378,
+      "sha256": "90900dcf0d10488a1f12728cc18d4c0574362e22e2ee3fdfbf9a815c1eb63eff"
+    }
+  ]
+}
