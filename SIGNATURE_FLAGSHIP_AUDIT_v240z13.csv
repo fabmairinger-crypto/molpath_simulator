@@ -1,0 +1,16 @@
+﻿case_id,domain,title,minutes,gates,context_cards,pre_results,result_packages,twist,effective_signature_flag,premium_status,static_assets,batch
+MTB_NSCLC_001_v0_6,MTB,"Metastasiertes Lungenadenokarzinom, kleine Biopsie: vollständige prädiktive Diagnostik ohne Materialverschwendung",12-15,3,4,3,3,True,True,Flagship complete,8,reference
+MTB_NSCLC_002_v1_3,MTB,EGFR-mutiertes NSCLC mit Progress unter Osimertinib: negative Liquid Biopsy richtig einordnen,20-30,4,4,3,3,True,True,Deep Dive ready · premium pending,0,B02 · NSCLC resistance + liquid biopsy
+MTB_CRC_001_v0_6,MTB,mCRC: RAS/BRAF/MMR/MSI vor Systemtherapie,12-15,3,3,1,3,True,True,Flagship batch 01,4,B01
+MTB_CRC_002_v1_3,MTB,Kolorektales Karzinom mit MLH1/PMS2-Verlust: Reflexdiagnostik statt vorschnellem Lynch-Label,12-15,3,3,3,3,True,True,Flagship batch 01,3,B01
+MTB_OVAR_001_v0_7,MTB,"HGSOC mit alter BRCA1-Variante: FFPE-Artefakt, Liquid Biopsy und PARP-Kontext",18-25,4,3,2,3,True,True,Deep Dive ready · premium pending,0,B03 · HGSOC HRD/BRCA
+MTB_OVAR_002_v1_3,MTB,"HGSOC mit BRCA2-VUS: PARP-Wunsch, Evidenzgrenzen und Keimbahnkommunikation",20-30,4,4,3,3,True,True,Deep Dive ready · premium pending,0,B03 · HGSOC BRCA-VUS
+MTB_IO_001_v1_0,MTB,"dMMR/MSI-H Endometriumkarzinom: Immunescape, IO und Lynch-Kontext",12-15,3,3,1,3,True,True,Deep Dive ready · premium pending,0,B04 · immune phenotype / Lynch context
+MTB_CNS_001_v1_0,MTB,"Glioblastom vor Therapieentscheidung: IDH, MGMT und Methylierung richtig integrieren",15–18,3,4,4,3,True,True,Deep Dive ready · premium pending,0,B04 · CNS integrated biomarkers
+MET_NGS_003_v1_0,MTB / Methoden,Das gelbe „potential target“,11–14,4,3,3,3,True,False,Deep Dive ready · premium pending,0,B02 · variant interpretation / VUS
+LAB_RUN_002_v0_8,LAB,"Hotspot-Mutation in der Negativkontrolle: Run-Sperre, Ursachenanalyse und CAPA",12-15,3,3,3,3,True,True,Flagship complete,3,reference
+LAB_POST_001_v1_0,LAB,"Pipeline-Version geändert, kein Change-Log: Bioinformatik-QM und Impact-Analyse",20-30,4,4,3,3,True,True,Deep Dive ready · premium pending,0,B05 · bioinformatics QM
+LAB_DOC_001_v1_0,LAB,"‚PCR wie immer gemacht‘: analytisch valide, trotzdem ein QM-Fall",12–15,4,4,4,4,True,True,Deep Dive ready · premium pending,0,B05 · documentation / audit trail
+RES_HYP_001_v0_9,RES,Wir messen mal alles: aus Omics-Idee eine prüfbare translationale Hypothese bauen,12-15,4,4,3,3,True,True,Deep Dive ready · premium pending,0,B06 · hypothesis architecture
+RES_OMICS_001_v1_0,RES,"200 DEGs, ein Biomarker? Vom RNA-Seq-Signal zur belastbaren Resistenzhypothese",18–22,4,4,4,4,True,True,Flagship complete,5,reference
+RES_ETH_001_v1_0,RES,120 Archivblöcke und keine klare Einwilligung: Darf das Projekt starten?,18–22,4,5,4,4,True,True,Deep Dive ready · premium pending,0,B06 · research ethics / consent
