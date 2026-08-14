@@ -1,0 +1,29 @@
+MolPath Simulator v2.4.0z6 — RES R5 patch-only
+
+Base: v2.4.0z5
+Changed files:
+- index.html
+- CHANGELOG_v240z6.md
+- MANIFEST_v240z6.txt
+
+Deep Dive additions:
+- RES_GRANT_001_v1_3
+- RES_IMPL_001_v1_3
+- RES_TEAM_001_v1_3
+
+Expected status after patch:
+- RES Deep Dive: 22/22
+- Total Deep Dive: 91/91
+- Signature Cases: 15/15
+- RES content freeze: yes
+- RES translations: pending
+
+QA:
+- base case count: 91
+- all three target case IDs present: yes
+- all R5 deep dives is_signature_case=false: yes
+- Node.js syntax check: ok
+- registered Deep Dive IDs after all blocks: 91 unique / 91 cases
+- canonical Signature ID set: 15; no R5 case added
+- R5 block occurrence: exactly 1
+- index.html SHA256: 6772eff96f55481e1ac3c384a8247a3239444bee124529af5a902ebe6b681064
