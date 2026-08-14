@@ -1,0 +1,22 @@
+MolPath Simulator v2.4.0z5 — Patch-only
+Basis: v2.4.0z4
+
+FILES
+- index.html
+- CHANGELOG_v240z5.md
+- MANIFEST_v240z5.txt
+
+RES DEEP DIVE R4
+- RES_PM_001_v1_3
+- RES_PM_002_v1_3
+- RES_ROLE_001_v1_3
+
+STATUS
+- RES Deep Dive: 19/22
+- Total Deep Dive: 88/91
+- Remaining RES: 3
+- Signature: 15/15 unchanged
+- Languages: DE master content for R1-R4; translations deferred
+
+SHA256 index.html
+e00dc915413107193a451874d2c12921fcd804f0d0e0e4e5804be447fc0e410f
