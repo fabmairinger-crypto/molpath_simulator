@@ -1,3 +1,22 @@
+# CHANGELOG – MolPath Simulator v2.5.0a
+
+## i18n Core Refactor
+
+Base: **v2.4.0z21**
+
+- Central language registry in `i18n/languages.js` with `code`, `label`, `dir`, and locale file.
+- One core locale file per DE/EN/RO/EL/ES/FR; German is explicit source/fallback.
+- Legacy feature-local six-language UI copy maps were moved into per-language locale namespaces; no multilingual `COPY` map remains in `index.html`.
+- Core `DICT` removed from `index.html`; index now bootstraps i18n through `languages.js`.
+- Curated legacy translation payloads moved byte-equivalently to `i18n/legacy/` while preserving runtime order and hooks.
+- Central `lang`/`dir` handling and RTL-ready language model.
+- `window.MolPathI18nQA.run()` added for missing-key/fallback checks.
+- No case/scoring/assets/content changes; responsive z21 CSS preserved.
+
+Full details: `CHANGELOG_v2_5_0a.md`.
+
+---
+
 # CHANGELOG – MolPath Simulator v2.4.0n
 
 ## A2 CRC Deep-Dive expansion

@@ -1,0 +1,497 @@
+{
+  "version": "v2.5.0a",
+  "base": "v2.4.0z21",
+  "date": "2026-08-17",
+  "audit": {
+    "baseline_index_bytes": 15761080,
+    "baseline_core_dict_keys_per_target": 105,
+    "baseline_inline_translation_blocks_externalized": 29,
+    "baseline_existing_i18n_directory_files": [
+      "I18N_FULL_TEXT_AUDIT_v2_2_1.md",
+      "README_i18n_v2_2_1.md",
+      "i18n_coverage_v2_2_1.csv",
+      "i18n_glossary_v2_2_1.json",
+      "i18n_key_registry_v2_2_1.csv",
+      "i18n_key_registry_v2_2_1.json",
+      "i18n_message_catalog_v2_2_1.json"
+    ],
+    "translation_mechanisms": [
+      "core source-string DICT",
+      "ADDITIONS merges",
+      "EXACT/context dictionaries",
+      "MolPathI18nResolve",
+      "method-catalog patch",
+      "curated PAYLOAD.de/PAYLOAD.languages",
+      "Signature/Deep-Dive source/localized payloads",
+      "MTB/LAB/RES completion dictionaries"
+    ]
+  },
+  "legacy_payload_extraction_exact": {
+    "i18n/legacy/legacy_v223_v224_runtime.js": {
+      "status": "PASS",
+      "blocks": [
+        [
+          "molpathTranslationRegistryMeta",
+          "PASS"
+        ],
+        [
+          "v223-clean-translation-additions",
+          "PASS"
+        ],
+        [
+          "v224a-translation-quarantine-meta",
+          "PASS"
+        ],
+        [
+          "v224b-i18n-blocks01-03-integration",
+          "PASS"
+        ],
+        [
+          "v224c-ui-residue-translation-patch",
+          "PASS"
+        ],
+        [
+          "v224d1-method-catalog-translation-patch",
+          "PASS"
+        ],
+        [
+          "v224e1_nsclc_interaction_hotfix",
+          "PASS"
+        ],
+        [
+          "v224f_nsclc_deepdive02_translation",
+          "PASS"
+        ],
+        [
+          "v224g_crc_deepdive03_translation",
+          "PASS"
+        ],
+        [
+          "v224h_hgsoc_deepdive04_translation",
+          "PASS"
+        ],
+        [
+          "v224i_erbb2_vus_deepdive05_translation",
+          "PASS"
+        ],
+        [
+          "v224j_lab_run_qc_deepdive06_translation",
+          "PASS"
+        ],
+        [
+          "v224k_lab_post_deepdive07_translation",
+          "PASS"
+        ],
+        [
+          "v224l_res_hyp_deepdive08_translation",
+          "PASS"
+        ],
+        [
+          "v224m_crc_deepdive09_translation",
+          "PASS"
+        ],
+        [
+          "v224n_ovar_deepdive10_translation",
+          "PASS"
+        ],
+        [
+          "v224o_io_lynch_deepdive11_translation",
+          "PASS"
+        ],
+        [
+          "v224p_cns_signature01_translation",
+          "PASS"
+        ],
+        [
+          "v224q_lab_doc_signature02_translation",
+          "PASS"
+        ],
+        [
+          "v224r_res_omics_signature03_translation",
+          "PASS"
+        ],
+        [
+          "v224s_res_eth_signature04_translation",
+          "PASS"
+        ]
+      ]
+    },
+    "i18n/legacy/legacy_v230c_signature_deepdive.js": {
+      "status": "PASS",
+      "blocks": [
+        [
+          "v230cSignatureDeepDiveTranslations",
+          "PASS"
+        ]
+      ]
+    },
+    "i18n/legacy/legacy_v240t_signature_i18n.js": {
+      "status": "PASS",
+      "blocks": [
+        [
+          "v240t_final_signature_i18n",
+          "PASS"
+        ]
+      ]
+    },
+    "i18n/legacy/legacy_v240z_lab_i18n.js": {
+      "status": "PASS",
+      "blocks": [
+        [
+          "v240z_lab_qm_i18n_completion",
+          "PASS"
+        ]
+      ]
+    },
+    "i18n/legacy/legacy_v240z7_res_t1_i18n.js": {
+      "status": "PASS",
+      "blocks": [
+        [
+          "v240z7_res_t1_i18n",
+          "PASS"
+        ]
+      ]
+    },
+    "i18n/legacy/legacy_v240z8_res_t2_i18n.js": {
+      "status": "PASS",
+      "blocks": [
+        [
+          "v240z8_res_t2_i18n",
+          "PASS"
+        ]
+      ]
+    },
+    "i18n/legacy/legacy_v240z9_res_t3_i18n.js": {
+      "status": "PASS",
+      "blocks": [
+        [
+          "v240z9_res_t3_i18n",
+          "PASS"
+        ]
+      ]
+    },
+    "i18n/legacy/legacy_v240z10_res_t4_i18n.js": {
+      "status": "PASS",
+      "blocks": [
+        [
+          "v240z10_res_t4_i18n",
+          "PASS"
+        ]
+      ]
+    },
+    "i18n/legacy/legacy_v240z10a_res_t4_hotfix.js": {
+      "status": "PASS",
+      "blocks": [
+        [
+          "v240z10a_res_t4_deepdive_i18n_hotfix",
+          "PASS"
+        ]
+      ]
+    }
+  },
+  "index_non_i18n_content_invariant": true,
+  "index_bytes": {
+    "before": 15761080,
+    "after": 4129533,
+    "reduction": 11631547,
+    "reduction_pct": 73.8
+  },
+  "historical_v240z21_shell_unchanged": true,
+  "responsive_css_exact_match_z21": true,
+  "locale_key_counts": {
+    "de": 111,
+    "en": 111,
+    "ro": 111,
+    "el": 111,
+    "es": 111,
+    "fr": 111
+  },
+  "locale_namespace_key_counts": {
+    "de": {
+      "ui230": 12,
+      "v240l": 29
+    },
+    "en": {
+      "ui230": 12,
+      "v240l": 29
+    },
+    "ro": {
+      "ui230": 12,
+      "v240l": 29
+    },
+    "el": {
+      "ui230": 12,
+      "v240l": 29
+    },
+    "es": {
+      "ui230": 12,
+      "v240l": 29
+    },
+    "fr": {
+      "ui230": 12,
+      "v240l": 29
+    }
+  },
+  "german_source_identity": true,
+  "baseline_core_locale_preservation": {
+    "en": true,
+    "ro": true,
+    "el": true,
+    "es": true,
+    "fr": true
+  },
+  "responsive_shell_copy_preservation": {
+    "de": true,
+    "en": true,
+    "ro": true,
+    "el": true,
+    "es": true,
+    "fr": true
+  },
+  "feature_ui_copy_preservation": {
+    "ui230": {
+      "de": true,
+      "en": true,
+      "ro": true,
+      "el": true,
+      "es": true,
+      "fr": true
+    },
+    "v240l": {
+      "de": true,
+      "en": true,
+      "ro": true,
+      "el": true,
+      "es": true,
+      "fr": true
+    }
+  },
+  "registry_entries": [
+    [
+      "de",
+      "Deutsch",
+      "ltr",
+      "de.js"
+    ],
+    [
+      "en",
+      "English",
+      "ltr",
+      "en.js"
+    ],
+    [
+      "ro",
+      "Română",
+      "ltr",
+      "ro.js"
+    ],
+    [
+      "el",
+      "Ελληνικά",
+      "ltr",
+      "el.js"
+    ],
+    [
+      "es",
+      "Español",
+      "ltr",
+      "es.js"
+    ],
+    [
+      "fr",
+      "Français",
+      "ltr",
+      "fr.js"
+    ]
+  ],
+  "index_core_i18n_tags": [
+    "<script src=\"i18n/languages.js\"></script>",
+    "<script src=\"i18n/legacy/legacy_v223_v224_runtime.js\"></script>",
+    "<script src=\"i18n/legacy/legacy_v230c_signature_deepdive.js\"></script>",
+    "<script src=\"i18n/legacy/legacy_v240t_signature_i18n.js\"></script>",
+    "<script src=\"i18n/legacy/legacy_v240z_lab_i18n.js\"></script>",
+    "<script src=\"i18n/legacy/legacy_v240z7_res_t1_i18n.js\"></script>",
+    "<script src=\"i18n/legacy/legacy_v240z8_res_t2_i18n.js\"></script>",
+    "<script src=\"i18n/legacy/legacy_v240z9_res_t3_i18n.js\"></script>",
+    "<script src=\"i18n/legacy/legacy_v240z10_res_t4_i18n.js\"></script>",
+    "<script src=\"i18n/legacy/legacy_v240z10a_res_t4_hotfix.js\"></script>"
+  ],
+  "direct_multilingual_copy_maps_remaining_in_index": 0,
+  "rtl_centralization": {
+    "model_accepts_rtl": true,
+    "html_lang_set": true,
+    "html_dir_set": true,
+    "body_language_attribute_set": true
+  },
+  "referenced_and_bootstrapped_js_syntax": {
+    "i18n/core.js": "PASS",
+    "i18n/de.js": "PASS",
+    "i18n/el.js": "PASS",
+    "i18n/en.js": "PASS",
+    "i18n/es.js": "PASS",
+    "i18n/fr.js": "PASS",
+    "i18n/languages.js": "PASS",
+    "i18n/legacy/legacy_v223_v224_runtime.js": "PASS",
+    "i18n/legacy/legacy_v230c_signature_deepdive.js": "PASS",
+    "i18n/legacy/legacy_v240t_signature_i18n.js": "PASS",
+    "i18n/legacy/legacy_v240z10_res_t4_i18n.js": "PASS",
+    "i18n/legacy/legacy_v240z10a_res_t4_hotfix.js": "PASS",
+    "i18n/legacy/legacy_v240z7_res_t1_i18n.js": "PASS",
+    "i18n/legacy/legacy_v240z8_res_t2_i18n.js": "PASS",
+    "i18n/legacy/legacy_v240z9_res_t3_i18n.js": "PASS",
+    "i18n/legacy/legacy_v240z_lab_i18n.js": "PASS",
+    "i18n/qa.js": "PASS",
+    "i18n/ro.js": "PASS",
+    "v240z13_crc002_flagship.js": "PASS",
+    "v240z14_crc001_flagship.js": "PASS",
+    "v240z15_nsclc002_flagship.js": "PASS",
+    "v240z16_metngs003_flagship.js": "PASS",
+    "v240z17_ovar001_flagship.js": "PASS",
+    "v240z18_ovar002_flagship.js": "PASS",
+    "v240z19_cns001_flagship.js": "PASS",
+    "v240z20_io001_flagship.js": "PASS",
+    "v250a_responsive_shell.js": "PASS"
+  },
+  "inline_js_syntax": {
+    "count": 36,
+    "failures": [],
+    "status": "PASS"
+  },
+  "isolated_runtime_core": {
+    "bootstrap": "<script src=\"file:///app/i18n/de.js\"></script><script src=\"file:///app/i18n/en.js\"></script><script src=\"file:///app/i18n/ro.js\"></script><script src=\"file:///app/i18n/el.js\"></script><script src=\"file:///app/i18n/es.js\"></script><script src=\"file:///app/i18n/fr.js\"></script><script src=\"file:///app/i18n/core.js\"></script><script src=\"file:///app/i18n/qa.js\"></script>",
+    "codes": [
+      "de",
+      "en",
+      "ro",
+      "el",
+      "es",
+      "fr"
+    ],
+    "sample": "Language",
+    "fallback": "__missing__",
+    "qa": {
+      "ok": true,
+      "sourceLanguage": "de",
+      "languages": {
+        "de": {
+          "label": "Deutsch",
+          "dir": "ltr"
+        },
+        "en": {
+          "label": "English",
+          "dir": "ltr"
+        },
+        "ro": {
+          "label": "Română",
+          "dir": "ltr"
+        },
+        "el": {
+          "label": "Ελληνικά",
+          "dir": "ltr"
+        },
+        "es": {
+          "label": "Español",
+          "dir": "ltr"
+        },
+        "fr": {
+          "label": "Français",
+          "dir": "ltr"
+        }
+      },
+      "dictionaryKeys": {
+        "de": 111,
+        "en": 111,
+        "ro": 111,
+        "el": 111,
+        "es": 111,
+        "fr": 111
+      },
+      "sourceKeyCount": 111,
+      "unionKeyCount": 111,
+      "missingSourceKeyCount": {
+        "en": 0,
+        "ro": 0,
+        "el": 0,
+        "es": 0,
+        "fr": 0
+      },
+      "missingSourceKeys": {
+        "en": [],
+        "ro": [],
+        "el": [],
+        "es": [],
+        "fr": []
+      },
+      "missingRuntimeUnionKeyCount": {
+        "en": 0,
+        "ro": 0,
+        "el": 0,
+        "es": 0,
+        "fr": 0
+      },
+      "missingRuntimeUnionKeys": {
+        "en": [],
+        "ro": [],
+        "el": [],
+        "es": [],
+        "fr": []
+      },
+      "fallbackOk": true,
+      "document": {
+        "lang": "",
+        "dir": ""
+      },
+      "note": "Missing keys fall back to the German source string by design."
+    },
+    "namespaceSamples": {
+      "ui230_fr": "Mode de feedback",
+      "v240l_el": "Μόνο Signature Cases"
+    },
+    "namespaceCounts": {
+      "de": {
+        "ui230": 12,
+        "v240l": 29
+      },
+      "en": {
+        "ui230": 12,
+        "v240l": 29
+      },
+      "ro": {
+        "ui230": 12,
+        "v240l": 29
+      },
+      "el": {
+        "ui230": 12,
+        "v240l": 29
+      },
+      "es": {
+        "ui230": 12,
+        "v240l": 29
+      },
+      "fr": {
+        "ui230": 12,
+        "v240l": 29
+      }
+    },
+    "doc": {
+      "lang": "fr",
+      "dir": "ltr",
+      "bodyLang": "fr"
+    },
+    "rtl": {
+      "lang": "fr",
+      "dir": "rtl"
+    }
+  },
+  "invariants": {
+    "case_logic": "PASS — non-i18n index content invariant",
+    "scoring": "PASS — non-i18n index content invariant",
+    "assets": "PASS — non-i18n index content invariant",
+    "navigation_titles": "PASS — legacy payload extraction exact + feature UI copy exact",
+    "case_texts": "PASS — legacy payload extraction exact",
+    "deep_dive_signature": "PASS — legacy payload extraction exact",
+    "method_catalog": "PASS — v224d1 block extracted byte-equivalent",
+    "responsive_shell": "PASS — CSS exact match to z21; copy exact via locale messages"
+  },
+  "browser_smoke": "NOT RUN — local browser navigation is blocked administratively in this build environment; QA is static/invariance + isolated runtime-core."
+}
