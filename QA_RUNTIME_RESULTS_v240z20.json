@@ -1,0 +1,33 @@
+{
+  "version": "v2.4.0z20",
+  "case_id": "MTB_IO_001_v1_0",
+  "result": "PASS",
+  "checks": {
+    "non_target_content_unchanged": true,
+    "non_target_report_unchanged": true,
+    "non_target_mtb_unchanged": true,
+    "intake_referral_only": true,
+    "histology_two_baseline_assets": true,
+    "material_no_duplicate_asset_block": true,
+    "deep_dive_pretest_identity_is_endometrial": true,
+    "deep_dive_pretest_has_no_specific_mmr_result_leak": true,
+    "reasoning_gate_msh2_msh6_is_hypothetical": true,
+    "legacy_cup_story_suppressed": true,
+    "empty_report_has_no_flagship_assets": true,
+    "mmr_gate": true,
+    "immune_context_gate": true,
+    "msi_gate": true,
+    "tmb_gate": true,
+    "pdl1_gate": true,
+    "broad_panel_unlocks_msi_tmb_only": true,
+    "report_never_shows_integrated_final": true,
+    "core_finalized_without_optional_hides_integrated_image": true,
+    "finalized_all_visible_evidence_reveals_integrated_image": true,
+    "not_finalized_hides_integrated_image": true,
+    "exact_asset_values_aligned": true
+  },
+  "browser_smoke": {
+    "status": "environment_blocked_inconclusive",
+    "note": "Container Chromium navigation to both localhost and file:// was blocked by the administrator policy (ERR_BLOCKED_BY_ADMINISTRATOR). JavaScript syntax, static asset checks, index-hook checks and deterministic VM runtime-stub QA passed."
+  }
+}

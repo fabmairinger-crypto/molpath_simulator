@@ -1,0 +1,120 @@
+{
+  "version": "v2.4.0z20",
+  "base_version": "v2.4.0z19",
+  "base_archive": "v2-4-0z19.zip",
+  "base_archive_sha256": "93dc029c05e7e0215e48c81c9fa50db3ea599cd3ee138efcc685f8b252fab2fc",
+  "type": "patch-only-plus-full-build",
+  "package_root": "v10",
+  "scope": [
+    "MTB_IO_001 flagship assets",
+    "case-local render-only Flagship integration",
+    "strict assay-local IO evidence gating",
+    "Deep-Dive pre-result leak suppression",
+    "true-finalization integrated-report guardrail"
+  ],
+  "changed_files": [
+    "v10/index.html"
+  ],
+  "new_runtime_files": [
+    "v10/v240z20_io001_flagship.js"
+  ],
+  "new_assets": [
+    "v10/assets/mtb_io_001/referral_gyn_oncology_001.png",
+    "v10/assets/mtb_io_001/he_overview_omentum_001.png",
+    "v10/assets/mtb_io_001/he_detail_til_rich_001.png",
+    "v10/assets/mtb_io_001/mmr_ihc_4plex_001.png",
+    "v10/assets/mtb_io_001/cd3_cd8_ihc_001.png",
+    "v10/assets/mtb_io_001/msi_ngs_001.png",
+    "v10/assets/mtb_io_001/tmb_ngs_001.png",
+    "v10/assets/mtb_io_001/pdl1_22c3_001.png",
+    "v10/assets/mtb_io_001/integrated_mtb_final_001.png"
+  ],
+  "metadata_files": [
+    "v10/CHANGELOG_v240z20.md",
+    "v10/QA_REPORT_v240z20.md",
+    "v10/QA_RUNTIME_RESULTS_v240z20.json",
+    "v10/SHA256SUMS_v240z20.txt",
+    "v10/MANIFEST_v240z20.json"
+  ],
+  "qa": {
+    "result": "PASS",
+    "browser_smoke": "environment_blocked_inconclusive",
+    "runtime_stub": "PASS",
+    "asset_count": 9,
+    "cross_asset_hash_collisions": 0,
+    "core_completion_preserved": "MMR + MSI + TMB",
+    "final_image_guard": "MMR + MSI + TMB + PD-L1 + CD3/CD8 + state.finalized"
+  },
+  "files": [
+    {
+      "path": "v10/index.html",
+      "bytes": 15760977,
+      "sha256": "6816b283dcec613f5b395228aa9fe34e546be5966dd511c83213c596d12e69a9"
+    },
+    {
+      "path": "v10/v240z20_io001_flagship.js",
+      "bytes": 34158,
+      "sha256": "a5d8cfd973680ef61b1c7af041fc8cc22f9b309c0fd172bcd77484651e3d3d09"
+    },
+    {
+      "path": "v10/assets/mtb_io_001/referral_gyn_oncology_001.png",
+      "bytes": 2247909,
+      "sha256": "a0475088c3dc56d6ff8897ef099114c242ea81365a9708754cccf12b6216a8d2"
+    },
+    {
+      "path": "v10/assets/mtb_io_001/he_overview_omentum_001.png",
+      "bytes": 2483469,
+      "sha256": "25630c08d09109b07994fcbab8426c3773051fc94a022eda60a71b96bcf05cf3"
+    },
+    {
+      "path": "v10/assets/mtb_io_001/he_detail_til_rich_001.png",
+      "bytes": 3462986,
+      "sha256": "6a5bd2838957de4ba466e017c205c33c18ff02975db28d41f604e81f7b617b2c"
+    },
+    {
+      "path": "v10/assets/mtb_io_001/mmr_ihc_4plex_001.png",
+      "bytes": 2550601,
+      "sha256": "1cb2f2319c5966f6bbb370f655372a42ab99b5b518f212d8c612df553138bab9"
+    },
+    {
+      "path": "v10/assets/mtb_io_001/cd3_cd8_ihc_001.png",
+      "bytes": 2539824,
+      "sha256": "8562c10716afc8be50596f5c349a0e994e996c6474469e427e957bde1bb073d9"
+    },
+    {
+      "path": "v10/assets/mtb_io_001/msi_ngs_001.png",
+      "bytes": 1423392,
+      "sha256": "da3e25c377fd081cca32d7ed5e5e87e48c0c28797b9a050715273a6901d67399"
+    },
+    {
+      "path": "v10/assets/mtb_io_001/tmb_ngs_001.png",
+      "bytes": 1527567,
+      "sha256": "6d32cca1fa6a05a986373c71b58386e1dafb82852aa59fe3aae33b3d305c24cc"
+    },
+    {
+      "path": "v10/assets/mtb_io_001/pdl1_22c3_001.png",
+      "bytes": 2414148,
+      "sha256": "75ef1e5904ed97e338c77a7cb15c0b9227e65decd8bcf195e4928c1a91c333ba"
+    },
+    {
+      "path": "v10/assets/mtb_io_001/integrated_mtb_final_001.png",
+      "bytes": 1616483,
+      "sha256": "abadbac91225f907d96dcd4d39f7e7da19334740a4b926f32bcc9bc7ef928f28"
+    },
+    {
+      "path": "v10/CHANGELOG_v240z20.md",
+      "bytes": 2211,
+      "sha256": "e230c12ce062d71936a19f6777adba03d8bff6df1786f96b84162124725cc378"
+    },
+    {
+      "path": "v10/QA_REPORT_v240z20.md",
+      "bytes": 3153,
+      "sha256": "497b849b738bf54185a54b9d02a1555f140ff59e01a7826496d79c7f610ddadf"
+    },
+    {
+      "path": "v10/QA_RUNTIME_RESULTS_v240z20.json",
+      "bytes": 1375,
+      "sha256": "ca4c0f9607388c1a81e22adf7b8e52b773d265b688e6a28f8539dd87c8e48066"
+    }
+  ]
+}
