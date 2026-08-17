@@ -31,7 +31,7 @@ function esc1(v){try{return esc(v==null?'':String(v))}catch(_){return String(v==
 function lang(){
   try{
     const x=(document.body&&document.body.getAttribute('data-molpath-lang'))||localStorage.getItem('molpath_lang')||localStorage.getItem('molpath_language')||'de';
-    return ['de','en','ro','el','es','fr'].includes(x)?x:'de';
+    return window.MolPathLanguageRegistry?window.MolPathLanguageRegistry.normalize(x):'de';
   }catch(_){return 'de'}
 }
 function hasRas(){return selected('ras_panel_crc')||selected('colon_ngs_panel')||selected('broad_pan_panel')}

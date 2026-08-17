@@ -39,7 +39,7 @@ function esc2(v){try{return esc(v==null?'':String(v))}catch(_){return String(v==
 function lang(){
   try{
     const x=((document.body&&document.body.getAttribute('data-molpath-lang'))||localStorage.getItem('molpath_lang')||localStorage.getItem('molpath_language')||document.documentElement.lang||'de').toLowerCase();
-    return ['de','en','ro','el','es','fr'].includes(x)?x:'de';
+    return window.MolPathLanguageRegistry?window.MolPathLanguageRegistry.normalize(x):'de';
   }catch(_){return 'de'}
 }
 const COPY={

@@ -11,8 +11,8 @@ const SUPPORTED=['de','en','ro','el','es','fr'];
 function langNow(){
   let raw='';
   try{raw=(document.body&&document.body.getAttribute('data-molpath-lang'))||localStorage.getItem('molpath_lang')||document.documentElement.lang||'de';}catch(_e){raw=(document.documentElement&&document.documentElement.lang)||'de';}
-  raw=String(raw||'de').toLowerCase().replace('_','-').split('-')[0];
-  return SUPPORTED.indexOf(raw)>=0?raw:'de';
+  raw=String(raw||'de').replace('_','-');
+  return window.MolPathLanguageRegistry?window.MolPathLanguageRegistry.normalize(raw):'de';
 }
 function syncStrings(target,source){
   if(!target||!source)return;
@@ -33,7 +33,7 @@ function syncStrings(target,source){
   }
 }
 function applyLanguage(lang){
-  lang=SUPPORTED.indexOf(lang)>=0?lang:'de';
+  lang=window.MolPathLanguageRegistry?window.MolPathLanguageRegistry.normalize(lang):'de';
   if(typeof DEEP_DIVE_CASES_V17==='undefined'||typeof DEEP_DIVE_MAP_V17==='undefined')return false;
   CASE_IDS.forEach(function(id){
     const target=DEEP_DIVE_CASES_V17.find(function(x){return x&&x.case_id===id;})||DEEP_DIVE_MAP_V17[id];

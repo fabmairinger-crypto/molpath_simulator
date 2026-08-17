@@ -259,7 +259,7 @@ function captureCatalog(){
 }
 function applyCatalogLanguage(lang){
   if(!captureCatalog())return false;
-  if(!LANGS.includes(lang))lang='de';
+  lang=window.MolPathLanguageRegistry?window.MolPathLanguageRegistry.normalize(lang):'de';
   for(const item of catalog){
     const rec=METHODS[item.id], orig=ORIGINAL.get(item.id);
     if(!rec||!orig)continue;
@@ -307,7 +307,7 @@ const LANGS=['de','en','ro','el','es','fr'];
 let applying=false;
 function langNow(){
   const x=(localStorage.getItem('molpath_lang')||document.documentElement.lang||'de').toLowerCase();
-  return LANGS.includes(x)?x:'de';
+  return window.MolPathLanguageRegistry?window.MolPathLanguageRegistry.normalize(x):'de';
 }
 function clone(v){return JSON.parse(JSON.stringify(v));}
 function patchStrings(target,de,localized){
@@ -348,9 +348,9 @@ function applyLanguage(lang){
   if(applying)return false;
   applying=true;
   try{
-    if(!LANGS.includes(lang))lang='de';
+    lang=window.MolPathLanguageRegistry?window.MolPathLanguageRegistry.normalize(lang):'de';
     const src=PAYLOAD.de;
-    const loc=lang==='de'?PAYLOAD.de:PAYLOAD.languages[lang];
+    const loc=lang==='de'?PAYLOAD.de:(PAYLOAD.languages[lang]||PAYLOAD.de);
     if(!loc)return false;
     const c=findCase(); if(c)patchStrings(c,src.base_case,loc.base_case);
     const m=findMeta(); if(m)patchStrings(m,src.metadata,loc.metadata);
@@ -411,7 +411,7 @@ const LANGS=['de','en','ro','el','es','fr'];
 let applying=false;
 function langNow(){
   const x=(localStorage.getItem('molpath_lang')||document.documentElement.lang||'de').toLowerCase();
-  return LANGS.includes(x)?x:'de';
+  return window.MolPathLanguageRegistry?window.MolPathLanguageRegistry.normalize(x):'de';
 }
 function patchStrings(target,de,localized){
   if(!target||de==null||localized==null)return;
@@ -451,9 +451,9 @@ function applyLanguage(lang){
   if(applying)return false;
   applying=true;
   try{
-    if(!LANGS.includes(lang))lang='de';
+    lang=window.MolPathLanguageRegistry?window.MolPathLanguageRegistry.normalize(lang):'de';
     const src=PAYLOAD.de;
-    const loc=lang==='de'?PAYLOAD.de:PAYLOAD.languages[lang];
+    const loc=lang==='de'?PAYLOAD.de:(PAYLOAD.languages[lang]||PAYLOAD.de);
     if(!loc)return false;
     const c=findCase(); if(c)patchStrings(c,src.base_case,loc.base_case);
     const m=findMeta(); if(m)patchStrings(m,src.metadata,loc.metadata);
@@ -510,7 +510,7 @@ const LANGS=['de','en','ro','el','es','fr'];
 let applying=false;
 function langNow(){
   const x=(localStorage.getItem('molpath_lang')||document.documentElement.lang||'de').toLowerCase();
-  return LANGS.includes(x)?x:'de';
+  return window.MolPathLanguageRegistry?window.MolPathLanguageRegistry.normalize(x):'de';
 }
 function patchStrings(target,de,localized){
   if(!target||de==null||localized==null)return;
@@ -554,9 +554,9 @@ function applyLanguage(lang){
   if(applying)return false;
   applying=true;
   try{
-    if(!LANGS.includes(lang))lang='de';
+    lang=window.MolPathLanguageRegistry?window.MolPathLanguageRegistry.normalize(lang):'de';
     const source=PAYLOAD.de;
-    const localized=lang==='de'?PAYLOAD.de:PAYLOAD.languages[lang];
+    const localized=lang==='de'?PAYLOAD.de:(PAYLOAD.languages[lang]||PAYLOAD.de);
     if(!localized)return false;
     const c=findCase(); if(c)patchStrings(c,source.base_case,localized.base_case);
     const m=findMeta(); if(m)patchStrings(m,source.metadata,localized.metadata);
@@ -605,7 +605,7 @@ const LANGS=['de','en','ro','el','es','fr'];
 let applying=false;
 function langNow(){
   const x=(localStorage.getItem('molpath_lang')||document.documentElement.lang||'de').toLowerCase();
-  return LANGS.includes(x)?x:'de';
+  return window.MolPathLanguageRegistry?window.MolPathLanguageRegistry.normalize(x):'de';
 }
 function patchStrings(target,de,localized){
   if(!target||de==null||localized==null)return;
@@ -649,9 +649,9 @@ function applyLanguage(lang){
   if(applying)return false;
   applying=true;
   try{
-    if(!LANGS.includes(lang))lang='de';
+    lang=window.MolPathLanguageRegistry?window.MolPathLanguageRegistry.normalize(lang):'de';
     const source=PAYLOAD.de;
-    const localized=lang==='de'?PAYLOAD.de:PAYLOAD.languages[lang];
+    const localized=lang==='de'?PAYLOAD.de:(PAYLOAD.languages[lang]||PAYLOAD.de);
     if(!localized)return false;
     const c=findCase(); if(c)patchStrings(c,source.base_case,localized.base_case);
     const m=findMeta(); if(m)patchStrings(m,source.metadata,localized.metadata);
@@ -700,7 +700,7 @@ const LANGS=['de','en','ro','el','es','fr'];
 let applying=false;
 function langNow(){
   const x=(localStorage.getItem('molpath_lang')||document.documentElement.lang||'de').toLowerCase();
-  return LANGS.includes(x)?x:'de';
+  return window.MolPathLanguageRegistry?window.MolPathLanguageRegistry.normalize(x):'de';
 }
 function patchStrings(target,de,localized){
   if(!target||de==null||localized==null)return;
@@ -744,9 +744,9 @@ function applyLanguage(lang){
   if(applying)return false;
   applying=true;
   try{
-    if(!LANGS.includes(lang))lang='de';
+    lang=window.MolPathLanguageRegistry?window.MolPathLanguageRegistry.normalize(lang):'de';
     const source=PAYLOAD.de;
-    const localized=lang==='de'?PAYLOAD.de:PAYLOAD.languages[lang];
+    const localized=lang==='de'?PAYLOAD.de:(PAYLOAD.languages[lang]||PAYLOAD.de);
     if(!localized)return false;
     const c=findCase(); if(c)patchStrings(c,source.base_case,localized.base_case);
     const m=findMeta(); if(m)patchStrings(m,source.metadata,localized.metadata);
@@ -795,7 +795,7 @@ const LANGS=['de','en','ro','el','es','fr'];
 let applying=false;
 function langNow(){
   const x=(localStorage.getItem('molpath_lang')||document.documentElement.lang||'de').toLowerCase();
-  return LANGS.includes(x)?x:'de';
+  return window.MolPathLanguageRegistry?window.MolPathLanguageRegistry.normalize(x):'de';
 }
 function patchStrings(target,de,localized){
   if(!target||de==null||localized==null)return;
@@ -839,9 +839,9 @@ function applyLanguage(lang){
   if(applying)return false;
   applying=true;
   try{
-    if(!LANGS.includes(lang))lang='de';
+    lang=window.MolPathLanguageRegistry?window.MolPathLanguageRegistry.normalize(lang):'de';
     const source=PAYLOAD.de;
-    const localized=lang==='de'?PAYLOAD.de:PAYLOAD.languages[lang];
+    const localized=lang==='de'?PAYLOAD.de:(PAYLOAD.languages[lang]||PAYLOAD.de);
     if(!localized)return false;
     const c=findCase(); if(c)patchStrings(c,source.base_case,localized.base_case);
     const m=findMeta(); if(m)patchStrings(m,source.metadata,localized.metadata);
@@ -891,7 +891,7 @@ let applying=false;
 function langNow(){
   let x='de';
   try{x=(localStorage.getItem('molpath_lang')||document.documentElement.lang||'de').toLowerCase();}catch(_e){x=(document.documentElement.lang||'de').toLowerCase();}
-  return LANGS.includes(x)?x:'de';
+  return window.MolPathLanguageRegistry?window.MolPathLanguageRegistry.normalize(x):'de';
 }
 function patchStrings(target,de,localized){
   if(!target||de==null||localized==null)return;
@@ -935,9 +935,9 @@ function applyLanguage(lang){
   if(applying)return false;
   applying=true;
   try{
-    if(!LANGS.includes(lang))lang='de';
+    lang=window.MolPathLanguageRegistry?window.MolPathLanguageRegistry.normalize(lang):'de';
     const source=PAYLOAD.de;
-    const localized=lang==='de'?PAYLOAD.de:PAYLOAD.languages[lang];
+    const localized=lang==='de'?PAYLOAD.de:(PAYLOAD.languages[lang]||PAYLOAD.de);
     if(!localized)return false;
     const c=findCase(); if(c)patchStrings(c,source.base_case,localized.base_case);
     const m=findMeta(); if(m)patchStrings(m,source.metadata,localized.metadata);
@@ -987,7 +987,7 @@ let applying=false;
 function langNow(){
   let x='de';
   try{x=(localStorage.getItem('molpath_lang')||document.documentElement.lang||'de').toLowerCase();}catch(_e){x=(document.documentElement.lang||'de').toLowerCase();}
-  return LANGS.includes(x)?x:'de';
+  return window.MolPathLanguageRegistry?window.MolPathLanguageRegistry.normalize(x):'de';
 }
 function patchStrings(target,de,localized){
   if(!target||de==null||localized==null)return;
@@ -1031,9 +1031,9 @@ function applyLanguage(lang){
   if(applying)return false;
   applying=true;
   try{
-    if(!LANGS.includes(lang))lang='de';
+    lang=window.MolPathLanguageRegistry?window.MolPathLanguageRegistry.normalize(lang):'de';
     const source=PAYLOAD.de;
-    const localized=lang==='de'?PAYLOAD.de:PAYLOAD.languages[lang];
+    const localized=lang==='de'?PAYLOAD.de:(PAYLOAD.languages[lang]||PAYLOAD.de);
     if(!localized)return false;
     const c=findCase(); if(c)patchStrings(c,source.base_case,localized.base_case);
     const m=findMeta(); if(m)patchStrings(m,source.metadata,localized.metadata);
@@ -1083,7 +1083,7 @@ let applying=false;
 function langNow(){
   let x='de';
   try{x=(localStorage.getItem('molpath_lang')||document.documentElement.lang||'de').toLowerCase();}catch(_e){x=(document.documentElement.lang||'de').toLowerCase();}
-  return LANGS.includes(x)?x:'de';
+  return window.MolPathLanguageRegistry?window.MolPathLanguageRegistry.normalize(x):'de';
 }
 function patchStrings(target,de,localized){
   if(!target||de==null||localized==null)return;
@@ -1129,9 +1129,9 @@ function applyLanguage(lang){
   if(applying)return false;
   applying=true;
   try{
-    if(!LANGS.includes(lang))lang='de';
+    lang=window.MolPathLanguageRegistry?window.MolPathLanguageRegistry.normalize(lang):'de';
     const source=PAYLOAD.de;
-    const localized=lang==='de'?PAYLOAD.de:PAYLOAD.languages[lang];
+    const localized=lang==='de'?PAYLOAD.de:(PAYLOAD.languages[lang]||PAYLOAD.de);
     if(!localized)return false;
     const c=findCase(); if(c)patchStrings(c,source.base_case,localized.base_case);
     const m=findMeta(); if(m)patchStrings(m,source.metadata,localized.metadata);
@@ -1181,7 +1181,7 @@ let applying=false;
 function langNow(){
   let x='de';
   try{x=(localStorage.getItem('molpath_lang')||document.documentElement.lang||'de').toLowerCase();}catch(_e){x=(document.documentElement.lang||'de').toLowerCase();}
-  return LANGS.includes(x)?x:'de';
+  return window.MolPathLanguageRegistry?window.MolPathLanguageRegistry.normalize(x):'de';
 }
 function patchStrings(target,de,localized){
   if(!target||de==null||localized==null)return;
@@ -1227,9 +1227,9 @@ function applyLanguage(lang){
   if(applying)return false;
   applying=true;
   try{
-    if(!LANGS.includes(lang))lang='de';
+    lang=window.MolPathLanguageRegistry?window.MolPathLanguageRegistry.normalize(lang):'de';
     const source=PAYLOAD.de;
-    const localized=lang==='de'?PAYLOAD.de:PAYLOAD.languages[lang];
+    const localized=lang==='de'?PAYLOAD.de:(PAYLOAD.languages[lang]||PAYLOAD.de);
     if(!localized)return false;
     const c=findCase(); if(c)patchStrings(c,source.base_case,localized.base_case);
     const m=findMeta(); if(m)patchStrings(m,source.metadata,localized.metadata);
@@ -1279,7 +1279,7 @@ let applying=false;
 function langNow(){
   let x='de';
   try{x=(localStorage.getItem('molpath_lang')||document.documentElement.lang||'de').toLowerCase();}catch(_e){x=(document.documentElement.lang||'de').toLowerCase();}
-  return LANGS.includes(x)?x:'de';
+  return window.MolPathLanguageRegistry?window.MolPathLanguageRegistry.normalize(x):'de';
 }
 function patchStrings(target,de,localized){
   if(!target||de==null||localized==null)return;
@@ -1325,9 +1325,9 @@ function applyLanguage(lang){
   if(applying)return false;
   applying=true;
   try{
-    if(!LANGS.includes(lang))lang='de';
+    lang=window.MolPathLanguageRegistry?window.MolPathLanguageRegistry.normalize(lang):'de';
     const source=PAYLOAD.de;
-    const localized=lang==='de'?PAYLOAD.de:PAYLOAD.languages[lang];
+    const localized=lang==='de'?PAYLOAD.de:(PAYLOAD.languages[lang]||PAYLOAD.de);
     if(!localized)return false;
     const c=findCase(); if(c)patchStrings(c,source.base_case,localized.base_case);
     const m=findMeta(); if(m)patchStrings(m,source.metadata,localized.metadata);
@@ -1376,7 +1376,7 @@ let applying=false;
 function langNow(){
   let x='de';
   try{x=(localStorage.getItem('molpath_lang')||document.documentElement.lang||'de').toLowerCase();}catch(_e){x=(document.documentElement.lang||'de').toLowerCase();}
-  return LANGS.includes(x)?x:'de';
+  return window.MolPathLanguageRegistry?window.MolPathLanguageRegistry.normalize(x):'de';
 }
 function patchStrings(target,de,localized){
   if(!target||de==null||localized==null)return;
@@ -1430,9 +1430,9 @@ function applyLanguage(lang){
   if(applying)return false;
   applying=true;
   try{
-    if(!LANGS.includes(lang))lang='de';
+    lang=window.MolPathLanguageRegistry?window.MolPathLanguageRegistry.normalize(lang):'de';
     const source=PAYLOAD.de;
-    const localized=lang==='de'?PAYLOAD.de:PAYLOAD.languages[lang];
+    const localized=lang==='de'?PAYLOAD.de:(PAYLOAD.languages[lang]||PAYLOAD.de);
     if(!localized)return false;
     const c=findCase(); if(c)patchStrings(c,source.base_case,localized.base_case);
     const m=findMeta(); if(m)patchStrings(m,source.metadata,localized.metadata);
@@ -1481,7 +1481,7 @@ let applying=false;
 function langNow(){
   let x='de';
   try{x=(localStorage.getItem('molpath_lang')||document.documentElement.lang||'de').toLowerCase();}catch(_e){x=(document.documentElement.lang||'de').toLowerCase();}
-  return LANGS.includes(x)?x:'de';
+  return window.MolPathLanguageRegistry?window.MolPathLanguageRegistry.normalize(x):'de';
 }
 function patchStrings(target,de,localized){
   if(!target||de==null||localized==null)return;
@@ -1535,9 +1535,9 @@ function applyLanguage(lang){
   if(applying)return false;
   applying=true;
   try{
-    if(!LANGS.includes(lang))lang='de';
+    lang=window.MolPathLanguageRegistry?window.MolPathLanguageRegistry.normalize(lang):'de';
     const source=PAYLOAD.de;
-    const localized=lang==='de'?PAYLOAD.de:PAYLOAD.languages[lang];
+    const localized=lang==='de'?PAYLOAD.de:(PAYLOAD.languages[lang]||PAYLOAD.de);
     if(!localized)return false;
     const c=findCase(); if(c)patchStrings(c,source.base_case,localized.base_case);
     const m=findMeta(); if(m)patchStrings(m,source.metadata,localized.metadata);
@@ -1583,7 +1583,7 @@ let applying=false;
 function langNow(){
   let x='de';
   try{x=(localStorage.getItem('molpath_lang')||document.documentElement.lang||'de').toLowerCase();}catch(_e){x=(document.documentElement.lang||'de').toLowerCase();}
-  return LANGS.includes(x)?x:'de';
+  return window.MolPathLanguageRegistry?window.MolPathLanguageRegistry.normalize(x):'de';
 }
 function patchStrings(target,de,localized){
   if(!target||de==null||localized==null)return;
@@ -1630,8 +1630,8 @@ function mergeDictionary(){
 function applyLanguage(lang){
   if(applying)return false; applying=true;
   try{
-    if(!LANGS.includes(lang))lang='de';
-    const source=PAYLOAD.de; const localized=lang==='de'?PAYLOAD.de:PAYLOAD.languages[lang]; if(!localized)return false;
+    lang=window.MolPathLanguageRegistry?window.MolPathLanguageRegistry.normalize(lang):'de';
+    const source=PAYLOAD.de; const localized=lang==='de'?PAYLOAD.de:(PAYLOAD.languages[lang]||PAYLOAD.de); if(!localized)return false;
     const c=findCase(); if(c)patchStrings(c,source.base_case,localized.base_case);
     const m=findMeta(); if(m)patchStrings(m,source.metadata,localized.metadata);
     const g=findGate(); if(g)patchStrings(g,source.reasoning_gate,localized.reasoning_gate);
@@ -1675,7 +1675,7 @@ let applying=false;
 function langNow(){
   let x='de';
   try{x=(localStorage.getItem('molpath_lang')||document.documentElement.lang||'de').toLowerCase();}catch(_e){x=(document.documentElement.lang||'de').toLowerCase();}
-  return LANGS.includes(x)?x:'de';
+  return window.MolPathLanguageRegistry?window.MolPathLanguageRegistry.normalize(x):'de';
 }
 function patchStrings(target,de,localized){
   if(!target||de==null||localized==null)return;
@@ -1722,8 +1722,8 @@ function mergeDictionary(){
 function applyLanguage(lang){
   if(applying)return false; applying=true;
   try{
-    if(!LANGS.includes(lang))lang='de';
-    const source=PAYLOAD.de; const localized=lang==='de'?PAYLOAD.de:PAYLOAD.languages[lang]; if(!localized)return false;
+    lang=window.MolPathLanguageRegistry?window.MolPathLanguageRegistry.normalize(lang):'de';
+    const source=PAYLOAD.de; const localized=lang==='de'?PAYLOAD.de:(PAYLOAD.languages[lang]||PAYLOAD.de); if(!localized)return false;
     const c=findCase(); if(c)patchStrings(c,source.base_case,localized.base_case);
     const m=findMeta(); if(m)patchStrings(m,source.metadata,localized.metadata);
     const g=findGate(); if(g)patchStrings(g,source.reasoning_gate,localized.reasoning_gate);

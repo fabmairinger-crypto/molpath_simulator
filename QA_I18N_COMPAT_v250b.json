@@ -1,0 +1,144 @@
+{
+  "version": "v2.5.0b",
+  "base": "v2.5.0a",
+  "date": "2026-08-17",
+  "scope": "i18n registry compatibility adapter only",
+  "external_scripts": {
+    "count": 19,
+    "missing": [],
+    "syntax_pass": 19,
+    "syntax_fail": []
+  },
+  "inline_scripts": {
+    "count": 36,
+    "syntax_pass": 36,
+    "syntax_fail": []
+  },
+  "existing_locales_unchanged": {
+    "de": true,
+    "en": true,
+    "ro": true,
+    "el": true,
+    "es": true,
+    "fr": true
+  },
+  "active_language_gate_hits": {
+    "includes(x)?x:'de'": [],
+    "includes(v)?v:'de'": [],
+    "indexOf(raw)>=0?raw:'de'": [],
+    "indexOf(lang)>=0?lang:'de'": [],
+    "if(!LANGS.includes(lang))lang='de'": [],
+    "split('-')[0]": []
+  },
+  "legacy_adapter": {
+    "runtime_registry_normalize_returns": 15,
+    "runtime_registry_normalize_apply": 16,
+    "new_language_german_source_fallbacks": 15,
+    "unsafe_current_language_payload_direct": 0
+  },
+  "flagship_registry_adapter": {
+    "v240z13_crc002_flagship.js": true,
+    "v240z14_crc001_flagship.js": true,
+    "v240z15_nsclc002_flagship.js": true,
+    "v240z16_metngs003_flagship.js": true,
+    "v240z17_ovar001_flagship.js": true,
+    "v240z18_ovar002_flagship.js": true,
+    "v240z19_cns001_flagship.js": true,
+    "v240z20_io001_flagship.js": true
+  },
+  "responsive_css_exact_vs_v250a": true,
+  "shell_wiring": {
+    "uses_v250b": true,
+    "uses_v250a": false
+  },
+  "registered_languages": [
+    "de",
+    "en",
+    "ro",
+    "el",
+    "es",
+    "fr"
+  ],
+  "no_new_languages_in_v250b": true,
+  "future_language_simulation": {
+    "pass": true,
+    "output": {
+      "codes": [
+        "de",
+        "en",
+        "ro",
+        "el",
+        "es",
+        "fr",
+        "xx"
+      ],
+      "normalizeExisting": [
+        [
+          "de",
+          "de"
+        ],
+        [
+          "en",
+          "en"
+        ],
+        [
+          "ro",
+          "ro"
+        ],
+        [
+          "el",
+          "el"
+        ],
+        [
+          "es",
+          "es"
+        ],
+        [
+          "fr",
+          "fr"
+        ]
+      ],
+      "futureNormalize": "xx",
+      "unknownNormalize": "de",
+      "translated": "TEST",
+      "fallback": "Nicht vorhanden",
+      "unknownRegistrationRejected": true,
+      "document": {
+        "lang": "xx",
+        "dir": "rtl",
+        "body": "xx"
+      }
+    }
+  },
+  "locale_registration_guard": {
+    "unregistered_rejected": true,
+    "qa_has_explicit_locale_presence_check": true,
+    "registry_exports_locale_has": true
+  },
+  "tree_diff": {
+    "changed": [
+      "CHANGELOG.md",
+      "i18n/core.js",
+      "i18n/languages.js",
+      "i18n/legacy/legacy_v223_v224_runtime.js",
+      "i18n/legacy/legacy_v230c_signature_deepdive.js",
+      "i18n/qa.js",
+      "index.html",
+      "v240z13_crc002_flagship.js",
+      "v240z14_crc001_flagship.js",
+      "v240z15_nsclc002_flagship.js",
+      "v240z16_metngs003_flagship.js",
+      "v240z17_ovar001_flagship.js",
+      "v240z18_ovar002_flagship.js",
+      "v240z19_cns001_flagship.js",
+      "v240z20_io001_flagship.js"
+    ],
+    "added": [
+      "CHANGELOG_v2_5_0b.md",
+      "QA_I18N_COMPAT_v250b.json",
+      "v250b_responsive_shell.js"
+    ],
+    "removed": []
+  },
+  "overall_pass": true
+}

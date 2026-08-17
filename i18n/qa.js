@@ -1,4 +1,4 @@
-/* MolPath Simulator v2.5.0a — lightweight i18n QA */
+/* MolPath Simulator v2.5.0b — lightweight i18n QA */
 (function(){
 'use strict';
 function run(){
@@ -17,8 +17,12 @@ function run(){
   const fallbackProbe='__MOLPATH_I18N_FALLBACK_PROBE__';
   const fallbackOk=codes.every(c=>core.translate(fallbackProbe,c)===fallbackProbe);
   const duplicateFree=(new Set(codes)).size===codes.length;
+  const localeLoaded=Object.fromEntries(codes.map(c=>[c,!!(core.localeRegistry&&core.localeRegistry.has&&core.localeRegistry.has(c))]));
+  const registeredRoundTrip=Object.fromEntries(codes.map(c=>[c,langs.normalize(c)===c&&langs.isRegistered(c)]));
+  const registryOk=Object.values(registeredRoundTrip).every(Boolean);
+  const localesOk=Object.values(localeLoaded).every(Boolean);
   return {
-    ok:fallbackOk&&duplicateFree,
+    ok:fallbackOk&&duplicateFree&&registryOk&&localesOk,
     sourceLanguage:langs.source,
     languages:descriptors,
     dictionaryKeys:Object.fromEntries(codes.map(c=>[c,Object.keys(core.dict[c]||{}).length])),
@@ -29,6 +33,10 @@ function run(){
     missingRuntimeUnionKeyCount:Object.fromEntries(Object.entries(missing).map(([c,v])=>[c,v.length])),
     missingRuntimeUnionKeys:missing,
     fallbackOk,
+    registryOk,
+    localesOk,
+    registeredRoundTrip,
+    localeLoaded,
     document:{lang:document.documentElement.lang,dir:document.documentElement.dir},
     note:'Missing keys fall back to the German source string by design.'
   };

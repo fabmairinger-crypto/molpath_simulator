@@ -1,7 +1,7 @@
-/* MolPath Simulator v2.5.0a — i18n core */
+/* MolPath Simulator v2.5.0b — i18n core */
 (function(){
 'use strict';
-const VERSION='v2.5.0a i18n Core Refactor';
+const VERSION='v2.5.0b i18n Registry Compatibility Adapter';
 const languageRegistry=window.MolPathLanguageRegistry;
 const localeRegistry=window.MolPathLocaleRegistry;
 if(!languageRegistry||!localeRegistry)throw new Error('MolPath i18n registries were not loaded');
@@ -101,7 +101,7 @@ function startObserver(){
   mo.observe(app,{childList:true,subtree:true});
   window.MolPathI18nObserver=mo;
 }
-window.MolPathI18n={version:VERSION,languages:LANGS,languageRegistry,localeRegistry,setLang,apply:scheduleApply,applyNow:apply,translate:tr,dict:DICT,currentLang};
+window.MolPathI18n={version:VERSION,languages:LANGS,languageRegistry,localeRegistry,setLang,apply:scheduleApply,applyNow:apply,translate:tr,dict:DICT,currentLang,sourceLanguage:languageRegistry.source};
 function boot(){setLang(currentLang());startObserver();}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot,{once:true});else boot();
 })();

@@ -1,4 +1,4 @@
-/* MolPath Simulator v2.5.0a — central language + locale registry */
+/* MolPath Simulator v2.5.0b — central language + locale registry */
 (function(){
 'use strict';
 const SOURCE='de';
@@ -15,15 +15,20 @@ const aliases=new Map();
 function canonicalKey(code){return String(code||'').trim().replace('_','-').toLowerCase();}
 function addDefinition(def){
   if(!def||!def.code)throw new Error('MolPath language definition requires code');
-  const normalized={code:String(def.code),label:String(def.label||def.code),dir:def.dir==='rtl'?'rtl':'ltr',file:String(def.file||def.code+'.js')};
+  const normalized={code:String(def.code),label:String(def.label||def.code),dir:def.dir==='rtl'?'rtl':'ltr',file:String(def.file||def.code+'.js'),aliases:Array.isArray(def.aliases)?def.aliases.map(String):[]};
   defs.set(normalized.code,normalized);
   aliases.set(canonicalKey(normalized.code),normalized.code);
+  normalized.aliases.forEach(a=>aliases.set(canonicalKey(a),normalized.code));
   return normalized;
 }
 DEFINITIONS.forEach(addDefinition);
-function normalize(code){return aliases.get(canonicalKey(code))||SOURCE;}
+function resolveRegistered(code){return aliases.get(canonicalKey(code))||null;}
+function isRegistered(code){return !!resolveRegistered(code);}
+function normalize(code){return resolveRegistered(code)||SOURCE;}
 function get(code){return defs.get(normalize(code))||defs.get(SOURCE);}
-function list(){return Array.from(defs.values()).map(x=>({...x}));}
+function list(){return Array.from(defs.values()).map(x=>({...x,aliases:[...(x.aliases||[])]}));}
+function codes(){return list().map(x=>x.code);}
+function targetCodes(){return codes().filter(code=>code!==SOURCE);}
 function labelsObject(){return Object.fromEntries(list().map(x=>[x.code,x.label]));}
 function applyDocumentLanguage(code){
   const lang=normalize(code); const def=get(lang);
@@ -32,17 +37,19 @@ function applyDocumentLanguage(code){
   if(document.body)document.body.setAttribute('data-molpath-lang',def.code);
   return def.code;
 }
-window.MolPathLanguageRegistry=Object.freeze({source:SOURCE,normalize,get,list,labelsObject,applyDocumentLanguage});
+window.MolPathLanguageRegistry=Object.freeze({source:SOURCE,normalize,resolveRegistered,isRegistered,get,list,codes,targetCodes,labelsObject,applyDocumentLanguage});
 
 const locales=new Map();
 function register(code,payload){
-  const lang=normalize(code);
+  const lang=resolveRegistered(code);
+  if(!lang)throw new Error('MolPath locale '+String(code)+' is not registered in languages.js');
   const data=payload&&typeof payload==='object'?payload:{};
   const messages=data.messages&&typeof data.messages==='object'?data.messages:{};
   const namespaces=data.namespaces&&typeof data.namespaces==='object'?data.namespaces:{};
   locales.set(lang,{code:lang,messages,namespaces,meta:{...(data.meta||{})}});
   return locales.get(lang);
 }
+function hasLocale(code){const lang=resolveRegistered(code);return !!lang&&locales.has(lang);}
 function locale(code){return locales.get(normalize(code))||locales.get(SOURCE)||{code:SOURCE,messages:{},namespaces:{},meta:{}};}
 function namespace(name,code){
   const source=(locale(SOURCE).namespaces||{})[name]||{};
@@ -54,7 +61,7 @@ function buildDictionary(){
   list().forEach(def=>{out[def.code]=locale(def.code).messages;});
   return out;
 }
-window.MolPathLocaleRegistry=Object.freeze({register,get:locale,namespace,buildDictionary,source:SOURCE});
+window.MolPathLocaleRegistry=Object.freeze({register,has:hasLocale,get:locale,namespace,buildDictionary,source:SOURCE});
 
 // Parser-time bootstrap: index.html only loads languages.js. Locale files are
 // derived from the central registry, so adding a language never requires an

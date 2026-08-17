@@ -1,3 +1,21 @@
+# CHANGELOG – MolPath Simulator v2.5.0b
+
+## i18n Registry Compatibility Adapter
+
+Base: **v2.5.0a**
+
+- Removed active six-language runtime gates from legacy Deep-Dive/Signature, LAB/RES and Flagship language dispatch.
+- Future registered languages now preserve their language code and use German source structures when no historical payload exists, preventing stale previous-language case content.
+- Locale registration now rejects unregistered codes instead of silently mapping them to German.
+- Registry is alias-ready and exposes registered/target code helpers.
+- Compound codes such as `zh-CN` are preserved.
+- No new translations, case/scoring/content/asset changes.
+- Responsive CSS unchanged.
+
+Full details: `CHANGELOG_v2_5_0b.md`.
+
+---
+
 # CHANGELOG – MolPath Simulator v2.5.0a
 
 ## i18n Core Refactor
