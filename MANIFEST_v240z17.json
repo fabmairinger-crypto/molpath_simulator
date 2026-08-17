@@ -1,0 +1,111 @@
+{
+  "version": "v2.4.0z17",
+  "base_version": "v2.4.0z16",
+  "type": "patch-only",
+  "scope": [
+    "MTB_OVAR_001 flagship assets",
+    "existing OVAR two-round workflow presentation",
+    "phase-gated OVAR evidence",
+    "final-report guardrail"
+  ],
+  "changed_files": [
+    "v7/index.html"
+  ],
+  "new_runtime_files": [
+    "v7/v240z17_ovar001_flagship.js"
+  ],
+  "new_assets": [
+    "v7/assets/mtb_ovar_001/oncology_mtb_letter_001.png",
+    "v7/assets/mtb_ovar_001/ct_abdomen_pelvis_recurrence_001.png",
+    "v7/assets/mtb_ovar_001/he_overview_001.png",
+    "v7/assets/mtb_ovar_001/he_zoom_001.png",
+    "v7/assets/mtb_ovar_001/ihc_pax8_wt1_p53_p16_001.png",
+    "v7/assets/mtb_ovar_001/tumor_brca_hrr_ngs_001.png",
+    "v7/assets/mtb_ovar_001/hrd_genomic_scar_grayzone_001.png",
+    "v7/assets/mtb_ovar_001/ffpe_artifact_qc_001.png",
+    "v7/assets/mtb_ovar_001/liquid_biopsy_brca1_confirmation_001.png",
+    "v7/assets/mtb_ovar_001/integrated_mtb_final_001.png"
+  ],
+  "excluded_generations": [
+    "erroneous BRAF V600 qPCR generation",
+    "erroneous MLH1 promoter methylation generation",
+    "unapproved duplicate/intermediate BRCA/HRR generation"
+  ],
+  "files": [
+    {
+      "path": "v7/index.html",
+      "bytes": 15760722,
+      "sha256": "2dcc6cffd37e4b546016ab1cfbfc7124e0d709f15cf29bdae633228c029de4b0"
+    },
+    {
+      "path": "v7/v240z17_ovar001_flagship.js",
+      "bytes": 13488,
+      "sha256": "b0611a171eea404bb3c1b9a8111b4e7696d1575f7bc0cf919ab292eb77183e85"
+    },
+    {
+      "path": "v7/assets/mtb_ovar_001/oncology_mtb_letter_001.png",
+      "bytes": 1258601,
+      "sha256": "f428cc55b0146d92c6aa3b9f0ce3b65e34530d21e6dfd72b43dba3b4723673c5"
+    },
+    {
+      "path": "v7/assets/mtb_ovar_001/ct_abdomen_pelvis_recurrence_001.png",
+      "bytes": 1674901,
+      "sha256": "bb1c9817f5812010b27bc608e5b15639577ea1000d02473cb989ccfb681a4ba1"
+    },
+    {
+      "path": "v7/assets/mtb_ovar_001/he_overview_001.png",
+      "bytes": 2066585,
+      "sha256": "fc3475f313018fd5487a261ba2f47e7a44e5677c728888174ec34863cd62cfd0"
+    },
+    {
+      "path": "v7/assets/mtb_ovar_001/he_zoom_001.png",
+      "bytes": 2397759,
+      "sha256": "01ddf6ff678f0daae1798f29412c6d6cc1da5172dbe538bb2de119050e59a8c8"
+    },
+    {
+      "path": "v7/assets/mtb_ovar_001/ihc_pax8_wt1_p53_p16_001.png",
+      "bytes": 1854716,
+      "sha256": "03ae6658c27315d68deb049c60fee8a82a4f2364c5f4a3a436afff49dd55523e"
+    },
+    {
+      "path": "v7/assets/mtb_ovar_001/tumor_brca_hrr_ngs_001.png",
+      "bytes": 1474876,
+      "sha256": "db55c3ef0b4b23082d4181ec8e7d85101314bc8348ac4f20d6ce65dbd204bb57"
+    },
+    {
+      "path": "v7/assets/mtb_ovar_001/hrd_genomic_scar_grayzone_001.png",
+      "bytes": 1441717,
+      "sha256": "36d8885b0d690ff250d2b82dce76e3ebdd30df163d364cc7bc63a7fd8db38f8a"
+    },
+    {
+      "path": "v7/assets/mtb_ovar_001/ffpe_artifact_qc_001.png",
+      "bytes": 1473919,
+      "sha256": "a95033d7217d61a55aff9a451cf1958950f3c6c1fc0de8d08954bbd2dd0f8f13"
+    },
+    {
+      "path": "v7/assets/mtb_ovar_001/liquid_biopsy_brca1_confirmation_001.png",
+      "bytes": 1539925,
+      "sha256": "92a09c127f7e6af2b1c9d1b1ab70c9cd4720a9864051d0e6a578e68623b71048"
+    },
+    {
+      "path": "v7/assets/mtb_ovar_001/integrated_mtb_final_001.png",
+      "bytes": 1771721,
+      "sha256": "c02b2f4fdd4695cf5932beb3adf8df33b10f8b68059141bfebb609b68cacc3ce"
+    },
+    {
+      "path": "v7/CHANGELOG_v240z17.md",
+      "bytes": 2256,
+      "sha256": "e58b1e0f85512b5168ecf5e069589abd791a4b688acda3bbce0d2314def47e09"
+    },
+    {
+      "path": "v7/QA_REPORT_v240z17.md",
+      "bytes": 2103,
+      "sha256": "29067a33cbc891bbb9cf504bcf1a65ff4ee39a8d45536b281887a6b5013c4272"
+    },
+    {
+      "path": "v7/QA_RUNTIME_RESULTS_v240z17.json",
+      "bytes": 833,
+      "sha256": "74cbd03f70b8de964d7f1dbad0af86393e2793a686c2186f811c10e4e020e7fb"
+    }
+  ]
+}

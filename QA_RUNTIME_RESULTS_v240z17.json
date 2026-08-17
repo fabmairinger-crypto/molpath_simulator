@@ -1,0 +1,29 @@
+{
+  "version": "v2.4.0z17",
+  "case_id": "MTB_OVAR_001_v0_7",
+  "result": "PASS",
+  "checks": {
+    "syntax": true,
+    "asset_count": 10,
+    "all_assets_resolve": true,
+    "intake_letter_only": true,
+    "history_ct": true,
+    "histo_three_assets": true,
+    "material_no_duplicate_assets": true,
+    "round1_brca_only_gating": true,
+    "round1_hrd_only_gating": true,
+    "round1_complete_qc_gate": true,
+    "round2_liquid_gate": true,
+    "round2_hides_final": true,
+    "accepted_bad_hides_final": true,
+    "final_after_liquid_reveals_integrated": true,
+    "non_ovar_unchanged": true,
+    "rejected_braf_asset_referenced": false,
+    "rejected_mlh1_asset_referenced": false,
+    "unapproved_duplicate_referenced": false
+  },
+  "browser_smoke": {
+    "status": "timeout_inconclusive",
+    "exception_captured": false
+  }
+}
