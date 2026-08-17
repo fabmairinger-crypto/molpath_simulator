@@ -1,0 +1,29 @@
+{
+  "version": "v2.4.0z19",
+  "case_id": "MTB_CNS_001_v1_0",
+  "result": "PASS",
+  "checks": {
+    "non_target_case_wrapper_unchanged": true,
+    "intake_referral_only": true,
+    "history_mri_only": true,
+    "histology_three_assets": true,
+    "material_no_duplicate_asset_block": true,
+    "tmb_msi_neuro_unlocks_nothing": true,
+    "idh_gate": true,
+    "glioma_ngs_gate": true,
+    "broad_panel_ngs_gate": true,
+    "mgmt_gate": true,
+    "classifier_alone_hidden_to_prevent_ngs_mgmt_leakage": true,
+    "classifier_after_ngs_mgmt": true,
+    "report_never_shows_integrated_final": true,
+    "mtb_before_finalization_hides_final": true,
+    "final_requires_ngs": true,
+    "final_requires_idh_specific": true,
+    "finalized_full_evidence_reveals_final": true,
+    "distractor_does_not_unlock_later_assets": true
+  },
+  "browser_smoke": {
+    "status": "environment_timeout_inconclusive",
+    "note": "Headless Chromium in the build container did not return a DOM dump, including for the minimal browser harness; deterministic JavaScript syntax/static checks plus case-local VM runtime-stub QA passed."
+  }
+}

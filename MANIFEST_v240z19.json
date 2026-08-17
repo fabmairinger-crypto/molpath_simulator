@@ -1,0 +1,116 @@
+{
+  "version": "v2.4.0z19",
+  "base_version": "v2.4.0z18",
+  "base_archive": "v2-4-0z18.zip",
+  "base_archive_sha256": "16da9a1e436db06d8ba881b8ea751492e3de24a06631c80ec26e69f830580e78",
+  "type": "patch-only",
+  "package_root": "v9",
+  "scope": [
+    "MTB_CNS_001 flagship assets",
+    "case-local render-only Flagship integration",
+    "strict test-gated CNS evidence",
+    "true-finalization integrated-report guardrail"
+  ],
+  "changed_files": [
+    "v9/index.html"
+  ],
+  "new_runtime_files": [
+    "v9/v240z19_cns001_flagship.js"
+  ],
+  "new_assets": [
+    "v9/assets/mtb_cns_001/cns_methylation_classifier_001.png",
+    "v9/assets/mtb_cns_001/glioma_ngs_001.png",
+    "v9/assets/mtb_cns_001/he_detail_001.png",
+    "v9/assets/mtb_cns_001/he_overview_001.png",
+    "v9/assets/mtb_cns_001/idh1_idh2_001.png",
+    "v9/assets/mtb_cns_001/integrated_neuropath_final_001.png",
+    "v9/assets/mtb_cns_001/ki67_mib1_001.png",
+    "v9/assets/mtb_cns_001/mgmt_methylation_001.png",
+    "v9/assets/mtb_cns_001/mri_brain_preop_001.png",
+    "v9/assets/mtb_cns_001/referral_neurosurgery_001.png"
+  ],
+  "qa": {
+    "result": "PASS",
+    "browser_smoke": "environment_timeout_inconclusive",
+    "runtime_stub": "PASS",
+    "asset_count": 10,
+    "cross_asset_hash_collisions": 0
+  },
+  "files": [
+    {
+      "path": "v9/index.html",
+      "bytes": 15760876,
+      "sha256": "e50d95d71a9fe3f8854871f83bed1af626afbab72cff2eda6220249ac31314d0"
+    },
+    {
+      "path": "v9/v240z19_cns001_flagship.js",
+      "bytes": 15146,
+      "sha256": "370b77cbdbfce7fd88762edefcceae37120da8fffc8be37b9aaa47bb118290de"
+    },
+    {
+      "path": "v9/assets/mtb_cns_001/cns_methylation_classifier_001.png",
+      "bytes": 1418572,
+      "sha256": "8e96c0724af604bef29c4f192405fc404a4943c99b7309a2a881c0a83c530d47"
+    },
+    {
+      "path": "v9/assets/mtb_cns_001/glioma_ngs_001.png",
+      "bytes": 1398755,
+      "sha256": "a2f2d753993127dc668d3a138c0eecb6909e8cb4ef708f06a9aef270d5e83fe6"
+    },
+    {
+      "path": "v9/assets/mtb_cns_001/he_detail_001.png",
+      "bytes": 3185904,
+      "sha256": "8e190455feea13dc8e203a99728905517a54e86f22a3ae2c8fe855bf638fb3b5"
+    },
+    {
+      "path": "v9/assets/mtb_cns_001/he_overview_001.png",
+      "bytes": 2649692,
+      "sha256": "cb8254951fa622e8a97669a92b6e4f0be82ccea4a61148217990747a81206bd2"
+    },
+    {
+      "path": "v9/assets/mtb_cns_001/idh1_idh2_001.png",
+      "bytes": 2213770,
+      "sha256": "4887b07a3c2745def7dcd286a8a74ed17d5e4052a5dd47e7002d281e689e7256"
+    },
+    {
+      "path": "v9/assets/mtb_cns_001/integrated_neuropath_final_001.png",
+      "bytes": 1347991,
+      "sha256": "af7d24864efd84ffdbaf55414131addac747ec37d845c1cfe674613401f027f2"
+    },
+    {
+      "path": "v9/assets/mtb_cns_001/ki67_mib1_001.png",
+      "bytes": 2934950,
+      "sha256": "b0b7755c9f0dee17c1e9f9f3c37cd9c663b7c67a3142e6a5440324658a4ffc9b"
+    },
+    {
+      "path": "v9/assets/mtb_cns_001/mgmt_methylation_001.png",
+      "bytes": 1506388,
+      "sha256": "66350644302efc5207fde1db257bafc00e803d9f1b00e5a90b46f4932afe42ab"
+    },
+    {
+      "path": "v9/assets/mtb_cns_001/mri_brain_preop_001.png",
+      "bytes": 1661851,
+      "sha256": "39159a5e51d67f9c930fe9dbf4694d7e4afb206dd806b61d521a21d054322694"
+    },
+    {
+      "path": "v9/assets/mtb_cns_001/referral_neurosurgery_001.png",
+      "bytes": 1919682,
+      "sha256": "c168669d596481776bd1c7277b83a706c5cce19c025a3efc388971ac9e0d5d5a"
+    },
+    {
+      "path": "v9/CHANGELOG_v240z19.md",
+      "bytes": 2532,
+      "sha256": "70a236abaa6b06de23c5e398cf469e23673336077e13882a02a4e696dac38996"
+    },
+    {
+      "path": "v9/QA_REPORT_v240z19.md",
+      "bytes": 2393,
+      "sha256": "978c03ee859e7e86b03f06ed8e020f4d2789a7a2057c422cd8c5bcea4a2dd2dd"
+    },
+    {
+      "path": "v9/QA_RUNTIME_RESULTS_v240z19.json",
+      "bytes": 1114,
+      "sha256": "19452687f160b6b33895c09078bc656dd155d291b3f1609d2255d2798d42ce06"
+    }
+  ]
+}
