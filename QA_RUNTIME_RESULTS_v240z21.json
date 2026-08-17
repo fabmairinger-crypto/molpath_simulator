@@ -1,0 +1,38 @@
+{
+  "version": "v2.4.0z21",
+  "base": "v2.4.0z20",
+  "date": "2026-08-17",
+  "scope": "responsive shell only",
+  "checks": {
+    "javascript_syntax": "PASS",
+    "compact_phone_390x844": {
+      "page_scroll_width_equals_viewport": true,
+      "drawer": "PASS",
+      "score_sheet": "PASS",
+      "cart_sheet": "PASS",
+      "overview_sheet": "PASS"
+    },
+    "tablet_portrait_800x1280": {
+      "page_scroll_width_equals_viewport": true,
+      "drawer": "PASS",
+      "score_sheet": "PASS",
+      "cart_sheet": "PASS",
+      "overview_sheet": "PASS"
+    },
+    "tablet_landscape_1280x800": {
+      "page_scroll_width_equals_viewport": true,
+      "drawer": "PASS",
+      "score_sheet": "PASS",
+      "cart_sheet": "PASS",
+      "overview_sheet": "PASS"
+    },
+    "desktop_1600x1000": {
+      "compact_toolbar_hidden": true,
+      "desktop_sidebar_retained": true,
+      "desktop_kpi_retained": true,
+      "compact_table_wrapper_disabled": true
+    }
+  },
+  "logic_change": false,
+  "notes": "Responsive shell validated in an isolated DOM/runtime harness using the production z21 shell against the production structural classes/IDs. The only modification to index.html is the final z21 script include after the z20 flagship script."
+}

@@ -1,0 +1,28 @@
+{
+  "version": "v2.4.0z21",
+  "base": "v2.4.0z20",
+  "date": "2026-08-17",
+  "type": "responsive_ui_patch",
+  "changed_files": [
+    "index.html",
+    "v240z21_responsive_shell.js"
+  ],
+  "added_files": [
+    "v240z21_responsive_shell.js",
+    "CHANGELOG_v240z21.md",
+    "QA_RUNTIME_RESULTS_v240z21.json"
+  ],
+  "invariants": [
+    "case content unchanged",
+    "scoring logic unchanged",
+    "test/order logic unchanged",
+    "flagship assets unchanged",
+    "desktop shell retained above 1400px"
+  ],
+  "sha256": {
+    "index.html": "513a4fb78baefbb920248f8b9f3e3ae4016ccf15ba032f535af8e89dc6ea606a",
+    "v240z21_responsive_shell.js": "701cff61b12a6552f5ffcb3ac4614066f8347b90efdf1e5837ae5388f7fd45d8",
+    "CHANGELOG_v240z21.md": "3ce6c5b23c2efa27610fc6e217eec58bded6c412e60d95a6cd8a5d2c84ff8ac3",
+    "QA_RUNTIME_RESULTS_v240z21.json": "4390cefded561200b49fd9680506920d3d0e58f9e426b18b6fd40b12aebe165d"
+  }
+}
