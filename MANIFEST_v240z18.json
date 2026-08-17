@@ -1,0 +1,122 @@
+{
+  "version": "v2.4.0z18",
+  "base_version": "v2.4.0z17",
+  "base_archive": "v2-4-0z17.zip",
+  "base_archive_sha256": "cf3a686d9eb4036f935b06216848bdfb0d572e581ad87d6c78ba1d9d725546ac",
+  "type": "patch-only",
+  "package_root": "v8",
+  "scope": [
+    "MTB_OVAR_002 flagship assets",
+    "case-local VUS/HRD/germline logic correction",
+    "test-gated OVAR_002 evidence",
+    "true-finalization report guardrail"
+  ],
+  "changed_files": [
+    "v8/index.html"
+  ],
+  "new_runtime_files": [
+    "v8/v240z18_ovar002_flagship.js"
+  ],
+  "new_assets": [
+    "v8/assets/mtb_ovar_002/referral_pink_001.png",
+    "v8/assets/mtb_ovar_002/he_overview_001.png",
+    "v8/assets/mtb_ovar_002/he_zoom_001.png",
+    "v8/assets/mtb_ovar_002/ihc_pax8_wt1_p53_p16_001.png",
+    "v8/assets/mtb_ovar_002/tumor_ngs_initial_001.png",
+    "v8/assets/mtb_ovar_002/brca2_variant_viewer_001.png",
+    "v8/assets/mtb_ovar_002/vus_curation_workspace_001.png",
+    "v8/assets/mtb_ovar_002/hrd_genomic_scar_negative_001.png",
+    "v8/assets/mtb_ovar_002/germline_brca2_vus_001.png",
+    "v8/assets/mtb_ovar_002/integrated_mtb_final_001.png"
+  ],
+  "excluded_generations": [
+    "foreign CRC/BRAF qPCR generation",
+    "foreign MMR/PMS2 generation",
+    "wrong BRCA2 c.7007A>G p.Asn2336Ser germline report",
+    "incorrect/non-integrated final-report attempts",
+    "discarded duplicate referral generation"
+  ],
+  "qa": {
+    "result": "PASS",
+    "browser_smoke": "timeout_inconclusive",
+    "case_local_runtime_stub": "PASS",
+    "rejected_asset_hash_collisions": 0
+  },
+  "files": [
+    {
+      "path": "v8/index.html",
+      "bytes": 15760774,
+      "sha256": "71692d2b28d5edab4fd417ab7f965e9521e6cbb30a0c4741d120e3ae460c91f7"
+    },
+    {
+      "path": "v8/v240z18_ovar002_flagship.js",
+      "bytes": 26976,
+      "sha256": "3640784f1c4ad58f9b524250ce7e045dfb96f564621a66e6994bc53682930bb4"
+    },
+    {
+      "path": "v8/assets/mtb_ovar_002/referral_pink_001.png",
+      "bytes": 2258244,
+      "sha256": "743cb726a718d91645d5d407792d7f216d1f39c8a528ab44b1a41596e03db0d7"
+    },
+    {
+      "path": "v8/assets/mtb_ovar_002/he_overview_001.png",
+      "bytes": 3728611,
+      "sha256": "f8e71c1355517cde530032f89e0472b814d39f7d59c39b2ce2a8bbf169a319ae"
+    },
+    {
+      "path": "v8/assets/mtb_ovar_002/he_zoom_001.png",
+      "bytes": 3952894,
+      "sha256": "af3eee983000d5c883863b51cab5decf7319b8ceceabec6558123e503e7355fb"
+    },
+    {
+      "path": "v8/assets/mtb_ovar_002/ihc_pax8_wt1_p53_p16_001.png",
+      "bytes": 3343223,
+      "sha256": "39d8e71717b731ce9b26887675610f3f8d778060f71da0ae4ed56e9b7721e23d"
+    },
+    {
+      "path": "v8/assets/mtb_ovar_002/tumor_ngs_initial_001.png",
+      "bytes": 1576367,
+      "sha256": "18b49890715969d7454acd4f8305c08bc446575b158c8335b5611880350d88ac"
+    },
+    {
+      "path": "v8/assets/mtb_ovar_002/brca2_variant_viewer_001.png",
+      "bytes": 1331246,
+      "sha256": "ff71032faac1fba2216f06c28620cab00050467f97b417e3d658d23decb4a85c"
+    },
+    {
+      "path": "v8/assets/mtb_ovar_002/vus_curation_workspace_001.png",
+      "bytes": 1460938,
+      "sha256": "09ccb2f7a4bf079f6a0a459631c52c1a911d02a74594b5bbc7e6eda59c14460b"
+    },
+    {
+      "path": "v8/assets/mtb_ovar_002/hrd_genomic_scar_negative_001.png",
+      "bytes": 1407597,
+      "sha256": "76e130a57ca2bf1a2b2ef9afe24d49f130429db9ee154efb5dac071e12c7f1a0"
+    },
+    {
+      "path": "v8/assets/mtb_ovar_002/germline_brca2_vus_001.png",
+      "bytes": 1505773,
+      "sha256": "a3fe8a0ad61a337dfd054b05598288066c0e63ba79a7e4eabb4fbbd31fde3771"
+    },
+    {
+      "path": "v8/assets/mtb_ovar_002/integrated_mtb_final_001.png",
+      "bytes": 292571,
+      "sha256": "52a09dfd85c720af04d78d651567cbeb45c64bbdb83c2cfaaf8667b4fd20c32f"
+    },
+    {
+      "path": "v8/CHANGELOG_v240z18.md",
+      "bytes": 3013,
+      "sha256": "5d629c562f39bb30e7c59b5dbd616610b88c78ab82e28ba2e90aee105f8322bc"
+    },
+    {
+      "path": "v8/QA_REPORT_v240z18.md",
+      "bytes": 3171,
+      "sha256": "6de21827b1825d9e9f812331159c0a04e164c1c43807d044ed816599502a49c4"
+    },
+    {
+      "path": "v8/QA_RUNTIME_RESULTS_v240z18.json",
+      "bytes": 1418,
+      "sha256": "e7bc1d822e894b03009ee661dfe462854cd5486d2cda7694f2134c7ebf75d71d"
+    }
+  ]
+}

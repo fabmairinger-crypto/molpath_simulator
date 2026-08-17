@@ -1,0 +1,38 @@
+{
+  "version": "v2.4.0z18",
+  "case_id": "MTB_OVAR_002_v1_3",
+  "result": "PASS",
+  "checks": {
+    "javascript_syntax": true,
+    "asset_count": 10,
+    "all_assets_valid_png": true,
+    "all_asset_hashes_unique": true,
+    "index_diff_hook_only": true,
+    "z18_hook_exactly_once": true,
+    "allowed_tests_have_no_fusion": true,
+    "required_groups_have_no_fusion": true,
+    "required_groups_are_brca_vus_hrd_germline": true,
+    "intake_referral_only": true,
+    "histology_three_assets": true,
+    "material_no_duplicate_asset_block": true,
+    "tumour_brca_gate": true,
+    "vus_curation_gate": true,
+    "hrd_gate": true,
+    "germline_gate": true,
+    "report_never_shows_integrated_final": true,
+    "mtb_before_finalization_hides_integrated_final": true,
+    "finalized_complete_path_reveals_integrated_final": true,
+    "legacy_fusion_selection_blocks_integrated_final": true,
+    "deep_dive_placeholder_replaced": true,
+    "canonical_brca2_hgvs_locked": true,
+    "canonical_brca2_vaf_locked": true,
+    "hrd_score_30_locked": true,
+    "non_target_case_wrapper_unchanged": true,
+    "rejected_asset_hash_collision": false
+  },
+  "browser_smoke": {
+    "status": "timeout_inconclusive",
+    "exception_captured": false,
+    "note": "Headless Chromium did not complete DOM dump of the ~15 MB single-page app within the restricted 30 s build-environment timeout; case-local runtime-stub QA passed."
+  }
+}
