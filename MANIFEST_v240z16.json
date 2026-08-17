@@ -1,0 +1,100 @@
+{
+  "version": "v2.4.0z16",
+  "base_version": "v2.4.0z15",
+  "type": "patch-only",
+  "scope": [
+    "MET_NGS_003 flagship assets",
+    "MET_NGS_003 test-gated evidence",
+    "MET_NGS_003 VUS/actionability guardrail",
+    "case-local variant concretization"
+  ],
+  "changed_files": [
+    "v5/index.html"
+  ],
+  "new_runtime_files": [
+    "v5/v240z16_metngs003_flagship.js"
+  ],
+  "new_assets": [
+    "v5/assets/met_ngs_003/referral_request_001.png",
+    "v5/assets/met_ngs_003/oncology_letter_001.png",
+    "v5/assets/met_ngs_003/he_metastasis_001.png",
+    "v5/assets/met_ngs_003/erbb2_variant_viewer_001.png",
+    "v5/assets/met_ngs_003/ngs_vus_report_001.png",
+    "v5/assets/met_ngs_003/her2_ihc_1plus_001.png",
+    "v5/assets/met_ngs_003/her2_fish_nonamplified_001.png",
+    "v5/assets/met_ngs_003/vus_curation_workspace_001.png",
+    "v5/assets/met_ngs_003/integrated_mtb_report_001.png"
+  ],
+  "files": [
+    {
+      "path": "v5/index.html",
+      "bytes": 15760618,
+      "sha256": "1517118bdbc8394b08dcebdf6c9ec88beaa3840764b69d903efc5dd4e53fc48a"
+    },
+    {
+      "path": "v5/v240z16_metngs003_flagship.js",
+      "bytes": 33553,
+      "sha256": "fa4bbd7e5f01b67745c33b1397be566541a121a2d3e93c3a1f89f8681e4e9c13"
+    },
+    {
+      "path": "v5/assets/met_ngs_003/referral_request_001.png",
+      "bytes": 1526800,
+      "sha256": "8e7e91c60a5148799cf6c12e12b42e440808619227b80f744a224c92a40c06f4"
+    },
+    {
+      "path": "v5/assets/met_ngs_003/oncology_letter_001.png",
+      "bytes": 1483689,
+      "sha256": "536a90642bf1396bd9e35952a1bea51f87f9d78ec3d696805c800fa315645a58"
+    },
+    {
+      "path": "v5/assets/met_ngs_003/he_metastasis_001.png",
+      "bytes": 2027456,
+      "sha256": "3a98c1436dfd64e2d0a42e05530cc9d45c7451e516484b1bc54bf44eaa27ec8a"
+    },
+    {
+      "path": "v5/assets/met_ngs_003/erbb2_variant_viewer_001.png",
+      "bytes": 1498844,
+      "sha256": "83959d4ba52d3cfd38e96eb77910f4daa2047c6e520c2101c68d8ad9cded09ee"
+    },
+    {
+      "path": "v5/assets/met_ngs_003/ngs_vus_report_001.png",
+      "bytes": 1308843,
+      "sha256": "d6b24951ddbca3043a26ac26a425605dd36e3f1724f4c62b24935ee3a46be810"
+    },
+    {
+      "path": "v5/assets/met_ngs_003/her2_ihc_1plus_001.png",
+      "bytes": 2576160,
+      "sha256": "42e44d59e102ef43002714c162aaf33a65538d4129fe8479f1be3120d72113d2"
+    },
+    {
+      "path": "v5/assets/met_ngs_003/her2_fish_nonamplified_001.png",
+      "bytes": 1532122,
+      "sha256": "f910321ebf589d9f6934ba951ee472fa9713eea8f7430bd62bf0f7bbb07e1e87"
+    },
+    {
+      "path": "v5/assets/met_ngs_003/vus_curation_workspace_001.png",
+      "bytes": 1478419,
+      "sha256": "a5633e7ed901d25f4558b11df951f91510c12261257bd3c4252f5dafacef06b9"
+    },
+    {
+      "path": "v5/assets/met_ngs_003/integrated_mtb_report_001.png",
+      "bytes": 1745635,
+      "sha256": "cdf47eb6cd7d50352d6be401249981e6c4922130ac1a0eaa64f414158c25292a"
+    },
+    {
+      "path": "v5/CHANGELOG_v240z16.md",
+      "bytes": 2023,
+      "sha256": "067373c2a950a9ae6ae17413dbe70d88aada1064c62d5ce630b95728f007b369"
+    },
+    {
+      "path": "v5/QA_REPORT_v240z16.md",
+      "bytes": 1447,
+      "sha256": "b3ae5b9f06dd61d6f3b5d7897e91187358414a4360ca58a37d429a4b3fad491d"
+    },
+    {
+      "path": "v5/QA_RUNTIME_RESULTS_v240z16.json",
+      "bytes": 1850,
+      "sha256": "10cf977347ed1da15dd378aa82f8f5b897bd9ee2d8332ed771eb9f93251da799"
+    }
+  ]
+}

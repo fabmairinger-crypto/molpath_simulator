@@ -1,0 +1,20 @@
+{
+  "version": "v2.4.0z16",
+  "base_version": "v2.4.0z15",
+  "case_id": "MET_NGS_003_v1_0",
+  "status": "PASS",
+  "checks": [
+    {"id":"js_syntax","status":"PASS","detail":"node --check v240z16_metngs003_flagship.js"},
+    {"id":"asset_references","status":"PASS","detail":"9 unique runtime asset references; all 9 files exist and validate as PNG"},
+    {"id":"index_hook","status":"PASS","detail":"v240z16_metngs003_flagship.js referenced exactly once after the z15 module"},
+    {"id":"index_diff_scope","status":"PASS","detail":"Compared with reconstructed v2.4.0z15: index.html change is limited to the new z16 script hook"},
+    {"id":"variant_only_partial","status":"PASS","detail":"ERBB2 variant assessment alone remains incomplete and reveals only variant-specific assets"},
+    {"id":"broad_panel_variant_equivalence","status":"PASS","detail":"broad_pan_panel satisfies the variant-assessment group and reveals the same ERBB2 variant evidence"},
+    {"id":"ihc_gating","status":"PASS","detail":"HER2 IHC asset appears only after her2_ihc and does not reveal FISH"},
+    {"id":"fish_gating","status":"PASS","detail":"HER2/ERBB2 FISH asset appears only after her2_fish and does not reveal IHC"},
+    {"id":"curation_gating","status":"PASS","detail":"VUS curation workspace appears only after vus_literature_review; integrated report remains hidden until completion"},
+    {"id":"direct_therapy_guardrail","status":"PASS","detail":"direct_her2_therapy does not complete the case and is reported as overcalling / non-evidence-based"},
+    {"id":"full_integration","status":"PASS","detail":"variant assessment + IHC + FISH + curation completes the case and reveals the integrated MTB report"},
+    {"id":"variant_consistency","status":"PASS","detail":"runtime case text and flagship results use ERBB2 c.2314G>T (p.L772P), VAF 18.4%, VUS"}
+  ]
+}
