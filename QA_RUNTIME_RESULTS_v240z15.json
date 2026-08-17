@@ -1,0 +1,48 @@
+{
+  "version": "v2.4.0z15",
+  "base_version": "v2.4.0z14a",
+  "case_id": "MTB_NSCLC_002_v1_3",
+  "status": "PASS",
+  "checks": [
+    {
+      "id": "js_syntax",
+      "status": "PASS",
+      "detail": "node --check v240z15_nsclc002_flagship.js"
+    },
+    {
+      "id": "asset_references",
+      "status": "PASS",
+      "detail": "9 unique runtime asset references; all 9 files exist"
+    },
+    {
+      "id": "index_hook",
+      "status": "PASS",
+      "detail": "v240z15_nsclc002_flagship.js referenced exactly once after the z14 CRC_001 module"
+    },
+    {
+      "id": "index_diff_scope",
+      "status": "PASS",
+      "detail": "Compared with v2.4.0z14a: index.html change is limited to the new z15 script hook"
+    },
+    {
+      "id": "targeted_egfr_partial",
+      "status": "PASS",
+      "detail": "rebiopsy_tissue + egfr_t790m_c797s remains incomplete; resistance_panel is still missing"
+    },
+    {
+      "id": "targeted_egfr_no_met_leak",
+      "status": "PASS",
+      "detail": "Targeted EGFR path contains T790M/C797S result but no MET CNV/result asset"
+    },
+    {
+      "id": "broad_tissue_complete",
+      "status": "PASS",
+      "detail": "rebiopsy_tissue + resistance_panel completes the case and renders H&E, tissue NGS, MET CNV and integrated NGS evidence"
+    },
+    {
+      "id": "no_tissue_no_met",
+      "status": "PASS",
+      "detail": "resistance_panel without rebiopsy_tissue does not reveal tissue MET/CNV evidence"
+    }
+  ]
+}

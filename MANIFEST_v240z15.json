@@ -1,0 +1,99 @@
+{
+  "version": "v2.4.0z15",
+  "base_version": "v2.4.0z14a",
+  "type": "patch-only",
+  "scope": [
+    "MTB_NSCLC_002 flagship assets",
+    "MTB_NSCLC_002 progressive evidence gating",
+    "MTB_NSCLC_002 case-local resistance completion logic"
+  ],
+  "changed_files": [
+    "v5/index.html"
+  ],
+  "new_runtime_files": [
+    "v5/v240z15_nsclc002_flagship.js"
+  ],
+  "new_assets": [
+    "v5/assets/mtb_nsclc_002/oncology_letter_001.png",
+    "v5/assets/mtb_nsclc_002/ct_progression_001.png",
+    "v5/assets/mtb_nsclc_002/liquid_biopsy_external_001.png",
+    "v5/assets/mtb_nsclc_002/rebiopsy_he_overview_001.png",
+    "v5/assets/mtb_nsclc_002/rebiopsy_he_zoom_001.png",
+    "v5/assets/mtb_nsclc_002/tissue_resistance_ngs_report_001.png",
+    "v5/assets/mtb_nsclc_002/met_cnv_viewer_001.png",
+    "v5/assets/mtb_nsclc_002/egfr_targeted_resistance_001.png",
+    "v5/assets/mtb_nsclc_002/tissue_ngs_integrated_001.png"
+  ],
+  "files": [
+    {
+      "path": "v5/index.html",
+      "bytes": 15760513,
+      "sha256": "cea930a5109f1d779d11af997f8bc5ddca6ab381dec6fb262dcc648f36b73cd0"
+    },
+    {
+      "path": "v5/v240z15_nsclc002_flagship.js",
+      "bytes": 36720,
+      "sha256": "1438c24170dfd7a378cf2cec78366a49d88143c08fafbf9335eb51a5f15927eb"
+    },
+    {
+      "path": "v5/assets/mtb_nsclc_002/oncology_letter_001.png",
+      "bytes": 1457720,
+      "sha256": "2927723229877f1de442340df94fe5af37f3be6ad5cfe2a1ba09aa3fc2c6aaa5"
+    },
+    {
+      "path": "v5/assets/mtb_nsclc_002/ct_progression_001.png",
+      "bytes": 1990947,
+      "sha256": "64eb172dffb1b5af10780122b6a69c729ce602ef196b4e3f77bec86f8b0b3adf"
+    },
+    {
+      "path": "v5/assets/mtb_nsclc_002/liquid_biopsy_external_001.png",
+      "bytes": 1668710,
+      "sha256": "820537a8d6feeb8439a7a26fd9037517c0bbadb1a7c54eae62d98b00677ce073"
+    },
+    {
+      "path": "v5/assets/mtb_nsclc_002/rebiopsy_he_overview_001.png",
+      "bytes": 2371931,
+      "sha256": "45f609bc59bac198c055c44926465345b9c9effe31b43b9da67769404e2ccad1"
+    },
+    {
+      "path": "v5/assets/mtb_nsclc_002/rebiopsy_he_zoom_001.png",
+      "bytes": 2540343,
+      "sha256": "533aa493cc4a165f39d26e0c176f9911b2e74c2356afe199284eb0c64cb8099a"
+    },
+    {
+      "path": "v5/assets/mtb_nsclc_002/tissue_resistance_ngs_report_001.png",
+      "bytes": 1602815,
+      "sha256": "1a046359ed3da80f8e2e50fb43edfe93e4e54ac667a8084827260421ee5aaf8a"
+    },
+    {
+      "path": "v5/assets/mtb_nsclc_002/met_cnv_viewer_001.png",
+      "bytes": 1575946,
+      "sha256": "0bd2b6022f561d41ec5e1b6de00afd18c0e3d321fa0b41bffe3945074460196e"
+    },
+    {
+      "path": "v5/assets/mtb_nsclc_002/egfr_targeted_resistance_001.png",
+      "bytes": 1501653,
+      "sha256": "036dcfa77984910861e9a8c8b6ccc4a49c8f865bd64a0f8900dd8875e1066e3f"
+    },
+    {
+      "path": "v5/assets/mtb_nsclc_002/tissue_ngs_integrated_001.png",
+      "bytes": 1622305,
+      "sha256": "e8767b957bc85f88c771b59c5cbd02fde1159d386f667c31c7152eab1f6c969b"
+    },
+    {
+      "path": "v5/CHANGELOG_v240z15.md",
+      "bytes": 1951,
+      "sha256": "cd2a5a3afb025c0d5363a32691c5409f46c508849aad7ff1f18e8fe1f64a8841"
+    },
+    {
+      "path": "v5/QA_REPORT_v240z15.md",
+      "bytes": 1100,
+      "sha256": "4b89826007620c8758bfd25939eced9d75e2cb435797d53fb0dfd387bb1d6c10"
+    },
+    {
+      "path": "v5/QA_RUNTIME_RESULTS_v240z15.json",
+      "bytes": 1459,
+      "sha256": "d2d4ae6b1d30f410ba084b61f116653e1a31c442409ad097bdc187e570421a81"
+    }
+  ]
+}
