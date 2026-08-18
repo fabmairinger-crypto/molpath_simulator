@@ -16,13 +16,50 @@ function currentLang(){
   try{raw=localStorage.getItem('molpath_lang')||document.documentElement.lang||languageRegistry.source;}catch(_e){raw=document.documentElement.lang||languageRegistry.source;}
   return languageRegistry.normalize(raw);
 }
+const localeTemplateCache=new WeakMap();
+function escapeTemplateRegExp(s){return s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');}
+function localeTemplateRules(dict){
+  if(!dict||typeof dict!=='object')return [];
+  if(localeTemplateCache.has(dict))return localeTemplateCache.get(dict);
+  const rules=[];
+  Object.keys(dict).forEach(source=>{
+    if(!/\{[^}]+\}/.test(source))return;
+    const names=[];let pattern='^',cursor=0;const re=/\{([^}]+)\}/g;let m;
+    while((m=re.exec(source))){pattern+=escapeTemplateRegExp(source.slice(cursor,m.index));names.push(m[1]);pattern+='(.+?)';cursor=m.index+m[0].length;}
+    pattern+=escapeTemplateRegExp(source.slice(cursor))+'$';
+    try{rules.push({source,target:dict[source],names,re:new RegExp(pattern,'u')});}catch(_e){}
+  });
+  localeTemplateCache.set(dict,rules);return rules;
+}
+function localizeCaptured(value,dict){
+  if(Object.prototype.hasOwnProperty.call(dict,value))return dict[value];
+  return String(value).split(/(, | · )/).map(part=>Object.prototype.hasOwnProperty.call(dict,part)?dict[part]:part).join('');
+}
+function translateLocaleTemplate(source,dict){
+  for(const rule of localeTemplateRules(dict)){
+    const match=rule.re.exec(source);if(!match)continue;
+    let out=rule.target;
+    rule.names.forEach((name,i)=>{out=out.split('{'+name+'}').join(localizeCaptured(match[i+1],dict));});
+    return out;
+  }
+  return undefined;
+}
 function tr(s,lang,node){
   if(!s)return s;
   lang=languageRegistry.normalize(lang);
   if(lang===languageRegistry.source)return s;
   const d=DICT[lang]||{};
-  try{if(window.MolPathI18nResolve){const v=window.MolPathI18nResolve(s,lang,node,d);if(v!==undefined&&v!==null)return v;}}catch(_e){}
-  return Object.prototype.hasOwnProperty.call(d,s)?d[s]:s;
+  let legacyValue;
+  try{
+    if(window.MolPathI18nResolve){
+      legacyValue=window.MolPathI18nResolve(s,lang,node,d);
+      if(legacyValue!==undefined&&legacyValue!==null&&legacyValue!==s)return legacyValue;
+    }
+  }catch(_e){}
+  if(Object.prototype.hasOwnProperty.call(d,s))return d[s];
+  const templated=translateLocaleTemplate(s,d);if(templated!==undefined)return templated;
+  if(legacyValue!==undefined&&legacyValue!==null)return legacyValue;
+  return s;
 }
 function qs(sel,root){return (root||document).querySelector(sel);}
 function createPanel(){

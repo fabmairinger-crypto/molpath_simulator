@@ -1,0 +1,96 @@
+{
+  "artifact": "MolPath Simulator Russian locale 1/8",
+  "base_version": "v2.5.0b",
+  "locale": {
+    "code": "ru",
+    "label": "Русский",
+    "dir": "ltr"
+  },
+  "coverage": {
+    "active_runtime_sources": 13328,
+    "active_translated_or_invariant": 13328,
+    "missing_active": 0,
+    "dynamic_template_patterns": 25,
+    "total_message_entries": 13353,
+    "namespace_strings": 41
+  },
+  "integrity": {
+    "placeholder_mismatches_active": 0,
+    "placeholder_mismatches_all_templates": 0,
+    "html_tag_mismatches": 0,
+    "molecular_variant_core_mismatches": 0,
+    "focused_german_residue_counts": {
+      "BEREIT": 0,
+      "AUSSTEHEND": 0,
+      "DOKUMENTIERT": 0,
+      "Wildtyp": 0,
+      "wildtyp": 0,
+      "Referenzpfad": 0,
+      "Arbeitstage": 0,
+      "Schnitte": 0,
+      "Punkte": 0,
+      "Validierungsgate": 0
+    },
+    "german_specific_character_targets": 1,
+    "german_specific_character_note": "One intentional quoted legacy folder-name example remains (neu/alt_neu/Auswertung final/bitte nicht löschen).",
+    "non_cyrillic_natural_candidate_count_after_polish": 105,
+    "non_cyrillic_note": "Remaining candidates are technical identifiers, gene/assay nomenclature, software/code/CSS/version strings, addresses/names, or intentionally international terminology."
+  },
+  "runtime_vm": {
+    "codes": [
+      "de",
+      "en",
+      "ro",
+      "el",
+      "es",
+      "fr",
+      "ru"
+    ],
+    "normalizeRU": "ru",
+    "ruDir": "ltr",
+    "ruLocaleLoaded": true,
+    "ruMessages": 13353,
+    "ruNamespaceStrings": 41,
+    "bootstrapHasRu": true,
+    "exact": "Библиотека случаев",
+    "templated": "4 рабочих дней",
+    "dynamic": "Отсутствует важная диагностика: Тестирование BRAF V600",
+    "existingContext": "Specimen use",
+    "unknown": "___NOT_PRESENT___",
+    "documentLang": "ru",
+    "documentDir": "ltr"
+  },
+  "syntax": {
+    "runtime_js_checked": 28,
+    "failures": 0
+  },
+  "compatibility": {
+    "new_core_template_bridge": true,
+    "reason": "Legacy TEMPLATE_DEFS returned German source for unregistered historical language payloads; generic locale-template fallback now lets registered future locales resolve those dynamic strings.",
+    "existing_contextual_translation_precedence_test": "PASS",
+    "case_logic_changed": false,
+    "scoring_changed": false,
+    "assets_changed": false
+  },
+  "browser_smoke": {
+    "attempted": true,
+    "completed": false,
+    "result": "BLOCKED_BY_ENVIRONMENT",
+    "detail": "System Chromium launched, but local navigation was blocked with net::ERR_BLOCKED_BY_ADMINISTRATOR."
+  },
+  "files": {
+    "i18n/ru.js": {
+      "bytes": 2542459,
+      "sha256": "8a2d3d1bed1f55a4117b832ad6032dcd056943c06bb27d1aa9f5873188590d79"
+    },
+    "i18n/languages.js": {
+      "bytes": 4381,
+      "sha256": "be060aadde42f195fc64fced55276be8688564c2d329469c3399cb4f9ac25715"
+    },
+    "i18n/core.js": {
+      "bytes": 6802,
+      "sha256": "aa89ac9a131b342d174ad84e6d4d82f942937de207eaa8de1c7446c0b3f5b0f1"
+    }
+  },
+  "overall": "PASS"
+}

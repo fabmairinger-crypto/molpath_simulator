@@ -8,7 +8,8 @@ const DEFINITIONS=[
   {code:'ro',label:'Română',dir:'ltr',file:'ro.js'},
   {code:'el',label:'Ελληνικά',dir:'ltr',file:'el.js'},
   {code:'es',label:'Español',dir:'ltr',file:'es.js'},
-  {code:'fr',label:'Français',dir:'ltr',file:'fr.js'}
+  {code:'fr',label:'Français',dir:'ltr',file:'fr.js'},
+  {code:'ru',label:'Русский',dir:'ltr',file:'ru.js'}
 ];
 const defs=new Map();
 const aliases=new Map();
