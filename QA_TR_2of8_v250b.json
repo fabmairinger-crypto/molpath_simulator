@@ -1,0 +1,124 @@
+{
+  "artifact": "MolPath Simulator Turkish locale 2/8",
+  "base_version": "v2.5.0b + completed RU patch",
+  "locale": {
+    "code": "tr",
+    "label": "Türkçe",
+    "dir": "ltr"
+  },
+  "coverage": {
+    "known_active_runtime_sources_ru_baseline": 13328,
+    "conservative_runtime_source_superset": 13550,
+    "conservative_translated_or_invariant": 13550,
+    "missing_conservative": 0,
+    "dynamic_template_patterns": 25,
+    "dynamic_templates_present": 25,
+    "message_entries_total": 13575,
+    "namespace_strings": 41,
+    "source_inventory_coverage": {
+      "runtime_translation_maps": {
+        "sources": 11657,
+        "missing": 0
+      },
+      "v221_registry": {
+        "sources": 3373,
+        "missing": 0
+      },
+      "direct_de_copy": {
+        "sources": 299,
+        "missing": 0
+      },
+      "structured_de_payload": {
+        "sources": 2207,
+        "missing": 0
+      }
+    }
+  },
+  "integrity": {
+    "blank_message_values": 0,
+    "placeholder_mismatches": 0,
+    "html_tag_mismatches": 0,
+    "molecular_symbol_mismatches": 0,
+    "focused_german_residue_counts": {
+      "BEREIT": 0,
+      "AUSSTEHEND": 0,
+      "DOKUMENTIERT": 0,
+      "Wildtyp": 0,
+      "wildtyp": 0,
+      "Referenzpfad": 0,
+      "Arbeitstage": 0,
+      "Schnitte": 0,
+      "Punkte": 0,
+      "Validierungsgate": 0,
+      "Fallbibliothek": 0,
+      "MSI-Testung": 0,
+      "Primärtumor": 0
+    },
+    "strong_german_character_counts": {
+      "ä": 0,
+      "Ä": 0,
+      "ß": 0
+    },
+    "foreign_script_contamination": {
+      "cyrillic": 0,
+      "arabic": 0,
+      "cjk_hangul_kana": 0
+    },
+    "intentional_legacy_german_example_note": "Quoted legacy folder-name example neu/alt_neu/Auswertung final/bitte nicht löschen remains intentionally as example text."
+  },
+  "runtime_vm": {
+    "codes": [
+      "de",
+      "en",
+      "ro",
+      "el",
+      "es",
+      "fr",
+      "ru",
+      "tr"
+    ],
+    "normalizeTR": "tr",
+    "trDir": "ltr",
+    "trLocaleLoaded": true,
+    "trMessages": 13575,
+    "trNamespaceStrings": 41,
+    "bootstrapHasRu": true,
+    "bootstrapHasTr": true,
+    "bootstrapHasCore": true,
+    "bootstrapHasQa": true,
+    "exact": "Olgu kütüphanesi",
+    "templated": "4 iş günü",
+    "dynamic": "Önemli tanısal testler eksik: BRAF V600 testi",
+    "namespaceLanguage": "Dil",
+    "documentLang": "tr",
+    "documentDir": "ltr"
+  },
+  "syntax": {
+    "standalone_runtime_js_checked": 35,
+    "failures": 0,
+    "excluded_html_wrapped_js_fragments_note": "Files beginning with <script> are HTML fragments and are not standalone JavaScript inputs to node --check."
+  },
+  "ru_compatibility": {
+    "registry_without_tr_exactly_matches_completed_ru_registry": true,
+    "reconstructed_ru_registry_bytes": 4381,
+    "reconstructed_ru_registry_sha256": "be060aadde42f195fc64fced55276be8688564c2d329469c3399cb4f9ac25715",
+    "expected_completed_ru_registry_sha256": "be060aadde42f195fc64fced55276be8688564c2d329469c3399cb4f9ac25715",
+    "required_ru_core_sha256": "aa89ac9a131b342d174ad84e6d4d82f942937de207eaa8de1c7446c0b3f5b0f1",
+    "required_ru_locale_sha256": "8a2d3d1bed1f55a4117b832ad6032dcd056943c06bb27d1aa9f5873188590d79",
+    "new_core_template_bridge_required": true,
+    "case_logic_changed": false,
+    "scoring_changed": false,
+    "assets_changed": false,
+    "index_changed": false,
+    "core_changed": false
+  },
+  "checkpoints": {
+    "last_block": "TR_21_BLOCK_020_FINAL_LONG_XV.json",
+    "full_map": "TR_22_FULL_TRANSLATION_MAP.json",
+    "runtime_extras": "TR_23_RUNTIME_EXTRAS.json",
+    "final_polish": "TR_24_FINAL_POLISH.json",
+    "wildtype_polish": "TR_25_WILDTYPE_POLISH.json",
+    "progress_translated_count": 13550
+  },
+  "overall": "PASS"
+}

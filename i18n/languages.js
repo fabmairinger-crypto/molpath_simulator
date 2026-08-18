@@ -9,7 +9,8 @@ const DEFINITIONS=[
   {code:'el',label:'Ελληνικά',dir:'ltr',file:'el.js'},
   {code:'es',label:'Español',dir:'ltr',file:'es.js'},
   {code:'fr',label:'Français',dir:'ltr',file:'fr.js'},
-  {code:'ru',label:'Русский',dir:'ltr',file:'ru.js'}
+  {code:'ru',label:'Русский',dir:'ltr',file:'ru.js'},
+  {code:'tr',label:'Türkçe',dir:'ltr',file:'tr.js'}
 ];
 const defs=new Map();
 const aliases=new Map();

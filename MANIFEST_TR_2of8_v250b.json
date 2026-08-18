@@ -1,0 +1,22 @@
+{
+  "artifact": "MolPath Simulator Turkish locale patch 2/8",
+  "base": "v2.5.0b + completed RU patch",
+  "date": "2026-08-18",
+  "type": "i18n_locale_patch_only",
+  "locale": {"code": "tr", "label": "Türkçe", "dir": "ltr"},
+  "changed_files": ["i18n/languages.js"],
+  "added_files": ["i18n/tr.js", "QA_TR_2of8_v250b.json", "CHANGELOG_TR_2of8_v250b.md", "README_APPLY_TR_PATCH.md", "SHA256SUMS_TR_2of8_v250b.txt"],
+  "unchanged": ["index.html", "i18n/core.js", "i18n/qa.js", "case logic", "scoring", "assets", "all existing locales including ru"],
+  "preconditions": {
+    "completed_ru_registry_sha256": "be060aadde42f195fc64fced55276be8688564c2d329469c3399cb4f9ac25715",
+    "completed_ru_core_sha256": "aa89ac9a131b342d174ad84e6d4d82f942937de207eaa8de1c7446c0b3f5b0f1",
+    "completed_ru_locale_sha256": "8a2d3d1bed1f55a4117b832ad6032dcd056943c06bb27d1aa9f5873188590d79"
+  },
+  "coverage": {
+    "known_active_runtime_sources_ru_baseline": 13328,
+    "conservative_runtime_source_superset": 13550,
+    "dynamic_template_patterns": 25,
+    "message_entries_total": 13575,
+    "namespace_strings": 41
+  }
+}
