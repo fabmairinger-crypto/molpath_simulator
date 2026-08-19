@@ -1,0 +1,7 @@
+Apply this patch over the currently working build that already contains:
+- LAB_POST_001 Flagship
+- LAB_DOC_001 Flagship
+- RES_HYP_001 Runtime FIX3 Stable
+
+Copy the `v6/` contents into the existing `v6/` folder and overwrite matching files.
+Do not merge with the earlier RES_HYP FIX2 files.

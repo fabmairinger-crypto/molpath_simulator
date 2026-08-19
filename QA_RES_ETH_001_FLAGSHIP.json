@@ -1,0 +1,40 @@
+{
+  "case_id": "RES_ETH_001_v1_0",
+  "asset_count": 10,
+  "asset_png_validation": "PASS",
+  "js_syntax": "PASS",
+  "locale_js_syntax": "PASS",
+  "index_script_order": "PASS",
+  "hook": "stable one-time renderContent wrapper",
+  "mutation_observer_count": 0,
+  "polling_timers": 0,
+  "global_click_hooks": 0,
+  "phase_reveal": {
+    "project_idea": 1,
+    "hypothesis_before_choice": 0,
+    "hypothesis_after_choice": 2,
+    "design_before_choice": 0,
+    "design_after_choice": 1,
+    "methods_before_choice": 0,
+    "methods_after_choice": 1,
+    "analysis": 3,
+    "feedback_before_completion": 1,
+    "feedback_after_completion": 2
+  },
+  "wrapper_chain_stress_renders": 100000,
+  "wrapper_chain_stress": "PASS",
+  "res_hyp_fix3_byte_identical": true,
+  "locale_semantic_preservation_except_resEth001": "PASS",
+  "locales": [
+    "de",
+    "en",
+    "ro",
+    "el",
+    "es",
+    "fr",
+    "ru",
+    "tr"
+  ],
+  "logic_or_scoring_changes": false,
+  "browser_e2e_note": "Playwright/Chromium local and localhost navigation is blocked by this execution environment; runtime wrapper-chain and stress simulation were used instead."
+}
