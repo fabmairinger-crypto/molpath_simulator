@@ -1,0 +1,141 @@
+{
+  "patch": "LAB_DOC_001_FLAGSHIP",
+  "base": "v2.5.0b + LAB_POST_001 flagship",
+  "case_id": "LAB_DOC_001_v1_0",
+  "asset_count": 9,
+  "logic_changes": false,
+  "changed_files": [
+    {
+      "path": "v6/index.html",
+      "sha256": "97450790ba0534efdab428c467fbaaea16ddb4cd64f7649f4264db5eceb58fd6",
+      "bytes": 4136046
+    },
+    {
+      "path": "v6/v250b_labdoc001_flagship.js",
+      "sha256": "cef06c9a72c6106dab9a7b7d283c3003a9e9aa31cc62d398f6f3cdaf36c48a8c",
+      "bytes": 6244
+    },
+    {
+      "path": "v6/i18n/de.js",
+      "sha256": "5fc21f8fa83397b0ddf5987b670691cf1e7b5da705bf53f64d6ae2208115ca3f",
+      "bytes": 11996
+    },
+    {
+      "path": "v6/i18n/en.js",
+      "sha256": "ddeeb031e6924e36f4dec748e700085ebd7c21b703d71333961cff353e44c94c",
+      "bytes": 11399
+    },
+    {
+      "path": "v6/i18n/ro.js",
+      "sha256": "40cc52ab7ea17be4619f60bba1ff1880336eedfa67e2de0178524ee65dbe916d",
+      "bytes": 12237
+    },
+    {
+      "path": "v6/i18n/el.js",
+      "sha256": "cde9a004bda1ba8fd3aec43413756ee9ae01a19f8f121bd4d976b38919159d9d",
+      "bytes": 18547
+    },
+    {
+      "path": "v6/i18n/es.js",
+      "sha256": "4391d54951271233a11d07b870779bb9f0407312d17c85275352315d4db537a7",
+      "bytes": 12409
+    },
+    {
+      "path": "v6/i18n/fr.js",
+      "sha256": "0495812bf013cf5e6ec87dd406a5849e506f032cc90c27ddf35a05ddf300d9ca",
+      "bytes": 12744
+    },
+    {
+      "path": "v6/i18n/ru.js",
+      "sha256": "770b9d352418697bcbf44f7d2f57b033956f9ed7f2f693cf31370e7ded775f63",
+      "bytes": 2551355
+    },
+    {
+      "path": "v6/i18n/tr.js",
+      "sha256": "2019793b01c44b4e7d01bce34ab28d8b9266d4c8fc1a5e29dad9477ee5c414fb",
+      "bytes": 1940103
+    },
+    {
+      "path": "v6/assets/lab_doc_001/lab_notebook_original_001.png",
+      "sha256": "83545929c735094a242408654c686e335aa2f185790feaef4a8ce5739b2b6732",
+      "bytes": 2290989
+    },
+    {
+      "path": "v6/assets/lab_doc_001/qpcr_run_metadata_001.png",
+      "sha256": "619d8d0b295b1c85d4482e476f5d8dac137c952a028e50daace6f9514c327aa0",
+      "bytes": 1371359
+    },
+    {
+      "path": "v6/assets/lab_doc_001/qpcr_amplification_plot_001.png",
+      "sha256": "34a4f05eb51bc45ad324ba31e4117ef89e8de6d96a2c77516a3a2307b9a1ac6f",
+      "bytes": 1422081
+    },
+    {
+      "path": "v6/assets/lab_doc_001/qpcr_ct_replicate_table_001.png",
+      "sha256": "ccefd683dd63ec028fb3e0baa998b55a67bdc059604d12815a14a4a6f9ced9b1",
+      "bytes": 1490552
+    },
+    {
+      "path": "v6/assets/lab_doc_001/lims_traceability_record_001.png",
+      "sha256": "1c2701ca1d00b8254ee742280b8342818c9a2c2bd22ff804b9e7665bbd34e395",
+      "bytes": 1375041
+    },
+    {
+      "path": "v6/assets/lab_doc_001/sop_lot_reagent_reconstruction_001.png",
+      "sha256": "3a3a52c6a9cd54fdb74af0899583b4e902a604cba82d64a1989dc3bc8331ef91",
+      "bytes": 1365438
+    },
+    {
+      "path": "v6/assets/lab_doc_001/evidence_chain_reconstructed_run_001.png",
+      "sha256": "65f2db494a9819d8b9d9232bdc23126bbe632a8893ae30c9116ec5befbda657c",
+      "bytes": 1588666
+    },
+    {
+      "path": "v6/assets/lab_doc_001/deviation_capa_001.png",
+      "sha256": "baf2dec72157a21347ac30b500602bb2beb5665ea40a9902d2ee39c69d9b5505",
+      "bytes": 1647687
+    },
+    {
+      "path": "v6/assets/lab_doc_001/effectiveness_followup_audit_001.png",
+      "sha256": "e772bdbf9bc3e7d2079e99be81d73dac6a77046667ae5cbea720d1e8dabe63b2",
+      "bytes": 1509472
+    }
+  ],
+  "reveal_mapping": {
+    "run_overview": [
+      1
+    ],
+    "qc_event": [
+      2,
+      3,
+      4
+    ],
+    "root_cause": [
+      5,
+      6
+    ],
+    "capa": [
+      7,
+      8
+    ],
+    "post_completion": [
+      9
+    ]
+  },
+  "locales": [
+    "de",
+    "en",
+    "ro",
+    "el",
+    "es",
+    "fr",
+    "ru",
+    "tr"
+  ],
+  "package_metadata_files": [
+    "v6/CHANGELOG_LAB_DOC_001_FLAGSHIP.md",
+    "v6/MANIFEST_LAB_DOC_001_FLAGSHIP.json",
+    "v6/QA_LAB_DOC_001_FLAGSHIP.json",
+    "v6/SHA256SUMS_LAB_DOC_001_FLAGSHIP.txt"
+  ]
+}

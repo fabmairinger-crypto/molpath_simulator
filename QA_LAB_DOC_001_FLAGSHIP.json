@@ -1,0 +1,26 @@
+{
+  "patch": "LAB_DOC_001_FLAGSHIP",
+  "base": "MolPath Simulator v2-5-0b_HOME_TEST6_CENTRAL_I18N_LAB_POST_001_FLAGSHIP.zip",
+  "case_id": "LAB_DOC_001_v1_0",
+  "status": "PASS",
+  "checks": {
+    "asset_files": "9/9 PASS",
+    "module_js_syntax": "PASS",
+    "locale_js_syntax": "8/8 PASS",
+    "locale_namespace_fields": "15/15 in DE/EN/RO/EL/ES/FR/RU/TR",
+    "script_order": "LAB_POST_001 < LAB_DOC_001 < responsive shell PASS",
+    "reveal_runtime_test": {
+      "run_overview": 1,
+      "qc_event": 3,
+      "root_cause": 2,
+      "capa": 2,
+      "audit_before_completion": 0,
+      "audit_after_completion": 1
+    },
+    "non_target_case_asset_leak": "NONE",
+    "previous_lab_post_module": "byte-identical / unchanged",
+    "logic_changes": false,
+    "zip_integrity": "PASS"
+  },
+  "known_unchanged_source_note": "Generic LAB Clinical-Reasoning wording remains unchanged by design."
+}
