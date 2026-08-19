@@ -47,16 +47,42 @@ body[data-molpath-lang="el"] .main, body[data-molpath-lang="el"] .sidebar{font-f
 </style>
 
 
-<!-- v2.5.0b visual startup cover: hides historical intermediate renders without touching runtime -->
+<!-- v2.5.0b polished fixed startup overlay; fully independent from app layout/runtime -->
 <style id="v250b-startup-cover-style">
-body:not(.mp-boot-ready)>*{visibility:hidden!important}
-body:not(.mp-boot-ready)::before{content:"MolPath Simulator";position:fixed;inset:0;z-index:2147483600;display:flex;align-items:center;justify-content:center;padding:24px;background:radial-gradient(circle at 28% 18%,#d9f2fb 0,transparent 34%),#eef6fb;color:#0f4c75;font:800 clamp(1.35rem,4vw,2rem)/1.2 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;letter-spacing:-.02em;visibility:visible!important}
-body:not(.mp-boot-ready)::after{content:"";position:fixed;z-index:2147483601;left:50%;top:calc(50% + 42px);width:34px;height:34px;margin-left:-17px;border:3px solid rgba(15,76,117,.18);border-top-color:#0f4c75;border-radius:50%;animation:mpBootSpin .8s linear infinite;visibility:visible!important}
-@keyframes mpBootSpin{to{transform:rotate(360deg)}}
-@media(prefers-reduced-motion:reduce){body:not(.mp-boot-ready)::after{animation-duration:1.6s}}
+#mpBootScreen{all:initial;position:fixed!important;left:0!important;top:0!important;right:0!important;bottom:0!important;width:100vw!important;height:100vh!important;height:100dvh!important;min-width:100vw!important;min-height:100vh!important;margin:0!important;padding:0!important;z-index:2147483646!important;display:grid!important;place-items:center!important;overflow:hidden!important;isolation:isolate!important;contain:layout paint style!important;transform:translateZ(0)!important;background:radial-gradient(circle at 24% 16%,rgba(194,231,246,.92) 0,rgba(194,231,246,0) 34%),radial-gradient(circle at 82% 84%,rgba(210,237,247,.72) 0,rgba(210,237,247,0) 32%),#eef6fb!important;color:#0b1b34!important;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif!important;opacity:1!important;visibility:visible!important;pointer-events:auto!important;-webkit-font-smoothing:antialiased!important}
+#mpBootScreen,#mpBootScreen *{box-sizing:border-box!important}
+#mpBootScreen .mp-boot-card{width:min(88vw,430px)!important;max-width:430px!important;display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;text-align:center!important;padding:26px 22px!important;margin:0!important;position:relative!important}
+#mpBootScreen .mp-boot-logo-wrap{width:clamp(136px,32vw,184px)!important;height:clamp(136px,32vw,184px)!important;display:grid!important;place-items:center!important;position:relative!important;margin:0 0 24px!important;border-radius:50%!important;filter:drop-shadow(0 18px 30px rgba(15,76,117,.14))!important}
+#mpBootScreen .mp-boot-logo-wrap::before{content:""!important;position:absolute!important;inset:-9px!important;border-radius:50%!important;border:3px solid rgba(15,76,117,.11)!important;border-top-color:#1b7aa2!important;border-right-color:rgba(15,118,110,.72)!important;animation:mpBootHaloSpin 1.55s linear infinite!important}
+#mpBootScreen .mp-boot-logo-wrap::after{content:""!important;position:absolute!important;inset:-18px!important;border-radius:50%!important;border:1px solid rgba(15,76,117,.08)!important}
+#mpBootScreen .mp-boot-logo{display:block!important;width:100%!important;height:100%!important;object-fit:contain!important;border-radius:50%!important;margin:0!important;padding:0!important;background:transparent!important}
+#mpBootScreen .mp-boot-title{display:block!important;margin:0!important;color:#0f4c75!important;font-size:clamp(1.45rem,5vw,2rem)!important;font-weight:850!important;line-height:1.08!important;letter-spacing:-.03em!important}
+#mpBootScreen .mp-boot-wait{display:block!important;margin:10px 0 0!important;color:#344054!important;font-size:clamp(.95rem,3.6vw,1.08rem)!important;font-weight:750!important;line-height:1.35!important}
+#mpBootScreen .mp-boot-sub{display:block!important;margin:5px 0 0!important;color:#667085!important;font-size:clamp(.76rem,2.8vw,.86rem)!important;font-weight:550!important;line-height:1.35!important}
+#mpBootScreen .mp-boot-progress{width:min(72vw,310px)!important;height:8px!important;margin:24px 0 0!important;border-radius:999px!important;overflow:hidden!important;position:relative!important;background:rgba(15,76,117,.11)!important;box-shadow:inset 0 1px 2px rgba(15,35,55,.06)!important}
+#mpBootScreen .mp-boot-progress-bar{position:absolute!important;left:0!important;top:0!important;height:100%!important;width:42%!important;border-radius:999px!important;background:linear-gradient(90deg,#0f4c75,#1b7aa2,#0f766e)!important;box-shadow:0 0 12px rgba(27,122,162,.28)!important;animation:mpBootProgress 1.35s cubic-bezier(.45,0,.2,1) infinite!important}
+#mpBootScreen .mp-boot-dots{display:flex!important;align-items:center!important;justify-content:center!important;gap:6px!important;height:18px!important;margin:11px 0 0!important}
+#mpBootScreen .mp-boot-dots span{display:block!important;width:5px!important;height:5px!important;border-radius:50%!important;background:#1b7aa2!important;opacity:.25!important;animation:mpBootDot 1.2s ease-in-out infinite!important}
+#mpBootScreen .mp-boot-dots span:nth-child(2){animation-delay:.16s!important}#mpBootScreen .mp-boot-dots span:nth-child(3){animation-delay:.32s!important}
+#mpBootScreen.mp-boot-exit{opacity:0!important;pointer-events:none!important;transition:opacity .26s ease!important}
+@keyframes mpBootHaloSpin{to{transform:rotate(360deg)}}
+@keyframes mpBootProgress{0%{transform:translateX(-115%)}55%{transform:translateX(95%)}100%{transform:translateX(245%)}}
+@keyframes mpBootDot{0%,80%,100%{opacity:.22;transform:translateY(0)}40%{opacity:.9;transform:translateY(-3px)}}
+@media(max-height:560px){#mpBootScreen .mp-boot-card{padding:12px 18px!important}#mpBootScreen .mp-boot-logo-wrap{width:112px!important;height:112px!important;margin-bottom:16px!important}#mpBootScreen .mp-boot-progress{margin-top:16px!important}}
+@media(prefers-reduced-motion:reduce){#mpBootScreen .mp-boot-logo-wrap::before,#mpBootScreen .mp-boot-progress-bar,#mpBootScreen .mp-boot-dots span{animation-duration:2.8s!important}}
 </style>
 </head>
 <body>
+<div id="mpBootScreen" role="status" aria-live="polite" aria-label="MolPath Simulator wird initialisiert">
+  <div class="mp-boot-card">
+    <div class="mp-boot-logo-wrap"><img class="mp-boot-logo" src="assets/logos/logo_patho.png" alt="Institut für Pathologie Bochum"></div>
+    <div class="mp-boot-title">MolPath Simulator</div>
+    <div class="mp-boot-wait">Bitte warten</div>
+    <div class="mp-boot-sub">Simulator wird initialisiert …</div>
+    <div class="mp-boot-progress" aria-hidden="true"><span class="mp-boot-progress-bar"></span></div>
+    <div class="mp-boot-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+  </div>
+</div>
 <div class="app">
   <aside class="sidebar">
     <div class="brand"><img id="pathoLogo" alt="Patho Logo"><h1>MolPath<br>Simulator</h1></div>

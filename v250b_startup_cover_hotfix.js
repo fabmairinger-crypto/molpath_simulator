@@ -1,13 +1,13 @@
-/* MolPath Simulator v2.5.0b — visual startup cover hotfix
-   Scope: hide historical intermediate startup renders only.
+/* MolPath Simulator v2.5.0b — polished fixed startup cover hotfix
+   Scope: visual startup cover only.
    Does NOT wrap/replace render(), alter case logic, responsive behavior, i18n,
    event handlers, or startup patch execution. */
 (function(){
   'use strict';
 
   const VERSION='v2.5.0b';
-  const READY_CLASS='mp-boot-ready';
   const MIN_SETTLE_MS=360; // existing delayed startup cosmetics peak at 180 ms
+  const EXIT_MS=280;
   let revealed=false;
 
   function ensureFinalVersionStyle(){
@@ -36,16 +36,25 @@
     }catch(_){ }
   }
 
+  function dismissOverlay(){
+    try{
+      const overlay=document.getElementById('mpBootScreen');
+      if(!overlay)return;
+      overlay.classList.add('mp-boot-exit');
+      setTimeout(function(){
+        try{ overlay.remove(); }catch(_){ }
+      },EXIT_MS);
+    }catch(_){ }
+  }
+
   function reveal(){
     if(revealed)return;
     revealed=true;
     ensureFinalVersionStyle();
     stampVersion();
-    // two frames ensure final DOM/CSS mutations have been painted underneath
+    // Two frames allow the final underlying DOM/CSS state to settle before fade-out.
     requestAnimationFrame(function(){
-      requestAnimationFrame(function(){
-        document.body.classList.add(READY_CLASS);
-      });
+      requestAnimationFrame(dismissOverlay);
     });
   }
 
@@ -66,7 +75,7 @@
 
   window.MolPathStartupCoverHotfix=Object.freeze({
     version:VERSION,
-    base:'v2.5.0b + asset modal test1',
+    base:'v2.5.0b + asset modal + startup cover',
     reveal:reveal
   });
 })();
