@@ -1,0 +1,127 @@
+{
+  "artifact": "MolPath Simulator v2.5.0b Arabic FINAL QA",
+  "base_zip": "MolPath Simulator v2-5-0b_all_flagships.zip",
+  "base_zip_sha256": "4e87620d670d9f9ca9fa2d13f5f397bb678f0ac9a81bd4142a38e2498596fc72",
+  "expected_base_sha256": "4e87620d670d9f9ca9fa2d13f5f397bb678f0ac9a81bd4142a38e2498596fc72",
+  "catalog": {
+    "arabic_message_count": 14308,
+    "turkish_reference_message_count": 13575,
+    "extra_arabic_runtime_mappings_beyond_tr": 733,
+    "tr_reference_missing": 0,
+    "ar00_source_inventory_missing": 0,
+    "manual_runtime_extras_missing": 0,
+    "placeholder_mismatches": 0,
+    "numeric_token_mismatches": 0,
+    "arabic_script_values": 13460,
+    "technical_identity_mappings": 842,
+    "allowed_nonarabic_technical_normalizations": [
+      {
+        "key": "20-30",
+        "ar": "20–30"
+      },
+      {
+        "key": "MMR IHC (MLH1, PMS2, MSH2, MSH6)",
+        "ar": "MMR-IHC ‏(MLH1, PMS2, MSH2, MSH6)"
+      },
+      {
+        "key": "ALK FISH",
+        "ar": "ALK-FISH"
+      },
+      {
+        "key": "KRAS Exon 2",
+        "ar": "KRAS exon 2"
+      },
+      {
+        "key": "18-25",
+        "ar": "18–25"
+      },
+      {
+        "key": "capa",
+        "ar": "CAPA"
+      }
+    ]
+  },
+  "namespaces": {
+    "count": 7,
+    "leaf_counts": {
+      "ui230": 12,
+      "v240l": 29,
+      "home": 81,
+      "labPost001": 16,
+      "labDoc001": 15,
+      "resHyp001": 17,
+      "resEth001": 19
+    },
+    "total_leaves": 189,
+    "missing_leaves": 0,
+    "placeholder_mismatches": 0,
+    "numeric_token_mismatches": 0,
+    "nonarabic_changed_leaves": 0
+  },
+  "residue_audit": {
+    "message_german_residue_candidates": 0,
+    "namespace_german_residue_candidates": 0,
+    "umlaut_message_values": 0
+  },
+  "rtl_registry": {
+    "registry_mock_pass": true,
+    "checks": {
+      "registered": true,
+      "doc_lang": true,
+      "doc_dir": true,
+      "bootstrap_ar": true,
+      "bootstrap_rtl": true,
+      "bootstrap_core": true,
+      "bootstrap_qa": true
+    },
+    "languages_js_sha256": "abe25140d20f71cf1028ebdc0a3bfc141004315c233a9b4795db3373cbb04508",
+    "rtl_css_sha256": "00eb235acad60664fcb783089f6513ab36a827d2901c4dbcd46edc72a8862540"
+  },
+  "syntax": {
+    "standalone_js_checked": 53,
+    "standalone_js_passed": 53,
+    "standalone_js_failed": 0,
+    "excluded_historical_wrapped_fragment": [
+      {
+        "file": "v224c_ui_residue_patch.js",
+        "reason": "HTML-wrapped historical patch fragment, not standalone JS",
+        "sha256": "86ba2988c027de8344ec80c2b5b23e2464d4140923f6c958f54c4e9a1c81831d"
+      }
+    ],
+    "excluded_fragment_unchanged_from_base": true
+  },
+  "patch_scope": {
+    "runtime_files": [
+      "v13/i18n/ar.js",
+      "v13/i18n/languages.js",
+      "v13/i18n/rtl.css"
+    ],
+    "case_logic_changed": false,
+    "scoring_changed": false,
+    "assets_changed": false
+  },
+  "details": {
+    "tr_missing": [],
+    "source_missing": [],
+    "manual_missing": [],
+    "placeholder_mismatches": [],
+    "numeric_mismatches": [],
+    "german_residues": [],
+    "namespace_missing": [],
+    "namespace_placeholder_mismatches": [],
+    "namespace_numeric_mismatches": [],
+    "namespace_german_residues": [],
+    "syntax_failures": []
+  },
+  "pass": true,
+  "zip_integrity": true,
+  "zip_members": [
+    "CHANGELOG_AR_FINAL_v250b.md",
+    "APPLY_AR_FINAL.txt",
+    "MANIFEST_AR_FINAL_v250b.json",
+    "v13/qa/QA_AR_FINAL_v250b.json",
+    "v13/i18n/ar.js",
+    "v13/i18n/languages.js",
+    "v13/i18n/rtl.css"
+  ]
+}

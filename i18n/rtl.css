@@ -1,0 +1,43 @@
+/* MolPath Simulator v2.5.0b — generic RTL presentation layer
+   Shared by Arabic now and future RTL locales (e.g. Persian). No case/scoring logic. */
+html[dir="rtl"] body{direction:rtl;text-align:start}
+html[dir="rtl"] input,
+html[dir="rtl"] textarea,
+html[dir="rtl"] select,
+html[dir="rtl"] button{direction:rtl}
+html[dir="rtl"] .sidebar{border-right:0;border-left:1px solid var(--line)}
+html[dir="rtl"] .powered{margin-left:0;margin-right:110px}
+html[dir="rtl"] .table th{text-align:start}
+html[dir="rtl"] .case-list{padding-right:0;padding-left:4px}
+html[dir="rtl"] .warnbox{border-left:0;border-right:4px solid var(--warn)}
+html[dir="rtl"] .badbox{border-left:0;border-right:4px solid var(--bad)}
+html[dir="rtl"] .okbox{border-left:0;border-right:4px solid var(--ok)}
+html[dir="rtl"] .timeline-item{border-left:0;border-right:4px solid var(--primary2)}
+html[dir="rtl"] .method-recommended{border-left:1px solid var(--line);border-right:4px solid var(--ok)}
+html[dir="rtl"] .method-optional{border-left:1px solid var(--line);border-right:4px solid var(--primary2)}
+html[dir="rtl"] .method-reflex{border-left:1px solid var(--line);border-right:4px solid var(--warn)}
+html[dir="rtl"] .method-low_value{border-left:1px solid var(--line);border-right:4px solid #d0d5dd}
+html[dir="rtl"] .method-invalid{border-left:1px solid var(--line);border-right:4px solid var(--bad)}
+html[dir="rtl"] .method-status{margin-left:0;margin-right:6px}
+html[dir="rtl"] .v240l-signature-badge{margin-left:0;margin-right:auto}
+html[dir="rtl"] .v240r-legal-body ul{padding-left:0;padding-right:20px}
+html[dir="rtl"] #mpHomeSidebarBtn,
+html[dir="rtl"] #mpHomeScreen .mph-card{text-align:start}
+html[dir="rtl"] #mpHomeScreen .mph-lang select{padding:8px 10px 8px 28px}
+html[dir="rtl"] #mpAssetModalHotfix .mpam-head{padding:7px 13px 7px 8px}
+html[dir="rtl"] .toast{right:auto;left:18px}
+
+/* Keep short technical tokens readable inside RTL prose without reversing characters. */
+html[dir="rtl"] code,
+html[dir="rtl"] pre,
+html[dir="rtl"] [data-i18n-skip]{unicode-bidi:isolate}
+
+@media(max-width:1400px){
+  html[dir="rtl"] .sidebar{left:auto!important;right:0!important;border-right:0!important;border-left:1px solid var(--line)!important;transform:translateX(105%)}
+  html[dir="rtl"] body.mp21-nav-open .sidebar{transform:translateX(0)}
+  html[dir="rtl"] .mp21-sidebar-close{margin:0 auto 10px 0}
+}
+@media(max-width:760px){
+  html[dir="rtl"] #mpAssetModalHotfix .mpam-head{padding-left:8px;padding-right:10px}
+  html[dir="rtl"] .powered{margin-left:0!important;margin-right:86px!important}
+}

@@ -1,0 +1,18 @@
+{
+  "artifact": "MolPath Simulator v2.5.0b Arabic FINAL patch",
+  "base": "MolPath Simulator v2-5-0b_all_flagships.zip",
+  "base_sha256": "4e87620d670d9f9ca9fa2d13f5f397bb678f0ac9a81bd4142a38e2498596fc72",
+  "qa": "PASS",
+  "runtime_files": {
+    "v13/i18n/ar.js": "2bd06afb6af365058b819d878d7d622bb631db2e381bc578745a95ed2fa46e20",
+    "v13/i18n/languages.js": "abe25140d20f71cf1028ebdc0a3bfc141004315c233a9b4795db3373cbb04508",
+    "v13/i18n/rtl.css": "00eb235acad60664fcb783089f6513ab36a827d2901c4dbcd46edc72a8862540"
+  },
+  "support_files": [
+    "v13/qa/QA_AR_FINAL_v250b.json",
+    "CHANGELOG_AR_FINAL_v250b.md",
+    "APPLY_AR_FINAL.txt"
+  ],
+  "message_count": 14308,
+  "namespace_leaves": 189
+}

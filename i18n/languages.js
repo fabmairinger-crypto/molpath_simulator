@@ -10,7 +10,8 @@ const DEFINITIONS=[
   {code:'es',label:'Español',dir:'ltr',file:'es.js'},
   {code:'fr',label:'Français',dir:'ltr',file:'fr.js'},
   {code:'ru',label:'Русский',dir:'ltr',file:'ru.js'},
-  {code:'tr',label:'Türkçe',dir:'ltr',file:'tr.js'}
+  {code:'tr',label:'Türkçe',dir:'ltr',file:'tr.js'},
+  {code:'ar',label:'العربية',dir:'rtl',file:'ar.js'}
 ];
 const defs=new Map();
 const aliases=new Map();
@@ -72,11 +73,15 @@ function bootstrapRegisteredLocales(){
   const current=document.currentScript;
   const base=(current&&current.src)?current.src.replace(/languages\.js(?:\?.*)?$/,''): 'i18n/';
   const scripts=list().map(def=>base+def.file).concat([base+'core.js',base+'qa.js']);
+  const rtlHref=base+'rtl.css';
+  const needsRtl=list().some(def=>def.dir==='rtl');
   if(document.readyState==='loading'){
-    document.write(scripts.map(src=>'<script src="'+src+'"></script>').join(''));
+    const rtlLink=needsRtl?'<link rel="stylesheet" href="'+rtlHref+'">':'';
+    document.write(rtlLink+scripts.map(src=>'<script src="'+src+'"></script>').join(''));
     return;
   }
   // Defensive fallback for non-parser-time loading.
+  if(needsRtl&&!document.querySelector('link[data-molpath-rtl]')){const link=document.createElement('link');link.rel='stylesheet';link.href=rtlHref;link.setAttribute('data-molpath-rtl','1');document.head.appendChild(link);}
   let chain=Promise.resolve();
   scripts.forEach(src=>{chain=chain.then(()=>new Promise((resolve,reject)=>{const el=document.createElement('script');el.src=src;el.onload=resolve;el.onerror=reject;document.head.appendChild(el);}));});
   window.MolPathI18nBootstrapReady=chain;
