@@ -1,0 +1,34 @@
+{
+  "build": "v2-5-0b_HOME_TEST6_CENTRAL_I18N",
+  "basis": "v2-5-0b_HOME_TEST5_POSTLOADER",
+  "runtime_files_modified": [
+    "v250b_home_screen.js",
+    "i18n/de.js",
+    "i18n/en.js",
+    "i18n/ro.js",
+    "i18n/el.js",
+    "i18n/es.js",
+    "i18n/fr.js",
+    "i18n/ru.js",
+    "i18n/tr.js"
+  ],
+  "documentation_added": [
+    "QA_HOME_I18N_TEST6.json",
+    "HOME_I18N_KEY_REGISTRY_TEST6.json",
+    "CHANGELOG_HOME_I18N_TEST6.md"
+  ],
+  "sha256": {
+    "v250b_home_screen.js": "17be76f9b64319c1d369f5c94ed36324dec837153f63652e79d233b145bfa531",
+    "i18n/de.js": "d5235c9413e909e3a43fa19eb17de0469f822f2aa48f00fd2c241aef551d6ecc",
+    "i18n/en.js": "07e0e305dcb9a34764320f21fca7ec4a4b22cc7a6f57fa5a0855d90f49f3ad8a",
+    "i18n/ro.js": "f5f1b5aa7bf4bce04ea7251719883c31b3ef21e16aa6257915c4aec34dca2b4f",
+    "i18n/el.js": "a51ef0758f22bb698ad5500f5a6054f006a16a8505aa09dd3638d4ef4b69569e",
+    "i18n/es.js": "450891dfc6020aaaadb98eda344065a7f94558952204da15d54cbe7950ce256e",
+    "i18n/fr.js": "2b5ad31479ce0493ce6f7cb5f38f91a6d7a6f8779101435de4989132d22c2fef",
+    "i18n/ru.js": "e71198e3a1af5931dfc280778578de4b1a944c0de438392be9881fe2f953d87e",
+    "i18n/tr.js": "87b31f99c411a74f47b482284efcab6f670c0d3027669d3679c1212c8154140f",
+    "QA_HOME_I18N_TEST6.json": "faeed7b049da6001c9a77583fa89fe366c91c3ce1e4eea4c66c633209341c769",
+    "HOME_I18N_KEY_REGISTRY_TEST6.json": "afe0bba9e9b274dd4845d6eba9be7779c326c9c43491d83cd5121fec31f9080e",
+    "CHANGELOG_HOME_I18N_TEST6.md": "c0676a9fc5f1abbc6f967abb16beea6a404348a747553f813f7c3f64eca07a85"
+  }
+}

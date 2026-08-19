@@ -1,0 +1,132 @@
+{
+  "build": "HOME_TEST6_CENTRAL_I18N",
+  "basis": "v2-5-0b_HOME_TEST5_POSTLOADER",
+  "pass": true,
+  "central_namespace": "home",
+  "languages": [
+    "de",
+    "en",
+    "ro",
+    "el",
+    "es",
+    "fr",
+    "ru",
+    "tr"
+  ],
+  "coverage": {
+    "de": {
+      "keys": 36,
+      "expected_keys": 36,
+      "missing": [],
+      "extra": [],
+      "copy_preserved_exactly": true,
+      "how_steps": 5,
+      "tutorial_steps": 7,
+      "modes": 3,
+      "news_items": 4
+    },
+    "en": {
+      "keys": 36,
+      "expected_keys": 36,
+      "missing": [],
+      "extra": [],
+      "copy_preserved_exactly": true,
+      "how_steps": 5,
+      "tutorial_steps": 7,
+      "modes": 3,
+      "news_items": 4
+    },
+    "ro": {
+      "keys": 36,
+      "expected_keys": 36,
+      "missing": [],
+      "extra": [],
+      "copy_preserved_exactly": true,
+      "how_steps": 5,
+      "tutorial_steps": 7,
+      "modes": 3,
+      "news_items": 4
+    },
+    "el": {
+      "keys": 36,
+      "expected_keys": 36,
+      "missing": [],
+      "extra": [],
+      "copy_preserved_exactly": true,
+      "how_steps": 5,
+      "tutorial_steps": 7,
+      "modes": 3,
+      "news_items": 4
+    },
+    "es": {
+      "keys": 36,
+      "expected_keys": 36,
+      "missing": [],
+      "extra": [],
+      "copy_preserved_exactly": true,
+      "how_steps": 5,
+      "tutorial_steps": 7,
+      "modes": 3,
+      "news_items": 4
+    },
+    "fr": {
+      "keys": 36,
+      "expected_keys": 36,
+      "missing": [],
+      "extra": [],
+      "copy_preserved_exactly": true,
+      "how_steps": 5,
+      "tutorial_steps": 7,
+      "modes": 3,
+      "news_items": 4
+    },
+    "ru": {
+      "keys": 36,
+      "expected_keys": 36,
+      "missing": [],
+      "extra": [],
+      "copy_preserved_exactly": true,
+      "how_steps": 5,
+      "tutorial_steps": 7,
+      "modes": 3,
+      "news_items": 4
+    },
+    "tr": {
+      "keys": 36,
+      "expected_keys": 36,
+      "missing": [],
+      "extra": [],
+      "copy_preserved_exactly": true,
+      "how_steps": 5,
+      "tutorial_steps": 7,
+      "modes": 3,
+      "news_items": 4
+    }
+  },
+  "home_js": {
+    "local_COPY_removed": true,
+    "uses_locale_registry_namespace": true,
+    "i18n_after_apply_hook_present": false
+  },
+  "diff_vs_test5": {
+    "changed": [
+      "i18n/de.js",
+      "i18n/el.js",
+      "i18n/en.js",
+      "i18n/es.js",
+      "i18n/fr.js",
+      "i18n/ro.js",
+      "i18n/ru.js",
+      "i18n/tr.js",
+      "v250b_home_screen.js"
+    ],
+    "added": [],
+    "removed": []
+  },
+  "referenced_js": {
+    "count": 22,
+    "exists": 22,
+    "syntax_ok": 22,
+    "bad": []
+  }
+}
