@@ -1,0 +1,5 @@
+RES_HYP_001 FIX3 STABLE
+
+Apply OVER the current build containing broken FIX2. Overwrite existing files.
+Critical replacements: v6/index.html and v6/v250b_reshyp001_flagship.js.
+The 9 assets and locale files are included again defensively.

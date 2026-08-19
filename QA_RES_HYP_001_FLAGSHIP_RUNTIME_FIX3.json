@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "case_id": "RES_HYP_001_v0_9",
+  "fix": "FIX3 stable renderContent wrapper; removes FIX2 MutationObserver loop",
+  "assets": {
+    "expected": 9,
+    "present": 9,
+    "png_magic_valid": true
+  },
+  "runtime": {
+    "res_inline_dom_hook_removed": true,
+    "single_external_flagship_script_reference": true,
+    "mutation_observer_in_res_flagship": false,
+    "global_click_listener_in_res_flagship": false,
+    "core_scoring_logic_changed": false,
+    "other_flagship_modules_modified": false
+  },
+  "reveal_simulation": {
+    "project_idea": 1,
+    "hypothesis_before_choice": 0,
+    "hypothesis_after_choice": 2,
+    "methods": 1,
+    "analysis": 2,
+    "feedback_before_completion": 2,
+    "feedback_after_completion": 3
+  },
+  "performance_simulation": "100000 renderContent calls completed without recursive observer loop",
+  "locales": [
+    "de",
+    "en",
+    "ro",
+    "el",
+    "es",
+    "fr",
+    "ru",
+    "tr"
+  ]
+}
