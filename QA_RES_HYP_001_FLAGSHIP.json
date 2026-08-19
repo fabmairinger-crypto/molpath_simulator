@@ -1,0 +1,82 @@
+{
+  "patch": "RES_HYP_001_FLAGSHIP",
+  "case_id": "RES_HYP_001_v0_9",
+  "asset_count_expected": 9,
+  "asset_files_present": true,
+  "module_before_responsive_shell": true,
+  "syntax": {
+    "v250b_reshyp001_flagship.js": {
+      "pass": true,
+      "detail": ""
+    },
+    "i18n/de.js": {
+      "pass": true,
+      "detail": ""
+    },
+    "i18n/en.js": {
+      "pass": true,
+      "detail": ""
+    },
+    "i18n/ro.js": {
+      "pass": true,
+      "detail": ""
+    },
+    "i18n/el.js": {
+      "pass": true,
+      "detail": ""
+    },
+    "i18n/es.js": {
+      "pass": true,
+      "detail": ""
+    },
+    "i18n/fr.js": {
+      "pass": true,
+      "detail": ""
+    },
+    "i18n/ru.js": {
+      "pass": true,
+      "detail": ""
+    },
+    "i18n/tr.js": {
+      "pass": true,
+      "detail": ""
+    }
+  },
+  "locale_namespace_present": {
+    "de": true,
+    "en": true,
+    "ro": true,
+    "el": true,
+    "es": true,
+    "fr": true,
+    "ru": true,
+    "tr": true
+  },
+  "functional_gating": {
+    "project": 1,
+    "hyp0": 0,
+    "hypChosen": 2,
+    "methods": 1,
+    "analysis": 2,
+    "feedback": 2,
+    "done": 3,
+    "other": 0
+  },
+  "functional_gating_expected": {
+    "project": 1,
+    "hyp0": 0,
+    "hypChosen": 2,
+    "methods": 1,
+    "analysis": 2,
+    "feedback": 2,
+    "done": 3,
+    "other": 0
+  },
+  "functional_gating_pass": true,
+  "logic_changes": false,
+  "existing_flagships_expected_intact": [
+    "LAB_POST_001",
+    "LAB_DOC_001"
+  ],
+  "pass": true
+}

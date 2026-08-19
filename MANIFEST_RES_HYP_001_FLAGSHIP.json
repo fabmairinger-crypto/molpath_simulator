@@ -1,0 +1,138 @@
+{
+  "patch": "RES_HYP_001_FLAGSHIP",
+  "base": "v2.5.0b + LAB_POST_001 + LAB_DOC_001",
+  "case_id": "RES_HYP_001_v0_9",
+  "asset_count": 9,
+  "logic_changes": false,
+  "changed_files": [
+    {
+      "path": "v6/index.html",
+      "sha256": "a8bd33655aa547c982751ec1680a9b5f1f1af3b5dcdf03f32eb5c612cc5d5670",
+      "bytes": 4136149
+    },
+    {
+      "path": "v6/v250b_reshyp001_flagship.js",
+      "sha256": "17688a8a910616a9a404004ca66ffc3cd6b8fa30f2c3700b0004b14fd4e3b607",
+      "bytes": 7658
+    },
+    {
+      "path": "v6/i18n/de.js",
+      "sha256": "e7a0376e4378ad4300f3af95c656260212a9472f16f6050a15f324f05b51c10e",
+      "bytes": 12932
+    },
+    {
+      "path": "v6/i18n/en.js",
+      "sha256": "d47540834e33fb1df63fe33d2badbf30010e93883d26b81dce4f9bc315c27431",
+      "bytes": 12302
+    },
+    {
+      "path": "v6/i18n/ro.js",
+      "sha256": "e65d6b00c74159d46e86ad23c6734462852aa8ed35b28fb64d98b1f9260a77a7",
+      "bytes": 13228
+    },
+    {
+      "path": "v6/i18n/el.js",
+      "sha256": "883668bfa4b376a7195da83dc5e9f04faf58a0794759876e2a74ee0ac070c7a5",
+      "bytes": 19992
+    },
+    {
+      "path": "v6/i18n/es.js",
+      "sha256": "43acdf1ba022d65644eed9c5448b4181fa45da8bb639086b745eae835eccfa11",
+      "bytes": 13382
+    },
+    {
+      "path": "v6/i18n/fr.js",
+      "sha256": "be6df0356e580fac20bd102cb4746f916a49956fe9cc96195493c735812b8476",
+      "bytes": 13752
+    },
+    {
+      "path": "v6/i18n/ru.js",
+      "sha256": "b75ee1b4dbba7a14dabf903704f22cb72671742d8e94b07689345fee774fbd1d",
+      "bytes": 2552819
+    },
+    {
+      "path": "v6/i18n/tr.js",
+      "sha256": "75d1af64f2429c59c2b394243636f393e6bacf72d8447e7577c883e045457b8b",
+      "bytes": 1941105
+    },
+    {
+      "path": "v6/assets/res_hyp_001/project_onepager_initial_001.png",
+      "sha256": "7e49f36ab05b296ea2bd51b7c16cea68678a390a0e1b327b22ee6fe09df8d510",
+      "bytes": 2400414
+    },
+    {
+      "path": "v6/assets/res_hyp_001/cohort_spreadsheet_40cases_001.png",
+      "sha256": "46d52b29689987a95a400c0e9629c046c5b1ec0a40b78fedf493d778153b31c8",
+      "bytes": 1477813
+    },
+    {
+      "path": "v6/assets/res_hyp_001/ffpe_rna_qc_dashboard_001.png",
+      "sha256": "b44d85e1be4500e82ce325238449b670840cee7e47633a3296d8c04c208a84c4",
+      "bytes": 180528
+    },
+    {
+      "path": "v6/assets/res_hyp_001/clinical_data_completeness_001.png",
+      "sha256": "8796212fb74337ee2a0ff42588806c2578ca2ff23dfffb9c1bbd6cd6e525cdb1",
+      "bytes": 1449552
+    },
+    {
+      "path": "v6/assets/res_hyp_001/pca_batch_confounders_001.png",
+      "sha256": "339c9b4046f83b759f166d1ac13b0b519c260ad54217a86600aa8cefe5f09965",
+      "bytes": 1451060
+    },
+    {
+      "path": "v6/assets/res_hyp_001/cohort_attrition_40_to_26_001.png",
+      "sha256": "202423fe8eaaf96ea9f8b6d45379bcceaeed7efc8335b332f71d71b6328b5df2",
+      "bytes": 1470068
+    },
+    {
+      "path": "v6/assets/res_hyp_001/pico_analysis_plan_001.png",
+      "sha256": "bbfc045d86e480800c904cbf992d5abdd0b6ade3471d102227b3aee6209093fb",
+      "bytes": 1608100
+    },
+    {
+      "path": "v6/assets/res_hyp_001/caf_tgfb_discovery_results_001.png",
+      "sha256": "ad0d4da63cd2a2c4849df87272fdc619466dcfab8204a843ec15373de2969084",
+      "bytes": 1569522
+    },
+    {
+      "path": "v6/assets/res_hyp_001/discovery_validation_roadmap_001.png",
+      "sha256": "f09f5dddf89fe5356e69a7dafb563c8dd28d7ab1eb6176ab767dec68e981cbbf",
+      "bytes": 1750335
+    }
+  ],
+  "reveal_mapping": {
+    "project_idea": [
+      1
+    ],
+    "after_hypothesis": [
+      2,
+      3
+    ],
+    "methods": [
+      5
+    ],
+    "analysis": [
+      4,
+      6
+    ],
+    "feedback": [
+      7,
+      8
+    ],
+    "post_completion": [
+      9
+    ]
+  },
+  "locales": [
+    "de",
+    "en",
+    "ro",
+    "el",
+    "es",
+    "fr",
+    "ru",
+    "tr"
+  ],
+  "spoiler_guard": "asset 4 gated with asset 6 because approved image contains n=26"
+}
