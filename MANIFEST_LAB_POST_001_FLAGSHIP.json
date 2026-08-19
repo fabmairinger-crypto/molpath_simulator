@@ -1,0 +1,121 @@
+{
+  "patch_id": "LAB_POST_001_FLAGSHIP",
+  "base": "MolPath Simulator v2-5-0b_HOME_TEST6_CENTRAL_I18N",
+  "app_version_preserved": "v2.5.0b",
+  "case_id": "LAB_POST_001_v1_0",
+  "scope": "additive flagship asset layer only",
+  "asset_count": 9,
+  "phase_gating": {
+    "run_overview": [
+      1,
+      5
+    ],
+    "qc_event": [
+      2
+    ],
+    "root_cause": [
+      3,
+      4
+    ],
+    "capa": [
+      6,
+      8
+    ],
+    "post_completion": [
+      7,
+      9
+    ]
+  },
+  "logic_changes": false,
+  "i18n_namespace": "labPost001",
+  "languages": [
+    "de",
+    "en",
+    "ro",
+    "el",
+    "es",
+    "fr",
+    "ru",
+    "tr"
+  ],
+  "modified_files": [
+    {
+      "path": "index.html",
+      "sha256": "046d728f59a3e11b0b353423442ac27a20c51f4a57d39ea529c39a7d2dc12b07"
+    },
+    {
+      "path": "i18n/de.js",
+      "sha256": "f18f52a66048f38a6476eff42d9b92ce2b17cbc248dac4a78b53f3c1b1acdac6"
+    },
+    {
+      "path": "i18n/en.js",
+      "sha256": "09111506a5014cb4f6ea72122f93eec2448a4b008b6fe0e8b80d74217120fd30"
+    },
+    {
+      "path": "i18n/ro.js",
+      "sha256": "ebc830caab4e90435d8e8aeb1a0391b6ac3e0d290c4571f838a4501161aa54f6"
+    },
+    {
+      "path": "i18n/el.js",
+      "sha256": "4cf66f5da650211dedc8f22ac105dd590e7669db46c25cd13b08dceb58c7ece8"
+    },
+    {
+      "path": "i18n/es.js",
+      "sha256": "eec74180e1d8ce212d0fb8166308ada6e56f7937f132545c3e5630c6f1422d37"
+    },
+    {
+      "path": "i18n/fr.js",
+      "sha256": "f9a40504325e98de0230fea5bd63aef1567a9ca458504095db411f8cde8f5dde"
+    },
+    {
+      "path": "i18n/ru.js",
+      "sha256": "71fee3d17d3a5ffc65117e305a5984c83345ca2b50fd3c0c92d908ce821a6f34"
+    },
+    {
+      "path": "i18n/tr.js",
+      "sha256": "b68b11616aeb377dcd2e34737b575a8cfba7f7ff18af1eab302ee2a9b48f704c"
+    }
+  ],
+  "new_files": [
+    {
+      "path": "v250b_labpost001_flagship.js",
+      "sha256": "05b8db991435029e40f08b14697268daee3fa007253250d5aed4e0114f998cd0"
+    },
+    {
+      "path": "assets/lab_post_001/capa_change_control_closure_001.png",
+      "sha256": "3964ec75b1e03a055d97afb7df7476b5679adbf72e6bfe8115df9e7fd73907bb"
+    },
+    {
+      "path": "assets/lab_post_001/change_control_incomplete_001.png",
+      "sha256": "c4cc42d637790154da0ac6b5e8162e39df3007413f7f3f20da0c27b229373388"
+    },
+    {
+      "path": "assets/lab_post_001/impact_analysis_48_cases_001.png",
+      "sha256": "add113895daaec3d5f523d9aca32d466bca7d11ce60c1abee739e8ca816153c6"
+    },
+    {
+      "path": "assets/lab_post_001/met_rna_orthogonal_confirmation_001.png",
+      "sha256": "1898a22445b6ac74b052ab93e2128da88d9f51180b4d60370eae6f92f3d0f4f1"
+    },
+    {
+      "path": "assets/lab_post_001/met_splice_variant_review_001.png",
+      "sha256": "8fbb032696420d17b083049086b0ddb5d829e0f62a09179c5041713c476d6256"
+    },
+    {
+      "path": "assets/lab_post_001/patient_impact_reanalysis_worklist_001.png",
+      "sha256": "58790abe92fe3f9a69eb2f9056ca59f192ce782f1cf0903f01d3df7c4764e47e"
+    },
+    {
+      "path": "assets/lab_post_001/pipeline_lims_change_snapshot_001.png",
+      "sha256": "d1653ff9657d20ae5459b2a111a314517a8e3cf61973eab4d451f3b3442dd491"
+    },
+    {
+      "path": "assets/lab_post_001/pipeline_verification_plan_001.png",
+      "sha256": "95bfd1e1c1f6ea070abcaf6cc2e82e058f38e86037e71ff1cf30a434d3ea7f71"
+    },
+    {
+      "path": "assets/lab_post_001/v41_low_confidence_artifact_001.png",
+      "sha256": "f26dee28c98eaa9ddc7e583ce1c42ea64973e259b296a47b0d4a5c999f684fda"
+    }
+  ]
+}

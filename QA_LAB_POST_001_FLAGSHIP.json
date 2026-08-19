@@ -1,0 +1,27 @@
+{
+  "patch_id": "LAB_POST_001_FLAGSHIP",
+  "status": "PASS",
+  "checks": {
+    "case_present": true,
+    "asset_count_9": true,
+    "asset_paths_exist": true,
+    "flagship_module_js_syntax": "PASS",
+    "locale_js_syntax_8of8": "PASS",
+    "locale_namespace_8of8": "PASS",
+    "script_include_count": 1,
+    "script_order": "after v240z20_io001_flagship.js; before v250b_responsive_shell.js",
+    "common_files_unexpected_changes": 0,
+    "node_wrapper_harness": {
+      "run_overview": 2,
+      "qc_event": 1,
+      "root_cause": 2,
+      "capa": 2,
+      "audit_pre_completion": 0,
+      "audit_post_completion": 2,
+      "expected": "PASS"
+    },
+    "image_dimensions_nonzero": "PASS",
+    "logic_changes": false
+  },
+  "note": "Interactive Chromium navigation was unavailable in this execution environment; integration was validated with syntax checks, file/hash checks and a Node wrapper-injection harness."
+}
