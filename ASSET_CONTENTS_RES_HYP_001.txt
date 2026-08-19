@@ -1,0 +1,16 @@
+RES_HYP_001 FLAGSHIP – ASSET CONTENTS
+=====================================
+Expected folder: v6/assets/res_hyp_001/
+Asset count: 9
+
+1. project_onepager_initial_001.png
+2. cohort_spreadsheet_40cases_001.png
+3. ffpe_rna_qc_dashboard_001.png
+4. clinical_data_completeness_001.png
+5. pca_batch_confounders_001.png
+6. cohort_attrition_40_to_26_001.png
+7. pico_analysis_plan_001.png
+8. caf_tgfb_discovery_results_001.png
+9. discovery_validation_roadmap_001.png
+
+All files were physically verified as valid PNGs before packing.
