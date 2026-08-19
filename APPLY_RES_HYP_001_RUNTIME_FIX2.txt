@@ -1,0 +1,8 @@
+RES_HYP_001 FLAGSHIP RUNTIME FIX2
+
+Apply by overwriting the files relative to your current v6/ directory.
+All nine PNG assets must end up in:
+  v6/assets/res_hyp_001/
+
+This fix is safe on top of the already working LAB_POST_001 + LAB_DOC_001 build.
+The old v250b_reshyp001_flagship.js may be overwritten by the included replacement.

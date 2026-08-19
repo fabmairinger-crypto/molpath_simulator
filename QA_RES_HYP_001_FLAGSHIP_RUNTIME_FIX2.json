@@ -1,0 +1,36 @@
+{
+  "case_id": "RES_HYP_001_v0_9",
+  "status": "PASS",
+  "fix": "DOM-hook FIX2",
+  "asset_count": 9,
+  "assets": [
+    "caf_tgfb_discovery_results_001.png",
+    "clinical_data_completeness_001.png",
+    "cohort_attrition_40_to_26_001.png",
+    "cohort_spreadsheet_40cases_001.png",
+    "discovery_validation_roadmap_001.png",
+    "ffpe_rna_qc_dashboard_001.png",
+    "pca_batch_confounders_001.png",
+    "pico_analysis_plan_001.png",
+    "project_onepager_initial_001.png"
+  ],
+  "checks": {
+    "png_files_present_9_of_9": true,
+    "external_js_syntax_node_check": "PASS",
+    "inline_js_syntax_node_check": "PASS",
+    "index_contains_inline_dom_hook": true,
+    "index_no_longer_depends_on_external_res_hook": true,
+    "compatibility_external_js_included": true,
+    "lab_post_script_reference_preserved": true,
+    "lab_doc_script_reference_preserved": true,
+    "dom_smoke_test": {
+      "project_idea": 1,
+      "hypothesis_after_selection": 2,
+      "methods": 1,
+      "analysis": 2,
+      "feedback_pre_completion": 2,
+      "feedback_post_completion": 3
+    },
+    "logic_changes": false
+  }
+}
