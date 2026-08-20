@@ -1,0 +1,9 @@
+{
+  "base": "v2.5.0b + RU + TR + AR + FA",
+  "files": [
+    "i18n/core.js",
+    "v250b_home_screen.js",
+    "CHANGELOG_REAL_FLAGS_HOTFIX_v250b.md",
+    "QA_REAL_FLAGS_HOTFIX_v250b.json"
+  ]
+}

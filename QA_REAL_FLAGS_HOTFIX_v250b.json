@@ -1,0 +1,26 @@
+{
+  "version": "v2.5.0b real flag icon hotfix",
+  "status": "PASSED",
+  "visible_flag_implementation": "inline SVG custom picker",
+  "language_count": 10,
+  "languages": [
+    "de",
+    "en",
+    "ro",
+    "el",
+    "es",
+    "fr",
+    "ru",
+    "tr",
+    "ar",
+    "fa"
+  ],
+  "sidebar_selector": true,
+  "home_selector": true,
+  "native_select_retained": true,
+  "translation_or_logic_changes": false,
+  "sha256": {
+    "i18n/core.js": "635aa4202d69f7f7eee3eb035e3cb8c94d34e5272dacb7d915bef1c1a8b91708",
+    "v250b_home_screen.js": "7ce4c30a6d9f1517f365a43f92ce45a99c318a7e315788c2441deb60bd83b7e9"
+  }
+}
