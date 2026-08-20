@@ -3,22 +3,23 @@
 'use strict';
 const SOURCE='de';
 const DEFINITIONS=[
-  {code:'de',label:'Deutsch',dir:'ltr',file:'de.js'},
-  {code:'en',label:'English',dir:'ltr',file:'en.js'},
-  {code:'ro',label:'Română',dir:'ltr',file:'ro.js'},
-  {code:'el',label:'Ελληνικά',dir:'ltr',file:'el.js'},
-  {code:'es',label:'Español',dir:'ltr',file:'es.js'},
-  {code:'fr',label:'Français',dir:'ltr',file:'fr.js'},
-  {code:'ru',label:'Русский',dir:'ltr',file:'ru.js'},
-  {code:'tr',label:'Türkçe',dir:'ltr',file:'tr.js'},
-  {code:'ar',label:'العربية',dir:'rtl',file:'ar.js'}
+  {code:'de',label:'Deutsch',flag:'🇩🇪',dir:'ltr',file:'de.js'},
+  {code:'en',label:'English',flag:'🇬🇧',dir:'ltr',file:'en.js'},
+  {code:'ro',label:'Română',flag:'🇷🇴',dir:'ltr',file:'ro.js'},
+  {code:'el',label:'Ελληνικά',flag:'🇬🇷',dir:'ltr',file:'el.js'},
+  {code:'es',label:'Español',flag:'🇪🇸',dir:'ltr',file:'es.js'},
+  {code:'fr',label:'Français',flag:'🇫🇷',dir:'ltr',file:'fr.js'},
+  {code:'ru',label:'Русский',flag:'🇷🇺',dir:'ltr',file:'ru.js'},
+  {code:'tr',label:'Türkçe',flag:'🇹🇷',dir:'ltr',file:'tr.js'},
+  {code:'ar',label:'العربية',flag:'🇸🇦',dir:'rtl',file:'ar.js'},
+  {code:'fa',label:'فارسی',flag:'🇮🇷',dir:'rtl',file:'fa.js',aliases:['fa-IR']}
 ];
 const defs=new Map();
 const aliases=new Map();
 function canonicalKey(code){return String(code||'').trim().replace('_','-').toLowerCase();}
 function addDefinition(def){
   if(!def||!def.code)throw new Error('MolPath language definition requires code');
-  const normalized={code:String(def.code),label:String(def.label||def.code),dir:def.dir==='rtl'?'rtl':'ltr',file:String(def.file||def.code+'.js'),aliases:Array.isArray(def.aliases)?def.aliases.map(String):[]};
+  const normalized={code:String(def.code),label:String(def.label||def.code),flag:String(def.flag||''),dir:def.dir==='rtl'?'rtl':'ltr',file:String(def.file||def.code+'.js'),aliases:Array.isArray(def.aliases)?def.aliases.map(String):[]};
   defs.set(normalized.code,normalized);
   aliases.set(canonicalKey(normalized.code),normalized.code);
   normalized.aliases.forEach(a=>aliases.set(canonicalKey(a),normalized.code));

@@ -1,0 +1,12 @@
+MolPath Simulator v2.5.0b — FA FINAL + FLAGS
+
+Patch-only replacement files:
+  i18n/fa.js          (new)
+  i18n/languages.js   (replace)
+  i18n/core.js        (replace)
+
+The central bootstrap in languages.js automatically loads fa.js.
+No index.html edit is required.
+Farsi uses the existing generic RTL stylesheet (i18n/rtl.css).
+
+For the patch-only archive, copy the contained v14/ tree over the existing v14/ app root and allow replacement of files.

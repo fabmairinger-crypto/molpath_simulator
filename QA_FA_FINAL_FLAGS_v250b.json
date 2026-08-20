@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "faMessages": 14308,
+  "arMessages": 14308,
+  "messageMissingVsAr": 0,
+  "messageExtraVsAr": 0,
+  "deNamespaceLeaves": 189,
+  "arNamespaceLeaves": 189,
+  "faNamespaceLeaves": 189,
+  "namespacePathsEqualToDe": true,
+  "namespacePathsEqualToAr": true,
+  "faMeta": {
+    "label": "فارسی",
+    "source": false,
+    "version": "v2.5.0b",
+    "checkpoint": "FA-FINAL 21/21 global QA cleaned",
+    "messageCount": 14308
+  }
+}

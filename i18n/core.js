@@ -70,7 +70,7 @@ function createPanel(){
   const label=tr('Sprache / Language',lang);
   const fixed=tr('Feste Sprachschicht',lang);
   const note=tr('Fehlende Übersetzungen fallen auf Deutsch zurück.',lang);
-  const options=languageRegistry.list().map(def=>'<option value="'+def.code+'" '+(def.code===lang?'selected':'')+'>'+def.label+'</option>').join('');
+  const options=languageRegistry.list().map(def=>'<option value="'+def.code+'" '+(def.code===lang?'selected':'')+'>'+((def.flag?def.flag+' ':'')+def.label)+'</option>').join('');
   panel.innerHTML='<label for="molpathLangSelect">'+label+'<span class="i18n-chip">Clean Translation Rebuild</span></label><select id="molpathLangSelect">'+options+'</select><div class="i18n-note"><b>'+fixed+':</b> '+note+'</div>';
   const anchor=qs('.sidebar .powered')||qs('.sidebar .brand');
   if(anchor&&anchor.parentNode)anchor.parentNode.insertBefore(panel,anchor.nextSibling);else side.prepend(panel);

@@ -1,0 +1,58 @@
+{
+  "artifact": "MolPath Simulator v2.5.0b Farsi + language flags patch",
+  "base": "v2-5-0b_all-flagships_ru_tr_ar.zip",
+  "version": "v2.5.0b",
+  "changes": {
+    "locale": "fa",
+    "locale_label": "فارسی",
+    "direction": "rtl",
+    "aliases": [
+      "fa-IR"
+    ],
+    "message_count": 14308,
+    "namespace_leaf_count": 189,
+    "total_translation_leaves": 14497,
+    "flags": {
+      "de": "🇩🇪",
+      "en": "🇬🇧",
+      "ro": "🇷🇴",
+      "el": "🇬🇷",
+      "es": "🇪🇸",
+      "fr": "🇫🇷",
+      "ru": "🇷🇺",
+      "tr": "🇹🇷",
+      "ar": "🇸🇦",
+      "fa": "🇮🇷"
+    }
+  },
+  "changed_files": [
+    {
+      "path": "i18n/fa.js",
+      "sha256": "ffa4988208ab322e7c737e7ec230c265236e63b1b90eda01188c80dcfddc13f4",
+      "bytes": 2411781
+    },
+    {
+      "path": "i18n/languages.js",
+      "sha256": "54ab305d17c607ff77c5051f81b8acb3a6233d241f7a267aad966e336ed2b342",
+      "bytes": 5150
+    },
+    {
+      "path": "i18n/core.js",
+      "sha256": "59f368e8ef0c0f66142999f813edd69a4feccd55a928f81319492378dc3f516c",
+      "bytes": 6831
+    }
+  ],
+  "qa": {
+    "js_syntax": "passed",
+    "message_key_missing_vs_ar": 0,
+    "message_key_extra_vs_ar": 0,
+    "recursive_namespace_leaves": 189,
+    "namespace_path_mismatch_vs_de_ar": 0,
+    "checkpoint_alignment_errors": 0,
+    "placeholder_mismatches": 0,
+    "numeric_token_mismatches": 0,
+    "unexpected_cjk": 0,
+    "german_specific_chars": 0,
+    "visible_rest_scan_hits": 0
+  }
+}
