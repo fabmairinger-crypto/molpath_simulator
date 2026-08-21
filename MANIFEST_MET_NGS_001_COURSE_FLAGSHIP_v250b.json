@@ -1,0 +1,23 @@
+{
+  "patch": "MET_NGS_001 Course Flagship",
+  "base": "MolPath Simulator v2.5.0b + METHOD_FOCUS_PATCH01",
+  "case_id": "MET_NGS_001_v1_3",
+  "files": [
+    "v16/index.html",
+    "v16/v250b_metngs001_course_flagship.js",
+    "v16/assets/met_ngs_001/referral_request_001.png",
+    "v16/assets/met_ngs_001/ngs_qc_dashboard_001.png",
+    "v16/assets/met_ngs_001/egfr_ex20_coverage_detail_001.png",
+    "v16/assets/met_ngs_001/initial_negative_panel_report_001.png",
+    "v16/assets/met_ngs_001/orthogonal_egfr_ex20_result_001.png",
+    "v16/assets/met_ngs_001/amended_integrated_report_001.png",
+    "v16/assets/met_ngs_001/method_comparison_card_001.svg",
+    "v16/CHANGELOG_MET_NGS_001_COURSE_FLAGSHIP_v250b.md",
+    "v16/audit/COURSE_SIGNATURE_AUDIT_v250b_checkpoint02_detailed.csv",
+    "v16/audit/COURSE_SIGNATURE_UPGRADE_PLAN_v250b_checkpoint03.csv",
+    "v16/QA_MET_NGS_001_COURSE_FLAGSHIP_v250b.json"
+  ],
+  "asset_count": 7,
+  "signature_promotion": true,
+  "logic_changes": false
+}

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#f7fafc"/>
+  <rect x="0" y="0" width="1600" height="108" fill="#0d3b66"/>
+  <text x="64" y="67" font-family="Arial,Helvetica,sans-serif" font-size="42" font-weight="700" fill="#ffffff">Methodenentscheidung bei lokalem Coverage-Dropout</text>
+  <text x="64" y="145" font-family="Arial,Helvetica,sans-serif" font-size="25" fill="#334e68">EGFR Exon 20 · global valider NGS-Lauf · lokale Coverage ca. 6×</text>
+
+  <rect x="70" y="205" rx="22" ry="22" width="690" height="520" fill="#ffffff" stroke="#d3dee8" stroke-width="3"/>
+  <rect x="840" y="205" rx="22" ry="22" width="690" height="520" fill="#ffffff" stroke="#9bd0b5" stroke-width="4"/>
+
+  <circle cx="130" cy="270" r="28" fill="#f59e0b"/>
+  <text x="121" y="280" font-family="Arial,Helvetica,sans-serif" font-size="31" font-weight="700" fill="#ffffff">1</text>
+  <text x="180" y="283" font-family="Arial,Helvetica,sans-serif" font-size="34" font-weight="700" fill="#102a43">Identischen Assay wiederholen</text>
+  <text x="115" y="355" font-family="Arial,Helvetica,sans-serif" font-size="27" fill="#334e68">• sinnvoll, wenn ein zufälliges Library-/Run-Problem plausibel ist</text>
+  <text x="115" y="410" font-family="Arial,Helvetica,sans-serif" font-size="27" fill="#334e68">• kann denselben systematischen Target-Dropout erneut erzeugen</text>
+  <text x="115" y="465" font-family="Arial,Helvetica,sans-serif" font-size="27" fill="#334e68">• löst die offene Zielregion nur bei nachweislich besserer Abdeckung</text>
+  <rect x="115" y="545" rx="14" ry="14" width="600" height="105" fill="#fff7e8" stroke="#f6c76b" stroke-width="2"/>
+  <text x="145" y="587" font-family="Arial,Helvetica,sans-serif" font-size="25" font-weight="700" fill="#8a4b08">Risiko</text>
+  <text x="145" y="625" font-family="Arial,Helvetica,sans-serif" font-size="24" fill="#6b4f2a">„Mehr Reads insgesamt“ garantiert keine bessere Coverage genau hier.</text>
+
+  <circle cx="900" cy="270" r="28" fill="#168f55"/>
+  <text x="891" y="280" font-family="Arial,Helvetica,sans-serif" font-size="31" font-weight="700" fill="#ffffff">2</text>
+  <text x="950" y="283" font-family="Arial,Helvetica,sans-serif" font-size="34" font-weight="700" fill="#102a43">Orthogonal bestätigen</text>
+  <text x="885" y="355" font-family="Arial,Helvetica,sans-serif" font-size="27" fill="#334e68">• anderes Primer-/Capture-Design oder unabhängiges Messprinzip</text>
+  <text x="885" y="410" font-family="Arial,Helvetica,sans-serif" font-size="27" fill="#334e68">• adressiert eine mögliche systematische Assay-Grenze direkt</text>
+  <text x="885" y="465" font-family="Arial,Helvetica,sans-serif" font-size="27" fill="#334e68">• besonders stark bei therapieentscheidender, lokal nicht beurteilbarer Region</text>
+  <rect x="885" y="545" rx="14" ry="14" width="600" height="105" fill="#edf9f1" stroke="#8bd0a7" stroke-width="2"/>
+  <text x="915" y="587" font-family="Arial,Helvetica,sans-serif" font-size="25" font-weight="700" fill="#116c42">Hier bevorzugt</text>
+  <text x="915" y="625" font-family="Arial,Helvetica,sans-serif" font-size="24" fill="#295b43">Gezielte unabhängige EGFR-Exon-20-Nachtestung schließt die Lücke.</text>
+
+  <rect x="70" y="768" rx="16" ry="16" width="1460" height="82" fill="#eaf2f8" stroke="#bfd3e2" stroke-width="2"/>
+  <text x="105" y="818" font-family="Arial,Helvetica,sans-serif" font-size="28" font-weight="700" fill="#0d3b66">Merksatz: „Nicht ausreichend untersucht“ ist kein negatives Ergebnis. Die Nachteststrategie muss die Ursache der Limitation adressieren.</text>
+</svg>

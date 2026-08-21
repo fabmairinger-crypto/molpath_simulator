@@ -1,0 +1,70 @@
+﻿case_id,asset_no,asset_id,purpose
+MET_NGS_001_v1_3,1,referral_request,Thoracic oncology referral / MTB request with treatment deadline
+MET_NGS_001_v1_3,2,ngs_qc_dashboard,"NGS run QC dashboard: globally strong run, local warning flag"
+MET_NGS_001_v1_3,3,egfr_ex20_coverage_plot,Target-level coverage plot highlighting EGFR exon 20 at 24×
+MET_NGS_001_v1_3,4,negative_panel_report,"Initial molecular report summarizing no actionable driver, with problematic scope"
+MET_NGS_001_v1_3,5,orthogonal_egfr_ex20_result,Independent targeted assay detecting EGFR exon 20 insertion
+MET_NGS_001_v1_3,6,amended_integrated_report,Corrected final report: local limitation + confirmed actionable alteration
+MET_NGS_001_v1_3,7,method_comparison_card,Compact visual: repeat same assay vs orthogonal confirmation
+MET_NGS_002_v1_3,1,progress_referral,Clinical progress / resistance-testing request
+MET_NGS_002_v1_3,2,ffpe_dna_qc,FFPE DNA QC report showing fragmentation and damage risk
+MET_NGS_002_v1_3,3,t790m_variant_viewer,Variant viewer with EGFR T790M at 1.4% VAF
+MET_NGS_002_v1_3,4,ct_artifact_pattern,Read/strand/end-context view with multiple low-level C>T/G>A events
+MET_NGS_002_v1_3,5,repeat_extraction_result,Independent extraction showing non-reproducible T790M
+MET_NGS_002_v1_3,6,orthogonal_confirmation,Orthogonal target assay negative for T790M while primary EGFR driver remains positive
+MET_NGS_002_v1_3,7,amended_report,Final report rejecting the resistance call as non-validated
+MET_RNA_001_v1_3,1,he_overview,Histology overview compatible with inflammatory myofibroblastic tumor
+MET_RNA_001_v1_3,2,alk_ihc,Strong diffuse ALK IHC
+MET_RNA_001_v1_3,3,dna_fusion_report,"DNA-NGS report: no fusion call, intronic coverage limitation"
+MET_RNA_001_v1_3,4,dna_intron_coverage,Coverage map illustrating structural blind spot
+MET_RNA_001_v1_3,5,rna_fusion_viewer,RNA-NGS fusion viewer showing TPM3::ALK
+MET_RNA_001_v1_3,6,alk_fish,ALK break-apart FISH confirming rearrangement
+MET_RNA_001_v1_3,7,integrated_report,Integrated molecular pathology report reconciling DNA-negative/RNA-positive findings
+MET_LB_001_v1_3,1,progress_request,Progression referral requesting resistance profiling
+MET_LB_001_v1_3,2,plasma_ngs_report,Plasma NGS report: no tumor-associated variant detected
+MET_LB_001_v1_3,3,plasma_tumor_fraction_qc,Liquid biopsy QC / tumor-fraction dashboard showing non-informative low signal
+MET_LB_001_v1_3,4,tissue_rebiopsy_he,Tissue rebiopsy histology
+MET_LB_001_v1_3,5,tissue_ngs_report,Tissue profiling showing known EGFR driver plus MET amplification
+MET_LB_001_v1_3,6,met_copy_number,Copy-number visualization / orthogonal MET amplification confirmation
+MET_LB_001_v1_3,7,integrated_resistance_report,Final report explaining why negative plasma did not exclude resistance
+MET_NGS_004_v1_3,1,tumor_ngs_variant,"Tumor-only NGS variant view: pathogenic BRCA2 LoF, VAF 48%"
+MET_NGS_004_v1_3,2,tumor_only_report,Tumor-only report with explicit possible-germline warning
+MET_NGS_004_v1_3,3,family_history_pedigree,Synthetic pedigree / family-history overview
+MET_NGS_004_v1_3,4,genetics_referral,Humangenetics referral / counseling request
+MET_NGS_004_v1_3,5,germline_confirmation,Constitutional-sample confirmation of the BRCA2 variant
+MET_NGS_004_v1_3,6,paired_interpretation,Tumor-vs-germline interpretation summary
+MET_NGS_004_v1_3,7,final_report,Final clinical report separating somatic therapeutic relevance from hereditary diagnosis
+LAB_RUN_001_v1_3,1,run_qc_dashboard,Run QC dashboard showing weak positive control with otherwise acceptable patient metrics
+LAB_RUN_001_v1_3,2,control_trend,Ten-run control trend demonstrating current outlier
+LAB_RUN_001_v1_3,3,plate_layout,Run/plate layout with control positions and urgent patient samples
+LAB_RUN_001_v1_3,4,control_aliquot_log,Control aliquot / freeze-thaw log revealing repeated thaw cycles
+LAB_RUN_001_v1_3,5,fresh_control_repeat,Repeat QC dashboard with fresh aliquot passing
+LAB_RUN_001_v1_3,6,release_matrix,Patient-level release / hold matrix after root-cause clarification
+LAB_RUN_001_v1_3,7,deviation_capa,Deviation/CAPA record documenting control degradation and preventive action
+LAB_PRE_001_v1_3,1,specimen_arrival,Specimen-intake image: unlabeled primary tube inside a labeled transport bag
+LAB_PRE_001_v1_3,2,request_form,Matching laboratory request form
+LAB_PRE_001_v1_3,3,lims_identity_alert,LIMS accession screen blocking acceptance because primary identifier is absent
+LAB_PRE_001_v1_3,4,phone_documentation,Documented phone call with sender attempting verbal confirmation
+LAB_PRE_001_v1_3,5,rejection_recollection,Formal rejection/recollection record
+LAB_PRE_001_v1_3,6,corrected_specimen,Replacement specimen arriving correctly labeled
+LAB_PRE_001_v1_3,7,deviation_review,Preanalytics deviation / root-cause review
+RES_ROLE_001_v1_3,1,manuscript_author_draft,Manuscript title page / proposed author order before conflict resolution
+RES_ROLE_001_v1_3,2,project_email_history,Synthetic project email history showing earlier first-author expectation
+RES_ROLE_001_v1_3,3,credit_matrix,CRediT contribution matrix for all core contributors
+RES_ROLE_001_v1_3,4,authorship_criteria_review,Structured authorship-criteria worksheet including responsibility/approval
+RES_ROLE_001_v1_3,5,team_decision_log,Meeting decision log resolving authorship and outstanding responsibilities
+RES_ROLE_001_v1_3,6,final_contribution_statement,Final author contribution statement / revised author order
+RES_IMPL_001_v1_3,1,publication_claim,Published TRI-3 biomarker figure / abstract-style source claim
+RES_IMPL_001_v1_3,2,local_transfer_plan,Local assay-transfer and validation workflow
+RES_IMPL_001_v1_3,3,pilot_ct_table,10-case qPCR pilot Ct table including one degraded FFPE failure
+RES_IMPL_001_v1_3,4,reproducibility_plot,Technical replicate / reproducibility plot
+RES_IMPL_001_v1_3,5,ffpe_failure_analysis,"Real-world FFPE failure analysis: 22% failure, concentrated in Gene C"
+RES_IMPL_001_v1_3,6,assay_redesign,Gene C amplicon redesign / verification plan
+RES_IMPL_001_v1_3,7,go_no_go_dashboard,Routine-transfer decision dashboard: research-only vs redesign vs routine-ready
+RES_ETH_002_v1_3,1,research_wes_signal,Research WES result showing TP53 variant with suspicious blood/tumor VAFs
+RES_ETH_002_v1_3,2,paired_variant_view,Tumor and blood variant-view comparison
+RES_ETH_002_v1_3,3,consent_return_excerpt,Synthetic consent / return-of-results policy excerpt
+RES_ETH_002_v1_3,4,return_pathway,Research-to-clinical confirmation decision pathway
+RES_ETH_002_v1_3,5,clinical_confirmation,"Clinical confirmation: blood positive, non-hematopoietic comparison material negative"
+RES_ETH_002_v1_3,6,chip_interpretation,Interpretation sheet favoring clonal hematopoiesis over constitutional germline
+RES_ETH_002_v1_3,7,final_ethics_note,Documented return-of-results decision and communication plan

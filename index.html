@@ -1242,7 +1242,7 @@ const COURSES_V16 = [
   {
     id:'course_method_pitfalls', title:'Molecular Methods Pitfalls', label:'Methodik-Fallen', domain:'MET', difficulty:'Advanced', estimated_minutes:55,
     description:'Typische methodische Fallstricke: Coverage, FFPE-Artefakte, RNA-Fusionen, Liquid Biopsy und Tumor-only-Keimbahnverdacht.',
-    learning_goals:['Methodische Limitationen erkennen','Negativbefunde korrekt einordnen','Artefakt, VUS und Keimbahnrisiko sauber kommunizieren'],
+    learning_goals:['Methodische Limitationen erkennen','Negativbefunde korrekt einordnen','Artefakte, analytische Limitationen und Keimbahnrisiko sauber kommunizieren'],
     cases:['MET_NGS_001_v1_3','MET_NGS_002_v1_3','MET_RNA_001_v1_3','MET_LB_001_v1_3','MET_NGS_004_v1_3']
   },
   {
@@ -5357,7 +5357,7 @@ function collect(arr){try{(arr||[]).forEach(x=>{if(x&&x.case_id&&x.is_signature_
 try{if(typeof DEEP_DIVE_CASES_V17!=='undefined')collect(DEEP_DIVE_CASES_V17)}catch(_){}
 try{if(typeof V21_DEEP_DIVE_BATCH1!=='undefined')collect(V21_DEEP_DIVE_BATCH1)}catch(_){}
 try{if(typeof V230B_SIGNATURE_DEEP_DIVES!=='undefined')collect(V230B_SIGNATURE_DEEP_DIVES)}catch(_){}
-function isSignature(x){return !!x&&SIGNATURE_IDS.has(x.id)}
+function isSignature(x){try{return !!x&&(SIGNATURE_IDS.has(x.id)||x.signature_case===true||((typeof DEEP_DIVE_MAP_V17!=='undefined'&&DEEP_DIVE_MAP_V17[x.id])?DEEP_DIVE_MAP_V17[x.id].is_signature_case===true:false))}catch(_){return !!x&&SIGNATURE_IDS.has(x.id)}}
 
 function ensureFilter(){
  const grid=document.querySelector('.filter-grid');if(!grid)return;
@@ -6240,4 +6240,7 @@ try{console.log('[MolPath '+V240Z12_VERSION+'] case metadata recalibration loade
 
 <!-- v2.5.0b cross-domain Methods Focus filter; strict curated 44/91 -->
 <script src="v250b_method_focus_filter.js"></script>
+
+<!-- v2.5.0b MET_NGS_001 Course Flagship Asset Layer -->
+<script src="v250b_metngs001_course_flagship.js"></script>
 </body></html>

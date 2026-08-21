@@ -1,0 +1,41 @@
+{
+  "patch": "MET_NGS_001 Course Flagship",
+  "base": "v2.5.0b + METHOD_FOCUS_PATCH01",
+  "case_id": "MET_NGS_001_v1_3",
+  "static_checks": {
+    "js_syntax": "PASS (node --check)",
+    "asset_count": 7,
+    "asset_files_nonempty": true,
+    "svg_xml": "PASS",
+    "signature_filter_dynamic_update": "PASS",
+    "course_learning_goal_stale_vus_removed": "PASS",
+    "case_alignment": "59 years / ~25% tumor / ~6x EGFR exon 20",
+    "logic_changes": false
+  },
+  "runtime_harness": {
+    "signature_promotion": true,
+    "deep_dive_signature_promotion": true,
+    "intake_assets": 2,
+    "history_assets": 1,
+    "material_assets": 1,
+    "complete_report_assets": 2,
+    "post_completion_asset": 1,
+    "total_phase_assets": 7,
+    "status": "PASS"
+  },
+  "browser_smoke": {
+    "status": "NOT EXECUTED",
+    "reason": "Local/localhost Chromium navigation is blocked by administrator policy in this environment (ERR_BLOCKED_BY_ADMINISTRATOR).",
+    "note": "Static and VM runtime harness passed; final UI click-through should be done in the user build."
+  },
+  "excluded_asset": "The generated unrelated variant overview containing L858R/T790M etc. was intentionally excluded because it does not belong to MET_NGS_001.",
+  "assets": [
+    "amended_integrated_report_001.png",
+    "egfr_ex20_coverage_detail_001.png",
+    "initial_negative_panel_report_001.png",
+    "method_comparison_card_001.svg",
+    "ngs_qc_dashboard_001.png",
+    "orthogonal_egfr_ex20_result_001.png",
+    "referral_request_001.png"
+  ]
+}
