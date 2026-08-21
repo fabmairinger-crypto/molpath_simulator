@@ -1,0 +1,49 @@
+{
+  "artifact": "MET_RNA_001 Course Flagship QA",
+  "base": "v2.5.0b + Methods Focus + MET_NGS_001 + MET_NGS_002",
+  "case_id": "MET_RNA_001_v1_3",
+  "checks": {
+    "asset_count": 7,
+    "assets_missing": [],
+    "svg_parse_ok": [
+      "assets/met_rna_001/dna_intron_coverage_001.svg",
+      "assets/met_rna_001/integrated_report_001.svg"
+    ],
+    "single_loader_reference": true,
+    "signature_promotion_present": true,
+    "deep_dive_signature_present": true,
+    "required_groups_unchanged": true,
+    "allowed_tests_unchanged": true,
+    "rna_gate_present": true,
+    "fish_gate_present": true,
+    "completion_gate_present": true,
+    "runtime_harness": "PASS"
+  },
+  "phase_gating": {
+    "histo": [
+      1,
+      2
+    ],
+    "history": [
+      3
+    ],
+    "material": [
+      4
+    ],
+    "RNA selection": [
+      5
+    ],
+    "FISH selection": [
+      6
+    ],
+    "complete report": [
+      7
+    ]
+  },
+  "content_notes": [
+    "The originally generated ALK-IHC overview is retained as a non-conclusive/negative IHC example; runtime wording was aligned accordingly.",
+    "The original coverage PNG was replaced by a methodologically clean synthetic SVG without the Hybrid-Capture/Oncomine mismatch.",
+    "The original adenocarcinoma-oriented final report PNG was replaced by a case-consistent integrated SVG focused on pulmonary spindle-cell/IMT-compatible morphology and TPM3::ALK.",
+    "Scoring, correctness, required groups, method choices and completion semantics are unchanged."
+  ]
+}

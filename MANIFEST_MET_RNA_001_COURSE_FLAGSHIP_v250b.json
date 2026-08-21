@@ -1,0 +1,21 @@
+{
+  "artifact": "MolPath_v2.5.0b_MET_RNA_001_COURSE_FLAGSHIP_PATCH",
+  "version_dir": "v18",
+  "case_id": "MET_RNA_001_v1_3",
+  "asset_count": 7,
+  "assets": {
+    "he_overview": "assets/met_rna_001/he_overview_001.png",
+    "alk_ihc": "assets/met_rna_001/alk_ihc_001.png",
+    "dna_fusion_report": "assets/met_rna_001/dna_fusion_report_001.png",
+    "dna_intron_coverage": "assets/met_rna_001/dna_intron_coverage_001.svg",
+    "rna_fusion_viewer": "assets/met_rna_001/rna_fusion_viewer_001.png",
+    "alk_fish": "assets/met_rna_001/alk_fish_001.png",
+    "integrated_report": "assets/met_rna_001/integrated_report_001.svg"
+  },
+  "entrypoint": "v18/index.html",
+  "layer": "v18/v250b_metrna001_course_flagship.js",
+  "qa": "v18/QA_MET_RNA_001_COURSE_FLAGSHIP_v250b.json",
+  "changelog": "v18/CHANGELOG_MET_RNA_001_COURSE_FLAGSHIP_v250b.md",
+  "progress": "v18/audit/COURSE_SIGNATURE_PROGRESS_v250b_checkpoint05.csv",
+  "logic_changes": false
+}

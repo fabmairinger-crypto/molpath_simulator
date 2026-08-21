@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024">
+<rect width="1536" height="1024" fill="#fff"/>
+<style>.t{font-family:Arial,Helvetica,sans-serif;fill:#172033}.b{font-weight:700}.h{fill:#0d3568}.blue{fill:#164f97}.mut{fill:#687789}.red{fill:#b92727}.green{fill:#1d7441}.small{font-size:18px}.med{font-size:22px}.lg{font-size:32px}.xl{font-size:42px}.box{fill:#fff;stroke:#becbd8;stroke-width:2}.panel{fill:#f7fafc;stroke:#c7d4df;stroke-width:2}.ok{fill:#eef8f1;stroke:#9cc7a8;stroke-width:2}.info{fill:#eff6fc;stroke:#a9c8e4;stroke-width:2}</style>
+<!-- header -->
+<circle cx="68" cy="60" r="33" fill="none" stroke="#0d3568" stroke-width="7"/><path d="M49 84 C88 67,48 41,91 27" fill="none" stroke="#164f97" stroke-width="6"/>
+<text x="122" y="48" class="t b med h">ZENTRUM FÜR MOLEKULARE PATHOLOGIE</text><text x="122" y="78" class="t med">Universitätsklinikum Jena</text>
+<text x="768" y="54" text-anchor="middle" class="t b xl">Integrierter molekularpathologischer Befund</text><text x="768" y="91" text-anchor="middle" class="t med blue">Pulmonale spindelzellige Läsion · Fusionsdiagnostik</text>
+<rect x="1190" y="20" width="310" height="92" rx="10" class="box"/><text x="1210" y="50" class="t b small">Fall-ID:</text><text x="1300" y="50" class="t small">MET_RNA_001</text><text x="1210" y="80" class="t b small">Freigabe:</text><text x="1300" y="80" class="t small">20.05.2025</text>
+<line x1="35" y1="126" x2="1500" y2="126" stroke="#0d3568" stroke-width="4"/>
+<!-- case summary -->
+<rect x="35" y="148" width="1465" height="120" rx="10" class="panel"/><text x="60" y="184" class="t b med h">Klinischer / morphologischer Kontext</text>
+<text x="60" y="222" class="t med">67-jähriger Patient · FFPE-Lungenbiopsie · spindelzellige Läsion mit lymphoplasmazellulärem Entzündungsinfiltrat, morphologisch IMT-kompatibel.</text>
+<text x="60" y="252" class="t med">ALK-IHC in der vorliegenden Probe nicht beweisend; aufgrund der Morphologie bleibt ein Fusionsmechanismus diagnostisch relevant.</text>
+<!-- four-step flow -->
+<rect x="35" y="292" width="350" height="510" rx="12" class="box"/><rect x="400" y="292" width="350" height="510" rx="12" class="box"/><rect x="765" y="292" width="350" height="510" rx="12" class="box"/><rect x="1130" y="292" width="370" height="510" rx="12" class="box"/>
+<rect x="35" y="292" width="350" height="50" fill="#0d3568"/><rect x="400" y="292" width="350" height="50" fill="#0d3568"/><rect x="765" y="292" width="350" height="50" fill="#0d3568"/><rect x="1130" y="292" width="370" height="50" fill="#0d3568"/>
+<text x="55" y="325" class="t b med" fill="#fff" style="fill:#fff">1 · DNA-NGS</text><text x="420" y="325" class="t b med" style="fill:#fff">2 · Assaydesign</text><text x="785" y="325" class="t b med" style="fill:#fff">3 · RNA-NGS</text><text x="1150" y="325" class="t b med" style="fill:#fff">4 · ALK-FISH</text>
+<!-- col1 -->
+<text x="58" y="384" class="t b lg red">Kein Fusionscall</text><text x="58" y="425" class="t med">• keine relevante SNV/Indel/CNV</text><text x="58" y="460" class="t med">• DNA-basierter Fusionscall negativ</text><text x="58" y="495" class="t med">• Gesamt-QC technisch gut</text>
+<rect x="55" y="545" width="310" height="170" rx="9" class="info"/><text x="75" y="580" class="t b med h">Wichtig</text><text x="75" y="615" class="t med">Negativität betrifft nur</text><text x="75" y="646" class="t med">ausreichend erfasste</text><text x="75" y="677" class="t med b">Breakpointregionen.</text>
+<!-- col2 coverage schematic -->
+<text x="423" y="382" class="t b lg h">ALK Intron 19</text><line x1="435" y1="445" x2="715" y2="445" stroke="#183f77" stroke-width="3"/><g fill="#183f77"><rect x="450" y="430" width="35" height="30"/><rect x="520" y="432" width="22" height="26"/><rect x="615" y="432" width="22" height="26"/><rect x="675" y="430" width="35" height="30"/></g><rect x="545" y="405" width="75" height="130" fill="#ffe8e8" stroke="#c92828" stroke-width="2" stroke-dasharray="7,6"/>
+<text x="582" y="565" text-anchor="middle" class="t b med red">lokale Target-Lücke</text><text x="423" y="610" class="t med">Der relevante intronische</text><text x="423" y="642" class="t med">Breakpoint kann im DNA-Panel</text><text x="423" y="674" class="t med b">systematisch verpasst werden.</text>
+<!-- col3 RNA -->
+<rect x="790" y="370" width="300" height="78" rx="10" class="ok"/><text x="940" y="404" text-anchor="middle" class="t b lg green">TPM3::ALK</text><text x="940" y="433" text-anchor="middle" class="t b med green">DETEKTIERT</text>
+<text x="790" y="492" class="t med">TPM3 Exon 6 → ALK Exon 20</text><text x="790" y="528" class="t med">in-frame Fusionstranskript</text><text x="790" y="564" class="t med">1.356 eindeutige Junction Reads</text><text x="790" y="600" class="t med">RNA-QC bestanden</text>
+<line x1="805" y1="665" x2="915" y2="665" stroke="#275bb0" stroke-width="12"/><line x1="965" y1="665" x2="1075" y2="665" stroke="#4b9a55" stroke-width="12"/><line x1="915" y1="665" x2="965" y2="665" stroke="#de7d24" stroke-width="4" stroke-dasharray="6,5"/><text x="940" y="700" text-anchor="middle" class="t small mut">exprimierte Junction</text>
+<!-- col4 fish -->
+<rect x="1155" y="370" width="320" height="78" rx="10" class="ok"/><text x="1315" y="404" text-anchor="middle" class="t b lg green">ALK Rearrangement</text><text x="1315" y="433" text-anchor="middle" class="t b med green">POSITIV</text>
+<g fill="#1e3f8a"><circle cx="1195" cy="520" r="30"/><circle cx="1265" cy="520" r="30"/><circle cx="1335" cy="520" r="30"/><circle cx="1405" cy="520" r="30"/><circle cx="1230" cy="595" r="30"/><circle cx="1300" cy="595" r="30"/><circle cx="1370" cy="595" r="30"/></g><g><circle cx="1187" cy="514" r="5" fill="#54a83a"/><circle cx="1204" cy="526" r="5" fill="#ed6518"/><circle cx="1256" cy="512" r="5" fill="#54a83a"/><circle cx="1274" cy="527" r="5" fill="#ed6518"/><circle cx="1325" cy="510" r="5" fill="#54a83a"/><circle cx="1345" cy="529" r="5" fill="#ed6518"/><circle cx="1396" cy="511" r="5" fill="#54a83a"/><circle cx="1416" cy="527" r="5" fill="#ed6518"/></g>
+<text x="1155" y="660" class="t med">31 / 50 Tumorzellkerne</text><text x="1155" y="694" class="t med b">62 % mit getrennten Signalen</text>
+<!-- conclusion -->
+<rect x="35" y="825" width="1465" height="140" rx="12" class="ok"/><text x="60" y="862" class="t b lg green">Integrierte Beurteilung</text>
+<text x="60" y="902" class="t med">Das initial negative DNA-NGS schließt die Fusion nicht aus, da die relevante intronische ALK-Breakpointregion unzureichend erfasst war.</text>
+<text x="60" y="936" class="t med b">RNA-NGS weist eine exprimierte TPM3::ALK-Fusion nach; ALK-Break-Apart-FISH bestätigt das Rearrangement orthogonal.</text>
+<text x="35" y="1000" class="t small mut">Synthetisches Trainingsasset · keine realen Patientendaten · Kernaussage: DNA- und RNA-Fusionsdiagnostik sind komplementär; Assaydesign ist Teil der Befundinterpretation.</text>
+</svg>
