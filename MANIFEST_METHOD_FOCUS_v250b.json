@@ -1,0 +1,67 @@
+{
+  "artifact": "MolPath Simulator v2.5.0b Methods Focus patch 01",
+  "base": "v2-5-0b_ru_tr_ar_fa_uk_flags.zip",
+  "files": [
+    {
+      "path": "v16/v250b_method_focus_filter.js",
+      "sha256": "2af5c3e2091ade869bea63979df9182ee71b88cfdf728828c7adc28d2afc92c7",
+      "bytes": 18753
+    },
+    {
+      "path": "v16/CHANGELOG_METHOD_FOCUS_v250b.md",
+      "sha256": "b01abbb719e926ba9137dfbf680366aeba5b2ffcb6e3482bcca4c34dbe53cda0",
+      "bytes": 875
+    },
+    {
+      "path": "v16/index.html",
+      "sha256": "3dcc13b7dd056e737d71a2aafc24e5b484337ef2bd0dd27d889346e3bdd5d841",
+      "bytes": 4136440
+    },
+    {
+      "path": "v16/audit/METHOD_FOCUS_AUDIT_v250b_checkpoint03_strict.csv",
+      "sha256": "7347a4b667ab28be5eb3960c260cd3d48d4647602477faf1b8c887d8bf074987",
+      "bytes": 21872
+    },
+    {
+      "path": "v16/audit/METHOD_FOCUS_AUDIT_v250b_checkpoint03_strict.json",
+      "sha256": "45fa6868ca4e491c218056f76807ddb218f2f5ae35e1da7c0a235850ad373c34",
+      "bytes": 87434
+    }
+  ],
+  "driver_cases": 44,
+  "counts": {
+    "total_cases": 91,
+    "method_role": {
+      "driver": 44,
+      "supporting": 33,
+      "none": 14
+    },
+    "by_primary_domain": {
+      "MTB": {
+        "driver": 14,
+        "supporting": 17,
+        "none": 11
+      },
+      "LAB": {
+        "driver": 16,
+        "supporting": 11
+      },
+      "RES": {
+        "driver": 14,
+        "none": 3,
+        "supporting": 5
+      }
+    },
+    "method_focus_domains_nonexclusive": {
+      "molecular_diagnostics": 20,
+      "laboratory_analytics_qc": 18,
+      "research_methodology": 12,
+      "computational_statistics": 10,
+      "digital_ai": 3
+    },
+    "legacy_met_yes_or_prefix": 12,
+    "legacy_met_that_are_driver": 10,
+    "additional_driver_cases_outside_legacy_met": 34,
+    "strict_second_pass_changes": 8
+  }
+}

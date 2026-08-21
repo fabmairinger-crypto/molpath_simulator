@@ -1,0 +1,2543 @@
+{
+  "artifact": "MolPath Simulator v2.5.0b strict method-focus audit checkpoint 03",
+  "created": "2026-08-21",
+  "source_build": "v2-5-0b_ru_tr_ar_fa_uk_flags.zip",
+  "correction": "Second-pass strict curation: a method must not merely be ordered or interpreted. Filter eligibility requires that the correct resolution materially depends on a methodological choice, technical/analytical validity, preanalytics/QC, assay limitation, computational/statistical analysis design, experimental model/design, or reproducibility/validation method. Biological/clinical knowledge, biomarker actionability, ethics, administration and generic reporting alone are excluded.",
+  "schema": {
+    "method_role": {
+      "driver": "A concrete methodological choice, limitation, quality/validity problem, analytical/computational design, experimental model/design, or validation/reproducibility issue materially determines the correct outcome. Eligible for Methods focus.",
+      "supporting": "A method/test may be present or relevant, but the hard part is primarily biological, clinical, evidentiary, ethical, administrative, or generic interpretive knowledge. Not eligible for Methods focus.",
+      "none": "No meaningful methodological challenge for filtering purposes."
+    },
+    "method_focus_domains": [
+      "molecular_diagnostics",
+      "laboratory_analytics_qc",
+      "research_methodology",
+      "computational_statistics",
+      "digital_ai"
+    ],
+    "ui_rule": "Mode remains MTB/LAB/RES. Methods is a cross-domain focus filter and returns ONLY method_role=driver. Supporting cases must never appear merely because a molecular test occurs."
+  },
+  "counts": {
+    "total_cases": 91,
+    "method_role": {
+      "driver": 44,
+      "supporting": 33,
+      "none": 14
+    },
+    "by_primary_domain": {
+      "MTB": {
+        "driver": 14,
+        "supporting": 17,
+        "none": 11
+      },
+      "LAB": {
+        "driver": 16,
+        "supporting": 11
+      },
+      "RES": {
+        "driver": 14,
+        "none": 3,
+        "supporting": 5
+      }
+    },
+    "method_focus_domains_nonexclusive": {
+      "molecular_diagnostics": 20,
+      "laboratory_analytics_qc": 18,
+      "research_methodology": 12,
+      "computational_statistics": 10,
+      "digital_ai": 3
+    },
+    "legacy_met_yes_or_prefix": 12,
+    "legacy_met_that_are_driver": 10,
+    "additional_driver_cases_outside_legacy_met": 34,
+    "strict_second_pass_changes": 8
+  },
+  "records": [
+    {
+      "case_id": "MTB_NSCLC_001_v0_6",
+      "base_id": "MTB_NSCLC_001",
+      "domain": "MTB",
+      "title": "Pulmonale Raumforderung → NSCLC → molekulare Therapieentscheidung",
+      "method_techniques": [
+        "DNA-NGS",
+        "RNA-NGS",
+        "IHC"
+      ],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "NSCLC",
+        "IHC",
+        "DNA-NGS",
+        "RNA-NGS",
+        "PD-L1",
+        "ALK",
+        "Materialbudget",
+        "MTB"
+      ],
+      "method_role": "driver",
+      "method_filter_eligible": true,
+      "method_focus_domains": [
+        "molecular_diagnostics",
+        "laboratory_analytics_qc"
+      ],
+      "method_issue_types": [
+        "assay_selection",
+        "material_adequacy"
+      ],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "driver",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "MTB_CRC_001_v0_6",
+      "base_id": "MTB_CRC_001",
+      "domain": "MTB",
+      "title": "Metastasiertes CRC → RAS/BRAF/MMR/MSI vor Systemtherapie",
+      "method_techniques": [
+        "MSI/MMR"
+      ],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "CRC",
+        "mCRC",
+        "RAS",
+        "BRAF",
+        "MMR",
+        "MSI",
+        "MLH1",
+        "anti-EGFR",
+        "Immuntherapie",
+        "Lynch"
+      ],
+      "method_role": "supporting",
+      "method_filter_eligible": false,
+      "method_focus_domains": [],
+      "method_issue_types": [],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "supporting",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "MTB_OVAR_001_v0_7",
+      "base_id": "MTB_OVAR_001",
+      "domain": "MTB",
+      "title": "High-grade seröses Ovarialkarzinom → BRCA/HRD/PARP/Keimbahn-Kontext",
+      "method_techniques": [
+        "HRD/BRCA testing"
+      ],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "Ovarialkarzinom",
+        "HGSOC",
+        "BRCA1",
+        "HRD",
+        "PARP",
+        "Keimbahn",
+        "DNA-Reparatur",
+        "MTB"
+      ],
+      "method_role": "supporting",
+      "method_filter_eligible": false,
+      "method_focus_domains": [],
+      "method_issue_types": [],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "supporting",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "LAB_RUN_002_v0_8",
+      "base_id": "LAB_RUN_002",
+      "domain": "LAB",
+      "title": "Hotspot-Mutation in der Negativkontrolle → Run-Sperre, Ursachenanalyse und CAPA",
+      "method_techniques": [
+        "DNA-NGS"
+      ],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "Labor",
+        "QM",
+        "NGS",
+        "Kontamination",
+        "Negativkontrolle",
+        "KRAS",
+        "CAPA",
+        "Audit"
+      ],
+      "method_role": "driver",
+      "method_filter_eligible": true,
+      "method_focus_domains": [
+        "laboratory_analytics_qc"
+      ],
+      "method_issue_types": [
+        "contamination",
+        "negative_control",
+        "run_acceptance"
+      ],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "driver",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "RES_HYP_001_v0_9",
+      "base_id": "RES_HYP_001",
+      "domain": "RES",
+      "title": "Wir messen mal alles → von Omics-Idee zur prüfbaren Hypothese",
+      "method_techniques": [
+        "RNA-NGS",
+        "FISH/ISH",
+        "RNA-seq/Omics"
+      ],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "RES",
+        "Forschung",
+        "Hypothese",
+        "PICO",
+        "RNA-Seq",
+        "Omics",
+        "Data Fishing",
+        "HARKing",
+        "Studienplanung"
+      ],
+      "method_role": "driver",
+      "method_filter_eligible": true,
+      "method_focus_domains": [
+        "research_methodology"
+      ],
+      "method_issue_types": [
+        "hypothesis_design",
+        "exploratory_confirmatory"
+      ],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "driver",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "MTB_IO_001_v1_0",
+      "base_id": "MTB_IO_001",
+      "domain": "MTB",
+      "title": "TIL-reicher dMMR/MSI-H-Tumor → Immunescape und Lynch-Kontext",
+      "method_techniques": [
+        "IHC",
+        "MSI/MMR"
+      ],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "MSI-H",
+        "dMMR",
+        "MSH2",
+        "MSH6",
+        "TILs",
+        "TMB",
+        "PD-L1",
+        "Immuntherapie",
+        "Lynch"
+      ],
+      "method_role": "supporting",
+      "method_filter_eligible": false,
+      "method_focus_domains": [],
+      "method_issue_types": [],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "supporting",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "MTB_CNS_001_v1_0",
+      "base_id": "MTB_CNS_001",
+      "domain": "MTB",
+      "title": "Glioblastom → MGMT/IDH/Methylierung und Temozolomid-Kontext",
+      "method_techniques": [
+        "Methylation"
+      ],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "Glioblastom",
+        "MGMT",
+        "IDH",
+        "Methylierung",
+        "Temozolomid",
+        "Neuroonkologie",
+        "Epigenetik"
+      ],
+      "method_role": "supporting",
+      "method_filter_eligible": false,
+      "method_focus_domains": [],
+      "method_issue_types": [],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "supporting",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "MET_NGS_003_v1_0",
+      "base_id": "MET_NGS_003",
+      "domain": "MTB",
+      "title": "ERBB2-VUS mit Therapieanfrage → Evidenz, Kontext und MTB-Kommunikation",
+      "method_techniques": [],
+      "legacy_met_addon_type": "yes",
+      "legacy_tags": [
+        "VUS",
+        "ERBB2",
+        "HER2",
+        "Evidenz",
+        "MTB",
+        "Befundkommunikation"
+      ],
+      "method_role": "supporting",
+      "method_filter_eligible": false,
+      "method_focus_domains": [],
+      "method_issue_types": [],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "driver",
+      "strict_review_note": "VUS/actionability is primarily evidence/variant interpretation; the technical assay is not the decisive pitfall."
+    },
+    {
+      "case_id": "LAB_POST_001_v1_0",
+      "base_id": "LAB_POST_001",
+      "domain": "LAB",
+      "title": "Pipeline-Version geändert, kein Change-Log → Bioinformatik-QM und Impact-Analyse",
+      "method_techniques": [
+        "DNA-NGS",
+        "Bioinformatics pipeline"
+      ],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "Bioinformatik",
+        "Pipeline",
+        "Versionierung",
+        "Change-Control",
+        "Audit",
+        "NGS, complex_case, AP1b_length_reclass"
+      ],
+      "method_role": "driver",
+      "method_filter_eligible": true,
+      "method_focus_domains": [
+        "computational_statistics",
+        "laboratory_analytics_qc"
+      ],
+      "method_issue_types": [
+        "pipeline_validation",
+        "change_control",
+        "reproducibility"
+      ],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "driver",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "LAB_DOC_001_v1_0",
+      "base_id": "LAB_DOC_001",
+      "domain": "LAB",
+      "title": "‚PCR wie immer gemacht‘ → Dokumentation, Rückverfolgbarkeit und Auditfähigkeit",
+      "method_techniques": [
+        "PCR/dPCR"
+      ],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "Dokumentation",
+        "Laborbuch",
+        "qPCR",
+        "SOP",
+        "Lot",
+        "Audit",
+        "Rückverfolgbarkeit"
+      ],
+      "method_role": "supporting",
+      "method_filter_eligible": false,
+      "method_focus_domains": [],
+      "method_issue_types": [],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "supporting",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "RES_OMICS_001_v1_0",
+      "base_id": "RES_OMICS_001",
+      "domain": "RES",
+      "title": "RNA-Seq findet 200 DEGs → vom Genlisten-Friedhof zur validierbaren Signatur",
+      "method_techniques": [
+        "RNA-NGS",
+        "RNA-seq/Omics"
+      ],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "RNA-Seq",
+        "DEG",
+        "Pathway",
+        "TGFβ",
+        "CAF",
+        "Immuntherapie",
+        "ICI-Resistenz",
+        "Validierung"
+      ],
+      "method_role": "driver",
+      "method_filter_eligible": true,
+      "method_focus_domains": [
+        "computational_statistics",
+        "research_methodology"
+      ],
+      "method_issue_types": [
+        "omics_prioritization",
+        "multiple_candidates",
+        "validation_strategy"
+      ],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "driver",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "RES_ETH_001_v1_0",
+      "base_id": "RES_ETH_001",
+      "domain": "RES",
+      "title": "Restmaterialprojekt ohne klare Einwilligung → Ethik, Datenschutz und Nebenbefunde",
+      "method_techniques": [],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "Ethik",
+        "Restmaterial",
+        "FFPE",
+        "Broad Consent",
+        "Datenschutz",
+        "Keimbahn",
+        "Nebenbefund"
+      ],
+      "method_role": "none",
+      "method_filter_eligible": false,
+      "method_focus_domains": [],
+      "method_issue_types": [],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "none",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "MTB_NSCLC_002_v1_3",
+      "base_id": "MTB_NSCLC_002",
+      "domain": "MTB",
+      "title": "NSCLC mit EGFR-Mutation und Progress unter TKI → Liquid Biopsy negativ: reicht das oder Rebiopsie?",
+      "method_techniques": [
+        "Liquid biopsy",
+        "AI/ML"
+      ],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "NSCLC",
+        "Liquid",
+        "Biopsy",
+        "KI",
+        "MTB",
+        "MVP",
+        "Standard, complex_case, AP1b_length_reclass"
+      ],
+      "method_role": "driver",
+      "method_filter_eligible": true,
+      "method_focus_domains": [
+        "molecular_diagnostics"
+      ],
+      "method_issue_types": [
+        "negative_result_limits",
+        "sampling_sensitivity"
+      ],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "driver",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "MTB_NSCLC_003_v1_3",
+      "base_id": "MTB_NSCLC_003",
+      "domain": "MTB",
+      "title": "ALK/ROS1/RET/NTRK-Fusionsverdacht bei jungem Nie-Raucher → FISH, RNA-NGS oder DNA-NGS?",
+      "method_techniques": [
+        "DNA-NGS",
+        "RNA-NGS",
+        "FISH/ISH"
+      ],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "NSCLC",
+        "NGS",
+        "RNA",
+        "FISH",
+        "MTB",
+        "MVP",
+        "Standard"
+      ],
+      "method_role": "driver",
+      "method_filter_eligible": true,
+      "method_focus_domains": [
+        "molecular_diagnostics"
+      ],
+      "method_issue_types": [
+        "assay_selection",
+        "fusion_detection",
+        "negative_result_limits"
+      ],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "driver",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "MTB_NSCLC_004_v1_3",
+      "base_id": "MTB_NSCLC_004",
+      "domain": "MTB",
+      "title": "KRAS-mutiertes NSCLC mit STK11/KEAP1-Kontext → Target, Prognose, Immuntherapie-Kontext korrekt gewichten",
+      "method_techniques": [],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "NSCLC",
+        "Immunescape",
+        "MTB",
+        "Phase",
+        "Standard"
+      ],
+      "method_role": "none",
+      "method_filter_eligible": false,
+      "method_focus_domains": [],
+      "method_issue_types": [],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "none",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "MTB_MEL_001_v1_3",
+      "base_id": "MTB_MEL_001",
+      "domain": "MTB",
+      "title": "Melanom: BRAF V600 und Immuntherapie-Sequenz → Schnelle TKI-Therapie vs. Immuncheckpoint-Strategie",
+      "method_techniques": [],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "BRAF",
+        "KI",
+        "Melanom",
+        "MTB",
+        "Phase",
+        "Standard"
+      ],
+      "method_role": "none",
+      "method_filter_eligible": false,
+      "method_focus_domains": [],
+      "method_issue_types": [],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "none",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "MTB_GIST_001_v1_3",
+      "base_id": "MTB_GIST_001",
+      "domain": "MTB",
+      "title": "GIST mit KIT/PDGFRA-Fragestellung → Welcher Marker entscheidet über TKI-Auswahl?",
+      "method_techniques": [],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "KI",
+        "KIT",
+        "PDGFRA",
+        "GIST",
+        "MTB",
+        "Phase",
+        "Mini"
+      ],
+      "method_role": "supporting",
+      "method_filter_eligible": false,
+      "method_focus_domains": [],
+      "method_issue_types": [],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "supporting",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "MTB_CHOL_001_v1_3",
+      "base_id": "MTB_CHOL_001",
+      "domain": "MTB",
+      "title": "Cholangiozelluläres Karzinom mit FGFR2/IDH-Frage → Paneldiagnostik und Studienoptionen",
+      "method_techniques": [
+        "DNA-NGS"
+      ],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "IDH",
+        "FGFR",
+        "MTB",
+        "Phase",
+        "Standard"
+      ],
+      "method_role": "supporting",
+      "method_filter_eligible": false,
+      "method_focus_domains": [],
+      "method_issue_types": [],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "supporting",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "MTB_CRC_002_v1_3",
+      "base_id": "MTB_CRC_002",
+      "domain": "MTB",
+      "title": "MMR-Verlust MLH1/PMS2: sporadisch oder Lynch? → MLH1-Methylierung/BRAF? Humangenetik?",
+      "method_techniques": [
+        "IHC",
+        "MSI/MMR",
+        "Methylation"
+      ],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "CRC",
+        "MMR",
+        "MSI",
+        "BRAF",
+        "Methylierung",
+        "Lynch",
+        "MTB",
+        "MVP",
+        "Standard"
+      ],
+      "method_role": "supporting",
+      "method_filter_eligible": false,
+      "method_focus_domains": [],
+      "method_issue_types": [],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "driver",
+      "strict_review_note": "The core difficulty is the biological/diagnostic Lynch-vs-sporadic algorithm, not a technical limitation or method-performance problem."
+    },
+    {
+      "case_id": "MTB_CRC_003_v1_3",
+      "base_id": "MTB_CRC_003",
+      "domain": "MTB",
+      "title": "Rechte Kolonkarzinom-Metastase mit BRAF V600E → Prognose, MSI-Kontext, Therapieoption",
+      "method_techniques": [],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "CRC",
+        "MSI",
+        "BRAF",
+        "MTB",
+        "Phase",
+        "Mini"
+      ],
+      "method_role": "none",
+      "method_filter_eligible": false,
+      "method_focus_domains": [],
+      "method_issue_types": [],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "none",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "MTB_CRC_004_v1_3",
+      "base_id": "MTB_CRC_004",
+      "domain": "MTB",
+      "title": "Polypenrest statt invasivem Tumor eingeschickt → Befundbar oder neues Material anfordern?",
+      "method_techniques": [
+        "MSI/MMR"
+      ],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "CRC",
+        "MTB-LAB",
+        "MVP",
+        "Mini"
+      ],
+      "method_role": "driver",
+      "method_filter_eligible": true,
+      "method_focus_domains": [
+        "molecular_diagnostics",
+        "laboratory_analytics_qc"
+      ],
+      "method_issue_types": [
+        "material_adequacy",
+        "preanalytics",
+        "negative_result_limits"
+      ],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "driver",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "MTB_CRC_005_v1_3",
+      "base_id": "MTB_CRC_005",
+      "domain": "MTB",
+      "title": "HER2-amplifiziertes RAS-WT-CRC → HER2 als Resistenz-/Target-Kontext",
+      "method_techniques": [
+        "DNA-NGS",
+        "MSI/MMR"
+      ],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "CRC",
+        "NGS",
+        "HER2",
+        "MTB",
+        "Phase",
+        "Standard"
+      ],
+      "method_role": "supporting",
+      "method_filter_eligible": false,
+      "method_focus_domains": [],
+      "method_issue_types": [],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "supporting",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "MTB_OVAR_002_v1_3",
+      "base_id": "MTB_OVAR_002",
+      "domain": "MTB",
+      "title": "BRCA2-Variante unklarer Signifikanz im Ovarialkarzinom → VUS nicht als therapeutisch gesichert verkaufen",
+      "method_techniques": [
+        "HRD/BRCA testing"
+      ],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "BRCA",
+        "HRD",
+        "VUS",
+        "MTB",
+        "MVP",
+        "Standard, complex_case, AP1b_length_reclass"
+      ],
+      "method_role": "supporting",
+      "method_filter_eligible": false,
+      "method_focus_domains": [],
+      "method_issue_types": [],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "driver",
+      "strict_review_note": "The central challenge is VUS evidence/actionability, not assay selection, quality or limitation."
+    },
+    {
+      "case_id": "MTB_MAMMA_001_v1_3",
+      "base_id": "MTB_MAMMA_001",
+      "domain": "MTB",
+      "title": "Mammakarzinom: BRCA/PIK3CA/ERBB2-Kontext → Klassische Marker vs. Panel-Zusatznutzen",
+      "method_techniques": [
+        "HRD/BRCA testing"
+      ],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "BRCA",
+        "MTB",
+        "Phase",
+        "Standard"
+      ],
+      "method_role": "supporting",
+      "method_filter_eligible": false,
+      "method_focus_domains": [],
+      "method_issue_types": [],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "driver",
+      "strict_review_note": "The case asks for biomarker/panel scope in a clinical context; no concrete methodological pitfall determines the result."
+    },
+    {
+      "case_id": "MTB_PROST_001_v1_3",
+      "base_id": "MTB_PROST_001",
+      "domain": "MTB",
+      "title": "Metastasiertes Prostatakarzinom: HRR-Gene/MMR → PARP/IO/Studie und Keimbahnfrage",
+      "method_techniques": [
+        "MSI/MMR"
+      ],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "MMR",
+        "PARP",
+        "MTB",
+        "Phase",
+        "Standard"
+      ],
+      "method_role": "supporting",
+      "method_filter_eligible": false,
+      "method_focus_domains": [],
+      "method_issue_types": [],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "supporting",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "MTB_TAML_001_v1_3",
+      "base_id": "MTB_TAML_001",
+      "domain": "MTB",
+      "title": "Therapieassoziierte MDS/AML nach DNA-schädigender Therapie → Instabilität als Chance und Risiko einordnen",
+      "method_techniques": [],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "MTB-RES",
+        "Phase",
+        "Mini"
+      ],
+      "method_role": "none",
+      "method_filter_eligible": false,
+      "method_focus_domains": [],
+      "method_issue_types": [],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "none",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "MTB_IO_002_v1_3",
+      "base_id": "MTB_IO_002",
+      "domain": "MTB",
+      "title": "„Cold Tumor“ mit wenig TILs und dichter Stromabarriere → Warum ist PD-1 allein wahrscheinlich schwach?",
+      "method_techniques": [],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "TME",
+        "Immunescape",
+        "TILs",
+        "MTB",
+        "Phase",
+        "Standard"
+      ],
+      "method_role": "none",
+      "method_filter_eligible": false,
+      "method_focus_domains": [],
+      "method_issue_types": [],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "none",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "MTB_IO_003_v1_3",
+      "base_id": "MTB_IO_003",
+      "domain": "MTB",
+      "title": "PD-L1 positiv, aber niedrige TMB und kein Immuninfiltrat → PD-L1 nicht überinterpretieren",
+      "method_techniques": [
+        "IHC",
+        "MSI/MMR"
+      ],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "Immunescape",
+        "PD-L1",
+        "TMB",
+        "MTB",
+        "Phase",
+        "Mini"
+      ],
+      "method_role": "supporting",
+      "method_filter_eligible": false,
+      "method_focus_domains": [],
+      "method_issue_types": [],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "supporting",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "MTB_IO_004_v1_3",
+      "base_id": "MTB_IO_004",
+      "domain": "MTB",
+      "title": "MSI-H-Karzinom: Therapieoption und Lynch-Abklärung → IO, MMR-IHC, Keimbahnkontext",
+      "method_techniques": [
+        "IHC",
+        "MSI/MMR"
+      ],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "MMR",
+        "MSI",
+        "Immunescape",
+        "Lynch",
+        "MTB",
+        "Phase",
+        "Standard"
+      ],
+      "method_role": "supporting",
+      "method_filter_eligible": false,
+      "method_focus_domains": [],
+      "method_issue_types": [],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "supporting",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "MTB_IO_005_v1_3",
+      "base_id": "MTB_IO_005",
+      "domain": "MTB",
+      "title": "Antibiotika kurz vor ICI, Mikrobiom-Frage im Tumorboard → Evidenz korrekt begrenzen",
+      "method_techniques": [],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "MTB",
+        "Phase",
+        "Mini"
+      ],
+      "method_role": "none",
+      "method_filter_eligible": false,
+      "method_focus_domains": [],
+      "method_issue_types": [],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "none",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "MTB_CNS_002_v1_3",
+      "base_id": "MTB_CNS_002",
+      "domain": "MTB",
+      "title": "IDH-mutiertes Gliom mit G-CIMP-Profil → IDH-IHC/Sequenzierung/Methylom einordnen",
+      "method_techniques": [
+        "IHC",
+        "Methylation"
+      ],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "IDH",
+        "MTB",
+        "Phase",
+        "Standard"
+      ],
+      "method_role": "driver",
+      "method_filter_eligible": true,
+      "method_focus_domains": [
+        "molecular_diagnostics"
+      ],
+      "method_issue_types": [
+        "assay_selection",
+        "orthogonal_integration"
+      ],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "driver",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "MTB_CNS_003_v1_3",
+      "base_id": "MTB_CNS_003",
+      "domain": "MTB",
+      "title": "Histologisch unklarer ZNS-Tumor: Methylierungsclassifier → Wann hilft Methylom-Klassifikation?",
+      "method_techniques": [
+        "DNA-NGS",
+        "Methylation"
+      ],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "NGS",
+        "Methylierung",
+        "MTB",
+        "Phase",
+        "Standard"
+      ],
+      "method_role": "driver",
+      "method_filter_eligible": true,
+      "method_focus_domains": [
+        "molecular_diagnostics"
+      ],
+      "method_issue_types": [
+        "classifier_selection",
+        "assay_limits"
+      ],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "driver",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "MTB_HEM_001_v1_3",
+      "base_id": "MTB_HEM_001",
+      "domain": "MTB",
+      "title": "MDS/AML mit DNMT3A/TET2/ASXL1 → CHIP vs. hämatologische Neoplasie",
+      "method_techniques": [],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "MTB",
+        "Phase",
+        "Standard"
+      ],
+      "method_role": "supporting",
+      "method_filter_eligible": false,
+      "method_focus_domains": [],
+      "method_issue_types": [],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "supporting",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "MTB_METH_001_v1_3",
+      "base_id": "MTB_METH_001",
+      "domain": "MTB",
+      "title": "MLH1-Promotor-Methylierung bei MSI-H-CRC → sporadisch vs. Lynch",
+      "method_techniques": [
+        "MSI/MMR",
+        "Methylation"
+      ],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "CRC",
+        "MSI",
+        "Methylierung",
+        "Lynch",
+        "MTB",
+        "Phase",
+        "Mini"
+      ],
+      "method_role": "supporting",
+      "method_filter_eligible": false,
+      "method_focus_domains": [],
+      "method_issue_types": [],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "driver",
+      "strict_review_note": "MLH1 methylation is used as a discriminator, but the difficulty is biological/diagnostic interpretation rather than the method itself."
+    },
+    {
+      "case_id": "MTB_ANGIO_001_v1_3",
+      "base_id": "MTB_ANGIO_001",
+      "domain": "MTB",
+      "title": "mCRC: Bevacizumab und VEGF-Angiogenese → Anti-VEGF biologisch erklären",
+      "method_techniques": [],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "CRC",
+        "MTB",
+        "Phase",
+        "Mini"
+      ],
+      "method_role": "none",
+      "method_filter_eligible": false,
+      "method_focus_domains": [],
+      "method_issue_types": [],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "none",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "MTB_RCC_001_v1_3",
+      "base_id": "MTB_RCC_001",
+      "domain": "MTB",
+      "title": "Klarzelliges RCC: VHL/HIF/VEGF-Achse → Warum TKI/IO-Kombination plausibel ist",
+      "method_techniques": [],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "KI",
+        "RCC",
+        "MTB",
+        "Phase",
+        "Standard"
+      ],
+      "method_role": "none",
+      "method_filter_eligible": false,
+      "method_focus_domains": [],
+      "method_issue_types": [],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "none",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "MTB_GBM_ANGIO_001_v1_3",
+      "base_id": "MTB_GBM_ANGIO_001",
+      "domain": "MTB",
+      "title": "Glioblastom mit Gefäßproliferation und Hypoxie → Antiangiogenese: kurzfristiger Effekt vs. Resistenz",
+      "method_techniques": [],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "MTB",
+        "Phase",
+        "Mini"
+      ],
+      "method_role": "none",
+      "method_filter_eligible": false,
+      "method_focus_domains": [],
+      "method_issue_types": [],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "none",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "MTB_TME_001_v1_3",
+      "base_id": "MTB_TME_001",
+      "domain": "MTB",
+      "title": "Stromareicher Tumor mit immune-excluded Pattern → Warum Stroma Therapieantwort beeinflusst",
+      "method_techniques": [],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "TME",
+        "Immunescape",
+        "MTB",
+        "Phase",
+        "Standard"
+      ],
+      "method_role": "none",
+      "method_filter_eligible": false,
+      "method_focus_domains": [],
+      "method_issue_types": [],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "none",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "MTB_INV_001_v1_3",
+      "base_id": "MTB_INV_001",
+      "domain": "MTB",
+      "title": "EMT-/Invasionsfront-Fall mit Metastasenrisiko → Morphologie → Hallmark → klinische Konsequenz",
+      "method_techniques": [],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "MTB",
+        "Phase",
+        "Mini"
+      ],
+      "method_role": "none",
+      "method_filter_eligible": false,
+      "method_focus_domains": [],
+      "method_issue_types": [],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "none",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "MET_NGS_001_v1_3",
+      "base_id": "MET_NGS_001",
+      "domain": "MTB",
+      "title": "Coverage-Loch in therapieentscheidendem Exon → Befund mit Limitation oder Wiederholung?",
+      "method_techniques": [
+        "DNA-NGS"
+      ],
+      "legacy_met_addon_type": "yes",
+      "legacy_tags": [
+        "NGS",
+        "Labor",
+        "MTB-LAB",
+        "MVP",
+        "Mini"
+      ],
+      "method_role": "driver",
+      "method_filter_eligible": true,
+      "method_focus_domains": [
+        "molecular_diagnostics"
+      ],
+      "method_issue_types": [
+        "coverage",
+        "negative_result_limits",
+        "repeat_strategy"
+      ],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "driver",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "MET_NGS_002_v1_3",
+      "base_id": "MET_NGS_002",
+      "domain": "MTB",
+      "title": "FFPE-C>T-Artefakt bei niedriger VAF → Artefakt vs. echte Subklonmutation",
+      "method_techniques": [
+        "DNA-NGS"
+      ],
+      "legacy_met_addon_type": "yes",
+      "legacy_tags": [
+        "NGS",
+        "MTB-LAB",
+        "MVP",
+        "Mini"
+      ],
+      "method_role": "driver",
+      "method_filter_eligible": true,
+      "method_focus_domains": [
+        "molecular_diagnostics"
+      ],
+      "method_issue_types": [
+        "artifact_recognition",
+        "ffpe_damage",
+        "low_vaf"
+      ],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "driver",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "MET_NGS_004_v1_3",
+      "base_id": "MET_NGS_004",
+      "domain": "MTB",
+      "title": "Tumor-only NGS: Keimbahnverdacht BRCA/TP53 → Humangenetische Abklärung empfehlen?",
+      "method_techniques": [
+        "DNA-NGS",
+        "HRD/BRCA testing"
+      ],
+      "legacy_met_addon_type": "yes",
+      "legacy_tags": [
+        "BRCA",
+        "NGS",
+        "MTB",
+        "Phase",
+        "Standard, complex_case, AP1b_length_reclass"
+      ],
+      "method_role": "driver",
+      "method_filter_eligible": true,
+      "method_focus_domains": [
+        "molecular_diagnostics"
+      ],
+      "method_issue_types": [
+        "germline_somatic_boundary",
+        "tumor_only_limits"
+      ],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "driver",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "MET_RNA_001_v1_3",
+      "base_id": "MET_RNA_001",
+      "domain": "MTB",
+      "title": "DNA-NGS negativ, aber Fusionsverdacht bleibt → RNA-NGS/FISH ergänzen",
+      "method_techniques": [
+        "DNA-NGS",
+        "RNA-NGS",
+        "FISH/ISH"
+      ],
+      "legacy_met_addon_type": "yes",
+      "legacy_tags": [
+        "NGS",
+        "RNA",
+        "FISH",
+        "MTB",
+        "MVP",
+        "Standard"
+      ],
+      "method_role": "driver",
+      "method_filter_eligible": true,
+      "method_focus_domains": [
+        "molecular_diagnostics"
+      ],
+      "method_issue_types": [
+        "assay_selection",
+        "fusion_detection",
+        "negative_result_limits"
+      ],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "driver",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "MET_LB_001_v1_3",
+      "base_id": "MET_LB_001",
+      "domain": "MTB",
+      "title": "Liquid Biopsy negativ bei Progress → Negativ ≠ sicher negativ",
+      "method_techniques": [
+        "Liquid biopsy"
+      ],
+      "legacy_met_addon_type": "yes",
+      "legacy_tags": [
+        "Liquid",
+        "Biopsy",
+        "MTB",
+        "Phase",
+        "Standard"
+      ],
+      "method_role": "driver",
+      "method_filter_eligible": true,
+      "method_focus_domains": [
+        "molecular_diagnostics"
+      ],
+      "method_issue_types": [
+        "sampling_sensitivity",
+        "negative_result_limits"
+      ],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "driver",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "MET_PCR_001_v1_3",
+      "base_id": "MET_PCR_001",
+      "domain": "MTB",
+      "title": "qPCR/dPCR für MRD statt breites Panel → Zielgerichtete sensitive Methode wählen",
+      "method_techniques": [
+        "PCR/dPCR"
+      ],
+      "legacy_met_addon_type": "yes",
+      "legacy_tags": [
+        "MTB-LAB",
+        "Phase",
+        "Mini"
+      ],
+      "method_role": "driver",
+      "method_filter_eligible": true,
+      "method_focus_domains": [
+        "molecular_diagnostics"
+      ],
+      "method_issue_types": [
+        "assay_selection",
+        "sensitivity_lod",
+        "mrd"
+      ],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "driver",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "MET_METH_001_v1_3",
+      "base_id": "MET_METH_001",
+      "domain": "MTB",
+      "title": "Bisulfit-PCR vs. Methylierungsarray → Lokaler Marker vs. globale Klassifikation",
+      "method_techniques": [
+        "DNA-NGS",
+        "PCR/dPCR",
+        "Methylation"
+      ],
+      "legacy_met_addon_type": "yes",
+      "legacy_tags": [
+        "NGS",
+        "Methylierung",
+        "MTB",
+        "Phase",
+        "Mini"
+      ],
+      "method_role": "driver",
+      "method_filter_eligible": true,
+      "method_focus_domains": [
+        "molecular_diagnostics"
+      ],
+      "method_issue_types": [
+        "assay_selection",
+        "methylation_scope"
+      ],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "driver",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "MET_FISH_001_v1_3",
+      "base_id": "MET_FISH_001",
+      "domain": "MTB",
+      "title": "Amplifikation/Fusion: FISH als schnelle Ergänzung → Wann ISH/FISH sinnvoll bleibt",
+      "method_techniques": [
+        "RNA-NGS",
+        "FISH/ISH"
+      ],
+      "legacy_met_addon_type": "yes",
+      "legacy_tags": [
+        "FISH",
+        "MTB-LAB",
+        "Phase",
+        "Mini"
+      ],
+      "method_role": "driver",
+      "method_filter_eligible": true,
+      "method_focus_domains": [
+        "molecular_diagnostics"
+      ],
+      "method_issue_types": [
+        "assay_selection",
+        "orthogonal_testing"
+      ],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "driver",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "MET_MULTI_001_v1_3",
+      "base_id": "MET_MULTI_001",
+      "domain": "MTB",
+      "title": "Multiomics-Bericht: viel Information, wenig Entscheidung → Kernaussage fürs Tumorboard extrahieren",
+      "method_techniques": [
+        "RNA-NGS",
+        "RNA-seq/Omics"
+      ],
+      "legacy_met_addon_type": "yes",
+      "legacy_tags": [
+        "RNA",
+        "Omics",
+        "MTB-RES",
+        "Phase",
+        "Standard"
+      ],
+      "method_role": "supporting",
+      "method_filter_eligible": false,
+      "method_focus_domains": [],
+      "method_issue_types": [],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "driver",
+      "strict_review_note": "The challenge is information prioritization/MTB communication; no concrete method failure, limitation or analytical choice carries the outcome."
+    },
+    {
+      "case_id": "LAB_PRE_001_v1_3",
+      "base_id": "LAB_PRE_001",
+      "domain": "LAB",
+      "title": "Unbeschriftetes Röhrchen im Eingang → Stoppen, klären, dokumentieren",
+      "method_techniques": [],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "Labor",
+        "LAB",
+        "MVP",
+        "Mini"
+      ],
+      "method_role": "supporting",
+      "method_filter_eligible": false,
+      "method_focus_domains": [],
+      "method_issue_types": [],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "supporting",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "LAB_PRE_002_v1_3",
+      "base_id": "LAB_PRE_002",
+      "domain": "LAB",
+      "title": "FFPE-Block alt, Tumoranteil niedrig, DNA schlecht → Befundbar, eingeschränkt oder neues Material?",
+      "method_techniques": [],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "Labor",
+        "LAB-MTB",
+        "MVP",
+        "Standard"
+      ],
+      "method_role": "driver",
+      "method_filter_eligible": true,
+      "method_focus_domains": [
+        "laboratory_analytics_qc"
+      ],
+      "method_issue_types": [
+        "preanalytics",
+        "material_adequacy",
+        "assay_limits"
+      ],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "driver",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "LAB_PRE_003_v1_3",
+      "base_id": "LAB_PRE_003",
+      "domain": "LAB",
+      "title": "Liquid-Biopsy-Blut zu lange unzentrifugiert → Probe ablehnen oder limitiert analysieren?",
+      "method_techniques": [
+        "Liquid biopsy"
+      ],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "Liquid",
+        "Biopsy",
+        "Labor",
+        "LAB",
+        "Phase",
+        "Mini"
+      ],
+      "method_role": "driver",
+      "method_filter_eligible": true,
+      "method_focus_domains": [
+        "laboratory_analytics_qc",
+        "molecular_diagnostics"
+      ],
+      "method_issue_types": [
+        "preanalytics",
+        "sample_stability",
+        "negative_result_limits"
+      ],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "driver",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "LAB_PRE_004_v1_3",
+      "base_id": "LAB_PRE_004",
+      "domain": "LAB",
+      "title": "Dekalzifiziertes Knochenmaterial für NGS → Methodengrenze erkennen",
+      "method_techniques": [
+        "DNA-NGS"
+      ],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "NGS",
+        "Labor",
+        "LAB",
+        "Phase",
+        "Mini"
+      ],
+      "method_role": "driver",
+      "method_filter_eligible": true,
+      "method_focus_domains": [
+        "laboratory_analytics_qc",
+        "molecular_diagnostics"
+      ],
+      "method_issue_types": [
+        "preanalytics",
+        "decalcification",
+        "assay_limits"
+      ],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "driver",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "LAB_PRE_005_v1_3",
+      "base_id": "LAB_PRE_005",
+      "domain": "LAB",
+      "title": "Forschung möchte 20 Schnitte aus kleinem Biopsieblock → Routinepriorität vs. Forschungsinteresse",
+      "method_techniques": [
+        "DNA-NGS"
+      ],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "NGS",
+        "Labor",
+        "LAB-RES",
+        "Phase",
+        "Standard"
+      ],
+      "method_role": "supporting",
+      "method_filter_eligible": false,
+      "method_focus_domains": [],
+      "method_issue_types": [],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "supporting",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "LAB_RUN_001_v1_3",
+      "base_id": "LAB_RUN_001",
+      "domain": "LAB",
+      "title": "Positivkontrolle schwach, Patientenproben scheinbar okay → Run freigeben, teilfreigeben oder wiederholen?",
+      "method_techniques": [],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "Labor",
+        "LAB",
+        "MVP",
+        "Standard"
+      ],
+      "method_role": "driver",
+      "method_filter_eligible": true,
+      "method_focus_domains": [
+        "laboratory_analytics_qc"
+      ],
+      "method_issue_types": [
+        "control_failure",
+        "run_acceptance"
+      ],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "driver",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "LAB_RUN_003_v1_3",
+      "base_id": "LAB_RUN_003",
+      "domain": "LAB",
+      "title": "Duplicate-Rate bei zwei Proben erhöht → Ursache, Befundgrenze, Wiederholung",
+      "method_techniques": [
+        "DNA-NGS"
+      ],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "NGS",
+        "Labor",
+        "LAB",
+        "Phase",
+        "Mini"
+      ],
+      "method_role": "driver",
+      "method_filter_eligible": true,
+      "method_focus_domains": [
+        "laboratory_analytics_qc",
+        "computational_statistics"
+      ],
+      "method_issue_types": [
+        "qc_metric",
+        "duplicate_rate",
+        "repeat_strategy"
+      ],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "driver",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "LAB_RUN_004_v1_3",
+      "base_id": "LAB_RUN_004",
+      "domain": "LAB",
+      "title": "Neues NGS-Kit-Lot vor Routineeinsatz → Lot-Verifizierung und Dokumentation",
+      "method_techniques": [
+        "DNA-NGS",
+        "AI/ML"
+      ],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "NGS",
+        "Labor",
+        "KI",
+        "KIT",
+        "LAB",
+        "Phase",
+        "Standard"
+      ],
+      "method_role": "driver",
+      "method_filter_eligible": true,
+      "method_focus_domains": [
+        "laboratory_analytics_qc"
+      ],
+      "method_issue_types": [
+        "validation_verification",
+        "lot_verification"
+      ],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "driver",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "LAB_RUN_005_v1_3",
+      "base_id": "LAB_RUN_005",
+      "domain": "LAB",
+      "title": "PCR-Inhibition durch Ethanolreste im Eluat → Wiederholung Extraktion?",
+      "method_techniques": [
+        "PCR/dPCR"
+      ],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "Labor",
+        "LAB",
+        "Phase",
+        "Mini"
+      ],
+      "method_role": "driver",
+      "method_filter_eligible": true,
+      "method_focus_domains": [
+        "laboratory_analytics_qc"
+      ],
+      "method_issue_types": [
+        "pcr_inhibition",
+        "extraction_qc",
+        "repeat_strategy"
+      ],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "driver",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "LAB_RUN_006_v1_3",
+      "base_id": "LAB_RUN_006",
+      "domain": "LAB",
+      "title": "Post-PCR-Produkt gelangt in Prä-PCR-Bereich → Sofortmaßnahmen, Flächensanierung, CAPA",
+      "method_techniques": [
+        "PCR/dPCR"
+      ],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "Labor",
+        "CAPA",
+        "LAB",
+        "Phase",
+        "Planspiel"
+      ],
+      "method_role": "driver",
+      "method_filter_eligible": true,
+      "method_focus_domains": [
+        "laboratory_analytics_qc"
+      ],
+      "method_issue_types": [
+        "contamination",
+        "workflow_zoning"
+      ],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "driver",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "LAB_POST_002_v1_3",
+      "base_id": "LAB_POST_002",
+      "domain": "LAB",
+      "title": "Datenbankversion ClinVar/COSMIC nicht dokumentiert → Auditfest dokumentieren",
+      "method_techniques": [
+        "Bioinformatics pipeline"
+      ],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "Labor",
+        "Audit",
+        "Daten",
+        "LAB",
+        "Phase",
+        "Mini"
+      ],
+      "method_role": "supporting",
+      "method_filter_eligible": false,
+      "method_focus_domains": [],
+      "method_issue_types": [],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "supporting",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "LAB_POST_003_v1_3",
+      "base_id": "LAB_POST_003",
+      "domain": "LAB",
+      "title": "Automatischer Report klassifiziert VUS als „actionable“ → Ärztlich-wissenschaftliche Freigabe",
+      "method_techniques": [
+        "AI/ML"
+      ],
+      "legacy_met_addon_type": "yes",
+      "legacy_tags": [
+        "VUS",
+        "Labor",
+        "KI",
+        "LAB-MTB",
+        "MVP",
+        "Standard"
+      ],
+      "method_role": "driver",
+      "method_filter_eligible": true,
+      "method_focus_domains": [
+        "computational_statistics",
+        "molecular_diagnostics"
+      ],
+      "method_issue_types": [
+        "automated_interpretation",
+        "variant_interpretation",
+        "human_review"
+      ],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "driver",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "LAB_POST_004_v1_3",
+      "base_id": "LAB_POST_004",
+      "domain": "LAB",
+      "title": "Tumorboard verlangt „alles negativ“ → Methodische Grenzen erklären",
+      "method_techniques": [
+        "Bioinformatics pipeline"
+      ],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "LAB-MTB",
+        "Phase",
+        "Mini"
+      ],
+      "method_role": "driver",
+      "method_filter_eligible": true,
+      "method_focus_domains": [
+        "molecular_diagnostics"
+      ],
+      "method_issue_types": [
+        "negative_result_limits",
+        "reporting"
+      ],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "driver",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "LAB_POST_005_v1_3",
+      "base_id": "LAB_POST_005",
+      "domain": "LAB",
+      "title": "Befundfreigabe trotz Coverage-Lücke → Limitation, Nachtestung, Rücksprache",
+      "method_techniques": [
+        "DNA-NGS"
+      ],
+      "legacy_met_addon_type": "yes",
+      "legacy_tags": [
+        "Labor",
+        "LAB",
+        "Phase",
+        "Standard"
+      ],
+      "method_role": "driver",
+      "method_filter_eligible": true,
+      "method_focus_domains": [
+        "molecular_diagnostics",
+        "laboratory_analytics_qc"
+      ],
+      "method_issue_types": [
+        "coverage",
+        "negative_result_limits",
+        "release_decision"
+      ],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "driver",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "LAB_DOC_002_v1_3",
+      "base_id": "LAB_DOC_002",
+      "domain": "LAB",
+      "title": "Probe → Rohdaten → Pipeline → Befund nicht rückverfolgbar → LIMS-/ELN-Kette rekonstruieren",
+      "method_techniques": [
+        "Bioinformatics pipeline",
+        "LIMS/ELN"
+      ],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "Labor",
+        "Daten",
+        "LIMS",
+        "Pipeline",
+        "LAB",
+        "MVP",
+        "Standard"
+      ],
+      "method_role": "supporting",
+      "method_filter_eligible": false,
+      "method_focus_domains": [],
+      "method_issue_types": [],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "supporting",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "LAB_AUDIT_001_v1_3",
+      "base_id": "LAB_AUDIT_001",
+      "domain": "LAB",
+      "title": "Auditor fragt nach SOP-Version und Schulungsnachweis → Dokumente/Kompetenzmatrix zeigen",
+      "method_techniques": [
+        "DNA-NGS"
+      ],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "NGS",
+        "Labor",
+        "Audit",
+        "LAB",
+        "MVP",
+        "Standard, complex_case, AP1b_length_reclass"
+      ],
+      "method_role": "supporting",
+      "method_filter_eligible": false,
+      "method_focus_domains": [],
+      "method_issue_types": [],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "supporting",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "LAB_CAPA_001_v1_3",
+      "base_id": "LAB_CAPA_001",
+      "domain": "LAB",
+      "title": "Wiederholte Kontamination in einem Assay → Root Cause, Korrektur, Prävention",
+      "method_techniques": [],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "Labor",
+        "CAPA",
+        "LAB",
+        "MVP",
+        "Planspiel"
+      ],
+      "method_role": "driver",
+      "method_filter_eligible": true,
+      "method_focus_domains": [
+        "laboratory_analytics_qc"
+      ],
+      "method_issue_types": [
+        "contamination",
+        "root_cause_analysis",
+        "assay_validity"
+      ],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "supporting",
+      "strict_review_note": "Repeated assay contamination directly threatens analytical validity; root-cause analysis and contamination control are methodological laboratory reasoning, not merely administrative CAPA."
+    },
+    {
+      "case_id": "LAB_QM_001_v1_3",
+      "base_id": "LAB_QM_001",
+      "domain": "LAB",
+      "title": "Abweichung wurde informell gelöst, aber nicht gemeldet → Deviation melden statt vertuschen",
+      "method_techniques": [],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "Labor",
+        "LAB",
+        "Phase",
+        "Mini"
+      ],
+      "method_role": "supporting",
+      "method_filter_eligible": false,
+      "method_focus_domains": [],
+      "method_issue_types": [],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "supporting",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "LAB_LLM_001_v1_3",
+      "base_id": "LAB_LLM_001",
+      "domain": "LAB",
+      "title": "LLM erstellt SOP-Entwurf mit fachlichen Fehlern → Output prüfen, Datenschutz/QM beachten",
+      "method_techniques": [
+        "AI/ML"
+      ],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "Labor",
+        "Daten",
+        "LAB",
+        "Phase",
+        "Mini"
+      ],
+      "method_role": "supporting",
+      "method_filter_eligible": false,
+      "method_focus_domains": [],
+      "method_issue_types": [],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "supporting",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "LAB_DIGI_001_v1_3",
+      "base_id": "LAB_DIGI_001",
+      "domain": "LAB",
+      "title": "WSI-Scan unscharf: trotzdem für Tumoranteilsschätzung nutzen? → Bildqualität und Befundqualität",
+      "method_techniques": [
+        "Digital pathology/WSI"
+      ],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "Labor",
+        "LAB",
+        "Phase",
+        "Mini"
+      ],
+      "method_role": "driver",
+      "method_filter_eligible": true,
+      "method_focus_domains": [
+        "laboratory_analytics_qc",
+        "digital_ai"
+      ],
+      "method_issue_types": [
+        "image_quality",
+        "method_validity"
+      ],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "driver",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "LAB_DIGI_002_v1_3",
+      "base_id": "LAB_DIGI_002",
+      "domain": "LAB",
+      "title": "PD-L1-KI-Score ohne lokale Validierung → KI als Assistenz, nicht finaler Befund",
+      "method_techniques": [
+        "IHC",
+        "MSI/MMR",
+        "AI/ML"
+      ],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "Labor",
+        "KI",
+        "PD-L1",
+        "LAB-MTB",
+        "Phase",
+        "Standard"
+      ],
+      "method_role": "driver",
+      "method_filter_eligible": true,
+      "method_focus_domains": [
+        "digital_ai",
+        "laboratory_analytics_qc"
+      ],
+      "method_issue_types": [
+        "local_validation",
+        "algorithm_validation",
+        "human_review"
+      ],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "driver",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "LAB_DATA_001_v1_3",
+      "base_id": "LAB_DATA_001",
+      "domain": "LAB",
+      "title": "Excel-Export mit Patientendaten im Projektordner → Pseudonymisierung/Need-to-know",
+      "method_techniques": [],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "Labor",
+        "Daten",
+        "LAB-RES",
+        "MVP",
+        "Mini"
+      ],
+      "method_role": "supporting",
+      "method_filter_eligible": false,
+      "method_focus_domains": [],
+      "method_issue_types": [],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "supporting",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "LAB_DATA_002_v1_3",
+      "base_id": "LAB_DATA_002",
+      "domain": "LAB",
+      "title": "Ransomware/Serverausfall im NGS-Archiv → Backup, Notfallplan, Wiederherstellung",
+      "method_techniques": [
+        "DNA-NGS"
+      ],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "NGS",
+        "Labor",
+        "LAB",
+        "Phase",
+        "Planspiel"
+      ],
+      "method_role": "supporting",
+      "method_filter_eligible": false,
+      "method_focus_domains": [],
+      "method_issue_types": [],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "supporting",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "LAB_LIMS_001_v1_3",
+      "base_id": "LAB_LIMS_001",
+      "domain": "LAB",
+      "title": "LIMS-Ausfall während Routinewoche → Papier-Backup, Nachpflege, Freigabeprozess",
+      "method_techniques": [
+        "LIMS/ELN"
+      ],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "Labor",
+        "LIMS",
+        "LAB",
+        "Phase",
+        "Planspiel"
+      ],
+      "method_role": "supporting",
+      "method_filter_eligible": false,
+      "method_focus_domains": [],
+      "method_issue_types": [],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "supporting",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "RES_HYP_002_v1_3",
+      "base_id": "RES_HYP_002",
+      "domain": "RES",
+      "title": "Biomarker X ist „wichtig“ – aber wie operationalisieren? → Population, Marker, Cutoff, Outcome definieren",
+      "method_techniques": [],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "RES",
+        "MVP",
+        "Mini"
+      ],
+      "method_role": "driver",
+      "method_filter_eligible": true,
+      "method_focus_domains": [
+        "research_methodology",
+        "computational_statistics"
+      ],
+      "method_issue_types": [
+        "operationalization",
+        "cutoff_definition",
+        "outcome_definition"
+      ],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "driver",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "RES_OMICS_002_v1_3",
+      "base_id": "RES_OMICS_002",
+      "domain": "RES",
+      "title": "Single-Gene-Overinterpretation nach Omics → Netzwerk-/Pathwaykontext prüfen",
+      "method_techniques": [
+        "RNA-seq/Omics"
+      ],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "Omics",
+        "RES",
+        "Phase",
+        "Mini"
+      ],
+      "method_role": "driver",
+      "method_filter_eligible": true,
+      "method_focus_domains": [
+        "computational_statistics",
+        "research_methodology"
+      ],
+      "method_issue_types": [
+        "single_gene_overinterpretation",
+        "pathway_analysis"
+      ],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "driver",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "RES_OMICS_003_v1_3",
+      "base_id": "RES_OMICS_003",
+      "domain": "RES",
+      "title": "Label-Inflation: alles ist Angiogenese/EMT/Immunevasion → Spezifische Hypothese erzwingen",
+      "method_techniques": [
+        "IHC",
+        "MSI/MMR",
+        "RNA-seq/Omics"
+      ],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "Omics",
+        "Hypothese",
+        "RES",
+        "Phase",
+        "Mini"
+      ],
+      "method_role": "supporting",
+      "method_filter_eligible": false,
+      "method_focus_domains": [],
+      "method_issue_types": [],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "driver",
+      "strict_review_note": "Label inflation is mainly conceptual/inferential over-interpretation; method choice/performance is not the decisive trap."
+    },
+    {
+      "case_id": "RES_IMM_001_v1_3",
+      "base_id": "RES_IMM_001",
+      "domain": "RES",
+      "title": "ICI-Resistenz: JAK/STAT-Signatur aus RNA-Seq → Von Bioinformatik zur mechanistischen Hypothese",
+      "method_techniques": [
+        "RNA-NGS",
+        "RNA-seq/Omics",
+        "Bioinformatics pipeline"
+      ],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "RNA",
+        "Hypothese",
+        "RES",
+        "Phase",
+        "Standard"
+      ],
+      "method_role": "driver",
+      "method_filter_eligible": true,
+      "method_focus_domains": [
+        "computational_statistics",
+        "research_methodology"
+      ],
+      "method_issue_types": [
+        "signature_interpretation",
+        "hypothesis_generation",
+        "validation_strategy"
+      ],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "driver",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "RES_MOD_001_v1_3",
+      "base_id": "RES_MOD_001",
+      "domain": "RES",
+      "title": "Zelllinie zeigt Effekt – aber passt sie zur Tumorentität? → Modellpassung prüfen",
+      "method_techniques": [],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "RES",
+        "Phase",
+        "Standard"
+      ],
+      "method_role": "driver",
+      "method_filter_eligible": true,
+      "method_focus_domains": [
+        "research_methodology"
+      ],
+      "method_issue_types": [
+        "model_selection",
+        "external_validity"
+      ],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "driver",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "RES_MOD_002_v1_3",
+      "base_id": "RES_MOD_002",
+      "domain": "RES",
+      "title": "Organoide für einfache Proof-of-Concept-Frage? → Organoid sinnvoll oder Overkill?",
+      "method_techniques": [
+        "AI/ML"
+      ],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "KI",
+        "RES",
+        "Phase",
+        "Mini"
+      ],
+      "method_role": "driver",
+      "method_filter_eligible": true,
+      "method_focus_domains": [
+        "research_methodology"
+      ],
+      "method_issue_types": [
+        "model_selection",
+        "method_proportionality"
+      ],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "driver",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "RES_MOD_003_v1_3",
+      "base_id": "RES_MOD_003",
+      "domain": "RES",
+      "title": "PDO-Biobank als langfristige Plattform → SOP, klinische Daten, QC",
+      "method_techniques": [
+        "RNA-seq/Omics"
+      ],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "Daten",
+        "RES",
+        "Phase",
+        "Planspiel"
+      ],
+      "method_role": "driver",
+      "method_filter_eligible": true,
+      "method_focus_domains": [
+        "research_methodology",
+        "laboratory_analytics_qc"
+      ],
+      "method_issue_types": [
+        "platform_design",
+        "sop_qc",
+        "biobank_standardization"
+      ],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "driver",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "RES_VAL_001_v1_3",
+      "base_id": "RES_VAL_001",
+      "domain": "RES",
+      "title": "Kandidat aus Omics braucht unabhängige Validierung → IHC/qPCR/FISH/externe Kohorte planen",
+      "method_techniques": [
+        "PCR/dPCR",
+        "FISH/ISH",
+        "IHC",
+        "RNA-seq/Omics"
+      ],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "FISH",
+        "Omics",
+        "RES",
+        "MVP",
+        "Standard"
+      ],
+      "method_role": "driver",
+      "method_filter_eligible": true,
+      "method_focus_domains": [
+        "research_methodology",
+        "molecular_diagnostics"
+      ],
+      "method_issue_types": [
+        "independent_validation",
+        "assay_selection"
+      ],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "driver",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "RES_VAL_002_v1_3",
+      "base_id": "RES_VAL_002",
+      "domain": "RES",
+      "title": "Präklinischer Effekt ohne Patientenmaterial → Brücke zur klinischen Realität fehlt",
+      "method_techniques": [],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "RES",
+        "Phase",
+        "Mini"
+      ],
+      "method_role": "driver",
+      "method_filter_eligible": true,
+      "method_focus_domains": [
+        "research_methodology"
+      ],
+      "method_issue_types": [
+        "validation_design",
+        "clinical_translation"
+      ],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "driver",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "RES_ETH_002_v1_3",
+      "base_id": "RES_ETH_002",
+      "domain": "RES",
+      "title": "WES-Projekt findet potenzielle Keimbahnvariante → Rückmeldepolicy und Humangenetik",
+      "method_techniques": [
+        "WES"
+      ],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "RES",
+        "Phase",
+        "Standard, complex_case, AP1b_length_reclass"
+      ],
+      "method_role": "supporting",
+      "method_filter_eligible": false,
+      "method_focus_domains": [],
+      "method_issue_types": [],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "supporting",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "RES_ETH_003_v1_3",
+      "base_id": "RES_ETH_003",
+      "domain": "RES",
+      "title": "Zusatzbiopsien nur für explorative Omics → Nutzen-Belastungs-Abwägung",
+      "method_techniques": [
+        "DNA-NGS",
+        "RNA-seq/Omics"
+      ],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "NGS",
+        "Ethik",
+        "Omics",
+        "RES",
+        "Phase",
+        "Standard"
+      ],
+      "method_role": "supporting",
+      "method_filter_eligible": false,
+      "method_focus_domains": [],
+      "method_issue_types": [],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "supporting",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "RES_DATA_001_v1_3",
+      "base_id": "RES_DATA_001",
+      "domain": "RES",
+      "title": "Open-Science-Plan kollidiert mit Einwilligung → Data Sharing begrenzen/absichern",
+      "method_techniques": [],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "Daten",
+        "RES",
+        "Phase",
+        "Mini"
+      ],
+      "method_role": "supporting",
+      "method_filter_eligible": false,
+      "method_focus_domains": [],
+      "method_issue_types": [],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "supporting",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "RES_AI_001_v1_3",
+      "base_id": "RES_AI_001",
+      "domain": "RES",
+      "title": "KI-Modell mit biased Training Set → Bias, Transparenz, Verantwortung",
+      "method_techniques": [
+        "AI/ML"
+      ],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "Ethik",
+        "KI",
+        "RES",
+        "Phase",
+        "Standard"
+      ],
+      "method_role": "driver",
+      "method_filter_eligible": true,
+      "method_focus_domains": [
+        "digital_ai",
+        "computational_statistics",
+        "research_methodology"
+      ],
+      "method_issue_types": [
+        "training_bias",
+        "validation",
+        "generalizability"
+      ],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "driver",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "RES_PM_001_v1_3",
+      "base_id": "RES_PM_001",
+      "domain": "RES",
+      "title": "Doktorand startet Projekt ohne Daten-/Code-Struktur → raw/processed/code/README etablieren",
+      "method_techniques": [
+        "RNA-seq/Omics"
+      ],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "Daten",
+        "RES",
+        "MVP",
+        "Mini"
+      ],
+      "method_role": "driver",
+      "method_filter_eligible": true,
+      "method_focus_domains": [
+        "computational_statistics"
+      ],
+      "method_issue_types": [
+        "data_provenance",
+        "reproducibility",
+        "project_structure"
+      ],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "driver",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "RES_PM_002_v1_3",
+      "base_id": "RES_PM_002",
+      "domain": "RES",
+      "title": "analysis_final_neu_ENDGUELTIG.R → Versionierung und Naming",
+      "method_techniques": [],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "RES",
+        "Phase",
+        "Mini"
+      ],
+      "method_role": "driver",
+      "method_filter_eligible": true,
+      "method_focus_domains": [
+        "computational_statistics"
+      ],
+      "method_issue_types": [
+        "version_control",
+        "reproducibility",
+        "code_organization"
+      ],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "driver",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "RES_ROLE_001_v1_3",
+      "base_id": "RES_ROLE_001",
+      "domain": "RES",
+      "title": "Autorenschaftskonflikt kurz vor Submission → ICMJE/CRediT/Rollenmatrix",
+      "method_techniques": [],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "RES",
+        "Phase",
+        "Standard"
+      ],
+      "method_role": "none",
+      "method_filter_eligible": false,
+      "method_focus_domains": [],
+      "method_issue_types": [],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "none",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "RES_GRANT_001_v1_3",
+      "base_id": "RES_GRANT_001",
+      "domain": "RES",
+      "title": "Drittmittelidee ohne Arbeitspakete/Budget/Meilensteine → Projektarchitektur aufbauen",
+      "method_techniques": [],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "RES",
+        "Phase",
+        "Planspiel"
+      ],
+      "method_role": "none",
+      "method_filter_eligible": false,
+      "method_focus_domains": [],
+      "method_issue_types": [],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "none",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "RES_IMPL_001_v1_3",
+      "base_id": "RES_IMPL_001",
+      "domain": "RES",
+      "title": "Biomarker publiziert, aber nicht routinefähig → Validierung, Workflow, Kosten, Qualität",
+      "method_techniques": [],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "RES",
+        "MVP",
+        "Standard"
+      ],
+      "method_role": "driver",
+      "method_filter_eligible": true,
+      "method_focus_domains": [
+        "research_methodology",
+        "laboratory_analytics_qc"
+      ],
+      "method_issue_types": [
+        "validation_verification",
+        "routine_transfer",
+        "workflow_feasibility"
+      ],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "driver",
+      "strict_review_note": "Confirmed on strict second pass."
+    },
+    {
+      "case_id": "RES_TEAM_001_v1_3",
+      "base_id": "RES_TEAM_001",
+      "domain": "RES",
+      "title": "Klinik, Pathologie, Bioinfo, Labor sprechen aneinander vorbei → Übersetzungslogik und strukturierte Fragen",
+      "method_techniques": [
+        "DNA-NGS"
+      ],
+      "legacy_met_addon_type": "no",
+      "legacy_tags": [
+        "NGS",
+        "Labor",
+        "RES",
+        "Phase",
+        "Standard"
+      ],
+      "method_role": "supporting",
+      "method_filter_eligible": false,
+      "method_focus_domains": [],
+      "method_issue_types": [],
+      "method_presence_note": "Methods may still be present in the case; this field classifies whether methodology drives the challenge, not whether a test occurs.",
+      "strict_review_previous_role": "supporting",
+      "strict_review_note": "Confirmed on strict second pass."
+    }
+  ],
+  "strict_second_pass_changes": [
+    {
+      "base_id": "MET_NGS_003",
+      "new_role": "supporting",
+      "reason": "VUS/actionability is primarily evidence/variant interpretation; the technical assay is not the decisive pitfall."
+    },
+    {
+      "base_id": "MTB_CRC_002",
+      "new_role": "supporting",
+      "reason": "The core difficulty is the biological/diagnostic Lynch-vs-sporadic algorithm, not a technical limitation or method-performance problem."
+    },
+    {
+      "base_id": "MTB_OVAR_002",
+      "new_role": "supporting",
+      "reason": "The central challenge is VUS evidence/actionability, not assay selection, quality or limitation."
+    },
+    {
+      "base_id": "MTB_MAMMA_001",
+      "new_role": "supporting",
+      "reason": "The case asks for biomarker/panel scope in a clinical context; no concrete methodological pitfall determines the result."
+    },
+    {
+      "base_id": "MTB_METH_001",
+      "new_role": "supporting",
+      "reason": "MLH1 methylation is used as a discriminator, but the difficulty is biological/diagnostic interpretation rather than the method itself."
+    },
+    {
+      "base_id": "MET_MULTI_001",
+      "new_role": "supporting",
+      "reason": "The challenge is information prioritization/MTB communication; no concrete method failure, limitation or analytical choice carries the outcome."
+    },
+    {
+      "base_id": "RES_OMICS_003",
+      "new_role": "supporting",
+      "reason": "Label inflation is mainly conceptual/inferential over-interpretation; method choice/performance is not the decisive trap."
+    },
+    {
+      "base_id": "LAB_CAPA_001",
+      "new_role": "driver",
+      "reason": "Repeated assay contamination directly threatens analytical validity; root-cause analysis and contamination control are methodological laboratory reasoning, not merely administrative CAPA."
+    }
+  ]
+}
