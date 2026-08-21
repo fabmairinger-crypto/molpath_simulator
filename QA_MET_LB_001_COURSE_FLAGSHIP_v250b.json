@@ -1,0 +1,41 @@
+{
+  "base": "v2.5.0b + Methods Focus + MET_NGS_001 + MET_NGS_002 + MET_RNA_001",
+  "scope": "MET_LB_001_v1_3 only",
+  "asset_count": 7,
+  "asset_files": [
+    "integrated_report_001.png",
+    "liquid_biopsy_qc_001.png",
+    "met_cep7_fish_001.png",
+    "plasma_ngs_negative_001.png",
+    "progression_liquid_biopsy_request_001.png",
+    "tissue_ngs_met_amplification_001.png",
+    "tissue_rebiopsy_he_001.png"
+  ],
+  "checks": {
+    "js_syntax": "PASS",
+    "runtime_stub_harness": "PASS",
+    "index_loader_occurrences": 1,
+    "index_delta_only_new_loader": true,
+    "other_flagship_assets_included": false,
+    "logic_changes": false
+  },
+  "phase_gating": {
+    "intake": [
+      1
+    ],
+    "liquid_biopsy": [
+      2,
+      3
+    ],
+    "rebiopsy_tissue": [
+      4
+    ],
+    "broad_pan_panel": [
+      5,
+      6
+    ],
+    "complete_report": [
+      7
+    ]
+  }
+}
