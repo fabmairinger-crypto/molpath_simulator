@@ -1,0 +1,28 @@
+{
+  "artifact": "MET_NGS_002 Course Flagship QA",
+  "base": "v2.5.0b + METHOD_FOCUS + MET_NGS_001 Course Flagship",
+  "case_id": "MET_NGS_002_v1_3",
+  "checks": {
+    "index_script_reference_once": true,
+    "previous_metngs001_layer_preserved": true,
+    "assets_7_of_7": true,
+    "signature_promotion_present": true,
+    "logic_change_guard": true,
+    "phase_gating_declared": true,
+    "duplicate_assets_excluded": true
+  },
+  "notes": [
+    "Asset 1 is the user-approved referral graphic and contains a minor demographic inconsistency versus the curated runtime case; runtime metadata remains the authoritative 67-year-old case definition.",
+    "Duplicate/bonus images were intentionally excluded."
+  ],
+  "asset_sha256": {
+    "assets/met_ngs_002/progress_referral_001.png": "6d776a01691809deda39e78b2cca4f1d45cf0caa8d9a32146319f405bf664d31",
+    "assets/met_ngs_002/ffpe_dna_qc_001.png": "af3cc50e7f04af58cdb62612539f63e031074bfd73d6cacf8713ce4c4fa7f8bf",
+    "assets/met_ngs_002/t790m_variant_viewer_001.png": "f3a10700a4f76c263f2851ace22ea2a254492f8ce53e0488088a4775f8a8c437",
+    "assets/met_ngs_002/ct_artifact_pattern_001.png": "06340d8030e37722eeeaf9af0cdf4e1c9d09ffc722ccbb204f73bfe3dbaaea49",
+    "assets/met_ngs_002/repeat_extraction_result_001.png": "5b37eebc12410b5824ae916f0df3860a5010fa23d9a969e6f7e716cdf5c02c6f",
+    "assets/met_ngs_002/orthogonal_confirmation_001.png": "dc5ea9f194a7aa789cc883a3c40e786a466e98bdf0a239dddc72987daf1a67dd",
+    "assets/met_ngs_002/amended_report_001.png": "7c35306f9b3c6ba5b765e975bb0d53a05bdd7aed571e2856f7744ba7c5419101"
+  },
+  "pass": true
+}
