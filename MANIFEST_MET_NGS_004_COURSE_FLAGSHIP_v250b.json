@@ -1,0 +1,88 @@
+{
+  "artifact": "MET_NGS_004 Course Flagship delta patch",
+  "version": "v2.5.0b",
+  "base_archive": "v2-5-0b_MET-cases_extension_4of5.zip",
+  "case_id": "MET_NGS_004_v1_3",
+  "course": "Molecular Methods Pitfalls",
+  "course_completion": "5/5",
+  "asset_count": 8,
+  "logic_changes": false,
+  "overlay_root": "v21/",
+  "files": [
+    {
+      "path": "APPLY_MET_NGS_004_COURSE_FLAGSHIP.txt",
+      "bytes": 218,
+      "sha256": "8cd436fa859e2e239eae6e216346073971fc50aa9deb3ea5d78be34c6d58a733"
+    },
+    {
+      "path": "CHANGELOG_MET_NGS_004_COURSE_FLAGSHIP_v250b.md",
+      "bytes": 1691,
+      "sha256": "fb9bda51fa7b92cb0d9a79c7b3eaf044d232e9768a45489963a2ddeee508b88d"
+    },
+    {
+      "path": "QA_MET_NGS_004_COURSE_FLAGSHIP_v250b.json",
+      "bytes": 1523,
+      "sha256": "0ec71aa90f8921005901f567a1fa20709ce38b862c31e7ffed5560ba9b704352"
+    },
+    {
+      "path": "assets/met_ngs_004/family_history_pedigree_001.png",
+      "bytes": 1079675,
+      "sha256": "6e029b3d5bd930f4c321d27f5234a72e0807d16245ebbf335e1b83fca83a0b3b"
+    },
+    {
+      "path": "assets/met_ngs_004/genetics_referral_001.png",
+      "bytes": 1422728,
+      "sha256": "dacf8e8f2444ed6a20c61e1cd78f15b9b13369b8b75069a6e3bac67fb27ff6c5"
+    },
+    {
+      "path": "assets/met_ngs_004/germline_confirmation_001.png",
+      "bytes": 1362891,
+      "sha256": "529cdab6015347cc8e568175e3721b2c2dfbef5e3783686a926e3800a86a6223"
+    },
+    {
+      "path": "assets/met_ngs_004/he_metastasis_bonus_001.png",
+      "bytes": 2016681,
+      "sha256": "d2b246e720e25754195fde3c9442fcc613219791c7c12f6cb7ff7fb94cd712ab"
+    },
+    {
+      "path": "assets/met_ngs_004/hrd_parp_context_001.png",
+      "bytes": 1336892,
+      "sha256": "ff294edcbbe0e0cc0f6ca2c5964b5613439dd25755e41a6527c15d326b7b6c68"
+    },
+    {
+      "path": "assets/met_ngs_004/paired_interpretation_001.png",
+      "bytes": 1801937,
+      "sha256": "0a50f53d398129bd59ea48306ae88459a9305822e6da1087245a37699c63db07"
+    },
+    {
+      "path": "assets/met_ngs_004/tumor_ngs_variant_001.png",
+      "bytes": 1184866,
+      "sha256": "104d3eed620770d2af200070c5f47d54fc83517a0166f68e7399ed41faa4b820"
+    },
+    {
+      "path": "assets/met_ngs_004/tumor_only_report_001.png",
+      "bytes": 1423865,
+      "sha256": "50c41b540ed9a7facc5df919da4aa0853ac5ec41bd9fbe67b44141b657cb2d04"
+    },
+    {
+      "path": "audit/COURSE_SIGNATURE_PROGRESS_v250b_checkpoint06.csv",
+      "bytes": 2551,
+      "sha256": "53fc43abdf8b59e3f2bcb7042991a0a5022fa9c68bf7e2a68303e9624728dc7f"
+    },
+    {
+      "path": "audit/COURSE_SIGNATURE_PROGRESS_v250b_checkpoint06.json",
+      "bytes": 12733,
+      "sha256": "3b0fb182180343af1f536d161f801f3e52f057d458d28ae81fe9a6f57c3ae4d4"
+    },
+    {
+      "path": "index.html",
+      "bytes": 4137209,
+      "sha256": "d55a88e02227ae23d287081b4ffb37b170b9699b0a38cd56293a9e4f619e6cc7"
+    },
+    {
+      "path": "v250b_metngs004_course_flagship.js",
+      "bytes": 14467,
+      "sha256": "756c5863d1fcd1d1b6e66fb37aaa94607cc409693bac2058c9ba8995cf840cb1"
+    }
+  ]
+}

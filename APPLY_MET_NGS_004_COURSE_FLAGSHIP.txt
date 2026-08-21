@@ -1,0 +1,4 @@
+Apply this ZIP as an overlay to the extracted root of v2-5-0b_MET-cases_extension_4of5.zip.
+Allow replacement of v21/index.html.
+All other runtime files are additive.
+No existing asset folders are removed or replaced.

@@ -1,0 +1,36 @@
+{
+  "artifact": "QA_MET_NGS_004_COURSE_FLAGSHIP_v250b",
+  "base": "v2-5-0b_MET-cases_extension_4of5.zip",
+  "case_id": "MET_NGS_004_v1_3",
+  "checks": {
+    "script_tag_count": 1,
+    "asset_refs_unique": 8,
+    "asset_files_exist": true,
+    "case_scope_present": true,
+    "logic_changes_false": true,
+    "base_index_unchanged_except_insertion": true,
+    "forbidden_core_files_in_patch": true,
+    "all_pass": true
+  },
+  "clinical_alignment": {
+    "patient": "61-year-old male, mCRPC",
+    "tumor_material": "FFPE bone metastasis, ~60% tumor",
+    "variant": "BRCA2 c.5944_5947del (p.Ser1982Argfs*22)",
+    "tumor_vaf": "48%",
+    "germline_material": "EDTA blood",
+    "germline_vaf": "49% heterozygous",
+    "family_history": "sister breast cancer 46; father prostate cancer 58"
+  },
+  "runtime_assets": [
+    "assets/met_ngs_004/tumor_ngs_variant_001.png",
+    "assets/met_ngs_004/tumor_only_report_001.png",
+    "assets/met_ngs_004/family_history_pedigree_001.png",
+    "assets/met_ngs_004/genetics_referral_001.png",
+    "assets/met_ngs_004/germline_confirmation_001.png",
+    "assets/met_ngs_004/paired_interpretation_001.png",
+    "assets/met_ngs_004/hrd_parp_context_001.png",
+    "assets/met_ngs_004/he_metastasis_bonus_001.png"
+  ],
+  "qa_note": "The approved HRD/PARP screenshot is displayed only after completion as supplemental therapeutic context, not as evidence for germline origin. The paired interpretation plus runtime final-report text provides the clinical synthesis.",
+  "logic_changes": false
+}
