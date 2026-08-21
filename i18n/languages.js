@@ -12,7 +12,8 @@ const DEFINITIONS=[
   {code:'ru',label:'Русский',flag:'🇷🇺',dir:'ltr',file:'ru.js'},
   {code:'tr',label:'Türkçe',flag:'🇹🇷',dir:'ltr',file:'tr.js'},
   {code:'ar',label:'العربية',flag:'🇸🇦',dir:'rtl',file:'ar.js'},
-  {code:'fa',label:'فارسی',flag:'🇮🇷',dir:'rtl',file:'fa.js',aliases:['fa-IR']}
+  {code:'fa',label:'فارسی',flag:'🇮🇷',dir:'rtl',file:'fa.js',aliases:['fa-IR']},
+  {code:'uk',label:'Українська',flag:'🇺🇦',dir:'ltr',file:'uk.js',aliases:['uk-UA']}
 ];
 const defs=new Map();
 const aliases=new Map();

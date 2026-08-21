@@ -77,7 +77,8 @@ const FLAG_SVG={
   ru:'<svg viewBox="0 0 24 16" aria-hidden="true"><rect width="24" height="16" fill="#fff"/><rect y="5.33" width="24" height="5.34" fill="#0039a6"/><rect y="10.67" width="24" height="5.33" fill="#d52b1e"/></svg>',
   tr:'<svg viewBox="0 0 24 16" aria-hidden="true"><rect width="24" height="16" fill="#e30a17"/><circle cx="9.2" cy="8" r="4.1" fill="#fff"/><circle cx="10.6" cy="8" r="3.25" fill="#e30a17"/><path d="m15.2 5.7.65 1.45 1.58.16-1.18 1.06.35 1.55-1.38-.8-1.36.8.33-1.55-1.17-1.06 1.57-.16z" fill="#fff"/></svg>',
   ar:'<svg viewBox="0 0 24 16" aria-hidden="true"><rect width="24" height="16" fill="#006c35"/><path d="M5 6.1h14M7 9.7h10" stroke="#fff" stroke-width="1.15" stroke-linecap="round"/><path d="M8 11.7h9" stroke="#fff" stroke-width=".8" stroke-linecap="round"/></svg>',
-  fa:'<svg viewBox="0 0 24 16" aria-hidden="true"><rect width="24" height="5.33" fill="#239f40"/><rect y="5.33" width="24" height="5.34" fill="#fff"/><rect y="10.67" width="24" height="5.33" fill="#da0000"/><circle cx="12" cy="8" r="1.7" fill="#da0000"/><path d="M12 6.3v3.4M10.5 8h3" stroke="#fff" stroke-width=".45"/></svg>'
+  fa:'<svg viewBox="0 0 24 16" aria-hidden="true"><rect width="24" height="5.33" fill="#239f40"/><rect y="5.33" width="24" height="5.34" fill="#fff"/><rect y="10.67" width="24" height="5.33" fill="#da0000"/><circle cx="12" cy="8" r="1.7" fill="#da0000"/><path d="M12 6.3v3.4M10.5 8h3" stroke="#fff" stroke-width=".45"/></svg>',
+  uk:'<svg viewBox="0 0 24 16" aria-hidden="true"><rect width="24" height="8" y="0" fill="#0057b7"/><rect width="24" height="8" y="8" fill="#ffd700"/></svg>'
 };
 function ensureFlagPickerStyles(){
   if(document.getElementById('mpFlagLangPickerStyle'))return;

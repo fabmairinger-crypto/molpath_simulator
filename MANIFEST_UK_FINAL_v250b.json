@@ -1,0 +1,49 @@
+{
+  "release": "v2.5.0b + Ukrainian locale",
+  "language": {
+    "code": "uk",
+    "aliases": [
+      "uk-UA"
+    ],
+    "label": "Українська",
+    "flag": "🇺🇦",
+    "direction": "ltr"
+  },
+  "coverage": {
+    "messages": 14308,
+    "namespaces": 189,
+    "reviewBlocks": 21
+  },
+  "files": [
+    {
+      "path": "i18n/uk.js",
+      "bytes": 2637173,
+      "sha256": "b3c223b705dda8ff1ce827c0d6b0209000e60c058c9cf930590240bf700f0488"
+    },
+    {
+      "path": "i18n/languages.js",
+      "bytes": 5251,
+      "sha256": "be3f6595fbef330cd2160eecb7a42d6a459865338b640a997578fe2ed8285478"
+    },
+    {
+      "path": "i18n/core.js",
+      "bytes": 15554,
+      "sha256": "7c900e06a20a43def732df4aa8c1298f70011c8c2e38bf995f20570c5c984226"
+    },
+    {
+      "path": "QA_UK_FINAL_v250b.json",
+      "bytes": 548,
+      "sha256": "7072f0fb76dc2b7ceb3fb46cd16cd6f92dd772f99bd800b4f8a107b4aaf4eef1"
+    },
+    {
+      "path": "QA_UK_REGISTRY_v250b.json",
+      "bytes": 196,
+      "sha256": "c41d3632d5540090c46333024a810fa4c50fb2cccd83e58aa4e0a036c79b2448"
+    },
+    {
+      "path": "CHANGELOG_UK_FINAL_v250b.md",
+      "bytes": 942,
+      "sha256": "e8718f70c6d0be003336478d3b095f2db1d3b140f1b28bf8a43fb978c97f27b1"
+    }
+  ]
+}

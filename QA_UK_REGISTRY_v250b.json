@@ -1,0 +1,10 @@
+{
+  "registered": true,
+  "aliasResolves": "uk",
+  "label": "Українська",
+  "flag": "🇺🇦",
+  "dir": "ltr",
+  "file": "uk.js",
+  "bootstrapContainsUk": true,
+  "languageCount": 11
+}

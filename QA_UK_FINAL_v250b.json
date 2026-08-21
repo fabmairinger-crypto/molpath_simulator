@@ -1,0 +1,22 @@
+{
+  "localeCode": "uk",
+  "messageCount": 14308,
+  "faMessageCount": 14308,
+  "arMessageCount": 14308,
+  "keysEqualFa": true,
+  "keysEqualAr": true,
+  "emptyMessages": 0,
+  "placeholderMismatches": 0,
+  "namespaceLeaves": 189,
+  "faNamespaceLeaves": 189,
+  "namespacePathsEqualFa": true,
+  "russianSpecificMessageHits": 0,
+  "russianSpecificNamespaceHits": 0,
+  "meta": {
+    "label": "Українська",
+    "source": false,
+    "version": "v2.5.0b",
+    "checkpoint": "UK-FINAL 21/21 + namespace integration",
+    "messageCount": 14308
+  }
+}
