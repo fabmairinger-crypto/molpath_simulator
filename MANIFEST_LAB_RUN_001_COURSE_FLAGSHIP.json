@@ -1,0 +1,81 @@
+{
+  "patch": "v2.5.0b LAB_RUN_001 Course Flagship",
+  "case_id": "LAB_RUN_001_v1_3",
+  "asset_count": 7,
+  "course": "course_qm_basics",
+  "course_flagship": true,
+  "signature_promotion": false,
+  "logic_changes": false,
+  "course_progress": {
+    "flagship_level": 19,
+    "distinct_course_cases": 23,
+    "remaining": 4
+  },
+  "files": [
+    {
+      "path": "v22/index.html",
+      "bytes": 4137332,
+      "sha256": "368a6ec9d1e5d73e2d205d110e52a019d9573540b7a7187c7828a6455ebbb99c"
+    },
+    {
+      "path": "v22/v250b_labrun001_course_flagship.js",
+      "bytes": 23472,
+      "sha256": "d68bf1a3289e3e321ec578baadd3b7d6c825e5609d031707ca016ebdf3c1e0ad"
+    },
+    {
+      "path": "v22/assets/lab_run_001/run_qc_overview_001.png",
+      "bytes": 1476763,
+      "sha256": "201dcd10d740e33c9627d44c81e3748363e747068d65c1b00a20fa37284bd6a6"
+    },
+    {
+      "path": "v22/assets/lab_run_001/positive_control_detail_001.png",
+      "bytes": 1426564,
+      "sha256": "74c8005155d607bb0a1183eef50497314fc1d32bfc2cdacf3a56be6131a6965c"
+    },
+    {
+      "path": "v22/assets/lab_run_001/patient_qc_coverage_matrix_001.png",
+      "bytes": 1579122,
+      "sha256": "9be2dcc1296fd277f69d997221972272495d2bf642e1f455b61ebe1622147f3d"
+    },
+    {
+      "path": "v22/assets/lab_run_001/positive_control_trend_001.png",
+      "bytes": 1502320,
+      "sha256": "2382c3261442ebde22d571631d8f9a53ca21da87d0c96384cbcde92ba356b4bb"
+    },
+    {
+      "path": "v22/assets/lab_run_001/control_traceability_001.png",
+      "bytes": 1543229,
+      "sha256": "f76788b4dea5a4e7e30b2b23cb313e30fcec5a1beb410e42900ce2d4e37e30b7"
+    },
+    {
+      "path": "v22/assets/lab_run_001/control_repeat_confirmation_001.png",
+      "bytes": 1614723,
+      "sha256": "f400682b0f3ed8bff50e7b85e889c50b72487e51db4f6a0e99ce2a1cccfea0f0"
+    },
+    {
+      "path": "v22/assets/lab_run_001/deviation_capa_final_disposition_001.png",
+      "bytes": 1709565,
+      "sha256": "e6273292d0d6cd0dcf2ec69f3e6e8dc8b2fd4440aa926aca198cb455de39106d"
+    },
+    {
+      "path": "v22/audit/COURSE_FLAGSHIP_PROGRESS_v250b_checkpoint07.json",
+      "bytes": 12811,
+      "sha256": "6d76a7c6f8540020dc4c0eeaa5024fe391f8ecd68558e3572750a615d52238eb"
+    },
+    {
+      "path": "v22/audit/COURSE_FLAGSHIP_PROGRESS_v250b_checkpoint07.csv",
+      "bytes": 2615,
+      "sha256": "4cb764b751929de54d9324b6beb172e52ddd9fa33063710f23388353364ea344"
+    },
+    {
+      "path": "v22/APPLY_LAB_RUN_001_COURSE_FLAGSHIP.txt",
+      "bytes": 923,
+      "sha256": "2b09e193a018778017441e3475b59a258a04548a9bde5ff59e41fd37024bb559"
+    },
+    {
+      "path": "v22/CHANGELOG_LAB_RUN_001_COURSE_FLAGSHIP.md",
+      "bytes": 1726,
+      "sha256": "a54750b3f1cfd34b0d160af0e65d6342006c2950093a570badb3245972c82c65"
+    }
+  ]
+}
