@@ -1,0 +1,14 @@
+MolPath Simulator v2.5.0b — RES_IMPL_001 Course Flagship delta patch
+
+Apply this ZIP over the current v2.5.0b project after the MET 5/5, LAB_RUN_001 and LAB_PRE_001 Course-Flagship patches.
+Preserve directory structure and overwrite index.html when prompted.
+
+Adds:
+- v250b_resimpl001_course_flagship.js
+- assets/res_impl_001/* (7 approved assets)
+- robust v250b_asset_modal_hotfix.js (Escaper v2; included defensively)
+- course progress checkpoint 09
+- manifest + changelog
+
+No scoring IDs or correctness semantics are changed.
+No Signature-Case badge/promotion is applied.

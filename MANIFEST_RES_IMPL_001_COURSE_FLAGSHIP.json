@@ -1,0 +1,86 @@
+{
+  "artifact": "MolPath Simulator v2.5.0b RES_IMPL_001 Course Flagship delta patch",
+  "case_id": "RES_IMPL_001_v1_3",
+  "course": "course_res_basics",
+  "asset_count": 7,
+  "signature_promotion": false,
+  "course_flagship": true,
+  "progress": "21/23 course cases at Flagship level; 2 remaining",
+  "requires_prior": [
+    "MET Course Flagship 5/5",
+    "LAB_RUN_001 Course Flagship",
+    "LAB_PRE_001 Course Flagship ESCAPER FIX2"
+  ],
+  "files": [
+    {
+      "path": "APPLY_RES_IMPL_001_COURSE_FLAGSHIP.txt",
+      "bytes": 577,
+      "sha256": "9b002577dcc06fec28262a36413adc58f0b93465d9daf58fcf31c1a5534f51f3"
+    },
+    {
+      "path": "CHANGELOG_RES_IMPL_001_COURSE_FLAGSHIP.md",
+      "bytes": 1330,
+      "sha256": "bbc248131089a9066f9d274f97307480f8f249f79e0e4f30bf8147f12b650846"
+    },
+    {
+      "path": "assets/res_impl_001/analytical_validation_nanostring_001.png",
+      "bytes": 1731780,
+      "sha256": "a6355a11f39f22552f53e636fbb7ecd38e136041d148e54677a19264d329b38f"
+    },
+    {
+      "path": "assets/res_impl_001/discovery_vs_routine_cohort_001.png",
+      "bytes": 1709283,
+      "sha256": "49812f29dc5a7d2e1b9076ff3a209c7f17278c21cff5295ad856cba82bd5d45c"
+    },
+    {
+      "path": "assets/res_impl_001/implementation_gate_final_decision_001.png",
+      "bytes": 1759069,
+      "sha256": "612641aaf9834deb71f1f2aeb5fd2e5bc7ef39698100a7dd23fbfb57dab5f2a8"
+    },
+    {
+      "path": "assets/res_impl_001/independent_clinical_validation_001.png",
+      "bytes": 1723564,
+      "sha256": "160b55d07672e9c2a1bea2ab9f18606c863598a3cb2b54836b6473c672d940ab"
+    },
+    {
+      "path": "assets/res_impl_001/operational_validation_workflow_cost_001.png",
+      "bytes": 1789477,
+      "sha256": "5d3a91d13697f79c0b7bcf3d1ec3c69044d7759c9c6c82bfa59ec7cf9d37da1b"
+    },
+    {
+      "path": "assets/res_impl_001/publication_discovery_signature_001.png",
+      "bytes": 1844170,
+      "sha256": "3f70bec57975488430e82f0744cde554447d5eaa77e2ba325c26f448e3733cac"
+    },
+    {
+      "path": "assets/res_impl_001/rnaseq_nanostring_assay_transfer_001.png",
+      "bytes": 1611965,
+      "sha256": "cf5aa11793dab21cadf025aa4713313c7d511325f726882cfab3eac3abed493b"
+    },
+    {
+      "path": "audit/COURSE_FLAGSHIP_PROGRESS_v250b_checkpoint09.csv",
+      "bytes": 2650,
+      "sha256": "58c56559f91aeb4b5a6f69fd51075432cf23a8bcdfe6573c65702ae1865c0939"
+    },
+    {
+      "path": "audit/COURSE_FLAGSHIP_PROGRESS_v250b_checkpoint09.json",
+      "bytes": 13149,
+      "sha256": "257e5382c0fbcf31cb22111b10c231feb39326fbdd57f9a432a833b7e3456ec5"
+    },
+    {
+      "path": "index.html",
+      "bytes": 4137576,
+      "sha256": "73eb3e7e65c7838630f3dee5dbc4405887ba70980282a7fedf6902d15948b943"
+    },
+    {
+      "path": "v250b_asset_modal_hotfix.js",
+      "bytes": 6508,
+      "sha256": "baad2f80d71f2147003ada1102860d0fb5e649fb7bbda19ee7cea43c9f8f4320"
+    },
+    {
+      "path": "v250b_resimpl001_course_flagship.js",
+      "bytes": 26383,
+      "sha256": "b74ef0e452055c76cbe4c57f68120ab6f2481ca92d04309d857dba03102e5a14"
+    }
+  ]
+}
