@@ -1,0 +1,26 @@
+MolPath Simulator v2.5.0b — LAB_PRE_001 Course Flagship Patch
+
+BASE EXPECTED:
+  v2-5-0b_MET_extrension_5of5_extension_course_cases.zip
+  + previously applied v2-5-0b_LAB_RUN_001_course_flagship_patch.zip
+
+APPLY:
+  Copy the contents of the patch folder "v22/" over the existing "v22/" root.
+  Allow index.html to be replaced.
+
+ADDS:
+  v250b_labpre001_course_flagship.js
+  assets/lab_pre_001/ (7 approved training assets)
+  audit/COURSE_FLAGSHIP_PROGRESS_v250b_checkpoint08.json
+  audit/COURSE_FLAGSHIP_PROGRESS_v250b_checkpoint08.csv
+
+MODIFIES:
+  index.html (one new script include; preserves LAB_RUN_001 include)
+
+IMPORTANT:
+  LAB_PRE_001 is upgraded to Course-Flagship / Signature-quality content level,
+  but is NOT promoted to a runtime Signature Case and receives no Signature badge.
+
+COURSE STATUS AFTER PATCH:
+  20/23 distinct course cases at Flagship level
+  3 remaining upgrades: RES_ROLE_001, RES_IMPL_001, RES_ETH_002

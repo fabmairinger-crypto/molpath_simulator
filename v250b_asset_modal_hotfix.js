@@ -1,6 +1,6 @@
-/* MolPath Simulator v2.5.0b — isolated in-app asset modal hotfix
-   Scope: image asset links only. Does NOT wrap render(), alter responsive shell,
-   change version stamps, case logic, i18n, or global layout. */
+/* MolPath Simulator v2.5.0b — robust in-app asset viewer / ESCAPER v2
+   Scope: local image asset links only. Provides a persistent visible close control,
+   Escape-key close, and backdrop close. No history/back dependency. */
 (function () {
   'use strict';
 
@@ -9,11 +9,11 @@
   let image = null;
   let title = null;
   let closeButton = null;
-  let historyEntry = false;
   let lastFocus = null;
+  let previousOverflow = '';
 
   function isLocalImageAssetLink(a) {
-    if (!a || !a.querySelector('img')) return false;
+    if (!a) return false;
     const raw = (a.getAttribute('href') || '').trim();
     if (!raw) return false;
     const isImage = /\.(?:png|jpe?g|webp|gif|svg)(?:[?#].*)?$/i.test(raw);
@@ -22,47 +22,52 @@
   }
 
   function getLabel(a) {
-    const container = a.closest('figure,.mp24-asset,.lab24-media,.res24i-media,[class*="-asset"],[class*="-media"]');
+    const explicit = a && a.getAttribute('data-asset-title');
+    if (explicit) return explicit;
+    const container = a && a.closest ? a.closest('figure,.mp24-asset,.lab24-media,.res24i-media,[class*="-asset"],[class*="-media"]') : null;
     if (container) {
       const cap = container.querySelector('figcaption,.mp24-asset-title');
       if (cap && cap.textContent.trim()) return cap.textContent.trim();
     }
-    const img = a.querySelector('img');
-    return (img && img.alt) || a.title || 'Asset';
+    const img = a && a.querySelector ? a.querySelector('img') : null;
+    return (img && img.alt) || (a && a.title) || 'Asset';
   }
 
   function ensureModal() {
-    if (overlay) return;
+    if (overlay && document.body.contains(overlay)) return;
 
-    const style = document.createElement('style');
-    style.id = ID + 'Style';
-    style.textContent = `
-#${ID}{position:fixed;inset:0;z-index:2147483000;display:none;align-items:stretch;justify-content:stretch;background:rgba(5,15,28,.88);padding:clamp(6px,2vw,18px);}
+    if (!document.getElementById(ID + 'Style')) {
+      const style = document.createElement('style');
+      style.id = ID + 'Style';
+      style.textContent = `
+#${ID}{position:fixed;inset:0;z-index:2147483600;display:none;align-items:center;justify-content:center;background:rgba(3,12,24,.92);padding:14px;box-sizing:border-box;}
 #${ID}.is-open{display:flex;}
-#${ID} .mpam-dialog{position:relative;display:flex;flex-direction:column;min-width:0;min-height:0;width:100%;height:100%;max-width:1500px;max-height:1100px;margin:auto;background:#0b1524;border:1px solid rgba(255,255,255,.18);border-radius:16px;overflow:hidden;box-shadow:0 24px 70px rgba(0,0,0,.45);}
-#${ID} .mpam-head{display:flex;align-items:center;gap:10px;flex:0 0 auto;min-width:0;padding:7px 8px 7px 13px;background:#102239;border-bottom:1px solid rgba(255,255,255,.14);color:#fff;}
-#${ID} .mpam-title{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:.9rem;font-weight:800;}
-#${ID} .mpam-close{flex:0 0 auto;width:42px;height:42px;margin:0;padding:0;border:1px solid rgba(255,255,255,.28);border-radius:11px;background:rgba(255,255,255,.08);color:#fff;font:700 26px/1 system-ui,-apple-system,"Segoe UI",sans-serif;cursor:pointer;}
+#${ID} .mpam-dialog{position:relative;display:flex;flex-direction:column;width:min(96vw,1600px);height:min(95vh,1100px);min-width:0;min-height:0;background:#081522;border:1px solid rgba(255,255,255,.22);border-radius:16px;overflow:hidden;box-shadow:0 28px 90px rgba(0,0,0,.58);}
+#${ID} .mpam-head{display:flex;align-items:center;gap:12px;flex:0 0 auto;min-height:58px;padding:7px 8px 7px 16px;background:#10263e;border-bottom:1px solid rgba(255,255,255,.15);color:#fff;}
+#${ID} .mpam-title{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font:800 .95rem/1.2 system-ui,-apple-system,"Segoe UI",sans-serif;}
+#${ID} .mpam-close{position:relative;z-index:3;display:inline-flex;align-items:center;justify-content:center;gap:7px;flex:0 0 auto;height:44px;min-width:122px;padding:0 14px;border:2px solid rgba(255,255,255,.8);border-radius:12px;background:#b42318;color:#fff;font:900 15px/1 system-ui,-apple-system,"Segoe UI",sans-serif;cursor:pointer;box-shadow:0 3px 12px rgba(0,0,0,.25);}
+#${ID} .mpam-close:hover,#${ID} .mpam-close:focus{background:#d92d20;outline:3px solid rgba(255,255,255,.3);outline-offset:1px;}
+#${ID} .mpam-x{font-size:24px;line-height:1;transform:translateY(-1px);}
 #${ID} .mpam-stage{flex:1 1 auto;min-width:0;min-height:0;overflow:auto;display:flex;align-items:center;justify-content:center;padding:8px;-webkit-overflow-scrolling:touch;touch-action:pan-x pan-y pinch-zoom;}
 #${ID} .mpam-image{display:block;max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;background:#fff;border-radius:6px;}
-@media(max-width:760px){#${ID}{padding:0;}#${ID} .mpam-dialog{max-width:none;max-height:none;border:0;border-radius:0;}#${ID} .mpam-head{padding-left:10px;}#${ID} .mpam-stage{padding:4px;}}
+#${ID} .mpam-float-close{display:none;}
+@media(max-width:760px){#${ID}{padding:0;}#${ID} .mpam-dialog{width:100vw;height:100vh;border:0;border-radius:0;}#${ID} .mpam-head{min-height:54px;padding-left:10px;}#${ID} .mpam-close{min-width:48px;width:48px;padding:0;font-size:0;}#${ID} .mpam-x{font-size:27px;}#${ID} .mpam-stage{padding:4px;}}
 `;
-    document.head.appendChild(style);
+      document.head.appendChild(style);
+    }
 
     overlay = document.createElement('div');
     overlay.id = ID;
     overlay.setAttribute('aria-hidden', 'true');
-    overlay.innerHTML = '<div class="mpam-dialog" role="dialog" aria-modal="true" aria-labelledby="mpamTitle"><div class="mpam-head"><div class="mpam-title" id="mpamTitle">Asset</div><button type="button" class="mpam-close" aria-label="Schließen" title="Schließen">×</button></div><div class="mpam-stage"><img class="mpam-image" alt=""></div></div>';
+    overlay.innerHTML = '<div class="mpam-dialog" role="dialog" aria-modal="true" aria-labelledby="mpamTitle"><div class="mpam-head"><div class="mpam-title" id="mpamTitle">Asset</div><button type="button" class="mpam-close" aria-label="Asset schließen" title="Schließen (Esc)"><span class="mpam-x" aria-hidden="true">×</span><span>Schließen</span></button></div><div class="mpam-stage"><img class="mpam-image" alt=""></div></div>';
     document.body.appendChild(overlay);
 
     image = overlay.querySelector('.mpam-image');
     title = overlay.querySelector('.mpam-title');
     closeButton = overlay.querySelector('.mpam-close');
 
-    closeButton.addEventListener('click', requestClose);
-    overlay.addEventListener('click', function (e) {
-      if (e.target === overlay) requestClose();
-    });
+    closeButton.addEventListener('click', closeModal);
+    overlay.addEventListener('click', function (e) { if (e.target === overlay) closeModal(); });
   }
 
   function openModal(src, label) {
@@ -71,59 +76,44 @@
     title.textContent = label || 'Asset';
     image.src = src;
     image.alt = label || 'Asset';
+    previousOverflow = document.documentElement.style.overflow || '';
+    document.documentElement.style.overflow = 'hidden';
     overlay.classList.add('is-open');
     overlay.setAttribute('aria-hidden', 'false');
-    try { closeButton.focus({ preventScroll: true }); } catch (_) { closeButton.focus(); }
-
-    if (!historyEntry) {
-      try {
-        history.pushState({ mpAssetModal: true }, '');
-        historyEntry = true;
-      } catch (_) {
-        historyEntry = false;
-      }
-    }
+    try { closeButton.focus({ preventScroll: true }); } catch (_) { try { closeButton.focus(); } catch (_) {} }
   }
 
   function closeModal() {
     if (!overlay || !overlay.classList.contains('is-open')) return;
     overlay.classList.remove('is-open');
     overlay.setAttribute('aria-hidden', 'true');
-    image.removeAttribute('src');
-    historyEntry = false;
-    try {
-      if (lastFocus && typeof lastFocus.focus === 'function') lastFocus.focus({ preventScroll: true });
-    } catch (_) {}
+    if (image) image.removeAttribute('src');
+    document.documentElement.style.overflow = previousOverflow;
+    try { if (lastFocus && typeof lastFocus.focus === 'function') lastFocus.focus({ preventScroll: true }); } catch (_) {}
   }
 
-  function requestClose() {
-    if (!overlay || !overlay.classList.contains('is-open')) return;
-    if (historyEntry) {
-      try { history.back(); return; } catch (_) {}
-    }
-    closeModal();
-  }
-
-  document.addEventListener('click', function (e) {
+  function clickHandler(e) {
     const a = e.target && e.target.closest ? e.target.closest('a[href]') : null;
     if (!isLocalImageAssetLink(a)) return;
     e.preventDefault();
+    e.stopPropagation();
     openModal(a.href || a.getAttribute('href'), getLabel(a));
+  }
+
+  document.addEventListener('click', clickHandler, true);
+  document.addEventListener('keydown', function (e) {
+    if ((e.key === 'Escape' || e.key === 'Esc') && overlay && overlay.classList.contains('is-open')) {
+      e.preventDefault(); e.stopPropagation(); closeModal();
+    }
   }, true);
 
-  window.addEventListener('popstate', function () {
-    if (overlay && overlay.classList.contains('is-open')) closeModal();
-  });
-
-  document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape' && overlay && overlay.classList.contains('is-open')) {
-      e.preventDefault();
-      requestClose();
-    }
-  });
+  function boot(){ try { ensureModal(); } catch (_) {} }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot, { once:true }); else boot();
 
   window.MolPathAssetModalHotfix = Object.freeze({
     base: 'v2.5.0b',
-    close: requestClose
+    version: 'escaper-v2',
+    open: openModal,
+    close: closeModal
   });
 })();

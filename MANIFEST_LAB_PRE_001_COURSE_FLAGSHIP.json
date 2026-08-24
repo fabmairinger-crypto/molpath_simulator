@@ -1,0 +1,101 @@
+{
+  "patch": "v2.5.0b LAB_PRE_001 Course Flagship",
+  "case_id": "LAB_PRE_001_v1_3",
+  "asset_count": 7,
+  "course": "course_qm_basics",
+  "course_flagship": true,
+  "signature_promotion": false,
+  "logic_changes": false,
+  "base_chain": [
+    "v2-5-0b_MET_extrension_5of5_extension_course_cases.zip",
+    "v2-5-0b_LAB_RUN_001_course_flagship_patch.zip"
+  ],
+  "course_progress": {
+    "flagship_level": 20,
+    "distinct_course_cases": 23,
+    "remaining": 3
+  },
+  "files": [
+    {
+      "path": "v22/APPLY_LAB_PRE_001_COURSE_FLAGSHIP.txt",
+      "bytes": 930,
+      "sha256": "c3cdfefddb88a2c44821cbb33ead2f093896a38d36ab8cda49f7799579ff470d"
+    },
+    {
+      "path": "v22/CHANGELOG_LAB_PRE_001_COURSE_FLAGSHIP.md",
+      "bytes": 1567,
+      "sha256": "e30c0f3347602d341bf97710b76cef992cc8e60e097a735426ef34a1fc6b3b81"
+    },
+    {
+      "path": "v22/assets/lab_pre_001/deviation_capa_final_disposition_001.png",
+      "bytes": 1698138,
+      "sha256": "0442a03f1d7f2e769b36e2de938206028df48672e73c9a7b9a98d8e9e1d6f985"
+    },
+    {
+      "path": "v22/assets/lab_pre_001/lims_identity_hard_stop_001.png",
+      "bytes": 1480190,
+      "sha256": "08fe00c968670d2f46cdc5874c8893abb25b44d1c039e10efe83f17d013b7923"
+    },
+    {
+      "path": "v22/assets/lab_pre_001/quarantine_chain_of_custody_001.png",
+      "bytes": 1623689,
+      "sha256": "61c3af21c2b40c39cfd8630f3d10667c0c50dbfbf906279dfa6cc1aa1c9d2235"
+    },
+    {
+      "path": "v22/assets/lab_pre_001/recollection_identity_verified_001.png",
+      "bytes": 1736939,
+      "sha256": "0d9e5459e6058b9defb46c4a7e54801e5e9c188ec66834a8c43839333817913b"
+    },
+    {
+      "path": "v22/assets/lab_pre_001/request_communication_plausibility_001.png",
+      "bytes": 1588609,
+      "sha256": "41ab35094d6f187ecb4c82043d57a27ec867d52201ce71d68d0a0acbae934f3e"
+    },
+    {
+      "path": "v22/assets/lab_pre_001/root_cause_process_reconstruction_001.png",
+      "bytes": 1650082,
+      "sha256": "66271111ec4655e91788889384c48ede976716ec2fef91297ae3d5da6a78234e"
+    },
+    {
+      "path": "v22/assets/lab_pre_001/specimen_intake_unlabeled_edta_001.png",
+      "bytes": 2349070,
+      "sha256": "d6cf49ba14b80975da58528ac4cb22bf6aefc9e332ed4ca5a992d37b712cb9ba"
+    },
+    {
+      "path": "v22/audit/COURSE_FLAGSHIP_PROGRESS_v250b_checkpoint08.csv",
+      "bytes": 2631,
+      "sha256": "13b17ada09330fcacbd9a31932c3eaf9da8b3b88c974bfd2c4a750ed4b715072"
+    },
+    {
+      "path": "v22/audit/COURSE_FLAGSHIP_PROGRESS_v250b_checkpoint08.json",
+      "bytes": 12889,
+      "sha256": "4c239ba4d6bfe84b616b06ab98288007a926b787d961a3021198607b3debac27"
+    },
+    {
+      "path": "v22/index.html",
+      "bytes": 4137455,
+      "sha256": "35ee3e922371441c41f18626d07b25608c40b391dbe9f3c641ec310b49fe8da4"
+    },
+    {
+      "path": "v22/v250b_labpre001_course_flagship.js",
+      "bytes": 22008,
+      "sha256": "fabcd58ce655630df9d047ee58ccfb975ebfd520f1eef2e38da3f0b083e0c9a3"
+    },
+    "v22/v250b_asset_modal_hotfix.js"
+  ],
+  "asset_modal_hotfix_included": true,
+  "notes": [
+    "Includes v250b_asset_modal_hotfix.js because index.html references it; required for in-app asset modal/escape behavior."
+  ],
+  "fix2": {
+    "issue": "missing/ineffective asset escaper",
+    "loader_order": "LAB_PRE_001 loaded after LAB_RUN_001 in the Course-Flagship block",
+    "asset_viewer": "v250b_asset_modal_hotfix.js escaper-v2",
+    "close_controls": [
+      "visible × Schließen button",
+      "Escape/Esc key",
+      "backdrop click"
+    ],
+    "history_dependency": false
+  }
+}
