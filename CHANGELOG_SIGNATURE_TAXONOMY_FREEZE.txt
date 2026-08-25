@@ -1,0 +1,35 @@
+MolPath Simulator v2.5.0b — Signature Taxonomy Freeze 1
+Basis: v2-5-0b_all_coursecases.zip
+
+Ziel
+- Finale, zentrale Signature-Taxonomie herstellen.
+- Course Case => Signature Case als feste Invariante.
+- Sichtbare Prestige-Badges auf genau "Signature Case" reduzieren.
+- Deep Dive als interne Content-Tiefe beibehalten, aber nicht mehr als sichtbare Qualitätskategorie verwenden.
+
+Finale Signature-Logik
+- 23 einzigartige Fälle aus COURSES_V16 sind automatisch Signature Cases.
+- Zusätzlich bleiben MTB_CRC_002 und MTB_CNS_001 als bisherige kuratierte Nicht-Kurs-Signatures erhalten.
+- Zusätzlich promoviert: MTB_HEM_001, MTB_CNS_003, LAB_RUN_004, RES_VAL_001, MET_FISH_001.
+- Finale Zielmenge: 30 Signature Cases.
+
+UI-Bereinigung
+- DEEP DIVE Badge: entfernt.
+- FLAGSHIP Badge: entfernt.
+- COURSE FLAGSHIP Badge: entfernt.
+- Signature Case: einzige sichtbare Prestige-Auszeichnung.
+- Signature Case wird in Fallbibliothek und aktivem Fall-Hero zentral aus derselben Registry erzeugt.
+- Historische zusätzliche Signature-Badges in Asset-/Opening-Blöcken werden entfernt.
+- Dashboard-Signature-Zähler wird aus der finalen Registry berechnet.
+- "Flagship Integration" wird bei sichtbaren neutralen Überschriften zu "Integrated interpretation" normalisiert.
+
+Report-/Teaching-Bereinigung
+- "Deep-Dive" wird nicht mehr als Nutzer-Taxonomie im Fall-/Dozentenprofil geführt.
+- Report-Signature-Status nutzt die finale zentrale Registry.
+- Content-Tiefe, Lernziele, Twist, Debrief und Instructor Notes bleiben unverändert verfügbar.
+
+Technik
+- Neue Datei: v250b_signature_taxonomy_freeze.js
+- index.html lädt den Freeze-Patch bewusst als allerletztes Runtime-Script.
+- Zusätzlich korrigiert index.html die historische v20b-isSig()-Abkürzung, die zuvor jedes vorhandene Deep-Dive-Objekt als Signature interpretierte.
+- Keine Falllogik, Scores, Testauswahl oder Assets geändert.

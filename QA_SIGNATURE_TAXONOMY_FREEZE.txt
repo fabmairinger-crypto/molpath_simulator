@@ -1,0 +1,46 @@
+MolPath Simulator v2.5.0b — Signature Taxonomy Freeze QA
+
+Basis cases parsed from real index.html: 91
+Courses parsed from real COURSES_V16: 5 courses × 5 cases
+Unique Course Cases: 23
+Course Cases missing from case library: 0
+Final Signature Cases: 30
+Distribution: MTB 10 / LAB 6 / RES 7 / MET 7
+Invariant Course Case => Signature Case: PASS
+New JS syntax check (node --check): PASS
+Final-script load order after RES_ROLE_001 and immediately before real closing </body>: PASS
+Historical v20b isSig() corrected from Deep-Dive presence to actual signature metadata: PASS
+
+Final Signature base IDs (30):
+- LAB_DOC_001
+- LAB_POST_001
+- LAB_PRE_001
+- LAB_RUN_001
+- LAB_RUN_002
+- LAB_RUN_004
+- MET_FISH_001
+- MET_LB_001
+- MET_NGS_001
+- MET_NGS_002
+- MET_NGS_003
+- MET_NGS_004
+- MET_RNA_001
+- MTB_CNS_001
+- MTB_CNS_003
+- MTB_CRC_001
+- MTB_CRC_002
+- MTB_HEM_001
+- MTB_IO_001
+- MTB_NSCLC_001
+- MTB_NSCLC_002
+- MTB_OVAR_001
+- MTB_OVAR_002
+- RES_ETH_001
+- RES_ETH_002
+- RES_HYP_001
+- RES_IMPL_001
+- RES_OMICS_001
+- RES_ROLE_001
+- RES_VAL_001
+
+Browser note: headless Chromium execution could not be used for final DOM QA because the runtime environment blocks local/file navigation by organization policy. This is an environment restriction, not an app runtime error.

@@ -3672,7 +3672,7 @@ function allCases(){try{return (typeof cases!=='undefined'&&Array.isArray(cases)
 function assetMap(){try{return (typeof ASSETS!=='undefined'&&ASSETS)?ASSETS:{}}catch(_){return {}}}
 function domain(c){c=c||currentCase()||{}; if(c.mode==='patient_care')return {key:'mtb',label:'MTB',name:'Patientenversorgung'}; if(c.mode==='lab_qm')return {key:'qm',label:'QM',name:'Labor / CAPA'}; if(c.mode==='research')return {key:'res',label:'RES',name:'Forschung'}; return {key:'met',label:'MET',name:'Methodik'};}
 function meta(c){try{return window.v15Meta?v15Meta(c||activeCase):{}}catch(_){return {}}}
-function isSig(c){try{return !!(window.v17Deep&&v17Deep(c||activeCase))}catch(_){return false}}
+function isSig(c){try{const x=c||activeCase;const d=(window.v17Deep&&v17Deep(x));return !!(x&&(x.signature_case===true||(d&&d.is_signature_case===true)))}catch(_){return !!(c&&c.signature_case===true)}}
 function courseActive(){try{return !!(window.v16CourseIsActive&&v16CourseIsActive())}catch(_){return false}}
 function courseObj(){try{return window.v16Course?v16Course():null}catch(_){return null}}
 function modeLabel(){try{return modeMeta().label}catch(_){return window.uiMode||'Modus'}}
@@ -6267,4 +6267,7 @@ try{console.log('[MolPath '+V240Z12_VERSION+'] case metadata recalibration loade
 <!-- v2.5.0b RES_ROLE_001 Course Flagship / RES Basics — final 23of23 -->
 <script src="v250b_resrole001_course_flagship.js"></script>
 
+
+<!-- v2.5.0b Signature Taxonomy Freeze / Badge Cleanup — MUST remain last -->
+<script src="v250b_signature_taxonomy_freeze.js"></script>
 </body></html>

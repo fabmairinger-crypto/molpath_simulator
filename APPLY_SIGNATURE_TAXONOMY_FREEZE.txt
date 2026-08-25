@@ -1,0 +1,8 @@
+PATCH-ONLY für v2-5-0b_all_coursecases.zip
+
+1. Inhalt dieses ZIPs in den bestehenden v27-Ordner kopieren.
+2. Vorhandene v27/index.html ersetzen.
+3. v27/v250b_signature_taxonomy_freeze.js neu hinzufügen.
+4. CHANGELOG/MANIFEST können im v27-Root verbleiben.
+
+Wichtig: v250b_signature_taxonomy_freeze.js muss in index.html das letzte Runtime-Script vor </body> bleiben.
