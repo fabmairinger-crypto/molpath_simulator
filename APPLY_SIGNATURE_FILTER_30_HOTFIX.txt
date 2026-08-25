@@ -1,0 +1,16 @@
+MolPath Simulator v2.5.0b — Signature Filter 30 Hotfix
+
+Basis:
+- bereits angewendeter SIGNATURE_TAXONOMY_FREEZE Patch
+- Screenshot-Symptom: Dashboard zeigt 30 Signatures, Bibliotheksfilter nur 15/91
+
+Anwendung:
+1. Inhalt dieses ZIPs über das bestehende v27-Verzeichnis kopieren.
+2. v250b_signature_taxonomy_freeze.js ersetzen.
+3. index.html muss NICHT erneut geändert werden; es lädt diese Datei bereits als letzten Taxonomy-Patch.
+4. App neu laden (bei Browsercache ggf. Hard Reload).
+
+Erwartung:
+- Freies Spielen / alle Filter = 91/91
+- "Nur Signature Cases" = 30/91
+- Kursfälle bleiben vollständig Signature.

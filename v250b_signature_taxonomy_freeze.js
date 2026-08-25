@@ -9,7 +9,7 @@
 (function(){
 'use strict';
 
-const VERSION='v2.5.0b-signature-taxonomy-freeze1';
+const VERSION='v2.5.0b-signature-taxonomy-freeze2';
 const EXTRA_SIGNATURE_BASE_IDS=new Set([
   // Existing curated non-course signatures retained.
   'MTB_CRC_002',
@@ -92,6 +92,62 @@ window.MolPathIsCourseCase=isCourseCase;
 try{isSigCase=function(c=activeCase){return isSignature(c)}}catch(_){}
 try{isSig=function(c=activeCase){return isSignature(c)}}catch(_){}
 try{v17IsSignature=function(c=activeCase){return isSignature(c)}}catch(_){}
+
+/*
+ * Final case-library filter authority.
+ * v2.4.0l captured the historic 15-case Signature set inside a private closure.
+ * Wrapping that legacy filteredCases() cannot restore cases already removed by it,
+ * so the final freeze deliberately rebuilds the complete filter pipeline from the
+ * canonical case array and applies Signature as the LAST intersection.
+ */
+function finalFilteredCases(){
+  let list=allCases().slice();
+
+  // Search / domain / difficulty: mirrors the current v1.5+ library semantics.
+  try{
+    const q=String(document.getElementById('caseSearch')?.value||'').toLowerCase().trim();
+    const mode=document.getElementById('modeFilter')?.value||'all';
+    const diff=document.getElementById('difficultyFilter')?.value||'all';
+    list=list.filter(c=>{
+      let m={}; try{m=(typeof v15Meta==='function'?v15Meta(c):(c.v15||{}))||{}}catch(_){m=c.v15||{}}
+      const txt=[c.id,c.base_id,c.title,c.short,c.mode,c.logic,c.difficulty,m.difficulty,m.length_class,m.status,m.review_flag,m.subdomain,...(Array.isArray(c.tags)?c.tags:[])].join(' ').toLowerCase();
+      let d=String(m.difficulty||c.difficulty||'').toLowerCase().replaceAll('–','_').replaceAll('-','_').replace(/\s+/g,'_');
+      try{if(typeof v15DifficultySlug==='function')d=v15DifficultySlug(c)}catch(_){}
+      return (mode==='all'||c.mode===mode)&&(diff==='all'||d===diff)&&(!q||txt.includes(q));
+    });
+  }catch(_){}
+
+  // Course mode: retain the current five-case learning-path intersection.
+  try{
+    if(typeof v16CourseIsActive==='function'&&v16CourseIsActive()){
+      let ids=null;
+      try{if(typeof v16CourseFilterIds==='function')ids=v16CourseFilterIds()}catch(_){}
+      if(!ids){try{ids=new Set((typeof v16Course==='function'?v16Course().cases:[])||[])}catch(_){ids=new Set()}}
+      list=list.filter(c=>ids.has(c.id));
+    }
+  }catch(_){}
+
+  // Cross-domain Methods Focus filter loaded before this final freeze.
+  try{
+    const v=document.getElementById('methodFocusFilter')?.value||'all_cases';
+    const reg=window.MolPathMethodFocusRegistry?.registry||{};
+    if(v==='all_methods')list=list.filter(c=>!!reg[c.id]);
+    else if(v!=='all_cases')list=list.filter(c=>!!reg[c.id]&&Array.isArray(reg[c.id].domains)&&reg[c.id].domains.includes(v));
+  }catch(_){}
+
+  // Signature is intentionally last, using the single final 30-case authority.
+  try{
+    const cb=document.getElementById('signatureOnlyFilter');
+    if(cb&&cb.checked)list=list.filter(isSignature);
+  }catch(_){}
+
+  return list;
+}
+
+function installFinalCaseFilter(){
+  try{filteredCases=finalFilteredCases}catch(_){}
+  try{window.filteredCases=finalFilteredCases}catch(_){}
+}
 
 function E(x){
   try{return typeof esc==='function'?esc(x):String(x??'').replace(/[&<>\"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;'}[m]||m))}catch(_){return String(x??'')}
@@ -205,6 +261,7 @@ function wrapGlobal(name){
 
 function install(){
   const ids=applyModel();
+  installFinalCaseFilter();
   wrapGlobal('render');
   wrapGlobal('renderCasePicker');
   wrapGlobal('renderKpi');
@@ -222,6 +279,7 @@ function install(){
     signatureCaseIds:[...ids],
     signatureBaseIds:[...finalBaseIds()],
     signatureCount:ids.size,
+    caseLibraryFilterAuthority:'finalFilteredCases',
     visiblePrestigeBadge:'Signature Case only',
     deepDiveVisibility:'internal metadata only'
   });

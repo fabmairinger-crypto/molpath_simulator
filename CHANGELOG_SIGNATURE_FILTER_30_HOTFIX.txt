@@ -1,0 +1,16 @@
+Signature Filter 30 Hotfix
+
+FIX
+- Behebt die verbleibende historische 15er-Filterung des v2.4.0l Signature-Filters.
+- Ursache: v2.4.0l hielt die damaligen 15 Signature-IDs in einer privaten Closure; spätere Registry-/Metadatenupdates konnten diese lokale Liste nicht überschreiben.
+
+TECHNIK
+- Der finale Taxonomy-Freeze übernimmt nun auch filteredCases() als letzte Filterautorität.
+- Die Filterpipeline wird aus der kanonischen cases-Liste neu aufgebaut:
+  Suche -> Bereich -> Schwierigkeit -> Kursmodus -> Methodenfokus -> Signature.
+- Signature wird bewusst zuletzt über MolPathIsSignatureCase / finale 30er-Registry geschnitten.
+
+UNVERÄNDERT
+- 30 finale Signature Cases.
+- 23 eindeutige Course Cases; Course => Signature bleibt invariant.
+- Keine Änderungen an Fallinhalten, Assets, Scoring, TAT, Materialbudget oder Kursdefinitionen.

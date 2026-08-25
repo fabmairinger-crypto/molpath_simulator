@@ -1,0 +1,18 @@
+QA — Signature Filter 30 Hotfix
+
+Source basis: echte v2-5-0b_all_coursecases App-Struktur + finaler Taxonomy-Patch.
+
+PASS: JS syntax (node --check)
+PASS: cases = 91
+PASS: courses = 5
+PASS: unique course cases = 23
+PASS: final signature registry = 30
+PASS: each course = 5/5 Signature
+PASS: Methods Focus registry = 44 cases
+PASS: Signature ∩ Methods Focus = 17 cases
+PASS: default free-mode Signature-only expectation = 30/91
+
+Root cause confirmed:
+- historical v2.4.0l filteredCases wrapper closed over private SIGNATURE_IDS (15 IDs)
+- wrapping that function later cannot restore cases already removed
+- hotfix replaces final filteredCases authority instead of wrapping the legacy result
