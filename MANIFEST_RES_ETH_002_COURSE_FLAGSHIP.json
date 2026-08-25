@@ -1,0 +1,88 @@
+{
+  "artifact": "MolPath Simulator v2.5.0b RES_ETH_002 Course Flagship delta patch",
+  "case_id": "RES_ETH_002_v1_3",
+  "course": "course_advanced_integrated",
+  "asset_count": 7,
+  "signature_promotion": false,
+  "course_flagship": true,
+  "progress": "22/23 course cases at Flagship level; 1 remaining",
+  "requires_prior": [
+    "MET Course Flagship 5/5",
+    "LAB_RUN_001 Course Flagship",
+    "LAB_PRE_001 Course Flagship ESCAPER FIX2",
+    "RES_IMPL_001 Course Flagship"
+  ],
+  "story": "Research-WES BRCA2 incidental finding -> consent/return policy -> evidence review -> governance -> independent diagnostic germline confirmation -> genetic counseling -> policy-compliant audit closure",
+  "files": [
+    {
+      "path": "APPLY_RES_ETH_002_COURSE_FLAGSHIP.txt",
+      "bytes": 601,
+      "sha256": "c60d44303778f0d97fc196cd5d30dcd82bffa5f1d032abcbdeb2e1d4b1acb6a9"
+    },
+    {
+      "path": "CHANGELOG_RES_ETH_002_COURSE_FLAGSHIP.md",
+      "bytes": 1933,
+      "sha256": "8dedf611beee8adebe395b0cfc4e92ee54114128e029f6c3df405d3b09d9b0f9"
+    },
+    {
+      "path": "assets/res_eth_002/consent_return_of_results_policy_001.png",
+      "bytes": 1829417,
+      "sha256": "25e74ac4d3b7dd46b82ac4e627c98673bc978ab4dcce5cb4f50604f84071023e"
+    },
+    {
+      "path": "assets/res_eth_002/diagnostic_germline_confirmation_001.png",
+      "bytes": 1742998,
+      "sha256": "435a627f79cc426940f9c4a3eef63823a2db7bda91965cb655bdf6e606ac955d"
+    },
+    {
+      "path": "assets/res_eth_002/final_governance_audit_closure_001.png",
+      "bytes": 1829059,
+      "sha256": "d21b32560ea6300adbe6f010aaeeaf5d709a5931605201c7a08ae0a043a67842"
+    },
+    {
+      "path": "assets/res_eth_002/genetic_counseling_return_of_results_001.png",
+      "bytes": 1806380,
+      "sha256": "a627ea4873fe165acf87be09c8c4b8bef7abdf175a0a607c13cfc41a5c60bcc4"
+    },
+    {
+      "path": "assets/res_eth_002/governance_decision_board_001.png",
+      "bytes": 1821357,
+      "sha256": "229c0b2bb93881a092dd173a3fceb88e059f41a25ae724d4bb738a77637175a6"
+    },
+    {
+      "path": "assets/res_eth_002/research_wes_brca2_incidental_finding_001.png",
+      "bytes": 1713802,
+      "sha256": "e106f524187a196322b1dccc98b7089f2e8cd635e6103f8a20ac588ea53a95f7"
+    },
+    {
+      "path": "assets/res_eth_002/variant_evidence_research_vs_clinical_001.png",
+      "bytes": 1816156,
+      "sha256": "c419ab97f9dd48f2d150c251fcee5be7850099d4357d819c7a396463cb18b5ce"
+    },
+    {
+      "path": "audit/COURSE_FLAGSHIP_PROGRESS_v250b_checkpoint10.csv",
+      "bytes": 2669,
+      "sha256": "f757b20c1f875a1c091bb5df3e1acebbb5865f5e0794aa2e0d7961feee239dba"
+    },
+    {
+      "path": "audit/COURSE_FLAGSHIP_PROGRESS_v250b_checkpoint10.json",
+      "bytes": 13514,
+      "sha256": "c1c717b39da2839ad6a0b34f73fae79cf84c853d01aa5edef83416ffab271858"
+    },
+    {
+      "path": "index.html",
+      "bytes": 4137705,
+      "sha256": "0750ac5ef138f9918a0865527aef8364aa3c50e607cdc4bc171574de0ef29b92"
+    },
+    {
+      "path": "v250b_asset_modal_hotfix.js",
+      "bytes": 6508,
+      "sha256": "baad2f80d71f2147003ada1102860d0fb5e649fb7bbda19ee7cea43c9f8f4320"
+    },
+    {
+      "path": "v250b_reseth002_course_flagship.js",
+      "bytes": 31012,
+      "sha256": "d53a9f90d6621a3758f155cff3518e1587a398698301cef963f219b52b763dc8"
+    }
+  ]
+}
