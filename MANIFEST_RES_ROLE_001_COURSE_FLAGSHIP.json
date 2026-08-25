@@ -1,0 +1,89 @@
+{
+  "artifact": "MolPath Simulator v2.5.0b RES_ROLE_001 Course Flagship delta patch",
+  "case_id": "RES_ROLE_001_v1_3",
+  "course": "course_res_basics",
+  "asset_count": 7,
+  "signature_promotion": false,
+  "course_flagship": true,
+  "progress": "23/23 course cases at Flagship level; 0 remaining",
+  "requires_prior": [
+    "MET Course Flagship 5/5",
+    "LAB_RUN_001 Course Flagship",
+    "LAB_PRE_001 Course Flagship ESCAPER FIX2",
+    "RES_IMPL_001 Course Flagship",
+    "RES_ETH_002 Course Flagship"
+  ],
+  "story": "Submission crisis -> contribution reconstruction -> CRediT -> ICMJE eligibility -> proposed contribution-based author order -> bioinformatician accountability resolution -> final author agreement/audit trail",
+  "files": [
+    {
+      "path": "APPLY_RES_ROLE_001_COURSE_FLAGSHIP.txt",
+      "bytes": 636,
+      "sha256": "2e696924e012c5fadf6ed396d7db5e62aaa4ef91c174fe04fd85bbb4dc258a9b"
+    },
+    {
+      "path": "CHANGELOG_RES_ROLE_001_COURSE_FLAGSHIP.md",
+      "bytes": 2194,
+      "sha256": "c889efbba03a6db042c2d8554189e8a62cc36b84abe1eee181597792c56208ac"
+    },
+    {
+      "path": "assets/res_role_001/bioinformatician_accountability_resolution_001.png",
+      "bytes": 1755374,
+      "sha256": "a010a71184a356617c887862054c38dd1f55add23fceb8bdae5427acc7df765e"
+    },
+    {
+      "path": "assets/res_role_001/contribution_reconstruction_timeline_001.png",
+      "bytes": 1524675,
+      "sha256": "94db38bfb603ad2d8a3747fe3a1aac57c76d7ac06ccb66dab62cd866223c4718"
+    },
+    {
+      "path": "assets/res_role_001/credit_contribution_matrix_001.png",
+      "bytes": 1395270,
+      "sha256": "0f1a145222378c5f905dcf1a734dfe67efddcfa87db02eb5bd34d19df5a31c5b"
+    },
+    {
+      "path": "assets/res_role_001/final_authorship_agreement_audit_001.png",
+      "bytes": 1763164,
+      "sha256": "27b9cb5d7f82cc60d96d8e56785a8542a866878d1c05bf1d7832f7b9771a55d2"
+    },
+    {
+      "path": "assets/res_role_001/icmje_authorship_criteria_gate_001.png",
+      "bytes": 1684716,
+      "sha256": "ce6273cac14d46b812169ca1dda0f9eb6b07ce22824b64bc2b1a10e001c3c7e1"
+    },
+    {
+      "path": "assets/res_role_001/proposed_authorship_order_board_001.png",
+      "bytes": 1810408,
+      "sha256": "860dab3fc7cfc92b0cb9014aa845f7e5d5a4d5b9585a8ea8c6e242f6190e78ca"
+    },
+    {
+      "path": "assets/res_role_001/submission_crisis_manuscript_chat_001.png",
+      "bytes": 1462823,
+      "sha256": "5affe9bf097a4637a3d27339070551d5c42e75236aee903969339f0e956b8d8f"
+    },
+    {
+      "path": "audit/COURSE_FLAGSHIP_PROGRESS_v250b_checkpoint11.csv",
+      "bytes": 2691,
+      "sha256": "6fb315f8c07466fb672ef2879b3384e48d2897f2231a37c405bbcebeabeee131"
+    },
+    {
+      "path": "audit/COURSE_FLAGSHIP_PROGRESS_v250b_checkpoint11.json",
+      "bytes": 13933,
+      "sha256": "c4e149e40e22665510e6053cef8538740c3d187d845968e8e9ecba6c7b63e454"
+    },
+    {
+      "path": "index.html",
+      "bytes": 4137842,
+      "sha256": "8de670cf60be96b5fdd44b7fed71fedcc5bfe488b3d3933f94bf7164013d9d17"
+    },
+    {
+      "path": "v250b_asset_modal_hotfix.js",
+      "bytes": 6508,
+      "sha256": "baad2f80d71f2147003ada1102860d0fb5e649fb7bbda19ee7cea43c9f8f4320"
+    },
+    {
+      "path": "v250b_resrole001_course_flagship.js",
+      "bytes": 32824,
+      "sha256": "b50ace16369858c5fe217978f03b2efcc269d0af53606614f113db9f19f370e5"
+    }
+  ]
+}
