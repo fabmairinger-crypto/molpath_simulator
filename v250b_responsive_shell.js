@@ -1,8 +1,8 @@
-/* MolPath Simulator v2.5.0b — responsive tablet/mobile shell
+/* MolPath Simulator v2.6.0-rc1 — responsive tablet/mobile shell
    Layout/CSS unchanged from v2.4.0z21; compact-shell copy now resolves through the central i18n core. */
 (function(){
 'use strict';
-const VERSION='v2.5.0b';
+const VERSION=(window.MolPathVersion&&window.MolPathVersion.app)||'v2.6.0-rc1';
 const COMPACT='(max-width: 1400px)';
 const SRC={menu:'Menü',overview:'Übersicht',score:'Score',cart:'Auswahl',close:'Schließen',dash:'Übersicht & Lernpfad'};
 function t(k){

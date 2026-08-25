@@ -1,0 +1,39 @@
+MolPath Simulator v2.6.0-rc1 — FOM integration patch
+
+BASE
+  v2-5-0b_extended.zip
+
+APPLY
+  Overlay the included v2/ directory onto the existing v2/ directory and replace files when prompted.
+
+NEW
+  v2/molpath_version.js
+  v2/docs/fom/MolPath_Flight_Operations_Manual_v0.6.pdf
+  v2/docs/fom/pages/page-01.webp ... page-50.webp
+
+CHANGED
+  v2/index.html
+  v2/v250b_home_screen.js
+  v2/v250b_startup_cover_hotfix.js
+  v2/v250b_responsive_shell.js
+  v2/i18n/core.js
+  v2/i18n/languages.js
+  v2/i18n/de.js
+  v2/i18n/en.js
+  v2/i18n/ro.js
+  v2/i18n/el.js
+  v2/i18n/es.js
+  v2/i18n/fr.js
+  v2/i18n/ru.js
+  v2/i18n/tr.js
+  v2/i18n/ar.js
+  v2/i18n/fa.js
+  v2/i18n/uk.js
+
+EXPECTED RESULT
+  Home shows MolPath Simulator v2.6.0-rc1 and a dedicated Flight Operations Manual card.
+  Open manual opens the 50-page in-app viewer.
+  Download PDF provides MolPath_Flight_Operations_Manual_v0.6.pdf.
+
+NOTE
+  Historical v250b_* filenames remain intentionally unchanged. They are implementation filenames, not the current release number.

@@ -1,11 +1,11 @@
-/* MolPath Simulator v2.5.0b — polished fixed startup cover hotfix
+/* MolPath Simulator v2.6.0-rc1 — polished fixed startup cover hotfix
    Scope: visual startup cover only.
    Does NOT wrap/replace render(), alter case logic, responsive behavior, i18n,
    event handlers, or startup patch execution. */
 (function(){
   'use strict';
 
-  const VERSION='v2.5.0b';
+  const VERSION=(window.MolPathVersion&&window.MolPathVersion.app)||'v2.6.0-rc1';
   const MIN_SETTLE_MS=360; // existing delayed startup cosmetics peak at 180 ms
   const EXIT_MS=280;
   let revealed=false;
@@ -15,7 +15,7 @@
       if(document.getElementById('v250b-final-version-style'))return;
       const style=document.createElement('style');
       style.id='v250b-final-version-style';
-      style.textContent="#v20bVersion::after{content:'v2.5.0b'!important}";
+      style.textContent="#v20bVersion::after{content:'"+VERSION+"'!important}";
       document.body.appendChild(style);
     }catch(_){ }
   }
@@ -75,7 +75,7 @@
 
   window.MolPathStartupCoverHotfix=Object.freeze({
     version:VERSION,
-    base:'v2.5.0b + asset modal + startup cover',
+    base:'v2.5.0b runtime + v2.6.0 release shell',
     reveal:reveal
   });
 })();

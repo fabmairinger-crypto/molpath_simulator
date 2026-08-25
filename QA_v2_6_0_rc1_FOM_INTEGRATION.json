@@ -1,0 +1,31 @@
+{
+  "release": "v2.6.0-rc1",
+  "fom": "0.6",
+  "date": "2026-08-25",
+  "base_archive": "v2-5-0b_extended.zip",
+  "source_fom": {
+    "name": "MolPath_Flight_Operations_Manual_v0.5(3).pdf",
+    "sha256": "faaa8dbd9e64d422090aa90b43b2f5fcd4c228bb3edd962910af5c8bf05ebffb"
+  },
+  "updated_fom": {
+    "path": "v2/docs/fom/MolPath_Flight_Operations_Manual_v0.6.pdf",
+    "sha256": "1a0a5d744038b969b0bb33c67e0d6993a18977d2b19ac3321c117f499177eb2a",
+    "pages": 50
+  },
+  "viewer_pages": {
+    "format": "webp",
+    "count": 50
+  },
+  "checks": {
+    "modified_js_node_syntax": "PASS",
+    "all_11_locales_manual_keys": "PASS",
+    "locale_delta_scope_only_expected_fields": "PASS",
+    "index_version_script_insert_only": "PASS",
+    "pdf_preflight": "PASS",
+    "pdf_render_50_pages": "PASS",
+    "pdf_visual_contact_sheet": "PASS",
+    "pdf_old_runtime_ref_absent": "PASS"
+  },
+  "browser_visual_runtime": "NOT_EXECUTED_ENVIRONMENT_BLOCKED_LOCAL_NAVIGATION",
+  "logic_scope": "No case/scoring/station/classification logic intentionally changed by this patch."
+}

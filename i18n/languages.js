@@ -1,4 +1,4 @@
-/* MolPath Simulator v2.5.0b — central language + locale registry */
+/* MolPath Simulator v2.6.0-rc1 — central language + locale registry */
 (function(){
 'use strict';
 const SOURCE='de';

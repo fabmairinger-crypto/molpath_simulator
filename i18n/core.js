@@ -1,7 +1,7 @@
-/* MolPath Simulator v2.5.0b — i18n core */
+/* MolPath Simulator v2.6.0-rc1 — i18n core */
 (function(){
 'use strict';
-const VERSION='v2.5.0b i18n Registry Compatibility Adapter';
+const VERSION=((window.MolPathVersion&&window.MolPathVersion.app)||'v2.6.0-rc1')+' i18n Registry Compatibility Adapter';
 const languageRegistry=window.MolPathLanguageRegistry;
 const localeRegistry=window.MolPathLocaleRegistry;
 if(!languageRegistry||!localeRegistry)throw new Error('MolPath i18n registries were not loaded');

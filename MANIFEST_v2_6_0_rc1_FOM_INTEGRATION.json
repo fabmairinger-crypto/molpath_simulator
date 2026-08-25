@@ -1,0 +1,368 @@
+{
+  "release": "v2.6.0-rc1",
+  "patch": "FOM integration + centralized release metadata",
+  "base": "v2-5-0b_extended.zip",
+  "file_count_excluding_manifest": 72,
+  "files": [
+    {
+      "path": "v2/index.html",
+      "bytes": 4138132,
+      "sha256": "a930c3c4af1855cfdd4db433da40daa86b4e35fe7cf6a9348f292f6374e3e26b"
+    },
+    {
+      "path": "v2/molpath_version.js",
+      "bytes": 420,
+      "sha256": "f30d6751beb0eaf45beb92acb9f3b9ab44d2bbee05ce1b33e1746dc618a9c3cd"
+    },
+    {
+      "path": "v2/v250b_home_screen.js",
+      "bytes": 34884,
+      "sha256": "5b208b25090d2b7c4237c61d2ad831d08959811d7e771c4a3afd20053aba2de4"
+    },
+    {
+      "path": "v2/v250b_startup_cover_hotfix.js",
+      "bytes": 2407,
+      "sha256": "a6fe439da52654f868d35debcbec41e26f34a0928fcc281e54db764a5d7dacd7"
+    },
+    {
+      "path": "v2/v250b_responsive_shell.js",
+      "bytes": 16033,
+      "sha256": "4fae6c4c6e81cda486467df8b5eafa88665323cce7323e97bec6480e277020a1"
+    },
+    {
+      "path": "v2/i18n/core.js",
+      "bytes": 15617,
+      "sha256": "2772f83e15d82f8e5fc21c39c2bdd31b20d4a90d9b2513d1f44ac9bce323affc"
+    },
+    {
+      "path": "v2/i18n/languages.js",
+      "bytes": 5254,
+      "sha256": "b7aef0c90807926e4b564bd3b62e4afc820429701efc23acb4d3e00a0478a8a5"
+    },
+    {
+      "path": "v2/i18n/de.js",
+      "bytes": 14468,
+      "sha256": "fb0174ef922b2f9fe4c3e069d5c47250c198296a1de3b05d5268b9d8439cfa14"
+    },
+    {
+      "path": "v2/i18n/en.js",
+      "bytes": 13814,
+      "sha256": "10fc72096c4201defbe3872c2b24608de1119bedfe82562c11e7de9fc97ae700"
+    },
+    {
+      "path": "v2/i18n/ro.js",
+      "bytes": 14925,
+      "sha256": "2b35fdccae94aec3c7dfc6ed2a34fa961d5d654e82c418a7fc8e58f1f103155d"
+    },
+    {
+      "path": "v2/i18n/el.js",
+      "bytes": 22210,
+      "sha256": "cac86f827ade1de8953a3c3e9849b40128ef5de471cae9b244f399dcc52edfaf"
+    },
+    {
+      "path": "v2/i18n/es.js",
+      "bytes": 15032,
+      "sha256": "da37fbdd618150141d3bd65d48fbbff7f6f6ebf837add893dca1803b5976d6af"
+    },
+    {
+      "path": "v2/i18n/fr.js",
+      "bytes": 15488,
+      "sha256": "031d02e374be811f453c3dba4c782287065e24ab8d2b3ff5cdfbdf8cd7311f57"
+    },
+    {
+      "path": "v2/i18n/ru.js",
+      "bytes": 2555247,
+      "sha256": "02332e60aa81b1f1fb666989a038062a18af6ef4e86efd7460183610cff585a3"
+    },
+    {
+      "path": "v2/i18n/tr.js",
+      "bytes": 1942703,
+      "sha256": "91a47e175893ccfc6907457ad8bcb157948c1bfb438f5e59003244d6563b22a3"
+    },
+    {
+      "path": "v2/i18n/ar.js",
+      "bytes": 2340726,
+      "sha256": "8c7d089695dc35147d34592742a04166fd0472bb40f031ece79a2302425d586c"
+    },
+    {
+      "path": "v2/i18n/fa.js",
+      "bytes": 2412393,
+      "sha256": "0b726f1e3d09e40ea1aefd4f4297e49c95b4f88bba645cf9dc7d44d92f778d36"
+    },
+    {
+      "path": "v2/i18n/uk.js",
+      "bytes": 2637869,
+      "sha256": "dee943de47b7ad07e07e935bc74e916096d826ea0eebf4f54b63a2a3bc6b578b"
+    },
+    {
+      "path": "v2/docs/fom/MolPath_Flight_Operations_Manual_v0.6.pdf",
+      "bytes": 1112669,
+      "sha256": "1a0a5d744038b969b0bb33c67e0d6993a18977d2b19ac3321c117f499177eb2a"
+    },
+    {
+      "path": "v2/docs/fom/pages/page-01.webp",
+      "bytes": 40742,
+      "sha256": "7a28d6b1afbc699bf58546b0adcb1afa6b55bf00c209f6f8320fc89a819dd393"
+    },
+    {
+      "path": "v2/docs/fom/pages/page-02.webp",
+      "bytes": 88432,
+      "sha256": "8ec50a0e73533e64e680de9a4f3c16dbf3630da7ea3854ef836bb8d27a33dc42"
+    },
+    {
+      "path": "v2/docs/fom/pages/page-03.webp",
+      "bytes": 75658,
+      "sha256": "22c6fa18c09013a0539c23690c26d05d8c818bcf197d6cb4ed2d46afa7282ef0"
+    },
+    {
+      "path": "v2/docs/fom/pages/page-04.webp",
+      "bytes": 82158,
+      "sha256": "535859f38d32828dbecd5976e90ba785d0f983f1fbe621f20cdf03b3e05b3742"
+    },
+    {
+      "path": "v2/docs/fom/pages/page-05.webp",
+      "bytes": 79574,
+      "sha256": "067884a95868dbf3549e5736258f7e8ed5a3696ada2b64e9635f53ad417a2247"
+    },
+    {
+      "path": "v2/docs/fom/pages/page-06.webp",
+      "bytes": 69512,
+      "sha256": "9bd26948eb3e98d95f2c1272fd4979e47177872b451d65d618a23e507c0301e4"
+    },
+    {
+      "path": "v2/docs/fom/pages/page-07.webp",
+      "bytes": 88298,
+      "sha256": "fde20487c022cdf6ded586b93cd31a47827ec07fde305dc4336e23f2d1a3c38a"
+    },
+    {
+      "path": "v2/docs/fom/pages/page-08.webp",
+      "bytes": 93470,
+      "sha256": "8c06c1d9624e739aa891a5c1976830d45dd8ad7d8aeaf197f516653fb6da60cc"
+    },
+    {
+      "path": "v2/docs/fom/pages/page-09.webp",
+      "bytes": 98188,
+      "sha256": "a1735539a7ea0e567b9bdc41a8b6cea2fb0e5ee10b12a37c8e57ccd0affd82e3"
+    },
+    {
+      "path": "v2/docs/fom/pages/page-10.webp",
+      "bytes": 99302,
+      "sha256": "352a4909c7b57ae1612cd6438f190996fffc468734aeec4c8d04e8494397c28b"
+    },
+    {
+      "path": "v2/docs/fom/pages/page-11.webp",
+      "bytes": 96782,
+      "sha256": "bf2223fa9af3dfa36a281d6378fe44a2baa9aa1404e3d4008c636461f2ba24ad"
+    },
+    {
+      "path": "v2/docs/fom/pages/page-12.webp",
+      "bytes": 87442,
+      "sha256": "575128ee6fe9e876ac76dd11014f15d0af134a585ed3abe91dff2aafe7c2939c"
+    },
+    {
+      "path": "v2/docs/fom/pages/page-13.webp",
+      "bytes": 71432,
+      "sha256": "2bffc4367b91cee3dde02bfcb7f58dbaa6e12091f84ced0167cb75ec717485ee"
+    },
+    {
+      "path": "v2/docs/fom/pages/page-14.webp",
+      "bytes": 89558,
+      "sha256": "7ced83c08b2a93cb9608ed308f3d063b227e1e65d3c8dea702d061a8d205f5ea"
+    },
+    {
+      "path": "v2/docs/fom/pages/page-15.webp",
+      "bytes": 88354,
+      "sha256": "fab02ce94df0ae05733a2bf8f0f1bfc4f8eb79c148807ff62d9bf7fe39c2a9eb"
+    },
+    {
+      "path": "v2/docs/fom/pages/page-16.webp",
+      "bytes": 75200,
+      "sha256": "e88d433e5d7ec9fbd5882426ba7f2b8fae797fc0878b5bafce0ca74d9a3037b5"
+    },
+    {
+      "path": "v2/docs/fom/pages/page-17.webp",
+      "bytes": 101558,
+      "sha256": "949aae6f7fca9d4551cb8cf92611278303523ec749a136e4cc1165ada4f3fe5c"
+    },
+    {
+      "path": "v2/docs/fom/pages/page-18.webp",
+      "bytes": 71680,
+      "sha256": "db3a9852dc29d8524aac5fc4bd29f5027ce08ef546c3afe68fe3ea4b7c6e685d"
+    },
+    {
+      "path": "v2/docs/fom/pages/page-19.webp",
+      "bytes": 75754,
+      "sha256": "beb411c8c308b9c25b119af3e9e720241c295f759ea8e6cb5b16518c6b3614cc"
+    },
+    {
+      "path": "v2/docs/fom/pages/page-20.webp",
+      "bytes": 84938,
+      "sha256": "d7d13b977372d8b7e69aa561c90c0777d07193e1464b7cd61112c53ece22d0eb"
+    },
+    {
+      "path": "v2/docs/fom/pages/page-21.webp",
+      "bytes": 75794,
+      "sha256": "7818bc2dbba813e74b6e44792c241c105e55ae80dbbd5c5b6afc0e49cf744056"
+    },
+    {
+      "path": "v2/docs/fom/pages/page-22.webp",
+      "bytes": 86770,
+      "sha256": "dc3df97855dcbe9448d36007273b86b41adc57914e63fa0b9461ef85587e0db4"
+    },
+    {
+      "path": "v2/docs/fom/pages/page-23.webp",
+      "bytes": 64578,
+      "sha256": "c116bd78ac0143f1d670b803834192281e61d1cdd5a2fdfe901d1b613daefc4b"
+    },
+    {
+      "path": "v2/docs/fom/pages/page-24.webp",
+      "bytes": 75550,
+      "sha256": "facd8c4f4f65284f24abb920b8fb3dcb893db67b81686d61dd1408e176b55950"
+    },
+    {
+      "path": "v2/docs/fom/pages/page-25.webp",
+      "bytes": 86702,
+      "sha256": "c94c8b5bc37ca8d32eb7144d2abb683db8cfd33ca686bc657fed8a803d720f46"
+    },
+    {
+      "path": "v2/docs/fom/pages/page-26.webp",
+      "bytes": 79882,
+      "sha256": "b347af212678ff685c8ea07f0d89343a9b6df00cffb52100141d02f209c80d0f"
+    },
+    {
+      "path": "v2/docs/fom/pages/page-27.webp",
+      "bytes": 87740,
+      "sha256": "7236da969afd54da48558f16cfacf0ba23398473429868f6bb7a4b49fd04341a"
+    },
+    {
+      "path": "v2/docs/fom/pages/page-28.webp",
+      "bytes": 78898,
+      "sha256": "d0f4c58d18a63c9cadc0959e8d057e5daec3fa7bdb01002d7de02cc46a5e96ae"
+    },
+    {
+      "path": "v2/docs/fom/pages/page-29.webp",
+      "bytes": 86586,
+      "sha256": "7146dfbe2280ca97534913a737bbb0c5ce15031c7e5dda494ea640a4e27c7300"
+    },
+    {
+      "path": "v2/docs/fom/pages/page-30.webp",
+      "bytes": 81274,
+      "sha256": "78f2f11a60d91bc832877e74f7eff68238679a890d9041fa9ed0d8c1fbf35296"
+    },
+    {
+      "path": "v2/docs/fom/pages/page-31.webp",
+      "bytes": 76684,
+      "sha256": "585ad38142ac054d22c888cdcc6eef88d493ceff7c7c271717242ed319fe0415"
+    },
+    {
+      "path": "v2/docs/fom/pages/page-32.webp",
+      "bytes": 76076,
+      "sha256": "df355f38cba617bdedb953e159cf15747d73223007f998c734e215bd37407b9f"
+    },
+    {
+      "path": "v2/docs/fom/pages/page-33.webp",
+      "bytes": 69732,
+      "sha256": "19155dfd1bb8bbd9a921139f0dfb57168baeea062d64174205b5b7d7758035c2"
+    },
+    {
+      "path": "v2/docs/fom/pages/page-34.webp",
+      "bytes": 88260,
+      "sha256": "75aa62cc5e0e96a9cc8a3b49b3892bb237ab681fdff137935892ba98f4101e9f"
+    },
+    {
+      "path": "v2/docs/fom/pages/page-35.webp",
+      "bytes": 94932,
+      "sha256": "ff37bdb363cdbea06d95ff71e3d3e33ddb5b0bb1a3631c8708241b4cf4402147"
+    },
+    {
+      "path": "v2/docs/fom/pages/page-36.webp",
+      "bytes": 76566,
+      "sha256": "1f3212d5df6deda890b1cd3620584613f6b52923a578e2d0cb5174ba79ebe379"
+    },
+    {
+      "path": "v2/docs/fom/pages/page-37.webp",
+      "bytes": 100048,
+      "sha256": "0c53821722bdf73b71ae0be9ab87db33bb71e0de467c984a8423ea58cdf8be57"
+    },
+    {
+      "path": "v2/docs/fom/pages/page-38.webp",
+      "bytes": 96072,
+      "sha256": "fb0c29fe178856ea7350c9631ecd59848d4240dba7161f1718563958bfbd055d"
+    },
+    {
+      "path": "v2/docs/fom/pages/page-39.webp",
+      "bytes": 80682,
+      "sha256": "575874dd966576ff26e242714a58d2a414091e2678d58655f1db4c645ce653cf"
+    },
+    {
+      "path": "v2/docs/fom/pages/page-40.webp",
+      "bytes": 85000,
+      "sha256": "9b09a657ecde660d1614cb92923166955986480726cc37ea494f37f1e2b06f4e"
+    },
+    {
+      "path": "v2/docs/fom/pages/page-41.webp",
+      "bytes": 82292,
+      "sha256": "6dbf10e1b56fa01dda5f2a4e49dae000cd27f17944edd88eccc89126125971b5"
+    },
+    {
+      "path": "v2/docs/fom/pages/page-42.webp",
+      "bytes": 85668,
+      "sha256": "c78de37eaa116de4d5b7bd8b54697b74a0121592241906e306f0224d9e79a9ac"
+    },
+    {
+      "path": "v2/docs/fom/pages/page-43.webp",
+      "bytes": 86144,
+      "sha256": "15455c8fce7583f302b95690b4da8426819b33728674b44dcb7733fa4432ed87"
+    },
+    {
+      "path": "v2/docs/fom/pages/page-44.webp",
+      "bytes": 107544,
+      "sha256": "d4ba65428521e2a17ed3df44e56fa439266ba4b8ae55356e05b136fb63b0da47"
+    },
+    {
+      "path": "v2/docs/fom/pages/page-45.webp",
+      "bytes": 72350,
+      "sha256": "60cf2633c1b2b1a801cc684a2442fb3fd4ef124960f36760f6f00b9a6c06f94f"
+    },
+    {
+      "path": "v2/docs/fom/pages/page-46.webp",
+      "bytes": 87412,
+      "sha256": "e5d2e2507b6f4f357647b98b898e844f9b3519980b603339565aa62209ed4fa8"
+    },
+    {
+      "path": "v2/docs/fom/pages/page-47.webp",
+      "bytes": 103254,
+      "sha256": "bd9cd60aeeee0f9fa1851195f2bb4ac3f1326b0299838e2ecc9f01abb682ea6b"
+    },
+    {
+      "path": "v2/docs/fom/pages/page-48.webp",
+      "bytes": 71428,
+      "sha256": "c62d765f6627fce506b70d1171367e0ae6204b155510c012b9eff89e04f27e17"
+    },
+    {
+      "path": "v2/docs/fom/pages/page-49.webp",
+      "bytes": 94424,
+      "sha256": "2e990e2e087447b1407a802dc63b63d175ab1d97a772e002e5029bfb7705c47a"
+    },
+    {
+      "path": "v2/docs/fom/pages/page-50.webp",
+      "bytes": 86098,
+      "sha256": "f03fd6742aee06bd8bf60c525bdccd3a5f23d0fa0ba9c27f78e1dd26a994f329"
+    },
+    {
+      "path": "v2/CHANGELOG_v2_6_0_rc1_FOM_INTEGRATION.md",
+      "bytes": 2613,
+      "sha256": "b93aea037793d2a45a6f2d180b67af925bfa9e61023d0fa96dbc3f4367b1aec5"
+    },
+    {
+      "path": "v2/APPLY_v2_6_0_rc1_FOM_INTEGRATION.txt",
+      "bytes": 1018,
+      "sha256": "e979f68d3075c1e382ebe435c49124890de93e556f8113262ac66bbc0e02af75"
+    },
+    {
+      "path": "v2/QA_v2_6_0_rc1_FOM_INTEGRATION.json",
+      "bytes": 1061,
+      "sha256": "bf455f57b1de8b119b55350b48084a881d375d9c8bb469d175f63ee379fc7b33"
+    }
+  ]
+}
