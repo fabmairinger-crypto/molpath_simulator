@@ -1,0 +1,55 @@
+{
+  "patch": "MTB_HEM_001 Asset / Content Upgrade",
+  "patch_id": "v2.6.0-rc1+MTB_HEM_001_ASSET01",
+  "base": "MolPath Simulator v2.6.0-rc1 + MTB_CNS_003_ASSET01",
+  "case_id": "MTB_HEM_001_v1_3",
+  "asset_count": 7,
+  "scope": {
+    "content_alignment": true,
+    "deep_dive_alignment": true,
+    "asset_layer": true,
+    "global_score_logic_changes": false,
+    "course_changes": false,
+    "signature_taxonomy_changes": false
+  },
+  "base_fingerprints_sha256": {
+    "v1/index.html": "16fa46c248f16f168e0430e2350288adfb31ccbc2aa0753f3df887b8b1282416",
+    "v1/data/cases_v1_4_universal_methods.json": "54496d196c21bc83a8386b21b1723d36be68f0b2bf9046ac12d412eeef4573ec",
+    "v1/v260rc1_mtb_cns_003_asset_upgrade.js": "5078491b362a473e924634400b101276f9a7e91e5bc55f9f5c9ad6d01a18f1d2",
+    "v1/v250b_signature_taxonomy_freeze.js": "41a68e6be8ad2373de9c144707ac0de1ac759764054c5b4692c6308019fd7d28"
+  },
+  "asset_flow": {
+    "intake": [
+      "referral_hematology_001.png"
+    ],
+    "histology": [
+      "peripheral_blood_smear_001.png",
+      "bone_marrow_aspirate_001.png",
+      "bone_marrow_trephine_001.png"
+    ],
+    "heme_panel_selected": [
+      "flow_cytogenetics_001.png",
+      "myeloid_ngs_001.png"
+    ],
+    "finalized_heme_panel": [
+      "integrated_hematopath_final_001.png"
+    ]
+  },
+  "files": [
+    "v1/APPLY_MTB_HEM_001_ASSET_UPGRADE_v260rc1.txt",
+    "v1/CHANGELOG_MTB_HEM_001_ASSET_UPGRADE_v260rc1.md",
+    "v1/MANIFEST_MTB_HEM_001_ASSET_UPGRADE_v260rc1.json",
+    "v1/QA_MTB_HEM_001_ASSET_UPGRADE_v260rc1.json",
+    "v1/SHA256SUMS_MTB_HEM_001_ASSET_UPGRADE_v260rc1.txt",
+    "v1/assets/mtb_hem_001/bone_marrow_aspirate_001.png",
+    "v1/assets/mtb_hem_001/bone_marrow_trephine_001.png",
+    "v1/assets/mtb_hem_001/flow_cytogenetics_001.png",
+    "v1/assets/mtb_hem_001/integrated_hematopath_final_001.png",
+    "v1/assets/mtb_hem_001/myeloid_ngs_001.png",
+    "v1/assets/mtb_hem_001/peripheral_blood_smear_001.png",
+    "v1/assets/mtb_hem_001/referral_hematology_001.png",
+    "v1/data/cases_v1_4_universal_methods.json",
+    "v1/index.html",
+    "v1/v260rc1_mtb_hem_001_asset_upgrade.js"
+  ]
+}

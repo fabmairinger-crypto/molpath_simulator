@@ -6232,12 +6232,12 @@
   },
   {
     "id": "MTB_HEM_001_v1_3",
-    "title": "MDS/AML mit DNMT3A/TET2/ASXL1 → CHIP vs. hämatologische Neoplasie",
-    "short": "MDS/AML mit DNMT3A/TET2/ASXL1",
+    "title": "Persistierende Zytopenien mit DTA-Klon → CCUS vs. myelodysplastische Neoplasie",
+    "short": "Zytopenien + DTA-Klon: CCUS vs. MDS",
     "mode": "patient_care",
     "logic": "generic_patient",
-    "difficulty": "intermediate",
-    "estimated_time_min": "8–15",
+    "difficulty": "advanced",
+    "estimated_time_min": "12–16",
     "budget": {
       "points_max": 1050,
       "sections_max": 16,
@@ -6258,16 +6258,16 @@
             "MTB_HEM_001"
           ],
           [
+            "Patient",
+            "72 Jahre, männlich"
+          ],
+          [
             "Einsender",
-            "Onkologie / Pathologie / Molekulares Tumorboard"
+            "Hämatologie / Hämatopathologie"
           ],
           [
             "Klinische Frage",
-            "CHIP vs. hämatologische Neoplasie"
-          ],
-          [
-            "Quelle / Kapitelbasis",
-            "Bioanalytik Hämato; Tumorbiologie Epigenetik"
+            "Persistierende Zytopenien: CCUS oder myelodysplastische Neoplasie? Welche Rolle spielt ein DTA-Mutationsmuster?"
           ]
         ]
       },
@@ -6276,20 +6276,20 @@
         "title": "Anamnese und klinischer Kontext",
         "items": [
           [
-            "Klinischer Rahmen",
-            "MDS/AML mit DNMT3A/TET2/ASXL1"
+            "Klinischer Verlauf",
+            "Seit etwa 6 Monaten persistierende makrozytäre Anämie, Neutropenie und Thrombozytopenie mit langsamer Progredienz."
+          ],
+          [
+            "Aktuelles Blutbild",
+            "Hb 9,5 g/dL; MCV 106 fL; Leukozyten 3,0 ×10^9/L; Neutrophile 1,3 ×10^9/L; Thrombozyten 105 ×10^9/L."
+          ],
+          [
+            "Sekundäre Ursachen",
+            "Vitamin B12, Folat, Eisenstatus, TSH sowie Nieren-/Leberparameter unauffällig; keine relevante Myelotoxin-Exposition."
           ],
           [
             "Entscheidungsdruck",
-            "Der Fall soll in einem Tumorboard oder einer fallbezogenen Besprechung eingeordnet werden."
-          ],
-          [
-            "Didaktische Falle",
-            "Ein Einzelmarker oder eine Einzelmethode kann die Kernentscheidung häufig nicht ausreichend beantworten."
-          ],
-          [
-            "Ziel",
-            "Aus Morphologie, Material, Methode und Biologie eine belastbare Empfehlung ableiten."
+            "Klonale Hämatopoese soll von einer manifesten myeloischen Neoplasie abgegrenzt werden."
           ]
         ]
       },
@@ -6298,20 +6298,20 @@
         "title": "Histologie + Vorinformation",
         "items": [
           [
-            "Morphologie",
-            "Tumor-/Materialkontext ist plausibel, aber für die Kernentscheidung nicht ausreichend."
+            "Peripheres Blut",
+            "Makrozytose und diskrete Dysgranulopoese; keine zirkulierende Blastenzunahme."
           ],
           [
-            "Vor-IHC",
-            "Basisdiagnostik liegt vor bzw. ist nachzufordern, wenn sie für die Interpretation nötig ist."
+            "Knochenmarkaspirat",
+            "Signifikante Dysplasie mehrerer Zellreihen; Dyserythropoese und Dysgranulopoese, einzelne dysplastische Megakaryozyten; Blasten ca. 2–3 %."
           ],
           [
-            "Offene Frage",
-            "CHIP vs. hämatologische Neoplasie"
+            "Trepanobiopsie",
+            "Für das Alter deutlich hyperzelluläres Knochenmark mit dysplastischer Megakaryopoese; CD34-positive Blasten niedrig, keine Blastennesterung."
           ],
           [
-            "Hinweis",
-            "Die Entscheidung soll nicht reflexartig, sondern methodisch begründet getroffen werden."
+            "Arbeitsdiagnose",
+            "Morphologisch myelodysplastische Neoplasie bei niedriger Blastenzahl; molekulare Befunde dienen der Klonalitäts- und Integrationsbewertung."
           ]
         ]
       },
@@ -6321,19 +6321,19 @@
         "items": [
           [
             "Material",
-            "FFPE-Gewebe bzw. fallabhängiges Routine-/Progressionsmaterial."
+            "EDTA-Blut, Knochenmarkaspirat und Knochenmarktrepanobiopsie."
           ],
           [
-            "Tumoranteil",
-            "ausreichend bis grenzwertig, abhängig von gewählter Methode."
+            "Durchflusszytometrie",
+            "Myeloische Blasten ca. 2,8 %; leichte Reifungsasynchronie der Granulopoese, kein AML-typisches Muster."
           ],
           [
-            "Schnittbudget",
-            "didaktisch begrenzt; unnötige Zusatztests kosten Material und TAT."
+            "Zytogenetik",
+            "46,XY[20]; keine klonale numerische oder strukturelle Aberration in der konventionellen Karyotypisierung."
           ],
           [
-            "Präanalytik",
-            "Materialqualität, Aussagegrenzen und Nachforderung aktiv berücksichtigen."
+            "Molekularpathologie",
+            "Gezieltes myeloisches DNA-NGS; Varianten müssen im Kontext von Zytopenien und Morphologie interpretiert werden."
           ]
         ]
       }
@@ -6350,40 +6350,69 @@
     ],
     "result_sections": [
       {
-        "label": "Hämato-/CHIP-Kontext",
+        "label": "Myeloisches NGS / klonale Hämatopoese",
         "test_any": [
           "epigenetic_heme_panel"
         ],
-        "result": "DNMT3A/TET2/ASXL1-Kontext wird zwischen CHIP und Neoplasie eingeordnet."
+        "result": "DNMT3A NM_022552.5:c.2645G>A, p.Arg882His (VAF 31,2 %); TET2 NM_001127208.3:c.3646C>T, p.Arg1216Ter (VAF 27,8 %); ASXL1 NM_015338.5:c.1934dup, p.Gly646Trpfs*12 (VAF 18,6 %). Das DTA-Muster belegt klonale Hämatopoese, ist aber für sich allein nicht spezifisch für MDS."
+      },
+      {
+        "label": "Integrierte Hämatopathologie",
+        "test_any": [
+          "broad_pan_panel"
+        ],
+        "result": "Persistierende Zytopenien, signifikante Dysplasie mehrerer Zellreihen und niedrige Blastenzahl sind mit einer myelodysplastischen Neoplasie mit niedriger Blastenzahl vereinbar; konventionelle Zytogenetik 46,XY[20]."
       }
     ],
     "always_findings": [
       [
-        "QC",
-        "Fallabhängige QC verwertbar, sofern die gewählte Methode material- und fragestellungsgerecht ist."
+        "Morphologie",
+        "Signifikante Dysplasie mehrerer Zellreihen bei niedriger Blastenzahl (ca. 2–3 %)."
+      ],
+      [
+        "Klinischer Kontext",
+        "Persistierende, anderweitig nicht erklärte Anämie, Neutropenie und Thrombozytopenie."
+      ],
+      [
+        "Zytogenetik / Flow",
+        "46,XY[20]; keine relevante Blastenzunahme, leichte myeloische Reifungsasynchronie."
       ]
     ],
-    "complete_interpretation": "Integrierte Interpretation vollständig: CHIP vs. hämatologische Neoplasie Die gewählten Methoden beantworten die Kernfrage mit angemessener Aussagekraft und Limitationen.",
-    "partial_interpretation": "Teilbefund: Für die Kernentscheidung („CHIP vs. hämatologische Neoplasie“) fehlen noch zentrale Bausteine oder die Methode ist zu eng gewählt.",
+    "complete_interpretation": "Integrierte Diagnose: myelodysplastische Neoplasie mit niedriger Blastenzahl (WHO-HAEM5: MDS-LB; ICC: MDS, NOS with multilineage dysplasia). Diagnosebegründend sind die persistierenden Zytopenien und die signifikante Dysplasie mehrerer Zellreihen bei niedriger Blastenzahl. DNMT3A-, TET2- und ASXL1-Varianten belegen klonale Hämatopoese und unterstützen die Integration, sind jedoch für sich allein nicht MDS-spezifisch.",
+    "partial_interpretation": "Teilbefund: Der Nachweis von DNMT3A/TET2/ASXL1 beweist klonale Hämatopoese, unterscheidet allein aber nicht zwischen CHIP, CCUS und MDS. Für die Diagnose sind Zytopenien, Knochenmarkmorphologie, Blastenzahl und weitere klassifikationsrelevante Befunde erforderlich.",
     "mtb_checks": [
       [
-        "heme_epi",
-        "Hämato-/CHIP-Kontext in der MTB-Kernaussage korrekt einordnen"
+        "morphology",
+        "Persistierende Zytopenien und signifikante multilineäre Dysplasie als diagnosebegründende Befunde benennen"
+      ],
+      [
+        "clone",
+        "DTA-Mutationen als Klonalitätsnachweis, nicht als alleinigen MDS-Beweis einordnen"
+      ],
+      [
+        "classification",
+        "WHO-HAEM5 MDS-LB und ICC MDS, NOS with multilineage dysplasia korrekt zuordnen"
       ],
       [
         "limits",
-        "Aussagegrenzen und ggf. Nachforderung klar kommunizieren"
+        "Methodengrenzen des zielgerichteten DNA-Panels transparent kommunizieren"
       ],
       [
         "bad",
-        "Falschaussage: Ein isolierter Marker reicht ohne Kontext sicher aus"
+        "Falschaussage: DNMT3A/TET2/ASXL1 allein diagnostizieren MDS"
       ]
     ],
-    "optimal_summary": "Optimale Lösung: CHIP vs. hämatologische Neoplasie – mit fallgerechter Methodenkombination, Material-/QC-Bewertung und klarer MTB-Kommunikation.",
+    "optimal_summary": "Optimale Lösung: Persistierende Zytopenien + diagnostisch relevante Dysplasie mehrerer Zellreihen + niedrige Blastenzahl integrieren; DTA-Klon als Klonalitätsnachweis einordnen, ohne die Molekulargenetik als alleinigen Diagnosebeweis zu überinterpretieren.",
     "tags": [
       "MTB",
       "Phase",
-      "Standard"
+      "Standard",
+      "MDS-LB",
+      "CCUS",
+      "DNMT3A",
+      "TET2",
+      "ASXL1",
+      "Klonale Hämatopoese"
     ]
   },
   {

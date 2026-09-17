@@ -1,0 +1,154 @@
+{
+  "patch_id": "v2.6.0-rc1+MTB_HEM_001_ASSET01",
+  "base": "v2.6.0-rc1 + MTB_CNS_003_ASSET01",
+  "case_id": "MTB_HEM_001_v1_3",
+  "generated_utc": "2026-09-17",
+  "checks": [
+    {
+      "check": "asset:referral_hematology_001.png",
+      "status": "PASS",
+      "detail": "PNG readable; 1024x1536; 1879203 bytes"
+    },
+    {
+      "check": "asset:peripheral_blood_smear_001.png",
+      "status": "PASS",
+      "detail": "PNG readable; 1536x1024; 1912126 bytes"
+    },
+    {
+      "check": "asset:bone_marrow_aspirate_001.png",
+      "status": "PASS",
+      "detail": "PNG readable; 1536x1024; 2319012 bytes"
+    },
+    {
+      "check": "asset:bone_marrow_trephine_001.png",
+      "status": "PASS",
+      "detail": "PNG readable; 1536x1024; 2554381 bytes"
+    },
+    {
+      "check": "asset:flow_cytogenetics_001.png",
+      "status": "PASS",
+      "detail": "PNG readable; 1536x1024; 1876222 bytes"
+    },
+    {
+      "check": "asset:myeloid_ngs_001.png",
+      "status": "PASS",
+      "detail": "PNG readable; 1536x1024; 1800027 bytes"
+    },
+    {
+      "check": "asset:integrated_hematopath_final_001.png",
+      "status": "PASS",
+      "detail": "PNG readable; 1536x1024; 2069099 bytes"
+    },
+    {
+      "check": "javascript syntax",
+      "status": "PASS",
+      "detail": "node --check clean"
+    },
+    {
+      "check": "index script include",
+      "status": "PASS",
+      "detail": "include count=1"
+    },
+    {
+      "check": "signature taxonomy remains last external script",
+      "status": "PASS",
+      "detail": "last external script=v250b_signature_taxonomy_freeze.js"
+    },
+    {
+      "check": "prior CNS patch retained",
+      "status": "PASS",
+      "detail": "CNS asset-upgrade layer remains loaded before HEM and signature freeze."
+    },
+    {
+      "check": "FOM integration retained",
+      "status": "PASS",
+      "detail": "Index derives from the user's current rc1+CNS patch state; only one HEM script include was inserted before the final Signature-taxonomy script."
+    },
+    {
+      "check": "case count",
+      "status": "PASS",
+      "detail": "91 cases"
+    },
+    {
+      "check": "canonical case contains: 72 Jahre",
+      "status": "PASS",
+      "detail": "72 Jahre"
+    },
+    {
+      "check": "canonical case contains: 9,5 g/dL",
+      "status": "PASS",
+      "detail": "9,5 g/dL"
+    },
+    {
+      "check": "canonical case contains: 2–3 %",
+      "status": "PASS",
+      "detail": "2–3 %"
+    },
+    {
+      "check": "canonical case contains: DNMT3A",
+      "status": "PASS",
+      "detail": "DNMT3A"
+    },
+    {
+      "check": "canonical case contains: TET2",
+      "status": "PASS",
+      "detail": "TET2"
+    },
+    {
+      "check": "canonical case contains: ASXL1",
+      "status": "PASS",
+      "detail": "ASXL1"
+    },
+    {
+      "check": "canonical case contains: MDS-LB",
+      "status": "PASS",
+      "detail": "MDS-LB"
+    },
+    {
+      "check": "canonical case contains: multilineage dysplasia",
+      "status": "PASS",
+      "detail": "multilineage dysplasia"
+    },
+    {
+      "check": "runtime references all 7 assets",
+      "status": "PASS",
+      "detail": "missing=[]"
+    },
+    {
+      "check": "DTA core message",
+      "status": "PASS",
+      "detail": "DTA mutations are explicitly framed as clonality markers, not stand-alone MDS proof."
+    },
+    {
+      "check": "WHO/ICC classification split",
+      "status": "PASS",
+      "detail": "WHO-HAEM5 MDS-LB and ICC MDS, NOS with multilineage dysplasia are separated."
+    },
+    {
+      "check": "targeted DNA panel limits retained",
+      "status": "PASS",
+      "detail": "Panel limitations are part of the case-local MTB checks."
+    },
+    {
+      "check": "signature taxonomy unchanged by patch",
+      "status": "PASS",
+      "detail": "Patch package does not contain v250b_signature_taxonomy_freeze.js; existing final 30-case taxonomy remains authoritative."
+    },
+    {
+      "check": "global scoring/course changes absent",
+      "status": "PASS",
+      "detail": "Case-local renderer/content/deep-dive layer only; no global score-weight or course membership mutation."
+    },
+    {
+      "check": "final asset guard",
+      "status": "PASS",
+      "detail": "Final integrated report requires case finalization + heme panel selection."
+    }
+  ],
+  "summary": {
+    "pass": 28,
+    "warn": 0,
+    "fail": 0,
+    "browser_visual_test": "NOT RUN in this build environment; static/runtime-structure QA only."
+  }
+}

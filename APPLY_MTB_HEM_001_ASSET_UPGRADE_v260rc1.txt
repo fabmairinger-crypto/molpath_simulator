@@ -1,0 +1,30 @@
+MTB_HEM_001 Asset / Content Upgrade — apply notes
+
+Base required:
+- MolPath Simulator v2.6.0-rc1
+- MTB_CNS_003 asset upgrade already applied (the current Git state used for this patch)
+
+Patch ID: v2.6.0-rc1+MTB_HEM_001_ASSET01
+
+Recommended Git workflow
+1. Ensure the working tree is clean and contains the already-pushed MTB_CNS_003 upgrade.
+2. Extract this ZIP outside the repository.
+3. Copy/merge its v1/ directory over the repository's v1/ directory.
+4. Overwrite only the files present in this patch. Do NOT delete other runtime files.
+5. Verify SHA256SUMS_MTB_HEM_001_ASSET_UPGRADE_v260rc1.txt if desired.
+6. Launch v1/index.html through the same local/web wrapper used for the simulator and open MTB_HEM_001.
+7. Expected flow: hematology referral → peripheral smear → marrow aspirate/trephine → flow/cytogenetics + myeloid NGS after heme-panel selection → integrated MDS-LB report after finalization.
+
+Base fingerprints (guard against applying to a different branch)
+- v1/index.html: 16fa46c248f16f168e0430e2350288adfb31ccbc2aa0753f3df887b8b1282416
+- v1/data/cases_v1_4_universal_methods.json: 54496d196c21bc83a8386b21b1723d36be68f0b2bf9046ac12d412eeef4573ec
+- v1/v260rc1_mtb_cns_003_asset_upgrade.js: 5078491b362a473e924634400b101276f9a7e91e5bc55f9f5c9ad6d01a18f1d2
+- v1/v250b_signature_taxonomy_freeze.js: 41a68e6be8ad2373de9c144707ac0de1ac759764054c5b4692c6308019fd7d28
+
+Scope guardrails
+- No global scoring changes.
+- No course membership changes.
+- No Signature taxonomy changes.
+- Existing MTB_CNS_003 upgrade remains loaded.
+- v250b_signature_taxonomy_freeze.js remains the final external script in index.html.
+- Existing FOM/manual integration is not modified.
