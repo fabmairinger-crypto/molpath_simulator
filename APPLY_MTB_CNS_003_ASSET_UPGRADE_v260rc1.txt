@@ -1,0 +1,25 @@
+MTB_CNS_003 Asset / Content Upgrade — apply notes
+
+Base required: MolPath Simulator v2.6.0-rc1 (the exact Git/ZIP state used for this patch).
+Patch ID: v2.6.0-rc1+MTB_CNS_003_ASSET01
+
+Recommended Git workflow
+1. Ensure the working tree is clean and is based on the same v2.6.0-rc1 state.
+2. Extract this ZIP outside the repository.
+3. Copy/merge its v1/ directory over the repository's v1/ directory.
+4. Overwrite only the files present in this patch. Do NOT delete other runtime files.
+5. Verify SHA256SUMS_MTB_CNS_003_ASSET_UPGRADE_v260rc1.txt if desired.
+6. Launch v1/index.html through the same local/web wrapper used for the simulator and open MTB_CNS_003.
+7. Expected flow: intake referral → H&E overview/detail + IHC → methylation B1/B2 after classifier selection → final integrated report after finalization with classifier + broad panel.
+
+Base fingerprints (guard against applying to a different branch)
+- v1/index.html: a930c3c4af1855cfdd4db433da40daa86b4e35fe7cf6a9348f292f6374e3e26b
+- v1/data/cases_v1_4_universal_methods.json: aaed62f7091c9706f0ea1cc6a5526a74ce7d5ca696d366f14ffbf99d043d7723
+- v1/v250b_signature_taxonomy_freeze.js: 41a68e6be8ad2373de9c144707ac0de1ac759764054c5b4692c6308019fd7d28
+
+Scope guardrails
+- No global scoring changes.
+- No course membership changes.
+- No Signature taxonomy changes.
+- v250b_signature_taxonomy_freeze.js remains the final script in index.html.
+- Existing FOM/manual integration is not modified.

@@ -1,0 +1,53 @@
+{
+  "patch": "MTB_CNS_003 Asset / Content Upgrade",
+  "patch_id": "v2.6.0-rc1+MTB_CNS_003_ASSET01",
+  "base": "MolPath Simulator v2.6.0-rc1",
+  "case_id": "MTB_CNS_003_v1_3",
+  "asset_count": 7,
+  "scope": {
+    "content_alignment": true,
+    "asset_layer": true,
+    "score_logic_changes": false,
+    "course_changes": false,
+    "signature_taxonomy_changes": false
+  },
+  "base_fingerprints_sha256": {
+    "v1/index.html": "a930c3c4af1855cfdd4db433da40daa86b4e35fe7cf6a9348f292f6374e3e26b",
+    "v1/data/cases_v1_4_universal_methods.json": "aaed62f7091c9706f0ea1cc6a5526a74ce7d5ca696d366f14ffbf99d043d7723",
+    "v1/v250b_signature_taxonomy_freeze.js": "41a68e6be8ad2373de9c144707ac0de1ac759764054c5b4692c6308019fd7d28"
+  },
+  "files": [
+    "v1/APPLY_MTB_CNS_003_ASSET_UPGRADE_v260rc1.txt",
+    "v1/CHANGELOG_MTB_CNS_003_ASSET_UPGRADE_v260rc1.md",
+    "v1/MANIFEST_MTB_CNS_003_ASSET_UPGRADE_v260rc1.json",
+    "v1/QA_MTB_CNS_003_ASSET_UPGRADE_v260rc1.json",
+    "v1/SHA256SUMS_MTB_CNS_003_ASSET_UPGRADE_v260rc1.txt",
+    "v1/assets/mtb_cns_003/he_detail_001.png",
+    "v1/assets/mtb_cns_003/he_overview_001.png",
+    "v1/assets/mtb_cns_003/ihc_panel_001.png",
+    "v1/assets/mtb_cns_003/integrated_neuropath_final_001.png",
+    "v1/assets/mtb_cns_003/methylation_b1_low_tumor_001.png",
+    "v1/assets/mtb_cns_003/methylation_b2_hgap_001.png",
+    "v1/assets/mtb_cns_003/referral_neurosurgery_001.png",
+    "v1/data/cases_v1_4_universal_methods.json",
+    "v1/index.html",
+    "v1/v260rc1_mtb_cns_003_asset_upgrade.js"
+  ],
+  "asset_flow": {
+    "intake": [
+      "referral_neurosurgery_001.png"
+    ],
+    "histology": [
+      "he_overview_001.png",
+      "he_detail_001.png",
+      "ihc_panel_001.png"
+    ],
+    "classifier_selected": [
+      "methylation_b1_low_tumor_001.png",
+      "methylation_b2_hgap_001.png"
+    ],
+    "finalized_classifier_plus_broad_panel": [
+      "integrated_neuropath_final_001.png"
+    ]
+  }
+}

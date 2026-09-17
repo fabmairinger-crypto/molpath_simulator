@@ -1,0 +1,129 @@
+{
+  "patch_id": "v2.6.0-rc1+MTB_CNS_003_ASSET01",
+  "base": "MolPath Simulator v2.6.0-rc1",
+  "case_id": "MTB_CNS_003_v1_3",
+  "generated_utc": "2026-09-17",
+  "checks": [
+    {
+      "check": "asset:referral_neurosurgery_001.png",
+      "status": "PASS",
+      "detail": "PNG readable; 1055x1491; 1865652 bytes"
+    },
+    {
+      "check": "asset:he_overview_001.png",
+      "status": "PASS",
+      "detail": "PNG readable; 1448x1086; 2734184 bytes"
+    },
+    {
+      "check": "asset:he_detail_001.png",
+      "status": "PASS",
+      "detail": "PNG readable; 1536x1024; 3210078 bytes"
+    },
+    {
+      "check": "asset:ihc_panel_001.png",
+      "status": "PASS",
+      "detail": "PNG readable; 1536x1024; 2456969 bytes"
+    },
+    {
+      "check": "asset:methylation_b1_low_tumor_001.png",
+      "status": "PASS",
+      "detail": "PNG readable; 1536x1024; 1781137 bytes"
+    },
+    {
+      "check": "asset:methylation_b2_hgap_001.png",
+      "status": "PASS",
+      "detail": "PNG readable; 1536x1024; 1856268 bytes"
+    },
+    {
+      "check": "asset:integrated_neuropath_final_001.png",
+      "status": "PASS",
+      "detail": "PNG readable; 1536x1024; 2205410 bytes"
+    },
+    {
+      "check": "javascript syntax",
+      "status": "PASS",
+      "detail": "node --check clean"
+    },
+    {
+      "check": "index script include",
+      "status": "PASS",
+      "detail": "include count=1"
+    },
+    {
+      "check": "signature taxonomy remains last external script",
+      "status": "PASS",
+      "detail": "last external script=v250b_signature_taxonomy_freeze.js"
+    },
+    {
+      "check": "FOM integration retained",
+      "status": "PASS",
+      "detail": "Patched index is byte-identical to the rc1 base except for one script include inserted immediately before the final Signature-taxonomy script; the existing FOM integration is therefore retained unchanged."
+    },
+    {
+      "check": "case count",
+      "status": "PASS",
+      "detail": "91 cases"
+    },
+    {
+      "check": "canonical case contains: 47 Jahre",
+      "status": "PASS",
+      "detail": "47 Jahre"
+    },
+    {
+      "check": "canonical case contains: 3,8 cm",
+      "status": "PASS",
+      "detail": "3,8 cm"
+    },
+    {
+      "check": "canonical case contains: Block B1",
+      "status": "PASS",
+      "detail": "Block B1"
+    },
+    {
+      "check": "canonical case contains: Block B2",
+      "status": "PASS",
+      "detail": "Block B2"
+    },
+    {
+      "check": "canonical case contains: 0,96",
+      "status": "PASS",
+      "detail": "0,96"
+    },
+    {
+      "check": "canonical case contains: High-grade astrocytoma with piloid features",
+      "status": "PASS",
+      "detail": "High-grade astrocytoma with piloid features"
+    },
+    {
+      "check": "canonical case contains: CDKN2A/B",
+      "status": "PASS",
+      "detail": "CDKN2A/B"
+    },
+    {
+      "check": "runtime references all 7 assets",
+      "status": "PASS",
+      "detail": "missing=[]"
+    },
+    {
+      "check": "taxonomy file unchanged",
+      "status": "PASS",
+      "detail": "base SHA256 preserved; patch package does not contain v250b_signature_taxonomy_freeze.js (41a68e6be8ad2373de9c144707ac0de1ac759764054c5b4692c6308019fd7d28)"
+    },
+    {
+      "check": "global scoring/completion patch absent",
+      "status": "PASS",
+      "detail": "Case-local renderer/content layer only; no score weight mutation detected."
+    },
+    {
+      "check": "final asset guard",
+      "status": "PASS",
+      "detail": "Final image requires finalization + methylation classifier + broad panel."
+    }
+  ],
+  "summary": {
+    "pass": 23,
+    "warn": 0,
+    "fail": 0,
+    "browser_visual_test": "NOT RUN in this build environment; static/runtime-structure QA only."
+  }
+}
