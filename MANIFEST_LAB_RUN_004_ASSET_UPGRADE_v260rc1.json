@@ -1,0 +1,55 @@
+{
+  "patch": "LAB_RUN_004 Asset / Story / i18n Upgrade",
+  "patch_id": "v2.6.0-rc1+LAB_RUN_004_ASSET01_I18N",
+  "base": "v2.6.0-rc1 + MTB_CNS_003_ASSET01 + MTB_HEM_001_ASSET01",
+  "case_id": "LAB_RUN_004_v1_3",
+  "asset_count": 7,
+  "languages": [
+    "de",
+    "en",
+    "ro",
+    "el",
+    "es",
+    "fr",
+    "ru",
+    "tr",
+    "ar",
+    "fa",
+    "uk"
+  ],
+  "new_runtime_i18n_strings": 23,
+  "scope": {
+    "assets": true,
+    "canonical_case_alignment": true,
+    "deep_dive_outcome_alignment": true,
+    "i18n_sync_new_strings": true,
+    "signature_taxonomy_changes": false,
+    "course_changes": false,
+    "global_scoring_changes": false
+  },
+  "base_fingerprints_sha256": {
+    "v1/index.html": "d4bfa17503d983a9c8f456a4f05f4c5a1becf3320d5802713c66dcebb601135a",
+    "v1/data/cases_v1_4_universal_methods.json": "3d7b65346731a89ee88aaf71affe6a581eabd97a5256e0934de9ddc5f8c739ea",
+    "v1/v260rc1_mtb_cns_003_asset_upgrade.js": "5078491b362a473e924634400b101276f9a7e91e5bc55f9f5c9ad6d01a18f1d2",
+    "v1/v260rc1_mtb_hem_001_asset_upgrade.js": "d77fe69301545027c7f6d8cc0abffa3cf613371d13c38a0f8ca6587b6afc3839",
+    "v1/v250b_signature_taxonomy_freeze.js": "41a68e6be8ad2373de9c144707ac0de1ac759764054c5b4692c6308019fd7d28"
+  },
+  "files": [
+    "v1/APPLY_LAB_RUN_004_ASSET_UPGRADE_v260rc1.txt",
+    "v1/CHANGELOG_LAB_RUN_004_ASSET_UPGRADE_v260rc1.md",
+    "v1/MANIFEST_LAB_RUN_004_ASSET_UPGRADE_v260rc1.json",
+    "v1/QA_LAB_RUN_004_ASSET_UPGRADE_v260rc1.json",
+    "v1/QA_LAB_RUN_004_I18N_SYNC_v260rc1.json",
+    "v1/assets/lab_run_004/change_control_closeout_001.png",
+    "v1/assets/lab_run_004/lot_change_initial_001.png",
+    "v1/assets/lab_run_004/lot_release_checklist_001.png",
+    "v1/assets/lab_run_004/reference_material_targets_001.png",
+    "v1/assets/lab_run_004/run_qc_lot_comparison_001.png",
+    "v1/assets/lab_run_004/variant_concordance_001.png",
+    "v1/assets/lab_run_004/verification_plan_001.png",
+    "v1/data/cases_v1_4_universal_methods.json",
+    "v1/index.html",
+    "v1/v260rc1_lab_run_004_asset_upgrade.js",
+    "v1/SHA256SUMS_LAB_RUN_004_ASSET_UPGRADE_v260rc1.txt"
+  ]
+}

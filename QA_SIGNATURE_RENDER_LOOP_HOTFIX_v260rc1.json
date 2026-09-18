@@ -1,0 +1,52 @@
+{
+  "patch_id": "v2.6.0-rc1+SIGNATURE_RENDER_LOOP_HOTFIX01",
+  "cause": "MutationObserver(i18n) -> MolPathI18nAfterApply -> cleanup() -> unconditional Signature badge/KPI DOM replacement -> MutationObserver loop",
+  "checks": [
+    {
+      "check": "version bumped",
+      "status": "PASS",
+      "detail": "idempotent hotfix version present"
+    },
+    {
+      "check": "library badge no unconditional remove/reinsert",
+      "status": "PASS",
+      "detail": "legacy unconditional badge churn removed"
+    },
+    {
+      "check": "library badge dedupes",
+      "status": "PASS",
+      "detail": "keeps one existing badge and removes extras only"
+    },
+    {
+      "check": "hero badge idempotent",
+      "status": "PASS",
+      "detail": "retains one existing hero badge"
+    },
+    {
+      "check": "KPI write conditional",
+      "status": "PASS",
+      "detail": "avoids no-op textContent childList mutations"
+    },
+    {
+      "check": "i18n observer hook retained",
+      "status": "PASS",
+      "detail": "cleanup still runs after i18n, now without stable-state DOM churn"
+    },
+    {
+      "check": "signature authority retained",
+      "status": "PASS",
+      "detail": "final signature set unchanged"
+    },
+    {
+      "check": "case filter authority retained",
+      "status": "PASS",
+      "detail": "30-case final filter logic unchanged"
+    }
+  ],
+  "summary": {
+    "pass": 8,
+    "fail": 0,
+    "warn": 0
+  },
+  "browser_visual_test": "Not available in build environment; patch targets the identified deterministic DOM feedback loop."
+}

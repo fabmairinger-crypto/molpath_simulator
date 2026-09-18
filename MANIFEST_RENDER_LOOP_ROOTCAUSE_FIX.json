@@ -1,0 +1,23 @@
+{
+  "patch_id": "v2.6.0-rc1-render-loop-rootcause-fix1",
+  "files": [
+    "v1/APPLY_RENDER_LOOP_ROOTCAUSE_FIX.txt",
+    "v1/MANIFEST_RENDER_LOOP_ROOTCAUSE_FIX.json",
+    "v1/QA_RENDER_LOOP_ROOTCAUSE_FIX.json",
+    "v1/SHA256SUMS_RENDER_LOOP_ROOTCAUSE_FIX.txt",
+    "v1/i18n/core.js",
+    "v1/i18n/legacy/legacy_v240t_signature_i18n.js",
+    "v1/v250b_signature_taxonomy_freeze.js",
+    "v1/v260rc1_lab_run_004_asset_upgrade.js"
+  ],
+  "changes": [
+    "i18n observer lifecycle made self-loop-safe",
+    "Signature cleanup decoupled from MolPathI18nAfterApply",
+    "hero Signature badges made language-independent/idempotent",
+    "legacy hard-coded Signature KPI 15 replaced by current authority",
+    "LAB direct synchronous i18n applyNow removed"
+  ],
+  "taxonomy_changes": false,
+  "case_content_changes": false,
+  "asset_changes": false
+}

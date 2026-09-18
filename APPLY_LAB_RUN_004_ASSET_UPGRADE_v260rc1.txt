@@ -1,0 +1,34 @@
+LAB_RUN_004 Asset / Story / i18n Upgrade — apply notes
+
+Required base:
+- MolPath Simulator v2.6.0-rc1
+- MTB_CNS_003 asset upgrade applied
+- MTB_HEM_001 asset upgrade applied
+
+Patch ID: v2.6.0-rc1+LAB_RUN_004_ASSET01_I18N
+
+Apply
+1. Ensure the current Git working tree contains the previously pushed CNS + HEM upgrades.
+2. Extract this patch outside the repository.
+3. Merge/copy the included `v1/` over the repository `v1/` and overwrite only files supplied by this patch.
+4. Do not delete any other runtime files.
+5. Open LAB_RUN_004 and test DE plus at least one LTR and one RTL locale.
+
+Base SHA256 fingerprints
+- v1/index.html: d4bfa17503d983a9c8f456a4f05f4c5a1becf3320d5802713c66dcebb601135a
+- v1/data/cases_v1_4_universal_methods.json: 3d7b65346731a89ee88aaf71affe6a581eabd97a5256e0934de9ddc5f8c739ea
+- v1/v260rc1_mtb_cns_003_asset_upgrade.js: 5078491b362a473e924634400b101276f9a7e91e5bc55f9f5c9ad6d01a18f1d2
+- v1/v260rc1_mtb_hem_001_asset_upgrade.js: d77fe69301545027c7f6d8cc0abffa3cf613371d13c38a0f8ca6587b6afc3839
+- v1/v250b_signature_taxonomy_freeze.js: 41a68e6be8ad2373de9c144707ac0de1ac759764054c5b4692c6308019fd7d28
+
+Localization
+- New/changed LAB_RUN_004 dynamic strings are supplied for all 10 non-DE locales.
+- Raster asset text remains German by design.
+- Existing translations for unchanged LAB_RUN_004 strings are reused.
+
+Scope guardrails
+- No Signature taxonomy change.
+- No course membership change.
+- No global scoring change.
+- CNS + HEM upgrade scripts remain loaded.
+- Signature taxonomy freeze remains the last external runtime script.

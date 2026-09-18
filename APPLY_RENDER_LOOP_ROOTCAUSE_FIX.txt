@@ -1,0 +1,35 @@
+MolPath v2.6.0-rc1 — Render Loop Root-Cause Fix
+
+Applies to:
+- current v2.6.0-rc1 tree
+- MTB_CNS_003 patch applied
+- MTB_HEM_001 patch applied
+- LAB_RUN_004 patch applied
+- previous SIGNATURE_RENDER_LOOP_hotfix may already be applied
+
+No rollback is required.
+
+Apply:
+1. Close/reload the currently looping simulator tab.
+2. Merge this ZIP's v1/ over your repository's v1/.
+3. Overwrite the four JS files contained in this patch.
+4. Hard reload / clear the current page instance so the old in-memory observer and wrappers are gone.
+
+Root cause fixed:
+- i18n MutationObserver previously observed DOM writes produced by its own AfterApply hooks.
+- legacy UI hooks rebuild filters/tags during AfterApply, causing another i18n cycle.
+- translated Signature hero badges could no longer be reliably recognized by text, allowing duplicate badges to accumulate.
+
+Fix:
+- observer is disconnected during translation + AfterApply and reattached afterwards;
+- Signature freeze no longer attaches its cleanup to every i18n pass;
+- final Signature hero badge is identified by data-signature-authority, independent of language;
+- old hard-coded Signature KPI=15 is removed;
+- LAB upgrade no longer forces applyNow() during boot.
+
+Expected:
+- no growing Signature-badge batches;
+- initial page load stabilizes;
+- one Signature badge per applicable case/hero;
+- Signature-only filter remains the final 30-case authority;
+- language switching remains functional.

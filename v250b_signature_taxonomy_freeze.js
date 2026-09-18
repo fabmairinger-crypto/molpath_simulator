@@ -9,7 +9,7 @@
 (function(){
 'use strict';
 
-const VERSION='v2.5.0b-signature-taxonomy-freeze2';
+const VERSION='v2.6.0-rc1-signature-taxonomy-freeze4-loop-safe';
 const EXTRA_SIGNATURE_BASE_IDS=new Set([
   // Existing curated non-course signatures retained.
   'MTB_CRC_002',
@@ -200,14 +200,43 @@ function ensureLibraryBadges(){
   document.querySelectorAll('.v20b-case-card').forEach(card=>{
     const c=caseById(caseIdFromCard(card)); if(!c)return;
     const holder=card.querySelector('.v20b-badges'); if(!holder)return;
-    holder.querySelectorAll('.badge.signature').forEach(b=>b.remove());
-    if(isSignature(c))holder.insertAdjacentHTML('afterbegin','<span class="badge signature" data-signature-authority="final">Signature</span>');
+    const badges=[...holder.querySelectorAll('.badge.signature')];
+    if(!isSignature(c)){
+      badges.forEach(b=>b.remove());
+      return;
+    }
+    // Idempotent: keep one existing Signature badge. Do not remove/reinsert it on every i18n pass.
+    if(badges.length){
+      const keep=badges.find(b=>b.getAttribute('data-signature-authority')==='final')||badges[0];
+      keep.setAttribute('data-signature-authority','final');
+      badges.forEach(b=>{if(b!==keep)b.remove()});
+      return;
+    }
+    holder.insertAdjacentHTML('afterbegin','<span class="badge signature" data-signature-authority="final">Signature</span>');
   });
 }
 function ensureHeroBadge(){
   const h=document.getElementById('heroTitle'); const c=active(); if(!h||!c)return;
-  h.querySelectorAll('.v17-case-badge,.badge').forEach(b=>{const t=normText(b);if(t==='signature'||t==='signature case'||PRESTIGE_REMOVE.has(t))b.remove()});
-  if(isSignature(c))h.insertAdjacentHTML('beforeend',' <span class="v17-case-badge" data-signature-authority="final">Signature Case</span>');
+  const all=[...h.querySelectorAll('.v17-case-badge,.badge')];
+  const finalBadges=all.filter(b=>b.getAttribute('data-signature-authority')==='final');
+  const legacySignature=all.filter(b=>{
+    if(finalBadges.includes(b))return false;
+    const txt=normText(b);
+    return txt==='signature'||txt==='signature case'||b.classList.contains('v17-signature-badge');
+  });
+  const prestige=all.filter(b=>PRESTIGE_REMOVE.has(normText(b)));
+  prestige.forEach(b=>b.remove());
+  legacySignature.forEach(b=>b.remove());
+  if(!isSignature(c)){
+    finalBadges.forEach(b=>b.remove());
+    return;
+  }
+  if(finalBadges.length){
+    const keep=finalBadges[0];
+    finalBadges.slice(1).forEach(b=>b.remove());
+    return;
+  }
+  h.insertAdjacentHTML('beforeend',' <span class="v17-case-badge" data-signature-authority="final">Signature Case</span>');
 }
 function removePrestigeBadges(){
   const selectors=['.badge','.v17-case-badge','[class*="-pill"]'];
@@ -224,7 +253,7 @@ function fixDashboardSignatureCount(){
   const count=finalIds().size;
   document.querySelectorAll('.v20b-metric').forEach(m=>{
     const label=String(m.querySelector('span')?.textContent||'').trim().toLowerCase();
-    if(label==='signature'){const b=m.querySelector('b');if(b)b.textContent=String(count)}
+    if(label==='signature'){const b=m.querySelector('b');const next=String(count);if(b&&String(b.textContent||'')!==next)b.textContent=next}
   });
 }
 const TEXT_REPLACEMENTS=new Map([
@@ -262,11 +291,12 @@ function wrapGlobal(name){
 function install(){
   const ids=applyModel();
   installFinalCaseFilter();
-  wrapGlobal('render');
+  // The full render() already calls the picker/KPI renderers. Wrapping render itself
+  // as well caused redundant post-processing. Keep only the two DOM owners.
   wrapGlobal('renderCasePicker');
   wrapGlobal('renderKpi');
-  const prevAfter=window.MolPathI18nAfterApply;
-  window.MolPathI18nAfterApply=function(lang){try{if(typeof prevAfter==='function')prevAfter(lang)}catch(_){}cleanup()};
+  // Deliberately do NOT hook MolPathI18nAfterApply here. The i18n core owns that
+  // lifecycle; signature cleanup runs after the actual renderers instead.
   try{if(typeof render==='function')render();else cleanup()}catch(err){console.error('[MolPath '+VERSION+'] final render failed',err);cleanup()}
   // Asset layers are synchronous, but one delayed pass also catches legacy boot-time repaint/stamping without a permanent observer.
   setTimeout(cleanup,150);

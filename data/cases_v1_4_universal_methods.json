@@ -10236,12 +10236,12 @@
   },
   {
     "id": "LAB_RUN_004_v1_3",
-    "title": "Neues NGS-Kit-Lot vor Routineeinsatz → Lot-Verifizierung und Dokumentation",
-    "short": "Neues NGS-Kit-Lot vor Routineeinsa…",
+    "title": "Neues NGS-Kit-Lot → risikobasierte Lot-Verifizierung vor Routinefreigabe",
+    "short": "LAB RUN: NGS-Lot-Verifizierung",
     "mode": "lab_qm",
     "logic": "lab_generic",
-    "difficulty": "intermediate",
-    "estimated_time_min": "8–15",
+    "difficulty": "advanced",
+    "estimated_time_min": "12–15",
     "tags": [
       "NGS",
       "Labor",
@@ -10249,54 +10249,34 @@
       "KIT",
       "LAB",
       "Phase",
-      "Standard"
+      "Standard",
+      "Lot-Verifizierung",
+      "Change Control",
+      "Low-VAF",
+      "Traceability",
+      "NGS-QC"
     ],
     "run_overview": {
       "Fall-ID": "LAB_RUN_004",
       "Modus": "Labor/QM-Cockpit",
       "Quelle / Kapitelbasis": "Labor Validierung/Verifizierung",
-      "Ausgangslage": "Neues NGS-Kit-Lot vor Routineeinsatz",
-      "Kernentscheidung": "Lot-Verifizierung und Dokumentation"
+      "Assay": "Bereits validiertes Targeted DNA-NGS; nur Kit-Lot wechselt",
+      "Ausgangslage": "Altes Lot reicht noch für einen Routinelauf, neues Lot soll wegen Lieferdruck sofort eingesetzt werden.",
+      "Kernentscheidung": "Vor Routineeinsatz vorab definierte, risikobasierte Lot-Verifizierung mit repräsentativen Materialien und dokumentierter Freigabe durchführen."
     },
-    "qc_title": "Neues Kit-/Reagenzienlot",
+    "qc_title": "Neues Reagenzienlot eines etablierten NGS-Kits",
     "qc_event": {
-      "Ereignis": "Neues NGS-/PCR-Kit-Lot soll direkt in der Routine eingesetzt werden.",
-      "Risiko": "Lot-Effekt, veränderte Sensitivität/Spezifität, nicht dokumentierte Leistungsänderung.",
-      "Konflikt": "Routinebetrieb vs. Verifizierungsanforderung.",
-      "Kernfrage": "Lot-Verifizierung und Dokumentation"
+      "Ereignis": "Ein neues Kit-Lot trifft ein. Hersteller und Produkt sind unverändert. Die Routine möchte es ohne Vergleich einsetzen, weil „es ja dasselbe Kit ist“.",
+      "Risiko": "Lot-bedingte Änderungen von Yield, Uniformität, Hintergrund oder Detektionsleistung können unbemerkt in Patientenbefunde eingehen.",
+      "Konflikt": "Liefer-/TAT-Druck vs. dokumentierter Nachweis, dass das neue Lot die lokal validierte Leistung weiterhin erfüllt.",
+      "Kernfrage": "Wie viel Verifizierung ist nötig – und wann reicht sie nicht aus?"
     },
     "decision_options": [
       {
-        "id": "release_fast",
-        "label": "Trotz Warnsignal weiterbearbeiten/freigeben, damit der Ablauf nicht verzögert wird.",
-        "kind": "bad",
-        "feedback": "Kritisch: Zeitdruck ersetzt keine Identitäts-, QC- oder Prozesssicherheit.",
-        "score": {
-          "safety": 0,
-          "process": 2,
-          "documentation": 2,
-          "capa": 0,
-          "communication": 2
-        }
-      },
-      {
-        "id": "comment_only",
-        "label": "Weiterbearbeiten, aber nur einen Kommentar im Befund oder Laborbuch ergänzen.",
-        "kind": "partial",
-        "feedback": "Teilweise dokumentiert, aber meist keine ausreichende Ursachenklärung oder Risikokontrolle.",
-        "score": {
-          "safety": 8,
-          "process": 8,
-          "documentation": 12,
-          "capa": 4,
-          "communication": 5
-        }
-      },
-      {
-        "id": "risk_based_stop",
-        "label": "Risikobasiert stoppen/pausieren, Verantwortliche informieren, Abweichung dokumentieren und Klärung/CAPA starten.",
+        "id": "verify_riskbased",
+        "label": "Vor Routineeinsatz einen vorab definierten, risikobasierten Lotvergleich mit geeigneten positiven/negativen Referenzen und relevanten Grenzbereichen durchführen; QC/Variantenergebnisse gegen Akzeptanzkriterien vergleichen, Abweichungen klären und Lot formal freigeben.",
         "kind": "optimal",
-        "feedback": "Optimal: Patientensicherheit, Rückverfolgbarkeit und Auditfähigkeit werden priorisiert.",
+        "feedback": "Richtig: Ein Lotwechsel braucht keine komplette Methodenvalidierung, aber einen lokalen Nachweis, dass die etablierte Leistung erhalten bleibt.",
         "score": {
           "safety": 35,
           "process": 25,
@@ -10306,117 +10286,149 @@
         }
       },
       {
-        "id": "delete_problem",
-        "label": "Problematischen Eintrag/Probe/Datei aus der Auswertung entfernen und fortfahren.",
-        "kind": "bad",
-        "feedback": "Schwerer QM-Fehler: Probleme dürfen nicht entfernt werden, um den Prozess passend zu machen.",
+        "id": "first_run_parallel",
+        "label": "Wenn Material/Logistik knapp sind, neues Lot in einem kontrollierten Parallel-/Vergleichsrun mit altem Lot und repräsentativen Proben prüfen.",
+        "kind": "partial",
+        "feedback": "Gute praktische Strategie, sofern Akzeptanzkriterien vorab definiert und die Patientenfreigabe nicht vor der erfolgreichen Lotbewertung erfolgt.",
         "score": {
-          "safety": 0,
-          "process": 0,
-          "documentation": 0,
+          "safety": 20,
+          "process": 15,
+          "documentation": 10,
+          "capa": 7,
+          "communication": 7
+        }
+      },
+      {
+        "id": "manufacturer_only",
+        "label": "Direkt Routinepatienten messen, weil CoA und Herstellerfreigabe vorliegen.",
+        "kind": "bad",
+        "feedback": "Falsch: Herstellerdokumentation ersetzt nicht die lokale Lot-Verifizierung im eigenen Prozess.",
+        "score": {
+          "safety": 3,
+          "process": 3,
+          "documentation": 3,
           "capa": 0,
-          "communication": 0
+          "communication": 2
+        }
+      },
+      {
+        "id": "full_revalidation",
+        "label": "Für jeden Lotwechsel die komplette Methodenvalidierung inklusive aller ursprünglichen Leistungsparameter neu durchführen.",
+        "kind": "partial",
+        "feedback": "Meist unverhältnismäßig. Der Umfang sollte risikobasiert zum Änderungsgrad passen; bei auffälligen Abweichungen kann allerdings eine erweiterte Untersuchung nötig werden.",
+        "score": {
+          "safety": 20,
+          "process": 15,
+          "documentation": 10,
+          "capa": 7,
+          "communication": 7
         }
       }
     ],
     "root_cause_options": [
       {
+        "id": "criteria",
+        "label": "Vorab definierte Akzeptanzkriterien und den lokalen Verifizierungsplan prüfen.",
+        "correct": true,
+        "feedback": "Richtig: Ohne vorherige Kriterien droht post-hoc Schönrechnen."
+      },
+      {
+        "id": "representative",
+        "label": "Positive/negative Materialien und relevante Variantentypen einschließlich Grenzbereich/Low-VAF auswählen.",
+        "correct": true,
+        "feedback": "Richtig: Nur High-VAF-Referenzen können subtile Sensitivitätsänderungen übersehen."
+      },
+      {
+        "id": "qc_compare",
+        "label": "Library-Yield, Uniformität, on-target/unique coverage und Hintergrund zwischen altem und neuem Lot vergleichen.",
+        "correct": true,
+        "feedback": "Richtig: Lot-Effekte können außerhalb reiner Variantencalls sichtbar werden."
+      },
+      {
         "id": "traceability",
-        "label": "Proben-, Reagenzien-, Geräte-, Lauf- und Auswerte-Rückverfolgbarkeit prüfen",
+        "label": "Lotnummer, Datum, Bediener, Geräte-/Softwarestand und Freigabeentscheidung dokumentieren.",
         "correct": true,
-        "feedback": "Richtig: Ohne Traceability keine belastbare Bewertung."
+        "feedback": "Richtig: Lot-Verifizierung muss rückverfolgbar sein."
       },
       {
-        "id": "sop_version",
-        "label": "SOP-/Versionsstand, Schulungsstatus und Freigaben prüfen",
+        "id": "first_runs",
+        "label": "Erste Routineruns nach Freigabe verstärkt gegen etablierte QC-Trends überwachen.",
         "correct": true,
-        "feedback": "Richtig: Dokumentenlenkung und Kompetenz sind auditkritisch."
+        "feedback": "Richtig: Frühes Trendmonitoring ergänzt die initiale Verifizierung."
       },
       {
-        "id": "technical_repeat",
-        "label": "Technische Wiederholung oder Vergleichsauswertung risikobasiert planen",
-        "correct": true,
-        "feedback": "Richtig: Wiederholung muss zur vermuteten Ursache passen."
-      },
-      {
-        "id": "communication",
-        "label": "Laborleitung/QM/ärztliche Freigabe und ggf. Einsender strukturiert informieren",
-        "correct": true,
-        "feedback": "Richtig: Kommunikation ist Teil der Qualitätsmaßnahme."
-      },
-      {
-        "id": "ignore_pressure",
-        "label": "Zeitdruck oder MTB-Termin als Begründung für verkürzte Klärung akzeptieren",
+        "id": "coa_only",
+        "label": "Nur das Hersteller-CoA ablegen und keine lokalen Daten erzeugen.",
         "correct": false,
-        "feedback": "Falsch: Dringlichkeit erhöht Kommunikationsbedarf, senkt aber keine Qualitätsanforderungen."
+        "feedback": "Falsch: Das beweist nicht die Leistung im eigenen Workflow."
       },
       {
-        "id": "verbal_only",
-        "label": "Nur mündlich klären, ohne Eintrag im QM-/LIMS-System",
+        "id": "change_thresholds",
+        "label": "Akzeptanzgrenzen nach Sichtung der Ergebnisse so anpassen, dass das Lot besteht.",
         "correct": false,
-        "feedback": "Falsch: Ohne Dokumentation ist die Klärung nicht auditfest."
+        "feedback": "Falsch: Das ist keine valide Verifizierung."
       }
     ],
     "capa_components": [
       {
+        "id": "plan",
+        "label": "Lot-Verifizierungsplan mit Umfang und Akzeptanzkriterien dokumentieren.",
+        "required": true
+      },
+      {
+        "id": "comparison",
+        "label": "Repräsentative Vergleichsdaten altes vs. neues Lot erzeugen.",
+        "required": true
+      },
+      {
+        "id": "borderline",
+        "label": "Mindestens relevante Grenz-/Low-VAF-Leistungsbereiche berücksichtigen.",
+        "required": true
+      },
+      {
         "id": "deviation",
-        "label": "Abweichung mit Fall-/Run-/Probenbezug dokumentieren",
+        "label": "Auffällige Diskordanzen als Abweichung behandeln statt wegmitteln.",
         "required": true
       },
       {
-        "id": "immediate",
-        "label": "Sofortmaßnahme: Bearbeitung/Freigabe bis zur Klärung stoppen oder limitieren",
+        "id": "release",
+        "label": "Formale Lotfreigabe durch definierte Verantwortlichkeit dokumentieren.",
         "required": true
       },
       {
-        "id": "rootcause",
-        "label": "Ursachenanalyse mit Verantwortlichkeit und Frist festlegen",
-        "required": true
-      },
-      {
-        "id": "corrective",
-        "label": "Korrekturmaßnahme: Wiederholung, Korrektur, Rückruf oder Nachdokumentation risikobasiert durchführen",
-        "required": true
-      },
-      {
-        "id": "preventive",
-        "label": "Präventionsmaßnahme: SOP/Schulung/Workflow/IT-Kontrolle verbessern",
-        "required": true
-      },
-      {
-        "id": "effectiveness",
-        "label": "Wirksamkeitsprüfung definieren und abschließen",
+        "id": "monitor",
+        "label": "Erste Routineruns nach Freigabe gezielt trendüberwachen.",
         "required": true
       }
     ],
     "audit_checks": [
       {
+        "id": "plan",
+        "label": "Verifizierungsumfang und Akzeptanzkriterien waren vor Datensichtung definiert.",
+        "correct": true
+      },
+      {
+        "id": "representative",
+        "label": "Die verwendeten Materialien decken die klinisch relevante Leistungsbreite ab.",
+        "correct": true
+      },
+      {
         "id": "trace",
-        "label": "Alle betroffenen Proben, Läufe, Versionen und Entscheidungen sind rückverfolgbar.",
+        "label": "Lot- und Run-Traceability ist vollständig.",
         "correct": true
       },
       {
-        "id": "decision",
-        "label": "Die Freigabe-/Sperrentscheidung ist begründet und dokumentiert.",
+        "id": "approval",
+        "label": "Freigabe bzw. Nichtfreigabe des Lots ist eindeutig dokumentiert.",
         "correct": true
       },
       {
-        "id": "capa_closed",
-        "label": "CAPA enthält Ursache, Maßnahme, Verantwortlichkeit, Frist und Wirksamkeitsprüfung.",
-        "correct": true
-      },
-      {
-        "id": "learning",
-        "label": "Falls relevant: Schulung/SOP-Update/Change-Control ist nachweisbar.",
-        "correct": true
-      },
-      {
-        "id": "no_docs",
-        "label": "Es reicht, wenn sich alle im Team an die mündliche Besprechung erinnern.",
+        "id": "coa",
+        "label": "Hersteller-CoA allein genügt als lokale Lot-Verifizierung.",
         "correct": false
       }
     ],
-    "optimal_summary": "Optimale Lösung: Lot-Verifizierung mit geeigneten Kontrollen/Referenzmaterialien durchführen, dokumentieren und erst dann freigeben."
+    "optimal_summary": "Optimale Lösung: Kein vollständiges Revalidierungsprogramm, aber vor Routinefreigabe ein lokaler, risikobasierter Lotvergleich mit vorab definierten Akzeptanzkriterien, repräsentativen positiven/negativen Proben und relevanten Grenzbereichen. Auffällige Diskordanzen werden untersucht; erst danach wird das Lot formal freigegeben."
   },
   {
     "id": "LAB_RUN_005_v1_3",

@@ -1,0 +1,264 @@
+{
+  "patch_id": "v2.6.0-rc1+LAB_RUN_004_ASSET01_I18N",
+  "base": "v2.6.0-rc1 + MTB_CNS_003_ASSET01 + MTB_HEM_001_ASSET01",
+  "case_id": "LAB_RUN_004_v1_3",
+  "generated": "2026-09-18",
+  "summary": {
+    "pass": 50,
+    "fail": 0,
+    "warn": 0,
+    "browser_visual_test": "NOT RUN; static/runtime-structure QA only."
+  },
+  "checks": [
+    {
+      "check": "asset:lot_change_initial_001.png",
+      "status": "PASS",
+      "detail": "PNG readable; 1536x1024; 1885569 bytes"
+    },
+    {
+      "check": "asset:verification_plan_001.png",
+      "status": "PASS",
+      "detail": "PNG readable; 1536x1024; 1934128 bytes"
+    },
+    {
+      "check": "asset:reference_material_targets_001.png",
+      "status": "PASS",
+      "detail": "PNG readable; 1536x1024; 1788883 bytes"
+    },
+    {
+      "check": "asset:run_qc_lot_comparison_001.png",
+      "status": "PASS",
+      "detail": "PNG readable; 1536x1024; 1778477 bytes"
+    },
+    {
+      "check": "asset:variant_concordance_001.png",
+      "status": "PASS",
+      "detail": "PNG readable; 1536x1024; 1722920 bytes"
+    },
+    {
+      "check": "asset:lot_release_checklist_001.png",
+      "status": "PASS",
+      "detail": "PNG readable; 1536x1024; 1813320 bytes"
+    },
+    {
+      "check": "asset:change_control_closeout_001.png",
+      "status": "PASS",
+      "detail": "PNG readable; 1536x1024; 1863014 bytes"
+    },
+    {
+      "check": "javascript syntax",
+      "status": "PASS",
+      "detail": "node --check clean"
+    },
+    {
+      "check": "LAB script included once",
+      "status": "PASS",
+      "detail": "['v250b_resrole001_course_flagship.js', 'v260rc1_mtb_cns_003_asset_upgrade.js', 'v260rc1_mtb_hem_001_asset_upgrade.js', 'v260rc1_lab_run_004_asset_upgrade.js', 'v250b_signature_taxonomy_freeze.js']"
+    },
+    {
+      "check": "signature taxonomy final external script",
+      "status": "PASS",
+      "detail": "v250b_signature_taxonomy_freeze.js"
+    },
+    {
+      "check": "CNS prior layer retained",
+      "status": "PASS",
+      "detail": "present"
+    },
+    {
+      "check": "HEM prior layer retained",
+      "status": "PASS",
+      "detail": "present"
+    },
+    {
+      "check": "case count",
+      "status": "PASS",
+      "detail": "91"
+    },
+    {
+      "check": "canonical case upgraded",
+      "status": "PASS",
+      "detail": "Neues NGS-Kit-Lot → risikobasierte Lot-Verifizierung vor Routinefreigabe"
+    },
+    {
+      "check": "canonical contains Low-VAF",
+      "status": "PASS",
+      "detail": "Low-VAF"
+    },
+    {
+      "check": "canonical contains Akzeptanzkriterien",
+      "status": "PASS",
+      "detail": "Akzeptanzkriterien"
+    },
+    {
+      "check": "canonical contains Lot formal freigeben",
+      "status": "PASS",
+      "detail": "Lot formal freigeben"
+    },
+    {
+      "check": "i18n en source coverage",
+      "status": "PASS",
+      "detail": "23/23 strings"
+    },
+    {
+      "check": "i18n en nonblank",
+      "status": "PASS",
+      "detail": "all nonblank"
+    },
+    {
+      "check": "i18n ro source coverage",
+      "status": "PASS",
+      "detail": "23/23 strings"
+    },
+    {
+      "check": "i18n ro nonblank",
+      "status": "PASS",
+      "detail": "all nonblank"
+    },
+    {
+      "check": "i18n el source coverage",
+      "status": "PASS",
+      "detail": "23/23 strings"
+    },
+    {
+      "check": "i18n el nonblank",
+      "status": "PASS",
+      "detail": "all nonblank"
+    },
+    {
+      "check": "i18n es source coverage",
+      "status": "PASS",
+      "detail": "23/23 strings"
+    },
+    {
+      "check": "i18n es nonblank",
+      "status": "PASS",
+      "detail": "all nonblank"
+    },
+    {
+      "check": "i18n fr source coverage",
+      "status": "PASS",
+      "detail": "23/23 strings"
+    },
+    {
+      "check": "i18n fr nonblank",
+      "status": "PASS",
+      "detail": "all nonblank"
+    },
+    {
+      "check": "i18n ru source coverage",
+      "status": "PASS",
+      "detail": "23/23 strings"
+    },
+    {
+      "check": "i18n ru nonblank",
+      "status": "PASS",
+      "detail": "all nonblank"
+    },
+    {
+      "check": "i18n tr source coverage",
+      "status": "PASS",
+      "detail": "23/23 strings"
+    },
+    {
+      "check": "i18n tr nonblank",
+      "status": "PASS",
+      "detail": "all nonblank"
+    },
+    {
+      "check": "i18n ar source coverage",
+      "status": "PASS",
+      "detail": "23/23 strings"
+    },
+    {
+      "check": "i18n ar nonblank",
+      "status": "PASS",
+      "detail": "all nonblank"
+    },
+    {
+      "check": "i18n fa source coverage",
+      "status": "PASS",
+      "detail": "23/23 strings"
+    },
+    {
+      "check": "i18n fa nonblank",
+      "status": "PASS",
+      "detail": "all nonblank"
+    },
+    {
+      "check": "i18n uk source coverage",
+      "status": "PASS",
+      "detail": "23/23 strings"
+    },
+    {
+      "check": "i18n uk nonblank",
+      "status": "PASS",
+      "detail": "all nonblank"
+    },
+    {
+      "check": "11-language runtime declaration",
+      "status": "PASS",
+      "detail": "DE + 10 target locales"
+    },
+    {
+      "check": "all-pass outcome present",
+      "status": "PASS",
+      "detail": "deep-dive outcome aligned with assets"
+    },
+    {
+      "check": "old failing twist removed from new layer",
+      "status": "PASS",
+      "detail": "no contradictory failure outcome in override"
+    },
+    {
+      "check": "CAPA logic aligned",
+      "status": "PASS",
+      "detail": "no CAPA when no deviation"
+    },
+    {
+      "check": "runtime reference lot_change_initial_001.png",
+      "status": "PASS",
+      "detail": "lot_change_initial_001.png"
+    },
+    {
+      "check": "runtime reference verification_plan_001.png",
+      "status": "PASS",
+      "detail": "verification_plan_001.png"
+    },
+    {
+      "check": "runtime reference reference_material_targets_001.png",
+      "status": "PASS",
+      "detail": "reference_material_targets_001.png"
+    },
+    {
+      "check": "runtime reference run_qc_lot_comparison_001.png",
+      "status": "PASS",
+      "detail": "run_qc_lot_comparison_001.png"
+    },
+    {
+      "check": "runtime reference variant_concordance_001.png",
+      "status": "PASS",
+      "detail": "variant_concordance_001.png"
+    },
+    {
+      "check": "runtime reference lot_release_checklist_001.png",
+      "status": "PASS",
+      "detail": "lot_release_checklist_001.png"
+    },
+    {
+      "check": "runtime reference change_control_closeout_001.png",
+      "status": "PASS",
+      "detail": "change_control_closeout_001.png"
+    },
+    {
+      "check": "final closeout gated by finalized",
+      "status": "PASS",
+      "detail": "asset 7 appears only after lab finalization"
+    },
+    {
+      "check": "signature taxonomy unchanged by payload",
+      "status": "PASS",
+      "detail": "no taxonomy file in patch"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "patch_id": "v2.6.0-rc1-render-loop-rootcause-fix1",
+  "purpose": "Stop self-triggering i18n/render loop and repeated Signature hero badges",
+  "applies_over": "Current rc1 + CNS + HEM + LAB patch; also overwrites the previous SIGNATURE_RENDER_LOOP_hotfix",
+  "checks": [
+    {
+      "check": "syntax:v1/i18n/core.js",
+      "status": "PASS",
+      "detail": "node --check clean"
+    },
+    {
+      "check": "syntax:v1/i18n/legacy/legacy_v240t_signature_i18n.js",
+      "status": "PASS",
+      "detail": "node --check clean"
+    },
+    {
+      "check": "syntax:v1/v250b_signature_taxonomy_freeze.js",
+      "status": "PASS",
+      "detail": "node --check clean"
+    },
+    {
+      "check": "syntax:v1/v260rc1_lab_run_004_asset_upgrade.js",
+      "status": "PASS",
+      "detail": "node --check clean"
+    },
+    {
+      "check": "i18n observer disconnected during apply",
+      "status": "PASS",
+      "detail": "Observer is disconnected before translation/AfterApply DOM writes and resumed in finally."
+    },
+    {
+      "check": "AfterApply executes while observer suppressed",
+      "status": "PASS",
+      "detail": "Legacy AfterApply hooks cannot retrigger i18n through their own DOM mutations."
+    },
+    {
+      "check": "signature freeze no i18n AfterApply wrapper",
+      "status": "PASS",
+      "detail": "Signature cleanup is no longer attached to every i18n pass."
+    },
+    {
+      "check": "hero badge language-independent",
+      "status": "PASS",
+      "detail": "Existing hero Signature badge is recognized by stable data attribute, not translated text."
+    },
+    {
+      "check": "signature render wrapper reduced",
+      "status": "PASS",
+      "detail": "Avoids redundant cleanup after full render plus nested picker/KPI renders."
+    },
+    {
+      "check": "legacy 15-count removed",
+      "status": "PASS",
+      "detail": "Legacy signature i18n dashboard correction now uses current final Signature authority."
+    },
+    {
+      "check": "legacy dashboard write idempotent",
+      "status": "PASS",
+      "detail": "Dashboard count is only rewritten when value actually differs."
+    },
+    {
+      "check": "LAB direct applyNow removed",
+      "status": "PASS",
+      "detail": "LAB upgrade schedules localization instead of forcing a synchronous apply during boot."
+    },
+    {
+      "check": "Signature taxonomy unchanged",
+      "status": "PASS",
+      "detail": "Final curated Signature set definitions are retained."
+    }
+  ],
+  "summary": {
+    "pass": 13,
+    "fail": 0,
+    "browser_runtime_test": "Not executed: local/file navigation is blocked by the managed Chromium environment. Static event-path review and JS syntax checks completed."
+  }
+}

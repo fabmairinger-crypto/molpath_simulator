@@ -11,6 +11,8 @@ const textSource=new WeakMap();
 const attrSource=new WeakMap();
 let applying=false;
 let applyRaf=0;
+let mutationObserver=null;
+let observedRoot=null;
 function currentLang(){
   let raw='de';
   try{raw=localStorage.getItem('molpath_lang')||document.documentElement.lang||languageRegistry.source;}catch(_e){raw=document.documentElement.lang||languageRegistry.source;}
@@ -179,8 +181,18 @@ function translateAttrs(el,lang){
     el.setAttribute(a,tr(rec[a],lang,el));
   });
 }
+function resumeObserver(){
+  if(!mutationObserver)return;
+  const root=observedRoot||qs('.app')||document.body;
+  observedRoot=root;
+  try{mutationObserver.observe(root,{childList:true,subtree:true});}catch(_e){}
+}
 function apply(){
-  if(applying)return; applying=true;
+  if(applying)return;
+  applying=true;
+  // Suppress self-triggering observer notifications while translations and legacy
+  // AfterApply hooks intentionally rewrite small DOM fragments.
+  if(mutationObserver){try{mutationObserver.disconnect();mutationObserver.takeRecords();}catch(_e){}}
   const lang=currentLang();
   try{
     languageRegistry.applyDocumentLanguage(lang);
@@ -192,18 +204,21 @@ function apply(){
       nodes.forEach(n=>translateTextNode(n,lang));
       root.querySelectorAll('[placeholder],[title],[aria-label]').forEach(el=>translateAttrs(el,lang));
     });
-  }finally{applying=false;}
-  try{if(typeof window.MolPathI18nAfterApply==='function')window.MolPathI18nAfterApply(lang);}catch(_e){}
+    try{if(typeof window.MolPathI18nAfterApply==='function')window.MolPathI18nAfterApply(lang);}catch(_e){}
+  }finally{
+    applying=false;
+    resumeObserver();
+  }
 }
 function scheduleApply(){
   if(applying||applyRaf)return;
   applyRaf=requestAnimationFrame(function(){applyRaf=0;apply();});
 }
 function startObserver(){
-  const app=qs('.app')||document.body;
-  const mo=new MutationObserver(function(){if(!applying)scheduleApply();});
-  mo.observe(app,{childList:true,subtree:true});
-  window.MolPathI18nObserver=mo;
+  observedRoot=qs('.app')||document.body;
+  mutationObserver=new MutationObserver(function(){if(!applying)scheduleApply();});
+  resumeObserver();
+  window.MolPathI18nObserver=mutationObserver;
 }
 window.MolPathI18n={version:VERSION,languages:LANGS,languageRegistry,localeRegistry,setLang,apply:scheduleApply,applyNow:apply,translate:tr,dict:DICT,currentLang,sourceLanguage:languageRegistry.source};
 function boot(){setLang(currentLang());startObserver();}

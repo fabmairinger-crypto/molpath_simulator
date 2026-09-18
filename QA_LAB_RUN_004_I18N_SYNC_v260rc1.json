@@ -1,0 +1,22 @@
+{
+  "case_id": "LAB_RUN_004_v1_3",
+  "source_language": "de",
+  "languages": [
+    "de",
+    "en",
+    "ro",
+    "el",
+    "es",
+    "fr",
+    "ru",
+    "tr",
+    "ar",
+    "fa",
+    "uk"
+  ],
+  "new_runtime_source_strings": 23,
+  "translations_per_non_de_locale": 23,
+  "scope": "New/changed story outcome strings and asset captions only; unchanged pre-existing LAB_RUN_004 strings continue to use existing v240z/locale dictionaries. Raster asset text remains German.",
+  "status": "complete_structural_coverage",
+  "native_speaker_audit": "not performed in this patch"
+}

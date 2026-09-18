@@ -1,0 +1,10 @@
+Signature render-loop hotfix
+
+Apply to the current Git state after the LAB_RUN_004 delta patch.
+1. Stop/reload the currently looping simulator tab.
+2. Merge this ZIP's v1/ over the repository v1/.
+3. Overwrite v1/v250b_signature_taxonomy_freeze.js.
+4. Hard-reload the simulator (Ctrl+F5 / clear wrapper cache if applicable).
+5. Expected: exactly one Signature badge per Signature case; no continuous DOM growth; Signature filter still shows the final 30 cases.
+
+No other runtime file is replaced.

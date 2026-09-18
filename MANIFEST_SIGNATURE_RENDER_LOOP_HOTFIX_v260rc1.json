@@ -1,0 +1,17 @@
+{
+  "patch_id": "v2.6.0-rc1+SIGNATURE_RENDER_LOOP_HOTFIX01",
+  "scope": "runtime hotfix only",
+  "replaces": [
+    "v1/v250b_signature_taxonomy_freeze.js"
+  ],
+  "taxonomy_changes": false,
+  "content_changes": false,
+  "i18n_dictionary_changes": false,
+  "files": [
+    "v1/APPLY_SIGNATURE_RENDER_LOOP_HOTFIX_v260rc1.txt",
+    "v1/CHANGELOG_SIGNATURE_RENDER_LOOP_HOTFIX_v260rc1.md",
+    "v1/QA_SIGNATURE_RENDER_LOOP_HOTFIX_v260rc1.json",
+    "v1/SHA256SUMS_SIGNATURE_RENDER_LOOP_HOTFIX_v260rc1.txt",
+    "v1/v250b_signature_taxonomy_freeze.js"
+  ]
+}
