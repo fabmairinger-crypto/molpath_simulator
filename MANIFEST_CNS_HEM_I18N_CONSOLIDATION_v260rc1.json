@@ -1,0 +1,81 @@
+{
+  "patch_id": "v2.6.0-rc1+CNS_HEM_STORY_DEEPDIVE_I18N01",
+  "base_file": "v2-6-0_rc1_v2.zip",
+  "base_sha256": "758977ccab0b8c549ece852c022cd9816652c1b593da01bdd73a2b7e7757f25f",
+  "scope": {
+    "cases": [
+      "MTB_CNS_003",
+      "MTB_HEM_001"
+    ],
+    "content": [
+      "Story",
+      "Deep-Dive"
+    ],
+    "source_language": "de",
+    "target_languages": [
+      "en",
+      "ro",
+      "el",
+      "es",
+      "fr",
+      "ru",
+      "tr",
+      "ar",
+      "fa",
+      "uk"
+    ],
+    "unique_source_keys": 198,
+    "missing_locale_entries": 1968,
+    "missing_by_locale": {
+      "en": 198,
+      "ro": 198,
+      "el": 198,
+      "es": 198,
+      "fr": 198,
+      "ru": 197,
+      "tr": 196,
+      "ar": 195,
+      "fa": 195,
+      "uk": 195
+    },
+    "asset_captions_excluded": 22
+  },
+  "application_files": [
+    {
+      "path": "v3/index.html",
+      "action": "replace",
+      "change": "one script include block inserted; otherwise byte-equivalent to current base"
+    },
+    {
+      "path": "v3/v260rc1_mtb_cns_003_mtb_hem_001_i18n_consolidation.js",
+      "action": "add",
+      "change": "exact runtime i18n mappings; existing exact dictionary entries are never overwritten"
+    }
+  ],
+  "protected_files_sha256": {
+    "v3/data/cases_v1_4_universal_methods.json": "bcee2b02e063be75f0f6ad48bb5a4e5c8e188fd2fe7963e986d17b26d1055e1a",
+    "v3/v260rc1_mtb_cns_003_asset_upgrade.js": "5078491b362a473e924634400b101276f9a7e91e5bc55f9f5c9ad6d01a18f1d2",
+    "v3/v260rc1_mtb_hem_001_asset_upgrade.js": "d77fe69301545027c7f6d8cc0abffa3cf613371d13c38a0f8ca6587b6afc3839",
+    "v3/v260rc1_lab_run_004_asset_upgrade.js": "d4b202bfd8e93f3920a123754e48c68cd4eb4773a0ae4a4f01e41dad4eb86a4a",
+    "v3/i18n/core.js": "61960329db655db2c1b95f36b21f0a649e9d9711d4cb65c69ccda1bd907f279e",
+    "v3/i18n/languages.js": "b7aef0c90807926e4b564bd3b62e4afc820429701efc23acb4d3e00a0478a8a5",
+    "v3/i18n/legacy/legacy_v240t_signature_i18n.js": "d4aa79f0e7b2a87546caabcf25722f63d59897205e527a7060a3be31010de7ed",
+    "v3/v250b_signature_taxonomy_freeze.js": "b001c6eb89ac916be7c4ea0fd94857af1a98a6e4d921cc98e81150f65e6a9f84"
+  },
+  "explicit_non_changes": [
+    "case JSON/data",
+    "CNS/HEM/LAB upgrade logic",
+    "i18n core",
+    "language registry",
+    "legacy resolver",
+    "Signature taxonomy",
+    "Render-loop root-cause fix",
+    "assets",
+    "scoring",
+    "course membership"
+  ],
+  "notes": [
+    "22 new asset captions are intentionally out of scope and remain unchanged.",
+    "Three partially translated pre-existing keys are supplemented only in locales where they were actually missing."
+  ]
+}

@@ -1,0 +1,10 @@
+MolPath Simulator — v2.6.0-rc1+CNS_HEM_STORY_DEEPDIVE_I18N01
+
+Base required: v2-6-0_rc1_v2.zip
+
+Apply as an overlay to the simulator root, preserving the included v3/ paths:
+- replace v3/index.html
+- add v3/v260rc1_mtb_cns_003_mtb_hem_001_i18n_consolidation.js
+
+The remaining files are audit documentation only.
+No case, locale-core, taxonomy, render-loop or asset file is replaced by this patch.

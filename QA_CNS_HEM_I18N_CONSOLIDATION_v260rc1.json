@@ -1,0 +1,307 @@
+{
+  "patch_id": "v2.6.0-rc1+CNS_HEM_STORY_DEEPDIVE_I18N01",
+  "base": "v2-6-0_rc1_v2.zip",
+  "checks": [
+    {
+      "check": "baseline ZIP SHA256",
+      "status": "PASS",
+      "detail": "758977ccab0b8c549ece852c022cd9816652c1b593da01bdd73a2b7e7757f25f"
+    },
+    {
+      "check": "source-key union",
+      "status": "PASS",
+      "detail": "198 unique DE Story/Deep-Dive source keys"
+    },
+    {
+      "check": "missing target entries",
+      "status": "PASS",
+      "detail": "1,968 missing locale entries populated"
+    },
+    {
+      "check": "locale count:en",
+      "status": "PASS",
+      "detail": "198 exact mappings"
+    },
+    {
+      "check": "locale count:ro",
+      "status": "PASS",
+      "detail": "198 exact mappings"
+    },
+    {
+      "check": "locale count:el",
+      "status": "PASS",
+      "detail": "198 exact mappings"
+    },
+    {
+      "check": "locale count:es",
+      "status": "PASS",
+      "detail": "198 exact mappings"
+    },
+    {
+      "check": "locale count:fr",
+      "status": "PASS",
+      "detail": "198 exact mappings"
+    },
+    {
+      "check": "locale count:ru",
+      "status": "PASS",
+      "detail": "197 exact mappings"
+    },
+    {
+      "check": "locale count:tr",
+      "status": "PASS",
+      "detail": "196 exact mappings"
+    },
+    {
+      "check": "locale count:ar",
+      "status": "PASS",
+      "detail": "195 exact mappings"
+    },
+    {
+      "check": "locale count:fa",
+      "status": "PASS",
+      "detail": "195 exact mappings"
+    },
+    {
+      "check": "locale count:uk",
+      "status": "PASS",
+      "detail": "195 exact mappings"
+    },
+    {
+      "check": "scope excludes asset captions",
+      "status": "PASS",
+      "detail": "22 new asset captions intentionally excluded from this delta"
+    },
+    {
+      "check": "index include count",
+      "status": "PASS",
+      "detail": "consolidation include occurs exactly once"
+    },
+    {
+      "check": "script order",
+      "status": "PASS",
+      "detail": "{'v260rc1_mtb_cns_003_asset_upgrade.js': 4116967, 'v260rc1_mtb_hem_001_asset_upgrade.js': 4117107, 'v260rc1_lab_run_004_asset_upgrade.js': 4117168, 'v260rc1_mtb_cns_003_mtb_hem_001_i18n_consolidation.js': 4117310, 'v250b_signature_taxonomy_freeze.js': 4117388}"
+    },
+    {
+      "check": "Signature taxonomy remains last external script",
+      "status": "PASS",
+      "detail": "last external script=v250b_signature_taxonomy_freeze.js"
+    },
+    {
+      "check": "index minimal delta",
+      "status": "PASS",
+      "detail": "base index + exactly one comment/script include block"
+    },
+    {
+      "check": "protected unchanged:v3/data/cases_v1_4_universal_methods.json",
+      "status": "PASS",
+      "detail": "bcee2b02e063be75f0f6ad48bb5a4e5c8e188fd2fe7963e986d17b26d1055e1a"
+    },
+    {
+      "check": "protected unchanged:v3/v260rc1_mtb_cns_003_asset_upgrade.js",
+      "status": "PASS",
+      "detail": "5078491b362a473e924634400b101276f9a7e91e5bc55f9f5c9ad6d01a18f1d2"
+    },
+    {
+      "check": "protected unchanged:v3/v260rc1_mtb_hem_001_asset_upgrade.js",
+      "status": "PASS",
+      "detail": "d77fe69301545027c7f6d8cc0abffa3cf613371d13c38a0f8ca6587b6afc3839"
+    },
+    {
+      "check": "protected unchanged:v3/v260rc1_lab_run_004_asset_upgrade.js",
+      "status": "PASS",
+      "detail": "d4b202bfd8e93f3920a123754e48c68cd4eb4773a0ae4a4f01e41dad4eb86a4a"
+    },
+    {
+      "check": "protected unchanged:v3/i18n/core.js",
+      "status": "PASS",
+      "detail": "61960329db655db2c1b95f36b21f0a649e9d9711d4cb65c69ccda1bd907f279e"
+    },
+    {
+      "check": "protected unchanged:v3/i18n/languages.js",
+      "status": "PASS",
+      "detail": "b7aef0c90807926e4b564bd3b62e4afc820429701efc23acb4d3e00a0478a8a5"
+    },
+    {
+      "check": "protected unchanged:v3/i18n/legacy/legacy_v240t_signature_i18n.js",
+      "status": "PASS",
+      "detail": "d4aa79f0e7b2a87546caabcf25722f63d59897205e527a7060a3be31010de7ed"
+    },
+    {
+      "check": "protected unchanged:v3/v250b_signature_taxonomy_freeze.js",
+      "status": "PASS",
+      "detail": "b001c6eb89ac916be7c4ea0fd94857af1a98a6e4d921cc98e81150f65e6a9f84"
+    },
+    {
+      "check": "javascript syntax",
+      "status": "PASS",
+      "detail": "node --check clean"
+    },
+    {
+      "check": "protected file absent from patch:v3/data/cases_v1_4_universal_methods.json",
+      "status": "PASS",
+      "detail": "not packaged/replaced"
+    },
+    {
+      "check": "protected file absent from patch:v3/v260rc1_mtb_cns_003_asset_upgrade.js",
+      "status": "PASS",
+      "detail": "not packaged/replaced"
+    },
+    {
+      "check": "protected file absent from patch:v3/v260rc1_mtb_hem_001_asset_upgrade.js",
+      "status": "PASS",
+      "detail": "not packaged/replaced"
+    },
+    {
+      "check": "protected file absent from patch:v3/v260rc1_lab_run_004_asset_upgrade.js",
+      "status": "PASS",
+      "detail": "not packaged/replaced"
+    },
+    {
+      "check": "protected file absent from patch:v3/i18n/core.js",
+      "status": "PASS",
+      "detail": "not packaged/replaced"
+    },
+    {
+      "check": "protected file absent from patch:v3/i18n/languages.js",
+      "status": "PASS",
+      "detail": "not packaged/replaced"
+    },
+    {
+      "check": "protected file absent from patch:v3/i18n/legacy/legacy_v240t_signature_i18n.js",
+      "status": "PASS",
+      "detail": "not packaged/replaced"
+    },
+    {
+      "check": "protected file absent from patch:v3/v250b_signature_taxonomy_freeze.js",
+      "status": "PASS",
+      "detail": "not packaged/replaced"
+    },
+    {
+      "check": "token preservation:HGAP",
+      "status": "PASS",
+      "detail": "19 source keys; missing token in translations=[]"
+    },
+    {
+      "check": "token preservation:CDKN2A/B",
+      "status": "PASS",
+      "detail": "3 source keys; missing token in translations=[]"
+    },
+    {
+      "check": "token preservation:IDH1/2",
+      "status": "PASS",
+      "detail": "1 source keys; missing token in translations=[]"
+    },
+    {
+      "check": "token preservation:H3-K27M",
+      "status": "PASS",
+      "detail": "1 source keys; missing token in translations=[]"
+    },
+    {
+      "check": "token preservation:DNMT3A",
+      "status": "PASS",
+      "detail": "9 source keys; missing token in translations=[]"
+    },
+    {
+      "check": "token preservation:TET2",
+      "status": "PASS",
+      "detail": "9 source keys; missing token in translations=[]"
+    },
+    {
+      "check": "token preservation:ASXL1",
+      "status": "PASS",
+      "detail": "9 source keys; missing token in translations=[]"
+    },
+    {
+      "check": "token preservation:WHO-HAEM5",
+      "status": "PASS",
+      "detail": "6 source keys; missing token in translations=[]"
+    },
+    {
+      "check": "token preservation:MDS-LB",
+      "status": "PASS",
+      "detail": "8 source keys; missing token in translations=[]"
+    },
+    {
+      "check": "token preservation:ICC",
+      "status": "PASS",
+      "detail": "8 source keys; missing token in translations=[]"
+    },
+    {
+      "check": "token preservation:CHIP",
+      "status": "PASS",
+      "detail": "7 source keys; missing token in translations=[]"
+    },
+    {
+      "check": "token preservation:CCUS",
+      "status": "PASS",
+      "detail": "13 source keys; missing token in translations=[]"
+    },
+    {
+      "check": "token preservation:MDS",
+      "status": "PASS",
+      "detail": "27 source keys; missing token in translations=[]"
+    },
+    {
+      "check": "HGVS token preservation",
+      "status": "PASS",
+      "detail": "failures=[]"
+    },
+    {
+      "check": "identical target/source review",
+      "status": "PASS",
+      "detail": "{\"en\": [17, 19, 81, 87, 159], \"ro\": [41, 135, 159], \"el\": [17, 19, 35, 135], \"es\": [135, 159], \"fr\": [3, 41, 87, 135], \"ru\": [135, 159], \"tr\": [35, 159], \"fa\": [35], \"uk\": [135, 159]}; reviewed as technical/proper-name content"
+    }
+  ],
+  "runtime_browser_checks": [
+    {
+      "check": "registry runtime install",
+      "status": "PASS",
+      "detail": "installed=True"
+    },
+    {
+      "check": "runtime exact-entry registration",
+      "status": "PASS",
+      "detail": "{\"patch\": \"v2.6.0-rc1+CNS_HEM_STORY_DEEPDIVE_I18N01\", \"sourceKeys\": 198, \"expectedEntries\": 1968, \"added\": 1968, \"skippedExisting\": 0}"
+    },
+    {
+      "check": "runtime apply scheduling",
+      "status": "PASS",
+      "detail": "MolPathI18n.apply calls=1"
+    },
+    {
+      "check": "all 1,968 intended target values exact",
+      "status": "PASS",
+      "detail": "mismatches=[]"
+    },
+    {
+      "check": "pre-existing partial translations preserved",
+      "status": "PASS",
+      "detail": "changed=[]"
+    },
+    {
+      "check": "runtime guard compatibility",
+      "status": "PASS",
+      "detail": "pre-existing exact keys among delta-missing pairs=[]"
+    },
+    {
+      "check": "current i18n exact lookup path",
+      "status": "PASS",
+      "detail": "current core resolves exact dictionary entries before template fallback"
+    },
+    {
+      "check": "headless browser navigation",
+      "status": "WARN",
+      "detail": "NOT RUN: Chromium navigation to localhost and file:// is blocked by this execution environment (ERR_BLOCKED_BY_ADMINISTRATOR). Static + isolated registry-runtime QA executed instead."
+    }
+  ],
+  "summary": {
+    "pass": 57,
+    "warn": 1,
+    "fail": 0,
+    "source_keys": 198,
+    "locale_entries_added": 1968,
+    "asset_captions_excluded": 22,
+    "browser_smoke": "NOT RUN — environment blocked navigation; deterministic registry-runtime QA PASS"
+  }
+}
