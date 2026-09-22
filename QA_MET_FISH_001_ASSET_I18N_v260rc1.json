@@ -1,0 +1,115 @@
+{
+  "patch_id": "v2.6.0-rc1+MET_FISH_001_ASSET01_I18N",
+  "checks": [
+    {
+      "name": "8 assets staged",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "PNG signature rna_ewsr1_atf1_001.png",
+      "status": "PASS",
+      "detail": "1845595"
+    },
+    {
+      "name": "PNG signature fish_report_001.png",
+      "status": "PASS",
+      "detail": "1752647"
+    },
+    {
+      "name": "PNG signature he_morphology_001.png",
+      "status": "PASS",
+      "detail": "3471297"
+    },
+    {
+      "name": "PNG signature clinical_request_001.png",
+      "status": "PASS",
+      "detail": "1932407"
+    },
+    {
+      "name": "PNG signature ihc_panel_001.png",
+      "status": "PASS",
+      "detail": "2899658"
+    },
+    {
+      "name": "PNG signature clinical_context_mri_001.png",
+      "status": "PASS",
+      "detail": "1888108"
+    },
+    {
+      "name": "PNG signature integrated_report_001.png",
+      "status": "PASS",
+      "detail": "2306977"
+    },
+    {
+      "name": "PNG signature ewsr1_breakapart_fish_001.png",
+      "status": "PASS",
+      "detail": "1595405"
+    },
+    {
+      "name": "new script referenced once",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "taxonomy freeze remains after MET layer",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "prior CNS/HEM i18n layer preserved",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "all 10 target locales present",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "all new strings translated in every locale",
+      "status": "PASS",
+      "detail": "{'en': 15, 'ro': 15, 'el': 15, 'es': 15, 'fr': 15, 'ru': 15, 'tr': 15, 'ar': 15, 'fa': 15, 'uk': 15}"
+    },
+    {
+      "name": "Node syntax check",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "existing MET_FISH deep-dive contains EWSR1-FISH positiv: schneller ",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "existing MET_FISH deep-dive contains \"id\":\"rearrangement\"",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "existing MET_FISH deep-dive contains \"id\":\"partner\"",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "existing MET_FISH deep-dive contains EWSR1::ATF1",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "new layer does not rewrite required_groups",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "new layer does not rewrite case/deep-dive content",
+      "status": "PASS",
+      "detail": ""
+    }
+  ],
+  "summary": {
+    "pass": 21,
+    "fail": 0
+  },
+  "note": "Static/runtime-contract QA. Existing V240S MET_FISH_001 deep-dive and completion logic are reused unchanged."
+}

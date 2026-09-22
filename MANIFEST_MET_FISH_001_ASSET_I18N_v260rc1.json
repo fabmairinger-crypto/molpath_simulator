@@ -1,0 +1,44 @@
+{
+  "patch_id": "v2.6.0-rc1+MET_FISH_001_ASSET01_I18N",
+  "base_zip": "v2-6-0_rc1_v2.zip",
+  "dependency": "CNS/HEM Story/Deep-Dive i18n consolidation preserved cumulatively",
+  "scope_case": "MET_FISH_001_v1_3",
+  "scope": "8 curated Signature assets + phase-aware runtime display + i18n for newly introduced visible strings",
+  "asset_count": 8,
+  "languages": [
+    "de",
+    "en",
+    "ro",
+    "el",
+    "es",
+    "fr",
+    "ru",
+    "tr",
+    "ar",
+    "fa",
+    "uk"
+  ],
+  "content_logic_changes": false,
+  "taxonomy_changes": false,
+  "protected_base_hashes_sha256": {
+    "data/cases_v1_4_universal_methods.json": "bcee2b02e063be75f0f6ad48bb5a4e5c8e188fd2fe7963e986d17b26d1055e1a",
+    "v240z19_cns001_flagship.js": "f87b850617b46aee5a63b991d2553f57289165117791cb0368deaaf93eafaa59",
+    "v250b_signature_taxonomy_freeze.js": "b001c6eb89ac916be7c4ea0fd94857af1a98a6e4d921cc98e81150f65e6a9f84",
+    "v260rc1_mtb_cns_003_asset_upgrade.js": "5078491b362a473e924634400b101276f9a7e91e5bc55f9f5c9ad6d01a18f1d2",
+    "v260rc1_mtb_hem_001_asset_upgrade.js": "d77fe69301545027c7f6d8cc0abffa3cf613371d13c38a0f8ca6587b6afc3839",
+    "v260rc1_lab_run_004_asset_upgrade.js": "d4b202bfd8e93f3920a123754e48c68cd4eb4773a0ae4a4f01e41dad4eb86a4a"
+  },
+  "files": [
+    "v3/index.html",
+    "v3/v260rc1_mtb_cns_003_mtb_hem_001_i18n_consolidation.js",
+    "v3/v260rc1_met_fish_001_asset_i18n_upgrade.js",
+    "v3/assets/met_fish_001/clinical_request_001.png",
+    "v3/assets/met_fish_001/clinical_context_mri_001.png",
+    "v3/assets/met_fish_001/he_morphology_001.png",
+    "v3/assets/met_fish_001/ihc_panel_001.png",
+    "v3/assets/met_fish_001/ewsr1_breakapart_fish_001.png",
+    "v3/assets/met_fish_001/fish_report_001.png",
+    "v3/assets/met_fish_001/rna_ewsr1_atf1_001.png",
+    "v3/assets/met_fish_001/integrated_report_001.png"
+  ]
+}

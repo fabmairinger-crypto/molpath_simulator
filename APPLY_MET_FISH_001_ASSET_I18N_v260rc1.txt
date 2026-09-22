@@ -1,0 +1,4 @@
+Apply to the current v2.6.0-rc1 simulator tree after the CNS/HEM i18n consolidation patch.
+Copy the contents of v3/ over the existing v3/ directory, preserving paths.
+The patch is cumulative with the prior CNS/HEM i18n consolidation: its consolidation JS is included unchanged so the supplied index.html has no dangling dependency.
+No case JSON or global core files are replaced.
