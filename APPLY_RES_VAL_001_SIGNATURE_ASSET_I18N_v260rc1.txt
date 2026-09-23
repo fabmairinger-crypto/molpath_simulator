@@ -1,0 +1,5 @@
+Prerequisite: current working simulator = v2-6-0_rc1_v2 with the CNS/HEM i18n consolidation and the working MET_FISH_001 asset+i18n delta already applied.
+
+Apply: copy the contents of this patch over the simulator root so that the included v3/ files replace/add their counterparts.
+
+Expected delta: index.html receives exactly one new script include; the new case-local JS and assets/res_val_001/* are added. All other simulator files remain unchanged.

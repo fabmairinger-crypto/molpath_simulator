@@ -1,0 +1,41 @@
+{
+  "patch_id": "v2.6.0-rc1+RES_VAL_001_SIGNATURE_ASSET_I18N",
+  "created": "2026-09-22",
+  "requires": [
+    "v2-6-0_rc1_v2",
+    "CNS/HEM story/deep-dive i18n consolidation",
+    "MET_FISH_001 asset+i18n delta already applied"
+  ],
+  "case_id": "RES_VAL_001_v1_3",
+  "changes": [
+    "Add runtime Deep-Dive entry for RES_VAL_001; baseline deep-dive JSON remains untouched",
+    "Concretize Signature case as HGSOC/CCNE1 validation case without changing generic RES scoring/choice semantics",
+    "Add 8 approved synthetic study assets with phase gating",
+    "Add case-local exact i18n mappings for all existing non-DE locales",
+    "Add one index.html script include immediately before final Signature Taxonomy Freeze"
+  ],
+  "excluded": [
+    "No changes to i18n/core.js or i18n/languages.js",
+    "No changes to cases_v1_4_universal_methods.json",
+    "No changes to deep_dive_cases_v1_7b.json or integration index",
+    "No changes to global renderer, render-loop root-cause fix, Signature Taxonomy Freeze or any other case",
+    "No new images generated during patch build"
+  ],
+  "files": [
+    "v3/APPLY_RES_VAL_001_SIGNATURE_ASSET_I18N_v260rc1.txt",
+    "v3/CHANGELOG_RES_VAL_001_SIGNATURE_ASSET_I18N_v260rc1.md",
+    "v3/MANIFEST_RES_VAL_001_SIGNATURE_ASSET_I18N_v260rc1.json",
+    "v3/QA_RES_VAL_001_SIGNATURE_ASSET_I18N_v260rc1.json",
+    "v3/SHA256SUMS_RES_VAL_001_SIGNATURE_ASSET_I18N_v260rc1.txt",
+    "v3/assets/res_val_001/ccne1_fish_validation_001.png",
+    "v3/assets/res_val_001/cyclin_e1_ihc_validation_001.png",
+    "v3/assets/res_val_001/discovery_heatmap_ccne1_001.png",
+    "v3/assets/res_val_001/discovery_rna_cnv_ccne1_001.png",
+    "v3/assets/res_val_001/discovery_volcano_ccne1_001.png",
+    "v3/assets/res_val_001/independent_qpcr_validation_ccne1_001.png",
+    "v3/assets/res_val_001/integrated_validation_ccne1_001.png",
+    "v3/assets/res_val_001/predefined_validation_plan_ccne1_001.png",
+    "v3/index.html",
+    "v3/v260rc1_res_val_001_signature_asset_i18n_upgrade.js"
+  ]
+}

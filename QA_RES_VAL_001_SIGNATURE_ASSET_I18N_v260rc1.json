@@ -1,0 +1,239 @@
+{
+  "patch": "MolPath v2.6.0-rc1 RES_VAL_001 Signature Asset + i18n Delta",
+  "baseline": "v2-6-0_rc1_v2 + CNS/HEM i18n consolidation + working MET_FISH_001 delta",
+  "case_id": "RES_VAL_001_v1_3",
+  "assets": 8,
+  "languages": [
+    "de",
+    "en",
+    "ro",
+    "el",
+    "es",
+    "fr",
+    "ru",
+    "tr",
+    "ar",
+    "fa",
+    "uk"
+  ],
+  "deep_dive_registration": "runtime; source deep-dive JSON unchanged",
+  "scope_notes": [
+    "HGSOC/CCNE1 concretization",
+    "generic RES scoring and choice semantics preserved",
+    "8 phase-gated synthetic study assets",
+    "case-local runtime i18n",
+    "no global renderer/core/taxonomy/data-file changes"
+  ],
+  "checks": [
+    {
+      "check": "case scope",
+      "status": "PASS",
+      "detail": "runtime upgrade targets RES_VAL_001_v1_3"
+    },
+    {
+      "check": "deep dive absent in baseline",
+      "status": "PASS",
+      "detail": "confirmed before runtime registration"
+    },
+    {
+      "check": "deep dive runtime registration",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "generic scoring semantics preserved",
+      "status": "PASS",
+      "detail": "no option/scoring mutation"
+    },
+    {
+      "check": "asset count",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "phase gating",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "script insertion count",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "script before taxonomy freeze",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "prior CNS/HEM i18n preserved in index",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "prior MET_FISH upgrade preserved in index",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "asset a1 PNG",
+      "status": "PASS",
+      "detail": "discovery_volcano_ccne1_001.png · 1688480 bytes"
+    },
+    {
+      "check": "asset a2 PNG",
+      "status": "PASS",
+      "detail": "discovery_heatmap_ccne1_001.png · 1727709 bytes"
+    },
+    {
+      "check": "asset a3 PNG",
+      "status": "PASS",
+      "detail": "discovery_rna_cnv_ccne1_001.png · 1800804 bytes"
+    },
+    {
+      "check": "asset a4 PNG",
+      "status": "PASS",
+      "detail": "predefined_validation_plan_ccne1_001.png · 1984885 bytes"
+    },
+    {
+      "check": "asset a5 PNG",
+      "status": "PASS",
+      "detail": "independent_qpcr_validation_ccne1_001.png · 1895284 bytes"
+    },
+    {
+      "check": "asset a6 PNG",
+      "status": "PASS",
+      "detail": "ccne1_fish_validation_001.png · 1884901 bytes"
+    },
+    {
+      "check": "asset a7 PNG",
+      "status": "PASS",
+      "detail": "cyclin_e1_ihc_validation_001.png · 2070822 bytes"
+    },
+    {
+      "check": "asset a8 PNG",
+      "status": "PASS",
+      "detail": "integrated_validation_ccne1_001.png · 2040394 bytes"
+    },
+    {
+      "check": "i18n en coverage",
+      "status": "PASS",
+      "detail": "64 exact runtime mappings"
+    },
+    {
+      "check": "i18n ro coverage",
+      "status": "PASS",
+      "detail": "64 exact runtime mappings"
+    },
+    {
+      "check": "i18n el coverage",
+      "status": "PASS",
+      "detail": "64 exact runtime mappings"
+    },
+    {
+      "check": "i18n es coverage",
+      "status": "PASS",
+      "detail": "64 exact runtime mappings"
+    },
+    {
+      "check": "i18n fr coverage",
+      "status": "PASS",
+      "detail": "64 exact runtime mappings"
+    },
+    {
+      "check": "i18n ru coverage",
+      "status": "PASS",
+      "detail": "64 exact runtime mappings"
+    },
+    {
+      "check": "i18n tr coverage",
+      "status": "PASS",
+      "detail": "64 exact runtime mappings"
+    },
+    {
+      "check": "i18n ar coverage",
+      "status": "PASS",
+      "detail": "64 exact runtime mappings"
+    },
+    {
+      "check": "i18n fa coverage",
+      "status": "PASS",
+      "detail": "64 exact runtime mappings"
+    },
+    {
+      "check": "i18n uk coverage",
+      "status": "PASS",
+      "detail": "64 exact runtime mappings"
+    },
+    {
+      "check": "protected absent: i18n/core.js",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "protected absent: i18n/languages.js",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "protected absent: v250b_signature_taxonomy_freeze.js",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "protected absent: v260rc1_render_loop_rootcause_fix.js",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "protected absent: data/cases_v1_4_universal_methods.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "protected absent: data/deep_dive_cases_v1_7b.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "protected absent: data/deep_dive_integration_index_v1_7b.json",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "JS syntax",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "final index delta exactly one include",
+      "status": "PASS",
+      "detail": "only new line is RES_VAL_001 script include"
+    },
+    {
+      "check": "final script order",
+      "status": "PASS",
+      "detail": "MET_FISH → RES_VAL → final taxonomy freeze"
+    },
+    {
+      "check": "protected cumulative files byte-identical",
+      "status": "PASS",
+      "detail": "i18n/core.js:same; i18n/languages.js:same; v250b_signature_taxonomy_freeze.js:same; data/cases_v1_4_universal_methods.json:same; data/deep_dive_cases_v1_7b.json:same; data/deep_dive_integration_index_v1_7b.json:same; v260rc1_mtb_cns_003_mtb_hem_001_i18n_consolidation.js:same; v260rc1_met_fish_001_asset_i18n_upgrade.js:same"
+    },
+    {
+      "check": "overlay JS syntax",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "i18n technical-label coverage",
+      "status": "PASS",
+      "detail": "9 additional deep-dive/report labels localized in all 10 target locales"
+    }
+  ],
+  "summary": {
+    "pass": 41,
+    "fail": 0
+  },
+  "final_overlay": "PASS"
+}
