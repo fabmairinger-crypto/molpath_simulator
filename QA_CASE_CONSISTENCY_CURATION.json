@@ -1,0 +1,110 @@
+{
+  "version": "v2.6.0-rc1-case-curation-2026-09-25",
+  "status": "PASS",
+  "runtime_qa": {
+    "cases_curated": 12,
+    "main_script_syntax": "PASS",
+    "ovar_wrapper_syntax": "PASS",
+    "simulated_runtime_assertions": "PASS",
+    "ovar_completion_assertions": "PASS",
+    "safe_applicator_test": "PASS",
+    "safe_applicator_idempotence": "PASS",
+    "signature_freeze_remains_last": "PASS",
+    "mlh1_alias_visible_once_internal_or": "PASS",
+    "crc004_state_dependent_method_status": "PASS"
+  },
+  "i18n": {
+    "languages": [
+      "de",
+      "en",
+      "ro",
+      "el",
+      "es",
+      "fr",
+      "ru",
+      "tr",
+      "ar",
+      "fa",
+      "uk"
+    ],
+    "new_exact_delta_keys_per_non_de_locale": 19,
+    "strategy": "exact dictionary merge; existing translations preserved; new case-visible delta strings registered for all non-DE locales",
+    "rtl_languages": [
+      "ar",
+      "fa"
+    ]
+  },
+  "cases": [
+    {
+      "id": "MTB_CHOL_001_v1_3",
+      "status": "PASS",
+      "fix": "CCA profiling + explicit FGFR2 fusion; CNS copyover removed from completion/scoring"
+    },
+    {
+      "id": "MTB_IO_003_v1_3",
+      "status": "PASS",
+      "fix": "MMR/MSI focus; fusion copyover invalidated"
+    },
+    {
+      "id": "MTB_OVAR_002_v1_3",
+      "status": "PASS",
+      "fix": "fusion residue blocked; tumour HRR retest no longer mandatory; VUS/HRD/germline required"
+    },
+    {
+      "id": "MET_METH_001_v1_3",
+      "status": "PASS",
+      "fix": "targeted validated MGMT assay required; classifier low-value for isolated MGMT question"
+    },
+    {
+      "id": "MTB_ANGIO_001_v1_3",
+      "status": "PASS",
+      "fix": "no additional lab test required; VHL/HIF invalid; known CRC markers not repeated"
+    },
+    {
+      "id": "MTB_GBM_ANGIO_001_v1_3",
+      "status": "PASS",
+      "fix": "VEGF-response interpretation only; VHL/HIF copyover removed"
+    },
+    {
+      "id": "MTB_CRC_003_v1_3",
+      "status": "PASS",
+      "fix": "RAS/MMR/MSI completion; known BRAF not retested; melanoma BRAF path invalid"
+    },
+    {
+      "id": "MTB_IO_004_v1_3",
+      "status": "PASS",
+      "fix": "endometrial MLH1 methylation reflex; BRAF CRC reflex removed; legacy MLH1 ID preserved as alias"
+    },
+    {
+      "id": "MTB_INV_001_v1_3",
+      "status": "PASS",
+      "fix": "HE risk assessment required; EMT panel optional/mechanistic only"
+    },
+    {
+      "id": "MTB_IO_005_v1_3",
+      "status": "PASS",
+      "fix": "no extra tumour-test gate; antibiotic/microbiome context interpreted without individual ICI contraindication"
+    },
+    {
+      "id": "MTB_PROST_001_v1_3",
+      "status": "PASS",
+      "fix": "HRR, MMR/MSI and hereditary layers separated; HRD scar score not mandatory"
+    },
+    {
+      "id": "MTB_CRC_004_v1_3",
+      "status": "PASS",
+      "fix": "hard material gate first; molecular tests premature before HE and available only as follow-up after material change"
+    }
+  ],
+  "preconditions": {
+    "expected_base_ovar_sha256": "54813a0c38e44c4035e314eef0cffb6e6041a62c77aeb641e97b7d75d9ab3421",
+    "patched_ovar_sha256": "bd6701b1f2d7cd8e3df27ae855a73c5e033af822e1235fab5b8349ca5a3b6f68",
+    "main_patch_sha256": "5240803f604ad0f9d0aa26da65a9e9e77b4dc9b1d475f7ace8db309e60488414",
+    "index_anchor": "<script src=\"v250b_signature_taxonomy_freeze.js\"></script>"
+  },
+  "not_in_scope": [
+    "answer option order",
+    "distractor difficulty/obviousness",
+    "unrelated cases"
+  ]
+}

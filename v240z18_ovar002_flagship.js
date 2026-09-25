@@ -34,7 +34,7 @@ function hasCuration(){return selected('vusic')}
 function hasHrd(){return selected('hrd_score')}
 function hasGermline(){return selected('germline_referral')}
 function hasLegacyBad(){return O18_BAD.some(selected)}
-function allCore(){return hasTumor()&&hasCuration()&&hasHrd()&&hasGermline()}
+function allCore(){return hasCuration()&&hasHrd()&&hasGermline()}
 function finalReady(){try{return !!state?.finalized&&allCore()&&!hasLegacyBad()}catch(_){return false}}
 function esc2(v){try{return esc(v==null?'':String(v))}catch(_){return String(v==null?'':v).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}}
 function lang(){
@@ -130,7 +130,6 @@ function applyCaseLogic(){
   c.allowed_tests=['he_review','tumor_brca_hrr','broad_pan_panel','hrd_score','germline_referral','vusic'];
   c.bad_tests=O18_BAD.slice();
   c.required_groups=[
-    {id:'brca_hrr',label:t.groupTumor,tests:['tumor_brca_hrr','broad_pan_panel'],suggest:'tumor_brca_hrr'},
     {id:'vus',label:t.groupVus,tests:['vusic'],suggest:'vusic'},
     {id:'hrd',label:t.groupHrd,tests:['hrd_score'],suggest:'hrd_score'},
     {id:'germline',label:t.groupGermline,tests:['germline_referral'],suggest:'germline_referral'}
@@ -146,7 +145,6 @@ function applyCaseLogic(){
   c.partial_interpretation=t.partial;
   c.optimal_summary=t.complete;
   c.mtb_checks=[
-    ['brca_hrr',t.groupTumor+' korrekt integriert'],
     ['vus',t.groupVus+' ohne Overcalling'],
     ['hrd',t.groupHrd+' separat bewertet'],
     ['germline',t.groupGermline+' separat kommuniziert'],
@@ -157,12 +155,13 @@ function applyCaseLogic(){
   try{if(typeof DEEP_DIVE_CASES_V17!=='undefined'&&DEEP_DIVE_CASES_V17&&DEEP_DIVE_CASES_V17[O18_CASE])deepReplace(DEEP_DIVE_CASES_V17[O18_CASE])}catch(_){ }
 }
 
-/* Case-local completion: four independent evidence layers. The old fusion template can never complete this case. */
+/* Case-local completion: VUS curation, HRD context and germline communication are the required evidence layers.
+   Tumour BRCA/HRR re-testing is optional/conditional when the existing tumour result is already technically adequate.
+   The old fusion template can never complete this case. */
 const PREV_MISSING=missingTests;
 missingTests=function(){
   if(!active())return PREV_MISSING.apply(this,arguments);
   const miss=[];
-  if(!hasTumor())miss.push('tumor_brca_hrr');
   if(!hasCuration())miss.push('vusic');
   if(!hasHrd())miss.push('hrd_score');
   if(!hasGermline())miss.push('germline_referral');
@@ -252,7 +251,7 @@ window.MolPathOVAR002Flagship=Object.freeze({
   version:O18_VERSION,base:'v2.4.0z17',caseId:O18_CASE,variant:O18_VARIANT,assetCount:10,
   baseline:{intake:['pink referral form'],histo:['H&E overview','H&E zoom','PAX8/WT1/p53/p16 IHC']},
   testGated:{tumor_brca_hrr_or_broad:['initial tumour NGS report','BRCA2 variant viewer'],vusic:['VUS curation workspace'],hrd_score:['HRD negative report'],germline_referral:['germline VUS report'],finalized_complete:['integrated MTB final report']},
-  completion:['tumor_brca_hrr|broad_pan_panel','vusic','hrd_score','germline_referral'],
+  completion:['vusic','hrd_score','germline_referral'],
   rejectedAssets:['CRC/BRAF qPCR misgeneration','MMR/PMS2 misgeneration','wrong BRCA2 c.7007A>G p.Asn2336Ser germline report','non-integrated final attempts'],
   guardrail:'legacy fusion tests are removed from allowed/required logic and can never reveal later or final OVAR_002 evidence'
 });

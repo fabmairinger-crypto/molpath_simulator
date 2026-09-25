@@ -1,0 +1,50 @@
+MolPath Simulator v2.6.0-rc1 — Case Consistency Curation + i18n delta
+Date: 2026-09-25
+
+PURPOSE
+- Curates the 12 jointly reviewed cases only.
+- Fixes method taxonomy, required/completion logic, contradictory result text, selected base-story inconsistencies, and three agreed Deep-Dive wording/sequence details.
+- Keeps MLH1 methylation legacy ID compatibility.
+- Adds exact i18n delta strings for EN/RO/EL/ES/FR/RU/TR/AR/FA/UK.
+- Does NOT replace index.html and therefore does not overwrite later CNS/HEM/MET/RES deltas.
+
+FILES
+1. v3/v260rc1_case_consistency_curation_i18n.js   [new]
+2. v3/v240z18_ovar002_flagship.js                 [safe replacement of existing OVAR_002 wrapper]
+3. INDEX_INCLUDE_FRAGMENT.html                     [one include line]
+4. APPLY_CASE_CONSISTENCY_CURATION.py              [optional safe applicator]
+
+RECOMMENDED APPLY
+  python APPLY_CASE_CONSISTENCY_CURATION.py /path/to/current/v3
+
+MANUAL APPLY
+1. Copy v3/v260rc1_case_consistency_curation_i18n.js into the current v3 directory.
+2. Replace current v3/v240z18_ovar002_flagship.js with the file from this patch ONLY if the current file SHA256 is:
+   54813a0c38e44c4035e314eef0cffb6e6041a62c77aeb641e97b7d75d9ab3421
+   (already-patched SHA256 bd6701b1f2d7cd8e3df27ae855a73c5e033af822e1235fab5b8349ca5a3b6f68 is also accepted/idempotent).
+3. In current v3/index.html, insert:
+   <script src="v260rc1_case_consistency_curation_i18n.js"></script>
+   immediately BEFORE:
+   <script src="v250b_signature_taxonomy_freeze.js"></script>
+4. Keep v250b_signature_taxonomy_freeze.js last.
+
+WHY NO INDEX.HTML REPLACEMENT?
+The base ZIP is older than several later delta patches. Replacing index.html would risk deleting those later runtime layers. This delta uses an anchored insertion instead.
+
+CURATED CASES
+MTB_CHOL_001_v1_3
+MTB_IO_003_v1_3
+MTB_OVAR_002_v1_3
+MET_METH_001_v1_3
+MTB_ANGIO_001_v1_3
+MTB_GBM_ANGIO_001_v1_3
+MTB_CRC_003_v1_3
+MTB_IO_004_v1_3
+MTB_INV_001_v1_3
+MTB_IO_005_v1_3
+MTB_PROST_001_v1_3
+MTB_CRC_004_v1_3
+
+NOT INCLUDED
+- Answer-order/distractor-quality curation. This remains the planned next pass.
+- Unrelated cases.

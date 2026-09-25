@@ -1,0 +1,39 @@
+{
+  "name": "MolPath v2.6.0-rc1 Case Consistency Curation + i18n delta",
+  "date": "2026-09-25",
+  "base_reference": "v2-6-0_rc1_v2.zip plus later unrelated deltas",
+  "files": [
+    {
+      "path": "APPLY_CASE_CONSISTENCY_CURATION.py",
+      "sha256": "525f62bcf0b54fbff873d5b55e06a374503cb396bade5c8e4e70f080768480d2",
+      "bytes": 2183
+    },
+    {
+      "path": "APPLY_CASE_CONSISTENCY_CURATION.txt",
+      "sha256": "4042e4016db16adfd05ac0f316b92b0467096477f87783bee9bf1c8ce402cff9",
+      "bytes": 2105
+    },
+    {
+      "path": "INDEX_INCLUDE_FRAGMENT.html",
+      "sha256": "efe7c59ed1b9454bd106e0225e36924994124acc76e6619834f2e4da1fa0a1d7",
+      "bytes": 149
+    },
+    {
+      "path": "QA_CASE_CONSISTENCY_CURATION.json",
+      "sha256": "5a5c6428e8941c0ead8ad388d0ed8374da8f8c45993e5ceffa861165a6d9effb",
+      "bytes": 3451
+    },
+    {
+      "path": "v3/v240z18_ovar002_flagship.js",
+      "sha256": "bd6701b1f2d7cd8e3df27ae855a73c5e033af822e1235fab5b8349ca5a3b6f68",
+      "bytes": 26928
+    },
+    {
+      "path": "v3/v260rc1_case_consistency_curation_i18n.js",
+      "sha256": "5240803f604ad0f9d0aa26da65a9e9e77b4dc9b1d475f7ace8db309e60488414",
+      "bytes": 42104
+    }
+  ],
+  "apply": "Run APPLY_CASE_CONSISTENCY_CURATION.py against the current v3 directory or follow APPLY_CASE_CONSISTENCY_CURATION.txt.",
+  "load_order": "v260rc1_case_consistency_curation_i18n.js immediately before v250b_signature_taxonomy_freeze.js; signature freeze remains last."
+}
