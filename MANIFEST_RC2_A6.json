@@ -1,0 +1,71 @@
+{
+  "name": "MolPath rc2-clean A6.1 Canonical Integration Candidate",
+  "date": "2026-09-30",
+  "production_ready": false,
+  "files": [
+    {
+      "path": "APPLY_RC2_A6.txt",
+      "bytes": 744,
+      "sha256": "6da9ea8a463e1b087aa561099b031a0fe21daa7fcb5ebaee0f0be7c1b3c6fdaf"
+    },
+    {
+      "path": "CHANGELOG_RC2_A6.md",
+      "bytes": 1011,
+      "sha256": "8e9270b9b6717011e9bb19f5174bc7468b60efe9b46b1ef70ba4560ee20f190a"
+    },
+    {
+      "path": "QA_RC2_A6.json",
+      "bytes": 3527,
+      "sha256": "d82a85818eed13977681e3d8f55e35deaf634d3847211927a0b6bb0921e3b2d0"
+    },
+    {
+      "path": "index.html",
+      "bytes": 4138852,
+      "sha256": "e5177c00388ae1d8b844450a1e47d59bafd5eb86858ea2632e13703051b04dd0"
+    },
+    {
+      "path": "rc2_A4b_canonical_cases_lossless.js",
+      "bytes": 1858251,
+      "sha256": "95f5016ea6ec491b7373821204ee5e0c58923e13fcfca261764a51d45f3160a5"
+    },
+    {
+      "path": "rc2_A5_courses.js",
+      "bytes": 3107,
+      "sha256": "264aa118a9dba81ec445a83683f5a271e703cf105502c5636010d94dfdb84ab8"
+    },
+    {
+      "path": "rc2_A5_data_adapter.js",
+      "bytes": 4682,
+      "sha256": "f3bb1d75a6ba97f60cd54510c41a80e546feca6534d84cd311435567862cd733"
+    },
+    {
+      "path": "rc2_A5_method_focus.js",
+      "bytes": 7459,
+      "sha256": "998ee41f412433bab774b5e6a04001c051850906fe102d517616f1f90003d9c7"
+    },
+    {
+      "path": "rc2_A6_canonical_integration.js",
+      "bytes": 5844,
+      "sha256": "235dafbd0c832ef5e0fa614ffa53c8bd91cb57dae3df3c071aa9dd288746cc73"
+    },
+    {
+      "path": "rc2_A6_parity_report.md",
+      "bytes": 3239,
+      "sha256": "a21ea4b958cf8923dbb26b105555aecd83f2543a2bd6c752f7540fc42c5ee4e2"
+    },
+    {
+      "path": "v260rc1_case_consistency_curation_i18n.js",
+      "bytes": 42103,
+      "sha256": "4035ce12f3010781758a09c90e810d4d4bdaa7f5b28d490e69c11ffec0d49f7c"
+    }
+  ],
+  "load_order_tail": [
+    "v260rc1_case_consistency_curation_i18n.js",
+    "rc2_A4b_canonical_cases_lossless.js",
+    "rc2_A5_courses.js",
+    "rc2_A5_method_focus.js",
+    "rc2_A5_data_adapter.js",
+    "rc2_A6_canonical_integration.js",
+    "v250b_signature_taxonomy_freeze.js"
+  ]
+}

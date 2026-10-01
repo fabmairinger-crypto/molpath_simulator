@@ -1,0 +1,113 @@
+{
+  "version": "rc2-A6.1-canonical-integration-01",
+  "date": "2026-09-30",
+  "status": "PASS_WITH_ENVIRONMENT_LIMITATION",
+  "checks": [
+    {
+      "check": "Candidate HTML: 91 cases after load",
+      "status": "PASS",
+      "detail": "91"
+    },
+    {
+      "check": "Candidate HTML: 91 Deep-Dive array entries",
+      "status": "PASS",
+      "detail": "91"
+    },
+    {
+      "check": "Candidate HTML: 91 Deep-Dive map entries",
+      "status": "PASS",
+      "detail": "91"
+    },
+    {
+      "check": "Candidate HTML: 5 courses",
+      "status": "PASS",
+      "detail": "5"
+    },
+    {
+      "check": "Canonical case payload parity after full A6 load",
+      "status": "PASS",
+      "detail": "exact JSON equality after A5 compatibility normalization"
+    },
+    {
+      "check": "Canonical Deep-Dive parity after full A6 load",
+      "status": "PASS",
+      "detail": "exact JSON equality"
+    },
+    {
+      "check": "V15 META parity",
+      "status": "PASS",
+      "detail": "91/91"
+    },
+    {
+      "check": "V15 GATE parity",
+      "status": "PASS",
+      "detail": "91/91"
+    },
+    {
+      "check": "V15 CAP parity",
+      "status": "PASS",
+      "detail": "91/91"
+    },
+    {
+      "check": "V15 METHOD parity incl. 12-case curation",
+      "status": "PASS",
+      "detail": "91/91"
+    },
+    {
+      "check": "Course parity",
+      "status": "PASS",
+      "detail": "5 courses / 23 unique cases"
+    },
+    {
+      "check": "Methods Focus parity",
+      "status": "PASS",
+      "detail": "44 cases"
+    },
+    {
+      "check": "Signature taxonomy parity",
+      "status": "PASS",
+      "detail": "30 cases"
+    },
+    {
+      "check": "Course => Signature",
+      "status": "PASS",
+      "detail": "23 course cases"
+    },
+    {
+      "check": "Documented 12-case curation active",
+      "status": "PASS",
+      "detail": "MolPathCaseConsistencyCuration present"
+    },
+    {
+      "check": "z12 persistent metadata writer disabled source-level",
+      "status": "PASS",
+      "detail": "no replacement render wrapper introduced for metadata"
+    },
+    {
+      "check": "A6 integration self-check did not throw",
+      "status": "PASS",
+      "detail": "integration script completed"
+    },
+    {
+      "check": "All 11 i18n post-apply hook calls completed in stress pass",
+      "status": "PASS",
+      "detail": "calls=11"
+    },
+    {
+      "check": "No data drift after i18n/render-chain stress attempts",
+      "status": "PASS",
+      "detail": "canonical cases/deep dives still exact"
+    }
+  ],
+  "known_environment_limitations": [
+    "The locally materialized legacy_v223_v224_runtime.js is truncated at 999 parsed lines and therefore throws SyntaxError in the VM harness. This is an extraction limitation of the working copy, not a newly introduced A6 error.",
+    "The lightweight VM DOM mock cannot complete the final visual render chain (missing browser DOM methods). 91 case render-chain invocations were attempted; all ended in mock-DOM errors, but canonical case/deep-dive data remained unchanged.",
+    "Because of those two environment limitations, A6.1 is an integration candidate, not yet the production replacement build. No historical data blocks/files are deleted in this phase."
+  ],
+  "policy": {
+    "old_data_blocks_deleted": false,
+    "old_runtime_hooks_deleted": false,
+    "canonical_sync_position": "after documented 12-case curation, immediately before final signature freeze",
+    "z12_action": "persistent metadata writer disabled; version/render wrapper retained"
+  }
+}

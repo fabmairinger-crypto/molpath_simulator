@@ -998,7 +998,7 @@ function v15ComplexOptions(idx){
     {id:'correct',label:'Twist/Nachforderung strukturiert erkennen und Entscheidung transparent begründen.',correct:true},
     {id:'limits',label:'Limitationen und nächste Schritte aktiv kommunizieren.',correct:true},
     {id:'overcall',label:'Unsicherheit durch überklare Empfehlung verdecken.',correct:false},
-    {id:'ignore',label:'Warnhinweise ignorieren, wenn ein Teilergebnis vorliegt.',correct:false}
+{id:'ignore',label:'Warnhinweise ignorieren, wenn ein Teilergebnis vorliegt.',correct:false}
   ];
 }
 function v15CommunicationOptions(){return [
@@ -1998,7 +1998,7 @@ function renderSidebarCoursePanel(){
   const panel=byId('courseModePanel'); if(!panel) return;
   const active=courseIsActive();
   const c=activeCourse(); const st=courseStats(c||undefined);
-  panel.innerHTML = '<h2>Arbeitsmodus</h2>'+
+panel.innerHTML = '<h2>Arbeitsmodus</h2>'+
     '<div class="course-toggle"><button class="btn '+(!active?'primary':'')+'" onclick="v16SetCourseMode(\'free\')">Freies Spielen</button><button class="btn '+(active?'primary':'')+'" onclick="v16SetCourseMode(\'course\')">Kursmodus</button></div>'+
     (active && c ? '<div class="v20b5-current-course"><b>'+escapeHtml(c.title)+'</b><div class="small muted">Lernpfad und Fallsequenz erscheinen im Hauptbereich unter dem Medical Learning Cockpit.</div><div class="course-progress"><div style="width:'+st.pct+'%"></div></div><div class="case-meta-inline"><span class="tag">'+st.completed+'/'+st.count+' abgeschlossen</span><span class="tag">Ø '+st.avg+'%</span></div></div><div class="course-actions"><button class="btn primary" onclick="v16ContinueCourse()">Kurs fortsetzen</button><button class="btn" onclick="v16SetCourseMode(\'free\')">Zurück zum freien Spiel</button></div>' : '<div class="small muted" style="margin-top:10px">Alle Fälle sind im freien Spiel sichtbar. Kursmodus öffnet den Lernpfad im Hauptbereich.</div>');
 }
@@ -3998,7 +3998,7 @@ window.methodStatus=function(id){
     else if(id==='kras_exon2_only'){kind='invalid';label='zu eng'}
     else if(['pdl1','dna_lung_panel','rna_fusion_panel','dna_rna_lung_combo','hrd_score','tumor_brca_hrr','brca_germline_only','egfr_pcr','alk_fish','ros1_fish'].includes(id)){kind='low_value';label='nicht zielführend'}
     else return ORIG.methodStatus?ORIG.methodStatus(id):{kind,label};
-    return {kind,label};
+return {kind,label};
   }
   return ORIG.methodStatus?ORIG.methodStatus(id):{kind:'low_value',label:'niedriger Wert'};
 };
@@ -6118,7 +6118,7 @@ try{if(typeof v18BadgeHtml==='function')v18BadgeHtml=function(){const cm=v18Case
 
 function z11RemoveDeepBadges(){
   document.querySelectorAll('.v17-deep-badge,.v240m-deep-card-badge').forEach(el=>el.remove());
-  document.querySelectorAll('.badge,.v17-case-badge').forEach(el=>{if((el.textContent||'').trim().toLowerCase()==='deep dive')el.remove()});
+document.querySelectorAll('.badge,.v17-case-badge').forEach(el=>{if((el.textContent||'').trim().toLowerCase()==='deep dive')el.remove()});
 }
 function z11PolishNavigation(){
   try{
@@ -6128,7 +6128,7 @@ function z11PolishNavigation(){
     if(root){
       root.querySelectorAll('[data-case-id],.mini-case').forEach(card=>{
         let id=card.getAttribute('data-case-id')||'';
-        if(!id){const m=(card.getAttribute('onclick')||'').match(/switchCase\('([^']+)'\)/);if(m)id=m[1]}
+if(!id){const m=(card.getAttribute('onclick')||'').match(/switchCase\('([^']+)'\)/);if(m)id=m[1]}
         const c=z11ById(id);if(!c)return;
         const title=card.querySelector('.v20b-case-title,.switch-row b'); if(title)z11SetText(title,z11Title(c));
       });
@@ -6148,7 +6148,7 @@ function z11RenderTimeline(){
     root.className='z11-top-timeline z11-domain-'+domain;
     root.innerHTML=arr.map(([id,label],i)=>{const active=id===state.step;const visited=!!(state.viewed&&state.viewed[id]);const completed=(visited&&i!==cur)||i<cur;const clickable=active||visited||i<cur;const marker=(completed&&!active)?'✓':String(i+1);const loc=z11Tr(label);return `<button type="button" class="z11-top-step ${palette[i]||palette[palette.length-1]||'blue'} ${active?'active':''} ${completed?'done':''} ${clickable?'clickable':'locked'}" ${clickable?`onclick="gotoStep('${id}')"`:'disabled'} ${active?'aria-current="step"':''} title="${z11Esc(loc)}"><span class="z11-top-marker">${marker}</span><span class="z11-top-label">${z11Esc(loc)}</span></button>`}).join('');
     const act=root.querySelector('.active');if(act){const target=Math.max(0,act.offsetLeft-(root.clientWidth-act.offsetWidth)/2);if(Math.abs(root.scrollLeft-target)>20)root.scrollLeft=target}
-  }catch(err){console.warn('[MolPath '+V240Z11_VERSION+'] global premium timeline failed',err)}
+}catch(err){console.warn('[MolPath '+V240Z11_VERSION+'] global premium timeline failed',err)}
 }
 function z11PostRender(){z11PolishNavigation();z11PolishHero();z11RemoveDeepBadges();z11RenderTimeline();z11Stamp()}
 
@@ -6157,7 +6157,6 @@ try{const prevPicker=renderCasePicker;renderCasePicker=function(){const out=prev
 try{const prevKpi=renderKpi;renderKpi=function(){const out=prevKpi.apply(this,arguments);z11PolishHero();z11RemoveDeepBadges();return out};window.renderKpi=renderKpi}catch(_){}
 try{renderSteps=function(){z11RenderTimeline()};window.renderSteps=renderSteps}catch(_){}
 try{const prevRender=window.render;if(typeof prevRender==='function'){window.render=function(){const out=prevRender.apply(this,arguments);z11PostRender();return out};try{render=window.render}catch(_){}}}catch(_){}
-
 /* Deep-Dive summary popup: retain Signature badge only; remove universal Deep-Dive badge. */
 try{v17OpenDeepDiveSummary=function(){const d=z11Deep(activeCase);if(!d){toast('Kein Deep Dive aktiv.');return}const w=window.open('','_blank');if(!w){toast('Popup wurde blockiert.');return}const sig=z11Sig(activeCase);const badge=sig?'<span class="badge">Signature Case</span>':'';const doc=`<!doctype html><html lang="de"><head><meta charset="utf-8"><title>Case Summary ${z11Esc(activeCase.id)}</title><style>body{font-family:Inter,system-ui,sans-serif;background:#eef6fb;color:#0b1b34;margin:0}.page{max-width:980px;margin:24px auto;background:#fff;border-radius:18px;padding:28px;border:1px solid #d8e4ef}h1,h2{color:#0f4c75}.badge{display:inline-block;border-radius:999px;background:#0f4c75;color:white;padding:5px 9px;font-size:.8rem;font-weight:800}.box{border:1px solid #d8e4ef;border-radius:14px;padding:12px;margin:10px 0}.warn{border-left:5px solid #b42318;background:#fff5f5;border-radius:14px;padding:12px;margin:10px 0}li{margin:.3rem 0}@media print{body{background:white}.page{margin:0;border:0}}</style></head><body><main class="page">${badge}<h1>${z11Esc(d.title)}</h1><p>${z11Esc(d.opening_scene||'')}</p><h2>Fallakte</h2><div class="box">${z11Esc(d.case_briefing||'')}</div><h2>Lernziele</h2>${v17List(d.learning_objectives)}<h2>Twist</h2><div class="warn"><b>${z11Esc(d.twist?.title||'')}</b><br>${z11Esc(d.twist?.content||'')}<br><b>Warum kritisch:</b> ${z11Esc(d.twist?.why_critical||'')}</div><h2>Musterpfad</h2>${v17List(d.expected_path)}<h2>Debrief</h2>${v17List(d.debrief_points)}<button onclick="window.print()">Drucken / PDF</button></main></body></html>`;w.document.open();w.document.write(doc);w.document.close()}}catch(_){}
 
@@ -6175,12 +6174,8 @@ try{console.log('[MolPath '+V240Z11_VERSION+'] global baseline polish loaded.')}
 'use strict';
 const V240Z12_VERSION='v2.4.0z12';
 const V240Z12_META={"MTB_NSCLC_001_v0_6":{"difficulty":"intermediate","estimated_time_min":"12–15"},"MTB_CRC_001_v0_6":{"difficulty":"intermediate","estimated_time_min":"12–15"},"MTB_OVAR_001_v0_7":{"difficulty":"advanced","estimated_time_min":"18–25"},"LAB_RUN_002_v0_8":{"difficulty":"intermediate","estimated_time_min":"12–15"},"RES_HYP_001_v0_9":{"difficulty":"intermediate","estimated_time_min":"12–15"},"MTB_IO_001_v1_0":{"difficulty":"intermediate","estimated_time_min":"12–15"},"MTB_CNS_001_v1_0":{"difficulty":"intermediate","estimated_time_min":"15–18"},"MET_NGS_003_v1_0":{"difficulty":"intermediate","estimated_time_min":"11–14"},"LAB_POST_001_v1_0":{"difficulty":"advanced","estimated_time_min":"20–30"},"LAB_DOC_001_v1_0":{"difficulty":"intermediate","estimated_time_min":"12–15"},"RES_OMICS_001_v1_0":{"difficulty":"advanced","estimated_time_min":"18–22"},"RES_ETH_001_v1_0":{"difficulty":"advanced","estimated_time_min":"18–22"},"MTB_NSCLC_002_v1_3":{"difficulty":"advanced","estimated_time_min":"20–30"},"MTB_NSCLC_003_v1_3":{"difficulty":"intermediate","estimated_time_min":"12–15"},"MTB_NSCLC_004_v1_3":{"difficulty":"advanced","estimated_time_min":"12–15"},"MTB_MEL_001_v1_3":{"difficulty":"intermediate","estimated_time_min":"12–15"},"MTB_GIST_001_v1_3":{"difficulty":"beginner","estimated_time_min":"8–10"},"MTB_CHOL_001_v1_3":{"difficulty":"intermediate","estimated_time_min":"12–15"},"MTB_CRC_002_v1_3":{"difficulty":"intermediate","estimated_time_min":"12–15"},"MTB_CRC_003_v1_3":{"difficulty":"intermediate","estimated_time_min":"10–13"},"MTB_CRC_004_v1_3":{"difficulty":"beginner","estimated_time_min":"8–11"},"MTB_CRC_005_v1_3":{"difficulty":"intermediate","estimated_time_min":"12–15"},"MTB_OVAR_002_v1_3":{"difficulty":"advanced","estimated_time_min":"20–30"},"MTB_MAMMA_001_v1_3":{"difficulty":"intermediate","estimated_time_min":"12–16"},"MTB_PROST_001_v1_3":{"difficulty":"advanced","estimated_time_min":"12–16"},"MTB_TAML_001_v1_3":{"difficulty":"intermediate","estimated_time_min":"9–13"},"MTB_IO_002_v1_3":{"difficulty":"intermediate","estimated_time_min":"12–16"},"MTB_IO_003_v1_3":{"difficulty":"intermediate","estimated_time_min":"10–14"},"MTB_IO_004_v1_3":{"difficulty":"intermediate","estimated_time_min":"12–16"},"MTB_IO_005_v1_3":{"difficulty":"beginner","estimated_time_min":"9–13"},"MTB_CNS_002_v1_3":{"difficulty":"intermediate","estimated_time_min":"12–16"},"MTB_CNS_003_v1_3":{"difficulty":"advanced","estimated_time_min":"12–18"},"MTB_HEM_001_v1_3":{"difficulty":"advanced","estimated_time_min":"12–16"},"MTB_METH_001_v1_3":{"difficulty":"intermediate","estimated_time_min":"10–14"},"MTB_ANGIO_001_v1_3":{"difficulty":"beginner","estimated_time_min":"9–13"},"MTB_RCC_001_v1_3":{"difficulty":"intermediate","estimated_time_min":"10–14"},"MTB_GBM_ANGIO_001_v1_3":{"difficulty":"intermediate","estimated_time_min":"10–14"},"MTB_TME_001_v1_3":{"difficulty":"intermediate","estimated_time_min":"11–15"},"MTB_INV_001_v1_3":{"difficulty":"beginner","estimated_time_min":"10–14"},"MET_NGS_001_v1_3":{"difficulty":"intermediate","estimated_time_min":"10–13"},"MET_NGS_002_v1_3":{"difficulty":"intermediate","estimated_time_min":"9–12"},"MET_NGS_004_v1_3":{"difficulty":"advanced","estimated_time_min":"11–14"},"MET_RNA_001_v1_3":{"difficulty":"intermediate","estimated_time_min":"10–14"},"MET_LB_001_v1_3":{"difficulty":"intermediate","estimated_time_min":"10–13"},"MET_PCR_001_v1_3":{"difficulty":"beginner","estimated_time_min":"9–12"},"MET_METH_001_v1_3":{"difficulty":"beginner","estimated_time_min":"8–11"},"MET_FISH_001_v1_3":{"difficulty":"intermediate","estimated_time_min":"10–13"},"MET_MULTI_001_v1_3":{"difficulty":"advanced","estimated_time_min":"11–14"},"LAB_PRE_001_v1_3":{"difficulty":"beginner","estimated_time_min":"8–10"},"LAB_PRE_002_v1_3":{"difficulty":"intermediate","estimated_time_min":"12–15"},"LAB_PRE_003_v1_3":{"difficulty":"intermediate","estimated_time_min":"9–12"},"LAB_PRE_004_v1_3":{"difficulty":"intermediate","estimated_time_min":"9–12"},"LAB_PRE_005_v1_3":{"difficulty":"advanced","estimated_time_min":"12–15"},"LAB_RUN_001_v1_3":{"difficulty":"advanced","estimated_time_min":"12–15"},"LAB_RUN_003_v1_3":{"difficulty":"intermediate","estimated_time_min":"10–12"},"LAB_RUN_004_v1_3":{"difficulty":"advanced","estimated_time_min":"12–15"},"LAB_RUN_005_v1_3":{"difficulty":"intermediate","estimated_time_min":"10–12"},"LAB_RUN_006_v1_3":{"difficulty":"expert","estimated_time_min":"30–45"},"LAB_POST_002_v1_3":{"difficulty":"advanced","estimated_time_min":"15–20"},"LAB_POST_003_v1_3":{"difficulty":"advanced","estimated_time_min":"18–25"},"LAB_POST_004_v1_3":{"difficulty":"intermediate","estimated_time_min":"12–18"},"LAB_POST_005_v1_3":{"difficulty":"advanced","estimated_time_min":"18–25"},"LAB_DOC_002_v1_3":{"difficulty":"advanced","estimated_time_min":"15"},"LAB_AUDIT_001_v1_3":{"difficulty":"advanced","estimated_time_min":"15"},"LAB_CAPA_001_v1_3":{"difficulty":"expert","estimated_time_min":"40"},"LAB_QM_001_v1_3":{"difficulty":"beginner","estimated_time_min":"8"},"LAB_LLM_001_v1_3":{"difficulty":"advanced","estimated_time_min":"10"},"LAB_DIGI_001_v1_3":{"difficulty":"intermediate","estimated_time_min":"10"},"LAB_DIGI_002_v1_3":{"difficulty":"intermediate","estimated_time_min":"15"},"LAB_DATA_001_v1_3":{"difficulty":"beginner","estimated_time_min":"10"},"LAB_DATA_002_v1_3":{"difficulty":"expert","estimated_time_min":"45"},"LAB_LIMS_001_v1_3":{"difficulty":"expert","estimated_time_min":"40"},"RES_HYP_002_v1_3":{"difficulty":"intermediate","estimated_time_min":"12–15"},"RES_OMICS_002_v1_3":{"difficulty":"intermediate","estimated_time_min":"12–15"},"RES_OMICS_003_v1_3":{"difficulty":"intermediate","estimated_time_min":"12–15"},"RES_IMM_001_v1_3":{"difficulty":"advanced","estimated_time_min":"15–20"},"RES_MOD_001_v1_3":{"difficulty":"intermediate","estimated_time_min":"12–15"},"RES_MOD_002_v1_3":{"difficulty":"beginner","estimated_time_min":"8–10"},"RES_MOD_003_v1_3":{"difficulty":"advanced","estimated_time_min":"30–60"},"RES_VAL_001_v1_3":{"difficulty":"intermediate","estimated_time_min":"15–18"},"RES_VAL_002_v1_3":{"difficulty":"intermediate","estimated_time_min":"12–15"},"RES_ETH_002_v1_3":{"difficulty":"intermediate","estimated_time_min":"15–18"},"RES_ETH_003_v1_3":{"difficulty":"intermediate","estimated_time_min":"12–15"},"RES_DATA_001_v1_3":{"difficulty":"beginner","estimated_time_min":"8–10"},"RES_AI_001_v1_3":{"difficulty":"advanced","estimated_time_min":"15–18"},"RES_PM_001_v1_3":{"difficulty":"beginner","estimated_time_min":"10–12"},"RES_PM_002_v1_3":{"difficulty":"beginner","estimated_time_min":"8–10"},"RES_ROLE_001_v1_3":{"difficulty":"intermediate","estimated_time_min":"12–15"},"RES_GRANT_001_v1_3":{"difficulty":"advanced","estimated_time_min":"30–45"},"RES_IMPL_001_v1_3":{"difficulty":"advanced","estimated_time_min":"12–15"},"RES_TEAM_001_v1_3":{"difficulty":"intermediate","estimated_time_min":"10–12"}};
-function z12ApplyMetadata(){
-  try{
-    if(typeof cases!=='undefined') cases.forEach(c=>{const m=V240Z12_META[c.id];if(m){c.difficulty=m.difficulty;c.estimated_time_min=m.estimated_time_min;}});
-    if(typeof DEEP_DIVE_MAP_V17!=='undefined') Object.entries(V240Z12_META).forEach(([id,m])=>{const d=DEEP_DIVE_MAP_V17[id];if(d)d.estimated_minutes_deep=m.estimated_time_min;});
-  }catch(err){console.warn('[MolPath '+V240Z12_VERSION+'] metadata calibration failed',err)}
-}
+function z12ApplyMetadata(){/* rc2 A6.1: canonical data owns difficulty/time; legacy z12 writer disabled */ return;}
+window.MolPathZ12MetadataWriterDisabledA6=true;
 function z12Stamp(){try{window.MOLPATH_APP_VERSION=V240Z12_VERSION;document.title='MolPath Simulator '+V240Z12_VERSION;const els=[document.getElementById('v20bVersion'),document.getElementById('versionBadge'),...document.querySelectorAll('.v20b-topstatus .v20b-pill.primary')].filter(Boolean);els.forEach(el=>{el.setAttribute('data-i18n-skip','1');el.textContent=V240Z12_VERSION})}catch(_){}}
 z12ApplyMetadata();
 try{const prev=window.render;if(typeof prev==='function'){window.render=function(){z12ApplyMetadata();const out=prev.apply(this,arguments);z12Stamp();return out};try{render=window.render}catch(_){}}}catch(_){}
@@ -6198,7 +6193,6 @@ try{console.log('[MolPath '+V240Z12_VERSION+'] case metadata recalibration loade
 
 <!-- v2.4.0z14 MTB_CRC_001 Premium / Flagship -->
 <script src="v240z14_crc001_flagship.js"></script>
-
 <!-- v2.4.0z15 MTB_NSCLC_002 Premium / Flagship -->
 <script src="v240z15_nsclc002_flagship.js"></script>
 
@@ -6208,7 +6202,6 @@ try{console.log('[MolPath '+V240Z12_VERSION+'] case metadata recalibration loade
 <!-- v2.4.0z17 MTB_OVAR_001 Premium / Flagship -->
 <script src="v240z17_ovar001_flagship.js"></script>
 <script src="v240z18_ovar002_flagship.js"></script>
-
 <!-- v2.4.0z19 MTB_CNS_001 Premium / Flagship -->
 <script src="v240z19_cns001_flagship.js"></script>
 
@@ -6218,7 +6211,6 @@ try{console.log('[MolPath '+V240Z12_VERSION+'] case metadata recalibration loade
 
 <!-- v2.5.0b LAB_POST_001 Flagship Asset Layer -->
 <script src="v250b_labpost001_flagship.js"></script>
-
 <!-- v2.5.0b LAB_DOC_001 Flagship Asset Layer -->
 <script src="v250b_labdoc001_flagship.js"></script>
 
@@ -6227,7 +6219,6 @@ try{console.log('[MolPath '+V240Z12_VERSION+'] case metadata recalibration loade
 
 <!-- v2.5.0b RES_ETH_001 Flagship Asset Layer — stable renderer wrapper -->
 <script src="v250b_reseth001_flagship.js"></script>
-
 <!-- v2.5.0b Responsive Tablet/Mobile Shell + central i18n copy -->
 <script src="v250b_responsive_shell.js"></script>
 
@@ -6267,8 +6258,6 @@ try{console.log('[MolPath '+V240Z12_VERSION+'] case metadata recalibration loade
 <script src="v250b_reseth002_course_flagship.js"></script>
 <!-- v2.5.0b RES_ROLE_001 Course Flagship / RES Basics — final 23of23 -->
 <script src="v250b_resrole001_course_flagship.js"></script>
-
-
 <!-- v2.6.0-rc1 MTB_CNS_003 Asset / Content Upgrade -->
 <script src="v260rc1_mtb_cns_003_asset_upgrade.js"></script>
 
@@ -6280,5 +6269,12 @@ try{console.log('[MolPath '+V240Z12_VERSION+'] case metadata recalibration loade
 <!-- v2.6.0-rc1 MET_FISH_001 Signature Asset + i18n Upgrade -->
 <script src="v260rc1_met_fish_001_asset_i18n_upgrade.js"></script>
 <script src="v260rc1_res_val_001_signature_asset_i18n_upgrade.js"></script>
+<!-- rc2-clean A6.1 canonical-data integration candidate: historical runtime retained, canonical data becomes final authority -->
+<script src="v260rc1_case_consistency_curation_i18n.js"></script>
+<script src="rc2_A4b_canonical_cases_lossless.js"></script>
+<script src="rc2_A5_courses.js"></script>
+<script src="rc2_A5_method_focus.js"></script>
+<script src="rc2_A5_data_adapter.js"></script>
+<script src="rc2_A6_canonical_integration.js"></script>
 <script src="v250b_signature_taxonomy_freeze.js"></script>
 </body></html>

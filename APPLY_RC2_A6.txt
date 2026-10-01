@@ -1,0 +1,13 @@
+MolPath rc2-clean A6.1 — INTEGRATION CANDIDATE ONLY
+
+This is NOT yet a production replacement.
+
+Apply to a COPY of the current v2.6.0-rc1_v2 directory:
+1. Replace the working copy index.html with the supplied index.html.
+2. Copy the supplied rc2_A4b/A5/A6 JavaScript files into the same directory as index.html.
+3. Ensure v260rc1_case_consistency_curation_i18n.js is present (supplied again for reproducibility).
+4. Do NOT delete any legacy files or old runtime layers yet.
+5. Open the copy and run regression checks before any cleanup/deletion phase.
+
+Expected tail order:
+... rc1 assets -> case_consistency_curation_i18n -> A4b canonical -> A5 courses -> A5 method focus -> A5 adapter -> A6 integration -> signature taxonomy freeze (last).
