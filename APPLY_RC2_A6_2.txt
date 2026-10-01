@@ -1,0 +1,27 @@
+MolPath rc2-clean A6.2 — APPLY
+
+BASE
+- Use the working full build on which A6.1 already starts successfully.
+- Do NOT apply A5 again.
+
+APPLY
+1. Copy the contents of this ZIP over the current A6.1 build.
+2. Replace files when asked.
+3. Keep all existing assets, i18n files, legacy runtime files and other v240/v250/v260 layers.
+4. Open index.html as before.
+
+SHORT BROWSER SMOKE
+- Startup cover disappears and Home/Start page opens.
+- Case library still shows 91 cases.
+- Signature filter shows 30 cases.
+- Methods Focus: “all methodological pitfalls” shows 44 cases; test at least one domain.
+- Open one course and one case.
+- Switch DE -> EN -> one additional language -> DE.
+- Open CRC001 or CRC002, OVAR002 and IO001 once (hybrid writer cases).
+- Open LAB_PRE_001 and RES_ROLE_001 after a language switch; their corrected metadata must remain:
+  LAB_PRE_001 = intermediate / 10–15
+  RES_ROLE_001 = advanced / 15–18
+
+ROLLBACK
+- Restore the A6.1 versions of index.html and v250b_method_focus_filter.js.
+- No content/asset file is deleted by A6.2.

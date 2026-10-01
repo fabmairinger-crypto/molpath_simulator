@@ -1,0 +1,75 @@
+{
+  "name": "MolPath rc2-clean A6.2 Registry/Data-Authority Flatten",
+  "version": "rc2-A6.2-registry-flatten-01",
+  "date": "2026-10-01",
+  "base": "working A6.1 full build",
+  "apply_mode": "delta overlay; replace matching files; do not delete unrelated files",
+  "files": [
+    {
+      "path": "APPLY_RC2_A6_2.txt",
+      "bytes": 1058,
+      "sha256": "74fe7deec3eea7cc1ab12fb5ee948c28db4d65c6f5507df17c56b80c14b0e177"
+    },
+    {
+      "path": "CHANGELOG_RC2_A6_2.md",
+      "bytes": 1994,
+      "sha256": "83784f902463deef2e8d595c39fab52065ae11c7761e970d693811b5824c3b27"
+    },
+    {
+      "path": "QA_RC2_A6_2.json",
+      "bytes": 3969,
+      "sha256": "1f8e8b77a89c2c110507e577f44bf31a8c4b4ee7f70536f896638c599d48c685"
+    },
+    {
+      "path": "WRITER_AUDIT_RC2_A6_2.md",
+      "bytes": 2037,
+      "sha256": "3804df1063be04acd323dc3f6bbb5c86e71e139f6709fdb6a03846fb253d9dbb"
+    },
+    {
+      "path": "index.html",
+      "bytes": 4129452,
+      "sha256": "407bad3a7225e2546e90aa6405116d928e452b9fa520a8048b8570f9c5fb5af3"
+    },
+    {
+      "path": "rc2_A4b_canonical_cases_lossless.js",
+      "bytes": 1858251,
+      "sha256": "95f5016ea6ec491b7373821204ee5e0c58923e13fcfca261764a51d45f3160a5"
+    },
+    {
+      "path": "rc2_A5_courses.js",
+      "bytes": 3144,
+      "sha256": "ff14647c1cdcc5e095abea4fdbf90981db84d49f0f0906d658805b23650cf343"
+    },
+    {
+      "path": "rc2_A5_data_adapter.js",
+      "bytes": 4682,
+      "sha256": "f3bb1d75a6ba97f60cd54510c41a80e546feca6534d84cd311435567862cd733"
+    },
+    {
+      "path": "rc2_A5_method_focus.js",
+      "bytes": 7481,
+      "sha256": "359f66f091e48e898c3550237d5d4e012424aac854196efee669ef223efdb5fe"
+    },
+    {
+      "path": "rc2_A6_canonical_integration.js",
+      "bytes": 6150,
+      "sha256": "5963c349c3d4785dce0d3de6ce102dc2d5e29252eb400379c702ec1cdea27f8e"
+    },
+    {
+      "path": "v250b_method_focus_filter.js",
+      "bytes": 12094,
+      "sha256": "02b43e8b6b4d7b6e72c47c8f3786cad148c58261e491e43c0352b415d0568f09"
+    },
+    {
+      "path": "v260rc1_case_consistency_curation_i18n.js",
+      "bytes": 42103,
+      "sha256": "4035ce12f3010781758a09c90e810d4d4bdaa7f5b28d490e69c11ffec0d49f7c"
+    }
+  ],
+  "load_invariants": {
+    "canonical_courses_before_legacy_course_runtime": true,
+    "canonical_method_focus_before_filter_ui": true,
+    "case_consistency_before_canonical_final_sync": true,
+    "signature_freeze_last_external_script": true
+  }
+}

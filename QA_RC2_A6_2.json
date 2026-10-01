@@ -1,0 +1,128 @@
+{
+  "version": "rc2-A6.2-registry-flatten-01",
+  "date": "2026-10-01",
+  "status": "PASS",
+  "scope": "First conservative data-authority retirement tranche after successful A6.1 browser smoke test.",
+  "checks": [
+    {
+      "check": "z12 legacy metadata table removed from index",
+      "status": "PASS",
+      "detail": "V240Z12_META declaration absent"
+    },
+    {
+      "check": "z12 metadata writer remains source-level no-op",
+      "status": "PASS",
+      "detail": "MolPathZ12MetadataWriterDisabledA6=true; z12ApplyMetadata() returns immediately"
+    },
+    {
+      "check": "canonical courses loader occurs once",
+      "status": "PASS",
+      "detail": "1 include"
+    },
+    {
+      "check": "canonical courses load before v1.6 course runtime",
+      "status": "PASS",
+      "detail": "loader precedes COURSES_V16 declaration"
+    },
+    {
+      "check": "legacy COURSES_V16 literal removed",
+      "status": "PASS",
+      "detail": "5-course literal replaced by clone of MolPathCanonicalCoursesA5.courses"
+    },
+    {
+      "check": "legacy vs canonical course registry parity",
+      "status": "PASS",
+      "detail": "exact JSON equality; 5 courses / 23 unique course cases"
+    },
+    {
+      "check": "canonical Methods Focus loader occurs once",
+      "status": "PASS",
+      "detail": "1 include"
+    },
+    {
+      "check": "canonical Methods Focus loads before UI/filter layer",
+      "status": "PASS",
+      "detail": "loader precedes v250b_method_focus_filter.js"
+    },
+    {
+      "check": "duplicate 44-case Methods Focus registry removed from filter layer",
+      "status": "PASS",
+      "detail": "REGISTRY now references MolPathCanonicalMethodFocusA5.registry"
+    },
+    {
+      "check": "legacy vs canonical Methods Focus parity",
+      "status": "PASS",
+      "detail": "exact JSON equality; 44 drivers / 5 domains"
+    },
+    {
+      "check": "patched Methods Focus UI layer Node load smoke",
+      "status": "PASS",
+      "detail": "44 cases / 5 domains / exact registry identity"
+    },
+    {
+      "check": "all packaged external JS syntax",
+      "status": "PASS",
+      "detail": "node --check PASS"
+    },
+    {
+      "check": "A6.2 integration dry-run",
+      "status": "PASS",
+      "detail": "15/15 integration checks true"
+    },
+    {
+      "check": "cases",
+      "status": "PASS",
+      "detail": "91 / 91 unique"
+    },
+    {
+      "check": "deep dives",
+      "status": "PASS",
+      "detail": "91 / 91"
+    },
+    {
+      "check": "V15 maps",
+      "status": "PASS",
+      "detail": "META/GATE/CAP/METHOD_RULE each 91"
+    },
+    {
+      "check": "signature before final freeze",
+      "status": "PASS",
+      "detail": "30"
+    },
+    {
+      "check": "course => signature",
+      "status": "PASS",
+      "detail": "preserved by canonical dataset / final freeze remains last"
+    },
+    {
+      "check": "final external loader remains signature freeze",
+      "status": "PASS",
+      "detail": "v250b_signature_taxonomy_freeze.js"
+    },
+    {
+      "check": "hybrid case/i18n renderer writers not removed speculatively",
+      "status": "PASS",
+      "detail": "z13/z14/z15/z16/z18/z20 and legacy language wrappers intentionally retained for source-split"
+    }
+  ],
+  "counts": {
+    "checks_total": 20,
+    "checks_pass": 20,
+    "cases": 91,
+    "deep_dives": 91,
+    "signature_cases": 30,
+    "courses": 5,
+    "unique_course_cases": 23,
+    "method_focus_cases": 44,
+    "method_focus_domains": 5
+  },
+  "size_delta": {
+    "index_a6_1_bytes": 4138852,
+    "index_a6_2_bytes": 4129452,
+    "index_bytes_removed": 9400,
+    "method_filter_before_bytes": 18752,
+    "method_filter_after_bytes": 12094,
+    "method_filter_bytes_removed": 6658
+  },
+  "browser_test_note": "Local Chromium execution is blocked by the hosted environment policy. A6.1 was browser-smoke-tested successfully by the user; A6.2 therefore remains a candidate until the short manual smoke checklist is completed in the user's full build."
+}

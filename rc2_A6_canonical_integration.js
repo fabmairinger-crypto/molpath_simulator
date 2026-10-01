@@ -1,10 +1,10 @@
-/* MolPath rc2-clean A6.1 canonical data integration — SAFE INTEGRATION CANDIDATE
+/* MolPath rc2-clean A6.2 canonical data integration — SAFE INTEGRATION CANDIDATE
    Loaded after all historical content/asset layers + documented 12-case curation,
    immediately before the final Signature Taxonomy Freeze.
    Purpose: make the A4b/A5 canonical data the final data authority WITHOUT removing historical runtime hooks yet.
 */
 (function(root){'use strict';
-const VERSION='rc2-A6.1-canonical-integration-01';
+const VERSION='rc2-A6.2-canonical-integration-01';
 function clone(x){if(typeof structuredClone==='function')return structuredClone(x);return JSON.parse(JSON.stringify(x));}
 function replaceObject(target,source){
   if(!target||typeof target!=='object'||Array.isArray(target))throw new Error('replaceObject target invalid');
@@ -83,12 +83,14 @@ const checks={
   courseCases23:courseIds.size===23,
   signature30BeforeFinalFreeze:signatureCount===30,
   z12WriterDisabled:z12WriterDisabled,
+  z12LegacyTableRemoved:(typeof V240Z12_META==='undefined'),
+  methodFocusCanonical:!!(root.MolPathMethodFocusRegistry&&root.MolPathCanonicalMethodFocusA5&&eq(root.MolPathMethodFocusRegistry.registry,root.MolPathCanonicalMethodFocusA5.registry)),
   casePayloadCanonical:eq(cases,built.cases),
   deepPayloadCanonical:eq(DEEP_DIVE_CASES_V17,built.DEEP_DIVE_CASES_V17),
   coursesCanonical:eq(COURSES_V16,built.COURSES_V16)
 };
 const pass=Object.values(checks).every(Boolean);
-root.MolPathCanonicalIntegrationA6=Object.freeze({version:VERSION,pass,checks:Object.freeze(checks),counts:Object.freeze({cases:cases.length,deep:DEEP_DIVE_CASES_V17.length,courses:COURSES_V16.length,courseCases:courseIds.size,signatureBeforeFinalFreeze:signatureCount}),policy:'canonical data synced once; historical runtime hooks retained; persistent z12 source table canonicalised in-place'});
+root.MolPathCanonicalIntegrationA6=Object.freeze({version:VERSION,pass,checks:Object.freeze(checks),counts:Object.freeze({cases:cases.length,deep:DEEP_DIVE_CASES_V17.length,courses:COURSES_V16.length,courseCases:courseIds.size,signatureBeforeFinalFreeze:signatureCount}),policy:'canonical data synced once; z12 legacy table removed/writer disabled; course + Methods Focus registries canonical; hybrid renderer/i18n layers retained pending source-split'});
 if(!pass)throw new Error('A6 canonical integration self-check failed: '+JSON.stringify(checks));
 try{console.log('[MolPath '+VERSION+'] canonical data integration PASS',root.MolPathCanonicalIntegrationA6)}catch(_){}
 })(typeof window!=='undefined'?window:globalThis);
