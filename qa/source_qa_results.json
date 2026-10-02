@@ -1,1556 +1,564 @@
 {
-  "environment": "source preservation and authority checks; no browser claim",
-  "total": 265,
-  "passed": 265,
+  "status": "PASS",
+  "total": 86,
+  "passed": 86,
   "failed": [],
   "checks": [
     {
-      "name": "non-version CSS retained: v240z14_crc001_flagship.js",
+      "name": "ordered source-to-canonical parity V15_META_RECORDS",
       "pass": true,
-      "detail": {
-        "before_blocks": 1,
-        "after_blocks": 1,
-        "missing_blocks": 0
-      }
+      "detail": 91
     },
     {
-      "name": "asset paths retained: v240z14_crc001_flagship.js",
+      "name": "old data literal absent V15_META_RECORDS",
       "pass": true,
-      "detail": {
-        "references": 10
-      }
-    },
-    {
-      "name": "no new MutationObserver: v240z14_crc001_flagship.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "non-version CSS retained: v240z19_cns001_flagship.js",
-      "pass": true,
-      "detail": {
-        "before_blocks": 1,
-        "after_blocks": 1,
-        "missing_blocks": 0
-      }
-    },
-    {
-      "name": "asset paths retained: v240z19_cns001_flagship.js",
-      "pass": true,
-      "detail": {
-        "references": 10
-      }
-    },
-    {
-      "name": "no new MutationObserver: v240z19_cns001_flagship.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "non-version CSS retained: molpath_version.js",
-      "pass": true,
-      "detail": {
-        "before_blocks": 0,
-        "after_blocks": 0,
-        "missing_blocks": 0
-      }
-    },
-    {
-      "name": "asset paths retained: molpath_version.js",
-      "pass": true,
-      "detail": {
-        "references": 0
-      }
-    },
-    {
-      "name": "no new MutationObserver: molpath_version.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "non-version CSS retained: rc2_A6_canonical_integration.js",
-      "pass": true,
-      "detail": {
-        "before_blocks": 0,
-        "after_blocks": 0,
-        "missing_blocks": 0
-      }
-    },
-    {
-      "name": "asset paths retained: rc2_A6_canonical_integration.js",
-      "pass": true,
-      "detail": {
-        "references": 0
-      }
-    },
-    {
-      "name": "no new MutationObserver: rc2_A6_canonical_integration.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "non-version CSS retained: v240z20_io001_flagship.js",
-      "pass": true,
-      "detail": {
-        "before_blocks": 1,
-        "after_blocks": 1,
-        "missing_blocks": 0
-      }
-    },
-    {
-      "name": "asset paths retained: v240z20_io001_flagship.js",
-      "pass": true,
-      "detail": {
-        "references": 9
-      }
-    },
-    {
-      "name": "no new MutationObserver: v240z20_io001_flagship.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "non-version CSS retained: v250b_startup_cover_hotfix.js",
-      "pass": true,
-      "detail": {
-        "before_blocks": 0,
-        "after_blocks": 0,
-        "missing_blocks": 0
-      }
-    },
-    {
-      "name": "asset paths retained: v250b_startup_cover_hotfix.js",
-      "pass": true,
-      "detail": {
-        "references": 0
-      }
-    },
-    {
-      "name": "no new MutationObserver: v250b_startup_cover_hotfix.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "non-version CSS retained: v240z16_metngs003_flagship.js",
-      "pass": true,
-      "detail": {
-        "before_blocks": 1,
-        "after_blocks": 1,
-        "missing_blocks": 0
-      }
-    },
-    {
-      "name": "asset paths retained: v240z16_metngs003_flagship.js",
-      "pass": true,
-      "detail": {
-        "references": 9
-      }
-    },
-    {
-      "name": "no new MutationObserver: v240z16_metngs003_flagship.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "non-version CSS retained: v240z13_crc002_flagship.js",
-      "pass": true,
-      "detail": {
-        "before_blocks": 1,
-        "after_blocks": 1,
-        "missing_blocks": 0
-      }
-    },
-    {
-      "name": "asset paths retained: v240z13_crc002_flagship.js",
-      "pass": true,
-      "detail": {
-        "references": 9
-      }
-    },
-    {
-      "name": "no new MutationObserver: v240z13_crc002_flagship.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "non-version CSS retained: v240z15_nsclc002_flagship.js",
-      "pass": true,
-      "detail": {
-        "before_blocks": 1,
-        "after_blocks": 1,
-        "missing_blocks": 0
-      }
-    },
-    {
-      "name": "asset paths retained: v240z15_nsclc002_flagship.js",
-      "pass": true,
-      "detail": {
-        "references": 9
-      }
-    },
-    {
-      "name": "no new MutationObserver: v240z15_nsclc002_flagship.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "non-version CSS retained: v240z17_ovar001_flagship.js",
-      "pass": true,
-      "detail": {
-        "before_blocks": 1,
-        "after_blocks": 1,
-        "missing_blocks": 0
-      }
-    },
-    {
-      "name": "asset paths retained: v240z17_ovar001_flagship.js",
-      "pass": true,
-      "detail": {
-        "references": 10
-      }
-    },
-    {
-      "name": "no new MutationObserver: v240z17_ovar001_flagship.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "non-version CSS retained: v260rc1_case_consistency_curation_i18n.js",
-      "pass": true,
-      "detail": {
-        "before_blocks": 0,
-        "after_blocks": 0,
-        "missing_blocks": 0
-      }
-    },
-    {
-      "name": "asset paths retained: v260rc1_case_consistency_curation_i18n.js",
-      "pass": true,
-      "detail": {
-        "references": 0
-      }
-    },
-    {
-      "name": "no new MutationObserver: v260rc1_case_consistency_curation_i18n.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "non-version CSS retained: v250b_responsive_shell.js",
-      "pass": true,
-      "detail": {
-        "before_blocks": 1,
-        "after_blocks": 1,
-        "missing_blocks": 0
-      }
-    },
-    {
-      "name": "asset paths retained: v250b_responsive_shell.js",
-      "pass": true,
-      "detail": {
-        "references": 0
-      }
-    },
-    {
-      "name": "no new MutationObserver: v250b_responsive_shell.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "non-version CSS retained: index.html",
-      "pass": true,
-      "detail": {
-        "before_blocks": 48,
-        "after_blocks": 48,
-        "missing_blocks": 0
-      }
-    },
-    {
-      "name": "asset paths retained: index.html",
-      "pass": true,
-      "detail": {
-        "references": 17
-      }
-    },
-    {
-      "name": "no new MutationObserver: index.html",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "non-version CSS retained: v240z18_ovar002_flagship.js",
-      "pass": true,
-      "detail": {
-        "before_blocks": 1,
-        "after_blocks": 1,
-        "missing_blocks": 0
-      }
-    },
-    {
-      "name": "asset paths retained: v240z18_ovar002_flagship.js",
-      "pass": true,
-      "detail": {
-        "references": 10
-      }
-    },
-    {
-      "name": "no new MutationObserver: v240z18_ovar002_flagship.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "non-version CSS retained: rc2_A5_data_adapter.js",
-      "pass": true,
-      "detail": {
-        "before_blocks": 0,
-        "after_blocks": 0,
-        "missing_blocks": 0
-      }
-    },
-    {
-      "name": "asset paths retained: rc2_A5_data_adapter.js",
-      "pass": true,
-      "detail": {
-        "references": 0
-      }
-    },
-    {
-      "name": "no new MutationObserver: rc2_A5_data_adapter.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "non-version CSS retained: i18n/legacy/legacy_v223_v224_runtime.js",
-      "pass": true,
-      "detail": {
-        "before_blocks": 0,
-        "after_blocks": 0,
-        "missing_blocks": 0
-      }
-    },
-    {
-      "name": "asset paths retained: i18n/legacy/legacy_v223_v224_runtime.js",
-      "pass": true,
-      "detail": {
-        "references": 0
-      }
-    },
-    {
-      "name": "no new MutationObserver: i18n/legacy/legacy_v223_v224_runtime.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "non-version CSS retained: i18n/legacy/legacy_v240z10a_res_t4_hotfix.js",
-      "pass": true,
-      "detail": {
-        "before_blocks": 0,
-        "after_blocks": 0,
-        "missing_blocks": 0
-      }
-    },
-    {
-      "name": "asset paths retained: i18n/legacy/legacy_v240z10a_res_t4_hotfix.js",
-      "pass": true,
-      "detail": {
-        "references": 0
-      }
-    },
-    {
-      "name": "no new MutationObserver: i18n/legacy/legacy_v240z10a_res_t4_hotfix.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "non-version CSS retained: i18n/legacy/legacy_v240z10_res_t4_i18n.js",
-      "pass": true,
-      "detail": {
-        "before_blocks": 0,
-        "after_blocks": 0,
-        "missing_blocks": 0
-      }
-    },
-    {
-      "name": "asset paths retained: i18n/legacy/legacy_v240z10_res_t4_i18n.js",
-      "pass": true,
-      "detail": {
-        "references": 0
-      }
-    },
-    {
-      "name": "no new MutationObserver: i18n/legacy/legacy_v240z10_res_t4_i18n.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "non-version CSS retained: i18n/legacy/legacy_v240z9_res_t3_i18n.js",
-      "pass": true,
-      "detail": {
-        "before_blocks": 0,
-        "after_blocks": 0,
-        "missing_blocks": 0
-      }
-    },
-    {
-      "name": "asset paths retained: i18n/legacy/legacy_v240z9_res_t3_i18n.js",
-      "pass": true,
-      "detail": {
-        "references": 0
-      }
-    },
-    {
-      "name": "no new MutationObserver: i18n/legacy/legacy_v240z9_res_t3_i18n.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "non-version CSS retained: i18n/legacy/legacy_v240z_lab_i18n.js",
-      "pass": true,
-      "detail": {
-        "before_blocks": 0,
-        "after_blocks": 0,
-        "missing_blocks": 0
-      }
-    },
-    {
-      "name": "asset paths retained: i18n/legacy/legacy_v240z_lab_i18n.js",
-      "pass": true,
-      "detail": {
-        "references": 0
-      }
-    },
-    {
-      "name": "no new MutationObserver: i18n/legacy/legacy_v240z_lab_i18n.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "non-version CSS retained: i18n/legacy/legacy_v240z7_res_t1_i18n.js",
-      "pass": true,
-      "detail": {
-        "before_blocks": 0,
-        "after_blocks": 0,
-        "missing_blocks": 0
-      }
-    },
-    {
-      "name": "asset paths retained: i18n/legacy/legacy_v240z7_res_t1_i18n.js",
-      "pass": true,
-      "detail": {
-        "references": 0
-      }
-    },
-    {
-      "name": "no new MutationObserver: i18n/legacy/legacy_v240z7_res_t1_i18n.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "non-version CSS retained: i18n/legacy/legacy_v240z8_res_t2_i18n.js",
-      "pass": true,
-      "detail": {
-        "before_blocks": 0,
-        "after_blocks": 0,
-        "missing_blocks": 0
-      }
-    },
-    {
-      "name": "asset paths retained: i18n/legacy/legacy_v240z8_res_t2_i18n.js",
-      "pass": true,
-      "detail": {
-        "references": 0
-      }
-    },
-    {
-      "name": "no new MutationObserver: i18n/legacy/legacy_v240z8_res_t2_i18n.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "non-version CSS retained: i18n/legacy/legacy_v230c_signature_deepdive.js",
-      "pass": true,
-      "detail": {
-        "before_blocks": 0,
-        "after_blocks": 0,
-        "missing_blocks": 0
-      }
-    },
-    {
-      "name": "asset paths retained: i18n/legacy/legacy_v230c_signature_deepdive.js",
-      "pass": true,
-      "detail": {
-        "references": 0
-      }
-    },
-    {
-      "name": "no new MutationObserver: i18n/legacy/legacy_v230c_signature_deepdive.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "non-version CSS retained: i18n/legacy/legacy_v240t_signature_i18n.js",
-      "pass": true,
-      "detail": {
-        "before_blocks": 0,
-        "after_blocks": 0,
-        "missing_blocks": 0
-      }
-    },
-    {
-      "name": "asset paths retained: i18n/legacy/legacy_v240t_signature_i18n.js",
-      "pass": true,
-      "detail": {
-        "references": 0
-      }
-    },
-    {
-      "name": "no new MutationObserver: i18n/legacy/legacy_v240t_signature_i18n.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "unchanged authority/UI input: rc2_A4b_canonical_cases_lossless.js",
-      "pass": true,
-      "detail": "95f5016ea6ec491b7373821204ee5e0c58923e13fcfca261764a51d45f3160a5"
-    },
-    {
-      "name": "unchanged authority/UI input: rc2_A5_courses.js",
-      "pass": true,
-      "detail": "ff14647c1cdcc5e095abea4fdbf90981db84d49f0f0906d658805b23650cf343"
-    },
-    {
-      "name": "unchanged authority/UI input: rc2_A5_method_focus.js",
-      "pass": true,
-      "detail": "359f66f091e48e898c3550237d5d4e012424aac854196efee669ef223efdb5fe"
-    },
-    {
-      "name": "unchanged authority/UI input: v250b_method_focus_filter.js",
-      "pass": true,
-      "detail": "02b43e8b6b4d7b6e72c47c8f3786cad148c58261e491e43c0352b415d0568f09"
-    },
-    {
-      "name": "unchanged authority/UI input: v250b_signature_taxonomy_freeze.js",
-      "pass": true,
-      "detail": "b001c6eb89ac916be7c4ea0fd94857af1a98a6e4d921cc98e81150f65e6a9f84"
-    },
-    {
-      "name": "unchanged authority/UI input: v250b_asset_modal_hotfix.js",
-      "pass": true,
-      "detail": "baad2f80d71f2147003ada1102860d0fb5e649fb7bbda19ee7cea43c9f8f4320"
-    },
-    {
-      "name": "unchanged authority/UI input: v250b_home_screen.js",
-      "pass": true,
-      "detail": "5b208b25090d2b7c4237c61d2ad831d08959811d7e771c4a3afd20053aba2de4"
-    },
-    {
-      "name": "unchanged authority/UI input: i18n/core.js",
-      "pass": true,
-      "detail": "7c900e06a20a43def732df4aa8c1298f70011c8c2e38bf995f20570c5c984226"
-    },
-    {
-      "name": "unchanged authority/UI input: i18n/languages.js",
-      "pass": true,
-      "detail": "be3f6595fbef330cd2160eecb7a42d6a459865338b640a997578fe2ed8285478"
-    },
-    {
-      "name": "language input retained: ar.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "language input retained: fr.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "language input retained: core.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "language input retained: de.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "language input retained: languages.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "language input retained: ro.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "language input retained: uk.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "language input retained: es.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "language input retained: el.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "language input retained: tr.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "language input retained: fa.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "language input retained: ru.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "language input retained: en.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "unchanged local content v240z13_crc002_flagship.js:COPY",
-      "pass": true,
-      "detail": {
-        "bytes": 16321
-      }
-    },
-    {
-      "name": "unchanged local content v240z13_crc002_flagship.js:CRC2_ASSETS",
-      "pass": true,
-      "detail": {
-        "bytes": 481
-      }
-    },
-    {
-      "name": "existing helper retained v240z13_crc002_flagship.js:active",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z13_crc002_flagship.js:caseObj",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z13_crc002_flagship.js:selected",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z13_crc002_flagship.js:viaNgs",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z13_crc002_flagship.js:hasBraf",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z13_crc002_flagship.js:reportReady",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z13_crc002_flagship.js:complete",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z13_crc002_flagship.js:esc2",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z13_crc002_flagship.js:lang",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z13_crc002_flagship.js:T",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z13_crc002_flagship.js:asset",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z13_crc002_flagship.js:two",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z13_crc002_flagship.js:docs",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z13_crc002_flagship.js:histology",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z13_crc002_flagship.js:materialBox",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z13_crc002_flagship.js:contextCards",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z13_crc002_flagship.js:decisionBox",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z13_crc002_flagship.js:assayEvidence",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z13_crc002_flagship.js:allCoreDone",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z13_crc002_flagship.js:integrationBox",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z13_crc002_flagship.js:styles",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z13_crc002_flagship.js:boot",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "hybrid semantic writer retired v240z13_crc002_flagship.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "unchanged local content v240z14_crc001_flagship.js:COPY",
-      "pass": true,
-      "detail": {
-        "bytes": 23350
-      }
-    },
-    {
-      "name": "unchanged local content v240z14_crc001_flagship.js:CRC1_ASSETS",
-      "pass": true,
-      "detail": {
-        "bytes": 535
-      }
-    },
-    {
-      "name": "existing helper retained v240z14_crc001_flagship.js:active",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z14_crc001_flagship.js:caseObj",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z14_crc001_flagship.js:deepObj",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z14_crc001_flagship.js:selected",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z14_crc001_flagship.js:reportReady",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z14_crc001_flagship.js:complete",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z14_crc001_flagship.js:esc1",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z14_crc001_flagship.js:lang",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z14_crc001_flagship.js:hasRas",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z14_crc001_flagship.js:hasBraf",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z14_crc001_flagship.js:viaNgs",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z14_crc001_flagship.js:allCoreDone",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z14_crc001_flagship.js:T",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z14_crc001_flagship.js:asset",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z14_crc001_flagship.js:two",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z14_crc001_flagship.js:docs",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z14_crc001_flagship.js:radiology",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z14_crc001_flagship.js:histology",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z14_crc001_flagship.js:contextCards",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z14_crc001_flagship.js:materialBox",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z14_crc001_flagship.js:decisionBox",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z14_crc001_flagship.js:assayEvidence",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z14_crc001_flagship.js:integrationBox",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z14_crc001_flagship.js:styles",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z14_crc001_flagship.js:boot",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "hybrid semantic writer retired v240z14_crc001_flagship.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "unchanged local content v240z15_nsclc002_flagship.js:COPY",
-      "pass": true,
-      "detail": {
-        "bytes": 20814
-      }
-    },
-    {
-      "name": "unchanged local content v240z15_nsclc002_flagship.js:NS2_ASSETS",
-      "pass": true,
-      "detail": {
-        "bytes": 570
-      }
-    },
-    {
-      "name": "existing helper retained v240z15_nsclc002_flagship.js:active",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z15_nsclc002_flagship.js:caseObj",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z15_nsclc002_flagship.js:selected",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z15_nsclc002_flagship.js:reportReady",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z15_nsclc002_flagship.js:complete",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z15_nsclc002_flagship.js:esc2",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z15_nsclc002_flagship.js:lang",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z15_nsclc002_flagship.js:hasTissue",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z15_nsclc002_flagship.js:hasBroadResistance",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z15_nsclc002_flagship.js:hasTargetedEgfr",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z15_nsclc002_flagship.js:allCoreDone",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z15_nsclc002_flagship.js:T",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z15_nsclc002_flagship.js:asset",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z15_nsclc002_flagship.js:two",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z15_nsclc002_flagship.js:docs",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z15_nsclc002_flagship.js:baselineEvidence",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z15_nsclc002_flagship.js:materialBox",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z15_nsclc002_flagship.js:decisionBox",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z15_nsclc002_flagship.js:assayEvidence",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z15_nsclc002_flagship.js:outcomeText",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z15_nsclc002_flagship.js:integrationBox",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z15_nsclc002_flagship.js:styles",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z15_nsclc002_flagship.js:boot",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "hybrid semantic writer retired v240z15_nsclc002_flagship.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "unchanged local content v240z16_metngs003_flagship.js:COPY",
-      "pass": true,
-      "detail": {
-        "bytes": 17594
-      }
-    },
-    {
-      "name": "unchanged local content v240z16_metngs003_flagship.js:M3_ASSETS",
-      "pass": true,
-      "detail": {
-        "bytes": 528
-      }
-    },
-    {
-      "name": "existing helper retained v240z16_metngs003_flagship.js:active",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z16_metngs003_flagship.js:caseObj",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z16_metngs003_flagship.js:selected",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z16_metngs003_flagship.js:reportReady",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z16_metngs003_flagship.js:complete",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z16_metngs003_flagship.js:esc2",
-      "pass": true,
       "detail": null
     },
     {
-      "name": "existing helper retained v240z16_metngs003_flagship.js:lang",
+      "name": "direct detached canonical projection V15_META_RECORDS",
       "pass": true,
       "detail": null
     },
     {
-      "name": "existing helper retained v240z16_metngs003_flagship.js:hasVariant",
+      "name": "ordered source-to-canonical parity V15_CAP_RECORDS",
       "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z16_metngs003_flagship.js:hasIhc",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z16_metngs003_flagship.js:hasFish",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z16_metngs003_flagship.js:hasCuration",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z16_metngs003_flagship.js:hasDirectTherapy",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z16_metngs003_flagship.js:allCoreDone",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z16_metngs003_flagship.js:T",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z16_metngs003_flagship.js:asset",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z16_metngs003_flagship.js:two",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z16_metngs003_flagship.js:caseFile",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z16_metngs003_flagship.js:histoBlock",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z16_metngs003_flagship.js:decisionBox",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z16_metngs003_flagship.js:assayEvidence",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z16_metngs003_flagship.js:outcomeText",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z16_metngs003_flagship.js:integrationBox",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z16_metngs003_flagship.js:styles",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z16_metngs003_flagship.js:boot",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "hybrid semantic writer retired v240z16_metngs003_flagship.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "unchanged local content v240z18_ovar002_flagship.js:COPY",
-      "pass": true,
-      "detail": {
-        "bytes": 14630
-      }
-    },
-    {
-      "name": "unchanged local content v240z18_ovar002_flagship.js:O18_ASSETS",
-      "pass": true,
-      "detail": {
-        "bytes": 590
-      }
-    },
-    {
-      "name": "existing helper retained v240z18_ovar002_flagship.js:active",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z18_ovar002_flagship.js:caseObj",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z18_ovar002_flagship.js:selected",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z18_ovar002_flagship.js:currentStep",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z18_ovar002_flagship.js:hasTumor",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z18_ovar002_flagship.js:hasCuration",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z18_ovar002_flagship.js:hasHrd",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z18_ovar002_flagship.js:hasGermline",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z18_ovar002_flagship.js:hasLegacyBad",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z18_ovar002_flagship.js:allCore",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z18_ovar002_flagship.js:finalReady",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z18_ovar002_flagship.js:esc2",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z18_ovar002_flagship.js:lang",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z18_ovar002_flagship.js:T",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z18_ovar002_flagship.js:asset",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z18_ovar002_flagship.js:block",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z18_ovar002_flagship.js:grid",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z18_ovar002_flagship.js:baselineAddon",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z18_ovar002_flagship.js:reportAddon",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z18_ovar002_flagship.js:finalAddon",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z18_ovar002_flagship.js:injectBeforeSectionEnd",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z18_ovar002_flagship.js:normalizeVariant",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z18_ovar002_flagship.js:deepReplace",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z18_ovar002_flagship.js:styles",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z18_ovar002_flagship.js:boot",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "hybrid semantic writer retired v240z18_ovar002_flagship.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "unchanged local content v240z20_io001_flagship.js:COPY",
-      "pass": true,
-      "detail": {
-        "bytes": 21154
-      }
-    },
-    {
-      "name": "unchanged local content v240z20_io001_flagship.js:IO20_ASSETS",
-      "pass": true,
-      "detail": {
-        "bytes": 474
-      }
-    },
-    {
-      "name": "unchanged local content v240z20_io001_flagship.js:RESULT_COPY",
-      "pass": true,
-      "detail": {
-        "bytes": 993
-      }
-    },
-    {
-      "name": "existing helper retained v240z20_io001_flagship.js:active",
-      "pass": true,
-      "detail": null
+      "detail": 91
     },
     {
-      "name": "existing helper retained v240z20_io001_flagship.js:caseObj",
+      "name": "old data literal absent V15_CAP_RECORDS",
       "pass": true,
       "detail": null
     },
     {
-      "name": "existing helper retained v240z20_io001_flagship.js:selected",
+      "name": "direct detached canonical projection V15_CAP_RECORDS",
       "pass": true,
       "detail": null
     },
     {
-      "name": "existing helper retained v240z20_io001_flagship.js:currentStep",
+      "name": "unchanged remaining data literal cases",
       "pass": true,
       "detail": null
     },
     {
-      "name": "existing helper retained v240z20_io001_flagship.js:hasMMR",
+      "name": "unchanged remaining data literal V15_GATE_RECORDS",
       "pass": true,
       "detail": null
     },
     {
-      "name": "existing helper retained v240z20_io001_flagship.js:hasMSI",
+      "name": "unchanged remaining data literal V15_METHOD_RULE_RECORDS",
       "pass": true,
       "detail": null
     },
     {
-      "name": "existing helper retained v240z20_io001_flagship.js:hasTMB",
+      "name": "unchanged remaining data literal DEEP_DIVE_CASES_V17",
       "pass": true,
       "detail": null
     },
     {
-      "name": "existing helper retained v240z20_io001_flagship.js:hasPDL1",
+      "name": "all named renderer/state/scoring helpers byte-identical",
       "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z20_io001_flagship.js:hasImmune",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z20_io001_flagship.js:finalImageReady",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z20_io001_flagship.js:esc2",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z20_io001_flagship.js:lang",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z20_io001_flagship.js:T",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z20_io001_flagship.js:caseStory",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z20_io001_flagship.js:asset",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z20_io001_flagship.js:block",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z20_io001_flagship.js:grid",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z20_io001_flagship.js:baselineAddon",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z20_io001_flagship.js:reportAddon",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z20_io001_flagship.js:finalAddon",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z20_io001_flagship.js:injectBeforeSectionEnd",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z20_io001_flagship.js:styles",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing helper retained v240z20_io001_flagship.js:boot",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "hybrid semantic writer retired v240z20_io001_flagship.js",
-      "pass": true,
-      "detail": null
+      "detail": 619
     },
     {
-      "name": "same external script set",
+      "name": "external script set unchanged",
       "pass": true,
       "detail": 51
     },
     {
-      "name": "adapter loaded once immediately after version authority",
+      "name": "A4b loader occurs once",
       "pass": true,
       "detail": null
     },
     {
-      "name": "signature freeze remains last",
-      "pass": true,
-      "detail": "v250b_signature_taxonomy_freeze.js"
-    },
-    {
-      "name": "canonical integration stays after canonical data and curation",
+      "name": "A4b precedes main runtime and V15 declarations",
       "pass": true,
       "detail": null
     },
     {
-      "name": "no competing title/global writers",
-      "pass": true,
-      "detail": []
-    },
-    {
-      "name": "no synthetic or hidden version CSS",
-      "pass": true,
-      "detail": []
-    },
-    {
-      "name": "release app value unchanged",
+      "name": "A5 courses remain first external input",
       "pass": true,
       "detail": null
     },
     {
-      "name": "single version apply owns title and global",
+      "name": "adapter still immediately follows version authority",
       "pass": true,
       "detail": null
     },
     {
-      "name": "dictionary registration does not recursively apply language",
+      "name": "final signature freeze remains last",
       "pass": true,
       "detail": null
     },
     {
-      "name": "12-case multilingual TX payload retained",
+      "name": "canonical integration remains after curation",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "inline script count unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "all CSS blocks byte-identical",
+      "pass": true,
+      "detail": 54
+    },
+    {
+      "name": "asset path literals byte-identical",
+      "pass": true,
+      "detail": 17
+    },
+    {
+      "name": "no new observers/wrappers",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v260rc1_lab_run_004_asset_upgrade.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v260rc1_mtb_cns_003_mtb_hem_001_i18n_consolidation.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v240z14_crc001_flagship.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v250b_reshyp001_flagship.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v250b_metngs001_course_flagship.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v250b_home_screen.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v250b_metngs004_course_flagship.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v240z19_cns001_flagship.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v260rc1_mtb_cns_003_asset_upgrade.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v260rc1_mtb_hem_001_asset_upgrade.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input molpath_version.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input rc2_A6_canonical_integration.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v260rc1_met_fish_001_asset_i18n_upgrade.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v240z20_io001_flagship.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input rc2_A5_courses.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v250b_reseth001_flagship.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v250b_resrole001_course_flagship.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v250b_labrun001_course_flagship.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v260rc1_res_val_001_signature_asset_i18n_upgrade.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v250b_startup_cover_hotfix.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v240z16_metngs003_flagship.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v240z13_crc002_flagship.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v250b_metrna001_course_flagship.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v250b_method_focus_filter.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v240z15_nsclc002_flagship.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v250b_resimpl001_course_flagship.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v250b_metngs002_course_flagship.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input rc2_A4b_canonical_cases_lossless.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v240z17_ovar001_flagship.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v250b_labdoc001_flagship.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v260rc1_case_consistency_curation_i18n.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input rc2_A5_method_focus.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v250b_responsive_shell.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v250b_asset_modal_hotfix.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v250b_labpre001_course_flagship.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v250b_labpost001_flagship.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v250b_reseth002_course_flagship.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v250b_signature_taxonomy_freeze.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v240z18_ovar002_flagship.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v250b_metlb001_course_flagship.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input rc2_A5_data_adapter.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input i18n/ar.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input i18n/fr.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input i18n/core.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input i18n/de.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input i18n/languages.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input i18n/ro.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input i18n/uk.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input i18n/es.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input i18n/el.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input i18n/tr.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input i18n/fa.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input i18n/ru.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input i18n/en.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input i18n/legacy/legacy_v223_v224_runtime.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input i18n/legacy/legacy_v240z10a_res_t4_hotfix.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input i18n/legacy/legacy_v240z10_res_t4_i18n.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input i18n/legacy/legacy_v240z9_res_t3_i18n.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input i18n/legacy/legacy_v240z_lab_i18n.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input i18n/legacy/legacy_v240z7_res_t1_i18n.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input i18n/legacy/legacy_v240z8_res_t2_i18n.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input i18n/legacy/legacy_v230c_signature_deepdive.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input i18n/legacy/legacy_v240t_signature_i18n.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "inverse patch exactly reconstructs confirmed A6.3 index",
       "pass": true,
       "detail": null
     }
   ],
-  "loadOrder": [
-    "rc2_A5_courses.js",
-    "molpath_version.js",
-    "rc2_A5_data_adapter.js",
-    "i18n/languages.js",
-    "i18n/legacy/legacy_v223_v224_runtime.js",
-    "i18n/legacy/legacy_v230c_signature_deepdive.js",
-    "i18n/legacy/legacy_v240t_signature_i18n.js",
-    "i18n/legacy/legacy_v240z_lab_i18n.js",
-    "i18n/legacy/legacy_v240z7_res_t1_i18n.js",
-    "i18n/legacy/legacy_v240z8_res_t2_i18n.js",
-    "i18n/legacy/legacy_v240z9_res_t3_i18n.js",
-    "i18n/legacy/legacy_v240z10_res_t4_i18n.js",
-    "i18n/legacy/legacy_v240z10a_res_t4_hotfix.js",
-    "v240z13_crc002_flagship.js",
-    "v240z14_crc001_flagship.js",
-    "v240z15_nsclc002_flagship.js",
-    "v240z16_metngs003_flagship.js",
-    "v240z17_ovar001_flagship.js",
-    "v240z18_ovar002_flagship.js",
-    "v240z19_cns001_flagship.js",
-    "v240z20_io001_flagship.js",
-    "v250b_labpost001_flagship.js",
-    "v250b_labdoc001_flagship.js",
-    "v250b_reshyp001_flagship.js",
-    "v250b_reseth001_flagship.js",
-    "v250b_responsive_shell.js",
-    "v250b_asset_modal_hotfix.js",
-    "v250b_startup_cover_hotfix.js",
-    "v250b_home_screen.js",
-    "rc2_A5_method_focus.js",
-    "v250b_method_focus_filter.js",
-    "v250b_metngs001_course_flagship.js",
-    "v250b_metngs002_course_flagship.js",
-    "v250b_metrna001_course_flagship.js",
-    "v250b_metlb001_course_flagship.js",
-    "v250b_metngs004_course_flagship.js",
-    "v250b_labrun001_course_flagship.js",
-    "v250b_labpre001_course_flagship.js",
-    "v250b_resimpl001_course_flagship.js",
-    "v250b_reseth002_course_flagship.js",
-    "v250b_resrole001_course_flagship.js",
-    "v260rc1_mtb_cns_003_asset_upgrade.js",
-    "v260rc1_mtb_hem_001_asset_upgrade.js",
-    "v260rc1_lab_run_004_asset_upgrade.js",
-    "v260rc1_mtb_cns_003_mtb_hem_001_i18n_consolidation.js",
-    "v260rc1_met_fish_001_asset_i18n_upgrade.js",
-    "v260rc1_res_val_001_signature_asset_i18n_upgrade.js",
-    "v260rc1_case_consistency_curation_i18n.js",
-    "rc2_A4b_canonical_cases_lossless.js",
-    "rc2_A6_canonical_integration.js",
-    "v250b_signature_taxonomy_freeze.js"
-  ]
+  "changes": {
+    "base": "user browser-confirmed A6.3",
+    "changed": [
+      "index.html"
+    ],
+    "old_index_bytes": 4123232,
+    "new_index_bytes": 3994644,
+    "bytes_removed": 128588,
+    "base_sha256": "5b153d42a29e1c5d2342b316853ca8e96c9915e9755dacedba304c39ba4f8986",
+    "sha256": "15c2f523aca9a6d86082534f0b6ebba9cf55d68ff4018ed74200500605ce7260",
+    "projection_rows": {
+      "V15_META_RECORDS": 91,
+      "V15_CAP_RECORDS": 91
+    },
+    "old_load_order": [
+      "rc2_A5_courses.js",
+      "molpath_version.js",
+      "rc2_A5_data_adapter.js",
+      "i18n/languages.js",
+      "i18n/legacy/legacy_v223_v224_runtime.js",
+      "i18n/legacy/legacy_v230c_signature_deepdive.js",
+      "i18n/legacy/legacy_v240t_signature_i18n.js",
+      "i18n/legacy/legacy_v240z_lab_i18n.js",
+      "i18n/legacy/legacy_v240z7_res_t1_i18n.js",
+      "i18n/legacy/legacy_v240z8_res_t2_i18n.js",
+      "i18n/legacy/legacy_v240z9_res_t3_i18n.js",
+      "i18n/legacy/legacy_v240z10_res_t4_i18n.js",
+      "i18n/legacy/legacy_v240z10a_res_t4_hotfix.js",
+      "v240z13_crc002_flagship.js",
+      "v240z14_crc001_flagship.js",
+      "v240z15_nsclc002_flagship.js",
+      "v240z16_metngs003_flagship.js",
+      "v240z17_ovar001_flagship.js",
+      "v240z18_ovar002_flagship.js",
+      "v240z19_cns001_flagship.js",
+      "v240z20_io001_flagship.js",
+      "v250b_labpost001_flagship.js",
+      "v250b_labdoc001_flagship.js",
+      "v250b_reshyp001_flagship.js",
+      "v250b_reseth001_flagship.js",
+      "v250b_responsive_shell.js",
+      "v250b_asset_modal_hotfix.js",
+      "v250b_startup_cover_hotfix.js",
+      "v250b_home_screen.js",
+      "rc2_A5_method_focus.js",
+      "v250b_method_focus_filter.js",
+      "v250b_metngs001_course_flagship.js",
+      "v250b_metngs002_course_flagship.js",
+      "v250b_metrna001_course_flagship.js",
+      "v250b_metlb001_course_flagship.js",
+      "v250b_metngs004_course_flagship.js",
+      "v250b_labrun001_course_flagship.js",
+      "v250b_labpre001_course_flagship.js",
+      "v250b_resimpl001_course_flagship.js",
+      "v250b_reseth002_course_flagship.js",
+      "v250b_resrole001_course_flagship.js",
+      "v260rc1_mtb_cns_003_asset_upgrade.js",
+      "v260rc1_mtb_hem_001_asset_upgrade.js",
+      "v260rc1_lab_run_004_asset_upgrade.js",
+      "v260rc1_mtb_cns_003_mtb_hem_001_i18n_consolidation.js",
+      "v260rc1_met_fish_001_asset_i18n_upgrade.js",
+      "v260rc1_res_val_001_signature_asset_i18n_upgrade.js",
+      "v260rc1_case_consistency_curation_i18n.js",
+      "rc2_A4b_canonical_cases_lossless.js",
+      "rc2_A6_canonical_integration.js",
+      "v250b_signature_taxonomy_freeze.js"
+    ],
+    "new_load_order": [
+      "rc2_A5_courses.js",
+      "rc2_A4b_canonical_cases_lossless.js",
+      "molpath_version.js",
+      "rc2_A5_data_adapter.js",
+      "i18n/languages.js",
+      "i18n/legacy/legacy_v223_v224_runtime.js",
+      "i18n/legacy/legacy_v230c_signature_deepdive.js",
+      "i18n/legacy/legacy_v240t_signature_i18n.js",
+      "i18n/legacy/legacy_v240z_lab_i18n.js",
+      "i18n/legacy/legacy_v240z7_res_t1_i18n.js",
+      "i18n/legacy/legacy_v240z8_res_t2_i18n.js",
+      "i18n/legacy/legacy_v240z9_res_t3_i18n.js",
+      "i18n/legacy/legacy_v240z10_res_t4_i18n.js",
+      "i18n/legacy/legacy_v240z10a_res_t4_hotfix.js",
+      "v240z13_crc002_flagship.js",
+      "v240z14_crc001_flagship.js",
+      "v240z15_nsclc002_flagship.js",
+      "v240z16_metngs003_flagship.js",
+      "v240z17_ovar001_flagship.js",
+      "v240z18_ovar002_flagship.js",
+      "v240z19_cns001_flagship.js",
+      "v240z20_io001_flagship.js",
+      "v250b_labpost001_flagship.js",
+      "v250b_labdoc001_flagship.js",
+      "v250b_reshyp001_flagship.js",
+      "v250b_reseth001_flagship.js",
+      "v250b_responsive_shell.js",
+      "v250b_asset_modal_hotfix.js",
+      "v250b_startup_cover_hotfix.js",
+      "v250b_home_screen.js",
+      "rc2_A5_method_focus.js",
+      "v250b_method_focus_filter.js",
+      "v250b_metngs001_course_flagship.js",
+      "v250b_metngs002_course_flagship.js",
+      "v250b_metrna001_course_flagship.js",
+      "v250b_metlb001_course_flagship.js",
+      "v250b_metngs004_course_flagship.js",
+      "v250b_labrun001_course_flagship.js",
+      "v250b_labpre001_course_flagship.js",
+      "v250b_resimpl001_course_flagship.js",
+      "v250b_reseth002_course_flagship.js",
+      "v250b_resrole001_course_flagship.js",
+      "v260rc1_mtb_cns_003_asset_upgrade.js",
+      "v260rc1_mtb_hem_001_asset_upgrade.js",
+      "v260rc1_lab_run_004_asset_upgrade.js",
+      "v260rc1_mtb_cns_003_mtb_hem_001_i18n_consolidation.js",
+      "v260rc1_met_fish_001_asset_i18n_upgrade.js",
+      "v260rc1_res_val_001_signature_asset_i18n_upgrade.js",
+      "v260rc1_case_consistency_curation_i18n.js",
+      "rc2_A6_canonical_integration.js",
+      "v250b_signature_taxonomy_freeze.js"
+    ],
+    "projection_expressions": {
+      "V15_META_RECORDS": "window.MolPathCanonicalDataA4b.cases.map(record=>JSON.parse(JSON.stringify(record.case.v15)))",
+      "V15_CAP_RECORDS": "window.MolPathCanonicalDataA4b.cases.map(record=>JSON.parse(JSON.stringify(record.evaluation.score_cap)))"
+    },
+    "scope": "only two ordered-parity V15 table projections and single A4b loader move; all other runtime files unchanged"
+  }
 }

@@ -1,0 +1,80 @@
+{
+  "status": "PASS",
+  "total": 13,
+  "passed": 13,
+  "failed": [],
+  "checks": [
+    {
+      "name": "exact ordered JSON parity V15_META_RECORDS",
+      "pass": true,
+      "detail": 91
+    },
+    {
+      "name": "91 unique case IDs V15_META_RECORDS",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "no nested aliases into canonical data V15_META_RECORDS",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "canonical unchanged after compatibility mutation V15_META_RECORDS",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact ordered JSON parity V15_CAP_RECORDS",
+      "pass": true,
+      "detail": 91
+    },
+    {
+      "name": "91 unique case IDs V15_CAP_RECORDS",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "no nested aliases into canonical data V15_CAP_RECORDS",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "canonical unchanged after compatibility mutation V15_CAP_RECORDS",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "snapshot equality with confirmed A6.3 preBootHash",
+      "pass": true,
+      "detail": "a767970c2b67c0ee4066ff8794fe36f71255c497aeb7f9d8fc9e660d901f83d0"
+    },
+    {
+      "name": "snapshot equality with confirmed A6.3 afterBootHash",
+      "pass": true,
+      "detail": "a767970c2b67c0ee4066ff8794fe36f71255c497aeb7f9d8fc9e660d901f83d0"
+    },
+    {
+      "name": "snapshot equality with confirmed A6.3 finalHash",
+      "pass": true,
+      "detail": "a767970c2b67c0ee4066ff8794fe36f71255c497aeb7f9d8fc9e660d901f83d0"
+    },
+    {
+      "name": "same counts as confirmed A6.3",
+      "pass": true,
+      "detail": {
+        "cases": 91,
+        "deep": 91,
+        "signature": 30,
+        "methods": 44,
+        "courses": 5,
+        "courseCases": 23
+      }
+    },
+    {
+      "name": "same six report outcomes in all four tested languages",
+      "pass": true,
+      "detail": null
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "environment": "Node VM, actual ordered JS sources, DOM test double; no visual browser assertion",
-  "root": "/workspace/scratch/1f1f0706e0d2/work/candidate",
+  "root": "/workspace/scratch/1f1f0706e0d2/work/a6_4/candidate",
   "loaded": 100,
   "counts": {
     "cases": 91,

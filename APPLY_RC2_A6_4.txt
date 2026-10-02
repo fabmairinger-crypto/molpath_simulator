@@ -1,0 +1,30 @@
+MolPath rc2 A6.4 — Delta anwenden
+Stand 2026-10-02 | Basis: dein vollständig funktionierender A6.3-Build
+
+Es wird genau EINE Laufzeitdatei ersetzt: index.html.
+Der A6.3-Browser-Smoke ist von dir bestätigt. Der neue A6.4-Stand ist lokal geprüft,
+sein eigener Browser-Smoke bleibt offen.
+
+1. Sichere die bisherige index.html aus dem funktionierenden A6.3-Ordner.
+2. Entpacke dieses Delta separat. Vergleiche den Basis-Hash aus dem Manifest mit
+   deiner index.html. Mit Python kann zusätzlich die unveränderte Canonical-Basis
+   geprüft werden:
+   python qa/verify_a6_4.py before /Pfad/zum/vollstaendigen/A6_3_Build
+3. Kopiere die neue index.html in deinen bestehenden vollständigen A6.3-Ordner
+   und ersetze die alte Datei. Alle JS-, Sprach-, Asset- und PDF-Dateien bleiben dort.
+   Es wird kein A5- oder A6.3-Paket erneut eingespielt. Die Begleitdokumente/qa/ sind
+   keine Laufzeit-Abhängigkeiten.
+4. Bei Bedarf prüfen:
+   python qa/verify_a6_4.py after /Pfad/zum/vollstaendigen/A6_4_Build
+5. Ctrl+F5. Kurzer A6.4-Browser-Smoke:
+   - Startseite und Fallbibliothek laden; 91 Fälle bleiben vorhanden.
+   - Ein MTB-, LAB- und RES-Fall: Metadaten und Score-/Gate-Ausgabe prüfen.
+   - DE -> EN -> DE; Titel/Top-Version bleiben v2.6.0-rc1.
+   - Konsole: keine neuen Fehler, insbesondere kein fehlendes MolPathCanonicalDataA4b.
+
+Rollback: die gesicherte A6.3-index.html wiederherstellen und neu laden.
+
+Lokale QA mit Node.js, ergänzend zum Browser:
+node qa/syntax_qa.js /Pfad/zum/vollstaendigen/Build
+node qa/runtime_qa.js /Pfad/zum/vollstaendigen/Build
+Der Runtime-Runner verwendet ein DOM-Testdouble und ersetzt keinen Browser-Smoke.
