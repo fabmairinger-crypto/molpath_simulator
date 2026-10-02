@@ -1,0 +1,86 @@
+{
+  "package": "MolPath_rc2_A6_10_delta",
+  "status": "SOURCE_COMPARISON_SYNTAX_RUNTIME_GATES_REMAINING_PASS_BROWSER_OPEN",
+  "browser_smoke": "NOT_RUN",
+  "source": {
+    "passed": 134,
+    "total": 134
+  },
+  "comparison": {
+    "passed": 47,
+    "total": 47
+  },
+  "syntax": {
+    "syntaxChecks": 100,
+    "errors": []
+  },
+  "runtime": {
+    "passed": 254,
+    "total": 254,
+    "errors": [],
+    "counts": {
+      "cases": 91,
+      "deep": 91,
+      "signature": 30,
+      "methods": 44,
+      "courses": 5,
+      "courseCases": 23
+    },
+    "pre_boot_hash": "fadce9004be5fa0324e560678763d8434e0670d34f82e9b5ac213b7dc58f02b0",
+    "after_boot_hash": "fadce9004be5fa0324e560678763d8434e0670d34f82e9b5ac213b7dc58f02b0",
+    "final_hash": "fadce9004be5fa0324e560678763d8434e0670d34f82e9b5ac213b7dc58f02b0"
+  },
+  "gates": {
+    "passed": 720,
+    "total": 720,
+    "behavioral_checks_per_language": 62,
+    "languages": [
+      "de",
+      "en",
+      "ro",
+      "el",
+      "es",
+      "fr",
+      "ru",
+      "tr",
+      "ar",
+      "fa",
+      "uk"
+    ],
+    "independent_stage_answers": true,
+    "positions_randomized_per_attempt": true,
+    "answers_and_positions_persist_through_language_changes": true,
+    "assessment_feedback_hidden_until_completion": true,
+    "source_correct_ids_preserved": true,
+    "optimal_confirmed_raw_and_total": 100,
+    "early_acceptance_total": 62,
+    "unconfirmed_raw_and_total": [
+      78,
+      70
+    ],
+    "poor_reasoning_total": 80,
+    "errors": []
+  },
+  "remaining": {
+    "passed": 77,
+    "total": 77,
+    "scenario_rows": 72,
+    "languages": [
+      "de",
+      "en",
+      "ro",
+      "uk"
+    ],
+    "exact_A6_9_CRC_LAB_score_report_card_equality": true,
+    "errors": []
+  },
+  "scope": "other 90 canonical records byte-equivalent; OVAR case/meta/story/truth/assets/score caps/method rules preserved; only its Deep-Dive gate and evaluation gate updated; all existing runtime input files except index/canonical are byte-identical",
+  "registration": "same original 97 checkpoints, case/deep ID order/count; one additional non-writing module checkpoint",
+  "display": "twelve language steps; other 90 case/deep/meta/gate records exact A6.9 hash equality, OVAR case/meta unchanged; OVAR deep/gate intentionally changed",
+  "limits": [
+    "Ordered scripts run in Node VM with a DOM test double. No actual browser layout, live MutationObserver, RTL layout, binary image rendering or asset file existence verification.",
+    "Unchanged inputs reuse the passed A6.9 staging fixture. Full rc1 archive materialization was previously blocked by HTTP 502; a complete standalone build is not bundled.",
+    "The eleven-language fixture uses existing uploaded language files and the existing UK patch. These inputs are not bundled; equal records prove preservation, not complete translation quality for historical content.",
+    "Unchanged i18n/qa.js diagnostic layer is omitted by the VM runner. Binary assets and FOM remain required from the complete build."
+  ]
+}

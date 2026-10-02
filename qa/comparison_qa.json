@@ -1,0 +1,274 @@
+{
+  "status": "PASS",
+  "total": 47,
+  "passed": 47,
+  "failed": [],
+  "checks": [
+    {
+      "name": "passed A6.9 full reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "final A6.10 full runtime passes",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "approved changes intentionally change canonical snapshot",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "new canonical data stable before/after boot and all scenarios",
+      "pass": true,
+      "detail": "fadce9004be5fa0324e560678763d8434e0670d34f82e9b5ac213b7dc58f02b0"
+    },
+    {
+      "name": "same complete case/course/method counts",
+      "pass": true,
+      "detail": {
+        "cases": 91,
+        "deep": 91,
+        "signature": 30,
+        "methods": 44,
+        "courses": 5,
+        "courseCases": 23
+      }
+    },
+    {
+      "name": "same initialized boot UI state",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "six existing hybrid report paths exactly unchanged in four languages",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "eleven locales plus final DE sequence unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "all 90 other display records unchanged de 0",
+      "pass": true,
+      "detail": [
+        "MTB_OVAR_001_v0_7"
+      ]
+    },
+    {
+      "name": "OVAR display scope only Deep-Dive and gate de 0",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "all 90 other display records unchanged en 1",
+      "pass": true,
+      "detail": [
+        "MTB_OVAR_001_v0_7"
+      ]
+    },
+    {
+      "name": "OVAR display scope only Deep-Dive and gate en 1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "all 90 other display records unchanged ro 2",
+      "pass": true,
+      "detail": [
+        "MTB_OVAR_001_v0_7"
+      ]
+    },
+    {
+      "name": "OVAR display scope only Deep-Dive and gate ro 2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "all 90 other display records unchanged el 3",
+      "pass": true,
+      "detail": [
+        "MTB_OVAR_001_v0_7"
+      ]
+    },
+    {
+      "name": "OVAR display scope only Deep-Dive and gate el 3",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "all 90 other display records unchanged es 4",
+      "pass": true,
+      "detail": [
+        "MTB_OVAR_001_v0_7"
+      ]
+    },
+    {
+      "name": "OVAR display scope only Deep-Dive and gate es 4",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "all 90 other display records unchanged fr 5",
+      "pass": true,
+      "detail": [
+        "MTB_OVAR_001_v0_7"
+      ]
+    },
+    {
+      "name": "OVAR display scope only Deep-Dive and gate fr 5",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "all 90 other display records unchanged ru 6",
+      "pass": true,
+      "detail": [
+        "MTB_OVAR_001_v0_7"
+      ]
+    },
+    {
+      "name": "OVAR display scope only Deep-Dive and gate ru 6",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "all 90 other display records unchanged tr 7",
+      "pass": true,
+      "detail": [
+        "MTB_OVAR_001_v0_7"
+      ]
+    },
+    {
+      "name": "OVAR display scope only Deep-Dive and gate tr 7",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "all 90 other display records unchanged ar 8",
+      "pass": true,
+      "detail": [
+        "MTB_OVAR_001_v0_7"
+      ]
+    },
+    {
+      "name": "OVAR display scope only Deep-Dive and gate ar 8",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "all 90 other display records unchanged fa 9",
+      "pass": true,
+      "detail": [
+        "MTB_OVAR_001_v0_7"
+      ]
+    },
+    {
+      "name": "OVAR display scope only Deep-Dive and gate fa 9",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "all 90 other display records unchanged uk 10",
+      "pass": true,
+      "detail": [
+        "MTB_OVAR_001_v0_7"
+      ]
+    },
+    {
+      "name": "OVAR display scope only Deep-Dive and gate uk 10",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "all 90 other display records unchanged de 11",
+      "pass": true,
+      "detail": [
+        "MTB_OVAR_001_v0_7"
+      ]
+    },
+    {
+      "name": "OVAR display scope only Deep-Dive and gate de 11",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "existing 97 source checkpoint order preserved",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "same case/deep IDs order and counts at all original checkpoints",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "non-OVAR payload transitions unchanged caseDiff",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "non-OVAR payload transitions unchanged deepDiff",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "non-OVAR payload transitions unchanged caseWrites",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "non-OVAR payload transitions unchanged deepWrites",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "new module does not write case or Deep-Dive payloads",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "late integration retains canonical authority",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "720 behavioral/localization checks pass",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "all eleven languages tested for both stages",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "confirmed optimal path 100/100 in all languages",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "early acceptance remains capped at 62 in all languages",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "wrong submitted gates retain 80 percent cap",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "missing confirmation retains clinical/method caps",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "remaining 72 CRC/LAB scenarios and 5 stability/error checks pass",
+      "pass": true,
+      "detail": null
+    }
+  ]
+}

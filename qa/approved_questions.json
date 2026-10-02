@@ -1,0 +1,115 @@
+[
+  {
+    "id": "ovar_clinical_question",
+    "stage": "before_round1",
+    "type": "single_choice",
+    "prompt": "Welche klinische Frage soll die molekulare Diagnostik primär beantworten?",
+    "options": [
+      {
+        "id": "familial_risk",
+        "label": "Eine erbliche Prädisposition klären, um die familiäre Risikoberatung als primäres Untersuchungsziel zu planen."
+      },
+      {
+        "id": "therapy_evidence",
+        "label": "Eine molekulare Grundlage für die weitere Therapieplanung prüfen und die Belastbarkeit eines möglichen prädiktiven Befunds bewerten."
+      },
+      {
+        "id": "resistance_cause",
+        "label": "Eine erworbene Resistenzalteration nachweisen, um die molekulare Ursache des aktuellen Rezidivs festzulegen."
+      },
+      {
+        "id": "entity_confirmation",
+        "label": "Die bereits gesicherte Tumorentität molekular bestätigen, um die diagnostische Einordnung des Rezidivs abzusichern."
+      }
+    ],
+    "correct": [
+      "therapy_evidence"
+    ],
+    "rationale": "Eine molekulare Grundlage für die weitere Therapieplanung prüfen und die Belastbarkeit eines möglichen prädiktiven Befunds bewerten."
+  },
+  {
+    "id": "ovar_archival_material",
+    "stage": "before_round1",
+    "type": "multi_select",
+    "prompt": "Welche Aussagen zur Untersuchung des drei Jahre alten FFPE-Primärmaterials treffen zu?",
+    "options": [
+      {
+        "id": "feasibility_run_qc",
+        "label": "Ausreichende DNA-Menge und Fragmentlänge stützen die technische Machbarkeit; die tatsächliche Lauf-QC muss trotzdem bewertet werden."
+      },
+      {
+        "id": "omit_assay_qc",
+        "label": "Bei hohem Tumoranteil und ausreichender DNA können zusätzliche assaybezogene Qualitätskriterien für diesen Block zurückgestellt werden."
+      },
+      {
+        "id": "represents_recurrence",
+        "label": "Bei unverändertem histologischem Tumortyp kann der Primärblock die aktuelle molekulare Rezidivsituation verlässlich repräsentieren."
+      },
+      {
+        "id": "sample_scope",
+        "label": "Der Befund beschreibt zunächst die untersuchte Primärprobe; seine Aussagekraft für das aktuelle Rezidiv muss gesondert eingeordnet werden."
+      }
+    ],
+    "correct": [
+      "feasibility_run_qc",
+      "sample_scope"
+    ],
+    "rationale": "Der Befund beschreibt zunächst die untersuchte Primärprobe; seine Aussagekraft für das aktuelle Rezidiv muss gesondert eingeordnet werden."
+  },
+  {
+    "id": "ovar_brca1_reliability",
+    "stage": "after_round1",
+    "type": "single_choice",
+    "prompt": "Welche Bewertung passt zum BRCA1-Befund aus Runde 1?",
+    "options": [
+      {
+        "id": "reliable_prediction",
+        "label": "Die pathogene BRCA1-LoF-Variante liefert eine verlässliche Therapieprädiktion; die niedrige VAF beschreibt einen kleinen Tumorsubklon."
+      },
+      {
+        "id": "hrd_overrides_variant",
+        "label": "Der grenzwertige HRD-Befund spricht gegen eine relevante BRCA1-Alteration; der Variantenbefund sollte deshalb zurückgestellt werden."
+      },
+      {
+        "id": "pathogenicity_vs_detection",
+        "label": "Die Variante kann biologisch relevant sein; VAF, FFPE-Artefaktmuster und Lauf-QC begrenzen jedoch die Verlässlichkeit ihres Nachweises."
+      },
+      {
+        "id": "coverage_suffices",
+        "label": "Coverage und Tumoranteil stützen den Nachweis ausreichend; eine Bestätigung ist erst bei unplausiblem klinischem Verlauf erforderlich."
+      }
+    ],
+    "correct": [
+      "pathogenicity_vs_detection"
+    ],
+    "rationale": "Entscheidend ist die Trennung zwischen Variantenpathogenität und Verlässlichkeit des Nachweises."
+  },
+  {
+    "id": "ovar_confirmation_strategy",
+    "stage": "after_round1",
+    "type": "single_choice",
+    "prompt": "Das Restmaterial reicht nicht für eine robuste Wiederholung. Welche weitere Strategie ist am besten begründet?",
+    "options": [
+      {
+        "id": "release_with_comment",
+        "label": "Den FFPE-Befund zusammen mit dem grenzwertigen HRD-Ergebnis freigeben und die technische Unsicherheit im Befundkommentar dokumentieren."
+      },
+      {
+        "id": "plasma_replaces_hrd",
+        "label": "Eine Liquid Biopsy zur erneuten Bestimmung des vollständigen HRD-/Genomic-Scar-Status einsetzen und den alten Gewebebefund damit ersetzen."
+      },
+      {
+        "id": "discard_variant",
+        "label": "Den BRCA1-Nachweis als technischen Fehlbefund verwerfen und die weitere molekulare Therapieplanung am bisherigen Platinverlauf ausrichten."
+      },
+      {
+        "id": "ctdna_confirmation",
+        "label": "Eine aktuelle Liquid Biopsy zur Bestätigung prüfen; ihre Aussage hängt von der ctDNA ab und ersetzt keine gewebebasierte HRD-Bewertung."
+      }
+    ],
+    "correct": [
+      "ctdna_confirmation"
+    ],
+    "rationale": "Ein negativer Plasmabefund wäre bei unzureichender ctDNA kein verlässlicher Ausschluss."
+  }
+]

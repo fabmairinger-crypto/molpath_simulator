@@ -1,0 +1,40 @@
+MolPath rc2 A6.10 — OVAR1 Clinical-Reasoning-Gates
+Stand: 2026-10-02 | Basis: vollständiger A6.9-Build
+
+Dieses Delta enthält DREI Laufzeitdateien. Es ist kein Vollbuild.
+1. index.html                                  ERSETZEN
+2. rc2_A4b_canonical_cases_lossless.js           ERSETZEN
+3. rc2_A6_10_ovar_reasoning_gates.js             NEU HINZUFÜGEN
+Alle drei gehören direkt in denselben Hauptordner des vollständigen Builds.
+Nur index.html zu kopieren reicht diesmal nicht.
+
+1. Sichere die beiden bisherigen Dateien index.html und
+   rc2_A4b_canonical_cases_lossless.js aus deinem vollständigen A6.9-Ordner.
+2. Entpacke das Delta separat. Optional Basis prüfen:
+   python qa/verify_a6_10.py before /Pfad/zum/vollstaendigen/A6_9_Build
+3. Kopiere ALLE DREI oben genannten Laufzeitdateien in den A6.9-Hauptordner.
+   Vorhandene JS-, Sprach-, Asset- und PDF-Dateien bleiben erforderlich.
+   Begleitdokumente und qa/ sind keine Laufzeitdateien.
+4. Optional Ergebnis prüfen:
+   python qa/verify_a6_10.py after /Pfad/zum/vollstaendigen/A6_10_Build
+5. Strg+F5 und den OVAR1-Fall neu starten:
+   - Nach Material: erstes Gate mit zwei Fragen, danach Runde 1 anfordern.
+   - Tumor-BRCA/HRR und HRD anfordern, Labor starten, Zwischenbefund öffnen.
+   - „Befund bewerten · Clinical Reasoning“: zweites Gate mit zwei Fragen.
+   - Gate abschließen, danach akzeptieren oder Bestätigung nachfordern.
+   - Liquid Biopsy anfordern, Labor/Befund, finales MTB und Fallabschluss.
+   - Optimalpfad mit korrekten Gates und vollständiger MTB-Kommunikation:
+     100 % erreichbar; kein Cap wegen eines unerreichbaren Gates.
+   - DE -> EN -> DE: Antworten und Antwortreihenfolge bleiben erhalten.
+   - Neuer Fallversuch: Antworten leer, Antwortpositionen neu gemischt.
+   - Assessment: Gate-Lösungen erst nach Fallabschluss anzeigen.
+   - Kurz CRC1/LAB, Bibliothek/Filter und Konsole prüfen.
+
+Rollback: beide gesicherten A6.9-Dateien wiederherstellen, neue Gate-Datei
+entfernen und neu laden.
+
+Reproduzierbare lokale QA mit Node.js:
+node qa/syntax_qa.js /Pfad/zum/vollstaendigen/Build
+node qa/runtime_qa.js /Pfad/zum/vollstaendigen/Build
+node qa/gate_qa.js /Pfad/zum/vollstaendigen/Build
+Die QA nutzt ein DOM-Testdouble und ersetzt keinen echten Browsercheck.

@@ -928,6 +928,7 @@ initState=function(){
 }
 
 gotoStep=function(step){
+  if(window.MolPathOvarReasoningA610?.active())return window.MolPathOvarReasoningA610.navigate(step);
   if(v15GateRequired() && !isInstructor() && v15IsAfterGate(step) && !v15GateSubmitted()){
     state.step='reasoning'; markViewed('reasoning'); toast('Bitte zuerst das Clinical-Reasoning-Gate abschließen.'); render(); return;
   }
@@ -1018,16 +1019,16 @@ function v15GateQuestions(){
   if(n>=4) qs.push({id:'gate_4',multi:true,prompt:rec.questions?.[3]?.prompt||'Was muss im Abschluss kommuniziert oder dokumentiert werden?',options:v15CommunicationOptions()});
   return qs.slice(0,n);
 }
-function v15GateSubmitted(){return !!state?.gates?.submitted}
+function v15GateSubmitted(){if(window.MolPathOvarReasoningA610?.active())return window.MolPathOvarReasoningA610.submitted();return !!state?.gates?.submitted}
 function v15GetAnswer(qid){return state?.gates?.answers?.[qid]||[]}
-function v15AnswerGate(qid,optId,multi,checked){
+function v15AnswerGate(qid,optId,multi,checked){if(window.MolPathOvarReasoningA610?.active())return window.MolPathOvarReasoningA610.answer(qid,optId,multi,checked);
   state.gates=state.gates||{answers:{},submitted:false};
   let a=Array.isArray(state.gates.answers[qid])?state.gates.answers[qid].slice():[];
   if(multi){ if(checked && !a.includes(optId)) a.push(optId); if(!checked) a=a.filter(x=>x!==optId); }
   else a=[optId];
   state.gates.answers[qid]=a; state.gates.submitted=false; render();
 }
-function v15GateComplete(){return v15GateQuestions().every(q=>v15GetAnswer(q.id).length>0)}
+function v15GateComplete(){if(window.MolPathOvarReasoningA610?.active())return window.MolPathOvarReasoningA610.complete();return v15GateQuestions().every(q=>v15GetAnswer(q.id).length>0)}
 function v15QuestionScore(q){
   const ans=new Set(v15GetAnswer(q.id)); const correct=q.options.filter(o=>o.correct).map(o=>o.id); const wrong=q.options.filter(o=>!o.correct).map(o=>o.id);
   if(!ans.size)return 0;
@@ -1036,11 +1037,11 @@ function v15QuestionScore(q){
   const falseRate=wrong.filter(id=>ans.has(id)).length/(wrong.length||1);
   return Math.max(0,Math.min(1,hit-falseRate));
 }
-function v15GateScore(){const qs=v15GateQuestions(); if(!qs.length)return {pct:1,got:0,max:0,details:[]}; const details=qs.map(q=>({id:q.id,prompt:q.prompt,score:v15QuestionScore(q),multi:q.multi,answers:v15GetAnswer(q.id),correct:q.options.filter(o=>o.correct).map(o=>o.id)})); const got=details.reduce((a,d)=>a+d.score,0); return {pct:got/qs.length,got,max:qs.length,details};}
-function submitReasoningGate(){ if(!v15GateComplete()){toast('Bitte alle Reasoning-Fragen beantworten.'); return;} state.gates.submitted=true; render(); toast('Clinical-Reasoning-Gate abgeschlossen.'); }
-function v15ContinueAfterGate(){ if(!v15GateSubmitted()&&!isInstructor()){toast('Bitte Gate zuerst abschließen.'); return;} gotoStep(v15NextAfterGate()); }
+function v15GateScore(){if(window.MolPathOvarReasoningA610?.active())return window.MolPathOvarReasoningA610.score();const qs=v15GateQuestions(); if(!qs.length)return {pct:1,got:0,max:0,details:[]}; const details=qs.map(q=>({id:q.id,prompt:q.prompt,score:v15QuestionScore(q),multi:q.multi,answers:v15GetAnswer(q.id),correct:q.options.filter(o=>o.correct).map(o=>o.id)})); const got=details.reduce((a,d)=>a+d.score,0); return {pct:got/qs.length,got,max:qs.length,details};}
+function submitReasoningGate(){if(window.MolPathOvarReasoningA610?.active())return window.MolPathOvarReasoningA610.submit(); if(!v15GateComplete()){toast('Bitte alle Reasoning-Fragen beantworten.'); return;} state.gates.submitted=true; render(); toast('Clinical-Reasoning-Gate abgeschlossen.'); }
+function v15ContinueAfterGate(){if(window.MolPathOvarReasoningA610?.active())return window.MolPathOvarReasoningA610.next(); if(!v15GateSubmitted()&&!isInstructor()){toast('Bitte Gate zuerst abschließen.'); return;} gotoStep(v15NextAfterGate()); }
 
-function renderClinicalReasoningGate(){
+function renderClinicalReasoningGate(){if(window.MolPathOvarReasoningA610?.active())return window.MolPathOvarReasoningA610.renderGate();
   const rec=v15GateRec(), m=v15Meta(); const qs=v15GateQuestions(); const gs=v15GateScore(); const submitted=v15GateSubmitted();
   const meta=`<div class="meta-grid"><div class="meta-card"><div class="k">Länge</div><div class="v">${esc(m.length_class||'')}</div></div><div class="meta-card"><div class="k">Schwierigkeit</div><div class="v">${esc(m.difficulty||'')}</div></div><div class="meta-card"><div class="k">Kernentscheidung</div><div class="v">${esc(m.core_decision||activeCase.title)}</div></div><div class="meta-card"><div class="k">Review</div><div class="v">${esc(m.review_flag||'ok')}</div></div></div>`;
   const questions=qs.map((q,idx)=>{
@@ -1838,6 +1839,7 @@ v15GateRec=function(c=activeCase){
   return V17_ORIG.v15GateRec(c);
 }
 v15GateQuestions=function(){
+  if(window.MolPathOvarReasoningA610?.active())return window.MolPathOvarReasoningA610.questions();
   const d=v17Deep();
   if(d && v17Arr(d.reasoning_gate_upgrade).length){
     return v17Arr(d.reasoning_gate_upgrade).map((q,idx)=>({id:q.id||('deep_gate_'+idx),multi:(q.type||'').includes('multi'),prompt:q.prompt||'Clinical-Reasoning-Frage',options:v17Arr(q.options).map(o=>({id:o.id,label:o.label,correct:v17Arr(q.correct).includes(o.id)}))}));
@@ -3886,8 +3888,9 @@ function hasIn(ids,id){return (ids||[]).includes(id)}
 function phase1Complete(){const ids=phase1Ids(); return hasIn(ids,'tumor_brca_hrr') && hasIn(ids,'hrd_score');}
 function phase2Complete(){const ids=phase2Ids(); return hasIn(ids,'liquid_biopsy');}
 function ovarSteps(){
-  const base=[['intake','Auftrag'],['history','Kontext'],['histo','Histo/IHC'],['material','Material'],['order','Runde 1: Anforderung'],['lab','Laborlauf 1'],['report','Befundbewertung']];
+  const base=[['intake','Auftrag'],['history','Kontext'],['histo','Histo/IHC'],['material','Material'],['reasoning',window.MolPathOvarReasoningA610?window.MolPathOvarReasoningA610.ui(0):'Clinical Reasoning · vor Runde 1'],['order','Runde 1: Anforderung'],['lab','Laborlauf 1'],['report','Befundbewertung']];
   const o=ov();
+  if(window.MolPathOvarReasoningA610?.afterAvailable())base.push(['reasoning_follow',window.MolPathOvarReasoningA610.ui(1)]);
   if(o.phase==='accepted_bad') return base.concat([['mtb','MTB']]);
   if(['round2','phase2_lab','phase2_report','final'].includes(o.phase)) return base.concat([['follow_order','Runde 2: Nachforderung'],['follow_lab','Laborlauf 2'],['follow_report','Bestätigungsbefund'],['mtb','Finales MTB']]);
   return base;
@@ -3985,9 +3988,10 @@ function buildOvarRound2Report(){
 }
 window.runLab=function(){
   if(isOvarCase()){
+    if(window.MolPathOvarReasoningA610&&!window.MolPathOvarReasoningA610.beforeLab())return;
     const o=ov();
     if(o.phase==='round1' && state.step==='order'){
-      o.phase1Selected=[...state.selected]; o.report1=buildOvarRound1Report(); state.report=o.report1; gotoStep('lab'); return;
+      o.phase1Selected=[...state.selected]; o.report1=buildOvarRound1Report(); state.report=o.report1; if(window.MolPathOvarReasoningA610)window.MolPathOvarReasoningA610.resetAfterRun(); gotoStep('lab'); return;
     }
     if(o.phase==='round2' && state.step==='follow_order'){
       o.phase2Selected=[...state.selected]; o.phase='phase2_lab'; o.report2=buildOvarRound2Report(); state.report=o.report2; gotoStep('follow_lab'); return;
@@ -3998,13 +4002,13 @@ window.runLab=function(){
 window.buildReport=function(){ if(isOvarCase()){ const o=ov(); if(o.phase==='round1')return buildOvarRound1Report(); if(['round2','phase2_lab','phase2_report','final'].includes(o.phase))return buildOvarRound2Report(); if(o.phase==='accepted_bad')return buildOvarRound1Report(); } if(isCrcCase()) return buildCrcReport(); return ORIG.buildReport?ORIG.buildReport():{}; };
 function renderOvarLab(which){const r=which===2?buildOvarRound2Report():buildOvarRound1Report(); const t=r.totals; const next=which===2?'follow_report':'report'; const title=which===2?'Laborlauf Runde 2: Liquid Biopsy':'Laborlauf Runde 1: altes FFPE'; return '<section class="panel section"><div class="section-title"><div><span class="badge">simulierter Laborlauf</span><h3>'+E(title)+'</h3></div><button class="btn primary" onclick="gotoStep(\''+next+'\')">Zum Befund</button></div><div class="info-grid"><div class="info-card"><b>Material</b>'+E(t.sections)+' Schnitte</div><div class="info-card"><b>TAT</b>'+E(t.tat)+' Arbeitstage</div><div class="info-card"><b>Budget</b>'+E(t.points)+' Punkte</div><div class="info-card"><b>Phase</b>'+E(which===2?'Bestätigung / Nachforderung':'Primärdiagnostik')+'</div></div>'+arr(r.warnings).map(w=>'<div class="'+w[0]+'box">'+E(w[1])+'</div>').join('')+'</section>';}
 window.renderLab=function(){ if(isOvarCase()&&state.step==='lab')return renderOvarLab(1); if(isOvarCase()&&state.step==='follow_lab')return renderOvarLab(2); return ORIG.renderLab?ORIG.renderLab():''; };
-function renderOvarPhase1Report(){ const r=buildOvarRound1Report(), complete=phase1Complete(); return '<section class="panel section"><div class="section-title"><div><span class="badge">Zwischenbefund Runde 1</span><h3>BRCA/HRD aus altem FFPE</h3></div></div>'+r.findings.map(f=>'<div class="result"><h4>'+E(f[0])+'</h4><p>'+E(f[1])+'</p></div>').join('')+'<h4>Interpretation / Limitation</h4>'+r.interpretation.map(x=>'<div class="'+(complete?'warn':'bad')+'box">'+E(x)+'</div>').join('')+(complete?'<div class="phasebox bad"><strong>Entscheidungspunkt:</strong><span>Werten Sie den Befund trotz Artefaktverdacht als ausreichend – oder stufen Sie ihn als nicht reliable ein und fordern eine Bestätigung an?</span></div><div class="phase-actions"><button class="btn bad" onclick="ovarAcceptRound1()">Als ausreichend akzeptieren / ins MTB</button><button class="btn primary" onclick="ovarRejectRound1()">Nicht reliable – Nachforderung/Bestätigung</button></div>':'<div class="warnbox"><b>Primärdiagnostik unvollständig:</b> Für diesen Fall sollten Tumor-BRCA/HRR und HRD/genomic-scar zunächst gemeinsam vorliegen.</div><button class="btn primary" onclick="gotoStep(\'order\')">Primäranforderung ergänzen</button>')+'</section>'; }
+function renderOvarPhase1Report(){ const r=buildOvarRound1Report(), complete=phase1Complete(); return '<section class="panel section"><div class="section-title"><div><span class="badge">Zwischenbefund Runde 1</span><h3>BRCA/HRD aus altem FFPE</h3></div></div>'+r.findings.map(f=>'<div class="result"><h4>'+E(f[0])+'</h4><p>'+E(f[1])+'</p></div>').join('')+'<h4>Interpretation / Limitation</h4>'+r.interpretation.map(x=>'<div class="'+(complete?'warn':'bad')+'box">'+E(x)+'</div>').join('')+(complete?'<div class="phasebox bad"><strong>Entscheidungspunkt:</strong><span>Werten Sie den Befund trotz Artefaktverdacht als ausreichend – oder stufen Sie ihn als nicht reliable ein und fordern eine Bestätigung an?</span></div>'+(window.MolPathOvarReasoningA610?window.MolPathOvarReasoningA610.reportActions():'<div class="phase-actions"><button class="btn bad" onclick="ovarAcceptRound1()">Als ausreichend akzeptieren / ins MTB</button><button class="btn primary" onclick="ovarRejectRound1()">Nicht reliable – Nachforderung/Bestätigung</button></div>')+'':'<div class="warnbox"><b>Primärdiagnostik unvollständig:</b> Für diesen Fall sollten Tumor-BRCA/HRR und HRD/genomic-scar zunächst gemeinsam vorliegen.</div><button class="btn primary" onclick="gotoStep(\'order\')">Primäranforderung ergänzen</button>')+'</section>'; }
 function renderOvarPhase2Report(){ const r=buildOvarRound2Report(), complete=phase2Complete(); return '<section class="panel section"><div class="section-title"><div><span class="badge">Bestätigungsbefund Runde 2</span><h3>Aktuelle Liquid Biopsy</h3></div><button class="btn primary" onclick="ovarFinalizeAfterRound2()">Finales MTB</button></div>'+r.findings.map(f=>'<div class="result"><h4>'+E(f[0])+'</h4><p>'+E(f[1])+'</p></div>').join('')+'<h4>Interpretation</h4>'+r.interpretation.map(x=>'<div class="'+(complete?'ok':'warn')+'box">'+E(x)+'</div>').join('')+(complete?'<div class="okbox"><b>Runde 2 erfolgreich:</b> Die Liquid Biopsy bestätigt die BRCA1-LoF plausibel. Jetzt folgt die finale MTB-Kommunikation.</div>':'<div class="warnbox"><b>Nachforderung unvollständig:</b> Ohne Liquid Biopsy bleibt der alte FFPE-Befund limitiert.</div>')+'</section>'; }
 window.renderReport=function(){ if(isOvarCase()&&state.step==='report')return renderOvarPhase1Report(); if(isOvarCase()&&state.step==='follow_report')return renderOvarPhase2Report(); return ORIG.renderReport?ORIG.renderReport():''; };
-window.ovarAcceptRound1=function(){ const o=ov(); o.phase1Selected=[...state.selected]; o.decision='accept'; o.phase='accepted_bad'; state.report=buildOvarRound1Report(); gotoStep('mtb'); toastSafe('Früher MTB-Abschluss gewählt – dieser Pfad wird kritisch bewertet.'); };
-window.ovarRejectRound1=function(){ const o=ov(); o.phase1Selected=[...state.selected]; o.decision='reject'; o.phase='round2'; o.phase2Selected=[]; state.report=null; setSel([]); orderSearch=''; orderCategory='all'; orderView='all'; gotoStep('follow_order'); toastSafe('Runde 2 freigeschaltet: Liquid Biopsy als Bestätigung anfordern.'); };
-window.ovarFinalizeAfterRound2=function(){ const o=ov(); o.phase2Selected=[...state.selected]; o.phase='final'; state.report=buildOvarRound2Report(); gotoStep('mtb'); toastSafe('Finale MTB-Runde freigeschaltet.'); };
-window.renderContent=function(){ if(isOvarCase()){ if(['intake','history','histo','material'].includes(state.step)) return storyStep(state.step); if(state.step==='order'||state.step==='follow_order')return renderOrder(); if(state.step==='lab')return renderLab(); if(state.step==='follow_lab')return renderLab(); if(state.step==='report'||state.step==='follow_report')return renderReport(); if(state.step==='mtb')return renderMtb(); } return ORIG.renderContent?ORIG.renderContent():''; };
+window.ovarAcceptRound1=function(){ if(window.MolPathOvarReasoningA610&&!window.MolPathOvarReasoningA610.beforeDecision())return; const o=ov(); o.phase1Selected=[...state.selected]; o.decision='accept'; o.phase='accepted_bad'; state.report=buildOvarRound1Report(); gotoStep('mtb'); toastSafe('Früher MTB-Abschluss gewählt – dieser Pfad wird kritisch bewertet.'); };
+window.ovarRejectRound1=function(){ if(window.MolPathOvarReasoningA610&&!window.MolPathOvarReasoningA610.beforeDecision())return; const o=ov(); o.phase1Selected=[...state.selected]; o.decision='reject'; o.phase='round2'; o.phase2Selected=[]; state.report=null; setSel([]); orderSearch=''; orderCategory='all'; orderView='all'; gotoStep('follow_order'); toastSafe('Runde 2 freigeschaltet: Liquid Biopsy als Bestätigung anfordern.'); };
+window.ovarFinalizeAfterRound2=function(){ if(window.MolPathOvarReasoningA610&&!window.MolPathOvarReasoningA610.beforeFinalize())return; const o=ov(); o.phase2Selected=[...state.selected]; o.phase='final'; state.report=buildOvarRound2Report(); gotoStep('mtb'); toastSafe('Finale MTB-Runde freigeschaltet.'); };
+window.renderContent=function(){ if(isOvarCase()){ if(['reasoning','reasoning_follow'].includes(state.step)&&window.MolPathOvarReasoningA610)return window.MolPathOvarReasoningA610.renderGate(); if(['intake','history','histo','material'].includes(state.step)) return storyStep(state.step); if(state.step==='order'||state.step==='follow_order')return renderOrder(); if(state.step==='lab')return renderLab(); if(state.step==='follow_lab')return renderLab(); if(state.step==='report'||state.step==='follow_report')return renderReport(); if(state.step==='mtb')return renderMtb(); } return ORIG.renderContent?ORIG.renderContent():''; };
 window.mtbChecks=function(){ if(isOvarCase()) return [['artifact','Artefaktverdacht des alten FFPE-Befunds klar benannt'],['confirmation','Liquid-Biopsy-Bestätigung bzw. Bestätigungsstrategie dargestellt'],['brca','BRCA1-LoF therapeutisch diskutiert, aber technische Vorgeschichte transparent gemacht'],['hrd','HRD/genomic-scar als grenzwertig/limitiert kommuniziert'],['germline','Humangenetik/Keimbahnabklärung empfohlen'],['bad','Falschaussage: alte FFPE-BRCA1-LoF ohne Plausibilitätsprüfung direkt als sichere PARP-Indikation']]; if(isCrcCase()) return [['bundle','Valider CRC-Diagnostikpfad erfüllt: fokussiert oder breites Panel'],['mmr','MMR/MSI-H als IO-relevant genannt'],['ras','RAS/BRAF für anti-EGFR/Therapiealgorithmus korrekt eingeordnet'],['mlh1','MLH1-Methylierung/sporadisch vs. Lynch sauber angesprochen'],['bad','Falschaussage: TMB-only oder RAS-WT allein reicht für Therapieentscheidung']]; return ORIG.mtbChecks?ORIG.mtbChecks():[]; };
 function buildCrcReport(){ const bs=crcBundleStatus(); let findings=[], interpretation=[]; if(hasId('broad_pan_panel')) findings.push(['Breites NGS-Panel','RAS/NRAS/KRAS Wildtyp, BRAF p.V600E nachweisbar, MSI-high aus NGS, TMB als Zusatzkontext aus ausreichend großem Panel.']); else { if(hasId('ras_panel_crc')||hasId('colon_ngs_panel')) findings.push(['RAS-Status','KRAS/NRAS Wildtyp.']); if(hasId('braf_v600e_crc')||hasId('colon_ngs_panel')) findings.push(['BRAF','BRAF p.V600E nachweisbar.']); if(hasId('msi_pcr_ngs')) findings.push(['MSI','MSI-high.']); }
   if(hasId('mmr_ihc')) findings.push(['MMR-IHC','Verlust MLH1/PMS2, MSH2/MSH6 erhalten.']); if(hasId('mlh1_methylation')) findings.push(['MLH1-Methylierung','MLH1-Promotor-Methylierung positiv; eher sporadische MLH1-Inaktivierung, klinische/familiäre Anamnese berücksichtigen.']); if(!findings.length) findings.push(['Befund','Keine fallrelevante vollständige Diagnostik angefordert.']);
@@ -6154,6 +6158,7 @@ try{console.log('[MolPath '+V240Z12_VERSION+'] case metadata recalibration loade
 <script src="v260rc1_case_consistency_curation_i18n.js"></script>
 
 
+<script src="rc2_A6_10_ovar_reasoning_gates.js"></script>
 <script src="rc2_A6_canonical_integration.js"></script>
 <script src="v250b_signature_taxonomy_freeze.js"></script>
 </body></html>
