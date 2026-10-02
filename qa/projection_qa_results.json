@@ -1,66 +1,66 @@
 {
   "status": "PASS",
-  "total": 13,
-  "passed": 13,
+  "total": 24,
+  "passed": 24,
   "failed": [],
   "checks": [
     {
-      "name": "exact ordered JSON parity V15_META_RECORDS",
+      "name": "exact ordered canonical JSON parity V15_GATE_RECORDS",
       "pass": true,
       "detail": 91
     },
     {
-      "name": "91 unique case IDs V15_META_RECORDS",
+      "name": "91 unique case IDs V15_GATE_RECORDS",
       "pass": true,
       "detail": null
     },
     {
-      "name": "no nested aliases into canonical data V15_META_RECORDS",
+      "name": "no nested aliases into canonical data V15_GATE_RECORDS",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "canonical unchanged after compatibility mutation V15_GATE_RECORDS",
       "pass": true,
       "detail": null
     },
     {
-      "name": "canonical unchanged after compatibility mutation V15_META_RECORDS",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "exact ordered JSON parity V15_CAP_RECORDS",
+      "name": "exact ordered canonical JSON parity V15_METHOD_RULE_RECORDS",
       "pass": true,
       "detail": 91
     },
     {
-      "name": "91 unique case IDs V15_CAP_RECORDS",
+      "name": "91 unique case IDs V15_METHOD_RULE_RECORDS",
       "pass": true,
       "detail": null
     },
     {
-      "name": "no nested aliases into canonical data V15_CAP_RECORDS",
+      "name": "no nested aliases into canonical data V15_METHOD_RULE_RECORDS",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "canonical unchanged after compatibility mutation V15_METHOD_RULE_RECORDS",
       "pass": true,
       "detail": null
     },
     {
-      "name": "canonical unchanged after compatibility mutation V15_CAP_RECORDS",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "snapshot equality with confirmed A6.3 preBootHash",
+      "name": "snapshot equality with confirmed A6.4 preBootHash",
       "pass": true,
       "detail": "a767970c2b67c0ee4066ff8794fe36f71255c497aeb7f9d8fc9e660d901f83d0"
     },
     {
-      "name": "snapshot equality with confirmed A6.3 afterBootHash",
+      "name": "snapshot equality with confirmed A6.4 afterBootHash",
       "pass": true,
       "detail": "a767970c2b67c0ee4066ff8794fe36f71255c497aeb7f9d8fc9e660d901f83d0"
     },
     {
-      "name": "snapshot equality with confirmed A6.3 finalHash",
+      "name": "snapshot equality with confirmed A6.4 finalHash",
       "pass": true,
       "detail": "a767970c2b67c0ee4066ff8794fe36f71255c497aeb7f9d8fc9e660d901f83d0"
     },
     {
-      "name": "same counts as confirmed A6.3",
+      "name": "same counts as confirmed A6.4",
       "pass": true,
       "detail": {
         "cases": 91,
@@ -75,6 +75,159 @@
       "name": "same six report outcomes in all four tested languages",
       "pass": true,
       "detail": null
+    },
+    {
+      "name": "both full runtime runs pass",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "A6.4 initial sole gate difference matches documented normalization",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "A6.4 existing LAB_RUN_002 hotfix normalizes to 3",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "A6.4 initial methods differ in exactly 12 curated cases",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "A6.4 existing curation supplies final method rules",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "A6.4 reaches canonical parity before and at integration",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "A6.5 starts with all final gate and method values",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "retained LAB_RUN_002 writer is idempotent in A6.5",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "retained curation writer is idempotent in A6.5",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "A6.5 canonical integration remains final authority",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "A6.5 has no intermediate gate/method drift",
+      "pass": true,
+      "detail": null
     }
-  ]
+  ],
+  "authorityTrace": {
+    "a6_4": [
+      {
+        "source": "index:inline:0:main",
+        "gateCount": 2,
+        "deepQuestionCount": 3,
+        "gateDiff": [
+          "LAB_RUN_002_v0_8"
+        ],
+        "methodDiff": [
+          "MTB_CHOL_001_v1_3",
+          "MTB_CRC_003_v1_3",
+          "MTB_CRC_004_v1_3",
+          "MTB_OVAR_002_v1_3",
+          "MTB_PROST_001_v1_3",
+          "MTB_IO_003_v1_3",
+          "MTB_IO_004_v1_3",
+          "MTB_IO_005_v1_3",
+          "MTB_ANGIO_001_v1_3",
+          "MTB_GBM_ANGIO_001_v1_3",
+          "MTB_INV_001_v1_3",
+          "MET_METH_001_v1_3"
+        ],
+        "integrated": false
+      },
+      {
+        "source": "index:inline:11:v240e_lab_run_002_qa_hotfix",
+        "gateCount": 3,
+        "deepQuestionCount": 3,
+        "gateDiff": [],
+        "methodDiff": [
+          "MTB_CHOL_001_v1_3",
+          "MTB_CRC_003_v1_3",
+          "MTB_CRC_004_v1_3",
+          "MTB_OVAR_002_v1_3",
+          "MTB_PROST_001_v1_3",
+          "MTB_IO_003_v1_3",
+          "MTB_IO_004_v1_3",
+          "MTB_IO_005_v1_3",
+          "MTB_ANGIO_001_v1_3",
+          "MTB_GBM_ANGIO_001_v1_3",
+          "MTB_INV_001_v1_3",
+          "MET_METH_001_v1_3"
+        ],
+        "integrated": false
+      },
+      {
+        "source": "v260rc1_case_consistency_curation_i18n.js",
+        "gateCount": 3,
+        "deepQuestionCount": 3,
+        "gateDiff": [],
+        "methodDiff": [],
+        "integrated": false
+      },
+      {
+        "source": "rc2_A6_canonical_integration.js",
+        "gateCount": 3,
+        "deepQuestionCount": 3,
+        "gateDiff": [],
+        "methodDiff": [],
+        "integrated": true
+      }
+    ],
+    "a6_5": [
+      {
+        "source": "index:inline:0:main",
+        "gateCount": 3,
+        "deepQuestionCount": 3,
+        "gateDiff": [],
+        "methodDiff": [],
+        "integrated": false
+      },
+      {
+        "source": "index:inline:11:v240e_lab_run_002_qa_hotfix",
+        "gateCount": 3,
+        "deepQuestionCount": 3,
+        "gateDiff": [],
+        "methodDiff": [],
+        "integrated": false
+      },
+      {
+        "source": "v260rc1_case_consistency_curation_i18n.js",
+        "gateCount": 3,
+        "deepQuestionCount": 3,
+        "gateDiff": [],
+        "methodDiff": [],
+        "integrated": false
+      },
+      {
+        "source": "rc2_A6_canonical_integration.js",
+        "gateCount": 3,
+        "deepQuestionCount": 3,
+        "gateDiff": [],
+        "methodDiff": [],
+        "integrated": true
+      }
+    ]
+  }
 }

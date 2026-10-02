@@ -1,6 +1,40 @@
 {
+  "authorityTrace": [
+    {
+      "source": "index:inline:0:main",
+      "gateCount": 3,
+      "deepQuestionCount": 3,
+      "gateDiff": [],
+      "methodDiff": [],
+      "integrated": false
+    },
+    {
+      "source": "index:inline:11:v240e_lab_run_002_qa_hotfix",
+      "gateCount": 3,
+      "deepQuestionCount": 3,
+      "gateDiff": [],
+      "methodDiff": [],
+      "integrated": false
+    },
+    {
+      "source": "v260rc1_case_consistency_curation_i18n.js",
+      "gateCount": 3,
+      "deepQuestionCount": 3,
+      "gateDiff": [],
+      "methodDiff": [],
+      "integrated": false
+    },
+    {
+      "source": "rc2_A6_canonical_integration.js",
+      "gateCount": 3,
+      "deepQuestionCount": 3,
+      "gateDiff": [],
+      "methodDiff": [],
+      "integrated": true
+    }
+  ],
   "environment": "Node VM, actual ordered JS sources, DOM test double; no visual browser assertion",
-  "root": "/workspace/scratch/1f1f0706e0d2/work/a6_4/candidate",
+  "root": "/workspace/scratch/1f1f0706e0d2/work/a6_5/candidate",
   "loaded": 100,
   "counts": {
     "cases": 91,

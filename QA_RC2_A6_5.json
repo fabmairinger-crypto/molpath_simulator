@@ -1,0 +1,46 @@
+{
+  "package": "MolPath_rc2_A6_5_delta",
+  "status": "SOURCE_PROJECTION_SYNTAX_RUNTIME_PASS_BROWSER_OPEN",
+  "base_browser_smoke": "CONFIRMED_BY_USER for A6.4",
+  "a6_5_browser_smoke": "NOT_RUN",
+  "source": {
+    "passed": 91,
+    "total": 91
+  },
+  "projection_and_base_comparison": {
+    "passed": 24,
+    "total": 24
+  },
+  "syntax": {
+    "units": 99,
+    "errors": []
+  },
+  "runtime": {
+    "passed": 254,
+    "total": 254,
+    "errors": [],
+    "counts": {
+      "cases": 91,
+      "deep": 91,
+      "signature": 30,
+      "methods": 44,
+      "courses": 5,
+      "courseCases": 23
+    },
+    "pre_boot_hash": "a767970c2b67c0ee4066ff8794fe36f71255c497aeb7f9d8fc9e660d901f83d0",
+    "after_boot_hash": "a767970c2b67c0ee4066ff8794fe36f71255c497aeb7f9d8fc9e660d901f83d0",
+    "final_hash": "a767970c2b67c0ee4066ff8794fe36f71255c497aeb7f9d8fc9e660d901f83d0"
+  },
+  "a6_4_trace_run": {
+    "passed": 254,
+    "total": 254,
+    "errors": []
+  },
+  "limits": [
+    "The local VM uses a DOM test double: no true browser layout, live MutationObserver behavior or binary image rendering.",
+    "All unchanged executable inputs reuse the verified A6.4 staging fixture. The full rc1 archive previously failed materialization with HTTP 502.",
+    "The 11-language fixture reuses existing uploaded language files and existing UK patch languages/core/uk; it is not bundled in the payload.",
+    "i18n/qa.js remains an unchanged diagnostic layer omitted from the VM runner.",
+    "Binary assets, FOM PDF/pages and full local build identity are not verified; existing source file/path and helper preservation is verified."
+  ]
+}

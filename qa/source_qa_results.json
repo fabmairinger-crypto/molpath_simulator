@@ -1,36 +1,73 @@
 {
   "status": "PASS",
-  "total": 86,
-  "passed": 86,
+  "total": 91,
+  "passed": 91,
   "failed": [],
   "checks": [
     {
-      "name": "ordered source-to-canonical parity V15_META_RECORDS",
-      "pass": true,
-      "detail": 91
-    },
-    {
-      "name": "old data literal absent V15_META_RECORDS",
+      "name": "91 rows in identical canonical order V15_GATE_RECORDS",
       "pass": true,
       "detail": null
     },
     {
-      "name": "direct detached canonical projection V15_META_RECORDS",
+      "name": "only already documented normalized/curated differences V15_GATE_RECORDS",
+      "pass": true,
+      "detail": [
+        "LAB_RUN_002_v0_8"
+      ]
+    },
+    {
+      "name": "sole gate difference is LAB_RUN_002 count 2 to 3",
+      "pass": true,
+      "detail": [
+        {
+          "id": "LAB_RUN_002_v0_8",
+          "field": "gate_count",
+          "before": 2,
+          "after": 3
+        }
+      ]
+    },
+    {
+      "name": "old data literal absent V15_GATE_RECORDS",
       "pass": true,
       "detail": null
     },
     {
-      "name": "ordered source-to-canonical parity V15_CAP_RECORDS",
-      "pass": true,
-      "detail": 91
-    },
-    {
-      "name": "old data literal absent V15_CAP_RECORDS",
+      "name": "direct detached canonical projection V15_GATE_RECORDS",
       "pass": true,
       "detail": null
     },
     {
-      "name": "direct detached canonical projection V15_CAP_RECORDS",
+      "name": "91 rows in identical canonical order V15_METHOD_RULE_RECORDS",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "only already documented normalized/curated differences V15_METHOD_RULE_RECORDS",
+      "pass": true,
+      "detail": [
+        "MTB_CHOL_001_v1_3",
+        "MTB_CRC_003_v1_3",
+        "MTB_CRC_004_v1_3",
+        "MTB_OVAR_002_v1_3",
+        "MTB_PROST_001_v1_3",
+        "MTB_IO_003_v1_3",
+        "MTB_IO_004_v1_3",
+        "MTB_IO_005_v1_3",
+        "MTB_ANGIO_001_v1_3",
+        "MTB_GBM_ANGIO_001_v1_3",
+        "MTB_INV_001_v1_3",
+        "MET_METH_001_v1_3"
+      ]
+    },
+    {
+      "name": "old data literal absent V15_METHOD_RULE_RECORDS",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "direct detached canonical projection V15_METHOD_RULE_RECORDS",
       "pass": true,
       "detail": null
     },
@@ -40,17 +77,17 @@
       "detail": null
     },
     {
-      "name": "unchanged remaining data literal V15_GATE_RECORDS",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "unchanged remaining data literal V15_METHOD_RULE_RECORDS",
-      "pass": true,
-      "detail": null
-    },
-    {
       "name": "unchanged remaining data literal DEEP_DIVE_CASES_V17",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged A6.4 projection V15_META_RECORDS",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged A6.4 projection V15_CAP_RECORDS",
       "pass": true,
       "detail": null
     },
@@ -60,9 +97,21 @@
       "detail": 619
     },
     {
-      "name": "external script set unchanged",
+      "name": "all script attributes and their order unchanged",
       "pass": true,
-      "detail": 51
+      "detail": null
+    },
+    {
+      "name": "only main script body changes",
+      "pass": true,
+      "detail": [
+        2
+      ]
+    },
+    {
+      "name": "external load order unchanged",
+      "pass": true,
+      "detail": null
     },
     {
       "name": "A4b loader occurs once",
@@ -70,7 +119,7 @@
       "detail": null
     },
     {
-      "name": "A4b precedes main runtime and V15 declarations",
+      "name": "A4b precedes main runtime and all four projections",
       "pass": true,
       "detail": null
     },
@@ -95,11 +144,6 @@
       "detail": null
     },
     {
-      "name": "inline script count unchanged",
-      "pass": true,
-      "detail": null
-    },
-    {
       "name": "all CSS blocks byte-identical",
       "pass": true,
       "detail": 54
@@ -115,217 +159,12 @@
       "detail": null
     },
     {
-      "name": "unchanged runtime input v260rc1_lab_run_004_asset_upgrade.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "unchanged runtime input v260rc1_mtb_cns_003_mtb_hem_001_i18n_consolidation.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "unchanged runtime input v240z14_crc001_flagship.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "unchanged runtime input v250b_reshyp001_flagship.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "unchanged runtime input v250b_metngs001_course_flagship.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "unchanged runtime input v250b_home_screen.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "unchanged runtime input v250b_metngs004_course_flagship.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "unchanged runtime input v240z19_cns001_flagship.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "unchanged runtime input v260rc1_mtb_cns_003_asset_upgrade.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "unchanged runtime input v260rc1_mtb_hem_001_asset_upgrade.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "unchanged runtime input molpath_version.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "unchanged runtime input rc2_A6_canonical_integration.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "unchanged runtime input v260rc1_met_fish_001_asset_i18n_upgrade.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "unchanged runtime input v240z20_io001_flagship.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "unchanged runtime input rc2_A5_courses.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "unchanged runtime input v250b_reseth001_flagship.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "unchanged runtime input v250b_resrole001_course_flagship.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "unchanged runtime input v250b_labrun001_course_flagship.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "unchanged runtime input v260rc1_res_val_001_signature_asset_i18n_upgrade.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "unchanged runtime input v250b_startup_cover_hotfix.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "unchanged runtime input v240z16_metngs003_flagship.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "unchanged runtime input v240z13_crc002_flagship.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "unchanged runtime input v250b_metrna001_course_flagship.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "unchanged runtime input v250b_method_focus_filter.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "unchanged runtime input v240z15_nsclc002_flagship.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "unchanged runtime input v250b_resimpl001_course_flagship.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "unchanged runtime input v250b_metngs002_course_flagship.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "unchanged runtime input rc2_A4b_canonical_cases_lossless.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "unchanged runtime input v240z17_ovar001_flagship.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "unchanged runtime input v250b_labdoc001_flagship.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "unchanged runtime input v260rc1_case_consistency_curation_i18n.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "unchanged runtime input rc2_A5_method_focus.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "unchanged runtime input v250b_responsive_shell.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "unchanged runtime input v250b_asset_modal_hotfix.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "unchanged runtime input v250b_labpre001_course_flagship.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "unchanged runtime input v250b_labpost001_flagship.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "unchanged runtime input v250b_reseth002_course_flagship.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "unchanged runtime input v250b_signature_taxonomy_freeze.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "unchanged runtime input v240z18_ovar002_flagship.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "unchanged runtime input v250b_metlb001_course_flagship.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "unchanged runtime input rc2_A5_data_adapter.js",
+      "name": "runtime file set unchanged",
       "pass": true,
       "detail": null
     },
     {
       "name": "unchanged runtime input i18n/ar.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "unchanged runtime input i18n/fr.js",
       "pass": true,
       "detail": null
     },
@@ -340,42 +179,7 @@
       "detail": null
     },
     {
-      "name": "unchanged runtime input i18n/languages.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "unchanged runtime input i18n/ro.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "unchanged runtime input i18n/uk.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "unchanged runtime input i18n/es.js",
-      "pass": true,
-      "detail": null
-    },
-    {
       "name": "unchanged runtime input i18n/el.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "unchanged runtime input i18n/tr.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "unchanged runtime input i18n/fa.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "unchanged runtime input i18n/ru.js",
       "pass": true,
       "detail": null
     },
@@ -385,37 +189,27 @@
       "detail": null
     },
     {
+      "name": "unchanged runtime input i18n/es.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input i18n/fa.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input i18n/fr.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input i18n/languages.js",
+      "pass": true,
+      "detail": null
+    },
+    {
       "name": "unchanged runtime input i18n/legacy/legacy_v223_v224_runtime.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "unchanged runtime input i18n/legacy/legacy_v240z10a_res_t4_hotfix.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "unchanged runtime input i18n/legacy/legacy_v240z10_res_t4_i18n.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "unchanged runtime input i18n/legacy/legacy_v240z9_res_t3_i18n.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "unchanged runtime input i18n/legacy/legacy_v240z_lab_i18n.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "unchanged runtime input i18n/legacy/legacy_v240z7_res_t1_i18n.js",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "unchanged runtime input i18n/legacy/legacy_v240z8_res_t2_i18n.js",
       "pass": true,
       "detail": null
     },
@@ -430,79 +224,281 @@
       "detail": null
     },
     {
-      "name": "inverse patch exactly reconstructs confirmed A6.3 index",
+      "name": "unchanged runtime input i18n/legacy/legacy_v240z10_res_t4_i18n.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input i18n/legacy/legacy_v240z10a_res_t4_hotfix.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input i18n/legacy/legacy_v240z7_res_t1_i18n.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input i18n/legacy/legacy_v240z8_res_t2_i18n.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input i18n/legacy/legacy_v240z9_res_t3_i18n.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input i18n/legacy/legacy_v240z_lab_i18n.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input i18n/ro.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input i18n/ru.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input i18n/tr.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input i18n/uk.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input molpath_version.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input rc2_A4b_canonical_cases_lossless.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input rc2_A5_courses.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input rc2_A5_data_adapter.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input rc2_A5_method_focus.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input rc2_A6_canonical_integration.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v240z13_crc002_flagship.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v240z14_crc001_flagship.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v240z15_nsclc002_flagship.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v240z16_metngs003_flagship.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v240z17_ovar001_flagship.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v240z18_ovar002_flagship.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v240z19_cns001_flagship.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v240z20_io001_flagship.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v250b_asset_modal_hotfix.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v250b_home_screen.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v250b_labdoc001_flagship.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v250b_labpost001_flagship.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v250b_labpre001_course_flagship.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v250b_labrun001_course_flagship.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v250b_method_focus_filter.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v250b_metlb001_course_flagship.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v250b_metngs001_course_flagship.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v250b_metngs002_course_flagship.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v250b_metngs004_course_flagship.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v250b_metrna001_course_flagship.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v250b_reseth001_flagship.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v250b_reseth002_course_flagship.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v250b_reshyp001_flagship.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v250b_resimpl001_course_flagship.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v250b_responsive_shell.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v250b_resrole001_course_flagship.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v250b_signature_taxonomy_freeze.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v250b_startup_cover_hotfix.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v260rc1_case_consistency_curation_i18n.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v260rc1_lab_run_004_asset_upgrade.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v260rc1_met_fish_001_asset_i18n_upgrade.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v260rc1_mtb_cns_003_asset_upgrade.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v260rc1_mtb_cns_003_mtb_hem_001_i18n_consolidation.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v260rc1_mtb_hem_001_asset_upgrade.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged runtime input v260rc1_res_val_001_signature_asset_i18n_upgrade.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "inverse two-replacement patch exactly reconstructs confirmed A6.4 index",
       "pass": true,
       "detail": null
     }
   ],
   "changes": {
-    "base": "user browser-confirmed A6.3",
+    "base": "user browser-confirmed complete A6.4",
     "changed": [
       "index.html"
     ],
-    "old_index_bytes": 4123232,
-    "new_index_bytes": 3994644,
-    "bytes_removed": 128588,
-    "base_sha256": "5b153d42a29e1c5d2342b316853ca8e96c9915e9755dacedba304c39ba4f8986",
-    "sha256": "15c2f523aca9a6d86082534f0b6ebba9cf55d68ff4018ed74200500605ce7260",
+    "old_index_bytes": 3994644,
+    "new_index_bytes": 3884089,
+    "bytes_removed": 110555,
+    "base_sha256": "15c2f523aca9a6d86082534f0b6ebba9cf55d68ff4018ed74200500605ce7260",
+    "sha256": "a1d542772aa5cec64802356bdb951cb74d7b782719d840ce222872f5d9db1d83",
     "projection_rows": {
-      "V15_META_RECORDS": 91,
-      "V15_CAP_RECORDS": 91
+      "V15_GATE_RECORDS": 91,
+      "V15_METHOD_RULE_RECORDS": 91
     },
-    "old_load_order": [
-      "rc2_A5_courses.js",
-      "molpath_version.js",
-      "rc2_A5_data_adapter.js",
-      "i18n/languages.js",
-      "i18n/legacy/legacy_v223_v224_runtime.js",
-      "i18n/legacy/legacy_v230c_signature_deepdive.js",
-      "i18n/legacy/legacy_v240t_signature_i18n.js",
-      "i18n/legacy/legacy_v240z_lab_i18n.js",
-      "i18n/legacy/legacy_v240z7_res_t1_i18n.js",
-      "i18n/legacy/legacy_v240z8_res_t2_i18n.js",
-      "i18n/legacy/legacy_v240z9_res_t3_i18n.js",
-      "i18n/legacy/legacy_v240z10_res_t4_i18n.js",
-      "i18n/legacy/legacy_v240z10a_res_t4_hotfix.js",
-      "v240z13_crc002_flagship.js",
-      "v240z14_crc001_flagship.js",
-      "v240z15_nsclc002_flagship.js",
-      "v240z16_metngs003_flagship.js",
-      "v240z17_ovar001_flagship.js",
-      "v240z18_ovar002_flagship.js",
-      "v240z19_cns001_flagship.js",
-      "v240z20_io001_flagship.js",
-      "v250b_labpost001_flagship.js",
-      "v250b_labdoc001_flagship.js",
-      "v250b_reshyp001_flagship.js",
-      "v250b_reseth001_flagship.js",
-      "v250b_responsive_shell.js",
-      "v250b_asset_modal_hotfix.js",
-      "v250b_startup_cover_hotfix.js",
-      "v250b_home_screen.js",
-      "rc2_A5_method_focus.js",
-      "v250b_method_focus_filter.js",
-      "v250b_metngs001_course_flagship.js",
-      "v250b_metngs002_course_flagship.js",
-      "v250b_metrna001_course_flagship.js",
-      "v250b_metlb001_course_flagship.js",
-      "v250b_metngs004_course_flagship.js",
-      "v250b_labrun001_course_flagship.js",
-      "v250b_labpre001_course_flagship.js",
-      "v250b_resimpl001_course_flagship.js",
-      "v250b_reseth002_course_flagship.js",
-      "v250b_resrole001_course_flagship.js",
-      "v260rc1_mtb_cns_003_asset_upgrade.js",
-      "v260rc1_mtb_hem_001_asset_upgrade.js",
-      "v260rc1_lab_run_004_asset_upgrade.js",
-      "v260rc1_mtb_cns_003_mtb_hem_001_i18n_consolidation.js",
-      "v260rc1_met_fish_001_asset_i18n_upgrade.js",
-      "v260rc1_res_val_001_signature_asset_i18n_upgrade.js",
-      "v260rc1_case_consistency_curation_i18n.js",
-      "rc2_A4b_canonical_cases_lossless.js",
-      "rc2_A6_canonical_integration.js",
-      "v250b_signature_taxonomy_freeze.js"
-    ],
-    "new_load_order": [
+    "load_order": [
       "rc2_A5_courses.js",
       "rc2_A4b_canonical_cases_lossless.js",
       "molpath_version.js",
@@ -556,9 +552,9 @@
       "v250b_signature_taxonomy_freeze.js"
     ],
     "projection_expressions": {
-      "V15_META_RECORDS": "window.MolPathCanonicalDataA4b.cases.map(record=>JSON.parse(JSON.stringify(record.case.v15)))",
-      "V15_CAP_RECORDS": "window.MolPathCanonicalDataA4b.cases.map(record=>JSON.parse(JSON.stringify(record.evaluation.score_cap)))"
+      "V15_GATE_RECORDS": "window.MolPathCanonicalDataA4b.cases.map(record=>JSON.parse(JSON.stringify(record.evaluation.clinical_reasoning_gate)))",
+      "V15_METHOD_RULE_RECORDS": "window.MolPathCanonicalDataA4b.cases.map(record=>JSON.parse(JSON.stringify(record.evaluation.method_rules)))"
     },
-    "scope": "only two ordered-parity V15 table projections and single A4b loader move; all other runtime files unchanged"
+    "scope": "two remaining V15 record literals become detached canonical projections; existing update paths and all other runtime files unchanged"
   }
 }
