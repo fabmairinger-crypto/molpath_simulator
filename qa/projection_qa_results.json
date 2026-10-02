@@ -1,76 +1,961 @@
 {
   "status": "PASS",
-  "total": 38,
-  "passed": 38,
+  "total": 213,
+  "passed": 213,
   "failed": [],
   "checks": [
     {
-      "name": "tested factory is the actual one in index cases",
+      "name": "tested factory matches actual declaration V21_DEEP_DIVE_BATCH1",
       "pass": true,
       "detail": null
     },
     {
-      "name": "exact ordered canonical compatibility payload cases",
-      "pass": true,
-      "detail": 91
-    },
-    {
-      "name": "original IDs/order/count retained cases",
+      "name": "exact final canonical selected payload V21_DEEP_DIVE_BATCH1",
       "pass": true,
       "detail": null
     },
     {
-      "name": "no nested canonical references cases",
+      "name": "original ordered IDs/count retained V21_DEEP_DIVE_BATCH1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "no nested canonical aliases V21_DEEP_DIVE_BATCH1",
       "pass": true,
       "detail": 0
     },
     {
-      "name": "canonical remains unchanged after copy mutations cases",
+      "name": "canonical unchanged after copy mutation V21_DEEP_DIVE_BATCH1",
       "pass": true,
       "detail": null
     },
     {
-      "name": "tested factory is the actual one in index DEEP_DIVE_CASES_V17",
+      "name": "tested factory matches actual declaration V230B_SIGNATURE_DEEP_DIVES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "exact ordered canonical compatibility payload DEEP_DIVE_CASES_V17",
-      "pass": true,
-      "detail": 8
-    },
-    {
-      "name": "original IDs/order/count retained DEEP_DIVE_CASES_V17",
+      "name": "exact final canonical selected payload V230B_SIGNATURE_DEEP_DIVES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "no nested canonical references DEEP_DIVE_CASES_V17",
+      "name": "original ordered IDs/count retained V230B_SIGNATURE_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "no nested canonical aliases V230B_SIGNATURE_DEEP_DIVES",
       "pass": true,
       "detail": 0
     },
     {
-      "name": "canonical remains unchanged after copy mutations DEEP_DIVE_CASES_V17",
+      "name": "canonical unchanged after copy mutation V230B_SIGNATURE_DEEP_DIVES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "snapshot equality with confirmed A6.5 preBootHash",
+      "name": "tested factory matches actual declaration V240M_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact final canonical selected payload V240M_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original ordered IDs/count retained V240M_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "case patch ordered field lists retained V240M_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "no nested canonical aliases V240M_BASE_PATCHES",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "canonical unchanged after copy mutation V240M_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "tested factory matches actual declaration V240M_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact final canonical selected payload V240M_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original ordered IDs/count retained V240M_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "no nested canonical aliases V240M_DEEP_DIVES",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "canonical unchanged after copy mutation V240M_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "tested factory matches actual declaration V240N_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact final canonical selected payload V240N_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original ordered IDs/count retained V240N_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "case patch ordered field lists retained V240N_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "no nested canonical aliases V240N_BASE_PATCHES",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "canonical unchanged after copy mutation V240N_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "tested factory matches actual declaration V240N_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact final canonical selected payload V240N_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original ordered IDs/count retained V240N_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "no nested canonical aliases V240N_DEEP_DIVES",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "canonical unchanged after copy mutation V240N_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "tested factory matches actual declaration V240O_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact final canonical selected payload V240O_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original ordered IDs/count retained V240O_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "case patch ordered field lists retained V240O_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "no nested canonical aliases V240O_BASE_PATCHES",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "canonical unchanged after copy mutation V240O_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "tested factory matches actual declaration V240O_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact final canonical selected payload V240O_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original ordered IDs/count retained V240O_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "no nested canonical aliases V240O_DEEP_DIVES",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "canonical unchanged after copy mutation V240O_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "tested factory matches actual declaration V240P_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact final canonical selected payload V240P_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original ordered IDs/count retained V240P_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "case patch ordered field lists retained V240P_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "no nested canonical aliases V240P_BASE_PATCHES",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "canonical unchanged after copy mutation V240P_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "tested factory matches actual declaration V240P_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact final canonical selected payload V240P_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original ordered IDs/count retained V240P_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "no nested canonical aliases V240P_DEEP_DIVES",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "canonical unchanged after copy mutation V240P_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "tested factory matches actual declaration V240Q_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact final canonical selected payload V240Q_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original ordered IDs/count retained V240Q_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "case patch ordered field lists retained V240Q_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "no nested canonical aliases V240Q_BASE_PATCHES",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "canonical unchanged after copy mutation V240Q_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "tested factory matches actual declaration V240Q_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact final canonical selected payload V240Q_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original ordered IDs/count retained V240Q_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "no nested canonical aliases V240Q_DEEP_DIVES",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "canonical unchanged after copy mutation V240Q_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "tested factory matches actual declaration V240S_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact final canonical selected payload V240S_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original ordered IDs/count retained V240S_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "case patch ordered field lists retained V240S_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "no nested canonical aliases V240S_BASE_PATCHES",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "canonical unchanged after copy mutation V240S_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "tested factory matches actual declaration V240S_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact final canonical selected payload V240S_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original ordered IDs/count retained V240S_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "no nested canonical aliases V240S_DEEP_DIVES",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "canonical unchanged after copy mutation V240S_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "tested factory matches actual declaration V240U_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact final canonical selected payload V240U_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original ordered IDs/count retained V240U_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "case patch ordered field lists retained V240U_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "no nested canonical aliases V240U_BASE_PATCHES",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "canonical unchanged after copy mutation V240U_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "tested factory matches actual declaration V240U_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact final canonical selected payload V240U_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original ordered IDs/count retained V240U_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "no nested canonical aliases V240U_DEEP_DIVES",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "canonical unchanged after copy mutation V240U_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "tested factory matches actual declaration V240V_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact final canonical selected payload V240V_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original ordered IDs/count retained V240V_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "case patch ordered field lists retained V240V_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "no nested canonical aliases V240V_BASE_PATCHES",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "canonical unchanged after copy mutation V240V_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "tested factory matches actual declaration V240V_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact final canonical selected payload V240V_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original ordered IDs/count retained V240V_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "no nested canonical aliases V240V_DEEP_DIVES",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "canonical unchanged after copy mutation V240V_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "tested factory matches actual declaration V240W_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact final canonical selected payload V240W_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original ordered IDs/count retained V240W_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "case patch ordered field lists retained V240W_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "no nested canonical aliases V240W_BASE_PATCHES",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "canonical unchanged after copy mutation V240W_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "tested factory matches actual declaration V240W_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact final canonical selected payload V240W_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original ordered IDs/count retained V240W_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "no nested canonical aliases V240W_DEEP_DIVES",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "canonical unchanged after copy mutation V240W_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "tested factory matches actual declaration V240X_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact final canonical selected payload V240X_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original ordered IDs/count retained V240X_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "case patch ordered field lists retained V240X_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "no nested canonical aliases V240X_BASE_PATCHES",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "canonical unchanged after copy mutation V240X_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "tested factory matches actual declaration V240X_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact final canonical selected payload V240X_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original ordered IDs/count retained V240X_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "no nested canonical aliases V240X_DEEP_DIVES",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "canonical unchanged after copy mutation V240X_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "tested factory matches actual declaration V240Y_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact final canonical selected payload V240Y_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original ordered IDs/count retained V240Y_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "case patch ordered field lists retained V240Y_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "no nested canonical aliases V240Y_BASE_PATCHES",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "canonical unchanged after copy mutation V240Y_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "tested factory matches actual declaration V240Y_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact final canonical selected payload V240Y_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original ordered IDs/count retained V240Y_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "no nested canonical aliases V240Y_DEEP_DIVES",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "canonical unchanged after copy mutation V240Y_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "tested factory matches actual declaration V240Z2_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact final canonical selected payload V240Z2_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original ordered IDs/count retained V240Z2_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "case patch ordered field lists retained V240Z2_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "no nested canonical aliases V240Z2_BASE_PATCHES",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "canonical unchanged after copy mutation V240Z2_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "tested factory matches actual declaration V240Z2_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact final canonical selected payload V240Z2_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original ordered IDs/count retained V240Z2_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "no nested canonical aliases V240Z2_DEEP_DIVES",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "canonical unchanged after copy mutation V240Z2_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "tested factory matches actual declaration V240Z3_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact final canonical selected payload V240Z3_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original ordered IDs/count retained V240Z3_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "case patch ordered field lists retained V240Z3_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "no nested canonical aliases V240Z3_BASE_PATCHES",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "canonical unchanged after copy mutation V240Z3_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "tested factory matches actual declaration V240Z3_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact final canonical selected payload V240Z3_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original ordered IDs/count retained V240Z3_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "no nested canonical aliases V240Z3_DEEP_DIVES",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "canonical unchanged after copy mutation V240Z3_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "tested factory matches actual declaration V240Z4_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact final canonical selected payload V240Z4_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original ordered IDs/count retained V240Z4_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "case patch ordered field lists retained V240Z4_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "no nested canonical aliases V240Z4_BASE_PATCHES",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "canonical unchanged after copy mutation V240Z4_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "tested factory matches actual declaration V240Z4_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact final canonical selected payload V240Z4_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original ordered IDs/count retained V240Z4_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "no nested canonical aliases V240Z4_DEEP_DIVES",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "canonical unchanged after copy mutation V240Z4_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "tested factory matches actual declaration V240Z5_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact final canonical selected payload V240Z5_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original ordered IDs/count retained V240Z5_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "case patch ordered field lists retained V240Z5_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "no nested canonical aliases V240Z5_BASE_PATCHES",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "canonical unchanged after copy mutation V240Z5_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "tested factory matches actual declaration V240Z5_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact final canonical selected payload V240Z5_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original ordered IDs/count retained V240Z5_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "no nested canonical aliases V240Z5_DEEP_DIVES",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "canonical unchanged after copy mutation V240Z5_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "tested factory matches actual declaration V240Z6_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact final canonical selected payload V240Z6_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original ordered IDs/count retained V240Z6_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "case patch ordered field lists retained V240Z6_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "no nested canonical aliases V240Z6_BASE_PATCHES",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "canonical unchanged after copy mutation V240Z6_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "tested factory matches actual declaration V240Z6_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact final canonical selected payload V240Z6_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original ordered IDs/count retained V240Z6_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "no nested canonical aliases V240Z6_DEEP_DIVES",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "canonical unchanged after copy mutation V240Z6_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "reused reference is the passed A6.6 result",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "snapshot equality with confirmed A6.6 preBootHash",
       "pass": true,
       "detail": "a767970c2b67c0ee4066ff8794fe36f71255c497aeb7f9d8fc9e660d901f83d0"
     },
     {
-      "name": "snapshot equality with confirmed A6.5 afterBootHash",
+      "name": "snapshot equality with confirmed A6.6 afterBootHash",
       "pass": true,
       "detail": "a767970c2b67c0ee4066ff8794fe36f71255c497aeb7f9d8fc9e660d901f83d0"
     },
     {
-      "name": "snapshot equality with confirmed A6.5 finalHash",
+      "name": "snapshot equality with confirmed A6.6 finalHash",
       "pass": true,
       "detail": "a767970c2b67c0ee4066ff8794fe36f71255c497aeb7f9d8fc9e660d901f83d0"
     },
     {
-      "name": "same final counts as A6.5",
+      "name": "same final data counts",
       "pass": true,
       "detail": {
         "cases": 91,
@@ -82,22 +967,17 @@
       }
     },
     {
-      "name": "same boot case and initialized UI state",
+      "name": "same initialized boot UI state",
       "pass": true,
       "detail": null
     },
     {
-      "name": "both full runtime runs pass",
+      "name": "A6.7 full runtime passes",
       "pass": true,
       "detail": null
     },
     {
-      "name": "six report paths have exact HTML hashes in all four languages",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "report results also match prior A6.5 QA",
+      "name": "six hybrid report paths have exact HTML equality in four languages",
       "pass": true,
       "detail": null
     },
@@ -107,37 +987,32 @@
       "detail": 97
     },
     {
-      "name": "case IDs/count/order unchanged at every checkpoint",
+      "name": "case IDs/order/count match at every checkpoint",
       "pass": true,
       "detail": null
     },
     {
-      "name": "Deep-Dive IDs/count/order unchanged at every checkpoint",
+      "name": "Deep-Dive IDs/order/count match at every checkpoint",
       "pass": true,
       "detail": null
     },
     {
-      "name": "initial Deep Dives remain the same eight records",
+      "name": "initial eight-record Deep-Dive registration unchanged",
       "pass": true,
       "detail": null
     },
     {
-      "name": "initial Deep-Dive records now match canonical",
+      "name": "A6.6 final integration has exact canonical payload",
       "pass": true,
       "detail": null
     },
     {
-      "name": "A6.5 final integration has exact canonical case/deep payload",
+      "name": "A6.7 final integration has exact canonical payload",
       "pass": true,
       "detail": null
     },
     {
-      "name": "A6.6 final integration has exact canonical case/deep payload",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "same eleven-language comparison sequence and German return",
+      "name": "same full language sequence and German return",
       "pass": true,
       "detail": null
     },
@@ -251,978 +1126,6 @@
     }
   ],
   "loadTraceSummary": {
-    "a6_5": [
-      {
-        "source": "index:inline:0:main",
-        "caseCount": 91,
-        "deepCount": 8,
-        "caseDifferences": 91,
-        "deepDifferences": 8,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:1:v20b1LayoutHotfix",
-        "caseCount": 91,
-        "deepCount": 8,
-        "caseDifferences": 91,
-        "deepDifferences": 8,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:2:v20b5SafeLayoutPatch",
-        "caseCount": 91,
-        "deepCount": 8,
-        "caseDifferences": 91,
-        "deepDifferences": 8,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:3:v21Batch1ContentExpansionFix",
-        "caseCount": 91,
-        "deepCount": 11,
-        "caseDifferences": 91,
-        "deepDifferences": 11,
-        "caseWrites": 11,
-        "deepWrites": 3,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:4:v213ComplexPhaseBundlePatch",
-        "caseCount": 91,
-        "deepCount": 11,
-        "caseDifferences": 91,
-        "deepDifferences": 11,
-        "caseWrites": 2,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:5:v214CaseSwitchWireFix",
-        "caseCount": 91,
-        "deepCount": 11,
-        "caseDifferences": 91,
-        "deepDifferences": 11,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:6:v216OvarPhaseScoreFix",
-        "caseCount": 91,
-        "deepCount": 11,
-        "caseDifferences": 91,
-        "deepDifferences": 11,
-        "caseWrites": 1,
-        "deepWrites": 1,
-        "integrated": false
-      },
-      {
-        "source": "molpath_version.js",
-        "caseCount": 91,
-        "deepCount": 11,
-        "caseDifferences": 91,
-        "deepDifferences": 11,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "rc2_A5_data_adapter.js",
-        "caseCount": 91,
-        "deepCount": 11,
-        "caseDifferences": 91,
-        "deepDifferences": 11,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "i18n/de.js",
-        "caseCount": 91,
-        "deepCount": 11,
-        "caseDifferences": 91,
-        "deepDifferences": 11,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "i18n/en.js",
-        "caseCount": 91,
-        "deepCount": 11,
-        "caseDifferences": 91,
-        "deepDifferences": 11,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "i18n/ro.js",
-        "caseCount": 91,
-        "deepCount": 11,
-        "caseDifferences": 91,
-        "deepDifferences": 11,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "i18n/el.js",
-        "caseCount": 91,
-        "deepCount": 11,
-        "caseDifferences": 91,
-        "deepDifferences": 11,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "i18n/es.js",
-        "caseCount": 91,
-        "deepCount": 11,
-        "caseDifferences": 91,
-        "deepDifferences": 11,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "i18n/fr.js",
-        "caseCount": 91,
-        "deepCount": 11,
-        "caseDifferences": 91,
-        "deepDifferences": 11,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "i18n/ru.js",
-        "caseCount": 91,
-        "deepCount": 11,
-        "caseDifferences": 91,
-        "deepDifferences": 11,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "i18n/tr.js",
-        "caseCount": 91,
-        "deepCount": 11,
-        "caseDifferences": 91,
-        "deepDifferences": 11,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "i18n/ar.js",
-        "caseCount": 91,
-        "deepCount": 11,
-        "caseDifferences": 91,
-        "deepDifferences": 11,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "i18n/fa.js",
-        "caseCount": 91,
-        "deepCount": 11,
-        "caseDifferences": 91,
-        "deepDifferences": 11,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "i18n/uk.js",
-        "caseCount": 91,
-        "deepCount": 11,
-        "caseDifferences": 91,
-        "deepDifferences": 11,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "i18n/core.js",
-        "caseCount": 91,
-        "deepCount": 11,
-        "caseDifferences": 91,
-        "deepDifferences": 11,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "i18n/languages.js",
-        "caseCount": 91,
-        "deepCount": 11,
-        "caseDifferences": 91,
-        "deepDifferences": 11,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "i18n/legacy/legacy_v223_v224_runtime.js",
-        "caseCount": 91,
-        "deepCount": 11,
-        "caseDifferences": 91,
-        "deepDifferences": 11,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:7:v230UiPolishPatch",
-        "caseCount": 91,
-        "deepCount": 11,
-        "caseDifferences": 91,
-        "deepDifferences": 11,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:8:v230bSignatureDeepDiveExpansion",
-        "caseCount": 91,
-        "deepCount": 11,
-        "caseDifferences": 91,
-        "deepDifferences": 11,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "i18n/legacy/legacy_v230c_signature_deepdive.js",
-        "caseCount": 91,
-        "deepCount": 11,
-        "caseDifferences": 91,
-        "deepDifferences": 11,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:9:v240b_nsclc_premium_hotfix",
-        "caseCount": 91,
-        "deepCount": 11,
-        "caseDifferences": 91,
-        "deepDifferences": 11,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:10:v240c_nsclc_premium_ui_polish",
-        "caseCount": 91,
-        "deepCount": 11,
-        "caseDifferences": 91,
-        "deepDifferences": 11,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:11:v240e_lab_run_002_qa_hotfix",
-        "caseCount": 91,
-        "deepCount": 11,
-        "caseDifferences": 91,
-        "deepDifferences": 11,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:12:v240f_lab_run_002_premium",
-        "caseCount": 91,
-        "deepCount": 11,
-        "caseDifferences": 91,
-        "deepDifferences": 11,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:13:v240h_res_omics_001_qa_hotfix",
-        "caseCount": 91,
-        "deepCount": 11,
-        "caseDifferences": 91,
-        "deepDifferences": 11,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:14:v240i_res_omics_001_premium",
-        "caseCount": 91,
-        "deepCount": 11,
-        "caseDifferences": 91,
-        "deepDifferences": 11,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:15:v240l_performance_signature_filter",
-        "caseCount": 91,
-        "deepCount": 11,
-        "caseDifferences": 91,
-        "deepDifferences": 11,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:16:v240m_a1_deepdive_patch",
-        "caseCount": 91,
-        "deepCount": 16,
-        "caseDifferences": 91,
-        "deepDifferences": 11,
-        "caseWrites": 5,
-        "deepWrites": 5,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:17:v240n_a2_crc_deepdives",
-        "caseCount": 91,
-        "deepCount": 19,
-        "caseDifferences": 91,
-        "deepDifferences": 12,
-        "caseWrites": 3,
-        "deepWrites": 3,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:18:v240o_a3_hrd_deepdives",
-        "caseCount": 91,
-        "deepCount": 22,
-        "caseDifferences": 91,
-        "deepDifferences": 12,
-        "caseWrites": 3,
-        "deepWrites": 3,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:19:v240p_a4_io_deepdives",
-        "caseCount": 91,
-        "deepCount": 26,
-        "caseDifferences": 91,
-        "deepDifferences": 13,
-        "caseWrites": 4,
-        "deepWrites": 4,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:20:v240q_a5_a6_mtb_freeze",
-        "caseCount": 91,
-        "deepCount": 35,
-        "caseDifferences": 91,
-        "deepDifferences": 16,
-        "caseWrites": 9,
-        "deepWrites": 9,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:21:v240r_signature_legal_hotfix",
-        "caseCount": 91,
-        "deepCount": 35,
-        "caseDifferences": 91,
-        "deepDifferences": 16,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:22:v240s-met-deepdive",
-        "caseCount": 91,
-        "deepCount": 44,
-        "caseDifferences": 91,
-        "deepDifferences": 22,
-        "caseWrites": 10,
-        "deepWrites": 10,
-        "integrated": false
-      },
-      {
-        "source": "i18n/legacy/legacy_v240t_signature_i18n.js",
-        "caseCount": 91,
-        "deepCount": 44,
-        "caseDifferences": 91,
-        "deepDifferences": 21,
-        "caseWrites": 48,
-        "deepWrites": 1,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:23:v240u_lab_b1_preanalytics_deepdive_patch",
-        "caseCount": 91,
-        "deepCount": 49,
-        "caseDifferences": 91,
-        "deepDifferences": 22,
-        "caseWrites": 5,
-        "deepWrites": 5,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:24:v240v_lab_b2_run_qc_deepdive_patch",
-        "caseCount": 91,
-        "deepCount": 54,
-        "caseDifferences": 91,
-        "deepDifferences": 24,
-        "caseWrites": 5,
-        "deepWrites": 5,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:25:v240w_lab_b3_postanalytics_deepdive_patch",
-        "caseCount": 91,
-        "deepCount": 58,
-        "caseDifferences": 91,
-        "deepDifferences": 24,
-        "caseWrites": 4,
-        "deepWrites": 4,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:26:v240x_lab_b4_c4_deepdive_patch",
-        "caseCount": 91,
-        "deepCount": 63,
-        "caseDifferences": 91,
-        "deepDifferences": 29,
-        "caseWrites": 5,
-        "deepWrites": 5,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:27:v240y_lab_b5_digital_data_lims_deepdive_patch",
-        "caseCount": 91,
-        "deepCount": 68,
-        "caseDifferences": 91,
-        "deepDifferences": 34,
-        "caseWrites": 5,
-        "deepWrites": 5,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:28:v240y1_lab_c4_c5_schema_hotfix",
-        "caseCount": 91,
-        "deepCount": 68,
-        "caseDifferences": 91,
-        "deepDifferences": 35,
-        "caseWrites": 11,
-        "deepWrites": 12,
-        "integrated": false
-      },
-      {
-        "source": "i18n/legacy/legacy_v240z_lab_i18n.js",
-        "caseCount": 91,
-        "deepCount": 68,
-        "caseDifferences": 91,
-        "deepDifferences": 35,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:29:v240z2_res_r1_deepdive",
-        "caseCount": 91,
-        "deepCount": 72,
-        "caseDifferences": 91,
-        "deepDifferences": 35,
-        "caseWrites": 4,
-        "deepWrites": 4,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:30:v240z3_res_r2_deepdive",
-        "caseCount": 91,
-        "deepCount": 77,
-        "caseDifferences": 91,
-        "deepDifferences": 36,
-        "caseWrites": 5,
-        "deepWrites": 5,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:31:v240z4_res_r3_deepdive",
-        "caseCount": 91,
-        "deepCount": 81,
-        "caseDifferences": 91,
-        "deepDifferences": 37,
-        "caseWrites": 4,
-        "deepWrites": 4,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:32:v240z5_res_r4_deepdive",
-        "caseCount": 91,
-        "deepCount": 84,
-        "caseDifferences": 91,
-        "deepDifferences": 38,
-        "caseWrites": 3,
-        "deepWrites": 3,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:33:v240z6_res_r5_deepdive",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 39,
-        "caseWrites": 3,
-        "deepWrites": 3,
-        "integrated": false
-      },
-      {
-        "source": "i18n/legacy/legacy_v240z7_res_t1_i18n.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 39,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "i18n/legacy/legacy_v240z8_res_t2_i18n.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 39,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "i18n/legacy/legacy_v240z9_res_t3_i18n.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 39,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "i18n/legacy/legacy_v240z10_res_t4_i18n.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 39,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "i18n/legacy/legacy_v240z10a_res_t4_hotfix.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 39,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:34:v240z11_global_baseline_polish",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 39,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:35:v240z12-case-metadata-recalibration",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 39,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "v240z13_crc002_flagship.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 39,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "v240z14_crc001_flagship.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 39,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "v240z15_nsclc002_flagship.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 39,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "v240z16_metngs003_flagship.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 39,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "v240z17_ovar001_flagship.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 39,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "v240z18_ovar002_flagship.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 39,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "v240z19_cns001_flagship.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 39,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "v240z20_io001_flagship.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 39,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "v250b_labpost001_flagship.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 39,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "v250b_labdoc001_flagship.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 39,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "v250b_reshyp001_flagship.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 39,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "v250b_reseth001_flagship.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 39,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "v250b_responsive_shell.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 39,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "v250b_asset_modal_hotfix.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 39,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "v250b_startup_cover_hotfix.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 39,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "v250b_home_screen.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 39,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "rc2_A5_method_focus.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 39,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "v250b_method_focus_filter.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 39,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "v250b_metngs001_course_flagship.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 39,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "v250b_metngs002_course_flagship.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 39,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "v250b_metrna001_course_flagship.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 39,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "v250b_metlb001_course_flagship.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 39,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "v250b_metngs004_course_flagship.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 39,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "v250b_labrun001_course_flagship.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 39,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "v250b_labpre001_course_flagship.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 39,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "v250b_resimpl001_course_flagship.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 39,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "v250b_reseth002_course_flagship.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 39,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "v250b_resrole001_course_flagship.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 39,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "v260rc1_mtb_cns_003_asset_upgrade.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 39,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "v260rc1_mtb_hem_001_asset_upgrade.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 39,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "v260rc1_lab_run_004_asset_upgrade.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 39,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "v260rc1_mtb_cns_003_mtb_hem_001_i18n_consolidation.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 39,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "v260rc1_met_fish_001_asset_i18n_upgrade.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 39,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "v260rc1_res_val_001_signature_asset_i18n_upgrade.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 39,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "v260rc1_case_consistency_curation_i18n.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 36,
-        "caseWrites": 11,
-        "deepWrites": 4,
-        "integrated": false
-      },
-      {
-        "source": "rc2_A6_canonical_integration.js",
-        "caseCount": 91,
-        "deepCount": 91,
-        "caseDifferences": 0,
-        "deepDifferences": 0,
-        "caseWrites": 91,
-        "deepWrites": 40,
-        "integrated": true
-      },
-      {
-        "source": "v250b_signature_taxonomy_freeze.js",
-        "caseCount": 91,
-        "deepCount": 91,
-        "caseDifferences": 0,
-        "deepDifferences": 0,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": true
-      }
-    ],
     "a6_6": [
       {
         "source": "index:inline:0:main",
@@ -2182,6 +2085,978 @@
         "deepDifferences": 0,
         "caseWrites": 91,
         "deepWrites": 40,
+        "integrated": true
+      },
+      {
+        "source": "v250b_signature_taxonomy_freeze.js",
+        "caseCount": 91,
+        "deepCount": 91,
+        "caseDifferences": 0,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": true
+      }
+    ],
+    "a6_7": [
+      {
+        "source": "index:inline:0:main",
+        "caseCount": 91,
+        "deepCount": 8,
+        "caseDifferences": 49,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:1:v20b1LayoutHotfix",
+        "caseCount": 91,
+        "deepCount": 8,
+        "caseDifferences": 49,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:2:v20b5SafeLayoutPatch",
+        "caseCount": 91,
+        "deepCount": 8,
+        "caseDifferences": 49,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:3:v21Batch1ContentExpansionFix",
+        "caseCount": 91,
+        "deepCount": 11,
+        "caseDifferences": 51,
+        "deepDifferences": 0,
+        "caseWrites": 11,
+        "deepWrites": 3,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:4:v213ComplexPhaseBundlePatch",
+        "caseCount": 91,
+        "deepCount": 11,
+        "caseDifferences": 51,
+        "deepDifferences": 0,
+        "caseWrites": 2,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:5:v214CaseSwitchWireFix",
+        "caseCount": 91,
+        "deepCount": 11,
+        "caseDifferences": 51,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:6:v216OvarPhaseScoreFix",
+        "caseCount": 91,
+        "deepCount": 11,
+        "caseDifferences": 51,
+        "deepDifferences": 0,
+        "caseWrites": 1,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "molpath_version.js",
+        "caseCount": 91,
+        "deepCount": 11,
+        "caseDifferences": 51,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "rc2_A5_data_adapter.js",
+        "caseCount": 91,
+        "deepCount": 11,
+        "caseDifferences": 51,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "i18n/de.js",
+        "caseCount": 91,
+        "deepCount": 11,
+        "caseDifferences": 51,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "i18n/en.js",
+        "caseCount": 91,
+        "deepCount": 11,
+        "caseDifferences": 51,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "i18n/ro.js",
+        "caseCount": 91,
+        "deepCount": 11,
+        "caseDifferences": 51,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "i18n/el.js",
+        "caseCount": 91,
+        "deepCount": 11,
+        "caseDifferences": 51,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "i18n/es.js",
+        "caseCount": 91,
+        "deepCount": 11,
+        "caseDifferences": 51,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "i18n/fr.js",
+        "caseCount": 91,
+        "deepCount": 11,
+        "caseDifferences": 51,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "i18n/ru.js",
+        "caseCount": 91,
+        "deepCount": 11,
+        "caseDifferences": 51,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "i18n/tr.js",
+        "caseCount": 91,
+        "deepCount": 11,
+        "caseDifferences": 51,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "i18n/ar.js",
+        "caseCount": 91,
+        "deepCount": 11,
+        "caseDifferences": 51,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "i18n/fa.js",
+        "caseCount": 91,
+        "deepCount": 11,
+        "caseDifferences": 51,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "i18n/uk.js",
+        "caseCount": 91,
+        "deepCount": 11,
+        "caseDifferences": 51,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "i18n/core.js",
+        "caseCount": 91,
+        "deepCount": 11,
+        "caseDifferences": 51,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "i18n/languages.js",
+        "caseCount": 91,
+        "deepCount": 11,
+        "caseDifferences": 51,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "i18n/legacy/legacy_v223_v224_runtime.js",
+        "caseCount": 91,
+        "deepCount": 11,
+        "caseDifferences": 51,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:7:v230UiPolishPatch",
+        "caseCount": 91,
+        "deepCount": 11,
+        "caseDifferences": 51,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:8:v230bSignatureDeepDiveExpansion",
+        "caseCount": 91,
+        "deepCount": 11,
+        "caseDifferences": 51,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "i18n/legacy/legacy_v230c_signature_deepdive.js",
+        "caseCount": 91,
+        "deepCount": 11,
+        "caseDifferences": 51,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:9:v240b_nsclc_premium_hotfix",
+        "caseCount": 91,
+        "deepCount": 11,
+        "caseDifferences": 51,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:10:v240c_nsclc_premium_ui_polish",
+        "caseCount": 91,
+        "deepCount": 11,
+        "caseDifferences": 51,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:11:v240e_lab_run_002_qa_hotfix",
+        "caseCount": 91,
+        "deepCount": 11,
+        "caseDifferences": 51,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:12:v240f_lab_run_002_premium",
+        "caseCount": 91,
+        "deepCount": 11,
+        "caseDifferences": 51,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:13:v240h_res_omics_001_qa_hotfix",
+        "caseCount": 91,
+        "deepCount": 11,
+        "caseDifferences": 51,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:14:v240i_res_omics_001_premium",
+        "caseCount": 91,
+        "deepCount": 11,
+        "caseDifferences": 51,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:15:v240l_performance_signature_filter",
+        "caseCount": 91,
+        "deepCount": 11,
+        "caseDifferences": 51,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:16:v240m_a1_deepdive_patch",
+        "caseCount": 91,
+        "deepCount": 16,
+        "caseDifferences": 55,
+        "deepDifferences": 0,
+        "caseWrites": 5,
+        "deepWrites": 5,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:17:v240n_a2_crc_deepdives",
+        "caseCount": 91,
+        "deepCount": 19,
+        "caseDifferences": 57,
+        "deepDifferences": 0,
+        "caseWrites": 3,
+        "deepWrites": 3,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:18:v240o_a3_hrd_deepdives",
+        "caseCount": 91,
+        "deepCount": 22,
+        "caseDifferences": 59,
+        "deepDifferences": 0,
+        "caseWrites": 3,
+        "deepWrites": 3,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:19:v240p_a4_io_deepdives",
+        "caseCount": 91,
+        "deepCount": 26,
+        "caseDifferences": 61,
+        "deepDifferences": 0,
+        "caseWrites": 4,
+        "deepWrites": 4,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:20:v240q_a5_a6_mtb_freeze",
+        "caseCount": 91,
+        "deepCount": 35,
+        "caseDifferences": 67,
+        "deepDifferences": 0,
+        "caseWrites": 9,
+        "deepWrites": 9,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:21:v240r_signature_legal_hotfix",
+        "caseCount": 91,
+        "deepCount": 35,
+        "caseDifferences": 67,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:22:v240s-met-deepdive",
+        "caseCount": 91,
+        "deepCount": 44,
+        "caseDifferences": 71,
+        "deepDifferences": 0,
+        "caseWrites": 10,
+        "deepWrites": 9,
+        "integrated": false
+      },
+      {
+        "source": "i18n/legacy/legacy_v240t_signature_i18n.js",
+        "caseCount": 91,
+        "deepCount": 44,
+        "caseDifferences": 72,
+        "deepDifferences": 8,
+        "caseWrites": 8,
+        "deepWrites": 8,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:23:v240u_lab_b1_preanalytics_deepdive_patch",
+        "caseCount": 91,
+        "deepCount": 49,
+        "caseDifferences": 73,
+        "deepDifferences": 8,
+        "caseWrites": 5,
+        "deepWrites": 5,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:24:v240v_lab_b2_run_qc_deepdive_patch",
+        "caseCount": 91,
+        "deepCount": 54,
+        "caseDifferences": 74,
+        "deepDifferences": 8,
+        "caseWrites": 5,
+        "deepWrites": 5,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:25:v240w_lab_b3_postanalytics_deepdive_patch",
+        "caseCount": 91,
+        "deepCount": 58,
+        "caseDifferences": 75,
+        "deepDifferences": 8,
+        "caseWrites": 4,
+        "deepWrites": 4,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:26:v240x_lab_b4_c4_deepdive_patch",
+        "caseCount": 91,
+        "deepCount": 63,
+        "caseDifferences": 78,
+        "deepDifferences": 8,
+        "caseWrites": 5,
+        "deepWrites": 5,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:27:v240y_lab_b5_digital_data_lims_deepdive_patch",
+        "caseCount": 91,
+        "deepCount": 68,
+        "caseDifferences": 82,
+        "deepDifferences": 8,
+        "caseWrites": 5,
+        "deepWrites": 5,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:28:v240y1_lab_c4_c5_schema_hotfix",
+        "caseCount": 91,
+        "deepCount": 68,
+        "caseDifferences": 84,
+        "deepDifferences": 19,
+        "caseWrites": 15,
+        "deepWrites": 11,
+        "integrated": false
+      },
+      {
+        "source": "i18n/legacy/legacy_v240z_lab_i18n.js",
+        "caseCount": 91,
+        "deepCount": 68,
+        "caseDifferences": 84,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:29:v240z2_res_r1_deepdive",
+        "caseCount": 91,
+        "deepCount": 72,
+        "caseDifferences": 84,
+        "deepDifferences": 19,
+        "caseWrites": 4,
+        "deepWrites": 4,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:30:v240z3_res_r2_deepdive",
+        "caseCount": 91,
+        "deepCount": 77,
+        "caseDifferences": 86,
+        "deepDifferences": 19,
+        "caseWrites": 5,
+        "deepWrites": 5,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:31:v240z4_res_r3_deepdive",
+        "caseCount": 91,
+        "deepCount": 81,
+        "caseDifferences": 88,
+        "deepDifferences": 19,
+        "caseWrites": 4,
+        "deepWrites": 4,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:32:v240z5_res_r4_deepdive",
+        "caseCount": 91,
+        "deepCount": 84,
+        "caseDifferences": 90,
+        "deepDifferences": 19,
+        "caseWrites": 3,
+        "deepWrites": 3,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:33:v240z6_res_r5_deepdive",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 91,
+        "deepDifferences": 19,
+        "caseWrites": 3,
+        "deepWrites": 3,
+        "integrated": false
+      },
+      {
+        "source": "i18n/legacy/legacy_v240z7_res_t1_i18n.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 91,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "i18n/legacy/legacy_v240z8_res_t2_i18n.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 91,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "i18n/legacy/legacy_v240z9_res_t3_i18n.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 91,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "i18n/legacy/legacy_v240z10_res_t4_i18n.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 91,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "i18n/legacy/legacy_v240z10a_res_t4_hotfix.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 91,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:34:v240z11_global_baseline_polish",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 91,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:35:v240z12-case-metadata-recalibration",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 91,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "v240z13_crc002_flagship.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 91,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "v240z14_crc001_flagship.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 91,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "v240z15_nsclc002_flagship.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 91,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "v240z16_metngs003_flagship.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 91,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "v240z17_ovar001_flagship.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 91,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "v240z18_ovar002_flagship.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 91,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "v240z19_cns001_flagship.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 91,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "v240z20_io001_flagship.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 91,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "v250b_labpost001_flagship.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 91,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "v250b_labdoc001_flagship.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 91,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "v250b_reshyp001_flagship.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 91,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "v250b_reseth001_flagship.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 91,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "v250b_responsive_shell.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 91,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "v250b_asset_modal_hotfix.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 91,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "v250b_startup_cover_hotfix.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 91,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "v250b_home_screen.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 91,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "rc2_A5_method_focus.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 91,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "v250b_method_focus_filter.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 91,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "v250b_metngs001_course_flagship.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 91,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "v250b_metngs002_course_flagship.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 91,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "v250b_metrna001_course_flagship.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 91,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "v250b_metlb001_course_flagship.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 91,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "v250b_metngs004_course_flagship.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 91,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "v250b_labrun001_course_flagship.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 91,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "v250b_labpre001_course_flagship.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 91,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "v250b_resimpl001_course_flagship.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 91,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "v250b_reseth002_course_flagship.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 91,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "v250b_resrole001_course_flagship.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 91,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "v260rc1_mtb_cns_003_asset_upgrade.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 91,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "v260rc1_mtb_hem_001_asset_upgrade.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 91,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "v260rc1_lab_run_004_asset_upgrade.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 91,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "v260rc1_mtb_cns_003_mtb_hem_001_i18n_consolidation.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 91,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "v260rc1_met_fish_001_asset_i18n_upgrade.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 91,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "v260rc1_res_val_001_signature_asset_i18n_upgrade.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 91,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "v260rc1_case_consistency_curation_i18n.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 91,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 1,
+        "integrated": false
+      },
+      {
+        "source": "rc2_A6_canonical_integration.js",
+        "caseCount": 91,
+        "deepCount": 91,
+        "caseDifferences": 0,
+        "deepDifferences": 0,
+        "caseWrites": 91,
+        "deepWrites": 23,
         "integrated": true
       },
       {

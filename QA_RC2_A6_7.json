@@ -1,0 +1,48 @@
+{
+  "package": "MolPath_rc2_A6_7_delta",
+  "status": "SOURCE_PROJECTION_SYNTAX_RUNTIME_PASS_BROWSER_OPEN",
+  "base_browser_smoke": "CONFIRMED_BY_USER for A6.6",
+  "a6_7_browser_smoke": "NOT_RUN",
+  "source": {
+    "passed": 197,
+    "total": 197
+  },
+  "projection_and_comparison": {
+    "passed": 213,
+    "total": 213
+  },
+  "syntax": {
+    "units": 99,
+    "errors": []
+  },
+  "runtime": {
+    "passed": 254,
+    "total": 254,
+    "errors": [],
+    "counts": {
+      "cases": 91,
+      "deep": 91,
+      "signature": 30,
+      "methods": 44,
+      "courses": 5,
+      "courseCases": 23
+    },
+    "pre_boot_hash": "a767970c2b67c0ee4066ff8794fe36f71255c497aeb7f9d8fc9e660d901f83d0",
+    "after_boot_hash": "a767970c2b67c0ee4066ff8794fe36f71255c497aeb7f9d8fc9e660d901f83d0",
+    "final_hash": "a767970c2b67c0ee4066ff8794fe36f71255c497aeb7f9d8fc9e660d901f83d0"
+  },
+  "reference": "reused previously passed A6.6 runtime result, byte-identical to work/a6_6/candidate_runtime_qa.json; no second reference execution claimed",
+  "display_comparison": {
+    "language_steps": 12,
+    "records_per_step": 364,
+    "exact_record_and_string_hash_equality": true
+  },
+  "report_comparison": "six hybrid paths in DE/EN/RO/UK, absent/partial/complete/final exact HTML SHA256 equality",
+  "limits": [
+    "The VM uses a DOM test double: no true browser layout, live MutationObserver behavior, RTL layout or binary image rendering.",
+    "Unchanged executable inputs reuse the verified A6.6 staging fixture; full rc1 archive materialization was previously blocked by HTTP 502.",
+    "The 11-language fixture uses existing uploaded files and the existing UK patch languages/core/uk; these inputs are not bundled.",
+    "i18n/qa.js is an unchanged diagnostic layer omitted by the VM runner.",
+    "Binary assets, FOM and complete local archive identity are not verified; unchanged source inputs and exact final record/report equality are verified."
+  ]
+}

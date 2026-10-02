@@ -1,95 +1,647 @@
 {
   "status": "PASS",
-  "total": 93,
-  "passed": 93,
+  "total": 197,
+  "passed": 197,
   "failed": [],
   "checks": [
     {
-      "name": "verified original row count cases",
+      "name": "verified original count and ordered IDs V21_DEEP_DIVE_BATCH1",
       "pass": true,
       "detail": null
     },
     {
-      "name": "verified original IDs and order cases",
+      "name": "original literal absent V21_DEEP_DIVE_BATCH1",
       "pass": true,
       "detail": null
     },
     {
-      "name": "old payload literal absent cases",
+      "name": "replacement occurs exactly once V21_DEEP_DIVE_BATCH1",
       "pass": true,
       "detail": null
     },
     {
-      "name": "direct detached projection occurs once cases",
+      "name": "verified original count and ordered IDs V230B_SIGNATURE_DEEP_DIVES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "verified original row count DEEP_DIVE_CASES_V17",
+      "name": "original literal absent V230B_SIGNATURE_DEEP_DIVES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "verified original IDs and order DEEP_DIVE_CASES_V17",
+      "name": "replacement occurs exactly once V230B_SIGNATURE_DEEP_DIVES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "old payload literal absent DEEP_DIVE_CASES_V17",
+      "name": "verified original count and ordered IDs V240M_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "direct detached projection occurs once DEEP_DIVE_CASES_V17",
+      "name": "original literal absent V240M_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "initial Deep-Dive selector preserves exactly eight records",
+      "name": "replacement occurs exactly once V240M_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "case false-course compatibility matches existing adapter",
+      "name": "case patch retains original ordered field lists V240M_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged V15 projection V15_META_RECORDS",
+      "name": "verified original count and ordered IDs V240M_DEEP_DIVES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged V15 projection V15_CAP_RECORDS",
+      "name": "original literal absent V240M_DEEP_DIVES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged V15 projection V15_GATE_RECORDS",
+      "name": "replacement occurs exactly once V240M_DEEP_DIVES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged V15 projection V15_METHOD_RULE_RECORDS",
+      "name": "verified original count and ordered IDs V240N_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "all named renderer/state/scoring/update helpers byte-identical",
+      "name": "original literal absent V240N_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "replacement occurs exactly once V240N_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "case patch retains original ordered field lists V240N_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verified original count and ordered IDs V240N_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original literal absent V240N_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "replacement occurs exactly once V240N_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verified original count and ordered IDs V240O_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original literal absent V240O_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "replacement occurs exactly once V240O_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "case patch retains original ordered field lists V240O_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verified original count and ordered IDs V240O_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original literal absent V240O_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "replacement occurs exactly once V240O_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verified original count and ordered IDs V240P_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original literal absent V240P_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "replacement occurs exactly once V240P_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "case patch retains original ordered field lists V240P_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verified original count and ordered IDs V240P_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original literal absent V240P_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "replacement occurs exactly once V240P_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verified original count and ordered IDs V240Q_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original literal absent V240Q_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "replacement occurs exactly once V240Q_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "case patch retains original ordered field lists V240Q_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verified original count and ordered IDs V240Q_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original literal absent V240Q_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "replacement occurs exactly once V240Q_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verified original count and ordered IDs V240S_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original literal absent V240S_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "replacement occurs exactly once V240S_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "case patch retains original ordered field lists V240S_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verified original count and ordered IDs V240S_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original literal absent V240S_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "replacement occurs exactly once V240S_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verified original count and ordered IDs V240U_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original literal absent V240U_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "replacement occurs exactly once V240U_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "case patch retains original ordered field lists V240U_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verified original count and ordered IDs V240U_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original literal absent V240U_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "replacement occurs exactly once V240U_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verified original count and ordered IDs V240V_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original literal absent V240V_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "replacement occurs exactly once V240V_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "case patch retains original ordered field lists V240V_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verified original count and ordered IDs V240V_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original literal absent V240V_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "replacement occurs exactly once V240V_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verified original count and ordered IDs V240W_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original literal absent V240W_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "replacement occurs exactly once V240W_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "case patch retains original ordered field lists V240W_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verified original count and ordered IDs V240W_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original literal absent V240W_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "replacement occurs exactly once V240W_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verified original count and ordered IDs V240X_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original literal absent V240X_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "replacement occurs exactly once V240X_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "case patch retains original ordered field lists V240X_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verified original count and ordered IDs V240X_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original literal absent V240X_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "replacement occurs exactly once V240X_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verified original count and ordered IDs V240Y_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original literal absent V240Y_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "replacement occurs exactly once V240Y_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "case patch retains original ordered field lists V240Y_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verified original count and ordered IDs V240Y_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original literal absent V240Y_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "replacement occurs exactly once V240Y_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verified original count and ordered IDs V240Z2_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original literal absent V240Z2_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "replacement occurs exactly once V240Z2_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "case patch retains original ordered field lists V240Z2_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verified original count and ordered IDs V240Z2_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original literal absent V240Z2_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "replacement occurs exactly once V240Z2_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verified original count and ordered IDs V240Z3_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original literal absent V240Z3_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "replacement occurs exactly once V240Z3_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "case patch retains original ordered field lists V240Z3_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verified original count and ordered IDs V240Z3_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original literal absent V240Z3_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "replacement occurs exactly once V240Z3_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verified original count and ordered IDs V240Z4_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original literal absent V240Z4_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "replacement occurs exactly once V240Z4_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "case patch retains original ordered field lists V240Z4_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verified original count and ordered IDs V240Z4_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original literal absent V240Z4_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "replacement occurs exactly once V240Z4_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verified original count and ordered IDs V240Z5_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original literal absent V240Z5_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "replacement occurs exactly once V240Z5_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "case patch retains original ordered field lists V240Z5_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verified original count and ordered IDs V240Z5_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original literal absent V240Z5_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "replacement occurs exactly once V240Z5_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verified original count and ordered IDs V240Z6_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original literal absent V240Z6_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "replacement occurs exactly once V240Z6_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "case patch retains original ordered field lists V240Z6_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verified original count and ordered IDs V240Z6_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "original literal absent V240Z6_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "replacement occurs exactly once V240Z6_DEEP_DIVES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "all 34 tables were audited with supported fields and types",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "18 Deep-Dive arrays and 16 case patch maps",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "all named registration/renderer/state/scoring helpers byte-identical",
       "pass": true,
       "detail": 619
     },
     {
-      "name": "all script attributes and their order unchanged",
+      "name": "all script attributes and order unchanged",
       "pass": true,
       "detail": null
     },
     {
-      "name": "only main inline script changes",
+      "name": "exactly the 18 verified inline scripts contain replacements",
       "pass": true,
       "detail": [
-        2
+        "v21Batch1ContentExpansionFix",
+        "v230bSignatureDeepDiveExpansion",
+        "v240m_a1_deepdive_patch",
+        "v240n_a2_crc_deepdives",
+        "v240o_a3_hrd_deepdives",
+        "v240p_a4_io_deepdives",
+        "v240q_a5_a6_mtb_freeze",
+        "v240s-met-deepdive",
+        "v240u_lab_b1_preanalytics_deepdive_patch",
+        "v240v_lab_b2_run_qc_deepdive_patch",
+        "v240w_lab_b3_postanalytics_deepdive_patch",
+        "v240x_lab_b4_c4_deepdive_patch",
+        "v240y_lab_b5_digital_data_lims_deepdive_patch",
+        "v240z2_res_r1_deepdive",
+        "v240z3_res_r2_deepdive",
+        "v240z4_res_r3_deepdive",
+        "v240z5_res_r4_deepdive",
+        "v240z6_res_r5_deepdive"
       ]
+    },
+    {
+      "name": "whole primary runtime script remains byte-identical",
+      "pass": true,
+      "detail": null
     },
     {
       "name": "external load order unchanged",
@@ -97,22 +649,7 @@
       "detail": null
     },
     {
-      "name": "A4b loader occurs once",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "A4b precedes both data factories",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "A5 courses remain first external input",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "adapter still immediately follows version authority",
+      "name": "A4b loader occurs once before projections",
       "pass": true,
       "detail": null
     },
@@ -127,17 +664,12 @@
       "detail": null
     },
     {
-      "name": "all CSS blocks outside replaced data byte-identical",
+      "name": "all CSS blocks byte-identical",
       "pass": true,
-      "detail": 54
+      "detail": null
     },
     {
-      "name": "asset path literals outside replaced data byte-identical",
-      "pass": true,
-      "detail": 17
-    },
-    {
-      "name": "no added observers/wrappers",
+      "name": "no new observers/wrappers",
       "pass": true,
       "detail": null
     },
@@ -462,29 +994,71 @@
       "detail": null
     },
     {
-      "name": "inverse two-replacement patch exactly reconstructs confirmed A6.5 index",
+      "name": "inverse 34 replacements exactly reconstruct confirmed A6.6 index",
       "pass": true,
       "detail": null
     },
     {
-      "name": "base hash matches the delivered A6.5 index",
+      "name": "all source text outside the 34 data literals byte-identical",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "base hash matches delivered A6.6 index",
       "pass": true,
       "detail": null
     }
   ],
   "changes": {
-    "base": "user-confirmed complete A6.5",
+    "base": "user-confirmed complete A6.6",
     "changed": [
       "index.html"
     ],
-    "old_index_bytes": 3884089,
-    "new_index_bytes": 3398023,
-    "bytes_removed": 486066,
-    "base_sha256": "a1d542772aa5cec64802356bdb951cb74d7b782719d840ce222872f5d9db1d83",
-    "sha256": "cc280428598346cb8f5464288a8cd188ef95137ffc3fc2f103dec56ef789fca4",
+    "old_index_bytes": 3398023,
+    "new_index_bytes": 2182829,
+    "bytes_removed": 1215194,
+    "base_sha256": "cc280428598346cb8f5464288a8cd188ef95137ffc3fc2f103dec56ef789fca4",
+    "sha256": "93e238a2f8ee23f9bf055b54573063466fc26db72e57900126573c0b8c397f15",
+    "table_count": 34,
+    "deep_tables": 18,
+    "base_tables": 16,
+    "deep_rows": 84,
+    "base_rows": 77,
     "projection_rows": {
-      "cases": 91,
-      "DEEP_DIVE_CASES_V17": 8
+      "V21_DEEP_DIVE_BATCH1": 3,
+      "V230B_SIGNATURE_DEEP_DIVES": 4,
+      "V240M_BASE_PATCHES": 5,
+      "V240M_DEEP_DIVES": 5,
+      "V240N_BASE_PATCHES": 3,
+      "V240N_DEEP_DIVES": 3,
+      "V240O_BASE_PATCHES": 3,
+      "V240O_DEEP_DIVES": 3,
+      "V240P_BASE_PATCHES": 4,
+      "V240P_DEEP_DIVES": 4,
+      "V240Q_BASE_PATCHES": 9,
+      "V240Q_DEEP_DIVES": 9,
+      "V240S_BASE_PATCHES": 10,
+      "V240S_DEEP_DIVES": 10,
+      "V240U_BASE_PATCHES": 5,
+      "V240U_DEEP_DIVES": 5,
+      "V240V_BASE_PATCHES": 5,
+      "V240V_DEEP_DIVES": 5,
+      "V240W_BASE_PATCHES": 4,
+      "V240W_DEEP_DIVES": 4,
+      "V240X_BASE_PATCHES": 5,
+      "V240X_DEEP_DIVES": 5,
+      "V240Y_BASE_PATCHES": 5,
+      "V240Y_DEEP_DIVES": 5,
+      "V240Z2_BASE_PATCHES": 4,
+      "V240Z2_DEEP_DIVES": 4,
+      "V240Z3_BASE_PATCHES": 5,
+      "V240Z3_DEEP_DIVES": 5,
+      "V240Z4_BASE_PATCHES": 4,
+      "V240Z4_DEEP_DIVES": 4,
+      "V240Z5_BASE_PATCHES": 3,
+      "V240Z5_DEEP_DIVES": 3,
+      "V240Z6_BASE_PATCHES": 3,
+      "V240Z6_DEEP_DIVES": 3
     },
     "load_order": [
       "rc2_A5_courses.js",
@@ -539,11 +1113,7 @@
       "rc2_A6_canonical_integration.js",
       "v250b_signature_taxonomy_freeze.js"
     ],
-    "projection_expressions": {
-      "cases": "window.MolPathCanonicalDataA4b.cases.map(record=>{const c=JSON.parse(JSON.stringify(record.case));if(c.course_case===false)delete c.course_case;return c;})",
-      "DEEP_DIVE_CASES_V17": "[\"MTB_NSCLC_001_v0_6\",\"MTB_NSCLC_002_v1_3\",\"MTB_CRC_002_v1_3\",\"MTB_OVAR_002_v1_3\",\"MET_NGS_003_v1_0\",\"LAB_RUN_002_v0_8\",\"LAB_POST_001_v1_0\",\"RES_HYP_001_v0_9\"].map(id=>JSON.parse(JSON.stringify(window.MolPathCanonicalDataA4b.cases.find(record=>record.id===id).deep_dive)))"
-    },
-    "compatibility": "case.course_case=false omitted exactly as in existing A5 adapter; initial eight Deep-Dive IDs and their order retained",
-    "scope": "two data literals replaced; no existing update path, load order, renderer, dictionary or other runtime file changed"
+    "compatibility": "every original table ID/order retained; each case patch retains exactly its original ordered top-level field list",
+    "scope": "34 data literals replaced; existing registration/update/renderer functions, load order, languages and all other runtime files retained"
   }
 }

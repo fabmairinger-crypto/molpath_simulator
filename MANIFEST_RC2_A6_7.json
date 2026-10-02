@@ -1,0 +1,1885 @@
+{
+  "package": "MolPath_rc2_A6_7_delta",
+  "date": "2026-10-02",
+  "status": "INTEGRATION_CANDIDATE",
+  "base": "user-confirmed complete A6.6",
+  "base_browser_confirmation": "User confirmed A6.6 at 2026-10-02T14:21:30+02:00: \"super läuft\". This does not constitute an A6.7 browser test.",
+  "payload_file_count": 1,
+  "payload": [
+    {
+      "path": "index.html",
+      "base_bytes": 3398023,
+      "base_sha256": "cc280428598346cb8f5464288a8cd188ef95137ffc3fc2f103dec56ef789fca4",
+      "bytes": 2182829,
+      "sha256": "93e238a2f8ee23f9bf055b54573063466fc26db72e57900126573c0b8c397f15",
+      "changes": [
+        "18 historical Deep-Dive data arrays replaced by detached canonical projections",
+        "16 historical case patch maps replaced by detached canonical field projections"
+      ]
+    }
+  ],
+  "required_unchanged_inputs": [
+    {
+      "path": "rc2_A4b_canonical_cases_lossless.js",
+      "sha256": "95f5016ea6ec491b7373821204ee5e0c58923e13fcfca261764a51d45f3160a5"
+    },
+    {
+      "path": "rc2_A5_courses.js",
+      "sha256": "ff14647c1cdcc5e095abea4fdbf90981db84d49f0f0906d658805b23650cf343"
+    },
+    {
+      "path": "rc2_A5_method_focus.js",
+      "sha256": "359f66f091e48e898c3550237d5d4e012424aac854196efee669ef223efdb5fe"
+    },
+    {
+      "path": "rc2_A5_data_adapter.js",
+      "sha256": "bbe02ab75a948d8ae99e93d028c363fa471f7e8267ca0972a568a02ef47c00b5"
+    },
+    {
+      "path": "rc2_A6_canonical_integration.js",
+      "sha256": "53b86927ae49ebb5c44d5d77189def5dacd48f21f687d085016d60cd4735c9e7"
+    },
+    {
+      "path": "molpath_version.js",
+      "sha256": "1ce85d3fb12d59bb36c2821364df3da46ba215e016cb4754be6c13a8a4e38095"
+    },
+    {
+      "path": "v260rc1_case_consistency_curation_i18n.js",
+      "sha256": "72bc0c410668d2292456372b4a68dc0e0016fbe8d78a0f30d5e3c5c1c12ab5ef"
+    },
+    {
+      "path": "v250b_signature_taxonomy_freeze.js",
+      "sha256": "b001c6eb89ac916be7c4ea0fd94857af1a98a6e4d921cc98e81150f65e6a9f84"
+    }
+  ],
+  "load_order": [
+    "rc2_A5_courses.js",
+    "rc2_A4b_canonical_cases_lossless.js",
+    "molpath_version.js",
+    "rc2_A5_data_adapter.js",
+    "i18n/languages.js",
+    "i18n/legacy/legacy_v223_v224_runtime.js",
+    "i18n/legacy/legacy_v230c_signature_deepdive.js",
+    "i18n/legacy/legacy_v240t_signature_i18n.js",
+    "i18n/legacy/legacy_v240z_lab_i18n.js",
+    "i18n/legacy/legacy_v240z7_res_t1_i18n.js",
+    "i18n/legacy/legacy_v240z8_res_t2_i18n.js",
+    "i18n/legacy/legacy_v240z9_res_t3_i18n.js",
+    "i18n/legacy/legacy_v240z10_res_t4_i18n.js",
+    "i18n/legacy/legacy_v240z10a_res_t4_hotfix.js",
+    "v240z13_crc002_flagship.js",
+    "v240z14_crc001_flagship.js",
+    "v240z15_nsclc002_flagship.js",
+    "v240z16_metngs003_flagship.js",
+    "v240z17_ovar001_flagship.js",
+    "v240z18_ovar002_flagship.js",
+    "v240z19_cns001_flagship.js",
+    "v240z20_io001_flagship.js",
+    "v250b_labpost001_flagship.js",
+    "v250b_labdoc001_flagship.js",
+    "v250b_reshyp001_flagship.js",
+    "v250b_reseth001_flagship.js",
+    "v250b_responsive_shell.js",
+    "v250b_asset_modal_hotfix.js",
+    "v250b_startup_cover_hotfix.js",
+    "v250b_home_screen.js",
+    "rc2_A5_method_focus.js",
+    "v250b_method_focus_filter.js",
+    "v250b_metngs001_course_flagship.js",
+    "v250b_metngs002_course_flagship.js",
+    "v250b_metrna001_course_flagship.js",
+    "v250b_metlb001_course_flagship.js",
+    "v250b_metngs004_course_flagship.js",
+    "v250b_labrun001_course_flagship.js",
+    "v250b_labpre001_course_flagship.js",
+    "v250b_resimpl001_course_flagship.js",
+    "v250b_reseth002_course_flagship.js",
+    "v250b_resrole001_course_flagship.js",
+    "v260rc1_mtb_cns_003_asset_upgrade.js",
+    "v260rc1_mtb_hem_001_asset_upgrade.js",
+    "v260rc1_lab_run_004_asset_upgrade.js",
+    "v260rc1_mtb_cns_003_mtb_hem_001_i18n_consolidation.js",
+    "v260rc1_met_fish_001_asset_i18n_upgrade.js",
+    "v260rc1_res_val_001_signature_asset_i18n_upgrade.js",
+    "v260rc1_case_consistency_curation_i18n.js",
+    "rc2_A6_canonical_integration.js",
+    "v250b_signature_taxonomy_freeze.js"
+  ],
+  "source_bytes_removed": 1215194,
+  "table_count": 34,
+  "deep_tables": 18,
+  "base_tables": 16,
+  "deep_rows": 84,
+  "base_rows": 77,
+  "tables": [
+    {
+      "name": "V21_DEEP_DIVE_BATCH1",
+      "script": "v21Batch1ContentExpansionFix",
+      "kind": "array",
+      "rows": 3,
+      "ids": [
+        "MTB_CRC_001_v0_6",
+        "MTB_OVAR_001_v0_7",
+        "MTB_IO_001_v1_0"
+      ],
+      "case_field_selection": null
+    },
+    {
+      "name": "V230B_SIGNATURE_DEEP_DIVES",
+      "script": "v230bSignatureDeepDiveExpansion",
+      "kind": "array",
+      "rows": 4,
+      "ids": [
+        "MTB_CNS_001_v1_0",
+        "LAB_DOC_001_v1_0",
+        "RES_OMICS_001_v1_0",
+        "RES_ETH_001_v1_0"
+      ],
+      "case_field_selection": null
+    },
+    {
+      "name": "V240M_BASE_PATCHES",
+      "script": "v240m_a1_deepdive_patch",
+      "kind": "object",
+      "rows": 5,
+      "ids": [
+        "MTB_NSCLC_003_v1_3",
+        "MTB_NSCLC_004_v1_3",
+        "MTB_MEL_001_v1_3",
+        "MTB_GIST_001_v1_3",
+        "MTB_CHOL_001_v1_3"
+      ],
+      "case_field_selection": [
+        [
+          "MTB_NSCLC_003_v1_3",
+          [
+            "story",
+            "allowed_tests",
+            "required_groups",
+            "result_sections",
+            "always_findings",
+            "complete_interpretation",
+            "partial_interpretation",
+            "bad_tests",
+            "mtb_checks",
+            "optimal_summary"
+          ]
+        ],
+        [
+          "MTB_NSCLC_004_v1_3",
+          [
+            "story",
+            "allowed_tests",
+            "required_groups",
+            "result_sections",
+            "always_findings",
+            "complete_interpretation",
+            "partial_interpretation",
+            "bad_tests",
+            "mtb_checks",
+            "optimal_summary"
+          ]
+        ],
+        [
+          "MTB_MEL_001_v1_3",
+          [
+            "story",
+            "allowed_tests",
+            "required_groups",
+            "result_sections",
+            "always_findings",
+            "complete_interpretation",
+            "partial_interpretation",
+            "bad_tests",
+            "mtb_checks",
+            "optimal_summary"
+          ]
+        ],
+        [
+          "MTB_GIST_001_v1_3",
+          [
+            "story",
+            "allowed_tests",
+            "required_groups",
+            "result_sections",
+            "always_findings",
+            "complete_interpretation",
+            "partial_interpretation",
+            "bad_tests",
+            "mtb_checks",
+            "optimal_summary"
+          ]
+        ],
+        [
+          "MTB_CHOL_001_v1_3",
+          [
+            "story",
+            "allowed_tests",
+            "required_groups",
+            "result_sections",
+            "always_findings",
+            "complete_interpretation",
+            "partial_interpretation",
+            "bad_tests",
+            "mtb_checks",
+            "optimal_summary"
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "V240M_DEEP_DIVES",
+      "script": "v240m_a1_deepdive_patch",
+      "kind": "array",
+      "rows": 5,
+      "ids": [
+        "MTB_NSCLC_003_v1_3",
+        "MTB_NSCLC_004_v1_3",
+        "MTB_MEL_001_v1_3",
+        "MTB_GIST_001_v1_3",
+        "MTB_CHOL_001_v1_3"
+      ],
+      "case_field_selection": null
+    },
+    {
+      "name": "V240N_BASE_PATCHES",
+      "script": "v240n_a2_crc_deepdives",
+      "kind": "object",
+      "rows": 3,
+      "ids": [
+        "MTB_CRC_003_v1_3",
+        "MTB_CRC_004_v1_3",
+        "MTB_CRC_005_v1_3"
+      ],
+      "case_field_selection": [
+        [
+          "MTB_CRC_003_v1_3",
+          [
+            "story",
+            "allowed_tests",
+            "required_groups",
+            "result_sections",
+            "always_findings",
+            "complete_interpretation",
+            "partial_interpretation",
+            "mtb_checks",
+            "optimal_summary",
+            "tags"
+          ]
+        ],
+        [
+          "MTB_CRC_004_v1_3",
+          [
+            "story",
+            "allowed_tests",
+            "required_groups",
+            "result_sections",
+            "always_findings",
+            "complete_interpretation",
+            "partial_interpretation",
+            "mtb_checks",
+            "optimal_summary",
+            "tags"
+          ]
+        ],
+        [
+          "MTB_CRC_005_v1_3",
+          [
+            "story",
+            "allowed_tests",
+            "required_groups",
+            "result_sections",
+            "always_findings",
+            "complete_interpretation",
+            "partial_interpretation",
+            "mtb_checks",
+            "optimal_summary",
+            "tags"
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "V240N_DEEP_DIVES",
+      "script": "v240n_a2_crc_deepdives",
+      "kind": "array",
+      "rows": 3,
+      "ids": [
+        "MTB_CRC_003_v1_3",
+        "MTB_CRC_004_v1_3",
+        "MTB_CRC_005_v1_3"
+      ],
+      "case_field_selection": null
+    },
+    {
+      "name": "V240O_BASE_PATCHES",
+      "script": "v240o_a3_hrd_deepdives",
+      "kind": "object",
+      "rows": 3,
+      "ids": [
+        "MTB_MAMMA_001_v1_3",
+        "MTB_PROST_001_v1_3",
+        "MTB_TAML_001_v1_3"
+      ],
+      "case_field_selection": [
+        [
+          "MTB_MAMMA_001_v1_3",
+          [
+            "story",
+            "allowed_tests",
+            "required_groups",
+            "result_sections",
+            "always_findings",
+            "complete_interpretation",
+            "partial_interpretation",
+            "mtb_checks",
+            "optimal_summary",
+            "tags"
+          ]
+        ],
+        [
+          "MTB_PROST_001_v1_3",
+          [
+            "story",
+            "allowed_tests",
+            "required_groups",
+            "result_sections",
+            "always_findings",
+            "complete_interpretation",
+            "partial_interpretation",
+            "mtb_checks",
+            "optimal_summary",
+            "tags"
+          ]
+        ],
+        [
+          "MTB_TAML_001_v1_3",
+          [
+            "story",
+            "allowed_tests",
+            "required_groups",
+            "result_sections",
+            "always_findings",
+            "complete_interpretation",
+            "partial_interpretation",
+            "mtb_checks",
+            "optimal_summary",
+            "tags"
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "V240O_DEEP_DIVES",
+      "script": "v240o_a3_hrd_deepdives",
+      "kind": "array",
+      "rows": 3,
+      "ids": [
+        "MTB_MAMMA_001_v1_3",
+        "MTB_PROST_001_v1_3",
+        "MTB_TAML_001_v1_3"
+      ],
+      "case_field_selection": null
+    },
+    {
+      "name": "V240P_BASE_PATCHES",
+      "script": "v240p_a4_io_deepdives",
+      "kind": "object",
+      "rows": 4,
+      "ids": [
+        "MTB_IO_002_v1_3",
+        "MTB_IO_003_v1_3",
+        "MTB_IO_004_v1_3",
+        "MTB_IO_005_v1_3"
+      ],
+      "case_field_selection": [
+        [
+          "MTB_IO_002_v1_3",
+          [
+            "story",
+            "allowed_tests",
+            "required_groups",
+            "result_sections",
+            "always_findings",
+            "complete_interpretation",
+            "partial_interpretation",
+            "mtb_checks",
+            "optimal_summary",
+            "tags"
+          ]
+        ],
+        [
+          "MTB_IO_003_v1_3",
+          [
+            "story",
+            "allowed_tests",
+            "required_groups",
+            "result_sections",
+            "always_findings",
+            "complete_interpretation",
+            "partial_interpretation",
+            "mtb_checks",
+            "optimal_summary",
+            "tags"
+          ]
+        ],
+        [
+          "MTB_IO_004_v1_3",
+          [
+            "story",
+            "allowed_tests",
+            "required_groups",
+            "result_sections",
+            "always_findings",
+            "complete_interpretation",
+            "partial_interpretation",
+            "mtb_checks",
+            "optimal_summary",
+            "tags"
+          ]
+        ],
+        [
+          "MTB_IO_005_v1_3",
+          [
+            "story",
+            "allowed_tests",
+            "required_groups",
+            "result_sections",
+            "always_findings",
+            "complete_interpretation",
+            "partial_interpretation",
+            "mtb_checks",
+            "optimal_summary",
+            "tags"
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "V240P_DEEP_DIVES",
+      "script": "v240p_a4_io_deepdives",
+      "kind": "array",
+      "rows": 4,
+      "ids": [
+        "MTB_IO_002_v1_3",
+        "MTB_IO_003_v1_3",
+        "MTB_IO_004_v1_3",
+        "MTB_IO_005_v1_3"
+      ],
+      "case_field_selection": null
+    },
+    {
+      "name": "V240Q_BASE_PATCHES",
+      "script": "v240q_a5_a6_mtb_freeze",
+      "kind": "object",
+      "rows": 9,
+      "ids": [
+        "MTB_CNS_002_v1_3",
+        "MTB_CNS_003_v1_3",
+        "MTB_HEM_001_v1_3",
+        "MTB_METH_001_v1_3",
+        "MTB_ANGIO_001_v1_3",
+        "MTB_RCC_001_v1_3",
+        "MTB_GBM_ANGIO_001_v1_3",
+        "MTB_TME_001_v1_3",
+        "MTB_INV_001_v1_3"
+      ],
+      "case_field_selection": [
+        [
+          "MTB_CNS_002_v1_3",
+          [
+            "title",
+            "story",
+            "allowed_tests",
+            "required_groups",
+            "result_sections",
+            "always_findings",
+            "complete_interpretation",
+            "partial_interpretation",
+            "mtb_checks",
+            "optimal_summary",
+            "tags"
+          ]
+        ],
+        [
+          "MTB_CNS_003_v1_3",
+          [
+            "title",
+            "story",
+            "allowed_tests",
+            "required_groups",
+            "result_sections",
+            "always_findings",
+            "complete_interpretation",
+            "partial_interpretation",
+            "mtb_checks",
+            "optimal_summary",
+            "tags"
+          ]
+        ],
+        [
+          "MTB_HEM_001_v1_3",
+          [
+            "title",
+            "story",
+            "allowed_tests",
+            "required_groups",
+            "result_sections",
+            "always_findings",
+            "complete_interpretation",
+            "partial_interpretation",
+            "mtb_checks",
+            "optimal_summary",
+            "tags"
+          ]
+        ],
+        [
+          "MTB_METH_001_v1_3",
+          [
+            "title",
+            "story",
+            "allowed_tests",
+            "required_groups",
+            "result_sections",
+            "always_findings",
+            "complete_interpretation",
+            "partial_interpretation",
+            "mtb_checks",
+            "optimal_summary",
+            "tags"
+          ]
+        ],
+        [
+          "MTB_ANGIO_001_v1_3",
+          [
+            "title",
+            "story",
+            "allowed_tests",
+            "required_groups",
+            "result_sections",
+            "always_findings",
+            "complete_interpretation",
+            "partial_interpretation",
+            "mtb_checks",
+            "optimal_summary",
+            "tags"
+          ]
+        ],
+        [
+          "MTB_RCC_001_v1_3",
+          [
+            "title",
+            "story",
+            "allowed_tests",
+            "required_groups",
+            "result_sections",
+            "always_findings",
+            "complete_interpretation",
+            "partial_interpretation",
+            "mtb_checks",
+            "optimal_summary",
+            "tags"
+          ]
+        ],
+        [
+          "MTB_GBM_ANGIO_001_v1_3",
+          [
+            "title",
+            "story",
+            "allowed_tests",
+            "required_groups",
+            "result_sections",
+            "always_findings",
+            "complete_interpretation",
+            "partial_interpretation",
+            "mtb_checks",
+            "optimal_summary",
+            "tags"
+          ]
+        ],
+        [
+          "MTB_TME_001_v1_3",
+          [
+            "title",
+            "story",
+            "allowed_tests",
+            "required_groups",
+            "result_sections",
+            "always_findings",
+            "complete_interpretation",
+            "partial_interpretation",
+            "mtb_checks",
+            "optimal_summary",
+            "tags"
+          ]
+        ],
+        [
+          "MTB_INV_001_v1_3",
+          [
+            "title",
+            "story",
+            "allowed_tests",
+            "required_groups",
+            "result_sections",
+            "always_findings",
+            "complete_interpretation",
+            "partial_interpretation",
+            "mtb_checks",
+            "optimal_summary",
+            "tags"
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "V240Q_DEEP_DIVES",
+      "script": "v240q_a5_a6_mtb_freeze",
+      "kind": "array",
+      "rows": 9,
+      "ids": [
+        "MTB_CNS_002_v1_3",
+        "MTB_CNS_003_v1_3",
+        "MTB_HEM_001_v1_3",
+        "MTB_METH_001_v1_3",
+        "MTB_ANGIO_001_v1_3",
+        "MTB_RCC_001_v1_3",
+        "MTB_GBM_ANGIO_001_v1_3",
+        "MTB_TME_001_v1_3",
+        "MTB_INV_001_v1_3"
+      ],
+      "case_field_selection": null
+    },
+    {
+      "name": "V240S_BASE_PATCHES",
+      "script": "v240s-met-deepdive",
+      "kind": "object",
+      "rows": 10,
+      "ids": [
+        "MET_NGS_001_v1_3",
+        "MET_NGS_002_v1_3",
+        "MET_NGS_003_v1_0",
+        "MET_NGS_004_v1_3",
+        "MET_RNA_001_v1_3",
+        "MET_LB_001_v1_3",
+        "MET_PCR_001_v1_3",
+        "MET_METH_001_v1_3",
+        "MET_FISH_001_v1_3",
+        "MET_MULTI_001_v1_3"
+      ],
+      "case_field_selection": [
+        [
+          "MET_NGS_001_v1_3",
+          [
+            "title",
+            "story",
+            "allowed_tests",
+            "required_groups",
+            "result_sections",
+            "always_findings",
+            "complete_interpretation",
+            "partial_interpretation",
+            "mtb_checks",
+            "optimal_summary",
+            "tags"
+          ]
+        ],
+        [
+          "MET_NGS_002_v1_3",
+          [
+            "title",
+            "story",
+            "allowed_tests",
+            "required_groups",
+            "result_sections",
+            "always_findings",
+            "complete_interpretation",
+            "partial_interpretation",
+            "mtb_checks",
+            "optimal_summary",
+            "tags"
+          ]
+        ],
+        [
+          "MET_NGS_003_v1_0",
+          [
+            "title",
+            "story",
+            "allowed_tests",
+            "required_groups",
+            "result_sections",
+            "always_findings",
+            "complete_interpretation",
+            "partial_interpretation",
+            "mtb_checks",
+            "optimal_summary",
+            "tags"
+          ]
+        ],
+        [
+          "MET_NGS_004_v1_3",
+          [
+            "title",
+            "story",
+            "allowed_tests",
+            "required_groups",
+            "result_sections",
+            "always_findings",
+            "complete_interpretation",
+            "partial_interpretation",
+            "mtb_checks",
+            "optimal_summary",
+            "tags"
+          ]
+        ],
+        [
+          "MET_RNA_001_v1_3",
+          [
+            "title",
+            "story",
+            "allowed_tests",
+            "required_groups",
+            "result_sections",
+            "always_findings",
+            "complete_interpretation",
+            "partial_interpretation",
+            "mtb_checks",
+            "optimal_summary",
+            "tags"
+          ]
+        ],
+        [
+          "MET_LB_001_v1_3",
+          [
+            "title",
+            "story",
+            "allowed_tests",
+            "required_groups",
+            "result_sections",
+            "always_findings",
+            "complete_interpretation",
+            "partial_interpretation",
+            "mtb_checks",
+            "optimal_summary",
+            "tags"
+          ]
+        ],
+        [
+          "MET_PCR_001_v1_3",
+          [
+            "title",
+            "story",
+            "allowed_tests",
+            "required_groups",
+            "result_sections",
+            "always_findings",
+            "complete_interpretation",
+            "partial_interpretation",
+            "mtb_checks",
+            "optimal_summary",
+            "tags"
+          ]
+        ],
+        [
+          "MET_METH_001_v1_3",
+          [
+            "title",
+            "story",
+            "allowed_tests",
+            "required_groups",
+            "result_sections",
+            "always_findings",
+            "complete_interpretation",
+            "partial_interpretation",
+            "mtb_checks",
+            "optimal_summary",
+            "tags"
+          ]
+        ],
+        [
+          "MET_FISH_001_v1_3",
+          [
+            "title",
+            "story",
+            "allowed_tests",
+            "required_groups",
+            "result_sections",
+            "always_findings",
+            "complete_interpretation",
+            "partial_interpretation",
+            "mtb_checks",
+            "optimal_summary",
+            "tags"
+          ]
+        ],
+        [
+          "MET_MULTI_001_v1_3",
+          [
+            "title",
+            "story",
+            "allowed_tests",
+            "required_groups",
+            "result_sections",
+            "always_findings",
+            "complete_interpretation",
+            "partial_interpretation",
+            "mtb_checks",
+            "optimal_summary",
+            "tags"
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "V240S_DEEP_DIVES",
+      "script": "v240s-met-deepdive",
+      "kind": "array",
+      "rows": 10,
+      "ids": [
+        "MET_NGS_001_v1_3",
+        "MET_NGS_002_v1_3",
+        "MET_NGS_003_v1_0",
+        "MET_NGS_004_v1_3",
+        "MET_RNA_001_v1_3",
+        "MET_LB_001_v1_3",
+        "MET_PCR_001_v1_3",
+        "MET_METH_001_v1_3",
+        "MET_FISH_001_v1_3",
+        "MET_MULTI_001_v1_3"
+      ],
+      "case_field_selection": null
+    },
+    {
+      "name": "V240U_BASE_PATCHES",
+      "script": "v240u_lab_b1_preanalytics_deepdive_patch",
+      "kind": "object",
+      "rows": 5,
+      "ids": [
+        "LAB_PRE_001_v1_3",
+        "LAB_PRE_002_v1_3",
+        "LAB_PRE_003_v1_3",
+        "LAB_PRE_004_v1_3",
+        "LAB_PRE_005_v1_3"
+      ],
+      "case_field_selection": [
+        [
+          "LAB_PRE_001_v1_3",
+          [
+            "title",
+            "short",
+            "difficulty",
+            "estimated_time_min",
+            "qc_title",
+            "run_overview",
+            "qc_event",
+            "decision_options",
+            "root_cause_options",
+            "capa_components",
+            "audit_checks",
+            "optimal_summary"
+          ]
+        ],
+        [
+          "LAB_PRE_002_v1_3",
+          [
+            "title",
+            "short",
+            "difficulty",
+            "estimated_time_min",
+            "qc_title",
+            "run_overview",
+            "qc_event",
+            "decision_options",
+            "root_cause_options",
+            "capa_components",
+            "audit_checks",
+            "optimal_summary"
+          ]
+        ],
+        [
+          "LAB_PRE_003_v1_3",
+          [
+            "title",
+            "short",
+            "difficulty",
+            "estimated_time_min",
+            "qc_title",
+            "run_overview",
+            "qc_event",
+            "decision_options",
+            "root_cause_options",
+            "capa_components",
+            "audit_checks",
+            "optimal_summary"
+          ]
+        ],
+        [
+          "LAB_PRE_004_v1_3",
+          [
+            "title",
+            "short",
+            "difficulty",
+            "estimated_time_min",
+            "qc_title",
+            "run_overview",
+            "qc_event",
+            "decision_options",
+            "root_cause_options",
+            "capa_components",
+            "audit_checks",
+            "optimal_summary"
+          ]
+        ],
+        [
+          "LAB_PRE_005_v1_3",
+          [
+            "title",
+            "short",
+            "difficulty",
+            "estimated_time_min",
+            "qc_title",
+            "run_overview",
+            "qc_event",
+            "decision_options",
+            "root_cause_options",
+            "capa_components",
+            "audit_checks",
+            "optimal_summary"
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "V240U_DEEP_DIVES",
+      "script": "v240u_lab_b1_preanalytics_deepdive_patch",
+      "kind": "array",
+      "rows": 5,
+      "ids": [
+        "LAB_PRE_001_v1_3",
+        "LAB_PRE_002_v1_3",
+        "LAB_PRE_003_v1_3",
+        "LAB_PRE_004_v1_3",
+        "LAB_PRE_005_v1_3"
+      ],
+      "case_field_selection": null
+    },
+    {
+      "name": "V240V_BASE_PATCHES",
+      "script": "v240v_lab_b2_run_qc_deepdive_patch",
+      "kind": "object",
+      "rows": 5,
+      "ids": [
+        "LAB_RUN_001_v1_3",
+        "LAB_RUN_003_v1_3",
+        "LAB_RUN_004_v1_3",
+        "LAB_RUN_005_v1_3",
+        "LAB_RUN_006_v1_3"
+      ],
+      "case_field_selection": [
+        [
+          "LAB_RUN_001_v1_3",
+          [
+            "title",
+            "short",
+            "difficulty",
+            "estimated_time_min",
+            "qc_title",
+            "run_overview",
+            "qc_event",
+            "decision_options",
+            "root_cause_options",
+            "capa_components",
+            "audit_checks",
+            "optimal_summary"
+          ]
+        ],
+        [
+          "LAB_RUN_003_v1_3",
+          [
+            "title",
+            "short",
+            "difficulty",
+            "estimated_time_min",
+            "qc_title",
+            "run_overview",
+            "qc_event",
+            "decision_options",
+            "root_cause_options",
+            "capa_components",
+            "audit_checks",
+            "optimal_summary"
+          ]
+        ],
+        [
+          "LAB_RUN_004_v1_3",
+          [
+            "title",
+            "short",
+            "difficulty",
+            "estimated_time_min",
+            "qc_title",
+            "run_overview",
+            "qc_event",
+            "decision_options",
+            "root_cause_options",
+            "capa_components",
+            "audit_checks",
+            "optimal_summary"
+          ]
+        ],
+        [
+          "LAB_RUN_005_v1_3",
+          [
+            "title",
+            "short",
+            "difficulty",
+            "estimated_time_min",
+            "qc_title",
+            "run_overview",
+            "qc_event",
+            "decision_options",
+            "root_cause_options",
+            "capa_components",
+            "audit_checks",
+            "optimal_summary"
+          ]
+        ],
+        [
+          "LAB_RUN_006_v1_3",
+          [
+            "title",
+            "short",
+            "difficulty",
+            "estimated_time_min",
+            "qc_title",
+            "run_overview",
+            "qc_event",
+            "decision_options",
+            "root_cause_options",
+            "capa_components",
+            "audit_checks",
+            "optimal_summary"
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "V240V_DEEP_DIVES",
+      "script": "v240v_lab_b2_run_qc_deepdive_patch",
+      "kind": "array",
+      "rows": 5,
+      "ids": [
+        "LAB_RUN_001_v1_3",
+        "LAB_RUN_003_v1_3",
+        "LAB_RUN_004_v1_3",
+        "LAB_RUN_005_v1_3",
+        "LAB_RUN_006_v1_3"
+      ],
+      "case_field_selection": null
+    },
+    {
+      "name": "V240W_BASE_PATCHES",
+      "script": "v240w_lab_b3_postanalytics_deepdive_patch",
+      "kind": "object",
+      "rows": 4,
+      "ids": [
+        "LAB_POST_002_v1_3",
+        "LAB_POST_003_v1_3",
+        "LAB_POST_004_v1_3",
+        "LAB_POST_005_v1_3"
+      ],
+      "case_field_selection": [
+        [
+          "LAB_POST_002_v1_3",
+          [
+            "title",
+            "short",
+            "difficulty",
+            "estimated_time_min",
+            "qc_title",
+            "run_overview",
+            "qc_event",
+            "decision_options",
+            "root_cause_options",
+            "capa_components",
+            "audit_checks",
+            "optimal_summary"
+          ]
+        ],
+        [
+          "LAB_POST_003_v1_3",
+          [
+            "title",
+            "short",
+            "difficulty",
+            "estimated_time_min",
+            "qc_title",
+            "run_overview",
+            "qc_event",
+            "decision_options",
+            "root_cause_options",
+            "capa_components",
+            "audit_checks",
+            "optimal_summary"
+          ]
+        ],
+        [
+          "LAB_POST_004_v1_3",
+          [
+            "title",
+            "short",
+            "difficulty",
+            "estimated_time_min",
+            "qc_title",
+            "run_overview",
+            "qc_event",
+            "decision_options",
+            "root_cause_options",
+            "capa_components",
+            "audit_checks",
+            "optimal_summary"
+          ]
+        ],
+        [
+          "LAB_POST_005_v1_3",
+          [
+            "title",
+            "short",
+            "difficulty",
+            "estimated_time_min",
+            "qc_title",
+            "run_overview",
+            "qc_event",
+            "decision_options",
+            "root_cause_options",
+            "capa_components",
+            "audit_checks",
+            "optimal_summary"
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "V240W_DEEP_DIVES",
+      "script": "v240w_lab_b3_postanalytics_deepdive_patch",
+      "kind": "array",
+      "rows": 4,
+      "ids": [
+        "LAB_POST_002_v1_3",
+        "LAB_POST_003_v1_3",
+        "LAB_POST_004_v1_3",
+        "LAB_POST_005_v1_3"
+      ],
+      "case_field_selection": null
+    },
+    {
+      "name": "V240X_BASE_PATCHES",
+      "script": "v240x_lab_b4_c4_deepdive_patch",
+      "kind": "object",
+      "rows": 5,
+      "ids": [
+        "LAB_DOC_002_v1_3",
+        "LAB_AUDIT_001_v1_3",
+        "LAB_CAPA_001_v1_3",
+        "LAB_QM_001_v1_3",
+        "LAB_LLM_001_v1_3"
+      ],
+      "case_field_selection": [
+        [
+          "LAB_DOC_002_v1_3",
+          [
+            "title",
+            "short",
+            "difficulty",
+            "estimated_time_min",
+            "qc_title",
+            "run_overview",
+            "qc_event",
+            "decision_options",
+            "root_cause_options",
+            "capa_components",
+            "audit_checks",
+            "optimal_summary"
+          ]
+        ],
+        [
+          "LAB_AUDIT_001_v1_3",
+          [
+            "title",
+            "short",
+            "difficulty",
+            "estimated_time_min",
+            "qc_title",
+            "run_overview",
+            "qc_event",
+            "decision_options",
+            "root_cause_options",
+            "capa_components",
+            "audit_checks",
+            "optimal_summary"
+          ]
+        ],
+        [
+          "LAB_CAPA_001_v1_3",
+          [
+            "title",
+            "short",
+            "difficulty",
+            "estimated_time_min",
+            "qc_title",
+            "run_overview",
+            "qc_event",
+            "decision_options",
+            "root_cause_options",
+            "capa_components",
+            "audit_checks",
+            "optimal_summary"
+          ]
+        ],
+        [
+          "LAB_QM_001_v1_3",
+          [
+            "title",
+            "short",
+            "difficulty",
+            "estimated_time_min",
+            "qc_title",
+            "run_overview",
+            "qc_event",
+            "decision_options",
+            "root_cause_options",
+            "capa_components",
+            "audit_checks",
+            "optimal_summary"
+          ]
+        ],
+        [
+          "LAB_LLM_001_v1_3",
+          [
+            "title",
+            "short",
+            "difficulty",
+            "estimated_time_min",
+            "qc_title",
+            "run_overview",
+            "qc_event",
+            "decision_options",
+            "root_cause_options",
+            "capa_components",
+            "audit_checks",
+            "optimal_summary"
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "V240X_DEEP_DIVES",
+      "script": "v240x_lab_b4_c4_deepdive_patch",
+      "kind": "array",
+      "rows": 5,
+      "ids": [
+        "LAB_DOC_002_v1_3",
+        "LAB_AUDIT_001_v1_3",
+        "LAB_CAPA_001_v1_3",
+        "LAB_QM_001_v1_3",
+        "LAB_LLM_001_v1_3"
+      ],
+      "case_field_selection": null
+    },
+    {
+      "name": "V240Y_BASE_PATCHES",
+      "script": "v240y_lab_b5_digital_data_lims_deepdive_patch",
+      "kind": "object",
+      "rows": 5,
+      "ids": [
+        "LAB_DIGI_001_v1_3",
+        "LAB_DIGI_002_v1_3",
+        "LAB_DATA_001_v1_3",
+        "LAB_DATA_002_v1_3",
+        "LAB_LIMS_001_v1_3"
+      ],
+      "case_field_selection": [
+        [
+          "LAB_DIGI_001_v1_3",
+          [
+            "title",
+            "short",
+            "difficulty",
+            "estimated_time_min",
+            "qc_title",
+            "run_overview",
+            "qc_event",
+            "decision_options",
+            "root_cause_options",
+            "capa_components",
+            "audit_checks",
+            "optimal_summary"
+          ]
+        ],
+        [
+          "LAB_DIGI_002_v1_3",
+          [
+            "title",
+            "short",
+            "difficulty",
+            "estimated_time_min",
+            "qc_title",
+            "run_overview",
+            "qc_event",
+            "decision_options",
+            "root_cause_options",
+            "capa_components",
+            "audit_checks",
+            "optimal_summary"
+          ]
+        ],
+        [
+          "LAB_DATA_001_v1_3",
+          [
+            "title",
+            "short",
+            "difficulty",
+            "estimated_time_min",
+            "qc_title",
+            "run_overview",
+            "qc_event",
+            "decision_options",
+            "root_cause_options",
+            "capa_components",
+            "audit_checks",
+            "optimal_summary"
+          ]
+        ],
+        [
+          "LAB_DATA_002_v1_3",
+          [
+            "title",
+            "short",
+            "difficulty",
+            "estimated_time_min",
+            "qc_title",
+            "run_overview",
+            "qc_event",
+            "decision_options",
+            "root_cause_options",
+            "capa_components",
+            "audit_checks",
+            "optimal_summary"
+          ]
+        ],
+        [
+          "LAB_LIMS_001_v1_3",
+          [
+            "title",
+            "short",
+            "difficulty",
+            "estimated_time_min",
+            "qc_title",
+            "run_overview",
+            "qc_event",
+            "decision_options",
+            "root_cause_options",
+            "capa_components",
+            "audit_checks",
+            "optimal_summary"
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "V240Y_DEEP_DIVES",
+      "script": "v240y_lab_b5_digital_data_lims_deepdive_patch",
+      "kind": "array",
+      "rows": 5,
+      "ids": [
+        "LAB_DIGI_001_v1_3",
+        "LAB_DIGI_002_v1_3",
+        "LAB_DATA_001_v1_3",
+        "LAB_DATA_002_v1_3",
+        "LAB_LIMS_001_v1_3"
+      ],
+      "case_field_selection": null
+    },
+    {
+      "name": "V240Z2_BASE_PATCHES",
+      "script": "v240z2_res_r1_deepdive",
+      "kind": "object",
+      "rows": 4,
+      "ids": [
+        "RES_HYP_002_v1_3",
+        "RES_OMICS_002_v1_3",
+        "RES_OMICS_003_v1_3",
+        "RES_IMM_001_v1_3"
+      ],
+      "case_field_selection": [
+        [
+          "RES_HYP_002_v1_3",
+          [
+            "difficulty",
+            "estimated_time_min",
+            "tags",
+            "research_intro",
+            "research_context",
+            "hypothesis_options",
+            "pico_options",
+            "design_options",
+            "method_options",
+            "analysis_options",
+            "pitfall_options",
+            "expected_output",
+            "optimal_summary"
+          ]
+        ],
+        [
+          "RES_OMICS_002_v1_3",
+          [
+            "difficulty",
+            "estimated_time_min",
+            "tags",
+            "research_intro",
+            "research_context",
+            "hypothesis_options",
+            "pico_options",
+            "design_options",
+            "method_options",
+            "analysis_options",
+            "pitfall_options",
+            "expected_output",
+            "optimal_summary"
+          ]
+        ],
+        [
+          "RES_OMICS_003_v1_3",
+          [
+            "difficulty",
+            "estimated_time_min",
+            "tags",
+            "research_intro",
+            "research_context",
+            "hypothesis_options",
+            "pico_options",
+            "design_options",
+            "method_options",
+            "analysis_options",
+            "pitfall_options",
+            "expected_output",
+            "optimal_summary"
+          ]
+        ],
+        [
+          "RES_IMM_001_v1_3",
+          [
+            "difficulty",
+            "estimated_time_min",
+            "tags",
+            "research_intro",
+            "research_context",
+            "hypothesis_options",
+            "pico_options",
+            "design_options",
+            "method_options",
+            "analysis_options",
+            "pitfall_options",
+            "expected_output",
+            "optimal_summary"
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "V240Z2_DEEP_DIVES",
+      "script": "v240z2_res_r1_deepdive",
+      "kind": "array",
+      "rows": 4,
+      "ids": [
+        "RES_HYP_002_v1_3",
+        "RES_OMICS_002_v1_3",
+        "RES_OMICS_003_v1_3",
+        "RES_IMM_001_v1_3"
+      ],
+      "case_field_selection": null
+    },
+    {
+      "name": "V240Z3_BASE_PATCHES",
+      "script": "v240z3_res_r2_deepdive",
+      "kind": "object",
+      "rows": 5,
+      "ids": [
+        "RES_MOD_001_v1_3",
+        "RES_MOD_002_v1_3",
+        "RES_MOD_003_v1_3",
+        "RES_VAL_001_v1_3",
+        "RES_VAL_002_v1_3"
+      ],
+      "case_field_selection": [
+        [
+          "RES_MOD_001_v1_3",
+          [
+            "difficulty",
+            "estimated_time_min",
+            "tags",
+            "research_intro",
+            "research_context",
+            "hypothesis_options",
+            "pico_options",
+            "design_options",
+            "method_options",
+            "analysis_options",
+            "pitfall_options",
+            "expected_output",
+            "optimal_summary"
+          ]
+        ],
+        [
+          "RES_MOD_002_v1_3",
+          [
+            "difficulty",
+            "estimated_time_min",
+            "tags",
+            "research_intro",
+            "research_context",
+            "hypothesis_options",
+            "pico_options",
+            "design_options",
+            "method_options",
+            "analysis_options",
+            "pitfall_options",
+            "expected_output",
+            "optimal_summary"
+          ]
+        ],
+        [
+          "RES_MOD_003_v1_3",
+          [
+            "difficulty",
+            "estimated_time_min",
+            "tags",
+            "research_intro",
+            "research_context",
+            "hypothesis_options",
+            "pico_options",
+            "design_options",
+            "method_options",
+            "analysis_options",
+            "pitfall_options",
+            "expected_output",
+            "optimal_summary"
+          ]
+        ],
+        [
+          "RES_VAL_001_v1_3",
+          [
+            "difficulty",
+            "estimated_time_min",
+            "tags",
+            "research_intro",
+            "research_context",
+            "hypothesis_options",
+            "pico_options",
+            "design_options",
+            "method_options",
+            "analysis_options",
+            "pitfall_options",
+            "expected_output",
+            "optimal_summary"
+          ]
+        ],
+        [
+          "RES_VAL_002_v1_3",
+          [
+            "difficulty",
+            "estimated_time_min",
+            "tags",
+            "research_intro",
+            "research_context",
+            "hypothesis_options",
+            "pico_options",
+            "design_options",
+            "method_options",
+            "analysis_options",
+            "pitfall_options",
+            "expected_output",
+            "optimal_summary"
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "V240Z3_DEEP_DIVES",
+      "script": "v240z3_res_r2_deepdive",
+      "kind": "array",
+      "rows": 5,
+      "ids": [
+        "RES_MOD_001_v1_3",
+        "RES_MOD_002_v1_3",
+        "RES_MOD_003_v1_3",
+        "RES_VAL_001_v1_3",
+        "RES_VAL_002_v1_3"
+      ],
+      "case_field_selection": null
+    },
+    {
+      "name": "V240Z4_BASE_PATCHES",
+      "script": "v240z4_res_r3_deepdive",
+      "kind": "object",
+      "rows": 4,
+      "ids": [
+        "RES_ETH_002_v1_3",
+        "RES_ETH_003_v1_3",
+        "RES_DATA_001_v1_3",
+        "RES_AI_001_v1_3"
+      ],
+      "case_field_selection": [
+        [
+          "RES_ETH_002_v1_3",
+          [
+            "difficulty",
+            "estimated_time_min",
+            "tags",
+            "research_intro",
+            "research_context",
+            "hypothesis_options",
+            "pico_options",
+            "design_options",
+            "method_options",
+            "analysis_options",
+            "pitfall_options",
+            "expected_output",
+            "optimal_summary"
+          ]
+        ],
+        [
+          "RES_ETH_003_v1_3",
+          [
+            "difficulty",
+            "estimated_time_min",
+            "tags",
+            "research_intro",
+            "research_context",
+            "hypothesis_options",
+            "pico_options",
+            "design_options",
+            "method_options",
+            "analysis_options",
+            "pitfall_options",
+            "expected_output",
+            "optimal_summary"
+          ]
+        ],
+        [
+          "RES_DATA_001_v1_3",
+          [
+            "difficulty",
+            "estimated_time_min",
+            "tags",
+            "research_intro",
+            "research_context",
+            "hypothesis_options",
+            "pico_options",
+            "design_options",
+            "method_options",
+            "analysis_options",
+            "pitfall_options",
+            "expected_output",
+            "optimal_summary"
+          ]
+        ],
+        [
+          "RES_AI_001_v1_3",
+          [
+            "difficulty",
+            "estimated_time_min",
+            "tags",
+            "research_intro",
+            "research_context",
+            "hypothesis_options",
+            "pico_options",
+            "design_options",
+            "method_options",
+            "analysis_options",
+            "pitfall_options",
+            "expected_output",
+            "optimal_summary"
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "V240Z4_DEEP_DIVES",
+      "script": "v240z4_res_r3_deepdive",
+      "kind": "array",
+      "rows": 4,
+      "ids": [
+        "RES_ETH_002_v1_3",
+        "RES_ETH_003_v1_3",
+        "RES_DATA_001_v1_3",
+        "RES_AI_001_v1_3"
+      ],
+      "case_field_selection": null
+    },
+    {
+      "name": "V240Z5_BASE_PATCHES",
+      "script": "v240z5_res_r4_deepdive",
+      "kind": "object",
+      "rows": 3,
+      "ids": [
+        "RES_PM_001_v1_3",
+        "RES_PM_002_v1_3",
+        "RES_ROLE_001_v1_3"
+      ],
+      "case_field_selection": [
+        [
+          "RES_PM_001_v1_3",
+          [
+            "difficulty",
+            "estimated_time_min",
+            "tags",
+            "research_intro",
+            "research_context",
+            "hypothesis_options",
+            "pico_options",
+            "design_options",
+            "method_options",
+            "analysis_options",
+            "pitfall_options",
+            "expected_output",
+            "optimal_summary"
+          ]
+        ],
+        [
+          "RES_PM_002_v1_3",
+          [
+            "difficulty",
+            "estimated_time_min",
+            "tags",
+            "research_intro",
+            "research_context",
+            "hypothesis_options",
+            "pico_options",
+            "design_options",
+            "method_options",
+            "analysis_options",
+            "pitfall_options",
+            "expected_output",
+            "optimal_summary"
+          ]
+        ],
+        [
+          "RES_ROLE_001_v1_3",
+          [
+            "difficulty",
+            "estimated_time_min",
+            "tags",
+            "research_intro",
+            "research_context",
+            "hypothesis_options",
+            "pico_options",
+            "design_options",
+            "method_options",
+            "analysis_options",
+            "pitfall_options",
+            "expected_output",
+            "optimal_summary"
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "V240Z5_DEEP_DIVES",
+      "script": "v240z5_res_r4_deepdive",
+      "kind": "array",
+      "rows": 3,
+      "ids": [
+        "RES_PM_001_v1_3",
+        "RES_PM_002_v1_3",
+        "RES_ROLE_001_v1_3"
+      ],
+      "case_field_selection": null
+    },
+    {
+      "name": "V240Z6_BASE_PATCHES",
+      "script": "v240z6_res_r5_deepdive",
+      "kind": "object",
+      "rows": 3,
+      "ids": [
+        "RES_GRANT_001_v1_3",
+        "RES_IMPL_001_v1_3",
+        "RES_TEAM_001_v1_3"
+      ],
+      "case_field_selection": [
+        [
+          "RES_GRANT_001_v1_3",
+          [
+            "difficulty",
+            "estimated_time_min",
+            "tags",
+            "research_intro",
+            "research_context",
+            "hypothesis_options",
+            "pico_options",
+            "design_options",
+            "method_options",
+            "analysis_options",
+            "pitfall_options",
+            "expected_output",
+            "optimal_summary"
+          ]
+        ],
+        [
+          "RES_IMPL_001_v1_3",
+          [
+            "difficulty",
+            "estimated_time_min",
+            "tags",
+            "research_intro",
+            "research_context",
+            "hypothesis_options",
+            "pico_options",
+            "design_options",
+            "method_options",
+            "analysis_options",
+            "pitfall_options",
+            "expected_output",
+            "optimal_summary"
+          ]
+        ],
+        [
+          "RES_TEAM_001_v1_3",
+          [
+            "difficulty",
+            "estimated_time_min",
+            "tags",
+            "research_intro",
+            "research_context",
+            "hypothesis_options",
+            "pico_options",
+            "design_options",
+            "method_options",
+            "analysis_options",
+            "pitfall_options",
+            "expected_output",
+            "optimal_summary"
+          ]
+        ]
+      ]
+    },
+    {
+      "name": "V240Z6_DEEP_DIVES",
+      "script": "v240z6_res_r5_deepdive",
+      "kind": "array",
+      "rows": 3,
+      "ids": [
+        "RES_GRANT_001_v1_3",
+        "RES_IMPL_001_v1_3",
+        "RES_TEAM_001_v1_3"
+      ],
+      "case_field_selection": null
+    }
+  ],
+  "compatibility": "same IDs/order per table; each case patch keeps exactly its original ordered top-level field list",
+  "registration": "same case and Deep-Dive IDs/order/counts at every recorded script checkpoint",
+  "app_version": "v2.6.0-rc1; unchanged MolPathVersion.app",
+  "integration_module": "existing A6.3 integration remains the final authority after retained historical writers",
+  "browser_smoke": "NOT_RUN for A6.7",
+  "apply": "replace only index.html in the complete confirmed A6.6 build",
+  "final_comparison": "data hashes, boot UI state, full display records in eleven languages and tested complete report HTML hashes identical to A6.6"
+}
