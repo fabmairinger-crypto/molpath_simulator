@@ -1,0 +1,39 @@
+MolPath rc2-clean A6.3 — Delta anwenden
+Stand: 2026-10-02 | Status: Integration Candidate, Browser-Smoke offen
+
+Basis ist dein funktionierender VOLLSTÄNDIGER rc2-A6.2-Build mit allen Assets.
+A5 muss nicht separat angewendet werden. Dieses ZIP ist kein vollständiger Build.
+
+1. Sichere den vorhandenen Build oder mindestens die 24 Payload-Dateien aus dem Manifest.
+2. Entpacke das Delta zunächst separat. Prüfe die Ausgangsdateien gegen base_sha256
+   in MANIFEST_RC2_A6_3.json. Mit Python:
+   python qa/verify_a6_3.py before /Pfad/zum/vollstaendigen/A6_2_Build
+   Wenn Hashes abweichen, erst den Unterschied prüfen; nicht blind ersetzen.
+3. Kopiere index.html, molpath_version.js und die übrigen 22 Payload-Dateien mit
+   ihrer vorhandenen Ordnerstruktur in die Wurzel des vollständigen Builds.
+   Ersetze die vorhandenen Dateien. Alle übrigen Dateien/Assets bleiben im Build.
+   CHANGELOG, MANIFEST, QA und qa/ sind Begleitmaterial, keine Laufzeit-Abhängigkeiten.
+4. Optional kontrollieren:
+   python qa/verify_a6_3.py after /Pfad/zum/vollstaendigen/A6_3_Build
+5. Öffne den Build über deine übliche Umgebung und lade ihn mit Ctrl+F5 neu.
+   Führe den folgenden Browser-Smoke aus, bevor du den Kandidaten als freigegeben nutzt.
+
+Browser-Smoke (hier nicht ausgeführt):
+- Start/Home, Fallbibliothek, Asset-Modal und mobile Ansicht auf sichtbare Fehler prüfen.
+- Tab, sichtbare Top-Version und window.MOLPATH_APP_VERSION müssen MolPathVersion.app
+  entsprechen. app bleibt v2.6.0-rc1. Der Hero zeigt weiterhin die bestehende Fallkategorie.
+- CRC2, CRC1, NSCLC2, MET_NGS3, OVAR2 und IO1 jeweils öffnen: Eingang/Histologie,
+  Teilbefund, vollständiger Befund, MTB; Bilder erst nach ihren vorhandenen Gates.
+- DE -> EN -> RO -> AR/FA -> UK -> DE: Text, Layout/RTL und Version prüfen.
+- Kurse (5/23), Signature-Filter (30), Methods Focus (44), Case Library (91) prüfen.
+- LAB_PRE_001: intermediate, 10–15; RES_VAL_001, RES_ETH_002, RES_ROLE_001:
+  advanced, 15–18. Die kanonischen historischen V15-Duplikate bleiben lossless erhalten.
+- Entwicklerkonsole auf neue Fehler prüfen; falls möglich Fall-/Map-Snapshots vor und
+  nach Sprachwechsel vergleichen. Die lokalen VM-Prüfungen bestätigen Datenstabilität.
+
+Rollback: die 24 gesicherten Dateien an denselben Pfaden wiederherstellen und neu laden.
+
+Reproduzierbare lokale JS-Prüfungen (Node.js):
+node qa/syntax_qa.js /Pfad/zum/vollstaendigen/Build
+node qa/runtime_qa.js /Pfad/zum/vollstaendigen/Build
+Der Runtime-Runner verwendet bewusst ein DOM-Testdouble und ersetzt keinen Browser-Smoke.

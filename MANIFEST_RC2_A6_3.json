@@ -1,0 +1,446 @@
+{
+  "package": "MolPath_rc2_A6_3_delta",
+  "date": "2026-10-02",
+  "status": "INTEGRATION_CANDIDATE",
+  "base": "working complete rc2 A6.2 build",
+  "apply": "replace the 24 payload paths in the full A6.2 root; preserve all other files and assets",
+  "app_version": "v2.6.0-rc1 (unchanged; owned by MolPathVersion.app)",
+  "payload_file_count": 24,
+  "payload": [
+    {
+      "path": "i18n/legacy/legacy_v223_v224_runtime.js",
+      "bytes": 3021312,
+      "sha256": "a0129438dee4545348eaae46b8efa9fe86ec75704250b57adc5a07b258dc70f1",
+      "base_bytes": 3019187,
+      "base_sha256": "5d2a80c3e4ee5b4cb9cb7a7e25a259f612ee234eb486194497b25e3628ac6c19",
+      "source": "existing uploaded source referenced by A6.2 index",
+      "actions": [
+        "retire version stamp",
+        "retire direct version assignment",
+        "redirect existing localization helpers to detached views"
+      ]
+    },
+    {
+      "path": "i18n/legacy/legacy_v230c_signature_deepdive.js",
+      "bytes": 340840,
+      "sha256": "177e80af40b97201687b2f99ff0198926c6679e516fdb0191da09f1bdb50fec8",
+      "base_bytes": 340196,
+      "base_sha256": "6c00f23a01edd11358d1f380defe6d28a0632ffd2fdeba299f4dce76d468839e",
+      "source": "existing uploaded source referenced by A6.2 index",
+      "actions": [
+        "separate four Deep-Dive localizations from canonical records"
+      ]
+    },
+    {
+      "path": "i18n/legacy/legacy_v240t_signature_i18n.js",
+      "bytes": 3820899,
+      "sha256": "37dad33d7c5fb7cc7efcab44ad2159f2ebb2b2878a1386ef72d16b7dc5e57de6",
+      "base_bytes": 3821097,
+      "base_sha256": "d4aa79f0e7b2a87546caabcf25722f63d59897205e527a7060a3be31010de7ed",
+      "source": "existing uploaded source referenced by A6.2 index",
+      "actions": []
+    },
+    {
+      "path": "i18n/legacy/legacy_v240z10_res_t4_i18n.js",
+      "bytes": 67621,
+      "sha256": "559efe05898faad98c098f2bac289bb8bbcc7b0deb6812f3ba7ab67f0b280887",
+      "base_bytes": 67844,
+      "base_sha256": "5bb17f62b0131f0069836a7c257e59f92ad1ed427ff3d33336a011a7636c0893",
+      "source": "existing uploaded source referenced by A6.2 index",
+      "actions": [
+        "retire version stamp"
+      ]
+    },
+    {
+      "path": "i18n/legacy/legacy_v240z10a_res_t4_hotfix.js",
+      "bytes": 620529,
+      "sha256": "f1f08d188e18d6642c0b39572cdf3b0af981018fef87e95bab91182df83f601c",
+      "base_bytes": 620765,
+      "base_sha256": "1b5441c73017b937f7e39117470c43bc8c29fe9b3ad032a4d47346cfd042c693",
+      "source": "existing uploaded source referenced by A6.2 index",
+      "actions": [
+        "retire version stamp"
+      ]
+    },
+    {
+      "path": "i18n/legacy/legacy_v240z7_res_t1_i18n.js",
+      "bytes": 568030,
+      "sha256": "b09a86058c24ce582716ca6ab1213162793b2a7f1f79a11a5702b001afc297e2",
+      "base_bytes": 568249,
+      "base_sha256": "8d826791e200843805c91703fff1cd9f45e8205a0a1380232378485dbdeef490",
+      "source": "existing uploaded source referenced by A6.2 index",
+      "actions": [
+        "retire version stamp"
+      ]
+    },
+    {
+      "path": "i18n/legacy/legacy_v240z8_res_t2_i18n.js",
+      "bytes": 752932,
+      "sha256": "cda272e633ce936f9d6ea411e1bb836ff248155b0b8723082094daf43b51e2d4",
+      "base_bytes": 753152,
+      "base_sha256": "407b4ffacadd760b85a925563746d54c97d7bea837fe099756c064764f367595",
+      "source": "existing uploaded source referenced by A6.2 index",
+      "actions": []
+    },
+    {
+      "path": "i18n/legacy/legacy_v240z9_res_t3_i18n.js",
+      "bytes": 622969,
+      "sha256": "948c9312f32581775e3b9bdb8c21285d1d90046794c35b4f068e7447fa875005",
+      "base_bytes": 623189,
+      "base_sha256": "197c32534eef76ac91e0a6ab910d25ce810e7c6d11c1029e68da60a29a17b2b0",
+      "source": "existing uploaded source referenced by A6.2 index",
+      "actions": [
+        "retire version stamp"
+      ]
+    },
+    {
+      "path": "i18n/legacy/legacy_v240z_lab_i18n.js",
+      "bytes": 1778408,
+      "sha256": "65f53615c02b5370f343d0d6c6e1cd0b1768032a5f05458511f5f51438d3e446",
+      "base_bytes": 1778643,
+      "base_sha256": "77493929fd6e130a6227663f59221cf03d4cfefe447dc3a064b4476a6989c9bd",
+      "source": "existing uploaded source referenced by A6.2 index",
+      "actions": [
+        "retire version stamp"
+      ]
+    },
+    {
+      "path": "index.html",
+      "bytes": 4123232,
+      "sha256": "5b153d42a29e1c5d2342b316853ca8e96c9915e9755dacedba304c39ba4f8986",
+      "base_bytes": 4129452,
+      "base_sha256": "407bad3a7225e2546e90aa6405116d928e452b9fa520a8048b8570f9c5fb5af3",
+      "source": "verified A6.2 delta",
+      "actions": [
+        "retire direct version assignment",
+        "retire version stamp",
+        "remove version CSS rules",
+        "retire writers inside existing exported document templates"
+      ]
+    },
+    {
+      "path": "molpath_version.js",
+      "bytes": 1065,
+      "sha256": "1ce85d3fb12d59bb36c2821364df3da46ba215e016cb4754be6c13a8a4e38095",
+      "base_bytes": 420,
+      "base_sha256": "f30d6751beb0eaf45beb92acb9f3b9ab44d2bbee05ce1b33e1746dc618a9c3cd",
+      "source": "existing uploaded source referenced by A6.2 index",
+      "actions": []
+    },
+    {
+      "path": "rc2_A5_data_adapter.js",
+      "bytes": 10128,
+      "sha256": "bbe02ab75a948d8ae99e93d028c363fa471f7e8267ca0972a568a02ef47c00b5",
+      "base_bytes": 4682,
+      "base_sha256": "f3bb1d75a6ba97f60cd54510c41a80e546feca6534d84cd311435567862cd733",
+      "source": "verified A6.2 delta",
+      "actions": []
+    },
+    {
+      "path": "rc2_A6_canonical_integration.js",
+      "bytes": 6418,
+      "sha256": "53b86927ae49ebb5c44d5d77189def5dacd48f21f687d085016d60cd4735c9e7",
+      "base_bytes": 6150,
+      "base_sha256": "5963c349c3d4785dce0d3de6ce102dc2d5e29252eb400379c702ec1cdea27f8e",
+      "source": "verified A6.2 delta",
+      "actions": []
+    },
+    {
+      "path": "v240z13_crc002_flagship.js",
+      "bytes": 33767,
+      "sha256": "d00faf9a3ddd26ef9b77a0ab3f9f6a743289da1cf1d81e81d9b0ebb52afe5b22",
+      "base_bytes": 35324,
+      "base_sha256": "0bc90d34d347a2c1816f729ee795bab9f9e85e794c9ea7af446ccc892e59bde9",
+      "source": "existing uploaded source referenced by A6.2 index",
+      "actions": [
+        "retire version stamp",
+        "remove version CSS rules",
+        "split canonical semantics from localized presentation"
+      ]
+    },
+    {
+      "path": "v240z14_crc001_flagship.js",
+      "bytes": 42338,
+      "sha256": "b7eda0b0a9ab80a238fc955dc02e78c191e2b77f81e9fca206d02c291ddd34bc",
+      "base_bytes": 45407,
+      "base_sha256": "1d31b756d5e6326e738bf2bc197abedcb7b9baa9d509296c076e454664cbb3b3",
+      "source": "existing uploaded source referenced by A6.2 index",
+      "actions": [
+        "retire version stamp",
+        "remove version CSS rules",
+        "split canonical semantics from localized presentation"
+      ]
+    },
+    {
+      "path": "v240z15_nsclc002_flagship.js",
+      "bytes": 35444,
+      "sha256": "f561ac9ca9b613764f5edc61b0d227643454a42143afc68fe5129543276d060b",
+      "base_bytes": 36749,
+      "base_sha256": "21feac9851718feebf5ee762c63a8b957e9d8c8c7973b94409bfa7d9b9df7f8d",
+      "source": "existing uploaded source referenced by A6.2 index",
+      "actions": [
+        "retire version stamp",
+        "remove version CSS rules",
+        "split canonical semantics from localized presentation"
+      ]
+    },
+    {
+      "path": "v240z16_metngs003_flagship.js",
+      "bytes": 31189,
+      "sha256": "d0e2fc6d6e8bebfb91675f22b30e34a01a64ff8da77d8d300b3b9f98b480ded7",
+      "base_bytes": 33582,
+      "base_sha256": "f8838824d731c6faad515d39c89e63dc1cd2b9d59c5d98414d951c62a91a0f21",
+      "source": "existing uploaded source referenced by A6.2 index",
+      "actions": [
+        "retire version stamp",
+        "remove version CSS rules",
+        "split canonical semantics from localized presentation"
+      ]
+    },
+    {
+      "path": "v240z17_ovar001_flagship.js",
+      "bytes": 13059,
+      "sha256": "ddb65c4d8ff6e68f6582da72dc3bf8d3eda664737689ccc470eaf1f1a14b47e7",
+      "base_bytes": 13517,
+      "base_sha256": "f3e03edb91f2412fff8caf610766b177db367f225389937be9242b6311646a70",
+      "source": "existing uploaded source referenced by A6.2 index",
+      "actions": [
+        "retire version stamp",
+        "remove version CSS rules"
+      ]
+    },
+    {
+      "path": "v240z18_ovar002_flagship.js",
+      "bytes": 26277,
+      "sha256": "fe10c7bc0e06e1bce488e01d081acd8705739f7bad35dac06ab830129271e20c",
+      "base_bytes": 26928,
+      "base_sha256": "bd6701b1f2d7cd8e3df27ae855a73c5e033af822e1235fab5b8349ca5a3b6f68",
+      "source": "existing uploaded source referenced by A6.2 index",
+      "actions": [
+        "retire version stamp",
+        "remove version CSS rules",
+        "split canonical semantics from localized presentation"
+      ]
+    },
+    {
+      "path": "v240z19_cns001_flagship.js",
+      "bytes": 14717,
+      "sha256": "0c1ec761c455003e8b50b052bde85c74c8bd6aab918002bedb3c7b31964d8c50",
+      "base_bytes": 15175,
+      "base_sha256": "f87b850617b46aee5a63b991d2553f57289165117791cb0368deaaf93eafaa59",
+      "source": "existing uploaded source referenced by A6.2 index",
+      "actions": [
+        "retire version stamp",
+        "remove version CSS rules"
+      ]
+    },
+    {
+      "path": "v240z20_io001_flagship.js",
+      "bytes": 34069,
+      "sha256": "43cd09509b7939f9934cc1adbb246fa1c903a9d5986d92166d9032562b65d4da",
+      "base_bytes": 34187,
+      "base_sha256": "15d6fa16676fcb8692bffa4d7aab4964f534d07a4b57d1e582afee49b268fc2d",
+      "source": "existing uploaded source referenced by A6.2 index",
+      "actions": [
+        "retire version stamp",
+        "remove version CSS rules",
+        "split canonical semantics from localized presentation"
+      ]
+    },
+    {
+      "path": "v250b_responsive_shell.js",
+      "bytes": 15787,
+      "sha256": "85a161529316f87f4c546d6302a9228c2eef5d1f0a7b7ddab1579bcefeb8d4bd",
+      "base_bytes": 16033,
+      "base_sha256": "4fae6c4c6e81cda486467df8b5eafa88665323cce7323e97bec6480e277020a1",
+      "source": "existing uploaded source referenced by A6.2 index",
+      "actions": [
+        "retire version stamp"
+      ]
+    },
+    {
+      "path": "v250b_startup_cover_hotfix.js",
+      "bytes": 1975,
+      "sha256": "a74886364dc505d27b9cd6182a5b7113de070ee422a6a995e2e22b8c0e47e542",
+      "base_bytes": 2407,
+      "base_sha256": "a6fe439da52654f868d35debcbec41e26f34a0928fcc281e54db764a5d7dacd7",
+      "source": "existing uploaded source referenced by A6.2 index",
+      "actions": [
+        "retire version stamp",
+        "remove version CSS rules"
+      ]
+    },
+    {
+      "path": "v260rc1_case_consistency_curation_i18n.js",
+      "bytes": 42102,
+      "sha256": "72bc0c410668d2292456372b4a68dc0e0016fbe8d78a0f30d5e3c5c1c12ab5ef",
+      "base_bytes": 42103,
+      "base_sha256": "4035ce12f3010781758a09c90e810d4d4bdaa7f5b28d490e69c11ffec0d49f7c",
+      "source": "verified A6.2 delta",
+      "actions": [
+        "retire repeated curation data writes; retain all language entries and report logic",
+        "remove recursive applyNow from dictionary registration; retain existing boot apply and AfterApply chain"
+      ]
+    }
+  ],
+  "unchanged_required_inputs": [
+    {
+      "path": "rc2_A4b_canonical_cases_lossless.js",
+      "sha256": "95f5016ea6ec491b7373821204ee5e0c58923e13fcfca261764a51d45f3160a5"
+    },
+    {
+      "path": "rc2_A5_courses.js",
+      "sha256": "ff14647c1cdcc5e095abea4fdbf90981db84d49f0f0906d658805b23650cf343"
+    },
+    {
+      "path": "rc2_A5_method_focus.js",
+      "sha256": "359f66f091e48e898c3550237d5d4e012424aac854196efee669ef223efdb5fe"
+    },
+    {
+      "path": "v250b_method_focus_filter.js",
+      "sha256": "02b43e8b6b4d7b6e72c47c8f3786cad148c58261e491e43c0352b415d0568f09"
+    },
+    {
+      "path": "v250b_signature_taxonomy_freeze.js",
+      "sha256": "b001c6eb89ac916be7c4ea0fd94857af1a98a6e4d921cc98e81150f65e6a9f84"
+    },
+    {
+      "path": "v250b_asset_modal_hotfix.js",
+      "sha256": "baad2f80d71f2147003ada1102860d0fb5e649fb7bbda19ee7cea43c9f8f4320"
+    },
+    {
+      "path": "v250b_home_screen.js",
+      "sha256": "5b208b25090d2b7c4237c61d2ad831d08959811d7e771c4a3afd20053aba2de4"
+    }
+  ],
+  "external_script_order": [
+    "rc2_A5_courses.js",
+    "molpath_version.js",
+    "rc2_A5_data_adapter.js",
+    "i18n/languages.js",
+    "i18n/legacy/legacy_v223_v224_runtime.js",
+    "i18n/legacy/legacy_v230c_signature_deepdive.js",
+    "i18n/legacy/legacy_v240t_signature_i18n.js",
+    "i18n/legacy/legacy_v240z_lab_i18n.js",
+    "i18n/legacy/legacy_v240z7_res_t1_i18n.js",
+    "i18n/legacy/legacy_v240z8_res_t2_i18n.js",
+    "i18n/legacy/legacy_v240z9_res_t3_i18n.js",
+    "i18n/legacy/legacy_v240z10_res_t4_i18n.js",
+    "i18n/legacy/legacy_v240z10a_res_t4_hotfix.js",
+    "v240z13_crc002_flagship.js",
+    "v240z14_crc001_flagship.js",
+    "v240z15_nsclc002_flagship.js",
+    "v240z16_metngs003_flagship.js",
+    "v240z17_ovar001_flagship.js",
+    "v240z18_ovar002_flagship.js",
+    "v240z19_cns001_flagship.js",
+    "v240z20_io001_flagship.js",
+    "v250b_labpost001_flagship.js",
+    "v250b_labdoc001_flagship.js",
+    "v250b_reshyp001_flagship.js",
+    "v250b_reseth001_flagship.js",
+    "v250b_responsive_shell.js",
+    "v250b_asset_modal_hotfix.js",
+    "v250b_startup_cover_hotfix.js",
+    "v250b_home_screen.js",
+    "rc2_A5_method_focus.js",
+    "v250b_method_focus_filter.js",
+    "v250b_metngs001_course_flagship.js",
+    "v250b_metngs002_course_flagship.js",
+    "v250b_metrna001_course_flagship.js",
+    "v250b_metlb001_course_flagship.js",
+    "v250b_metngs004_course_flagship.js",
+    "v250b_labrun001_course_flagship.js",
+    "v250b_labpre001_course_flagship.js",
+    "v250b_resimpl001_course_flagship.js",
+    "v250b_reseth002_course_flagship.js",
+    "v250b_resrole001_course_flagship.js",
+    "v260rc1_mtb_cns_003_asset_upgrade.js",
+    "v260rc1_mtb_hem_001_asset_upgrade.js",
+    "v260rc1_lab_run_004_asset_upgrade.js",
+    "v260rc1_mtb_cns_003_mtb_hem_001_i18n_consolidation.js",
+    "v260rc1_met_fish_001_asset_i18n_upgrade.js",
+    "v260rc1_res_val_001_signature_asset_i18n_upgrade.js",
+    "v260rc1_case_consistency_curation_i18n.js",
+    "rc2_A4b_canonical_cases_lossless.js",
+    "rc2_A6_canonical_integration.js",
+    "v250b_signature_taxonomy_freeze.js"
+  ],
+  "qa_fixture_provenance": [
+    {
+      "path": "i18n/languages.js",
+      "sha256": "be3f6595fbef330cd2160eecb7a42d6a459865338b640a997578fe2ed8285478",
+      "source": "existing UK final patch"
+    },
+    {
+      "path": "i18n/core.js",
+      "sha256": "7c900e06a20a43def732df4aa8c1298f70011c8c2e38bf995f20570c5c984226",
+      "source": "existing UK final patch"
+    },
+    {
+      "path": "i18n/de.js",
+      "sha256": "fb0174ef922b2f9fe4c3e069d5c47250c198296a1de3b05d5268b9d8439cfa14",
+      "source": "existing individual uploaded language source"
+    },
+    {
+      "path": "i18n/en.js",
+      "sha256": "10fc72096c4201defbe3872c2b24608de1119bedfe82562c11e7de9fc97ae700",
+      "source": "existing individual uploaded language source"
+    },
+    {
+      "path": "i18n/ro.js",
+      "sha256": "2b35fdccae94aec3c7dfc6ed2a34fa961d5d654e82c418a7fc8e58f1f103155d",
+      "source": "existing individual uploaded language source"
+    },
+    {
+      "path": "i18n/el.js",
+      "sha256": "cac86f827ade1de8953a3c3e9849b40128ef5de471cae9b244f399dcc52edfaf",
+      "source": "existing individual uploaded language source"
+    },
+    {
+      "path": "i18n/es.js",
+      "sha256": "da37fbdd618150141d3bd65d48fbbff7f6f6ebf837add893dca1803b5976d6af",
+      "source": "existing individual uploaded language source"
+    },
+    {
+      "path": "i18n/fr.js",
+      "sha256": "031d02e374be811f453c3dba4c782287065e24ab8d2b3ff5cdfbdf8cd7311f57",
+      "source": "existing individual uploaded language source"
+    },
+    {
+      "path": "i18n/ru.js",
+      "sha256": "8a2d3d1bed1f55a4117b832ad6032dcd056943c06bb27d1aa9f5873188590d79",
+      "source": "existing individual uploaded language source"
+    },
+    {
+      "path": "i18n/tr.js",
+      "sha256": "91a47e175893ccfc6907457ad8bcb157948c1bfb438f5e59003244d6563b22a3",
+      "source": "existing individual uploaded language source"
+    },
+    {
+      "path": "i18n/ar.js",
+      "sha256": "8c7d089695dc35147d34592742a04166fd0472bb40f031ece79a2302425d586c",
+      "source": "existing individual uploaded language source"
+    },
+    {
+      "path": "i18n/fa.js",
+      "sha256": "0b726f1e3d09e40ea1aefd4f4297e49c95b4f88bba645cf9dc7d44d92f778d36",
+      "source": "existing individual uploaded language source"
+    },
+    {
+      "path": "i18n/uk.js",
+      "sha256": "b3c223b705dda8ff1ce827c0d6b0209000e60c058c9cf930590240bf700f0488",
+      "source": "existing UK final patch"
+    }
+  ],
+  "base_materialization": "A6.2 delta plus actual individually uploaded referenced JS sources; full 489 MB rc1 ZIP transfer failed HTTP 502; binary assets were not materialized",
+  "size_delta_bytes": -9331,
+  "qa_reports": [
+    "QA_RC2_A6_3.json",
+    "QA_RC2_A6_3.md",
+    "qa/source_qa_results.json",
+    "qa/runtime_qa_results.json",
+    "qa/syntax_qa_results.json"
+  ],
+  "browser_smoke": "NOT_RUN: local test URL blocked by browser; Chromium installation failed"
+}

@@ -141,32 +141,17 @@ function assayEvidence(){
 function allCoreDone(){return selected('mmr_ihc')&&selected('msi_pcr_ngs')&&(selected('mlh1_methylation')||selected('methylation_mlh1'))&&hasBraf()}
 function integrationBox(){const full=allCoreDone();return `<div class="crc2-integration ${full?'full':'partial'}"><h4>${esc2(T().integration)}</h4><p>${esc2(full?T().fullOutcome:T().partialOutcome)}</p><div class="crc2-key"><b>${esc2(T().key)}:</b> ${esc2(T().keyText)}</div></div>`}
 
-function applyCaseLogic(){
-  const c=caseObj(); if(!c)return;
-  c.required_groups=[
-    {id:'mmr',label:'MMR-IHC',tests:['mmr_ihc'],suggest:'mmr_ihc'},
-    {id:'msi',label:'MSI-NGS',tests:['msi_pcr_ngs'],suggest:'msi_pcr_ngs'},
-    {id:'mlh1',label:'MLH1 promoter methylation',tests:['mlh1_methylation','methylation_mlh1'],suggest:'mlh1_methylation'},
-    {id:'braf',label:'BRAF p.V600E',tests:['braf_v600e_crc','colon_ngs_panel','broad_pan_panel'],suggest:'braf_v600e_crc'}
-  ];
-  c.result_sections=[
-    {label:'MMR-IHC',test_any:['mmr_ihc'],result:'MLH1/PMS2 loss; MSH2/MSH6 retained; internal positive controls intact.'},
-    {label:'MSI-NGS (9 loci)',test_any:['msi_pcr_ngs'],result:'MSI-H; 7/9 loci unstable.'},
-    {label:'MLH1 promoter methylation',test_any:['mlh1_methylation','methylation_mlh1'],result:'MLH1 promoter methylation detected / positive.'},
-    {label:'BRAF p.V600E',test_any:['braf_v600e_crc','colon_ngs_panel','broad_pan_panel'],result:'BRAF p.V600E detected / positive.'}
-  ];
-  c.always_findings=[['QC','All performed assays meet the case-specific quality criteria; internal controls are valid.']];
+
+/* A6.3: localized display only; diagnostic structure is supplied by A4b/A5. */
+window.MolPathPresentationA6.register(CRC2_CASE,function(c,d,l){
+  if(l!=='de'&&!COPY[l])return;
+
   c.complete_interpretation=T().fullOutcome;
   c.partial_interpretation=T().partialOutcome;
   c.optimal_summary=T().fullOutcome;
-  c.mtb_checks=[
-    ['mmr','MLH1/PMS2 loss with retained MSH2/MSH6 correctly state'],
-    ['msi','MSI-H as therapeutically relevant context correctly state'],
-    ['mlh1','MLH1 promoter methylation as evidence for a sporadic MLH1 pathway correctly state'],
-    ['braf','BRAF p.V600E in the sporadic/reflex context correctly state'],
-    ['limits','Do not diagnose Lynch syndrome from IHC alone; keep clinical/family context explicit'],
-    ['bad','Incorrect: MLH1/PMS2 loss alone proves Lynch syndrome']
-  ];
+});
+function applyCaseLogic(){
+  if(window.MolPathPresentationA6&&window.MolPathPresentationA6.ready)window.MolPathPresentationA6.refresh(CRC2_CASE);
 }
 
 /* Explicit premium completion logic: each displayed flagship result belongs to an actually performed test. */
@@ -282,7 +267,7 @@ renderMtb=function(){
 function styles(){
   if(document.getElementById('crc2FlagshipStyles'))return;
   const st=document.createElement('style');st.id='crc2FlagshipStyles';st.textContent=`
-  #v20bVersion{font-size:0!important}#v20bVersion::after{content:'v2.4.0z14a'!important;font-size:.72rem!important;line-height:1.1}
+  
   .crc2-opening{border:1px solid #9bc8d7;border-radius:18px;background:linear-gradient(135deg,#eef9ff,#fff);padding:15px 17px;margin:10px 0 14px;box-shadow:0 8px 22px rgba(15,76,117,.07)}
   .crc2-block{border:1px solid var(--line);border-radius:18px;background:#fff;padding:14px;margin:14px 0;box-shadow:0 8px 22px rgba(15,35,55,.045)}
   .crc2-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:10px}.crc2-head h4{margin:0;color:var(--primary)}
@@ -302,9 +287,7 @@ const PREV_RENDER=render;
 render=function(){applyCaseLogic();return PREV_RENDER.apply(this,arguments)};
 try{window.render=render}catch(_){ }
 
-function stamp(){
-  try{window.MOLPATH_APP_VERSION=CRC2_VERSION;document.title='MolPath Simulator '+CRC2_VERSION;const x=document.getElementById('v20bVersion');if(x){x.setAttribute('data-i18n-skip','1')}}catch(_){ }
-}
+function stamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }
 const PREV_I18N_AFTER=window.MolPathI18nAfterApply;
 window.MolPathI18nAfterApply=function(l){try{if(typeof PREV_I18N_AFTER==='function')PREV_I18N_AFTER(l)}catch(_){ }applyCaseLogic();stamp();};
 

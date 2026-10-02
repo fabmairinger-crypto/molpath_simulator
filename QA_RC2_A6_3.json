@@ -1,0 +1,49 @@
+{
+  "package": "MolPath_rc2_A6_3_delta",
+  "date": "2026-10-02",
+  "status": "SOURCE_SYNTAX_RUNTIME_PASS_BROWSER_OPEN",
+  "source": {
+    "status": "PASS",
+    "passed": 265,
+    "total": 265
+  },
+  "syntax": {
+    "status": "PASS",
+    "units": 99
+  },
+  "runtime": {
+    "status": "PASS",
+    "passed": 254,
+    "total": 254,
+    "errors": [],
+    "counts": {
+      "cases": 91,
+      "deep": 91,
+      "signature": 30,
+      "methods": 44,
+      "courses": 5,
+      "courseCases": 23
+    },
+    "pre_boot_hash": "a767970c2b67c0ee4066ff8794fe36f71255c497aeb7f9d8fc9e660d901f83d0",
+    "post_boot_hash": "a767970c2b67c0ee4066ff8794fe36f71255c497aeb7f9d8fc9e660d901f83d0",
+    "final_hash": "a767970c2b67c0ee4066ff8794fe36f71255c497aeb7f9d8fc9e660d901f83d0",
+    "environment": "Node VM, actual ordered JS sources, DOM test double; no visual browser assertion"
+  },
+  "browser": {
+    "status": "NOT_RUN",
+    "reason": "Local browser navigation ERR_BLOCKED_BY_CLIENT; Chromium installation could not complete."
+  },
+  "limits": [
+    "DOM test double has no visual layout, true event propagation, live MutationObserver behavior or image loading.",
+    "i18n/qa.js is an unchanged diagnostic layer omitted by the runtime runner; all 99 executable source units in the staged fixture parsed successfully.",
+    "Eleven language inputs are actual existing uploaded sources; languages/core/uk use the existing UK final patch as an unchanged QA fixture. They are excluded from the payload.",
+    "Binary asset bytes, FOM PDF/pages and complete full-archive identity were not verified; literal asset paths and existing renderer/gating helpers were preserved."
+  ],
+  "scope": [
+    "One user-facing version authority; no new observer or final corrective wrapper.",
+    "Six hybrid semantic writers retired; localized display/report/assets retained in the existing modules.",
+    "Canonical A4b, courses, Methods Focus, filter, final signature freeze, asset modal and home screen remain byte-identical.",
+    "Canonical cases and all V15/Deep-Dive maps remain stable across boot, rendering and language changes.",
+    "Exact 12-case curation and four top-level metadata/Deep-Dive time corrections remain canonical."
+  ]
+}

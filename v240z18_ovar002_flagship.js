@@ -124,35 +124,22 @@ function deepReplace(v){
   return v;
 }
 
+
+/* A6.3: localized display only; diagnostic structure is supplied by A4b/A5. */
+window.MolPathPresentationA6.register(O18_CASE,function(c,d,l){
+  if(l!=='de'&&!COPY[l])return;
+
+  const t=T(),groups={vus:t.groupVus,hrd:t.groupHrd,germline:t.groupGermline};
+  (c.required_groups||[]).forEach(g=>{if(groups[g.id])g.label=groups[g.id]});
+  const resultText={tumor_brca_hrr:[t.groupTumor,t.tumorResult],vusic:[t.groupVus,t.vusResult],hrd_score:[t.groupHrd,t.hrdResult],germline_referral:[t.groupGermline,t.germlineResult]};
+  (c.result_sections||[]).forEach(section=>{const pair=resultText[(section.test_any||[])[0]];if(pair){section.label=pair[0];section.result=pair[1]}});
+  (c.always_findings||[]).forEach(row=>{if(row[0]==='QC')row[1]=t.qc});
+  c.complete_interpretation=t.complete;c.partial_interpretation=t.partial;c.optimal_summary=t.complete;
+  const checks={vus:t.groupVus+' ohne Overcalling',hrd:t.groupHrd+' separat bewertet',germline:t.groupGermline+' separat kommuniziert',bad:t.bad};
+  (c.mtb_checks||[]).forEach(row=>{if(checks[row[0]])row[1]=checks[row[0]]});
+});
 function applyCaseLogic(){
-  const c=caseObj();if(!c)return;
-  const t=T();
-  c.allowed_tests=['he_review','tumor_brca_hrr','broad_pan_panel','hrd_score','germline_referral','vusic'];
-  c.bad_tests=O18_BAD.slice();
-  c.required_groups=[
-    {id:'vus',label:t.groupVus,tests:['vusic'],suggest:'vusic'},
-    {id:'hrd',label:t.groupHrd,tests:['hrd_score'],suggest:'hrd_score'},
-    {id:'germline',label:t.groupGermline,tests:['germline_referral'],suggest:'germline_referral'}
-  ];
-  c.result_sections=[
-    {label:t.groupTumor,test_any:['tumor_brca_hrr','broad_pan_panel'],result:t.tumorResult},
-    {label:t.groupVus,test_any:['vusic'],result:t.vusResult},
-    {label:t.groupHrd,test_any:['hrd_score'],result:t.hrdResult},
-    {label:t.groupGermline,test_any:['germline_referral'],result:t.germlineResult}
-  ];
-  c.always_findings=[['QC',t.qc]];
-  c.complete_interpretation=t.complete;
-  c.partial_interpretation=t.partial;
-  c.optimal_summary=t.complete;
-  c.mtb_checks=[
-    ['vus',t.groupVus+' ohne Overcalling'],
-    ['hrd',t.groupHrd+' separat bewertet'],
-    ['germline',t.groupGermline+' separat kommuniziert'],
-    ['limits','VUS- und HRD-Aussagegrenzen klar benannt'],
-    ['bad',t.bad]
-  ];
-  try{if(c.deep_dive)deepReplace(c.deep_dive)}catch(_){ }
-  try{if(typeof DEEP_DIVE_CASES_V17!=='undefined'&&DEEP_DIVE_CASES_V17&&DEEP_DIVE_CASES_V17[O18_CASE])deepReplace(DEEP_DIVE_CASES_V17[O18_CASE])}catch(_){ }
+  if(window.MolPathPresentationA6&&window.MolPathPresentationA6.ready)window.MolPathPresentationA6.refresh(O18_CASE);
 }
 
 /* Case-local completion: VUS curation, HRD context and germline communication are the required evidence layers.
@@ -223,7 +210,7 @@ try{window.renderMtb=renderMtb}catch(_){ }
 function styles(){
   if(document.getElementById('o18FlagshipStyles'))return;
   const s=document.createElement('style');s.id='o18FlagshipStyles';s.textContent=`
-  #v20bVersion{font-size:0!important}#v20bVersion::after{content:'v2.4.0z18'!important;font-size:.72rem!important;line-height:1.1}
+  
   .o18-block{border:1px solid var(--line,#d7e2ea);border-radius:18px;background:#fff;padding:14px;margin:14px 0;box-shadow:0 8px 22px rgba(15,35,55,.045)}
   .o18-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:10px}.o18-head h4{margin:0;color:var(--primary,#0f4c75)}
   .o18-pill{display:inline-flex;align-items:center;border-radius:999px;padding:4px 8px;background:#eef6fb;color:#0f4c75;border:1px solid #cfe0ec;font-size:.69rem;font-weight:900;letter-spacing:.04em}
@@ -232,13 +219,7 @@ function styles(){
   @media(max-width:1000px){.o18-grid{grid-template-columns:1fr}.o18-grid .wide{grid-column:auto}.o18-asset.doc img{max-height:none}}
   `;document.head.appendChild(s);
 }
-function stamp(){
-  try{
-    window.MOLPATH_APP_VERSION=O18_VERSION;document.title='MolPath Simulator '+O18_VERSION;
-    const els=[document.getElementById('v20bVersion'),document.getElementById('versionBadge'),...document.querySelectorAll('.v20b-topstatus .v20b-pill.primary')].filter(Boolean);
-    els.forEach(el=>{el.setAttribute('data-i18n-skip','1');if(el.id!=='v20bVersion')el.textContent=O18_VERSION});
-  }catch(_){ }
-}
+function stamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }
 const PREV_RENDER=render;
 render=function(){applyCaseLogic();const out=PREV_RENDER.apply(this,arguments);stamp();return out};
 try{window.render=render}catch(_){ }

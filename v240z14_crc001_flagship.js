@@ -140,39 +140,20 @@ function assayEvidence(){
 }
 function integrationBox(){const full=allCoreDone();return `<div class="crc1-integration ${full?'full':'partial'}"><h4>${esc1(T().integration)}</h4><p>${esc1(full?T().fullOutcome:T().partialOutcome)}</p><div class="crc1-key"><b>${esc1(T().key)}:</b> ${esc1(T().keyText)}</div></div>`}
 
-function applyCaseLogic(){
-  const c=caseObj(); if(!c)return;
-  /* Diagnostic equivalence: a suitable CRC NGS panel covers both Extended RAS and BRAF. */
-  c.required_groups=[
-    {id:'ras',label:'Extended RAS',tests:['ras_panel_crc','colon_ngs_panel','broad_pan_panel'],suggest:'ras_panel_crc'},
-    {id:'braf',label:'BRAF p.V600E',tests:['braf_v600e_crc','colon_ngs_panel','broad_pan_panel'],suggest:'braf_v600e_crc'},
-    {id:'mmr',label:'MMR-IHC',tests:['mmr_ihc'],suggest:'mmr_ihc'},
-    {id:'msi',label:'MSI-Testung',tests:['msi_pcr_ngs'],suggest:'msi_pcr_ngs'},
-    {id:'mlh1',label:'MLH1-Promotor-Methylierung',tests:['mlh1_methylation','methylation_mlh1'],suggest:'mlh1_methylation'}
-  ];
-  c.story=[
-    {id:'intake',title:'Initialer Auftrag',items:[['Einsender','Viszeralonkologie / Tumorboard'],['Klinische Information','58-jährige Patientin mit Adenokarzinom im Sigma und multiplen Lebermetastasen.'],['Fragestellung','Therapieplanung vor Systemtherapie: RAS/BRAF, MMR/MSI und hereditärer Kontext.'],['Was ist noch unklar?','Welche Marker gemeinsam eine vollständige Therapieentscheidung erlauben.']]},
-    {id:'history',title:'Anamnese und klinischer Kontext',items:[['Tumorlokalisation','linksseitiger Kolontumor / Sigma.'],['Stadium / Situation','Metastasiert mit multiplen Lebermetastasen; ECOG 1.'],['Familienanamnese','Mutter mit Endometriumkarzinom im höheren Lebensalter; keine gesicherte Lynch-Diagnose bekannt.'],['MTB-Zeitdruck','Therapiefestlegung innerhalb der nächsten Woche gewünscht.']]},
-    {id:'histo',title:'Histologie',items:[['HE','Invasives kolorektales Adenokarzinom, mäßig differenziert.'],['Arbeitsdiagnose','Metastasiertes kolorektales Adenokarzinom, linksseitig.'],['Noch offen','RAS/BRAF-Status, MMR/MSI und ggf. MLH1-Reflexdiagnostik.']]},
-    {id:'material',title:'Materialprüfung',items:[['Morphologie','Primärtumor Sigma, HE repräsentativ.'],['Molekularmaterial','FFPE-Gewebe einer Lebermetastase.'],['Tumoranteil','ca. 45–50 %, gut geeignet für DNA-basierte Analysen.'],['Materialfalle','KRAS Exon 2 allein ist zu eng; RAS/BRAF und MMR/MSI müssen vollständig abgedeckt werden.']]}
-  ];
-  c.result_truth={ras:'KRAS/NRAS Wildtyp',braf:'BRAF p.V600E nachweisbar',mmr:'Verlust MLH1/PMS2; MSH2/MSH6 erhalten',msi:'MSI-high (7/9 Loci instabil)',mlh1:'MLH1-Promotor-Methylierung positiv',qc:'Material und durchgeführte Assays technisch auswertbar; interne Kontrollen gültig.'};
+
+/* A6.3: localized display only; diagnostic structure is supplied by A4b/A5. */
+window.MolPathPresentationA6.register(CRC1_CASE,function(c,d,l){
+  if(l!=='de'&&!COPY[l])return;
+
   c.complete_interpretation=T().fullOutcome;c.partial_interpretation=T().partialOutcome;c.optimal_summary=T().fullOutcome;
-  c.mtb_checks=[
-    ['ras','Extended RAS (KRAS/NRAS) korrekt als Wildtyp einordnen'],
-    ['braf','BRAF p.V600E als eigenständigen therapeutischen Kontext berücksichtigen'],
-    ['mmr','MLH1/PMS2-Verlust mit erhaltenem MSH2/MSH6 korrekt nennen'],
-    ['msi','MSI-H/dMMR als immuntherapeutisch relevanten Kontext benennen'],
-    ['mlh1','MLH1-Promotor-Methylierung für sporadisch-versus-Lynch einordnen'],
-    ['integrate','RAS-WT nicht isoliert als automatische anti-EGFR-Therapieentscheidung darstellen'],
-    ['bad','Falschaussage: RAS-WT allein entscheidet die Systemtherapie']
-  ];
-  const d=deepObj();if(d){
-    d.title='mCRC: RAS/BRAF/MMR/MSI vor Systemtherapie';
+  if(d){
     d.opening_scene=T().deepOpening;d.case_briefing=T().deepBrief;
-    d.context_cards=[{title:T().context,content:T().context1},{title:T().material,content:T().materialText},{title:'MTB',content:T().context2}];
-    d.pre_results=[{title:T().histo,content:T().histoNote},{title:T().ct,content:T().ctNote}];
+    window.MolPathPresentationA6.mergeStrings(d.context_cards,d.context_cards,[{title:T().context,content:T().context1},{title:T().material,content:T().materialText},{title:'MTB',content:T().context2}]);
+    window.MolPathPresentationA6.mergeStrings(d.pre_results,d.pre_results,[{title:T().histo,content:T().histoNote},{title:T().ct,content:T().ctNote}]);
   }
+});
+function applyCaseLogic(){
+  if(window.MolPathPresentationA6&&window.MolPathPresentationA6.ready)window.MolPathPresentationA6.refresh(CRC1_CASE);
 }
 
 /* Pre-test reasoning: do not disclose the actual molecular result before assays are ordered. */
@@ -246,7 +227,7 @@ renderMtb=function(){const html=PREV_MTB.apply(this,arguments);if(!active()||!re
 function styles(){
   if(document.getElementById('crc1FlagshipStyles'))return;
   const st=document.createElement('style');st.id='crc1FlagshipStyles';st.textContent=`
-  #v20bVersion{font-size:0!important}#v20bVersion::after{content:'v2.4.0z14a'!important;font-size:.72rem!important;line-height:1.1}
+  
   .crc1-opening{border:1px solid #9bc8d7;border-radius:18px;background:linear-gradient(135deg,#eef9ff,#fff);padding:15px 17px;margin:10px 0 14px;box-shadow:0 8px 22px rgba(15,76,117,.07)}
   .crc1-block{border:1px solid var(--line);border-radius:18px;background:#fff;padding:14px;margin:14px 0;box-shadow:0 8px 22px rgba(15,35,55,.045)}
   .crc1-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:10px}.crc1-head h4{margin:0;color:var(--primary)}
@@ -265,7 +246,7 @@ function styles(){
 
 const PREV_RENDER=render;
 render=function(){applyCaseLogic();const out=PREV_RENDER.apply(this,arguments);stamp();return out};try{window.render=render}catch(_){}
-function stamp(){try{window.MOLPATH_APP_VERSION=CRC1_VERSION;document.title='MolPath Simulator '+CRC1_VERSION;const els=[document.getElementById('v20bVersion'),document.getElementById('versionBadge'),...document.querySelectorAll('.v20b-topstatus .v20b-pill.primary')].filter(Boolean);els.forEach(el=>{el.setAttribute('data-i18n-skip','1');el.textContent=CRC1_VERSION})}catch(_){}}
+function stamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }
 const PREV_I18N_AFTER=window.MolPathI18nAfterApply;
 window.MolPathI18nAfterApply=function(l){try{if(typeof PREV_I18N_AFTER==='function')PREV_I18N_AFTER(l)}catch(_){}applyCaseLogic();stamp()};
 function boot(){styles();applyCaseLogic();stamp();try{if(typeof render==='function')render()}catch(err){console.error(CRC1_VERSION+' CRC001 flagship boot failed',err)}setTimeout(stamp,100)}

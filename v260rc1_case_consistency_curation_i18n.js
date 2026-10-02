@@ -72,7 +72,6 @@ function mergeI18n(){
  try{
   const core=window.MolPathI18n;if(!core||!core.dict)return false;
   Object.entries(TX).forEach(([lang,map])=>{const target=core.dict[lang]=core.dict[lang]||{};Object.entries(map).forEach(([src,dst])=>{target[src]=dst})});
-  try{if(typeof core.applyNow==='function')core.applyNow();else if(typeof core.apply==='function')core.apply();}catch(_){}
   return true;
  }catch(_){return false}
 }
@@ -86,6 +85,8 @@ function patchRule(id,{recommended=[],reflex=[],low=[],mis=[]}){
 }
 
 function patchCases(){
+  if(window.MolPathCanonicalIntegrationA6)return; // A6.3: canonical A4b already includes the verified 12-case curation.
+
  let c,d;
  /* 1 CHOL */
  c=caze(IDS.CHOL);d=deep(IDS.CHOL);if(c){

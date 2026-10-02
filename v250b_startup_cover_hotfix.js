@@ -15,26 +15,12 @@
       if(document.getElementById('v250b-final-version-style'))return;
       const style=document.createElement('style');
       style.id='v250b-final-version-style';
-      style.textContent="#v20bVersion::after{content:'"+VERSION+"'!important}";
+      style.textContent="";
       document.body.appendChild(style);
     }catch(_){ }
   }
 
-  function stampVersion(){
-    try{
-      window.MOLPATH_APP_VERSION=VERSION;
-      document.title='MolPath Simulator '+VERSION;
-      const els=[
-        document.getElementById('v20bVersion'),
-        document.getElementById('versionBadge'),
-        ...document.querySelectorAll('.v20b-topstatus .v20b-pill.primary')
-      ].filter(Boolean);
-      els.forEach(function(el){
-        el.setAttribute('data-i18n-skip','1');
-        el.textContent=VERSION;
-      });
-    }catch(_){ }
-  }
+  function stampVersion(){ /* A6.3: historical version writer retired; provenance constant retained. */ }
 
   function dismissOverlay(){
     try{

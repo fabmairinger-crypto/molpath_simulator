@@ -1,0 +1,600 @@
+[
+  {
+    "file": "v240z14_crc001_flagship.js",
+    "action": "retire version stamp",
+    "function": "stamp"
+  },
+  {
+    "file": "v240z14_crc001_flagship.js",
+    "action": "remove version CSS rules",
+    "matches": 2
+  },
+  {
+    "file": "v240z14_crc001_flagship.js",
+    "action": "split canonical semantics from localized presentation",
+    "case": "CRC1_CASE"
+  },
+  {
+    "file": "v240z19_cns001_flagship.js",
+    "action": "retire version stamp",
+    "function": "stamp"
+  },
+  {
+    "file": "v240z19_cns001_flagship.js",
+    "action": "remove version CSS rules",
+    "matches": 2
+  },
+  {
+    "file": "v240z20_io001_flagship.js",
+    "action": "retire version stamp",
+    "function": "stamp"
+  },
+  {
+    "file": "v240z20_io001_flagship.js",
+    "action": "remove version CSS rules",
+    "matches": 2
+  },
+  {
+    "file": "v240z20_io001_flagship.js",
+    "action": "split canonical semantics from localized presentation",
+    "case": "IO20_CASE"
+  },
+  {
+    "file": "v250b_startup_cover_hotfix.js",
+    "action": "retire version stamp",
+    "function": "stampVersion"
+  },
+  {
+    "file": "v250b_startup_cover_hotfix.js",
+    "action": "remove version CSS rules",
+    "matches": 1
+  },
+  {
+    "file": "v240z16_metngs003_flagship.js",
+    "action": "retire version stamp",
+    "function": "stamp"
+  },
+  {
+    "file": "v240z16_metngs003_flagship.js",
+    "action": "remove version CSS rules",
+    "matches": 2
+  },
+  {
+    "file": "v240z16_metngs003_flagship.js",
+    "action": "split canonical semantics from localized presentation",
+    "case": "M3_CASE"
+  },
+  {
+    "file": "v240z13_crc002_flagship.js",
+    "action": "retire version stamp",
+    "function": "stamp"
+  },
+  {
+    "file": "v240z13_crc002_flagship.js",
+    "action": "remove version CSS rules",
+    "matches": 2
+  },
+  {
+    "file": "v240z13_crc002_flagship.js",
+    "action": "split canonical semantics from localized presentation",
+    "case": "CRC2_CASE"
+  },
+  {
+    "file": "v240z15_nsclc002_flagship.js",
+    "action": "retire version stamp",
+    "function": "stamp"
+  },
+  {
+    "file": "v240z15_nsclc002_flagship.js",
+    "action": "remove version CSS rules",
+    "matches": 2
+  },
+  {
+    "file": "v240z15_nsclc002_flagship.js",
+    "action": "split canonical semantics from localized presentation",
+    "case": "NS2_CASE"
+  },
+  {
+    "file": "v240z17_ovar001_flagship.js",
+    "action": "retire version stamp",
+    "function": "stamp"
+  },
+  {
+    "file": "v240z17_ovar001_flagship.js",
+    "action": "remove version CSS rules",
+    "matches": 2
+  },
+  {
+    "file": "v260rc1_case_consistency_curation_i18n.js",
+    "action": "retire repeated curation data writes; retain all language entries and report logic"
+  },
+  {
+    "file": "v260rc1_case_consistency_curation_i18n.js",
+    "action": "remove recursive applyNow from dictionary registration; retain existing boot apply and AfterApply chain"
+  },
+  {
+    "file": "v250b_responsive_shell.js",
+    "action": "retire version stamp",
+    "function": "stamp"
+  },
+  {
+    "file": "v240z18_ovar002_flagship.js",
+    "action": "retire version stamp",
+    "function": "stamp"
+  },
+  {
+    "file": "v240z18_ovar002_flagship.js",
+    "action": "remove version CSS rules",
+    "matches": 2
+  },
+  {
+    "file": "v240z18_ovar002_flagship.js",
+    "action": "split canonical semantics from localized presentation",
+    "case": "O18_CASE"
+  },
+  {
+    "file": "i18n/legacy/legacy_v223_v224_runtime.js",
+    "action": "retire version stamp",
+    "function": "stampVersion"
+  },
+  {
+    "file": "i18n/legacy/legacy_v223_v224_runtime.js",
+    "action": "retire version stamp",
+    "function": "stampVersion"
+  },
+  {
+    "file": "i18n/legacy/legacy_v223_v224_runtime.js",
+    "action": "retire version stamp",
+    "function": "stampVersion"
+  },
+  {
+    "file": "i18n/legacy/legacy_v223_v224_runtime.js",
+    "action": "retire version stamp",
+    "function": "stampVersion"
+  },
+  {
+    "file": "i18n/legacy/legacy_v223_v224_runtime.js",
+    "action": "retire version stamp",
+    "function": "stampVersion"
+  },
+  {
+    "file": "i18n/legacy/legacy_v223_v224_runtime.js",
+    "action": "retire version stamp",
+    "function": "stampVersion"
+  },
+  {
+    "file": "i18n/legacy/legacy_v223_v224_runtime.js",
+    "action": "retire version stamp",
+    "function": "stampVersion"
+  },
+  {
+    "file": "i18n/legacy/legacy_v223_v224_runtime.js",
+    "action": "retire version stamp",
+    "function": "stampVersion"
+  },
+  {
+    "file": "i18n/legacy/legacy_v223_v224_runtime.js",
+    "action": "retire version stamp",
+    "function": "stampVersion"
+  },
+  {
+    "file": "i18n/legacy/legacy_v223_v224_runtime.js",
+    "action": "retire version stamp",
+    "function": "stampVersion"
+  },
+  {
+    "file": "i18n/legacy/legacy_v223_v224_runtime.js",
+    "action": "retire version stamp",
+    "function": "stampVersion"
+  },
+  {
+    "file": "i18n/legacy/legacy_v223_v224_runtime.js",
+    "action": "retire version stamp",
+    "function": "stampVersion"
+  },
+  {
+    "file": "i18n/legacy/legacy_v223_v224_runtime.js",
+    "action": "retire version stamp",
+    "function": "stampVersion"
+  },
+  {
+    "file": "i18n/legacy/legacy_v223_v224_runtime.js",
+    "action": "retire version stamp",
+    "function": "stampVersion"
+  },
+  {
+    "file": "i18n/legacy/legacy_v223_v224_runtime.js",
+    "action": "retire version stamp",
+    "function": "stampVersion"
+  },
+  {
+    "file": "i18n/legacy/legacy_v223_v224_runtime.js",
+    "action": "retire direct version assignment",
+    "source": "document.title='MolPath Simulator v2.2.4a – Translation Quarantine Baseline'"
+  },
+  {
+    "file": "i18n/legacy/legacy_v223_v224_runtime.js",
+    "action": "retire direct version assignment",
+    "source": "vb.textContent=VERSION"
+  },
+  {
+    "file": "i18n/legacy/legacy_v223_v224_runtime.js",
+    "action": "retire direct version assignment",
+    "source": "top.textContent=VERSION"
+  },
+  {
+    "file": "i18n/legacy/legacy_v223_v224_runtime.js",
+    "action": "retire direct version assignment",
+    "source": "document.title='MolPath Simulator '+VERSION"
+  },
+  {
+    "file": "i18n/legacy/legacy_v223_v224_runtime.js",
+    "action": "retire direct version assignment",
+    "source": "vb.textContent=VERSION"
+  },
+  {
+    "file": "i18n/legacy/legacy_v223_v224_runtime.js",
+    "action": "retire direct version assignment",
+    "source": "top.textContent=VERSION"
+  },
+  {
+    "file": "i18n/legacy/legacy_v223_v224_runtime.js",
+    "action": "retire direct version assignment",
+    "source": "document.title='MolPath Simulator '+VERSION"
+  },
+  {
+    "file": "i18n/legacy/legacy_v223_v224_runtime.js",
+    "action": "retire direct version assignment",
+    "source": "n.textContent=VERSION"
+  },
+  {
+    "file": "i18n/legacy/legacy_v223_v224_runtime.js",
+    "action": "redirect existing localization helpers to detached views",
+    "helpers": 60
+  },
+  {
+    "file": "i18n/legacy/legacy_v240z10a_res_t4_hotfix.js",
+    "action": "retire version stamp",
+    "function": "v240z10aStamp"
+  },
+  {
+    "file": "i18n/legacy/legacy_v240z10_res_t4_i18n.js",
+    "action": "retire version stamp",
+    "function": "v240z10Stamp"
+  },
+  {
+    "file": "i18n/legacy/legacy_v240z9_res_t3_i18n.js",
+    "action": "retire version stamp",
+    "function": "v240z9Stamp"
+  },
+  {
+    "file": "i18n/legacy/legacy_v240z_lab_i18n.js",
+    "action": "retire version stamp",
+    "function": "v240zStamp"
+  },
+  {
+    "file": "i18n/legacy/legacy_v240z7_res_t1_i18n.js",
+    "action": "retire version stamp",
+    "function": "v240z7Stamp"
+  },
+  {
+    "file": "i18n/legacy/legacy_v230c_signature_deepdive.js",
+    "action": "separate four Deep-Dive localizations from canonical records"
+  },
+  {
+    "file": "index.html:inline:1",
+    "action": "retire direct version assignment",
+    "source": "document.title='MolPath Simulator v1.5 – Harmonized Case Library'"
+  },
+  {
+    "file": "index.html:inline:1",
+    "action": "retire direct version assignment",
+    "source": "$('versionBadge').textContent='v1.5 Fallharmonisierung + Reasoning-Gates'"
+  },
+  {
+    "file": "index.html:inline:1",
+    "action": "retire direct version assignment",
+    "source": "document.title='MolPath Simulator v1.5.2 – QA Freeze'"
+  },
+  {
+    "file": "index.html:inline:1",
+    "action": "retire direct version assignment",
+    "source": "$('versionBadge').textContent='v1.5.2 QA-Freeze + Fallharmonisierung'"
+  },
+  {
+    "file": "index.html:inline:1",
+    "action": "retire direct version assignment",
+    "source": "document.title='MolPath Simulator v1.6 – Course / Session Logic'"
+  },
+  {
+    "file": "index.html:inline:1",
+    "action": "retire direct version assignment",
+    "source": "$('versionBadge').textContent='v1.6 Kurs-/Session-Logik'"
+  },
+  {
+    "file": "index.html:inline:1",
+    "action": "retire direct version assignment",
+    "source": "$('versionBadge').textContent='v1.8a Reports'"
+  },
+  {
+    "file": "index.html:inline:1",
+    "action": "retire direct version assignment",
+    "source": "document.title='MolPath Simulator v1.8a – Reports'"
+  },
+  {
+    "file": "index.html:inline:1",
+    "action": "retire direct version assignment",
+    "source": "$('versionBadge').textContent='v1.8e QA-Freeze'"
+  },
+  {
+    "file": "index.html:inline:1",
+    "action": "retire direct version assignment",
+    "source": "document.title='MolPath Simulator v1.8e – QA Freeze'"
+  },
+  {
+    "file": "index.html:inline:2",
+    "action": "retire direct version assignment",
+    "source": "ver.textContent=V20B_VERSION"
+  },
+  {
+    "file": "index.html:inline:2",
+    "action": "retire direct version assignment",
+    "source": "vb.textContent=V20B_VERSION"
+  },
+  {
+    "file": "index.html:inline:2",
+    "action": "retire direct version assignment",
+    "source": "document.title='MolPath Simulator v2.2.3 – Clean Translation Rebuild'"
+  },
+  {
+    "file": "index.html:inline:3",
+    "action": "retire direct version assignment",
+    "source": "document.title='MolPath Simulator v2.0b.5 – Safe Layout Patch'"
+  },
+  {
+    "file": "index.html:inline:3",
+    "action": "retire direct version assignment",
+    "source": "badge.textContent=V20B5_VERSION"
+  },
+  {
+    "file": "index.html:inline:3",
+    "action": "retire direct version assignment",
+    "source": "topPrimary.textContent=V20B5_VERSION"
+  },
+  {
+    "file": "index.html:inline:4",
+    "action": "retire direct version assignment",
+    "source": "document.title = 'MolPath Simulator v2.1.1 – Batch1 Content Expansion Fix'"
+  },
+  {
+    "file": "index.html:inline:4",
+    "action": "retire direct version assignment",
+    "source": "vb.textContent=V21_VERSION"
+  },
+  {
+    "file": "index.html:inline:4",
+    "action": "retire direct version assignment",
+    "source": "top.textContent=V21_VERSION"
+  },
+  {
+    "file": "index.html:inline:5",
+    "action": "retire direct version assignment",
+    "source": "document.title='MolPath Simulator v2.1.3 – Complex Phase + CRC Bundle Logic'"
+  },
+  {
+    "file": "index.html:inline:6",
+    "action": "retire direct version assignment",
+    "source": "document.title='MolPath Simulator v2.1.6 – Ovar Phase Score Fix'"
+  },
+  {
+    "file": "index.html:inline:6",
+    "action": "retire direct version assignment",
+    "source": "vb.textContent=V214_VERSION"
+  },
+  {
+    "file": "index.html:inline:7",
+    "action": "retire direct version assignment",
+    "source": "document.title='MolPath Simulator v2.1.6 – Ovar Phase Score Fix'"
+  },
+  {
+    "file": "index.html:inline:7",
+    "action": "retire direct version assignment",
+    "source": "vb.textContent=V216_VERSION"
+  },
+  {
+    "file": "index.html:inline:7",
+    "action": "retire direct version assignment",
+    "source": "top.textContent=V216_VERSION"
+  },
+  {
+    "file": "index.html:inline:11",
+    "action": "retire direct version assignment",
+    "source": "window.MOLPATH_APP_VERSION=APP_VERSION"
+  },
+  {
+    "file": "index.html:inline:11",
+    "action": "retire direct version assignment",
+    "source": "document.title='MolPath Simulator '+APP_VERSION"
+  },
+  {
+    "file": "index.html:inline:11",
+    "action": "retire direct version assignment",
+    "source": "top.textContent=APP_VERSION"
+  },
+  {
+    "file": "index.html:inline:17",
+    "action": "retire version stamp",
+    "function": "lab24StampVersion"
+  },
+  {
+    "file": "index.html:inline:17",
+    "action": "remove version CSS rules",
+    "matches": 2
+  },
+  {
+    "file": "index.html:inline:18",
+    "action": "retire version stamp",
+    "function": "res24hStampVersion"
+  },
+  {
+    "file": "index.html:inline:18",
+    "action": "remove version CSS rules",
+    "matches": 2
+  },
+  {
+    "file": "index.html:inline:19",
+    "action": "retire version stamp",
+    "function": "res24iStampVersion"
+  },
+  {
+    "file": "index.html:inline:19",
+    "action": "remove version CSS rules",
+    "matches": 2
+  },
+  {
+    "file": "index.html:inline:20",
+    "action": "retire version stamp",
+    "function": "stamp"
+  },
+  {
+    "file": "index.html:inline:20",
+    "action": "remove version CSS rules",
+    "matches": 2
+  },
+  {
+    "file": "index.html:inline:21",
+    "action": "retire version stamp",
+    "function": "v240mStamp"
+  },
+  {
+    "file": "index.html:inline:21",
+    "action": "remove version CSS rules",
+    "matches": 2
+  },
+  {
+    "file": "index.html:inline:22",
+    "action": "retire version stamp",
+    "function": "v240nStamp"
+  },
+  {
+    "file": "index.html:inline:22",
+    "action": "remove version CSS rules",
+    "matches": 2
+  },
+  {
+    "file": "index.html:inline:23",
+    "action": "retire version stamp",
+    "function": "v240oStamp"
+  },
+  {
+    "file": "index.html:inline:23",
+    "action": "remove version CSS rules",
+    "matches": 2
+  },
+  {
+    "file": "index.html:inline:24",
+    "action": "retire version stamp",
+    "function": "v240pStamp"
+  },
+  {
+    "file": "index.html:inline:24",
+    "action": "remove version CSS rules",
+    "matches": 2
+  },
+  {
+    "file": "index.html:inline:25",
+    "action": "retire version stamp",
+    "function": "v240qStamp"
+  },
+  {
+    "file": "index.html:inline:25",
+    "action": "remove version CSS rules",
+    "matches": 2
+  },
+  {
+    "file": "index.html:inline:26",
+    "action": "retire version stamp",
+    "function": "stamp"
+  },
+  {
+    "file": "index.html:inline:27",
+    "action": "retire version stamp",
+    "function": "v240sStamp"
+  },
+  {
+    "file": "index.html:inline:27",
+    "action": "remove version CSS rules",
+    "matches": 2
+  },
+  {
+    "file": "index.html:inline:29",
+    "action": "retire version stamp",
+    "function": "v240uStamp"
+  },
+  {
+    "file": "index.html:inline:30",
+    "action": "retire version stamp",
+    "function": "v240vStamp"
+  },
+  {
+    "file": "index.html:inline:31",
+    "action": "retire version stamp",
+    "function": "v240wStamp"
+  },
+  {
+    "file": "index.html:inline:32",
+    "action": "retire version stamp",
+    "function": "v240xStamp"
+  },
+  {
+    "file": "index.html:inline:33",
+    "action": "retire version stamp",
+    "function": "v240yStamp"
+  },
+  {
+    "file": "index.html:inline:34",
+    "action": "retire version stamp",
+    "function": "v240y1Stamp"
+  },
+  {
+    "file": "index.html:inline:36",
+    "action": "retire version stamp",
+    "function": "v240z2Stamp"
+  },
+  {
+    "file": "index.html:inline:37",
+    "action": "retire version stamp",
+    "function": "v240z3Stamp"
+  },
+  {
+    "file": "index.html:inline:38",
+    "action": "retire version stamp",
+    "function": "v240z4Stamp"
+  },
+  {
+    "file": "index.html:inline:39",
+    "action": "retire version stamp",
+    "function": "v240z5Stamp"
+  },
+  {
+    "file": "index.html:inline:40",
+    "action": "retire version stamp",
+    "function": "v240z6Stamp"
+  },
+  {
+    "file": "index.html:inline:46",
+    "action": "retire version stamp",
+    "function": "z11Stamp"
+  },
+  {
+    "file": "index.html:inline:47",
+    "action": "retire version stamp",
+    "function": "z12Stamp"
+  },
+  {
+    "file": "index.html",
+    "action": "retire writers inside existing exported document templates",
+    "titles": 18,
+    "badges": 30
+  }
+]

@@ -21,7 +21,7 @@ function v240z10Merge(){
   try{if(typeof core.applyNow==='function')core.applyNow();else if(typeof core.apply==='function')core.apply();}catch(_){}
   return true;
 }
-function v240z10Stamp(){try{window.MOLPATH_APP_VERSION=V240Z10_VERSION;document.title='MolPath Simulator '+V240Z10_VERSION;const top=document.getElementById('v20bVersion')||document.querySelector('.v20b-topstatus .v20b-pill.primary');if(top){top.setAttribute('data-i18n-skip','1');top.textContent=V240Z10_VERSION}}catch(_){} }
+function v240z10Stamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }
 const V240Z10_PREV_AFTER=window.MolPathI18nAfterApply;window.MolPathI18nAfterApply=function(l){try{if(typeof V240Z10_PREV_AFTER==='function')V240Z10_PREV_AFTER(l)}catch(_){}v240z10Stamp();};
 function v240z10Boot(){v240z10Merge();v240z10Stamp();try{if(typeof renderCasePicker==='function')renderCasePicker();if(typeof renderKpi==='function')renderKpi();if(typeof render==='function')render();if(window.MolPathI18n&&typeof window.MolPathI18n.applyNow==='function')window.MolPathI18n.applyNow();}catch(_){}v240z10Stamp();}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',v240z10Boot,{once:true});else setTimeout(v240z10Boot,0);

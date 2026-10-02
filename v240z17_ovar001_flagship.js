@@ -121,7 +121,7 @@ if(typeof PREV_MTB==='function'){
 function styles(){
   if(document.getElementById('o17FlagshipStyles'))return;
   const s=document.createElement('style');s.id='o17FlagshipStyles';s.textContent=`
-  #v20bVersion{font-size:0!important}#v20bVersion::after{content:'v2.4.0z17'!important;font-size:.72rem!important;line-height:1.1}
+  
   .o17-block{border:1px solid var(--line,#d8e4ef);border-radius:18px;background:#fff;padding:14px;margin:14px 0;box-shadow:0 8px 22px rgba(15,35,55,.045)}
   .o17-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:10px}.o17-head h4{margin:0;color:var(--primary,#0f4c75)}
   .o17-pill{display:inline-flex;align-items:center;border-radius:999px;padding:4px 8px;background:#ecfdf3;color:#067647;border:1px solid #abefc6;font-size:.69rem;font-weight:900;letter-spacing:.04em}
@@ -131,13 +131,7 @@ function styles(){
   @media(max-width:1000px){.o17-grid{grid-template-columns:1fr}.o17-grid .wide{grid-column:auto}.o17-asset.doc img{max-height:none}}
   `;document.head.appendChild(s);
 }
-function stamp(){
-  try{
-    window.MOLPATH_APP_VERSION=O17_VERSION;document.title='MolPath Simulator '+O17_VERSION;
-    const els=[document.getElementById('v20bVersion'),document.getElementById('versionBadge'),...document.querySelectorAll('.v20b-topstatus .v20b-pill.primary')].filter(Boolean);
-    els.forEach(el=>{el.setAttribute('data-i18n-skip','1');if(el.id!=='v20bVersion')el.textContent=O17_VERSION});
-  }catch(_){ }
-}
+function stamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }
 const PREV_AFTER=window.MolPathI18nAfterApply;
 window.MolPathI18nAfterApply=function(l){try{if(typeof PREV_AFTER==='function')PREV_AFTER(l)}catch(_){ }stamp()};
 const PREV_RENDER=window.render;

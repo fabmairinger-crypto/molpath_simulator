@@ -135,31 +135,28 @@ const RESULT_COPY={
  es:{mmr:'IHC MMR',msi:'MSI',tmb:'TMB',pdl1:'PD-L1',immune:'Contexto inmune',qc:'La IHC y la evaluación MSI/TMB basada en ADN son técnicamente evaluables.'},
  fr:{mmr:'IHC MMR',msi:'MSI',tmb:'TMB',pdl1:'PD-L1',immune:'Contexte immunitaire',qc:'L’IHC et l’évaluation MSI/TMB basée sur l’ADN sont techniquement interprétables.'}
 };
-function applyCasePresentation(){
-  const c=caseObj(); if(!c)return;
+
+/* A6.3: localized display only; diagnostic structure is supplied by A4b/A5. */
+window.MolPathPresentationA6.register(IO20_CASE,function(c,d,l){
+  if(l!=='de'&&!COPY[l])return;
+
   const t=T(),r=RESULT_COPY[lang()]||RESULT_COPY.de;
-  c.story=caseStory(t);
-  c.result_sections=[
-    {label:r.mmr,test_any:['mmr_ihc'],result:t.results.mmr},
-    {label:r.msi,test_any:['msi_pcr_ngs','broad_pan_panel'],result:t.results.msi},
-    {label:r.tmb,test_any:['tmb_ngs','broad_pan_panel'],result:t.results.tmb},
-    {label:r.pdl1,test_any:['pdl1'],result:t.results.pdl1},
-    {label:r.immune,test_any:['immune_context_ihc'],result:t.results.immune}
-  ];
-  c.always_findings=[['QC',r.qc]];
-  try{
-    const d=(typeof DEEP_DIVE_MAP_V17!=='undefined')?DEEP_DIVE_MAP_V17[IO20_CASE]:null;
-    if(d){
-      d.case_briefing=t.briefing;
-      d.context_cards=t.cards;
-      d.pre_results=t.pre;
-      d.material_or_resource_constraints=t.constraints;
-      d.decision_task=t.decision;
-      d.twist=t.twist;
-      const q=Array.isArray(d.reasoning_gate_upgrade)?d.reasoning_gate_upgrade.find(x=>x&&x.id==='msh2_msh6_linch'):null;
-      if(q)q.prompt=t.gatePrompt;
-    }
-  }catch(_){ }
+  window.MolPathPresentationA6.mergeStrings(c.story,c.story,caseStory(t));
+  const resultText={mmr_ihc:[r.mmr,t.results.mmr],msi_pcr_ngs:[r.msi,t.results.msi],tmb_ngs:[r.tmb,t.results.tmb],pdl1:[r.pdl1,t.results.pdl1],immune_context_ihc:[r.immune,t.results.immune]};
+  (c.result_sections||[]).forEach(section=>{const pair=resultText[(section.test_any||[])[0]];if(pair){section.label=pair[0];section.result=pair[1]}});
+  (c.always_findings||[]).forEach(row=>{if(row[0]==='QC')row[1]=r.qc});
+  if(d){
+    d.case_briefing=t.briefing;
+    window.MolPathPresentationA6.mergeStrings(d.context_cards,d.context_cards,t.cards);
+    window.MolPathPresentationA6.mergeStrings(d.pre_results,d.pre_results,t.pre);
+    d.material_or_resource_constraints=t.constraints;d.decision_task=t.decision;
+    window.MolPathPresentationA6.mergeStrings(d.twist,d.twist,t.twist);
+    const q=Array.isArray(d.reasoning_gate_upgrade)?d.reasoning_gate_upgrade.find(x=>x&&x.id==='msh2_msh6_linch'):null;
+    if(q)q.prompt=t.gatePrompt;
+  }
+});
+function applyCasePresentation(){
+  if(window.MolPathPresentationA6&&window.MolPathPresentationA6.ready)window.MolPathPresentationA6.refresh(IO20_CASE);
 }
 function asset(title,src,cls=''){
   return `<figure class="io20-asset ${cls}"><figcaption>${esc2(title)}</figcaption><a href="${src}" target="_blank" rel="noopener"><img src="${src}" alt="${esc2(title)}"></a><div class="io20-prov">${esc2(T().synthetic)}</div></figure>`;
@@ -225,7 +222,7 @@ try{window.renderMtb=renderMtb}catch(_){ }
 function styles(){
   if(document.getElementById('io20FlagshipStyles'))return;
   const s=document.createElement('style');s.id='io20FlagshipStyles';s.textContent=`
-  #v20bVersion{font-size:0!important}#v20bVersion::after{content:'v2.4.0z20'!important;font-size:.72rem!important;line-height:1.1}
+  
   .io20-block{border:1px solid var(--line,#d7e2ea);border-radius:18px;background:#fff;padding:14px;margin:14px 0;box-shadow:0 8px 22px rgba(15,35,55,.045)}
   .io20-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:10px}.io20-head h4{margin:0;color:var(--primary,#0f4c75)}
   .io20-pill{display:inline-flex;align-items:center;border-radius:999px;padding:4px 8px;background:#eef6fb;color:#0f4c75;border:1px solid #cfe0ec;font-size:.69rem;font-weight:900;letter-spacing:.04em}
@@ -234,13 +231,7 @@ function styles(){
   @media(max-width:1000px){.io20-grid{grid-template-columns:1fr}.io20-grid .wide{grid-column:auto}.io20-asset.doc img{max-height:none}}
   `;document.head.appendChild(s);
 }
-function stamp(){
-  try{
-    window.MOLPATH_APP_VERSION=IO20_VERSION;document.title='MolPath Simulator '+IO20_VERSION;
-    const els=[document.getElementById('v20bVersion'),document.getElementById('versionBadge'),...document.querySelectorAll('.v20b-topstatus .v20b-pill.primary')].filter(Boolean);
-    els.forEach(el=>{el.setAttribute('data-i18n-skip','1');if(el.id!=='v20bVersion')el.textContent=IO20_VERSION});
-  }catch(_){ }
-}
+function stamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }
 const PREV_RENDER=render;
 render=function(){applyCasePresentation();const out=PREV_RENDER.apply(this,arguments);applyCasePresentation();stamp();return out};
 try{window.render=render}catch(_){ }

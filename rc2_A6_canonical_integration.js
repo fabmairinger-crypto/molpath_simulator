@@ -1,10 +1,10 @@
-/* MolPath rc2-clean A6.2 canonical data integration — SAFE INTEGRATION CANDIDATE
+/* MolPath rc2-clean A6.3 canonical data integration — SAFE INTEGRATION CANDIDATE
    Loaded after all historical content/asset layers + documented 12-case curation,
    immediately before the final Signature Taxonomy Freeze.
    Purpose: make the A4b/A5 canonical data the final data authority WITHOUT removing historical runtime hooks yet.
 */
 (function(root){'use strict';
-const VERSION='rc2-A6.2-canonical-integration-01';
+const VERSION='rc2-A6.3-canonical-integration-01';
 function clone(x){if(typeof structuredClone==='function')return structuredClone(x);return JSON.parse(JSON.stringify(x));}
 function replaceObject(target,source){
   if(!target||typeof target!=='object'||Array.isArray(target))throw new Error('replaceObject target invalid');
@@ -90,7 +90,9 @@ const checks={
   coursesCanonical:eq(COURSES_V16,built.COURSES_V16)
 };
 const pass=Object.values(checks).every(Boolean);
-root.MolPathCanonicalIntegrationA6=Object.freeze({version:VERSION,pass,checks:Object.freeze(checks),counts:Object.freeze({cases:cases.length,deep:DEEP_DIVE_CASES_V17.length,courses:COURSES_V16.length,courseCases:courseIds.size,signatureBeforeFinalFreeze:signatureCount}),policy:'canonical data synced once; z12 legacy table removed/writer disabled; course + Methods Focus registries canonical; hybrid renderer/i18n layers retained pending source-split'});
+root.MolPathCanonicalIntegrationA6=Object.freeze({version:VERSION,pass,checks:Object.freeze(checks),counts:Object.freeze({cases:cases.length,deep:DEEP_DIVE_CASES_V17.length,courses:COURSES_V16.length,courseCases:courseIds.size,signatureBeforeFinalFreeze:signatureCount}),policy:'canonical data synced once; z12 legacy table removed/writer disabled; course + Methods Focus registries canonical; hybrid renderer/i18n layers read detached presentation records; semantic hybrid writers retired'});
 if(!pass)throw new Error('A6 canonical integration self-check failed: '+JSON.stringify(checks));
+root.MolPathPresentationA6.configure({cases:cases,meta:V15_META_MAP,gate:V15_GATE_MAP,deep:DEEP_DIVE_MAP_V17});
+if(typeof activeCase!=='undefined'&&activeCase)activeCase=root.MolPathPresentationA6.case(activeCase.id)||activeCase;
 try{console.log('[MolPath '+VERSION+'] canonical data integration PASS',root.MolPathCanonicalIntegrationA6)}catch(_){}
 })(typeof window!=='undefined'?window:globalThis);

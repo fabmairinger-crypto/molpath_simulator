@@ -119,7 +119,7 @@ try{window.renderMtb=renderMtb}catch(_){ }
 function styles(){
   if(document.getElementById('c19FlagshipStyles'))return;
   const s=document.createElement('style');s.id='c19FlagshipStyles';s.textContent=`
-  #v20bVersion{font-size:0!important}#v20bVersion::after{content:'v2.4.0z19'!important;font-size:.72rem!important;line-height:1.1}
+  
   .c19-block{border:1px solid var(--line,#d7e2ea);border-radius:18px;background:#fff;padding:14px;margin:14px 0;box-shadow:0 8px 22px rgba(15,35,55,.045)}
   .c19-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:10px}.c19-head h4{margin:0;color:var(--primary,#0f4c75)}
   .c19-pill{display:inline-flex;align-items:center;border-radius:999px;padding:4px 8px;background:#eef6fb;color:#0f4c75;border:1px solid #cfe0ec;font-size:.69rem;font-weight:900;letter-spacing:.04em}
@@ -128,13 +128,7 @@ function styles(){
   @media(max-width:1000px){.c19-grid{grid-template-columns:1fr}.c19-grid .wide{grid-column:auto}.c19-asset.doc img{max-height:none}}
   `;document.head.appendChild(s);
 }
-function stamp(){
-  try{
-    window.MOLPATH_APP_VERSION=C19_VERSION;document.title='MolPath Simulator '+C19_VERSION;
-    const els=[document.getElementById('v20bVersion'),document.getElementById('versionBadge'),...document.querySelectorAll('.v20b-topstatus .v20b-pill.primary')].filter(Boolean);
-    els.forEach(el=>{el.setAttribute('data-i18n-skip','1');if(el.id!=='v20bVersion')el.textContent=C19_VERSION});
-  }catch(_){ }
-}
+function stamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }
 const PREV_RENDER=render;
 render=function(){const out=PREV_RENDER.apply(this,arguments);stamp();return out};
 try{window.render=render}catch(_){ }

@@ -26,11 +26,7 @@ function v240z10aMerge(){
   try{if(typeof core.applyNow==='function')core.applyNow();else if(typeof core.apply==='function')core.apply();}catch(_){}
   return true;
 }
-function v240z10aStamp(){try{
-  window.MOLPATH_APP_VERSION=V240Z10A_VERSION;document.title='MolPath Simulator '+V240Z10A_VERSION;
-  const top=document.getElementById('v20bVersion')||document.querySelector('.v20b-topstatus .v20b-pill.primary');
-  if(top){top.setAttribute('data-i18n-skip','1');top.textContent=V240Z10A_VERSION;}
-}catch(_){}}
+function v240z10aStamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }
 const V240Z10A_PREV_AFTER=window.MolPathI18nAfterApply;
 window.MolPathI18nAfterApply=function(lang){try{if(typeof V240Z10A_PREV_AFTER==='function')V240Z10A_PREV_AFTER(lang);}catch(_){}v240z10aStamp();};
 function v240z10aBoot(){

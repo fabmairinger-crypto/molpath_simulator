@@ -112,38 +112,15 @@ function outcomeText(){
 }
 function integrationBox(){const full=allCoreDone();return `<div class="m3-integration ${full?'full':'partial'}"><h4>${esc2(full?T().full:T().partial)}</h4><p>${esc2(outcomeText())}</p>${hasDirectTherapy()?`<div class="m3-note warn"><b>⚠</b> ${esc2(T().directWarn)}</div>`:''}<div class="m3-key"><b>${esc2(T().key)}:</b> ${esc2(T().keyText)}</div></div>`}
 
+
+/* A6.3: localized display only; diagnostic structure is supplied by A4b/A5. */
+window.MolPathPresentationA6.register(M3_CASE,function(c,d,l){
+  if(l!=='de'&&!COPY[l])return;
+
+  c.complete_interpretation=T().fullOutcome;c.partial_interpretation=T().keyText;c.optimal_summary=T().fullOutcome;
+});
 function applyCaseLogic(){
-  const c=caseObj();if(!c)return;
-  c.required_groups=[
-    {id:'variant',label:'ERBB2 variant assessment',tests:['erbb2_variant_ngs','broad_pan_panel'],suggest:'erbb2_variant_ngs'},
-    {id:'ihc',label:'HER2 IHC',tests:['her2_ihc'],suggest:'her2_ihc'},
-    {id:'fish',label:'HER2/ERBB2 ISH/FISH',tests:['her2_fish'],suggest:'her2_fish'},
-    {id:'curation',label:'VUS / evidence curation',tests:['vus_literature_review'],suggest:'vus_literature_review'}
-  ];
-  c.result_sections=[
-    {label:'ERBB2 NGS',test_any:['erbb2_variant_ngs','broad_pan_panel'],result:'ERBB2 c.2314G>T (p.L772P), VAF 18.4%, technically supported; classification: VUS.'},
-    {label:'HER2 IHC',test_any:['her2_ihc'],result:'HER2 1+; weak incomplete membranous staining; no strong overexpression.'},
-    {label:'HER2/ERBB2 FISH',test_any:['her2_fish'],result:'Not amplified; HER2/CEP17 ratio ~1.0; mean HER2 copy number ~2.1.'},
-    {label:'VUS curation',test_any:['vus_literature_review'],result:'Limited/conflicting evidence; no established predictive sensitivity to HER2-directed therapy.'},
-    {label:'Potential overcall',test_any:['direct_her2_therapy'],result:'Direct HER2-directed treatment recommendation from this VUS alone is not evidence based.'}
-  ];
-  c.always_findings=[['QC','FFPE metastasis block L2; tumour content ~40%; NGS variant call technically plausible and material adequate for orthogonal HER2 testing.']];
-  c.complete_interpretation=T().fullOutcome;
-  c.partial_interpretation=T().keyText;
-  c.optimal_summary=T().fullOutcome;
-  c.mtb_checks=[
-    ['vus','ERBB2 c.2314G>T (p.L772P) explicitly called a VUS despite technically convincing detection'],
-    ['ihc','HER2 IHC 1+ correctly integrated; no strong protein overexpression'],
-    ['fish','HER2/ERBB2 non-amplification correctly integrated'],
-    ['evidence','Curated evidence / predictive significance explicitly assessed'],
-    ['noaction','No standard HER2-directed therapy recommended from the VUS alone'],
-    ['reassess','Re-evaluation or clinical-trial context mentioned when appropriate'],
-    ['bad','Incorrect: ERBB2 oncogene + detected missense variant automatically equals actionable HER2 target']
-  ];
-  try{
-    const h=(c.story||[]).find(x=>x.id==='history');
-    if(h&&Array.isArray(h.items)&&h.items[2])h.items[2][1]=M3_VARIANT+', VAF 18.4%, classified as VUS.';
-  }catch(_){ }
+  if(window.MolPathPresentationA6&&window.MolPathPresentationA6.ready)window.MolPathPresentationA6.refresh(M3_CASE);
 }
 
 /* Keep completion explicit and stable even if generic case logic changes elsewhere. */
@@ -223,7 +200,7 @@ renderMtb=function(){
 function styles(){
   if(document.getElementById('m3FlagshipStyles'))return;
   const st=document.createElement('style');st.id='m3FlagshipStyles';st.textContent=`
-  #v20bVersion{font-size:0!important}#v20bVersion::after{content:'v2.4.0z16'!important;font-size:.72rem!important;line-height:1.1}
+  
   .m3-opening{border:1px solid #9dbdd5;border-radius:18px;background:linear-gradient(135deg,#edf7ff,#fff);padding:15px 17px;margin:10px 0 14px;box-shadow:0 8px 22px rgba(15,76,117,.07)}
   .m3-block{border:1px solid var(--line);border-radius:18px;background:#fff;padding:14px;margin:14px 0;box-shadow:0 8px 22px rgba(15,35,55,.045)}
   .m3-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:10px}.m3-head h4{margin:0;color:var(--primary)}
@@ -241,13 +218,7 @@ const PREV_RENDER=render;
 render=function(){applyCaseLogic();const out=PREV_RENDER.apply(this,arguments);stamp();return out};
 try{window.render=render}catch(_){ }
 
-function stamp(){
-  try{
-    window.MOLPATH_APP_VERSION=M3_VERSION;document.title='MolPath Simulator '+M3_VERSION;
-    const els=[document.getElementById('v20bVersion'),document.getElementById('versionBadge'),...document.querySelectorAll('.v20b-topstatus .v20b-pill.primary')].filter(Boolean);
-    els.forEach(el=>{el.setAttribute('data-i18n-skip','1');if(el.id!=='v20bVersion')el.textContent=M3_VERSION});
-  }catch(_){ }
-}
+function stamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }
 const PREV_I18N_AFTER=window.MolPathI18nAfterApply;
 window.MolPathI18nAfterApply=function(l){try{if(typeof PREV_I18N_AFTER==='function')PREV_I18N_AFTER(l)}catch(_){ }applyCaseLogic();stamp();};
 

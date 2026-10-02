@@ -112,25 +112,15 @@ function assayEvidence(){
 function outcomeText(){if(hasBroadResistance())return T().fullOutcome;if(hasTargetedEgfr())return T().targetedOutcome;if(hasTissue())return T().rebiopsyOutcome;return T().partialOutcome}
 function integrationBox(){const full=allCoreDone();return `<div class="ns2-integration ${full?'full':'partial'}"><h4>${esc2(T().integration)}</h4><p>${esc2(outcomeText())}</p><div class="ns2-key"><b>${esc2(T().key)}:</b> ${esc2(T().keyText)}</div></div>`}
 
+
+/* A6.3: localized display only; diagnostic structure is supplied by A4b/A5. */
+window.MolPathPresentationA6.register(NS2_CASE,function(c,d,l){
+  if(l!=='de'&&!COPY[l])return;
+
+  c.complete_interpretation=T().fullOutcome;c.partial_interpretation=T().partialOutcome;c.optimal_summary=T().fullOutcome;
+});
 function applyCaseLogic(){
-  const c=caseObj();if(!c)return;
-  c.required_groups=[
-    {id:'rebiopsy',label:'Tissue rebiopsy after non-informative plasma result',tests:['rebiopsy_tissue'],suggest:'rebiopsy_tissue'},
-    {id:'resistance',label:'Broad tissue resistance diagnostics including CNV',tests:['resistance_panel'],suggest:'resistance_panel'}
-  ];
-  c.result_sections=[];
-  c.always_findings=[['External plasma NGS','No pathogenic alteration detected; known EGFR exon 19 deletion not detected; estimated ctDNA fraction <0.2% — negative result is potentially non-informative.']];
-  c.complete_interpretation=T().fullOutcome;
-  c.partial_interpretation=T().partialOutcome;
-  c.optimal_summary=T().fullOutcome;
-  c.mtb_checks=[
-    ['liquid','Negative plasma NGS with ctDNA <0.2% explicitly described as limited / non-exclusionary'],
-    ['rebiopsy','Tissue rebiopsy of an accessible progressing lesion recommended'],
-    ['resistance','Broad resistance profiling including copy-number/bypass mechanisms performed'],
-    ['histology','Histologic transformation considered and excluded in the rebiopsy'],
-    ['limits','Method limitations and residual uncertainty clearly communicated'],
-    ['bad','Incorrect: negative low-ctDNA liquid biopsy securely excludes a resistance mechanism']
-  ];
+  if(window.MolPathPresentationA6&&window.MolPathPresentationA6.ready)window.MolPathPresentationA6.refresh(NS2_CASE);
 }
 
 /* Flagship completion: the narrow EGFR-only assay is intentionally not sufficient for the full resistance question. */
@@ -212,7 +202,7 @@ renderMtb=function(){
 function styles(){
   if(document.getElementById('ns2FlagshipStyles'))return;
   const st=document.createElement('style');st.id='ns2FlagshipStyles';st.textContent=`
-  #v20bVersion{font-size:0!important}#v20bVersion::after{content:'v2.4.0z15'!important;font-size:.72rem!important;line-height:1.1}
+  
   .ns2-opening{border:1px solid #8db8d5;border-radius:18px;background:linear-gradient(135deg,#edf7ff,#fff);padding:15px 17px;margin:10px 0 14px;box-shadow:0 8px 22px rgba(15,76,117,.07)}
   .ns2-block{border:1px solid var(--line);border-radius:18px;background:#fff;padding:14px;margin:14px 0;box-shadow:0 8px 22px rgba(15,35,55,.045)}
   .ns2-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:10px}.ns2-head h4{margin:0;color:var(--primary)}
@@ -232,13 +222,7 @@ const PREV_RENDER=render;
 render=function(){applyCaseLogic();return PREV_RENDER.apply(this,arguments)};
 try{window.render=render}catch(_){ }
 
-function stamp(){
-  try{
-    window.MOLPATH_APP_VERSION=NS2_VERSION;document.title='MolPath Simulator '+NS2_VERSION;
-    const els=[document.getElementById('v20bVersion'),document.getElementById('versionBadge'),...document.querySelectorAll('.v20b-topstatus .v20b-pill.primary')].filter(Boolean);
-    els.forEach(el=>{el.setAttribute('data-i18n-skip','1');if(el.id!=='v20bVersion')el.textContent=NS2_VERSION});
-  }catch(_){ }
-}
+function stamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }
 const PREV_I18N_AFTER=window.MolPathI18nAfterApply;
 window.MolPathI18nAfterApply=function(l){try{if(typeof PREV_I18N_AFTER==='function')PREV_I18N_AFTER(l)}catch(_){ }applyCaseLogic();stamp();};
 

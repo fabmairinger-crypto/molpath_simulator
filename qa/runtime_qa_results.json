@@ -1,0 +1,3545 @@
+{
+  "environment": "Node VM, actual ordered JS sources, DOM test double; no visual browser assertion",
+  "root": "/workspace/scratch/1f1f0706e0d2/work/candidate",
+  "loaded": 100,
+  "counts": {
+    "cases": 91,
+    "deep": 91,
+    "signature": 30,
+    "methods": 44,
+    "courses": 5,
+    "courseCases": 23
+  },
+  "checks": [
+    {
+      "name": "all source scripts execute",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "canonical data stable across boot callbacks",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "counts 91/91/30/44/5/23",
+      "pass": true,
+      "detail": {
+        "cases": 91,
+        "deep": 91,
+        "signature": 30,
+        "methods": 44,
+        "courses": 5,
+        "courseCases": 23
+      }
+    },
+    {
+      "name": "canonical integration self-check",
+      "pass": true,
+      "detail": {
+        "cases91": true,
+        "deep91": true,
+        "v15Meta91": true,
+        "v15Gate91": true,
+        "v15Cap91": true,
+        "v15Method91": true,
+        "courses5": true,
+        "courseCases23": true,
+        "signature30BeforeFinalFreeze": true,
+        "z12WriterDisabled": true,
+        "z12LegacyTableRemoved": true,
+        "methodFocusCanonical": true,
+        "casePayloadCanonical": true,
+        "deepPayloadCanonical": true,
+        "coursesCanonical": true
+      }
+    },
+    {
+      "name": "stable data after language de",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after language de",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "detached semantic display contracts de",
+      "pass": true,
+      "detail": {
+        "records": 364,
+        "issues": []
+      }
+    },
+    {
+      "name": "visible version badge follows authority de",
+      "pass": true,
+      "detail": [
+        {
+          "id": "v20bVersion",
+          "present": true,
+          "text": "v2.6.0-rc1"
+        },
+        {
+          "id": "versionBadge",
+          "present": false
+        }
+      ]
+    },
+    {
+      "name": "stable data after language en",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after language en",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "detached semantic display contracts en",
+      "pass": true,
+      "detail": {
+        "records": 364,
+        "issues": []
+      }
+    },
+    {
+      "name": "visible version badge follows authority en",
+      "pass": true,
+      "detail": [
+        {
+          "id": "v20bVersion",
+          "present": true,
+          "text": "v2.6.0-rc1"
+        },
+        {
+          "id": "versionBadge",
+          "present": false
+        }
+      ]
+    },
+    {
+      "name": "stable data after language ro",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after language ro",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "detached semantic display contracts ro",
+      "pass": true,
+      "detail": {
+        "records": 364,
+        "issues": []
+      }
+    },
+    {
+      "name": "visible version badge follows authority ro",
+      "pass": true,
+      "detail": [
+        {
+          "id": "v20bVersion",
+          "present": true,
+          "text": "v2.6.0-rc1"
+        },
+        {
+          "id": "versionBadge",
+          "present": false
+        }
+      ]
+    },
+    {
+      "name": "stable data after language el",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after language el",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "detached semantic display contracts el",
+      "pass": true,
+      "detail": {
+        "records": 364,
+        "issues": []
+      }
+    },
+    {
+      "name": "visible version badge follows authority el",
+      "pass": true,
+      "detail": [
+        {
+          "id": "v20bVersion",
+          "present": true,
+          "text": "v2.6.0-rc1"
+        },
+        {
+          "id": "versionBadge",
+          "present": false
+        }
+      ]
+    },
+    {
+      "name": "stable data after language es",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after language es",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "detached semantic display contracts es",
+      "pass": true,
+      "detail": {
+        "records": 364,
+        "issues": []
+      }
+    },
+    {
+      "name": "visible version badge follows authority es",
+      "pass": true,
+      "detail": [
+        {
+          "id": "v20bVersion",
+          "present": true,
+          "text": "v2.6.0-rc1"
+        },
+        {
+          "id": "versionBadge",
+          "present": false
+        }
+      ]
+    },
+    {
+      "name": "stable data after language fr",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after language fr",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "detached semantic display contracts fr",
+      "pass": true,
+      "detail": {
+        "records": 364,
+        "issues": []
+      }
+    },
+    {
+      "name": "visible version badge follows authority fr",
+      "pass": true,
+      "detail": [
+        {
+          "id": "v20bVersion",
+          "present": true,
+          "text": "v2.6.0-rc1"
+        },
+        {
+          "id": "versionBadge",
+          "present": false
+        }
+      ]
+    },
+    {
+      "name": "stable data after language ru",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after language ru",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "detached semantic display contracts ru",
+      "pass": true,
+      "detail": {
+        "records": 364,
+        "issues": []
+      }
+    },
+    {
+      "name": "visible version badge follows authority ru",
+      "pass": true,
+      "detail": [
+        {
+          "id": "v20bVersion",
+          "present": true,
+          "text": "v2.6.0-rc1"
+        },
+        {
+          "id": "versionBadge",
+          "present": false
+        }
+      ]
+    },
+    {
+      "name": "stable data after language tr",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after language tr",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "detached semantic display contracts tr",
+      "pass": true,
+      "detail": {
+        "records": 364,
+        "issues": []
+      }
+    },
+    {
+      "name": "visible version badge follows authority tr",
+      "pass": true,
+      "detail": [
+        {
+          "id": "v20bVersion",
+          "present": true,
+          "text": "v2.6.0-rc1"
+        },
+        {
+          "id": "versionBadge",
+          "present": false
+        }
+      ]
+    },
+    {
+      "name": "stable data after language ar",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after language ar",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "detached semantic display contracts ar",
+      "pass": true,
+      "detail": {
+        "records": 364,
+        "issues": []
+      }
+    },
+    {
+      "name": "visible version badge follows authority ar",
+      "pass": true,
+      "detail": [
+        {
+          "id": "v20bVersion",
+          "present": true,
+          "text": "v2.6.0-rc1"
+        },
+        {
+          "id": "versionBadge",
+          "present": false
+        }
+      ]
+    },
+    {
+      "name": "stable data after language fa",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after language fa",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "detached semantic display contracts fa",
+      "pass": true,
+      "detail": {
+        "records": 364,
+        "issues": []
+      }
+    },
+    {
+      "name": "visible version badge follows authority fa",
+      "pass": true,
+      "detail": [
+        {
+          "id": "v20bVersion",
+          "present": true,
+          "text": "v2.6.0-rc1"
+        },
+        {
+          "id": "versionBadge",
+          "present": false
+        }
+      ]
+    },
+    {
+      "name": "stable data after language uk",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after language uk",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "detached semantic display contracts uk",
+      "pass": true,
+      "detail": {
+        "records": 364,
+        "issues": []
+      }
+    },
+    {
+      "name": "visible version badge follows authority uk",
+      "pass": true,
+      "detail": [
+        {
+          "id": "v20bVersion",
+          "present": true,
+          "text": "v2.6.0-rc1"
+        },
+        {
+          "id": "versionBadge",
+          "present": false
+        }
+      ]
+    },
+    {
+      "name": "stable data after language de",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after language de",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "detached semantic display contracts de",
+      "pass": true,
+      "detail": {
+        "records": 364,
+        "issues": []
+      }
+    },
+    {
+      "name": "visible version badge follows authority de",
+      "pass": true,
+      "detail": [
+        {
+          "id": "v20bVersion",
+          "present": true,
+          "text": "v2.6.0-rc1"
+        },
+        {
+          "id": "versionBadge",
+          "present": false
+        }
+      ]
+    },
+    {
+      "name": "six hybrid report paths and assay equivalence de",
+      "pass": true,
+      "detail": [
+        {
+          "id": "MTB_CRC_002_v1_3",
+          "pass": true,
+          "partialKind": "partial",
+          "fullKind": "complete",
+          "bytes": {
+            "absent": 104,
+            "partial": 2358,
+            "full": 3666,
+            "final": 4886
+          },
+          "images": {
+            "absent": 0,
+            "partial": 1,
+            "full": 4
+          }
+        },
+        {
+          "id": "MTB_CRC_001_v0_6",
+          "pass": true,
+          "partialKind": "partial",
+          "fullKind": "complete",
+          "bytes": {
+            "absent": 104,
+            "partial": 2552,
+            "full": 4055,
+            "final": 5339
+          },
+          "images": {
+            "absent": 0,
+            "partial": 1,
+            "full": 5
+          }
+        },
+        {
+          "id": "MTB_NSCLC_002_v1_3",
+          "pass": true,
+          "partialKind": "partial",
+          "fullKind": "complete",
+          "bytes": {
+            "absent": 104,
+            "partial": 3216,
+            "full": 4466,
+            "final": 5892
+          },
+          "images": {
+            "absent": 0,
+            "partial": 2,
+            "full": 5
+          }
+        },
+        {
+          "id": "MET_NGS_003_v1_0",
+          "pass": true,
+          "partialKind": "partial",
+          "fullKind": "complete",
+          "bytes": {
+            "absent": 104,
+            "partial": 3100,
+            "full": 4667,
+            "final": 6305
+          },
+          "images": {
+            "absent": 0,
+            "partial": 2,
+            "full": 6
+          }
+        },
+        {
+          "id": "MTB_OVAR_002_v1_3",
+          "pass": true,
+          "partialKind": "partial",
+          "fullKind": "complete",
+          "bytes": {
+            "absent": 104,
+            "partial": 4435,
+            "full": 5068,
+            "final": 4951
+          },
+          "images": {
+            "absent": 0,
+            "partial": 1,
+            "full": 3
+          }
+        },
+        {
+          "id": "MTB_IO_001_v1_0",
+          "pass": true,
+          "partialKind": "partial",
+          "fullKind": "complete",
+          "bytes": {
+            "absent": 104,
+            "partial": 4103,
+            "full": 4412,
+            "final": 4300
+          },
+          "images": {
+            "absent": 0,
+            "partial": 1,
+            "full": 3
+          }
+        },
+        {
+          "id": "MTB_CRC_002_v1_3",
+          "alias": "mlh1_methylation",
+          "pass": true
+        },
+        {
+          "id": "MTB_CRC_002_v1_3",
+          "alias": "methylation_mlh1",
+          "pass": true
+        },
+        {
+          "id": "MTB_CRC_001_v0_6",
+          "ngs": "colon_ngs_panel",
+          "pass": true
+        },
+        {
+          "id": "MTB_CRC_001_v0_6",
+          "ngs": "broad_pan_panel",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "canonical data stable after hybrid report QA de",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "six hybrid report paths and assay equivalence en",
+      "pass": true,
+      "detail": [
+        {
+          "id": "MTB_CRC_002_v1_3",
+          "pass": true,
+          "partialKind": "partial",
+          "fullKind": "complete",
+          "bytes": {
+            "absent": 104,
+            "partial": 2447,
+            "full": 3628,
+            "final": 4662
+          },
+          "images": {
+            "absent": 0,
+            "partial": 1,
+            "full": 4
+          }
+        },
+        {
+          "id": "MTB_CRC_001_v0_6",
+          "pass": true,
+          "partialKind": "partial",
+          "fullKind": "complete",
+          "bytes": {
+            "absent": 104,
+            "partial": 2531,
+            "full": 3901,
+            "final": 5128
+          },
+          "images": {
+            "absent": 0,
+            "partial": 1,
+            "full": 5
+          }
+        },
+        {
+          "id": "MTB_NSCLC_002_v1_3",
+          "pass": true,
+          "partialKind": "partial",
+          "fullKind": "complete",
+          "bytes": {
+            "absent": 104,
+            "partial": 3090,
+            "full": 4331,
+            "final": 5691
+          },
+          "images": {
+            "absent": 0,
+            "partial": 2,
+            "full": 5
+          }
+        },
+        {
+          "id": "MET_NGS_003_v1_0",
+          "pass": true,
+          "partialKind": "partial",
+          "fullKind": "complete",
+          "bytes": {
+            "absent": 104,
+            "partial": 3032,
+            "full": 4485,
+            "final": 6075
+          },
+          "images": {
+            "absent": 0,
+            "partial": 2,
+            "full": 6
+          }
+        },
+        {
+          "id": "MTB_OVAR_002_v1_3",
+          "pass": true,
+          "partialKind": "partial",
+          "fullKind": "complete",
+          "bytes": {
+            "absent": 104,
+            "partial": 4539,
+            "full": 5176,
+            "final": 5146
+          },
+          "images": {
+            "absent": 0,
+            "partial": 1,
+            "full": 3
+          }
+        },
+        {
+          "id": "MTB_IO_001_v1_0",
+          "pass": true,
+          "partialKind": "partial",
+          "fullKind": "complete",
+          "bytes": {
+            "absent": 104,
+            "partial": 4063,
+            "full": 4370,
+            "final": 4283
+          },
+          "images": {
+            "absent": 0,
+            "partial": 1,
+            "full": 3
+          }
+        },
+        {
+          "id": "MTB_CRC_002_v1_3",
+          "alias": "mlh1_methylation",
+          "pass": true
+        },
+        {
+          "id": "MTB_CRC_002_v1_3",
+          "alias": "methylation_mlh1",
+          "pass": true
+        },
+        {
+          "id": "MTB_CRC_001_v0_6",
+          "ngs": "colon_ngs_panel",
+          "pass": true
+        },
+        {
+          "id": "MTB_CRC_001_v0_6",
+          "ngs": "broad_pan_panel",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "canonical data stable after hybrid report QA en",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "six hybrid report paths and assay equivalence ro",
+      "pass": true,
+      "detail": [
+        {
+          "id": "MTB_CRC_002_v1_3",
+          "pass": true,
+          "partialKind": "partial",
+          "fullKind": "complete",
+          "bytes": {
+            "absent": 104,
+            "partial": 2486,
+            "full": 3576,
+            "final": 4561
+          },
+          "images": {
+            "absent": 0,
+            "partial": 1,
+            "full": 4
+          }
+        },
+        {
+          "id": "MTB_CRC_001_v0_6",
+          "pass": true,
+          "partialKind": "partial",
+          "fullKind": "complete",
+          "bytes": {
+            "absent": 104,
+            "partial": 2467,
+            "full": 3978,
+            "final": 5204
+          },
+          "images": {
+            "absent": 0,
+            "partial": 1,
+            "full": 5
+          }
+        },
+        {
+          "id": "MTB_NSCLC_002_v1_3",
+          "pass": true,
+          "partialKind": "partial",
+          "fullKind": "complete",
+          "bytes": {
+            "absent": 104,
+            "partial": 3098,
+            "full": 4366,
+            "final": 5686
+          },
+          "images": {
+            "absent": 0,
+            "partial": 2,
+            "full": 5
+          }
+        },
+        {
+          "id": "MET_NGS_003_v1_0",
+          "pass": true,
+          "partialKind": "partial",
+          "fullKind": "complete",
+          "bytes": {
+            "absent": 104,
+            "partial": 2975,
+            "full": 4350,
+            "final": 5836
+          },
+          "images": {
+            "absent": 0,
+            "partial": 2,
+            "full": 6
+          }
+        },
+        {
+          "id": "MTB_OVAR_002_v1_3",
+          "pass": true,
+          "partialKind": "partial",
+          "fullKind": "complete",
+          "bytes": {
+            "absent": 104,
+            "partial": 4575,
+            "full": 5138,
+            "final": 5074
+          },
+          "images": {
+            "absent": 0,
+            "partial": 1,
+            "full": 3
+          }
+        },
+        {
+          "id": "MTB_IO_001_v1_0",
+          "pass": true,
+          "partialKind": "partial",
+          "fullKind": "complete",
+          "bytes": {
+            "absent": 104,
+            "partial": 4157,
+            "full": 4478,
+            "final": 4417
+          },
+          "images": {
+            "absent": 0,
+            "partial": 1,
+            "full": 3
+          }
+        },
+        {
+          "id": "MTB_CRC_002_v1_3",
+          "alias": "mlh1_methylation",
+          "pass": true
+        },
+        {
+          "id": "MTB_CRC_002_v1_3",
+          "alias": "methylation_mlh1",
+          "pass": true
+        },
+        {
+          "id": "MTB_CRC_001_v0_6",
+          "ngs": "colon_ngs_panel",
+          "pass": true
+        },
+        {
+          "id": "MTB_CRC_001_v0_6",
+          "ngs": "broad_pan_panel",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "canonical data stable after hybrid report QA ro",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "six hybrid report paths and assay equivalence uk",
+      "pass": true,
+      "detail": [
+        {
+          "id": "MTB_CRC_002_v1_3",
+          "pass": true,
+          "partialKind": "partial",
+          "fullKind": "complete",
+          "bytes": {
+            "absent": 104,
+            "partial": 2358,
+            "full": 3680,
+            "final": 4902
+          },
+          "images": {
+            "absent": 0,
+            "partial": 1,
+            "full": 4
+          }
+        },
+        {
+          "id": "MTB_CRC_001_v0_6",
+          "pass": true,
+          "partialKind": "partial",
+          "fullKind": "complete",
+          "bytes": {
+            "absent": 104,
+            "partial": 2552,
+            "full": 4055,
+            "final": 5319
+          },
+          "images": {
+            "absent": 0,
+            "partial": 1,
+            "full": 5
+          }
+        },
+        {
+          "id": "MTB_NSCLC_002_v1_3",
+          "pass": true,
+          "partialKind": "partial",
+          "fullKind": "complete",
+          "bytes": {
+            "absent": 104,
+            "partial": 3216,
+            "full": 4466,
+            "final": 5902
+          },
+          "images": {
+            "absent": 0,
+            "partial": 2,
+            "full": 5
+          }
+        },
+        {
+          "id": "MET_NGS_003_v1_0",
+          "pass": true,
+          "partialKind": "partial",
+          "fullKind": "complete",
+          "bytes": {
+            "absent": 104,
+            "partial": 3100,
+            "full": 4667,
+            "final": 6310
+          },
+          "images": {
+            "absent": 0,
+            "partial": 2,
+            "full": 6
+          }
+        },
+        {
+          "id": "MTB_OVAR_002_v1_3",
+          "pass": true,
+          "partialKind": "partial",
+          "fullKind": "complete",
+          "bytes": {
+            "absent": 104,
+            "partial": 4435,
+            "full": 5068,
+            "final": 4986
+          },
+          "images": {
+            "absent": 0,
+            "partial": 1,
+            "full": 3
+          }
+        },
+        {
+          "id": "MTB_IO_001_v1_0",
+          "pass": true,
+          "partialKind": "partial",
+          "fullKind": "complete",
+          "bytes": {
+            "absent": 104,
+            "partial": 4082,
+            "full": 4412,
+            "final": 4290
+          },
+          "images": {
+            "absent": 0,
+            "partial": 1,
+            "full": 3
+          }
+        },
+        {
+          "id": "MTB_CRC_002_v1_3",
+          "alias": "mlh1_methylation",
+          "pass": true
+        },
+        {
+          "id": "MTB_CRC_002_v1_3",
+          "alias": "methylation_mlh1",
+          "pass": true
+        },
+        {
+          "id": "MTB_CRC_001_v0_6",
+          "ngs": "colon_ngs_panel",
+          "pass": true
+        },
+        {
+          "id": "MTB_CRC_001_v0_6",
+          "ngs": "broad_pan_panel",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "canonical data stable after hybrid report QA uk",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable data after render MTB_NSCLC_001_v0_6",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render MTB_NSCLC_001_v0_6",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render MTB_CRC_001_v0_6",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render MTB_CRC_001_v0_6",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render MTB_OVAR_001_v0_7",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render MTB_OVAR_001_v0_7",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render LAB_RUN_002_v0_8",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render LAB_RUN_002_v0_8",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render RES_HYP_001_v0_9",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render RES_HYP_001_v0_9",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render MTB_IO_001_v1_0",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render MTB_IO_001_v1_0",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render MTB_CNS_001_v1_0",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render MTB_CNS_001_v1_0",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render MET_NGS_003_v1_0",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render MET_NGS_003_v1_0",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render LAB_POST_001_v1_0",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render LAB_POST_001_v1_0",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render LAB_DOC_001_v1_0",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render LAB_DOC_001_v1_0",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render RES_OMICS_001_v1_0",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render RES_OMICS_001_v1_0",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render RES_ETH_001_v1_0",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render RES_ETH_001_v1_0",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render MTB_NSCLC_002_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render MTB_NSCLC_002_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render MTB_NSCLC_003_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render MTB_NSCLC_003_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render MTB_NSCLC_004_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render MTB_NSCLC_004_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render MTB_MEL_001_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render MTB_MEL_001_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render MTB_GIST_001_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render MTB_GIST_001_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render MTB_CHOL_001_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render MTB_CHOL_001_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render MTB_CRC_002_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render MTB_CRC_002_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render MTB_CRC_003_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render MTB_CRC_003_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render MTB_CRC_004_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render MTB_CRC_004_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render MTB_CRC_005_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render MTB_CRC_005_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render MTB_OVAR_002_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render MTB_OVAR_002_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render MTB_MAMMA_001_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render MTB_MAMMA_001_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render MTB_PROST_001_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render MTB_PROST_001_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render MTB_TAML_001_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render MTB_TAML_001_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render MTB_IO_002_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render MTB_IO_002_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render MTB_IO_003_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render MTB_IO_003_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render MTB_IO_004_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render MTB_IO_004_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render MTB_IO_005_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render MTB_IO_005_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render MTB_CNS_002_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render MTB_CNS_002_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render MTB_CNS_003_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render MTB_CNS_003_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render MTB_HEM_001_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render MTB_HEM_001_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render MTB_METH_001_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render MTB_METH_001_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render MTB_ANGIO_001_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render MTB_ANGIO_001_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render MTB_RCC_001_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render MTB_RCC_001_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render MTB_GBM_ANGIO_001_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render MTB_GBM_ANGIO_001_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render MTB_TME_001_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render MTB_TME_001_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render MTB_INV_001_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render MTB_INV_001_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render MET_NGS_001_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render MET_NGS_001_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render MET_NGS_002_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render MET_NGS_002_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render MET_NGS_004_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render MET_NGS_004_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render MET_RNA_001_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render MET_RNA_001_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render MET_LB_001_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render MET_LB_001_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render MET_PCR_001_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render MET_PCR_001_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render MET_METH_001_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render MET_METH_001_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render MET_FISH_001_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render MET_FISH_001_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render MET_MULTI_001_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render MET_MULTI_001_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render LAB_PRE_001_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render LAB_PRE_001_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render LAB_PRE_002_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render LAB_PRE_002_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render LAB_PRE_003_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render LAB_PRE_003_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render LAB_PRE_004_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render LAB_PRE_004_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render LAB_PRE_005_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render LAB_PRE_005_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render LAB_RUN_001_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render LAB_RUN_001_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render LAB_RUN_003_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render LAB_RUN_003_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render LAB_RUN_004_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render LAB_RUN_004_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render LAB_RUN_005_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render LAB_RUN_005_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render LAB_RUN_006_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render LAB_RUN_006_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render LAB_POST_002_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render LAB_POST_002_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render LAB_POST_003_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render LAB_POST_003_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render LAB_POST_004_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render LAB_POST_004_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render LAB_POST_005_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render LAB_POST_005_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render LAB_DOC_002_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render LAB_DOC_002_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render LAB_AUDIT_001_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render LAB_AUDIT_001_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render LAB_CAPA_001_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render LAB_CAPA_001_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render LAB_QM_001_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render LAB_QM_001_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render LAB_LLM_001_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render LAB_LLM_001_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render LAB_DIGI_001_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render LAB_DIGI_001_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render LAB_DIGI_002_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render LAB_DIGI_002_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render LAB_DATA_001_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render LAB_DATA_001_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render LAB_DATA_002_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render LAB_DATA_002_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render LAB_LIMS_001_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render LAB_LIMS_001_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render RES_HYP_002_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render RES_HYP_002_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render RES_OMICS_002_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render RES_OMICS_002_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render RES_OMICS_003_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render RES_OMICS_003_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render RES_IMM_001_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render RES_IMM_001_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render RES_MOD_001_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render RES_MOD_001_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render RES_MOD_002_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render RES_MOD_002_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render RES_MOD_003_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render RES_MOD_003_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render RES_VAL_001_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render RES_VAL_001_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render RES_VAL_002_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render RES_VAL_002_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render RES_ETH_002_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render RES_ETH_002_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render RES_ETH_003_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render RES_ETH_003_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render RES_DATA_001_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render RES_DATA_001_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render RES_AI_001_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render RES_AI_001_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render RES_PM_001_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render RES_PM_001_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render RES_PM_002_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render RES_PM_002_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render RES_ROLE_001_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render RES_ROLE_001_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render RES_GRANT_001_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render RES_GRANT_001_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render RES_IMPL_001_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render RES_IMPL_001_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "stable data after render RES_TEAM_001_v1_3",
+      "pass": true,
+      "detail": {}
+    },
+    {
+      "name": "stable version after render RES_TEAM_001_v1_3",
+      "pass": true,
+      "detail": {
+        "title": "MolPath Simulator v2.6.0-rc1",
+        "version": "v2.6.0-rc1"
+      }
+    },
+    {
+      "name": "render entry points execute for all 91 cases",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "runtime has no boot/language/timer exceptions or timeouts",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "Course implies Signature",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "canonical meta parity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "canonical gate parity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "canonical cap parity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "canonical method parity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "final case payload parity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "final Deep-Dive payload parity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact documented 12-case curation",
+      "pass": true,
+      "detail": [
+        "MET_METH_001_v1_3",
+        "MTB_ANGIO_001_v1_3",
+        "MTB_CHOL_001_v1_3",
+        "MTB_CRC_003_v1_3",
+        "MTB_CRC_004_v1_3",
+        "MTB_GBM_ANGIO_001_v1_3",
+        "MTB_INV_001_v1_3",
+        "MTB_IO_003_v1_3",
+        "MTB_IO_004_v1_3",
+        "MTB_IO_005_v1_3",
+        "MTB_OVAR_002_v1_3",
+        "MTB_PROST_001_v1_3"
+      ]
+    },
+    {
+      "name": "all 12 method rules remain curated",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "four verified metadata corrections",
+      "pass": true,
+      "detail": [
+        [
+          "LAB_PRE_001_v1_3",
+          "intermediate",
+          "10–15",
+          "10–15"
+        ],
+        [
+          "RES_VAL_001_v1_3",
+          "advanced",
+          "15–18",
+          "15–18"
+        ],
+        [
+          "RES_ETH_002_v1_3",
+          "advanced",
+          "15–18",
+          "15–18"
+        ],
+        [
+          "RES_ROLE_001_v1_3",
+          "advanced",
+          "15–18",
+          "15–18"
+        ]
+      ]
+    }
+  ],
+  "total": 254,
+  "passed": 254,
+  "failed": [],
+  "preBootHash": "a767970c2b67c0ee4066ff8794fe36f71255c497aeb7f9d8fc9e660d901f83d0",
+  "afterBootHash": "a767970c2b67c0ee4066ff8794fe36f71255c497aeb7f9d8fc9e660d901f83d0",
+  "finalHash": "a767970c2b67c0ee4066ff8794fe36f71255c497aeb7f9d8fc9e660d901f83d0",
+  "bootDiff": {},
+  "phases": [
+    {
+      "kind": "language",
+      "lang": "de",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "language",
+      "lang": "en",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "language",
+      "lang": "ro",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "language",
+      "lang": "el",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "language",
+      "lang": "es",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "language",
+      "lang": "fr",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "language",
+      "lang": "ru",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "language",
+      "lang": "tr",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "language",
+      "lang": "ar",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "language",
+      "lang": "fa",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "language",
+      "lang": "uk",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "language",
+      "lang": "de",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "MTB_NSCLC_001_v0_6",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "MTB_CRC_001_v0_6",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "MTB_OVAR_001_v0_7",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "LAB_RUN_002_v0_8",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "RES_HYP_001_v0_9",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "MTB_IO_001_v1_0",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "MTB_CNS_001_v1_0",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "MET_NGS_003_v1_0",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "LAB_POST_001_v1_0",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "LAB_DOC_001_v1_0",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "RES_OMICS_001_v1_0",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "RES_ETH_001_v1_0",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "MTB_NSCLC_002_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "MTB_NSCLC_003_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "MTB_NSCLC_004_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "MTB_MEL_001_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "MTB_GIST_001_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "MTB_CHOL_001_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "MTB_CRC_002_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "MTB_CRC_003_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "MTB_CRC_004_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "MTB_CRC_005_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "MTB_OVAR_002_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "MTB_MAMMA_001_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "MTB_PROST_001_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "MTB_TAML_001_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "MTB_IO_002_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "MTB_IO_003_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "MTB_IO_004_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "MTB_IO_005_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "MTB_CNS_002_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "MTB_CNS_003_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "MTB_HEM_001_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "MTB_METH_001_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "MTB_ANGIO_001_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "MTB_RCC_001_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "MTB_GBM_ANGIO_001_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "MTB_TME_001_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "MTB_INV_001_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "MET_NGS_001_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "MET_NGS_002_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "MET_NGS_004_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "MET_RNA_001_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "MET_LB_001_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "MET_PCR_001_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "MET_METH_001_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "MET_FISH_001_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "MET_MULTI_001_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "LAB_PRE_001_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "LAB_PRE_002_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "LAB_PRE_003_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "LAB_PRE_004_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "LAB_PRE_005_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "LAB_RUN_001_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "LAB_RUN_003_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "LAB_RUN_004_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "LAB_RUN_005_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "LAB_RUN_006_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "LAB_POST_002_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "LAB_POST_003_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "LAB_POST_004_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "LAB_POST_005_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "LAB_DOC_002_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "LAB_AUDIT_001_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "LAB_CAPA_001_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "LAB_QM_001_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "LAB_LLM_001_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "LAB_DIGI_001_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "LAB_DIGI_002_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "LAB_DATA_001_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "LAB_DATA_002_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "LAB_LIMS_001_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "RES_HYP_002_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "RES_OMICS_002_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "RES_OMICS_003_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "RES_IMM_001_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "RES_MOD_001_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "RES_MOD_002_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "RES_MOD_003_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "RES_VAL_001_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "RES_VAL_002_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "RES_ETH_002_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "RES_ETH_003_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "RES_DATA_001_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "RES_AI_001_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "RES_PM_001_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "RES_PM_002_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "RES_ROLE_001_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "RES_GRANT_001_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "RES_IMPL_001_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    },
+    {
+      "kind": "case",
+      "id": "RES_TEAM_001_v1_3",
+      "diff": {},
+      "title": "MolPath Simulator v2.6.0-rc1",
+      "version": "v2.6.0-rc1"
+    }
+  ],
+  "reportPhases": [
+    {
+      "lang": "de",
+      "rows": [
+        {
+          "id": "MTB_CRC_002_v1_3",
+          "pass": true,
+          "partialKind": "partial",
+          "fullKind": "complete",
+          "bytes": {
+            "absent": 104,
+            "partial": 2358,
+            "full": 3666,
+            "final": 4886
+          },
+          "images": {
+            "absent": 0,
+            "partial": 1,
+            "full": 4
+          }
+        },
+        {
+          "id": "MTB_CRC_001_v0_6",
+          "pass": true,
+          "partialKind": "partial",
+          "fullKind": "complete",
+          "bytes": {
+            "absent": 104,
+            "partial": 2552,
+            "full": 4055,
+            "final": 5339
+          },
+          "images": {
+            "absent": 0,
+            "partial": 1,
+            "full": 5
+          }
+        },
+        {
+          "id": "MTB_NSCLC_002_v1_3",
+          "pass": true,
+          "partialKind": "partial",
+          "fullKind": "complete",
+          "bytes": {
+            "absent": 104,
+            "partial": 3216,
+            "full": 4466,
+            "final": 5892
+          },
+          "images": {
+            "absent": 0,
+            "partial": 2,
+            "full": 5
+          }
+        },
+        {
+          "id": "MET_NGS_003_v1_0",
+          "pass": true,
+          "partialKind": "partial",
+          "fullKind": "complete",
+          "bytes": {
+            "absent": 104,
+            "partial": 3100,
+            "full": 4667,
+            "final": 6305
+          },
+          "images": {
+            "absent": 0,
+            "partial": 2,
+            "full": 6
+          }
+        },
+        {
+          "id": "MTB_OVAR_002_v1_3",
+          "pass": true,
+          "partialKind": "partial",
+          "fullKind": "complete",
+          "bytes": {
+            "absent": 104,
+            "partial": 4435,
+            "full": 5068,
+            "final": 4951
+          },
+          "images": {
+            "absent": 0,
+            "partial": 1,
+            "full": 3
+          }
+        },
+        {
+          "id": "MTB_IO_001_v1_0",
+          "pass": true,
+          "partialKind": "partial",
+          "fullKind": "complete",
+          "bytes": {
+            "absent": 104,
+            "partial": 4103,
+            "full": 4412,
+            "final": 4300
+          },
+          "images": {
+            "absent": 0,
+            "partial": 1,
+            "full": 3
+          }
+        },
+        {
+          "id": "MTB_CRC_002_v1_3",
+          "alias": "mlh1_methylation",
+          "pass": true
+        },
+        {
+          "id": "MTB_CRC_002_v1_3",
+          "alias": "methylation_mlh1",
+          "pass": true
+        },
+        {
+          "id": "MTB_CRC_001_v0_6",
+          "ngs": "colon_ngs_panel",
+          "pass": true
+        },
+        {
+          "id": "MTB_CRC_001_v0_6",
+          "ngs": "broad_pan_panel",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "lang": "en",
+      "rows": [
+        {
+          "id": "MTB_CRC_002_v1_3",
+          "pass": true,
+          "partialKind": "partial",
+          "fullKind": "complete",
+          "bytes": {
+            "absent": 104,
+            "partial": 2447,
+            "full": 3628,
+            "final": 4662
+          },
+          "images": {
+            "absent": 0,
+            "partial": 1,
+            "full": 4
+          }
+        },
+        {
+          "id": "MTB_CRC_001_v0_6",
+          "pass": true,
+          "partialKind": "partial",
+          "fullKind": "complete",
+          "bytes": {
+            "absent": 104,
+            "partial": 2531,
+            "full": 3901,
+            "final": 5128
+          },
+          "images": {
+            "absent": 0,
+            "partial": 1,
+            "full": 5
+          }
+        },
+        {
+          "id": "MTB_NSCLC_002_v1_3",
+          "pass": true,
+          "partialKind": "partial",
+          "fullKind": "complete",
+          "bytes": {
+            "absent": 104,
+            "partial": 3090,
+            "full": 4331,
+            "final": 5691
+          },
+          "images": {
+            "absent": 0,
+            "partial": 2,
+            "full": 5
+          }
+        },
+        {
+          "id": "MET_NGS_003_v1_0",
+          "pass": true,
+          "partialKind": "partial",
+          "fullKind": "complete",
+          "bytes": {
+            "absent": 104,
+            "partial": 3032,
+            "full": 4485,
+            "final": 6075
+          },
+          "images": {
+            "absent": 0,
+            "partial": 2,
+            "full": 6
+          }
+        },
+        {
+          "id": "MTB_OVAR_002_v1_3",
+          "pass": true,
+          "partialKind": "partial",
+          "fullKind": "complete",
+          "bytes": {
+            "absent": 104,
+            "partial": 4539,
+            "full": 5176,
+            "final": 5146
+          },
+          "images": {
+            "absent": 0,
+            "partial": 1,
+            "full": 3
+          }
+        },
+        {
+          "id": "MTB_IO_001_v1_0",
+          "pass": true,
+          "partialKind": "partial",
+          "fullKind": "complete",
+          "bytes": {
+            "absent": 104,
+            "partial": 4063,
+            "full": 4370,
+            "final": 4283
+          },
+          "images": {
+            "absent": 0,
+            "partial": 1,
+            "full": 3
+          }
+        },
+        {
+          "id": "MTB_CRC_002_v1_3",
+          "alias": "mlh1_methylation",
+          "pass": true
+        },
+        {
+          "id": "MTB_CRC_002_v1_3",
+          "alias": "methylation_mlh1",
+          "pass": true
+        },
+        {
+          "id": "MTB_CRC_001_v0_6",
+          "ngs": "colon_ngs_panel",
+          "pass": true
+        },
+        {
+          "id": "MTB_CRC_001_v0_6",
+          "ngs": "broad_pan_panel",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "lang": "ro",
+      "rows": [
+        {
+          "id": "MTB_CRC_002_v1_3",
+          "pass": true,
+          "partialKind": "partial",
+          "fullKind": "complete",
+          "bytes": {
+            "absent": 104,
+            "partial": 2486,
+            "full": 3576,
+            "final": 4561
+          },
+          "images": {
+            "absent": 0,
+            "partial": 1,
+            "full": 4
+          }
+        },
+        {
+          "id": "MTB_CRC_001_v0_6",
+          "pass": true,
+          "partialKind": "partial",
+          "fullKind": "complete",
+          "bytes": {
+            "absent": 104,
+            "partial": 2467,
+            "full": 3978,
+            "final": 5204
+          },
+          "images": {
+            "absent": 0,
+            "partial": 1,
+            "full": 5
+          }
+        },
+        {
+          "id": "MTB_NSCLC_002_v1_3",
+          "pass": true,
+          "partialKind": "partial",
+          "fullKind": "complete",
+          "bytes": {
+            "absent": 104,
+            "partial": 3098,
+            "full": 4366,
+            "final": 5686
+          },
+          "images": {
+            "absent": 0,
+            "partial": 2,
+            "full": 5
+          }
+        },
+        {
+          "id": "MET_NGS_003_v1_0",
+          "pass": true,
+          "partialKind": "partial",
+          "fullKind": "complete",
+          "bytes": {
+            "absent": 104,
+            "partial": 2975,
+            "full": 4350,
+            "final": 5836
+          },
+          "images": {
+            "absent": 0,
+            "partial": 2,
+            "full": 6
+          }
+        },
+        {
+          "id": "MTB_OVAR_002_v1_3",
+          "pass": true,
+          "partialKind": "partial",
+          "fullKind": "complete",
+          "bytes": {
+            "absent": 104,
+            "partial": 4575,
+            "full": 5138,
+            "final": 5074
+          },
+          "images": {
+            "absent": 0,
+            "partial": 1,
+            "full": 3
+          }
+        },
+        {
+          "id": "MTB_IO_001_v1_0",
+          "pass": true,
+          "partialKind": "partial",
+          "fullKind": "complete",
+          "bytes": {
+            "absent": 104,
+            "partial": 4157,
+            "full": 4478,
+            "final": 4417
+          },
+          "images": {
+            "absent": 0,
+            "partial": 1,
+            "full": 3
+          }
+        },
+        {
+          "id": "MTB_CRC_002_v1_3",
+          "alias": "mlh1_methylation",
+          "pass": true
+        },
+        {
+          "id": "MTB_CRC_002_v1_3",
+          "alias": "methylation_mlh1",
+          "pass": true
+        },
+        {
+          "id": "MTB_CRC_001_v0_6",
+          "ngs": "colon_ngs_panel",
+          "pass": true
+        },
+        {
+          "id": "MTB_CRC_001_v0_6",
+          "ngs": "broad_pan_panel",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "lang": "uk",
+      "rows": [
+        {
+          "id": "MTB_CRC_002_v1_3",
+          "pass": true,
+          "partialKind": "partial",
+          "fullKind": "complete",
+          "bytes": {
+            "absent": 104,
+            "partial": 2358,
+            "full": 3680,
+            "final": 4902
+          },
+          "images": {
+            "absent": 0,
+            "partial": 1,
+            "full": 4
+          }
+        },
+        {
+          "id": "MTB_CRC_001_v0_6",
+          "pass": true,
+          "partialKind": "partial",
+          "fullKind": "complete",
+          "bytes": {
+            "absent": 104,
+            "partial": 2552,
+            "full": 4055,
+            "final": 5319
+          },
+          "images": {
+            "absent": 0,
+            "partial": 1,
+            "full": 5
+          }
+        },
+        {
+          "id": "MTB_NSCLC_002_v1_3",
+          "pass": true,
+          "partialKind": "partial",
+          "fullKind": "complete",
+          "bytes": {
+            "absent": 104,
+            "partial": 3216,
+            "full": 4466,
+            "final": 5902
+          },
+          "images": {
+            "absent": 0,
+            "partial": 2,
+            "full": 5
+          }
+        },
+        {
+          "id": "MET_NGS_003_v1_0",
+          "pass": true,
+          "partialKind": "partial",
+          "fullKind": "complete",
+          "bytes": {
+            "absent": 104,
+            "partial": 3100,
+            "full": 4667,
+            "final": 6310
+          },
+          "images": {
+            "absent": 0,
+            "partial": 2,
+            "full": 6
+          }
+        },
+        {
+          "id": "MTB_OVAR_002_v1_3",
+          "pass": true,
+          "partialKind": "partial",
+          "fullKind": "complete",
+          "bytes": {
+            "absent": 104,
+            "partial": 4435,
+            "full": 5068,
+            "final": 4986
+          },
+          "images": {
+            "absent": 0,
+            "partial": 1,
+            "full": 3
+          }
+        },
+        {
+          "id": "MTB_IO_001_v1_0",
+          "pass": true,
+          "partialKind": "partial",
+          "fullKind": "complete",
+          "bytes": {
+            "absent": 104,
+            "partial": 4082,
+            "full": 4412,
+            "final": 4290
+          },
+          "images": {
+            "absent": 0,
+            "partial": 1,
+            "full": 3
+          }
+        },
+        {
+          "id": "MTB_CRC_002_v1_3",
+          "alias": "mlh1_methylation",
+          "pass": true
+        },
+        {
+          "id": "MTB_CRC_002_v1_3",
+          "alias": "methylation_mlh1",
+          "pass": true
+        },
+        {
+          "id": "MTB_CRC_001_v0_6",
+          "ngs": "colon_ngs_panel",
+          "pass": true
+        },
+        {
+          "id": "MTB_CRC_001_v0_6",
+          "ngs": "broad_pan_panel",
+          "pass": true
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "logs": []
+}
