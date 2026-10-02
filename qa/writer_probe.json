@@ -1,0 +1,1187 @@
+{
+  "environment": "QA-only instrumentation of actual A6.7 writer blocks in document/boot order",
+  "root": "/workspace/scratch/1f1f0706e0d2/work/a6_7/candidate",
+  "writerCalls": [
+    {
+      "name": "V21_CASE_PROMOTION",
+      "integrated": false,
+      "changed": [
+        {
+          "id": "MTB_NSCLC_001_v0_6",
+          "fields": [
+            "tags"
+          ]
+        },
+        {
+          "id": "MTB_CRC_001_v0_6",
+          "fields": [
+            "tags"
+          ]
+        },
+        {
+          "id": "MTB_OVAR_001_v0_7",
+          "fields": [
+            "tags",
+            "length_class"
+          ]
+        },
+        {
+          "id": "LAB_RUN_002_v0_8",
+          "fields": [
+            "tags"
+          ]
+        },
+        {
+          "id": "RES_HYP_001_v0_9",
+          "fields": [
+            "tags"
+          ]
+        },
+        {
+          "id": "MTB_IO_001_v1_0",
+          "fields": [
+            "tags"
+          ]
+        },
+        {
+          "id": "MET_NGS_003_v1_0",
+          "fields": [
+            "tags"
+          ]
+        },
+        {
+          "id": "LAB_POST_001_v1_0",
+          "fields": [
+            "tags"
+          ]
+        },
+        {
+          "id": "MTB_NSCLC_002_v1_3",
+          "fields": [
+            "tags"
+          ]
+        },
+        {
+          "id": "MTB_CRC_002_v1_3",
+          "fields": [
+            "tags"
+          ]
+        },
+        {
+          "id": "MTB_OVAR_002_v1_3",
+          "fields": [
+            "tags"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "V240M_BASE_PATCHES",
+      "integrated": false,
+      "changed": [
+        {
+          "id": "MTB_NSCLC_003_v1_3",
+          "fields": [
+            "tags"
+          ]
+        },
+        {
+          "id": "MTB_NSCLC_004_v1_3",
+          "fields": [
+            "tags"
+          ]
+        },
+        {
+          "id": "MTB_MEL_001_v1_3",
+          "fields": [
+            "tags"
+          ]
+        },
+        {
+          "id": "MTB_GIST_001_v1_3",
+          "fields": [
+            "tags"
+          ]
+        },
+        {
+          "id": "MTB_CHOL_001_v1_3",
+          "fields": [
+            "tags"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "V240N_BASE_PATCHES",
+      "integrated": false,
+      "changed": [
+        {
+          "id": "MTB_CRC_003_v1_3",
+          "fields": [
+            "tags"
+          ]
+        },
+        {
+          "id": "MTB_CRC_004_v1_3",
+          "fields": [
+            "tags"
+          ]
+        },
+        {
+          "id": "MTB_CRC_005_v1_3",
+          "fields": [
+            "tags"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "V240O_BASE_PATCHES",
+      "integrated": false,
+      "changed": [
+        {
+          "id": "MTB_MAMMA_001_v1_3",
+          "fields": [
+            "tags"
+          ]
+        },
+        {
+          "id": "MTB_PROST_001_v1_3",
+          "fields": [
+            "tags"
+          ]
+        },
+        {
+          "id": "MTB_TAML_001_v1_3",
+          "fields": [
+            "tags"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "V240P_BASE_PATCHES",
+      "integrated": false,
+      "changed": [
+        {
+          "id": "MTB_IO_002_v1_3",
+          "fields": [
+            "tags"
+          ]
+        },
+        {
+          "id": "MTB_IO_003_v1_3",
+          "fields": [
+            "tags"
+          ]
+        },
+        {
+          "id": "MTB_IO_004_v1_3",
+          "fields": [
+            "tags"
+          ]
+        },
+        {
+          "id": "MTB_IO_005_v1_3",
+          "fields": [
+            "tags"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "V240Q_BASE_PATCHES",
+      "integrated": false,
+      "changed": [
+        {
+          "id": "MTB_CNS_002_v1_3",
+          "fields": [
+            "tags"
+          ]
+        },
+        {
+          "id": "MTB_CNS_003_v1_3",
+          "fields": [
+            "tags",
+            "signature_case"
+          ]
+        },
+        {
+          "id": "MTB_HEM_001_v1_3",
+          "fields": [
+            "tags",
+            "signature_case",
+            "deep_dive_title"
+          ]
+        },
+        {
+          "id": "MTB_METH_001_v1_3",
+          "fields": [
+            "tags"
+          ]
+        },
+        {
+          "id": "MTB_ANGIO_001_v1_3",
+          "fields": [
+            "tags"
+          ]
+        },
+        {
+          "id": "MTB_RCC_001_v1_3",
+          "fields": [
+            "tags"
+          ]
+        },
+        {
+          "id": "MTB_GBM_ANGIO_001_v1_3",
+          "fields": [
+            "tags"
+          ]
+        },
+        {
+          "id": "MTB_TME_001_v1_3",
+          "fields": [
+            "tags"
+          ]
+        },
+        {
+          "id": "MTB_INV_001_v1_3",
+          "fields": [
+            "tags"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "V240S_BASE_PATCHES",
+      "integrated": false,
+      "changed": [
+        {
+          "id": "MET_NGS_003_v1_0",
+          "fields": [
+            "tags",
+            "signature_case"
+          ]
+        },
+        {
+          "id": "MET_NGS_001_v1_3",
+          "fields": [
+            "tags",
+            "signature_case"
+          ]
+        },
+        {
+          "id": "MET_NGS_002_v1_3",
+          "fields": [
+            "tags",
+            "signature_case"
+          ]
+        },
+        {
+          "id": "MET_NGS_004_v1_3",
+          "fields": [
+            "tags",
+            "signature_case"
+          ]
+        },
+        {
+          "id": "MET_RNA_001_v1_3",
+          "fields": [
+            "tags",
+            "signature_case"
+          ]
+        },
+        {
+          "id": "MET_LB_001_v1_3",
+          "fields": [
+            "tags",
+            "signature_case"
+          ]
+        },
+        {
+          "id": "MET_PCR_001_v1_3",
+          "fields": [
+            "tags"
+          ]
+        },
+        {
+          "id": "MET_METH_001_v1_3",
+          "fields": [
+            "tags"
+          ]
+        },
+        {
+          "id": "MET_FISH_001_v1_3",
+          "fields": [
+            "tags",
+            "signature_case"
+          ]
+        },
+        {
+          "id": "MET_MULTI_001_v1_3",
+          "fields": [
+            "tags"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "V240U_BASE_PATCHES",
+      "integrated": false,
+      "changed": [
+        {
+          "id": "LAB_PRE_001_v1_3",
+          "fields": [
+            "difficulty",
+            "tags",
+            "deep_dive_title"
+          ]
+        },
+        {
+          "id": "LAB_PRE_002_v1_3",
+          "fields": [
+            "tags"
+          ]
+        },
+        {
+          "id": "LAB_PRE_003_v1_3",
+          "fields": [
+            "difficulty",
+            "tags"
+          ]
+        },
+        {
+          "id": "LAB_PRE_004_v1_3",
+          "fields": [
+            "difficulty",
+            "tags"
+          ]
+        },
+        {
+          "id": "LAB_PRE_005_v1_3",
+          "fields": [
+            "difficulty",
+            "tags"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "V240V_BASE_PATCHES",
+      "integrated": false,
+      "changed": [
+        {
+          "id": "LAB_RUN_001_v1_3",
+          "fields": [
+            "difficulty",
+            "tags",
+            "deep_dive_title"
+          ]
+        },
+        {
+          "id": "LAB_RUN_003_v1_3",
+          "fields": [
+            "difficulty",
+            "tags"
+          ]
+        },
+        {
+          "id": "LAB_RUN_004_v1_3",
+          "fields": [
+            "difficulty",
+            "tags"
+          ]
+        },
+        {
+          "id": "LAB_RUN_005_v1_3",
+          "fields": [
+            "difficulty",
+            "tags"
+          ]
+        },
+        {
+          "id": "LAB_RUN_006_v1_3",
+          "fields": [
+            "tags"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "V240W_BASE_PATCHES",
+      "integrated": false,
+      "changed": [
+        {
+          "id": "LAB_POST_002_v1_3",
+          "fields": [
+            "difficulty",
+            "tags"
+          ]
+        },
+        {
+          "id": "LAB_POST_003_v1_3",
+          "fields": [
+            "tags"
+          ]
+        },
+        {
+          "id": "LAB_POST_004_v1_3",
+          "fields": [
+            "difficulty",
+            "tags"
+          ]
+        },
+        {
+          "id": "LAB_POST_005_v1_3",
+          "fields": [
+            "difficulty",
+            "tags"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "V240X_BASE_PATCHES",
+      "integrated": false,
+      "changed": [
+        {
+          "id": "LAB_DOC_002_v1_3",
+          "fields": [
+            "difficulty",
+            "tags"
+          ]
+        },
+        {
+          "id": "LAB_AUDIT_001_v1_3",
+          "fields": [
+            "difficulty",
+            "tags"
+          ]
+        },
+        {
+          "id": "LAB_CAPA_001_v1_3",
+          "fields": [
+            "tags"
+          ]
+        },
+        {
+          "id": "LAB_QM_001_v1_3",
+          "fields": [
+            "tags"
+          ]
+        },
+        {
+          "id": "LAB_LLM_001_v1_3",
+          "fields": [
+            "tags"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "V240Y_BASE_PATCHES",
+      "integrated": false,
+      "changed": [
+        {
+          "id": "LAB_DIGI_001_v1_3",
+          "fields": [
+            "difficulty",
+            "tags"
+          ]
+        },
+        {
+          "id": "LAB_DIGI_002_v1_3",
+          "fields": [
+            "tags"
+          ]
+        },
+        {
+          "id": "LAB_DATA_001_v1_3",
+          "fields": [
+            "tags"
+          ]
+        },
+        {
+          "id": "LAB_DATA_002_v1_3",
+          "fields": [
+            "tags"
+          ]
+        },
+        {
+          "id": "LAB_LIMS_001_v1_3",
+          "fields": [
+            "tags"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "V240Z2_BASE_PATCHES",
+      "integrated": false,
+      "changed": [
+        {
+          "id": "RES_HYP_002_v1_3",
+          "fields": [
+            "difficulty",
+            "tags"
+          ]
+        },
+        {
+          "id": "RES_OMICS_002_v1_3",
+          "fields": [
+            "difficulty",
+            "tags"
+          ]
+        },
+        {
+          "id": "RES_OMICS_003_v1_3",
+          "fields": [
+            "difficulty",
+            "tags"
+          ]
+        },
+        {
+          "id": "RES_IMM_001_v1_3",
+          "fields": [
+            "difficulty",
+            "tags"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "V240Z3_BASE_PATCHES",
+      "integrated": false,
+      "changed": [
+        {
+          "id": "RES_MOD_001_v1_3",
+          "fields": [
+            "tags"
+          ]
+        },
+        {
+          "id": "RES_MOD_002_v1_3",
+          "fields": [
+            "tags"
+          ]
+        },
+        {
+          "id": "RES_MOD_003_v1_3",
+          "fields": [
+            "difficulty",
+            "tags"
+          ]
+        },
+        {
+          "id": "RES_VAL_001_v1_3",
+          "fields": [
+            "difficulty",
+            "tags",
+            "deep_dive_title"
+          ]
+        },
+        {
+          "id": "RES_VAL_002_v1_3",
+          "fields": [
+            "difficulty",
+            "tags"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "V240Z4_BASE_PATCHES",
+      "integrated": false,
+      "changed": [
+        {
+          "id": "RES_ETH_002_v1_3",
+          "fields": [
+            "tags",
+            "deep_dive_title"
+          ]
+        },
+        {
+          "id": "RES_ETH_003_v1_3",
+          "fields": [
+            "tags"
+          ]
+        },
+        {
+          "id": "RES_DATA_001_v1_3",
+          "fields": [
+            "tags"
+          ]
+        },
+        {
+          "id": "RES_AI_001_v1_3",
+          "fields": [
+            "difficulty",
+            "tags"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "V240Z5_BASE_PATCHES",
+      "integrated": false,
+      "changed": [
+        {
+          "id": "RES_PM_001_v1_3",
+          "fields": [
+            "tags"
+          ]
+        },
+        {
+          "id": "RES_PM_002_v1_3",
+          "fields": [
+            "tags"
+          ]
+        },
+        {
+          "id": "RES_ROLE_001_v1_3",
+          "fields": [
+            "difficulty",
+            "tags",
+            "deep_dive_title"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "V240Z6_BASE_PATCHES",
+      "integrated": false,
+      "changed": [
+        {
+          "id": "RES_GRANT_001_v1_3",
+          "fields": [
+            "difficulty",
+            "tags"
+          ]
+        },
+        {
+          "id": "RES_IMPL_001_v1_3",
+          "fields": [
+            "difficulty",
+            "tags",
+            "deep_dive_title"
+          ]
+        },
+        {
+          "id": "RES_TEAM_001_v1_3",
+          "fields": [
+            "tags"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "V230B_CASE_PROMOTION",
+      "integrated": true,
+      "changed": [
+        {
+          "id": "MTB_CNS_001_v1_0",
+          "fields": [
+            "tags"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "V230B_CASE_PROMOTION",
+      "integrated": true,
+      "changed": [
+        {
+          "id": "LAB_DOC_001_v1_0",
+          "fields": [
+            "tags"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "V230B_CASE_PROMOTION",
+      "integrated": true,
+      "changed": [
+        {
+          "id": "RES_OMICS_001_v1_0",
+          "fields": [
+            "tags"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "V230B_CASE_PROMOTION",
+      "integrated": true,
+      "changed": [
+        {
+          "id": "RES_ETH_001_v1_0",
+          "fields": [
+            "tags"
+          ]
+        }
+      ]
+    }
+  ],
+  "assignCalls": [
+    {
+      "name": "V240M_BASE_PATCHES",
+      "id": "MTB_NSCLC_003_v1_3",
+      "changedFields": []
+    },
+    {
+      "name": "V240M_BASE_PATCHES",
+      "id": "MTB_NSCLC_004_v1_3",
+      "changedFields": []
+    },
+    {
+      "name": "V240M_BASE_PATCHES",
+      "id": "MTB_MEL_001_v1_3",
+      "changedFields": []
+    },
+    {
+      "name": "V240M_BASE_PATCHES",
+      "id": "MTB_GIST_001_v1_3",
+      "changedFields": []
+    },
+    {
+      "name": "V240M_BASE_PATCHES",
+      "id": "MTB_CHOL_001_v1_3",
+      "changedFields": []
+    },
+    {
+      "name": "V240N_BASE_PATCHES",
+      "id": "MTB_CRC_003_v1_3",
+      "changedFields": []
+    },
+    {
+      "name": "V240N_BASE_PATCHES",
+      "id": "MTB_CRC_004_v1_3",
+      "changedFields": []
+    },
+    {
+      "name": "V240N_BASE_PATCHES",
+      "id": "MTB_CRC_005_v1_3",
+      "changedFields": []
+    },
+    {
+      "name": "V240O_BASE_PATCHES",
+      "id": "MTB_MAMMA_001_v1_3",
+      "changedFields": []
+    },
+    {
+      "name": "V240O_BASE_PATCHES",
+      "id": "MTB_PROST_001_v1_3",
+      "changedFields": []
+    },
+    {
+      "name": "V240O_BASE_PATCHES",
+      "id": "MTB_TAML_001_v1_3",
+      "changedFields": []
+    },
+    {
+      "name": "V240P_BASE_PATCHES",
+      "id": "MTB_IO_002_v1_3",
+      "changedFields": []
+    },
+    {
+      "name": "V240P_BASE_PATCHES",
+      "id": "MTB_IO_003_v1_3",
+      "changedFields": []
+    },
+    {
+      "name": "V240P_BASE_PATCHES",
+      "id": "MTB_IO_004_v1_3",
+      "changedFields": []
+    },
+    {
+      "name": "V240P_BASE_PATCHES",
+      "id": "MTB_IO_005_v1_3",
+      "changedFields": []
+    },
+    {
+      "name": "V240Q_BASE_PATCHES",
+      "id": "MTB_CNS_002_v1_3",
+      "changedFields": []
+    },
+    {
+      "name": "V240Q_BASE_PATCHES",
+      "id": "MTB_CNS_003_v1_3",
+      "changedFields": []
+    },
+    {
+      "name": "V240Q_BASE_PATCHES",
+      "id": "MTB_HEM_001_v1_3",
+      "changedFields": []
+    },
+    {
+      "name": "V240Q_BASE_PATCHES",
+      "id": "MTB_METH_001_v1_3",
+      "changedFields": []
+    },
+    {
+      "name": "V240Q_BASE_PATCHES",
+      "id": "MTB_ANGIO_001_v1_3",
+      "changedFields": []
+    },
+    {
+      "name": "V240Q_BASE_PATCHES",
+      "id": "MTB_RCC_001_v1_3",
+      "changedFields": []
+    },
+    {
+      "name": "V240Q_BASE_PATCHES",
+      "id": "MTB_GBM_ANGIO_001_v1_3",
+      "changedFields": []
+    },
+    {
+      "name": "V240Q_BASE_PATCHES",
+      "id": "MTB_TME_001_v1_3",
+      "changedFields": []
+    },
+    {
+      "name": "V240Q_BASE_PATCHES",
+      "id": "MTB_INV_001_v1_3",
+      "changedFields": []
+    },
+    {
+      "name": "V240S_BASE_PATCHES",
+      "id": "MET_NGS_001_v1_3",
+      "changedFields": []
+    },
+    {
+      "name": "V240S_BASE_PATCHES",
+      "id": "MET_NGS_002_v1_3",
+      "changedFields": []
+    },
+    {
+      "name": "V240S_BASE_PATCHES",
+      "id": "MET_NGS_003_v1_0",
+      "changedFields": [
+        "tags"
+      ]
+    },
+    {
+      "name": "V240S_BASE_PATCHES",
+      "id": "MET_NGS_004_v1_3",
+      "changedFields": []
+    },
+    {
+      "name": "V240S_BASE_PATCHES",
+      "id": "MET_RNA_001_v1_3",
+      "changedFields": []
+    },
+    {
+      "name": "V240S_BASE_PATCHES",
+      "id": "MET_LB_001_v1_3",
+      "changedFields": []
+    },
+    {
+      "name": "V240S_BASE_PATCHES",
+      "id": "MET_PCR_001_v1_3",
+      "changedFields": []
+    },
+    {
+      "name": "V240S_BASE_PATCHES",
+      "id": "MET_METH_001_v1_3",
+      "changedFields": []
+    },
+    {
+      "name": "V240S_BASE_PATCHES",
+      "id": "MET_FISH_001_v1_3",
+      "changedFields": []
+    },
+    {
+      "name": "V240S_BASE_PATCHES",
+      "id": "MET_MULTI_001_v1_3",
+      "changedFields": []
+    },
+    {
+      "name": "V240U_BASE_PATCHES",
+      "id": "LAB_PRE_001_v1_3",
+      "changedFields": [
+        "difficulty"
+      ]
+    },
+    {
+      "name": "V240U_BASE_PATCHES",
+      "id": "LAB_PRE_002_v1_3",
+      "changedFields": []
+    },
+    {
+      "name": "V240U_BASE_PATCHES",
+      "id": "LAB_PRE_003_v1_3",
+      "changedFields": [
+        "difficulty"
+      ]
+    },
+    {
+      "name": "V240U_BASE_PATCHES",
+      "id": "LAB_PRE_004_v1_3",
+      "changedFields": [
+        "difficulty"
+      ]
+    },
+    {
+      "name": "V240U_BASE_PATCHES",
+      "id": "LAB_PRE_005_v1_3",
+      "changedFields": [
+        "difficulty"
+      ]
+    },
+    {
+      "name": "V240V_BASE_PATCHES",
+      "id": "LAB_RUN_001_v1_3",
+      "changedFields": [
+        "difficulty"
+      ]
+    },
+    {
+      "name": "V240V_BASE_PATCHES",
+      "id": "LAB_RUN_003_v1_3",
+      "changedFields": [
+        "difficulty"
+      ]
+    },
+    {
+      "name": "V240V_BASE_PATCHES",
+      "id": "LAB_RUN_004_v1_3",
+      "changedFields": [
+        "difficulty"
+      ]
+    },
+    {
+      "name": "V240V_BASE_PATCHES",
+      "id": "LAB_RUN_005_v1_3",
+      "changedFields": [
+        "difficulty"
+      ]
+    },
+    {
+      "name": "V240V_BASE_PATCHES",
+      "id": "LAB_RUN_006_v1_3",
+      "changedFields": []
+    },
+    {
+      "name": "V240W_BASE_PATCHES",
+      "id": "LAB_POST_002_v1_3",
+      "changedFields": [
+        "difficulty"
+      ]
+    },
+    {
+      "name": "V240W_BASE_PATCHES",
+      "id": "LAB_POST_003_v1_3",
+      "changedFields": []
+    },
+    {
+      "name": "V240W_BASE_PATCHES",
+      "id": "LAB_POST_004_v1_3",
+      "changedFields": [
+        "difficulty"
+      ]
+    },
+    {
+      "name": "V240W_BASE_PATCHES",
+      "id": "LAB_POST_005_v1_3",
+      "changedFields": [
+        "difficulty"
+      ]
+    },
+    {
+      "name": "V240X_BASE_PATCHES",
+      "id": "LAB_DOC_002_v1_3",
+      "changedFields": [
+        "difficulty"
+      ]
+    },
+    {
+      "name": "V240X_BASE_PATCHES",
+      "id": "LAB_AUDIT_001_v1_3",
+      "changedFields": [
+        "difficulty"
+      ]
+    },
+    {
+      "name": "V240X_BASE_PATCHES",
+      "id": "LAB_CAPA_001_v1_3",
+      "changedFields": []
+    },
+    {
+      "name": "V240X_BASE_PATCHES",
+      "id": "LAB_QM_001_v1_3",
+      "changedFields": []
+    },
+    {
+      "name": "V240X_BASE_PATCHES",
+      "id": "LAB_LLM_001_v1_3",
+      "changedFields": []
+    },
+    {
+      "name": "V240Y_BASE_PATCHES",
+      "id": "LAB_DIGI_001_v1_3",
+      "changedFields": [
+        "difficulty"
+      ]
+    },
+    {
+      "name": "V240Y_BASE_PATCHES",
+      "id": "LAB_DIGI_002_v1_3",
+      "changedFields": []
+    },
+    {
+      "name": "V240Y_BASE_PATCHES",
+      "id": "LAB_DATA_001_v1_3",
+      "changedFields": []
+    },
+    {
+      "name": "V240Y_BASE_PATCHES",
+      "id": "LAB_DATA_002_v1_3",
+      "changedFields": []
+    },
+    {
+      "name": "V240Y_BASE_PATCHES",
+      "id": "LAB_LIMS_001_v1_3",
+      "changedFields": []
+    },
+    {
+      "name": "V240Z2_BASE_PATCHES",
+      "id": "RES_HYP_002_v1_3",
+      "changedFields": [
+        "difficulty"
+      ]
+    },
+    {
+      "name": "V240Z2_BASE_PATCHES",
+      "id": "RES_OMICS_002_v1_3",
+      "changedFields": [
+        "difficulty"
+      ]
+    },
+    {
+      "name": "V240Z2_BASE_PATCHES",
+      "id": "RES_OMICS_003_v1_3",
+      "changedFields": [
+        "difficulty"
+      ]
+    },
+    {
+      "name": "V240Z2_BASE_PATCHES",
+      "id": "RES_IMM_001_v1_3",
+      "changedFields": [
+        "difficulty"
+      ]
+    },
+    {
+      "name": "V240Z3_BASE_PATCHES",
+      "id": "RES_MOD_001_v1_3",
+      "changedFields": []
+    },
+    {
+      "name": "V240Z3_BASE_PATCHES",
+      "id": "RES_MOD_002_v1_3",
+      "changedFields": []
+    },
+    {
+      "name": "V240Z3_BASE_PATCHES",
+      "id": "RES_MOD_003_v1_3",
+      "changedFields": [
+        "difficulty"
+      ]
+    },
+    {
+      "name": "V240Z3_BASE_PATCHES",
+      "id": "RES_VAL_001_v1_3",
+      "changedFields": [
+        "difficulty"
+      ]
+    },
+    {
+      "name": "V240Z3_BASE_PATCHES",
+      "id": "RES_VAL_002_v1_3",
+      "changedFields": [
+        "difficulty"
+      ]
+    },
+    {
+      "name": "V240Z4_BASE_PATCHES",
+      "id": "RES_ETH_002_v1_3",
+      "changedFields": []
+    },
+    {
+      "name": "V240Z4_BASE_PATCHES",
+      "id": "RES_ETH_003_v1_3",
+      "changedFields": []
+    },
+    {
+      "name": "V240Z4_BASE_PATCHES",
+      "id": "RES_DATA_001_v1_3",
+      "changedFields": []
+    },
+    {
+      "name": "V240Z4_BASE_PATCHES",
+      "id": "RES_AI_001_v1_3",
+      "changedFields": [
+        "difficulty"
+      ]
+    },
+    {
+      "name": "V240Z5_BASE_PATCHES",
+      "id": "RES_PM_001_v1_3",
+      "changedFields": []
+    },
+    {
+      "name": "V240Z5_BASE_PATCHES",
+      "id": "RES_PM_002_v1_3",
+      "changedFields": []
+    },
+    {
+      "name": "V240Z5_BASE_PATCHES",
+      "id": "RES_ROLE_001_v1_3",
+      "changedFields": [
+        "difficulty"
+      ]
+    },
+    {
+      "name": "V240Z6_BASE_PATCHES",
+      "id": "RES_GRANT_001_v1_3",
+      "changedFields": [
+        "difficulty"
+      ]
+    },
+    {
+      "name": "V240Z6_BASE_PATCHES",
+      "id": "RES_IMPL_001_v1_3",
+      "changedFields": [
+        "difficulty"
+      ]
+    },
+    {
+      "name": "V240Z6_BASE_PATCHES",
+      "id": "RES_TEAM_001_v1_3",
+      "changedFields": []
+    }
+  ],
+  "uniqueWriterPaths": [
+    "V21_CASE_PROMOTION",
+    "V240M_BASE_PATCHES",
+    "V240N_BASE_PATCHES",
+    "V240O_BASE_PATCHES",
+    "V240P_BASE_PATCHES",
+    "V240Q_BASE_PATCHES",
+    "V240S_BASE_PATCHES",
+    "V240U_BASE_PATCHES",
+    "V240V_BASE_PATCHES",
+    "V240W_BASE_PATCHES",
+    "V240X_BASE_PATCHES",
+    "V240Y_BASE_PATCHES",
+    "V240Z2_BASE_PATCHES",
+    "V240Z3_BASE_PATCHES",
+    "V240Z4_BASE_PATCHES",
+    "V240Z5_BASE_PATCHES",
+    "V240Z6_BASE_PATCHES",
+    "V230B_CASE_PROMOTION"
+  ],
+  "afterBootHash": "a767970c2b67c0ee4066ff8794fe36f71255c497aeb7f9d8fc9e660d901f83d0",
+  "errors": []
+}

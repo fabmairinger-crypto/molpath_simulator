@@ -3827,17 +3827,7 @@ try{window.render();}catch(err){console.error('v2.0b.5 render failed',err); try{
         DEEP_DIVE_MAP_V17[d.case_id] = d;
       });
     }
-    if (typeof cases !== 'undefined') {
-      cases.forEach(function(c){
-        const d = (typeof DEEP_DIVE_MAP_V17 !== 'undefined') ? DEEP_DIVE_MAP_V17[c.id] : null;
-        if (!d) return;
-        c.signature_case = true; c.deep_dive = true; c.deep_dive_title = d.title;
-        c.tags = Array.from(new Set([].concat(c.tags||[], ['Signature Case','Deep Dive','v2.1','Batch1 curated'])));
-        if (c.id === 'MTB_OVAR_001_v0_7') { c.difficulty = 'advanced'; c.estimated_time_min = '18–25'; c.length_class = 'Complex'; }
-        if (c.id === 'MTB_CRC_001_v0_6') { c.estimated_time_min = '12–15'; }
-        if (c.id === 'MTB_IO_001_v1_0') { c.estimated_time_min = '12–15'; }
-      });
-    }
+    // A6.8: canonical case taxonomy and metadata are already loaded.
     try{ void 0 /* A6.3: version writer retired */; }catch(_){ }
     try{ const vb=document.getElementById('versionBadge'); if(vb) void 0 /* A6.3: version writer retired */; }catch(_){ }
     try{ const top=document.querySelector('.v20b-topstatus .v20b-pill.primary'); if(top) void 0 /* A6.3: version writer retired */; }catch(_){ }
@@ -4469,13 +4459,7 @@ function integrate(){
     const idx=DEEP_DIVE_CASES_V17.findIndex(function(x){return x&&x.case_id===d.case_id;});
     if(idx>=0)DEEP_DIVE_CASES_V17[idx]=d;else DEEP_DIVE_CASES_V17.push(d);
     DEEP_DIVE_MAP_V17[d.case_id]=d;
-    const c=cases.find(function(x){return x&&x.id===d.case_id;});
-    if(c){
-      c.signature_case=true;
-      c.deep_dive=true;
-      c.deep_dive_title=d.title;
-      c.tags=Array.from(new Set([].concat(c.tags||[],['Signature Case','Deep Dive','v2.3.0b curated'])));
-    }
+    // A6.8: canonical case taxonomy already includes these cases.
   });
   window.MolPathSignatureDeepDiveExpansion230b=Object.freeze({
     release:PATCH_RELEASE,
@@ -5400,14 +5384,14 @@ window.MolPathPerformanceStabilization={version:V240L_VERSION,i18nCoalesced:true
 (function(){
 'use strict';
 const V240M_VERSION='v2.4.0m';
-const V240M_BASE_PATCHES=Object.fromEntries([["MTB_NSCLC_003_v1_3",["story","allowed_tests","required_groups","result_sections","always_findings","complete_interpretation","partial_interpretation","bad_tests","mtb_checks","optimal_summary"]],["MTB_NSCLC_004_v1_3",["story","allowed_tests","required_groups","result_sections","always_findings","complete_interpretation","partial_interpretation","bad_tests","mtb_checks","optimal_summary"]],["MTB_MEL_001_v1_3",["story","allowed_tests","required_groups","result_sections","always_findings","complete_interpretation","partial_interpretation","bad_tests","mtb_checks","optimal_summary"]],["MTB_GIST_001_v1_3",["story","allowed_tests","required_groups","result_sections","always_findings","complete_interpretation","partial_interpretation","bad_tests","mtb_checks","optimal_summary"]],["MTB_CHOL_001_v1_3",["story","allowed_tests","required_groups","result_sections","always_findings","complete_interpretation","partial_interpretation","bad_tests","mtb_checks","optimal_summary"]]].map(([id,keys])=>{const source=window.MolPathCanonicalDataA4b.cases.find(record=>record.id===id).case;return [id,Object.fromEntries(keys.map(key=>[key,JSON.parse(JSON.stringify(source[key]))]))];}));
+
 const V240M_DEEP_DIVES=["MTB_NSCLC_003_v1_3","MTB_NSCLC_004_v1_3","MTB_MEL_001_v1_3","MTB_GIST_001_v1_3","MTB_CHOL_001_v1_3"].map(id=>JSON.parse(JSON.stringify(window.MolPathCanonicalDataA4b.cases.find(record=>record.id===id).deep_dive)));
 
 function byId(id){try{return cases.find(c=>c&&c.id===id)||null}catch(_){return null}}
 function isSigCase(c=activeCase){try{const d=(typeof v17Deep==='function'?v17Deep(c):null);return !!(d&&d.is_signature_case===true)||!!(c&&c.signature_case===true)}catch(_){return !!(c&&c.signature_case===true)}}
 
 // 1) Correct the underlying A1 case stories/method-result logic.
-Object.entries(V240M_BASE_PATCHES).forEach(([id,patch])=>{const c=byId(id);if(!c)return;Object.assign(c,patch);c.deep_dive=true;c.signature_case=false;c.deep_dive_title=(V240M_DEEP_DIVES.find(d=>d.case_id===id)||{}).title||c.title;c.tags=Array.from(new Set([].concat(c.tags||[],['Deep Dive','v2.4.0m','A1 curated']).filter(x=>x!=='Signature Case')));});
+// A6.8: cases use Canonical; retain Deep-Dive registration below.
 
 // 2) Add the five German A1 deep dives without promoting them to Signature Cases.
 try{
@@ -5468,10 +5452,10 @@ try{console.log('[MolPath '+V240M_VERSION+'] A1 Deep Dive: 5 cases added; Signat
 (function(){
 'use strict';
 const V240N_VERSION='v2.4.0n';
-const V240N_BASE_PATCHES=Object.fromEntries([["MTB_CRC_003_v1_3",["story","allowed_tests","required_groups","result_sections","always_findings","complete_interpretation","partial_interpretation","mtb_checks","optimal_summary","tags"]],["MTB_CRC_004_v1_3",["story","allowed_tests","required_groups","result_sections","always_findings","complete_interpretation","partial_interpretation","mtb_checks","optimal_summary","tags"]],["MTB_CRC_005_v1_3",["story","allowed_tests","required_groups","result_sections","always_findings","complete_interpretation","partial_interpretation","mtb_checks","optimal_summary","tags"]]].map(([id,keys])=>{const source=window.MolPathCanonicalDataA4b.cases.find(record=>record.id===id).case;return [id,Object.fromEntries(keys.map(key=>[key,JSON.parse(JSON.stringify(source[key]))]))];}));
+
 const V240N_DEEP_DIVES=["MTB_CRC_003_v1_3","MTB_CRC_004_v1_3","MTB_CRC_005_v1_3"].map(id=>JSON.parse(JSON.stringify(window.MolPathCanonicalDataA4b.cases.find(record=>record.id===id).deep_dive)));
-function v240nById(id){try{return cases.find(c=>c&&c.id===id)||null}catch(_){return null}}
-Object.entries(V240N_BASE_PATCHES).forEach(([id,patch])=>{const c=v240nById(id);if(!c)return;Object.assign(c,patch);c.deep_dive=true;c.signature_case=false;c.deep_dive_title=(V240N_DEEP_DIVES.find(d=>d.case_id===id)||{}).title||c.title;c.tags=Array.from(new Set([].concat(c.tags||[],['Deep Dive','v2.4.0n','A2 curated']).filter(x=>x!=='Signature Case')));});
+
+// A6.8: cases use Canonical; retain Deep-Dive registration below.
 try{
  V240N_DEEP_DIVES.forEach(d=>{
   const idx=DEEP_DIVE_CASES_V17.findIndex(x=>x&&x.case_id===d.case_id);
@@ -5495,10 +5479,10 @@ try{console.log('[MolPath '+V240N_VERSION+'] A2 CRC Deep Dive: 3 cases added; A2
 (function(){
 'use strict';
 const V240O_VERSION='v2.4.0o';
-const V240O_BASE_PATCHES=Object.fromEntries([["MTB_MAMMA_001_v1_3",["story","allowed_tests","required_groups","result_sections","always_findings","complete_interpretation","partial_interpretation","mtb_checks","optimal_summary","tags"]],["MTB_PROST_001_v1_3",["story","allowed_tests","required_groups","result_sections","always_findings","complete_interpretation","partial_interpretation","mtb_checks","optimal_summary","tags"]],["MTB_TAML_001_v1_3",["story","allowed_tests","required_groups","result_sections","always_findings","complete_interpretation","partial_interpretation","mtb_checks","optimal_summary","tags"]]].map(([id,keys])=>{const source=window.MolPathCanonicalDataA4b.cases.find(record=>record.id===id).case;return [id,Object.fromEntries(keys.map(key=>[key,JSON.parse(JSON.stringify(source[key]))]))];}));
+
 const V240O_DEEP_DIVES=["MTB_MAMMA_001_v1_3","MTB_PROST_001_v1_3","MTB_TAML_001_v1_3"].map(id=>JSON.parse(JSON.stringify(window.MolPathCanonicalDataA4b.cases.find(record=>record.id===id).deep_dive)));
-function v240oById(id){try{return cases.find(c=>c&&c.id===id)||null}catch(_){return null}}
-Object.entries(V240O_BASE_PATCHES).forEach(([id,patch])=>{const c=v240oById(id);if(!c)return;Object.assign(c,patch);c.deep_dive=true;c.signature_case=false;c.deep_dive_title=(V240O_DEEP_DIVES.find(d=>d.case_id===id)||{}).title||c.title;c.tags=Array.from(new Set([].concat(c.tags||[],['Deep Dive','v2.4.0o','A3 curated']).filter(x=>x!=='Signature Case')));});
+
+// A6.8: cases use Canonical; retain Deep-Dive registration below.
 try{
  V240O_DEEP_DIVES.forEach(d=>{
   const idx=DEEP_DIVE_CASES_V17.findIndex(x=>x&&x.case_id===d.case_id);
@@ -5522,10 +5506,10 @@ try{console.log('[MolPath '+V240O_VERSION+'] A3 HRD/BRCA/PARP Deep Dive: 3 cases
 (function(){
 'use strict';
 const V240P_VERSION='v2.4.0p';
-const V240P_BASE_PATCHES=Object.fromEntries([["MTB_IO_002_v1_3",["story","allowed_tests","required_groups","result_sections","always_findings","complete_interpretation","partial_interpretation","mtb_checks","optimal_summary","tags"]],["MTB_IO_003_v1_3",["story","allowed_tests","required_groups","result_sections","always_findings","complete_interpretation","partial_interpretation","mtb_checks","optimal_summary","tags"]],["MTB_IO_004_v1_3",["story","allowed_tests","required_groups","result_sections","always_findings","complete_interpretation","partial_interpretation","mtb_checks","optimal_summary","tags"]],["MTB_IO_005_v1_3",["story","allowed_tests","required_groups","result_sections","always_findings","complete_interpretation","partial_interpretation","mtb_checks","optimal_summary","tags"]]].map(([id,keys])=>{const source=window.MolPathCanonicalDataA4b.cases.find(record=>record.id===id).case;return [id,Object.fromEntries(keys.map(key=>[key,JSON.parse(JSON.stringify(source[key]))]))];}));
+
 const V240P_DEEP_DIVES=["MTB_IO_002_v1_3","MTB_IO_003_v1_3","MTB_IO_004_v1_3","MTB_IO_005_v1_3"].map(id=>JSON.parse(JSON.stringify(window.MolPathCanonicalDataA4b.cases.find(record=>record.id===id).deep_dive)));
-function v240pById(id){try{return cases.find(c=>c&&c.id===id)||null}catch(_){return null}}
-Object.entries(V240P_BASE_PATCHES).forEach(([id,patch])=>{const c=v240pById(id);if(!c)return;Object.assign(c,patch);c.deep_dive=true;c.signature_case=false;c.deep_dive_title=(V240P_DEEP_DIVES.find(d=>d.case_id===id)||{}).title||c.title;c.tags=Array.from(new Set([].concat(c.tags||[],['Deep Dive','v2.4.0p','A4 curated']).filter(x=>x!=='Signature Case')));});
+
+// A6.8: cases use Canonical; retain Deep-Dive registration below.
 try{
  V240P_DEEP_DIVES.forEach(d=>{
   const idx=DEEP_DIVE_CASES_V17.findIndex(x=>x&&x.case_id===d.case_id);
@@ -5549,10 +5533,10 @@ try{console.log('[MolPath '+V240P_VERSION+'] A4 Immunescape Deep Dive: 4 cases a
 (function(){
 'use strict';
 const V240Q_VERSION='v2.4.0q';
-const V240Q_BASE_PATCHES=Object.fromEntries([["MTB_CNS_002_v1_3",["title","story","allowed_tests","required_groups","result_sections","always_findings","complete_interpretation","partial_interpretation","mtb_checks","optimal_summary","tags"]],["MTB_CNS_003_v1_3",["title","story","allowed_tests","required_groups","result_sections","always_findings","complete_interpretation","partial_interpretation","mtb_checks","optimal_summary","tags"]],["MTB_HEM_001_v1_3",["title","story","allowed_tests","required_groups","result_sections","always_findings","complete_interpretation","partial_interpretation","mtb_checks","optimal_summary","tags"]],["MTB_METH_001_v1_3",["title","story","allowed_tests","required_groups","result_sections","always_findings","complete_interpretation","partial_interpretation","mtb_checks","optimal_summary","tags"]],["MTB_ANGIO_001_v1_3",["title","story","allowed_tests","required_groups","result_sections","always_findings","complete_interpretation","partial_interpretation","mtb_checks","optimal_summary","tags"]],["MTB_RCC_001_v1_3",["title","story","allowed_tests","required_groups","result_sections","always_findings","complete_interpretation","partial_interpretation","mtb_checks","optimal_summary","tags"]],["MTB_GBM_ANGIO_001_v1_3",["title","story","allowed_tests","required_groups","result_sections","always_findings","complete_interpretation","partial_interpretation","mtb_checks","optimal_summary","tags"]],["MTB_TME_001_v1_3",["title","story","allowed_tests","required_groups","result_sections","always_findings","complete_interpretation","partial_interpretation","mtb_checks","optimal_summary","tags"]],["MTB_INV_001_v1_3",["title","story","allowed_tests","required_groups","result_sections","always_findings","complete_interpretation","partial_interpretation","mtb_checks","optimal_summary","tags"]]].map(([id,keys])=>{const source=window.MolPathCanonicalDataA4b.cases.find(record=>record.id===id).case;return [id,Object.fromEntries(keys.map(key=>[key,JSON.parse(JSON.stringify(source[key]))]))];}));
+
 const V240Q_DEEP_DIVES=["MTB_CNS_002_v1_3","MTB_CNS_003_v1_3","MTB_HEM_001_v1_3","MTB_METH_001_v1_3","MTB_ANGIO_001_v1_3","MTB_RCC_001_v1_3","MTB_GBM_ANGIO_001_v1_3","MTB_TME_001_v1_3","MTB_INV_001_v1_3"].map(id=>JSON.parse(JSON.stringify(window.MolPathCanonicalDataA4b.cases.find(record=>record.id===id).deep_dive)));
-function v240qById(id){try{return cases.find(c=>c&&c.id===id)||null}catch(_){return null}}
-Object.entries(V240Q_BASE_PATCHES).forEach(([id,patch])=>{const c=v240qById(id);if(!c)return;Object.assign(c,patch);c.deep_dive=true;c.signature_case=false;c.deep_dive_title=(V240Q_DEEP_DIVES.find(d=>d.case_id===id)||{}).title||c.title;c.tags=Array.from(new Set([].concat(c.tags||[],['Deep Dive','v2.4.0q','MTB content freeze']).filter(x=>x!=='Signature Case')));});
+
+// A6.8: cases use Canonical; retain Deep-Dive registration below.
 try{V240Q_DEEP_DIVES.forEach(d=>{const idx=DEEP_DIVE_CASES_V17.findIndex(x=>x&&x.case_id===d.case_id);if(idx>=0)DEEP_DIVE_CASES_V17[idx]=d;else DEEP_DIVE_CASES_V17.push(d);DEEP_DIVE_MAP_V17[d.case_id]=d;});}catch(e){console.error('[MolPath '+V240Q_VERSION+'] A5/A6 registration failed',e)}
 function v240qStamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }
 function v240qStyles(){if(document.getElementById('v240qStyles'))return;const st=document.createElement('style');st.id='v240qStyles';st.textContent="";document.head.appendChild(st)}
@@ -5740,10 +5724,10 @@ try{console.log('[MolPath '+V240R_VERSION+'] Signature truth source active: '+si
 (function(){
 'use strict';
 const V240S_VERSION='v2.4.0s';
-const V240S_BASE_PATCHES=Object.fromEntries([["MET_NGS_001_v1_3",["title","story","allowed_tests","required_groups","result_sections","always_findings","complete_interpretation","partial_interpretation","mtb_checks","optimal_summary","tags"]],["MET_NGS_002_v1_3",["title","story","allowed_tests","required_groups","result_sections","always_findings","complete_interpretation","partial_interpretation","mtb_checks","optimal_summary","tags"]],["MET_NGS_003_v1_0",["title","story","allowed_tests","required_groups","result_sections","always_findings","complete_interpretation","partial_interpretation","mtb_checks","optimal_summary","tags"]],["MET_NGS_004_v1_3",["title","story","allowed_tests","required_groups","result_sections","always_findings","complete_interpretation","partial_interpretation","mtb_checks","optimal_summary","tags"]],["MET_RNA_001_v1_3",["title","story","allowed_tests","required_groups","result_sections","always_findings","complete_interpretation","partial_interpretation","mtb_checks","optimal_summary","tags"]],["MET_LB_001_v1_3",["title","story","allowed_tests","required_groups","result_sections","always_findings","complete_interpretation","partial_interpretation","mtb_checks","optimal_summary","tags"]],["MET_PCR_001_v1_3",["title","story","allowed_tests","required_groups","result_sections","always_findings","complete_interpretation","partial_interpretation","mtb_checks","optimal_summary","tags"]],["MET_METH_001_v1_3",["title","story","allowed_tests","required_groups","result_sections","always_findings","complete_interpretation","partial_interpretation","mtb_checks","optimal_summary","tags"]],["MET_FISH_001_v1_3",["title","story","allowed_tests","required_groups","result_sections","always_findings","complete_interpretation","partial_interpretation","mtb_checks","optimal_summary","tags"]],["MET_MULTI_001_v1_3",["title","story","allowed_tests","required_groups","result_sections","always_findings","complete_interpretation","partial_interpretation","mtb_checks","optimal_summary","tags"]]].map(([id,keys])=>{const source=window.MolPathCanonicalDataA4b.cases.find(record=>record.id===id).case;return [id,Object.fromEntries(keys.map(key=>[key,JSON.parse(JSON.stringify(source[key]))]))];}));
+
 const V240S_DEEP_DIVES=["MET_NGS_001_v1_3","MET_NGS_002_v1_3","MET_NGS_003_v1_0","MET_NGS_004_v1_3","MET_RNA_001_v1_3","MET_LB_001_v1_3","MET_PCR_001_v1_3","MET_METH_001_v1_3","MET_FISH_001_v1_3","MET_MULTI_001_v1_3"].map(id=>JSON.parse(JSON.stringify(window.MolPathCanonicalDataA4b.cases.find(record=>record.id===id).deep_dive)));
-function v240sFind(id){try{return (cases||[]).find(c=>c&&c.id===id)}catch(_){return null}}
-try{Object.entries(V240S_BASE_PATCHES).forEach(([id,patch])=>{const c=v240sFind(id);if(!c)return;Object.assign(c,patch);c.deep_dive=true;c.signature_case=false;c.deep_dive_title=(V240S_DEEP_DIVES.find(d=>d.case_id===id)||{}).title||c.title;c.tags=Array.from(new Set([].concat(c.tags||[],['Deep Dive','v2.4.0s','MET content freeze']).filter(x=>x!=='Signature Case')));});}catch(e){console.error('[MolPath '+V240S_VERSION+'] base patch failed',e)}
+
+// A6.8: cases use Canonical; retain Deep-Dive registration below.
 try{V240S_DEEP_DIVES.forEach(d=>{const idx=DEEP_DIVE_CASES_V17.findIndex(x=>x&&x.case_id===d.case_id);if(idx>=0)DEEP_DIVE_CASES_V17[idx]=d;else DEEP_DIVE_CASES_V17.push(d);DEEP_DIVE_MAP_V17[d.case_id]=d;});}catch(e){console.error('[MolPath '+V240S_VERSION+'] MET registration failed',e)}
 function v240sStamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }
 function v240sStyles(){if(document.getElementById('v240sStyles'))return;const st=document.createElement('style');st.id='v240sStyles';st.textContent="";document.head.appendChild(st)}
@@ -5766,10 +5750,10 @@ try{console.log('[MolPath '+V240S_VERSION+'] 10 MET Deep Dives added; patient ca
 (function(){'use strict';
 const V240U_VERSION='v2.4.0u';
 const V240U_CASE_IDS=["LAB_PRE_001_v1_3","LAB_PRE_002_v1_3","LAB_PRE_003_v1_3","LAB_PRE_004_v1_3","LAB_PRE_005_v1_3"];
-const V240U_BASE_PATCHES=Object.fromEntries([["LAB_PRE_001_v1_3",["title","short","difficulty","estimated_time_min","qc_title","run_overview","qc_event","decision_options","root_cause_options","capa_components","audit_checks","optimal_summary"]],["LAB_PRE_002_v1_3",["title","short","difficulty","estimated_time_min","qc_title","run_overview","qc_event","decision_options","root_cause_options","capa_components","audit_checks","optimal_summary"]],["LAB_PRE_003_v1_3",["title","short","difficulty","estimated_time_min","qc_title","run_overview","qc_event","decision_options","root_cause_options","capa_components","audit_checks","optimal_summary"]],["LAB_PRE_004_v1_3",["title","short","difficulty","estimated_time_min","qc_title","run_overview","qc_event","decision_options","root_cause_options","capa_components","audit_checks","optimal_summary"]],["LAB_PRE_005_v1_3",["title","short","difficulty","estimated_time_min","qc_title","run_overview","qc_event","decision_options","root_cause_options","capa_components","audit_checks","optimal_summary"]]].map(([id,keys])=>{const source=window.MolPathCanonicalDataA4b.cases.find(record=>record.id===id).case;return [id,Object.fromEntries(keys.map(key=>[key,JSON.parse(JSON.stringify(source[key]))]))];}));
+
 const V240U_DEEP_DIVES=["LAB_PRE_001_v1_3","LAB_PRE_002_v1_3","LAB_PRE_003_v1_3","LAB_PRE_004_v1_3","LAB_PRE_005_v1_3"].map(id=>JSON.parse(JSON.stringify(window.MolPathCanonicalDataA4b.cases.find(record=>record.id===id).deep_dive)));
-function v240uFind(id){try{return (cases||[]).find(c=>c&&c.id===id)}catch(_){return null}}
-try{Object.entries(V240U_BASE_PATCHES).forEach(([id,p])=>{const c=v240uFind(id);if(!c)return;Object.assign(c,p);c.deep_dive=true;c.signature_case=false;c.deep_dive_title=(V240U_DEEP_DIVES.find(d=>d.case_id===id)||{}).title||c.title;c.tags=Array.from(new Set([].concat(c.tags||[],['Deep Dive','LAB Präanalytik','v2.4.0u']).filter(x=>x!=='Signature Case')));});}catch(e){console.error('[MolPath '+V240U_VERSION+'] LAB B1 base patch failed',e)}
+
+// A6.8: cases use Canonical; retain Deep-Dive registration below.
 try{V240U_DEEP_DIVES.forEach(d=>{const idx=DEEP_DIVE_CASES_V17.findIndex(x=>x&&x.case_id===d.case_id);if(idx>=0)DEEP_DIVE_CASES_V17[idx]=d;else DEEP_DIVE_CASES_V17.push(d);DEEP_DIVE_MAP_V17[d.case_id]=d;});}catch(e){console.error('[MolPath '+V240U_VERSION+'] LAB B1 registration failed',e)}
 function v240uStamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }
 const V240U_PREV_I18N_AFTER=window.MolPathI18nAfterApply;window.MolPathI18nAfterApply=function(l){try{if(typeof V240U_PREV_I18N_AFTER==='function')V240U_PREV_I18N_AFTER(l)}catch(_){}v240uStamp()};
@@ -5787,10 +5771,10 @@ try{console.log('[MolPath '+V240U_VERSION+'] LAB B1 C1: 5 Präanalytik Deep Dive
 (function(){'use strict';
 const V240V_VERSION='v2.4.0v';
 const V240V_CASE_IDS=["LAB_RUN_001_v1_3","LAB_RUN_003_v1_3","LAB_RUN_004_v1_3","LAB_RUN_005_v1_3","LAB_RUN_006_v1_3"];
-const V240V_BASE_PATCHES=Object.fromEntries([["LAB_RUN_001_v1_3",["title","short","difficulty","estimated_time_min","qc_title","run_overview","qc_event","decision_options","root_cause_options","capa_components","audit_checks","optimal_summary"]],["LAB_RUN_003_v1_3",["title","short","difficulty","estimated_time_min","qc_title","run_overview","qc_event","decision_options","root_cause_options","capa_components","audit_checks","optimal_summary"]],["LAB_RUN_004_v1_3",["title","short","difficulty","estimated_time_min","qc_title","run_overview","qc_event","decision_options","root_cause_options","capa_components","audit_checks","optimal_summary"]],["LAB_RUN_005_v1_3",["title","short","difficulty","estimated_time_min","qc_title","run_overview","qc_event","decision_options","root_cause_options","capa_components","audit_checks","optimal_summary"]],["LAB_RUN_006_v1_3",["title","short","difficulty","estimated_time_min","qc_title","run_overview","qc_event","decision_options","root_cause_options","capa_components","audit_checks","optimal_summary"]]].map(([id,keys])=>{const source=window.MolPathCanonicalDataA4b.cases.find(record=>record.id===id).case;return [id,Object.fromEntries(keys.map(key=>[key,JSON.parse(JSON.stringify(source[key]))]))];}));
+
 const V240V_DEEP_DIVES=["LAB_RUN_001_v1_3","LAB_RUN_003_v1_3","LAB_RUN_004_v1_3","LAB_RUN_005_v1_3","LAB_RUN_006_v1_3"].map(id=>JSON.parse(JSON.stringify(window.MolPathCanonicalDataA4b.cases.find(record=>record.id===id).deep_dive)));
-function v240vFind(id){try{return (cases||[]).find(c=>c&&c.id===id)}catch(_){return null}}
-try{Object.entries(V240V_BASE_PATCHES).forEach(([id,p])=>{const c=v240vFind(id);if(!c)return;Object.assign(c,p);c.deep_dive=true;c.signature_case=false;c.deep_dive_title=(V240V_DEEP_DIVES.find(d=>d.case_id===id)||{}).title||c.title;c.tags=Array.from(new Set([].concat(c.tags||[],['Deep Dive','LAB Run/QC','v2.4.0v']).filter(x=>x!=='Signature Case')));});}catch(e){console.error('[MolPath '+V240V_VERSION+'] LAB B2 base patch failed',e)}
+
+// A6.8: cases use Canonical; retain Deep-Dive registration below.
 try{V240V_DEEP_DIVES.forEach(d=>{const idx=DEEP_DIVE_CASES_V17.findIndex(x=>x&&x.case_id===d.case_id);if(idx>=0)DEEP_DIVE_CASES_V17[idx]=d;else DEEP_DIVE_CASES_V17.push(d);DEEP_DIVE_MAP_V17[d.case_id]=d;});}catch(e){console.error('[MolPath '+V240V_VERSION+'] LAB B2 registration failed',e)}
 function v240vStamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }
 const V240V_PREV_I18N_AFTER=window.MolPathI18nAfterApply;window.MolPathI18nAfterApply=function(l){try{if(typeof V240V_PREV_I18N_AFTER==='function')V240V_PREV_I18N_AFTER(l)}catch(_){}v240vStamp()};
@@ -5808,10 +5792,10 @@ try{console.log('[MolPath '+V240V_VERSION+'] LAB B2 C2: 5 Run/QC Deep Dives adde
 (function(){'use strict';
 const V240W_VERSION='v2.4.0w';
 const V240W_CASE_IDS=["LAB_POST_002_v1_3","LAB_POST_003_v1_3","LAB_POST_004_v1_3","LAB_POST_005_v1_3"];
-const V240W_BASE_PATCHES=Object.fromEntries([["LAB_POST_002_v1_3",["title","short","difficulty","estimated_time_min","qc_title","run_overview","qc_event","decision_options","root_cause_options","capa_components","audit_checks","optimal_summary"]],["LAB_POST_003_v1_3",["title","short","difficulty","estimated_time_min","qc_title","run_overview","qc_event","decision_options","root_cause_options","capa_components","audit_checks","optimal_summary"]],["LAB_POST_004_v1_3",["title","short","difficulty","estimated_time_min","qc_title","run_overview","qc_event","decision_options","root_cause_options","capa_components","audit_checks","optimal_summary"]],["LAB_POST_005_v1_3",["title","short","difficulty","estimated_time_min","qc_title","run_overview","qc_event","decision_options","root_cause_options","capa_components","audit_checks","optimal_summary"]]].map(([id,keys])=>{const source=window.MolPathCanonicalDataA4b.cases.find(record=>record.id===id).case;return [id,Object.fromEntries(keys.map(key=>[key,JSON.parse(JSON.stringify(source[key]))]))];}));
+
 const V240W_DEEP_DIVES=["LAB_POST_002_v1_3","LAB_POST_003_v1_3","LAB_POST_004_v1_3","LAB_POST_005_v1_3"].map(id=>JSON.parse(JSON.stringify(window.MolPathCanonicalDataA4b.cases.find(record=>record.id===id).deep_dive)));
-function v240wFind(id){try{return (cases||[]).find(c=>c&&c.id===id)}catch(_){return null}}
-try{Object.entries(V240W_BASE_PATCHES).forEach(([id,p])=>{const c=v240wFind(id);if(!c)return;Object.assign(c,p);c.deep_dive=true;c.signature_case=false;c.deep_dive_title=(V240W_DEEP_DIVES.find(d=>d.case_id===id)||{}).title||c.title;c.tags=Array.from(new Set([].concat(c.tags||[],['Deep Dive','LAB Postanalytik','v2.4.0w']).filter(x=>x!=='Signature Case')));});}catch(e){console.error('[MolPath '+V240W_VERSION+'] LAB B3 base patch failed',e)}
+
+// A6.8: cases use Canonical; retain Deep-Dive registration below.
 try{V240W_DEEP_DIVES.forEach(d=>{const idx=DEEP_DIVE_CASES_V17.findIndex(x=>x&&x.case_id===d.case_id);if(idx>=0)DEEP_DIVE_CASES_V17[idx]=d;else DEEP_DIVE_CASES_V17.push(d);DEEP_DIVE_MAP_V17[d.case_id]=d;});}catch(e){console.error('[MolPath '+V240W_VERSION+'] LAB B3 registration failed',e)}
 function v240wStamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }
 const V240W_PREV_I18N_AFTER=window.MolPathI18nAfterApply;window.MolPathI18nAfterApply=function(l){try{if(typeof V240W_PREV_I18N_AFTER==='function')V240W_PREV_I18N_AFTER(l)}catch(_){}v240wStamp()};
@@ -5829,10 +5813,10 @@ try{console.log('[MolPath '+V240W_VERSION+'] LAB B3 C3: 4 Postanalytics Deep Div
 (function(){'use strict';
 const V240X_VERSION='v2.4.0x';
 const V240X_CASE_IDS=["LAB_DOC_002_v1_3","LAB_AUDIT_001_v1_3","LAB_CAPA_001_v1_3","LAB_QM_001_v1_3","LAB_LLM_001_v1_3"];
-const V240X_BASE_PATCHES=Object.fromEntries([["LAB_DOC_002_v1_3",["title","short","difficulty","estimated_time_min","qc_title","run_overview","qc_event","decision_options","root_cause_options","capa_components","audit_checks","optimal_summary"]],["LAB_AUDIT_001_v1_3",["title","short","difficulty","estimated_time_min","qc_title","run_overview","qc_event","decision_options","root_cause_options","capa_components","audit_checks","optimal_summary"]],["LAB_CAPA_001_v1_3",["title","short","difficulty","estimated_time_min","qc_title","run_overview","qc_event","decision_options","root_cause_options","capa_components","audit_checks","optimal_summary"]],["LAB_QM_001_v1_3",["title","short","difficulty","estimated_time_min","qc_title","run_overview","qc_event","decision_options","root_cause_options","capa_components","audit_checks","optimal_summary"]],["LAB_LLM_001_v1_3",["title","short","difficulty","estimated_time_min","qc_title","run_overview","qc_event","decision_options","root_cause_options","capa_components","audit_checks","optimal_summary"]]].map(([id,keys])=>{const source=window.MolPathCanonicalDataA4b.cases.find(record=>record.id===id).case;return [id,Object.fromEntries(keys.map(key=>[key,JSON.parse(JSON.stringify(source[key]))]))];}));
+
 const V240X_DEEP_DIVES=["LAB_DOC_002_v1_3","LAB_AUDIT_001_v1_3","LAB_CAPA_001_v1_3","LAB_QM_001_v1_3","LAB_LLM_001_v1_3"].map(id=>JSON.parse(JSON.stringify(window.MolPathCanonicalDataA4b.cases.find(record=>record.id===id).deep_dive)));
-function v240xFind(id){try{return (cases||[]).find(c=>c&&c.id===id)}catch(_){return null}}
-try{Object.entries(V240X_BASE_PATCHES).forEach(([id,p])=>{const c=v240xFind(id);if(!c)return;Object.assign(c,p);c.deep_dive=true;c.signature_case=false;c.deep_dive_title=(V240X_DEEP_DIVES.find(d=>d.case_id===id)||{}).title||c.title;c.tags=Array.from(new Set([].concat(c.tags||[],['Deep Dive','LAB C4 QM/Audit/CAPA','v2.4.0x']).filter(x=>x!=='Signature Case')));});}catch(e){console.error('[MolPath '+V240X_VERSION+'] LAB B4 base patch failed',e)}
+
+// A6.8: cases use Canonical; retain Deep-Dive registration below.
 try{V240X_DEEP_DIVES.forEach(d=>{const idx=DEEP_DIVE_CASES_V17.findIndex(x=>x&&x.case_id===d.case_id);if(idx>=0)DEEP_DIVE_CASES_V17[idx]=d;else DEEP_DIVE_CASES_V17.push(d);DEEP_DIVE_MAP_V17[d.case_id]=d;});}catch(e){console.error('[MolPath '+V240X_VERSION+'] LAB B4 registration failed',e)}
 function v240xStamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }
 const V240X_PREV_I18N_AFTER=window.MolPathI18nAfterApply;window.MolPathI18nAfterApply=function(l){try{if(typeof V240X_PREV_I18N_AFTER==='function')V240X_PREV_I18N_AFTER(l)}catch(_){}v240xStamp()};
@@ -5849,10 +5833,10 @@ try{console.log('[MolPath '+V240X_VERSION+'] LAB B4 C4: 5 Deep Dives added; LAB 
 (function(){'use strict';
 const V240Y_VERSION='v2.4.0y';
 const V240Y_CASE_IDS=["LAB_DIGI_001_v1_3","LAB_DIGI_002_v1_3","LAB_DATA_001_v1_3","LAB_DATA_002_v1_3","LAB_LIMS_001_v1_3"];
-const V240Y_BASE_PATCHES=Object.fromEntries([["LAB_DIGI_001_v1_3",["title","short","difficulty","estimated_time_min","qc_title","run_overview","qc_event","decision_options","root_cause_options","capa_components","audit_checks","optimal_summary"]],["LAB_DIGI_002_v1_3",["title","short","difficulty","estimated_time_min","qc_title","run_overview","qc_event","decision_options","root_cause_options","capa_components","audit_checks","optimal_summary"]],["LAB_DATA_001_v1_3",["title","short","difficulty","estimated_time_min","qc_title","run_overview","qc_event","decision_options","root_cause_options","capa_components","audit_checks","optimal_summary"]],["LAB_DATA_002_v1_3",["title","short","difficulty","estimated_time_min","qc_title","run_overview","qc_event","decision_options","root_cause_options","capa_components","audit_checks","optimal_summary"]],["LAB_LIMS_001_v1_3",["title","short","difficulty","estimated_time_min","qc_title","run_overview","qc_event","decision_options","root_cause_options","capa_components","audit_checks","optimal_summary"]]].map(([id,keys])=>{const source=window.MolPathCanonicalDataA4b.cases.find(record=>record.id===id).case;return [id,Object.fromEntries(keys.map(key=>[key,JSON.parse(JSON.stringify(source[key]))]))];}));
+
 const V240Y_DEEP_DIVES=["LAB_DIGI_001_v1_3","LAB_DIGI_002_v1_3","LAB_DATA_001_v1_3","LAB_DATA_002_v1_3","LAB_LIMS_001_v1_3"].map(id=>JSON.parse(JSON.stringify(window.MolPathCanonicalDataA4b.cases.find(record=>record.id===id).deep_dive)));
-function v240yFind(id){try{return (cases||[]).find(c=>c&&c.id===id)}catch(_){return null}}
-try{Object.entries(V240Y_BASE_PATCHES).forEach(([id,p])=>{const c=v240yFind(id);if(!c)return;Object.assign(c,p);c.deep_dive=true;c.signature_case=false;c.deep_dive_title=(V240Y_DEEP_DIVES.find(d=>d.case_id===id)||{}).title||c.title;c.tags=Array.from(new Set([].concat(c.tags||[],['Deep Dive','LAB C5 Digital/Data/LIMS','v2.4.0y']).filter(x=>x!=='Signature Case')));});}catch(e){console.error('[MolPath '+V240Y_VERSION+'] LAB B5 base patch failed',e)}
+
+// A6.8: cases use Canonical; retain Deep-Dive registration below.
 try{V240Y_DEEP_DIVES.forEach(d=>{const idx=DEEP_DIVE_CASES_V17.findIndex(x=>x&&x.case_id===d.case_id);if(idx>=0)DEEP_DIVE_CASES_V17[idx]=d;else DEEP_DIVE_CASES_V17.push(d);DEEP_DIVE_MAP_V17[d.case_id]=d;});}catch(e){console.error('[MolPath '+V240Y_VERSION+'] LAB B5 registration failed',e)}
 function v240yStamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }
 const V240Y_PREV_I18N_AFTER=window.MolPathI18nAfterApply;window.MolPathI18nAfterApply=function(l){try{if(typeof V240Y_PREV_I18N_AFTER==='function')V240Y_PREV_I18N_AFTER(l)}catch(_){}v240yStamp()};
@@ -5928,10 +5912,10 @@ try{console.log('[MolPath '+V240Y1_VERSION+'] LAB C4/C5 schema hotfix loaded: 10
 (function(){'use strict';
 const V240Z2_VERSION='v2.4.0z2';
 const V240Z2_CASE_IDS=["RES_HYP_002_v1_3","RES_OMICS_002_v1_3","RES_OMICS_003_v1_3","RES_IMM_001_v1_3"];
-const V240Z2_BASE_PATCHES=Object.fromEntries([["RES_HYP_002_v1_3",["difficulty","estimated_time_min","tags","research_intro","research_context","hypothesis_options","pico_options","design_options","method_options","analysis_options","pitfall_options","expected_output","optimal_summary"]],["RES_OMICS_002_v1_3",["difficulty","estimated_time_min","tags","research_intro","research_context","hypothesis_options","pico_options","design_options","method_options","analysis_options","pitfall_options","expected_output","optimal_summary"]],["RES_OMICS_003_v1_3",["difficulty","estimated_time_min","tags","research_intro","research_context","hypothesis_options","pico_options","design_options","method_options","analysis_options","pitfall_options","expected_output","optimal_summary"]],["RES_IMM_001_v1_3",["difficulty","estimated_time_min","tags","research_intro","research_context","hypothesis_options","pico_options","design_options","method_options","analysis_options","pitfall_options","expected_output","optimal_summary"]]].map(([id,keys])=>{const source=window.MolPathCanonicalDataA4b.cases.find(record=>record.id===id).case;return [id,Object.fromEntries(keys.map(key=>[key,JSON.parse(JSON.stringify(source[key]))]))];}));
+
 const V240Z2_DEEP_DIVES=["RES_HYP_002_v1_3","RES_OMICS_002_v1_3","RES_OMICS_003_v1_3","RES_IMM_001_v1_3"].map(id=>JSON.parse(JSON.stringify(window.MolPathCanonicalDataA4b.cases.find(record=>record.id===id).deep_dive)));
-function v240z2Find(id){try{return (cases||[]).find(c=>c&&c.id===id)}catch(_){return null}}
-try{Object.entries(V240Z2_BASE_PATCHES).forEach(([id,p])=>{const c=v240z2Find(id);if(!c)return;Object.assign(c,p);c.deep_dive=true;c.signature_case=false;c.deep_dive_title=(V240Z2_DEEP_DIVES.find(d=>d.case_id===id)||{}).title||c.title;c.tags=Array.from(new Set([].concat(c.tags||[],['Deep Dive','RES D1 curated','v2.4.0z2']).filter(x=>x!=='Signature Case')));});}catch(e){console.error('[MolPath '+V240Z2_VERSION+'] RES R1 base patch failed',e)}
+
+// A6.8: cases use Canonical; retain Deep-Dive registration below.
 try{V240Z2_DEEP_DIVES.forEach(d=>{const idx=DEEP_DIVE_CASES_V17.findIndex(x=>x&&x.case_id===d.case_id);if(idx>=0)DEEP_DIVE_CASES_V17[idx]=d;else DEEP_DIVE_CASES_V17.push(d);DEEP_DIVE_MAP_V17[d.case_id]=d;});}catch(e){console.error('[MolPath '+V240Z2_VERSION+'] RES R1 deep-dive registration failed',e)}
 function v240z2Stamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }
 const V240Z2_PREV_AFTER=window.MolPathI18nAfterApply;window.MolPathI18nAfterApply=function(l){try{if(typeof V240Z2_PREV_AFTER==='function')V240Z2_PREV_AFTER(l)}catch(_){}v240z2Stamp();};
@@ -5949,10 +5933,10 @@ try{console.log('[MolPath '+V240Z2_VERSION+'] RES R1: 4 D1 Deep Dives added; RES
 (function(){'use strict';
 const V240Z3_VERSION='v2.4.0z3';
 const V240Z3_CASE_IDS=["RES_MOD_001_v1_3","RES_MOD_002_v1_3","RES_MOD_003_v1_3","RES_VAL_001_v1_3","RES_VAL_002_v1_3"];
-const V240Z3_BASE_PATCHES=Object.fromEntries([["RES_MOD_001_v1_3",["difficulty","estimated_time_min","tags","research_intro","research_context","hypothesis_options","pico_options","design_options","method_options","analysis_options","pitfall_options","expected_output","optimal_summary"]],["RES_MOD_002_v1_3",["difficulty","estimated_time_min","tags","research_intro","research_context","hypothesis_options","pico_options","design_options","method_options","analysis_options","pitfall_options","expected_output","optimal_summary"]],["RES_MOD_003_v1_3",["difficulty","estimated_time_min","tags","research_intro","research_context","hypothesis_options","pico_options","design_options","method_options","analysis_options","pitfall_options","expected_output","optimal_summary"]],["RES_VAL_001_v1_3",["difficulty","estimated_time_min","tags","research_intro","research_context","hypothesis_options","pico_options","design_options","method_options","analysis_options","pitfall_options","expected_output","optimal_summary"]],["RES_VAL_002_v1_3",["difficulty","estimated_time_min","tags","research_intro","research_context","hypothesis_options","pico_options","design_options","method_options","analysis_options","pitfall_options","expected_output","optimal_summary"]]].map(([id,keys])=>{const source=window.MolPathCanonicalDataA4b.cases.find(record=>record.id===id).case;return [id,Object.fromEntries(keys.map(key=>[key,JSON.parse(JSON.stringify(source[key]))]))];}));
+
 const V240Z3_DEEP_DIVES=["RES_MOD_001_v1_3","RES_MOD_002_v1_3","RES_MOD_003_v1_3","RES_VAL_001_v1_3","RES_VAL_002_v1_3"].map(id=>JSON.parse(JSON.stringify(window.MolPathCanonicalDataA4b.cases.find(record=>record.id===id).deep_dive)));
-function v240z3Find(id){try{return (cases||[]).find(c=>c&&c.id===id)}catch(_){return null}}
-try{Object.entries(V240Z3_BASE_PATCHES).forEach(([id,p])=>{const c=v240z3Find(id);if(!c)return;Object.assign(c,p);c.deep_dive=true;c.signature_case=false;c.deep_dive_title=(V240Z3_DEEP_DIVES.find(d=>d.case_id===id)||{}).title||c.title;c.tags=Array.from(new Set([].concat(c.tags||[],['Deep Dive','RES D2 curated','v2.4.0z3']).filter(x=>x!=='Signature Case')));});}catch(e){console.error('[MolPath '+V240Z3_VERSION+'] RES R2 base patch failed',e)}
+
+// A6.8: cases use Canonical; retain Deep-Dive registration below.
 try{V240Z3_DEEP_DIVES.forEach(d=>{const idx=DEEP_DIVE_CASES_V17.findIndex(x=>x&&x.case_id===d.case_id);if(idx>=0)DEEP_DIVE_CASES_V17[idx]=d;else DEEP_DIVE_CASES_V17.push(d);DEEP_DIVE_MAP_V17[d.case_id]=d;});}catch(e){console.error('[MolPath '+V240Z3_VERSION+'] RES R2 deep-dive registration failed',e)}
 function v240z3Stamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }
 const V240Z3_PREV_AFTER=window.MolPathI18nAfterApply;window.MolPathI18nAfterApply=function(l){try{if(typeof V240Z3_PREV_AFTER==='function')V240Z3_PREV_AFTER(l)}catch(_){}v240z3Stamp();};
@@ -5970,10 +5954,10 @@ try{console.log('[MolPath '+V240Z3_VERSION+'] RES R2: 5 D2 Deep Dives added; RES
 (function(){'use strict';
 const V240Z4_VERSION='v2.4.0z4';
 const V240Z4_CASE_IDS=["RES_ETH_002_v1_3","RES_ETH_003_v1_3","RES_DATA_001_v1_3","RES_AI_001_v1_3"];
-const V240Z4_BASE_PATCHES=Object.fromEntries([["RES_ETH_002_v1_3",["difficulty","estimated_time_min","tags","research_intro","research_context","hypothesis_options","pico_options","design_options","method_options","analysis_options","pitfall_options","expected_output","optimal_summary"]],["RES_ETH_003_v1_3",["difficulty","estimated_time_min","tags","research_intro","research_context","hypothesis_options","pico_options","design_options","method_options","analysis_options","pitfall_options","expected_output","optimal_summary"]],["RES_DATA_001_v1_3",["difficulty","estimated_time_min","tags","research_intro","research_context","hypothesis_options","pico_options","design_options","method_options","analysis_options","pitfall_options","expected_output","optimal_summary"]],["RES_AI_001_v1_3",["difficulty","estimated_time_min","tags","research_intro","research_context","hypothesis_options","pico_options","design_options","method_options","analysis_options","pitfall_options","expected_output","optimal_summary"]]].map(([id,keys])=>{const source=window.MolPathCanonicalDataA4b.cases.find(record=>record.id===id).case;return [id,Object.fromEntries(keys.map(key=>[key,JSON.parse(JSON.stringify(source[key]))]))];}));
+
 const V240Z4_DEEP_DIVES=["RES_ETH_002_v1_3","RES_ETH_003_v1_3","RES_DATA_001_v1_3","RES_AI_001_v1_3"].map(id=>JSON.parse(JSON.stringify(window.MolPathCanonicalDataA4b.cases.find(record=>record.id===id).deep_dive)));
-function v240z4Find(id){try{return (cases||[]).find(c=>c&&c.id===id)}catch(_){return null}}
-try{Object.entries(V240Z4_BASE_PATCHES).forEach(([id,p])=>{const c=v240z4Find(id);if(!c)return;Object.assign(c,p);c.deep_dive=true;c.signature_case=false;c.deep_dive_title=(V240Z4_DEEP_DIVES.find(d=>d.case_id===id)||{}).title||c.title;c.tags=Array.from(new Set([].concat(c.tags||[],['Deep Dive','RES D3 curated','v2.4.0z4']).filter(x=>x!=='Signature Case')));});}catch(e){console.error('[MolPath '+V240Z4_VERSION+'] RES R3 base patch failed',e)}
+
+// A6.8: cases use Canonical; retain Deep-Dive registration below.
 try{V240Z4_DEEP_DIVES.forEach(d=>{const idx=DEEP_DIVE_CASES_V17.findIndex(x=>x&&x.case_id===d.case_id);if(idx>=0)DEEP_DIVE_CASES_V17[idx]=d;else DEEP_DIVE_CASES_V17.push(d);DEEP_DIVE_MAP_V17[d.case_id]=d;});}catch(e){console.error('[MolPath '+V240Z4_VERSION+'] RES R3 deep-dive registration failed',e)}
 function v240z4Stamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }
 const V240Z4_PREV_AFTER=window.MolPathI18nAfterApply;window.MolPathI18nAfterApply=function(l){try{if(typeof V240Z4_PREV_AFTER==='function')V240Z4_PREV_AFTER(l)}catch(_){}v240z4Stamp();};
@@ -5991,10 +5975,10 @@ try{console.log('[MolPath '+V240Z4_VERSION+'] RES R3: 4 D3 Deep Dives added; RES
 (function(){'use strict';
 const V240Z5_VERSION='v2.4.0z5';
 const V240Z5_CASE_IDS=["RES_PM_001_v1_3","RES_PM_002_v1_3","RES_ROLE_001_v1_3"];
-const V240Z5_BASE_PATCHES=Object.fromEntries([["RES_PM_001_v1_3",["difficulty","estimated_time_min","tags","research_intro","research_context","hypothesis_options","pico_options","design_options","method_options","analysis_options","pitfall_options","expected_output","optimal_summary"]],["RES_PM_002_v1_3",["difficulty","estimated_time_min","tags","research_intro","research_context","hypothesis_options","pico_options","design_options","method_options","analysis_options","pitfall_options","expected_output","optimal_summary"]],["RES_ROLE_001_v1_3",["difficulty","estimated_time_min","tags","research_intro","research_context","hypothesis_options","pico_options","design_options","method_options","analysis_options","pitfall_options","expected_output","optimal_summary"]]].map(([id,keys])=>{const source=window.MolPathCanonicalDataA4b.cases.find(record=>record.id===id).case;return [id,Object.fromEntries(keys.map(key=>[key,JSON.parse(JSON.stringify(source[key]))]))];}));
+
 const V240Z5_DEEP_DIVES=["RES_PM_001_v1_3","RES_PM_002_v1_3","RES_ROLE_001_v1_3"].map(id=>JSON.parse(JSON.stringify(window.MolPathCanonicalDataA4b.cases.find(record=>record.id===id).deep_dive)));
-function v240z5Find(id){try{return (cases||[]).find(c=>c&&c.id===id)}catch(_){return null}}
-try{Object.entries(V240Z5_BASE_PATCHES).forEach(([id,p])=>{const c=v240z5Find(id);if(!c)return;Object.assign(c,p);c.deep_dive=true;c.signature_case=false;c.deep_dive_title=(V240Z5_DEEP_DIVES.find(d=>d.case_id===id)||{}).title||c.title;c.tags=Array.from(new Set([].concat(c.tags||[],['Deep Dive','RES D4 curated','v2.4.0z5']).filter(x=>x!=='Signature Case')));});}catch(e){console.error('[MolPath '+V240Z5_VERSION+'] RES R4 base patch failed',e)}
+
+// A6.8: cases use Canonical; retain Deep-Dive registration below.
 try{V240Z5_DEEP_DIVES.forEach(d=>{const idx=DEEP_DIVE_CASES_V17.findIndex(x=>x&&x.case_id===d.case_id);if(idx>=0)DEEP_DIVE_CASES_V17[idx]=d;else DEEP_DIVE_CASES_V17.push(d);DEEP_DIVE_MAP_V17[d.case_id]=d;});}catch(e){console.error('[MolPath '+V240Z5_VERSION+'] RES R4 deep-dive registration failed',e)}
 function v240z5Stamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }
 const V240Z5_PREV_AFTER=window.MolPathI18nAfterApply;window.MolPathI18nAfterApply=function(l){try{if(typeof V240Z5_PREV_AFTER==='function')V240Z5_PREV_AFTER(l)}catch(_){}v240z5Stamp();};
@@ -6011,10 +5995,10 @@ try{console.log('[MolPath '+V240Z5_VERSION+'] RES R4: 3 D4 Deep Dives added; RES
 (function(){'use strict';
 const V240Z6_VERSION='v2.4.0z6';
 const V240Z6_CASE_IDS=["RES_GRANT_001_v1_3","RES_IMPL_001_v1_3","RES_TEAM_001_v1_3"];
-const V240Z6_BASE_PATCHES=Object.fromEntries([["RES_GRANT_001_v1_3",["difficulty","estimated_time_min","tags","research_intro","research_context","hypothesis_options","pico_options","design_options","method_options","analysis_options","pitfall_options","expected_output","optimal_summary"]],["RES_IMPL_001_v1_3",["difficulty","estimated_time_min","tags","research_intro","research_context","hypothesis_options","pico_options","design_options","method_options","analysis_options","pitfall_options","expected_output","optimal_summary"]],["RES_TEAM_001_v1_3",["difficulty","estimated_time_min","tags","research_intro","research_context","hypothesis_options","pico_options","design_options","method_options","analysis_options","pitfall_options","expected_output","optimal_summary"]]].map(([id,keys])=>{const source=window.MolPathCanonicalDataA4b.cases.find(record=>record.id===id).case;return [id,Object.fromEntries(keys.map(key=>[key,JSON.parse(JSON.stringify(source[key]))]))];}));
+
 const V240Z6_DEEP_DIVES=["RES_GRANT_001_v1_3","RES_IMPL_001_v1_3","RES_TEAM_001_v1_3"].map(id=>JSON.parse(JSON.stringify(window.MolPathCanonicalDataA4b.cases.find(record=>record.id===id).deep_dive)));
-function v240z6Find(id){try{return (cases||[]).find(c=>c&&c.id===id)}catch(_){return null}}
-try{Object.entries(V240Z6_BASE_PATCHES).forEach(([id,p])=>{const c=v240z6Find(id);if(!c)return;Object.assign(c,p);c.deep_dive=true;c.signature_case=false;c.deep_dive_title=(V240Z6_DEEP_DIVES.find(d=>d.case_id===id)||{}).title||c.title;c.tags=Array.from(new Set([].concat(c.tags||[],['Deep Dive','RES D4 curated','RES content freeze','v2.4.0z6']).filter(x=>x!=='Signature Case')));});}catch(e){console.error('[MolPath '+V240Z6_VERSION+'] RES R5 base patch failed',e)}
+
+// A6.8: cases use Canonical; retain Deep-Dive registration below.
 try{V240Z6_DEEP_DIVES.forEach(d=>{const idx=DEEP_DIVE_CASES_V17.findIndex(x=>x&&x.case_id===d.case_id);if(idx>=0)DEEP_DIVE_CASES_V17[idx]=d;else DEEP_DIVE_CASES_V17.push(d);DEEP_DIVE_MAP_V17[d.case_id]=d;});}catch(e){console.error('[MolPath '+V240Z6_VERSION+'] RES R5 deep-dive registration failed',e)}
 function v240z6Stamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }
 const V240Z6_PREV_AFTER=window.MolPathI18nAfterApply;window.MolPathI18nAfterApply=function(l){try{if(typeof V240Z6_PREV_AFTER==='function')V240Z6_PREV_AFTER(l)}catch(_){}v240z6Stamp();};

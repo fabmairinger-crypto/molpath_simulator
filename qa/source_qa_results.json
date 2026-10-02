@@ -1,645 +1,704 @@
 {
   "status": "PASS",
-  "total": 197,
-  "passed": 197,
+  "total": 227,
+  "passed": 227,
   "failed": [],
   "checks": [
     {
-      "name": "verified original count and ordered IDs V21_DEEP_DIVE_BATCH1",
+      "name": "delivered confirmed A6.7 base hash",
       "pass": true,
       "detail": null
     },
     {
-      "name": "original literal absent V21_DEEP_DIVE_BATCH1",
+      "name": "exact scope 18 writers, 16 tables, 15 unused locators",
       "pass": true,
       "detail": null
     },
     {
-      "name": "replacement occurs exactly once V21_DEEP_DIVE_BATCH1",
+      "name": "verified exact original span writer V21_CASE_PROMOTION",
       "pass": true,
       "detail": null
     },
     {
-      "name": "verified original count and ordered IDs V230B_SIGNATURE_DEEP_DIVES",
+      "name": "verified exact new span writer V21_CASE_PROMOTION",
       "pass": true,
       "detail": null
     },
     {
-      "name": "original literal absent V230B_SIGNATURE_DEEP_DIVES",
+      "name": "verified exact original span writer V230B_CASE_PROMOTION",
       "pass": true,
       "detail": null
     },
     {
-      "name": "replacement occurs exactly once V230B_SIGNATURE_DEEP_DIVES",
+      "name": "verified exact new span writer V230B_CASE_PROMOTION",
       "pass": true,
       "detail": null
     },
     {
-      "name": "verified original count and ordered IDs V240M_BASE_PATCHES",
+      "name": "verified exact original span table V240M_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "original literal absent V240M_BASE_PATCHES",
+      "name": "verified exact new span table V240M_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "replacement occurs exactly once V240M_BASE_PATCHES",
+      "name": "verified exact original span writer V240M_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "case patch retains original ordered field lists V240M_BASE_PATCHES",
+      "name": "verified exact new span writer V240M_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "verified original count and ordered IDs V240M_DEEP_DIVES",
+      "name": "verified exact original span table V240N_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "original literal absent V240M_DEEP_DIVES",
+      "name": "verified exact new span table V240N_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "replacement occurs exactly once V240M_DEEP_DIVES",
+      "name": "verified exact original span writer V240N_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "verified original count and ordered IDs V240N_BASE_PATCHES",
+      "name": "verified exact new span writer V240N_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "original literal absent V240N_BASE_PATCHES",
+      "name": "verified exact original span unused_locator v240nById",
       "pass": true,
       "detail": null
     },
     {
-      "name": "replacement occurs exactly once V240N_BASE_PATCHES",
+      "name": "verified exact new span unused_locator v240nById",
       "pass": true,
       "detail": null
     },
     {
-      "name": "case patch retains original ordered field lists V240N_BASE_PATCHES",
+      "name": "verified exact original span table V240O_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "verified original count and ordered IDs V240N_DEEP_DIVES",
+      "name": "verified exact new span table V240O_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "original literal absent V240N_DEEP_DIVES",
+      "name": "verified exact original span writer V240O_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "replacement occurs exactly once V240N_DEEP_DIVES",
+      "name": "verified exact new span writer V240O_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "verified original count and ordered IDs V240O_BASE_PATCHES",
+      "name": "verified exact original span unused_locator v240oById",
       "pass": true,
       "detail": null
     },
     {
-      "name": "original literal absent V240O_BASE_PATCHES",
+      "name": "verified exact new span unused_locator v240oById",
       "pass": true,
       "detail": null
     },
     {
-      "name": "replacement occurs exactly once V240O_BASE_PATCHES",
+      "name": "verified exact original span table V240P_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "case patch retains original ordered field lists V240O_BASE_PATCHES",
+      "name": "verified exact new span table V240P_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "verified original count and ordered IDs V240O_DEEP_DIVES",
+      "name": "verified exact original span writer V240P_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "original literal absent V240O_DEEP_DIVES",
+      "name": "verified exact new span writer V240P_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "replacement occurs exactly once V240O_DEEP_DIVES",
+      "name": "verified exact original span unused_locator v240pById",
       "pass": true,
       "detail": null
     },
     {
-      "name": "verified original count and ordered IDs V240P_BASE_PATCHES",
+      "name": "verified exact new span unused_locator v240pById",
       "pass": true,
       "detail": null
     },
     {
-      "name": "original literal absent V240P_BASE_PATCHES",
+      "name": "verified exact original span table V240Q_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "replacement occurs exactly once V240P_BASE_PATCHES",
+      "name": "verified exact new span table V240Q_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "case patch retains original ordered field lists V240P_BASE_PATCHES",
+      "name": "verified exact original span writer V240Q_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "verified original count and ordered IDs V240P_DEEP_DIVES",
+      "name": "verified exact new span writer V240Q_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "original literal absent V240P_DEEP_DIVES",
+      "name": "verified exact original span unused_locator v240qById",
       "pass": true,
       "detail": null
     },
     {
-      "name": "replacement occurs exactly once V240P_DEEP_DIVES",
+      "name": "verified exact new span unused_locator v240qById",
       "pass": true,
       "detail": null
     },
     {
-      "name": "verified original count and ordered IDs V240Q_BASE_PATCHES",
+      "name": "verified exact original span table V240S_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "original literal absent V240Q_BASE_PATCHES",
+      "name": "verified exact new span table V240S_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "replacement occurs exactly once V240Q_BASE_PATCHES",
+      "name": "verified exact original span writer V240S_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "case patch retains original ordered field lists V240Q_BASE_PATCHES",
+      "name": "verified exact new span writer V240S_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "verified original count and ordered IDs V240Q_DEEP_DIVES",
+      "name": "verified exact original span unused_locator v240sFind",
       "pass": true,
       "detail": null
     },
     {
-      "name": "original literal absent V240Q_DEEP_DIVES",
+      "name": "verified exact new span unused_locator v240sFind",
       "pass": true,
       "detail": null
     },
     {
-      "name": "replacement occurs exactly once V240Q_DEEP_DIVES",
+      "name": "verified exact original span table V240U_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "verified original count and ordered IDs V240S_BASE_PATCHES",
+      "name": "verified exact new span table V240U_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "original literal absent V240S_BASE_PATCHES",
+      "name": "verified exact original span writer V240U_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "replacement occurs exactly once V240S_BASE_PATCHES",
+      "name": "verified exact new span writer V240U_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "case patch retains original ordered field lists V240S_BASE_PATCHES",
+      "name": "verified exact original span unused_locator v240uFind",
       "pass": true,
       "detail": null
     },
     {
-      "name": "verified original count and ordered IDs V240S_DEEP_DIVES",
+      "name": "verified exact new span unused_locator v240uFind",
       "pass": true,
       "detail": null
     },
     {
-      "name": "original literal absent V240S_DEEP_DIVES",
+      "name": "verified exact original span table V240V_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "replacement occurs exactly once V240S_DEEP_DIVES",
+      "name": "verified exact new span table V240V_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "verified original count and ordered IDs V240U_BASE_PATCHES",
+      "name": "verified exact original span writer V240V_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "original literal absent V240U_BASE_PATCHES",
+      "name": "verified exact new span writer V240V_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "replacement occurs exactly once V240U_BASE_PATCHES",
+      "name": "verified exact original span unused_locator v240vFind",
       "pass": true,
       "detail": null
     },
     {
-      "name": "case patch retains original ordered field lists V240U_BASE_PATCHES",
+      "name": "verified exact new span unused_locator v240vFind",
       "pass": true,
       "detail": null
     },
     {
-      "name": "verified original count and ordered IDs V240U_DEEP_DIVES",
+      "name": "verified exact original span table V240W_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "original literal absent V240U_DEEP_DIVES",
+      "name": "verified exact new span table V240W_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "replacement occurs exactly once V240U_DEEP_DIVES",
+      "name": "verified exact original span writer V240W_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "verified original count and ordered IDs V240V_BASE_PATCHES",
+      "name": "verified exact new span writer V240W_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "original literal absent V240V_BASE_PATCHES",
+      "name": "verified exact original span unused_locator v240wFind",
       "pass": true,
       "detail": null
     },
     {
-      "name": "replacement occurs exactly once V240V_BASE_PATCHES",
+      "name": "verified exact new span unused_locator v240wFind",
       "pass": true,
       "detail": null
     },
     {
-      "name": "case patch retains original ordered field lists V240V_BASE_PATCHES",
+      "name": "verified exact original span table V240X_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "verified original count and ordered IDs V240V_DEEP_DIVES",
+      "name": "verified exact new span table V240X_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "original literal absent V240V_DEEP_DIVES",
+      "name": "verified exact original span writer V240X_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "replacement occurs exactly once V240V_DEEP_DIVES",
+      "name": "verified exact new span writer V240X_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "verified original count and ordered IDs V240W_BASE_PATCHES",
+      "name": "verified exact original span unused_locator v240xFind",
       "pass": true,
       "detail": null
     },
     {
-      "name": "original literal absent V240W_BASE_PATCHES",
+      "name": "verified exact new span unused_locator v240xFind",
       "pass": true,
       "detail": null
     },
     {
-      "name": "replacement occurs exactly once V240W_BASE_PATCHES",
+      "name": "verified exact original span table V240Y_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "case patch retains original ordered field lists V240W_BASE_PATCHES",
+      "name": "verified exact new span table V240Y_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "verified original count and ordered IDs V240W_DEEP_DIVES",
+      "name": "verified exact original span writer V240Y_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "original literal absent V240W_DEEP_DIVES",
+      "name": "verified exact new span writer V240Y_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "replacement occurs exactly once V240W_DEEP_DIVES",
+      "name": "verified exact original span unused_locator v240yFind",
       "pass": true,
       "detail": null
     },
     {
-      "name": "verified original count and ordered IDs V240X_BASE_PATCHES",
+      "name": "verified exact new span unused_locator v240yFind",
       "pass": true,
       "detail": null
     },
     {
-      "name": "original literal absent V240X_BASE_PATCHES",
+      "name": "verified exact original span table V240Z2_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "replacement occurs exactly once V240X_BASE_PATCHES",
+      "name": "verified exact new span table V240Z2_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "case patch retains original ordered field lists V240X_BASE_PATCHES",
+      "name": "verified exact original span writer V240Z2_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "verified original count and ordered IDs V240X_DEEP_DIVES",
+      "name": "verified exact new span writer V240Z2_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "original literal absent V240X_DEEP_DIVES",
+      "name": "verified exact original span unused_locator v240z2Find",
       "pass": true,
       "detail": null
     },
     {
-      "name": "replacement occurs exactly once V240X_DEEP_DIVES",
+      "name": "verified exact new span unused_locator v240z2Find",
       "pass": true,
       "detail": null
     },
     {
-      "name": "verified original count and ordered IDs V240Y_BASE_PATCHES",
+      "name": "verified exact original span table V240Z3_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "original literal absent V240Y_BASE_PATCHES",
+      "name": "verified exact new span table V240Z3_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "replacement occurs exactly once V240Y_BASE_PATCHES",
+      "name": "verified exact original span writer V240Z3_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "case patch retains original ordered field lists V240Y_BASE_PATCHES",
+      "name": "verified exact new span writer V240Z3_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "verified original count and ordered IDs V240Y_DEEP_DIVES",
+      "name": "verified exact original span unused_locator v240z3Find",
       "pass": true,
       "detail": null
     },
     {
-      "name": "original literal absent V240Y_DEEP_DIVES",
+      "name": "verified exact new span unused_locator v240z3Find",
       "pass": true,
       "detail": null
     },
     {
-      "name": "replacement occurs exactly once V240Y_DEEP_DIVES",
+      "name": "verified exact original span table V240Z4_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "verified original count and ordered IDs V240Z2_BASE_PATCHES",
+      "name": "verified exact new span table V240Z4_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "original literal absent V240Z2_BASE_PATCHES",
+      "name": "verified exact original span writer V240Z4_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "replacement occurs exactly once V240Z2_BASE_PATCHES",
+      "name": "verified exact new span writer V240Z4_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "case patch retains original ordered field lists V240Z2_BASE_PATCHES",
+      "name": "verified exact original span unused_locator v240z4Find",
       "pass": true,
       "detail": null
     },
     {
-      "name": "verified original count and ordered IDs V240Z2_DEEP_DIVES",
+      "name": "verified exact new span unused_locator v240z4Find",
       "pass": true,
       "detail": null
     },
     {
-      "name": "original literal absent V240Z2_DEEP_DIVES",
+      "name": "verified exact original span table V240Z5_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "replacement occurs exactly once V240Z2_DEEP_DIVES",
+      "name": "verified exact new span table V240Z5_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "verified original count and ordered IDs V240Z3_BASE_PATCHES",
+      "name": "verified exact original span writer V240Z5_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "original literal absent V240Z3_BASE_PATCHES",
+      "name": "verified exact new span writer V240Z5_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "replacement occurs exactly once V240Z3_BASE_PATCHES",
+      "name": "verified exact original span unused_locator v240z5Find",
       "pass": true,
       "detail": null
     },
     {
-      "name": "case patch retains original ordered field lists V240Z3_BASE_PATCHES",
+      "name": "verified exact new span unused_locator v240z5Find",
       "pass": true,
       "detail": null
     },
     {
-      "name": "verified original count and ordered IDs V240Z3_DEEP_DIVES",
+      "name": "verified exact original span table V240Z6_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "original literal absent V240Z3_DEEP_DIVES",
+      "name": "verified exact new span table V240Z6_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "replacement occurs exactly once V240Z3_DEEP_DIVES",
+      "name": "verified exact original span writer V240Z6_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "verified original count and ordered IDs V240Z4_BASE_PATCHES",
+      "name": "verified exact new span writer V240Z6_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "original literal absent V240Z4_BASE_PATCHES",
+      "name": "verified exact original span unused_locator v240z6Find",
       "pass": true,
       "detail": null
     },
     {
-      "name": "replacement occurs exactly once V240Z4_BASE_PATCHES",
+      "name": "verified exact new span unused_locator v240z6Find",
       "pass": true,
       "detail": null
     },
     {
-      "name": "case patch retains original ordered field lists V240Z4_BASE_PATCHES",
+      "name": "49 verified edits reconstruct candidate exactly",
       "pass": true,
       "detail": null
     },
     {
-      "name": "verified original count and ordered IDs V240Z4_DEEP_DIVES",
+      "name": "inverse edits reconstruct confirmed A6.7 exactly",
       "pass": true,
       "detail": null
     },
     {
-      "name": "original literal absent V240Z4_DEEP_DIVES",
+      "name": "all source outside specified edits byte-identical",
       "pass": true,
       "detail": null
     },
     {
-      "name": "replacement occurs exactly once V240Z4_DEEP_DIVES",
+      "name": "all remaining named helpers unchanged except verified integrate case-write removal",
       "pass": true,
+      "detail": {
+        "remaining": 604,
+        "removed_unused": 15
+      }
+    },
+    {
+      "name": "retired binding has no remaining executable references V240M_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "retired binding has no remaining executable references V240N_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "retired binding has no remaining executable references v240nById",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "retired binding has no remaining executable references V240O_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "retired binding has no remaining executable references v240oById",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "retired binding has no remaining executable references V240P_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "retired binding has no remaining executable references v240pById",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "retired binding has no remaining executable references V240Q_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "retired binding has no remaining executable references v240qById",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "retired binding has no remaining executable references V240S_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "retired binding has no remaining executable references v240sFind",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "retired binding has no remaining executable references V240U_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "retired binding has no remaining executable references v240uFind",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "retired binding has no remaining executable references V240V_BASE_PATCHES",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "retired binding has no remaining executable references v240vFind",
+      "pass": true,
       "detail": null
     },
     {
-      "name": "verified original count and ordered IDs V240Z5_BASE_PATCHES",
+      "name": "retired binding has no remaining executable references V240W_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "original literal absent V240Z5_BASE_PATCHES",
+      "name": "retired binding has no remaining executable references v240wFind",
       "pass": true,
       "detail": null
     },
     {
-      "name": "replacement occurs exactly once V240Z5_BASE_PATCHES",
+      "name": "retired binding has no remaining executable references V240X_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "case patch retains original ordered field lists V240Z5_BASE_PATCHES",
+      "name": "retired binding has no remaining executable references v240xFind",
       "pass": true,
       "detail": null
     },
     {
-      "name": "verified original count and ordered IDs V240Z5_DEEP_DIVES",
+      "name": "retired binding has no remaining executable references V240Y_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "original literal absent V240Z5_DEEP_DIVES",
+      "name": "retired binding has no remaining executable references v240yFind",
       "pass": true,
       "detail": null
     },
     {
-      "name": "replacement occurs exactly once V240Z5_DEEP_DIVES",
+      "name": "retired binding has no remaining executable references V240Z2_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "verified original count and ordered IDs V240Z6_BASE_PATCHES",
+      "name": "retired binding has no remaining executable references v240z2Find",
       "pass": true,
       "detail": null
     },
     {
-      "name": "original literal absent V240Z6_BASE_PATCHES",
+      "name": "retired binding has no remaining executable references V240Z3_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "replacement occurs exactly once V240Z6_BASE_PATCHES",
+      "name": "retired binding has no remaining executable references v240z3Find",
       "pass": true,
       "detail": null
     },
     {
-      "name": "case patch retains original ordered field lists V240Z6_BASE_PATCHES",
+      "name": "retired binding has no remaining executable references V240Z4_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "verified original count and ordered IDs V240Z6_DEEP_DIVES",
+      "name": "retired binding has no remaining executable references v240z4Find",
       "pass": true,
       "detail": null
     },
     {
-      "name": "original literal absent V240Z6_DEEP_DIVES",
+      "name": "retired binding has no remaining executable references V240Z5_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "replacement occurs exactly once V240Z6_DEEP_DIVES",
+      "name": "retired binding has no remaining executable references v240z5Find",
       "pass": true,
       "detail": null
     },
     {
-      "name": "all 34 tables were audited with supported fields and types",
+      "name": "retired binding has no remaining executable references V240Z6_BASE_PATCHES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "18 Deep-Dive arrays and 16 case patch maps",
+      "name": "retired binding has no remaining executable references v240z6Find",
       "pass": true,
       "detail": null
     },
     {
-      "name": "all named registration/renderer/state/scoring helpers byte-identical",
+      "name": "all script attributes/order retained",
       "pass": true,
-      "detail": 619
+      "detail": null
     },
     {
-      "name": "all script attributes and order unchanged",
+      "name": "exactly audited 18 inline scripts changed",
       "pass": true,
       "detail": null
     },
     {
-      "name": "exactly the 18 verified inline scripts contain replacements",
+      "name": "whole primary runtime script byte-identical",
       "pass": true,
-      "detail": [
-        "v21Batch1ContentExpansionFix",
-        "v230bSignatureDeepDiveExpansion",
-        "v240m_a1_deepdive_patch",
-        "v240n_a2_crc_deepdives",
-        "v240o_a3_hrd_deepdives",
-        "v240p_a4_io_deepdives",
-        "v240q_a5_a6_mtb_freeze",
-        "v240s-met-deepdive",
-        "v240u_lab_b1_preanalytics_deepdive_patch",
-        "v240v_lab_b2_run_qc_deepdive_patch",
-        "v240w_lab_b3_postanalytics_deepdive_patch",
-        "v240x_lab_b4_c4_deepdive_patch",
-        "v240y_lab_b5_digital_data_lims_deepdive_patch",
-        "v240z2_res_r1_deepdive",
-        "v240z3_res_r2_deepdive",
-        "v240z4_res_r3_deepdive",
-        "v240z5_res_r4_deepdive",
-        "v240z6_res_r5_deepdive"
-      ]
+      "detail": null
     },
     {
-      "name": "whole primary runtime script remains byte-identical",
+      "name": "all styles byte-identical",
       "pass": true,
       "detail": null
     },
@@ -649,417 +708,475 @@
       "detail": null
     },
     {
-      "name": "A4b loader occurs once before projections",
+      "name": "same observers and render wrappers",
       "pass": true,
       "detail": null
     },
     {
-      "name": "final signature freeze remains last",
+      "name": "UI-used byId helper retained exactly",
       "pass": true,
       "detail": null
     },
     {
-      "name": "canonical integration remains after curation",
+      "name": "Deep-Dive projection retained exactly V21_DEEP_DIVE_BATCH1",
       "pass": true,
       "detail": null
     },
     {
-      "name": "all CSS blocks byte-identical",
+      "name": "Deep-Dive projection retained exactly V230B_SIGNATURE_DEEP_DIVES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "no new observers/wrappers",
+      "name": "Deep-Dive projection retained exactly V240M_DEEP_DIVES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "runtime file set unchanged",
+      "name": "Deep-Dive projection retained exactly V240N_DEEP_DIVES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged runtime input i18n/ar.js",
+      "name": "Deep-Dive projection retained exactly V240O_DEEP_DIVES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged runtime input i18n/core.js",
+      "name": "Deep-Dive projection retained exactly V240P_DEEP_DIVES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged runtime input i18n/de.js",
+      "name": "Deep-Dive projection retained exactly V240Q_DEEP_DIVES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged runtime input i18n/el.js",
+      "name": "Deep-Dive projection retained exactly V240S_DEEP_DIVES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged runtime input i18n/en.js",
+      "name": "Deep-Dive projection retained exactly V240U_DEEP_DIVES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged runtime input i18n/es.js",
+      "name": "Deep-Dive projection retained exactly V240V_DEEP_DIVES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged runtime input i18n/fa.js",
+      "name": "Deep-Dive projection retained exactly V240W_DEEP_DIVES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged runtime input i18n/fr.js",
+      "name": "Deep-Dive projection retained exactly V240X_DEEP_DIVES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged runtime input i18n/languages.js",
+      "name": "Deep-Dive projection retained exactly V240Y_DEEP_DIVES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged runtime input i18n/legacy/legacy_v223_v224_runtime.js",
+      "name": "Deep-Dive projection retained exactly V240Z2_DEEP_DIVES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged runtime input i18n/legacy/legacy_v230c_signature_deepdive.js",
+      "name": "Deep-Dive projection retained exactly V240Z3_DEEP_DIVES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged runtime input i18n/legacy/legacy_v240t_signature_i18n.js",
+      "name": "Deep-Dive projection retained exactly V240Z4_DEEP_DIVES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged runtime input i18n/legacy/legacy_v240z10_res_t4_i18n.js",
+      "name": "Deep-Dive projection retained exactly V240Z5_DEEP_DIVES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged runtime input i18n/legacy/legacy_v240z10a_res_t4_hotfix.js",
+      "name": "Deep-Dive projection retained exactly V240Z6_DEEP_DIVES",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged runtime input i18n/legacy/legacy_v240z7_res_t1_i18n.js",
+      "name": "same runtime file set",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged runtime input i18n/legacy/legacy_v240z8_res_t2_i18n.js",
+      "name": "unchanged executable input i18n/ar.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged runtime input i18n/legacy/legacy_v240z9_res_t3_i18n.js",
+      "name": "unchanged executable input i18n/core.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged runtime input i18n/legacy/legacy_v240z_lab_i18n.js",
+      "name": "unchanged executable input i18n/de.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged runtime input i18n/ro.js",
+      "name": "unchanged executable input i18n/el.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged runtime input i18n/ru.js",
+      "name": "unchanged executable input i18n/en.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged runtime input i18n/tr.js",
+      "name": "unchanged executable input i18n/es.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged runtime input i18n/uk.js",
+      "name": "unchanged executable input i18n/fa.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged runtime input molpath_version.js",
+      "name": "unchanged executable input i18n/fr.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged runtime input rc2_A4b_canonical_cases_lossless.js",
+      "name": "unchanged executable input i18n/languages.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged runtime input rc2_A5_courses.js",
+      "name": "unchanged executable input i18n/legacy/legacy_v223_v224_runtime.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged runtime input rc2_A5_data_adapter.js",
+      "name": "unchanged executable input i18n/legacy/legacy_v230c_signature_deepdive.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged runtime input rc2_A5_method_focus.js",
+      "name": "unchanged executable input i18n/legacy/legacy_v240t_signature_i18n.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged runtime input rc2_A6_canonical_integration.js",
+      "name": "unchanged executable input i18n/legacy/legacy_v240z10_res_t4_i18n.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged runtime input v240z13_crc002_flagship.js",
+      "name": "unchanged executable input i18n/legacy/legacy_v240z10a_res_t4_hotfix.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged runtime input v240z14_crc001_flagship.js",
+      "name": "unchanged executable input i18n/legacy/legacy_v240z7_res_t1_i18n.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged runtime input v240z15_nsclc002_flagship.js",
+      "name": "unchanged executable input i18n/legacy/legacy_v240z8_res_t2_i18n.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged runtime input v240z16_metngs003_flagship.js",
+      "name": "unchanged executable input i18n/legacy/legacy_v240z9_res_t3_i18n.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged runtime input v240z17_ovar001_flagship.js",
+      "name": "unchanged executable input i18n/legacy/legacy_v240z_lab_i18n.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged runtime input v240z18_ovar002_flagship.js",
+      "name": "unchanged executable input i18n/ro.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged runtime input v240z19_cns001_flagship.js",
+      "name": "unchanged executable input i18n/ru.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged runtime input v240z20_io001_flagship.js",
+      "name": "unchanged executable input i18n/tr.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged runtime input v250b_asset_modal_hotfix.js",
+      "name": "unchanged executable input i18n/uk.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged runtime input v250b_home_screen.js",
+      "name": "unchanged executable input molpath_version.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged runtime input v250b_labdoc001_flagship.js",
+      "name": "unchanged executable input rc2_A4b_canonical_cases_lossless.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged runtime input v250b_labpost001_flagship.js",
+      "name": "unchanged executable input rc2_A5_courses.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged runtime input v250b_labpre001_course_flagship.js",
+      "name": "unchanged executable input rc2_A5_data_adapter.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged runtime input v250b_labrun001_course_flagship.js",
+      "name": "unchanged executable input rc2_A5_method_focus.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged runtime input v250b_method_focus_filter.js",
+      "name": "unchanged executable input rc2_A6_canonical_integration.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged runtime input v250b_metlb001_course_flagship.js",
+      "name": "unchanged executable input v240z13_crc002_flagship.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged runtime input v250b_metngs001_course_flagship.js",
+      "name": "unchanged executable input v240z14_crc001_flagship.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged runtime input v250b_metngs002_course_flagship.js",
+      "name": "unchanged executable input v240z15_nsclc002_flagship.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged runtime input v250b_metngs004_course_flagship.js",
+      "name": "unchanged executable input v240z16_metngs003_flagship.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged runtime input v250b_metrna001_course_flagship.js",
+      "name": "unchanged executable input v240z17_ovar001_flagship.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged runtime input v250b_reseth001_flagship.js",
+      "name": "unchanged executable input v240z18_ovar002_flagship.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged runtime input v250b_reseth002_course_flagship.js",
+      "name": "unchanged executable input v240z19_cns001_flagship.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged runtime input v250b_reshyp001_flagship.js",
+      "name": "unchanged executable input v240z20_io001_flagship.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged runtime input v250b_resimpl001_course_flagship.js",
+      "name": "unchanged executable input v250b_asset_modal_hotfix.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged runtime input v250b_responsive_shell.js",
+      "name": "unchanged executable input v250b_home_screen.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged runtime input v250b_resrole001_course_flagship.js",
+      "name": "unchanged executable input v250b_labdoc001_flagship.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged runtime input v250b_signature_taxonomy_freeze.js",
+      "name": "unchanged executable input v250b_labpost001_flagship.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged runtime input v250b_startup_cover_hotfix.js",
+      "name": "unchanged executable input v250b_labpre001_course_flagship.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged runtime input v260rc1_case_consistency_curation_i18n.js",
+      "name": "unchanged executable input v250b_labrun001_course_flagship.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged runtime input v260rc1_lab_run_004_asset_upgrade.js",
+      "name": "unchanged executable input v250b_method_focus_filter.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged runtime input v260rc1_met_fish_001_asset_i18n_upgrade.js",
+      "name": "unchanged executable input v250b_metlb001_course_flagship.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged runtime input v260rc1_mtb_cns_003_asset_upgrade.js",
+      "name": "unchanged executable input v250b_metngs001_course_flagship.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged runtime input v260rc1_mtb_cns_003_mtb_hem_001_i18n_consolidation.js",
+      "name": "unchanged executable input v250b_metngs002_course_flagship.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged runtime input v260rc1_mtb_hem_001_asset_upgrade.js",
+      "name": "unchanged executable input v250b_metngs004_course_flagship.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged runtime input v260rc1_res_val_001_signature_asset_i18n_upgrade.js",
+      "name": "unchanged executable input v250b_metrna001_course_flagship.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "inverse 34 replacements exactly reconstruct confirmed A6.6 index",
+      "name": "unchanged executable input v250b_reseth001_flagship.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "all source text outside the 34 data literals byte-identical",
+      "name": "unchanged executable input v250b_reseth002_course_flagship.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "base hash matches delivered A6.6 index",
+      "name": "unchanged executable input v250b_reshyp001_flagship.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged executable input v250b_resimpl001_course_flagship.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged executable input v250b_responsive_shell.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged executable input v250b_resrole001_course_flagship.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged executable input v250b_signature_taxonomy_freeze.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged executable input v250b_startup_cover_hotfix.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged executable input v260rc1_case_consistency_curation_i18n.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged executable input v260rc1_lab_run_004_asset_upgrade.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged executable input v260rc1_met_fish_001_asset_i18n_upgrade.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged executable input v260rc1_mtb_cns_003_asset_upgrade.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged executable input v260rc1_mtb_cns_003_mtb_hem_001_i18n_consolidation.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged executable input v260rc1_mtb_hem_001_asset_upgrade.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged executable input v260rc1_res_val_001_signature_asset_i18n_upgrade.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "targeted baseline audit reaches all 18 paths without errors",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "targeted baseline audit covers 77 field copies",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "instrumented baseline boot hash matches previously passed A6.7",
       "pass": true,
       "detail": null
     }
   ],
   "changes": {
-    "base": "user-confirmed complete A6.6",
+    "base": "user-confirmed complete A6.7",
     "changed": [
       "index.html"
     ],
-    "old_index_bytes": 3398023,
-    "new_index_bytes": 2182829,
-    "bytes_removed": 1215194,
-    "base_sha256": "cc280428598346cb8f5464288a8cd188ef95137ffc3fc2f103dec56ef789fca4",
-    "sha256": "93e238a2f8ee23f9bf055b54573063466fc26db72e57900126573c0b8c397f15",
-    "table_count": 34,
-    "deep_tables": 18,
-    "base_tables": 16,
-    "deep_rows": 84,
-    "base_rows": 77,
-    "projection_rows": {
-      "V21_DEEP_DIVE_BATCH1": 3,
-      "V230B_SIGNATURE_DEEP_DIVES": 4,
-      "V240M_BASE_PATCHES": 5,
-      "V240M_DEEP_DIVES": 5,
-      "V240N_BASE_PATCHES": 3,
-      "V240N_DEEP_DIVES": 3,
-      "V240O_BASE_PATCHES": 3,
-      "V240O_DEEP_DIVES": 3,
-      "V240P_BASE_PATCHES": 4,
-      "V240P_DEEP_DIVES": 4,
-      "V240Q_BASE_PATCHES": 9,
-      "V240Q_DEEP_DIVES": 9,
-      "V240S_BASE_PATCHES": 10,
-      "V240S_DEEP_DIVES": 10,
-      "V240U_BASE_PATCHES": 5,
-      "V240U_DEEP_DIVES": 5,
-      "V240V_BASE_PATCHES": 5,
-      "V240V_DEEP_DIVES": 5,
-      "V240W_BASE_PATCHES": 4,
-      "V240W_DEEP_DIVES": 4,
-      "V240X_BASE_PATCHES": 5,
-      "V240X_DEEP_DIVES": 5,
-      "V240Y_BASE_PATCHES": 5,
-      "V240Y_DEEP_DIVES": 5,
-      "V240Z2_BASE_PATCHES": 4,
-      "V240Z2_DEEP_DIVES": 4,
-      "V240Z3_BASE_PATCHES": 5,
-      "V240Z3_DEEP_DIVES": 5,
-      "V240Z4_BASE_PATCHES": 4,
-      "V240Z4_DEEP_DIVES": 4,
-      "V240Z5_BASE_PATCHES": 3,
-      "V240Z5_DEEP_DIVES": 3,
-      "V240Z6_BASE_PATCHES": 3,
-      "V240Z6_DEEP_DIVES": 3
-    },
+    "old_index_bytes": 2182829,
+    "new_index_bytes": 2154953,
+    "base_sha256": "93e238a2f8ee23f9bf055b54573063466fc26db72e57900126573c0b8c397f15",
+    "sha256": "cfa1df324b27b7bbf0ab81ebf65e9de43ddeb01dd2118b766f4e238d9d7f761c",
+    "writer_paths_removed": 18,
+    "case_patch_tables_removed": 16,
+    "case_patch_rows_removed": 77,
+    "unused_locators_removed": 15,
+    "exact_edits": 49,
+    "changed_scripts": [
+      "v21Batch1ContentExpansionFix",
+      "v230bSignatureDeepDiveExpansion",
+      "v240m_a1_deepdive_patch",
+      "v240n_a2_crc_deepdives",
+      "v240o_a3_hrd_deepdives",
+      "v240p_a4_io_deepdives",
+      "v240q_a5_a6_mtb_freeze",
+      "v240s-met-deepdive",
+      "v240u_lab_b1_preanalytics_deepdive_patch",
+      "v240v_lab_b2_run_qc_deepdive_patch",
+      "v240w_lab_b3_postanalytics_deepdive_patch",
+      "v240x_lab_b4_c4_deepdive_patch",
+      "v240y_lab_b5_digital_data_lims_deepdive_patch",
+      "v240z2_res_r1_deepdive",
+      "v240z3_res_r2_deepdive",
+      "v240z4_res_r3_deepdive",
+      "v240z5_res_r4_deepdive",
+      "v240z6_res_r5_deepdive"
+    ],
     "load_order": [
       "rc2_A5_courses.js",
       "rc2_A4b_canonical_cases_lossless.js",
@@ -1113,7 +1230,7 @@
       "rc2_A6_canonical_integration.js",
       "v250b_signature_taxonomy_freeze.js"
     ],
-    "compatibility": "every original table ID/order retained; each case patch retains exactly its original ordered top-level field list",
-    "scope": "34 data literals replaced; existing registration/update/renderer functions, load order, languages and all other runtime files retained"
+    "retained": "all 18 Deep-Dive projection arrays and their upserts; UI-used byId; late canonical integration and remaining independent writers",
+    "bytes_removed": 27876
   }
 }

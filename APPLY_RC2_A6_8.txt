@@ -1,0 +1,31 @@
+MolPath rc2 A6.8 — Delta anwenden
+Stand 2026-10-02 | Basis: dein vollständig funktionierender A6.7-Build
+
+Genau EINE Laufzeitdatei wird ersetzt: index.html.
+A6.7 ist von dir bestätigt. A6.8 ist lokal geprüft; sein Browsercheck bleibt offen.
+
+1. Sichere die bisherige index.html aus deinem vollständigen A6.7-Ordner.
+2. Entpacke das Delta separat. Basis-Hash im Manifest; optional mit Python prüfen:
+   python qa/verify_a6_8.py before /Pfad/zum/vollstaendigen/A6_7_Build
+3. Kopiere nur die neue index.html in diesen vollständigen A6.7-Ordner.
+   Die vorhandenen JS-, Sprach-, Asset- und PDF-Dateien bleiben erforderlich.
+   Kein älteres Delta erneut einspielen. Begleitdokumente und qa/ sind keine
+   Laufzeit-Dateien. Das Delta ist kein eigenständig startbarer Vollbuild.
+4. Optional nach dem Ersetzen prüfen:
+   python qa/verify_a6_8.py after /Pfad/zum/vollstaendigen/A6_8_Build
+5. Strg+F5. Kurzer A6.8-Browsercheck:
+   - Startseite und Bibliothek: 91 Fälle, Signature-/Kurs-/Methodenfilter.
+   - Je ein MTB-, LAB-, RES- und Methodenfall: Auftrag, Gate, Ergebnisse, Abschluss.
+   - CRC2, OVAR2 und ein LAB-CAPA-Fall: Deep Dive und Bericht wie in A6.7.
+   - DE -> EN -> DE; bei Gelegenheit AR/FA öffnen.
+   - Titel/Top-Version bleiben v2.6.0-rc1, Konsole ohne neue Fehler.
+
+Rollback: gesicherte A6.7-index.html wiederherstellen und neu laden.
+
+Ergänzende lokale QA mit Node.js:
+node qa/syntax_qa.js /Pfad/zum/vollstaendigen/Build
+node qa/runtime_qa.js /Pfad/zum/vollstaendigen/Build
+Optionaler Probelauf der alten Schreibpfade nur gegen den gesicherten A6.7-Build:
+node qa/writer_probe.js /Pfad/zum/vollstaendigen/A6_7_Build
+Die Probelauf-Instrumentierung ist ausschließlich QA und nicht Teil der Runtime.
+Die QA nutzt ein DOM-Testdouble und ersetzt keinen echten Browsercheck.

@@ -1,0 +1,57 @@
+{
+  "package": "MolPath_rc2_A6_8_delta",
+  "status": "SOURCE_COMPARISON_SYNTAX_RUNTIME_PASS_BROWSER_OPEN",
+  "base_browser_smoke": "CONFIRMED_BY_USER for A6.7",
+  "a6_8_browser_smoke": "NOT_RUN",
+  "source": {
+    "passed": 227,
+    "total": 227
+  },
+  "comparison": {
+    "passed": 45,
+    "total": 45
+  },
+  "syntax": {
+    "units": 99,
+    "errors": []
+  },
+  "runtime": {
+    "passed": 254,
+    "total": 254,
+    "errors": [],
+    "counts": {
+      "cases": 91,
+      "deep": 91,
+      "signature": 30,
+      "methods": 44,
+      "courses": 5,
+      "courseCases": 23
+    },
+    "pre_boot_hash": "a767970c2b67c0ee4066ff8794fe36f71255c497aeb7f9d8fc9e660d901f83d0",
+    "after_boot_hash": "a767970c2b67c0ee4066ff8794fe36f71255c497aeb7f9d8fc9e660d901f83d0",
+    "final_hash": "a767970c2b67c0ee4066ff8794fe36f71255c497aeb7f9d8fc9e660d901f83d0"
+  },
+  "reference": "reused passed A6.7 full runtime result; additional targeted QA-only A6.7 writer probe executed at actual parse/boot call sites",
+  "writer_probe": {
+    "unique_paths": 18,
+    "calls": 21,
+    "field_copies": 77,
+    "unchanged_field_copies": 51,
+    "changed_field_copies": 26,
+    "after_boot_hash": "a767970c2b67c0ee4066ff8794fe36f71255c497aeb7f9d8fc9e660d901f83d0",
+    "errors": []
+  },
+  "display_comparison": {
+    "language_steps": 12,
+    "records_per_step": 364,
+    "exact_record_and_string_hash_equality": true
+  },
+  "report_comparison": "six hybrid paths in DE/EN/RO/UK, absent/partial/complete/final exact HTML SHA256 equality",
+  "limits": [
+    "Node VM uses a DOM test double: no true browser layout, live MutationObserver behavior, RTL layout or binary image rendering.",
+    "Unchanged executable inputs reuse the verified A6.7 staging fixture; full rc1 archive materialization was previously blocked by HTTP 502.",
+    "The 11-language fixture uses existing uploaded files and the existing UK patch languages/core/uk; these inputs are not bundled.",
+    "i18n/qa.js is an unchanged diagnostic layer omitted by the VM runner.",
+    "Binary assets, FOM and complete local archive identity are not verified; unchanged source inputs and exact final record/report equality are verified."
+  ]
+}
