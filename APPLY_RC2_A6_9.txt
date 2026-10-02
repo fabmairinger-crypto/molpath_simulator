@@ -1,0 +1,32 @@
+MolPath rc2 A6.9 — Delta anwenden
+Stand 2026-10-02 | Basis: dein vollständig funktionierender A6.8-Build
+
+Genau EINE Laufzeitdatei wird ersetzt: index.html.
+A6.8 ist von dir bestätigt. A6.9 ist lokal geprüft; sein Browsercheck bleibt offen.
+
+1. Sichere die bisherige index.html aus deinem vollständigen A6.8-Ordner.
+2. Entpacke das Delta separat. Basis-Hash im Manifest; optional mit Python prüfen:
+   python qa/verify_a6_9.py before /Pfad/zum/vollstaendigen/A6_8_Build
+3. Kopiere nur die neue index.html in diesen vollständigen A6.8-Ordner.
+   Vorhandene JS-, Sprach-, Asset- und PDF-Dateien bleiben erforderlich.
+   Kein älteres Delta erneut einspielen. Begleitdokumente und qa/ sind keine
+   Laufzeit-Dateien. Das Delta ist kein eigenständig startbarer Vollbuild.
+4. Optional nach dem Ersetzen prüfen:
+   python qa/verify_a6_9.py after /Pfad/zum/vollstaendigen/A6_9_Build
+5. Strg+F5. Kurzer A6.9-Browsercheck:
+   - Startseite/Bibliothek: 91 Fälle, Signature-/Kurs-/Methodenfilter.
+   - OVAR1: Runde 1, Befund zurückweisen, Liquid Biopsy, Abschluss; Score und TAT.
+   - CRC1: fokussierter Pfad bzw. Colon-/breites NGS, Bericht und Score wie A6.8.
+   - LAB-CAPA und ein LIMS-/Datenfall: Kontextkarten und Vorbefunde lesbar.
+   - DE -> EN -> DE; Titel/Top-Version v2.6.0-rc1, Konsole ohne neue Fehler.
+
+Rollback: gesicherte A6.8-index.html wiederherstellen und neu laden.
+
+Ergänzende lokale QA mit Node.js:
+node qa/syntax_qa.js /Pfad/zum/vollstaendigen/Build
+node qa/runtime_qa.js /Pfad/zum/vollstaendigen/Build
+node qa/retirement_qa.js /Pfad/zum/vollstaendigen/A6_9_Build --normal local_retirement_qa.json
+Optionaler gezielter Probelauf gegen den gesicherten A6.8-Build:
+node qa/retirement_qa.js /Pfad/zum/vollstaendigen/A6_8_Build --probe-writers local_base_retirement_qa.json
+Die Instrumentierung ist ausschließlich QA und nicht Teil der Runtime.
+Die QA nutzt ein DOM-Testdouble und ersetzt keinen echten Browsercheck.

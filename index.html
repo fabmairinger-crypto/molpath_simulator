@@ -3878,40 +3878,7 @@ function labFor(id){const t=(typeof catalog!=='undefined'?catalog:[]).find(x=>x.
 function labels(ids){return (ids||[]).map(labFor)}
 function toastSafe(msg){try{toast(msg)}catch(_){console.log(msg)}}
 function findCase(id){try{return (typeof cases!=='undefined'?cases:[]).find(c=>c.id===id)}catch(_){return null}}
-function patchCaseData(){
-  const ovar=findCase(OVAR_ID);
-  if(ovar){
-    ovar.title='Rezidiviertes HGSOC: BRCA/HRD aus altem FFPE, Artefaktverdacht und Liquid-Biopsy-Bestätigung';
-    ovar.short='HGSOC BRCA/HRD Artefakt';
-    ovar.difficulty='advanced';
-    ovar.length_class='Complex';
-    ovar.estimated_time_min='20–30';
-    ovar.logic='ovar';
-    ovar.phase_model='two_round_complex';
-    ovar.budget={points_max:950,sections_max:14,tat_goal:9};
-    ovar.allowed_tests=[...new Set([...(ovar.allowed_tests||[]),'liquid_biopsy','rebiopsy_tissue','tumor_brca_hrr','hrd_score','germline_referral','tp53_single','brca_germline_only','broad_pan_panel'])];
-    ovar.story=[
-      {id:'intake',title:'Initialer Auftrag',items:[['Einsender','Gynäko-Onkologie / molekulares Tumorboard'],['Klinische Information','Patientin mit high-grade serösem Ovarialkarzinom, jetzt Rezidiv drei Jahre nach Erstdiagnose und Primärtherapie.'],['Fragestellung','PARP-Inhibition bzw. HRD-/BRCA-Kontext für die weitere Therapieentscheidung klären.'],['Verfügbares Material','Zunächst steht nur das alte FFPE-Resektatmaterial der Primäroperation zur Verfügung.']]},
-      {id:'history',title:'Klinischer Kontext',items:[['Erstdiagnose','HGSOC, FIGO IIIC, Debulking vor 3 Jahren, danach platinbasierte Chemotherapie.'],['Aktuelle Situation','Radiologischer und klinischer Rezidivverdacht; erneute Systemtherapie wird geplant.'],['Therapiefrage','Die Onkologie fragt ausdrücklich: „BRCA/HRD? PARP relevant?“'],['Zeitdruck','Der Fall soll zeitnah im MTB besprochen werden; eine robuste Aussage ist aber wichtiger als ein schneller Overcall.']]},
-      {id:'histo',title:'Histologie + Vor-IHC',items:[['HE','High-grade seröses Karzinom, Primärresektat mit vitalen Tumorarealen.'],['IHC','PAX8 positiv, WT1 positiv, p53 aberrantes Overexpression-Muster, p16 blockartig positiv.'],['Arbeitsdiagnose','Rezidiviertes high-grade seröses tubo-ovarielles Karzinom.'],['Noch offen','BRCA-/HRR-Status, HRD/genomic scar und potenzieller Keimbahnkontext.']]},
-      {id:'material',title:'Materialprüfung Runde 1',items:[['Material','Alter FFPE-Block aus dem Primärresektat, ca. 3 Jahre alt.'],['Tumorzellanteil','ca. 70 % in markiertem Areal.'],['DNA-Prognose','Menge und Fragmentlänge formal ausreichend für Tumor-BRCA/HRR + HRD/genomic-scar.'],['Restmaterial','Begrenzt; eine robuste Wiederholung wäre bei Auffälligkeiten nicht sicher möglich.'],['Didaktischer Fokus','Der Artefaktverdacht ist zu diesem Zeitpunkt noch kein Befund – er kann erst nach dem Laborlauf beurteilt werden.']]}];
-    ovar.optimal_tests=['he_review','tumor_brca_hrr','hrd_score'];
-    ovar.acceptable_alternatives=[];
-    ovar.result_truth={
-      phase1:'Tumor-BRCA/HRR + HRD/genomic scar aus altem FFPE: formal pathogene BRCA1-Frameshift-/LoF-Variante mit VAF ca. 12 % bei TZA ca. 70 %, Coverage ca. 100×; zugleich auffällig viele C>T/G>A-Varianten. HRD/genomic scar grenzwertig/Graubereich, nicht überzeugend stark positiv. Restmaterial insuffizient für robuste Wiederholung.',
-      phase2:'Aktuelle Liquid Biopsy: ctDNA ausreichend. BRCA1-LoF erneut nachweisbar, VAF passend zur ctDNA-Fraktion; kein breites C>T/G>A-Artefaktmuster. Damit ist eine aktuelle tumorassoziierte BRCA1-Alteration plausibel bestätigt. HRD/genomic scar aus altem Gewebe bleibt limitiert/graubereichig.',
-      final:'Initialer FFPE-Befund allein nicht belastbar; nach Liquid-Biopsy-Bestätigung BRCA1/HRR-Kontext therapeutisch diskutierbar. Keimbahnabklärung empfohlen; HRD-Bewertung limitiert kommunizieren.'
-    };
-    ovar.optimal_summary='Optimale Lösung: Runde 1 BRCA/HRD am alten FFPE anfordern; artefaktverdächtigen BRCA1-LoF-Befund wegen C>T/G>A-Muster, niedriger VAF und grenzwertigem HRD nicht unkritisch verwerten; bei insuffizientem Restmaterial aktuelle Liquid Biopsy nachfordern; danach BRCA-Kontext, HRD-Limitation und Keimbahnabklärung sauber im MTB darstellen.';
-  }
-  const crc=findCase(CRC_ID);
-  if(crc){
-    crc.budget={points_max:1300,sections_max:14,tat_goal:9};
-    crc.acceptable_alternatives=[...new Set([...(crc.acceptable_alternatives||[]),'broad_pan_panel','colon_ngs_panel'])];
-    crc.allowed_tests=[...new Set([...(crc.allowed_tests||[]),'tmb_ngs','broad_pan_panel'])];
-    crc.optimal_summary='Optimale Lösung: Entweder fokussierter CRC-Pfad mit RAS/BRAF + MMR-IHC + MSI ± MLH1-Reflex oder ein validiertes breites Panel mit RAS/BRAF/MSI/TMB plus MMR-IHC/MLH1-Einordnung. TMB-only ersetzt MSI/MMR/RAS/BRAF nicht.';
-  }
-}
+
 function ov(){ if(!state.ovarMP) state.ovarMP={phase:'round1',decision:null,phase1Selected:[],phase2Selected:[],report1:null,report2:null}; return state.ovarMP; }
 function phase1Ids(){const o=ov(); return o.phase1Selected&&o.phase1Selected.length?o.phase1Selected:[...state.selected];}
 function phase2Ids(){const o=ov(); return o.phase2Selected&&o.phase2Selected.length?o.phase2Selected:[...state.selected];}
@@ -4052,7 +4019,7 @@ function crcScore(){ let s={clinical:0,method:0,material:0,biology:0,communicati
 window.finalFeedback=function(){ if(isOvarCase()){ const sc=totalScore(), o=ov(); let msg=o.decision==='accept'?'Kritischer Pfad: Der artefaktverdächtige FFPE-Befund wurde zu früh therapeutisch verwertet.':(phase2Complete()?'Sehr gut: Mehrphasenlogik, Bestätigung und MTB-Kommunikation wurden sauber abgebildet.':'Teilweise korrekt: Artefaktverdacht erkannt, aber die Bestätigung ist noch nicht vollständig.'); return '<div class="okbox"><b>Abschluss ('+E(modeMeta().label)+'):</b> '+E(msg)+' Score '+sc.pct+' %. '+E(activeCase.optimal_summary||'')+'</div>'; } return ORIG.finalFeedback?ORIG.finalFeedback():''; };
 window.optimalSolutionHtml=function(){ if(isOvarCase()) return '<div class="solution-panel"><h4>Musterlösung / Dozentenhinweise</h4><b>Runde 1</b><ul><li>Altes FFPE: Tumor-BRCA/HRR + HRD/genomic scar anfordern.</li><li>BRCA1-LoF wegen C&gt;T/G&gt;A-Muster, niedriger VAF und HRD-Graubereich nicht final overcallen.</li></ul><b>Runde 2</b><ul><li>Bei insuffizientem Restmaterial aktuelle Liquid Biopsy zur Bestätigung anfordern.</li><li>Final: BRCA-Kontext, HRD-Limitation und Keimbahnabklärung transparent kommunizieren.</li></ul></div>'; if(isCrcCase()) return '<div class="solution-panel"><h4>Musterlösung / Dozentenhinweise</h4><b>Valide Pfade</b><ul><li>Fokussiert: RAS/BRAF + MMR-IHC + MSI + MLH1-Methylierung.</li><li>Breit: validiertes großes Panel inkl. RAS/BRAF/MSI/TMB + MMR-IHC + MLH1-Einordnung.</li></ul><b>Falle</b><ul><li>TMB-only ersetzt keine CRC-Basisdiagnostik.</li></ul></div>'; return ORIG.optimalSolutionHtml?ORIG.optimalSolutionHtml():''; };
 // apply data and UI init
-patchCaseData();
+// A6.9: case data is loaded from Canonical; phase/report logic remains.
 try{ void 0 /* A6.3: version writer retired */; }catch(_){ }
 try{ escLog && escLog(PATCH_VERSION+' loaded'); }catch(_){ console.log(PATCH_VERSION+' loaded'); }
 try{ if(isOvarCase()||isCrcCase()) render(); }catch(_){ }
@@ -4178,8 +4145,8 @@ const PREV_RENDER_SCORE_CARD=window.renderScoreCard;
 function el(id){return document.getElementById(id)}
 function esc216(x){try{return (window.esc?esc(x):String(x??'').replace(/[&<>"']/g,function(m){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]}));}catch(_){return String(x??'')}}
 function isOvar216(){try{return typeof activeCase!=='undefined' && activeCase && activeCase.id===OVAR_ID}catch(_){return false}}
-function allCases216(){try{return Array.isArray(cases)?cases:[]}catch(_){return []}}
-function findCase216(id){return allCases216().find(function(c){return c.id===id})}
+
+
 function selectedArray216(){try{return Array.from(state.selected||[])}catch(_){return []}}
 function ov216(){try{if(!state.ovarMP)state.ovarMP={phase:'round1',decision:null,phase1Selected:[],phase2Selected:[],report1:null,report2:null};return state.ovarMP}catch(_){return {phase:'round1',decision:null,phase1Selected:[],phase2Selected:[]}}}
 function phase1Ids216(){const o=ov216();return (o.phase1Selected&&o.phase1Selected.length)?o.phase1Selected:selectedArray216()}
@@ -4188,21 +4155,7 @@ function has216(ids,id){return Array.isArray(ids)&&ids.indexOf(id)>=0}
 function sumIds216(ids){const cat=(typeof catalog!=='undefined'&&Array.isArray(catalog))?catalog:[];const ts=(ids||[]).map(function(id){return cat.find(function(t){return t.id===id})}).filter(Boolean);return {points:ts.reduce(function(a,t){return a+(t.points||0)},0),sections:ts.reduce(function(a,t){return a+(t.sections||0)},0),tat:ts.reduce(function(a,t){return Math.max(a,t.tat||0)},0)}}
 function phase1Complete216(){const ids=phase1Ids216();return has216(ids,'tumor_brca_hrr')&&has216(ids,'hrd_score')}
 function phase2Complete216(){return has216(phase2Ids216(),'liquid_biopsy')}
-function patchOvarText216(){
-  const ovar=findCase216(OVAR_ID); if(!ovar)return;
-  ovar.story=[
-    {id:'intake',title:'Initialer Auftrag',items:[['Einsender','Gynäko-Onkologie / molekulares Tumorboard'],['Klinische Information','Patientin mit high-grade serösem Ovarialkarzinom, jetzt Rezidiv drei Jahre nach Erstdiagnose und Primärtherapie.'],['Fragestellung','Prüfung, ob eine molekular begründbare PARP-/DNA-Reparatur-orientierte Therapieoption vorliegt.'],['Verfügbares Material','Zunächst steht nur das alte FFPE-Resektatmaterial der Primäroperation zur Verfügung.']]},
-    {id:'history',title:'Klinischer Kontext',items:[['Erstdiagnose','HGSOC, FIGO IIIC, Debulking vor 3 Jahren, danach platinbasierte Chemotherapie.'],['Aktuelle Situation','Radiologischer und klinischer Rezidivverdacht; erneute Systemtherapie wird geplant.'],['Therapiefrage','Die Onkologie fragt nach einer belastbaren molekularen Grundlage für die weitere Therapieplanung.'],['Zeitdruck','Der Fall soll zeitnah im MTB besprochen werden; eine robuste Aussage ist aber wichtiger als ein schneller Overcall.']]},
-    {id:'histo',title:'Histologie + Vor-IHC',items:[['HE','High-grade seröses Karzinom, Primärresektat mit vitalen Tumorarealen.'],['IHC','PAX8 positiv, WT1 positiv, p53 aberrantes Overexpression-Muster, p16 blockartig positiv.'],['Arbeitsdiagnose','Rezidiviertes high-grade seröses tubo-ovarielles Karzinom.'],['Molekularstatus','Zu Beginn des Falls liegen noch keine verwertbaren molekularen Befunde vor.']]},
-    {id:'material',title:'Materialprüfung Runde 1',items:[['Material','Alter FFPE-Block aus dem Primärresektat, ca. 3 Jahre alt.'],['Tumorzellanteil','ca. 70 % in markiertem Areal.'],['DNA-Prognose','Menge und Fragmentlänge formal ausreichend für eine tumorbasierte DNA-Reparatur-/HRR-/genomic-scar-orientierte Analyse.'],['Restmaterial','Begrenzt; eine robuste Wiederholung wäre bei Auffälligkeiten nicht sicher möglich.'],['Didaktischer Fokus','Zu diesem Zeitpunkt ist noch offen, ob der Laborlauf einen belastbaren Befund oder eine technische Limitation ergibt.']]}
-  ];
-  ovar.result_truth=ovar.result_truth||{};
-  ovar.result_truth.phase1='Tumorbasierte HRR-/BRCA-orientierte Analyse + HRD/genomic scar aus altem FFPE: formal pathogene BRCA1-Frameshift-/LoF-Variante mit VAF ca. 12 % bei TZA ca. 70 %, Coverage ca. 100×; zugleich auffällig viele C>T/G>A-Varianten. HRD/genomic scar grenzwertig/Graubereich, nicht überzeugend stark positiv. Restmaterial insuffizient für robuste Wiederholung.';
-  ovar.result_truth.phase2='Aktuelle Liquid Biopsy: ctDNA ausreichend. BRCA1-LoF erneut nachweisbar, VAF passend zur ctDNA-Fraktion; kein breites C>T/G>A-Artefaktmuster. Damit ist eine aktuelle tumorassoziierte BRCA1-Alteration plausibel bestätigt. HRD/genomic scar aus altem Gewebe bleibt limitiert/graubereichig.';
-  ovar.optimal_summary='Optimale Lösung: Runde 1 tumorbasierte HRR/BRCA- und HRD/genomic-scar-orientierte Analyse am alten FFPE; danach den formal pathogenen, aber artefaktverdächtigen Befund nicht overcallen; bei insuffizientem Restmaterial aktuelle Liquid Biopsy als begründete Bestätigungsdiagnostik; finale MTB-Kommunikation mit bestätigtem BRCA-Kontext, HRD-Graubereich und Keimbahnempfehlung.';
-  try{const d=(typeof DEEP_DIVE_MAP_V17!=='undefined')?DEEP_DIVE_MAP_V17[OVAR_ID]:null;if(d){d.case_briefing='Rezidiviertes HGSOC nach drei Jahren. Zu Beginn liegen Histologie, IHC und altes FFPE-Material vor, aber noch kein verwertbarer molekularer Befund. Die klinische Frage ist eine belastbare molekulare Grundlage für PARP-/DNA-Reparatur-orientierte Therapieentscheidungen.';d.pre_results=[{title:'Vorbefunde vor Runde 1',content:'HGSOC-typische Histologie und IHC. Tumoranteil im alten FFPE-Material ca. 70 %. Molekulare Prädiktionsmarker werden erst in Runde 1 erhoben.'}];d.context_cards=[{title:'Klinische Frage',content:'Rezidiv nach drei Jahren; Therapieplanung mit PARP-/DNA-Reparatur-Kontext.'},{title:'Material',content:'Altes FFPE-Resektat, begrenztes Restmaterial, formal ausreichende DNA-Menge.'},{title:'Aufgabe Runde 1',content:'Erstdiagnostik sinnvoll planen, ohne spätere technische Befundlage vorwegzunehmen.'}];}}
-  catch(_){ }
-}
+
 function ovarScore216(){
   const o=ov216();
   const p1=phase1Ids216();
@@ -4261,7 +4214,7 @@ function renderScoreCard216(){
   const note=(isOvar216()&&sc.score_note)?'<div class="v216-score-note small">'+esc216(sc.score_note)+'</div>':'';
   box.innerHTML='<div class="section-title"><h3>Didaktischer Score</h3><span class="badge">'+esc216(sc.got)+'/'+esc216(sc.max)+'</span></div><div class="score-ring" style="background:conic-gradient(var(--accent) '+deg+'deg,#e9eef5 '+deg+'deg)"><span>'+esc216(sc.pct)+'%</span></div>'+rows+'<hr style="border:0;border-top:1px solid var(--line);margin:16px 0"><div class="small muted">'+esc216(expl)+'</div>'+note+((typeof isInstructor==='function'&&isInstructor()&&typeof optimalSolutionHtml==='function')?optimalSolutionHtml():'');
 }
-try{patchOvarText216()}catch(err){console.warn(V216_VERSION+' text patch failed',err)}
+// A6.9: canonical OVAR content is already loaded; dynamic score/TAT remains.
 try{window.patientScore=patientScore216; patientScore=patientScore216;}catch(_){window.patientScore=patientScore216}
 try{window.renderScoreCard=renderScoreCard216; renderScoreCard=renderScoreCard216;}catch(_){window.renderScoreCard=renderScoreCard216}
 try{void 0 /* A6.3: version writer retired */}catch(_){ }
@@ -5857,13 +5810,7 @@ const V240Y1_CASE_IDS=[
  'LAB_DOC_002_v1_3','LAB_AUDIT_001_v1_3','LAB_CAPA_001_v1_3','LAB_QM_001_v1_3','LAB_LLM_001_v1_3',
  'LAB_DIGI_001_v1_3','LAB_DIGI_002_v1_3','LAB_DATA_001_v1_3','LAB_DATA_002_v1_3','LAB_LIMS_001_v1_3'
 ];
-function v240y1Briefing(x){
- if(x==null)return '';
- if(typeof x==='string')return x;
- if(Array.isArray(x))return x.map(v=>typeof v==='string'?v:String(v)).join(' · ');
- if(typeof x==='object')return Object.entries(x).map(([k,v])=>k+': '+String(v==null?'':v)).join(' · ');
- return String(x);
-}
+
 function v240y1Cards(xs){
  return Array.isArray(xs)?xs.map(x=>{
    if(!x||typeof x!=='object')return x;
@@ -5873,19 +5820,8 @@ function v240y1Cards(xs){
    return y;
  }):xs;
 }
-function v240y1Normalize(d){
- if(!d||!V240Y1_CASE_IDS.includes(d.case_id))return d;
- d.case_briefing=v240y1Briefing(d.case_briefing);
- d.pre_results=v240y1Cards(d.pre_results);
- d.context_cards=v240y1Cards(d.context_cards);
- return d;
-}
-try{
- V240Y1_CASE_IDS.forEach(id=>{
-   if(typeof DEEP_DIVE_MAP_V17!=='undefined' && DEEP_DIVE_MAP_V17[id])v240y1Normalize(DEEP_DIVE_MAP_V17[id]);
- });
- if(typeof DEEP_DIVE_CASES_V17!=='undefined' && Array.isArray(DEEP_DIVE_CASES_V17))DEEP_DIVE_CASES_V17.forEach(v240y1Normalize);
-}catch(e){console.error('[MolPath '+V240Y1_VERSION+'] schema normalization failed',e)}
+
+// A6.9: Canonical LAB records already contain the normalized schema.
 /* Renderer fallback keeps future Deep Dives tolerant of both supported key pairs. */
 try{
  const prevCards=v17Cards;
@@ -5897,7 +5833,7 @@ window.MolPathI18nAfterApply=function(l){try{if(typeof prevAfter==='function')pr
 v240y1Stamp();
 try{if(typeof render==='function')render()}catch(_){}
 window.MolPathLabC4C5SchemaHotfix=Object.freeze({version:V240Y1_VERSION,caseIds:[...V240Y1_CASE_IDS],fixes:['case_briefing object -> readable string','pre_results label/value -> title/content','renderer card fallback']});
-try{console.log('[MolPath '+V240Y1_VERSION+'] LAB C4/C5 schema hotfix loaded: 10 cases normalized.')}catch(_){}
+try{console.log('[MolPath '+V240Y1_VERSION+'] LAB C4/C5 renderer fallback loaded: 10 Canonical cases.')}catch(_){}
 })();
 </script>
 

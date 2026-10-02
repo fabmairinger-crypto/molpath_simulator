@@ -1,694 +1,219 @@
 {
   "status": "PASS",
-  "total": 227,
-  "passed": 227,
+  "total": 134,
+  "passed": 134,
   "failed": [],
   "checks": [
     {
-      "name": "delivered confirmed A6.7 base hash",
+      "name": "confirmed delivered A6.8 base hash",
       "pass": true,
       "detail": null
     },
     {
-      "name": "exact scope 18 writers, 16 tables, 15 unused locators",
+      "name": "scope 3 writer entries, 3 definitions, 3 unused helpers, 1 diagnostic",
       "pass": true,
       "detail": null
     },
     {
-      "name": "verified exact original span writer V21_CASE_PROMOTION",
+      "name": "exact original span writer_definition patchCaseData",
       "pass": true,
       "detail": null
     },
     {
-      "name": "verified exact new span writer V21_CASE_PROMOTION",
+      "name": "exact replacement span writer_definition patchCaseData",
       "pass": true,
       "detail": null
     },
     {
-      "name": "verified exact original span writer V230B_CASE_PROMOTION",
+      "name": "exact original span writer_entry V213_CASE_PATCH",
       "pass": true,
       "detail": null
     },
     {
-      "name": "verified exact new span writer V230B_CASE_PROMOTION",
+      "name": "exact replacement span writer_entry V213_CASE_PATCH",
       "pass": true,
       "detail": null
     },
     {
-      "name": "verified exact original span table V240M_BASE_PATCHES",
+      "name": "exact original span writer_definition patchOvarText216",
       "pass": true,
       "detail": null
     },
     {
-      "name": "verified exact new span table V240M_BASE_PATCHES",
+      "name": "exact replacement span writer_definition patchOvarText216",
       "pass": true,
       "detail": null
     },
     {
-      "name": "verified exact original span writer V240M_BASE_PATCHES",
+      "name": "exact original span unused_helper allCases216",
       "pass": true,
       "detail": null
     },
     {
-      "name": "verified exact new span writer V240M_BASE_PATCHES",
+      "name": "exact replacement span unused_helper allCases216",
       "pass": true,
       "detail": null
     },
     {
-      "name": "verified exact original span table V240N_BASE_PATCHES",
+      "name": "exact original span unused_helper findCase216",
       "pass": true,
       "detail": null
     },
     {
-      "name": "verified exact new span table V240N_BASE_PATCHES",
+      "name": "exact replacement span unused_helper findCase216",
       "pass": true,
       "detail": null
     },
     {
-      "name": "verified exact original span writer V240N_BASE_PATCHES",
+      "name": "exact original span writer_entry V216_OVAR_TEXT_PATCH",
       "pass": true,
       "detail": null
     },
     {
-      "name": "verified exact new span writer V240N_BASE_PATCHES",
+      "name": "exact replacement span writer_entry V216_OVAR_TEXT_PATCH",
       "pass": true,
       "detail": null
     },
     {
-      "name": "verified exact original span unused_locator v240nById",
+      "name": "exact original span writer_definition v240y1Normalize",
       "pass": true,
       "detail": null
     },
     {
-      "name": "verified exact new span unused_locator v240nById",
+      "name": "exact replacement span writer_definition v240y1Normalize",
       "pass": true,
       "detail": null
     },
     {
-      "name": "verified exact original span table V240O_BASE_PATCHES",
+      "name": "exact original span unused_helper v240y1Briefing",
       "pass": true,
       "detail": null
     },
     {
-      "name": "verified exact new span table V240O_BASE_PATCHES",
+      "name": "exact replacement span unused_helper v240y1Briefing",
       "pass": true,
       "detail": null
     },
     {
-      "name": "verified exact original span writer V240O_BASE_PATCHES",
+      "name": "exact original span writer_entry V240Y1_LAB_NORMALIZATION",
       "pass": true,
       "detail": null
     },
     {
-      "name": "verified exact new span writer V240O_BASE_PATCHES",
+      "name": "exact replacement span writer_entry V240Y1_LAB_NORMALIZATION",
       "pass": true,
       "detail": null
     },
     {
-      "name": "verified exact original span unused_locator v240oById",
+      "name": "exact original span diagnostic V240Y1_CONSOLE",
       "pass": true,
       "detail": null
     },
     {
-      "name": "verified exact new span unused_locator v240oById",
+      "name": "exact replacement span diagnostic V240Y1_CONSOLE",
       "pass": true,
       "detail": null
     },
     {
-      "name": "verified exact original span table V240P_BASE_PATCHES",
+      "name": "ten verified edits reconstruct candidate exactly",
       "pass": true,
       "detail": null
     },
     {
-      "name": "verified exact new span table V240P_BASE_PATCHES",
+      "name": "inverse edits reconstruct confirmed A6.8 exactly",
       "pass": true,
       "detail": null
     },
     {
-      "name": "verified exact original span writer V240P_BASE_PATCHES",
+      "name": "source outside specified edits byte-identical",
       "pass": true,
       "detail": null
     },
     {
-      "name": "verified exact new span writer V240P_BASE_PATCHES",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact original span unused_locator v240pById",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact new span unused_locator v240pById",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact original span table V240Q_BASE_PATCHES",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact new span table V240Q_BASE_PATCHES",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact original span writer V240Q_BASE_PATCHES",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact new span writer V240Q_BASE_PATCHES",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact original span unused_locator v240qById",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact new span unused_locator v240qById",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact original span table V240S_BASE_PATCHES",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact new span table V240S_BASE_PATCHES",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact original span writer V240S_BASE_PATCHES",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact new span writer V240S_BASE_PATCHES",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact original span unused_locator v240sFind",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact new span unused_locator v240sFind",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact original span table V240U_BASE_PATCHES",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact new span table V240U_BASE_PATCHES",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact original span writer V240U_BASE_PATCHES",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact new span writer V240U_BASE_PATCHES",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact original span unused_locator v240uFind",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact new span unused_locator v240uFind",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact original span table V240V_BASE_PATCHES",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact new span table V240V_BASE_PATCHES",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact original span writer V240V_BASE_PATCHES",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact new span writer V240V_BASE_PATCHES",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact original span unused_locator v240vFind",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact new span unused_locator v240vFind",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact original span table V240W_BASE_PATCHES",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact new span table V240W_BASE_PATCHES",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact original span writer V240W_BASE_PATCHES",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact new span writer V240W_BASE_PATCHES",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact original span unused_locator v240wFind",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact new span unused_locator v240wFind",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact original span table V240X_BASE_PATCHES",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact new span table V240X_BASE_PATCHES",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact original span writer V240X_BASE_PATCHES",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact new span writer V240X_BASE_PATCHES",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact original span unused_locator v240xFind",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact new span unused_locator v240xFind",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact original span table V240Y_BASE_PATCHES",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact new span table V240Y_BASE_PATCHES",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact original span writer V240Y_BASE_PATCHES",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact new span writer V240Y_BASE_PATCHES",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact original span unused_locator v240yFind",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact new span unused_locator v240yFind",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact original span table V240Z2_BASE_PATCHES",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact new span table V240Z2_BASE_PATCHES",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact original span writer V240Z2_BASE_PATCHES",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact new span writer V240Z2_BASE_PATCHES",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact original span unused_locator v240z2Find",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact new span unused_locator v240z2Find",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact original span table V240Z3_BASE_PATCHES",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact new span table V240Z3_BASE_PATCHES",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact original span writer V240Z3_BASE_PATCHES",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact new span writer V240Z3_BASE_PATCHES",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact original span unused_locator v240z3Find",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact new span unused_locator v240z3Find",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact original span table V240Z4_BASE_PATCHES",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact new span table V240Z4_BASE_PATCHES",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact original span writer V240Z4_BASE_PATCHES",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact new span writer V240Z4_BASE_PATCHES",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact original span unused_locator v240z4Find",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact new span unused_locator v240z4Find",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact original span table V240Z5_BASE_PATCHES",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact new span table V240Z5_BASE_PATCHES",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact original span writer V240Z5_BASE_PATCHES",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact new span writer V240Z5_BASE_PATCHES",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact original span unused_locator v240z5Find",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact new span unused_locator v240z5Find",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact original span table V240Z6_BASE_PATCHES",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact new span table V240Z6_BASE_PATCHES",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact original span writer V240Z6_BASE_PATCHES",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact new span writer V240Z6_BASE_PATCHES",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact original span unused_locator v240z6Find",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "verified exact new span unused_locator v240z6Find",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "49 verified edits reconstruct candidate exactly",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "inverse edits reconstruct confirmed A6.7 exactly",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "all source outside specified edits byte-identical",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "all remaining named helpers unchanged except verified integrate case-write removal",
+      "name": "all surviving named functions byte-identical",
       "pass": true,
       "detail": {
-        "remaining": 604,
-        "removed_unused": 15
+        "remaining": 598,
+        "removed": 6
       }
     },
     {
-      "name": "retired binding has no remaining executable references V240M_BASE_PATCHES",
+      "name": "retired function has no references patchCaseData",
       "pass": true,
       "detail": null
     },
     {
-      "name": "retired binding has no remaining executable references V240N_BASE_PATCHES",
+      "name": "retired function has no references patchOvarText216",
       "pass": true,
       "detail": null
     },
     {
-      "name": "retired binding has no remaining executable references v240nById",
+      "name": "retired function has no references allCases216",
       "pass": true,
       "detail": null
     },
     {
-      "name": "retired binding has no remaining executable references V240O_BASE_PATCHES",
+      "name": "retired function has no references findCase216",
       "pass": true,
       "detail": null
     },
     {
-      "name": "retired binding has no remaining executable references v240oById",
+      "name": "retired function has no references v240y1Normalize",
       "pass": true,
       "detail": null
     },
     {
-      "name": "retired binding has no remaining executable references V240P_BASE_PATCHES",
+      "name": "retired function has no references v240y1Briefing",
       "pass": true,
       "detail": null
     },
     {
-      "name": "retired binding has no remaining executable references v240pById",
+      "name": "needed runtime helper retained findCase",
       "pass": true,
       "detail": null
     },
     {
-      "name": "retired binding has no remaining executable references V240Q_BASE_PATCHES",
+      "name": "needed runtime helper retained v240y1Cards",
       "pass": true,
       "detail": null
     },
     {
-      "name": "retired binding has no remaining executable references v240qById",
+      "name": "needed runtime helper retained ovarScore216",
       "pass": true,
       "detail": null
     },
     {
-      "name": "retired binding has no remaining executable references V240S_BASE_PATCHES",
+      "name": "needed runtime helper retained renderScoreCard216",
       "pass": true,
       "detail": null
     },
     {
-      "name": "retired binding has no remaining executable references v240sFind",
+      "name": "needed runtime helper retained phaseBudget",
       "pass": true,
       "detail": null
     },
     {
-      "name": "retired binding has no remaining executable references V240U_BASE_PATCHES",
+      "name": "needed runtime helper retained buildOvarRound1Report",
       "pass": true,
       "detail": null
     },
     {
-      "name": "retired binding has no remaining executable references v240uFind",
+      "name": "needed runtime helper retained buildOvarRound2Report",
       "pass": true,
       "detail": null
     },
     {
-      "name": "retired binding has no remaining executable references V240V_BASE_PATCHES",
+      "name": "needed runtime helper retained crcScore",
       "pass": true,
       "detail": null
     },
     {
-      "name": "retired binding has no remaining executable references v240vFind",
+      "name": "script attributes and order unchanged",
       "pass": true,
       "detail": null
     },
     {
-      "name": "retired binding has no remaining executable references V240W_BASE_PATCHES",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "retired binding has no remaining executable references v240wFind",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "retired binding has no remaining executable references V240X_BASE_PATCHES",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "retired binding has no remaining executable references v240xFind",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "retired binding has no remaining executable references V240Y_BASE_PATCHES",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "retired binding has no remaining executable references v240yFind",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "retired binding has no remaining executable references V240Z2_BASE_PATCHES",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "retired binding has no remaining executable references v240z2Find",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "retired binding has no remaining executable references V240Z3_BASE_PATCHES",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "retired binding has no remaining executable references v240z3Find",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "retired binding has no remaining executable references V240Z4_BASE_PATCHES",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "retired binding has no remaining executable references v240z4Find",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "retired binding has no remaining executable references V240Z5_BASE_PATCHES",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "retired binding has no remaining executable references v240z5Find",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "retired binding has no remaining executable references V240Z6_BASE_PATCHES",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "retired binding has no remaining executable references v240z6Find",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "all script attributes/order retained",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "exactly audited 18 inline scripts changed",
+      "name": "exactly three audited inline scripts changed",
       "pass": true,
       "detail": null
     },
@@ -713,7 +238,12 @@
       "detail": null
     },
     {
-      "name": "UI-used byId helper retained exactly",
+      "name": "LAB renderer fallback byte-identical",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LAB metadata and all ten IDs retained",
       "pass": true,
       "detail": null
     },
@@ -1128,55 +658,78 @@
       "detail": null
     },
     {
-      "name": "targeted baseline audit reaches all 18 paths without errors",
+      "name": "targeted reference reaches all three data writer paths",
       "pass": true,
       "detail": null
     },
     {
-      "name": "targeted baseline audit covers 77 field copies",
+      "name": "LAB has twenty already-canonical eligible normalization calls",
       "pass": true,
       "detail": null
     },
     {
-      "name": "instrumented baseline boot hash matches previously passed A6.7",
+      "name": "instrumented A6.8 boot hash equals passed reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "targeted A6.8 reference passes 108 scenario contracts",
       "pass": true,
       "detail": null
     }
   ],
   "changes": {
-    "base": "user-confirmed complete A6.7",
+    "base": "user-confirmed complete A6.8",
     "changed": [
       "index.html"
     ],
-    "old_index_bytes": 2182829,
-    "new_index_bytes": 2154953,
-    "base_sha256": "93e238a2f8ee23f9bf055b54573063466fc26db72e57900126573c0b8c397f15",
-    "sha256": "cfa1df324b27b7bbf0ab81ebf65e9de43ddeb01dd2118b766f4e238d9d7f761c",
-    "writer_paths_removed": 18,
-    "case_patch_tables_removed": 16,
-    "case_patch_rows_removed": 77,
-    "unused_locators_removed": 15,
-    "exact_edits": 49,
+    "old_index_bytes": 2154953,
+    "new_index_bytes": 2145298,
+    "base_sha256": "cfa1df324b27b7bbf0ab81ebf65e9de43ddeb01dd2118b766f4e238d9d7f761c",
+    "sha256": "129863aaaa614615b0f3102cfeaaec99f81ffda2ca68309a38ac3196d1c964ec",
+    "writer_paths_removed": 3,
+    "writer_definitions_removed": 3,
+    "unused_helpers_removed": 3,
+    "exact_edits": 10,
     "changed_scripts": [
-      "v21Batch1ContentExpansionFix",
-      "v230bSignatureDeepDiveExpansion",
-      "v240m_a1_deepdive_patch",
-      "v240n_a2_crc_deepdives",
-      "v240o_a3_hrd_deepdives",
-      "v240p_a4_io_deepdives",
-      "v240q_a5_a6_mtb_freeze",
-      "v240s-met-deepdive",
-      "v240u_lab_b1_preanalytics_deepdive_patch",
-      "v240v_lab_b2_run_qc_deepdive_patch",
-      "v240w_lab_b3_postanalytics_deepdive_patch",
-      "v240x_lab_b4_c4_deepdive_patch",
-      "v240y_lab_b5_digital_data_lims_deepdive_patch",
-      "v240z2_res_r1_deepdive",
-      "v240z3_res_r2_deepdive",
-      "v240z4_res_r3_deepdive",
-      "v240z5_res_r4_deepdive",
-      "v240z6_res_r5_deepdive"
+      "v213ComplexPhaseBundlePatch",
+      "v216OvarPhaseScoreFix",
+      "v240y1_lab_c4_c5_schema_hotfix"
     ],
+    "writer_inventory": [
+      {
+        "name": "V213_CASE_PATCH",
+        "script": "v213ComplexPhaseBundlePatch",
+        "ids": [
+          "MTB_OVAR_001_v0_7",
+          "MTB_CRC_001_v0_6"
+        ]
+      },
+      {
+        "name": "V216_OVAR_TEXT_PATCH",
+        "script": "v216OvarPhaseScoreFix",
+        "ids": [
+          "MTB_OVAR_001_v0_7"
+        ]
+      },
+      {
+        "name": "V240Y1_LAB_NORMALIZATION",
+        "script": "v240y1_lab_c4_c5_schema_hotfix",
+        "ids": [
+          "LAB_DOC_002_v1_3",
+          "LAB_AUDIT_001_v1_3",
+          "LAB_CAPA_001_v1_3",
+          "LAB_QM_001_v1_3",
+          "LAB_LLM_001_v1_3",
+          "LAB_DIGI_001_v1_3",
+          "LAB_DIGI_002_v1_3",
+          "LAB_DATA_001_v1_3",
+          "LAB_DATA_002_v1_3",
+          "LAB_LIMS_001_v1_3"
+        ]
+      }
+    ],
+    "diagnostic_only": "LAB console status describes the retained renderer fallback; no product UI text changed",
     "load_order": [
       "rc2_A5_courses.js",
       "rc2_A4b_canonical_cases_lossless.js",
@@ -1230,7 +783,7 @@
       "rc2_A6_canonical_integration.js",
       "v250b_signature_taxonomy_freeze.js"
     ],
-    "retained": "all 18 Deep-Dive projection arrays and their upserts; UI-used byId; late canonical integration and remaining independent writers",
-    "bytes_removed": 27876
+    "retained": "all phase/report/scoring/TAT helpers and hooks; LAB v240y1Cards/v17Cards renderer fallback and metadata; registration; other independent writers; late Canonical integration",
+    "bytes_removed": 9655
   }
 }

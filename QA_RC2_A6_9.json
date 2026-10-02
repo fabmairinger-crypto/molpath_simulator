@@ -1,0 +1,76 @@
+{
+  "package": "MolPath_rc2_A6_9_delta",
+  "status": "SOURCE_COMPARISON_SYNTAX_RUNTIME_TARGETED_PASS_BROWSER_OPEN",
+  "base_browser_smoke": "CONFIRMED_BY_USER for A6.8",
+  "a6_9_browser_smoke": "NOT_RUN",
+  "source": {
+    "passed": 134,
+    "total": 134
+  },
+  "comparison": {
+    "passed": 43,
+    "total": 43
+  },
+  "syntax": {
+    "units": 99,
+    "errors": []
+  },
+  "runtime": {
+    "passed": 254,
+    "total": 254,
+    "errors": [],
+    "counts": {
+      "cases": 91,
+      "deep": 91,
+      "signature": 30,
+      "methods": 44,
+      "courses": 5,
+      "courseCases": 23
+    },
+    "pre_boot_hash": "a767970c2b67c0ee4066ff8794fe36f71255c497aeb7f9d8fc9e660d901f83d0",
+    "after_boot_hash": "a767970c2b67c0ee4066ff8794fe36f71255c497aeb7f9d8fc9e660d901f83d0",
+    "final_hash": "a767970c2b67c0ee4066ff8794fe36f71255c497aeb7f9d8fc9e660d901f83d0"
+  },
+  "reference": "reused passed A6.8 full runtime result; additional targeted A6.8 source execution with QA-only writer probes and 108 scenario contracts",
+  "writer_probe": {
+    "writer_paths": 3,
+    "normalizer_calls": 78,
+    "eligible_LAB_calls": 20,
+    "eligible_LAB_value_changes": [],
+    "eligible_LAB_schema_already_canonical": true,
+    "after_boot_hash": "a767970c2b67c0ee4066ff8794fe36f71255c497aeb7f9d8fc9e660d901f83d0",
+    "errors": []
+  },
+  "targeted": {
+    "passed": 108,
+    "total": 108,
+    "languages": [
+      "de",
+      "en",
+      "ro",
+      "uk"
+    ],
+    "scenarios_per_language": 27,
+    "OVAR_scenarios_per_language": 9,
+    "CRC_scenarios_per_language": 5,
+    "LAB_case_scenarios_per_language": 10,
+    "LAB_renderer_fallback_scenarios_per_language": 3,
+    "exact_score_TAT_report_card_comparison": true,
+    "canonical_stable_in_all_phases": true,
+    "errors": []
+  },
+  "display_comparison": {
+    "language_steps": 12,
+    "records_per_step": 364,
+    "exact_record_and_string_hash_equality": true
+  },
+  "report_comparison": "six hybrid paths in DE/EN/RO/UK, absent/partial/complete/final exact HTML SHA256 equality",
+  "integration_still_required": "late integration checkpoint still replaces 57 case and 23 Deep-Dive payloads differing from Canonical after retained legacy layers",
+  "limits": [
+    "Node VM uses a DOM test double: no true browser layout, live MutationObserver behavior, RTL layout or binary image rendering.",
+    "Unchanged executable inputs reuse the verified A6.8 staging fixture; full rc1 archive materialization was previously blocked by HTTP 502.",
+    "The 11-language fixture uses existing uploaded files and the existing UK patch languages/core/uk; these inputs are not bundled.",
+    "i18n/qa.js is an unchanged diagnostic layer omitted by the VM runner.",
+    "Binary assets, FOM and complete local archive identity are not verified; unchanged source inputs and exact final record/report equality are verified."
+  ]
+}

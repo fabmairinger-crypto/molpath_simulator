@@ -1,26 +1,26 @@
 {
   "status": "PASS",
-  "total": 45,
-  "passed": 45,
+  "total": 43,
+  "passed": 43,
   "failed": [],
   "checks": [
     {
-      "name": "reference is exactly the passed A6.7 result",
+      "name": "reference is exactly the passed A6.8 full runtime result",
       "pass": true,
       "detail": null
     },
     {
-      "name": "exact A6.7 snapshot equality preBootHash",
+      "name": "exact A6.8 snapshot equality preBootHash",
       "pass": true,
       "detail": "a767970c2b67c0ee4066ff8794fe36f71255c497aeb7f9d8fc9e660d901f83d0"
     },
     {
-      "name": "exact A6.7 snapshot equality afterBootHash",
+      "name": "exact A6.8 snapshot equality afterBootHash",
       "pass": true,
       "detail": "a767970c2b67c0ee4066ff8794fe36f71255c497aeb7f9d8fc9e660d901f83d0"
     },
     {
-      "name": "exact A6.7 snapshot equality finalHash",
+      "name": "exact A6.8 snapshot equality finalHash",
       "pass": true,
       "detail": "a767970c2b67c0ee4066ff8794fe36f71255c497aeb7f9d8fc9e660d901f83d0"
     },
@@ -42,7 +42,7 @@
       "detail": null
     },
     {
-      "name": "A6.8 actual ordered runtime passes",
+      "name": "A6.9 ordered runtime passes",
       "pass": true,
       "detail": null
     },
@@ -52,7 +52,7 @@
       "detail": null
     },
     {
-      "name": "same ordered content checkpoints",
+      "name": "same ordered source checkpoints",
       "pass": true,
       "detail": 97
     },
@@ -72,102 +72,22 @@
       "detail": null
     },
     {
-      "name": "initial eight-record Deep-Dive registration unchanged",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "retired parsing writer makes no case changes V21_CASE_PROMOTION",
+      "name": "retired data patch makes no case changes v213ComplexPhaseBundlePatch",
       "pass": true,
       "detail": []
     },
     {
-      "name": "retired parsing writer makes no case changes V240M_BASE_PATCHES",
+      "name": "retired data patch makes no case changes v216OvarPhaseScoreFix",
       "pass": true,
       "detail": []
-    },
-    {
-      "name": "retired parsing writer makes no case changes V240N_BASE_PATCHES",
-      "pass": true,
-      "detail": []
-    },
-    {
-      "name": "retired parsing writer makes no case changes V240O_BASE_PATCHES",
-      "pass": true,
-      "detail": []
-    },
-    {
-      "name": "retired parsing writer makes no case changes V240P_BASE_PATCHES",
-      "pass": true,
-      "detail": []
-    },
-    {
-      "name": "retired parsing writer makes no case changes V240Q_BASE_PATCHES",
-      "pass": true,
-      "detail": []
-    },
-    {
-      "name": "retired parsing writer makes no case changes V240S_BASE_PATCHES",
-      "pass": true,
-      "detail": []
-    },
-    {
-      "name": "retired parsing writer makes no case changes V240U_BASE_PATCHES",
-      "pass": true,
-      "detail": []
-    },
-    {
-      "name": "retired parsing writer makes no case changes V240V_BASE_PATCHES",
-      "pass": true,
-      "detail": []
-    },
-    {
-      "name": "retired parsing writer makes no case changes V240W_BASE_PATCHES",
-      "pass": true,
-      "detail": []
-    },
-    {
-      "name": "retired parsing writer makes no case changes V240X_BASE_PATCHES",
-      "pass": true,
-      "detail": []
-    },
-    {
-      "name": "retired parsing writer makes no case changes V240Y_BASE_PATCHES",
-      "pass": true,
-      "detail": []
-    },
-    {
-      "name": "retired parsing writer makes no case changes V240Z2_BASE_PATCHES",
-      "pass": true,
-      "detail": []
-    },
-    {
-      "name": "retired parsing writer makes no case changes V240Z3_BASE_PATCHES",
-      "pass": true,
-      "detail": []
-    },
-    {
-      "name": "retired parsing writer makes no case changes V240Z4_BASE_PATCHES",
-      "pass": true,
-      "detail": []
-    },
-    {
-      "name": "retired parsing writer makes no case changes V240Z5_BASE_PATCHES",
-      "pass": true,
-      "detail": []
-    },
-    {
-      "name": "retired parsing writer makes no case changes V240Z6_BASE_PATCHES",
-      "pass": true,
-      "detail": []
-    },
-    {
-      "name": "A6.7 late integration has exact canonical payload",
-      "pass": true,
-      "detail": null
     },
     {
       "name": "A6.8 late integration has exact canonical payload",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "A6.9 late integration has exact canonical payload",
       "pass": true,
       "detail": null
     },
@@ -181,7 +101,7 @@
       "pass": true,
       "detail": {
         "records": 364,
-        "mismatches": [],
+        "mismatch": [],
         "hash": "3943180433183606a161f6d43620410ba3b2c70585476e518bca9110674bde93"
       }
     },
@@ -190,7 +110,7 @@
       "pass": true,
       "detail": {
         "records": 364,
-        "mismatches": [],
+        "mismatch": [],
         "hash": "2c7f70aea441306b6f60daefa6cffe1ca78e7551a706bb716fd4b09b54f9971d"
       }
     },
@@ -199,7 +119,7 @@
       "pass": true,
       "detail": {
         "records": 364,
-        "mismatches": [],
+        "mismatch": [],
         "hash": "eadc523f1241bd4ce7cde0b60b560ac0c0df3a36382625a8beff4b5b2d367fc6"
       }
     },
@@ -208,7 +128,7 @@
       "pass": true,
       "detail": {
         "records": 364,
-        "mismatches": [],
+        "mismatch": [],
         "hash": "672a781ef45bafb8e88d9fb11de20b6f08c3eb2aa316c8347865403e13f80cc2"
       }
     },
@@ -217,7 +137,7 @@
       "pass": true,
       "detail": {
         "records": 364,
-        "mismatches": [],
+        "mismatch": [],
         "hash": "86e55b52aefcabc93b98bf2594c6efbb282f84cc4f03a35783a71b45b655d052"
       }
     },
@@ -226,7 +146,7 @@
       "pass": true,
       "detail": {
         "records": 364,
-        "mismatches": [],
+        "mismatch": [],
         "hash": "eab982379ce13c49a3a939106c0343fe5367eb1953172a921d621e145e43c99a"
       }
     },
@@ -235,7 +155,7 @@
       "pass": true,
       "detail": {
         "records": 364,
-        "mismatches": [],
+        "mismatch": [],
         "hash": "fe96c8c2ca3c1e245b599fc2506f191d4c470667e639e65a16e620ded6bce34b"
       }
     },
@@ -244,7 +164,7 @@
       "pass": true,
       "detail": {
         "records": 364,
-        "mismatches": [],
+        "mismatch": [],
         "hash": "612d0c8ebbabc374317e41e32d6c5a585ec74635a2e55c124d6c64db372d59e6"
       }
     },
@@ -253,7 +173,7 @@
       "pass": true,
       "detail": {
         "records": 364,
-        "mismatches": [],
+        "mismatch": [],
         "hash": "b2497a17be2990f916e057ba487e2a7e616fae264bde9ef15d66b615a0fd0c5e"
       }
     },
@@ -262,7 +182,7 @@
       "pass": true,
       "detail": {
         "records": 364,
-        "mismatches": [],
+        "mismatch": [],
         "hash": "49094bb33ab45334a43b2659581fa187ef5f2773c50366f718c75cef44970b71"
       }
     },
@@ -271,7 +191,7 @@
       "pass": true,
       "detail": {
         "records": 364,
-        "mismatches": [],
+        "mismatch": [],
         "hash": "b344c1de633462843bfefa1fcc8ee78a549aa3ebd35499a1bd5350acd80399f0"
       }
     },
@@ -280,984 +200,94 @@
       "pass": true,
       "detail": {
         "records": 364,
-        "mismatches": [],
+        "mismatch": [],
         "hash": "3943180433183606a161f6d43620410ba3b2c70585476e518bca9110674bde93"
       }
+    },
+    {
+      "name": "A6.8 targeted contracts pass",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "A6.8 targeted boot hash equals full reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "A6.8 targeted scenario language sequence",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "A6.8 canonical data stable through targeted scenarios",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "A6.9 targeted contracts pass",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "A6.9 targeted boot hash equals full reference",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "A6.9 targeted scenario language sequence",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "A6.9 canonical data stable through targeted scenarios",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact scores/TAT/reports/LAB-card equality de",
+      "pass": true,
+      "detail": {
+        "rows": 27,
+        "mismatch": []
+      }
+    },
+    {
+      "name": "exact scores/TAT/reports/LAB-card equality en",
+      "pass": true,
+      "detail": {
+        "rows": 27,
+        "mismatch": []
+      }
+    },
+    {
+      "name": "exact scores/TAT/reports/LAB-card equality ro",
+      "pass": true,
+      "detail": {
+        "rows": 27,
+        "mismatch": []
+      }
+    },
+    {
+      "name": "exact scores/TAT/reports/LAB-card equality uk",
+      "pass": true,
+      "detail": {
+        "rows": 27,
+        "mismatch": []
+      }
+    },
+    {
+      "name": "targeted baseline instruments actual writer calls only",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "LAB normalization is already canonical at actual baseline call sites",
+      "pass": true,
+      "detail": null
     }
   ],
   "loadTraceSummary": {
-    "a6_7": [
-      {
-        "source": "index:inline:0:main",
-        "caseCount": 91,
-        "deepCount": 8,
-        "caseDifferences": 49,
-        "deepDifferences": 0,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:1:v20b1LayoutHotfix",
-        "caseCount": 91,
-        "deepCount": 8,
-        "caseDifferences": 49,
-        "deepDifferences": 0,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:2:v20b5SafeLayoutPatch",
-        "caseCount": 91,
-        "deepCount": 8,
-        "caseDifferences": 49,
-        "deepDifferences": 0,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:3:v21Batch1ContentExpansionFix",
-        "caseCount": 91,
-        "deepCount": 11,
-        "caseDifferences": 51,
-        "deepDifferences": 0,
-        "caseWrites": 11,
-        "deepWrites": 3,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:4:v213ComplexPhaseBundlePatch",
-        "caseCount": 91,
-        "deepCount": 11,
-        "caseDifferences": 51,
-        "deepDifferences": 0,
-        "caseWrites": 2,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:5:v214CaseSwitchWireFix",
-        "caseCount": 91,
-        "deepCount": 11,
-        "caseDifferences": 51,
-        "deepDifferences": 0,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:6:v216OvarPhaseScoreFix",
-        "caseCount": 91,
-        "deepCount": 11,
-        "caseDifferences": 51,
-        "deepDifferences": 0,
-        "caseWrites": 1,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "molpath_version.js",
-        "caseCount": 91,
-        "deepCount": 11,
-        "caseDifferences": 51,
-        "deepDifferences": 0,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "rc2_A5_data_adapter.js",
-        "caseCount": 91,
-        "deepCount": 11,
-        "caseDifferences": 51,
-        "deepDifferences": 0,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "i18n/de.js",
-        "caseCount": 91,
-        "deepCount": 11,
-        "caseDifferences": 51,
-        "deepDifferences": 0,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "i18n/en.js",
-        "caseCount": 91,
-        "deepCount": 11,
-        "caseDifferences": 51,
-        "deepDifferences": 0,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "i18n/ro.js",
-        "caseCount": 91,
-        "deepCount": 11,
-        "caseDifferences": 51,
-        "deepDifferences": 0,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "i18n/el.js",
-        "caseCount": 91,
-        "deepCount": 11,
-        "caseDifferences": 51,
-        "deepDifferences": 0,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "i18n/es.js",
-        "caseCount": 91,
-        "deepCount": 11,
-        "caseDifferences": 51,
-        "deepDifferences": 0,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "i18n/fr.js",
-        "caseCount": 91,
-        "deepCount": 11,
-        "caseDifferences": 51,
-        "deepDifferences": 0,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "i18n/ru.js",
-        "caseCount": 91,
-        "deepCount": 11,
-        "caseDifferences": 51,
-        "deepDifferences": 0,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "i18n/tr.js",
-        "caseCount": 91,
-        "deepCount": 11,
-        "caseDifferences": 51,
-        "deepDifferences": 0,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "i18n/ar.js",
-        "caseCount": 91,
-        "deepCount": 11,
-        "caseDifferences": 51,
-        "deepDifferences": 0,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "i18n/fa.js",
-        "caseCount": 91,
-        "deepCount": 11,
-        "caseDifferences": 51,
-        "deepDifferences": 0,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "i18n/uk.js",
-        "caseCount": 91,
-        "deepCount": 11,
-        "caseDifferences": 51,
-        "deepDifferences": 0,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "i18n/core.js",
-        "caseCount": 91,
-        "deepCount": 11,
-        "caseDifferences": 51,
-        "deepDifferences": 0,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "i18n/languages.js",
-        "caseCount": 91,
-        "deepCount": 11,
-        "caseDifferences": 51,
-        "deepDifferences": 0,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "i18n/legacy/legacy_v223_v224_runtime.js",
-        "caseCount": 91,
-        "deepCount": 11,
-        "caseDifferences": 51,
-        "deepDifferences": 0,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:7:v230UiPolishPatch",
-        "caseCount": 91,
-        "deepCount": 11,
-        "caseDifferences": 51,
-        "deepDifferences": 0,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:8:v230bSignatureDeepDiveExpansion",
-        "caseCount": 91,
-        "deepCount": 11,
-        "caseDifferences": 51,
-        "deepDifferences": 0,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "i18n/legacy/legacy_v230c_signature_deepdive.js",
-        "caseCount": 91,
-        "deepCount": 11,
-        "caseDifferences": 51,
-        "deepDifferences": 0,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:9:v240b_nsclc_premium_hotfix",
-        "caseCount": 91,
-        "deepCount": 11,
-        "caseDifferences": 51,
-        "deepDifferences": 0,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:10:v240c_nsclc_premium_ui_polish",
-        "caseCount": 91,
-        "deepCount": 11,
-        "caseDifferences": 51,
-        "deepDifferences": 0,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:11:v240e_lab_run_002_qa_hotfix",
-        "caseCount": 91,
-        "deepCount": 11,
-        "caseDifferences": 51,
-        "deepDifferences": 0,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:12:v240f_lab_run_002_premium",
-        "caseCount": 91,
-        "deepCount": 11,
-        "caseDifferences": 51,
-        "deepDifferences": 0,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:13:v240h_res_omics_001_qa_hotfix",
-        "caseCount": 91,
-        "deepCount": 11,
-        "caseDifferences": 51,
-        "deepDifferences": 0,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:14:v240i_res_omics_001_premium",
-        "caseCount": 91,
-        "deepCount": 11,
-        "caseDifferences": 51,
-        "deepDifferences": 0,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:15:v240l_performance_signature_filter",
-        "caseCount": 91,
-        "deepCount": 11,
-        "caseDifferences": 51,
-        "deepDifferences": 0,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:16:v240m_a1_deepdive_patch",
-        "caseCount": 91,
-        "deepCount": 16,
-        "caseDifferences": 55,
-        "deepDifferences": 0,
-        "caseWrites": 5,
-        "deepWrites": 5,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:17:v240n_a2_crc_deepdives",
-        "caseCount": 91,
-        "deepCount": 19,
-        "caseDifferences": 57,
-        "deepDifferences": 0,
-        "caseWrites": 3,
-        "deepWrites": 3,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:18:v240o_a3_hrd_deepdives",
-        "caseCount": 91,
-        "deepCount": 22,
-        "caseDifferences": 59,
-        "deepDifferences": 0,
-        "caseWrites": 3,
-        "deepWrites": 3,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:19:v240p_a4_io_deepdives",
-        "caseCount": 91,
-        "deepCount": 26,
-        "caseDifferences": 61,
-        "deepDifferences": 0,
-        "caseWrites": 4,
-        "deepWrites": 4,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:20:v240q_a5_a6_mtb_freeze",
-        "caseCount": 91,
-        "deepCount": 35,
-        "caseDifferences": 67,
-        "deepDifferences": 0,
-        "caseWrites": 9,
-        "deepWrites": 9,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:21:v240r_signature_legal_hotfix",
-        "caseCount": 91,
-        "deepCount": 35,
-        "caseDifferences": 67,
-        "deepDifferences": 0,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:22:v240s-met-deepdive",
-        "caseCount": 91,
-        "deepCount": 44,
-        "caseDifferences": 71,
-        "deepDifferences": 0,
-        "caseWrites": 10,
-        "deepWrites": 9,
-        "integrated": false
-      },
-      {
-        "source": "i18n/legacy/legacy_v240t_signature_i18n.js",
-        "caseCount": 91,
-        "deepCount": 44,
-        "caseDifferences": 72,
-        "deepDifferences": 8,
-        "caseWrites": 8,
-        "deepWrites": 8,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:23:v240u_lab_b1_preanalytics_deepdive_patch",
-        "caseCount": 91,
-        "deepCount": 49,
-        "caseDifferences": 73,
-        "deepDifferences": 8,
-        "caseWrites": 5,
-        "deepWrites": 5,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:24:v240v_lab_b2_run_qc_deepdive_patch",
-        "caseCount": 91,
-        "deepCount": 54,
-        "caseDifferences": 74,
-        "deepDifferences": 8,
-        "caseWrites": 5,
-        "deepWrites": 5,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:25:v240w_lab_b3_postanalytics_deepdive_patch",
-        "caseCount": 91,
-        "deepCount": 58,
-        "caseDifferences": 75,
-        "deepDifferences": 8,
-        "caseWrites": 4,
-        "deepWrites": 4,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:26:v240x_lab_b4_c4_deepdive_patch",
-        "caseCount": 91,
-        "deepCount": 63,
-        "caseDifferences": 78,
-        "deepDifferences": 8,
-        "caseWrites": 5,
-        "deepWrites": 5,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:27:v240y_lab_b5_digital_data_lims_deepdive_patch",
-        "caseCount": 91,
-        "deepCount": 68,
-        "caseDifferences": 82,
-        "deepDifferences": 8,
-        "caseWrites": 5,
-        "deepWrites": 5,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:28:v240y1_lab_c4_c5_schema_hotfix",
-        "caseCount": 91,
-        "deepCount": 68,
-        "caseDifferences": 84,
-        "deepDifferences": 19,
-        "caseWrites": 15,
-        "deepWrites": 11,
-        "integrated": false
-      },
-      {
-        "source": "i18n/legacy/legacy_v240z_lab_i18n.js",
-        "caseCount": 91,
-        "deepCount": 68,
-        "caseDifferences": 84,
-        "deepDifferences": 19,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:29:v240z2_res_r1_deepdive",
-        "caseCount": 91,
-        "deepCount": 72,
-        "caseDifferences": 84,
-        "deepDifferences": 19,
-        "caseWrites": 4,
-        "deepWrites": 4,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:30:v240z3_res_r2_deepdive",
-        "caseCount": 91,
-        "deepCount": 77,
-        "caseDifferences": 86,
-        "deepDifferences": 19,
-        "caseWrites": 5,
-        "deepWrites": 5,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:31:v240z4_res_r3_deepdive",
-        "caseCount": 91,
-        "deepCount": 81,
-        "caseDifferences": 88,
-        "deepDifferences": 19,
-        "caseWrites": 4,
-        "deepWrites": 4,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:32:v240z5_res_r4_deepdive",
-        "caseCount": 91,
-        "deepCount": 84,
-        "caseDifferences": 90,
-        "deepDifferences": 19,
-        "caseWrites": 3,
-        "deepWrites": 3,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:33:v240z6_res_r5_deepdive",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 19,
-        "caseWrites": 3,
-        "deepWrites": 3,
-        "integrated": false
-      },
-      {
-        "source": "i18n/legacy/legacy_v240z7_res_t1_i18n.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 19,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "i18n/legacy/legacy_v240z8_res_t2_i18n.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 19,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "i18n/legacy/legacy_v240z9_res_t3_i18n.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 19,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "i18n/legacy/legacy_v240z10_res_t4_i18n.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 19,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "i18n/legacy/legacy_v240z10a_res_t4_hotfix.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 19,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:34:v240z11_global_baseline_polish",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 19,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "index:inline:35:v240z12-case-metadata-recalibration",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 19,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "v240z13_crc002_flagship.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 19,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "v240z14_crc001_flagship.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 19,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "v240z15_nsclc002_flagship.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 19,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "v240z16_metngs003_flagship.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 19,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "v240z17_ovar001_flagship.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 19,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "v240z18_ovar002_flagship.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 19,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "v240z19_cns001_flagship.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 19,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "v240z20_io001_flagship.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 19,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "v250b_labpost001_flagship.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 19,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "v250b_labdoc001_flagship.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 19,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "v250b_reshyp001_flagship.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 19,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "v250b_reseth001_flagship.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 19,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "v250b_responsive_shell.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 19,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "v250b_asset_modal_hotfix.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 19,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "v250b_startup_cover_hotfix.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 19,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "v250b_home_screen.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 19,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "rc2_A5_method_focus.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 19,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "v250b_method_focus_filter.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 19,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "v250b_metngs001_course_flagship.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 19,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "v250b_metngs002_course_flagship.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 19,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "v250b_metrna001_course_flagship.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 19,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "v250b_metlb001_course_flagship.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 19,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "v250b_metngs004_course_flagship.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 19,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "v250b_labrun001_course_flagship.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 19,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "v250b_labpre001_course_flagship.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 19,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "v250b_resimpl001_course_flagship.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 19,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "v250b_reseth002_course_flagship.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 19,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "v250b_resrole001_course_flagship.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 19,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "v260rc1_mtb_cns_003_asset_upgrade.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 19,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "v260rc1_mtb_hem_001_asset_upgrade.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 19,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "v260rc1_lab_run_004_asset_upgrade.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 19,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "v260rc1_mtb_cns_003_mtb_hem_001_i18n_consolidation.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 19,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "v260rc1_met_fish_001_asset_i18n_upgrade.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 19,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "v260rc1_res_val_001_signature_asset_i18n_upgrade.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 19,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": false
-      },
-      {
-        "source": "v260rc1_case_consistency_curation_i18n.js",
-        "caseCount": 91,
-        "deepCount": 87,
-        "caseDifferences": 91,
-        "deepDifferences": 19,
-        "caseWrites": 0,
-        "deepWrites": 1,
-        "integrated": false
-      },
-      {
-        "source": "rc2_A6_canonical_integration.js",
-        "caseCount": 91,
-        "deepCount": 91,
-        "caseDifferences": 0,
-        "deepDifferences": 0,
-        "caseWrites": 91,
-        "deepWrites": 23,
-        "integrated": true
-      },
-      {
-        "source": "v250b_signature_taxonomy_freeze.js",
-        "caseCount": 91,
-        "deepCount": 91,
-        "caseDifferences": 0,
-        "deepDifferences": 0,
-        "caseWrites": 0,
-        "deepWrites": 0,
-        "integrated": true
-      }
-    ],
     "a6_8": [
       {
         "source": "index:inline:0:main",
@@ -1714,6 +744,978 @@
         "caseCount": 91,
         "deepCount": 68,
         "caseDifferences": 54,
+        "deepDifferences": 8,
+        "caseWrites": 0,
+        "deepWrites": 5,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:28:v240y1_lab_c4_c5_schema_hotfix",
+        "caseCount": 91,
+        "deepCount": 68,
+        "caseDifferences": 57,
+        "deepDifferences": 19,
+        "caseWrites": 15,
+        "deepWrites": 11,
+        "integrated": false
+      },
+      {
+        "source": "i18n/legacy/legacy_v240z_lab_i18n.js",
+        "caseCount": 91,
+        "deepCount": 68,
+        "caseDifferences": 57,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:29:v240z2_res_r1_deepdive",
+        "caseCount": 91,
+        "deepCount": 72,
+        "caseDifferences": 57,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 4,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:30:v240z3_res_r2_deepdive",
+        "caseCount": 91,
+        "deepCount": 77,
+        "caseDifferences": 57,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 5,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:31:v240z4_res_r3_deepdive",
+        "caseCount": 91,
+        "deepCount": 81,
+        "caseDifferences": 57,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 4,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:32:v240z5_res_r4_deepdive",
+        "caseCount": 91,
+        "deepCount": 84,
+        "caseDifferences": 57,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 3,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:33:v240z6_res_r5_deepdive",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 57,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 3,
+        "integrated": false
+      },
+      {
+        "source": "i18n/legacy/legacy_v240z7_res_t1_i18n.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 57,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "i18n/legacy/legacy_v240z8_res_t2_i18n.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 57,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "i18n/legacy/legacy_v240z9_res_t3_i18n.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 57,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "i18n/legacy/legacy_v240z10_res_t4_i18n.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 57,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "i18n/legacy/legacy_v240z10a_res_t4_hotfix.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 57,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:34:v240z11_global_baseline_polish",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 57,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:35:v240z12-case-metadata-recalibration",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 57,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "v240z13_crc002_flagship.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 57,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "v240z14_crc001_flagship.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 57,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "v240z15_nsclc002_flagship.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 57,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "v240z16_metngs003_flagship.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 57,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "v240z17_ovar001_flagship.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 57,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "v240z18_ovar002_flagship.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 57,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "v240z19_cns001_flagship.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 57,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "v240z20_io001_flagship.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 57,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "v250b_labpost001_flagship.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 57,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "v250b_labdoc001_flagship.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 57,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "v250b_reshyp001_flagship.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 57,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "v250b_reseth001_flagship.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 57,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "v250b_responsive_shell.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 57,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "v250b_asset_modal_hotfix.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 57,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "v250b_startup_cover_hotfix.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 57,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "v250b_home_screen.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 57,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "rc2_A5_method_focus.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 57,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "v250b_method_focus_filter.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 57,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "v250b_metngs001_course_flagship.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 57,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "v250b_metngs002_course_flagship.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 57,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "v250b_metrna001_course_flagship.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 57,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "v250b_metlb001_course_flagship.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 57,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "v250b_metngs004_course_flagship.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 57,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "v250b_labrun001_course_flagship.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 57,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "v250b_labpre001_course_flagship.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 57,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "v250b_resimpl001_course_flagship.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 57,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "v250b_reseth002_course_flagship.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 57,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "v250b_resrole001_course_flagship.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 57,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "v260rc1_mtb_cns_003_asset_upgrade.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 57,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "v260rc1_mtb_hem_001_asset_upgrade.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 57,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "v260rc1_lab_run_004_asset_upgrade.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 57,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "v260rc1_mtb_cns_003_mtb_hem_001_i18n_consolidation.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 57,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "v260rc1_met_fish_001_asset_i18n_upgrade.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 57,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "v260rc1_res_val_001_signature_asset_i18n_upgrade.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 57,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "v260rc1_case_consistency_curation_i18n.js",
+        "caseCount": 91,
+        "deepCount": 87,
+        "caseDifferences": 57,
+        "deepDifferences": 19,
+        "caseWrites": 0,
+        "deepWrites": 1,
+        "integrated": false
+      },
+      {
+        "source": "rc2_A6_canonical_integration.js",
+        "caseCount": 91,
+        "deepCount": 91,
+        "caseDifferences": 0,
+        "deepDifferences": 0,
+        "caseWrites": 57,
+        "deepWrites": 23,
+        "integrated": true
+      },
+      {
+        "source": "v250b_signature_taxonomy_freeze.js",
+        "caseCount": 91,
+        "deepCount": 91,
+        "caseDifferences": 0,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": true
+      }
+    ],
+    "a6_9": [
+      {
+        "source": "index:inline:0:main",
+        "caseCount": 91,
+        "deepCount": 8,
+        "caseDifferences": 49,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:1:v20b1LayoutHotfix",
+        "caseCount": 91,
+        "deepCount": 8,
+        "caseDifferences": 49,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:2:v20b5SafeLayoutPatch",
+        "caseCount": 91,
+        "deepCount": 8,
+        "caseDifferences": 49,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:3:v21Batch1ContentExpansionFix",
+        "caseCount": 91,
+        "deepCount": 11,
+        "caseDifferences": 49,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 3,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:4:v213ComplexPhaseBundlePatch",
+        "caseCount": 91,
+        "deepCount": 11,
+        "caseDifferences": 49,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:5:v214CaseSwitchWireFix",
+        "caseCount": 91,
+        "deepCount": 11,
+        "caseDifferences": 49,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:6:v216OvarPhaseScoreFix",
+        "caseCount": 91,
+        "deepCount": 11,
+        "caseDifferences": 49,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "molpath_version.js",
+        "caseCount": 91,
+        "deepCount": 11,
+        "caseDifferences": 49,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "rc2_A5_data_adapter.js",
+        "caseCount": 91,
+        "deepCount": 11,
+        "caseDifferences": 49,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "i18n/de.js",
+        "caseCount": 91,
+        "deepCount": 11,
+        "caseDifferences": 49,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "i18n/en.js",
+        "caseCount": 91,
+        "deepCount": 11,
+        "caseDifferences": 49,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "i18n/ro.js",
+        "caseCount": 91,
+        "deepCount": 11,
+        "caseDifferences": 49,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "i18n/el.js",
+        "caseCount": 91,
+        "deepCount": 11,
+        "caseDifferences": 49,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "i18n/es.js",
+        "caseCount": 91,
+        "deepCount": 11,
+        "caseDifferences": 49,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "i18n/fr.js",
+        "caseCount": 91,
+        "deepCount": 11,
+        "caseDifferences": 49,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "i18n/ru.js",
+        "caseCount": 91,
+        "deepCount": 11,
+        "caseDifferences": 49,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "i18n/tr.js",
+        "caseCount": 91,
+        "deepCount": 11,
+        "caseDifferences": 49,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "i18n/ar.js",
+        "caseCount": 91,
+        "deepCount": 11,
+        "caseDifferences": 49,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "i18n/fa.js",
+        "caseCount": 91,
+        "deepCount": 11,
+        "caseDifferences": 49,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "i18n/uk.js",
+        "caseCount": 91,
+        "deepCount": 11,
+        "caseDifferences": 49,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "i18n/core.js",
+        "caseCount": 91,
+        "deepCount": 11,
+        "caseDifferences": 49,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "i18n/languages.js",
+        "caseCount": 91,
+        "deepCount": 11,
+        "caseDifferences": 49,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "i18n/legacy/legacy_v223_v224_runtime.js",
+        "caseCount": 91,
+        "deepCount": 11,
+        "caseDifferences": 49,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:7:v230UiPolishPatch",
+        "caseCount": 91,
+        "deepCount": 11,
+        "caseDifferences": 49,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:8:v230bSignatureDeepDiveExpansion",
+        "caseCount": 91,
+        "deepCount": 11,
+        "caseDifferences": 49,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "i18n/legacy/legacy_v230c_signature_deepdive.js",
+        "caseCount": 91,
+        "deepCount": 11,
+        "caseDifferences": 49,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:9:v240b_nsclc_premium_hotfix",
+        "caseCount": 91,
+        "deepCount": 11,
+        "caseDifferences": 49,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:10:v240c_nsclc_premium_ui_polish",
+        "caseCount": 91,
+        "deepCount": 11,
+        "caseDifferences": 49,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:11:v240e_lab_run_002_qa_hotfix",
+        "caseCount": 91,
+        "deepCount": 11,
+        "caseDifferences": 49,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:12:v240f_lab_run_002_premium",
+        "caseCount": 91,
+        "deepCount": 11,
+        "caseDifferences": 49,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:13:v240h_res_omics_001_qa_hotfix",
+        "caseCount": 91,
+        "deepCount": 11,
+        "caseDifferences": 49,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:14:v240i_res_omics_001_premium",
+        "caseCount": 91,
+        "deepCount": 11,
+        "caseDifferences": 49,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:15:v240l_performance_signature_filter",
+        "caseCount": 91,
+        "deepCount": 11,
+        "caseDifferences": 49,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:16:v240m_a1_deepdive_patch",
+        "caseCount": 91,
+        "deepCount": 16,
+        "caseDifferences": 49,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 5,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:17:v240n_a2_crc_deepdives",
+        "caseCount": 91,
+        "deepCount": 19,
+        "caseDifferences": 49,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 3,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:18:v240o_a3_hrd_deepdives",
+        "caseCount": 91,
+        "deepCount": 22,
+        "caseDifferences": 49,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 3,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:19:v240p_a4_io_deepdives",
+        "caseCount": 91,
+        "deepCount": 26,
+        "caseDifferences": 49,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 4,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:20:v240q_a5_a6_mtb_freeze",
+        "caseCount": 91,
+        "deepCount": 35,
+        "caseDifferences": 49,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 9,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:21:v240r_signature_legal_hotfix",
+        "caseCount": 91,
+        "deepCount": 35,
+        "caseDifferences": 49,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 0,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:22:v240s-met-deepdive",
+        "caseCount": 91,
+        "deepCount": 44,
+        "caseDifferences": 49,
+        "deepDifferences": 0,
+        "caseWrites": 0,
+        "deepWrites": 9,
+        "integrated": false
+      },
+      {
+        "source": "i18n/legacy/legacy_v240t_signature_i18n.js",
+        "caseCount": 91,
+        "deepCount": 44,
+        "caseDifferences": 53,
+        "deepDifferences": 8,
+        "caseWrites": 15,
+        "deepWrites": 8,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:23:v240u_lab_b1_preanalytics_deepdive_patch",
+        "caseCount": 91,
+        "deepCount": 49,
+        "caseDifferences": 53,
+        "deepDifferences": 8,
+        "caseWrites": 0,
+        "deepWrites": 5,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:24:v240v_lab_b2_run_qc_deepdive_patch",
+        "caseCount": 91,
+        "deepCount": 54,
+        "caseDifferences": 53,
+        "deepDifferences": 8,
+        "caseWrites": 0,
+        "deepWrites": 5,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:25:v240w_lab_b3_postanalytics_deepdive_patch",
+        "caseCount": 91,
+        "deepCount": 58,
+        "caseDifferences": 53,
+        "deepDifferences": 8,
+        "caseWrites": 0,
+        "deepWrites": 4,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:26:v240x_lab_b4_c4_deepdive_patch",
+        "caseCount": 91,
+        "deepCount": 63,
+        "caseDifferences": 53,
+        "deepDifferences": 8,
+        "caseWrites": 0,
+        "deepWrites": 5,
+        "integrated": false
+      },
+      {
+        "source": "index:inline:27:v240y_lab_b5_digital_data_lims_deepdive_patch",
+        "caseCount": 91,
+        "deepCount": 68,
+        "caseDifferences": 53,
         "deepDifferences": 8,
         "caseWrites": 0,
         "deepWrites": 5,

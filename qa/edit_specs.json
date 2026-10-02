@@ -1,781 +1,131 @@
 [
   {
-    "script": "v21Batch1ContentExpansionFix",
-    "kind": "writer",
-    "name": "V21_CASE_PROMOTION",
-    "old": "if (typeof cases !== 'undefined') {\n      cases.forEach(function(c){\n        const d = (typeof DEEP_DIVE_MAP_V17 !== 'undefined') ? DEEP_DIVE_MAP_V17[c.id] : null;\n        if (!d) return;\n        c.signature_case = true; c.deep_dive = true; c.deep_dive_title = d.title;\n        c.tags = Array.from(new Set([].concat(c.tags||[], ['Signature Case','Deep Dive','v2.1','Batch1 curated'])));\n        if (c.id === 'MTB_OVAR_001_v0_7') { c.difficulty = 'advanced'; c.estimated_time_min = '18–25'; c.length_class = 'Complex'; }\n        if (c.id === 'MTB_CRC_001_v0_6') { c.estimated_time_min = '12–15'; }\n        if (c.id === 'MTB_IO_001_v1_0') { c.estimated_time_min = '12–15'; }\n      });\n    }",
-    "new": "// A6.8: canonical case taxonomy and metadata are already loaded.",
-    "old_start": 1889077,
-    "old_end": 1889765,
-    "new_start": 1889077,
-    "new_end": 1889142
-  },
-  {
-    "script": "v230bSignatureDeepDiveExpansion",
-    "kind": "writer",
-    "name": "V230B_CASE_PROMOTION",
-    "old": "const c=cases.find(function(x){return x&&x.id===d.case_id;});\n    if(c){\n      c.signature_case=true;\n      c.deep_dive=true;\n      c.deep_dive_title=d.title;\n      c.tags=Array.from(new Set([].concat(c.tags||[],['Signature Case','Deep Dive','v2.3.0b curated'])));\n    }",
-    "new": "// A6.8: canonical case taxonomy already includes these cases.",
-    "ids": [
-      "MTB_CNS_001_v1_0",
-      "LAB_DOC_001_v1_0",
-      "RES_OMICS_001_v1_0",
-      "RES_ETH_001_v1_0"
-    ],
-    "old_start": 1954497,
-    "old_end": 1954767,
-    "new_start": 1953874,
-    "new_end": 1953936
-  },
-  {
-    "script": "v240m_a1_deepdive_patch",
-    "kind": "table",
-    "name": "V240M_BASE_PATCHES",
-    "old": "const V240M_BASE_PATCHES=Object.fromEntries([[\"MTB_NSCLC_003_v1_3\",[\"story\",\"allowed_tests\",\"required_groups\",\"result_sections\",\"always_findings\",\"complete_interpretation\",\"partial_interpretation\",\"bad_tests\",\"mtb_checks\",\"optimal_summary\"]],[\"MTB_NSCLC_004_v1_3\",[\"story\",\"allowed_tests\",\"required_groups\",\"result_sections\",\"always_findings\",\"complete_interpretation\",\"partial_interpretation\",\"bad_tests\",\"mtb_checks\",\"optimal_summary\"]],[\"MTB_MEL_001_v1_3\",[\"story\",\"allowed_tests\",\"required_groups\",\"result_sections\",\"always_findings\",\"complete_interpretation\",\"partial_interpretation\",\"bad_tests\",\"mtb_checks\",\"optimal_summary\"]],[\"MTB_GIST_001_v1_3\",[\"story\",\"allowed_tests\",\"required_groups\",\"result_sections\",\"always_findings\",\"complete_interpretation\",\"partial_interpretation\",\"bad_tests\",\"mtb_checks\",\"optimal_summary\"]],[\"MTB_CHOL_001_v1_3\",[\"story\",\"allowed_tests\",\"required_groups\",\"result_sections\",\"always_findings\",\"complete_interpretation\",\"partial_interpretation\",\"bad_tests\",\"mtb_checks\",\"optimal_summary\"]]].map(([id,keys])=>{const source=window.MolPathCanonicalDataA4b.cases.find(record=>record.id===id).case;return [id,Object.fromEntries(keys.map(key=>[key,JSON.parse(JSON.stringify(source[key]))]))];}));",
+    "script": "v213ComplexPhaseBundlePatch",
+    "kind": "writer_definition",
+    "name": "patchCaseData",
+    "old": "function patchCaseData(){\n  const ovar=findCase(OVAR_ID);\n  if(ovar){\n    ovar.title='Rezidiviertes HGSOC: BRCA/HRD aus altem FFPE, Artefaktverdacht und Liquid-Biopsy-Bestätigung';\n    ovar.short='HGSOC BRCA/HRD Artefakt';\n    ovar.difficulty='advanced';\n    ovar.length_class='Complex';\n    ovar.estimated_time_min='20–30';\n    ovar.logic='ovar';\n    ovar.phase_model='two_round_complex';\n    ovar.budget={points_max:950,sections_max:14,tat_goal:9};\n    ovar.allowed_tests=[...new Set([...(ovar.allowed_tests||[]),'liquid_biopsy','rebiopsy_tissue','tumor_brca_hrr','hrd_score','germline_referral','tp53_single','brca_germline_only','broad_pan_panel'])];\n    ovar.story=[\n      {id:'intake',title:'Initialer Auftrag',items:[['Einsender','Gynäko-Onkologie / molekulares Tumorboard'],['Klinische Information','Patientin mit high-grade serösem Ovarialkarzinom, jetzt Rezidiv drei Jahre nach Erstdiagnose und Primärtherapie.'],['Fragestellung','PARP-Inhibition bzw. HRD-/BRCA-Kontext für die weitere Therapieentscheidung klären.'],['Verfügbares Material','Zunächst steht nur das alte FFPE-Resektatmaterial der Primäroperation zur Verfügung.']]},\n      {id:'history',title:'Klinischer Kontext',items:[['Erstdiagnose','HGSOC, FIGO IIIC, Debulking vor 3 Jahren, danach platinbasierte Chemotherapie.'],['Aktuelle Situation','Radiologischer und klinischer Rezidivverdacht; erneute Systemtherapie wird geplant.'],['Therapiefrage','Die Onkologie fragt ausdrücklich: „BRCA/HRD? PARP relevant?“'],['Zeitdruck','Der Fall soll zeitnah im MTB besprochen werden; eine robuste Aussage ist aber wichtiger als ein schneller Overcall.']]},\n      {id:'histo',title:'Histologie + Vor-IHC',items:[['HE','High-grade seröses Karzinom, Primärresektat mit vitalen Tumorarealen.'],['IHC','PAX8 positiv, WT1 positiv, p53 aberrantes Overexpression-Muster, p16 blockartig positiv.'],['Arbeitsdiagnose','Rezidiviertes high-grade seröses tubo-ovarielles Karzinom.'],['Noch offen','BRCA-/HRR-Status, HRD/genomic scar und potenzieller Keimbahnkontext.']]},\n      {id:'material',title:'Materialprüfung Runde 1',items:[['Material','Alter FFPE-Block aus dem Primärresektat, ca. 3 Jahre alt.'],['Tumorzellanteil','ca. 70 % in markiertem Areal.'],['DNA-Prognose','Menge und Fragmentlänge formal ausreichend für Tumor-BRCA/HRR + HRD/genomic-scar.'],['Restmaterial','Begrenzt; eine robuste Wiederholung wäre bei Auffälligkeiten nicht sicher möglich.'],['Didaktischer Fokus','Der Artefaktverdacht ist zu diesem Zeitpunkt noch kein Befund – er kann erst nach dem Laborlauf beurteilt werden.']]}];\n    ovar.optimal_tests=['he_review','tumor_brca_hrr','hrd_score'];\n    ovar.acceptable_alternatives=[];\n    ovar.result_truth={\n      phase1:'Tumor-BRCA/HRR + HRD/genomic scar aus altem FFPE: formal pathogene BRCA1-Frameshift-/LoF-Variante mit VAF ca. 12 % bei TZA ca. 70 %, Coverage ca. 100×; zugleich auffällig viele C>T/G>A-Varianten. HRD/genomic scar grenzwertig/Graubereich, nicht überzeugend stark positiv. Restmaterial insuffizient für robuste Wiederholung.',\n      phase2:'Aktuelle Liquid Biopsy: ctDNA ausreichend. BRCA1-LoF erneut nachweisbar, VAF passend zur ctDNA-Fraktion; kein breites C>T/G>A-Artefaktmuster. Damit ist eine aktuelle tumorassoziierte BRCA1-Alteration plausibel bestätigt. HRD/genomic scar aus altem Gewebe bleibt limitiert/graubereichig.',\n      final:'Initialer FFPE-Befund allein nicht belastbar; nach Liquid-Biopsy-Bestätigung BRCA1/HRR-Kontext therapeutisch diskutierbar. Keimbahnabklärung empfohlen; HRD-Bewertung limitiert kommunizieren.'\n    };\n    ovar.optimal_summary='Optimale Lösung: Runde 1 BRCA/HRD am alten FFPE anfordern; artefaktverdächtigen BRCA1-LoF-Befund wegen C>T/G>A-Muster, niedriger VAF und grenzwertigem HRD nicht unkritisch verwerten; bei insuffizientem Restmaterial aktuelle Liquid Biopsy nachfordern; danach BRCA-Kontext, HRD-Limitation und Keimbahnabklärung sauber im MTB darstellen.';\n  }\n  const crc=findCase(CRC_ID);\n  if(crc){\n    crc.budget={points_max:1300,sections_max:14,tat_goal:9};\n    crc.acceptable_alternatives=[...new Set([...(crc.acceptable_alternatives||[]),'broad_pan_panel','colon_ngs_panel'])];\n    crc.allowed_tests=[...new Set([...(crc.allowed_tests||[]),'tmb_ngs','broad_pan_panel'])];\n    crc.optimal_summary='Optimale Lösung: Entweder fokussierter CRC-Pfad mit RAS/BRAF + MMR-IHC + MSI ± MLH1-Reflex oder ein validiertes breites Panel mit RAS/BRAF/MSI/TMB plus MMR-IHC/MLH1-Einordnung. TMB-only ersetzt MSI/MMR/RAS/BRAF nicht.';\n  }\n}",
     "new": "",
-    "ids": [
-      "MTB_NSCLC_003_v1_3",
-      "MTB_NSCLC_004_v1_3",
-      "MTB_MEL_001_v1_3",
-      "MTB_GIST_001_v1_3",
-      "MTB_CHOL_001_v1_3"
-    ],
-    "old_start": 2080056,
-    "old_end": 2081282,
-    "new_start": 2079225,
-    "new_end": 2079225
+    "old_start": 1892776,
+    "old_end": 1897245,
+    "new_start": 1892776,
+    "new_end": 1892776
   },
   {
-    "script": "v240m_a1_deepdive_patch",
-    "kind": "writer",
-    "name": "V240M_BASE_PATCHES",
-    "old": "Object.entries(V240M_BASE_PATCHES).forEach(([id,patch])=>{const c=byId(id);if(!c)return;Object.assign(c,patch);c.deep_dive=true;c.signature_case=false;c.deep_dive_title=(V240M_DEEP_DIVES.find(d=>d.case_id===id)||{}).title||c.title;c.tags=Array.from(new Set([].concat(c.tags||[],['Deep Dive','v2.4.0m','A1 curated']).filter(x=>x!=='Signature Case')));});",
-    "new": "// A6.8: cases use Canonical; retain Deep-Dive registration below.",
+    "script": "v213ComplexPhaseBundlePatch",
+    "kind": "writer_entry",
+    "name": "V213_CASE_PATCH",
+    "old": "patchCaseData();",
+    "new": "// A6.9: case data is loaded from Canonical; phase/report logic remains.",
     "ids": [
-      "MTB_NSCLC_003_v1_3",
-      "MTB_NSCLC_004_v1_3",
-      "MTB_MEL_001_v1_3",
-      "MTB_GIST_001_v1_3",
-      "MTB_CHOL_001_v1_3"
+      "MTB_OVAR_001_v0_7",
+      "MTB_CRC_001_v0_6"
     ],
-    "locator": "byId",
-    "old_start": 2081890,
-    "old_end": 2082243,
-    "new_start": 2079833,
-    "new_end": 2079899
+    "old_start": 1925901,
+    "old_end": 1925917,
+    "new_start": 1921432,
+    "new_end": 1921504
   },
   {
-    "script": "v240n_a2_crc_deepdives",
-    "kind": "table",
-    "name": "V240N_BASE_PATCHES",
-    "old": "const V240N_BASE_PATCHES=Object.fromEntries([[\"MTB_CRC_003_v1_3\",[\"story\",\"allowed_tests\",\"required_groups\",\"result_sections\",\"always_findings\",\"complete_interpretation\",\"partial_interpretation\",\"mtb_checks\",\"optimal_summary\",\"tags\"]],[\"MTB_CRC_004_v1_3\",[\"story\",\"allowed_tests\",\"required_groups\",\"result_sections\",\"always_findings\",\"complete_interpretation\",\"partial_interpretation\",\"mtb_checks\",\"optimal_summary\",\"tags\"]],[\"MTB_CRC_005_v1_3\",[\"story\",\"allowed_tests\",\"required_groups\",\"result_sections\",\"always_findings\",\"complete_interpretation\",\"partial_interpretation\",\"mtb_checks\",\"optimal_summary\",\"tags\"]]].map(([id,keys])=>{const source=window.MolPathCanonicalDataA4b.cases.find(record=>record.id===id).case;return [id,Object.fromEntries(keys.map(key=>[key,JSON.parse(JSON.stringify(source[key]))]))];}));",
+    "script": "v216OvarPhaseScoreFix",
+    "kind": "writer_definition",
+    "name": "patchOvarText216",
+    "old": "function patchOvarText216(){\n  const ovar=findCase216(OVAR_ID); if(!ovar)return;\n  ovar.story=[\n    {id:'intake',title:'Initialer Auftrag',items:[['Einsender','Gynäko-Onkologie / molekulares Tumorboard'],['Klinische Information','Patientin mit high-grade serösem Ovarialkarzinom, jetzt Rezidiv drei Jahre nach Erstdiagnose und Primärtherapie.'],['Fragestellung','Prüfung, ob eine molekular begründbare PARP-/DNA-Reparatur-orientierte Therapieoption vorliegt.'],['Verfügbares Material','Zunächst steht nur das alte FFPE-Resektatmaterial der Primäroperation zur Verfügung.']]},\n    {id:'history',title:'Klinischer Kontext',items:[['Erstdiagnose','HGSOC, FIGO IIIC, Debulking vor 3 Jahren, danach platinbasierte Chemotherapie.'],['Aktuelle Situation','Radiologischer und klinischer Rezidivverdacht; erneute Systemtherapie wird geplant.'],['Therapiefrage','Die Onkologie fragt nach einer belastbaren molekularen Grundlage für die weitere Therapieplanung.'],['Zeitdruck','Der Fall soll zeitnah im MTB besprochen werden; eine robuste Aussage ist aber wichtiger als ein schneller Overcall.']]},\n    {id:'histo',title:'Histologie + Vor-IHC',items:[['HE','High-grade seröses Karzinom, Primärresektat mit vitalen Tumorarealen.'],['IHC','PAX8 positiv, WT1 positiv, p53 aberrantes Overexpression-Muster, p16 blockartig positiv.'],['Arbeitsdiagnose','Rezidiviertes high-grade seröses tubo-ovarielles Karzinom.'],['Molekularstatus','Zu Beginn des Falls liegen noch keine verwertbaren molekularen Befunde vor.']]},\n    {id:'material',title:'Materialprüfung Runde 1',items:[['Material','Alter FFPE-Block aus dem Primärresektat, ca. 3 Jahre alt.'],['Tumorzellanteil','ca. 70 % in markiertem Areal.'],['DNA-Prognose','Menge und Fragmentlänge formal ausreichend für eine tumorbasierte DNA-Reparatur-/HRR-/genomic-scar-orientierte Analyse.'],['Restmaterial','Begrenzt; eine robuste Wiederholung wäre bei Auffälligkeiten nicht sicher möglich.'],['Didaktischer Fokus','Zu diesem Zeitpunkt ist noch offen, ob der Laborlauf einen belastbaren Befund oder eine technische Limitation ergibt.']]}\n  ];\n  ovar.result_truth=ovar.result_truth||{};\n  ovar.result_truth.phase1='Tumorbasierte HRR-/BRCA-orientierte Analyse + HRD/genomic scar aus altem FFPE: formal pathogene BRCA1-Frameshift-/LoF-Variante mit VAF ca. 12 % bei TZA ca. 70 %, Coverage ca. 100×; zugleich auffällig viele C>T/G>A-Varianten. HRD/genomic scar grenzwertig/Graubereich, nicht überzeugend stark positiv. Restmaterial insuffizient für robuste Wiederholung.';\n  ovar.result_truth.phase2='Aktuelle Liquid Biopsy: ctDNA ausreichend. BRCA1-LoF erneut nachweisbar, VAF passend zur ctDNA-Fraktion; kein breites C>T/G>A-Artefaktmuster. Damit ist eine aktuelle tumorassoziierte BRCA1-Alteration plausibel bestätigt. HRD/genomic scar aus altem Gewebe bleibt limitiert/graubereichig.';\n  ovar.optimal_summary='Optimale Lösung: Runde 1 tumorbasierte HRR/BRCA- und HRD/genomic-scar-orientierte Analyse am alten FFPE; danach den formal pathogenen, aber artefaktverdächtigen Befund nicht overcallen; bei insuffizientem Restmaterial aktuelle Liquid Biopsy als begründete Bestätigungsdiagnostik; finale MTB-Kommunikation mit bestätigtem BRCA-Kontext, HRD-Graubereich und Keimbahnempfehlung.';\n  try{const d=(typeof DEEP_DIVE_MAP_V17!=='undefined')?DEEP_DIVE_MAP_V17[OVAR_ID]:null;if(d){d.case_briefing='Rezidiviertes HGSOC nach drei Jahren. Zu Beginn liegen Histologie, IHC und altes FFPE-Material vor, aber noch kein verwertbarer molekularer Befund. Die klinische Frage ist eine belastbare molekulare Grundlage für PARP-/DNA-Reparatur-orientierte Therapieentscheidungen.';d.pre_results=[{title:'Vorbefunde vor Runde 1',content:'HGSOC-typische Histologie und IHC. Tumoranteil im alten FFPE-Material ca. 70 %. Molekulare Prädiktionsmarker werden erst in Runde 1 erhoben.'}];d.context_cards=[{title:'Klinische Frage',content:'Rezidiv nach drei Jahren; Therapieplanung mit PARP-/DNA-Reparatur-Kontext.'},{title:'Material',content:'Altes FFPE-Resektat, begrenztes Restmaterial, formal ausreichende DNA-Menge.'},{title:'Aufgabe Runde 1',content:'Erstdiagnostik sinnvoll planen, ohne spätere technische Befundlage vorwegzunehmen.'}];}}\n  catch(_){ }\n}",
     "new": "",
-    "ids": [
-      "MTB_CRC_003_v1_3",
-      "MTB_CRC_004_v1_3",
-      "MTB_CRC_005_v1_3"
-    ],
-    "old_start": 2090579,
-    "old_end": 2091394,
-    "new_start": 2088235,
-    "new_end": 2088235
+    "old_start": 1935002,
+    "old_end": 1939171,
+    "new_start": 1930423,
+    "new_end": 1930423
   },
   {
-    "script": "v240n_a2_crc_deepdives",
-    "kind": "writer",
-    "name": "V240N_BASE_PATCHES",
-    "old": "Object.entries(V240N_BASE_PATCHES).forEach(([id,patch])=>{const c=v240nById(id);if(!c)return;Object.assign(c,patch);c.deep_dive=true;c.signature_case=false;c.deep_dive_title=(V240N_DEEP_DIVES.find(d=>d.case_id===id)||{}).title||c.title;c.tags=Array.from(new Set([].concat(c.tags||[],['Deep Dive','v2.4.0n','A2 curated']).filter(x=>x!=='Signature Case')));});",
-    "new": "// A6.8: cases use Canonical; retain Deep-Dive registration below.",
-    "ids": [
-      "MTB_CRC_003_v1_3",
-      "MTB_CRC_004_v1_3",
-      "MTB_CRC_005_v1_3"
-    ],
-    "locator": "v240nById",
-    "old_start": 2091682,
-    "old_end": 2092040,
-    "new_start": 2088433,
-    "new_end": 2088499
-  },
-  {
-    "script": "v240n_a2_crc_deepdives",
-    "kind": "unused_locator",
-    "name": "v240nById",
-    "old": "function v240nById(id){try{return cases.find(c=>c&&c.id===id)||null}catch(_){return null}}",
+    "script": "v216OvarPhaseScoreFix",
+    "kind": "unused_helper",
+    "name": "allCases216",
+    "old": "function allCases216(){try{return Array.isArray(cases)?cases:[]}catch(_){return []}}",
     "new": "",
-    "old_start": 2091591,
-    "old_end": 2091681,
-    "new_start": 2088432,
-    "new_end": 2088432
+    "old_start": 1933584,
+    "old_end": 1933668,
+    "new_start": 1929171,
+    "new_end": 1929171
   },
   {
-    "script": "v240o_a3_hrd_deepdives",
-    "kind": "table",
-    "name": "V240O_BASE_PATCHES",
-    "old": "const V240O_BASE_PATCHES=Object.fromEntries([[\"MTB_MAMMA_001_v1_3\",[\"story\",\"allowed_tests\",\"required_groups\",\"result_sections\",\"always_findings\",\"complete_interpretation\",\"partial_interpretation\",\"mtb_checks\",\"optimal_summary\",\"tags\"]],[\"MTB_PROST_001_v1_3\",[\"story\",\"allowed_tests\",\"required_groups\",\"result_sections\",\"always_findings\",\"complete_interpretation\",\"partial_interpretation\",\"mtb_checks\",\"optimal_summary\",\"tags\"]],[\"MTB_TAML_001_v1_3\",[\"story\",\"allowed_tests\",\"required_groups\",\"result_sections\",\"always_findings\",\"complete_interpretation\",\"partial_interpretation\",\"mtb_checks\",\"optimal_summary\",\"tags\"]]].map(([id,keys])=>{const source=window.MolPathCanonicalDataA4b.cases.find(record=>record.id===id).case;return [id,Object.fromEntries(keys.map(key=>[key,JSON.parse(JSON.stringify(source[key]))]))];}));",
+    "script": "v216OvarPhaseScoreFix",
+    "kind": "unused_helper",
+    "name": "findCase216",
+    "old": "function findCase216(id){return allCases216().find(function(c){return c.id===id})}",
     "new": "",
+    "old_start": 1933669,
+    "old_end": 1933751,
+    "new_start": 1929172,
+    "new_end": 1929172
+  },
+  {
+    "script": "v216OvarPhaseScoreFix",
+    "kind": "writer_entry",
+    "name": "V216_OVAR_TEXT_PATCH",
+    "old": "try{patchOvarText216()}catch(err){console.warn(V216_VERSION+' text patch failed',err)}",
+    "new": "// A6.9: canonical OVAR content is already loaded; dynamic score/TAT remains.",
     "ids": [
-      "MTB_MAMMA_001_v1_3",
-      "MTB_PROST_001_v1_3",
-      "MTB_TAML_001_v1_3"
+      "MTB_OVAR_001_v0_7"
     ],
-    "old_start": 2093636,
-    "old_end": 2094456,
-    "new_start": 2090095,
-    "new_end": 2090095
+    "old_start": 1944358,
+    "old_end": 1944444,
+    "new_start": 1935610,
+    "new_end": 1935687
   },
   {
-    "script": "v240o_a3_hrd_deepdives",
-    "kind": "writer",
-    "name": "V240O_BASE_PATCHES",
-    "old": "Object.entries(V240O_BASE_PATCHES).forEach(([id,patch])=>{const c=v240oById(id);if(!c)return;Object.assign(c,patch);c.deep_dive=true;c.signature_case=false;c.deep_dive_title=(V240O_DEEP_DIVES.find(d=>d.case_id===id)||{}).title||c.title;c.tags=Array.from(new Set([].concat(c.tags||[],['Deep Dive','v2.4.0o','A3 curated']).filter(x=>x!=='Signature Case')));});",
-    "new": "// A6.8: cases use Canonical; retain Deep-Dive registration below.",
-    "ids": [
-      "MTB_MAMMA_001_v1_3",
-      "MTB_PROST_001_v1_3",
-      "MTB_TAML_001_v1_3"
-    ],
-    "locator": "v240oById",
-    "old_start": 2094749,
-    "old_end": 2095107,
-    "new_start": 2090298,
-    "new_end": 2090364
-  },
-  {
-    "script": "v240o_a3_hrd_deepdives",
-    "kind": "unused_locator",
-    "name": "v240oById",
-    "old": "function v240oById(id){try{return cases.find(c=>c&&c.id===id)||null}catch(_){return null}}",
+    "script": "v240y1_lab_c4_c5_schema_hotfix",
+    "kind": "writer_definition",
+    "name": "v240y1Normalize",
+    "old": "function v240y1Normalize(d){\n if(!d||!V240Y1_CASE_IDS.includes(d.case_id))return d;\n d.case_briefing=v240y1Briefing(d.case_briefing);\n d.pre_results=v240y1Cards(d.pre_results);\n d.context_cards=v240y1Cards(d.context_cards);\n return d;\n}",
     "new": "",
-    "old_start": 2094658,
-    "old_end": 2094748,
-    "new_start": 2090297,
-    "new_end": 2090297
+    "old_start": 2121314,
+    "old_end": 2121550,
+    "new_start": 2112265,
+    "new_end": 2112265
   },
   {
-    "script": "v240p_a4_io_deepdives",
-    "kind": "table",
-    "name": "V240P_BASE_PATCHES",
-    "old": "const V240P_BASE_PATCHES=Object.fromEntries([[\"MTB_IO_002_v1_3\",[\"story\",\"allowed_tests\",\"required_groups\",\"result_sections\",\"always_findings\",\"complete_interpretation\",\"partial_interpretation\",\"mtb_checks\",\"optimal_summary\",\"tags\"]],[\"MTB_IO_003_v1_3\",[\"story\",\"allowed_tests\",\"required_groups\",\"result_sections\",\"always_findings\",\"complete_interpretation\",\"partial_interpretation\",\"mtb_checks\",\"optimal_summary\",\"tags\"]],[\"MTB_IO_004_v1_3\",[\"story\",\"allowed_tests\",\"required_groups\",\"result_sections\",\"always_findings\",\"complete_interpretation\",\"partial_interpretation\",\"mtb_checks\",\"optimal_summary\",\"tags\"]],[\"MTB_IO_005_v1_3\",[\"story\",\"allowed_tests\",\"required_groups\",\"result_sections\",\"always_findings\",\"complete_interpretation\",\"partial_interpretation\",\"mtb_checks\",\"optimal_summary\",\"tags\"]]].map(([id,keys])=>{const source=window.MolPathCanonicalDataA4b.cases.find(record=>record.id===id).case;return [id,Object.fromEntries(keys.map(key=>[key,JSON.parse(JSON.stringify(source[key]))]))];}));",
+    "script": "v240y1_lab_c4_c5_schema_hotfix",
+    "kind": "unused_helper",
+    "name": "v240y1Briefing",
+    "old": "function v240y1Briefing(x){\n if(x==null)return '';\n if(typeof x==='string')return x;\n if(Array.isArray(x))return x.map(v=>typeof v==='string'?v:String(v)).join(' · ');\n if(typeof x==='object')return Object.entries(x).map(([k,v])=>k+': '+String(v==null?'':v)).join(' · ');\n return String(x);\n}",
     "new": "",
-    "ids": [
-      "MTB_IO_002_v1_3",
-      "MTB_IO_003_v1_3",
-      "MTB_IO_004_v1_3",
-      "MTB_IO_005_v1_3"
-    ],
-    "old_start": 2096733,
-    "old_end": 2097734,
-    "new_start": 2091990,
-    "new_end": 2091990
+    "old_start": 2120721,
+    "old_end": 2121013,
+    "new_start": 2111964,
+    "new_end": 2111964
   },
   {
-    "script": "v240p_a4_io_deepdives",
-    "kind": "writer",
-    "name": "V240P_BASE_PATCHES",
-    "old": "Object.entries(V240P_BASE_PATCHES).forEach(([id,patch])=>{const c=v240pById(id);if(!c)return;Object.assign(c,patch);c.deep_dive=true;c.signature_case=false;c.deep_dive_title=(V240P_DEEP_DIVES.find(d=>d.case_id===id)||{}).title||c.title;c.tags=Array.from(new Set([].concat(c.tags||[],['Deep Dive','v2.4.0p','A4 curated']).filter(x=>x!=='Signature Case')));});",
-    "new": "// A6.8: cases use Canonical; retain Deep-Dive registration below.",
-    "ids": [
-      "MTB_IO_002_v1_3",
-      "MTB_IO_003_v1_3",
-      "MTB_IO_004_v1_3",
-      "MTB_IO_005_v1_3"
-    ],
-    "locator": "v240pById",
-    "old_start": 2098037,
-    "old_end": 2098395,
-    "new_start": 2092203,
-    "new_end": 2092269
-  },
-  {
-    "script": "v240p_a4_io_deepdives",
-    "kind": "unused_locator",
-    "name": "v240pById",
-    "old": "function v240pById(id){try{return cases.find(c=>c&&c.id===id)||null}catch(_){return null}}",
-    "new": "",
-    "old_start": 2097946,
-    "old_end": 2098036,
-    "new_start": 2092202,
-    "new_end": 2092202
-  },
-  {
-    "script": "v240q_a5_a6_mtb_freeze",
-    "kind": "table",
-    "name": "V240Q_BASE_PATCHES",
-    "old": "const V240Q_BASE_PATCHES=Object.fromEntries([[\"MTB_CNS_002_v1_3\",[\"title\",\"story\",\"allowed_tests\",\"required_groups\",\"result_sections\",\"always_findings\",\"complete_interpretation\",\"partial_interpretation\",\"mtb_checks\",\"optimal_summary\",\"tags\"]],[\"MTB_CNS_003_v1_3\",[\"title\",\"story\",\"allowed_tests\",\"required_groups\",\"result_sections\",\"always_findings\",\"complete_interpretation\",\"partial_interpretation\",\"mtb_checks\",\"optimal_summary\",\"tags\"]],[\"MTB_HEM_001_v1_3\",[\"title\",\"story\",\"allowed_tests\",\"required_groups\",\"result_sections\",\"always_findings\",\"complete_interpretation\",\"partial_interpretation\",\"mtb_checks\",\"optimal_summary\",\"tags\"]],[\"MTB_METH_001_v1_3\",[\"title\",\"story\",\"allowed_tests\",\"required_groups\",\"result_sections\",\"always_findings\",\"complete_interpretation\",\"partial_interpretation\",\"mtb_checks\",\"optimal_summary\",\"tags\"]],[\"MTB_ANGIO_001_v1_3\",[\"title\",\"story\",\"allowed_tests\",\"required_groups\",\"result_sections\",\"always_findings\",\"complete_interpretation\",\"partial_interpretation\",\"mtb_checks\",\"optimal_summary\",\"tags\"]],[\"MTB_RCC_001_v1_3\",[\"title\",\"story\",\"allowed_tests\",\"required_groups\",\"result_sections\",\"always_findings\",\"complete_interpretation\",\"partial_interpretation\",\"mtb_checks\",\"optimal_summary\",\"tags\"]],[\"MTB_GBM_ANGIO_001_v1_3\",[\"title\",\"story\",\"allowed_tests\",\"required_groups\",\"result_sections\",\"always_findings\",\"complete_interpretation\",\"partial_interpretation\",\"mtb_checks\",\"optimal_summary\",\"tags\"]],[\"MTB_TME_001_v1_3\",[\"title\",\"story\",\"allowed_tests\",\"required_groups\",\"result_sections\",\"always_findings\",\"complete_interpretation\",\"partial_interpretation\",\"mtb_checks\",\"optimal_summary\",\"tags\"]],[\"MTB_INV_001_v1_3\",[\"title\",\"story\",\"allowed_tests\",\"required_groups\",\"result_sections\",\"always_findings\",\"complete_interpretation\",\"partial_interpretation\",\"mtb_checks\",\"optimal_summary\",\"tags\"]]].map(([id,keys])=>{const source=window.MolPathCanonicalDataA4b.cases.find(record=>record.id===id).case;return [id,Object.fromEntries(keys.map(key=>[key,JSON.parse(JSON.stringify(source[key]))]))];}));",
-    "new": "",
-    "ids": [
-      "MTB_CNS_002_v1_3",
-      "MTB_CNS_003_v1_3",
-      "MTB_HEM_001_v1_3",
-      "MTB_METH_001_v1_3",
-      "MTB_ANGIO_001_v1_3",
-      "MTB_RCC_001_v1_3",
-      "MTB_GBM_ANGIO_001_v1_3",
-      "MTB_TME_001_v1_3",
-      "MTB_INV_001_v1_3"
-    ],
-    "old_start": 2100015,
-    "old_end": 2102051,
-    "new_start": 2093889,
-    "new_end": 2093889
-  },
-  {
-    "script": "v240q_a5_a6_mtb_freeze",
-    "kind": "writer",
-    "name": "V240Q_BASE_PATCHES",
-    "old": "Object.entries(V240Q_BASE_PATCHES).forEach(([id,patch])=>{const c=v240qById(id);if(!c)return;Object.assign(c,patch);c.deep_dive=true;c.signature_case=false;c.deep_dive_title=(V240Q_DEEP_DIVES.find(d=>d.case_id===id)||{}).title||c.title;c.tags=Array.from(new Set([].concat(c.tags||[],['Deep Dive','v2.4.0q','MTB content freeze']).filter(x=>x!=='Signature Case')));});",
-    "new": "// A6.8: cases use Canonical; retain Deep-Dive registration below.",
-    "ids": [
-      "MTB_CNS_002_v1_3",
-      "MTB_CNS_003_v1_3",
-      "MTB_HEM_001_v1_3",
-      "MTB_METH_001_v1_3",
-      "MTB_ANGIO_001_v1_3",
-      "MTB_RCC_001_v1_3",
-      "MTB_GBM_ANGIO_001_v1_3",
-      "MTB_TME_001_v1_3",
-      "MTB_INV_001_v1_3"
-    ],
-    "locator": "v240qById",
-    "old_start": 2102462,
-    "old_end": 2102828,
-    "new_start": 2094210,
-    "new_end": 2094276
-  },
-  {
-    "script": "v240q_a5_a6_mtb_freeze",
-    "kind": "unused_locator",
-    "name": "v240qById",
-    "old": "function v240qById(id){try{return cases.find(c=>c&&c.id===id)||null}catch(_){return null}}",
-    "new": "",
-    "old_start": 2102371,
-    "old_end": 2102461,
-    "new_start": 2094209,
-    "new_end": 2094209
-  },
-  {
-    "script": "v240s-met-deepdive",
-    "kind": "table",
-    "name": "V240S_BASE_PATCHES",
-    "old": "const V240S_BASE_PATCHES=Object.fromEntries([[\"MET_NGS_001_v1_3\",[\"title\",\"story\",\"allowed_tests\",\"required_groups\",\"result_sections\",\"always_findings\",\"complete_interpretation\",\"partial_interpretation\",\"mtb_checks\",\"optimal_summary\",\"tags\"]],[\"MET_NGS_002_v1_3\",[\"title\",\"story\",\"allowed_tests\",\"required_groups\",\"result_sections\",\"always_findings\",\"complete_interpretation\",\"partial_interpretation\",\"mtb_checks\",\"optimal_summary\",\"tags\"]],[\"MET_NGS_003_v1_0\",[\"title\",\"story\",\"allowed_tests\",\"required_groups\",\"result_sections\",\"always_findings\",\"complete_interpretation\",\"partial_interpretation\",\"mtb_checks\",\"optimal_summary\",\"tags\"]],[\"MET_NGS_004_v1_3\",[\"title\",\"story\",\"allowed_tests\",\"required_groups\",\"result_sections\",\"always_findings\",\"complete_interpretation\",\"partial_interpretation\",\"mtb_checks\",\"optimal_summary\",\"tags\"]],[\"MET_RNA_001_v1_3\",[\"title\",\"story\",\"allowed_tests\",\"required_groups\",\"result_sections\",\"always_findings\",\"complete_interpretation\",\"partial_interpretation\",\"mtb_checks\",\"optimal_summary\",\"tags\"]],[\"MET_LB_001_v1_3\",[\"title\",\"story\",\"allowed_tests\",\"required_groups\",\"result_sections\",\"always_findings\",\"complete_interpretation\",\"partial_interpretation\",\"mtb_checks\",\"optimal_summary\",\"tags\"]],[\"MET_PCR_001_v1_3\",[\"title\",\"story\",\"allowed_tests\",\"required_groups\",\"result_sections\",\"always_findings\",\"complete_interpretation\",\"partial_interpretation\",\"mtb_checks\",\"optimal_summary\",\"tags\"]],[\"MET_METH_001_v1_3\",[\"title\",\"story\",\"allowed_tests\",\"required_groups\",\"result_sections\",\"always_findings\",\"complete_interpretation\",\"partial_interpretation\",\"mtb_checks\",\"optimal_summary\",\"tags\"]],[\"MET_FISH_001_v1_3\",[\"title\",\"story\",\"allowed_tests\",\"required_groups\",\"result_sections\",\"always_findings\",\"complete_interpretation\",\"partial_interpretation\",\"mtb_checks\",\"optimal_summary\",\"tags\"]],[\"MET_MULTI_001_v1_3\",[\"title\",\"story\",\"allowed_tests\",\"required_groups\",\"result_sections\",\"always_findings\",\"complete_interpretation\",\"partial_interpretation\",\"mtb_checks\",\"optimal_summary\",\"tags\"]]].map(([id,keys])=>{const source=window.MolPathCanonicalDataA4b.cases.find(record=>record.id===id).case;return [id,Object.fromEntries(keys.map(key=>[key,JSON.parse(JSON.stringify(source[key]))]))];}));",
-    "new": "",
-    "ids": [
-      "MET_NGS_001_v1_3",
-      "MET_NGS_002_v1_3",
-      "MET_NGS_003_v1_0",
-      "MET_NGS_004_v1_3",
-      "MET_RNA_001_v1_3",
-      "MET_LB_001_v1_3",
-      "MET_PCR_001_v1_3",
-      "MET_METH_001_v1_3",
-      "MET_FISH_001_v1_3",
-      "MET_MULTI_001_v1_3"
-    ],
-    "old_start": 2116905,
-    "old_end": 2119133,
-    "new_start": 2108353,
-    "new_end": 2108353
-  },
-  {
-    "script": "v240s-met-deepdive",
-    "kind": "writer",
-    "name": "V240S_BASE_PATCHES",
-    "old": "try{Object.entries(V240S_BASE_PATCHES).forEach(([id,patch])=>{const c=v240sFind(id);if(!c)return;Object.assign(c,patch);c.deep_dive=true;c.signature_case=false;c.deep_dive_title=(V240S_DEEP_DIVES.find(d=>d.case_id===id)||{}).title||c.title;c.tags=Array.from(new Set([].concat(c.tags||[],['Deep Dive','v2.4.0s','MET content freeze']).filter(x=>x!=='Signature Case')));});}catch(e){console.error('[MolPath '+V240S_VERSION+'] base patch failed',e)}",
-    "new": "// A6.8: cases use Canonical; retain Deep-Dive registration below.",
-    "ids": [
-      "MET_NGS_001_v1_3",
-      "MET_NGS_002_v1_3",
-      "MET_NGS_003_v1_0",
-      "MET_NGS_004_v1_3",
-      "MET_RNA_001_v1_3",
-      "MET_LB_001_v1_3",
-      "MET_PCR_001_v1_3",
-      "MET_METH_001_v1_3",
-      "MET_FISH_001_v1_3",
-      "MET_MULTI_001_v1_3"
-    ],
-    "locator": "v240sFind",
-    "old_start": 2119557,
-    "old_end": 2120002,
-    "new_start": 2108687,
-    "new_end": 2108753
-  },
-  {
-    "script": "v240s-met-deepdive",
-    "kind": "unused_locator",
-    "name": "v240sFind",
-    "old": "function v240sFind(id){try{return (cases||[]).find(c=>c&&c.id===id)}catch(_){return null}}",
-    "new": "",
-    "old_start": 2119466,
-    "old_end": 2119556,
-    "new_start": 2108686,
-    "new_end": 2108686
-  },
-  {
-    "script": "v240u_lab_b1_preanalytics_deepdive_patch",
-    "kind": "table",
-    "name": "V240U_BASE_PATCHES",
-    "old": "const V240U_BASE_PATCHES=Object.fromEntries([[\"LAB_PRE_001_v1_3\",[\"title\",\"short\",\"difficulty\",\"estimated_time_min\",\"qc_title\",\"run_overview\",\"qc_event\",\"decision_options\",\"root_cause_options\",\"capa_components\",\"audit_checks\",\"optimal_summary\"]],[\"LAB_PRE_002_v1_3\",[\"title\",\"short\",\"difficulty\",\"estimated_time_min\",\"qc_title\",\"run_overview\",\"qc_event\",\"decision_options\",\"root_cause_options\",\"capa_components\",\"audit_checks\",\"optimal_summary\"]],[\"LAB_PRE_003_v1_3\",[\"title\",\"short\",\"difficulty\",\"estimated_time_min\",\"qc_title\",\"run_overview\",\"qc_event\",\"decision_options\",\"root_cause_options\",\"capa_components\",\"audit_checks\",\"optimal_summary\"]],[\"LAB_PRE_004_v1_3\",[\"title\",\"short\",\"difficulty\",\"estimated_time_min\",\"qc_title\",\"run_overview\",\"qc_event\",\"decision_options\",\"root_cause_options\",\"capa_components\",\"audit_checks\",\"optimal_summary\"]],[\"LAB_PRE_005_v1_3\",[\"title\",\"short\",\"difficulty\",\"estimated_time_min\",\"qc_title\",\"run_overview\",\"qc_event\",\"decision_options\",\"root_cause_options\",\"capa_components\",\"audit_checks\",\"optimal_summary\"]]].map(([id,keys])=>{const source=window.MolPathCanonicalDataA4b.cases.find(record=>record.id===id).case;return [id,Object.fromEntries(keys.map(key=>[key,JSON.parse(JSON.stringify(source[key]))]))];}));",
-    "new": "",
-    "ids": [
-      "LAB_PRE_001_v1_3",
-      "LAB_PRE_002_v1_3",
-      "LAB_PRE_003_v1_3",
-      "LAB_PRE_004_v1_3",
-      "LAB_PRE_005_v1_3"
-    ],
-    "old_start": 2122020,
-    "old_end": 2123270,
-    "new_start": 2110771,
-    "new_end": 2110771
-  },
-  {
-    "script": "v240u_lab_b1_preanalytics_deepdive_patch",
-    "kind": "writer",
-    "name": "V240U_BASE_PATCHES",
-    "old": "try{Object.entries(V240U_BASE_PATCHES).forEach(([id,p])=>{const c=v240uFind(id);if(!c)return;Object.assign(c,p);c.deep_dive=true;c.signature_case=false;c.deep_dive_title=(V240U_DEEP_DIVES.find(d=>d.case_id===id)||{}).title||c.title;c.tags=Array.from(new Set([].concat(c.tags||[],['Deep Dive','LAB Präanalytik','v2.4.0u']).filter(x=>x!=='Signature Case')));});}catch(e){console.error('[MolPath '+V240U_VERSION+'] LAB B1 base patch failed',e)}",
-    "new": "// A6.8: cases use Canonical; retain Deep-Dive registration below.",
-    "ids": [
-      "LAB_PRE_001_v1_3",
-      "LAB_PRE_002_v1_3",
-      "LAB_PRE_003_v1_3",
-      "LAB_PRE_004_v1_3",
-      "LAB_PRE_005_v1_3"
-    ],
-    "locator": "v240uFind",
-    "old_start": 2123596,
-    "old_end": 2124037,
-    "new_start": 2111007,
-    "new_end": 2111073
-  },
-  {
-    "script": "v240u_lab_b1_preanalytics_deepdive_patch",
-    "kind": "unused_locator",
-    "name": "v240uFind",
-    "old": "function v240uFind(id){try{return (cases||[]).find(c=>c&&c.id===id)}catch(_){return null}}",
-    "new": "",
-    "old_start": 2123505,
-    "old_end": 2123595,
-    "new_start": 2111006,
-    "new_end": 2111006
-  },
-  {
-    "script": "v240v_lab_b2_run_qc_deepdive_patch",
-    "kind": "table",
-    "name": "V240V_BASE_PATCHES",
-    "old": "const V240V_BASE_PATCHES=Object.fromEntries([[\"LAB_RUN_001_v1_3\",[\"title\",\"short\",\"difficulty\",\"estimated_time_min\",\"qc_title\",\"run_overview\",\"qc_event\",\"decision_options\",\"root_cause_options\",\"capa_components\",\"audit_checks\",\"optimal_summary\"]],[\"LAB_RUN_003_v1_3\",[\"title\",\"short\",\"difficulty\",\"estimated_time_min\",\"qc_title\",\"run_overview\",\"qc_event\",\"decision_options\",\"root_cause_options\",\"capa_components\",\"audit_checks\",\"optimal_summary\"]],[\"LAB_RUN_004_v1_3\",[\"title\",\"short\",\"difficulty\",\"estimated_time_min\",\"qc_title\",\"run_overview\",\"qc_event\",\"decision_options\",\"root_cause_options\",\"capa_components\",\"audit_checks\",\"optimal_summary\"]],[\"LAB_RUN_005_v1_3\",[\"title\",\"short\",\"difficulty\",\"estimated_time_min\",\"qc_title\",\"run_overview\",\"qc_event\",\"decision_options\",\"root_cause_options\",\"capa_components\",\"audit_checks\",\"optimal_summary\"]],[\"LAB_RUN_006_v1_3\",[\"title\",\"short\",\"difficulty\",\"estimated_time_min\",\"qc_title\",\"run_overview\",\"qc_event\",\"decision_options\",\"root_cause_options\",\"capa_components\",\"audit_checks\",\"optimal_summary\"]]].map(([id,keys])=>{const source=window.MolPathCanonicalDataA4b.cases.find(record=>record.id===id).case;return [id,Object.fromEntries(keys.map(key=>[key,JSON.parse(JSON.stringify(source[key]))]))];}));",
-    "new": "",
-    "ids": [
-      "LAB_RUN_001_v1_3",
-      "LAB_RUN_003_v1_3",
-      "LAB_RUN_004_v1_3",
-      "LAB_RUN_005_v1_3",
-      "LAB_RUN_006_v1_3"
-    ],
-    "old_start": 2125720,
-    "old_end": 2126970,
-    "new_start": 2112756,
-    "new_end": 2112756
-  },
-  {
-    "script": "v240v_lab_b2_run_qc_deepdive_patch",
-    "kind": "writer",
-    "name": "V240V_BASE_PATCHES",
-    "old": "try{Object.entries(V240V_BASE_PATCHES).forEach(([id,p])=>{const c=v240vFind(id);if(!c)return;Object.assign(c,p);c.deep_dive=true;c.signature_case=false;c.deep_dive_title=(V240V_DEEP_DIVES.find(d=>d.case_id===id)||{}).title||c.title;c.tags=Array.from(new Set([].concat(c.tags||[],['Deep Dive','LAB Run/QC','v2.4.0v']).filter(x=>x!=='Signature Case')));});}catch(e){console.error('[MolPath '+V240V_VERSION+'] LAB B2 base patch failed',e)}",
-    "new": "// A6.8: cases use Canonical; retain Deep-Dive registration below.",
-    "ids": [
-      "LAB_RUN_001_v1_3",
-      "LAB_RUN_003_v1_3",
-      "LAB_RUN_004_v1_3",
-      "LAB_RUN_005_v1_3",
-      "LAB_RUN_006_v1_3"
-    ],
-    "locator": "v240vFind",
-    "old_start": 2127296,
-    "old_end": 2127732,
-    "new_start": 2112992,
-    "new_end": 2113058
-  },
-  {
-    "script": "v240v_lab_b2_run_qc_deepdive_patch",
-    "kind": "unused_locator",
-    "name": "v240vFind",
-    "old": "function v240vFind(id){try{return (cases||[]).find(c=>c&&c.id===id)}catch(_){return null}}",
-    "new": "",
-    "old_start": 2127205,
-    "old_end": 2127295,
-    "new_start": 2112991,
-    "new_end": 2112991
-  },
-  {
-    "script": "v240w_lab_b3_postanalytics_deepdive_patch",
-    "kind": "table",
-    "name": "V240W_BASE_PATCHES",
-    "old": "const V240W_BASE_PATCHES=Object.fromEntries([[\"LAB_POST_002_v1_3\",[\"title\",\"short\",\"difficulty\",\"estimated_time_min\",\"qc_title\",\"run_overview\",\"qc_event\",\"decision_options\",\"root_cause_options\",\"capa_components\",\"audit_checks\",\"optimal_summary\"]],[\"LAB_POST_003_v1_3\",[\"title\",\"short\",\"difficulty\",\"estimated_time_min\",\"qc_title\",\"run_overview\",\"qc_event\",\"decision_options\",\"root_cause_options\",\"capa_components\",\"audit_checks\",\"optimal_summary\"]],[\"LAB_POST_004_v1_3\",[\"title\",\"short\",\"difficulty\",\"estimated_time_min\",\"qc_title\",\"run_overview\",\"qc_event\",\"decision_options\",\"root_cause_options\",\"capa_components\",\"audit_checks\",\"optimal_summary\"]],[\"LAB_POST_005_v1_3\",[\"title\",\"short\",\"difficulty\",\"estimated_time_min\",\"qc_title\",\"run_overview\",\"qc_event\",\"decision_options\",\"root_cause_options\",\"capa_components\",\"audit_checks\",\"optimal_summary\"]]].map(([id,keys])=>{const source=window.MolPathCanonicalDataA4b.cases.find(record=>record.id===id).case;return [id,Object.fromEntries(keys.map(key=>[key,JSON.parse(JSON.stringify(source[key]))]))];}));",
-    "new": "",
-    "ids": [
-      "LAB_POST_002_v1_3",
-      "LAB_POST_003_v1_3",
-      "LAB_POST_004_v1_3",
-      "LAB_POST_005_v1_3"
-    ],
-    "old_start": 2129413,
-    "old_end": 2130466,
-    "new_start": 2114739,
-    "new_end": 2114739
-  },
-  {
-    "script": "v240w_lab_b3_postanalytics_deepdive_patch",
-    "kind": "writer",
-    "name": "V240W_BASE_PATCHES",
-    "old": "try{Object.entries(V240W_BASE_PATCHES).forEach(([id,p])=>{const c=v240wFind(id);if(!c)return;Object.assign(c,p);c.deep_dive=true;c.signature_case=false;c.deep_dive_title=(V240W_DEEP_DIVES.find(d=>d.case_id===id)||{}).title||c.title;c.tags=Array.from(new Set([].concat(c.tags||[],['Deep Dive','LAB Postanalytik','v2.4.0w']).filter(x=>x!=='Signature Case')));});}catch(e){console.error('[MolPath '+V240W_VERSION+'] LAB B3 base patch failed',e)}",
-    "new": "// A6.8: cases use Canonical; retain Deep-Dive registration below.",
-    "ids": [
-      "LAB_POST_002_v1_3",
-      "LAB_POST_003_v1_3",
-      "LAB_POST_004_v1_3",
-      "LAB_POST_005_v1_3"
-    ],
-    "locator": "v240wFind",
-    "old_start": 2130777,
-    "old_end": 2131219,
-    "new_start": 2114960,
-    "new_end": 2115026
-  },
-  {
-    "script": "v240w_lab_b3_postanalytics_deepdive_patch",
-    "kind": "unused_locator",
-    "name": "v240wFind",
-    "old": "function v240wFind(id){try{return (cases||[]).find(c=>c&&c.id===id)}catch(_){return null}}",
-    "new": "",
-    "old_start": 2130686,
-    "old_end": 2130776,
-    "new_start": 2114959,
-    "new_end": 2114959
-  },
-  {
-    "script": "v240x_lab_b4_c4_deepdive_patch",
-    "kind": "table",
-    "name": "V240X_BASE_PATCHES",
-    "old": "const V240X_BASE_PATCHES=Object.fromEntries([[\"LAB_DOC_002_v1_3\",[\"title\",\"short\",\"difficulty\",\"estimated_time_min\",\"qc_title\",\"run_overview\",\"qc_event\",\"decision_options\",\"root_cause_options\",\"capa_components\",\"audit_checks\",\"optimal_summary\"]],[\"LAB_AUDIT_001_v1_3\",[\"title\",\"short\",\"difficulty\",\"estimated_time_min\",\"qc_title\",\"run_overview\",\"qc_event\",\"decision_options\",\"root_cause_options\",\"capa_components\",\"audit_checks\",\"optimal_summary\"]],[\"LAB_CAPA_001_v1_3\",[\"title\",\"short\",\"difficulty\",\"estimated_time_min\",\"qc_title\",\"run_overview\",\"qc_event\",\"decision_options\",\"root_cause_options\",\"capa_components\",\"audit_checks\",\"optimal_summary\"]],[\"LAB_QM_001_v1_3\",[\"title\",\"short\",\"difficulty\",\"estimated_time_min\",\"qc_title\",\"run_overview\",\"qc_event\",\"decision_options\",\"root_cause_options\",\"capa_components\",\"audit_checks\",\"optimal_summary\"]],[\"LAB_LLM_001_v1_3\",[\"title\",\"short\",\"difficulty\",\"estimated_time_min\",\"qc_title\",\"run_overview\",\"qc_event\",\"decision_options\",\"root_cause_options\",\"capa_components\",\"audit_checks\",\"optimal_summary\"]]].map(([id,keys])=>{const source=window.MolPathCanonicalDataA4b.cases.find(record=>record.id===id).case;return [id,Object.fromEntries(keys.map(key=>[key,JSON.parse(JSON.stringify(source[key]))]))];}));",
-    "new": "",
+    "script": "v240y1_lab_c4_c5_schema_hotfix",
+    "kind": "writer_entry",
+    "name": "V240Y1_LAB_NORMALIZATION",
+    "old": "try{\n V240Y1_CASE_IDS.forEach(id=>{\n   if(typeof DEEP_DIVE_MAP_V17!=='undefined' && DEEP_DIVE_MAP_V17[id])v240y1Normalize(DEEP_DIVE_MAP_V17[id]);\n });\n if(typeof DEEP_DIVE_CASES_V17!=='undefined' && Array.isArray(DEEP_DIVE_CASES_V17))DEEP_DIVE_CASES_V17.forEach(v240y1Normalize);\n}catch(e){console.error('[MolPath '+V240Y1_VERSION+'] schema normalization failed',e)}\n",
+    "new": "// A6.9: Canonical LAB records already contain the normalized schema.\n",
     "ids": [
       "LAB_DOC_002_v1_3",
       "LAB_AUDIT_001_v1_3",
       "LAB_CAPA_001_v1_3",
       "LAB_QM_001_v1_3",
-      "LAB_LLM_001_v1_3"
-    ],
-    "old_start": 2132912,
-    "old_end": 2134164,
-    "new_start": 2116719,
-    "new_end": 2116719
-  },
-  {
-    "script": "v240x_lab_b4_c4_deepdive_patch",
-    "kind": "writer",
-    "name": "V240X_BASE_PATCHES",
-    "old": "try{Object.entries(V240X_BASE_PATCHES).forEach(([id,p])=>{const c=v240xFind(id);if(!c)return;Object.assign(c,p);c.deep_dive=true;c.signature_case=false;c.deep_dive_title=(V240X_DEEP_DIVES.find(d=>d.case_id===id)||{}).title||c.title;c.tags=Array.from(new Set([].concat(c.tags||[],['Deep Dive','LAB C4 QM/Audit/CAPA','v2.4.0x']).filter(x=>x!=='Signature Case')));});}catch(e){console.error('[MolPath '+V240X_VERSION+'] LAB B4 base patch failed',e)}",
-    "new": "// A6.8: cases use Canonical; retain Deep-Dive registration below.",
-    "ids": [
-      "LAB_DOC_002_v1_3",
-      "LAB_AUDIT_001_v1_3",
-      "LAB_CAPA_001_v1_3",
-      "LAB_QM_001_v1_3",
-      "LAB_LLM_001_v1_3"
-    ],
-    "locator": "v240xFind",
-    "old_start": 2134492,
-    "old_end": 2134938,
-    "new_start": 2116957,
-    "new_end": 2117023
-  },
-  {
-    "script": "v240x_lab_b4_c4_deepdive_patch",
-    "kind": "unused_locator",
-    "name": "v240xFind",
-    "old": "function v240xFind(id){try{return (cases||[]).find(c=>c&&c.id===id)}catch(_){return null}}",
-    "new": "",
-    "old_start": 2134401,
-    "old_end": 2134491,
-    "new_start": 2116956,
-    "new_end": 2116956
-  },
-  {
-    "script": "v240y_lab_b5_digital_data_lims_deepdive_patch",
-    "kind": "table",
-    "name": "V240Y_BASE_PATCHES",
-    "old": "const V240Y_BASE_PATCHES=Object.fromEntries([[\"LAB_DIGI_001_v1_3\",[\"title\",\"short\",\"difficulty\",\"estimated_time_min\",\"qc_title\",\"run_overview\",\"qc_event\",\"decision_options\",\"root_cause_options\",\"capa_components\",\"audit_checks\",\"optimal_summary\"]],[\"LAB_DIGI_002_v1_3\",[\"title\",\"short\",\"difficulty\",\"estimated_time_min\",\"qc_title\",\"run_overview\",\"qc_event\",\"decision_options\",\"root_cause_options\",\"capa_components\",\"audit_checks\",\"optimal_summary\"]],[\"LAB_DATA_001_v1_3\",[\"title\",\"short\",\"difficulty\",\"estimated_time_min\",\"qc_title\",\"run_overview\",\"qc_event\",\"decision_options\",\"root_cause_options\",\"capa_components\",\"audit_checks\",\"optimal_summary\"]],[\"LAB_DATA_002_v1_3\",[\"title\",\"short\",\"difficulty\",\"estimated_time_min\",\"qc_title\",\"run_overview\",\"qc_event\",\"decision_options\",\"root_cause_options\",\"capa_components\",\"audit_checks\",\"optimal_summary\"]],[\"LAB_LIMS_001_v1_3\",[\"title\",\"short\",\"difficulty\",\"estimated_time_min\",\"qc_title\",\"run_overview\",\"qc_event\",\"decision_options\",\"root_cause_options\",\"capa_components\",\"audit_checks\",\"optimal_summary\"]]].map(([id,keys])=>{const source=window.MolPathCanonicalDataA4b.cases.find(record=>record.id===id).case;return [id,Object.fromEntries(keys.map(key=>[key,JSON.parse(JSON.stringify(source[key]))]))];}));",
-    "new": "",
-    "ids": [
+      "LAB_LLM_001_v1_3",
       "LAB_DIGI_001_v1_3",
       "LAB_DIGI_002_v1_3",
       "LAB_DATA_001_v1_3",
       "LAB_DATA_002_v1_3",
       "LAB_LIMS_001_v1_3"
     ],
-    "old_start": 2136631,
-    "old_end": 2137886,
-    "new_start": 2118716,
-    "new_end": 2118716
+    "old_start": 2121551,
+    "old_end": 2121918,
+    "new_start": 2112266,
+    "new_end": 2112336
   },
   {
-    "script": "v240y_lab_b5_digital_data_lims_deepdive_patch",
-    "kind": "writer",
-    "name": "V240Y_BASE_PATCHES",
-    "old": "try{Object.entries(V240Y_BASE_PATCHES).forEach(([id,p])=>{const c=v240yFind(id);if(!c)return;Object.assign(c,p);c.deep_dive=true;c.signature_case=false;c.deep_dive_title=(V240Y_DEEP_DIVES.find(d=>d.case_id===id)||{}).title||c.title;c.tags=Array.from(new Set([].concat(c.tags||[],['Deep Dive','LAB C5 Digital/Data/LIMS','v2.4.0y']).filter(x=>x!=='Signature Case')));});}catch(e){console.error('[MolPath '+V240Y_VERSION+'] LAB B5 base patch failed',e)}",
-    "new": "// A6.8: cases use Canonical; retain Deep-Dive registration below.",
-    "ids": [
-      "LAB_DIGI_001_v1_3",
-      "LAB_DIGI_002_v1_3",
-      "LAB_DATA_001_v1_3",
-      "LAB_DATA_002_v1_3",
-      "LAB_LIMS_001_v1_3"
-    ],
-    "locator": "v240yFind",
-    "old_start": 2138217,
-    "old_end": 2138667,
-    "new_start": 2118957,
-    "new_end": 2119023
-  },
-  {
-    "script": "v240y_lab_b5_digital_data_lims_deepdive_patch",
-    "kind": "unused_locator",
-    "name": "v240yFind",
-    "old": "function v240yFind(id){try{return (cases||[]).find(c=>c&&c.id===id)}catch(_){return null}}",
-    "new": "",
-    "old_start": 2138126,
-    "old_end": 2138216,
-    "new_start": 2118956,
-    "new_end": 2118956
-  },
-  {
-    "script": "v240z2_res_r1_deepdive",
-    "kind": "table",
-    "name": "V240Z2_BASE_PATCHES",
-    "old": "const V240Z2_BASE_PATCHES=Object.fromEntries([[\"RES_HYP_002_v1_3\",[\"difficulty\",\"estimated_time_min\",\"tags\",\"research_intro\",\"research_context\",\"hypothesis_options\",\"pico_options\",\"design_options\",\"method_options\",\"analysis_options\",\"pitfall_options\",\"expected_output\",\"optimal_summary\"]],[\"RES_OMICS_002_v1_3\",[\"difficulty\",\"estimated_time_min\",\"tags\",\"research_intro\",\"research_context\",\"hypothesis_options\",\"pico_options\",\"design_options\",\"method_options\",\"analysis_options\",\"pitfall_options\",\"expected_output\",\"optimal_summary\"]],[\"RES_OMICS_003_v1_3\",[\"difficulty\",\"estimated_time_min\",\"tags\",\"research_intro\",\"research_context\",\"hypothesis_options\",\"pico_options\",\"design_options\",\"method_options\",\"analysis_options\",\"pitfall_options\",\"expected_output\",\"optimal_summary\"]],[\"RES_IMM_001_v1_3\",[\"difficulty\",\"estimated_time_min\",\"tags\",\"research_intro\",\"research_context\",\"hypothesis_options\",\"pico_options\",\"design_options\",\"method_options\",\"analysis_options\",\"pitfall_options\",\"expected_output\",\"optimal_summary\"]]].map(([id,keys])=>{const source=window.MolPathCanonicalDataA4b.cases.find(record=>record.id===id).case;return [id,Object.fromEntries(keys.map(key=>[key,JSON.parse(JSON.stringify(source[key]))]))];}));",
-    "new": "",
-    "ids": [
-      "RES_HYP_002_v1_3",
-      "RES_OMICS_002_v1_3",
-      "RES_OMICS_003_v1_3",
-      "RES_IMM_001_v1_3"
-    ],
-    "old_start": 2142892,
-    "old_end": 2144114,
-    "new_start": 2123248,
-    "new_end": 2123248
-  },
-  {
-    "script": "v240z2_res_r1_deepdive",
-    "kind": "writer",
-    "name": "V240Z2_BASE_PATCHES",
-    "old": "try{Object.entries(V240Z2_BASE_PATCHES).forEach(([id,p])=>{const c=v240z2Find(id);if(!c)return;Object.assign(c,p);c.deep_dive=true;c.signature_case=false;c.deep_dive_title=(V240Z2_DEEP_DIVES.find(d=>d.case_id===id)||{}).title||c.title;c.tags=Array.from(new Set([].concat(c.tags||[],['Deep Dive','RES D1 curated','v2.4.0z2']).filter(x=>x!=='Signature Case')));});}catch(e){console.error('[MolPath '+V240Z2_VERSION+'] RES R1 base patch failed',e)}",
-    "new": "// A6.8: cases use Canonical; retain Deep-Dive registration below.",
-    "ids": [
-      "RES_HYP_002_v1_3",
-      "RES_OMICS_002_v1_3",
-      "RES_OMICS_003_v1_3",
-      "RES_IMM_001_v1_3"
-    ],
-    "locator": "v240z2Find",
-    "old_start": 2144427,
-    "old_end": 2144872,
-    "new_start": 2123470,
-    "new_end": 2123536
-  },
-  {
-    "script": "v240z2_res_r1_deepdive",
-    "kind": "unused_locator",
-    "name": "v240z2Find",
-    "old": "function v240z2Find(id){try{return (cases||[]).find(c=>c&&c.id===id)}catch(_){return null}}",
-    "new": "",
-    "old_start": 2144335,
-    "old_end": 2144426,
-    "new_start": 2123469,
-    "new_end": 2123469
-  },
-  {
-    "script": "v240z3_res_r2_deepdive",
-    "kind": "table",
-    "name": "V240Z3_BASE_PATCHES",
-    "old": "const V240Z3_BASE_PATCHES=Object.fromEntries([[\"RES_MOD_001_v1_3\",[\"difficulty\",\"estimated_time_min\",\"tags\",\"research_intro\",\"research_context\",\"hypothesis_options\",\"pico_options\",\"design_options\",\"method_options\",\"analysis_options\",\"pitfall_options\",\"expected_output\",\"optimal_summary\"]],[\"RES_MOD_002_v1_3\",[\"difficulty\",\"estimated_time_min\",\"tags\",\"research_intro\",\"research_context\",\"hypothesis_options\",\"pico_options\",\"design_options\",\"method_options\",\"analysis_options\",\"pitfall_options\",\"expected_output\",\"optimal_summary\"]],[\"RES_MOD_003_v1_3\",[\"difficulty\",\"estimated_time_min\",\"tags\",\"research_intro\",\"research_context\",\"hypothesis_options\",\"pico_options\",\"design_options\",\"method_options\",\"analysis_options\",\"pitfall_options\",\"expected_output\",\"optimal_summary\"]],[\"RES_VAL_001_v1_3\",[\"difficulty\",\"estimated_time_min\",\"tags\",\"research_intro\",\"research_context\",\"hypothesis_options\",\"pico_options\",\"design_options\",\"method_options\",\"analysis_options\",\"pitfall_options\",\"expected_output\",\"optimal_summary\"]],[\"RES_VAL_002_v1_3\",[\"difficulty\",\"estimated_time_min\",\"tags\",\"research_intro\",\"research_context\",\"hypothesis_options\",\"pico_options\",\"design_options\",\"method_options\",\"analysis_options\",\"pitfall_options\",\"expected_output\",\"optimal_summary\"]]].map(([id,keys])=>{const source=window.MolPathCanonicalDataA4b.cases.find(record=>record.id===id).case;return [id,Object.fromEntries(keys.map(key=>[key,JSON.parse(JSON.stringify(source[key]))]))];}));",
-    "new": "",
-    "ids": [
-      "RES_MOD_001_v1_3",
-      "RES_MOD_002_v1_3",
-      "RES_MOD_003_v1_3",
-      "RES_VAL_001_v1_3",
-      "RES_VAL_002_v1_3"
-    ],
-    "old_start": 2146622,
-    "old_end": 2148083,
-    "new_start": 2125286,
-    "new_end": 2125286
-  },
-  {
-    "script": "v240z3_res_r2_deepdive",
-    "kind": "writer",
-    "name": "V240Z3_BASE_PATCHES",
-    "old": "try{Object.entries(V240Z3_BASE_PATCHES).forEach(([id,p])=>{const c=v240z3Find(id);if(!c)return;Object.assign(c,p);c.deep_dive=true;c.signature_case=false;c.deep_dive_title=(V240Z3_DEEP_DIVES.find(d=>d.case_id===id)||{}).title||c.title;c.tags=Array.from(new Set([].concat(c.tags||[],['Deep Dive','RES D2 curated','v2.4.0z3']).filter(x=>x!=='Signature Case')));});}catch(e){console.error('[MolPath '+V240Z3_VERSION+'] RES R2 base patch failed',e)}",
-    "new": "// A6.8: cases use Canonical; retain Deep-Dive registration below.",
-    "ids": [
-      "RES_MOD_001_v1_3",
-      "RES_MOD_002_v1_3",
-      "RES_MOD_003_v1_3",
-      "RES_VAL_001_v1_3",
-      "RES_VAL_002_v1_3"
-    ],
-    "locator": "v240z3Find",
-    "old_start": 2148411,
-    "old_end": 2148856,
-    "new_start": 2125523,
-    "new_end": 2125589
-  },
-  {
-    "script": "v240z3_res_r2_deepdive",
-    "kind": "unused_locator",
-    "name": "v240z3Find",
-    "old": "function v240z3Find(id){try{return (cases||[]).find(c=>c&&c.id===id)}catch(_){return null}}",
-    "new": "",
-    "old_start": 2148319,
-    "old_end": 2148410,
-    "new_start": 2125522,
-    "new_end": 2125522
-  },
-  {
-    "script": "v240z4_res_r3_deepdive",
-    "kind": "table",
-    "name": "V240Z4_BASE_PATCHES",
-    "old": "const V240Z4_BASE_PATCHES=Object.fromEntries([[\"RES_ETH_002_v1_3\",[\"difficulty\",\"estimated_time_min\",\"tags\",\"research_intro\",\"research_context\",\"hypothesis_options\",\"pico_options\",\"design_options\",\"method_options\",\"analysis_options\",\"pitfall_options\",\"expected_output\",\"optimal_summary\"]],[\"RES_ETH_003_v1_3\",[\"difficulty\",\"estimated_time_min\",\"tags\",\"research_intro\",\"research_context\",\"hypothesis_options\",\"pico_options\",\"design_options\",\"method_options\",\"analysis_options\",\"pitfall_options\",\"expected_output\",\"optimal_summary\"]],[\"RES_DATA_001_v1_3\",[\"difficulty\",\"estimated_time_min\",\"tags\",\"research_intro\",\"research_context\",\"hypothesis_options\",\"pico_options\",\"design_options\",\"method_options\",\"analysis_options\",\"pitfall_options\",\"expected_output\",\"optimal_summary\"]],[\"RES_AI_001_v1_3\",[\"difficulty\",\"estimated_time_min\",\"tags\",\"research_intro\",\"research_context\",\"hypothesis_options\",\"pico_options\",\"design_options\",\"method_options\",\"analysis_options\",\"pitfall_options\",\"expected_output\",\"optimal_summary\"]]].map(([id,keys])=>{const source=window.MolPathCanonicalDataA4b.cases.find(record=>record.id===id).case;return [id,Object.fromEntries(keys.map(key=>[key,JSON.parse(JSON.stringify(source[key]))]))];}));",
-    "new": "",
-    "ids": [
-      "RES_ETH_002_v1_3",
-      "RES_ETH_003_v1_3",
-      "RES_DATA_001_v1_3",
-      "RES_AI_001_v1_3"
-    ],
-    "old_start": 2150592,
-    "old_end": 2151810,
-    "new_start": 2127325,
-    "new_end": 2127325
-  },
-  {
-    "script": "v240z4_res_r3_deepdive",
-    "kind": "writer",
-    "name": "V240Z4_BASE_PATCHES",
-    "old": "try{Object.entries(V240Z4_BASE_PATCHES).forEach(([id,p])=>{const c=v240z4Find(id);if(!c)return;Object.assign(c,p);c.deep_dive=true;c.signature_case=false;c.deep_dive_title=(V240Z4_DEEP_DIVES.find(d=>d.case_id===id)||{}).title||c.title;c.tags=Array.from(new Set([].concat(c.tags||[],['Deep Dive','RES D3 curated','v2.4.0z4']).filter(x=>x!=='Signature Case')));});}catch(e){console.error('[MolPath '+V240Z4_VERSION+'] RES R3 base patch failed',e)}",
-    "new": "// A6.8: cases use Canonical; retain Deep-Dive registration below.",
-    "ids": [
-      "RES_ETH_002_v1_3",
-      "RES_ETH_003_v1_3",
-      "RES_DATA_001_v1_3",
-      "RES_AI_001_v1_3"
-    ],
-    "locator": "v240z4Find",
-    "old_start": 2152119,
-    "old_end": 2152564,
-    "new_start": 2127543,
-    "new_end": 2127609
-  },
-  {
-    "script": "v240z4_res_r3_deepdive",
-    "kind": "unused_locator",
-    "name": "v240z4Find",
-    "old": "function v240z4Find(id){try{return (cases||[]).find(c=>c&&c.id===id)}catch(_){return null}}",
-    "new": "",
-    "old_start": 2152027,
-    "old_end": 2152118,
-    "new_start": 2127542,
-    "new_end": 2127542
-  },
-  {
-    "script": "v240z5_res_r4_deepdive",
-    "kind": "table",
-    "name": "V240Z5_BASE_PATCHES",
-    "old": "const V240Z5_BASE_PATCHES=Object.fromEntries([[\"RES_PM_001_v1_3\",[\"difficulty\",\"estimated_time_min\",\"tags\",\"research_intro\",\"research_context\",\"hypothesis_options\",\"pico_options\",\"design_options\",\"method_options\",\"analysis_options\",\"pitfall_options\",\"expected_output\",\"optimal_summary\"]],[\"RES_PM_002_v1_3\",[\"difficulty\",\"estimated_time_min\",\"tags\",\"research_intro\",\"research_context\",\"hypothesis_options\",\"pico_options\",\"design_options\",\"method_options\",\"analysis_options\",\"pitfall_options\",\"expected_output\",\"optimal_summary\"]],[\"RES_ROLE_001_v1_3\",[\"difficulty\",\"estimated_time_min\",\"tags\",\"research_intro\",\"research_context\",\"hypothesis_options\",\"pico_options\",\"design_options\",\"method_options\",\"analysis_options\",\"pitfall_options\",\"expected_output\",\"optimal_summary\"]]].map(([id,keys])=>{const source=window.MolPathCanonicalDataA4b.cases.find(record=>record.id===id).case;return [id,Object.fromEntries(keys.map(key=>[key,JSON.parse(JSON.stringify(source[key]))]))];}));",
-    "new": "",
-    "ids": [
-      "RES_PM_001_v1_3",
-      "RES_PM_002_v1_3",
-      "RES_ROLE_001_v1_3"
-    ],
-    "old_start": 2154298,
-    "old_end": 2155272,
-    "new_start": 2129343,
-    "new_end": 2129343
-  },
-  {
-    "script": "v240z5_res_r4_deepdive",
-    "kind": "writer",
-    "name": "V240Z5_BASE_PATCHES",
-    "old": "try{Object.entries(V240Z5_BASE_PATCHES).forEach(([id,p])=>{const c=v240z5Find(id);if(!c)return;Object.assign(c,p);c.deep_dive=true;c.signature_case=false;c.deep_dive_title=(V240Z5_DEEP_DIVES.find(d=>d.case_id===id)||{}).title||c.title;c.tags=Array.from(new Set([].concat(c.tags||[],['Deep Dive','RES D4 curated','v2.4.0z5']).filter(x=>x!=='Signature Case')));});}catch(e){console.error('[MolPath '+V240Z5_VERSION+'] RES R4 base patch failed',e)}",
-    "new": "// A6.8: cases use Canonical; retain Deep-Dive registration below.",
-    "ids": [
-      "RES_PM_001_v1_3",
-      "RES_PM_002_v1_3",
-      "RES_ROLE_001_v1_3"
-    ],
-    "locator": "v240z5Find",
-    "old_start": 2155561,
-    "old_end": 2156006,
-    "new_start": 2129541,
-    "new_end": 2129607
-  },
-  {
-    "script": "v240z5_res_r4_deepdive",
-    "kind": "unused_locator",
-    "name": "v240z5Find",
-    "old": "function v240z5Find(id){try{return (cases||[]).find(c=>c&&c.id===id)}catch(_){return null}}",
-    "new": "",
-    "old_start": 2155469,
-    "old_end": 2155560,
-    "new_start": 2129540,
-    "new_end": 2129540
-  },
-  {
-    "script": "v240z6_res_r5_deepdive",
-    "kind": "table",
-    "name": "V240Z6_BASE_PATCHES",
-    "old": "const V240Z6_BASE_PATCHES=Object.fromEntries([[\"RES_GRANT_001_v1_3\",[\"difficulty\",\"estimated_time_min\",\"tags\",\"research_intro\",\"research_context\",\"hypothesis_options\",\"pico_options\",\"design_options\",\"method_options\",\"analysis_options\",\"pitfall_options\",\"expected_output\",\"optimal_summary\"]],[\"RES_IMPL_001_v1_3\",[\"difficulty\",\"estimated_time_min\",\"tags\",\"research_intro\",\"research_context\",\"hypothesis_options\",\"pico_options\",\"design_options\",\"method_options\",\"analysis_options\",\"pitfall_options\",\"expected_output\",\"optimal_summary\"]],[\"RES_TEAM_001_v1_3\",[\"difficulty\",\"estimated_time_min\",\"tags\",\"research_intro\",\"research_context\",\"hypothesis_options\",\"pico_options\",\"design_options\",\"method_options\",\"analysis_options\",\"pitfall_options\",\"expected_output\",\"optimal_summary\"]]].map(([id,keys])=>{const source=window.MolPathCanonicalDataA4b.cases.find(record=>record.id===id).case;return [id,Object.fromEntries(keys.map(key=>[key,JSON.parse(JSON.stringify(source[key]))]))];}));",
-    "new": "",
-    "ids": [
-      "RES_GRANT_001_v1_3",
-      "RES_IMPL_001_v1_3",
-      "RES_TEAM_001_v1_3"
-    ],
-    "old_start": 2157753,
-    "old_end": 2158732,
-    "new_start": 2131354,
-    "new_end": 2131354
-  },
-  {
-    "script": "v240z6_res_r5_deepdive",
-    "kind": "writer",
-    "name": "V240Z6_BASE_PATCHES",
-    "old": "try{Object.entries(V240Z6_BASE_PATCHES).forEach(([id,p])=>{const c=v240z6Find(id);if(!c)return;Object.assign(c,p);c.deep_dive=true;c.signature_case=false;c.deep_dive_title=(V240Z6_DEEP_DIVES.find(d=>d.case_id===id)||{}).title||c.title;c.tags=Array.from(new Set([].concat(c.tags||[],['Deep Dive','RES D4 curated','RES content freeze','v2.4.0z6']).filter(x=>x!=='Signature Case')));});}catch(e){console.error('[MolPath '+V240Z6_VERSION+'] RES R5 base patch failed',e)}",
-    "new": "// A6.8: cases use Canonical; retain Deep-Dive registration below.",
-    "ids": [
-      "RES_GRANT_001_v1_3",
-      "RES_IMPL_001_v1_3",
-      "RES_TEAM_001_v1_3"
-    ],
-    "locator": "v240z6Find",
-    "old_start": 2159026,
-    "old_end": 2159492,
-    "new_start": 2131557,
-    "new_end": 2131623
-  },
-  {
-    "script": "v240z6_res_r5_deepdive",
-    "kind": "unused_locator",
-    "name": "v240z6Find",
-    "old": "function v240z6Find(id){try{return (cases||[]).find(c=>c&&c.id===id)}catch(_){return null}}",
-    "new": "",
-    "old_start": 2158934,
-    "old_end": 2159025,
-    "new_start": 2131556,
-    "new_end": 2131556
+    "script": "v240y1_lab_c4_c5_schema_hotfix",
+    "kind": "diagnostic",
+    "name": "V240Y1_CONSOLE",
+    "old": "LAB C4/C5 schema hotfix loaded: 10 cases normalized.",
+    "new": "LAB C4/C5 renderer fallback loaded: 10 Canonical cases.",
+    "old_start": 2122719,
+    "old_end": 2122771,
+    "new_start": 2113137,
+    "new_end": 2113192
   }
 ]

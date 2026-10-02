@@ -1774,18 +1774,9 @@
           ]
         },
         {
-          "id": "MTB_CRC_001_v0_6",
-          "fields": [
-            "optimal_summary"
-          ]
-        },
-        {
           "id": "MTB_OVAR_001_v0_7",
           "fields": [
-            "estimated_time_min",
-            "story",
-            "result_truth",
-            "optimal_summary"
+            "length_class"
           ]
         },
         {
@@ -2074,24 +2065,7 @@
       ],
       "deepDiff": [],
       "integrated": false,
-      "caseWrites": [
-        {
-          "id": "MTB_CRC_001_v0_6",
-          "fields": [
-            "optimal_summary"
-          ]
-        },
-        {
-          "id": "MTB_OVAR_001_v0_7",
-          "fields": [
-            "estimated_time_min",
-            "story",
-            "result_truth",
-            "length_class",
-            "optimal_summary"
-          ]
-        }
-      ],
+      "caseWrites": [],
       "deepWrites": []
     },
     {
@@ -2212,18 +2186,9 @@
           ]
         },
         {
-          "id": "MTB_CRC_001_v0_6",
-          "fields": [
-            "optimal_summary"
-          ]
-        },
-        {
           "id": "MTB_OVAR_001_v0_7",
           "fields": [
-            "estimated_time_min",
-            "story",
-            "result_truth",
-            "optimal_summary"
+            "length_class"
           ]
         },
         {
@@ -2633,15 +2598,9 @@
           ]
         },
         {
-          "id": "MTB_CRC_001_v0_6",
-          "fields": [
-            "optimal_summary"
-          ]
-        },
-        {
           "id": "MTB_OVAR_001_v0_7",
           "fields": [
-            "estimated_time_min"
+            "length_class"
           ]
         },
         {
@@ -2930,16 +2889,7 @@
       ],
       "deepDiff": [],
       "integrated": false,
-      "caseWrites": [
-        {
-          "id": "MTB_OVAR_001_v0_7",
-          "fields": [
-            "story",
-            "result_truth",
-            "optimal_summary"
-          ]
-        }
-      ],
+      "caseWrites": [],
       "deepWrites": []
     },
     {
@@ -3060,15 +3010,9 @@
           ]
         },
         {
-          "id": "MTB_CRC_001_v0_6",
-          "fields": [
-            "optimal_summary"
-          ]
-        },
-        {
           "id": "MTB_OVAR_001_v0_7",
           "fields": [
-            "estimated_time_min"
+            "length_class"
           ]
         },
         {
@@ -3478,15 +3422,9 @@
           ]
         },
         {
-          "id": "MTB_CRC_001_v0_6",
-          "fields": [
-            "optimal_summary"
-          ]
-        },
-        {
           "id": "MTB_OVAR_001_v0_7",
           "fields": [
-            "estimated_time_min"
+            "length_class"
           ]
         },
         {
@@ -3896,15 +3834,9 @@
           ]
         },
         {
-          "id": "MTB_CRC_001_v0_6",
-          "fields": [
-            "optimal_summary"
-          ]
-        },
-        {
           "id": "MTB_OVAR_001_v0_7",
           "fields": [
-            "estimated_time_min"
+            "length_class"
           ]
         },
         {
@@ -4314,15 +4246,9 @@
           ]
         },
         {
-          "id": "MTB_CRC_001_v0_6",
-          "fields": [
-            "optimal_summary"
-          ]
-        },
-        {
           "id": "MTB_OVAR_001_v0_7",
           "fields": [
-            "estimated_time_min"
+            "length_class"
           ]
         },
         {
@@ -4732,15 +4658,9 @@
           ]
         },
         {
-          "id": "MTB_CRC_001_v0_6",
-          "fields": [
-            "optimal_summary"
-          ]
-        },
-        {
           "id": "MTB_OVAR_001_v0_7",
           "fields": [
-            "estimated_time_min"
+            "length_class"
           ]
         },
         {
@@ -5150,15 +5070,9 @@
           ]
         },
         {
-          "id": "MTB_CRC_001_v0_6",
-          "fields": [
-            "optimal_summary"
-          ]
-        },
-        {
           "id": "MTB_OVAR_001_v0_7",
           "fields": [
-            "estimated_time_min"
+            "length_class"
           ]
         },
         {
@@ -5568,15 +5482,9 @@
           ]
         },
         {
-          "id": "MTB_CRC_001_v0_6",
-          "fields": [
-            "optimal_summary"
-          ]
-        },
-        {
           "id": "MTB_OVAR_001_v0_7",
           "fields": [
-            "estimated_time_min"
+            "length_class"
           ]
         },
         {
@@ -5986,15 +5894,9 @@
           ]
         },
         {
-          "id": "MTB_CRC_001_v0_6",
-          "fields": [
-            "optimal_summary"
-          ]
-        },
-        {
           "id": "MTB_OVAR_001_v0_7",
           "fields": [
-            "estimated_time_min"
+            "length_class"
           ]
         },
         {
@@ -6404,15 +6306,9 @@
           ]
         },
         {
-          "id": "MTB_CRC_001_v0_6",
-          "fields": [
-            "optimal_summary"
-          ]
-        },
-        {
           "id": "MTB_OVAR_001_v0_7",
           "fields": [
-            "estimated_time_min"
+            "length_class"
           ]
         },
         {
@@ -6822,15 +6718,9 @@
           ]
         },
         {
-          "id": "MTB_CRC_001_v0_6",
-          "fields": [
-            "optimal_summary"
-          ]
-        },
-        {
           "id": "MTB_OVAR_001_v0_7",
           "fields": [
-            "estimated_time_min"
+            "length_class"
           ]
         },
         {
@@ -7240,15 +7130,9 @@
           ]
         },
         {
-          "id": "MTB_CRC_001_v0_6",
-          "fields": [
-            "optimal_summary"
-          ]
-        },
-        {
           "id": "MTB_OVAR_001_v0_7",
           "fields": [
-            "estimated_time_min"
+            "length_class"
           ]
         },
         {
@@ -7658,15 +7542,9 @@
           ]
         },
         {
-          "id": "MTB_CRC_001_v0_6",
-          "fields": [
-            "optimal_summary"
-          ]
-        },
-        {
           "id": "MTB_OVAR_001_v0_7",
           "fields": [
-            "estimated_time_min"
+            "length_class"
           ]
         },
         {
@@ -8076,15 +7954,9 @@
           ]
         },
         {
-          "id": "MTB_CRC_001_v0_6",
-          "fields": [
-            "optimal_summary"
-          ]
-        },
-        {
           "id": "MTB_OVAR_001_v0_7",
           "fields": [
-            "estimated_time_min"
+            "length_class"
           ]
         },
         {
@@ -8494,15 +8366,9 @@
           ]
         },
         {
-          "id": "MTB_CRC_001_v0_6",
-          "fields": [
-            "optimal_summary"
-          ]
-        },
-        {
           "id": "MTB_OVAR_001_v0_7",
           "fields": [
-            "estimated_time_min"
+            "length_class"
           ]
         },
         {
@@ -8912,15 +8778,9 @@
           ]
         },
         {
-          "id": "MTB_CRC_001_v0_6",
-          "fields": [
-            "optimal_summary"
-          ]
-        },
-        {
           "id": "MTB_OVAR_001_v0_7",
           "fields": [
-            "estimated_time_min"
+            "length_class"
           ]
         },
         {
@@ -9330,15 +9190,9 @@
           ]
         },
         {
-          "id": "MTB_CRC_001_v0_6",
-          "fields": [
-            "optimal_summary"
-          ]
-        },
-        {
           "id": "MTB_OVAR_001_v0_7",
           "fields": [
-            "estimated_time_min"
+            "length_class"
           ]
         },
         {
@@ -9748,15 +9602,9 @@
           ]
         },
         {
-          "id": "MTB_CRC_001_v0_6",
-          "fields": [
-            "optimal_summary"
-          ]
-        },
-        {
           "id": "MTB_OVAR_001_v0_7",
           "fields": [
-            "estimated_time_min"
+            "length_class"
           ]
         },
         {
@@ -10166,15 +10014,9 @@
           ]
         },
         {
-          "id": "MTB_CRC_001_v0_6",
-          "fields": [
-            "optimal_summary"
-          ]
-        },
-        {
           "id": "MTB_OVAR_001_v0_7",
           "fields": [
-            "estimated_time_min"
+            "length_class"
           ]
         },
         {
@@ -10584,15 +10426,9 @@
           ]
         },
         {
-          "id": "MTB_CRC_001_v0_6",
-          "fields": [
-            "optimal_summary"
-          ]
-        },
-        {
           "id": "MTB_OVAR_001_v0_7",
           "fields": [
-            "estimated_time_min"
+            "length_class"
           ]
         },
         {
@@ -11002,15 +10838,9 @@
           ]
         },
         {
-          "id": "MTB_CRC_001_v0_6",
-          "fields": [
-            "optimal_summary"
-          ]
-        },
-        {
           "id": "MTB_OVAR_001_v0_7",
           "fields": [
-            "estimated_time_min"
+            "length_class"
           ]
         },
         {
@@ -11420,15 +11250,9 @@
           ]
         },
         {
-          "id": "MTB_CRC_001_v0_6",
-          "fields": [
-            "optimal_summary"
-          ]
-        },
-        {
           "id": "MTB_OVAR_001_v0_7",
           "fields": [
-            "estimated_time_min"
+            "length_class"
           ]
         },
         {
@@ -11838,15 +11662,9 @@
           ]
         },
         {
-          "id": "MTB_CRC_001_v0_6",
-          "fields": [
-            "optimal_summary"
-          ]
-        },
-        {
           "id": "MTB_OVAR_001_v0_7",
           "fields": [
-            "estimated_time_min"
+            "length_class"
           ]
         },
         {
@@ -12256,15 +12074,9 @@
           ]
         },
         {
-          "id": "MTB_CRC_001_v0_6",
-          "fields": [
-            "optimal_summary"
-          ]
-        },
-        {
           "id": "MTB_OVAR_001_v0_7",
           "fields": [
-            "estimated_time_min"
+            "length_class"
           ]
         },
         {
@@ -12674,15 +12486,9 @@
           ]
         },
         {
-          "id": "MTB_CRC_001_v0_6",
-          "fields": [
-            "optimal_summary"
-          ]
-        },
-        {
           "id": "MTB_OVAR_001_v0_7",
           "fields": [
-            "estimated_time_min"
+            "length_class"
           ]
         },
         {
@@ -13092,15 +12898,9 @@
           ]
         },
         {
-          "id": "MTB_CRC_001_v0_6",
-          "fields": [
-            "optimal_summary"
-          ]
-        },
-        {
           "id": "MTB_OVAR_001_v0_7",
           "fields": [
-            "estimated_time_min"
+            "length_class"
           ]
         },
         {
@@ -13510,15 +13310,9 @@
           ]
         },
         {
-          "id": "MTB_CRC_001_v0_6",
-          "fields": [
-            "optimal_summary"
-          ]
-        },
-        {
           "id": "MTB_OVAR_001_v0_7",
           "fields": [
-            "estimated_time_min"
+            "length_class"
           ]
         },
         {
@@ -13933,15 +13727,9 @@
           ]
         },
         {
-          "id": "MTB_CRC_001_v0_6",
-          "fields": [
-            "optimal_summary"
-          ]
-        },
-        {
           "id": "MTB_OVAR_001_v0_7",
           "fields": [
-            "estimated_time_min"
+            "length_class"
           ]
         },
         {
@@ -14390,15 +14178,9 @@
           ]
         },
         {
-          "id": "MTB_CRC_001_v0_6",
-          "fields": [
-            "optimal_summary"
-          ]
-        },
-        {
           "id": "MTB_OVAR_001_v0_7",
           "fields": [
-            "estimated_time_min"
+            "length_class"
           ]
         },
         {
@@ -14838,15 +14620,9 @@
           ]
         },
         {
-          "id": "MTB_CRC_001_v0_6",
-          "fields": [
-            "optimal_summary"
-          ]
-        },
-        {
           "id": "MTB_OVAR_001_v0_7",
           "fields": [
-            "estimated_time_min"
+            "length_class"
           ]
         },
         {
@@ -15290,15 +15066,9 @@
           ]
         },
         {
-          "id": "MTB_CRC_001_v0_6",
-          "fields": [
-            "optimal_summary"
-          ]
-        },
-        {
           "id": "MTB_OVAR_001_v0_7",
           "fields": [
-            "estimated_time_min"
+            "length_class"
           ]
         },
         {
@@ -15757,15 +15527,9 @@
           ]
         },
         {
-          "id": "MTB_CRC_001_v0_6",
-          "fields": [
-            "optimal_summary"
-          ]
-        },
-        {
           "id": "MTB_OVAR_001_v0_7",
           "fields": [
-            "estimated_time_min"
+            "length_class"
           ]
         },
         {
@@ -16254,15 +16018,9 @@
           ]
         },
         {
-          "id": "MTB_CRC_001_v0_6",
-          "fields": [
-            "optimal_summary"
-          ]
-        },
-        {
           "id": "MTB_OVAR_001_v0_7",
           "fields": [
-            "estimated_time_min"
+            "length_class"
           ]
         },
         {
@@ -16705,15 +16463,9 @@
           ]
         },
         {
-          "id": "MTB_CRC_001_v0_6",
-          "fields": [
-            "optimal_summary"
-          ]
-        },
-        {
           "id": "MTB_OVAR_001_v0_7",
           "fields": [
-            "estimated_time_min"
+            "length_class"
           ]
         },
         {
@@ -17211,15 +16963,9 @@
           ]
         },
         {
-          "id": "MTB_CRC_001_v0_6",
-          "fields": [
-            "optimal_summary"
-          ]
-        },
-        {
           "id": "MTB_OVAR_001_v0_7",
           "fields": [
-            "estimated_time_min"
+            "length_class"
           ]
         },
         {
@@ -17891,15 +17637,9 @@
           ]
         },
         {
-          "id": "MTB_CRC_001_v0_6",
-          "fields": [
-            "optimal_summary"
-          ]
-        },
-        {
           "id": "MTB_OVAR_001_v0_7",
           "fields": [
-            "estimated_time_min"
+            "length_class"
           ]
         },
         {
@@ -18467,15 +18207,9 @@
           ]
         },
         {
-          "id": "MTB_CRC_001_v0_6",
-          "fields": [
-            "optimal_summary"
-          ]
-        },
-        {
           "id": "MTB_OVAR_001_v0_7",
           "fields": [
-            "estimated_time_min"
+            "length_class"
           ]
         },
         {
@@ -19047,15 +18781,9 @@
           ]
         },
         {
-          "id": "MTB_CRC_001_v0_6",
-          "fields": [
-            "optimal_summary"
-          ]
-        },
-        {
           "id": "MTB_OVAR_001_v0_7",
           "fields": [
-            "estimated_time_min"
+            "length_class"
           ]
         },
         {
@@ -19626,15 +19354,9 @@
           ]
         },
         {
-          "id": "MTB_CRC_001_v0_6",
-          "fields": [
-            "optimal_summary"
-          ]
-        },
-        {
           "id": "MTB_OVAR_001_v0_7",
           "fields": [
-            "estimated_time_min"
+            "length_class"
           ]
         },
         {
@@ -20216,15 +19938,9 @@
           ]
         },
         {
-          "id": "MTB_CRC_001_v0_6",
-          "fields": [
-            "optimal_summary"
-          ]
-        },
-        {
           "id": "MTB_OVAR_001_v0_7",
           "fields": [
-            "estimated_time_min"
+            "length_class"
           ]
         },
         {
@@ -20811,8 +20527,7 @@
           "fields": [
             "estimated_time_min",
             "story",
-            "result_truth",
-            "optimal_summary"
+            "result_truth"
           ]
         },
         {
@@ -20823,7 +20538,8 @@
             "difficulty",
             "estimated_time_min",
             "story",
-            "optimal_tests"
+            "optimal_tests",
+            "length_class"
           ]
         },
         {
@@ -21795,8 +21511,7 @@
           "fields": [
             "estimated_time_min",
             "story",
-            "result_truth",
-            "optimal_summary"
+            "result_truth"
           ]
         },
         {
@@ -21807,7 +21522,8 @@
             "difficulty",
             "estimated_time_min",
             "story",
-            "optimal_tests"
+            "optimal_tests",
+            "length_class"
           ]
         },
         {
@@ -22537,8 +22253,7 @@
           "fields": [
             "estimated_time_min",
             "story",
-            "result_truth",
-            "optimal_summary"
+            "result_truth"
           ]
         },
         {
@@ -22549,7 +22264,8 @@
             "difficulty",
             "estimated_time_min",
             "story",
-            "optimal_tests"
+            "optimal_tests",
+            "length_class"
           ]
         },
         {
@@ -23309,8 +23025,7 @@
           "fields": [
             "estimated_time_min",
             "story",
-            "result_truth",
-            "optimal_summary"
+            "result_truth"
           ]
         },
         {
@@ -23321,7 +23036,8 @@
             "difficulty",
             "estimated_time_min",
             "story",
-            "optimal_tests"
+            "optimal_tests",
+            "length_class"
           ]
         },
         {
@@ -24091,8 +23807,7 @@
           "fields": [
             "estimated_time_min",
             "story",
-            "result_truth",
-            "optimal_summary"
+            "result_truth"
           ]
         },
         {
@@ -24103,7 +23818,8 @@
             "difficulty",
             "estimated_time_min",
             "story",
-            "optimal_tests"
+            "optimal_tests",
+            "length_class"
           ]
         },
         {
@@ -24870,8 +24586,7 @@
           "fields": [
             "estimated_time_min",
             "story",
-            "result_truth",
-            "optimal_summary"
+            "result_truth"
           ]
         },
         {
@@ -24882,7 +24597,8 @@
             "difficulty",
             "estimated_time_min",
             "story",
-            "optimal_tests"
+            "optimal_tests",
+            "length_class"
           ]
         },
         {
@@ -25646,8 +25362,7 @@
           "fields": [
             "estimated_time_min",
             "story",
-            "result_truth",
-            "optimal_summary"
+            "result_truth"
           ]
         },
         {
@@ -25658,7 +25373,8 @@
             "difficulty",
             "estimated_time_min",
             "story",
-            "optimal_tests"
+            "optimal_tests",
+            "length_class"
           ]
         },
         {
@@ -26422,8 +26138,7 @@
           "fields": [
             "estimated_time_min",
             "story",
-            "result_truth",
-            "optimal_summary"
+            "result_truth"
           ]
         },
         {
@@ -26434,7 +26149,8 @@
             "difficulty",
             "estimated_time_min",
             "story",
-            "optimal_tests"
+            "optimal_tests",
+            "length_class"
           ]
         },
         {
@@ -27179,8 +26895,7 @@
           "fields": [
             "estimated_time_min",
             "story",
-            "result_truth",
-            "optimal_summary"
+            "result_truth"
           ]
         },
         {
@@ -27191,7 +26906,8 @@
             "difficulty",
             "estimated_time_min",
             "story",
-            "optimal_tests"
+            "optimal_tests",
+            "length_class"
           ]
         },
         {
@@ -27936,8 +27652,7 @@
           "fields": [
             "estimated_time_min",
             "story",
-            "result_truth",
-            "optimal_summary"
+            "result_truth"
           ]
         },
         {
@@ -27948,7 +27663,8 @@
             "difficulty",
             "estimated_time_min",
             "story",
-            "optimal_tests"
+            "optimal_tests",
+            "length_class"
           ]
         },
         {
@@ -28693,8 +28409,7 @@
           "fields": [
             "estimated_time_min",
             "story",
-            "result_truth",
-            "optimal_summary"
+            "result_truth"
           ]
         },
         {
@@ -28705,7 +28420,8 @@
             "difficulty",
             "estimated_time_min",
             "story",
-            "optimal_tests"
+            "optimal_tests",
+            "length_class"
           ]
         },
         {
@@ -29450,8 +29166,7 @@
           "fields": [
             "estimated_time_min",
             "story",
-            "result_truth",
-            "optimal_summary"
+            "result_truth"
           ]
         },
         {
@@ -29462,7 +29177,8 @@
             "difficulty",
             "estimated_time_min",
             "story",
-            "optimal_tests"
+            "optimal_tests",
+            "length_class"
           ]
         },
         {
@@ -30207,8 +29923,7 @@
           "fields": [
             "estimated_time_min",
             "story",
-            "result_truth",
-            "optimal_summary"
+            "result_truth"
           ]
         },
         {
@@ -30219,7 +29934,8 @@
             "difficulty",
             "estimated_time_min",
             "story",
-            "optimal_tests"
+            "optimal_tests",
+            "length_class"
           ]
         },
         {
@@ -30964,8 +30680,7 @@
           "fields": [
             "estimated_time_min",
             "story",
-            "result_truth",
-            "optimal_summary"
+            "result_truth"
           ]
         },
         {
@@ -30976,7 +30691,8 @@
             "difficulty",
             "estimated_time_min",
             "story",
-            "optimal_tests"
+            "optimal_tests",
+            "length_class"
           ]
         },
         {
@@ -31721,8 +31437,7 @@
           "fields": [
             "estimated_time_min",
             "story",
-            "result_truth",
-            "optimal_summary"
+            "result_truth"
           ]
         },
         {
@@ -31733,7 +31448,8 @@
             "difficulty",
             "estimated_time_min",
             "story",
-            "optimal_tests"
+            "optimal_tests",
+            "length_class"
           ]
         },
         {
@@ -32478,8 +32194,7 @@
           "fields": [
             "estimated_time_min",
             "story",
-            "result_truth",
-            "optimal_summary"
+            "result_truth"
           ]
         },
         {
@@ -32490,7 +32205,8 @@
             "difficulty",
             "estimated_time_min",
             "story",
-            "optimal_tests"
+            "optimal_tests",
+            "length_class"
           ]
         },
         {
@@ -33235,8 +32951,7 @@
           "fields": [
             "estimated_time_min",
             "story",
-            "result_truth",
-            "optimal_summary"
+            "result_truth"
           ]
         },
         {
@@ -33247,7 +32962,8 @@
             "difficulty",
             "estimated_time_min",
             "story",
-            "optimal_tests"
+            "optimal_tests",
+            "length_class"
           ]
         },
         {
@@ -33992,8 +33708,7 @@
           "fields": [
             "estimated_time_min",
             "story",
-            "result_truth",
-            "optimal_summary"
+            "result_truth"
           ]
         },
         {
@@ -34004,7 +33719,8 @@
             "difficulty",
             "estimated_time_min",
             "story",
-            "optimal_tests"
+            "optimal_tests",
+            "length_class"
           ]
         },
         {
@@ -34749,8 +34465,7 @@
           "fields": [
             "estimated_time_min",
             "story",
-            "result_truth",
-            "optimal_summary"
+            "result_truth"
           ]
         },
         {
@@ -34761,7 +34476,8 @@
             "difficulty",
             "estimated_time_min",
             "story",
-            "optimal_tests"
+            "optimal_tests",
+            "length_class"
           ]
         },
         {
@@ -35506,8 +35222,7 @@
           "fields": [
             "estimated_time_min",
             "story",
-            "result_truth",
-            "optimal_summary"
+            "result_truth"
           ]
         },
         {
@@ -35518,7 +35233,8 @@
             "difficulty",
             "estimated_time_min",
             "story",
-            "optimal_tests"
+            "optimal_tests",
+            "length_class"
           ]
         },
         {
@@ -36263,8 +35979,7 @@
           "fields": [
             "estimated_time_min",
             "story",
-            "result_truth",
-            "optimal_summary"
+            "result_truth"
           ]
         },
         {
@@ -36275,7 +35990,8 @@
             "difficulty",
             "estimated_time_min",
             "story",
-            "optimal_tests"
+            "optimal_tests",
+            "length_class"
           ]
         },
         {
@@ -37020,8 +36736,7 @@
           "fields": [
             "estimated_time_min",
             "story",
-            "result_truth",
-            "optimal_summary"
+            "result_truth"
           ]
         },
         {
@@ -37032,7 +36747,8 @@
             "difficulty",
             "estimated_time_min",
             "story",
-            "optimal_tests"
+            "optimal_tests",
+            "length_class"
           ]
         },
         {
@@ -37777,8 +37493,7 @@
           "fields": [
             "estimated_time_min",
             "story",
-            "result_truth",
-            "optimal_summary"
+            "result_truth"
           ]
         },
         {
@@ -37789,7 +37504,8 @@
             "difficulty",
             "estimated_time_min",
             "story",
-            "optimal_tests"
+            "optimal_tests",
+            "length_class"
           ]
         },
         {
@@ -38534,8 +38250,7 @@
           "fields": [
             "estimated_time_min",
             "story",
-            "result_truth",
-            "optimal_summary"
+            "result_truth"
           ]
         },
         {
@@ -38546,7 +38261,8 @@
             "difficulty",
             "estimated_time_min",
             "story",
-            "optimal_tests"
+            "optimal_tests",
+            "length_class"
           ]
         },
         {
@@ -39291,8 +39007,7 @@
           "fields": [
             "estimated_time_min",
             "story",
-            "result_truth",
-            "optimal_summary"
+            "result_truth"
           ]
         },
         {
@@ -39303,7 +39018,8 @@
             "difficulty",
             "estimated_time_min",
             "story",
-            "optimal_tests"
+            "optimal_tests",
+            "length_class"
           ]
         },
         {
@@ -40048,8 +39764,7 @@
           "fields": [
             "estimated_time_min",
             "story",
-            "result_truth",
-            "optimal_summary"
+            "result_truth"
           ]
         },
         {
@@ -40060,7 +39775,8 @@
             "difficulty",
             "estimated_time_min",
             "story",
-            "optimal_tests"
+            "optimal_tests",
+            "length_class"
           ]
         },
         {
@@ -40805,8 +40521,7 @@
           "fields": [
             "estimated_time_min",
             "story",
-            "result_truth",
-            "optimal_summary"
+            "result_truth"
           ]
         },
         {
@@ -40817,7 +40532,8 @@
             "difficulty",
             "estimated_time_min",
             "story",
-            "optimal_tests"
+            "optimal_tests",
+            "length_class"
           ]
         },
         {
@@ -41562,8 +41278,7 @@
           "fields": [
             "estimated_time_min",
             "story",
-            "result_truth",
-            "optimal_summary"
+            "result_truth"
           ]
         },
         {
@@ -41574,7 +41289,8 @@
             "difficulty",
             "estimated_time_min",
             "story",
-            "optimal_tests"
+            "optimal_tests",
+            "length_class"
           ]
         },
         {
@@ -42319,8 +42035,7 @@
           "fields": [
             "estimated_time_min",
             "story",
-            "result_truth",
-            "optimal_summary"
+            "result_truth"
           ]
         },
         {
@@ -42331,7 +42046,8 @@
             "difficulty",
             "estimated_time_min",
             "story",
-            "optimal_tests"
+            "optimal_tests",
+            "length_class"
           ]
         },
         {
@@ -43076,8 +42792,7 @@
           "fields": [
             "estimated_time_min",
             "story",
-            "result_truth",
-            "optimal_summary"
+            "result_truth"
           ]
         },
         {
@@ -43088,7 +42803,8 @@
             "difficulty",
             "estimated_time_min",
             "story",
-            "optimal_tests"
+            "optimal_tests",
+            "length_class"
           ]
         },
         {
@@ -43833,8 +43549,7 @@
           "fields": [
             "estimated_time_min",
             "story",
-            "result_truth",
-            "optimal_summary"
+            "result_truth"
           ]
         },
         {
@@ -43845,7 +43560,8 @@
             "difficulty",
             "estimated_time_min",
             "story",
-            "optimal_tests"
+            "optimal_tests",
+            "length_class"
           ]
         },
         {
@@ -44590,8 +44306,7 @@
           "fields": [
             "estimated_time_min",
             "story",
-            "result_truth",
-            "optimal_summary"
+            "result_truth"
           ]
         },
         {
@@ -44602,7 +44317,8 @@
             "difficulty",
             "estimated_time_min",
             "story",
-            "optimal_tests"
+            "optimal_tests",
+            "length_class"
           ]
         },
         {
@@ -45347,8 +45063,7 @@
           "fields": [
             "estimated_time_min",
             "story",
-            "result_truth",
-            "optimal_summary"
+            "result_truth"
           ]
         },
         {
@@ -45359,7 +45074,8 @@
             "difficulty",
             "estimated_time_min",
             "story",
-            "optimal_tests"
+            "optimal_tests",
+            "length_class"
           ]
         },
         {
@@ -46104,8 +45820,7 @@
           "fields": [
             "estimated_time_min",
             "story",
-            "result_truth",
-            "optimal_summary"
+            "result_truth"
           ]
         },
         {
@@ -46116,7 +45831,8 @@
             "difficulty",
             "estimated_time_min",
             "story",
-            "optimal_tests"
+            "optimal_tests",
+            "length_class"
           ]
         },
         {
@@ -46861,8 +46577,7 @@
           "fields": [
             "estimated_time_min",
             "story",
-            "result_truth",
-            "optimal_summary"
+            "result_truth"
           ]
         },
         {
@@ -46873,7 +46588,8 @@
             "difficulty",
             "estimated_time_min",
             "story",
-            "optimal_tests"
+            "optimal_tests",
+            "length_class"
           ]
         },
         {
@@ -47618,8 +47334,7 @@
           "fields": [
             "estimated_time_min",
             "story",
-            "result_truth",
-            "optimal_summary"
+            "result_truth"
           ]
         },
         {
@@ -47630,7 +47345,8 @@
             "difficulty",
             "estimated_time_min",
             "story",
-            "optimal_tests"
+            "optimal_tests",
+            "length_class"
           ]
         },
         {
@@ -48375,8 +48091,7 @@
           "fields": [
             "estimated_time_min",
             "story",
-            "result_truth",
-            "optimal_summary"
+            "result_truth"
           ]
         },
         {
@@ -48387,7 +48102,8 @@
             "difficulty",
             "estimated_time_min",
             "story",
-            "optimal_tests"
+            "optimal_tests",
+            "length_class"
           ]
         },
         {
@@ -49132,8 +48848,7 @@
           "fields": [
             "estimated_time_min",
             "story",
-            "result_truth",
-            "optimal_summary"
+            "result_truth"
           ]
         },
         {
@@ -49144,7 +48859,8 @@
             "difficulty",
             "estimated_time_min",
             "story",
-            "optimal_tests"
+            "optimal_tests",
+            "length_class"
           ]
         },
         {
@@ -49889,8 +49605,7 @@
           "fields": [
             "estimated_time_min",
             "story",
-            "result_truth",
-            "optimal_summary"
+            "result_truth"
           ]
         },
         {
@@ -49901,7 +49616,8 @@
             "difficulty",
             "estimated_time_min",
             "story",
-            "optimal_tests"
+            "optimal_tests",
+            "length_class"
           ]
         },
         {
@@ -50646,8 +50362,7 @@
           "fields": [
             "estimated_time_min",
             "story",
-            "result_truth",
-            "optimal_summary"
+            "result_truth"
           ]
         },
         {
@@ -50658,7 +50373,8 @@
             "difficulty",
             "estimated_time_min",
             "story",
-            "optimal_tests"
+            "optimal_tests",
+            "length_class"
           ]
         },
         {
@@ -51403,8 +51119,7 @@
           "fields": [
             "estimated_time_min",
             "story",
-            "result_truth",
-            "optimal_summary"
+            "result_truth"
           ]
         },
         {
@@ -51415,7 +51130,8 @@
             "difficulty",
             "estimated_time_min",
             "story",
-            "optimal_tests"
+            "optimal_tests",
+            "length_class"
           ]
         },
         {
@@ -52160,8 +51876,7 @@
           "fields": [
             "estimated_time_min",
             "story",
-            "result_truth",
-            "optimal_summary"
+            "result_truth"
           ]
         },
         {
@@ -52172,7 +51887,8 @@
             "difficulty",
             "estimated_time_min",
             "story",
-            "optimal_tests"
+            "optimal_tests",
+            "length_class"
           ]
         },
         {
@@ -52917,8 +52633,7 @@
           "fields": [
             "estimated_time_min",
             "story",
-            "result_truth",
-            "optimal_summary"
+            "result_truth"
           ]
         },
         {
@@ -52929,7 +52644,8 @@
             "difficulty",
             "estimated_time_min",
             "story",
-            "optimal_tests"
+            "optimal_tests",
+            "length_class"
           ]
         },
         {
@@ -53674,8 +53390,7 @@
           "fields": [
             "estimated_time_min",
             "story",
-            "result_truth",
-            "optimal_summary"
+            "result_truth"
           ]
         },
         {
@@ -53686,7 +53401,8 @@
             "difficulty",
             "estimated_time_min",
             "story",
-            "optimal_tests"
+            "optimal_tests",
+            "length_class"
           ]
         },
         {
@@ -54431,8 +54147,7 @@
           "fields": [
             "estimated_time_min",
             "story",
-            "result_truth",
-            "optimal_summary"
+            "result_truth"
           ]
         },
         {
@@ -54443,7 +54158,8 @@
             "difficulty",
             "estimated_time_min",
             "story",
-            "optimal_tests"
+            "optimal_tests",
+            "length_class"
           ]
         },
         {
@@ -55188,8 +54904,7 @@
           "fields": [
             "estimated_time_min",
             "story",
-            "result_truth",
-            "optimal_summary"
+            "result_truth"
           ]
         },
         {
@@ -55200,7 +54915,8 @@
             "difficulty",
             "estimated_time_min",
             "story",
-            "optimal_tests"
+            "optimal_tests",
+            "length_class"
           ]
         },
         {
@@ -55945,8 +55661,7 @@
           "fields": [
             "estimated_time_min",
             "story",
-            "result_truth",
-            "optimal_summary"
+            "result_truth"
           ]
         },
         {
@@ -55957,7 +55672,8 @@
             "difficulty",
             "estimated_time_min",
             "story",
-            "optimal_tests"
+            "optimal_tests",
+            "length_class"
           ]
         },
         {
@@ -56702,8 +56418,7 @@
           "fields": [
             "estimated_time_min",
             "story",
-            "result_truth",
-            "optimal_summary"
+            "result_truth"
           ]
         },
         {
@@ -56714,7 +56429,8 @@
             "difficulty",
             "estimated_time_min",
             "story",
-            "optimal_tests"
+            "optimal_tests",
+            "length_class"
           ]
         },
         {
@@ -57459,8 +57175,7 @@
           "fields": [
             "estimated_time_min",
             "story",
-            "result_truth",
-            "optimal_summary"
+            "result_truth"
           ]
         },
         {
@@ -57471,7 +57186,8 @@
             "difficulty",
             "estimated_time_min",
             "story",
-            "optimal_tests"
+            "optimal_tests",
+            "length_class"
           ]
         },
         {
@@ -58229,8 +57945,7 @@
           "fields": [
             "estimated_time_min",
             "story",
-            "result_truth",
-            "optimal_summary"
+            "result_truth"
           ]
         },
         {
@@ -58241,7 +57956,8 @@
             "difficulty",
             "estimated_time_min",
             "story",
-            "optimal_tests"
+            "optimal_tests",
+            "length_class"
           ]
         },
         {
@@ -66724,7 +66440,7 @@
   ],
   "bootUiState": "{\"activeId\":\"MTB_NSCLC_001_v0_6\",\"state\":{\"step\":\"intake\",\"viewed\":{\"intake\":true},\"selected\":{},\"primarySelected\":null,\"report\":null,\"followupLog\":[],\"mtb\":{\"text\":\"\",\"points\":{}},\"finalized\":false,\"lab\":{\"decision\":null,\"decisionFeedback\":null,\"rootCause\":{},\"capa\":{},\"audit\":{},\"finalized\":false},\"research\":{\"hypothesis\":null,\"pico\":null,\"design\":{},\"methods\":{},\"analysis\":{},\"pitfalls\":{},\"finalized\":false},\"gates\":{\"answers\":{},\"submitted\":false}},\"uiMode\":\"learning\"}",
   "environment": "Node VM, actual ordered JS sources, DOM test double; no visual browser assertion",
-  "root": "/workspace/scratch/1f1f0706e0d2/work/a6_8/candidate",
+  "root": "/workspace/scratch/1f1f0706e0d2/work/a6_9/candidate",
   "loaded": 100,
   "counts": {
     "cases": 91,
