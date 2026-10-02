@@ -1,98 +1,81 @@
 {
   "status": "PASS",
-  "total": 91,
-  "passed": 91,
+  "total": 93,
+  "passed": 93,
   "failed": [],
   "checks": [
     {
-      "name": "91 rows in identical canonical order V15_GATE_RECORDS",
+      "name": "verified original row count cases",
       "pass": true,
       "detail": null
     },
     {
-      "name": "only already documented normalized/curated differences V15_GATE_RECORDS",
-      "pass": true,
-      "detail": [
-        "LAB_RUN_002_v0_8"
-      ]
-    },
-    {
-      "name": "sole gate difference is LAB_RUN_002 count 2 to 3",
-      "pass": true,
-      "detail": [
-        {
-          "id": "LAB_RUN_002_v0_8",
-          "field": "gate_count",
-          "before": 2,
-          "after": 3
-        }
-      ]
-    },
-    {
-      "name": "old data literal absent V15_GATE_RECORDS",
+      "name": "verified original IDs and order cases",
       "pass": true,
       "detail": null
     },
     {
-      "name": "direct detached canonical projection V15_GATE_RECORDS",
+      "name": "old payload literal absent cases",
       "pass": true,
       "detail": null
     },
     {
-      "name": "91 rows in identical canonical order V15_METHOD_RULE_RECORDS",
+      "name": "direct detached projection occurs once cases",
       "pass": true,
       "detail": null
     },
     {
-      "name": "only already documented normalized/curated differences V15_METHOD_RULE_RECORDS",
-      "pass": true,
-      "detail": [
-        "MTB_CHOL_001_v1_3",
-        "MTB_CRC_003_v1_3",
-        "MTB_CRC_004_v1_3",
-        "MTB_OVAR_002_v1_3",
-        "MTB_PROST_001_v1_3",
-        "MTB_IO_003_v1_3",
-        "MTB_IO_004_v1_3",
-        "MTB_IO_005_v1_3",
-        "MTB_ANGIO_001_v1_3",
-        "MTB_GBM_ANGIO_001_v1_3",
-        "MTB_INV_001_v1_3",
-        "MET_METH_001_v1_3"
-      ]
-    },
-    {
-      "name": "old data literal absent V15_METHOD_RULE_RECORDS",
+      "name": "verified original row count DEEP_DIVE_CASES_V17",
       "pass": true,
       "detail": null
     },
     {
-      "name": "direct detached canonical projection V15_METHOD_RULE_RECORDS",
+      "name": "verified original IDs and order DEEP_DIVE_CASES_V17",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged remaining data literal cases",
+      "name": "old payload literal absent DEEP_DIVE_CASES_V17",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged remaining data literal DEEP_DIVE_CASES_V17",
+      "name": "direct detached projection occurs once DEEP_DIVE_CASES_V17",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged A6.4 projection V15_META_RECORDS",
+      "name": "initial Deep-Dive selector preserves exactly eight records",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged A6.4 projection V15_CAP_RECORDS",
+      "name": "case false-course compatibility matches existing adapter",
       "pass": true,
       "detail": null
     },
     {
-      "name": "all named renderer/state/scoring helpers byte-identical",
+      "name": "unchanged V15 projection V15_META_RECORDS",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged V15 projection V15_CAP_RECORDS",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged V15 projection V15_GATE_RECORDS",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged V15 projection V15_METHOD_RULE_RECORDS",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "all named renderer/state/scoring/update helpers byte-identical",
       "pass": true,
       "detail": 619
     },
@@ -102,7 +85,7 @@
       "detail": null
     },
     {
-      "name": "only main script body changes",
+      "name": "only main inline script changes",
       "pass": true,
       "detail": [
         2
@@ -119,7 +102,7 @@
       "detail": null
     },
     {
-      "name": "A4b precedes main runtime and all four projections",
+      "name": "A4b precedes both data factories",
       "pass": true,
       "detail": null
     },
@@ -144,17 +127,17 @@
       "detail": null
     },
     {
-      "name": "all CSS blocks byte-identical",
+      "name": "all CSS blocks outside replaced data byte-identical",
       "pass": true,
       "detail": 54
     },
     {
-      "name": "asset path literals byte-identical",
+      "name": "asset path literals outside replaced data byte-identical",
       "pass": true,
       "detail": 17
     },
     {
-      "name": "no new observers/wrappers",
+      "name": "no added observers/wrappers",
       "pass": true,
       "detail": null
     },
@@ -479,24 +462,29 @@
       "detail": null
     },
     {
-      "name": "inverse two-replacement patch exactly reconstructs confirmed A6.4 index",
+      "name": "inverse two-replacement patch exactly reconstructs confirmed A6.5 index",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "base hash matches the delivered A6.5 index",
       "pass": true,
       "detail": null
     }
   ],
   "changes": {
-    "base": "user browser-confirmed complete A6.4",
+    "base": "user-confirmed complete A6.5",
     "changed": [
       "index.html"
     ],
-    "old_index_bytes": 3994644,
-    "new_index_bytes": 3884089,
-    "bytes_removed": 110555,
-    "base_sha256": "15c2f523aca9a6d86082534f0b6ebba9cf55d68ff4018ed74200500605ce7260",
-    "sha256": "a1d542772aa5cec64802356bdb951cb74d7b782719d840ce222872f5d9db1d83",
+    "old_index_bytes": 3884089,
+    "new_index_bytes": 3398023,
+    "bytes_removed": 486066,
+    "base_sha256": "a1d542772aa5cec64802356bdb951cb74d7b782719d840ce222872f5d9db1d83",
+    "sha256": "cc280428598346cb8f5464288a8cd188ef95137ffc3fc2f103dec56ef789fca4",
     "projection_rows": {
-      "V15_GATE_RECORDS": 91,
-      "V15_METHOD_RULE_RECORDS": 91
+      "cases": 91,
+      "DEEP_DIVE_CASES_V17": 8
     },
     "load_order": [
       "rc2_A5_courses.js",
@@ -552,9 +540,10 @@
       "v250b_signature_taxonomy_freeze.js"
     ],
     "projection_expressions": {
-      "V15_GATE_RECORDS": "window.MolPathCanonicalDataA4b.cases.map(record=>JSON.parse(JSON.stringify(record.evaluation.clinical_reasoning_gate)))",
-      "V15_METHOD_RULE_RECORDS": "window.MolPathCanonicalDataA4b.cases.map(record=>JSON.parse(JSON.stringify(record.evaluation.method_rules)))"
+      "cases": "window.MolPathCanonicalDataA4b.cases.map(record=>{const c=JSON.parse(JSON.stringify(record.case));if(c.course_case===false)delete c.course_case;return c;})",
+      "DEEP_DIVE_CASES_V17": "[\"MTB_NSCLC_001_v0_6\",\"MTB_NSCLC_002_v1_3\",\"MTB_CRC_002_v1_3\",\"MTB_OVAR_002_v1_3\",\"MET_NGS_003_v1_0\",\"LAB_RUN_002_v0_8\",\"LAB_POST_001_v1_0\",\"RES_HYP_001_v0_9\"].map(id=>JSON.parse(JSON.stringify(window.MolPathCanonicalDataA4b.cases.find(record=>record.id===id).deep_dive)))"
     },
-    "scope": "two remaining V15 record literals become detached canonical projections; existing update paths and all other runtime files unchanged"
+    "compatibility": "case.course_case=false omitted exactly as in existing A5 adapter; initial eight Deep-Dive IDs and their order retained",
+    "scope": "two data literals replaced; no existing update path, load order, renderer, dictionary or other runtime file changed"
   }
 }

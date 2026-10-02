@@ -1,0 +1,32 @@
+MolPath rc2 A6.6 — Delta anwenden
+Stand 2026-10-02 | Basis: dein vollständig funktionierender A6.5-Build
+
+Es wird genau EINE Laufzeitdatei ersetzt: index.html.
+A6.5 ist von dir bestätigt. A6.6 besteht die lokalen Quell-/Runtime-Prüfungen;
+der eigene A6.6-Browser-Smoke bleibt offen.
+
+1. Sichere die bisherige index.html aus dem vollständigen A6.5-Ordner.
+2. Entpacke dieses Delta separat. Der Basis-Hash steht im Manifest. Mit Python:
+   python qa/verify_a6_6.py before /Pfad/zum/vollstaendigen/A6_5_Build
+3. Kopiere nur die neue index.html in diesen vollständigen Ordner und ersetze
+   die alte Datei. Die vorhandenen JS-, Sprach-, Asset- und PDF-Dateien bleiben
+   erforderlich. Es wird kein älteres Delta erneut eingespielt. Begleitdokumente
+   und qa/ sind keine Laufzeit-Abhängigkeiten.
+4. Bei Bedarf prüfen:
+   python qa/verify_a6_6.py after /Pfad/zum/vollstaendigen/A6_6_Build
+5. Ctrl+F5. Kurzer A6.6-Browser-Smoke:
+   - Startseite und Fallbibliothek: weiterhin 91 Fälle, Signature- und Kursfilter.
+   - Je ein MTB-, LAB-, RES- und Methodenfall: Auftrag, Reasoning, Methodenwahl,
+     Ergebnisdarstellung und Abschlussauswertung öffnen.
+   - NSCLC2 / CRC2 / OVAR2: bestehende Hybrid-Berichte mit A6.5 vergleichen.
+   - DE -> EN -> DE; wenn möglich kurz AR oder FA öffnen.
+   - Top-Version/Titel bleiben v2.6.0-rc1; Konsole ohne neue Fehler.
+
+Rollback: gesicherte A6.5-index.html wiederherstellen und neu laden.
+
+Ergänzende lokale QA mit Node.js:
+node qa/syntax_qa.js /Pfad/zum/vollstaendigen/Build
+node qa/runtime_qa.js /Pfad/zum/vollstaendigen/Build
+Der Runtime-Runner führt echte JS-Quellen mit einem DOM-Testdouble aus und
+ersetzt keinen Browser-Smoke. contentTrace protokolliert die Registrierung;
+displayPhases und reportPhases enthalten die vollständigen Daten-/HTML-Hashes.

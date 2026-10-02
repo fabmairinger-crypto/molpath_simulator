@@ -30,21 +30,29 @@ parseNodes(html.replace(/<script\b[^>]*>[\s\S]*?<\/script\s*>/g,'').replace(/<st
 const ctx=vm.createContext({document:doc,console:{log(...v){logs.push(v.map(String).join(' '))},warn(...v){logs.push('WARN '+v.map(String).join(' '))},error(...v){logs.push('ERROR '+v.map(String).join(' '))}},setTimeout:(f,m)=>schedule(f,m),setInterval:(f,m)=>schedule(f,m,true),clearTimeout:clearTask,clearInterval:clearTask,requestAnimationFrame:f=>schedule(f,16),cancelAnimationFrame:clearTask,localStorage:{getItem:k=>storage.get(k)||null,setItem:(k,v)=>storage.set(k,String(v)),removeItem:k=>storage.delete(k)},MutationObserver:class{constructor(fn){this.fn=fn}observe(){}disconnect(){}},NodeFilter:{SHOW_TEXT:4},Node,Element:Node,HTMLElement:Node,Event:class{constructor(type,o){this.type=type;Object.assign(this,o)}preventDefault(){}stopPropagation(){}},navigator:{language:'de',userAgent:'MolPath QA DOM test double'},location:{href:'http://qa.local/index.html',protocol:'http:',hostname:'qa.local',pathname:'/index.html'},innerWidth:1280,innerHeight:900,devicePixelRatio:1,performance:{now:()=>clock},getComputedStyle:n=>({...n.style,display:n.style.display||'block'}),structuredClone,URL,Blob,TextEncoder,TextDecoder,Map,Set,WeakMap,WeakSet,atob:s=>Buffer.from(s,'base64').toString('binary'),btoa:s=>Buffer.from(s,'binary').toString('base64'),fetch:()=>Promise.reject(new Error('network disabled in source QA'))});
 ctx.window=ctx;ctx.globalThis=ctx;ctx.self=ctx;ctx.addEventListener=doc.addEventListener;ctx.removeEventListener=()=>{};ctx.scrollTo=()=>{};ctx.matchMedia=()=>({matches:false,addEventListener(){},removeEventListener(){},addListener(){}});ctx.open=()=>({document:{open(){},write(){},close(){}},focus(){},print(){}});
 const loaded=[];
-const authorityTrace=[];
-function traceAuthority(name){
- try{
-  const state=vm.runInContext(`(typeof V15_GATE_RECORDS!=='undefined'&&typeof V15_METHOD_RULE_RECORDS!=='undefined')?JSON.stringify({gate:V15_GATE_RECORDS,method:V15_METHOD_RULE_RECORDS,deep:typeof DEEP_DIVE_MAP_V17!=='undefined'?DEEP_DIVE_MAP_V17['LAB_RUN_002_v0_8']?.reasoning_gate_upgrade:[],canonical:MolPathCanonicalDataA4b.cases.map(r=>({id:r.id,gate:r.evaluation.clinical_reasoning_gate,method:r.evaluation.method_rules})),integrated:!!window.MolPathCanonicalIntegrationA6}):null`,ctx);
-  if(!state)return;
-  const value=JSON.parse(state),g=value.gate.find(r=>r.case_id==='LAB_RUN_002_v0_8'),map=new Map(value.canonical.map(r=>[r.id,r]));
-  const gateDiff=value.gate.filter(r=>JSON.stringify(r)!==JSON.stringify(map.get(r.case_id).gate)).map(r=>r.case_id);
-  const methodDiff=value.method.filter(r=>JSON.stringify(r)!==JSON.stringify(map.get(r.case_id).method)).map(r=>r.case_id);
-  const record={source:name,gateCount:g.gate_count,deepQuestionCount:value.deep?.length,gateDiff,methodDiff,integrated:value.integrated};
-  const prior=authorityTrace.at(-1);
-  if(!prior||JSON.stringify({...prior,source:null})!==JSON.stringify({...record,source:null})||name.includes('v240e_lab_run_002_qa_hotfix')||name==='v260rc1_case_consistency_curation_i18n.js'||name==='rc2_A6_canonical_integration.js')authorityTrace.push(record);
- }catch(error){throw new Error('authority trace failed: '+error.message)}
+const contentTrace=[];
+let lastContent=null;
+function traceContent(name){
+ const raw=vm.runInContext(`typeof cases!=='undefined'?JSON.stringify({cases,deep:typeof DEEP_DIVE_CASES_V17!=='undefined'?DEEP_DIVE_CASES_V17:[],canonical:MolPathCanonicalDataA4b.cases,integrated:!!window.MolPathCanonicalIntegrationA6}):null`,ctx,{timeout:10000});
+ if(!raw)return;
+ const value=JSON.parse(raw);
+ const target={cases:value.canonical.map(r=>{const c=r.case;if(c.course_case===false)delete c.course_case;return c}),deep:value.canonical.map(r=>r.deep_dive)};
+ function differences(rows,wanted,key){
+  const map=new Map(wanted.map(row=>[row[key],row]));
+  return rows.flatMap(row=>{
+   const other=map.get(row[key]);
+   if(!other)return [{id:row[key],fields:['__missing']}];
+   const fields=[...new Set([...Object.keys(row),...Object.keys(other)])].filter(k=>JSON.stringify(row[k])!==JSON.stringify(other[k]));
+   return fields.length?[{id:row[key],fields}]:[];
+  });
+ }
+ const record={source:name,caseCount:value.cases.length,deepCount:value.deep.length,caseOrder:value.cases.map(c=>c.id),deepOrder:value.deep.map(d=>d.case_id),caseDiff:differences(value.cases,target.cases,'id'),deepDiff:differences(value.deep,target.deep,'case_id'),integrated:value.integrated};
+ if(lastContent){record.caseWrites=differences(value.cases,lastContent.cases,'id');record.deepWrites=differences(value.deep,lastContent.deep,'case_id');}
+ contentTrace.push(record);
+ lastContent={cases:value.cases,deep:value.deep};
 }
 
-function run(code,name){try{vm.runInContext(code,ctx,{filename:name,timeout:10000});loaded.push(name);traceAuthority(name)}catch(e){errors.push({stage:'load',file:name,message:e.stack.split('\n').slice(0,6).join('\n')});}}
+function run(code,name){try{vm.runInContext(code,ctx,{filename:name,timeout:10000});loaded.push(name);traceContent(name)}catch(e){errors.push({stage:'load',file:name,message:e.stack.split('\n').slice(0,6).join('\n')});}}
 function loadFile(src){if(src==='i18n/qa.js'){loaded.push(src+' (unchanged diagnostic layer omitted)');return}const p=path.join(root,src);if(!fs.existsSync(p)){errors.push({stage:'missing',file:src});return}doc.currentScript={src:'http://qa.local/'+src};run(fs.readFileSync(p,'utf8'),src);doc.currentScript=null;}
 doc.write=s=>{for(const m of s.matchAll(/<script\b[^>]*src=["']([^"']+)["'][^>]*>/g))loadFile(m[1].replace('http://qa.local/',''))};
 let inline=0;
@@ -57,6 +65,8 @@ function changed(a,b){a=JSON.parse(a);b=JSON.parse(b);const out={};for(const k o
 const preBoot=snapshot();doc.readyState='interactive';let bootIndex=0;for(const fn of listeners.get('DOMContentLoaded')||[]){try{vm.runInContext('qaBootCallback()',Object.assign(ctx,{qaBootCallback:fn}),{timeout:5000});}catch(e){errors.push({stage:'DOMContentLoaded',callback:fn.toString().slice(0,150),message:e.stack.split('\n').slice(0,5).join('\n')})}if(++bootIndex%20===0)console.log('boot callbacks',bootIndex);}
 doc.readyState='complete';flush(1500);console.log('boot completed, errors',errors.length,'pending timers',tasks.length);
 const afterBoot=snapshot(),checks=[];
+ctx.qaSha256=v=>digest(v);
+const bootUiState=evaluate("JSON.stringify({activeId:activeCase?.id,state,uiMode})");
 evaluate(fs.readFileSync(path.join(__dirname,'contract_qa.js'),'utf8'));
 function check(name,ok,detail){checks.push({name,pass:!!ok,detail})}
 check('all source scripts execute',errors.filter(e=>e.stage==='load'||e.stage==='missing').length===0,errors.filter(e=>e.stage==='load'||e.stage==='missing'));
@@ -64,13 +74,16 @@ check('canonical data stable across boot callbacks',preBoot===afterBoot,changed(
 const counts=evaluate('({cases:cases.length,deep:DEEP_DIVE_CASES_V17.length,signature:cases.filter(c=>c.signature_case).length,methods:MolPathMethodFocusRegistry.driverCount,courses:COURSES_V16.length,courseCases:new Set(COURSES_V16.flatMap(c=>c.cases)).size})');
 check('counts 91/91/30/44/5/23',JSON.stringify(counts)===JSON.stringify({cases:91,deep:91,signature:30,methods:44,courses:5,courseCases:23}),counts);
 check('canonical integration self-check',evaluate('MolPathCanonicalIntegrationA6.pass'),evaluate('MolPathCanonicalIntegrationA6.checks'));
-let prior=afterBoot;const phases=[];
+let prior=afterBoot;const phases=[],displayPhases=[];
 for(const lang of ['de','en','ro','el','es','fr','ru','tr','ar','fa','uk','de']){
  console.log('language QA',lang);
  try{evaluate(`MolPathI18n.setLang(${JSON.stringify(lang)})`);flush(clock+200)}catch(e){errors.push({stage:'setLang',lang,message:e.stack.split('\n').slice(0,5).join('\n')})}
  const snap=snapshot(),diff=changed(prior,snap);phases.push({kind:'language',lang,diff,title:doc.title,version:ctx.MOLPATH_APP_VERSION});check('stable data after language '+lang,Object.keys(diff).length===0,diff);prior=snap;
  check('stable version after language '+lang,doc.title==='MolPath Simulator '+ctx.MolPathVersion.app&&ctx.MOLPATH_APP_VERSION===ctx.MolPathVersion.app,{title:doc.title,version:ctx.MOLPATH_APP_VERSION});
  const contract=evaluate('qaDisplayContracts()');check('detached semantic display contracts '+lang,contract.issues.length===0,contract);
+ const display=JSON.parse(evaluate('JSON.stringify(cases.map(c=>({id:c.id,case:MolPathPresentationA6.case(c.id),deep:MolPathPresentationA6.deep(c.id),meta:MolPathPresentationA6.meta(c.id),gate:MolPathPresentationA6.gate(c.id)})))'));
+ const records=display.map(row=>({id:row.id,...Object.fromEntries(['case','deep','meta','gate'].map(key=>[key,digest(JSON.stringify(row[key]))]))}));
+ displayPhases.push({lang,hash:digest(JSON.stringify(display)),records});
  const badges=['v20bVersion','versionBadge'].map(id=>({id,present:!!doc.getElementById(id),text:doc.getElementById(id)?.textContent}));
  const visible=badges.find(b=>b.id==='v20bVersion'&&b.present)||badges.find(b=>b.present);
  check('visible version badge follows authority '+lang,visible?.text===ctx.MolPathVersion.app,badges);
@@ -102,7 +115,7 @@ check('exact documented 12-case curation',JSON.stringify(curated)===JSON.stringi
 check('all 12 method rules remain curated',evaluate(`(${JSON.stringify(expectedCuration)}).every(id=>V15_METHOD_RULE_MAP[id].method_review_flag==='curated 2026-09-25')`),null);
 const metadata=evaluate("['LAB_PRE_001_v1_3','RES_VAL_001_v1_3','RES_ETH_002_v1_3','RES_ROLE_001_v1_3'].map(id=>{const c=cases.find(c=>c.id===id);return [id,c.difficulty,c.estimated_time_min,DEEP_DIVE_MAP_V17[id].estimated_minutes_deep]})");
 check('four verified metadata corrections',JSON.stringify(metadata)===JSON.stringify([['LAB_PRE_001_v1_3','intermediate','10–15','10–15'],['RES_VAL_001_v1_3','advanced','15–18','15–18'],['RES_ETH_002_v1_3','advanced','15–18','15–18'],['RES_ROLE_001_v1_3','advanced','15–18','15–18']]),metadata);
-const result={authorityTrace,environment:'Node VM, actual ordered JS sources, DOM test double; no visual browser assertion',root,loaded:loaded.length,counts,checks,total:checks.length,passed:checks.filter(x=>x.pass).length,failed:checks.filter(x=>!x.pass),preBootHash:digest(preBoot),afterBootHash:digest(afterBoot),finalHash:digest(prior),bootDiff:changed(preBoot,afterBoot),phases,reportPhases,errors,logs:logs.filter(x=>x.startsWith('ERROR')||x.startsWith('WARN')).slice(0,120)};
+const result={contentTrace,displayPhases,bootUiState,environment:'Node VM, actual ordered JS sources, DOM test double; no visual browser assertion',root,loaded:loaded.length,counts,checks,total:checks.length,passed:checks.filter(x=>x.pass).length,failed:checks.filter(x=>!x.pass),preBootHash:digest(preBoot),afterBootHash:digest(afterBoot),finalHash:digest(prior),bootDiff:changed(preBoot,afterBoot),phases,reportPhases,errors,logs:logs.filter(x=>x.startsWith('ERROR')||x.startsWith('WARN')).slice(0,120)};
 const out=path.join(path.dirname(root),path.basename(root)+'_runtime_qa.json');fs.writeFileSync(out,JSON.stringify(result,null,2));
 console.log(JSON.stringify({loaded:result.loaded,counts,total:result.total,passed:result.passed,failed:result.failed.slice(0,12),bootDiff:result.bootDiff,errors:errors.slice(0,10),warnErrorLogs:result.logs.slice(0,10),report:out},null,2));
 if(result.failed.length)process.exitCode=1;

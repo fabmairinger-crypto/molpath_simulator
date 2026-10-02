@@ -1,0 +1,52 @@
+{
+  "package": "MolPath_rc2_A6_6_delta",
+  "status": "SOURCE_PROJECTION_SYNTAX_RUNTIME_PASS_BROWSER_OPEN",
+  "base_browser_smoke": "CONFIRMED_BY_USER for A6.5",
+  "a6_6_browser_smoke": "NOT_RUN",
+  "source": {
+    "passed": 93,
+    "total": 93
+  },
+  "projection_and_base_comparison": {
+    "passed": 38,
+    "total": 38
+  },
+  "syntax": {
+    "units": 99,
+    "errors": []
+  },
+  "runtime": {
+    "passed": 254,
+    "total": 254,
+    "errors": [],
+    "counts": {
+      "cases": 91,
+      "deep": 91,
+      "signature": 30,
+      "methods": 44,
+      "courses": 5,
+      "courseCases": 23
+    },
+    "pre_boot_hash": "a767970c2b67c0ee4066ff8794fe36f71255c497aeb7f9d8fc9e660d901f83d0",
+    "after_boot_hash": "a767970c2b67c0ee4066ff8794fe36f71255c497aeb7f9d8fc9e660d901f83d0",
+    "final_hash": "a767970c2b67c0ee4066ff8794fe36f71255c497aeb7f9d8fc9e660d901f83d0"
+  },
+  "a6_5_comparison_run": {
+    "passed": 254,
+    "total": 254,
+    "errors": []
+  },
+  "display_comparison": {
+    "language_steps": 12,
+    "records_per_step": 364,
+    "exact_record_and_string_hash_equality": true
+  },
+  "report_comparison": "six existing hybrid paths, four languages; absent/partial/complete/final exact HTML SHA256 equality",
+  "limits": [
+    "The local VM uses a DOM test double: no true browser layout, live MutationObserver behavior or binary image rendering.",
+    "All unchanged executable inputs reuse the verified A6.5 staging fixture. The full rc1 archive previously failed materialization with HTTP 502.",
+    "The 11-language fixture reuses existing uploaded language files and existing UK patch languages/core/uk; it is not bundled in the payload.",
+    "i18n/qa.js remains an unchanged diagnostic layer omitted from the VM runner.",
+    "Binary assets, FOM PDF/pages and full local build identity are not verified."
+  ]
+}

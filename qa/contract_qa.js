@@ -39,7 +39,7 @@ function qaHybridReports(){
     state.selected=new Set(wanted);state.report=buildReport();
     const full=renderReport(),fullKind=state.report.kind;
     state.finalized=true;const final=renderMtb();
-    rows.push({id,pass:typeof absent==='string'&&absent.length>0&&partialKind==='partial'&&fullKind==='complete'&&[partial,full,final].every(s=>typeof s==='string'&&s.length>0&&!s.includes('undefined')&&!s.includes('BRCA2 c.X p.Y')),partialKind,fullKind,bytes:{absent:absent.length,partial:partial.length,full:full.length,final:final.length},images:{absent:(absent.match(/<img\b/g)||[]).length,partial:(partial.match(/<img\b/g)||[]).length,full:(full.match(/<img\b/g)||[]).length}});
+    rows.push({id,pass:typeof absent==='string'&&absent.length>0&&partialKind==='partial'&&fullKind==='complete'&&[partial,full,final].every(s=>typeof s==='string'&&s.length>0&&!s.includes('undefined')&&!s.includes('BRCA2 c.X p.Y')),partialKind,fullKind,hashes:{absent:qaSha256(absent),partial:qaSha256(partial),full:qaSha256(full),final:qaSha256(final)},bytes:{absent:absent.length,partial:partial.length,full:full.length,final:final.length},images:{absent:(absent.match(/<img\b/g)||[]).length,partial:(partial.match(/<img\b/g)||[]).length,full:(full.match(/<img\b/g)||[]).length}});
   }
   // Both MLH1 spellings must lead to the same CRC completeness.
   for(const id of ids.slice(0,1))for(const alias of ['mlh1_methylation','methylation_mlh1']){

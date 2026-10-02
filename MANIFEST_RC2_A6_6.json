@@ -1,0 +1,130 @@
+{
+  "package": "MolPath_rc2_A6_6_delta",
+  "date": "2026-10-02",
+  "status": "INTEGRATION_CANDIDATE",
+  "base": "working complete rc2 A6.5; user confirmed it works and authorized continuation",
+  "base_browser_confirmation": "User confirmed A6.5 at 2026-10-02T13:33:21+02:00: \"super läuft go\". This does not constitute an A6.6 browser test.",
+  "payload_file_count": 1,
+  "payload": [
+    {
+      "path": "index.html",
+      "base_bytes": 3884089,
+      "base_sha256": "a1d542772aa5cec64802356bdb951cb74d7b782719d840ce222872f5d9db1d83",
+      "bytes": 3398023,
+      "sha256": "cc280428598346cb8f5464288a8cd188ef95137ffc3fc2f103dec56ef789fca4",
+      "changes": [
+        "91-case base literal replaced by detached canonical compatibility projection",
+        "8-record initial Deep-Dive literal replaced by detached canonical projection preserving original IDs/order"
+      ]
+    }
+  ],
+  "required_unchanged_inputs": [
+    {
+      "path": "rc2_A4b_canonical_cases_lossless.js",
+      "sha256": "95f5016ea6ec491b7373821204ee5e0c58923e13fcfca261764a51d45f3160a5"
+    },
+    {
+      "path": "rc2_A5_courses.js",
+      "sha256": "ff14647c1cdcc5e095abea4fdbf90981db84d49f0f0906d658805b23650cf343"
+    },
+    {
+      "path": "rc2_A5_method_focus.js",
+      "sha256": "359f66f091e48e898c3550237d5d4e012424aac854196efee669ef223efdb5fe"
+    },
+    {
+      "path": "rc2_A5_data_adapter.js",
+      "sha256": "bbe02ab75a948d8ae99e93d028c363fa471f7e8267ca0972a568a02ef47c00b5"
+    },
+    {
+      "path": "rc2_A6_canonical_integration.js",
+      "sha256": "53b86927ae49ebb5c44d5d77189def5dacd48f21f687d085016d60cd4735c9e7"
+    },
+    {
+      "path": "molpath_version.js",
+      "sha256": "1ce85d3fb12d59bb36c2821364df3da46ba215e016cb4754be6c13a8a4e38095"
+    },
+    {
+      "path": "v260rc1_case_consistency_curation_i18n.js",
+      "sha256": "72bc0c410668d2292456372b4a68dc0e0016fbe8d78a0f30d5e3c5c1c12ab5ef"
+    },
+    {
+      "path": "v250b_signature_taxonomy_freeze.js",
+      "sha256": "b001c6eb89ac916be7c4ea0fd94857af1a98a6e4d921cc98e81150f65e6a9f84"
+    }
+  ],
+  "load_order": [
+    "rc2_A5_courses.js",
+    "rc2_A4b_canonical_cases_lossless.js",
+    "molpath_version.js",
+    "rc2_A5_data_adapter.js",
+    "i18n/languages.js",
+    "i18n/legacy/legacy_v223_v224_runtime.js",
+    "i18n/legacy/legacy_v230c_signature_deepdive.js",
+    "i18n/legacy/legacy_v240t_signature_i18n.js",
+    "i18n/legacy/legacy_v240z_lab_i18n.js",
+    "i18n/legacy/legacy_v240z7_res_t1_i18n.js",
+    "i18n/legacy/legacy_v240z8_res_t2_i18n.js",
+    "i18n/legacy/legacy_v240z9_res_t3_i18n.js",
+    "i18n/legacy/legacy_v240z10_res_t4_i18n.js",
+    "i18n/legacy/legacy_v240z10a_res_t4_hotfix.js",
+    "v240z13_crc002_flagship.js",
+    "v240z14_crc001_flagship.js",
+    "v240z15_nsclc002_flagship.js",
+    "v240z16_metngs003_flagship.js",
+    "v240z17_ovar001_flagship.js",
+    "v240z18_ovar002_flagship.js",
+    "v240z19_cns001_flagship.js",
+    "v240z20_io001_flagship.js",
+    "v250b_labpost001_flagship.js",
+    "v250b_labdoc001_flagship.js",
+    "v250b_reshyp001_flagship.js",
+    "v250b_reseth001_flagship.js",
+    "v250b_responsive_shell.js",
+    "v250b_asset_modal_hotfix.js",
+    "v250b_startup_cover_hotfix.js",
+    "v250b_home_screen.js",
+    "rc2_A5_method_focus.js",
+    "v250b_method_focus_filter.js",
+    "v250b_metngs001_course_flagship.js",
+    "v250b_metngs002_course_flagship.js",
+    "v250b_metrna001_course_flagship.js",
+    "v250b_metlb001_course_flagship.js",
+    "v250b_metngs004_course_flagship.js",
+    "v250b_labrun001_course_flagship.js",
+    "v250b_labpre001_course_flagship.js",
+    "v250b_resimpl001_course_flagship.js",
+    "v250b_reseth002_course_flagship.js",
+    "v250b_resrole001_course_flagship.js",
+    "v260rc1_mtb_cns_003_asset_upgrade.js",
+    "v260rc1_mtb_hem_001_asset_upgrade.js",
+    "v260rc1_lab_run_004_asset_upgrade.js",
+    "v260rc1_mtb_cns_003_mtb_hem_001_i18n_consolidation.js",
+    "v260rc1_met_fish_001_asset_i18n_upgrade.js",
+    "v260rc1_res_val_001_signature_asset_i18n_upgrade.js",
+    "v260rc1_case_consistency_curation_i18n.js",
+    "rc2_A6_canonical_integration.js",
+    "v250b_signature_taxonomy_freeze.js"
+  ],
+  "source_bytes_removed": 486066,
+  "projection_rows": {
+    "cases": 91,
+    "DEEP_DIVE_CASES_V17": 8
+  },
+  "initial_deep_ids": [
+    "MTB_NSCLC_001_v0_6",
+    "MTB_NSCLC_002_v1_3",
+    "MTB_CRC_002_v1_3",
+    "MTB_OVAR_002_v1_3",
+    "MET_NGS_003_v1_0",
+    "LAB_RUN_002_v0_8",
+    "LAB_POST_001_v1_0",
+    "RES_HYP_001_v0_9"
+  ],
+  "case_compatibility": "omit course_case=false exactly as in the existing A5 adapter; true course cases retained",
+  "registration": "same case and Deep-Dive IDs, order and counts at every recorded script checkpoint",
+  "app_version": "v2.6.0-rc1; unchanged MolPathVersion.app",
+  "integration_module": "existing A6.3 integration module retained byte-identically; remains the final authority after retained historical writers",
+  "browser_smoke": "NOT_RUN for A6.6",
+  "apply": "replace index.html in the complete confirmed A6.5 build; preserve all other runtime files and assets",
+  "final_comparison": "all three data snapshot hashes, boot UI state, 12 full display-record snapshots and exact report HTML hashes match A6.5"
+}
