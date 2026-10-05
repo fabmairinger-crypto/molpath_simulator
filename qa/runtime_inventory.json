@@ -1,0 +1,290 @@
+[
+  {
+    "id": "main_2",
+    "bytes": 1828589,
+    "setTimeout": 2,
+    "setInterval": 0,
+    "observer": 0,
+    "render_assignments": 17
+  },
+  {
+    "id": "v20b1LayoutHotfix",
+    "bytes": 14700,
+    "setTimeout": 0,
+    "setInterval": 0,
+    "observer": 0,
+    "render_assignments": 1
+  },
+  {
+    "id": "v20b5SafeLayoutPatch",
+    "bytes": 8874,
+    "setTimeout": 0,
+    "setInterval": 0,
+    "observer": 0,
+    "render_assignments": 1
+  },
+  {
+    "id": "v21Batch1ContentExpansionFix",
+    "bytes": 1407,
+    "setTimeout": 0,
+    "setInterval": 0,
+    "observer": 0,
+    "render_assignments": 0
+  },
+  {
+    "id": "v213ComplexPhaseBundlePatch",
+    "bytes": 31895,
+    "setTimeout": 0,
+    "setInterval": 0,
+    "observer": 0,
+    "render_assignments": 0
+  },
+  {
+    "id": "v214CaseSwitchWireFix",
+    "bytes": 6137,
+    "setTimeout": 0,
+    "setInterval": 0,
+    "observer": 0,
+    "render_assignments": 1
+  },
+  {
+    "id": "v216OvarPhaseScoreFix",
+    "bytes": 7848,
+    "setTimeout": 0,
+    "setInterval": 0,
+    "observer": 0,
+    "render_assignments": 0
+  },
+  {
+    "id": "v230UiPolishPatch",
+    "bytes": 5743,
+    "setTimeout": 3,
+    "setInterval": 0,
+    "observer": 1,
+    "render_assignments": 1
+  },
+  {
+    "id": "v230bSignatureDeepDiveExpansion",
+    "bytes": 1791,
+    "setTimeout": 0,
+    "setInterval": 0,
+    "observer": 0,
+    "render_assignments": 0
+  },
+  {
+    "id": "v240b_nsclc_premium_hotfix",
+    "bytes": 14898,
+    "setTimeout": 1,
+    "setInterval": 0,
+    "observer": 0,
+    "render_assignments": 0
+  },
+  {
+    "id": "v240c_nsclc_premium_ui_polish",
+    "bytes": 7961,
+    "setTimeout": 1,
+    "setInterval": 0,
+    "observer": 0,
+    "render_assignments": 0
+  },
+  {
+    "id": "v240e_lab_run_002_qa_hotfix",
+    "bytes": 9854,
+    "setTimeout": 1,
+    "setInterval": 0,
+    "observer": 0,
+    "render_assignments": 0
+  },
+  {
+    "id": "v240f_lab_run_002_premium",
+    "bytes": 38600,
+    "setTimeout": 2,
+    "setInterval": 0,
+    "observer": 1,
+    "render_assignments": 0
+  },
+  {
+    "id": "v240h_res_omics_001_qa_hotfix",
+    "bytes": 5558,
+    "setTimeout": 2,
+    "setInterval": 0,
+    "observer": 0,
+    "render_assignments": 0
+  },
+  {
+    "id": "v240i_res_omics_001_premium",
+    "bytes": 41413,
+    "setTimeout": 2,
+    "setInterval": 0,
+    "observer": 1,
+    "render_assignments": 1
+  },
+  {
+    "id": "v240l_performance_signature_filter",
+    "bytes": 6360,
+    "setTimeout": 1,
+    "setInterval": 0,
+    "observer": 1,
+    "render_assignments": 0
+  },
+  {
+    "id": "v240m_a1_deepdive_patch",
+    "bytes": 8909,
+    "setTimeout": 1,
+    "setInterval": 0,
+    "observer": 0,
+    "render_assignments": 0
+  },
+  {
+    "id": "v240n_a2_crc_deepdives",
+    "bytes": 1742,
+    "setTimeout": 1,
+    "setInterval": 0,
+    "observer": 0,
+    "render_assignments": 0
+  },
+  {
+    "id": "v240o_a3_hrd_deepdives",
+    "bytes": 1761,
+    "setTimeout": 1,
+    "setInterval": 0,
+    "observer": 0,
+    "render_assignments": 0
+  },
+  {
+    "id": "v240p_a4_io_deepdives",
+    "bytes": 1769,
+    "setTimeout": 1,
+    "setInterval": 0,
+    "observer": 0,
+    "render_assignments": 0
+  },
+  {
+    "id": "v240q_a5_a6_mtb_freeze",
+    "bytes": 1889,
+    "setTimeout": 1,
+    "setInterval": 0,
+    "observer": 0,
+    "render_assignments": 0
+  },
+  {
+    "id": "v240r_signature_legal_hotfix",
+    "bytes": 9767,
+    "setTimeout": 1,
+    "setInterval": 0,
+    "observer": 0,
+    "render_assignments": 0
+  },
+  {
+    "id": "v240s-met-deepdive",
+    "bytes": 1907,
+    "setTimeout": 1,
+    "setInterval": 0,
+    "observer": 0,
+    "render_assignments": 0
+  },
+  {
+    "id": "v240u_lab_b1_preanalytics_deepdive_patch",
+    "bytes": 1775,
+    "setTimeout": 1,
+    "setInterval": 0,
+    "observer": 0,
+    "render_assignments": 0
+  },
+  {
+    "id": "v240v_lab_b2_run_qc_deepdive_patch",
+    "bytes": 1771,
+    "setTimeout": 1,
+    "setInterval": 0,
+    "observer": 0,
+    "render_assignments": 0
+  },
+  {
+    "id": "v240w_lab_b3_postanalytics_deepdive_patch",
+    "bytes": 1748,
+    "setTimeout": 1,
+    "setInterval": 0,
+    "observer": 0,
+    "render_assignments": 0
+  },
+  {
+    "id": "v240x_lab_b4_c4_deepdive_patch",
+    "bytes": 1767,
+    "setTimeout": 1,
+    "setInterval": 0,
+    "observer": 0,
+    "render_assignments": 0
+  },
+  {
+    "id": "v240y_lab_b5_digital_data_lims_deepdive_patch",
+    "bytes": 1769,
+    "setTimeout": 1,
+    "setInterval": 0,
+    "observer": 0,
+    "render_assignments": 0
+  },
+  {
+    "id": "v240y1_lab_c4_c5_schema_hotfix",
+    "bytes": 1536,
+    "setTimeout": 0,
+    "setInterval": 0,
+    "observer": 0,
+    "render_assignments": 0
+  },
+  {
+    "id": "v240z2_res_r1_deepdive",
+    "bytes": 1861,
+    "setTimeout": 1,
+    "setInterval": 0,
+    "observer": 0,
+    "render_assignments": 0
+  },
+  {
+    "id": "v240z3_res_r2_deepdive",
+    "bytes": 1897,
+    "setTimeout": 1,
+    "setInterval": 0,
+    "observer": 0,
+    "render_assignments": 0
+  },
+  {
+    "id": "v240z4_res_r3_deepdive",
+    "bytes": 1857,
+    "setTimeout": 1,
+    "setInterval": 0,
+    "observer": 0,
+    "render_assignments": 0
+  },
+  {
+    "id": "v240z5_res_r4_deepdive",
+    "bytes": 1817,
+    "setTimeout": 1,
+    "setInterval": 0,
+    "observer": 0,
+    "render_assignments": 0
+  },
+  {
+    "id": "v240z6_res_r5_deepdive",
+    "bytes": 1862,
+    "setTimeout": 1,
+    "setInterval": 0,
+    "observer": 0,
+    "render_assignments": 0
+  },
+  {
+    "id": "v240z11_global_baseline_polish",
+    "bytes": 10472,
+    "setTimeout": 1,
+    "setInterval": 0,
+    "observer": 0,
+    "render_assignments": 1
+  },
+  {
+    "id": "v240z12-case-metadata-recalibration",
+    "bytes": 1441,
+    "setTimeout": 1,
+    "setInterval": 0,
+    "observer": 0,
+    "render_assignments": 1
+  }
+]

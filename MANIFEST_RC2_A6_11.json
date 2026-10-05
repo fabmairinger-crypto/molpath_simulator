@@ -1,0 +1,153 @@
+{
+  "package": "MolPath_rc2_A6_11_delta",
+  "date": "2026-10-05",
+  "status": "INTEGRATION_CANDIDATE_BROWSER_CHECK_OPEN",
+  "base": "user-confirmed complete A6.10",
+  "payload_file_count": 1,
+  "payload": [
+    {
+      "path": "index.html",
+      "base_bytes": 2147173,
+      "base_sha256": "171093b0c187644e039714ae3a4b6db57f8f164a36c5edde03f5d8111c54e663",
+      "bytes": 2139122,
+      "sha256": "257c5aea926df79a7b5f101ed201f6cfbc1cb69f9c4b130ad068727ff4191b89"
+    }
+  ],
+  "required_unchanged_inputs": [
+    {
+      "path": "rc2_A4b_canonical_cases_lossless.js",
+      "sha256": "f6cd2d47e604c34f07eab978dc582379fbdd40f92003b72c25c1d06631ee1867"
+    },
+    {
+      "path": "rc2_A5_courses.js",
+      "sha256": "ff14647c1cdcc5e095abea4fdbf90981db84d49f0f0906d658805b23650cf343"
+    },
+    {
+      "path": "rc2_A5_method_focus.js",
+      "sha256": "359f66f091e48e898c3550237d5d4e012424aac854196efee669ef223efdb5fe"
+    },
+    {
+      "path": "rc2_A5_data_adapter.js",
+      "sha256": "bbe02ab75a948d8ae99e93d028c363fa471f7e8267ca0972a568a02ef47c00b5"
+    },
+    {
+      "path": "rc2_A6_canonical_integration.js",
+      "sha256": "53b86927ae49ebb5c44d5d77189def5dacd48f21f687d085016d60cd4735c9e7"
+    },
+    {
+      "path": "rc2_A6_10_ovar_reasoning_gates.js",
+      "sha256": "23293c21b736e77241086705f0f9e4ac56c22f21bbe4d12d38a72131b27f2f0f"
+    },
+    {
+      "path": "molpath_version.js",
+      "sha256": "1ce85d3fb12d59bb36c2821364df3da46ba215e016cb4754be6c13a8a4e38095"
+    },
+    {
+      "path": "v260rc1_case_consistency_curation_i18n.js",
+      "sha256": "72bc0c410668d2292456372b4a68dc0e0016fbe8d78a0f30d5e3c5c1c12ab5ef"
+    },
+    {
+      "path": "v250b_signature_taxonomy_freeze.js",
+      "sha256": "b001c6eb89ac916be7c4ea0fd94857af1a98a6e4d921cc98e81150f65e6a9f84"
+    },
+    {
+      "path": "v240z17_ovar001_flagship.js",
+      "sha256": "ddb65c4d8ff6e68f6582da72dc3bf8d3eda664737689ccc470eaf1f1a14b47e7"
+    }
+  ],
+  "load_order": [
+    "rc2_A5_courses.js",
+    "rc2_A4b_canonical_cases_lossless.js",
+    "molpath_version.js",
+    "rc2_A5_data_adapter.js",
+    "i18n/languages.js",
+    "i18n/legacy/legacy_v223_v224_runtime.js",
+    "i18n/legacy/legacy_v230c_signature_deepdive.js",
+    "i18n/legacy/legacy_v240t_signature_i18n.js",
+    "i18n/legacy/legacy_v240z_lab_i18n.js",
+    "i18n/legacy/legacy_v240z7_res_t1_i18n.js",
+    "i18n/legacy/legacy_v240z8_res_t2_i18n.js",
+    "i18n/legacy/legacy_v240z9_res_t3_i18n.js",
+    "i18n/legacy/legacy_v240z10_res_t4_i18n.js",
+    "i18n/legacy/legacy_v240z10a_res_t4_hotfix.js",
+    "v240z13_crc002_flagship.js",
+    "v240z14_crc001_flagship.js",
+    "v240z15_nsclc002_flagship.js",
+    "v240z16_metngs003_flagship.js",
+    "v240z17_ovar001_flagship.js",
+    "v240z18_ovar002_flagship.js",
+    "v240z19_cns001_flagship.js",
+    "v240z20_io001_flagship.js",
+    "v250b_labpost001_flagship.js",
+    "v250b_labdoc001_flagship.js",
+    "v250b_reshyp001_flagship.js",
+    "v250b_reseth001_flagship.js",
+    "v250b_responsive_shell.js",
+    "v250b_asset_modal_hotfix.js",
+    "v250b_startup_cover_hotfix.js",
+    "v250b_home_screen.js",
+    "rc2_A5_method_focus.js",
+    "v250b_method_focus_filter.js",
+    "v250b_metngs001_course_flagship.js",
+    "v250b_metngs002_course_flagship.js",
+    "v250b_metrna001_course_flagship.js",
+    "v250b_metlb001_course_flagship.js",
+    "v250b_metngs004_course_flagship.js",
+    "v250b_labrun001_course_flagship.js",
+    "v250b_labpre001_course_flagship.js",
+    "v250b_resimpl001_course_flagship.js",
+    "v250b_reseth002_course_flagship.js",
+    "v250b_resrole001_course_flagship.js",
+    "v260rc1_mtb_cns_003_asset_upgrade.js",
+    "v260rc1_mtb_hem_001_asset_upgrade.js",
+    "v260rc1_lab_run_004_asset_upgrade.js",
+    "v260rc1_mtb_cns_003_mtb_hem_001_i18n_consolidation.js",
+    "v260rc1_met_fish_001_asset_i18n_upgrade.js",
+    "v260rc1_res_val_001_signature_asset_i18n_upgrade.js",
+    "v260rc1_case_consistency_curation_i18n.js",
+    "rc2_A6_10_ovar_reasoning_gates.js",
+    "rc2_A6_canonical_integration.js",
+    "v250b_signature_taxonomy_freeze.js"
+  ],
+  "scope": "remove retired version-only delegates/observers/timers and disabled z12 wrapper/bootstrap; preserve content, localization and active UI/runtime hooks",
+  "removed": {
+    "empty_functions": 25,
+    "pure_after_apply_delegates": 19,
+    "render_wrappers": 1,
+    "version_only_subtree_observers": 2,
+    "version_only_timeouts": 2,
+    "extra_z12_boot_render": 1
+  },
+  "exact_edits": 78,
+  "changed_inline_scripts": [
+    "v240f_lab_run_002_premium",
+    "v240h_res_omics_001_qa_hotfix",
+    "v240i_res_omics_001_premium",
+    "v240l_performance_signature_filter",
+    "v240m_a1_deepdive_patch",
+    "v240n_a2_crc_deepdives",
+    "v240o_a3_hrd_deepdives",
+    "v240p_a4_io_deepdives",
+    "v240q_a5_a6_mtb_freeze",
+    "v240r_signature_legal_hotfix",
+    "v240s-met-deepdive",
+    "v240u_lab_b1_preanalytics_deepdive_patch",
+    "v240v_lab_b2_run_qc_deepdive_patch",
+    "v240w_lab_b3_postanalytics_deepdive_patch",
+    "v240x_lab_b4_c4_deepdive_patch",
+    "v240y_lab_b5_digital_data_lims_deepdive_patch",
+    "v240y1_lab_c4_c5_schema_hotfix",
+    "v240z2_res_r1_deepdive",
+    "v240z3_res_r2_deepdive",
+    "v240z4_res_r3_deepdive",
+    "v240z5_res_r4_deepdive",
+    "v240z6_res_r5_deepdive",
+    "v240z11_global_baseline_polish",
+    "v240z12-case-metadata-recalibration"
+  ],
+  "bytes_removed": 8051,
+  "app_version": "v2.6.0-rc1; unchanged",
+  "clinical_content_and_i18n": "no changes; exact existing display record equality in all eleven languages",
+  "browser_smoke": "NOT_RUN for A6.11",
+  "apply": "replace only index.html in the complete working A6.10 build"
+}

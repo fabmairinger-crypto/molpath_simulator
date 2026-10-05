@@ -1,0 +1,170 @@
+{
+  "root": "/workspace/scratch/1f1f0706e0d2/work/a6_10/candidate",
+  "boot": {
+    "corePaint": 58,
+    "afterApplyFrames": 523,
+    "observersCreated": 7,
+    "observersObserved": 7,
+    "observerDisconnects": 3,
+    "scheduled": 1039,
+    "DOMContentLoadedCallbacks": 90
+  },
+  "final": {
+    "corePaint": 70,
+    "afterApplyFrames": 991,
+    "observersCreated": 7,
+    "observersObserved": 7,
+    "observerDisconnects": 3,
+    "scheduled": 1315
+  },
+  "phases": [
+    {
+      "lang": "de",
+      "delta": {
+        "corePaint": 1,
+        "afterApplyFrames": 39,
+        "observersCreated": 0,
+        "observersObserved": 0,
+        "observerDisconnects": 0,
+        "scheduled": 23
+      },
+      "stable": true
+    },
+    {
+      "lang": "en",
+      "delta": {
+        "corePaint": 1,
+        "afterApplyFrames": 39,
+        "observersCreated": 0,
+        "observersObserved": 0,
+        "observerDisconnects": 0,
+        "scheduled": 23
+      },
+      "stable": true
+    },
+    {
+      "lang": "ro",
+      "delta": {
+        "corePaint": 1,
+        "afterApplyFrames": 39,
+        "observersCreated": 0,
+        "observersObserved": 0,
+        "observerDisconnects": 0,
+        "scheduled": 23
+      },
+      "stable": true
+    },
+    {
+      "lang": "el",
+      "delta": {
+        "corePaint": 1,
+        "afterApplyFrames": 39,
+        "observersCreated": 0,
+        "observersObserved": 0,
+        "observerDisconnects": 0,
+        "scheduled": 23
+      },
+      "stable": true
+    },
+    {
+      "lang": "es",
+      "delta": {
+        "corePaint": 1,
+        "afterApplyFrames": 39,
+        "observersCreated": 0,
+        "observersObserved": 0,
+        "observerDisconnects": 0,
+        "scheduled": 23
+      },
+      "stable": true
+    },
+    {
+      "lang": "fr",
+      "delta": {
+        "corePaint": 1,
+        "afterApplyFrames": 39,
+        "observersCreated": 0,
+        "observersObserved": 0,
+        "observerDisconnects": 0,
+        "scheduled": 23
+      },
+      "stable": true
+    },
+    {
+      "lang": "ru",
+      "delta": {
+        "corePaint": 1,
+        "afterApplyFrames": 39,
+        "observersCreated": 0,
+        "observersObserved": 0,
+        "observerDisconnects": 0,
+        "scheduled": 23
+      },
+      "stable": true
+    },
+    {
+      "lang": "tr",
+      "delta": {
+        "corePaint": 1,
+        "afterApplyFrames": 39,
+        "observersCreated": 0,
+        "observersObserved": 0,
+        "observerDisconnects": 0,
+        "scheduled": 23
+      },
+      "stable": true
+    },
+    {
+      "lang": "ar",
+      "delta": {
+        "corePaint": 1,
+        "afterApplyFrames": 39,
+        "observersCreated": 0,
+        "observersObserved": 0,
+        "observerDisconnects": 0,
+        "scheduled": 23
+      },
+      "stable": true
+    },
+    {
+      "lang": "fa",
+      "delta": {
+        "corePaint": 1,
+        "afterApplyFrames": 39,
+        "observersCreated": 0,
+        "observersObserved": 0,
+        "observerDisconnects": 0,
+        "scheduled": 23
+      },
+      "stable": true
+    },
+    {
+      "lang": "uk",
+      "delta": {
+        "corePaint": 1,
+        "afterApplyFrames": 39,
+        "observersCreated": 0,
+        "observersObserved": 0,
+        "observerDisconnects": 0,
+        "scheduled": 23
+      },
+      "stable": true
+    },
+    {
+      "lang": "de",
+      "delta": {
+        "corePaint": 1,
+        "afterApplyFrames": 39,
+        "observersCreated": 0,
+        "observersObserved": 0,
+        "observerDisconnects": 0,
+        "scheduled": 23
+      },
+      "stable": true
+    }
+  ],
+  "afterBootHash": "fadce9004be5fa0324e560678763d8434e0670d34f82e9b5ac213b7dc58f02b0",
+  "finalHash": "fadce9004be5fa0324e560678763d8434e0670d34f82e9b5ac213b7dc58f02b0",
+  "errors": [],
+  "environment": "actual ordered sources with QA-only counters, scheduled VM clock, DOM double; not elapsed browser time"
+}

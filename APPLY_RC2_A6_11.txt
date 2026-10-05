@@ -1,0 +1,31 @@
+MolPath rc2 A6.11 — leere Runtime-Hooks entfernen
+Stand 2026-10-05 | Basis: dein vollständiger, bestätigter A6.10-Build
+
+Diesmal wird NUR EINE Laufzeitdatei ersetzt: index.html.
+Die beiden anderen Laufzeitdateien aus A6.10 bleiben erforderlich.
+Das Delta ist kein eigenständig startbarer Vollbuild.
+
+1. Sichere deine funktionierende A6.10-index.html.
+2. Entpacke das Delta separat. Optional Basis prüfen:
+   python qa/verify_a6_11.py before /Pfad/zum/vollstaendigen/A6_10_Build
+3. Kopiere nur die neue index.html in den vollständigen A6.10-Hauptordner.
+   Vorhandene JS-, Sprach-, Asset- und PDF-Dateien bleiben erforderlich.
+   Kein älteres Delta erneut einspielen. qa/ und Dokumente sind Begleitmaterial.
+4. Optional nach dem Ersetzen prüfen:
+   python qa/verify_a6_11.py after /Pfad/zum/vollstaendigen/A6_11_Build
+5. Strg+F5. Kurzer Browsercheck:
+   - Loader -> Startseite/Bibliothek; 91 Fälle, Signature/Kurse/Methods Focus.
+   - DE -> EN -> DE: Bibliothek, Fallüberschrift, Timeline und Sprachwahl.
+   - OVAR1: beide Gates, Runde 1, Bestätigung, finales MTB, Score/TAT.
+   - LAB_RUN_002 und RES_OMICS_001: Premium-Ansichten und Navigation.
+   - Konsole ohne neue Fehler, Tab-/Top-Version bleibt v2.6.0-rc1.
+
+Rollback: gesicherte A6.10-index.html wiederherstellen und neu laden.
+
+Reproduzierbare lokale QA:
+node qa/syntax_qa.js /Pfad/zum/vollstaendigen/Build
+node qa/runtime_qa.js /Pfad/zum/vollstaendigen/Build
+node qa/gate_qa.js /Pfad/zum/vollstaendigen/Build
+node qa/metrics_qa.js /Pfad/zum/vollstaendigen/Build local_metrics_qa.json
+Die QA nutzt ein DOM-Testdouble. Gemessene Aufrufzahlen sind keine echten
+Browserzeiten; den Effekt auf den Loader bitte im Browser beurteilen.

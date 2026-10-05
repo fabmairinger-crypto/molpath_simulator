@@ -5010,10 +5010,10 @@ function lab24Styles(){if(document.getElementById('lab24Styles'))return;const s=
 @media(max-width:1100px){.lab24-kpi-grid,.lab24-qc-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.lab24-media-grid,.lab24-investigation-grid,.lab24-audit-grid{grid-template-columns:1fr}.lab24-capa-flow{grid-template-columns:repeat(2,minmax(0,1fr))}.lab24-top-step{min-width:108px;flex-basis:108px}}
 @media(max-width:700px){.lab24-kpi-grid,.lab24-qc-grid,.lab24-reasoning-evidence,.lab24-capa-flow{grid-template-columns:1fr}.lab24-console-head,.lab24-release-head,.lab24-block-head,.lab24-data-head{align-items:flex-start;flex-direction:column}.lab24-top-step{min-width:96px;flex-basis:96px}.lab24-top-marker{width:34px;height:34px}.lab24-top-step:not(:last-child)::after{top:16px;left:calc(50% + 20px);right:calc(-50% + 20px)}}
 `;document.head.appendChild(s)}
-function lab24StampVersion(){ /* A6.3: historical version writer retired; provenance constant retained. */ }
-let lab24VersionRaf=0;function lab24VersionSchedule(){if(lab24VersionRaf)return;lab24VersionRaf=requestAnimationFrame(()=>{lab24VersionRaf=0;lab24StampVersion()})}
-function lab24VersionGuard(){try{const body=document.body;if(!body)return;const mo=new MutationObserver(lab24VersionSchedule);mo.observe(body,{childList:true,subtree:true});window.MolPathLabRun002VersionGuard=mo}catch(_){}}
-function lab24Boot(){lab24Styles();lab24StampVersion();lab24VersionGuard();try{if(lab24Active()&&typeof render==='function')render()}catch(err){console.error(LAB24_VERSION+' LAB_RUN_002 premium boot failed',err)}setTimeout(lab24StampVersion,180)}
+
+
+
+function lab24Boot(){lab24Styles();try{if(lab24Active()&&typeof render==='function')render()}catch(err){console.error(LAB24_VERSION+' LAB_RUN_002 premium boot failed',err)}}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',lab24Boot,{once:true});else setTimeout(lab24Boot,0);
 })();
 </script>
@@ -5093,15 +5093,15 @@ researchScore=function(){
   return res;
 };
 
-function res24hStampVersion(){ /* A6.3: historical version writer retired; provenance constant retained. */ }
+
 function res24hStyles(){
   if(document.getElementById('res24hStyles'))return;
   const st=document.createElement('style');st.id='res24hStyles';st.textContent=``;document.head.appendChild(st);
 }
 function res24hBoot(){
-  res24hStyles();res24hStampVersion();
+  res24hStyles();
   try{if(res24hActive()&&typeof render==='function')render()}catch(err){console.error(RES24H_VERSION+' RES_OMICS_001 QA boot failed',err)}
-  setTimeout(res24hStampVersion,180);
+  ;
 }
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',res24hBoot,{once:true});else setTimeout(res24hBoot,0);
 })();
@@ -5201,9 +5201,9 @@ function res24iStyles(){if(document.getElementById('res24iStyles'))return;const 
 @media(max-width:1050px){.res24i-kpis{grid-template-columns:repeat(3,minmax(0,1fr))}.res24i-media-grid.discovery,.res24i-media-grid.validation,.res24i-multi-grid{grid-template-columns:1fr}.res24i-media-grid.discovery .res24i-media:last-child{grid-column:auto}.res24i-validation-stack{grid-template-columns:repeat(2,minmax(0,1fr))}.res24i-pico{grid-template-columns:repeat(2,minmax(0,1fr))}.res24i-evidence-dock{grid-template-columns:repeat(2,minmax(0,1fr))}.res24i-top-step{min-width:102px;flex-basis:102px}}
 @media(max-width:700px){.res24i-kpis,.res24i-summary-grid,.res24i-validation-stack,.res24i-analysis-plan,.res24i-path-summary,.res24i-pico,.res24i-evidence-dock{grid-template-columns:1fr}.res24i-summary-card.wide{grid-column:auto}.res24i-cockpit-head,.res24i-block-head{align-items:flex-start;flex-direction:column}.res24i-study-flow{align-items:stretch}.res24i-arrow{transform:rotate(0deg)}.res24i-top-step{min-width:94px;flex-basis:94px}.res24i-top-marker{width:34px;height:34px}.res24i-top-step:not(:last-child)::after{top:16px;left:calc(50% + 20px);right:calc(-50% + 20px)}}
 `;document.head.appendChild(s)}
-function res24iStampVersion(){ /* A6.3: historical version writer retired; provenance constant retained. */ }
-let res24iRaf=0;function res24iVersionSchedule(){if(res24iRaf)return;res24iRaf=requestAnimationFrame(()=>{res24iRaf=0;res24iStampVersion()})}
-function res24iVersionGuard(){try{if(window.MolPathLabRun002VersionGuard&&typeof window.MolPathLabRun002VersionGuard.disconnect==='function')window.MolPathLabRun002VersionGuard.disconnect();const body=document.body;if(!body)return;const mo=new MutationObserver(res24iVersionSchedule);mo.observe(body,{childList:true,subtree:true});window.MolPathV240iVersionGuard=mo}catch(_){}}
+
+
+
 
 /* v2.4.0j: Robust post-render hook.
    The legacy runtime contains several historical window.render wrappers. In some paths one of those wrappers can
@@ -5235,7 +5235,7 @@ function res24iForcePremiumDom(){
    const contentRoot=document.getElementById('content');
    const premium=res24iPremiumContent();
    if(contentRoot&&premium!=null)contentRoot.innerHTML=premium;
-   res24iStampVersion();
+   
    try{if(window.MolPathI18n&&typeof window.MolPathI18n.apply==='function')window.MolPathI18n.apply();}catch(_){ }
  }catch(err){console.error(RES24I_VERSION+' RES premium DOM hook failed',err)}
 }
@@ -5250,7 +5250,7 @@ if(typeof RES24J_PREV_WINDOW_RENDER==='function'){
 }
 window.MolPathResOmics001PremiumForceRender=res24iForcePremiumDom;
 
-function res24iBoot(){res24iStyles();res24iStampVersion();res24iVersionGuard();try{if(res24iActive()&&typeof window.render==='function')window.render()}catch(err){console.error(RES24I_VERSION+' RES_OMICS_001 premium boot failed',err)}setTimeout(()=>{res24iStampVersion();if(res24iActive())res24iForcePremiumDom()},180)}
+function res24iBoot(){res24iStyles();try{if(res24iActive()&&typeof window.render==='function')window.render()}catch(err){console.error(RES24I_VERSION+' RES_OMICS_001 premium boot failed',err)}setTimeout(()=>{if(res24iActive())res24iForcePremiumDom()},180)}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',res24iBoot,{once:true});else setTimeout(res24iBoot,0);
 })();
 </script>
@@ -5317,15 +5317,15 @@ function localizePremium(){
 }
 
 const prevAfter=window.MolPathI18nAfterApply;
-window.MolPathI18nAfterApply=function(l){try{if(typeof prevAfter==='function')prevAfter(l)}catch(_){}try{localizePremium()}catch(_){}try{stamp()}catch(_){}};
+window.MolPathI18nAfterApply=function(l){try{if(typeof prevAfter==='function')prevAfter(l)}catch(_){}try{localizePremium()}catch(_){}try{}catch(_){}};
 
 function styles(){if(document.getElementById('v240lStyles'))return;const s=document.createElement('style');s.id='v240lStyles';s.textContent=".v240l-signature-check{display:flex!important;align-items:center;gap:9px;border:1px solid var(--line);border-radius:12px;padding:10px 11px;background:#fff;cursor:pointer;font-weight:800;color:#344054;text-transform:none!important;letter-spacing:0!important;font-size:.82rem!important;margin:0!important}.v240l-signature-check:hover{background:#fbfdff;border-color:#9bc8d7}.v240l-signature-check input{width:18px;height:18px;margin:0;accent-color:#7550b7}.v240l-signature-badge{margin-left:auto;border:1px solid #d9c7f4;background:#f6f0ff;color:#6941c6;border-radius:999px;padding:2px 7px;font-size:.67rem;font-weight:900}";document.head.appendChild(s)}
-function stamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }
+
 function boot(){
  // Disable the two premium version-only subtree observers; the coalesced i18n post-pass now owns version stamping.
  try{if(window.MolPathV240iVersionGuard&&typeof window.MolPathV240iVersionGuard.disconnect==='function')window.MolPathV240iVersionGuard.disconnect()}catch(_){}
  try{if(window.MolPathLabRun002VersionGuard&&typeof window.MolPathLabRun002VersionGuard.disconnect==='function')window.MolPathLabRun002VersionGuard.disconnect()}catch(_){}
- styles();ensureFilter();stamp();
+ styles();ensureFilter();
  try{if(window.MolPathI18n&&typeof window.MolPathI18n.apply==='function')window.MolPathI18n.apply()}catch(_){}
  const mo=new MutationObserver(updateFilterLabel);try{mo.observe(document.body,{attributes:true,attributeFilter:['data-molpath-lang']})}catch(_){}window.MolPathV240lLanguageGuard=mo;
 }
@@ -5392,10 +5392,10 @@ renderKpi=function(){V240M_PREV_KPI.apply(this,arguments);const d=v17Deep();if(!
 v17OpenDeepDiveSummary=function(){const d=v17Deep();if(!d){toast('Kein Deep Dive aktiv.');return}const w=window.open('','_blank');if(!w){toast('Popup wurde blockiert.');return}const sig=isSigCase();const badge=sig?'<span class="badge">Signature Case</span> <span class="badge deep">Deep Dive</span>':'<span class="badge deep">Deep Dive</span>';const doc=`<!doctype html><html lang="de"><head><meta charset="utf-8"><title>${sig?'Signature Case':'Deep Dive'} ${esc(activeCase.id)}</title><style>body{font-family:Inter,system-ui,sans-serif;background:#eef6fb;color:#0b1b34;margin:0}.page{max-width:980px;margin:24px auto;background:#fff;border-radius:18px;padding:28px;border:1px solid #d8e4ef}h1,h2{color:#0f4c75}.badge{display:inline-block;border-radius:999px;background:#0f4c75;color:white;padding:5px 9px;font-size:.8rem;font-weight:800}.badge.deep{background:#fff8ed;color:#b54708;border:1px solid #f6c36e}.box{border:1px solid #d8e4ef;border-radius:14px;padding:12px;margin:10px 0}.warn{border-left:5px solid #b42318;background:#fff5f5;border-radius:14px;padding:12px;margin:10px 0}li{margin:.3rem 0}@media print{body{background:white}.page{margin:0;border:0}}</style></head><body><main class="page">${badge}<h1>${esc(d.title)}</h1><p>${esc(d.opening_scene||'')}</p><h2>Fallakte</h2><div class="box">${esc(d.case_briefing||'')}</div><h2>Lernziele</h2>${v17List(d.learning_objectives)}<h2>Twist</h2><div class="warn"><b>${esc(d.twist?.title||'')}</b><br>${esc(d.twist?.content||'')}<br><b>Warum kritisch:</b> ${esc(d.twist?.why_critical||'')}</div><h2>Musterpfad</h2>${v17List(d.expected_path)}<h2>Debrief</h2>${v17List(d.debrief_points)}<button onclick="window.print()">Drucken / PDF</button></main></body></html>`;w.document.open();w.document.write(doc);w.document.close()};
 
 // 6) Version stamp: no observer, no extra render-time DOM scan.
-function v240mStamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }
+
 function v240mStyles(){if(document.getElementById('v240mStyles'))return;const s=document.createElement('style');s.id='v240mStyles';s.textContent=".v240m-deep-card-badge{background:#fff8ed!important;color:#b54708!important;border:1px solid #f6c36e!important}";document.head.appendChild(s)}
-const V240M_PREV_I18N_AFTER=window.MolPathI18nAfterApply;window.MolPathI18nAfterApply=function(l){try{if(typeof V240M_PREV_I18N_AFTER==='function')V240M_PREV_I18N_AFTER(l)}catch(_){}v240mStamp()};
-function boot(){v240mStyles();v240mStamp();try{renderCasePicker();renderKpi()}catch(_){}}
+
+function boot(){v240mStyles();try{renderCasePicker();renderKpi()}catch(_){}}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot,{once:true});else setTimeout(boot,0);
 
 window.MolPathDeepDiveA1={version:V240M_VERSION,caseIds:V240M_DEEP_DIVES.map(d=>d.case_id),deepDiveAdded:V240M_DEEP_DIVES.length,signatureAdded:0,languageStatus:'DE master only; translations intentionally deferred until content freeze'};
@@ -5420,10 +5420,10 @@ try{
   DEEP_DIVE_MAP_V17[d.case_id]=d;
  });
 }catch(e){console.error('[MolPath '+V240N_VERSION+'] A2 Deep-Dive registration failed',e)}
-function v240nStamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }
+
 function v240nStyles(){if(document.getElementById('v240nStyles'))return;const st=document.createElement('style');st.id='v240nStyles';st.textContent="";document.head.appendChild(st)}
-const V240N_PREV_I18N_AFTER=window.MolPathI18nAfterApply;window.MolPathI18nAfterApply=function(l){try{if(typeof V240N_PREV_I18N_AFTER==='function')V240N_PREV_I18N_AFTER(l)}catch(_){}v240nStamp()};
-function v240nBoot(){v240nStyles();v240nStamp();try{renderCasePicker();renderKpi()}catch(_){}}
+
+function v240nBoot(){v240nStyles();try{renderCasePicker();renderKpi()}catch(_){}}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',v240nBoot,{once:true});else setTimeout(v240nBoot,0);
 window.MolPathDeepDiveA2={version:V240N_VERSION,caseIds:V240N_DEEP_DIVES.map(d=>d.case_id),deepDiveAdded:V240N_DEEP_DIVES.length,signatureAdded:0,a2Status:'5/5 Deep Dive',languageStatus:'DE master only; translations intentionally deferred until content freeze'};
 try{console.log('[MolPath '+V240N_VERSION+'] A2 CRC Deep Dive: 3 cases added; A2 now 5/5; Signature set unchanged.')}catch(_){}
@@ -5447,10 +5447,10 @@ try{
   DEEP_DIVE_MAP_V17[d.case_id]=d;
  });
 }catch(e){console.error('[MolPath '+V240O_VERSION+'] A3 Deep-Dive registration failed',e)}
-function v240oStamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }
+
 function v240oStyles(){if(document.getElementById('v240oStyles'))return;const st=document.createElement('style');st.id='v240oStyles';st.textContent="";document.head.appendChild(st)}
-const V240O_PREV_I18N_AFTER=window.MolPathI18nAfterApply;window.MolPathI18nAfterApply=function(l){try{if(typeof V240O_PREV_I18N_AFTER==='function')V240O_PREV_I18N_AFTER(l)}catch(_){}v240oStamp()};
-function v240oBoot(){v240oStyles();v240oStamp();try{renderCasePicker();renderKpi()}catch(_){}}
+
+function v240oBoot(){v240oStyles();try{renderCasePicker();renderKpi()}catch(_){}}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',v240oBoot,{once:true});else setTimeout(v240oBoot,0);
 window.MolPathDeepDiveA3={version:V240O_VERSION,caseIds:V240O_DEEP_DIVES.map(d=>d.case_id),deepDiveAdded:V240O_DEEP_DIVES.length,signatureAdded:0,a3Status:'5/5 Deep Dive',languageStatus:'DE master only; translations intentionally deferred until MTB content freeze'};
 try{console.log('[MolPath '+V240O_VERSION+'] A3 HRD/BRCA/PARP Deep Dive: 3 cases added; A3 now 5/5; Signature set unchanged.')}catch(_){}
@@ -5474,10 +5474,10 @@ try{
   DEEP_DIVE_MAP_V17[d.case_id]=d;
  });
 }catch(e){console.error('[MolPath '+V240P_VERSION+'] A4 Deep-Dive registration failed',e)}
-function v240pStamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }
+
 function v240pStyles(){if(document.getElementById('v240pStyles'))return;const st=document.createElement('style');st.id='v240pStyles';st.textContent="";document.head.appendChild(st)}
-const V240P_PREV_I18N_AFTER=window.MolPathI18nAfterApply;window.MolPathI18nAfterApply=function(l){try{if(typeof V240P_PREV_I18N_AFTER==='function')V240P_PREV_I18N_AFTER(l)}catch(_){}v240pStamp()};
-function v240pBoot(){v240pStyles();v240pStamp();try{renderCasePicker();renderKpi()}catch(_){}}
+
+function v240pBoot(){v240pStyles();try{renderCasePicker();renderKpi()}catch(_){}}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',v240pBoot,{once:true});else setTimeout(v240pBoot,0);
 window.MolPathDeepDiveA4={version:V240P_VERSION,caseIds:V240P_DEEP_DIVES.map(d=>d.case_id),deepDiveAdded:V240P_DEEP_DIVES.length,signatureAdded:0,a4Status:'5/5 Deep Dive',languageStatus:'DE master only; translations intentionally deferred until MTB content freeze'};
 try{console.log('[MolPath '+V240P_VERSION+'] A4 Immunescape Deep Dive: 4 cases added; A4 now 5/5; Signature set unchanged.')}catch(_){}
@@ -5495,10 +5495,10 @@ const V240Q_DEEP_DIVES=["MTB_CNS_002_v1_3","MTB_CNS_003_v1_3","MTB_HEM_001_v1_3"
 
 // A6.8: cases use Canonical; retain Deep-Dive registration below.
 try{V240Q_DEEP_DIVES.forEach(d=>{const idx=DEEP_DIVE_CASES_V17.findIndex(x=>x&&x.case_id===d.case_id);if(idx>=0)DEEP_DIVE_CASES_V17[idx]=d;else DEEP_DIVE_CASES_V17.push(d);DEEP_DIVE_MAP_V17[d.case_id]=d;});}catch(e){console.error('[MolPath '+V240Q_VERSION+'] A5/A6 registration failed',e)}
-function v240qStamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }
+
 function v240qStyles(){if(document.getElementById('v240qStyles'))return;const st=document.createElement('style');st.id='v240qStyles';st.textContent="";document.head.appendChild(st)}
-const V240Q_PREV_I18N_AFTER=window.MolPathI18nAfterApply;window.MolPathI18nAfterApply=function(l){try{if(typeof V240Q_PREV_I18N_AFTER==='function')V240Q_PREV_I18N_AFTER(l)}catch(_){}v240qStamp()};
-function v240qBoot(){v240qStyles();v240qStamp();try{renderCasePicker();renderKpi()}catch(_){}}
+
+function v240qBoot(){v240qStyles();try{renderCasePicker();renderKpi()}catch(_){}}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',v240qBoot,{once:true});else setTimeout(v240qBoot,0);
 window.MolPathDeepDiveMTBFreeze={version:V240Q_VERSION,caseIds:V240Q_DEEP_DIVES.map(d=>d.case_id),deepDiveAdded:V240Q_DEEP_DIVES.length,signatureAdded:0,a5Status:'5/5 Deep Dive',a6Status:'5/5 Deep Dive',mtbStatus:'32/32 Deep Dive',languageStatus:'DE master frozen for MTB; translation may start next'};
 try{console.log('[MolPath '+V240Q_VERSION+'] A5+A6 complete: 9 Deep Dives added; MTB now 32/32; Signature set unchanged.')}catch(_){}
@@ -5656,14 +5656,14 @@ function ensureLegalUi(){
   }
 }
 
-function stamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }
+
 function apply(){
   ensureLegalUi();
   correctDashboard();
-  stamp();
+  
 }
 const V240R_PREV_I18N_AFTER=window.MolPathI18nAfterApply;
-window.MolPathI18nAfterApply=function(l){try{if(typeof V240R_PREV_I18N_AFTER==='function')V240R_PREV_I18N_AFTER(l)}catch(_){}stamp();correctDashboard();};
+window.MolPathI18nAfterApply=function(l){try{if(typeof V240R_PREV_I18N_AFTER==='function')V240R_PREV_I18N_AFTER(l)}catch(_){}correctDashboard();};
 function boot(){
   apply();
   // Redraw once after replacing legacy signature predicate, then correct the KPI.
@@ -5686,10 +5686,10 @@ const V240S_DEEP_DIVES=["MET_NGS_001_v1_3","MET_NGS_002_v1_3","MET_NGS_003_v1_0"
 
 // A6.8: cases use Canonical; retain Deep-Dive registration below.
 try{V240S_DEEP_DIVES.forEach(d=>{const idx=DEEP_DIVE_CASES_V17.findIndex(x=>x&&x.case_id===d.case_id);if(idx>=0)DEEP_DIVE_CASES_V17[idx]=d;else DEEP_DIVE_CASES_V17.push(d);DEEP_DIVE_MAP_V17[d.case_id]=d;});}catch(e){console.error('[MolPath '+V240S_VERSION+'] MET registration failed',e)}
-function v240sStamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }
+
 function v240sStyles(){if(document.getElementById('v240sStyles'))return;const st=document.createElement('style');st.id='v240sStyles';st.textContent="";document.head.appendChild(st)}
-const V240S_PREV_I18N_AFTER=window.MolPathI18nAfterApply;window.MolPathI18nAfterApply=function(l){try{if(typeof V240S_PREV_I18N_AFTER==='function')V240S_PREV_I18N_AFTER(l)}catch(_){}v240sStamp()};
-function v240sBoot(){v240sStyles();v240sStamp();try{renderCasePicker();renderKpi()}catch(_){}}
+
+function v240sBoot(){v240sStyles();try{renderCasePicker();renderKpi()}catch(_){}}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',v240sBoot,{once:true});else setTimeout(v240sBoot,0);
 window.MolPathDeepDiveMETFreeze={version:V240S_VERSION,caseIds:V240S_DEEP_DIVES.map(d=>d.case_id),deepDiveAdded:V240S_DEEP_DIVES.length,signatureAdded:0,patientCareStatus:'42/42 Deep Dive',deepDiveTotalExpected:49,signatureExpected:15,languageStatus:'DE patient-care master frozen; translation may start next'};
 try{console.log('[MolPath '+V240S_VERSION+'] 10 MET Deep Dives added; patient care now 42/42; Signature set unchanged.')}catch(_){}
@@ -5712,9 +5712,9 @@ const V240U_DEEP_DIVES=["LAB_PRE_001_v1_3","LAB_PRE_002_v1_3","LAB_PRE_003_v1_3"
 
 // A6.8: cases use Canonical; retain Deep-Dive registration below.
 try{V240U_DEEP_DIVES.forEach(d=>{const idx=DEEP_DIVE_CASES_V17.findIndex(x=>x&&x.case_id===d.case_id);if(idx>=0)DEEP_DIVE_CASES_V17[idx]=d;else DEEP_DIVE_CASES_V17.push(d);DEEP_DIVE_MAP_V17[d.case_id]=d;});}catch(e){console.error('[MolPath '+V240U_VERSION+'] LAB B1 registration failed',e)}
-function v240uStamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }
-const V240U_PREV_I18N_AFTER=window.MolPathI18nAfterApply;window.MolPathI18nAfterApply=function(l){try{if(typeof V240U_PREV_I18N_AFTER==='function')V240U_PREV_I18N_AFTER(l)}catch(_){}v240uStamp()};
-function v240uBoot(){v240uStamp();try{renderCasePicker();renderKpi();if(typeof render==='function')render()}catch(_){}}
+
+
+function v240uBoot(){try{renderCasePicker();renderKpi();if(typeof render==='function')render()}catch(_){}}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',v240uBoot,{once:true});else setTimeout(v240uBoot,0);
 window.MolPathDeepDiveLABB1Freeze=Object.freeze({version:V240U_VERSION,caseIds:[...V240U_CASE_IDS],deepDiveAdded:5,labDeepDiveStatus:'8/27',labRemaining:19,deepDiveTotalExpected:54,signatureExpected:15,languageStatus:'DE LAB master block 1; non-DE LAB translation deferred until LAB 27/27 content freeze'});
 try{console.log('[MolPath '+V240U_VERSION+'] LAB B1 C1: 5 Präanalytik Deep Dives added; LAB now 8/27; Signature remains 15.')}catch(_){}
@@ -5733,9 +5733,9 @@ const V240V_DEEP_DIVES=["LAB_RUN_001_v1_3","LAB_RUN_003_v1_3","LAB_RUN_004_v1_3"
 
 // A6.8: cases use Canonical; retain Deep-Dive registration below.
 try{V240V_DEEP_DIVES.forEach(d=>{const idx=DEEP_DIVE_CASES_V17.findIndex(x=>x&&x.case_id===d.case_id);if(idx>=0)DEEP_DIVE_CASES_V17[idx]=d;else DEEP_DIVE_CASES_V17.push(d);DEEP_DIVE_MAP_V17[d.case_id]=d;});}catch(e){console.error('[MolPath '+V240V_VERSION+'] LAB B2 registration failed',e)}
-function v240vStamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }
-const V240V_PREV_I18N_AFTER=window.MolPathI18nAfterApply;window.MolPathI18nAfterApply=function(l){try{if(typeof V240V_PREV_I18N_AFTER==='function')V240V_PREV_I18N_AFTER(l)}catch(_){}v240vStamp()};
-function v240vBoot(){v240vStamp();try{renderCasePicker();renderKpi();if(typeof render==='function')render()}catch(_){}}
+
+
+function v240vBoot(){try{renderCasePicker();renderKpi();if(typeof render==='function')render()}catch(_){}}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',v240vBoot,{once:true});else setTimeout(v240vBoot,0);
 window.MolPathDeepDiveLABB2Freeze=Object.freeze({version:V240V_VERSION,caseIds:[...V240V_CASE_IDS],deepDiveAdded:5,labDeepDiveStatus:'13/27',labRemaining:14,deepDiveTotalExpected:59,signatureExpected:15,languageStatus:'DE LAB master block 2; non-DE LAB translation deferred until LAB 27/27 content freeze'});
 try{console.log('[MolPath '+V240V_VERSION+'] LAB B2 C2: 5 Run/QC Deep Dives added; LAB now 13/27; Signature remains 15.')}catch(_){}
@@ -5754,9 +5754,9 @@ const V240W_DEEP_DIVES=["LAB_POST_002_v1_3","LAB_POST_003_v1_3","LAB_POST_004_v1
 
 // A6.8: cases use Canonical; retain Deep-Dive registration below.
 try{V240W_DEEP_DIVES.forEach(d=>{const idx=DEEP_DIVE_CASES_V17.findIndex(x=>x&&x.case_id===d.case_id);if(idx>=0)DEEP_DIVE_CASES_V17[idx]=d;else DEEP_DIVE_CASES_V17.push(d);DEEP_DIVE_MAP_V17[d.case_id]=d;});}catch(e){console.error('[MolPath '+V240W_VERSION+'] LAB B3 registration failed',e)}
-function v240wStamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }
-const V240W_PREV_I18N_AFTER=window.MolPathI18nAfterApply;window.MolPathI18nAfterApply=function(l){try{if(typeof V240W_PREV_I18N_AFTER==='function')V240W_PREV_I18N_AFTER(l)}catch(_){}v240wStamp()};
-function v240wBoot(){v240wStamp();try{renderCasePicker();renderKpi();if(typeof render==='function')render()}catch(_){}}
+
+
+function v240wBoot(){try{renderCasePicker();renderKpi();if(typeof render==='function')render()}catch(_){}}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',v240wBoot,{once:true});else setTimeout(v240wBoot,0);
 window.MolPathDeepDiveLABB3Freeze=Object.freeze({version:V240W_VERSION,caseIds:[...V240W_CASE_IDS],deepDiveAdded:4,labDeepDiveStatus:'17/27',labRemaining:10,deepDiveTotalExpected:63,signatureExpected:15,languageStatus:'DE LAB master block 3; non-DE LAB translation deferred until LAB 27/27 content freeze'});
 try{console.log('[MolPath '+V240W_VERSION+'] LAB B3 C3: 4 Postanalytics Deep Dives added; LAB now 17/27; Signature remains 15.')}catch(_){}
@@ -5775,9 +5775,9 @@ const V240X_DEEP_DIVES=["LAB_DOC_002_v1_3","LAB_AUDIT_001_v1_3","LAB_CAPA_001_v1
 
 // A6.8: cases use Canonical; retain Deep-Dive registration below.
 try{V240X_DEEP_DIVES.forEach(d=>{const idx=DEEP_DIVE_CASES_V17.findIndex(x=>x&&x.case_id===d.case_id);if(idx>=0)DEEP_DIVE_CASES_V17[idx]=d;else DEEP_DIVE_CASES_V17.push(d);DEEP_DIVE_MAP_V17[d.case_id]=d;});}catch(e){console.error('[MolPath '+V240X_VERSION+'] LAB B4 registration failed',e)}
-function v240xStamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }
-const V240X_PREV_I18N_AFTER=window.MolPathI18nAfterApply;window.MolPathI18nAfterApply=function(l){try{if(typeof V240X_PREV_I18N_AFTER==='function')V240X_PREV_I18N_AFTER(l)}catch(_){}v240xStamp()};
-function v240xBoot(){v240xStamp();try{renderCasePicker();renderKpi();if(typeof render==='function')render()}catch(_){}}
+
+
+function v240xBoot(){try{renderCasePicker();renderKpi();if(typeof render==='function')render()}catch(_){}}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',v240xBoot,{once:true});else setTimeout(v240xBoot,0);
 window.MolPathDeepDiveLABB4Freeze=Object.freeze({version:V240X_VERSION,caseIds:[...V240X_CASE_IDS],deepDiveAdded:5,labDeepDiveStatus:'22/27',labRemaining:5,deepDiveTotalExpected:68,signatureExpected:15,languageStatus:'DE LAB master block 4; non-DE LAB translation deferred until LAB 27/27 content freeze'});
 try{console.log('[MolPath '+V240X_VERSION+'] LAB B4 C4: 5 Deep Dives added; LAB now 22/27; Signature remains 15.')}catch(_){}
@@ -5795,9 +5795,9 @@ const V240Y_DEEP_DIVES=["LAB_DIGI_001_v1_3","LAB_DIGI_002_v1_3","LAB_DATA_001_v1
 
 // A6.8: cases use Canonical; retain Deep-Dive registration below.
 try{V240Y_DEEP_DIVES.forEach(d=>{const idx=DEEP_DIVE_CASES_V17.findIndex(x=>x&&x.case_id===d.case_id);if(idx>=0)DEEP_DIVE_CASES_V17[idx]=d;else DEEP_DIVE_CASES_V17.push(d);DEEP_DIVE_MAP_V17[d.case_id]=d;});}catch(e){console.error('[MolPath '+V240Y_VERSION+'] LAB B5 registration failed',e)}
-function v240yStamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }
-const V240Y_PREV_I18N_AFTER=window.MolPathI18nAfterApply;window.MolPathI18nAfterApply=function(l){try{if(typeof V240Y_PREV_I18N_AFTER==='function')V240Y_PREV_I18N_AFTER(l)}catch(_){}v240yStamp()};
-function v240yBoot(){v240yStamp();try{renderCasePicker();renderKpi();if(typeof render==='function')render()}catch(_){}}
+
+
+function v240yBoot(){try{renderCasePicker();renderKpi();if(typeof render==='function')render()}catch(_){}}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',v240yBoot,{once:true});else setTimeout(v240yBoot,0);
 window.MolPathDeepDiveLABB5Freeze=Object.freeze({version:V240Y_VERSION,caseIds:[...V240Y_CASE_IDS],deepDiveAdded:5,labDeepDiveStatus:'27/27',labRemaining:0,deepDiveTotalExpected:73,signatureExpected:15,languageStatus:'DE LAB master content freeze complete 27/27; non-DE LAB translation is next block'});
 try{console.log('[MolPath '+V240Y_VERSION+'] LAB B5 C5: 5 Deep Dives added; LAB now 27/27; Signature remains 15.')}catch(_){}
@@ -5831,10 +5831,9 @@ try{
  const prevCards=v17Cards;
  v17Cards=function(cards){return prevCards(v240y1Cards(cards));};
 }catch(_){ }
-function v240y1Stamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }
-const prevAfter=window.MolPathI18nAfterApply;
-window.MolPathI18nAfterApply=function(l){try{if(typeof prevAfter==='function')prevAfter(l)}catch(_){}v240y1Stamp();};
-v240y1Stamp();
+
+
+
 try{if(typeof render==='function')render()}catch(_){}
 window.MolPathLabC4C5SchemaHotfix=Object.freeze({version:V240Y1_VERSION,caseIds:[...V240Y1_CASE_IDS],fixes:['case_briefing object -> readable string','pre_results label/value -> title/content','renderer card fallback']});
 try{console.log('[MolPath '+V240Y1_VERSION+'] LAB C4/C5 renderer fallback loaded: 10 Canonical cases.')}catch(_){}
@@ -5857,9 +5856,9 @@ const V240Z2_DEEP_DIVES=["RES_HYP_002_v1_3","RES_OMICS_002_v1_3","RES_OMICS_003_
 
 // A6.8: cases use Canonical; retain Deep-Dive registration below.
 try{V240Z2_DEEP_DIVES.forEach(d=>{const idx=DEEP_DIVE_CASES_V17.findIndex(x=>x&&x.case_id===d.case_id);if(idx>=0)DEEP_DIVE_CASES_V17[idx]=d;else DEEP_DIVE_CASES_V17.push(d);DEEP_DIVE_MAP_V17[d.case_id]=d;});}catch(e){console.error('[MolPath '+V240Z2_VERSION+'] RES R1 deep-dive registration failed',e)}
-function v240z2Stamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }
-const V240Z2_PREV_AFTER=window.MolPathI18nAfterApply;window.MolPathI18nAfterApply=function(l){try{if(typeof V240Z2_PREV_AFTER==='function')V240Z2_PREV_AFTER(l)}catch(_){}v240z2Stamp();};
-function v240z2Boot(){v240z2Stamp();try{if(typeof renderCasePicker==='function')renderCasePicker();if(typeof renderKpi==='function')renderKpi();if(typeof render==='function')render()}catch(_){}}
+
+
+function v240z2Boot(){try{if(typeof renderCasePicker==='function')renderCasePicker();if(typeof renderKpi==='function')renderKpi();if(typeof render==='function')render()}catch(_){}}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',v240z2Boot,{once:true});else setTimeout(v240z2Boot,0);
 window.MolPathDeepDiveRESR1Freeze=Object.freeze({version:V240Z2_VERSION,caseIds:[...V240Z2_CASE_IDS],deepDiveAdded:4,resDeepDiveStatus:'7/22',resRemaining:15,deepDiveTotalStatus:'76/91',deepDiveRemaining:15,signatureExpected:15,languageStatus:'DE RES master block R1; non-DE RES translation deferred until RES content freeze'});
 try{console.log('[MolPath '+V240Z2_VERSION+'] RES R1: 4 D1 Deep Dives added; RES now 7/22; total Deep Dive 76/91; Signature remains 15.')}catch(_){}
@@ -5878,9 +5877,9 @@ const V240Z3_DEEP_DIVES=["RES_MOD_001_v1_3","RES_MOD_002_v1_3","RES_MOD_003_v1_3
 
 // A6.8: cases use Canonical; retain Deep-Dive registration below.
 try{V240Z3_DEEP_DIVES.forEach(d=>{const idx=DEEP_DIVE_CASES_V17.findIndex(x=>x&&x.case_id===d.case_id);if(idx>=0)DEEP_DIVE_CASES_V17[idx]=d;else DEEP_DIVE_CASES_V17.push(d);DEEP_DIVE_MAP_V17[d.case_id]=d;});}catch(e){console.error('[MolPath '+V240Z3_VERSION+'] RES R2 deep-dive registration failed',e)}
-function v240z3Stamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }
-const V240Z3_PREV_AFTER=window.MolPathI18nAfterApply;window.MolPathI18nAfterApply=function(l){try{if(typeof V240Z3_PREV_AFTER==='function')V240Z3_PREV_AFTER(l)}catch(_){}v240z3Stamp();};
-function v240z3Boot(){v240z3Stamp();try{if(typeof renderCasePicker==='function')renderCasePicker();if(typeof renderKpi==='function')renderKpi();if(typeof render==='function')render()}catch(_){}}
+
+
+function v240z3Boot(){try{if(typeof renderCasePicker==='function')renderCasePicker();if(typeof renderKpi==='function')renderKpi();if(typeof render==='function')render()}catch(_){}}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',v240z3Boot,{once:true});else setTimeout(v240z3Boot,0);
 window.MolPathDeepDiveRESR2Freeze=Object.freeze({version:V240Z3_VERSION,caseIds:[...V240Z3_CASE_IDS],deepDiveAdded:5,resDeepDiveStatus:'12/22',resRemaining:10,deepDiveTotalStatus:'81/91',deepDiveRemaining:10,signatureExpected:15,languageStatus:'DE RES master blocks R1-R2; non-DE RES translation deferred until RES content freeze'});
 try{console.log('[MolPath '+V240Z3_VERSION+'] RES R2: 5 D2 Deep Dives added; RES now 12/22; total Deep Dive 81/91; Signature remains 15.')}catch(_){}
@@ -5899,9 +5898,9 @@ const V240Z4_DEEP_DIVES=["RES_ETH_002_v1_3","RES_ETH_003_v1_3","RES_DATA_001_v1_
 
 // A6.8: cases use Canonical; retain Deep-Dive registration below.
 try{V240Z4_DEEP_DIVES.forEach(d=>{const idx=DEEP_DIVE_CASES_V17.findIndex(x=>x&&x.case_id===d.case_id);if(idx>=0)DEEP_DIVE_CASES_V17[idx]=d;else DEEP_DIVE_CASES_V17.push(d);DEEP_DIVE_MAP_V17[d.case_id]=d;});}catch(e){console.error('[MolPath '+V240Z4_VERSION+'] RES R3 deep-dive registration failed',e)}
-function v240z4Stamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }
-const V240Z4_PREV_AFTER=window.MolPathI18nAfterApply;window.MolPathI18nAfterApply=function(l){try{if(typeof V240Z4_PREV_AFTER==='function')V240Z4_PREV_AFTER(l)}catch(_){}v240z4Stamp();};
-function v240z4Boot(){v240z4Stamp();try{if(typeof renderCasePicker==='function')renderCasePicker();if(typeof renderKpi==='function')renderKpi();if(typeof render==='function')render()}catch(_){}}
+
+
+function v240z4Boot(){try{if(typeof renderCasePicker==='function')renderCasePicker();if(typeof renderKpi==='function')renderKpi();if(typeof render==='function')render()}catch(_){}}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',v240z4Boot,{once:true});else setTimeout(v240z4Boot,0);
 window.MolPathDeepDiveRESR3Freeze=Object.freeze({version:V240Z4_VERSION,caseIds:[...V240Z4_CASE_IDS],deepDiveAdded:4,resDeepDiveStatus:'16/22',resRemaining:6,deepDiveTotalStatus:'85/91',deepDiveRemaining:6,signatureExpected:15,languageStatus:'DE RES master blocks R1-R3; non-DE RES translation deferred until RES content freeze'});
 try{console.log('[MolPath '+V240Z4_VERSION+'] RES R3: 4 D3 Deep Dives added; RES now 16/22; total Deep Dive 85/91; Signature remains 15.')}catch(_){}
@@ -5920,9 +5919,9 @@ const V240Z5_DEEP_DIVES=["RES_PM_001_v1_3","RES_PM_002_v1_3","RES_ROLE_001_v1_3"
 
 // A6.8: cases use Canonical; retain Deep-Dive registration below.
 try{V240Z5_DEEP_DIVES.forEach(d=>{const idx=DEEP_DIVE_CASES_V17.findIndex(x=>x&&x.case_id===d.case_id);if(idx>=0)DEEP_DIVE_CASES_V17[idx]=d;else DEEP_DIVE_CASES_V17.push(d);DEEP_DIVE_MAP_V17[d.case_id]=d;});}catch(e){console.error('[MolPath '+V240Z5_VERSION+'] RES R4 deep-dive registration failed',e)}
-function v240z5Stamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }
-const V240Z5_PREV_AFTER=window.MolPathI18nAfterApply;window.MolPathI18nAfterApply=function(l){try{if(typeof V240Z5_PREV_AFTER==='function')V240Z5_PREV_AFTER(l)}catch(_){}v240z5Stamp();};
-function v240z5Boot(){v240z5Stamp();try{if(typeof renderCasePicker==='function')renderCasePicker();if(typeof renderKpi==='function')renderKpi();if(typeof render==='function')render()}catch(_){}}
+
+
+function v240z5Boot(){try{if(typeof renderCasePicker==='function')renderCasePicker();if(typeof renderKpi==='function')renderKpi();if(typeof render==='function')render()}catch(_){}}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',v240z5Boot,{once:true});else setTimeout(v240z5Boot,0);
 window.MolPathDeepDiveRESR4Freeze=Object.freeze({version:V240Z5_VERSION,caseIds:[...V240Z5_CASE_IDS],deepDiveAdded:3,resDeepDiveStatus:'19/22',resRemaining:3,deepDiveTotalStatus:'88/91',deepDiveRemaining:3,signatureExpected:15,languageStatus:'DE RES master blocks R1-R4; non-DE RES translation deferred until RES content freeze'});
 try{console.log('[MolPath '+V240Z5_VERSION+'] RES R4: 3 D4 Deep Dives added; RES now 19/22; total Deep Dive 88/91; Signature remains 15.')}catch(_){}
@@ -5940,9 +5939,9 @@ const V240Z6_DEEP_DIVES=["RES_GRANT_001_v1_3","RES_IMPL_001_v1_3","RES_TEAM_001_
 
 // A6.8: cases use Canonical; retain Deep-Dive registration below.
 try{V240Z6_DEEP_DIVES.forEach(d=>{const idx=DEEP_DIVE_CASES_V17.findIndex(x=>x&&x.case_id===d.case_id);if(idx>=0)DEEP_DIVE_CASES_V17[idx]=d;else DEEP_DIVE_CASES_V17.push(d);DEEP_DIVE_MAP_V17[d.case_id]=d;});}catch(e){console.error('[MolPath '+V240Z6_VERSION+'] RES R5 deep-dive registration failed',e)}
-function v240z6Stamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }
-const V240Z6_PREV_AFTER=window.MolPathI18nAfterApply;window.MolPathI18nAfterApply=function(l){try{if(typeof V240Z6_PREV_AFTER==='function')V240Z6_PREV_AFTER(l)}catch(_){}v240z6Stamp();};
-function v240z6Boot(){v240z6Stamp();try{if(typeof renderCasePicker==='function')renderCasePicker();if(typeof renderKpi==='function')renderKpi();if(typeof render==='function')render()}catch(_){}}
+
+
+function v240z6Boot(){try{if(typeof renderCasePicker==='function')renderCasePicker();if(typeof renderKpi==='function')renderKpi();if(typeof render==='function')render()}catch(_){}}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',v240z6Boot,{once:true});else setTimeout(v240z6Boot,0);
 window.MolPathDeepDiveRESR5Freeze=Object.freeze({version:V240Z6_VERSION,caseIds:[...V240Z6_CASE_IDS],deepDiveAdded:3,resDeepDiveStatus:'22/22',resRemaining:0,deepDiveTotalStatus:'91/91',deepDiveRemaining:0,signatureExpected:15,resContentFreeze:true,languageStatus:'DE RES master blocks R1-R5 complete; non-DE RES translation pending'});
 try{console.log('[MolPath '+V240Z6_VERSION+'] RES R5: final 3 D4 Deep Dives added; RES 22/22; total Deep Dive 91/91; Signature remains 15; RES content freeze reached.')}catch(_){}
@@ -6033,7 +6032,7 @@ function z11RenderTimeline(){
     const act=root.querySelector('.active');if(act){const target=Math.max(0,act.offsetLeft-(root.clientWidth-act.offsetWidth)/2);if(Math.abs(root.scrollLeft-target)>20)root.scrollLeft=target}
 }catch(err){console.warn('[MolPath '+V240Z11_VERSION+'] global premium timeline failed',err)}
 }
-function z11PostRender(){z11PolishNavigation();z11PolishHero();z11RemoveDeepBadges();z11RenderTimeline();z11Stamp()}
+function z11PostRender(){z11PolishNavigation();z11PolishHero();z11RemoveDeepBadges();z11RenderTimeline();}
 
 /* Wrap the current render entry points once, after all legacy/flagship wrappers are installed. */
 try{const prevPicker=renderCasePicker;renderCasePicker=function(){const out=prevPicker.apply(this,arguments);z11PolishNavigation();z11RemoveDeepBadges();return out};window.renderCasePicker=renderCasePicker}catch(_){}
@@ -6043,9 +6042,9 @@ try{const prevRender=window.render;if(typeof prevRender==='function'){window.ren
 /* Deep-Dive summary popup: retain Signature badge only; remove universal Deep-Dive badge. */
 try{v17OpenDeepDiveSummary=function(){const d=z11Deep(activeCase);if(!d){toast('Kein Deep Dive aktiv.');return}const w=window.open('','_blank');if(!w){toast('Popup wurde blockiert.');return}const sig=z11Sig(activeCase);const badge=sig?'<span class="badge">Signature Case</span>':'';const doc=`<!doctype html><html lang="de"><head><meta charset="utf-8"><title>Case Summary ${z11Esc(activeCase.id)}</title><style>body{font-family:Inter,system-ui,sans-serif;background:#eef6fb;color:#0b1b34;margin:0}.page{max-width:980px;margin:24px auto;background:#fff;border-radius:18px;padding:28px;border:1px solid #d8e4ef}h1,h2{color:#0f4c75}.badge{display:inline-block;border-radius:999px;background:#0f4c75;color:white;padding:5px 9px;font-size:.8rem;font-weight:800}.box{border:1px solid #d8e4ef;border-radius:14px;padding:12px;margin:10px 0}.warn{border-left:5px solid #b42318;background:#fff5f5;border-radius:14px;padding:12px;margin:10px 0}li{margin:.3rem 0}@media print{body{background:white}.page{margin:0;border:0}}</style></head><body><main class="page">${badge}<h1>${z11Esc(d.title)}</h1><p>${z11Esc(d.opening_scene||'')}</p><h2>Fallakte</h2><div class="box">${z11Esc(d.case_briefing||'')}</div><h2>Lernziele</h2>${v17List(d.learning_objectives)}<h2>Twist</h2><div class="warn"><b>${z11Esc(d.twist?.title||'')}</b><br>${z11Esc(d.twist?.content||'')}<br><b>Warum kritisch:</b> ${z11Esc(d.twist?.why_critical||'')}</div><h2>Musterpfad</h2>${v17List(d.expected_path)}<h2>Debrief</h2>${v17List(d.debrief_points)}<button onclick="window.print()">Drucken / PDF</button></main></body></html>`;w.document.open();w.document.write(doc);w.document.close()}}catch(_){}
 
-function z11Stamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }
-const Z11_PREV_AFTER=window.MolPathI18nAfterApply;window.MolPathI18nAfterApply=function(lang){try{if(typeof Z11_PREV_AFTER==='function')Z11_PREV_AFTER(lang)}catch(_){}z11Stamp()};
-function z11Boot(){z11Stamp();try{if(typeof render==='function')render();else z11PostRender()}catch(err){console.error('[MolPath '+V240Z11_VERSION+'] boot render failed',err);z11PostRender()}try{if(window.MolPathI18n&&typeof window.MolPathI18n.apply==='function')window.MolPathI18n.apply()}catch(_){}z11Stamp()}
+
+
+function z11Boot(){try{if(typeof render==='function')render();else z11PostRender()}catch(err){console.error('[MolPath '+V240Z11_VERSION+'] boot render failed',err);z11PostRender()}try{if(window.MolPathI18n&&typeof window.MolPathI18n.apply==='function')window.MolPathI18n.apply()}catch(_){}}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',z11Boot,{once:true});else setTimeout(z11Boot,0);
 window.MolPathGlobalBaselinePolish=Object.freeze({version:V240Z11_VERSION,base:'v2.4.0z10a',deepDiveStatus:'91/91',signatureExpected:15,changes:['remove Deep-Dive badges','preserve Signature badges','canonical Deep-Dive titles in navigation','localized navigation titles','global premium timeline for MTB/LAB/RES'],timelineScope:'all cases; domain palettes; visited/completed back-navigation; future steps locked'});
 try{console.log('[MolPath '+V240Z11_VERSION+'] global baseline polish loaded.')}catch(_){}
@@ -6057,14 +6056,7 @@ try{console.log('[MolPath '+V240Z11_VERSION+'] global baseline polish loaded.')}
 'use strict';
 const V240Z12_VERSION='v2.4.0z12';
 /* rc2 A6.2: legacy V240Z12_META authority removed; canonical A4b metadata is the sole source. */
-function z12ApplyMetadata(){/* rc2 A6.1: canonical data owns difficulty/time; legacy z12 writer disabled */ return;}
 window.MolPathZ12MetadataWriterDisabledA6=true;
-function z12Stamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }
-z12ApplyMetadata();
-try{const prev=window.render;if(typeof prev==='function'){window.render=function(){z12ApplyMetadata();const out=prev.apply(this,arguments);z12Stamp();return out};try{render=window.render}catch(_){}}}catch(_){}
-const Z12_PREV_AFTER=window.MolPathI18nAfterApply;window.MolPathI18nAfterApply=function(lang){try{if(typeof Z12_PREV_AFTER==='function')Z12_PREV_AFTER(lang)}catch(_){}z12ApplyMetadata();z12Stamp()};
-function z12Boot(){z12ApplyMetadata();try{if(typeof render==='function')render()}catch(_){}z12Stamp()}
-if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',z12Boot,{once:true});else setTimeout(z12Boot,0);
 window.MolPathCaseMetadataCalibration=Object.freeze({version:V240Z12_VERSION,base:'v2.4.0z11',cases:91,difficultyScale:['beginner','intermediate','advanced','expert'],timeSource:'curated estimated_minutes_deep values from the 91 Deep-Dive payloads'});
 try{console.log('[MolPath '+V240Z12_VERSION+'] case metadata recalibration loaded.')}catch(_){}
 })();

@@ -1,274 +1,359 @@
 {
   "status": "PASS",
-  "total": 47,
-  "passed": 47,
+  "total": 54,
+  "passed": 54,
   "failed": [],
   "checks": [
     {
-      "name": "passed A6.9 full reference",
+      "name": "A6.10 reference pass",
       "pass": true,
       "detail": null
     },
     {
-      "name": "final A6.10 full runtime passes",
+      "name": "A6.11 runtime pass",
       "pass": true,
       "detail": null
     },
     {
-      "name": "approved changes intentionally change canonical snapshot",
+      "name": "A6.11 gates pass",
       "pass": true,
       "detail": null
     },
     {
-      "name": "new canonical data stable before/after boot and all scenarios",
+      "name": "A6.11 remaining pass",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact A6.10 data snapshot preBootHash",
       "pass": true,
       "detail": "fadce9004be5fa0324e560678763d8434e0670d34f82e9b5ac213b7dc58f02b0"
     },
     {
-      "name": "same complete case/course/method counts",
+      "name": "exact A6.10 data snapshot afterBootHash",
+      "pass": true,
+      "detail": "fadce9004be5fa0324e560678763d8434e0670d34f82e9b5ac213b7dc58f02b0"
+    },
+    {
+      "name": "exact A6.10 data snapshot finalHash",
+      "pass": true,
+      "detail": "fadce9004be5fa0324e560678763d8434e0670d34f82e9b5ac213b7dc58f02b0"
+    },
+    {
+      "name": "same full counts",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "same initialized UI state",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact full display records in eleven languages",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "six existing hybrid reports in four languages unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "all 98 checkpoint IDs/order/count/data transitions identical",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "same full runtime language and case paths",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "same gate scenario language sequence",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact clinical outcomes and semantic scores de",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "all stage behavior/localization checks still pass de",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact clinical outcomes and semantic scores en",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "all stage behavior/localization checks still pass en",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact clinical outcomes and semantic scores ro",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "all stage behavior/localization checks still pass ro",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact clinical outcomes and semantic scores el",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "all stage behavior/localization checks still pass el",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact clinical outcomes and semantic scores es",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "all stage behavior/localization checks still pass es",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact clinical outcomes and semantic scores fr",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "all stage behavior/localization checks still pass fr",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact clinical outcomes and semantic scores ru",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "all stage behavior/localization checks still pass ru",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact clinical outcomes and semantic scores tr",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "all stage behavior/localization checks still pass tr",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact clinical outcomes and semantic scores ar",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "all stage behavior/localization checks still pass ar",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact clinical outcomes and semantic scores fa",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "all stage behavior/localization checks still pass fa",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact clinical outcomes and semantic scores uk",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "all stage behavior/localization checks still pass uk",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "same remaining CRC/LAB scenarios",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "same canonical data in instrumented metrics runs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "one fewer core paint during boot",
       "pass": true,
       "detail": {
-        "cases": 91,
-        "deep": 91,
-        "signature": 30,
-        "methods": 44,
-        "courses": 5,
-        "courseCases": 23
+        "before": 58,
+        "after": 57
       }
     },
     {
-      "name": "same initialized boot UI state",
+      "name": "two fewer observer constructions/observations",
+      "pass": true,
+      "detail": {
+        "before": 7,
+        "after": 5
+      }
+    },
+    {
+      "name": "one fewer DOMContentLoaded callback",
       "pass": true,
       "detail": null
     },
     {
-      "name": "six existing hybrid report paths exactly unchanged in four languages",
+      "name": "nineteen fewer afterApply frames de 0",
       "pass": true,
-      "detail": null
+      "detail": {
+        "before": 39,
+        "after": 20
+      }
     },
     {
-      "name": "eleven locales plus final DE sequence unchanged",
+      "name": "nineteen fewer afterApply frames en 1",
       "pass": true,
-      "detail": null
+      "detail": {
+        "before": 39,
+        "after": 20
+      }
     },
     {
-      "name": "all 90 other display records unchanged de 0",
+      "name": "nineteen fewer afterApply frames ro 2",
       "pass": true,
-      "detail": [
-        "MTB_OVAR_001_v0_7"
-      ]
+      "detail": {
+        "before": 39,
+        "after": 20
+      }
     },
     {
-      "name": "OVAR display scope only Deep-Dive and gate de 0",
+      "name": "nineteen fewer afterApply frames el 3",
       "pass": true,
-      "detail": null
+      "detail": {
+        "before": 39,
+        "after": 20
+      }
     },
     {
-      "name": "all 90 other display records unchanged en 1",
+      "name": "nineteen fewer afterApply frames es 4",
       "pass": true,
-      "detail": [
-        "MTB_OVAR_001_v0_7"
-      ]
+      "detail": {
+        "before": 39,
+        "after": 20
+      }
     },
     {
-      "name": "OVAR display scope only Deep-Dive and gate en 1",
+      "name": "nineteen fewer afterApply frames fr 5",
       "pass": true,
-      "detail": null
+      "detail": {
+        "before": 39,
+        "after": 20
+      }
     },
     {
-      "name": "all 90 other display records unchanged ro 2",
+      "name": "nineteen fewer afterApply frames ru 6",
       "pass": true,
-      "detail": [
-        "MTB_OVAR_001_v0_7"
-      ]
+      "detail": {
+        "before": 39,
+        "after": 20
+      }
     },
     {
-      "name": "OVAR display scope only Deep-Dive and gate ro 2",
+      "name": "nineteen fewer afterApply frames tr 7",
       "pass": true,
-      "detail": null
+      "detail": {
+        "before": 39,
+        "after": 20
+      }
     },
     {
-      "name": "all 90 other display records unchanged el 3",
+      "name": "nineteen fewer afterApply frames ar 8",
       "pass": true,
-      "detail": [
-        "MTB_OVAR_001_v0_7"
-      ]
+      "detail": {
+        "before": 39,
+        "after": 20
+      }
     },
     {
-      "name": "OVAR display scope only Deep-Dive and gate el 3",
+      "name": "nineteen fewer afterApply frames fa 9",
       "pass": true,
-      "detail": null
+      "detail": {
+        "before": 39,
+        "after": 20
+      }
     },
     {
-      "name": "all 90 other display records unchanged es 4",
+      "name": "nineteen fewer afterApply frames uk 10",
       "pass": true,
-      "detail": [
-        "MTB_OVAR_001_v0_7"
-      ]
+      "detail": {
+        "before": 39,
+        "after": 20
+      }
     },
     {
-      "name": "OVAR display scope only Deep-Dive and gate es 4",
+      "name": "nineteen fewer afterApply frames de 11",
       "pass": true,
-      "detail": null
+      "detail": {
+        "before": 39,
+        "after": 20
+      }
     },
     {
-      "name": "all 90 other display records unchanged fr 5",
-      "pass": true,
-      "detail": [
-        "MTB_OVAR_001_v0_7"
-      ]
-    },
-    {
-      "name": "OVAR display scope only Deep-Dive and gate fr 5",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "all 90 other display records unchanged ru 6",
-      "pass": true,
-      "detail": [
-        "MTB_OVAR_001_v0_7"
-      ]
-    },
-    {
-      "name": "OVAR display scope only Deep-Dive and gate ru 6",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "all 90 other display records unchanged tr 7",
-      "pass": true,
-      "detail": [
-        "MTB_OVAR_001_v0_7"
-      ]
-    },
-    {
-      "name": "OVAR display scope only Deep-Dive and gate tr 7",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "all 90 other display records unchanged ar 8",
-      "pass": true,
-      "detail": [
-        "MTB_OVAR_001_v0_7"
-      ]
-    },
-    {
-      "name": "OVAR display scope only Deep-Dive and gate ar 8",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "all 90 other display records unchanged fa 9",
-      "pass": true,
-      "detail": [
-        "MTB_OVAR_001_v0_7"
-      ]
-    },
-    {
-      "name": "OVAR display scope only Deep-Dive and gate fa 9",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "all 90 other display records unchanged uk 10",
-      "pass": true,
-      "detail": [
-        "MTB_OVAR_001_v0_7"
-      ]
-    },
-    {
-      "name": "OVAR display scope only Deep-Dive and gate uk 10",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "all 90 other display records unchanged de 11",
-      "pass": true,
-      "detail": [
-        "MTB_OVAR_001_v0_7"
-      ]
-    },
-    {
-      "name": "OVAR display scope only Deep-Dive and gate de 11",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "existing 97 source checkpoint order preserved",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "same case/deep IDs order and counts at all original checkpoints",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "non-OVAR payload transitions unchanged caseDiff",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "non-OVAR payload transitions unchanged deepDiff",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "non-OVAR payload transitions unchanged caseWrites",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "non-OVAR payload transitions unchanged deepWrites",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "new module does not write case or Deep-Dive payloads",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "late integration retains canonical authority",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "720 behavioral/localization checks pass",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "all eleven languages tested for both stages",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "confirmed optimal path 100/100 in all languages",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "early acceptance remains capped at 62 in all languages",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "wrong submitted gates retain 80 percent cap",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "missing confirmation retains clinical/method caps",
-      "pass": true,
-      "detail": null
-    },
-    {
-      "name": "remaining 72 CRC/LAB scenarios and 5 stability/error checks pass",
+      "name": "no runtime timing claims inferred from VM counters",
       "pass": true,
       "detail": null
     }
-  ]
+  ],
+  "metrics": {
+    "baseline": {
+      "corePaint": 58,
+      "afterApplyFrames": 523,
+      "observersCreated": 7,
+      "observersObserved": 7,
+      "observerDisconnects": 3,
+      "scheduled": 1039,
+      "DOMContentLoadedCallbacks": 90
+    },
+    "candidate": {
+      "corePaint": 57,
+      "afterApplyFrames": 264,
+      "observersCreated": 5,
+      "observersObserved": 5,
+      "observerDisconnects": 0,
+      "scheduled": 1018,
+      "DOMContentLoadedCallbacks": 89
+    },
+    "language_change": {
+      "before": {
+        "corePaint": 1,
+        "afterApplyFrames": 39,
+        "observersCreated": 0,
+        "observersObserved": 0,
+        "observerDisconnects": 0,
+        "scheduled": 23
+      },
+      "after": {
+        "corePaint": 1,
+        "afterApplyFrames": 20,
+        "observersCreated": 0,
+        "observersObserved": 0,
+        "observerDisconnects": 0,
+        "scheduled": 23
+      }
+    },
+    "limit": "counts in instrumented Node VM, not actual browser wall-clock or live MutationObserver execution"
+  }
 }

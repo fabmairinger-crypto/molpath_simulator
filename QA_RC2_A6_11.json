@@ -1,0 +1,108 @@
+{
+  "package": "MolPath_rc2_A6_11_delta",
+  "status": "SOURCE_COMPARISON_SYNTAX_RUNTIME_GATES_REMAINING_METRICS_PASS_BROWSER_OPEN",
+  "browser_smoke": "NOT_RUN",
+  "source": {
+    "passed": 434,
+    "total": 434
+  },
+  "comparison": {
+    "passed": 54,
+    "total": 54
+  },
+  "syntax": {
+    "syntaxChecks": 100,
+    "errors": []
+  },
+  "runtime": {
+    "passed": 254,
+    "total": 254,
+    "counts": {
+      "cases": 91,
+      "deep": 91,
+      "signature": 30,
+      "methods": 44,
+      "courses": 5,
+      "courseCases": 23
+    },
+    "snapshot_sha256": "fadce9004be5fa0324e560678763d8434e0670d34f82e9b5ac213b7dc58f02b0",
+    "errors": []
+  },
+  "gates": {
+    "passed": 720,
+    "total": 720,
+    "languages": [
+      "de",
+      "en",
+      "ro",
+      "el",
+      "es",
+      "fr",
+      "ru",
+      "tr",
+      "ar",
+      "fa",
+      "uk"
+    ],
+    "optimal_score": 100,
+    "errors": []
+  },
+  "remaining": {
+    "passed": 77,
+    "total": 77,
+    "exact_CRC_LAB_rows": 72,
+    "languages": [
+      "de",
+      "en",
+      "ro",
+      "uk"
+    ],
+    "errors": []
+  },
+  "preservation": "exact A6.10 boot state, all three snapshot hashes, 98 ordered registration checkpoints, complete display records, hybrid report HTML, score/TAT/report scenarios; randomized wrong-answer option IDs are excluded only from cross-attempt outcome comparison, their semantic scores remain equal",
+  "metrics": {
+    "baseline": {
+      "corePaint": 58,
+      "afterApplyFrames": 523,
+      "observersCreated": 7,
+      "observersObserved": 7,
+      "observerDisconnects": 3,
+      "scheduled": 1039,
+      "DOMContentLoadedCallbacks": 90
+    },
+    "candidate": {
+      "corePaint": 57,
+      "afterApplyFrames": 264,
+      "observersCreated": 5,
+      "observersObserved": 5,
+      "observerDisconnects": 0,
+      "scheduled": 1018,
+      "DOMContentLoadedCallbacks": 89
+    },
+    "language_change": {
+      "before": {
+        "corePaint": 1,
+        "afterApplyFrames": 39,
+        "observersCreated": 0,
+        "observersObserved": 0,
+        "observerDisconnects": 0,
+        "scheduled": 23
+      },
+      "after": {
+        "corePaint": 1,
+        "afterApplyFrames": 20,
+        "observersCreated": 0,
+        "observersObserved": 0,
+        "observerDisconnects": 0,
+        "scheduled": 23
+      }
+    },
+    "limit": "counts in instrumented Node VM, not actual browser wall-clock or live MutationObserver execution"
+  },
+  "limits": [
+    "Actual ordered JS executes in Node VM with a DOM test double and simulated clock. No live MutationObserver delivery, visual layout, RTL layout, binary image rendering or real browser wall-clock measurement.",
+    "Unchanged inputs reuse the verified A6.10 fixture from uploaded source files and prior deltas. Full rc1 archive materialization was previously blocked by HTTP 502; binary assets, FOM and complete archive identity are not verified.",
+    "Language fixtures reuse existing files plus the existing UK patch. Unchanged i18n/qa.js diagnostic layer is omitted by the VM runner.",
+    "Metrics are QA-only counters; source instrumentation is not part of the payload. Callback counts describe the controlled run, not a percentage browser speed-up."
+  ]
+}

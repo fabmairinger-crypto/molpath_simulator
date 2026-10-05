@@ -1,192 +1,704 @@
 [
   {
-    "script": "main",
-    "kind": "runtime_branch",
-    "old": "function v15GateSubmitted(){",
-    "new": "function v15GateSubmitted(){if(window.MolPathOvarReasoningA610?.active())return window.MolPathOvarReasoningA610.submitted();",
-    "old_start": 1593556,
-    "old_end": 1593584,
-    "new_start": 1593658,
-    "new_end": 1593782
+    "script": "v240f_lab_run_002_premium",
+    "old": "function lab24StampVersion(){ /* A6.3: historical version writer retired; provenance constant retained. */ }",
+    "new": "",
+    "old_start": 2017922,
+    "old_end": 2018030,
+    "new_start": 2017922,
+    "new_end": 2017922
   },
   {
-    "script": "main",
-    "kind": "runtime_branch",
-    "old": "function v15AnswerGate(qid,optId,multi,checked){",
-    "new": "function v15AnswerGate(qid,optId,multi,checked){if(window.MolPathOvarReasoningA610?.active())return window.MolPathOvarReasoningA610.answer(qid,optId,multi,checked);",
-    "old_start": 1593686,
-    "old_end": 1593734,
-    "new_start": 1593884,
-    "new_end": 1594048
+    "script": "v240f_lab_run_002_premium",
+    "old": "let lab24VersionRaf=0;function lab24VersionSchedule(){if(lab24VersionRaf)return;lab24VersionRaf=requestAnimationFrame(()=>{lab24VersionRaf=0;lab24StampVersion()})}",
+    "new": "",
+    "old_start": 2018031,
+    "old_end": 2018194,
+    "new_start": 2017923,
+    "new_end": 2017923
   },
   {
-    "script": "main",
-    "kind": "runtime_branch",
-    "old": "function v15GateComplete(){",
-    "new": "function v15GateComplete(){if(window.MolPathOvarReasoningA610?.active())return window.MolPathOvarReasoningA610.complete();",
-    "old_start": 1594069,
-    "old_end": 1594096,
-    "new_start": 1594383,
-    "new_end": 1594505
+    "script": "v240f_lab_run_002_premium",
+    "old": "function lab24VersionGuard(){try{const body=document.body;if(!body)return;const mo=new MutationObserver(lab24VersionSchedule);mo.observe(body,{childList:true,subtree:true});window.MolPathLabRun002VersionGuard=mo}catch(_){}}",
+    "new": "",
+    "old_start": 2018195,
+    "old_end": 2018418,
+    "new_start": 2017924,
+    "new_end": 2017924
   },
   {
-    "script": "main",
-    "kind": "runtime_branch",
-    "old": "function v15GateScore(){",
-    "new": "function v15GateScore(){if(window.MolPathOvarReasoningA610?.active())return window.MolPathOvarReasoningA610.score();",
-    "old_start": 1594648,
-    "old_end": 1594672,
-    "new_start": 1595057,
-    "new_end": 1595173
+    "script": "v240f_lab_run_002_premium",
+    "old": "();lab24StampVersion();lab24VersionGuard",
+    "new": "",
+    "old_start": 2018451,
+    "old_end": 2018491,
+    "new_start": 2017957,
+    "new_end": 2017957
   },
   {
-    "script": "main",
-    "kind": "runtime_branch",
-    "old": "function submitReasoningGate(){",
-    "new": "function submitReasoningGate(){if(window.MolPathOvarReasoningA610?.active())return window.MolPathOvarReasoningA610.submit();",
-    "old_start": 1595028,
-    "old_end": 1595059,
-    "new_start": 1595529,
-    "new_end": 1595653
+    "script": "v240f_lab_run_002_premium",
+    "old": "setTimeout(lab24StampVersion,180)",
+    "new": "",
+    "old_start": 2018631,
+    "old_end": 2018664,
+    "new_start": 2018097,
+    "new_end": 2018097
   },
   {
-    "script": "main",
-    "kind": "runtime_branch",
-    "old": "function v15ContinueAfterGate(){",
-    "new": "function v15ContinueAfterGate(){if(window.MolPathOvarReasoningA610?.active())return window.MolPathOvarReasoningA610.next();",
-    "old_start": 1595232,
-    "old_end": 1595264,
-    "new_start": 1595826,
-    "new_end": 1595949
+    "script": "v240h_res_omics_001_qa_hotfix",
+    "old": "function res24hStampVersion(){ /* A6.3: historical version writer retired; provenance constant retained. */ }",
+    "new": "",
+    "old_start": 2023798,
+    "old_end": 2023907,
+    "new_start": 2023231,
+    "new_end": 2023231
   },
   {
-    "script": "main",
-    "kind": "runtime_branch",
-    "old": "function renderClinicalReasoningGate(){",
-    "new": "function renderClinicalReasoningGate(){if(window.MolPathOvarReasoningA610?.active())return window.MolPathOvarReasoningA610.renderGate();",
-    "old_start": 1595389,
-    "old_end": 1595428,
-    "new_start": 1596074,
-    "new_end": 1596210
+    "script": "v240h_res_omics_001_qa_hotfix",
+    "old": "res24hStampVersion();",
+    "new": "",
+    "old_start": 2024141,
+    "old_end": 2024162,
+    "new_start": 2023465,
+    "new_end": 2023465
   },
   {
-    "script": "main",
-    "kind": "runtime_branch",
-    "old": "gotoStep=function(step){",
-    "new": "gotoStep=function(step){\n  if(window.MolPathOvarReasoningA610?.active())return window.MolPathOvarReasoningA610.navigate(step);",
-    "old_start": 1586716,
-    "old_end": 1586740,
-    "new_start": 1586716,
-    "new_end": 1586842
+    "script": "v240h_res_omics_001_qa_hotfix",
+    "old": "setTimeout(res24hStampVersion,180)",
+    "new": "",
+    "old_start": 2024304,
+    "old_end": 2024338,
+    "new_start": 2023607,
+    "new_end": 2023607
   },
   {
-    "script": "main",
-    "kind": "runtime_branch",
-    "old": "v15GateQuestions=function(){",
-    "new": "v15GateQuestions=function(){\n  if(window.MolPathOvarReasoningA610?.active())return window.MolPathOvarReasoningA610.questions();",
-    "old_start": 1679903,
-    "old_end": 1679931,
-    "new_start": 1680685,
-    "new_end": 1680812
+    "script": "v240i_res_omics_001_premium",
+    "old": "function res24iStampVersion(){ /* A6.3: historical version writer retired; provenance constant retained. */ }",
+    "new": "",
+    "old_start": 2061842,
+    "old_end": 2061951,
+    "new_start": 2061111,
+    "new_end": 2061111
   },
   {
-    "script": "v213ComplexPhaseBundlePatch",
-    "kind": "runtime_branch",
-    "old": "['material','Material'],['order','Runde 1: Anforderung']",
-    "new": "['material','Material'],['reasoning',window.MolPathOvarReasoningA610?window.MolPathOvarReasoningA610.ui(0):'Clinical Reasoning · vor Runde 1'],['order','Runde 1: Anforderung']",
-    "old_start": 1893538,
-    "old_end": 1893594,
-    "new_start": 1894419,
-    "new_end": 1894594
+    "script": "v240i_res_omics_001_premium",
+    "old": "let res24iRaf=0;function res24iVersionSchedule(){if(res24iRaf)return;res24iRaf=requestAnimationFrame(()=>{res24iRaf=0;res24iStampVersion()})}",
+    "new": "",
+    "old_start": 2061952,
+    "old_end": 2062093,
+    "new_start": 2061112,
+    "new_end": 2061112
   },
   {
-    "script": "v213ComplexPhaseBundlePatch",
-    "kind": "runtime_branch",
-    "old": "  const o=ov();\n  if(o.phase==='accepted_bad') return base.concat",
-    "new": "  const o=ov();\n  if(window.MolPathOvarReasoningA610?.afterAvailable())base.push(['reasoning_follow',window.MolPathOvarReasoningA610.ui(1)]);\n  if(o.phase==='accepted_bad') return base.concat",
-    "old_start": 1893648,
-    "old_end": 1893713,
-    "new_start": 1894648,
-    "new_end": 1894839
+    "script": "v240i_res_omics_001_premium",
+    "old": "function res24iVersionGuard(){try{if(window.MolPathLabRun002VersionGuard&&typeof window.MolPathLabRun002VersionGuard.disconnect==='function')window.MolPathLabRun002VersionGuard.disconnect();const body=document.body;if(!body)return;const mo=new MutationObserver(res24iVersionSchedule);mo.observe(body,{childList:true,subtree:true});window.MolPathV240iVersionGuard=mo}catch(_){}}",
+    "new": "",
+    "old_start": 2062094,
+    "old_end": 2062471,
+    "new_start": 2061113,
+    "new_end": 2061113
   },
   {
-    "script": "v213ComplexPhaseBundlePatch",
-    "kind": "runtime_branch",
-    "old": "window.runLab=function(){\n  if(isOvarCase()){\n    const o=ov();",
-    "new": "window.runLab=function(){\n  if(isOvarCase()){\n    if(window.MolPathOvarReasoningA610&&!window.MolPathOvarReasoningA610.beforeLab())return;\n    const o=ov();",
-    "old_start": 1906749,
-    "old_end": 1906812,
-    "new_start": 1907875,
-    "new_end": 1908031
+    "script": "v240i_res_omics_001_premium",
+    "old": "res24iStampVersion();",
+    "new": "",
+    "old_start": 2064542,
+    "old_end": 2064563,
+    "new_start": 2063184,
+    "new_end": 2063184
   },
   {
-    "script": "v213ComplexPhaseBundlePatch",
-    "kind": "runtime_branch",
-    "old": "o.phase1Selected=[...state.selected]; o.report1=buildOvarRound1Report(); state.report=o.report1; gotoStep('lab'); return;",
-    "new": "o.phase1Selected=[...state.selected]; o.report1=buildOvarRound1Report(); state.report=o.report1; if(window.MolPathOvarReasoningA610)window.MolPathOvarReasoningA610.resetAfterRun(); gotoStep('lab'); return;",
-    "old_start": 1906871,
-    "old_end": 1906992,
-    "new_start": 1908090,
-    "new_end": 1908295
+    "script": "v240i_res_omics_001_premium",
+    "old": "res24iStampVersion();res24iVersionGuard();",
+    "new": "",
+    "old_start": 2065157,
+    "old_end": 2065199,
+    "new_start": 2063778,
+    "new_end": 2063778
   },
   {
-    "script": "v213ComplexPhaseBundlePatch",
-    "kind": "runtime_branch",
-    "old": "<div class=\"phase-actions\"><button class=\"btn bad\" onclick=\"ovarAcceptRound1()\">Als ausreichend akzeptieren / ins MTB</button><button class=\"btn primary\" onclick=\"ovarRejectRound1()\">Nicht reliable – Nachforderung/Bestätigung</button></div>",
-    "new": "'+(window.MolPathOvarReasoningA610?window.MolPathOvarReasoningA610.reportActions():'<div class=\"phase-actions\"><button class=\"btn bad\" onclick=\"ovarAcceptRound1()\">Als ausreichend akzeptieren / ins MTB</button><button class=\"btn primary\" onclick=\"ovarRejectRound1()\">Nicht reliable – Nachforderung/Bestätigung</button></div>')+'",
-    "old_start": 1909475,
-    "old_end": 1909715,
-    "new_start": 1910778,
-    "new_end": 1911106
+    "script": "v240i_res_omics_001_premium",
+    "old": "res24iStampVersion();",
+    "new": "",
+    "old_start": 2065370,
+    "old_end": 2065391,
+    "new_start": 2063949,
+    "new_end": 2063949
   },
   {
-    "script": "v213ComplexPhaseBundlePatch",
-    "kind": "runtime_branch",
-    "old": "window.ovarAcceptRound1=function(){",
-    "new": "window.ovarAcceptRound1=function(){ if(window.MolPathOvarReasoningA610&&!window.MolPathOvarReasoningA610.beforeDecision())return;",
-    "old_start": 1911083,
-    "old_end": 1911118,
-    "new_start": 1912474,
-    "new_end": 1912603
+    "script": "v240l_performance_signature_filter",
+    "old": "stamp()",
+    "new": "",
+    "old_start": 2070019,
+    "old_end": 2070026,
+    "new_start": 2068577,
+    "new_end": 2068577
   },
   {
-    "script": "v213ComplexPhaseBundlePatch",
-    "kind": "runtime_branch",
-    "old": "window.ovarRejectRound1=function(){",
-    "new": "window.ovarRejectRound1=function(){ if(window.MolPathOvarReasoningA610&&!window.MolPathOvarReasoningA610.beforeDecision())return;",
-    "old_start": 1911355,
-    "old_end": 1911390,
-    "new_start": 1912840,
-    "new_end": 1912969
+    "script": "v240l_performance_signature_filter",
+    "old": "function stamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }",
+    "new": "",
+    "old_start": 2070835,
+    "old_end": 2070931,
+    "new_start": 2069386,
+    "new_end": 2069386
   },
   {
-    "script": "v213ComplexPhaseBundlePatch",
-    "kind": "runtime_branch",
-    "old": "window.ovarFinalizeAfterRound2=function(){",
-    "new": "window.ovarFinalizeAfterRound2=function(){ if(window.MolPathOvarReasoningA610&&!window.MolPathOvarReasoningA610.beforeFinalize())return;",
-    "old_start": 1911696,
-    "old_end": 1911738,
-    "new_start": 1913275,
-    "new_end": 1913411
+    "script": "v240l_performance_signature_filter",
+    "old": "();stamp",
+    "new": "",
+    "old_start": 2071419,
+    "old_end": 2071427,
+    "new_start": 2069874,
+    "new_end": 2069874
   },
   {
-    "script": "v213ComplexPhaseBundlePatch",
-    "kind": "runtime_branch",
-    "old": "window.renderContent=function(){ if(isOvarCase()){",
-    "new": "window.renderContent=function(){ if(isOvarCase()){ if(['reasoning','reasoning_follow'].includes(state.step)&&window.MolPathOvarReasoningA610)return window.MolPathOvarReasoningA610.renderGate();",
-    "old_start": 1911913,
-    "old_end": 1911963,
-    "new_start": 1913586,
-    "new_end": 1913779
+    "script": "v240m_a1_deepdive_patch",
+    "old": "function v240mStamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }",
+    "new": "",
+    "old_start": 2079969,
+    "old_end": 2080070,
+    "new_start": 2078416,
+    "new_end": 2078416
   },
   {
-    "script": "load_order",
-    "kind": "new_module",
-    "old": "<script src=\"rc2_A6_canonical_integration.js\"></script>",
-    "new": "<script src=\"rc2_A6_10_ovar_reasoning_gates.js\"></script>\n<script src=\"rc2_A6_canonical_integration.js\"></script>",
-    "old_start": 2142624,
-    "old_end": 2142679,
-    "new_start": 2144440,
-    "new_end": 2144553
+    "script": "v240m_a1_deepdive_patch",
+    "old": "const V240M_PREV_I18N_AFTER=window.MolPathI18nAfterApply;window.MolPathI18nAfterApply=function(l){try{if(typeof V240M_PREV_I18N_AFTER==='function')V240M_PREV_I18N_AFTER(l)}catch(_){}v240mStamp()};",
+    "new": "",
+    "old_start": 2080360,
+    "old_end": 2080556,
+    "new_start": 2078706,
+    "new_end": 2078706
+  },
+  {
+    "script": "v240m_a1_deepdive_patch",
+    "old": "();v240mStamp",
+    "new": "",
+    "old_start": 2080584,
+    "old_end": 2080597,
+    "new_start": 2078734,
+    "new_end": 2078734
+  },
+  {
+    "script": "v240n_a2_crc_deepdives",
+    "old": "function v240nStamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }",
+    "new": "",
+    "old_start": 2081871,
+    "old_end": 2081972,
+    "new_start": 2080008,
+    "new_end": 2080008
+  },
+  {
+    "script": "v240n_a2_crc_deepdives",
+    "old": "const V240N_PREV_I18N_AFTER=window.MolPathI18nAfterApply;window.MolPathI18nAfterApply=function(l){try{if(typeof V240N_PREV_I18N_AFTER==='function')V240N_PREV_I18N_AFTER(l)}catch(_){}v240nStamp()};",
+    "new": "",
+    "old_start": 2082155,
+    "old_end": 2082351,
+    "new_start": 2080191,
+    "new_end": 2080191
+  },
+  {
+    "script": "v240n_a2_crc_deepdives",
+    "old": "();v240nStamp",
+    "new": "",
+    "old_start": 2082384,
+    "old_end": 2082397,
+    "new_start": 2080224,
+    "new_end": 2080224
+  },
+  {
+    "script": "v240o_a3_hrd_deepdives",
+    "old": "function v240oStamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }",
+    "new": "",
+    "old_start": 2083736,
+    "old_end": 2083837,
+    "new_start": 2081563,
+    "new_end": 2081563
+  },
+  {
+    "script": "v240o_a3_hrd_deepdives",
+    "old": "const V240O_PREV_I18N_AFTER=window.MolPathI18nAfterApply;window.MolPathI18nAfterApply=function(l){try{if(typeof V240O_PREV_I18N_AFTER==='function')V240O_PREV_I18N_AFTER(l)}catch(_){}v240oStamp()};",
+    "new": "",
+    "old_start": 2084020,
+    "old_end": 2084216,
+    "new_start": 2081746,
+    "new_end": 2081746
+  },
+  {
+    "script": "v240o_a3_hrd_deepdives",
+    "old": "();v240oStamp",
+    "new": "",
+    "old_start": 2084249,
+    "old_end": 2084262,
+    "new_start": 2081779,
+    "new_end": 2081779
+  },
+  {
+    "script": "v240p_a4_io_deepdives",
+    "old": "function v240pStamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }",
+    "new": "",
+    "old_start": 2085641,
+    "old_end": 2085742,
+    "new_start": 2083158,
+    "new_end": 2083158
+  },
+  {
+    "script": "v240p_a4_io_deepdives",
+    "old": "const V240P_PREV_I18N_AFTER=window.MolPathI18nAfterApply;window.MolPathI18nAfterApply=function(l){try{if(typeof V240P_PREV_I18N_AFTER==='function')V240P_PREV_I18N_AFTER(l)}catch(_){}v240pStamp()};",
+    "new": "",
+    "old_start": 2085925,
+    "old_end": 2086121,
+    "new_start": 2083341,
+    "new_end": 2083341
+  },
+  {
+    "script": "v240p_a4_io_deepdives",
+    "old": "();v240pStamp",
+    "new": "",
+    "old_start": 2086154,
+    "old_end": 2086167,
+    "new_start": 2083374,
+    "new_end": 2083374
+  },
+  {
+    "script": "v240q_a5_a6_mtb_freeze",
+    "old": "function v240qStamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }",
+    "new": "",
+    "old_start": 2087626,
+    "old_end": 2087727,
+    "new_start": 2084833,
+    "new_end": 2084833
+  },
+  {
+    "script": "v240q_a5_a6_mtb_freeze",
+    "old": "const V240Q_PREV_I18N_AFTER=window.MolPathI18nAfterApply;window.MolPathI18nAfterApply=function(l){try{if(typeof V240Q_PREV_I18N_AFTER==='function')V240Q_PREV_I18N_AFTER(l)}catch(_){}v240qStamp()};",
+    "new": "",
+    "old_start": 2087910,
+    "old_end": 2088106,
+    "new_start": 2085016,
+    "new_end": 2085016
+  },
+  {
+    "script": "v240q_a5_a6_mtb_freeze",
+    "old": "();v240qStamp",
+    "new": "",
+    "old_start": 2088139,
+    "old_end": 2088152,
+    "new_start": 2085049,
+    "new_end": 2085049
+  },
+  {
+    "script": "v240r_signature_legal_hotfix",
+    "old": "function stamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }",
+    "new": "",
+    "old_start": 2100115,
+    "old_end": 2100211,
+    "new_start": 2097012,
+    "new_end": 2097012
+  },
+  {
+    "script": "v240r_signature_legal_hotfix",
+    "old": "stamp();",
+    "new": "",
+    "old_start": 2100273,
+    "old_end": 2100281,
+    "new_start": 2097074,
+    "new_end": 2097074
+  },
+  {
+    "script": "v240r_signature_legal_hotfix",
+    "old": "stamp();",
+    "new": "",
+    "old_start": 2100467,
+    "old_end": 2100475,
+    "new_start": 2097260,
+    "new_end": 2097260
+  },
+  {
+    "script": "v240s-met-deepdive",
+    "old": "function v240sStamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }",
+    "new": "",
+    "old_start": 2102101,
+    "old_end": 2102202,
+    "new_start": 2098886,
+    "new_end": 2098886
+  },
+  {
+    "script": "v240s-met-deepdive",
+    "old": "const V240S_PREV_I18N_AFTER=window.MolPathI18nAfterApply;window.MolPathI18nAfterApply=function(l){try{if(typeof V240S_PREV_I18N_AFTER==='function')V240S_PREV_I18N_AFTER(l)}catch(_){}v240sStamp()};",
+    "new": "",
+    "old_start": 2102385,
+    "old_end": 2102581,
+    "new_start": 2099069,
+    "new_end": 2099069
+  },
+  {
+    "script": "v240s-met-deepdive",
+    "old": "();v240sStamp",
+    "new": "",
+    "old_start": 2102614,
+    "old_end": 2102627,
+    "new_start": 2099102,
+    "new_end": 2099102
+  },
+  {
+    "script": "v240u_lab_b1_preanalytics_deepdive_patch",
+    "old": "function v240uStamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }",
+    "new": "",
+    "old_start": 2104424,
+    "old_end": 2104525,
+    "new_start": 2100899,
+    "new_end": 2100899
+  },
+  {
+    "script": "v240u_lab_b1_preanalytics_deepdive_patch",
+    "old": "const V240U_PREV_I18N_AFTER=window.MolPathI18nAfterApply;window.MolPathI18nAfterApply=function(l){try{if(typeof V240U_PREV_I18N_AFTER==='function')V240U_PREV_I18N_AFTER(l)}catch(_){}v240uStamp()};",
+    "new": "",
+    "old_start": 2104526,
+    "old_end": 2104722,
+    "new_start": 2100900,
+    "new_end": 2100900
+  },
+  {
+    "script": "v240u_lab_b1_preanalytics_deepdive_patch",
+    "old": "v240uStamp();",
+    "new": "",
+    "old_start": 2104744,
+    "old_end": 2104757,
+    "new_start": 2100922,
+    "new_end": 2100922
+  },
+  {
+    "script": "v240v_lab_b2_run_qc_deepdive_patch",
+    "old": "function v240vStamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }",
+    "new": "",
+    "old_start": 2106409,
+    "old_end": 2106510,
+    "new_start": 2102574,
+    "new_end": 2102574
+  },
+  {
+    "script": "v240v_lab_b2_run_qc_deepdive_patch",
+    "old": "const V240V_PREV_I18N_AFTER=window.MolPathI18nAfterApply;window.MolPathI18nAfterApply=function(l){try{if(typeof V240V_PREV_I18N_AFTER==='function')V240V_PREV_I18N_AFTER(l)}catch(_){}v240vStamp()};",
+    "new": "",
+    "old_start": 2106511,
+    "old_end": 2106707,
+    "new_start": 2102575,
+    "new_end": 2102575
+  },
+  {
+    "script": "v240v_lab_b2_run_qc_deepdive_patch",
+    "old": "v240vStamp();",
+    "new": "",
+    "old_start": 2106729,
+    "old_end": 2106742,
+    "new_start": 2102597,
+    "new_end": 2102597
+  },
+  {
+    "script": "v240w_lab_b3_postanalytics_deepdive_patch",
+    "old": "function v240wStamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }",
+    "new": "",
+    "old_start": 2108377,
+    "old_end": 2108478,
+    "new_start": 2104232,
+    "new_end": 2104232
+  },
+  {
+    "script": "v240w_lab_b3_postanalytics_deepdive_patch",
+    "old": "const V240W_PREV_I18N_AFTER=window.MolPathI18nAfterApply;window.MolPathI18nAfterApply=function(l){try{if(typeof V240W_PREV_I18N_AFTER==='function')V240W_PREV_I18N_AFTER(l)}catch(_){}v240wStamp()};",
+    "new": "",
+    "old_start": 2108479,
+    "old_end": 2108675,
+    "new_start": 2104233,
+    "new_end": 2104233
+  },
+  {
+    "script": "v240w_lab_b3_postanalytics_deepdive_patch",
+    "old": "v240wStamp();",
+    "new": "",
+    "old_start": 2108697,
+    "old_end": 2108710,
+    "new_start": 2104255,
+    "new_end": 2104255
+  },
+  {
+    "script": "v240x_lab_b4_c4_deepdive_patch",
+    "old": "function v240xStamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }",
+    "new": "",
+    "old_start": 2110374,
+    "old_end": 2110475,
+    "new_start": 2105919,
+    "new_end": 2105919
+  },
+  {
+    "script": "v240x_lab_b4_c4_deepdive_patch",
+    "old": "const V240X_PREV_I18N_AFTER=window.MolPathI18nAfterApply;window.MolPathI18nAfterApply=function(l){try{if(typeof V240X_PREV_I18N_AFTER==='function')V240X_PREV_I18N_AFTER(l)}catch(_){}v240xStamp()};",
+    "new": "",
+    "old_start": 2110476,
+    "old_end": 2110672,
+    "new_start": 2105920,
+    "new_end": 2105920
+  },
+  {
+    "script": "v240x_lab_b4_c4_deepdive_patch",
+    "old": "v240xStamp();",
+    "new": "",
+    "old_start": 2110694,
+    "old_end": 2110707,
+    "new_start": 2105942,
+    "new_end": 2105942
+  },
+  {
+    "script": "v240y_lab_b5_digital_data_lims_deepdive_patch",
+    "old": "function v240yStamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }",
+    "new": "",
+    "old_start": 2112374,
+    "old_end": 2112475,
+    "new_start": 2107609,
+    "new_end": 2107609
+  },
+  {
+    "script": "v240y_lab_b5_digital_data_lims_deepdive_patch",
+    "old": "const V240Y_PREV_I18N_AFTER=window.MolPathI18nAfterApply;window.MolPathI18nAfterApply=function(l){try{if(typeof V240Y_PREV_I18N_AFTER==='function')V240Y_PREV_I18N_AFTER(l)}catch(_){}v240yStamp()};",
+    "new": "",
+    "old_start": 2112476,
+    "old_end": 2112672,
+    "new_start": 2107610,
+    "new_end": 2107610
+  },
+  {
+    "script": "v240y_lab_b5_digital_data_lims_deepdive_patch",
+    "old": "v240yStamp();",
+    "new": "",
+    "old_start": 2112694,
+    "old_end": 2112707,
+    "new_start": 2107632,
+    "new_end": 2107632
+  },
+  {
+    "script": "v240y1_lab_c4_c5_schema_hotfix",
+    "old": "function v240y1Stamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }",
+    "new": "",
+    "old_start": 2114349,
+    "old_end": 2114451,
+    "new_start": 2109274,
+    "new_end": 2109274
+  },
+  {
+    "script": "v240y1_lab_c4_c5_schema_hotfix",
+    "old": "const prevAfter=window.MolPathI18nAfterApply;",
+    "new": "",
+    "old_start": 2114452,
+    "old_end": 2114497,
+    "new_start": 2109275,
+    "new_end": 2109275
+  },
+  {
+    "script": "v240y1_lab_c4_c5_schema_hotfix",
+    "old": "window.MolPathI18nAfterApply=function(l){try{if(typeof prevAfter==='function')prevAfter(l)}catch(_){}v240y1Stamp();};\nv240y1Stamp();",
+    "new": "",
+    "old_start": 2114498,
+    "old_end": 2114630,
+    "new_start": 2109276,
+    "new_end": 2109276
+  },
+  {
+    "script": "v240z2_res_r1_deepdive",
+    "old": "function v240z2Stamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }",
+    "new": "",
+    "old_start": 2116077,
+    "old_end": 2116179,
+    "new_start": 2110723,
+    "new_end": 2110723
+  },
+  {
+    "script": "v240z2_res_r1_deepdive",
+    "old": "const V240Z2_PREV_AFTER=window.MolPathI18nAfterApply;window.MolPathI18nAfterApply=function(l){try{if(typeof V240Z2_PREV_AFTER==='function')V240Z2_PREV_AFTER(l)}catch(_){}v240z2Stamp();};",
+    "new": "",
+    "old_start": 2116180,
+    "old_end": 2116366,
+    "new_start": 2110724,
+    "new_end": 2110724
+  },
+  {
+    "script": "v240z2_res_r1_deepdive",
+    "old": "v240z2Stamp();",
+    "new": "",
+    "old_start": 2116389,
+    "old_end": 2116403,
+    "new_start": 2110747,
+    "new_end": 2110747
+  },
+  {
+    "script": "v240z3_res_r2_deepdive",
+    "old": "function v240z3Stamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }",
+    "new": "",
+    "old_start": 2118130,
+    "old_end": 2118232,
+    "new_start": 2112474,
+    "new_end": 2112474
+  },
+  {
+    "script": "v240z3_res_r2_deepdive",
+    "old": "const V240Z3_PREV_AFTER=window.MolPathI18nAfterApply;window.MolPathI18nAfterApply=function(l){try{if(typeof V240Z3_PREV_AFTER==='function')V240Z3_PREV_AFTER(l)}catch(_){}v240z3Stamp();};",
+    "new": "",
+    "old_start": 2118233,
+    "old_end": 2118419,
+    "new_start": 2112475,
+    "new_end": 2112475
+  },
+  {
+    "script": "v240z3_res_r2_deepdive",
+    "old": "v240z3Stamp();",
+    "new": "",
+    "old_start": 2118442,
+    "old_end": 2118456,
+    "new_start": 2112498,
+    "new_end": 2112498
+  },
+  {
+    "script": "v240z4_res_r3_deepdive",
+    "old": "function v240z4Stamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }",
+    "new": "",
+    "old_start": 2120150,
+    "old_end": 2120252,
+    "new_start": 2114192,
+    "new_end": 2114192
+  },
+  {
+    "script": "v240z4_res_r3_deepdive",
+    "old": "const V240Z4_PREV_AFTER=window.MolPathI18nAfterApply;window.MolPathI18nAfterApply=function(l){try{if(typeof V240Z4_PREV_AFTER==='function')V240Z4_PREV_AFTER(l)}catch(_){}v240z4Stamp();};",
+    "new": "",
+    "old_start": 2120253,
+    "old_end": 2120439,
+    "new_start": 2114193,
+    "new_end": 2114193
+  },
+  {
+    "script": "v240z4_res_r3_deepdive",
+    "old": "v240z4Stamp();",
+    "new": "",
+    "old_start": 2120462,
+    "old_end": 2120476,
+    "new_start": 2114216,
+    "new_end": 2114216
+  },
+  {
+    "script": "v240z5_res_r4_deepdive",
+    "old": "function v240z5Stamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }",
+    "new": "",
+    "old_start": 2122148,
+    "old_end": 2122250,
+    "new_start": 2115888,
+    "new_end": 2115888
+  },
+  {
+    "script": "v240z5_res_r4_deepdive",
+    "old": "const V240Z5_PREV_AFTER=window.MolPathI18nAfterApply;window.MolPathI18nAfterApply=function(l){try{if(typeof V240Z5_PREV_AFTER==='function')V240Z5_PREV_AFTER(l)}catch(_){}v240z5Stamp();};",
+    "new": "",
+    "old_start": 2122251,
+    "old_end": 2122437,
+    "new_start": 2115889,
+    "new_end": 2115889
+  },
+  {
+    "script": "v240z5_res_r4_deepdive",
+    "old": "v240z5Stamp();",
+    "new": "",
+    "old_start": 2122460,
+    "old_end": 2122474,
+    "new_start": 2115912,
+    "new_end": 2115912
+  },
+  {
+    "script": "v240z6_res_r5_deepdive",
+    "old": "function v240z6Stamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }",
+    "new": "",
+    "old_start": 2124164,
+    "old_end": 2124266,
+    "new_start": 2117602,
+    "new_end": 2117602
+  },
+  {
+    "script": "v240z6_res_r5_deepdive",
+    "old": "const V240Z6_PREV_AFTER=window.MolPathI18nAfterApply;window.MolPathI18nAfterApply=function(l){try{if(typeof V240Z6_PREV_AFTER==='function')V240Z6_PREV_AFTER(l)}catch(_){}v240z6Stamp();};",
+    "new": "",
+    "old_start": 2124267,
+    "old_end": 2124453,
+    "new_start": 2117603,
+    "new_end": 2117603
+  },
+  {
+    "script": "v240z6_res_r5_deepdive",
+    "old": "v240z6Stamp();",
+    "new": "",
+    "old_start": 2124476,
+    "old_end": 2124490,
+    "new_start": 2117626,
+    "new_end": 2117626
+  },
+  {
+    "script": "v240z11_global_baseline_polish",
+    "old": "z11Stamp()",
+    "new": "",
+    "old_start": 2135079,
+    "old_end": 2135089,
+    "new_start": 2128215,
+    "new_end": 2128215
+  },
+  {
+    "script": "v240z11_global_baseline_polish",
+    "old": "function z11Stamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }",
+    "new": "",
+    "old_start": 2137639,
+    "old_end": 2137738,
+    "new_start": 2130765,
+    "new_end": 2130765
+  },
+  {
+    "script": "v240z11_global_baseline_polish",
+    "old": "const Z11_PREV_AFTER=window.MolPathI18nAfterApply;window.MolPathI18nAfterApply=function(lang){try{if(typeof Z11_PREV_AFTER==='function')Z11_PREV_AFTER(lang)}catch(_){}z11Stamp()};",
+    "new": "",
+    "old_start": 2137739,
+    "old_end": 2137918,
+    "new_start": 2130766,
+    "new_end": 2130766
+  },
+  {
+    "script": "v240z11_global_baseline_polish",
+    "old": "z11Stamp();",
+    "new": "",
+    "old_start": 2137938,
+    "old_end": 2137949,
+    "new_start": 2130786,
+    "new_end": 2130786
+  },
+  {
+    "script": "v240z11_global_baseline_polish",
+    "old": "z11Stamp()",
+    "new": "",
+    "old_start": 2138219,
+    "old_end": 2138229,
+    "new_start": 2131056,
+    "new_end": 2131056
+  },
+  {
+    "script": "v240z12-case-metadata-recalibration",
+    "old": "function z12ApplyMetadata(){/* rc2 A6.1: canonical data owns difficulty/time; legacy z12 writer disabled */ return;}\n",
+    "new": "",
+    "old_start": 2139095,
+    "old_end": 2139212,
+    "new_start": 2131922,
+    "new_end": 2131922
+  },
+  {
+    "script": "v240z12-case-metadata-recalibration",
+    "old": ";\nfunction z12Stamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }\nz12ApplyMetadata();\ntry{const prev=window.render;if(typeof prev==='function'){window.render=function(){z12ApplyMetadata();const out=prev.apply(this,arguments);z12Stamp();return out};try{render=window.render}catch(_){}}}catch(_){}\nconst Z12_PREV_AFTER=window.MolPathI18nAfterApply;window.MolPathI18nAfterApply=function(lang){try{if(typeof Z12_PREV_AFTER==='function')Z12_PREV_AFTER(lang)}catch(_){}z12ApplyMetadata();z12Stamp()};\nfunction z12Boot(){z12ApplyMetadata();try{if(typeof render==='function')render()}catch(_){}z12Stamp()}\nif(document.readyState==='loading')document.addEventListener('DOMContentLoaded',z12Boot,{once:true});else setTimeout(z12Boot,0)",
+    "new": "",
+    "old_start": 2139258,
+    "old_end": 2140019,
+    "new_start": 2131968,
+    "new_end": 2131968
   }
 ]

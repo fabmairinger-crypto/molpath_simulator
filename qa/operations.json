@@ -1,0 +1,488 @@
+[
+  {
+    "script": "v240f_lab_run_002_premium",
+    "kind": "version_raf_state",
+    "old": "let lab24VersionRaf=0;",
+    "new": ""
+  },
+  {
+    "script": "v240f_lab_run_002_premium",
+    "kind": "version_only_observer_helper",
+    "old": "function lab24VersionSchedule(){if(lab24VersionRaf)return;lab24VersionRaf=requestAnimationFrame(()=>{lab24VersionRaf=0;lab24StampVersion()})}",
+    "new": ""
+  },
+  {
+    "script": "v240f_lab_run_002_premium",
+    "kind": "version_only_observer_helper",
+    "old": "function lab24VersionGuard(){try{const body=document.body;if(!body)return;const mo=new MutationObserver(lab24VersionSchedule);mo.observe(body,{childList:true,subtree:true});window.MolPathLabRun002VersionGuard=mo}catch(_){}}",
+    "new": ""
+  },
+  {
+    "script": "v240f_lab_run_002_premium",
+    "kind": "version_only_observer_start",
+    "old": "lab24VersionGuard();",
+    "new": ""
+  },
+  {
+    "script": "v240f_lab_run_002_premium",
+    "kind": "version_only_timer",
+    "old": "setTimeout(lab24StampVersion,180)",
+    "new": ""
+  },
+  {
+    "script": "v240f_lab_run_002_premium",
+    "kind": "empty_version_definition",
+    "old": "function lab24StampVersion(){ /* A6.3: historical version writer retired; provenance constant retained. */ }",
+    "new": ""
+  },
+  {
+    "script": "v240f_lab_run_002_premium",
+    "kind": "empty_version_call",
+    "old": "lab24StampVersion();",
+    "new": ""
+  },
+  {
+    "script": "v240h_res_omics_001_qa_hotfix",
+    "kind": "version_only_timer",
+    "old": "setTimeout(res24hStampVersion,180)",
+    "new": ""
+  },
+  {
+    "script": "v240h_res_omics_001_qa_hotfix",
+    "kind": "empty_version_definition",
+    "old": "function res24hStampVersion(){ /* A6.3: historical version writer retired; provenance constant retained. */ }",
+    "new": ""
+  },
+  {
+    "script": "v240h_res_omics_001_qa_hotfix",
+    "kind": "empty_version_call",
+    "old": "res24hStampVersion();",
+    "new": ""
+  },
+  {
+    "script": "v240i_res_omics_001_premium",
+    "kind": "version_raf_state",
+    "old": "let res24iRaf=0;",
+    "new": ""
+  },
+  {
+    "script": "v240i_res_omics_001_premium",
+    "kind": "version_only_observer_helper",
+    "old": "function res24iVersionSchedule(){if(res24iRaf)return;res24iRaf=requestAnimationFrame(()=>{res24iRaf=0;res24iStampVersion()})}",
+    "new": ""
+  },
+  {
+    "script": "v240i_res_omics_001_premium",
+    "kind": "version_only_observer_helper",
+    "old": "function res24iVersionGuard(){try{if(window.MolPathLabRun002VersionGuard&&typeof window.MolPathLabRun002VersionGuard.disconnect==='function')window.MolPathLabRun002VersionGuard.disconnect();const body=document.body;if(!body)return;const mo=new MutationObserver(res24iVersionSchedule);mo.observe(body,{childList:true,subtree:true});window.MolPathV240iVersionGuard=mo}catch(_){}}",
+    "new": ""
+  },
+  {
+    "script": "v240i_res_omics_001_premium",
+    "kind": "version_only_observer_start",
+    "old": "res24iVersionGuard();",
+    "new": ""
+  },
+  {
+    "script": "v240i_res_omics_001_premium",
+    "kind": "empty_version_definition",
+    "old": "function res24iStampVersion(){ /* A6.3: historical version writer retired; provenance constant retained. */ }",
+    "new": ""
+  },
+  {
+    "script": "v240i_res_omics_001_premium",
+    "kind": "empty_version_call",
+    "old": "res24iStampVersion();",
+    "new": ""
+  },
+  {
+    "script": "v240i_res_omics_001_premium",
+    "kind": "empty_version_call",
+    "old": "res24iStampVersion();",
+    "new": ""
+  },
+  {
+    "script": "v240i_res_omics_001_premium",
+    "kind": "empty_version_call",
+    "old": "res24iStampVersion();",
+    "new": ""
+  },
+  {
+    "script": "v240l_performance_signature_filter",
+    "kind": "empty_version_definition",
+    "old": "function stamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }",
+    "new": ""
+  },
+  {
+    "script": "v240l_performance_signature_filter",
+    "kind": "empty_version_call",
+    "old": "stamp()",
+    "new": ""
+  },
+  {
+    "script": "v240l_performance_signature_filter",
+    "kind": "empty_version_call",
+    "old": "stamp();",
+    "new": ""
+  },
+  {
+    "script": "v240m_a1_deepdive_patch",
+    "kind": "pure_after_apply_delegate",
+    "old": "const V240M_PREV_I18N_AFTER=window.MolPathI18nAfterApply;window.MolPathI18nAfterApply=function(l){try{if(typeof V240M_PREV_I18N_AFTER==='function')V240M_PREV_I18N_AFTER(l)}catch(_){}v240mStamp()};",
+    "new": ""
+  },
+  {
+    "script": "v240m_a1_deepdive_patch",
+    "kind": "empty_version_definition",
+    "old": "function v240mStamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }",
+    "new": ""
+  },
+  {
+    "script": "v240m_a1_deepdive_patch",
+    "kind": "empty_version_call",
+    "old": "v240mStamp();",
+    "new": ""
+  },
+  {
+    "script": "v240n_a2_crc_deepdives",
+    "kind": "pure_after_apply_delegate",
+    "old": "const V240N_PREV_I18N_AFTER=window.MolPathI18nAfterApply;window.MolPathI18nAfterApply=function(l){try{if(typeof V240N_PREV_I18N_AFTER==='function')V240N_PREV_I18N_AFTER(l)}catch(_){}v240nStamp()};",
+    "new": ""
+  },
+  {
+    "script": "v240n_a2_crc_deepdives",
+    "kind": "empty_version_definition",
+    "old": "function v240nStamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }",
+    "new": ""
+  },
+  {
+    "script": "v240n_a2_crc_deepdives",
+    "kind": "empty_version_call",
+    "old": "v240nStamp();",
+    "new": ""
+  },
+  {
+    "script": "v240o_a3_hrd_deepdives",
+    "kind": "pure_after_apply_delegate",
+    "old": "const V240O_PREV_I18N_AFTER=window.MolPathI18nAfterApply;window.MolPathI18nAfterApply=function(l){try{if(typeof V240O_PREV_I18N_AFTER==='function')V240O_PREV_I18N_AFTER(l)}catch(_){}v240oStamp()};",
+    "new": ""
+  },
+  {
+    "script": "v240o_a3_hrd_deepdives",
+    "kind": "empty_version_definition",
+    "old": "function v240oStamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }",
+    "new": ""
+  },
+  {
+    "script": "v240o_a3_hrd_deepdives",
+    "kind": "empty_version_call",
+    "old": "v240oStamp();",
+    "new": ""
+  },
+  {
+    "script": "v240p_a4_io_deepdives",
+    "kind": "pure_after_apply_delegate",
+    "old": "const V240P_PREV_I18N_AFTER=window.MolPathI18nAfterApply;window.MolPathI18nAfterApply=function(l){try{if(typeof V240P_PREV_I18N_AFTER==='function')V240P_PREV_I18N_AFTER(l)}catch(_){}v240pStamp()};",
+    "new": ""
+  },
+  {
+    "script": "v240p_a4_io_deepdives",
+    "kind": "empty_version_definition",
+    "old": "function v240pStamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }",
+    "new": ""
+  },
+  {
+    "script": "v240p_a4_io_deepdives",
+    "kind": "empty_version_call",
+    "old": "v240pStamp();",
+    "new": ""
+  },
+  {
+    "script": "v240q_a5_a6_mtb_freeze",
+    "kind": "pure_after_apply_delegate",
+    "old": "const V240Q_PREV_I18N_AFTER=window.MolPathI18nAfterApply;window.MolPathI18nAfterApply=function(l){try{if(typeof V240Q_PREV_I18N_AFTER==='function')V240Q_PREV_I18N_AFTER(l)}catch(_){}v240qStamp()};",
+    "new": ""
+  },
+  {
+    "script": "v240q_a5_a6_mtb_freeze",
+    "kind": "empty_version_definition",
+    "old": "function v240qStamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }",
+    "new": ""
+  },
+  {
+    "script": "v240q_a5_a6_mtb_freeze",
+    "kind": "empty_version_call",
+    "old": "v240qStamp();",
+    "new": ""
+  },
+  {
+    "script": "v240r_signature_legal_hotfix",
+    "kind": "empty_version_definition",
+    "old": "function stamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }",
+    "new": ""
+  },
+  {
+    "script": "v240r_signature_legal_hotfix",
+    "kind": "empty_version_call",
+    "old": "stamp();",
+    "new": ""
+  },
+  {
+    "script": "v240r_signature_legal_hotfix",
+    "kind": "empty_version_call",
+    "old": "stamp();",
+    "new": ""
+  },
+  {
+    "script": "v240s-met-deepdive",
+    "kind": "pure_after_apply_delegate",
+    "old": "const V240S_PREV_I18N_AFTER=window.MolPathI18nAfterApply;window.MolPathI18nAfterApply=function(l){try{if(typeof V240S_PREV_I18N_AFTER==='function')V240S_PREV_I18N_AFTER(l)}catch(_){}v240sStamp()};",
+    "new": ""
+  },
+  {
+    "script": "v240s-met-deepdive",
+    "kind": "empty_version_definition",
+    "old": "function v240sStamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }",
+    "new": ""
+  },
+  {
+    "script": "v240s-met-deepdive",
+    "kind": "empty_version_call",
+    "old": "v240sStamp();",
+    "new": ""
+  },
+  {
+    "script": "v240u_lab_b1_preanalytics_deepdive_patch",
+    "kind": "pure_after_apply_delegate",
+    "old": "const V240U_PREV_I18N_AFTER=window.MolPathI18nAfterApply;window.MolPathI18nAfterApply=function(l){try{if(typeof V240U_PREV_I18N_AFTER==='function')V240U_PREV_I18N_AFTER(l)}catch(_){}v240uStamp()};",
+    "new": ""
+  },
+  {
+    "script": "v240u_lab_b1_preanalytics_deepdive_patch",
+    "kind": "empty_version_definition",
+    "old": "function v240uStamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }",
+    "new": ""
+  },
+  {
+    "script": "v240u_lab_b1_preanalytics_deepdive_patch",
+    "kind": "empty_version_call",
+    "old": "v240uStamp();",
+    "new": ""
+  },
+  {
+    "script": "v240v_lab_b2_run_qc_deepdive_patch",
+    "kind": "pure_after_apply_delegate",
+    "old": "const V240V_PREV_I18N_AFTER=window.MolPathI18nAfterApply;window.MolPathI18nAfterApply=function(l){try{if(typeof V240V_PREV_I18N_AFTER==='function')V240V_PREV_I18N_AFTER(l)}catch(_){}v240vStamp()};",
+    "new": ""
+  },
+  {
+    "script": "v240v_lab_b2_run_qc_deepdive_patch",
+    "kind": "empty_version_definition",
+    "old": "function v240vStamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }",
+    "new": ""
+  },
+  {
+    "script": "v240v_lab_b2_run_qc_deepdive_patch",
+    "kind": "empty_version_call",
+    "old": "v240vStamp();",
+    "new": ""
+  },
+  {
+    "script": "v240w_lab_b3_postanalytics_deepdive_patch",
+    "kind": "pure_after_apply_delegate",
+    "old": "const V240W_PREV_I18N_AFTER=window.MolPathI18nAfterApply;window.MolPathI18nAfterApply=function(l){try{if(typeof V240W_PREV_I18N_AFTER==='function')V240W_PREV_I18N_AFTER(l)}catch(_){}v240wStamp()};",
+    "new": ""
+  },
+  {
+    "script": "v240w_lab_b3_postanalytics_deepdive_patch",
+    "kind": "empty_version_definition",
+    "old": "function v240wStamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }",
+    "new": ""
+  },
+  {
+    "script": "v240w_lab_b3_postanalytics_deepdive_patch",
+    "kind": "empty_version_call",
+    "old": "v240wStamp();",
+    "new": ""
+  },
+  {
+    "script": "v240x_lab_b4_c4_deepdive_patch",
+    "kind": "pure_after_apply_delegate",
+    "old": "const V240X_PREV_I18N_AFTER=window.MolPathI18nAfterApply;window.MolPathI18nAfterApply=function(l){try{if(typeof V240X_PREV_I18N_AFTER==='function')V240X_PREV_I18N_AFTER(l)}catch(_){}v240xStamp()};",
+    "new": ""
+  },
+  {
+    "script": "v240x_lab_b4_c4_deepdive_patch",
+    "kind": "empty_version_definition",
+    "old": "function v240xStamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }",
+    "new": ""
+  },
+  {
+    "script": "v240x_lab_b4_c4_deepdive_patch",
+    "kind": "empty_version_call",
+    "old": "v240xStamp();",
+    "new": ""
+  },
+  {
+    "script": "v240y_lab_b5_digital_data_lims_deepdive_patch",
+    "kind": "pure_after_apply_delegate",
+    "old": "const V240Y_PREV_I18N_AFTER=window.MolPathI18nAfterApply;window.MolPathI18nAfterApply=function(l){try{if(typeof V240Y_PREV_I18N_AFTER==='function')V240Y_PREV_I18N_AFTER(l)}catch(_){}v240yStamp()};",
+    "new": ""
+  },
+  {
+    "script": "v240y_lab_b5_digital_data_lims_deepdive_patch",
+    "kind": "empty_version_definition",
+    "old": "function v240yStamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }",
+    "new": ""
+  },
+  {
+    "script": "v240y_lab_b5_digital_data_lims_deepdive_patch",
+    "kind": "empty_version_call",
+    "old": "v240yStamp();",
+    "new": ""
+  },
+  {
+    "script": "v240y1_lab_c4_c5_schema_hotfix",
+    "kind": "pure_after_apply_delegate",
+    "old": "const prevAfter=window.MolPathI18nAfterApply;\nwindow.MolPathI18nAfterApply=function(l){try{if(typeof prevAfter==='function')prevAfter(l)}catch(_){}v240y1Stamp();};",
+    "new": ""
+  },
+  {
+    "script": "v240y1_lab_c4_c5_schema_hotfix",
+    "kind": "empty_version_definition",
+    "old": "function v240y1Stamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }",
+    "new": ""
+  },
+  {
+    "script": "v240y1_lab_c4_c5_schema_hotfix",
+    "kind": "empty_version_call",
+    "old": "v240y1Stamp();",
+    "new": ""
+  },
+  {
+    "script": "v240z2_res_r1_deepdive",
+    "kind": "pure_after_apply_delegate",
+    "old": "const V240Z2_PREV_AFTER=window.MolPathI18nAfterApply;window.MolPathI18nAfterApply=function(l){try{if(typeof V240Z2_PREV_AFTER==='function')V240Z2_PREV_AFTER(l)}catch(_){}v240z2Stamp();};",
+    "new": ""
+  },
+  {
+    "script": "v240z2_res_r1_deepdive",
+    "kind": "empty_version_definition",
+    "old": "function v240z2Stamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }",
+    "new": ""
+  },
+  {
+    "script": "v240z2_res_r1_deepdive",
+    "kind": "empty_version_call",
+    "old": "v240z2Stamp();",
+    "new": ""
+  },
+  {
+    "script": "v240z3_res_r2_deepdive",
+    "kind": "pure_after_apply_delegate",
+    "old": "const V240Z3_PREV_AFTER=window.MolPathI18nAfterApply;window.MolPathI18nAfterApply=function(l){try{if(typeof V240Z3_PREV_AFTER==='function')V240Z3_PREV_AFTER(l)}catch(_){}v240z3Stamp();};",
+    "new": ""
+  },
+  {
+    "script": "v240z3_res_r2_deepdive",
+    "kind": "empty_version_definition",
+    "old": "function v240z3Stamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }",
+    "new": ""
+  },
+  {
+    "script": "v240z3_res_r2_deepdive",
+    "kind": "empty_version_call",
+    "old": "v240z3Stamp();",
+    "new": ""
+  },
+  {
+    "script": "v240z4_res_r3_deepdive",
+    "kind": "pure_after_apply_delegate",
+    "old": "const V240Z4_PREV_AFTER=window.MolPathI18nAfterApply;window.MolPathI18nAfterApply=function(l){try{if(typeof V240Z4_PREV_AFTER==='function')V240Z4_PREV_AFTER(l)}catch(_){}v240z4Stamp();};",
+    "new": ""
+  },
+  {
+    "script": "v240z4_res_r3_deepdive",
+    "kind": "empty_version_definition",
+    "old": "function v240z4Stamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }",
+    "new": ""
+  },
+  {
+    "script": "v240z4_res_r3_deepdive",
+    "kind": "empty_version_call",
+    "old": "v240z4Stamp();",
+    "new": ""
+  },
+  {
+    "script": "v240z5_res_r4_deepdive",
+    "kind": "pure_after_apply_delegate",
+    "old": "const V240Z5_PREV_AFTER=window.MolPathI18nAfterApply;window.MolPathI18nAfterApply=function(l){try{if(typeof V240Z5_PREV_AFTER==='function')V240Z5_PREV_AFTER(l)}catch(_){}v240z5Stamp();};",
+    "new": ""
+  },
+  {
+    "script": "v240z5_res_r4_deepdive",
+    "kind": "empty_version_definition",
+    "old": "function v240z5Stamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }",
+    "new": ""
+  },
+  {
+    "script": "v240z5_res_r4_deepdive",
+    "kind": "empty_version_call",
+    "old": "v240z5Stamp();",
+    "new": ""
+  },
+  {
+    "script": "v240z6_res_r5_deepdive",
+    "kind": "pure_after_apply_delegate",
+    "old": "const V240Z6_PREV_AFTER=window.MolPathI18nAfterApply;window.MolPathI18nAfterApply=function(l){try{if(typeof V240Z6_PREV_AFTER==='function')V240Z6_PREV_AFTER(l)}catch(_){}v240z6Stamp();};",
+    "new": ""
+  },
+  {
+    "script": "v240z6_res_r5_deepdive",
+    "kind": "empty_version_definition",
+    "old": "function v240z6Stamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }",
+    "new": ""
+  },
+  {
+    "script": "v240z6_res_r5_deepdive",
+    "kind": "empty_version_call",
+    "old": "v240z6Stamp();",
+    "new": ""
+  },
+  {
+    "script": "v240z11_global_baseline_polish",
+    "kind": "pure_after_apply_delegate",
+    "old": "const Z11_PREV_AFTER=window.MolPathI18nAfterApply;window.MolPathI18nAfterApply=function(lang){try{if(typeof Z11_PREV_AFTER==='function')Z11_PREV_AFTER(lang)}catch(_){}z11Stamp()};",
+    "new": ""
+  },
+  {
+    "script": "v240z11_global_baseline_polish",
+    "kind": "empty_version_definition",
+    "old": "function z11Stamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }",
+    "new": ""
+  },
+  {
+    "script": "v240z11_global_baseline_polish",
+    "kind": "empty_version_call",
+    "old": "z11Stamp()",
+    "new": ""
+  },
+  {
+    "script": "v240z11_global_baseline_polish",
+    "kind": "empty_version_call",
+    "old": "z11Stamp();",
+    "new": ""
+  },
+  {
+    "script": "v240z11_global_baseline_polish",
+    "kind": "empty_version_call",
+    "old": "z11Stamp()",
+    "new": ""
+  },
+  {
+    "script": "v240z12-case-metadata-recalibration",
+    "kind": "empty_metadata_runtime",
+    "old": "function z12ApplyMetadata(){/* rc2 A6.1: canonical data owns difficulty/time; legacy z12 writer disabled */ return;}\nwindow.MolPathZ12MetadataWriterDisabledA6=true;\nfunction z12Stamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }\nz12ApplyMetadata();\ntry{const prev=window.render;if(typeof prev==='function'){window.render=function(){z12ApplyMetadata();const out=prev.apply(this,arguments);z12Stamp();return out};try{render=window.render}catch(_){}}}catch(_){}\nconst Z12_PREV_AFTER=window.MolPathI18nAfterApply;window.MolPathI18nAfterApply=function(lang){try{if(typeof Z12_PREV_AFTER==='function')Z12_PREV_AFTER(lang)}catch(_){}z12ApplyMetadata();z12Stamp()};\nfunction z12Boot(){z12ApplyMetadata();try{if(typeof render==='function')render()}catch(_){}z12Stamp()}\nif(document.readyState==='loading')document.addEventListener('DOMContentLoaded',z12Boot,{once:true});else setTimeout(z12Boot,0);\n",
+    "new": "window.MolPathZ12MetadataWriterDisabledA6=true;\n"
+  }
+]

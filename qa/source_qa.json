@@ -1,770 +1,2178 @@
 {
   "status": "PASS",
-  "total": 134,
-  "passed": 134,
+  "total": 434,
+  "passed": 434,
   "failed": [],
   "checks": [
     {
-      "name": "exact delivered A6.9 baseline hash",
+      "name": "user-confirmed A6.10 baseline",
       "pass": true,
       "detail": null
     },
     {
-      "name": "19 documented index edits",
+      "name": "exact old span 0",
       "pass": true,
       "detail": null
     },
     {
-      "name": "exact original span 0",
+      "name": "exact new span 0",
       "pass": true,
       "detail": null
     },
     {
-      "name": "exact final span 0",
+      "name": "exact old span 1",
       "pass": true,
       "detail": null
     },
     {
-      "name": "exact original span 1",
+      "name": "exact new span 1",
       "pass": true,
       "detail": null
     },
     {
-      "name": "exact final span 1",
+      "name": "exact old span 2",
       "pass": true,
       "detail": null
     },
     {
-      "name": "exact original span 2",
+      "name": "exact new span 2",
       "pass": true,
       "detail": null
     },
     {
-      "name": "exact final span 2",
+      "name": "exact old span 3",
       "pass": true,
       "detail": null
     },
     {
-      "name": "exact original span 3",
+      "name": "exact new span 3",
       "pass": true,
       "detail": null
     },
     {
-      "name": "exact final span 3",
+      "name": "exact old span 4",
       "pass": true,
       "detail": null
     },
     {
-      "name": "exact original span 4",
+      "name": "exact new span 4",
       "pass": true,
       "detail": null
     },
     {
-      "name": "exact final span 4",
+      "name": "exact old span 5",
       "pass": true,
       "detail": null
     },
     {
-      "name": "exact original span 5",
+      "name": "exact new span 5",
       "pass": true,
       "detail": null
     },
     {
-      "name": "exact final span 5",
+      "name": "exact old span 6",
       "pass": true,
       "detail": null
     },
     {
-      "name": "exact original span 6",
+      "name": "exact new span 6",
       "pass": true,
       "detail": null
     },
     {
-      "name": "exact final span 6",
+      "name": "exact old span 7",
       "pass": true,
       "detail": null
     },
     {
-      "name": "exact original span 7",
+      "name": "exact new span 7",
       "pass": true,
       "detail": null
     },
     {
-      "name": "exact final span 7",
+      "name": "exact old span 8",
       "pass": true,
       "detail": null
     },
     {
-      "name": "exact original span 8",
+      "name": "exact new span 8",
       "pass": true,
       "detail": null
     },
     {
-      "name": "exact final span 8",
+      "name": "exact old span 9",
       "pass": true,
       "detail": null
     },
     {
-      "name": "exact original span 9",
+      "name": "exact new span 9",
       "pass": true,
       "detail": null
     },
     {
-      "name": "exact final span 9",
+      "name": "exact old span 10",
       "pass": true,
       "detail": null
     },
     {
-      "name": "exact original span 10",
+      "name": "exact new span 10",
       "pass": true,
       "detail": null
     },
     {
-      "name": "exact final span 10",
+      "name": "exact old span 11",
       "pass": true,
       "detail": null
     },
     {
-      "name": "exact original span 11",
+      "name": "exact new span 11",
       "pass": true,
       "detail": null
     },
     {
-      "name": "exact final span 11",
+      "name": "exact old span 12",
       "pass": true,
       "detail": null
     },
     {
-      "name": "exact original span 12",
+      "name": "exact new span 12",
       "pass": true,
       "detail": null
     },
     {
-      "name": "exact final span 12",
+      "name": "exact old span 13",
       "pass": true,
       "detail": null
     },
     {
-      "name": "exact original span 13",
+      "name": "exact new span 13",
       "pass": true,
       "detail": null
     },
     {
-      "name": "exact final span 13",
+      "name": "exact old span 14",
       "pass": true,
       "detail": null
     },
     {
-      "name": "exact original span 14",
+      "name": "exact new span 14",
       "pass": true,
       "detail": null
     },
     {
-      "name": "exact final span 14",
+      "name": "exact old span 15",
       "pass": true,
       "detail": null
     },
     {
-      "name": "exact original span 15",
+      "name": "exact new span 15",
       "pass": true,
       "detail": null
     },
     {
-      "name": "exact final span 15",
+      "name": "exact old span 16",
       "pass": true,
       "detail": null
     },
     {
-      "name": "exact original span 16",
+      "name": "exact new span 16",
       "pass": true,
       "detail": null
     },
     {
-      "name": "exact final span 16",
+      "name": "exact old span 17",
       "pass": true,
       "detail": null
     },
     {
-      "name": "exact original span 17",
+      "name": "exact new span 17",
       "pass": true,
       "detail": null
     },
     {
-      "name": "exact final span 17",
+      "name": "exact old span 18",
       "pass": true,
       "detail": null
     },
     {
-      "name": "exact original span 18",
+      "name": "exact new span 18",
       "pass": true,
       "detail": null
     },
     {
-      "name": "exact final span 18",
+      "name": "exact old span 19",
       "pass": true,
       "detail": null
     },
     {
-      "name": "forward edit proof",
+      "name": "exact new span 19",
       "pass": true,
       "detail": null
     },
     {
-      "name": "inverse edit proof reconstructs A6.9 exactly",
+      "name": "exact old span 20",
       "pass": true,
       "detail": null
     },
     {
-      "name": "all existing styles byte-identical",
+      "name": "exact new span 20",
       "pass": true,
       "detail": null
     },
     {
-      "name": "no additional observers",
+      "name": "exact old span 21",
       "pass": true,
       "detail": null
     },
     {
-      "name": "existing script order preserved",
+      "name": "exact new span 21",
       "pass": true,
       "detail": null
     },
     {
-      "name": "new module loaded once before final canonical integration",
+      "name": "exact old span 22",
       "pass": true,
       "detail": null
     },
     {
-      "name": "one additional runtime file",
+      "name": "exact new span 22",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged input i18n/ar.js",
+      "name": "exact old span 23",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged input i18n/core.js",
+      "name": "exact new span 23",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged input i18n/de.js",
+      "name": "exact old span 24",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged input i18n/el.js",
+      "name": "exact new span 24",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged input i18n/en.js",
+      "name": "exact old span 25",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged input i18n/es.js",
+      "name": "exact new span 25",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged input i18n/fa.js",
+      "name": "exact old span 26",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged input i18n/fr.js",
+      "name": "exact new span 26",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged input i18n/languages.js",
+      "name": "exact old span 27",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged input i18n/legacy/legacy_v223_v224_runtime.js",
+      "name": "exact new span 27",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged input i18n/legacy/legacy_v230c_signature_deepdive.js",
+      "name": "exact old span 28",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged input i18n/legacy/legacy_v240t_signature_i18n.js",
+      "name": "exact new span 28",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged input i18n/legacy/legacy_v240z10_res_t4_i18n.js",
+      "name": "exact old span 29",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged input i18n/legacy/legacy_v240z10a_res_t4_hotfix.js",
+      "name": "exact new span 29",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged input i18n/legacy/legacy_v240z7_res_t1_i18n.js",
+      "name": "exact old span 30",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged input i18n/legacy/legacy_v240z8_res_t2_i18n.js",
+      "name": "exact new span 30",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged input i18n/legacy/legacy_v240z9_res_t3_i18n.js",
+      "name": "exact old span 31",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged input i18n/legacy/legacy_v240z_lab_i18n.js",
+      "name": "exact new span 31",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged input i18n/ro.js",
+      "name": "exact old span 32",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged input i18n/ru.js",
+      "name": "exact new span 32",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged input i18n/tr.js",
+      "name": "exact old span 33",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged input i18n/uk.js",
+      "name": "exact new span 33",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged input molpath_version.js",
+      "name": "exact old span 34",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged input rc2_A5_courses.js",
+      "name": "exact new span 34",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged input rc2_A5_data_adapter.js",
+      "name": "exact old span 35",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged input rc2_A5_method_focus.js",
+      "name": "exact new span 35",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged input rc2_A6_canonical_integration.js",
+      "name": "exact old span 36",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged input v240z13_crc002_flagship.js",
+      "name": "exact new span 36",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged input v240z14_crc001_flagship.js",
+      "name": "exact old span 37",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged input v240z15_nsclc002_flagship.js",
+      "name": "exact new span 37",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged input v240z16_metngs003_flagship.js",
+      "name": "exact old span 38",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged input v240z17_ovar001_flagship.js",
+      "name": "exact new span 38",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged input v240z18_ovar002_flagship.js",
+      "name": "exact old span 39",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged input v240z19_cns001_flagship.js",
+      "name": "exact new span 39",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged input v240z20_io001_flagship.js",
+      "name": "exact old span 40",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged input v250b_asset_modal_hotfix.js",
+      "name": "exact new span 40",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged input v250b_home_screen.js",
+      "name": "exact old span 41",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged input v250b_labdoc001_flagship.js",
+      "name": "exact new span 41",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged input v250b_labpost001_flagship.js",
+      "name": "exact old span 42",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged input v250b_labpre001_course_flagship.js",
+      "name": "exact new span 42",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged input v250b_labrun001_course_flagship.js",
+      "name": "exact old span 43",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged input v250b_method_focus_filter.js",
+      "name": "exact new span 43",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged input v250b_metlb001_course_flagship.js",
+      "name": "exact old span 44",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged input v250b_metngs001_course_flagship.js",
+      "name": "exact new span 44",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged input v250b_metngs002_course_flagship.js",
+      "name": "exact old span 45",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged input v250b_metngs004_course_flagship.js",
+      "name": "exact new span 45",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged input v250b_metrna001_course_flagship.js",
+      "name": "exact old span 46",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged input v250b_reseth001_flagship.js",
+      "name": "exact new span 46",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged input v250b_reseth002_course_flagship.js",
+      "name": "exact old span 47",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged input v250b_reshyp001_flagship.js",
+      "name": "exact new span 47",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged input v250b_resimpl001_course_flagship.js",
+      "name": "exact old span 48",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged input v250b_responsive_shell.js",
+      "name": "exact new span 48",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged input v250b_resrole001_course_flagship.js",
+      "name": "exact old span 49",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged input v250b_signature_taxonomy_freeze.js",
+      "name": "exact new span 49",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged input v250b_startup_cover_hotfix.js",
+      "name": "exact old span 50",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged input v260rc1_case_consistency_curation_i18n.js",
+      "name": "exact new span 50",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged input v260rc1_lab_run_004_asset_upgrade.js",
+      "name": "exact old span 51",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged input v260rc1_met_fish_001_asset_i18n_upgrade.js",
+      "name": "exact new span 51",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged input v260rc1_mtb_cns_003_asset_upgrade.js",
+      "name": "exact old span 52",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged input v260rc1_mtb_cns_003_mtb_hem_001_i18n_consolidation.js",
+      "name": "exact new span 52",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged input v260rc1_mtb_hem_001_asset_upgrade.js",
+      "name": "exact old span 53",
       "pass": true,
       "detail": null
     },
     {
-      "name": "unchanged input v260rc1_res_val_001_signature_asset_i18n_upgrade.js",
+      "name": "exact new span 53",
       "pass": true,
       "detail": null
     },
     {
-      "name": "root canonical metadata unchanged",
+      "name": "exact old span 54",
       "pass": true,
       "detail": null
     },
     {
-      "name": "same 91 ordered IDs",
+      "name": "exact new span 54",
       "pass": true,
       "detail": null
     },
     {
-      "name": "only approved OVAR1 canonical record changed",
+      "name": "exact old span 55",
       "pass": true,
-      "detail": [
-        "MTB_OVAR_001_v0_7"
-      ]
+      "detail": null
+    },
+    {
+      "name": "exact new span 55",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact old span 56",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact new span 56",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact old span 57",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact new span 57",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact old span 58",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact new span 58",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact old span 59",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact new span 59",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact old span 60",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact new span 60",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact old span 61",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact new span 61",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact old span 62",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact new span 62",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact old span 63",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact new span 63",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact old span 64",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact new span 64",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact old span 65",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact new span 65",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact old span 66",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact new span 66",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact old span 67",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact new span 67",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact old span 68",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact new span 68",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact old span 69",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact new span 69",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact old span 70",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact new span 70",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact old span 71",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact new span 71",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact old span 72",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact new span 72",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact old span 73",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact new span 73",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact old span 74",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact new span 74",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact old span 75",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact new span 75",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact old span 76",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact new span 76",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact old span 77",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact new span 77",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "78 exact edits construct candidate",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "inverse edits reconstruct A6.10 exactly",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "all script attributes and load order preserved",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "all inline styles preserved",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "main runtime byte-identical",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "only documented 24 scripts edited",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "audited operations reconstruct v240f_lab_run_002_premium",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "only proven empty/observer/bootstrap functions removed v240f_lab_run_002_premium",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240f_lab_run_002_premium:lab24Active",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240f_lab_run_002_premium:lab24Done",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240f_lab_run_002_premium:lab24AssessmentLocked",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240f_lab_run_002_premium:lab24MediaAllowed",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240f_lab_run_002_premium:lab24Esc",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240f_lab_run_002_premium:lab24Lang",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240f_lab_run_002_premium:L",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240f_lab_run_002_premium:lab24Badge",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240f_lab_run_002_premium:lab24SyntheticNote",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240f_lab_run_002_premium:lab24Asset",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240f_lab_run_002_premium:lab24Header",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240f_lab_run_002_premium:lab24RunCockpit",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240f_lab_run_002_premium:lab24QcCards",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240f_lab_run_002_premium:lab24CallTable",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240f_lab_run_002_premium:lab24MediaBlock",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240f_lab_run_002_premium:lab24PlateMap",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240f_lab_run_002_premium:lab24PostCompletionMedia",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240f_lab_run_002_premium:lab24Styles",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240f_lab_run_002_premium:lab24Boot",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "retired private function has no references v240f_lab_run_002_premium:lab24StampVersion",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "audited operations reconstruct v240h_res_omics_001_qa_hotfix",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "only proven empty/observer/bootstrap functions removed v240h_res_omics_001_qa_hotfix",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240h_res_omics_001_qa_hotfix:res24hActive",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240h_res_omics_001_qa_hotfix:res24hAssessmentLocked",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240h_res_omics_001_qa_hotfix:res24hEsc",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240h_res_omics_001_qa_hotfix:res24hStyles",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240h_res_omics_001_qa_hotfix:res24hBoot",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "retired private function has no references v240h_res_omics_001_qa_hotfix:res24hStampVersion",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "audited operations reconstruct v240i_res_omics_001_premium",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "only proven empty/observer/bootstrap functions removed v240i_res_omics_001_premium",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240i_res_omics_001_premium:res24iActive",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240i_res_omics_001_premium:res24iDone",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240i_res_omics_001_premium:res24iEsc",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240i_res_omics_001_premium:res24iLang",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240i_res_omics_001_premium:R",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240i_res_omics_001_premium:res24iBadge",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240i_res_omics_001_premium:res24iSynthetic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240i_res_omics_001_premium:res24iAsset",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240i_res_omics_001_premium:res24iHeader",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240i_res_omics_001_premium:res24iProjectCockpit",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240i_res_omics_001_premium:res24iEvidenceDock",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240i_res_omics_001_premium:res24iDiscoverySummary",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240i_res_omics_001_premium:res24iDiscoveryMedia",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240i_res_omics_001_premium:res24iSelectedOption",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240i_res_omics_001_premium:res24iChoiceCards",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240i_res_omics_001_premium:res24iMultiCards",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240i_res_omics_001_premium:res24iHypothesisCanvas",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240i_res_omics_001_premium:res24iParsePico",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240i_res_omics_001_premium:res24iPicoCanvas",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240i_res_omics_001_premium:res24iStudyArchitecture",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240i_res_omics_001_premium:res24iValidationStack",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240i_res_omics_001_premium:res24iAnalysisPlan",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240i_res_omics_001_premium:res24iValidationReveal",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240i_res_omics_001_premium:res24iProjectPathSummary",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240i_res_omics_001_premium:res24iProjectIdea",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240i_res_omics_001_premium:res24iContext",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240i_res_omics_001_premium:res24iHypothesis",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240i_res_omics_001_premium:res24iPico",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240i_res_omics_001_premium:res24iDesign",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240i_res_omics_001_premium:res24iMethods",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240i_res_omics_001_premium:res24iAnalysis",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240i_res_omics_001_premium:res24iStyles",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240i_res_omics_001_premium:res24iPremiumContent",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240i_res_omics_001_premium:res24iForcePremiumDom",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240i_res_omics_001_premium:res24iBoot",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "retired private function has no references v240i_res_omics_001_premium:res24iStampVersion",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "audited operations reconstruct v240l_performance_signature_filter",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "only proven empty/observer/bootstrap functions removed v240l_performance_signature_filter",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240l_performance_signature_filter:lang",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240l_performance_signature_filter:c",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240l_performance_signature_filter:collect",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240l_performance_signature_filter:isSignature",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240l_performance_signature_filter:ensureFilter",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240l_performance_signature_filter:updateFilterLabel",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240l_performance_signature_filter:exactKey",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240l_performance_signature_filter:selectedCount",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240l_performance_signature_filter:localizePremium",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240l_performance_signature_filter:styles",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240l_performance_signature_filter:boot",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "retired private function has no references v240l_performance_signature_filter:stamp",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "audited operations reconstruct v240m_a1_deepdive_patch",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "only proven empty/observer/bootstrap functions removed v240m_a1_deepdive_patch",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240m_a1_deepdive_patch:byId",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240m_a1_deepdive_patch:isSigCase",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240m_a1_deepdive_patch:v240mStyles",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240m_a1_deepdive_patch:boot",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "retired private function has no references v240m_a1_deepdive_patch:v240mStamp",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "audited operations reconstruct v240n_a2_crc_deepdives",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "only proven empty/observer/bootstrap functions removed v240n_a2_crc_deepdives",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240n_a2_crc_deepdives:v240nStyles",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240n_a2_crc_deepdives:v240nBoot",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "retired private function has no references v240n_a2_crc_deepdives:v240nStamp",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "audited operations reconstruct v240o_a3_hrd_deepdives",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "only proven empty/observer/bootstrap functions removed v240o_a3_hrd_deepdives",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240o_a3_hrd_deepdives:v240oStyles",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240o_a3_hrd_deepdives:v240oBoot",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "retired private function has no references v240o_a3_hrd_deepdives:v240oStamp",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "audited operations reconstruct v240p_a4_io_deepdives",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "only proven empty/observer/bootstrap functions removed v240p_a4_io_deepdives",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240p_a4_io_deepdives:v240pStyles",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240p_a4_io_deepdives:v240pBoot",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "retired private function has no references v240p_a4_io_deepdives:v240pStamp",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "audited operations reconstruct v240q_a5_a6_mtb_freeze",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "only proven empty/observer/bootstrap functions removed v240q_a5_a6_mtb_freeze",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240q_a5_a6_mtb_freeze:v240qStyles",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240q_a5_a6_mtb_freeze:v240qBoot",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "retired private function has no references v240q_a5_a6_mtb_freeze:v240qStamp",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "audited operations reconstruct v240r_signature_legal_hotfix",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "only proven empty/observer/bootstrap functions removed v240r_signature_legal_hotfix",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240r_signature_legal_hotfix:v240rDeep",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240r_signature_legal_hotfix:v240rIsSignature",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240r_signature_legal_hotfix:signatureCount",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240r_signature_legal_hotfix:deepDiveCount",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240r_signature_legal_hotfix:correctDashboard",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240r_signature_legal_hotfix:correctCards",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240r_signature_legal_hotfix:legalMarkup",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240r_signature_legal_hotfix:accepted",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240r_signature_legal_hotfix:setAccepted",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240r_signature_legal_hotfix:overlay",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240r_signature_legal_hotfix:openTerms",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240r_signature_legal_hotfix:closeTerms",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240r_signature_legal_hotfix:ensureLegalUi",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240r_signature_legal_hotfix:apply",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240r_signature_legal_hotfix:boot",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "retired private function has no references v240r_signature_legal_hotfix:stamp",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "audited operations reconstruct v240s-met-deepdive",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "only proven empty/observer/bootstrap functions removed v240s-met-deepdive",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240s-met-deepdive:v240sStyles",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240s-met-deepdive:v240sBoot",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "retired private function has no references v240s-met-deepdive:v240sStamp",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "audited operations reconstruct v240u_lab_b1_preanalytics_deepdive_patch",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "only proven empty/observer/bootstrap functions removed v240u_lab_b1_preanalytics_deepdive_patch",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240u_lab_b1_preanalytics_deepdive_patch:v240uBoot",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "retired private function has no references v240u_lab_b1_preanalytics_deepdive_patch:v240uStamp",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "audited operations reconstruct v240v_lab_b2_run_qc_deepdive_patch",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "only proven empty/observer/bootstrap functions removed v240v_lab_b2_run_qc_deepdive_patch",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240v_lab_b2_run_qc_deepdive_patch:v240vBoot",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "retired private function has no references v240v_lab_b2_run_qc_deepdive_patch:v240vStamp",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "audited operations reconstruct v240w_lab_b3_postanalytics_deepdive_patch",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "only proven empty/observer/bootstrap functions removed v240w_lab_b3_postanalytics_deepdive_patch",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240w_lab_b3_postanalytics_deepdive_patch:v240wBoot",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "retired private function has no references v240w_lab_b3_postanalytics_deepdive_patch:v240wStamp",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "audited operations reconstruct v240x_lab_b4_c4_deepdive_patch",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "only proven empty/observer/bootstrap functions removed v240x_lab_b4_c4_deepdive_patch",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240x_lab_b4_c4_deepdive_patch:v240xBoot",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "retired private function has no references v240x_lab_b4_c4_deepdive_patch:v240xStamp",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "audited operations reconstruct v240y_lab_b5_digital_data_lims_deepdive_patch",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "only proven empty/observer/bootstrap functions removed v240y_lab_b5_digital_data_lims_deepdive_patch",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240y_lab_b5_digital_data_lims_deepdive_patch:v240yBoot",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "retired private function has no references v240y_lab_b5_digital_data_lims_deepdive_patch:v240yStamp",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "audited operations reconstruct v240y1_lab_c4_c5_schema_hotfix",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "only proven empty/observer/bootstrap functions removed v240y1_lab_c4_c5_schema_hotfix",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240y1_lab_c4_c5_schema_hotfix:v240y1Cards",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "retired private function has no references v240y1_lab_c4_c5_schema_hotfix:v240y1Stamp",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "audited operations reconstruct v240z2_res_r1_deepdive",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "only proven empty/observer/bootstrap functions removed v240z2_res_r1_deepdive",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240z2_res_r1_deepdive:v240z2Boot",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "retired private function has no references v240z2_res_r1_deepdive:v240z2Stamp",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "audited operations reconstruct v240z3_res_r2_deepdive",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "only proven empty/observer/bootstrap functions removed v240z3_res_r2_deepdive",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240z3_res_r2_deepdive:v240z3Boot",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "retired private function has no references v240z3_res_r2_deepdive:v240z3Stamp",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "audited operations reconstruct v240z4_res_r3_deepdive",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "only proven empty/observer/bootstrap functions removed v240z4_res_r3_deepdive",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240z4_res_r3_deepdive:v240z4Boot",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "retired private function has no references v240z4_res_r3_deepdive:v240z4Stamp",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "audited operations reconstruct v240z5_res_r4_deepdive",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "only proven empty/observer/bootstrap functions removed v240z5_res_r4_deepdive",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240z5_res_r4_deepdive:v240z5Boot",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "retired private function has no references v240z5_res_r4_deepdive:v240z5Stamp",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "audited operations reconstruct v240z6_res_r5_deepdive",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "only proven empty/observer/bootstrap functions removed v240z6_res_r5_deepdive",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240z6_res_r5_deepdive:v240z6Boot",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "retired private function has no references v240z6_res_r5_deepdive:v240z6Stamp",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "audited operations reconstruct v240z11_global_baseline_polish",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "only proven empty/observer/bootstrap functions removed v240z11_global_baseline_polish",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240z11_global_baseline_polish:z11Esc",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240z11_global_baseline_polish:z11Cases",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240z11_global_baseline_polish:z11ById",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240z11_global_baseline_polish:z11Deep",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240z11_global_baseline_polish:z11Sig",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240z11_global_baseline_polish:z11Lang",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240z11_global_baseline_polish:z11Tr",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240z11_global_baseline_polish:z11Title",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240z11_global_baseline_polish:z11DomainLabel",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240z11_global_baseline_polish:z11DiffLabel",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240z11_global_baseline_polish:z11SetText",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240z11_global_baseline_polish:z11RemoveDeepBadges",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240z11_global_baseline_polish:z11PolishNavigation",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240z11_global_baseline_polish:z11PolishHero",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240z11_global_baseline_polish:z11TimelineDomain",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240z11_global_baseline_polish:z11Palette",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240z11_global_baseline_polish:z11RenderTimeline",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240z11_global_baseline_polish:z11PostRender",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "surviving function semantics identical v240z11_global_baseline_polish:z11Boot",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "retired private function has no references v240z11_global_baseline_polish:z11Stamp",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "audited operations reconstruct v240z12-case-metadata-recalibration",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "only proven empty/observer/bootstrap functions removed v240z12-case-metadata-recalibration",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "retired private function has no references v240z12-case-metadata-recalibration:z12ApplyMetadata",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "retired private function has no references v240z12-case-metadata-recalibration:z12Stamp",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "z12 disabled writer flag and metadata export remain",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "one empty render wrapper removed",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "nineteen pure i18n delegates removed",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "two empty subtree observers removed",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "runtime file set unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged executable input i18n/ar.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged executable input i18n/core.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged executable input i18n/de.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged executable input i18n/el.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged executable input i18n/en.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged executable input i18n/es.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged executable input i18n/fa.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged executable input i18n/fr.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged executable input i18n/languages.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged executable input i18n/legacy/legacy_v223_v224_runtime.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged executable input i18n/legacy/legacy_v230c_signature_deepdive.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged executable input i18n/legacy/legacy_v240t_signature_i18n.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged executable input i18n/legacy/legacy_v240z10_res_t4_i18n.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged executable input i18n/legacy/legacy_v240z10a_res_t4_hotfix.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged executable input i18n/legacy/legacy_v240z7_res_t1_i18n.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged executable input i18n/legacy/legacy_v240z8_res_t2_i18n.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged executable input i18n/legacy/legacy_v240z9_res_t3_i18n.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged executable input i18n/legacy/legacy_v240z_lab_i18n.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged executable input i18n/ro.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged executable input i18n/ru.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged executable input i18n/tr.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged executable input i18n/uk.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged executable input molpath_version.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged executable input rc2_A4b_canonical_cases_lossless.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged executable input rc2_A5_courses.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged executable input rc2_A5_data_adapter.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged executable input rc2_A5_method_focus.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged executable input rc2_A6_10_ovar_reasoning_gates.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged executable input rc2_A6_canonical_integration.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged executable input v240z13_crc002_flagship.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged executable input v240z14_crc001_flagship.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged executable input v240z15_nsclc002_flagship.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged executable input v240z16_metngs003_flagship.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged executable input v240z17_ovar001_flagship.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged executable input v240z18_ovar002_flagship.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged executable input v240z19_cns001_flagship.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged executable input v240z20_io001_flagship.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged executable input v250b_asset_modal_hotfix.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged executable input v250b_home_screen.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged executable input v250b_labdoc001_flagship.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged executable input v250b_labpost001_flagship.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unchanged executable input v250b_labpre001_course_flagship.js",
+      "pass": true,
+      "detail": null
     },
     {
-      "name": "OVAR preserved id",
+      "name": "unchanged executable input v250b_labrun001_course_flagship.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "OVAR preserved base_id",
+      "name": "unchanged executable input v250b_method_focus_filter.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "OVAR preserved meta",
+      "name": "unchanged executable input v250b_metlb001_course_flagship.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "OVAR preserved taxonomy",
+      "name": "unchanged executable input v250b_metngs001_course_flagship.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "OVAR preserved case",
+      "name": "unchanged executable input v250b_metngs002_course_flagship.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "OVAR preserved assets",
+      "name": "unchanged executable input v250b_metngs004_course_flagship.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "OVAR preserved asset_runtime_meta",
+      "name": "unchanged executable input v250b_metrna001_course_flagship.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "only deep gate field changed",
+      "name": "unchanged executable input v250b_reseth001_flagship.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "score caps and method rules unchanged",
+      "name": "unchanged executable input v250b_reseth002_course_flagship.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "other provenance unchanged",
+      "name": "unchanged executable input v250b_reshyp001_flagship.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "exact approved questions in both canonical gate authorities",
+      "name": "unchanged executable input v250b_resimpl001_course_flagship.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "gate count four, required, existing cap retained",
+      "name": "unchanged executable input v250b_responsive_shell.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "updated record hash validates",
+      "name": "unchanged executable input v250b_resrole001_course_flagship.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "valid option/answer IDs ovar_clinical_question",
+      "name": "unchanged executable input v250b_signature_taxonomy_freeze.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "valid option/answer IDs ovar_archival_material",
+      "name": "unchanged executable input v250b_startup_cover_hotfix.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "valid option/answer IDs ovar_brca1_reliability",
+      "name": "unchanged executable input v260rc1_case_consistency_curation_i18n.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "valid option/answer IDs ovar_confirmation_strategy",
+      "name": "unchanged executable input v260rc1_lab_run_004_asset_upgrade.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "approved SC/MS/SC/SC and two stages",
+      "name": "unchanged executable input v260rc1_met_fish_001_asset_i18n_upgrade.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "new locale keys have no collisions in other 90 records",
+      "name": "unchanged executable input v260rc1_mtb_cns_003_asset_upgrade.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "new module has no wrappers/timers/observers",
+      "name": "unchanged executable input v260rc1_mtb_cns_003_mtb_hem_001_i18n_consolidation.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "all eleven locales cover all 19 UI strings",
+      "name": "unchanged executable input v260rc1_mtb_hem_001_asset_upgrade.js",
       "pass": true,
       "detail": null
     },
     {
-      "name": "all ten translations cover all 22 unique clinical strings",
+      "name": "unchanged executable input v260rc1_res_val_001_signature_asset_i18n_upgrade.js",
       "pass": true,
       "detail": null
     }
-  ],
-  "changes": {
-    "base": "delivered A6.9 executable fixture",
-    "changed": [
-      "index.html",
-      "rc2_A4b_canonical_cases_lossless.js"
-    ],
-    "added": [
-      "rc2_A6_10_ovar_reasoning_gates.js"
-    ],
-    "exact_index_edits": 19,
-    "payload": [
-      {
-        "path": "index.html",
-        "base_bytes": 2145298,
-        "base_sha256": "129863aaaa614615b0f3102cfeaaec99f81ffda2ca68309a38ac3196d1c964ec",
-        "bytes": 2147173,
-        "sha256": "171093b0c187644e039714ae3a4b6db57f8f164a36c5edde03f5d8111c54e663"
-      },
-      {
-        "path": "rc2_A4b_canonical_cases_lossless.js",
-        "base_bytes": 1858251,
-        "base_sha256": "95f5016ea6ec491b7373821204ee5e0c58923e13fcfca261764a51d45f3160a5",
-        "bytes": 1863877,
-        "sha256": "f6cd2d47e604c34f07eab978dc582379fbdd40f92003b72c25c1d06631ee1867"
-      },
-      {
-        "path": "rc2_A6_10_ovar_reasoning_gates.js",
-        "base_bytes": null,
-        "base_sha256": null,
-        "bytes": 56534,
-        "sha256": "23293c21b736e77241086705f0f9e4ac56c22f21bbe4d12d38a72131b27f2f0f"
-      }
-    ],
-    "load_order": [
-      "rc2_A5_courses.js",
-      "rc2_A4b_canonical_cases_lossless.js",
-      "molpath_version.js",
-      "rc2_A5_data_adapter.js",
-      "i18n/languages.js",
-      "i18n/legacy/legacy_v223_v224_runtime.js",
-      "i18n/legacy/legacy_v230c_signature_deepdive.js",
-      "i18n/legacy/legacy_v240t_signature_i18n.js",
-      "i18n/legacy/legacy_v240z_lab_i18n.js",
-      "i18n/legacy/legacy_v240z7_res_t1_i18n.js",
-      "i18n/legacy/legacy_v240z8_res_t2_i18n.js",
-      "i18n/legacy/legacy_v240z9_res_t3_i18n.js",
-      "i18n/legacy/legacy_v240z10_res_t4_i18n.js",
-      "i18n/legacy/legacy_v240z10a_res_t4_hotfix.js",
-      "v240z13_crc002_flagship.js",
-      "v240z14_crc001_flagship.js",
-      "v240z15_nsclc002_flagship.js",
-      "v240z16_metngs003_flagship.js",
-      "v240z17_ovar001_flagship.js",
-      "v240z18_ovar002_flagship.js",
-      "v240z19_cns001_flagship.js",
-      "v240z20_io001_flagship.js",
-      "v250b_labpost001_flagship.js",
-      "v250b_labdoc001_flagship.js",
-      "v250b_reshyp001_flagship.js",
-      "v250b_reseth001_flagship.js",
-      "v250b_responsive_shell.js",
-      "v250b_asset_modal_hotfix.js",
-      "v250b_startup_cover_hotfix.js",
-      "v250b_home_screen.js",
-      "rc2_A5_method_focus.js",
-      "v250b_method_focus_filter.js",
-      "v250b_metngs001_course_flagship.js",
-      "v250b_metngs002_course_flagship.js",
-      "v250b_metrna001_course_flagship.js",
-      "v250b_metlb001_course_flagship.js",
-      "v250b_metngs004_course_flagship.js",
-      "v250b_labrun001_course_flagship.js",
-      "v250b_labpre001_course_flagship.js",
-      "v250b_resimpl001_course_flagship.js",
-      "v250b_reseth002_course_flagship.js",
-      "v250b_resrole001_course_flagship.js",
-      "v260rc1_mtb_cns_003_asset_upgrade.js",
-      "v260rc1_mtb_hem_001_asset_upgrade.js",
-      "v260rc1_lab_run_004_asset_upgrade.js",
-      "v260rc1_mtb_cns_003_mtb_hem_001_i18n_consolidation.js",
-      "v260rc1_met_fish_001_asset_i18n_upgrade.js",
-      "v260rc1_res_val_001_signature_asset_i18n_upgrade.js",
-      "v260rc1_case_consistency_curation_i18n.js",
-      "rc2_A6_10_ovar_reasoning_gates.js",
-      "rc2_A6_canonical_integration.js",
-      "v250b_signature_taxonomy_freeze.js"
-    ],
-    "old_record_sha256": "972c296edf30af8f8c688c310cc39d05a176c843f09a91e1978e1cbe1de241e5",
-    "new_record_sha256": "33a909ea67c34acc5ffc287af2f76b1fe0256cb9eb12ff068c8261fe91c891b8"
-  }
+  ]
 }

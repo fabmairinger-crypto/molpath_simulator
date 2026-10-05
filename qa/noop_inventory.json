@@ -1,0 +1,233 @@
+[
+  {
+    "script": "v240f_lab_run_002_premium",
+    "name": "lab24StampVersion",
+    "calls": [
+      "ild)::after{top:16px;left:calc(50% + 20px);right:calc(-50% + 20px)}}\n`;document.head.appendChild(s)}\nfunction lab24StampVersion(){ /* A6.3: historical version writer retired; provenance constant retained. */ }\nlet lab24VersionRaf=0;function lab24VersionSched",
+      "lab24VersionSchedule(){if(lab24VersionRaf)return;lab24VersionRaf=requestAnimationFrame(()=>{lab24VersionRaf=0;lab24StampVersion()})}\nfunction lab24VersionGuard(){try{const body=document.body;if(!body)return;const mo=new MutationObserver(lab24VersionSchedule)",
+      "ist:true,subtree:true});window.MolPathLabRun002VersionGuard=mo}catch(_){}}\nfunction lab24Boot(){lab24Styles();lab24StampVersion();lab24VersionGuard();try{if(lab24Active()&&typeof render==='function')render()}catch(err){console.error(LAB24_VERSION+' LAB_RUN_0"
+    ]
+  },
+  {
+    "script": "v240h_res_omics_001_qa_hotfix",
+    "name": "res24hStampVersion",
+    "calls": [
+      "b)=>a+(Number(b)||0),0);\n  res.max=180;\n  res.pct=Math.round(res.got/res.max*100);\n  return res;\n};\n\nfunction res24hStampVersion(){ /* A6.3: historical version writer retired; provenance constant retained. */ }\nfunction res24hStyles(){\n  if(document.getElemen",
+      ".id='res24hStyles';st.textContent=``;document.head.appendChild(st);\n}\nfunction res24hBoot(){\n  res24hStyles();res24hStampVersion();\n  try{if(res24hActive()&&typeof render==='function')render()}catch(err){console.error(RES24H_VERSION+' RES_OMICS_001 QA boot fa"
+    ]
+  },
+  {
+    "script": "v240i_res_omics_001_premium",
+    "name": "res24iStampVersion",
+    "calls": [
+      "ild)::after{top:16px;left:calc(50% + 20px);right:calc(-50% + 20px)}}\n`;document.head.appendChild(s)}\nfunction res24iStampVersion(){ /* A6.3: historical version writer retired; provenance constant retained. */ }\nlet res24iRaf=0;function res24iVersionSchedule()",
+      "4iRaf=0;function res24iVersionSchedule(){if(res24iRaf)return;res24iRaf=requestAnimationFrame(()=>{res24iRaf=0;res24iStampVersion()})}\nfunction res24iVersionGuard(){try{if(window.MolPathLabRun002VersionGuard&&typeof window.MolPathLabRun002VersionGuard.disconne",
+      ";\n   const premium=res24iPremiumContent();\n   if(contentRoot&&premium!=null)contentRoot.innerHTML=premium;\n   res24iStampVersion();\n   try{if(window.MolPathI18n&&typeof window.MolPathI18n.apply==='function')window.MolPathI18n.apply();}catch(_){ }\n }catch(err)",
+      " }\n}\nwindow.MolPathResOmics001PremiumForceRender=res24iForcePremiumDom;\n\nfunction res24iBoot(){res24iStyles();res24iStampVersion();res24iVersionGuard();try{if(res24iActive()&&typeof window.render==='function')window.render()}catch(err){console.error(RES24I_VE",
+      "ow.render()}catch(err){console.error(RES24I_VERSION+' RES_OMICS_001 premium boot failed',err)}setTimeout(()=>{res24iStampVersion();if(res24iActive())res24iForcePremiumDom()},180)}\nif(document.readyState==='loading')document.addEventListener('DOMContentLoaded'"
+    ]
+  },
+  {
+    "script": "v240l_performance_signature_filter",
+    "name": "stamp",
+    "calls": [
+      "y=function(l){try{if(typeof prevAfter==='function')prevAfter(l)}catch(_){}try{localizePremium()}catch(_){}try{stamp()}catch(_){}};\n\nfunction styles(){if(document.getElementById('v240lStyles'))return;const s=document.createElement('style');s.id='v",
+      "border-radius:999px;padding:2px 7px;font-size:.67rem;font-weight:900}\";document.head.appendChild(s)}\nfunction stamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }\nfunction boot(){\n // Disable the two premium ver",
+      ".disconnect==='function')window.MolPathLabRun002VersionGuard.disconnect()}catch(_){}\n styles();ensureFilter();stamp();\n try{if(window.MolPathI18n&&typeof window.MolPathI18n.apply==='function')window.MolPathI18n.apply()}catch(_){}\n const mo=new Mu"
+    ]
+  },
+  {
+    "script": "v240m_a1_deepdive_patch",
+    "name": "v240mStamp",
+    "calls": [
+      "nt.write(doc);w.document.close()};\n\n// 6) Version stamp: no observer, no extra render-time DOM scan.\nfunction v240mStamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }\nfunction v240mStyles(){if(document.getElementByI",
+      "18nAfterApply=function(l){try{if(typeof V240M_PREV_I18N_AFTER==='function')V240M_PREV_I18N_AFTER(l)}catch(_){}v240mStamp()};\nfunction boot(){v240mStyles();v240mStamp();try{renderCasePicker();renderKpi()}catch(_){}}\nif(document.readyState==='loading')d",
+      "_PREV_I18N_AFTER==='function')V240M_PREV_I18N_AFTER(l)}catch(_){}v240mStamp()};\nfunction boot(){v240mStyles();v240mStamp();try{renderCasePicker();renderKpi()}catch(_){}}\nif(document.readyState==='loading')document.addEventListener('DOMContentLoaded',b"
+    ]
+  },
+  {
+    "script": "v240n_a2_crc_deepdives",
+    "name": "v240nStamp",
+    "calls": [
+      "]=d;\n });\n}catch(e){console.error('[MolPath '+V240N_VERSION+'] A2 Deep-Dive registration failed',e)}\nfunction v240nStamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }\nfunction v240nStyles(){if(document.getElementByI",
+      "18nAfterApply=function(l){try{if(typeof V240N_PREV_I18N_AFTER==='function')V240N_PREV_I18N_AFTER(l)}catch(_){}v240nStamp()};\nfunction v240nBoot(){v240nStyles();v240nStamp();try{renderCasePicker();renderKpi()}catch(_){}}\nif(document.readyState==='loadi",
+      "_I18N_AFTER==='function')V240N_PREV_I18N_AFTER(l)}catch(_){}v240nStamp()};\nfunction v240nBoot(){v240nStyles();v240nStamp();try{renderCasePicker();renderKpi()}catch(_){}}\nif(document.readyState==='loading')document.addEventListener('DOMContentLoaded',v"
+    ]
+  },
+  {
+    "script": "v240o_a3_hrd_deepdives",
+    "name": "v240oStamp",
+    "calls": [
+      "]=d;\n });\n}catch(e){console.error('[MolPath '+V240O_VERSION+'] A3 Deep-Dive registration failed',e)}\nfunction v240oStamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }\nfunction v240oStyles(){if(document.getElementByI",
+      "18nAfterApply=function(l){try{if(typeof V240O_PREV_I18N_AFTER==='function')V240O_PREV_I18N_AFTER(l)}catch(_){}v240oStamp()};\nfunction v240oBoot(){v240oStyles();v240oStamp();try{renderCasePicker();renderKpi()}catch(_){}}\nif(document.readyState==='loadi",
+      "_I18N_AFTER==='function')V240O_PREV_I18N_AFTER(l)}catch(_){}v240oStamp()};\nfunction v240oBoot(){v240oStyles();v240oStamp();try{renderCasePicker();renderKpi()}catch(_){}}\nif(document.readyState==='loading')document.addEventListener('DOMContentLoaded',v"
+    ]
+  },
+  {
+    "script": "v240p_a4_io_deepdives",
+    "name": "v240pStamp",
+    "calls": [
+      "]=d;\n });\n}catch(e){console.error('[MolPath '+V240P_VERSION+'] A4 Deep-Dive registration failed',e)}\nfunction v240pStamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }\nfunction v240pStyles(){if(document.getElementByI",
+      "18nAfterApply=function(l){try{if(typeof V240P_PREV_I18N_AFTER==='function')V240P_PREV_I18N_AFTER(l)}catch(_){}v240pStamp()};\nfunction v240pBoot(){v240pStyles();v240pStamp();try{renderCasePicker();renderKpi()}catch(_){}}\nif(document.readyState==='loadi",
+      "_I18N_AFTER==='function')V240P_PREV_I18N_AFTER(l)}catch(_){}v240pStamp()};\nfunction v240pBoot(){v240pStyles();v240pStamp();try{renderCasePicker();renderKpi()}catch(_){}}\nif(document.readyState==='loading')document.addEventListener('DOMContentLoaded',v"
+    ]
+  },
+  {
+    "script": "v240q_a5_a6_mtb_freeze",
+    "name": "v240qStamp",
+    "calls": [
+      "[d.case_id]=d;});}catch(e){console.error('[MolPath '+V240Q_VERSION+'] A5/A6 registration failed',e)}\nfunction v240qStamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }\nfunction v240qStyles(){if(document.getElementByI",
+      "18nAfterApply=function(l){try{if(typeof V240Q_PREV_I18N_AFTER==='function')V240Q_PREV_I18N_AFTER(l)}catch(_){}v240qStamp()};\nfunction v240qBoot(){v240qStyles();v240qStamp();try{renderCasePicker();renderKpi()}catch(_){}}\nif(document.readyState==='loadi",
+      "_I18N_AFTER==='function')V240Q_PREV_I18N_AFTER(l)}catch(_){}v240qStamp()};\nfunction v240qBoot(){v240qStyles();v240qStamp();try{renderCasePicker();renderKpi()}catch(_){}}\nif(document.readyState==='loading')document.addEventListener('DOMContentLoaded',v"
+    ]
+  },
+  {
+    "script": "v240r_signature_legal_hotfix",
+    "name": "stamp",
+    "calls": [
+      "oseTerms()});\n    document.addEventListener('keydown',e=>{if(e.key==='Escape')closeTerms()});\n  }\n}\n\nfunction stamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }\nfunction apply(){\n  ensureLegalUi();\n  correctDa",
+      "iter retired; provenance constant retained. */ }\nfunction apply(){\n  ensureLegalUi();\n  correctDashboard();\n  stamp();\n}\nconst V240R_PREV_I18N_AFTER=window.MolPathI18nAfterApply;\nwindow.MolPathI18nAfterApply=function(l){try{if(typeof V240R_PREV_I",
+      "18nAfterApply=function(l){try{if(typeof V240R_PREV_I18N_AFTER==='function')V240R_PREV_I18N_AFTER(l)}catch(_){}stamp();correctDashboard();};\nfunction boot(){\n  apply();\n  // Redraw once after replacing legacy signature predicate, then correct the "
+    ]
+  },
+  {
+    "script": "v240s-met-deepdive",
+    "name": "v240sStamp",
+    "calls": [
+      "17[d.case_id]=d;});}catch(e){console.error('[MolPath '+V240S_VERSION+'] MET registration failed',e)}\nfunction v240sStamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }\nfunction v240sStyles(){if(document.getElementByI",
+      "18nAfterApply=function(l){try{if(typeof V240S_PREV_I18N_AFTER==='function')V240S_PREV_I18N_AFTER(l)}catch(_){}v240sStamp()};\nfunction v240sBoot(){v240sStyles();v240sStamp();try{renderCasePicker();renderKpi()}catch(_){}}\nif(document.readyState==='loadi",
+      "_I18N_AFTER==='function')V240S_PREV_I18N_AFTER(l)}catch(_){}v240sStamp()};\nfunction v240sBoot(){v240sStyles();v240sStamp();try{renderCasePicker();renderKpi()}catch(_){}}\nif(document.readyState==='loading')document.addEventListener('DOMContentLoaded',v"
+    ]
+  },
+  {
+    "script": "v240u_lab_b1_preanalytics_deepdive_patch",
+    "name": "v240uStamp",
+    "calls": [
+      "d.case_id]=d;});}catch(e){console.error('[MolPath '+V240U_VERSION+'] LAB B1 registration failed',e)}\nfunction v240uStamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }\nconst V240U_PREV_I18N_AFTER=window.MolPathI18nAf",
+      "18nAfterApply=function(l){try{if(typeof V240U_PREV_I18N_AFTER==='function')V240U_PREV_I18N_AFTER(l)}catch(_){}v240uStamp()};\nfunction v240uBoot(){v240uStamp();try{renderCasePicker();renderKpi();if(typeof render==='function')render()}catch(_){}}\nif(doc",
+      "eof V240U_PREV_I18N_AFTER==='function')V240U_PREV_I18N_AFTER(l)}catch(_){}v240uStamp()};\nfunction v240uBoot(){v240uStamp();try{renderCasePicker();renderKpi();if(typeof render==='function')render()}catch(_){}}\nif(document.readyState==='loading')documen"
+    ]
+  },
+  {
+    "script": "v240v_lab_b2_run_qc_deepdive_patch",
+    "name": "v240vStamp",
+    "calls": [
+      "d.case_id]=d;});}catch(e){console.error('[MolPath '+V240V_VERSION+'] LAB B2 registration failed',e)}\nfunction v240vStamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }\nconst V240V_PREV_I18N_AFTER=window.MolPathI18nAf",
+      "18nAfterApply=function(l){try{if(typeof V240V_PREV_I18N_AFTER==='function')V240V_PREV_I18N_AFTER(l)}catch(_){}v240vStamp()};\nfunction v240vBoot(){v240vStamp();try{renderCasePicker();renderKpi();if(typeof render==='function')render()}catch(_){}}\nif(doc",
+      "eof V240V_PREV_I18N_AFTER==='function')V240V_PREV_I18N_AFTER(l)}catch(_){}v240vStamp()};\nfunction v240vBoot(){v240vStamp();try{renderCasePicker();renderKpi();if(typeof render==='function')render()}catch(_){}}\nif(document.readyState==='loading')documen"
+    ]
+  },
+  {
+    "script": "v240w_lab_b3_postanalytics_deepdive_patch",
+    "name": "v240wStamp",
+    "calls": [
+      "d.case_id]=d;});}catch(e){console.error('[MolPath '+V240W_VERSION+'] LAB B3 registration failed',e)}\nfunction v240wStamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }\nconst V240W_PREV_I18N_AFTER=window.MolPathI18nAf",
+      "18nAfterApply=function(l){try{if(typeof V240W_PREV_I18N_AFTER==='function')V240W_PREV_I18N_AFTER(l)}catch(_){}v240wStamp()};\nfunction v240wBoot(){v240wStamp();try{renderCasePicker();renderKpi();if(typeof render==='function')render()}catch(_){}}\nif(doc",
+      "eof V240W_PREV_I18N_AFTER==='function')V240W_PREV_I18N_AFTER(l)}catch(_){}v240wStamp()};\nfunction v240wBoot(){v240wStamp();try{renderCasePicker();renderKpi();if(typeof render==='function')render()}catch(_){}}\nif(document.readyState==='loading')documen"
+    ]
+  },
+  {
+    "script": "v240x_lab_b4_c4_deepdive_patch",
+    "name": "v240xStamp",
+    "calls": [
+      "d.case_id]=d;});}catch(e){console.error('[MolPath '+V240X_VERSION+'] LAB B4 registration failed',e)}\nfunction v240xStamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }\nconst V240X_PREV_I18N_AFTER=window.MolPathI18nAf",
+      "18nAfterApply=function(l){try{if(typeof V240X_PREV_I18N_AFTER==='function')V240X_PREV_I18N_AFTER(l)}catch(_){}v240xStamp()};\nfunction v240xBoot(){v240xStamp();try{renderCasePicker();renderKpi();if(typeof render==='function')render()}catch(_){}}\nif(doc",
+      "eof V240X_PREV_I18N_AFTER==='function')V240X_PREV_I18N_AFTER(l)}catch(_){}v240xStamp()};\nfunction v240xBoot(){v240xStamp();try{renderCasePicker();renderKpi();if(typeof render==='function')render()}catch(_){}}\nif(document.readyState==='loading')documen"
+    ]
+  },
+  {
+    "script": "v240y_lab_b5_digital_data_lims_deepdive_patch",
+    "name": "v240yStamp",
+    "calls": [
+      "d.case_id]=d;});}catch(e){console.error('[MolPath '+V240Y_VERSION+'] LAB B5 registration failed',e)}\nfunction v240yStamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }\nconst V240Y_PREV_I18N_AFTER=window.MolPathI18nAf",
+      "18nAfterApply=function(l){try{if(typeof V240Y_PREV_I18N_AFTER==='function')V240Y_PREV_I18N_AFTER(l)}catch(_){}v240yStamp()};\nfunction v240yBoot(){v240yStamp();try{renderCasePicker();renderKpi();if(typeof render==='function')render()}catch(_){}}\nif(doc",
+      "eof V240Y_PREV_I18N_AFTER==='function')V240Y_PREV_I18N_AFTER(l)}catch(_){}v240yStamp()};\nfunction v240yBoot(){v240yStamp();try{renderCasePicker();renderKpi();if(typeof render==='function')render()}catch(_){}}\nif(document.readyState==='loading')documen"
+    ]
+  },
+  {
+    "script": "v240y1_lab_c4_c5_schema_hotfix",
+    "name": "v240y1Stamp",
+    "calls": [
+      "t prevCards=v17Cards;\n v17Cards=function(cards){return prevCards(v240y1Cards(cards));};\n}catch(_){ }\nfunction v240y1Stamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }\nconst prevAfter=window.MolPathI18nAfterApply;\nwi",
+      "erApply;\nwindow.MolPathI18nAfterApply=function(l){try{if(typeof prevAfter==='function')prevAfter(l)}catch(_){}v240y1Stamp();};\nv240y1Stamp();\ntry{if(typeof render==='function')render()}catch(_){}\nwindow.MolPathLabC4C5SchemaHotfix=Object.freeze({version",
+      "olPathI18nAfterApply=function(l){try{if(typeof prevAfter==='function')prevAfter(l)}catch(_){}v240y1Stamp();};\nv240y1Stamp();\ntry{if(typeof render==='function')render()}catch(_){}\nwindow.MolPathLabC4C5SchemaHotfix=Object.freeze({version:V240Y1_VERSION,c"
+    ]
+  },
+  {
+    "script": "v240z2_res_r1_deepdive",
+    "name": "v240z2Stamp",
+    "calls": [
+      "d;});}catch(e){console.error('[MolPath '+V240Z2_VERSION+'] RES R1 deep-dive registration failed',e)}\nfunction v240z2Stamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }\nconst V240Z2_PREV_AFTER=window.MolPathI18nAfterA",
+      "MolPathI18nAfterApply=function(l){try{if(typeof V240Z2_PREV_AFTER==='function')V240Z2_PREV_AFTER(l)}catch(_){}v240z2Stamp();};\nfunction v240z2Boot(){v240z2Stamp();try{if(typeof renderCasePicker==='function')renderCasePicker();if(typeof renderKpi==='fun",
+      "f(typeof V240Z2_PREV_AFTER==='function')V240Z2_PREV_AFTER(l)}catch(_){}v240z2Stamp();};\nfunction v240z2Boot(){v240z2Stamp();try{if(typeof renderCasePicker==='function')renderCasePicker();if(typeof renderKpi==='function')renderKpi();if(typeof render==='"
+    ]
+  },
+  {
+    "script": "v240z3_res_r2_deepdive",
+    "name": "v240z3Stamp",
+    "calls": [
+      "d;});}catch(e){console.error('[MolPath '+V240Z3_VERSION+'] RES R2 deep-dive registration failed',e)}\nfunction v240z3Stamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }\nconst V240Z3_PREV_AFTER=window.MolPathI18nAfterA",
+      "MolPathI18nAfterApply=function(l){try{if(typeof V240Z3_PREV_AFTER==='function')V240Z3_PREV_AFTER(l)}catch(_){}v240z3Stamp();};\nfunction v240z3Boot(){v240z3Stamp();try{if(typeof renderCasePicker==='function')renderCasePicker();if(typeof renderKpi==='fun",
+      "f(typeof V240Z3_PREV_AFTER==='function')V240Z3_PREV_AFTER(l)}catch(_){}v240z3Stamp();};\nfunction v240z3Boot(){v240z3Stamp();try{if(typeof renderCasePicker==='function')renderCasePicker();if(typeof renderKpi==='function')renderKpi();if(typeof render==='"
+    ]
+  },
+  {
+    "script": "v240z4_res_r3_deepdive",
+    "name": "v240z4Stamp",
+    "calls": [
+      "d;});}catch(e){console.error('[MolPath '+V240Z4_VERSION+'] RES R3 deep-dive registration failed',e)}\nfunction v240z4Stamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }\nconst V240Z4_PREV_AFTER=window.MolPathI18nAfterA",
+      "MolPathI18nAfterApply=function(l){try{if(typeof V240Z4_PREV_AFTER==='function')V240Z4_PREV_AFTER(l)}catch(_){}v240z4Stamp();};\nfunction v240z4Boot(){v240z4Stamp();try{if(typeof renderCasePicker==='function')renderCasePicker();if(typeof renderKpi==='fun",
+      "f(typeof V240Z4_PREV_AFTER==='function')V240Z4_PREV_AFTER(l)}catch(_){}v240z4Stamp();};\nfunction v240z4Boot(){v240z4Stamp();try{if(typeof renderCasePicker==='function')renderCasePicker();if(typeof renderKpi==='function')renderKpi();if(typeof render==='"
+    ]
+  },
+  {
+    "script": "v240z5_res_r4_deepdive",
+    "name": "v240z5Stamp",
+    "calls": [
+      "d;});}catch(e){console.error('[MolPath '+V240Z5_VERSION+'] RES R4 deep-dive registration failed',e)}\nfunction v240z5Stamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }\nconst V240Z5_PREV_AFTER=window.MolPathI18nAfterA",
+      "MolPathI18nAfterApply=function(l){try{if(typeof V240Z5_PREV_AFTER==='function')V240Z5_PREV_AFTER(l)}catch(_){}v240z5Stamp();};\nfunction v240z5Boot(){v240z5Stamp();try{if(typeof renderCasePicker==='function')renderCasePicker();if(typeof renderKpi==='fun",
+      "f(typeof V240Z5_PREV_AFTER==='function')V240Z5_PREV_AFTER(l)}catch(_){}v240z5Stamp();};\nfunction v240z5Boot(){v240z5Stamp();try{if(typeof renderCasePicker==='function')renderCasePicker();if(typeof renderKpi==='function')renderKpi();if(typeof render==='"
+    ]
+  },
+  {
+    "script": "v240z6_res_r5_deepdive",
+    "name": "v240z6Stamp",
+    "calls": [
+      "d;});}catch(e){console.error('[MolPath '+V240Z6_VERSION+'] RES R5 deep-dive registration failed',e)}\nfunction v240z6Stamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }\nconst V240Z6_PREV_AFTER=window.MolPathI18nAfterA",
+      "MolPathI18nAfterApply=function(l){try{if(typeof V240Z6_PREV_AFTER==='function')V240Z6_PREV_AFTER(l)}catch(_){}v240z6Stamp();};\nfunction v240z6Boot(){v240z6Stamp();try{if(typeof renderCasePicker==='function')renderCasePicker();if(typeof renderKpi==='fun",
+      "f(typeof V240Z6_PREV_AFTER==='function')V240Z6_PREV_AFTER(l)}catch(_){}v240z6Stamp();};\nfunction v240z6Boot(){v240z6Stamp();try{if(typeof renderCasePicker==='function')renderCasePicker();if(typeof renderKpi==='function')renderKpi();if(typeof render==='"
+    ]
+  },
+  {
+    "script": "v240z11_global_baseline_polish",
+    "name": "z11Stamp",
+    "calls": [
+      ")}\n}\nfunction z11PostRender(){z11PolishNavigation();z11PolishHero();z11RemoveDeepBadges();z11RenderTimeline();z11Stamp()}\n\n/* Wrap the current render entry points once, after all legacy/flagship wrappers are installed. */\ntry{const prevPicker=render",
+      "utton></main></body></html>`;w.document.open();w.document.write(doc);w.document.close()}}catch(_){}\n\nfunction z11Stamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }\nconst Z11_PREV_AFTER=window.MolPathI18nAfterAppl",
+      "MolPathI18nAfterApply=function(lang){try{if(typeof Z11_PREV_AFTER==='function')Z11_PREV_AFTER(lang)}catch(_){}z11Stamp()};\nfunction z11Boot(){z11Stamp();try{if(typeof render==='function')render();else z11PostRender()}catch(err){console.error('[MolPa",
+      "ang){try{if(typeof Z11_PREV_AFTER==='function')Z11_PREV_AFTER(lang)}catch(_){}z11Stamp()};\nfunction z11Boot(){z11Stamp();try{if(typeof render==='function')render();else z11PostRender()}catch(err){console.error('[MolPath '+V240Z11_VERSION+'] boot ren",
+      "}try{if(window.MolPathI18n&&typeof window.MolPathI18n.apply==='function')window.MolPathI18n.apply()}catch(_){}z11Stamp()}\nif(document.readyState==='loading')document.addEventListener('DOMContentLoaded',z11Boot,{once:true});else setTimeout(z11Boot,0)"
+    ]
+  },
+  {
+    "script": "v240z12-case-metadata-recalibration",
+    "name": "z12ApplyMetadata",
+    "calls": [
+      "';\n/* rc2 A6.2: legacy V240Z12_META authority removed; canonical A4b metadata is the sole source. */\nfunction z12ApplyMetadata(){/* rc2 A6.1: canonical data owns difficulty/time; legacy z12 writer disabled */ return;}\nwindow.MolPathZ12MetadataWriterDisabled",
+      "dA6=true;\nfunction z12Stamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }\nz12ApplyMetadata();\ntry{const prev=window.render;if(typeof prev==='function'){window.render=function(){z12ApplyMetadata();const out=prev.apply(this",
+      ". */ }\nz12ApplyMetadata();\ntry{const prev=window.render;if(typeof prev==='function'){window.render=function(){z12ApplyMetadata();const out=prev.apply(this,arguments);z12Stamp();return out};try{render=window.render}catch(_){}}}catch(_){}\nconst Z12_PREV_AFTER",
+      "MolPathI18nAfterApply=function(lang){try{if(typeof Z12_PREV_AFTER==='function')Z12_PREV_AFTER(lang)}catch(_){}z12ApplyMetadata();z12Stamp()};\nfunction z12Boot(){z12ApplyMetadata();try{if(typeof render==='function')render()}catch(_){}z12Stamp()}\nif(document.",
+      "Z12_PREV_AFTER==='function')Z12_PREV_AFTER(lang)}catch(_){}z12ApplyMetadata();z12Stamp()};\nfunction z12Boot(){z12ApplyMetadata();try{if(typeof render==='function')render()}catch(_){}z12Stamp()}\nif(document.readyState==='loading')document.addEventListener('D"
+    ]
+  },
+  {
+    "script": "v240z12-case-metadata-recalibration",
+    "name": "z12Stamp",
+    "calls": [
+      "ficulty/time; legacy z12 writer disabled */ return;}\nwindow.MolPathZ12MetadataWriterDisabledA6=true;\nfunction z12Stamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }\nz12ApplyMetadata();\ntry{const prev=window.render",
+      "if(typeof prev==='function'){window.render=function(){z12ApplyMetadata();const out=prev.apply(this,arguments);z12Stamp();return out};try{render=window.render}catch(_){}}}catch(_){}\nconst Z12_PREV_AFTER=window.MolPathI18nAfterApply;window.MolPathI18n",
+      "ly=function(lang){try{if(typeof Z12_PREV_AFTER==='function')Z12_PREV_AFTER(lang)}catch(_){}z12ApplyMetadata();z12Stamp()};\nfunction z12Boot(){z12ApplyMetadata();try{if(typeof render==='function')render()}catch(_){}z12Stamp()}\nif(document.readyState=",
+      "ata();z12Stamp()};\nfunction z12Boot(){z12ApplyMetadata();try{if(typeof render==='function')render()}catch(_){}z12Stamp()}\nif(document.readyState==='loading')document.addEventListener('DOMContentLoaded',z12Boot,{once:true});else setTimeout(z12Boot,0)"
+    ]
+  }
+]
