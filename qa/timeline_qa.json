@@ -1,0 +1,172 @@
+{
+  "status": "PASS",
+  "total": 40,
+  "passed": 40,
+  "checks": [
+    {
+      "name": "initial serialized DOM parity",
+      "pass": true
+    },
+    {
+      "name": "repeat render retains buttons despite browser-style attribute serialization",
+      "pass": true
+    },
+    {
+      "name": "mtb de step/visited/locked parity",
+      "pass": true
+    },
+    {
+      "name": "mtb en step/visited/locked parity",
+      "pass": true
+    },
+    {
+      "name": "mtb ro step/visited/locked parity",
+      "pass": true
+    },
+    {
+      "name": "mtb el step/visited/locked parity",
+      "pass": true
+    },
+    {
+      "name": "mtb es step/visited/locked parity",
+      "pass": true
+    },
+    {
+      "name": "mtb fr step/visited/locked parity",
+      "pass": true
+    },
+    {
+      "name": "mtb ru step/visited/locked parity",
+      "pass": true
+    },
+    {
+      "name": "mtb tr step/visited/locked parity",
+      "pass": true
+    },
+    {
+      "name": "mtb ar step/visited/locked parity",
+      "pass": true
+    },
+    {
+      "name": "mtb fa step/visited/locked parity",
+      "pass": true
+    },
+    {
+      "name": "mtb uk step/visited/locked parity",
+      "pass": true
+    },
+    {
+      "name": "lab de step/visited/locked parity",
+      "pass": true
+    },
+    {
+      "name": "lab en step/visited/locked parity",
+      "pass": true
+    },
+    {
+      "name": "lab ro step/visited/locked parity",
+      "pass": true
+    },
+    {
+      "name": "lab el step/visited/locked parity",
+      "pass": true
+    },
+    {
+      "name": "lab es step/visited/locked parity",
+      "pass": true
+    },
+    {
+      "name": "lab fr step/visited/locked parity",
+      "pass": true
+    },
+    {
+      "name": "lab ru step/visited/locked parity",
+      "pass": true
+    },
+    {
+      "name": "lab tr step/visited/locked parity",
+      "pass": true
+    },
+    {
+      "name": "lab ar step/visited/locked parity",
+      "pass": true
+    },
+    {
+      "name": "lab fa step/visited/locked parity",
+      "pass": true
+    },
+    {
+      "name": "lab uk step/visited/locked parity",
+      "pass": true
+    },
+    {
+      "name": "res de step/visited/locked parity",
+      "pass": true
+    },
+    {
+      "name": "res en step/visited/locked parity",
+      "pass": true
+    },
+    {
+      "name": "res ro step/visited/locked parity",
+      "pass": true
+    },
+    {
+      "name": "res el step/visited/locked parity",
+      "pass": true
+    },
+    {
+      "name": "res es step/visited/locked parity",
+      "pass": true
+    },
+    {
+      "name": "res fr step/visited/locked parity",
+      "pass": true
+    },
+    {
+      "name": "res ru step/visited/locked parity",
+      "pass": true
+    },
+    {
+      "name": "res tr step/visited/locked parity",
+      "pass": true
+    },
+    {
+      "name": "res ar step/visited/locked parity",
+      "pass": true
+    },
+    {
+      "name": "res fa step/visited/locked parity",
+      "pass": true
+    },
+    {
+      "name": "res uk step/visited/locked parity",
+      "pass": true
+    },
+    {
+      "name": "future gate added and removed",
+      "pass": true
+    },
+    {
+      "name": "external DOM mutation repaired on next render",
+      "pass": true
+    },
+    {
+      "name": "replacement root receives new markup",
+      "pass": true
+    },
+    {
+      "name": "scroll correction retained even without DOM rewrite",
+      "pass": true
+    },
+    {
+      "name": "case with empty steps remains unchanged",
+      "pass": true
+    }
+  ],
+  "writes": {
+    "baseline": 74,
+    "candidate": 39
+  },
+  "limit": "isolated actual timeline script with DOM serialization fixture and synthetic labels; complete actual-language rendering is covered separately by ordered runtime QA"
+}

@@ -6026,12 +6026,19 @@ function z11PolishHero(){
 }
 function z11TimelineDomain(){try{return typeof isLab==='function'&&isLab()?'lab':(typeof isResearch==='function'&&isResearch()?'res':'mtb')}catch(_){return 'mtb'}}
 function z11Palette(domain){if(domain==='lab')return ['blue','orange','purple','red','teal','green','navy'];if(domain==='res')return ['navy','blue','purple','teal','orange','green','cyan','indigo','navy'];return ['blue','blue','green','orange','purple','teal','teal','blue','pink']}
+const z11TimelineCache=new WeakMap();
 function z11RenderTimeline(){
   try{
     const root=document.getElementById('steps');if(!root||typeof currentSteps!=='function'||typeof state==='undefined'||!state)return;
     const arr=currentSteps()||[];if(!arr.length)return;const cur=Math.max(0,arr.findIndex(x=>x[0]===state.step));const domain=z11TimelineDomain();const palette=z11Palette(domain);
     root.className='z11-top-timeline z11-domain-'+domain;
-    root.innerHTML=arr.map(([id,label],i)=>{const active=id===state.step;const visited=!!(state.viewed&&state.viewed[id]);const completed=(visited&&i!==cur)||i<cur;const clickable=active||visited||i<cur;const marker=(completed&&!active)?'✓':String(i+1);const loc=z11Tr(label);return `<button type="button" class="z11-top-step ${palette[i]||palette[palette.length-1]||'blue'} ${active?'active':''} ${completed?'done':''} ${clickable?'clickable':'locked'}" ${clickable?`onclick="gotoStep('${id}')"`:'disabled'} ${active?'aria-current="step"':''} title="${z11Esc(loc)}"><span class="z11-top-marker">${marker}</span><span class="z11-top-label">${z11Esc(loc)}</span></button>`}).join('');
+    const html=arr.map(([id,label],i)=>{const active=id===state.step;const visited=!!(state.viewed&&state.viewed[id]);const completed=(visited&&i!==cur)||i<cur;const clickable=active||visited||i<cur;const marker=(completed&&!active)?'✓':String(i+1);const loc=z11Tr(label);return `<button type="button" class="z11-top-step ${palette[i]||palette[palette.length-1]||'blue'} ${active?'active':''} ${completed?'done':''} ${clickable?'clickable':'locked'}" ${clickable?`onclick="gotoStep('${id}')"`:'disabled'} ${active?'aria-current="step"':''} title="${z11Esc(loc)}"><span class="z11-top-marker">${marker}</span><span class="z11-top-label">${z11Esc(loc)}</span></button>`}).join('');
+    // Retain existing buttons only while both desired markup and actual DOM agree.
+    const previous=z11TimelineCache.get(root);
+    if(!previous||previous.html!==html||root.innerHTML!==previous.dom){
+      root.innerHTML=html;
+      z11TimelineCache.set(root,{html,dom:root.innerHTML});
+    }
     const act=root.querySelector('.active');if(act){const target=Math.max(0,act.offsetLeft-(root.clientWidth-act.offsetWidth)/2);if(Math.abs(root.scrollLeft-target)>20)root.scrollLeft=target}
 }catch(err){console.warn('[MolPath '+V240Z11_VERSION+'] global premium timeline failed',err)}
 }

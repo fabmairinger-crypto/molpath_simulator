@@ -1,0 +1,13 @@
+MolPath rc2 A6.13 — moderne Timeline erhalten, doppelte DOM-Aufbauten vermeiden
+Basis: vollständiger funktionierender A6.12-Build.
+
+1. Bisherige index.html sichern.
+2. NUR index.html aus diesem Delta im A6.12-Hauptordner ersetzen.
+3. Alle vorhandenen JS-, Sprach- und Asset-Dateien beibehalten.
+4. Strg+F5. Die moderne Leiste mit der aktuellen Schrittaufteilung bleibt erhalten.
+5. MTB-, LAB- und RES-Fall öffnen: Timeline-Farben, aktive/erledigte/gesperrte
+   Schritte und Rücknavigation prüfen. DE -> EN -> DE wechseln.
+6. OVAR1: Gate 1, Runde 1, Reportansicht, Gate 2, Bestätigung und Abschluss.
+
+Rollback: gesicherte index.html wiederherstellen, Strg+F5.
+Das Delta ist kein vollständiger eigenständig startbarer Build.

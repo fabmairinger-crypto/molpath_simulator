@@ -1,0 +1,198 @@
+{
+  "root": "/workspace/scratch/1f1f0706e0d2/work/a6_12/candidate",
+  "boot": {
+    "timelineWrites": 107,
+    "timelineCalls": 100,
+    "corePaint": 57,
+    "afterApplyFrames": 264,
+    "observersCreated": 5,
+    "observersObserved": 5,
+    "observerDisconnects": 0,
+    "scheduled": 1018,
+    "DOMContentLoadedCallbacks": 89
+  },
+  "final": {
+    "timelineWrites": 131,
+    "timelineCalls": 124,
+    "corePaint": 69,
+    "afterApplyFrames": 504,
+    "observersCreated": 5,
+    "observersObserved": 5,
+    "observerDisconnects": 0,
+    "scheduled": 1294
+  },
+  "phases": [
+    {
+      "lang": "de",
+      "delta": {
+        "timelineWrites": 2,
+        "timelineCalls": 2,
+        "corePaint": 1,
+        "afterApplyFrames": 20,
+        "observersCreated": 0,
+        "observersObserved": 0,
+        "observerDisconnects": 0,
+        "scheduled": 23
+      },
+      "stable": true
+    },
+    {
+      "lang": "en",
+      "delta": {
+        "timelineWrites": 2,
+        "timelineCalls": 2,
+        "corePaint": 1,
+        "afterApplyFrames": 20,
+        "observersCreated": 0,
+        "observersObserved": 0,
+        "observerDisconnects": 0,
+        "scheduled": 23
+      },
+      "stable": true
+    },
+    {
+      "lang": "ro",
+      "delta": {
+        "timelineWrites": 2,
+        "timelineCalls": 2,
+        "corePaint": 1,
+        "afterApplyFrames": 20,
+        "observersCreated": 0,
+        "observersObserved": 0,
+        "observerDisconnects": 0,
+        "scheduled": 23
+      },
+      "stable": true
+    },
+    {
+      "lang": "el",
+      "delta": {
+        "timelineWrites": 2,
+        "timelineCalls": 2,
+        "corePaint": 1,
+        "afterApplyFrames": 20,
+        "observersCreated": 0,
+        "observersObserved": 0,
+        "observerDisconnects": 0,
+        "scheduled": 23
+      },
+      "stable": true
+    },
+    {
+      "lang": "es",
+      "delta": {
+        "timelineWrites": 2,
+        "timelineCalls": 2,
+        "corePaint": 1,
+        "afterApplyFrames": 20,
+        "observersCreated": 0,
+        "observersObserved": 0,
+        "observerDisconnects": 0,
+        "scheduled": 23
+      },
+      "stable": true
+    },
+    {
+      "lang": "fr",
+      "delta": {
+        "timelineWrites": 2,
+        "timelineCalls": 2,
+        "corePaint": 1,
+        "afterApplyFrames": 20,
+        "observersCreated": 0,
+        "observersObserved": 0,
+        "observerDisconnects": 0,
+        "scheduled": 23
+      },
+      "stable": true
+    },
+    {
+      "lang": "ru",
+      "delta": {
+        "timelineWrites": 2,
+        "timelineCalls": 2,
+        "corePaint": 1,
+        "afterApplyFrames": 20,
+        "observersCreated": 0,
+        "observersObserved": 0,
+        "observerDisconnects": 0,
+        "scheduled": 23
+      },
+      "stable": true
+    },
+    {
+      "lang": "tr",
+      "delta": {
+        "timelineWrites": 2,
+        "timelineCalls": 2,
+        "corePaint": 1,
+        "afterApplyFrames": 20,
+        "observersCreated": 0,
+        "observersObserved": 0,
+        "observerDisconnects": 0,
+        "scheduled": 23
+      },
+      "stable": true
+    },
+    {
+      "lang": "ar",
+      "delta": {
+        "timelineWrites": 2,
+        "timelineCalls": 2,
+        "corePaint": 1,
+        "afterApplyFrames": 20,
+        "observersCreated": 0,
+        "observersObserved": 0,
+        "observerDisconnects": 0,
+        "scheduled": 23
+      },
+      "stable": true
+    },
+    {
+      "lang": "fa",
+      "delta": {
+        "timelineWrites": 2,
+        "timelineCalls": 2,
+        "corePaint": 1,
+        "afterApplyFrames": 20,
+        "observersCreated": 0,
+        "observersObserved": 0,
+        "observerDisconnects": 0,
+        "scheduled": 23
+      },
+      "stable": true
+    },
+    {
+      "lang": "uk",
+      "delta": {
+        "timelineWrites": 2,
+        "timelineCalls": 2,
+        "corePaint": 1,
+        "afterApplyFrames": 20,
+        "observersCreated": 0,
+        "observersObserved": 0,
+        "observerDisconnects": 0,
+        "scheduled": 23
+      },
+      "stable": true
+    },
+    {
+      "lang": "de",
+      "delta": {
+        "timelineWrites": 2,
+        "timelineCalls": 2,
+        "corePaint": 1,
+        "afterApplyFrames": 20,
+        "observersCreated": 0,
+        "observersObserved": 0,
+        "observerDisconnects": 0,
+        "scheduled": 23
+      },
+      "stable": true
+    }
+  ],
+  "afterBootHash": "fadce9004be5fa0324e560678763d8434e0670d34f82e9b5ac213b7dc58f02b0",
+  "finalHash": "fadce9004be5fa0324e560678763d8434e0670d34f82e9b5ac213b7dc58f02b0",
+  "errors": [],
+  "environment": "actual ordered sources with QA-only counters, scheduled VM clock, DOM double; not elapsed browser time"
+}

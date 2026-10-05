@@ -1,38 +1,19 @@
 {
-  "base_sha256": "257c5aea926df79a7b5f101ed201f6cfbc1cb69f9c4b130ad068727ff4191b89",
-  "sha256": "2b1e5a86f0c91b62412a2e96138f1d6ecea9311b85aea697e9c1873c198f3aeb",
-  "payload": [
-    "index.html"
-  ],
-  "script": "v240l_performance_signature_filter",
+  "base_sha256": "2b1e5a86f0c91b62412a2e96138f1d6ecea9311b85aea697e9c1873c198f3aeb",
+  "sha256": "49562dce07e46e0ef6a498b0987f839e14ecd0d3879707ae1013f0190558dfb5",
+  "script": "v240z11_global_baseline_polish",
   "changes": [
     {
-      "old": "function exactKey(text){",
-      "new": "function exactKey(text,lookup){"
+      "old": "function z11RenderTimeline(){",
+      "new": "const z11TimelineCache=new WeakMap();\nfunction z11RenderTimeline(){"
     },
     {
-      "old": "for(const def of window.MolPathLanguageRegistry.list()){\n   const copy=window.MolPathLocaleRegistry.namespace(UI_COPY_NAMESPACE,def.code);",
-      "new": "for(const def of lookup.list()){\n   const copy=lookup.copy(def.code);"
+      "old": "    root.innerHTML=arr.map(([id,label],i)=>{",
+      "new": "    const html=arr.map(([id,label],i)=>{"
     },
     {
-      "old": "function selectedCount(text){",
-      "new": "function selectedCount(text,lookup){"
-    },
-    {
-      "old": "for(const def of window.MolPathLanguageRegistry.list()){\n   const label=window.MolPathLocaleRegistry.namespace(UI_COPY_NAMESPACE,def.code).selected;",
-      "new": "for(const def of lookup.list()){\n   const label=lookup.copy(def.code).selected;"
-    },
-    {
-      "old": "function localizePremium(){\n const copy=c();",
-      "new": "function localizePremium(){\n const copy=c();\n // Cache only within this synchronous pass; later locale updates stay visible.\n let definitions=null;const copies=new Map();\n const lookup={list(){return definitions||(definitions=window.MolPathLanguageRegistry.list())},copy(code){if(!copies.has(code))copies.set(code,window.MolPathLocaleRegistry.namespace(UI_COPY_NAMESPACE,code));return copies.get(code)}};"
-    },
-    {
-      "old": "const key=exactKey(t);",
-      "new": "const key=exactKey(t,lookup);"
-    },
-    {
-      "old": "const nSelected=selectedCount(t);",
-      "new": "const nSelected=selectedCount(t,lookup);"
+      "old": "}).join('');\n    const act=root.querySelector('.active');",
+      "new": "}).join('');\n    // Retain existing buttons only while both desired markup and actual DOM agree.\n    const previous=z11TimelineCache.get(root);\n    if(!previous||previous.html!==html||root.innerHTML!==previous.dom){\n      root.innerHTML=html;\n      z11TimelineCache.set(root,{html,dom:root.innerHTML});\n    }\n    const act=root.querySelector('.active');"
     }
   ]
 }

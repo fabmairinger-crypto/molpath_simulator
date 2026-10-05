@@ -209,8 +209,8 @@
               "therapy_evidence"
             ],
             "ovar_archival_material": [
-              "feasibility_run_qc",
-              "sample_scope"
+              "sample_scope",
+              "feasibility_run_qc"
             ],
             "ovar_brca1_reliability": [
               "pathogenicity_vs_detection"
@@ -226,28 +226,28 @@
           },
           "optionOrder": {
             "ovar_clinical_question": [
+              "therapy_evidence",
               "familial_risk",
               "entity_confirmation",
-              "resistance_cause",
-              "therapy_evidence"
+              "resistance_cause"
             ],
             "ovar_archival_material": [
               "represents_recurrence",
+              "sample_scope",
               "feasibility_run_qc",
-              "omit_assay_qc",
-              "sample_scope"
+              "omit_assay_qc"
             ],
             "ovar_brca1_reliability": [
-              "pathogenicity_vs_detection",
-              "reliable_prediction",
               "hrd_overrides_variant",
-              "coverage_suffices"
+              "pathogenicity_vs_detection",
+              "coverage_suffices",
+              "reliable_prediction"
             ],
             "ovar_confirmation_strategy": [
-              "release_with_comment",
-              "discard_variant",
               "plasma_replaces_hrd",
-              "ctdna_confirmation"
+              "ctdna_confirmation",
+              "discard_variant",
+              "release_with_comment"
             ]
           }
         }
@@ -640,27 +640,27 @@
           "optionOrder": {
             "ovar_clinical_question": [
               "familial_risk",
-              "resistance_cause",
               "entity_confirmation",
-              "therapy_evidence"
+              "therapy_evidence",
+              "resistance_cause"
             ],
             "ovar_archival_material": [
-              "represents_recurrence",
               "feasibility_run_qc",
-              "omit_assay_qc",
-              "sample_scope"
+              "sample_scope",
+              "represents_recurrence",
+              "omit_assay_qc"
             ],
             "ovar_brca1_reliability": [
               "reliable_prediction",
+              "pathogenicity_vs_detection",
               "coverage_suffices",
-              "hrd_overrides_variant",
-              "pathogenicity_vs_detection"
+              "hrd_overrides_variant"
             ],
             "ovar_confirmation_strategy": [
-              "discard_variant",
               "plasma_replaces_hrd",
               "ctdna_confirmation",
-              "release_with_comment"
+              "release_with_comment",
+              "discard_variant"
             ]
           }
         }
@@ -1035,8 +1035,8 @@
               "therapy_evidence"
             ],
             "ovar_archival_material": [
-              "sample_scope",
-              "feasibility_run_qc"
+              "feasibility_run_qc",
+              "sample_scope"
             ],
             "ovar_brca1_reliability": [
               "pathogenicity_vs_detection"
@@ -1052,27 +1052,27 @@
           },
           "optionOrder": {
             "ovar_clinical_question": [
-              "familial_risk",
               "therapy_evidence",
+              "familial_risk",
               "resistance_cause",
               "entity_confirmation"
             ],
             "ovar_archival_material": [
-              "sample_scope",
               "feasibility_run_qc",
+              "sample_scope",
               "represents_recurrence",
               "omit_assay_qc"
             ],
             "ovar_brca1_reliability": [
               "pathogenicity_vs_detection",
-              "coverage_suffices",
               "reliable_prediction",
-              "hrd_overrides_variant"
+              "hrd_overrides_variant",
+              "coverage_suffices"
             ],
             "ovar_confirmation_strategy": [
               "plasma_replaces_hrd",
-              "release_with_comment",
               "ctdna_confirmation",
+              "release_with_comment",
               "discard_variant"
             ]
           }
@@ -1448,8 +1448,8 @@
               "therapy_evidence"
             ],
             "ovar_archival_material": [
-              "feasibility_run_qc",
-              "sample_scope"
+              "sample_scope",
+              "feasibility_run_qc"
             ],
             "ovar_brca1_reliability": [
               "pathogenicity_vs_detection"
@@ -1466,27 +1466,27 @@
           "optionOrder": {
             "ovar_clinical_question": [
               "therapy_evidence",
-              "resistance_cause",
+              "entity_confirmation",
               "familial_risk",
-              "entity_confirmation"
+              "resistance_cause"
             ],
             "ovar_archival_material": [
-              "represents_recurrence",
-              "feasibility_run_qc",
               "sample_scope",
-              "omit_assay_qc"
+              "represents_recurrence",
+              "omit_assay_qc",
+              "feasibility_run_qc"
             ],
             "ovar_brca1_reliability": [
               "reliable_prediction",
+              "coverage_suffices",
               "pathogenicity_vs_detection",
-              "hrd_overrides_variant",
-              "coverage_suffices"
+              "hrd_overrides_variant"
             ],
             "ovar_confirmation_strategy": [
-              "discard_variant",
+              "release_with_comment",
               "ctdna_confirmation",
-              "plasma_replaces_hrd",
-              "release_with_comment"
+              "discard_variant",
+              "plasma_replaces_hrd"
             ]
           }
         }
@@ -1879,27 +1879,27 @@
           "optionOrder": {
             "ovar_clinical_question": [
               "familial_risk",
-              "entity_confirmation",
+              "resistance_cause",
               "therapy_evidence",
-              "resistance_cause"
+              "entity_confirmation"
             ],
             "ovar_archival_material": [
               "represents_recurrence",
-              "sample_scope",
               "omit_assay_qc",
+              "sample_scope",
               "feasibility_run_qc"
             ],
             "ovar_brca1_reliability": [
-              "reliable_prediction",
               "pathogenicity_vs_detection",
-              "coverage_suffices",
-              "hrd_overrides_variant"
+              "reliable_prediction",
+              "hrd_overrides_variant",
+              "coverage_suffices"
             ],
             "ovar_confirmation_strategy": [
-              "release_with_comment",
+              "ctdna_confirmation",
               "discard_variant",
               "plasma_replaces_hrd",
-              "ctdna_confirmation"
+              "release_with_comment"
             ]
           }
         }
@@ -2291,28 +2291,28 @@
           },
           "optionOrder": {
             "ovar_clinical_question": [
-              "resistance_cause",
               "entity_confirmation",
+              "therapy_evidence",
               "familial_risk",
-              "therapy_evidence"
+              "resistance_cause"
             ],
             "ovar_archival_material": [
+              "omit_assay_qc",
               "feasibility_run_qc",
               "represents_recurrence",
-              "omit_assay_qc",
               "sample_scope"
             ],
             "ovar_brca1_reliability": [
-              "reliable_prediction",
               "coverage_suffices",
-              "pathogenicity_vs_detection",
-              "hrd_overrides_variant"
+              "hrd_overrides_variant",
+              "reliable_prediction",
+              "pathogenicity_vs_detection"
             ],
             "ovar_confirmation_strategy": [
-              "plasma_replaces_hrd",
               "release_with_comment",
-              "discard_variant",
-              "ctdna_confirmation"
+              "ctdna_confirmation",
+              "plasma_replaces_hrd",
+              "discard_variant"
             ]
           }
         }
@@ -2704,28 +2704,28 @@
           },
           "optionOrder": {
             "ovar_clinical_question": [
-              "entity_confirmation",
-              "therapy_evidence",
+              "resistance_cause",
               "familial_risk",
-              "resistance_cause"
+              "therapy_evidence",
+              "entity_confirmation"
             ],
             "ovar_archival_material": [
-              "omit_assay_qc",
               "feasibility_run_qc",
-              "represents_recurrence",
-              "sample_scope"
+              "omit_assay_qc",
+              "sample_scope",
+              "represents_recurrence"
             ],
             "ovar_brca1_reliability": [
+              "hrd_overrides_variant",
               "coverage_suffices",
-              "reliable_prediction",
               "pathogenicity_vs_detection",
-              "hrd_overrides_variant"
+              "reliable_prediction"
             ],
             "ovar_confirmation_strategy": [
               "release_with_comment",
               "plasma_replaces_hrd",
-              "discard_variant",
-              "ctdna_confirmation"
+              "ctdna_confirmation",
+              "discard_variant"
             ]
           }
         }
@@ -3117,28 +3117,28 @@
           },
           "optionOrder": {
             "ovar_clinical_question": [
+              "familial_risk",
               "resistance_cause",
-              "entity_confirmation",
               "therapy_evidence",
-              "familial_risk"
+              "entity_confirmation"
             ],
             "ovar_archival_material": [
               "omit_assay_qc",
-              "feasibility_run_qc",
               "represents_recurrence",
+              "feasibility_run_qc",
               "sample_scope"
             ],
             "ovar_brca1_reliability": [
-              "coverage_suffices",
-              "pathogenicity_vs_detection",
               "reliable_prediction",
-              "hrd_overrides_variant"
+              "hrd_overrides_variant",
+              "pathogenicity_vs_detection",
+              "coverage_suffices"
             ],
             "ovar_confirmation_strategy": [
-              "plasma_replaces_hrd",
-              "ctdna_confirmation",
               "release_with_comment",
-              "discard_variant"
+              "discard_variant",
+              "ctdna_confirmation",
+              "plasma_replaces_hrd"
             ]
           }
         }
@@ -3530,10 +3530,10 @@
           },
           "optionOrder": {
             "ovar_clinical_question": [
-              "therapy_evidence",
-              "resistance_cause",
               "familial_risk",
-              "entity_confirmation"
+              "entity_confirmation",
+              "resistance_cause",
+              "therapy_evidence"
             ],
             "ovar_archival_material": [
               "sample_scope",
@@ -3542,15 +3542,15 @@
               "represents_recurrence"
             ],
             "ovar_brca1_reliability": [
-              "coverage_suffices",
-              "hrd_overrides_variant",
               "pathogenicity_vs_detection",
-              "reliable_prediction"
+              "hrd_overrides_variant",
+              "reliable_prediction",
+              "coverage_suffices"
             ],
             "ovar_confirmation_strategy": [
-              "release_with_comment",
-              "ctdna_confirmation",
               "plasma_replaces_hrd",
+              "ctdna_confirmation",
+              "release_with_comment",
               "discard_variant"
             ]
           }
@@ -3926,8 +3926,8 @@
               "therapy_evidence"
             ],
             "ovar_archival_material": [
-              "feasibility_run_qc",
-              "sample_scope"
+              "sample_scope",
+              "feasibility_run_qc"
             ],
             "ovar_brca1_reliability": [
               "pathogenicity_vs_detection"
@@ -3943,28 +3943,28 @@
           },
           "optionOrder": {
             "ovar_clinical_question": [
-              "familial_risk",
-              "entity_confirmation",
+              "resistance_cause",
               "therapy_evidence",
-              "resistance_cause"
+              "entity_confirmation",
+              "familial_risk"
             ],
             "ovar_archival_material": [
-              "feasibility_run_qc",
-              "sample_scope",
               "omit_assay_qc",
+              "sample_scope",
+              "feasibility_run_qc",
               "represents_recurrence"
             ],
             "ovar_brca1_reliability": [
-              "hrd_overrides_variant",
               "reliable_prediction",
+              "coverage_suffices",
               "pathogenicity_vs_detection",
-              "coverage_suffices"
+              "hrd_overrides_variant"
             ],
             "ovar_confirmation_strategy": [
-              "discard_variant",
-              "release_with_comment",
+              "ctdna_confirmation",
               "plasma_replaces_hrd",
-              "ctdna_confirmation"
+              "discard_variant",
+              "release_with_comment"
             ]
           }
         }
@@ -4339,8 +4339,8 @@
               "therapy_evidence"
             ],
             "ovar_archival_material": [
-              "feasibility_run_qc",
-              "sample_scope"
+              "sample_scope",
+              "feasibility_run_qc"
             ],
             "ovar_brca1_reliability": [
               "pathogenicity_vs_detection"
@@ -4356,28 +4356,28 @@
           },
           "optionOrder": {
             "ovar_clinical_question": [
-              "resistance_cause",
+              "therapy_evidence",
               "familial_risk",
               "entity_confirmation",
-              "therapy_evidence"
+              "resistance_cause"
             ],
             "ovar_archival_material": [
-              "represents_recurrence",
-              "feasibility_run_qc",
               "sample_scope",
-              "omit_assay_qc"
+              "feasibility_run_qc",
+              "omit_assay_qc",
+              "represents_recurrence"
             ],
             "ovar_brca1_reliability": [
               "pathogenicity_vs_detection",
-              "coverage_suffices",
               "reliable_prediction",
-              "hrd_overrides_variant"
+              "hrd_overrides_variant",
+              "coverage_suffices"
             ],
             "ovar_confirmation_strategy": [
-              "discard_variant",
-              "plasma_replaces_hrd",
               "ctdna_confirmation",
-              "release_with_comment"
+              "release_with_comment",
+              "discard_variant",
+              "plasma_replaces_hrd"
             ]
           }
         }
@@ -4556,10 +4556,10 @@
       "detail": {
         "uniqueOrders": 24,
         "correctPositions": [
-          3,
+          0,
           1,
           2,
-          0
+          3
         ]
       }
     },
@@ -4887,8 +4887,8 @@
                   "therapy_evidence"
                 ],
                 "ovar_archival_material": [
-                  "feasibility_run_qc",
-                  "sample_scope"
+                  "sample_scope",
+                  "feasibility_run_qc"
                 ],
                 "ovar_brca1_reliability": [
                   "pathogenicity_vs_detection"
@@ -4904,28 +4904,28 @@
               },
               "optionOrder": {
                 "ovar_clinical_question": [
+                  "therapy_evidence",
                   "familial_risk",
                   "entity_confirmation",
-                  "resistance_cause",
-                  "therapy_evidence"
+                  "resistance_cause"
                 ],
                 "ovar_archival_material": [
                   "represents_recurrence",
+                  "sample_scope",
                   "feasibility_run_qc",
-                  "omit_assay_qc",
-                  "sample_scope"
+                  "omit_assay_qc"
                 ],
                 "ovar_brca1_reliability": [
-                  "pathogenicity_vs_detection",
-                  "reliable_prediction",
                   "hrd_overrides_variant",
-                  "coverage_suffices"
+                  "pathogenicity_vs_detection",
+                  "coverage_suffices",
+                  "reliable_prediction"
                 ],
                 "ovar_confirmation_strategy": [
-                  "release_with_comment",
-                  "discard_variant",
                   "plasma_replaces_hrd",
-                  "ctdna_confirmation"
+                  "ctdna_confirmation",
+                  "discard_variant",
+                  "release_with_comment"
                 ]
               }
             }
@@ -5219,12 +5219,12 @@
                 "score": 1,
                 "multi": true,
                 "answers": [
-                  "feasibility_run_qc",
-                  "sample_scope"
+                  "sample_scope",
+                  "feasibility_run_qc"
                 ],
                 "correct": [
-                  "feasibility_run_qc",
-                  "sample_scope"
+                  "sample_scope",
+                  "feasibility_run_qc"
                 ]
               },
               {
@@ -5382,12 +5382,12 @@
                 "score": 1,
                 "multi": true,
                 "answers": [
-                  "feasibility_run_qc",
-                  "sample_scope"
+                  "sample_scope",
+                  "feasibility_run_qc"
                 ],
                 "correct": [
-                  "feasibility_run_qc",
-                  "sample_scope"
+                  "sample_scope",
+                  "feasibility_run_qc"
                 ]
               },
               {
@@ -5702,7 +5702,7 @@
                 "score": 0,
                 "multi": false,
                 "answers": [
-                  "resistance_cause"
+                  "familial_risk"
                 ],
                 "correct": [
                   "therapy_evidence"
@@ -5714,11 +5714,11 @@
                 "score": 0,
                 "multi": true,
                 "answers": [
-                  "represents_recurrence"
+                  "omit_assay_qc"
                 ],
                 "correct": [
-                  "sample_scope",
-                  "feasibility_run_qc"
+                  "feasibility_run_qc",
+                  "sample_scope"
                 ]
               },
               {
@@ -5974,27 +5974,27 @@
               "optionOrder": {
                 "ovar_clinical_question": [
                   "familial_risk",
-                  "resistance_cause",
                   "entity_confirmation",
-                  "therapy_evidence"
+                  "therapy_evidence",
+                  "resistance_cause"
                 ],
                 "ovar_archival_material": [
-                  "represents_recurrence",
                   "feasibility_run_qc",
-                  "omit_assay_qc",
-                  "sample_scope"
+                  "sample_scope",
+                  "represents_recurrence",
+                  "omit_assay_qc"
                 ],
                 "ovar_brca1_reliability": [
                   "reliable_prediction",
+                  "pathogenicity_vs_detection",
                   "coverage_suffices",
-                  "hrd_overrides_variant",
-                  "pathogenicity_vs_detection"
+                  "hrd_overrides_variant"
                 ],
                 "ovar_confirmation_strategy": [
-                  "discard_variant",
                   "plasma_replaces_hrd",
                   "ctdna_confirmation",
-                  "release_with_comment"
+                  "release_with_comment",
+                  "discard_variant"
                 ]
               }
             }
@@ -6771,7 +6771,7 @@
                 "score": 0,
                 "multi": false,
                 "answers": [
-                  "familial_risk"
+                  "entity_confirmation"
                 ],
                 "correct": [
                   "therapy_evidence"
@@ -6786,8 +6786,8 @@
                   "represents_recurrence"
                 ],
                 "correct": [
-                  "feasibility_run_qc",
-                  "sample_scope"
+                  "sample_scope",
+                  "feasibility_run_qc"
                 ]
               },
               {
@@ -7025,8 +7025,8 @@
                   "therapy_evidence"
                 ],
                 "ovar_archival_material": [
-                  "sample_scope",
-                  "feasibility_run_qc"
+                  "feasibility_run_qc",
+                  "sample_scope"
                 ],
                 "ovar_brca1_reliability": [
                   "pathogenicity_vs_detection"
@@ -7042,27 +7042,27 @@
               },
               "optionOrder": {
                 "ovar_clinical_question": [
-                  "familial_risk",
                   "therapy_evidence",
+                  "familial_risk",
                   "resistance_cause",
                   "entity_confirmation"
                 ],
                 "ovar_archival_material": [
-                  "sample_scope",
                   "feasibility_run_qc",
+                  "sample_scope",
                   "represents_recurrence",
                   "omit_assay_qc"
                 ],
                 "ovar_brca1_reliability": [
                   "pathogenicity_vs_detection",
-                  "coverage_suffices",
                   "reliable_prediction",
-                  "hrd_overrides_variant"
+                  "hrd_overrides_variant",
+                  "coverage_suffices"
                 ],
                 "ovar_confirmation_strategy": [
                   "plasma_replaces_hrd",
-                  "release_with_comment",
                   "ctdna_confirmation",
+                  "release_with_comment",
                   "discard_variant"
                 ]
               }
@@ -7357,12 +7357,12 @@
                 "score": 1,
                 "multi": true,
                 "answers": [
-                  "sample_scope",
-                  "feasibility_run_qc"
+                  "feasibility_run_qc",
+                  "sample_scope"
                 ],
                 "correct": [
-                  "sample_scope",
-                  "feasibility_run_qc"
+                  "feasibility_run_qc",
+                  "sample_scope"
                 ]
               },
               {
@@ -7520,12 +7520,12 @@
                 "score": 1,
                 "multi": true,
                 "answers": [
-                  "sample_scope",
-                  "feasibility_run_qc"
+                  "feasibility_run_qc",
+                  "sample_scope"
                 ],
                 "correct": [
-                  "sample_scope",
-                  "feasibility_run_qc"
+                  "feasibility_run_qc",
+                  "sample_scope"
                 ]
               },
               {
@@ -7685,12 +7685,12 @@
                 "score": 1,
                 "multi": true,
                 "answers": [
-                  "feasibility_run_qc",
-                  "sample_scope"
+                  "sample_scope",
+                  "feasibility_run_qc"
                 ],
                 "correct": [
-                  "feasibility_run_qc",
-                  "sample_scope"
+                  "sample_scope",
+                  "feasibility_run_qc"
                 ]
               },
               {
@@ -7840,7 +7840,7 @@
                 "score": 0,
                 "multi": false,
                 "answers": [
-                  "resistance_cause"
+                  "entity_confirmation"
                 ],
                 "correct": [
                   "therapy_evidence"
@@ -7852,11 +7852,11 @@
                 "score": 0,
                 "multi": true,
                 "answers": [
-                  "omit_assay_qc"
+                  "represents_recurrence"
                 ],
                 "correct": [
-                  "sample_scope",
-                  "feasibility_run_qc"
+                  "feasibility_run_qc",
+                  "sample_scope"
                 ]
               },
               {
@@ -7865,7 +7865,7 @@
                 "score": 0,
                 "multi": false,
                 "answers": [
-                  "reliable_prediction"
+                  "hrd_overrides_variant"
                 ],
                 "correct": [
                   "pathogenicity_vs_detection"
@@ -7877,7 +7877,7 @@
                 "score": 0,
                 "multi": false,
                 "answers": [
-                  "plasma_replaces_hrd"
+                  "discard_variant"
                 ],
                 "correct": [
                   "ctdna_confirmation"
@@ -8094,8 +8094,8 @@
                   "therapy_evidence"
                 ],
                 "ovar_archival_material": [
-                  "feasibility_run_qc",
-                  "sample_scope"
+                  "sample_scope",
+                  "feasibility_run_qc"
                 ],
                 "ovar_brca1_reliability": [
                   "pathogenicity_vs_detection"
@@ -8112,27 +8112,27 @@
               "optionOrder": {
                 "ovar_clinical_question": [
                   "therapy_evidence",
-                  "resistance_cause",
+                  "entity_confirmation",
                   "familial_risk",
-                  "entity_confirmation"
+                  "resistance_cause"
                 ],
                 "ovar_archival_material": [
-                  "represents_recurrence",
-                  "feasibility_run_qc",
                   "sample_scope",
-                  "omit_assay_qc"
+                  "represents_recurrence",
+                  "omit_assay_qc",
+                  "feasibility_run_qc"
                 ],
                 "ovar_brca1_reliability": [
                   "reliable_prediction",
+                  "coverage_suffices",
                   "pathogenicity_vs_detection",
-                  "hrd_overrides_variant",
-                  "coverage_suffices"
+                  "hrd_overrides_variant"
                 ],
                 "ovar_confirmation_strategy": [
-                  "discard_variant",
+                  "release_with_comment",
                   "ctdna_confirmation",
-                  "plasma_replaces_hrd",
-                  "release_with_comment"
+                  "discard_variant",
+                  "plasma_replaces_hrd"
                 ]
               }
             }
@@ -8426,12 +8426,12 @@
                 "score": 1,
                 "multi": true,
                 "answers": [
-                  "feasibility_run_qc",
-                  "sample_scope"
+                  "sample_scope",
+                  "feasibility_run_qc"
                 ],
                 "correct": [
-                  "feasibility_run_qc",
-                  "sample_scope"
+                  "sample_scope",
+                  "feasibility_run_qc"
                 ]
               },
               {
@@ -8921,7 +8921,7 @@
                 "score": 0,
                 "multi": true,
                 "answers": [
-                  "represents_recurrence"
+                  "omit_assay_qc"
                 ],
                 "correct": [
                   "feasibility_run_qc",
@@ -8934,7 +8934,7 @@
                 "score": 0,
                 "multi": false,
                 "answers": [
-                  "reliable_prediction"
+                  "coverage_suffices"
                 ],
                 "correct": [
                   "pathogenicity_vs_detection"
@@ -8946,7 +8946,7 @@
                 "score": 0,
                 "multi": false,
                 "answers": [
-                  "discard_variant"
+                  "release_with_comment"
                 ],
                 "correct": [
                   "ctdna_confirmation"
@@ -9181,27 +9181,27 @@
               "optionOrder": {
                 "ovar_clinical_question": [
                   "familial_risk",
-                  "entity_confirmation",
+                  "resistance_cause",
                   "therapy_evidence",
-                  "resistance_cause"
+                  "entity_confirmation"
                 ],
                 "ovar_archival_material": [
                   "represents_recurrence",
-                  "sample_scope",
                   "omit_assay_qc",
+                  "sample_scope",
                   "feasibility_run_qc"
                 ],
                 "ovar_brca1_reliability": [
-                  "reliable_prediction",
                   "pathogenicity_vs_detection",
-                  "coverage_suffices",
-                  "hrd_overrides_variant"
+                  "reliable_prediction",
+                  "hrd_overrides_variant",
+                  "coverage_suffices"
                 ],
                 "ovar_confirmation_strategy": [
-                  "release_with_comment",
+                  "ctdna_confirmation",
                   "discard_variant",
                   "plasma_replaces_hrd",
-                  "ctdna_confirmation"
+                  "release_with_comment"
                 ]
               }
             }
@@ -9658,12 +9658,12 @@
                 "score": 1,
                 "multi": true,
                 "answers": [
-                  "feasibility_run_qc",
-                  "sample_scope"
+                  "sample_scope",
+                  "feasibility_run_qc"
                 ],
                 "correct": [
-                  "feasibility_run_qc",
-                  "sample_scope"
+                  "sample_scope",
+                  "feasibility_run_qc"
                 ]
               },
               {
@@ -10249,28 +10249,28 @@
               },
               "optionOrder": {
                 "ovar_clinical_question": [
-                  "resistance_cause",
                   "entity_confirmation",
+                  "therapy_evidence",
                   "familial_risk",
-                  "therapy_evidence"
+                  "resistance_cause"
                 ],
                 "ovar_archival_material": [
+                  "omit_assay_qc",
                   "feasibility_run_qc",
                   "represents_recurrence",
-                  "omit_assay_qc",
                   "sample_scope"
                 ],
                 "ovar_brca1_reliability": [
-                  "reliable_prediction",
                   "coverage_suffices",
-                  "pathogenicity_vs_detection",
-                  "hrd_overrides_variant"
+                  "hrd_overrides_variant",
+                  "reliable_prediction",
+                  "pathogenicity_vs_detection"
                 ],
                 "ovar_confirmation_strategy": [
-                  "plasma_replaces_hrd",
                   "release_with_comment",
-                  "discard_variant",
-                  "ctdna_confirmation"
+                  "ctdna_confirmation",
+                  "plasma_replaces_hrd",
+                  "discard_variant"
                 ]
               }
             }
@@ -10727,12 +10727,12 @@
                 "score": 1,
                 "multi": true,
                 "answers": [
-                  "sample_scope",
-                  "feasibility_run_qc"
+                  "feasibility_run_qc",
+                  "sample_scope"
                 ],
                 "correct": [
-                  "sample_scope",
-                  "feasibility_run_qc"
+                  "feasibility_run_qc",
+                  "sample_scope"
                 ]
               },
               {
@@ -11047,7 +11047,7 @@
                 "score": 0,
                 "multi": false,
                 "answers": [
-                  "resistance_cause"
+                  "entity_confirmation"
                 ],
                 "correct": [
                   "therapy_evidence"
@@ -11062,8 +11062,8 @@
                   "omit_assay_qc"
                 ],
                 "correct": [
-                  "sample_scope",
-                  "feasibility_run_qc"
+                  "feasibility_run_qc",
+                  "sample_scope"
                 ]
               },
               {
@@ -11084,7 +11084,7 @@
                 "score": 0,
                 "multi": false,
                 "answers": [
-                  "plasma_replaces_hrd"
+                  "discard_variant"
                 ],
                 "correct": [
                   "ctdna_confirmation"
@@ -11318,28 +11318,28 @@
               },
               "optionOrder": {
                 "ovar_clinical_question": [
-                  "entity_confirmation",
-                  "therapy_evidence",
+                  "resistance_cause",
                   "familial_risk",
-                  "resistance_cause"
+                  "therapy_evidence",
+                  "entity_confirmation"
                 ],
                 "ovar_archival_material": [
-                  "omit_assay_qc",
                   "feasibility_run_qc",
-                  "represents_recurrence",
-                  "sample_scope"
+                  "omit_assay_qc",
+                  "sample_scope",
+                  "represents_recurrence"
                 ],
                 "ovar_brca1_reliability": [
+                  "hrd_overrides_variant",
                   "coverage_suffices",
-                  "reliable_prediction",
                   "pathogenicity_vs_detection",
-                  "hrd_overrides_variant"
+                  "reliable_prediction"
                 ],
                 "ovar_confirmation_strategy": [
                   "release_with_comment",
                   "plasma_replaces_hrd",
-                  "discard_variant",
-                  "ctdna_confirmation"
+                  "ctdna_confirmation",
+                  "discard_variant"
                 ]
               }
             }
@@ -11796,12 +11796,12 @@
                 "score": 1,
                 "multi": true,
                 "answers": [
-                  "feasibility_run_qc",
-                  "sample_scope"
+                  "sample_scope",
+                  "feasibility_run_qc"
                 ],
                 "correct": [
-                  "feasibility_run_qc",
-                  "sample_scope"
+                  "sample_scope",
+                  "feasibility_run_qc"
                 ]
               },
               {
@@ -12116,7 +12116,7 @@
                 "score": 0,
                 "multi": false,
                 "answers": [
-                  "familial_risk"
+                  "entity_confirmation"
                 ],
                 "correct": [
                   "therapy_evidence"
@@ -12141,7 +12141,7 @@
                 "score": 0,
                 "multi": false,
                 "answers": [
-                  "coverage_suffices"
+                  "reliable_prediction"
                 ],
                 "correct": [
                   "pathogenicity_vs_detection"
@@ -12153,7 +12153,7 @@
                 "score": 0,
                 "multi": false,
                 "answers": [
-                  "discard_variant"
+                  "release_with_comment"
                 ],
                 "correct": [
                   "ctdna_confirmation"
@@ -12387,28 +12387,28 @@
               },
               "optionOrder": {
                 "ovar_clinical_question": [
+                  "familial_risk",
                   "resistance_cause",
-                  "entity_confirmation",
                   "therapy_evidence",
-                  "familial_risk"
+                  "entity_confirmation"
                 ],
                 "ovar_archival_material": [
                   "omit_assay_qc",
-                  "feasibility_run_qc",
                   "represents_recurrence",
+                  "feasibility_run_qc",
                   "sample_scope"
                 ],
                 "ovar_brca1_reliability": [
-                  "coverage_suffices",
-                  "pathogenicity_vs_detection",
                   "reliable_prediction",
-                  "hrd_overrides_variant"
+                  "hrd_overrides_variant",
+                  "pathogenicity_vs_detection",
+                  "coverage_suffices"
                 ],
                 "ovar_confirmation_strategy": [
-                  "plasma_replaces_hrd",
-                  "ctdna_confirmation",
                   "release_with_comment",
-                  "discard_variant"
+                  "discard_variant",
+                  "ctdna_confirmation",
+                  "plasma_replaces_hrd"
                 ]
               }
             }
@@ -13197,11 +13197,11 @@
                 "score": 0,
                 "multi": true,
                 "answers": [
-                  "omit_assay_qc"
+                  "represents_recurrence"
                 ],
                 "correct": [
-                  "feasibility_run_qc",
-                  "sample_scope"
+                  "sample_scope",
+                  "feasibility_run_qc"
                 ]
               },
               {
@@ -13222,7 +13222,7 @@
                 "score": 0,
                 "multi": false,
                 "answers": [
-                  "release_with_comment"
+                  "plasma_replaces_hrd"
                 ],
                 "correct": [
                   "ctdna_confirmation"
@@ -13456,10 +13456,10 @@
               },
               "optionOrder": {
                 "ovar_clinical_question": [
-                  "therapy_evidence",
-                  "resistance_cause",
                   "familial_risk",
-                  "entity_confirmation"
+                  "entity_confirmation",
+                  "resistance_cause",
+                  "therapy_evidence"
                 ],
                 "ovar_archival_material": [
                   "sample_scope",
@@ -13468,15 +13468,15 @@
                   "represents_recurrence"
                 ],
                 "ovar_brca1_reliability": [
-                  "coverage_suffices",
-                  "hrd_overrides_variant",
                   "pathogenicity_vs_detection",
-                  "reliable_prediction"
+                  "hrd_overrides_variant",
+                  "reliable_prediction",
+                  "coverage_suffices"
                 ],
                 "ovar_confirmation_strategy": [
-                  "release_with_comment",
-                  "ctdna_confirmation",
                   "plasma_replaces_hrd",
+                  "ctdna_confirmation",
+                  "release_with_comment",
                   "discard_variant"
                 ]
               }
@@ -13934,12 +13934,12 @@
                 "score": 1,
                 "multi": true,
                 "answers": [
-                  "sample_scope",
-                  "feasibility_run_qc"
+                  "feasibility_run_qc",
+                  "sample_scope"
                 ],
                 "correct": [
-                  "sample_scope",
-                  "feasibility_run_qc"
+                  "feasibility_run_qc",
+                  "sample_scope"
                 ]
               },
               {
@@ -14266,7 +14266,7 @@
                 "score": 0,
                 "multi": true,
                 "answers": [
-                  "omit_assay_qc"
+                  "represents_recurrence"
                 ],
                 "correct": [
                   "sample_scope",
@@ -14291,7 +14291,7 @@
                 "score": 0,
                 "multi": false,
                 "answers": [
-                  "release_with_comment"
+                  "plasma_replaces_hrd"
                 ],
                 "correct": [
                   "ctdna_confirmation"
@@ -14508,1077 +14508,8 @@
                   "therapy_evidence"
                 ],
                 "ovar_archival_material": [
-                  "feasibility_run_qc",
-                  "sample_scope"
-                ],
-                "ovar_brca1_reliability": [
-                  "pathogenicity_vs_detection"
-                ],
-                "ovar_confirmation_strategy": [
-                  "ctdna_confirmation"
-                ]
-              },
-              "submitted": true,
-              "stages": {
-                "before_round1": true,
-                "after_round1": true
-              },
-              "optionOrder": {
-                "ovar_clinical_question": [
-                  "familial_risk",
-                  "entity_confirmation",
-                  "therapy_evidence",
-                  "resistance_cause"
-                ],
-                "ovar_archival_material": [
-                  "feasibility_run_qc",
-                  "sample_scope",
-                  "omit_assay_qc",
-                  "represents_recurrence"
-                ],
-                "ovar_brca1_reliability": [
-                  "hrd_overrides_variant",
-                  "reliable_prediction",
-                  "pathogenicity_vs_detection",
-                  "coverage_suffices"
-                ],
-                "ovar_confirmation_strategy": [
-                  "discard_variant",
-                  "release_with_comment",
-                  "plasma_replaces_hrd",
-                  "ctdna_confirmation"
-                ]
-              }
-            }
-          }
-        },
-        {
-          "name": "correct final raw and total scores reach 100",
-          "pass": true,
-          "detail": {
-            "patient": 100,
-            "total": 100
-          }
-        },
-        {
-          "name": "completed gates remove phantom 80 percent cap",
-          "pass": true,
-          "detail": null
-        },
-        {
-          "name": "final report contains all four reasoning rows",
-          "pass": true,
-          "detail": null
-        },
-        {
-          "name": "final asset appears after confirmation",
-          "pass": true,
-          "detail": null
-        },
-        {
-          "name": "editing first invalidates first only",
-          "pass": true,
-          "detail": null
-        },
-        {
-          "name": "final navigation rechecks edited gate",
-          "pass": true,
-          "detail": null
-        },
-        {
-          "name": "re-submitted first gate returns to existing final phase",
-          "pass": true,
-          "detail": null
-        },
-        {
-          "name": "early acceptance retains existing 62 percent cap",
-          "pass": true,
-          "detail": null
-        },
-        {
-          "name": "missing confirmation retains existing 78 percent cap",
-          "pass": true,
-          "detail": null
-        },
-        {
-          "name": "wrong completed answers permit progress with existing score penalty",
-          "pass": true,
-          "detail": null
-        },
-        {
-          "name": "one of two correct MS choices receives half credit",
-          "pass": true,
-          "detail": null
-        },
-        {
-          "name": "both correct MS choices receive full credit",
-          "pass": true,
-          "detail": null
-        },
-        {
-          "name": "one false MS choice subtracts half credit",
-          "pass": true,
-          "detail": null
-        },
-        {
-          "name": "unchecked false choice is removed",
-          "pass": true,
-          "detail": null
-        },
-        {
-          "name": "invalid or unavailable answer IDs do not mutate state",
-          "pass": true,
-          "detail": null
-        },
-        {
-          "name": "rerun preserves first and invalidates only later gate",
-          "pass": true,
-          "detail": null
-        },
-        {
-          "name": "rerun requires a fresh second submission",
-          "pass": true,
-          "detail": null
-        },
-        {
-          "name": "assessment hides correctness and score after submission",
-          "pass": true,
-          "detail": null
-        },
-        {
-          "name": "assessment second gate hides answers and rationale",
-          "pass": true,
-          "detail": null
-        },
-        {
-          "name": "assessment feedback appears after case completion",
-          "pass": true,
-          "detail": null
-        },
-        {
-          "name": "instructor first gate displays solutions for first stage only",
-          "pass": true,
-          "detail": null
-        },
-        {
-          "name": "instructor can navigate to second stage after actual report",
-          "pass": true,
-          "detail": null
-        },
-        {
-          "name": "case switch resets answers, stages and prior run",
-          "pass": true,
-          "detail": null
-        },
-        {
-          "name": "approved question and correct IDs ovar_clinical_question",
-          "pass": true,
-          "detail": null
-        },
-        {
-          "name": "translation complete ovar_clinical_question",
-          "pass": true,
-          "detail": null
-        },
-        {
-          "name": "approved question and correct IDs ovar_archival_material",
-          "pass": true,
-          "detail": null
-        },
-        {
-          "name": "translation complete ovar_archival_material",
-          "pass": true,
-          "detail": null
-        },
-        {
-          "name": "approved question and correct IDs ovar_brca1_reliability",
-          "pass": true,
-          "detail": null
-        },
-        {
-          "name": "translation complete ovar_brca1_reliability",
-          "pass": true,
-          "detail": null
-        },
-        {
-          "name": "approved question and correct IDs ovar_confirmation_strategy",
-          "pass": true,
-          "detail": null
-        },
-        {
-          "name": "translation complete ovar_confirmation_strategy",
-          "pass": true,
-          "detail": null
-        },
-        {
-          "name": "localized stage labels in navigation",
-          "pass": true,
-          "detail": null
-        }
-      ],
-      "outcomes": [
-        {
-          "name": "confirmed final",
-          "patient": {
-            "s": {
-              "clinical": 45,
-              "method": 52,
-              "material": 40,
-              "biology": 32,
-              "communication": 35
-            },
-            "got": 204,
-            "max": 204,
-            "pct": 100,
-            "labels": {
-              "clinical": "Clinical reasoning",
-              "method": "Method selection",
-              "material": "Material stewardship",
-              "biology": "Biological interpretation",
-              "communication": "Communication"
-            },
-            "domainMax": {
-              "clinical": 45,
-              "method": 52,
-              "material": 40,
-              "biology": 32,
-              "communication": 35
-            },
-            "score_note": "Dynamisches Complex-Scoring: Runde 2 erweitert die Maximalpunkte; Liquid Biopsy und zusätzliche TAT werden als begründete Bestätigung bewertet."
-          },
-          "total": {
-            "s": {
-              "clinical": 45,
-              "method": 52,
-              "material": 40,
-              "biology": 32,
-              "communication": 35
-            },
-            "got": 204,
-            "max": 204,
-            "pct": 100,
-            "labels": {
-              "clinical": "Clinical reasoning",
-              "method": "Method selection",
-              "material": "Material stewardship",
-              "biology": "Biological interpretation",
-              "communication": "Communication"
-            },
-            "domainMax": {
-              "clinical": 45,
-              "method": 52,
-              "material": 40,
-              "biology": 32,
-              "communication": 35
-            },
-            "score_note": "Dynamisches Complex-Scoring: Runde 2 erweitert die Maximalpunkte; Liquid Biopsy und zusätzliche TAT werden als begründete Bestätigung bewertet.",
-            "capInfo": {
-              "active": false,
-              "preCapPct": 100,
-              "finalPct": 100,
-              "errors": [],
-              "status": "passed"
-            }
-          },
-          "totals": {
-            "points": 1360,
-            "sections": 8,
-            "tat": 13,
-            "followup_days": 6
-          },
-          "report": {
-            "kind": "complete",
-            "findings": [
-              [
-                "Nachforderung Runde 2",
-                "Liquid Biopsy / ctDNA-Panel"
-              ],
-              [
-                "Liquid-Biopsy-Befund",
-                "Aktuelle Liquid Biopsy: ctDNA ausreichend. BRCA1-LoF erneut nachweisbar, VAF passend zur ctDNA-Fraktion; kein breites C>T/G>A-Artefaktmuster. Damit ist eine aktuelle tumorassoziierte BRCA1-Alteration plausibel bestätigt. HRD/genomic scar aus altem Gewebe bleibt limitiert/graubereichig."
-              ],
-              [
-                "Finale Einordnung",
-                "Initialer FFPE-Befund allein nicht belastbar; nach Liquid-Biopsy-Bestätigung BRCA1/HRR-Kontext therapeutisch diskutierbar. Keimbahnabklärung empfohlen; HRD-Bewertung limitiert kommunizieren."
-              ]
-            ],
-            "interpretation": [
-              "Die BRCA1-LoF-Alteration ist durch aktuelle ctDNA plausibel bestätigt.",
-              "Der tissue-basierte HRD/genomic-scar bleibt wegen alten Materials grenzwertig/limitiert.",
-              "Keimbahnabklärung wird empfohlen; Therapie- und Familienrelevanz müssen getrennt kommuniziert werden."
-            ],
-            "warnings": [],
-            "totals": {
-              "points": 550,
-              "sections": 0,
-              "tat": 6,
-              "followup_days": 0
-            }
-          },
-          "phase": "final",
-          "decision": "reject",
-          "gates": {
-            "pct": 1,
-            "got": 4,
-            "max": 4,
-            "details": [
-              {
-                "id": "ovar_clinical_question",
-                "prompt": "تشخیص مولکولی در درجه نخست باید به کدام پرسش بالینی پاسخ دهد؟",
-                "score": 1,
-                "multi": false,
-                "answers": [
-                  "therapy_evidence"
-                ],
-                "correct": [
-                  "therapy_evidence"
-                ]
-              },
-              {
-                "id": "ovar_archival_material",
-                "prompt": "کدام گزاره‌ها درباره بررسی ماده اولیه FFPE سه‌ساله درست هستند؟",
-                "score": 1,
-                "multi": true,
-                "answers": [
-                  "feasibility_run_qc",
-                  "sample_scope"
-                ],
-                "correct": [
-                  "feasibility_run_qc",
-                  "sample_scope"
-                ]
-              },
-              {
-                "id": "ovar_brca1_reliability",
-                "prompt": "کدام ارزیابی با یافته BRCA1 دور اول سازگار است؟",
-                "score": 1,
-                "multi": false,
-                "answers": [
-                  "pathogenicity_vs_detection"
-                ],
-                "correct": [
-                  "pathogenicity_vs_detection"
-                ]
-              },
-              {
-                "id": "ovar_confirmation_strategy",
-                "prompt": "ماده باقی‌مانده برای تکرار قابل اتکا کافی نیست. کدام راهبرد بعدی بهتر توجیه می‌شود؟",
-                "score": 1,
-                "multi": false,
-                "answers": [
-                  "ctdna_confirmation"
-                ],
-                "correct": [
-                  "ctdna_confirmation"
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "name": "early acceptance",
-          "patient": {
-            "s": {
-              "clinical": 40,
-              "method": 24,
-              "material": 40,
-              "biology": 0,
-              "communication": 35
-            },
-            "got": 126,
-            "max": 204,
-            "pct": 62,
-            "labels": {
-              "clinical": "Clinical reasoning",
-              "method": "Method selection",
-              "material": "Material stewardship",
-              "biology": "Biological interpretation",
-              "communication": "Communication"
-            },
-            "domainMax": {
-              "clinical": 45,
-              "method": 52,
-              "material": 40,
-              "biology": 32,
-              "communication": 35
-            },
-            "score_note": "Dynamisches Complex-Scoring: Runde 2 erweitert die Maximalpunkte; Liquid Biopsy und zusätzliche TAT werden als begründete Bestätigung bewertet."
-          },
-          "total": {
-            "s": {
-              "clinical": 40,
-              "method": 24,
-              "material": 40,
-              "biology": 0,
-              "communication": 35
-            },
-            "got": 126,
-            "max": 204,
-            "pct": 62,
-            "labels": {
-              "clinical": "Clinical reasoning",
-              "method": "Method selection",
-              "material": "Material stewardship",
-              "biology": "Biological interpretation",
-              "communication": "Communication"
-            },
-            "domainMax": {
-              "clinical": 45,
-              "method": 52,
-              "material": 40,
-              "biology": 32,
-              "communication": 35
-            },
-            "score_note": "Dynamisches Complex-Scoring: Runde 2 erweitert die Maximalpunkte; Liquid Biopsy und zusätzliche TAT werden als begründete Bestätigung bewertet.",
-            "capInfo": {
-              "active": false,
-              "preCapPct": 62,
-              "finalPct": 62,
-              "errors": [],
-              "status": "borderline"
-            }
-          },
-          "totals": {
-            "points": 810,
-            "sections": 8,
-            "tat": 7,
-            "followup_days": 0
-          },
-          "report": {
-            "kind": "phase1_artifact",
-            "findings": [
-              [
-                "Anforderung Runde 1",
-                "Tumor-BRCA1/2 + HRR-Panel; HRD-Score / genomische Instabilität"
-              ],
-              [
-                "Laborbefund BRCA/HRR + HRD",
-                "Tumorbasierte HRR-/BRCA-orientierte Analyse + HRD/genomic scar aus altem FFPE: formal pathogene BRCA1-Frameshift-/LoF-Variante mit VAF ca. 12 % bei TZA ca. 70 %, Coverage ca. 100×; zugleich auffällig viele C>T/G>A-Varianten. HRD/genomic scar grenzwertig/Graubereich, nicht überzeugend stark positiv. Restmaterial insuffizient für robuste Wiederholung."
-              ],
-              [
-                "Technische Plausibilität",
-                "TZA ca. 70 %, Coverage ca. 100×, BRCA1-LoF VAF ca. 12 %, viele C>T/G>A-Varianten."
-              ]
-            ],
-            "interpretation": [
-              "Formal pathogene BRCA1-LoF-Variante, aber technisch nicht robust genug für eine unmittelbare therapeutische Schlussfolgerung.",
-              "HRD/genomic scar ist grenzwertig/Graubereich und rettet den Befund nicht als klar-positive HRD-Konstellation.",
-              "Restmaterial reicht nicht für eine robuste Wiederholung aus dem alten Block."
-            ],
-            "warnings": [
-              [
-                "warn",
-                "Niedrigwertige / nicht fallbezogene Diagnostik gewählt: Tumor-BRCA1/2 + HRR-Panel; HRD-Score / genomische Instabilität"
-              ]
-            ],
-            "totals": {
-              "points": 810,
-              "sections": 8,
-              "tat": 7,
-              "followup_days": 0
-            }
-          },
-          "phase": "accepted_bad",
-          "decision": "accept",
-          "gates": {
-            "pct": 1,
-            "got": 4,
-            "max": 4,
-            "details": [
-              {
-                "id": "ovar_clinical_question",
-                "prompt": "تشخیص مولکولی در درجه نخست باید به کدام پرسش بالینی پاسخ دهد؟",
-                "score": 1,
-                "multi": false,
-                "answers": [
-                  "therapy_evidence"
-                ],
-                "correct": [
-                  "therapy_evidence"
-                ]
-              },
-              {
-                "id": "ovar_archival_material",
-                "prompt": "کدام گزاره‌ها درباره بررسی ماده اولیه FFPE سه‌ساله درست هستند؟",
-                "score": 1,
-                "multi": true,
-                "answers": [
-                  "feasibility_run_qc",
-                  "sample_scope"
-                ],
-                "correct": [
-                  "feasibility_run_qc",
-                  "sample_scope"
-                ]
-              },
-              {
-                "id": "ovar_brca1_reliability",
-                "prompt": "کدام ارزیابی با یافته BRCA1 دور اول سازگار است؟",
-                "score": 1,
-                "multi": false,
-                "answers": [
-                  "pathogenicity_vs_detection"
-                ],
-                "correct": [
-                  "pathogenicity_vs_detection"
-                ]
-              },
-              {
-                "id": "ovar_confirmation_strategy",
-                "prompt": "ماده باقی‌مانده برای تکرار قابل اتکا کافی نیست. کدام راهبرد بعدی بهتر توجیه می‌شود؟",
-                "score": 1,
-                "multi": false,
-                "answers": [
-                  "ctdna_confirmation"
-                ],
-                "correct": [
-                  "ctdna_confirmation"
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "name": "final without confirmation",
-          "patient": {
-            "s": {
-              "clinical": 45,
-              "method": 34,
-              "material": 40,
-              "biology": 22,
-              "communication": 35
-            },
-            "got": 159,
-            "max": 204,
-            "pct": 78,
-            "labels": {
-              "clinical": "Clinical reasoning",
-              "method": "Method selection",
-              "material": "Material stewardship",
-              "biology": "Biological interpretation",
-              "communication": "Communication"
-            },
-            "domainMax": {
-              "clinical": 45,
-              "method": 52,
-              "material": 40,
-              "biology": 32,
-              "communication": 35
-            },
-            "score_note": "Dynamisches Complex-Scoring: Runde 2 erweitert die Maximalpunkte; Liquid Biopsy und zusätzliche TAT werden als begründete Bestätigung bewertet."
-          },
-          "total": {
-            "s": {
-              "clinical": 45,
-              "method": 34,
-              "material": 40,
-              "biology": 22,
-              "communication": 35
-            },
-            "got": 143,
-            "max": 204,
-            "pct": 70,
-            "labels": {
-              "clinical": "Clinical reasoning",
-              "method": "Method selection",
-              "material": "Material stewardship",
-              "biology": "Biological interpretation",
-              "communication": "Communication"
-            },
-            "domainMax": {
-              "clinical": 45,
-              "method": 52,
-              "material": 40,
-              "biology": 32,
-              "communication": 35
-            },
-            "score_note": "Dynamisches Complex-Scoring: Runde 2 erweitert die Maximalpunkte; Liquid Biopsy und zusätzliche TAT werden als begründete Bestätigung bewertet.",
-            "preCapPct": 78,
-            "capInfo": {
-              "active": true,
-              "preCapPct": 78,
-              "strictestCap": 70,
-              "additionalPenalty": 0,
-              "finalPct": 70,
-              "errors": [
-                {
-                  "label": "Therapie-/fallrelevante Kernbausteine fehlen: Liquid Biopsy / ctDNA-Panel",
-                  "cap": 70,
-                  "severity": "critical"
-                }
-              ],
-              "status": "passed"
-            }
-          },
-          "totals": {
-            "points": 810,
-            "sections": 8,
-            "tat": 7,
-            "followup_days": 0
-          },
-          "report": {
-            "kind": "partial",
-            "findings": [
-              [
-                "Nachforderung Runde 2",
-                "—"
-              ],
-              [
-                "Liquid-Biopsy-Befund",
-                "Liquid Biopsy wurde noch nicht angefordert oder ist unvollständig."
-              ],
-              [
-                "Finale Einordnung",
-                "Ohne aktuelle Bestätigung bleibt der alte FFPE-Befund limitiert."
-              ]
-            ],
-            "interpretation": [
-              "Die Bestätigungsstrategie ist noch unvollständig."
-            ],
-            "warnings": [],
-            "totals": {
-              "points": 0,
-              "sections": 0,
-              "tat": 0,
-              "followup_days": 0
-            }
-          },
-          "phase": "final",
-          "decision": "reject",
-          "gates": {
-            "pct": 1,
-            "got": 4,
-            "max": 4,
-            "details": [
-              {
-                "id": "ovar_clinical_question",
-                "prompt": "تشخیص مولکولی در درجه نخست باید به کدام پرسش بالینی پاسخ دهد؟",
-                "score": 1,
-                "multi": false,
-                "answers": [
-                  "therapy_evidence"
-                ],
-                "correct": [
-                  "therapy_evidence"
-                ]
-              },
-              {
-                "id": "ovar_archival_material",
-                "prompt": "کدام گزاره‌ها درباره بررسی ماده اولیه FFPE سه‌ساله درست هستند؟",
-                "score": 1,
-                "multi": true,
-                "answers": [
-                  "feasibility_run_qc",
-                  "sample_scope"
-                ],
-                "correct": [
-                  "feasibility_run_qc",
-                  "sample_scope"
-                ]
-              },
-              {
-                "id": "ovar_brca1_reliability",
-                "prompt": "کدام ارزیابی با یافته BRCA1 دور اول سازگار است؟",
-                "score": 1,
-                "multi": false,
-                "answers": [
-                  "pathogenicity_vs_detection"
-                ],
-                "correct": [
-                  "pathogenicity_vs_detection"
-                ]
-              },
-              {
-                "id": "ovar_confirmation_strategy",
-                "prompt": "ماده باقی‌مانده برای تکرار قابل اتکا کافی نیست. کدام راهبرد بعدی بهتر توجیه می‌شود؟",
-                "score": 1,
-                "multi": false,
-                "answers": [
-                  "ctdna_confirmation"
-                ],
-                "correct": [
-                  "ctdna_confirmation"
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "name": "wrong reasoning confirmed final",
-          "patient": {
-            "s": {
-              "clinical": 45,
-              "method": 52,
-              "material": 40,
-              "biology": 32,
-              "communication": 35
-            },
-            "got": 204,
-            "max": 204,
-            "pct": 100,
-            "labels": {
-              "clinical": "Clinical reasoning",
-              "method": "Method selection",
-              "material": "Material stewardship",
-              "biology": "Biological interpretation",
-              "communication": "Communication"
-            },
-            "domainMax": {
-              "clinical": 45,
-              "method": 52,
-              "material": 40,
-              "biology": 32,
-              "communication": 35
-            },
-            "score_note": "Dynamisches Complex-Scoring: Runde 2 erweitert die Maximalpunkte; Liquid Biopsy und zusätzliche TAT werden als begründete Bestätigung bewertet."
-          },
-          "total": {
-            "s": {
-              "clinical": 45,
-              "method": 52,
-              "material": 40,
-              "biology": 32,
-              "communication": 35
-            },
-            "got": 163,
-            "max": 204,
-            "pct": 80,
-            "labels": {
-              "clinical": "Clinical reasoning",
-              "method": "Method selection",
-              "material": "Material stewardship",
-              "biology": "Biological interpretation",
-              "communication": "Communication"
-            },
-            "domainMax": {
-              "clinical": 45,
-              "method": 52,
-              "material": 40,
-              "biology": 32,
-              "communication": 35
-            },
-            "score_note": "Dynamisches Complex-Scoring: Runde 2 erweitert die Maximalpunkte; Liquid Biopsy und zusätzliche TAT werden als begründete Bestätigung bewertet.",
-            "preCapPct": 100,
-            "capInfo": {
-              "active": true,
-              "preCapPct": 100,
-              "strictestCap": 80,
-              "additionalPenalty": 0,
-              "finalPct": 80,
-              "errors": [
-                {
-                  "label": "Zentrale klinische/prozessuale Fragestellung nicht sicher erkannt",
-                  "cap": 80,
-                  "severity": "major"
-                }
-              ],
-              "status": "passed"
-            }
-          },
-          "totals": {
-            "points": 1360,
-            "sections": 8,
-            "tat": 13,
-            "followup_days": 6
-          },
-          "report": {
-            "kind": "complete",
-            "findings": [
-              [
-                "Nachforderung Runde 2",
-                "Liquid Biopsy / ctDNA-Panel"
-              ],
-              [
-                "Liquid-Biopsy-Befund",
-                "Aktuelle Liquid Biopsy: ctDNA ausreichend. BRCA1-LoF erneut nachweisbar, VAF passend zur ctDNA-Fraktion; kein breites C>T/G>A-Artefaktmuster. Damit ist eine aktuelle tumorassoziierte BRCA1-Alteration plausibel bestätigt. HRD/genomic scar aus altem Gewebe bleibt limitiert/graubereichig."
-              ],
-              [
-                "Finale Einordnung",
-                "Initialer FFPE-Befund allein nicht belastbar; nach Liquid-Biopsy-Bestätigung BRCA1/HRR-Kontext therapeutisch diskutierbar. Keimbahnabklärung empfohlen; HRD-Bewertung limitiert kommunizieren."
-              ]
-            ],
-            "interpretation": [
-              "Die BRCA1-LoF-Alteration ist durch aktuelle ctDNA plausibel bestätigt.",
-              "Der tissue-basierte HRD/genomic-scar bleibt wegen alten Materials grenzwertig/limitiert.",
-              "Keimbahnabklärung wird empfohlen; Therapie- und Familienrelevanz müssen getrennt kommuniziert werden."
-            ],
-            "warnings": [],
-            "totals": {
-              "points": 550,
-              "sections": 0,
-              "tat": 6,
-              "followup_days": 0
-            }
-          },
-          "phase": "final",
-          "decision": "reject",
-          "gates": {
-            "pct": 0,
-            "got": 0,
-            "max": 4,
-            "details": [
-              {
-                "id": "ovar_clinical_question",
-                "prompt": "تشخیص مولکولی در درجه نخست باید به کدام پرسش بالینی پاسخ دهد؟",
-                "score": 0,
-                "multi": false,
-                "answers": [
-                  "resistance_cause"
-                ],
-                "correct": [
-                  "therapy_evidence"
-                ]
-              },
-              {
-                "id": "ovar_archival_material",
-                "prompt": "کدام گزاره‌ها درباره بررسی ماده اولیه FFPE سه‌ساله درست هستند؟",
-                "score": 0,
-                "multi": true,
-                "answers": [
-                  "omit_assay_qc"
-                ],
-                "correct": [
                   "sample_scope",
                   "feasibility_run_qc"
-                ]
-              },
-              {
-                "id": "ovar_brca1_reliability",
-                "prompt": "کدام ارزیابی با یافته BRCA1 دور اول سازگار است؟",
-                "score": 0,
-                "multi": false,
-                "answers": [
-                  "reliable_prediction"
-                ],
-                "correct": [
-                  "pathogenicity_vs_detection"
-                ]
-              },
-              {
-                "id": "ovar_confirmation_strategy",
-                "prompt": "ماده باقی‌مانده برای تکرار قابل اتکا کافی نیست. کدام راهبرد بعدی بهتر توجیه می‌شود؟",
-                "score": 0,
-                "multi": false,
-                "answers": [
-                  "discard_variant"
-                ],
-                "correct": [
-                  "ctdna_confirmation"
-                ]
-              }
-            ]
-          }
-        }
-      ],
-      "stable": true
-    },
-    {
-      "lang": "uk",
-      "checks": [
-        {
-          "name": "first gate inserted between material and order",
-          "pass": true,
-          "detail": null
-        },
-        {
-          "name": "order blocked until first submission",
-          "pass": true,
-          "detail": null
-        },
-        {
-          "name": "only two pre-run questions available",
-          "pass": true,
-          "detail": null
-        },
-        {
-          "name": "first UI has no later question or VAF/result clue",
-          "pass": true,
-          "detail": null
-        },
-        {
-          "name": "no assessment feedback before submission",
-          "pass": true,
-          "detail": null
-        },
-        {
-          "name": "empty submission refused",
-          "pass": true,
-          "detail": null
-        },
-        {
-          "name": "direct lab call cannot bypass first gate",
-          "pass": true,
-          "detail": null
-        },
-        {
-          "name": "premature reject does not change phase or selection",
-          "pass": true,
-          "detail": null
-        },
-        {
-          "name": "premature second navigation does not reveal later questions",
-          "pass": true,
-          "detail": null
-        },
-        {
-          "name": "first gate submitted independently",
-          "pass": true,
-          "detail": null
-        },
-        {
-          "name": "correct first gate uses only applicable score denominator",
-          "pass": true,
-          "detail": null
-        },
-        {
-          "name": "future gate does not create missing-gate cap",
-          "pass": true,
-          "detail": null
-        },
-        {
-          "name": "first continuation enters order",
-          "pass": true,
-          "detail": null
-        },
-        {
-          "name": "report requires actual run",
-          "pass": true,
-          "detail": null
-        },
-        {
-          "name": "partial round1 remains partial and has no second gate",
-          "pass": true,
-          "detail": null
-        },
-        {
-          "name": "partial report cannot expose second questions",
-          "pass": true,
-          "detail": null
-        },
-        {
-          "name": "laboratory alone does not unlock later questions",
-          "pass": true,
-          "detail": null
-        },
-        {
-          "name": "full reviewed round1 unlocks second stage only then",
-          "pass": true,
-          "detail": null
-        },
-        {
-          "name": "report routes through reasoning before decision",
-          "pass": true,
-          "detail": null
-        },
-        {
-          "name": "round1 assets test-gated and no confirmation/final assets",
-          "pass": true,
-          "detail": null
-        },
-        {
-          "name": "direct acceptance blocked without second gate",
-          "pass": true,
-          "detail": null
-        },
-        {
-          "name": "direct rejection blocked without second gate",
-          "pass": true,
-          "detail": null
-        },
-        {
-          "name": "round2 navigation blocked without second gate",
-          "pass": true,
-          "detail": null
-        },
-        {
-          "name": "MTB navigation blocked without second gate",
-          "pass": true,
-          "detail": null
-        },
-        {
-          "name": "second UI shows exactly its two questions",
-          "pass": true,
-          "detail": null
-        },
-        {
-          "name": "aggregate score includes both stages after report",
-          "pass": true,
-          "detail": null
-        },
-        {
-          "name": "second empty submission refused and first preserved",
-          "pass": true,
-          "detail": null
-        },
-        {
-          "name": "four answers aggregated independently of displayed stage",
-          "pass": true,
-          "detail": null
-        },
-        {
-          "name": "decision buttons appear after second submission",
-          "pass": true,
-          "detail": null
-        },
-        {
-          "name": "confirmed final reaches MTB with both gates",
-          "pass": true,
-          "detail": {
-            "step": "mtb",
-            "phase": "final",
-            "decision": "reject",
-            "report1": {
-              "kind": "phase1_artifact",
-              "findings": [
-                [
-                  "Anforderung Runde 1",
-                  "Tumor-BRCA1/2 + HRR-Panel; HRD-Score / genomische Instabilität"
-                ],
-                [
-                  "Laborbefund BRCA/HRR + HRD",
-                  "Tumorbasierte HRR-/BRCA-orientierte Analyse + HRD/genomic scar aus altem FFPE: formal pathogene BRCA1-Frameshift-/LoF-Variante mit VAF ca. 12 % bei TZA ca. 70 %, Coverage ca. 100×; zugleich auffällig viele C>T/G>A-Varianten. HRD/genomic scar grenzwertig/Graubereich, nicht überzeugend stark positiv. Restmaterial insuffizient für robuste Wiederholung."
-                ],
-                [
-                  "Technische Plausibilität",
-                  "TZA ca. 70 %, Coverage ca. 100×, BRCA1-LoF VAF ca. 12 %, viele C>T/G>A-Varianten."
-                ]
-              ],
-              "interpretation": [
-                "Formal pathogene BRCA1-LoF-Variante, aber technisch nicht robust genug für eine unmittelbare therapeutische Schlussfolgerung.",
-                "HRD/genomic scar ist grenzwertig/Graubereich und rettet den Befund nicht als klar-positive HRD-Konstellation.",
-                "Restmaterial reicht nicht für eine robuste Wiederholung aus dem alten Block."
-              ],
-              "warnings": [],
-              "totals": {
-                "points": 810,
-                "sections": 8,
-                "tat": 7,
-                "followup_days": 0
-              }
-            },
-            "viewed": {
-              "intake": true,
-              "history": true,
-              "histo": true,
-              "material": true,
-              "reasoning": true,
-              "order": true,
-              "report": true,
-              "lab": true,
-              "reasoning_follow": true,
-              "follow_order": true,
-              "follow_lab": true,
-              "follow_report": true,
-              "mtb": true
-            },
-            "gates": {
-              "answers": {
-                "ovar_clinical_question": [
-                  "therapy_evidence"
-                ],
-                "ovar_archival_material": [
-                  "feasibility_run_qc",
-                  "sample_scope"
                 ],
                 "ovar_brca1_reliability": [
                   "pathogenicity_vs_detection"
@@ -15595,26 +14526,26 @@
               "optionOrder": {
                 "ovar_clinical_question": [
                   "resistance_cause",
-                  "familial_risk",
+                  "therapy_evidence",
                   "entity_confirmation",
-                  "therapy_evidence"
+                  "familial_risk"
                 ],
                 "ovar_archival_material": [
-                  "represents_recurrence",
-                  "feasibility_run_qc",
+                  "omit_assay_qc",
                   "sample_scope",
-                  "omit_assay_qc"
+                  "feasibility_run_qc",
+                  "represents_recurrence"
                 ],
                 "ovar_brca1_reliability": [
-                  "pathogenicity_vs_detection",
-                  "coverage_suffices",
                   "reliable_prediction",
+                  "coverage_suffices",
+                  "pathogenicity_vs_detection",
                   "hrd_overrides_variant"
                 ],
                 "ovar_confirmation_strategy": [
-                  "discard_variant",
-                  "plasma_replaces_hrd",
                   "ctdna_confirmation",
+                  "plasma_replaces_hrd",
+                  "discard_variant",
                   "release_with_comment"
                 ]
               }
@@ -15893,6 +14824,1075 @@
             "details": [
               {
                 "id": "ovar_clinical_question",
+                "prompt": "تشخیص مولکولی در درجه نخست باید به کدام پرسش بالینی پاسخ دهد؟",
+                "score": 1,
+                "multi": false,
+                "answers": [
+                  "therapy_evidence"
+                ],
+                "correct": [
+                  "therapy_evidence"
+                ]
+              },
+              {
+                "id": "ovar_archival_material",
+                "prompt": "کدام گزاره‌ها درباره بررسی ماده اولیه FFPE سه‌ساله درست هستند؟",
+                "score": 1,
+                "multi": true,
+                "answers": [
+                  "sample_scope",
+                  "feasibility_run_qc"
+                ],
+                "correct": [
+                  "sample_scope",
+                  "feasibility_run_qc"
+                ]
+              },
+              {
+                "id": "ovar_brca1_reliability",
+                "prompt": "کدام ارزیابی با یافته BRCA1 دور اول سازگار است؟",
+                "score": 1,
+                "multi": false,
+                "answers": [
+                  "pathogenicity_vs_detection"
+                ],
+                "correct": [
+                  "pathogenicity_vs_detection"
+                ]
+              },
+              {
+                "id": "ovar_confirmation_strategy",
+                "prompt": "ماده باقی‌مانده برای تکرار قابل اتکا کافی نیست. کدام راهبرد بعدی بهتر توجیه می‌شود؟",
+                "score": 1,
+                "multi": false,
+                "answers": [
+                  "ctdna_confirmation"
+                ],
+                "correct": [
+                  "ctdna_confirmation"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "early acceptance",
+          "patient": {
+            "s": {
+              "clinical": 40,
+              "method": 24,
+              "material": 40,
+              "biology": 0,
+              "communication": 35
+            },
+            "got": 126,
+            "max": 204,
+            "pct": 62,
+            "labels": {
+              "clinical": "Clinical reasoning",
+              "method": "Method selection",
+              "material": "Material stewardship",
+              "biology": "Biological interpretation",
+              "communication": "Communication"
+            },
+            "domainMax": {
+              "clinical": 45,
+              "method": 52,
+              "material": 40,
+              "biology": 32,
+              "communication": 35
+            },
+            "score_note": "Dynamisches Complex-Scoring: Runde 2 erweitert die Maximalpunkte; Liquid Biopsy und zusätzliche TAT werden als begründete Bestätigung bewertet."
+          },
+          "total": {
+            "s": {
+              "clinical": 40,
+              "method": 24,
+              "material": 40,
+              "biology": 0,
+              "communication": 35
+            },
+            "got": 126,
+            "max": 204,
+            "pct": 62,
+            "labels": {
+              "clinical": "Clinical reasoning",
+              "method": "Method selection",
+              "material": "Material stewardship",
+              "biology": "Biological interpretation",
+              "communication": "Communication"
+            },
+            "domainMax": {
+              "clinical": 45,
+              "method": 52,
+              "material": 40,
+              "biology": 32,
+              "communication": 35
+            },
+            "score_note": "Dynamisches Complex-Scoring: Runde 2 erweitert die Maximalpunkte; Liquid Biopsy und zusätzliche TAT werden als begründete Bestätigung bewertet.",
+            "capInfo": {
+              "active": false,
+              "preCapPct": 62,
+              "finalPct": 62,
+              "errors": [],
+              "status": "borderline"
+            }
+          },
+          "totals": {
+            "points": 810,
+            "sections": 8,
+            "tat": 7,
+            "followup_days": 0
+          },
+          "report": {
+            "kind": "phase1_artifact",
+            "findings": [
+              [
+                "Anforderung Runde 1",
+                "Tumor-BRCA1/2 + HRR-Panel; HRD-Score / genomische Instabilität"
+              ],
+              [
+                "Laborbefund BRCA/HRR + HRD",
+                "Tumorbasierte HRR-/BRCA-orientierte Analyse + HRD/genomic scar aus altem FFPE: formal pathogene BRCA1-Frameshift-/LoF-Variante mit VAF ca. 12 % bei TZA ca. 70 %, Coverage ca. 100×; zugleich auffällig viele C>T/G>A-Varianten. HRD/genomic scar grenzwertig/Graubereich, nicht überzeugend stark positiv. Restmaterial insuffizient für robuste Wiederholung."
+              ],
+              [
+                "Technische Plausibilität",
+                "TZA ca. 70 %, Coverage ca. 100×, BRCA1-LoF VAF ca. 12 %, viele C>T/G>A-Varianten."
+              ]
+            ],
+            "interpretation": [
+              "Formal pathogene BRCA1-LoF-Variante, aber technisch nicht robust genug für eine unmittelbare therapeutische Schlussfolgerung.",
+              "HRD/genomic scar ist grenzwertig/Graubereich und rettet den Befund nicht als klar-positive HRD-Konstellation.",
+              "Restmaterial reicht nicht für eine robuste Wiederholung aus dem alten Block."
+            ],
+            "warnings": [
+              [
+                "warn",
+                "Niedrigwertige / nicht fallbezogene Diagnostik gewählt: Tumor-BRCA1/2 + HRR-Panel; HRD-Score / genomische Instabilität"
+              ]
+            ],
+            "totals": {
+              "points": 810,
+              "sections": 8,
+              "tat": 7,
+              "followup_days": 0
+            }
+          },
+          "phase": "accepted_bad",
+          "decision": "accept",
+          "gates": {
+            "pct": 1,
+            "got": 4,
+            "max": 4,
+            "details": [
+              {
+                "id": "ovar_clinical_question",
+                "prompt": "تشخیص مولکولی در درجه نخست باید به کدام پرسش بالینی پاسخ دهد؟",
+                "score": 1,
+                "multi": false,
+                "answers": [
+                  "therapy_evidence"
+                ],
+                "correct": [
+                  "therapy_evidence"
+                ]
+              },
+              {
+                "id": "ovar_archival_material",
+                "prompt": "کدام گزاره‌ها درباره بررسی ماده اولیه FFPE سه‌ساله درست هستند؟",
+                "score": 1,
+                "multi": true,
+                "answers": [
+                  "sample_scope",
+                  "feasibility_run_qc"
+                ],
+                "correct": [
+                  "sample_scope",
+                  "feasibility_run_qc"
+                ]
+              },
+              {
+                "id": "ovar_brca1_reliability",
+                "prompt": "کدام ارزیابی با یافته BRCA1 دور اول سازگار است؟",
+                "score": 1,
+                "multi": false,
+                "answers": [
+                  "pathogenicity_vs_detection"
+                ],
+                "correct": [
+                  "pathogenicity_vs_detection"
+                ]
+              },
+              {
+                "id": "ovar_confirmation_strategy",
+                "prompt": "ماده باقی‌مانده برای تکرار قابل اتکا کافی نیست. کدام راهبرد بعدی بهتر توجیه می‌شود؟",
+                "score": 1,
+                "multi": false,
+                "answers": [
+                  "ctdna_confirmation"
+                ],
+                "correct": [
+                  "ctdna_confirmation"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "final without confirmation",
+          "patient": {
+            "s": {
+              "clinical": 45,
+              "method": 34,
+              "material": 40,
+              "biology": 22,
+              "communication": 35
+            },
+            "got": 159,
+            "max": 204,
+            "pct": 78,
+            "labels": {
+              "clinical": "Clinical reasoning",
+              "method": "Method selection",
+              "material": "Material stewardship",
+              "biology": "Biological interpretation",
+              "communication": "Communication"
+            },
+            "domainMax": {
+              "clinical": 45,
+              "method": 52,
+              "material": 40,
+              "biology": 32,
+              "communication": 35
+            },
+            "score_note": "Dynamisches Complex-Scoring: Runde 2 erweitert die Maximalpunkte; Liquid Biopsy und zusätzliche TAT werden als begründete Bestätigung bewertet."
+          },
+          "total": {
+            "s": {
+              "clinical": 45,
+              "method": 34,
+              "material": 40,
+              "biology": 22,
+              "communication": 35
+            },
+            "got": 143,
+            "max": 204,
+            "pct": 70,
+            "labels": {
+              "clinical": "Clinical reasoning",
+              "method": "Method selection",
+              "material": "Material stewardship",
+              "biology": "Biological interpretation",
+              "communication": "Communication"
+            },
+            "domainMax": {
+              "clinical": 45,
+              "method": 52,
+              "material": 40,
+              "biology": 32,
+              "communication": 35
+            },
+            "score_note": "Dynamisches Complex-Scoring: Runde 2 erweitert die Maximalpunkte; Liquid Biopsy und zusätzliche TAT werden als begründete Bestätigung bewertet.",
+            "preCapPct": 78,
+            "capInfo": {
+              "active": true,
+              "preCapPct": 78,
+              "strictestCap": 70,
+              "additionalPenalty": 0,
+              "finalPct": 70,
+              "errors": [
+                {
+                  "label": "Therapie-/fallrelevante Kernbausteine fehlen: Liquid Biopsy / ctDNA-Panel",
+                  "cap": 70,
+                  "severity": "critical"
+                }
+              ],
+              "status": "passed"
+            }
+          },
+          "totals": {
+            "points": 810,
+            "sections": 8,
+            "tat": 7,
+            "followup_days": 0
+          },
+          "report": {
+            "kind": "partial",
+            "findings": [
+              [
+                "Nachforderung Runde 2",
+                "—"
+              ],
+              [
+                "Liquid-Biopsy-Befund",
+                "Liquid Biopsy wurde noch nicht angefordert oder ist unvollständig."
+              ],
+              [
+                "Finale Einordnung",
+                "Ohne aktuelle Bestätigung bleibt der alte FFPE-Befund limitiert."
+              ]
+            ],
+            "interpretation": [
+              "Die Bestätigungsstrategie ist noch unvollständig."
+            ],
+            "warnings": [],
+            "totals": {
+              "points": 0,
+              "sections": 0,
+              "tat": 0,
+              "followup_days": 0
+            }
+          },
+          "phase": "final",
+          "decision": "reject",
+          "gates": {
+            "pct": 1,
+            "got": 4,
+            "max": 4,
+            "details": [
+              {
+                "id": "ovar_clinical_question",
+                "prompt": "تشخیص مولکولی در درجه نخست باید به کدام پرسش بالینی پاسخ دهد؟",
+                "score": 1,
+                "multi": false,
+                "answers": [
+                  "therapy_evidence"
+                ],
+                "correct": [
+                  "therapy_evidence"
+                ]
+              },
+              {
+                "id": "ovar_archival_material",
+                "prompt": "کدام گزاره‌ها درباره بررسی ماده اولیه FFPE سه‌ساله درست هستند؟",
+                "score": 1,
+                "multi": true,
+                "answers": [
+                  "feasibility_run_qc",
+                  "sample_scope"
+                ],
+                "correct": [
+                  "feasibility_run_qc",
+                  "sample_scope"
+                ]
+              },
+              {
+                "id": "ovar_brca1_reliability",
+                "prompt": "کدام ارزیابی با یافته BRCA1 دور اول سازگار است؟",
+                "score": 1,
+                "multi": false,
+                "answers": [
+                  "pathogenicity_vs_detection"
+                ],
+                "correct": [
+                  "pathogenicity_vs_detection"
+                ]
+              },
+              {
+                "id": "ovar_confirmation_strategy",
+                "prompt": "ماده باقی‌مانده برای تکرار قابل اتکا کافی نیست. کدام راهبرد بعدی بهتر توجیه می‌شود؟",
+                "score": 1,
+                "multi": false,
+                "answers": [
+                  "ctdna_confirmation"
+                ],
+                "correct": [
+                  "ctdna_confirmation"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "wrong reasoning confirmed final",
+          "patient": {
+            "s": {
+              "clinical": 45,
+              "method": 52,
+              "material": 40,
+              "biology": 32,
+              "communication": 35
+            },
+            "got": 204,
+            "max": 204,
+            "pct": 100,
+            "labels": {
+              "clinical": "Clinical reasoning",
+              "method": "Method selection",
+              "material": "Material stewardship",
+              "biology": "Biological interpretation",
+              "communication": "Communication"
+            },
+            "domainMax": {
+              "clinical": 45,
+              "method": 52,
+              "material": 40,
+              "biology": 32,
+              "communication": 35
+            },
+            "score_note": "Dynamisches Complex-Scoring: Runde 2 erweitert die Maximalpunkte; Liquid Biopsy und zusätzliche TAT werden als begründete Bestätigung bewertet."
+          },
+          "total": {
+            "s": {
+              "clinical": 45,
+              "method": 52,
+              "material": 40,
+              "biology": 32,
+              "communication": 35
+            },
+            "got": 163,
+            "max": 204,
+            "pct": 80,
+            "labels": {
+              "clinical": "Clinical reasoning",
+              "method": "Method selection",
+              "material": "Material stewardship",
+              "biology": "Biological interpretation",
+              "communication": "Communication"
+            },
+            "domainMax": {
+              "clinical": 45,
+              "method": 52,
+              "material": 40,
+              "biology": 32,
+              "communication": 35
+            },
+            "score_note": "Dynamisches Complex-Scoring: Runde 2 erweitert die Maximalpunkte; Liquid Biopsy und zusätzliche TAT werden als begründete Bestätigung bewertet.",
+            "preCapPct": 100,
+            "capInfo": {
+              "active": true,
+              "preCapPct": 100,
+              "strictestCap": 80,
+              "additionalPenalty": 0,
+              "finalPct": 80,
+              "errors": [
+                {
+                  "label": "Zentrale klinische/prozessuale Fragestellung nicht sicher erkannt",
+                  "cap": 80,
+                  "severity": "major"
+                }
+              ],
+              "status": "passed"
+            }
+          },
+          "totals": {
+            "points": 1360,
+            "sections": 8,
+            "tat": 13,
+            "followup_days": 6
+          },
+          "report": {
+            "kind": "complete",
+            "findings": [
+              [
+                "Nachforderung Runde 2",
+                "Liquid Biopsy / ctDNA-Panel"
+              ],
+              [
+                "Liquid-Biopsy-Befund",
+                "Aktuelle Liquid Biopsy: ctDNA ausreichend. BRCA1-LoF erneut nachweisbar, VAF passend zur ctDNA-Fraktion; kein breites C>T/G>A-Artefaktmuster. Damit ist eine aktuelle tumorassoziierte BRCA1-Alteration plausibel bestätigt. HRD/genomic scar aus altem Gewebe bleibt limitiert/graubereichig."
+              ],
+              [
+                "Finale Einordnung",
+                "Initialer FFPE-Befund allein nicht belastbar; nach Liquid-Biopsy-Bestätigung BRCA1/HRR-Kontext therapeutisch diskutierbar. Keimbahnabklärung empfohlen; HRD-Bewertung limitiert kommunizieren."
+              ]
+            ],
+            "interpretation": [
+              "Die BRCA1-LoF-Alteration ist durch aktuelle ctDNA plausibel bestätigt.",
+              "Der tissue-basierte HRD/genomic-scar bleibt wegen alten Materials grenzwertig/limitiert.",
+              "Keimbahnabklärung wird empfohlen; Therapie- und Familienrelevanz müssen getrennt kommuniziert werden."
+            ],
+            "warnings": [],
+            "totals": {
+              "points": 550,
+              "sections": 0,
+              "tat": 6,
+              "followup_days": 0
+            }
+          },
+          "phase": "final",
+          "decision": "reject",
+          "gates": {
+            "pct": 0,
+            "got": 0,
+            "max": 4,
+            "details": [
+              {
+                "id": "ovar_clinical_question",
+                "prompt": "تشخیص مولکولی در درجه نخست باید به کدام پرسش بالینی پاسخ دهد؟",
+                "score": 0,
+                "multi": false,
+                "answers": [
+                  "entity_confirmation"
+                ],
+                "correct": [
+                  "therapy_evidence"
+                ]
+              },
+              {
+                "id": "ovar_archival_material",
+                "prompt": "کدام گزاره‌ها درباره بررسی ماده اولیه FFPE سه‌ساله درست هستند؟",
+                "score": 0,
+                "multi": true,
+                "answers": [
+                  "omit_assay_qc"
+                ],
+                "correct": [
+                  "feasibility_run_qc",
+                  "sample_scope"
+                ]
+              },
+              {
+                "id": "ovar_brca1_reliability",
+                "prompt": "کدام ارزیابی با یافته BRCA1 دور اول سازگار است؟",
+                "score": 0,
+                "multi": false,
+                "answers": [
+                  "hrd_overrides_variant"
+                ],
+                "correct": [
+                  "pathogenicity_vs_detection"
+                ]
+              },
+              {
+                "id": "ovar_confirmation_strategy",
+                "prompt": "ماده باقی‌مانده برای تکرار قابل اتکا کافی نیست. کدام راهبرد بعدی بهتر توجیه می‌شود؟",
+                "score": 0,
+                "multi": false,
+                "answers": [
+                  "release_with_comment"
+                ],
+                "correct": [
+                  "ctdna_confirmation"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "stable": true
+    },
+    {
+      "lang": "uk",
+      "checks": [
+        {
+          "name": "first gate inserted between material and order",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "order blocked until first submission",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "only two pre-run questions available",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "first UI has no later question or VAF/result clue",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "no assessment feedback before submission",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "empty submission refused",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "direct lab call cannot bypass first gate",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "premature reject does not change phase or selection",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "premature second navigation does not reveal later questions",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "first gate submitted independently",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "correct first gate uses only applicable score denominator",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "future gate does not create missing-gate cap",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "first continuation enters order",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "report requires actual run",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "partial round1 remains partial and has no second gate",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "partial report cannot expose second questions",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "laboratory alone does not unlock later questions",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "full reviewed round1 unlocks second stage only then",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "report routes through reasoning before decision",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "round1 assets test-gated and no confirmation/final assets",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "direct acceptance blocked without second gate",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "direct rejection blocked without second gate",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "round2 navigation blocked without second gate",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "MTB navigation blocked without second gate",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "second UI shows exactly its two questions",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "aggregate score includes both stages after report",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "second empty submission refused and first preserved",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "four answers aggregated independently of displayed stage",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "decision buttons appear after second submission",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "confirmed final reaches MTB with both gates",
+          "pass": true,
+          "detail": {
+            "step": "mtb",
+            "phase": "final",
+            "decision": "reject",
+            "report1": {
+              "kind": "phase1_artifact",
+              "findings": [
+                [
+                  "Anforderung Runde 1",
+                  "Tumor-BRCA1/2 + HRR-Panel; HRD-Score / genomische Instabilität"
+                ],
+                [
+                  "Laborbefund BRCA/HRR + HRD",
+                  "Tumorbasierte HRR-/BRCA-orientierte Analyse + HRD/genomic scar aus altem FFPE: formal pathogene BRCA1-Frameshift-/LoF-Variante mit VAF ca. 12 % bei TZA ca. 70 %, Coverage ca. 100×; zugleich auffällig viele C>T/G>A-Varianten. HRD/genomic scar grenzwertig/Graubereich, nicht überzeugend stark positiv. Restmaterial insuffizient für robuste Wiederholung."
+                ],
+                [
+                  "Technische Plausibilität",
+                  "TZA ca. 70 %, Coverage ca. 100×, BRCA1-LoF VAF ca. 12 %, viele C>T/G>A-Varianten."
+                ]
+              ],
+              "interpretation": [
+                "Formal pathogene BRCA1-LoF-Variante, aber technisch nicht robust genug für eine unmittelbare therapeutische Schlussfolgerung.",
+                "HRD/genomic scar ist grenzwertig/Graubereich und rettet den Befund nicht als klar-positive HRD-Konstellation.",
+                "Restmaterial reicht nicht für eine robuste Wiederholung aus dem alten Block."
+              ],
+              "warnings": [],
+              "totals": {
+                "points": 810,
+                "sections": 8,
+                "tat": 7,
+                "followup_days": 0
+              }
+            },
+            "viewed": {
+              "intake": true,
+              "history": true,
+              "histo": true,
+              "material": true,
+              "reasoning": true,
+              "order": true,
+              "report": true,
+              "lab": true,
+              "reasoning_follow": true,
+              "follow_order": true,
+              "follow_lab": true,
+              "follow_report": true,
+              "mtb": true
+            },
+            "gates": {
+              "answers": {
+                "ovar_clinical_question": [
+                  "therapy_evidence"
+                ],
+                "ovar_archival_material": [
+                  "sample_scope",
+                  "feasibility_run_qc"
+                ],
+                "ovar_brca1_reliability": [
+                  "pathogenicity_vs_detection"
+                ],
+                "ovar_confirmation_strategy": [
+                  "ctdna_confirmation"
+                ]
+              },
+              "submitted": true,
+              "stages": {
+                "before_round1": true,
+                "after_round1": true
+              },
+              "optionOrder": {
+                "ovar_clinical_question": [
+                  "therapy_evidence",
+                  "familial_risk",
+                  "entity_confirmation",
+                  "resistance_cause"
+                ],
+                "ovar_archival_material": [
+                  "sample_scope",
+                  "feasibility_run_qc",
+                  "omit_assay_qc",
+                  "represents_recurrence"
+                ],
+                "ovar_brca1_reliability": [
+                  "pathogenicity_vs_detection",
+                  "reliable_prediction",
+                  "hrd_overrides_variant",
+                  "coverage_suffices"
+                ],
+                "ovar_confirmation_strategy": [
+                  "ctdna_confirmation",
+                  "release_with_comment",
+                  "discard_variant",
+                  "plasma_replaces_hrd"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "name": "correct final raw and total scores reach 100",
+          "pass": true,
+          "detail": {
+            "patient": 100,
+            "total": 100
+          }
+        },
+        {
+          "name": "completed gates remove phantom 80 percent cap",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "final report contains all four reasoning rows",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "final asset appears after confirmation",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "editing first invalidates first only",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "final navigation rechecks edited gate",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "re-submitted first gate returns to existing final phase",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "early acceptance retains existing 62 percent cap",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "missing confirmation retains existing 78 percent cap",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "wrong completed answers permit progress with existing score penalty",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "one of two correct MS choices receives half credit",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "both correct MS choices receive full credit",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "one false MS choice subtracts half credit",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "unchecked false choice is removed",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "invalid or unavailable answer IDs do not mutate state",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "rerun preserves first and invalidates only later gate",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "rerun requires a fresh second submission",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "assessment hides correctness and score after submission",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "assessment second gate hides answers and rationale",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "assessment feedback appears after case completion",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "instructor first gate displays solutions for first stage only",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "instructor can navigate to second stage after actual report",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "case switch resets answers, stages and prior run",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "approved question and correct IDs ovar_clinical_question",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "translation complete ovar_clinical_question",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "approved question and correct IDs ovar_archival_material",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "translation complete ovar_archival_material",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "approved question and correct IDs ovar_brca1_reliability",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "translation complete ovar_brca1_reliability",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "approved question and correct IDs ovar_confirmation_strategy",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "translation complete ovar_confirmation_strategy",
+          "pass": true,
+          "detail": null
+        },
+        {
+          "name": "localized stage labels in navigation",
+          "pass": true,
+          "detail": null
+        }
+      ],
+      "outcomes": [
+        {
+          "name": "confirmed final",
+          "patient": {
+            "s": {
+              "clinical": 45,
+              "method": 52,
+              "material": 40,
+              "biology": 32,
+              "communication": 35
+            },
+            "got": 204,
+            "max": 204,
+            "pct": 100,
+            "labels": {
+              "clinical": "Clinical reasoning",
+              "method": "Method selection",
+              "material": "Material stewardship",
+              "biology": "Biological interpretation",
+              "communication": "Communication"
+            },
+            "domainMax": {
+              "clinical": 45,
+              "method": 52,
+              "material": 40,
+              "biology": 32,
+              "communication": 35
+            },
+            "score_note": "Dynamisches Complex-Scoring: Runde 2 erweitert die Maximalpunkte; Liquid Biopsy und zusätzliche TAT werden als begründete Bestätigung bewertet."
+          },
+          "total": {
+            "s": {
+              "clinical": 45,
+              "method": 52,
+              "material": 40,
+              "biology": 32,
+              "communication": 35
+            },
+            "got": 204,
+            "max": 204,
+            "pct": 100,
+            "labels": {
+              "clinical": "Clinical reasoning",
+              "method": "Method selection",
+              "material": "Material stewardship",
+              "biology": "Biological interpretation",
+              "communication": "Communication"
+            },
+            "domainMax": {
+              "clinical": 45,
+              "method": 52,
+              "material": 40,
+              "biology": 32,
+              "communication": 35
+            },
+            "score_note": "Dynamisches Complex-Scoring: Runde 2 erweitert die Maximalpunkte; Liquid Biopsy und zusätzliche TAT werden als begründete Bestätigung bewertet.",
+            "capInfo": {
+              "active": false,
+              "preCapPct": 100,
+              "finalPct": 100,
+              "errors": [],
+              "status": "passed"
+            }
+          },
+          "totals": {
+            "points": 1360,
+            "sections": 8,
+            "tat": 13,
+            "followup_days": 6
+          },
+          "report": {
+            "kind": "complete",
+            "findings": [
+              [
+                "Nachforderung Runde 2",
+                "Liquid Biopsy / ctDNA-Panel"
+              ],
+              [
+                "Liquid-Biopsy-Befund",
+                "Aktuelle Liquid Biopsy: ctDNA ausreichend. BRCA1-LoF erneut nachweisbar, VAF passend zur ctDNA-Fraktion; kein breites C>T/G>A-Artefaktmuster. Damit ist eine aktuelle tumorassoziierte BRCA1-Alteration plausibel bestätigt. HRD/genomic scar aus altem Gewebe bleibt limitiert/graubereichig."
+              ],
+              [
+                "Finale Einordnung",
+                "Initialer FFPE-Befund allein nicht belastbar; nach Liquid-Biopsy-Bestätigung BRCA1/HRR-Kontext therapeutisch diskutierbar. Keimbahnabklärung empfohlen; HRD-Bewertung limitiert kommunizieren."
+              ]
+            ],
+            "interpretation": [
+              "Die BRCA1-LoF-Alteration ist durch aktuelle ctDNA plausibel bestätigt.",
+              "Der tissue-basierte HRD/genomic-scar bleibt wegen alten Materials grenzwertig/limitiert.",
+              "Keimbahnabklärung wird empfohlen; Therapie- und Familienrelevanz müssen getrennt kommuniziert werden."
+            ],
+            "warnings": [],
+            "totals": {
+              "points": 550,
+              "sections": 0,
+              "tat": 6,
+              "followup_days": 0
+            }
+          },
+          "phase": "final",
+          "decision": "reject",
+          "gates": {
+            "pct": 1,
+            "got": 4,
+            "max": 4,
+            "details": [
+              {
+                "id": "ovar_clinical_question",
                 "prompt": "На яке клінічне запитання має насамперед відповісти молекулярна діагностика?",
                 "score": 1,
                 "multi": false,
@@ -15909,12 +15909,12 @@
                 "score": 1,
                 "multi": true,
                 "answers": [
-                  "feasibility_run_qc",
-                  "sample_scope"
+                  "sample_scope",
+                  "feasibility_run_qc"
                 ],
                 "correct": [
-                  "feasibility_run_qc",
-                  "sample_scope"
+                  "sample_scope",
+                  "feasibility_run_qc"
                 ]
               },
               {
@@ -16392,7 +16392,7 @@
                 "score": 0,
                 "multi": false,
                 "answers": [
-                  "familial_risk"
+                  "entity_confirmation"
                 ],
                 "correct": [
                   "therapy_evidence"
@@ -16404,7 +16404,7 @@
                 "score": 0,
                 "multi": true,
                 "answers": [
-                  "omit_assay_qc"
+                  "represents_recurrence"
                 ],
                 "correct": [
                   "feasibility_run_qc",
@@ -16417,7 +16417,7 @@
                 "score": 0,
                 "multi": false,
                 "answers": [
-                  "reliable_prediction"
+                  "hrd_overrides_variant"
                 ],
                 "correct": [
                   "pathogenicity_vs_detection"
@@ -16449,10 +16449,10 @@
       "detail": {
         "uniqueOrders": 24,
         "correctPositions": [
-          3,
+          0,
           1,
           2,
-          0
+          3
         ]
       }
     },
