@@ -1,0 +1,150 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "exact mixed-language text/whitespace/count parity de",
+      "pass": true,
+      "nodes": 666
+    },
+    {
+      "name": "exact mixed-language text/whitespace/count parity en",
+      "pass": true,
+      "nodes": 666
+    },
+    {
+      "name": "exact mixed-language text/whitespace/count parity ro",
+      "pass": true,
+      "nodes": 666
+    },
+    {
+      "name": "exact mixed-language text/whitespace/count parity el",
+      "pass": true,
+      "nodes": 666
+    },
+    {
+      "name": "exact mixed-language text/whitespace/count parity es",
+      "pass": true,
+      "nodes": 666
+    },
+    {
+      "name": "exact mixed-language text/whitespace/count parity fr",
+      "pass": true,
+      "nodes": 666
+    },
+    {
+      "name": "exact mixed-language text/whitespace/count parity ru",
+      "pass": true,
+      "nodes": 666
+    },
+    {
+      "name": "exact mixed-language text/whitespace/count parity tr",
+      "pass": true,
+      "nodes": 666
+    },
+    {
+      "name": "exact mixed-language text/whitespace/count parity ar",
+      "pass": true,
+      "nodes": 666
+    },
+    {
+      "name": "exact mixed-language text/whitespace/count parity fa",
+      "pass": true,
+      "nodes": 666
+    },
+    {
+      "name": "exact mixed-language text/whitespace/count parity uk",
+      "pass": true,
+      "nodes": 666
+    },
+    {
+      "name": "locale update visible on next pass",
+      "pass": true
+    },
+    {
+      "name": "didactic CAPA warnbox parity",
+      "pass": true
+    }
+  ],
+  "total": 13,
+  "passed": 13,
+  "metrics": [
+    {
+      "lang": "de",
+      "before": 5243,
+      "after": 12,
+      "listBefore": 778,
+      "listAfter": 1
+    },
+    {
+      "lang": "en",
+      "before": 5243,
+      "after": 12,
+      "listBefore": 778,
+      "listAfter": 1
+    },
+    {
+      "lang": "ro",
+      "before": 5243,
+      "after": 12,
+      "listBefore": 778,
+      "listAfter": 1
+    },
+    {
+      "lang": "el",
+      "before": 5243,
+      "after": 12,
+      "listBefore": 778,
+      "listAfter": 1
+    },
+    {
+      "lang": "es",
+      "before": 5243,
+      "after": 12,
+      "listBefore": 778,
+      "listAfter": 1
+    },
+    {
+      "lang": "fr",
+      "before": 5243,
+      "after": 12,
+      "listBefore": 778,
+      "listAfter": 1
+    },
+    {
+      "lang": "ru",
+      "before": 5243,
+      "after": 12,
+      "listBefore": 778,
+      "listAfter": 1
+    },
+    {
+      "lang": "tr",
+      "before": 5243,
+      "after": 12,
+      "listBefore": 778,
+      "listAfter": 1
+    },
+    {
+      "lang": "ar",
+      "before": 5243,
+      "after": 12,
+      "listBefore": 778,
+      "listAfter": 1
+    },
+    {
+      "lang": "fa",
+      "before": 5243,
+      "after": 12,
+      "listBefore": 778,
+      "listAfter": 1
+    },
+    {
+      "lang": "uk",
+      "before": 5243,
+      "after": 12,
+      "listBefore": 778,
+      "listAfter": 1
+    }
+  ],
+  "limit": "actual isolated premium script and actual locale sources; text-node DOM fixture, no browser timing claim"
+}

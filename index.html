@@ -5289,19 +5289,19 @@ const PREV_FILTERED=filteredCases;
 filteredCases=function(){const list=PREV_FILTERED.apply(this,arguments);const cb=document.getElementById('signatureOnlyFilter');return cb&&cb.checked?list.filter(isSignature):list};
 
 const EXACT_KEYS=['labRun','labQc','labDecision','labCause','labCapa','labAudit','caseFile','projectBrief','constraints','recorded','pending','ready','resProject','resContext','resHypothesis','resPico','resDesign','resMethods','resAnalysis','deviation','immediate','rootCause','corrective','preventive','effectiveness'];
-function exactKey(text){
+function exactKey(text,lookup){
  try{
-  for(const def of window.MolPathLanguageRegistry.list()){
-   const copy=window.MolPathLocaleRegistry.namespace(UI_COPY_NAMESPACE,def.code);
+  for(const def of lookup.list()){
+   const copy=lookup.copy(def.code);
    for(const key of EXACT_KEYS)if(copy[key]===text)return key;
   }
  }catch(_){}
  return null;
 }
-function selectedCount(text){
+function selectedCount(text,lookup){
  try{
-  for(const def of window.MolPathLanguageRegistry.list()){
-   const label=window.MolPathLocaleRegistry.namespace(UI_COPY_NAMESPACE,def.code).selected;if(!label)continue;
+  for(const def of lookup.list()){
+   const label=lookup.copy(def.code).selected;if(!label)continue;
    const suffix=' '+label;if(text.endsWith(suffix)){const n=text.slice(0,-suffix.length);if(/^\d+$/.test(n))return n;}
   }
  }catch(_){}
@@ -5309,9 +5309,12 @@ function selectedCount(text){
 }
 function localizePremium(){
  const copy=c();
+ // Cache only within this synchronous pass; later locale updates stay visible.
+ let definitions=null;const copies=new Map();
+ const lookup={list(){return definitions||(definitions=window.MolPathLanguageRegistry.list())},copy(code){if(!copies.has(code))copies.set(code,window.MolPathLocaleRegistry.namespace(UI_COPY_NAMESPACE,code));return copies.get(code)}};
  document.querySelectorAll('.lab24-section,.res24i-section').forEach(root=>{
   const w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT);const nodes=[];while(w.nextNode())nodes.push(w.currentNode);
-  nodes.forEach(n=>{const raw=n.nodeValue||'',t=raw.trim();if(!t)return;let next=null;const key=exactKey(t);if(key&&copy[key])next=copy[key];else{const nSelected=selectedCount(t);if(nSelected!==null)next=nSelected+' '+copy.selected}if(next&&next!==t){const lead=(raw.match(/^\s*/)||[''])[0],trail=(raw.match(/\s*$/)||[''])[0];n.nodeValue=lead+next+trail}});
+  nodes.forEach(n=>{const raw=n.nodeValue||'',t=raw.trim();if(!t)return;let next=null;const key=exactKey(t,lookup);if(key&&copy[key])next=copy[key];else{const nSelected=selectedCount(t,lookup);if(nSelected!==null)next=nSelected+' '+copy.selected}if(next&&next!==t){const lead=(raw.match(/^\s*/)||[''])[0],trail=(raw.match(/\s*$/)||[''])[0];n.nodeValue=lead+next+trail}});
  });
  document.querySelectorAll('.lab24-section .warnbox').forEach(el=>{const t=el.textContent||'';if(t.includes('CAPA')&&(t.includes('nochmal')||t.includes('repeating the run'))){const html='<b>'+copy.didactic+':</b> '+copy.didacticText;if(el.innerHTML!==html)el.innerHTML=html}});
 }

@@ -1,0 +1,13 @@
+MolPath rc2 A6.12 — Premium-Lokalisierung
+Basis: vollständiger funktionierender A6.11-Build.
+
+1. Bisherige index.html sichern.
+2. NUR index.html aus diesem Delta im A6.11-Hauptordner ersetzen.
+3. Alle vorhandenen JS-, Sprach- und Asset-Dateien beibehalten.
+4. Strg+F5. Startseite/Filter sowie LAB_RUN_002 und RES_OMICS_001 prüfen.
+5. In deren Premium-Ansichten DE -> EN -> DE wechseln; Texte,
+   ausgewählte Anzahl, CAPA-Hinweis und Navigation prüfen.
+6. OVAR1 kurz prüfen: beide Gates und finaler Abschluss.
+
+Rollback: gesicherte index.html wiederherstellen, Strg+F5.
+Das Delta ist kein vollständiger eigenständig startbarer Build.

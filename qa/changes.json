@@ -1,0 +1,38 @@
+{
+  "base_sha256": "257c5aea926df79a7b5f101ed201f6cfbc1cb69f9c4b130ad068727ff4191b89",
+  "sha256": "2b1e5a86f0c91b62412a2e96138f1d6ecea9311b85aea697e9c1873c198f3aeb",
+  "payload": [
+    "index.html"
+  ],
+  "script": "v240l_performance_signature_filter",
+  "changes": [
+    {
+      "old": "function exactKey(text){",
+      "new": "function exactKey(text,lookup){"
+    },
+    {
+      "old": "for(const def of window.MolPathLanguageRegistry.list()){\n   const copy=window.MolPathLocaleRegistry.namespace(UI_COPY_NAMESPACE,def.code);",
+      "new": "for(const def of lookup.list()){\n   const copy=lookup.copy(def.code);"
+    },
+    {
+      "old": "function selectedCount(text){",
+      "new": "function selectedCount(text,lookup){"
+    },
+    {
+      "old": "for(const def of window.MolPathLanguageRegistry.list()){\n   const label=window.MolPathLocaleRegistry.namespace(UI_COPY_NAMESPACE,def.code).selected;",
+      "new": "for(const def of lookup.list()){\n   const label=lookup.copy(def.code).selected;"
+    },
+    {
+      "old": "function localizePremium(){\n const copy=c();",
+      "new": "function localizePremium(){\n const copy=c();\n // Cache only within this synchronous pass; later locale updates stay visible.\n let definitions=null;const copies=new Map();\n const lookup={list(){return definitions||(definitions=window.MolPathLanguageRegistry.list())},copy(code){if(!copies.has(code))copies.set(code,window.MolPathLocaleRegistry.namespace(UI_COPY_NAMESPACE,code));return copies.get(code)}};"
+    },
+    {
+      "old": "const key=exactKey(t);",
+      "new": "const key=exactKey(t,lookup);"
+    },
+    {
+      "old": "const nSelected=selectedCount(t);",
+      "new": "const nSelected=selectedCount(t,lookup);"
+    }
+  ]
+}
