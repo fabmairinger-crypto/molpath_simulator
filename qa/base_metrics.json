@@ -127,54 +127,6 @@
       "readyState": "interactive"
     },
     {
-      "actor": "DOMContentLoaded:v240z13_crc002_flagship.js:boot",
-      "caseId": "MTB_NSCLC_001_v0_6",
-      "step": "intake",
-      "readyState": "interactive"
-    },
-    {
-      "actor": "DOMContentLoaded:v240z14_crc001_flagship.js:boot",
-      "caseId": "MTB_NSCLC_001_v0_6",
-      "step": "intake",
-      "readyState": "interactive"
-    },
-    {
-      "actor": "DOMContentLoaded:v240z15_nsclc002_flagship.js:boot",
-      "caseId": "MTB_NSCLC_001_v0_6",
-      "step": "intake",
-      "readyState": "interactive"
-    },
-    {
-      "actor": "DOMContentLoaded:v240z16_metngs003_flagship.js:boot",
-      "caseId": "MTB_NSCLC_001_v0_6",
-      "step": "intake",
-      "readyState": "interactive"
-    },
-    {
-      "actor": "DOMContentLoaded:v240z17_ovar001_flagship.js:boot",
-      "caseId": "MTB_NSCLC_001_v0_6",
-      "step": "intake",
-      "readyState": "interactive"
-    },
-    {
-      "actor": "DOMContentLoaded:v240z18_ovar002_flagship.js:boot",
-      "caseId": "MTB_NSCLC_001_v0_6",
-      "step": "intake",
-      "readyState": "interactive"
-    },
-    {
-      "actor": "DOMContentLoaded:v240z19_cns001_flagship.js:boot",
-      "caseId": "MTB_NSCLC_001_v0_6",
-      "step": "intake",
-      "readyState": "interactive"
-    },
-    {
-      "actor": "DOMContentLoaded:v240z20_io001_flagship.js:boot",
-      "caseId": "MTB_NSCLC_001_v0_6",
-      "step": "intake",
-      "readyState": "interactive"
-    },
-    {
       "actor": "DOMContentLoaded:v250b_method_focus_filter.js:boot",
       "caseId": "MTB_NSCLC_001_v0_6",
       "step": "intake",
@@ -552,35 +504,35 @@
     },
     {
       "actor": "DOMContentLoaded:v240z13_crc002_flagship.js:boot",
-      "corePaint": 1
+      "corePaint": 0
     },
     {
       "actor": "DOMContentLoaded:v240z14_crc001_flagship.js:boot",
-      "corePaint": 1
+      "corePaint": 0
     },
     {
       "actor": "DOMContentLoaded:v240z15_nsclc002_flagship.js:boot",
-      "corePaint": 1
+      "corePaint": 0
     },
     {
       "actor": "DOMContentLoaded:v240z16_metngs003_flagship.js:boot",
-      "corePaint": 1
+      "corePaint": 0
     },
     {
       "actor": "DOMContentLoaded:v240z17_ovar001_flagship.js:boot",
-      "corePaint": 1
+      "corePaint": 0
     },
     {
       "actor": "DOMContentLoaded:v240z18_ovar002_flagship.js:boot",
-      "corePaint": 1
+      "corePaint": 0
     },
     {
       "actor": "DOMContentLoaded:v240z19_cns001_flagship.js:boot",
-      "corePaint": 1
+      "corePaint": 0
     },
     {
       "actor": "DOMContentLoaded:v240z20_io001_flagship.js:boot",
-      "corePaint": 1
+      "corePaint": 0
     },
     {
       "actor": "DOMContentLoaded:v250b_labpost001_flagship.js:install",
@@ -683,27 +635,27 @@
       "corePaint": 1
     }
   ],
-  "root": "/workspace/scratch/1f1f0706e0d2/work/a6_14/candidate",
+  "root": "/workspace/scratch/1f1f0706e0d2/work/a6_15/candidate",
   "boot": {
     "timelineWrites": 8,
-    "timelineCalls": 82,
-    "corePaint": 48,
+    "timelineCalls": 66,
+    "corePaint": 40,
     "afterApplyFrames": 264,
     "observersCreated": 5,
     "observersObserved": 5,
     "observerDisconnects": 0,
-    "scheduled": 847,
+    "scheduled": 695,
     "DOMContentLoadedCallbacks": 80
   },
   "final": {
     "timelineWrites": 19,
-    "timelineCalls": 106,
-    "corePaint": 60,
+    "timelineCalls": 90,
+    "corePaint": 52,
     "afterApplyFrames": 504,
     "observersCreated": 5,
     "observersObserved": 5,
     "observerDisconnects": 0,
-    "scheduled": 1123
+    "scheduled": 971
   },
   "phases": [
     {

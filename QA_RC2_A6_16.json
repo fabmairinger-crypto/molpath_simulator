@@ -1,0 +1,122 @@
+{
+  "status": "PASS_BROWSER_OPEN",
+  "runtime": 254,
+  "gates": 720,
+  "remaining": 77,
+  "timeline": 40,
+  "translation_boot": 13,
+  "startup_lifecycle": {
+    "languages": 11,
+    "candidate_checks": 77,
+    "reference_checks": 77,
+    "results": [
+      {
+        "initialLang": "de",
+        "checks": 7,
+        "home_timeline_styles_dictionary_parity": true,
+        "dictionaryHash": "1b3eddff6c7e6506ba135eb13253e74739393a2e12974d3738c13c04003e596e"
+      },
+      {
+        "initialLang": "en",
+        "checks": 7,
+        "home_timeline_styles_dictionary_parity": true,
+        "dictionaryHash": "1b3eddff6c7e6506ba135eb13253e74739393a2e12974d3738c13c04003e596e"
+      },
+      {
+        "initialLang": "ro",
+        "checks": 7,
+        "home_timeline_styles_dictionary_parity": true,
+        "dictionaryHash": "1b3eddff6c7e6506ba135eb13253e74739393a2e12974d3738c13c04003e596e"
+      },
+      {
+        "initialLang": "el",
+        "checks": 7,
+        "home_timeline_styles_dictionary_parity": true,
+        "dictionaryHash": "1b3eddff6c7e6506ba135eb13253e74739393a2e12974d3738c13c04003e596e"
+      },
+      {
+        "initialLang": "es",
+        "checks": 7,
+        "home_timeline_styles_dictionary_parity": true,
+        "dictionaryHash": "1b3eddff6c7e6506ba135eb13253e74739393a2e12974d3738c13c04003e596e"
+      },
+      {
+        "initialLang": "fr",
+        "checks": 7,
+        "home_timeline_styles_dictionary_parity": true,
+        "dictionaryHash": "1b3eddff6c7e6506ba135eb13253e74739393a2e12974d3738c13c04003e596e"
+      },
+      {
+        "initialLang": "ru",
+        "checks": 7,
+        "home_timeline_styles_dictionary_parity": true,
+        "dictionaryHash": "1b3eddff6c7e6506ba135eb13253e74739393a2e12974d3738c13c04003e596e"
+      },
+      {
+        "initialLang": "tr",
+        "checks": 7,
+        "home_timeline_styles_dictionary_parity": true,
+        "dictionaryHash": "1b3eddff6c7e6506ba135eb13253e74739393a2e12974d3738c13c04003e596e"
+      },
+      {
+        "initialLang": "ar",
+        "checks": 7,
+        "home_timeline_styles_dictionary_parity": true,
+        "dictionaryHash": "1b3eddff6c7e6506ba135eb13253e74739393a2e12974d3738c13c04003e596e"
+      },
+      {
+        "initialLang": "fa",
+        "checks": 7,
+        "home_timeline_styles_dictionary_parity": true,
+        "dictionaryHash": "1b3eddff6c7e6506ba135eb13253e74739393a2e12974d3738c13c04003e596e"
+      },
+      {
+        "initialLang": "uk",
+        "checks": 7,
+        "home_timeline_styles_dictionary_parity": true,
+        "dictionaryHash": "1b3eddff6c7e6506ba135eb13253e74739393a2e12974d3738c13c04003e596e"
+      }
+    ]
+  },
+  "syntax": {
+    "syntaxChecks": 100,
+    "errors": []
+  },
+  "exact_runtime_reference_fields": [
+    "preBootHash",
+    "afterBootHash",
+    "finalHash",
+    "counts",
+    "bootUiState",
+    "displayPhases",
+    "reportPhases",
+    "contentTrace",
+    "phases"
+  ],
+  "unchanged_files": 61,
+  "metrics": {
+    "before": {
+      "timelineWrites": 8,
+      "timelineCalls": 66,
+      "corePaint": 40,
+      "afterApplyFrames": 264,
+      "observersCreated": 5,
+      "observersObserved": 5,
+      "observerDisconnects": 0,
+      "scheduled": 695,
+      "DOMContentLoadedCallbacks": 80
+    },
+    "after": {
+      "timelineWrites": 8,
+      "timelineCalls": 58,
+      "corePaint": 36,
+      "afterApplyFrames": 264,
+      "observersCreated": 5,
+      "observersObserved": 5,
+      "observerDisconnects": 0,
+      "scheduled": 619,
+      "DOMContentLoadedCallbacks": 80
+    }
+  },
+  "limits": "Actual ordered sources in Node VM and DOM fixtures; load simulated, Home observer delivered manually. No real browser, elapsed-time or visual-layout assertion."
+}

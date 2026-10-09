@@ -91,30 +91,6 @@
       "readyState": "interactive"
     },
     {
-      "actor": "DOMContentLoaded:i18n/legacy/legacy_v240z7_res_t1_i18n.js:v240z7Boot",
-      "caseId": "MTB_NSCLC_001_v0_6",
-      "step": "intake",
-      "readyState": "interactive"
-    },
-    {
-      "actor": "DOMContentLoaded:i18n/legacy/legacy_v240z8_res_t2_i18n.js:v240z8Boot",
-      "caseId": "MTB_NSCLC_001_v0_6",
-      "step": "intake",
-      "readyState": "interactive"
-    },
-    {
-      "actor": "DOMContentLoaded:i18n/legacy/legacy_v240z9_res_t3_i18n.js:v240z9Boot",
-      "caseId": "MTB_NSCLC_001_v0_6",
-      "step": "intake",
-      "readyState": "interactive"
-    },
-    {
-      "actor": "DOMContentLoaded:i18n/legacy/legacy_v240z10_res_t4_i18n.js:v240z10Boot",
-      "caseId": "MTB_NSCLC_001_v0_6",
-      "step": "intake",
-      "readyState": "interactive"
-    },
-    {
       "actor": "DOMContentLoaded:i18n/legacy/legacy_v240z10a_res_t4_hotfix.js:v240z10aBoot",
       "caseId": "MTB_NSCLC_001_v0_6",
       "step": "intake",
@@ -480,19 +456,19 @@
     },
     {
       "actor": "DOMContentLoaded:i18n/legacy/legacy_v240z7_res_t1_i18n.js:v240z7Boot",
-      "corePaint": 1
+      "corePaint": 0
     },
     {
       "actor": "DOMContentLoaded:i18n/legacy/legacy_v240z8_res_t2_i18n.js:v240z8Boot",
-      "corePaint": 1
+      "corePaint": 0
     },
     {
       "actor": "DOMContentLoaded:i18n/legacy/legacy_v240z9_res_t3_i18n.js:v240z9Boot",
-      "corePaint": 1
+      "corePaint": 0
     },
     {
       "actor": "DOMContentLoaded:i18n/legacy/legacy_v240z10_res_t4_i18n.js:v240z10Boot",
-      "corePaint": 1
+      "corePaint": 0
     },
     {
       "actor": "DOMContentLoaded:i18n/legacy/legacy_v240z10a_res_t4_hotfix.js:v240z10aBoot",
@@ -635,27 +611,27 @@
       "corePaint": 1
     }
   ],
-  "root": "/workspace/scratch/1f1f0706e0d2/work/a6_15/candidate",
+  "root": "/workspace/scratch/1f1f0706e0d2/work/a6_16/candidate",
   "boot": {
     "timelineWrites": 8,
-    "timelineCalls": 66,
-    "corePaint": 40,
+    "timelineCalls": 58,
+    "corePaint": 36,
     "afterApplyFrames": 264,
     "observersCreated": 5,
     "observersObserved": 5,
     "observerDisconnects": 0,
-    "scheduled": 695,
+    "scheduled": 619,
     "DOMContentLoadedCallbacks": 80
   },
   "final": {
     "timelineWrites": 19,
-    "timelineCalls": 90,
-    "corePaint": 52,
+    "timelineCalls": 82,
+    "corePaint": 48,
     "afterApplyFrames": 504,
     "observersCreated": 5,
     "observersObserved": 5,
     "observerDisconnects": 0,
-    "scheduled": 971
+    "scheduled": 895
   },
   "phases": [
     {

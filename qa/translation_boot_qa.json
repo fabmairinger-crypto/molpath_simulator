@@ -1,0 +1,59 @@
+{
+  "status": "PASS",
+  "total": 13,
+  "passed": 13,
+  "checks": [
+    {
+      "name": "v240z7Boot parser merge/stamps/apply order unchanged",
+      "pass": true
+    },
+    {
+      "name": "v240z7Boot complete late-load behavior preserved interactive",
+      "pass": true
+    },
+    {
+      "name": "v240z7Boot complete late-load behavior preserved complete",
+      "pass": true
+    },
+    {
+      "name": "v240z8Boot parser merge/stamps/apply order unchanged",
+      "pass": true
+    },
+    {
+      "name": "v240z8Boot complete late-load behavior preserved interactive",
+      "pass": true
+    },
+    {
+      "name": "v240z8Boot complete late-load behavior preserved complete",
+      "pass": true
+    },
+    {
+      "name": "v240z9Boot parser merge/stamps/apply order unchanged",
+      "pass": true
+    },
+    {
+      "name": "v240z9Boot complete late-load behavior preserved interactive",
+      "pass": true
+    },
+    {
+      "name": "v240z9Boot complete late-load behavior preserved complete",
+      "pass": true
+    },
+    {
+      "name": "v240z10Boot parser merge/stamps/apply order unchanged",
+      "pass": true
+    },
+    {
+      "name": "v240z10Boot complete late-load behavior preserved interactive",
+      "pass": true
+    },
+    {
+      "name": "v240z10Boot complete late-load behavior preserved complete",
+      "pass": true
+    },
+    {
+      "name": "final T4 hotfix owns unchanged full render and listener",
+      "pass": true
+    }
+  ]
+}

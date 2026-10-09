@@ -1,79 +1,47 @@
 {
-  "base": "confirmed A6.14",
+  "base": "confirmed A6.15",
   "changes": [
     {
-      "path": "v240z13_crc002_flagship.js",
-      "caseId": "MTB_CRC_002_v1_3",
-      "base_sha256": "d00faf9a3ddd26ef9b77a0ab3f9f6a743289da1cf1d81e81d9b0ebb52afe5b22",
-      "sha256": "c6f9d43c0d99f1439a28ecfe23996d0d4c95569c15887ddca7aefc81413153cf",
-      "old_boot": "function boot(){styles();applyCaseLogic();stamp();try{if(typeof render==='function')render()}catch(err){console.error(CRC2_VERSION+' CRC002 flagship boot failed',err)}setTimeout(stamp,100)}",
-      "new_boot": "// A6.15: initialize every flagship, render an inactive one only when loaded later.\nconst parserTimeBoot=document.readyState==='loading';\nfunction boot(){styles();applyCaseLogic();stamp();try{if((!parserTimeBoot||active())&&typeof render==='function')render()}catch(err){console.error(CRC2_VERSION+' CRC002 flagship boot failed',err)}setTimeout(stamp,100)}"
+      "path": "i18n/legacy/legacy_v240z7_res_t1_i18n.js",
+      "name": "v240z7Boot",
+      "base_sha256": "b09a86058c24ce582716ca6ab1213162793b2a7f1f79a11a5702b001afc297e2",
+      "sha256": "603637a3d49021a369505cc35d3346397de86d4260bb65c44b942681a3c96236",
+      "old_boot": "function v240z7Boot(){v240z7Merge();v240z7Stamp();try{if(typeof renderCasePicker==='function')renderCasePicker();if(typeof renderKpi==='function')renderKpi();if(typeof render==='function')render();if(window.MolPathI18n&&typeof window.MolPathI18n.applyNow==='function')window.MolPathI18n.applyNow();}catch(_){}v240z7Stamp();}",
+      "new_boot": "// A6.16: the final T4 hotfix owns the parser-time RES translation refresh.\nconst parserTimeBoot=document.readyState==='loading';\nfunction v240z7Boot(){v240z7Merge();v240z7Stamp();try{if(!parserTimeBoot){if(typeof renderCasePicker==='function')renderCasePicker();if(typeof renderKpi==='function')renderKpi();if(typeof render==='function')render();}if(window.MolPathI18n&&typeof window.MolPathI18n.applyNow==='function')window.MolPathI18n.applyNow();}catch(_){}v240z7Stamp();}",
+      "render_sequence": "if(typeof renderCasePicker==='function')renderCasePicker();if(typeof renderKpi==='function')renderKpi();if(typeof render==='function')render();"
     },
     {
-      "path": "v240z14_crc001_flagship.js",
-      "caseId": "MTB_CRC_001_v0_6",
-      "base_sha256": "b7eda0b0a9ab80a238fc955dc02e78c191e2b77f81e9fca206d02c291ddd34bc",
-      "sha256": "15a2737cffb080d478ab5aa1ad86f4219c8577c8b7e154aa144c49ea7093a002",
-      "old_boot": "function boot(){styles();applyCaseLogic();stamp();try{if(typeof render==='function')render()}catch(err){console.error(CRC1_VERSION+' CRC001 flagship boot failed',err)}setTimeout(stamp,100)}",
-      "new_boot": "// A6.15: initialize every flagship, render an inactive one only when loaded later.\nconst parserTimeBoot=document.readyState==='loading';\nfunction boot(){styles();applyCaseLogic();stamp();try{if((!parserTimeBoot||active())&&typeof render==='function')render()}catch(err){console.error(CRC1_VERSION+' CRC001 flagship boot failed',err)}setTimeout(stamp,100)}"
+      "path": "i18n/legacy/legacy_v240z8_res_t2_i18n.js",
+      "name": "v240z8Boot",
+      "base_sha256": "cda272e633ce936f9d6ea411e1bb836ff248155b0b8723082094daf43b51e2d4",
+      "sha256": "81ef19c4d3801cb982197c195a8f2bb590638798d4cf1a351ac3b87530a92313",
+      "old_boot": "function v240z8Boot(){v240z8Merge();v240z8Stamp();try{if(typeof renderCasePicker==='function')renderCasePicker();if(typeof renderKpi==='function')renderKpi();if(typeof render==='function')render();if(window.MolPathI18n&&typeof window.MolPathI18n.applyNow==='function')window.MolPathI18n.applyNow();}catch(_){}v240z8Stamp();}",
+      "new_boot": "// A6.16: the final T4 hotfix owns the parser-time RES translation refresh.\nconst parserTimeBoot=document.readyState==='loading';\nfunction v240z8Boot(){v240z8Merge();v240z8Stamp();try{if(!parserTimeBoot){if(typeof renderCasePicker==='function')renderCasePicker();if(typeof renderKpi==='function')renderKpi();if(typeof render==='function')render();}if(window.MolPathI18n&&typeof window.MolPathI18n.applyNow==='function')window.MolPathI18n.applyNow();}catch(_){}v240z8Stamp();}",
+      "render_sequence": "if(typeof renderCasePicker==='function')renderCasePicker();if(typeof renderKpi==='function')renderKpi();if(typeof render==='function')render();"
     },
     {
-      "path": "v240z15_nsclc002_flagship.js",
-      "caseId": "MTB_NSCLC_002_v1_3",
-      "base_sha256": "f561ac9ca9b613764f5edc61b0d227643454a42143afc68fe5129543276d060b",
-      "sha256": "6d634b77c1a0698c2c9101051d0f4f602c64db80000e2dfb6d8747d544cdcc57",
-      "old_boot": "function boot(){styles();applyCaseLogic();stamp();try{if(typeof render==='function')render()}catch(err){console.error(NS2_VERSION+' NSCLC002 flagship boot failed',err)}setTimeout(stamp,100)}",
-      "new_boot": "// A6.15: initialize every flagship, render an inactive one only when loaded later.\nconst parserTimeBoot=document.readyState==='loading';\nfunction boot(){styles();applyCaseLogic();stamp();try{if((!parserTimeBoot||active())&&typeof render==='function')render()}catch(err){console.error(NS2_VERSION+' NSCLC002 flagship boot failed',err)}setTimeout(stamp,100)}"
+      "path": "i18n/legacy/legacy_v240z9_res_t3_i18n.js",
+      "name": "v240z9Boot",
+      "base_sha256": "948c9312f32581775e3b9bdb8c21285d1d90046794c35b4f068e7447fa875005",
+      "sha256": "465f1defb0ee37a129bdf43962cfa7420c6698e57c36755f7857493bb4ca4464",
+      "old_boot": "function v240z9Boot(){v240z9Merge();v240z9Stamp();try{if(typeof renderCasePicker==='function')renderCasePicker();if(typeof renderKpi==='function')renderKpi();if(typeof render==='function')render();if(window.MolPathI18n&&typeof window.MolPathI18n.applyNow==='function')window.MolPathI18n.applyNow();}catch(_){}v240z9Stamp();}",
+      "new_boot": "// A6.16: the final T4 hotfix owns the parser-time RES translation refresh.\nconst parserTimeBoot=document.readyState==='loading';\nfunction v240z9Boot(){v240z9Merge();v240z9Stamp();try{if(!parserTimeBoot){if(typeof renderCasePicker==='function')renderCasePicker();if(typeof renderKpi==='function')renderKpi();if(typeof render==='function')render();}if(window.MolPathI18n&&typeof window.MolPathI18n.applyNow==='function')window.MolPathI18n.applyNow();}catch(_){}v240z9Stamp();}",
+      "render_sequence": "if(typeof renderCasePicker==='function')renderCasePicker();if(typeof renderKpi==='function')renderKpi();if(typeof render==='function')render();"
     },
     {
-      "path": "v240z16_metngs003_flagship.js",
-      "caseId": "MET_NGS_003_v1_0",
-      "base_sha256": "d0e2fc6d6e8bebfb91675f22b30e34a01a64ff8da77d8d300b3b9f98b480ded7",
-      "sha256": "4b825dd80c6249e344b92d50aa199943602803caaed04b4b5a4c64a2ed6abd11",
-      "old_boot": "function boot(){styles();applyCaseLogic();stamp();try{if(typeof render==='function')render()}catch(err){console.error(M3_VERSION+' MET_NGS_003 flagship boot failed',err)}setTimeout(stamp,100)}",
-      "new_boot": "// A6.15: initialize every flagship, render an inactive one only when loaded later.\nconst parserTimeBoot=document.readyState==='loading';\nfunction boot(){styles();applyCaseLogic();stamp();try{if((!parserTimeBoot||active())&&typeof render==='function')render()}catch(err){console.error(M3_VERSION+' MET_NGS_003 flagship boot failed',err)}setTimeout(stamp,100)}"
-    },
-    {
-      "path": "v240z17_ovar001_flagship.js",
-      "caseId": "MTB_OVAR_001_v0_7",
-      "base_sha256": "ddb65c4d8ff6e68f6582da72dc3bf8d3eda664737689ccc470eaf1f1a14b47e7",
-      "sha256": "1ddd06e61417c9ea45e7b4eb9cf96be6aed5c7f871e1878deea0ce08a55ac201",
-      "old_boot": "function boot(){styles();stamp();try{if(typeof render==='function')render()}catch(err){console.error(O17_VERSION+' OVAR flagship boot failed',err)}setTimeout(stamp,100)}",
-      "new_boot": "// A6.15: initialize every flagship, render an inactive one only when loaded later.\nconst parserTimeBoot=document.readyState==='loading';\nfunction boot(){styles();stamp();try{if((!parserTimeBoot||active())&&typeof render==='function')render()}catch(err){console.error(O17_VERSION+' OVAR flagship boot failed',err)}setTimeout(stamp,100)}"
-    },
-    {
-      "path": "v240z18_ovar002_flagship.js",
-      "caseId": "MTB_OVAR_002_v1_3",
-      "base_sha256": "fe10c7bc0e06e1bce488e01d081acd8705739f7bad35dac06ab830129271e20c",
-      "sha256": "8b73c2325be24513e61dca0c344c1d2cad8e24f27718247de586d5a94e9b81c0",
-      "old_boot": "function boot(){styles();applyCaseLogic();stamp();try{if(typeof render==='function')render()}catch(err){console.error(O18_VERSION+' OVAR_002 flagship boot failed',err)}setTimeout(stamp,100)}",
-      "new_boot": "// A6.15: initialize every flagship, render an inactive one only when loaded later.\nconst parserTimeBoot=document.readyState==='loading';\nfunction boot(){styles();applyCaseLogic();stamp();try{if((!parserTimeBoot||active())&&typeof render==='function')render()}catch(err){console.error(O18_VERSION+' OVAR_002 flagship boot failed',err)}setTimeout(stamp,100)}"
-    },
-    {
-      "path": "v240z19_cns001_flagship.js",
-      "caseId": "MTB_CNS_001_v1_0",
-      "base_sha256": "0c1ec761c455003e8b50b052bde85c74c8bd6aab918002bedb3c7b31964d8c50",
-      "sha256": "21e1353ccfa0189f6da6a2321f93978b813a1fb159c2979437b35b78b3f553b5",
-      "old_boot": "function boot(){styles();stamp();try{if(typeof render==='function')render()}catch(err){console.error(C19_VERSION+' CNS_001 flagship boot failed',err)}setTimeout(stamp,100)}",
-      "new_boot": "// A6.15: initialize every flagship, render an inactive one only when loaded later.\nconst parserTimeBoot=document.readyState==='loading';\nfunction boot(){styles();stamp();try{if((!parserTimeBoot||active())&&typeof render==='function')render()}catch(err){console.error(C19_VERSION+' CNS_001 flagship boot failed',err)}setTimeout(stamp,100)}"
-    },
-    {
-      "path": "v240z20_io001_flagship.js",
-      "caseId": "MTB_IO_001_v1_0",
-      "base_sha256": "43cd09509b7939f9934cc1adbb246fa1c903a9d5986d92166d9032562b65d4da",
-      "sha256": "2b5ec873eab44ae4fcc954d3667f17889cf7b93418e2ffb5fa5655d2e720f195",
-      "old_boot": "function boot(){styles();applyCasePresentation();stamp();try{if(typeof render==='function')render()}catch(err){console.error(IO20_VERSION+' IO_001 flagship boot failed',err)}setTimeout(stamp,100)}",
-      "new_boot": "// A6.15: initialize every flagship, render an inactive one only when loaded later.\nconst parserTimeBoot=document.readyState==='loading';\nfunction boot(){styles();applyCasePresentation();stamp();try{if((!parserTimeBoot||active())&&typeof render==='function')render()}catch(err){console.error(IO20_VERSION+' IO_001 flagship boot failed',err)}setTimeout(stamp,100)}"
+      "path": "i18n/legacy/legacy_v240z10_res_t4_i18n.js",
+      "name": "v240z10Boot",
+      "base_sha256": "559efe05898faad98c098f2bac289bb8bbcc7b0deb6812f3ba7ab67f0b280887",
+      "sha256": "d441f3f18d31b3ef055dd7ae028b285bcc2fe34e9a0e01579fbb84d37ed2ee12",
+      "old_boot": "function v240z10Boot(){v240z10Merge();v240z10Stamp();try{if(typeof renderCasePicker==='function')renderCasePicker();if(typeof renderKpi==='function')renderKpi();if(typeof render==='function')render();if(window.MolPathI18n&&typeof window.MolPathI18n.applyNow==='function')window.MolPathI18n.applyNow();}catch(_){}v240z10Stamp();}",
+      "new_boot": "// A6.16: the final T4 hotfix owns the parser-time RES translation refresh.\nconst parserTimeBoot=document.readyState==='loading';\nfunction v240z10Boot(){v240z10Merge();v240z10Stamp();try{if(!parserTimeBoot){if(typeof renderCasePicker==='function')renderCasePicker();if(typeof renderKpi==='function')renderKpi();if(typeof render==='function')render();}if(window.MolPathI18n&&typeof window.MolPathI18n.applyNow==='function')window.MolPathI18n.applyNow();}catch(_){}v240z10Stamp();}",
+      "render_sequence": "if(typeof renderCasePicker==='function')renderCasePicker();if(typeof renderKpi==='function')renderKpi();if(typeof render==='function')render();"
     }
   ],
   "payload": [
-    "v240z13_crc002_flagship.js",
-    "v240z14_crc001_flagship.js",
-    "v240z15_nsclc002_flagship.js",
-    "v240z16_metngs003_flagship.js",
-    "v240z17_ovar001_flagship.js",
-    "v240z18_ovar002_flagship.js",
-    "v240z19_cns001_flagship.js",
-    "v240z20_io001_flagship.js"
+    "i18n/legacy/legacy_v240z7_res_t1_i18n.js",
+    "i18n/legacy/legacy_v240z8_res_t2_i18n.js",
+    "i18n/legacy/legacy_v240z9_res_t3_i18n.js",
+    "i18n/legacy/legacy_v240z10_res_t4_i18n.js"
   ]
 }

@@ -1,0 +1,23 @@
+MolPath rc2 A6.16 — wiederholte Übersetzungs-Start-Render zusammenführen
+Basis: vollständiger funktionierender A6.15-Build.
+
+Diesmal werden VIER JS-DATEIEN im Unterordner i18n/legacy ersetzt:
+  legacy_v240z7_res_t1_i18n.js
+  legacy_v240z8_res_t2_i18n.js
+  legacy_v240z9_res_t3_i18n.js
+  legacy_v240z10_res_t4_i18n.js
+
+1. Die vier vorhandenen Dateien sichern.
+2. Die vier gleichnamigen Dateien aus i18n/legacy dieses Deltas in den
+   vorhandenen i18n/legacy-Unterordner des funktionierenden A6.15-Builds kopieren.
+   Die beiden Verzeichnisse zusammenführen; bestehende andere Dateien behalten.
+3. index.html bleibt der A6.14-Stand; acht Flagship-Dateien aus A6.15 bleiben erforderlich.
+4. Strg+F5: Loader -> Startseite -> Bibliothek prüfen.
+5. DE -> EN -> DE wechseln und einmal mit gespeicherter Sprache EN neu laden.
+6. RES-Fall öffnen: Titel, Timeline, Deep Dive und Textübersetzung prüfen.
+7. OVAR1: beide Gates, Bestätigung und Abschluss/Score/TAT kurz prüfen.
+8. Konsole auf neue Fehler prüfen.
+
+Rollback: die vier gesicherten Dateien wiederherstellen, Strg+F5.
+Das Delta ist kein vollständiger eigenständig startbarer Build.
+qa/ und Dokumente sind Begleitmaterial, keine neuen Runtime-Abhängigkeiten.

@@ -67248,7 +67248,7 @@
   ],
   "bootUiState": "{\"activeId\":\"MTB_NSCLC_001_v0_6\",\"state\":{\"step\":\"intake\",\"viewed\":{\"intake\":true},\"selected\":{},\"primarySelected\":null,\"report\":null,\"followupLog\":[],\"mtb\":{\"text\":\"\",\"points\":{}},\"finalized\":false,\"lab\":{\"decision\":null,\"decisionFeedback\":null,\"rootCause\":{},\"capa\":{},\"audit\":{},\"finalized\":false},\"research\":{\"hypothesis\":null,\"pico\":null,\"design\":{},\"methods\":{},\"analysis\":{},\"pitfalls\":{},\"finalized\":false},\"gates\":{\"answers\":{},\"submitted\":false}},\"uiMode\":\"learning\"}",
   "environment": "Node VM, actual ordered JS sources, DOM test double; no visual browser assertion",
-  "root": "/workspace/scratch/1f1f0706e0d2/work/a6_15/candidate",
+  "root": "/workspace/scratch/1f1f0706e0d2/work/a6_16/candidate",
   "loaded": 101,
   "counts": {
     "cases": 91,

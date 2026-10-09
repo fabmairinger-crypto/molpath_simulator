@@ -1,0 +1,9 @@
+# A6.16 — RES-Übersetzungs-Start-Render zusammenführen
+
+Die vier RES-Übersetzungsblöcke T1/T2/T3/T4 mergten ihre Wörterbücher und bauten jeweils Bibliothek, Kopfzeile und Ansicht neu auf. Der direkt anschließende T4-Deep-Dive-Hotfix führt dieselbe Aktualisierung nach allen Merges aus. Beim Parser-Start übernimmt dieser unveränderte letzte Hotfix den gemeinsamen Render. Ein beim Laden erfasstes Parser-Flag überspringt ausschließlich die drei frühen Render-Aufrufe pro Modul; spätere Ladungen bei interactive/complete behalten die gesamte bisherige Funktion.
+
+Wörterbuchinhalte, Merge-Funktionen, Stats/Provenienz, Versionsmetadaten, Stamp-Aufrufe, beide bestehenden applyNow-Pfade, Registrierung und Callback-Reihenfolge bleiben erhalten. Es werden keine Übersetzungen neu definiert und keine Sprachtexte geändert. Nur der Boot-Bereich der vier i18n/legacy-Dateien ist verändert. index.html, i18n/core.js, die moderne Timeline/Schrittaufteilung, Flagship-Dateien, Assets und Reasoning-Gates bleiben byte-identisch.
+
+Kontrollierter Standardstart: vollständige Core-Render 40 -> 36; geplante Callbacks 695 -> 619; Timeline-Aufrufe 66 -> 58. Tatsächliche Timeline-DOM-Schreibvorgänge bleiben 8, DOMContentLoaded-Callbacks bleiben 80, Sprach-Hook-Frames bleiben 264. Keine Aussage über echte Browserzeit.
+
+254 Runtime-, 720 OVAR-Gate-, 77 CRC/LAB-, 40 Timeline- und 13 Boot-/Late-load-Checks bestanden. Zusätzlicher Startup-Lifecycle-Vergleich mit jeder der elf gespeicherten Sprachen: jeweils sieben Checks bestanden; vollständige Wörterbuch-Hashes/Key-Anzahlen, Übersetzungsprovenienz und Versionsmetadaten sowie Home-HTML/Sichtbarkeit, Timeline, Styles und Dokumentsprache entsprechen A6.15. 100 Syntaxeinheiten ohne Fehler. Der Home-Observer wird im DOM-Testdouble manuell zugestellt; echter A6.16-Browsercheck offen.

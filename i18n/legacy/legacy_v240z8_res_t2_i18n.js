@@ -23,7 +23,9 @@ function v240z8Merge(){
 }
 function v240z8Stamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }
 const V240Z8_PREV_AFTER=window.MolPathI18nAfterApply;window.MolPathI18nAfterApply=function(l){try{if(typeof V240Z8_PREV_AFTER==='function')V240Z8_PREV_AFTER(l)}catch(_){}v240z8Stamp();};
-function v240z8Boot(){v240z8Merge();v240z8Stamp();try{if(typeof renderCasePicker==='function')renderCasePicker();if(typeof renderKpi==='function')renderKpi();if(typeof render==='function')render();if(window.MolPathI18n&&typeof window.MolPathI18n.applyNow==='function')window.MolPathI18n.applyNow();}catch(_){}v240z8Stamp();}
+// A6.16: the final T4 hotfix owns the parser-time RES translation refresh.
+const parserTimeBoot=document.readyState==='loading';
+function v240z8Boot(){v240z8Merge();v240z8Stamp();try{if(!parserTimeBoot){if(typeof renderCasePicker==='function')renderCasePicker();if(typeof renderKpi==='function')renderKpi();if(typeof render==='function')render();}if(window.MolPathI18n&&typeof window.MolPathI18n.applyNow==='function')window.MolPathI18n.applyNow();}catch(_){}v240z8Stamp();}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',v240z8Boot,{once:true});else setTimeout(v240z8Boot,0);
 try{console.log('[MolPath '+V240Z8_VERSION+'] RES T2 i18n: D2 5/5 multilingual in EN/RO/EL/ES/FR; case logic unchanged.')}catch(_){}
 })();
