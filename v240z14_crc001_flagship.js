@@ -249,7 +249,9 @@ render=function(){applyCaseLogic();const out=PREV_RENDER.apply(this,arguments);s
 function stamp(){ /* A6.3: historical version writer retired; provenance constant retained. */ }
 const PREV_I18N_AFTER=window.MolPathI18nAfterApply;
 window.MolPathI18nAfterApply=function(l){try{if(typeof PREV_I18N_AFTER==='function')PREV_I18N_AFTER(l)}catch(_){}applyCaseLogic();stamp()};
-function boot(){styles();applyCaseLogic();stamp();try{if(typeof render==='function')render()}catch(err){console.error(CRC1_VERSION+' CRC001 flagship boot failed',err)}setTimeout(stamp,100)}
+// A6.15: initialize every flagship, render an inactive one only when loaded later.
+const parserTimeBoot=document.readyState==='loading';
+function boot(){styles();applyCaseLogic();stamp();try{if((!parserTimeBoot||active())&&typeof render==='function')render()}catch(err){console.error(CRC1_VERSION+' CRC001 flagship boot failed',err)}setTimeout(stamp,100)}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot,{once:true});else setTimeout(boot,0);
 window.MolPathCRC001Flagship=Object.freeze({version:CRC1_VERSION,base:'v2.4.0z14',caseId:CRC1_CASE,assetCount:10,patient:'58F, sigmoid/left-sided, multiple liver metastases',molecularMaterial:'liver metastasis FFPE',rasBrafEquivalence:['ras_panel_crc + braf_v600e_crc','colon_ngs_panel','broad_pan_panel'],testGated:['mmr_ihc','ras_panel_crc|colon_ngs_panel|broad_pan_panel','braf_v600e_crc|colon_ngs_panel|broad_pan_panel','msi_pcr_ngs','mlh1_methylation']});
 })();

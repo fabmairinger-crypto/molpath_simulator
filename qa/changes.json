@@ -1,72 +1,79 @@
 {
-  "base_sha256": "49562dce07e46e0ef6a498b0987f839e14ecd0d3879707ae1013f0190558dfb5",
-  "sha256": "f564eea1b79c059a6da5725daccd65be4f15bcc1e86d3899a3c11deec9a7cbb8",
+  "base": "confirmed A6.14",
   "changes": [
     {
-      "script": "v240u_lab_b1_preanalytics_deepdive_patch",
-      "name": "v240uBoot",
-      "function_unchanged": "function v240uBoot(){try{renderCasePicker();renderKpi();if(typeof render==='function')render()}catch(_){}}",
-      "old": "if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',v240uBoot,{once:true});else setTimeout(v240uBoot,0);",
-      "new": "// A6.14: parser-time LAB/RES refresh is owned by the retained v240z6Boot.\nif(document.readyState!=='loading')setTimeout(v240uBoot,0);"
+      "path": "v240z13_crc002_flagship.js",
+      "caseId": "MTB_CRC_002_v1_3",
+      "base_sha256": "d00faf9a3ddd26ef9b77a0ab3f9f6a743289da1cf1d81e81d9b0ebb52afe5b22",
+      "sha256": "c6f9d43c0d99f1439a28ecfe23996d0d4c95569c15887ddca7aefc81413153cf",
+      "old_boot": "function boot(){styles();applyCaseLogic();stamp();try{if(typeof render==='function')render()}catch(err){console.error(CRC2_VERSION+' CRC002 flagship boot failed',err)}setTimeout(stamp,100)}",
+      "new_boot": "// A6.15: initialize every flagship, render an inactive one only when loaded later.\nconst parserTimeBoot=document.readyState==='loading';\nfunction boot(){styles();applyCaseLogic();stamp();try{if((!parserTimeBoot||active())&&typeof render==='function')render()}catch(err){console.error(CRC2_VERSION+' CRC002 flagship boot failed',err)}setTimeout(stamp,100)}"
     },
     {
-      "script": "v240v_lab_b2_run_qc_deepdive_patch",
-      "name": "v240vBoot",
-      "function_unchanged": "function v240vBoot(){try{renderCasePicker();renderKpi();if(typeof render==='function')render()}catch(_){}}",
-      "old": "if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',v240vBoot,{once:true});else setTimeout(v240vBoot,0);",
-      "new": "// A6.14: parser-time LAB/RES refresh is owned by the retained v240z6Boot.\nif(document.readyState!=='loading')setTimeout(v240vBoot,0);"
+      "path": "v240z14_crc001_flagship.js",
+      "caseId": "MTB_CRC_001_v0_6",
+      "base_sha256": "b7eda0b0a9ab80a238fc955dc02e78c191e2b77f81e9fca206d02c291ddd34bc",
+      "sha256": "15a2737cffb080d478ab5aa1ad86f4219c8577c8b7e154aa144c49ea7093a002",
+      "old_boot": "function boot(){styles();applyCaseLogic();stamp();try{if(typeof render==='function')render()}catch(err){console.error(CRC1_VERSION+' CRC001 flagship boot failed',err)}setTimeout(stamp,100)}",
+      "new_boot": "// A6.15: initialize every flagship, render an inactive one only when loaded later.\nconst parserTimeBoot=document.readyState==='loading';\nfunction boot(){styles();applyCaseLogic();stamp();try{if((!parserTimeBoot||active())&&typeof render==='function')render()}catch(err){console.error(CRC1_VERSION+' CRC001 flagship boot failed',err)}setTimeout(stamp,100)}"
     },
     {
-      "script": "v240w_lab_b3_postanalytics_deepdive_patch",
-      "name": "v240wBoot",
-      "function_unchanged": "function v240wBoot(){try{renderCasePicker();renderKpi();if(typeof render==='function')render()}catch(_){}}",
-      "old": "if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',v240wBoot,{once:true});else setTimeout(v240wBoot,0);",
-      "new": "// A6.14: parser-time LAB/RES refresh is owned by the retained v240z6Boot.\nif(document.readyState!=='loading')setTimeout(v240wBoot,0);"
+      "path": "v240z15_nsclc002_flagship.js",
+      "caseId": "MTB_NSCLC_002_v1_3",
+      "base_sha256": "f561ac9ca9b613764f5edc61b0d227643454a42143afc68fe5129543276d060b",
+      "sha256": "6d634b77c1a0698c2c9101051d0f4f602c64db80000e2dfb6d8747d544cdcc57",
+      "old_boot": "function boot(){styles();applyCaseLogic();stamp();try{if(typeof render==='function')render()}catch(err){console.error(NS2_VERSION+' NSCLC002 flagship boot failed',err)}setTimeout(stamp,100)}",
+      "new_boot": "// A6.15: initialize every flagship, render an inactive one only when loaded later.\nconst parserTimeBoot=document.readyState==='loading';\nfunction boot(){styles();applyCaseLogic();stamp();try{if((!parserTimeBoot||active())&&typeof render==='function')render()}catch(err){console.error(NS2_VERSION+' NSCLC002 flagship boot failed',err)}setTimeout(stamp,100)}"
     },
     {
-      "script": "v240x_lab_b4_c4_deepdive_patch",
-      "name": "v240xBoot",
-      "function_unchanged": "function v240xBoot(){try{renderCasePicker();renderKpi();if(typeof render==='function')render()}catch(_){}}",
-      "old": "if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',v240xBoot,{once:true});else setTimeout(v240xBoot,0);",
-      "new": "// A6.14: parser-time LAB/RES refresh is owned by the retained v240z6Boot.\nif(document.readyState!=='loading')setTimeout(v240xBoot,0);"
+      "path": "v240z16_metngs003_flagship.js",
+      "caseId": "MET_NGS_003_v1_0",
+      "base_sha256": "d0e2fc6d6e8bebfb91675f22b30e34a01a64ff8da77d8d300b3b9f98b480ded7",
+      "sha256": "4b825dd80c6249e344b92d50aa199943602803caaed04b4b5a4c64a2ed6abd11",
+      "old_boot": "function boot(){styles();applyCaseLogic();stamp();try{if(typeof render==='function')render()}catch(err){console.error(M3_VERSION+' MET_NGS_003 flagship boot failed',err)}setTimeout(stamp,100)}",
+      "new_boot": "// A6.15: initialize every flagship, render an inactive one only when loaded later.\nconst parserTimeBoot=document.readyState==='loading';\nfunction boot(){styles();applyCaseLogic();stamp();try{if((!parserTimeBoot||active())&&typeof render==='function')render()}catch(err){console.error(M3_VERSION+' MET_NGS_003 flagship boot failed',err)}setTimeout(stamp,100)}"
     },
     {
-      "script": "v240y_lab_b5_digital_data_lims_deepdive_patch",
-      "name": "v240yBoot",
-      "function_unchanged": "function v240yBoot(){try{renderCasePicker();renderKpi();if(typeof render==='function')render()}catch(_){}}",
-      "old": "if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',v240yBoot,{once:true});else setTimeout(v240yBoot,0);",
-      "new": "// A6.14: parser-time LAB/RES refresh is owned by the retained v240z6Boot.\nif(document.readyState!=='loading')setTimeout(v240yBoot,0);"
+      "path": "v240z17_ovar001_flagship.js",
+      "caseId": "MTB_OVAR_001_v0_7",
+      "base_sha256": "ddb65c4d8ff6e68f6582da72dc3bf8d3eda664737689ccc470eaf1f1a14b47e7",
+      "sha256": "1ddd06e61417c9ea45e7b4eb9cf96be6aed5c7f871e1878deea0ce08a55ac201",
+      "old_boot": "function boot(){styles();stamp();try{if(typeof render==='function')render()}catch(err){console.error(O17_VERSION+' OVAR flagship boot failed',err)}setTimeout(stamp,100)}",
+      "new_boot": "// A6.15: initialize every flagship, render an inactive one only when loaded later.\nconst parserTimeBoot=document.readyState==='loading';\nfunction boot(){styles();stamp();try{if((!parserTimeBoot||active())&&typeof render==='function')render()}catch(err){console.error(O17_VERSION+' OVAR flagship boot failed',err)}setTimeout(stamp,100)}"
     },
     {
-      "script": "v240z2_res_r1_deepdive",
-      "name": "v240z2Boot",
-      "function_unchanged": "function v240z2Boot(){try{if(typeof renderCasePicker==='function')renderCasePicker();if(typeof renderKpi==='function')renderKpi();if(typeof render==='function')render()}catch(_){}}",
-      "old": "if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',v240z2Boot,{once:true});else setTimeout(v240z2Boot,0);",
-      "new": "// A6.14: parser-time LAB/RES refresh is owned by the retained v240z6Boot.\nif(document.readyState!=='loading')setTimeout(v240z2Boot,0);"
+      "path": "v240z18_ovar002_flagship.js",
+      "caseId": "MTB_OVAR_002_v1_3",
+      "base_sha256": "fe10c7bc0e06e1bce488e01d081acd8705739f7bad35dac06ab830129271e20c",
+      "sha256": "8b73c2325be24513e61dca0c344c1d2cad8e24f27718247de586d5a94e9b81c0",
+      "old_boot": "function boot(){styles();applyCaseLogic();stamp();try{if(typeof render==='function')render()}catch(err){console.error(O18_VERSION+' OVAR_002 flagship boot failed',err)}setTimeout(stamp,100)}",
+      "new_boot": "// A6.15: initialize every flagship, render an inactive one only when loaded later.\nconst parserTimeBoot=document.readyState==='loading';\nfunction boot(){styles();applyCaseLogic();stamp();try{if((!parserTimeBoot||active())&&typeof render==='function')render()}catch(err){console.error(O18_VERSION+' OVAR_002 flagship boot failed',err)}setTimeout(stamp,100)}"
     },
     {
-      "script": "v240z3_res_r2_deepdive",
-      "name": "v240z3Boot",
-      "function_unchanged": "function v240z3Boot(){try{if(typeof renderCasePicker==='function')renderCasePicker();if(typeof renderKpi==='function')renderKpi();if(typeof render==='function')render()}catch(_){}}",
-      "old": "if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',v240z3Boot,{once:true});else setTimeout(v240z3Boot,0);",
-      "new": "// A6.14: parser-time LAB/RES refresh is owned by the retained v240z6Boot.\nif(document.readyState!=='loading')setTimeout(v240z3Boot,0);"
+      "path": "v240z19_cns001_flagship.js",
+      "caseId": "MTB_CNS_001_v1_0",
+      "base_sha256": "0c1ec761c455003e8b50b052bde85c74c8bd6aab918002bedb3c7b31964d8c50",
+      "sha256": "21e1353ccfa0189f6da6a2321f93978b813a1fb159c2979437b35b78b3f553b5",
+      "old_boot": "function boot(){styles();stamp();try{if(typeof render==='function')render()}catch(err){console.error(C19_VERSION+' CNS_001 flagship boot failed',err)}setTimeout(stamp,100)}",
+      "new_boot": "// A6.15: initialize every flagship, render an inactive one only when loaded later.\nconst parserTimeBoot=document.readyState==='loading';\nfunction boot(){styles();stamp();try{if((!parserTimeBoot||active())&&typeof render==='function')render()}catch(err){console.error(C19_VERSION+' CNS_001 flagship boot failed',err)}setTimeout(stamp,100)}"
     },
     {
-      "script": "v240z4_res_r3_deepdive",
-      "name": "v240z4Boot",
-      "function_unchanged": "function v240z4Boot(){try{if(typeof renderCasePicker==='function')renderCasePicker();if(typeof renderKpi==='function')renderKpi();if(typeof render==='function')render()}catch(_){}}",
-      "old": "if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',v240z4Boot,{once:true});else setTimeout(v240z4Boot,0);",
-      "new": "// A6.14: parser-time LAB/RES refresh is owned by the retained v240z6Boot.\nif(document.readyState!=='loading')setTimeout(v240z4Boot,0);"
-    },
-    {
-      "script": "v240z5_res_r4_deepdive",
-      "name": "v240z5Boot",
-      "function_unchanged": "function v240z5Boot(){try{if(typeof renderCasePicker==='function')renderCasePicker();if(typeof renderKpi==='function')renderKpi();if(typeof render==='function')render()}catch(_){}}",
-      "old": "if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',v240z5Boot,{once:true});else setTimeout(v240z5Boot,0);",
-      "new": "// A6.14: parser-time LAB/RES refresh is owned by the retained v240z6Boot.\nif(document.readyState!=='loading')setTimeout(v240z5Boot,0);"
+      "path": "v240z20_io001_flagship.js",
+      "caseId": "MTB_IO_001_v1_0",
+      "base_sha256": "43cd09509b7939f9934cc1adbb246fa1c903a9d5986d92166d9032562b65d4da",
+      "sha256": "2b5ec873eab44ae4fcc954d3667f17889cf7b93418e2ffb5fa5655d2e720f195",
+      "old_boot": "function boot(){styles();applyCasePresentation();stamp();try{if(typeof render==='function')render()}catch(err){console.error(IO20_VERSION+' IO_001 flagship boot failed',err)}setTimeout(stamp,100)}",
+      "new_boot": "// A6.15: initialize every flagship, render an inactive one only when loaded later.\nconst parserTimeBoot=document.readyState==='loading';\nfunction boot(){styles();applyCasePresentation();stamp();try{if((!parserTimeBoot||active())&&typeof render==='function')render()}catch(err){console.error(IO20_VERSION+' IO_001 flagship boot failed',err)}setTimeout(stamp,100)}"
     }
   ],
   "payload": [
-    "index.html"
+    "v240z13_crc002_flagship.js",
+    "v240z14_crc001_flagship.js",
+    "v240z15_nsclc002_flagship.js",
+    "v240z16_metngs003_flagship.js",
+    "v240z17_ovar001_flagship.js",
+    "v240z18_ovar002_flagship.js",
+    "v240z19_cns001_flagship.js",
+    "v240z20_io001_flagship.js"
   ]
 }

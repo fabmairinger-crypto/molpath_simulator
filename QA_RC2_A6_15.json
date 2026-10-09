@@ -1,0 +1,101 @@
+{
+  "status": "PASS_BROWSER_OPEN",
+  "runtime": 254,
+  "gates": 720,
+  "remaining": 77,
+  "timeline": 40,
+  "boot_guards": 48,
+  "startup_lifecycle": {
+    "scenarios": 9,
+    "candidate_checks": 63,
+    "reference_checks": 63,
+    "results": [
+      {
+        "initialCase": null,
+        "checks": 7,
+        "home_timeline_styles_parity": true
+      },
+      {
+        "initialCase": "MTB_CRC_002_v1_3",
+        "checks": 7,
+        "home_timeline_styles_parity": true
+      },
+      {
+        "initialCase": "MTB_CRC_001_v0_6",
+        "checks": 7,
+        "home_timeline_styles_parity": true
+      },
+      {
+        "initialCase": "MTB_NSCLC_002_v1_3",
+        "checks": 7,
+        "home_timeline_styles_parity": true
+      },
+      {
+        "initialCase": "MET_NGS_003_v1_0",
+        "checks": 7,
+        "home_timeline_styles_parity": true
+      },
+      {
+        "initialCase": "MTB_OVAR_001_v0_7",
+        "checks": 7,
+        "home_timeline_styles_parity": true
+      },
+      {
+        "initialCase": "MTB_OVAR_002_v1_3",
+        "checks": 7,
+        "home_timeline_styles_parity": true
+      },
+      {
+        "initialCase": "MTB_CNS_001_v1_0",
+        "checks": 7,
+        "home_timeline_styles_parity": true
+      },
+      {
+        "initialCase": "MTB_IO_001_v1_0",
+        "checks": 7,
+        "home_timeline_styles_parity": true
+      }
+    ]
+  },
+  "syntax": {
+    "syntaxChecks": 100,
+    "errors": []
+  },
+  "exact_runtime_reference_fields": [
+    "preBootHash",
+    "afterBootHash",
+    "finalHash",
+    "counts",
+    "bootUiState",
+    "displayPhases",
+    "reportPhases",
+    "contentTrace",
+    "phases"
+  ],
+  "unchanged_files": 57,
+  "metrics": {
+    "before": {
+      "timelineWrites": 8,
+      "timelineCalls": 82,
+      "corePaint": 48,
+      "afterApplyFrames": 264,
+      "observersCreated": 5,
+      "observersObserved": 5,
+      "observerDisconnects": 0,
+      "scheduled": 847,
+      "DOMContentLoadedCallbacks": 80
+    },
+    "after": {
+      "timelineWrites": 8,
+      "timelineCalls": 66,
+      "corePaint": 40,
+      "afterApplyFrames": 264,
+      "observersCreated": 5,
+      "observersObserved": 5,
+      "observerDisconnects": 0,
+      "scheduled": 695,
+      "DOMContentLoadedCallbacks": 80
+    }
+  },
+  "limits": "Actual ordered sources in Node VM and DOM fixtures; load simulated, Home observer delivered manually. No real browser, elapsed-time or visual-layout assertion."
+}

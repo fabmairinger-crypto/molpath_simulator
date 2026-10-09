@@ -1,0 +1,199 @@
+{
+  "status": "PASS",
+  "total": 48,
+  "passed": 48,
+  "checks": [
+    {
+      "name": "v240z13_crc002_flagship.js loading active=false initialization/render contract",
+      "pass": true
+    },
+    {
+      "name": "v240z13_crc002_flagship.js loading active=true initialization/render contract",
+      "pass": true
+    },
+    {
+      "name": "v240z13_crc002_flagship.js interactive active=false initialization/render contract",
+      "pass": true
+    },
+    {
+      "name": "v240z13_crc002_flagship.js interactive active=true initialization/render contract",
+      "pass": true
+    },
+    {
+      "name": "v240z13_crc002_flagship.js complete active=false initialization/render contract",
+      "pass": true
+    },
+    {
+      "name": "v240z13_crc002_flagship.js complete active=true initialization/render contract",
+      "pass": true
+    },
+    {
+      "name": "v240z14_crc001_flagship.js loading active=false initialization/render contract",
+      "pass": true
+    },
+    {
+      "name": "v240z14_crc001_flagship.js loading active=true initialization/render contract",
+      "pass": true
+    },
+    {
+      "name": "v240z14_crc001_flagship.js interactive active=false initialization/render contract",
+      "pass": true
+    },
+    {
+      "name": "v240z14_crc001_flagship.js interactive active=true initialization/render contract",
+      "pass": true
+    },
+    {
+      "name": "v240z14_crc001_flagship.js complete active=false initialization/render contract",
+      "pass": true
+    },
+    {
+      "name": "v240z14_crc001_flagship.js complete active=true initialization/render contract",
+      "pass": true
+    },
+    {
+      "name": "v240z15_nsclc002_flagship.js loading active=false initialization/render contract",
+      "pass": true
+    },
+    {
+      "name": "v240z15_nsclc002_flagship.js loading active=true initialization/render contract",
+      "pass": true
+    },
+    {
+      "name": "v240z15_nsclc002_flagship.js interactive active=false initialization/render contract",
+      "pass": true
+    },
+    {
+      "name": "v240z15_nsclc002_flagship.js interactive active=true initialization/render contract",
+      "pass": true
+    },
+    {
+      "name": "v240z15_nsclc002_flagship.js complete active=false initialization/render contract",
+      "pass": true
+    },
+    {
+      "name": "v240z15_nsclc002_flagship.js complete active=true initialization/render contract",
+      "pass": true
+    },
+    {
+      "name": "v240z16_metngs003_flagship.js loading active=false initialization/render contract",
+      "pass": true
+    },
+    {
+      "name": "v240z16_metngs003_flagship.js loading active=true initialization/render contract",
+      "pass": true
+    },
+    {
+      "name": "v240z16_metngs003_flagship.js interactive active=false initialization/render contract",
+      "pass": true
+    },
+    {
+      "name": "v240z16_metngs003_flagship.js interactive active=true initialization/render contract",
+      "pass": true
+    },
+    {
+      "name": "v240z16_metngs003_flagship.js complete active=false initialization/render contract",
+      "pass": true
+    },
+    {
+      "name": "v240z16_metngs003_flagship.js complete active=true initialization/render contract",
+      "pass": true
+    },
+    {
+      "name": "v240z17_ovar001_flagship.js loading active=false initialization/render contract",
+      "pass": true
+    },
+    {
+      "name": "v240z17_ovar001_flagship.js loading active=true initialization/render contract",
+      "pass": true
+    },
+    {
+      "name": "v240z17_ovar001_flagship.js interactive active=false initialization/render contract",
+      "pass": true
+    },
+    {
+      "name": "v240z17_ovar001_flagship.js interactive active=true initialization/render contract",
+      "pass": true
+    },
+    {
+      "name": "v240z17_ovar001_flagship.js complete active=false initialization/render contract",
+      "pass": true
+    },
+    {
+      "name": "v240z17_ovar001_flagship.js complete active=true initialization/render contract",
+      "pass": true
+    },
+    {
+      "name": "v240z18_ovar002_flagship.js loading active=false initialization/render contract",
+      "pass": true
+    },
+    {
+      "name": "v240z18_ovar002_flagship.js loading active=true initialization/render contract",
+      "pass": true
+    },
+    {
+      "name": "v240z18_ovar002_flagship.js interactive active=false initialization/render contract",
+      "pass": true
+    },
+    {
+      "name": "v240z18_ovar002_flagship.js interactive active=true initialization/render contract",
+      "pass": true
+    },
+    {
+      "name": "v240z18_ovar002_flagship.js complete active=false initialization/render contract",
+      "pass": true
+    },
+    {
+      "name": "v240z18_ovar002_flagship.js complete active=true initialization/render contract",
+      "pass": true
+    },
+    {
+      "name": "v240z19_cns001_flagship.js loading active=false initialization/render contract",
+      "pass": true
+    },
+    {
+      "name": "v240z19_cns001_flagship.js loading active=true initialization/render contract",
+      "pass": true
+    },
+    {
+      "name": "v240z19_cns001_flagship.js interactive active=false initialization/render contract",
+      "pass": true
+    },
+    {
+      "name": "v240z19_cns001_flagship.js interactive active=true initialization/render contract",
+      "pass": true
+    },
+    {
+      "name": "v240z19_cns001_flagship.js complete active=false initialization/render contract",
+      "pass": true
+    },
+    {
+      "name": "v240z19_cns001_flagship.js complete active=true initialization/render contract",
+      "pass": true
+    },
+    {
+      "name": "v240z20_io001_flagship.js loading active=false initialization/render contract",
+      "pass": true
+    },
+    {
+      "name": "v240z20_io001_flagship.js loading active=true initialization/render contract",
+      "pass": true
+    },
+    {
+      "name": "v240z20_io001_flagship.js interactive active=false initialization/render contract",
+      "pass": true
+    },
+    {
+      "name": "v240z20_io001_flagship.js interactive active=true initialization/render contract",
+      "pass": true
+    },
+    {
+      "name": "v240z20_io001_flagship.js complete active=false initialization/render contract",
+      "pass": true
+    },
+    {
+      "name": "v240z20_io001_flagship.js complete active=true initialization/render contract",
+      "pass": true
+    }
+  ]
+}

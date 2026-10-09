@@ -291,7 +291,9 @@ function stamp(){ /* A6.3: historical version writer retired; provenance constan
 const PREV_I18N_AFTER=window.MolPathI18nAfterApply;
 window.MolPathI18nAfterApply=function(l){try{if(typeof PREV_I18N_AFTER==='function')PREV_I18N_AFTER(l)}catch(_){ }applyCaseLogic();stamp();};
 
-function boot(){styles();applyCaseLogic();stamp();try{if(typeof render==='function')render()}catch(err){console.error(CRC2_VERSION+' CRC002 flagship boot failed',err)}setTimeout(stamp,100)}
+// A6.15: initialize every flagship, render an inactive one only when loaded later.
+const parserTimeBoot=document.readyState==='loading';
+function boot(){styles();applyCaseLogic();stamp();try{if((!parserTimeBoot||active())&&typeof render==='function')render()}catch(err){console.error(CRC2_VERSION+' CRC002 flagship boot failed',err)}setTimeout(stamp,100)}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot,{once:true});else setTimeout(boot,0);
 
 window.MolPathCRC002Flagship=Object.freeze({version:CRC2_VERSION,base:'v2.4.0z14',caseId:CRC2_CASE,assetCount:9,testGated:['mmr_ihc','msi_pcr_ngs','mlh1_methylation','braf_v600e_crc|colon_ngs_panel|broad_pan_panel']});

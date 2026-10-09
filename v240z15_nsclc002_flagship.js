@@ -226,7 +226,9 @@ function stamp(){ /* A6.3: historical version writer retired; provenance constan
 const PREV_I18N_AFTER=window.MolPathI18nAfterApply;
 window.MolPathI18nAfterApply=function(l){try{if(typeof PREV_I18N_AFTER==='function')PREV_I18N_AFTER(l)}catch(_){ }applyCaseLogic();stamp();};
 
-function boot(){styles();applyCaseLogic();stamp();try{if(typeof render==='function')render()}catch(err){console.error(NS2_VERSION+' NSCLC002 flagship boot failed',err)}setTimeout(stamp,100)}
+// A6.15: initialize every flagship, render an inactive one only when loaded later.
+const parserTimeBoot=document.readyState==='loading';
+function boot(){styles();applyCaseLogic();stamp();try{if((!parserTimeBoot||active())&&typeof render==='function')render()}catch(err){console.error(NS2_VERSION+' NSCLC002 flagship boot failed',err)}setTimeout(stamp,100)}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot,{once:true});else setTimeout(boot,0);
 
 window.MolPathNSCLC002Flagship=Object.freeze({version:NS2_VERSION,base:'v2.4.0z14a',caseId:NS2_CASE,assetCount:9,preExisting:['oncology letter','CT progression','external negative low-ctDNA liquid biopsy'],testGated:{rebiopsy:['H&E overview','H&E zoom'],egfr_t790m_c797s:['targeted EGFR report'],resistance_panel:['tissue resistance NGS','MET CNV viewer','integrated tissue NGS']},completion:['rebiopsy_tissue','resistance_panel']});

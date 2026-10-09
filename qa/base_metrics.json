@@ -85,60 +85,6 @@
       "readyState": "interactive"
     },
     {
-      "actor": "DOMContentLoaded:index:inline:23:v240u_lab_b1_preanalytics_deepdive_patch:v240uBoot",
-      "caseId": "MTB_NSCLC_001_v0_6",
-      "step": "intake",
-      "readyState": "interactive"
-    },
-    {
-      "actor": "DOMContentLoaded:index:inline:24:v240v_lab_b2_run_qc_deepdive_patch:v240vBoot",
-      "caseId": "MTB_NSCLC_001_v0_6",
-      "step": "intake",
-      "readyState": "interactive"
-    },
-    {
-      "actor": "DOMContentLoaded:index:inline:25:v240w_lab_b3_postanalytics_deepdive_patch:v240wBoot",
-      "caseId": "MTB_NSCLC_001_v0_6",
-      "step": "intake",
-      "readyState": "interactive"
-    },
-    {
-      "actor": "DOMContentLoaded:index:inline:26:v240x_lab_b4_c4_deepdive_patch:v240xBoot",
-      "caseId": "MTB_NSCLC_001_v0_6",
-      "step": "intake",
-      "readyState": "interactive"
-    },
-    {
-      "actor": "DOMContentLoaded:index:inline:27:v240y_lab_b5_digital_data_lims_deepdive_patch:v240yBoot",
-      "caseId": "MTB_NSCLC_001_v0_6",
-      "step": "intake",
-      "readyState": "interactive"
-    },
-    {
-      "actor": "DOMContentLoaded:index:inline:29:v240z2_res_r1_deepdive:v240z2Boot",
-      "caseId": "MTB_NSCLC_001_v0_6",
-      "step": "intake",
-      "readyState": "interactive"
-    },
-    {
-      "actor": "DOMContentLoaded:index:inline:30:v240z3_res_r2_deepdive:v240z3Boot",
-      "caseId": "MTB_NSCLC_001_v0_6",
-      "step": "intake",
-      "readyState": "interactive"
-    },
-    {
-      "actor": "DOMContentLoaded:index:inline:31:v240z4_res_r3_deepdive:v240z4Boot",
-      "caseId": "MTB_NSCLC_001_v0_6",
-      "step": "intake",
-      "readyState": "interactive"
-    },
-    {
-      "actor": "DOMContentLoaded:index:inline:32:v240z5_res_r4_deepdive:v240z5Boot",
-      "caseId": "MTB_NSCLC_001_v0_6",
-      "step": "intake",
-      "readyState": "interactive"
-    },
-    {
       "actor": "DOMContentLoaded:index:inline:33:v240z6_res_r5_deepdive:v240z6Boot",
       "caseId": "MTB_NSCLC_001_v0_6",
       "step": "intake",
@@ -573,44 +519,8 @@
       "corePaint": 1
     },
     {
-      "actor": "DOMContentLoaded:index:inline:23:v240u_lab_b1_preanalytics_deepdive_patch:v240uBoot",
-      "corePaint": 1
-    },
-    {
-      "actor": "DOMContentLoaded:index:inline:24:v240v_lab_b2_run_qc_deepdive_patch:v240vBoot",
-      "corePaint": 1
-    },
-    {
-      "actor": "DOMContentLoaded:index:inline:25:v240w_lab_b3_postanalytics_deepdive_patch:v240wBoot",
-      "corePaint": 1
-    },
-    {
-      "actor": "DOMContentLoaded:index:inline:26:v240x_lab_b4_c4_deepdive_patch:v240xBoot",
-      "corePaint": 1
-    },
-    {
-      "actor": "DOMContentLoaded:index:inline:27:v240y_lab_b5_digital_data_lims_deepdive_patch:v240yBoot",
-      "corePaint": 1
-    },
-    {
       "actor": "DOMContentLoaded:i18n/legacy/legacy_v240z_lab_i18n.js:anonymous",
       "corePaint": 0
-    },
-    {
-      "actor": "DOMContentLoaded:index:inline:29:v240z2_res_r1_deepdive:v240z2Boot",
-      "corePaint": 1
-    },
-    {
-      "actor": "DOMContentLoaded:index:inline:30:v240z3_res_r2_deepdive:v240z3Boot",
-      "corePaint": 1
-    },
-    {
-      "actor": "DOMContentLoaded:index:inline:31:v240z4_res_r3_deepdive:v240z4Boot",
-      "corePaint": 1
-    },
-    {
-      "actor": "DOMContentLoaded:index:inline:32:v240z5_res_r4_deepdive:v240z5Boot",
-      "corePaint": 1
     },
     {
       "actor": "DOMContentLoaded:index:inline:33:v240z6_res_r5_deepdive:v240z6Boot",
@@ -773,27 +683,27 @@
       "corePaint": 1
     }
   ],
-  "root": "/workspace/scratch/1f1f0706e0d2/work/a6_13/candidate",
+  "root": "/workspace/scratch/1f1f0706e0d2/work/a6_14/candidate",
   "boot": {
     "timelineWrites": 8,
-    "timelineCalls": 100,
-    "corePaint": 57,
+    "timelineCalls": 82,
+    "corePaint": 48,
     "afterApplyFrames": 264,
     "observersCreated": 5,
     "observersObserved": 5,
     "observerDisconnects": 0,
-    "scheduled": 1018,
-    "DOMContentLoadedCallbacks": 89
+    "scheduled": 847,
+    "DOMContentLoadedCallbacks": 80
   },
   "final": {
     "timelineWrites": 19,
-    "timelineCalls": 124,
-    "corePaint": 69,
+    "timelineCalls": 106,
+    "corePaint": 60,
     "afterApplyFrames": 504,
     "observersCreated": 5,
     "observersObserved": 5,
     "observerDisconnects": 0,
-    "scheduled": 1294
+    "scheduled": 1123
   },
   "phases": [
     {

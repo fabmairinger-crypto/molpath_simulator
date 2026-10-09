@@ -226,28 +226,28 @@
           },
           "optionOrder": {
             "ovar_clinical_question": [
-              "therapy_evidence",
-              "familial_risk",
               "entity_confirmation",
-              "resistance_cause"
+              "therapy_evidence",
+              "resistance_cause",
+              "familial_risk"
             ],
             "ovar_archival_material": [
-              "sample_scope",
               "omit_assay_qc",
+              "sample_scope",
               "represents_recurrence",
               "feasibility_run_qc"
             ],
             "ovar_brca1_reliability": [
               "reliable_prediction",
+              "coverage_suffices",
               "pathogenicity_vs_detection",
-              "hrd_overrides_variant",
-              "coverage_suffices"
+              "hrd_overrides_variant"
             ],
             "ovar_confirmation_strategy": [
+              "release_with_comment",
               "plasma_replaces_hrd",
               "discard_variant",
-              "ctdna_confirmation",
-              "release_with_comment"
+              "ctdna_confirmation"
             ]
           }
         }
@@ -639,28 +639,28 @@
           },
           "optionOrder": {
             "ovar_clinical_question": [
-              "entity_confirmation",
               "therapy_evidence",
-              "resistance_cause",
-              "familial_risk"
+              "entity_confirmation",
+              "familial_risk",
+              "resistance_cause"
             ],
             "ovar_archival_material": [
-              "represents_recurrence",
-              "feasibility_run_qc",
               "omit_assay_qc",
+              "feasibility_run_qc",
+              "represents_recurrence",
               "sample_scope"
             ],
             "ovar_brca1_reliability": [
-              "reliable_prediction",
               "coverage_suffices",
+              "reliable_prediction",
               "pathogenicity_vs_detection",
               "hrd_overrides_variant"
             ],
             "ovar_confirmation_strategy": [
-              "discard_variant",
-              "plasma_replaces_hrd",
               "ctdna_confirmation",
-              "release_with_comment"
+              "release_with_comment",
+              "plasma_replaces_hrd",
+              "discard_variant"
             ]
           }
         }
@@ -1035,8 +1035,8 @@
               "therapy_evidence"
             ],
             "ovar_archival_material": [
-              "feasibility_run_qc",
-              "sample_scope"
+              "sample_scope",
+              "feasibility_run_qc"
             ],
             "ovar_brca1_reliability": [
               "pathogenicity_vs_detection"
@@ -1052,16 +1052,16 @@
           },
           "optionOrder": {
             "ovar_clinical_question": [
-              "entity_confirmation",
               "familial_risk",
               "therapy_evidence",
-              "resistance_cause"
+              "resistance_cause",
+              "entity_confirmation"
             ],
             "ovar_archival_material": [
+              "sample_scope",
               "omit_assay_qc",
               "feasibility_run_qc",
-              "represents_recurrence",
-              "sample_scope"
+              "represents_recurrence"
             ],
             "ovar_brca1_reliability": [
               "hrd_overrides_variant",
@@ -1071,9 +1071,9 @@
             ],
             "ovar_confirmation_strategy": [
               "ctdna_confirmation",
-              "discard_variant",
+              "release_with_comment",
               "plasma_replaces_hrd",
-              "release_with_comment"
+              "discard_variant"
             ]
           }
         }
@@ -1448,8 +1448,8 @@
               "therapy_evidence"
             ],
             "ovar_archival_material": [
-              "sample_scope",
-              "feasibility_run_qc"
+              "feasibility_run_qc",
+              "sample_scope"
             ],
             "ovar_brca1_reliability": [
               "pathogenicity_vs_detection"
@@ -1466,26 +1466,26 @@
           "optionOrder": {
             "ovar_clinical_question": [
               "resistance_cause",
-              "familial_risk",
               "therapy_evidence",
-              "entity_confirmation"
+              "entity_confirmation",
+              "familial_risk"
             ],
             "ovar_archival_material": [
-              "sample_scope",
-              "omit_assay_qc",
+              "represents_recurrence",
               "feasibility_run_qc",
-              "represents_recurrence"
+              "omit_assay_qc",
+              "sample_scope"
             ],
             "ovar_brca1_reliability": [
-              "coverage_suffices",
               "reliable_prediction",
-              "pathogenicity_vs_detection",
-              "hrd_overrides_variant"
+              "hrd_overrides_variant",
+              "coverage_suffices",
+              "pathogenicity_vs_detection"
             ],
             "ovar_confirmation_strategy": [
-              "discard_variant",
               "release_with_comment",
               "plasma_replaces_hrd",
+              "discard_variant",
               "ctdna_confirmation"
             ]
           }
@@ -1861,8 +1861,8 @@
               "therapy_evidence"
             ],
             "ovar_archival_material": [
-              "sample_scope",
-              "feasibility_run_qc"
+              "feasibility_run_qc",
+              "sample_scope"
             ],
             "ovar_brca1_reliability": [
               "pathogenicity_vs_detection"
@@ -1880,20 +1880,20 @@
             "ovar_clinical_question": [
               "familial_risk",
               "therapy_evidence",
-              "resistance_cause",
-              "entity_confirmation"
+              "entity_confirmation",
+              "resistance_cause"
             ],
             "ovar_archival_material": [
-              "omit_assay_qc",
-              "represents_recurrence",
+              "feasibility_run_qc",
               "sample_scope",
-              "feasibility_run_qc"
+              "omit_assay_qc",
+              "represents_recurrence"
             ],
             "ovar_brca1_reliability": [
-              "reliable_prediction",
               "pathogenicity_vs_detection",
-              "coverage_suffices",
-              "hrd_overrides_variant"
+              "hrd_overrides_variant",
+              "reliable_prediction",
+              "coverage_suffices"
             ],
             "ovar_confirmation_strategy": [
               "discard_variant",
@@ -2274,8 +2274,8 @@
               "therapy_evidence"
             ],
             "ovar_archival_material": [
-              "feasibility_run_qc",
-              "sample_scope"
+              "sample_scope",
+              "feasibility_run_qc"
             ],
             "ovar_brca1_reliability": [
               "pathogenicity_vs_detection"
@@ -2291,26 +2291,26 @@
           },
           "optionOrder": {
             "ovar_clinical_question": [
-              "resistance_cause",
-              "familial_risk",
               "entity_confirmation",
-              "therapy_evidence"
+              "therapy_evidence",
+              "resistance_cause",
+              "familial_risk"
             ],
             "ovar_archival_material": [
-              "omit_assay_qc",
-              "feasibility_run_qc",
+              "sample_scope",
               "represents_recurrence",
-              "sample_scope"
+              "feasibility_run_qc",
+              "omit_assay_qc"
             ],
             "ovar_brca1_reliability": [
-              "pathogenicity_vs_detection",
               "hrd_overrides_variant",
+              "pathogenicity_vs_detection",
               "reliable_prediction",
               "coverage_suffices"
             ],
             "ovar_confirmation_strategy": [
-              "ctdna_confirmation",
               "discard_variant",
+              "ctdna_confirmation",
               "release_with_comment",
               "plasma_replaces_hrd"
             ]
@@ -2687,8 +2687,8 @@
               "therapy_evidence"
             ],
             "ovar_archival_material": [
-              "sample_scope",
-              "feasibility_run_qc"
+              "feasibility_run_qc",
+              "sample_scope"
             ],
             "ovar_brca1_reliability": [
               "pathogenicity_vs_detection"
@@ -2704,27 +2704,27 @@
           },
           "optionOrder": {
             "ovar_clinical_question": [
-              "therapy_evidence",
-              "familial_risk",
               "resistance_cause",
-              "entity_confirmation"
+              "familial_risk",
+              "entity_confirmation",
+              "therapy_evidence"
             ],
             "ovar_archival_material": [
-              "sample_scope",
-              "omit_assay_qc",
               "feasibility_run_qc",
-              "represents_recurrence"
+              "represents_recurrence",
+              "sample_scope",
+              "omit_assay_qc"
             ],
             "ovar_brca1_reliability": [
-              "coverage_suffices",
               "pathogenicity_vs_detection",
               "hrd_overrides_variant",
-              "reliable_prediction"
+              "reliable_prediction",
+              "coverage_suffices"
             ],
             "ovar_confirmation_strategy": [
-              "ctdna_confirmation",
-              "discard_variant",
               "release_with_comment",
+              "discard_variant",
+              "ctdna_confirmation",
               "plasma_replaces_hrd"
             ]
           }
@@ -3117,28 +3117,28 @@
           },
           "optionOrder": {
             "ovar_clinical_question": [
+              "familial_risk",
               "resistance_cause",
-              "entity_confirmation",
               "therapy_evidence",
-              "familial_risk"
+              "entity_confirmation"
             ],
             "ovar_archival_material": [
               "feasibility_run_qc",
-              "represents_recurrence",
               "omit_assay_qc",
-              "sample_scope"
+              "sample_scope",
+              "represents_recurrence"
             ],
             "ovar_brca1_reliability": [
               "pathogenicity_vs_detection",
-              "hrd_overrides_variant",
               "reliable_prediction",
+              "hrd_overrides_variant",
               "coverage_suffices"
             ],
             "ovar_confirmation_strategy": [
-              "discard_variant",
+              "release_with_comment",
               "ctdna_confirmation",
               "plasma_replaces_hrd",
-              "release_with_comment"
+              "discard_variant"
             ]
           }
         }
@@ -3531,26 +3531,26 @@
           "optionOrder": {
             "ovar_clinical_question": [
               "therapy_evidence",
-              "entity_confirmation",
+              "resistance_cause",
               "familial_risk",
-              "resistance_cause"
+              "entity_confirmation"
             ],
             "ovar_archival_material": [
-              "omit_assay_qc",
               "represents_recurrence",
+              "omit_assay_qc",
               "feasibility_run_qc",
               "sample_scope"
             ],
             "ovar_brca1_reliability": [
+              "pathogenicity_vs_detection",
               "coverage_suffices",
-              "reliable_prediction",
               "hrd_overrides_variant",
-              "pathogenicity_vs_detection"
+              "reliable_prediction"
             ],
             "ovar_confirmation_strategy": [
+              "plasma_replaces_hrd",
               "ctdna_confirmation",
               "discard_variant",
-              "plasma_replaces_hrd",
               "release_with_comment"
             ]
           }
@@ -3944,27 +3944,27 @@
           "optionOrder": {
             "ovar_clinical_question": [
               "entity_confirmation",
-              "familial_risk",
+              "resistance_cause",
               "therapy_evidence",
-              "resistance_cause"
+              "familial_risk"
             ],
             "ovar_archival_material": [
+              "sample_scope",
               "omit_assay_qc",
               "represents_recurrence",
-              "sample_scope",
               "feasibility_run_qc"
             ],
             "ovar_brca1_reliability": [
+              "hrd_overrides_variant",
               "coverage_suffices",
               "reliable_prediction",
-              "hrd_overrides_variant",
               "pathogenicity_vs_detection"
             ],
             "ovar_confirmation_strategy": [
-              "plasma_replaces_hrd",
               "ctdna_confirmation",
+              "discard_variant",
               "release_with_comment",
-              "discard_variant"
+              "plasma_replaces_hrd"
             ]
           }
         }
@@ -4357,25 +4357,25 @@
           "optionOrder": {
             "ovar_clinical_question": [
               "resistance_cause",
-              "entity_confirmation",
+              "familial_risk",
               "therapy_evidence",
-              "familial_risk"
+              "entity_confirmation"
             ],
             "ovar_archival_material": [
               "sample_scope",
               "represents_recurrence",
-              "feasibility_run_qc",
-              "omit_assay_qc"
+              "omit_assay_qc",
+              "feasibility_run_qc"
             ],
             "ovar_brca1_reliability": [
               "pathogenicity_vs_detection",
-              "coverage_suffices",
               "reliable_prediction",
-              "hrd_overrides_variant"
+              "hrd_overrides_variant",
+              "coverage_suffices"
             ],
             "ovar_confirmation_strategy": [
-              "release_with_comment",
               "discard_variant",
+              "release_with_comment",
               "plasma_replaces_hrd",
               "ctdna_confirmation"
             ]
@@ -4556,9 +4556,9 @@
       "detail": {
         "uniqueOrders": 23,
         "correctPositions": [
-          1,
-          0,
           3,
+          0,
+          1,
           2
         ]
       }
@@ -4904,28 +4904,28 @@
               },
               "optionOrder": {
                 "ovar_clinical_question": [
-                  "therapy_evidence",
-                  "familial_risk",
                   "entity_confirmation",
-                  "resistance_cause"
+                  "therapy_evidence",
+                  "resistance_cause",
+                  "familial_risk"
                 ],
                 "ovar_archival_material": [
-                  "sample_scope",
                   "omit_assay_qc",
+                  "sample_scope",
                   "represents_recurrence",
                   "feasibility_run_qc"
                 ],
                 "ovar_brca1_reliability": [
                   "reliable_prediction",
+                  "coverage_suffices",
                   "pathogenicity_vs_detection",
-                  "hrd_overrides_variant",
-                  "coverage_suffices"
+                  "hrd_overrides_variant"
                 ],
                 "ovar_confirmation_strategy": [
+                  "release_with_comment",
                   "plasma_replaces_hrd",
                   "discard_variant",
-                  "ctdna_confirmation",
-                  "release_with_comment"
+                  "ctdna_confirmation"
                 ]
               }
             }
@@ -5547,12 +5547,12 @@
                 "score": 1,
                 "multi": true,
                 "answers": [
-                  "sample_scope",
-                  "feasibility_run_qc"
+                  "feasibility_run_qc",
+                  "sample_scope"
                 ],
                 "correct": [
-                  "sample_scope",
-                  "feasibility_run_qc"
+                  "feasibility_run_qc",
+                  "sample_scope"
                 ]
               },
               {
@@ -5702,7 +5702,7 @@
                 "score": 0,
                 "multi": false,
                 "answers": [
-                  "entity_confirmation"
+                  "resistance_cause"
                 ],
                 "correct": [
                   "therapy_evidence"
@@ -5714,11 +5714,11 @@
                 "score": 0,
                 "multi": true,
                 "answers": [
-                  "represents_recurrence"
+                  "omit_assay_qc"
                 ],
                 "correct": [
-                  "feasibility_run_qc",
-                  "sample_scope"
+                  "sample_scope",
+                  "feasibility_run_qc"
                 ]
               },
               {
@@ -5727,7 +5727,7 @@
                 "score": 0,
                 "multi": false,
                 "answers": [
-                  "reliable_prediction"
+                  "hrd_overrides_variant"
                 ],
                 "correct": [
                   "pathogenicity_vs_detection"
@@ -5739,7 +5739,7 @@
                 "score": 0,
                 "multi": false,
                 "answers": [
-                  "release_with_comment"
+                  "plasma_replaces_hrd"
                 ],
                 "correct": [
                   "ctdna_confirmation"
@@ -5973,28 +5973,28 @@
               },
               "optionOrder": {
                 "ovar_clinical_question": [
-                  "entity_confirmation",
                   "therapy_evidence",
-                  "resistance_cause",
-                  "familial_risk"
+                  "entity_confirmation",
+                  "familial_risk",
+                  "resistance_cause"
                 ],
                 "ovar_archival_material": [
-                  "represents_recurrence",
-                  "feasibility_run_qc",
                   "omit_assay_qc",
+                  "feasibility_run_qc",
+                  "represents_recurrence",
                   "sample_scope"
                 ],
                 "ovar_brca1_reliability": [
-                  "reliable_prediction",
                   "coverage_suffices",
+                  "reliable_prediction",
                   "pathogenicity_vs_detection",
                   "hrd_overrides_variant"
                 ],
                 "ovar_confirmation_strategy": [
-                  "discard_variant",
-                  "plasma_replaces_hrd",
                   "ctdna_confirmation",
-                  "release_with_comment"
+                  "release_with_comment",
+                  "plasma_replaces_hrd",
+                  "discard_variant"
                 ]
               }
             }
@@ -6451,12 +6451,12 @@
                 "score": 1,
                 "multi": true,
                 "answers": [
-                  "sample_scope",
-                  "feasibility_run_qc"
+                  "feasibility_run_qc",
+                  "sample_scope"
                 ],
                 "correct": [
-                  "sample_scope",
-                  "feasibility_run_qc"
+                  "feasibility_run_qc",
+                  "sample_scope"
                 ]
               },
               {
@@ -6616,12 +6616,12 @@
                 "score": 1,
                 "multi": true,
                 "answers": [
-                  "feasibility_run_qc",
-                  "sample_scope"
+                  "sample_scope",
+                  "feasibility_run_qc"
                 ],
                 "correct": [
-                  "feasibility_run_qc",
-                  "sample_scope"
+                  "sample_scope",
+                  "feasibility_run_qc"
                 ]
               },
               {
@@ -6771,7 +6771,7 @@
                 "score": 0,
                 "multi": false,
                 "answers": [
-                  "familial_risk"
+                  "resistance_cause"
                 ],
                 "correct": [
                   "therapy_evidence"
@@ -6783,11 +6783,11 @@
                 "score": 0,
                 "multi": true,
                 "answers": [
-                  "represents_recurrence"
+                  "omit_assay_qc"
                 ],
                 "correct": [
-                  "sample_scope",
-                  "feasibility_run_qc"
+                  "feasibility_run_qc",
+                  "sample_scope"
                 ]
               },
               {
@@ -6808,7 +6808,7 @@
                 "score": 0,
                 "multi": false,
                 "answers": [
-                  "plasma_replaces_hrd"
+                  "release_with_comment"
                 ],
                 "correct": [
                   "ctdna_confirmation"
@@ -7025,8 +7025,8 @@
                   "therapy_evidence"
                 ],
                 "ovar_archival_material": [
-                  "feasibility_run_qc",
-                  "sample_scope"
+                  "sample_scope",
+                  "feasibility_run_qc"
                 ],
                 "ovar_brca1_reliability": [
                   "pathogenicity_vs_detection"
@@ -7042,16 +7042,16 @@
               },
               "optionOrder": {
                 "ovar_clinical_question": [
-                  "entity_confirmation",
                   "familial_risk",
                   "therapy_evidence",
-                  "resistance_cause"
+                  "resistance_cause",
+                  "entity_confirmation"
                 ],
                 "ovar_archival_material": [
+                  "sample_scope",
                   "omit_assay_qc",
                   "feasibility_run_qc",
-                  "represents_recurrence",
-                  "sample_scope"
+                  "represents_recurrence"
                 ],
                 "ovar_brca1_reliability": [
                   "hrd_overrides_variant",
@@ -7061,9 +7061,9 @@
                 ],
                 "ovar_confirmation_strategy": [
                   "ctdna_confirmation",
-                  "discard_variant",
+                  "release_with_comment",
                   "plasma_replaces_hrd",
-                  "release_with_comment"
+                  "discard_variant"
                 ]
               }
             }
@@ -7357,12 +7357,12 @@
                 "score": 1,
                 "multi": true,
                 "answers": [
-                  "feasibility_run_qc",
-                  "sample_scope"
+                  "sample_scope",
+                  "feasibility_run_qc"
                 ],
                 "correct": [
-                  "feasibility_run_qc",
-                  "sample_scope"
+                  "sample_scope",
+                  "feasibility_run_qc"
                 ]
               },
               {
@@ -7520,12 +7520,12 @@
                 "score": 1,
                 "multi": true,
                 "answers": [
-                  "sample_scope",
-                  "feasibility_run_qc"
+                  "feasibility_run_qc",
+                  "sample_scope"
                 ],
                 "correct": [
-                  "sample_scope",
-                  "feasibility_run_qc"
+                  "feasibility_run_qc",
+                  "sample_scope"
                 ]
               },
               {
@@ -7685,12 +7685,12 @@
                 "score": 1,
                 "multi": true,
                 "answers": [
-                  "sample_scope",
-                  "feasibility_run_qc"
+                  "feasibility_run_qc",
+                  "sample_scope"
                 ],
                 "correct": [
-                  "sample_scope",
-                  "feasibility_run_qc"
+                  "feasibility_run_qc",
+                  "sample_scope"
                 ]
               },
               {
@@ -7855,8 +7855,8 @@
                   "omit_assay_qc"
                 ],
                 "correct": [
-                  "feasibility_run_qc",
-                  "sample_scope"
+                  "sample_scope",
+                  "feasibility_run_qc"
                 ]
               },
               {
@@ -7865,7 +7865,7 @@
                 "score": 0,
                 "multi": false,
                 "answers": [
-                  "reliable_prediction"
+                  "coverage_suffices"
                 ],
                 "correct": [
                   "pathogenicity_vs_detection"
@@ -7877,7 +7877,7 @@
                 "score": 0,
                 "multi": false,
                 "answers": [
-                  "discard_variant"
+                  "plasma_replaces_hrd"
                 ],
                 "correct": [
                   "ctdna_confirmation"
@@ -8094,8 +8094,8 @@
                   "therapy_evidence"
                 ],
                 "ovar_archival_material": [
-                  "sample_scope",
-                  "feasibility_run_qc"
+                  "feasibility_run_qc",
+                  "sample_scope"
                 ],
                 "ovar_brca1_reliability": [
                   "pathogenicity_vs_detection"
@@ -8112,26 +8112,26 @@
               "optionOrder": {
                 "ovar_clinical_question": [
                   "resistance_cause",
-                  "familial_risk",
                   "therapy_evidence",
-                  "entity_confirmation"
+                  "entity_confirmation",
+                  "familial_risk"
                 ],
                 "ovar_archival_material": [
-                  "sample_scope",
-                  "omit_assay_qc",
+                  "represents_recurrence",
                   "feasibility_run_qc",
-                  "represents_recurrence"
+                  "omit_assay_qc",
+                  "sample_scope"
                 ],
                 "ovar_brca1_reliability": [
-                  "coverage_suffices",
                   "reliable_prediction",
-                  "pathogenicity_vs_detection",
-                  "hrd_overrides_variant"
+                  "hrd_overrides_variant",
+                  "coverage_suffices",
+                  "pathogenicity_vs_detection"
                 ],
                 "ovar_confirmation_strategy": [
-                  "discard_variant",
                   "release_with_comment",
                   "plasma_replaces_hrd",
+                  "discard_variant",
                   "ctdna_confirmation"
                 ]
               }
@@ -8426,12 +8426,12 @@
                 "score": 1,
                 "multi": true,
                 "answers": [
-                  "sample_scope",
-                  "feasibility_run_qc"
+                  "feasibility_run_qc",
+                  "sample_scope"
                 ],
                 "correct": [
-                  "sample_scope",
-                  "feasibility_run_qc"
+                  "feasibility_run_qc",
+                  "sample_scope"
                 ]
               },
               {
@@ -8589,12 +8589,12 @@
                 "score": 1,
                 "multi": true,
                 "answers": [
-                  "feasibility_run_qc",
-                  "sample_scope"
+                  "sample_scope",
+                  "feasibility_run_qc"
                 ],
                 "correct": [
-                  "feasibility_run_qc",
-                  "sample_scope"
+                  "sample_scope",
+                  "feasibility_run_qc"
                 ]
               },
               {
@@ -8754,12 +8754,12 @@
                 "score": 1,
                 "multi": true,
                 "answers": [
-                  "sample_scope",
-                  "feasibility_run_qc"
+                  "feasibility_run_qc",
+                  "sample_scope"
                 ],
                 "correct": [
-                  "sample_scope",
-                  "feasibility_run_qc"
+                  "feasibility_run_qc",
+                  "sample_scope"
                 ]
               },
               {
@@ -8909,7 +8909,7 @@
                 "score": 0,
                 "multi": false,
                 "answers": [
-                  "resistance_cause"
+                  "entity_confirmation"
                 ],
                 "correct": [
                   "therapy_evidence"
@@ -8921,11 +8921,11 @@
                 "score": 0,
                 "multi": true,
                 "answers": [
-                  "omit_assay_qc"
+                  "represents_recurrence"
                 ],
                 "correct": [
-                  "sample_scope",
-                  "feasibility_run_qc"
+                  "feasibility_run_qc",
+                  "sample_scope"
                 ]
               },
               {
@@ -8934,7 +8934,7 @@
                 "score": 0,
                 "multi": false,
                 "answers": [
-                  "reliable_prediction"
+                  "coverage_suffices"
                 ],
                 "correct": [
                   "pathogenicity_vs_detection"
@@ -9163,8 +9163,8 @@
                   "therapy_evidence"
                 ],
                 "ovar_archival_material": [
-                  "sample_scope",
-                  "feasibility_run_qc"
+                  "feasibility_run_qc",
+                  "sample_scope"
                 ],
                 "ovar_brca1_reliability": [
                   "pathogenicity_vs_detection"
@@ -9182,20 +9182,20 @@
                 "ovar_clinical_question": [
                   "familial_risk",
                   "therapy_evidence",
-                  "resistance_cause",
-                  "entity_confirmation"
+                  "entity_confirmation",
+                  "resistance_cause"
                 ],
                 "ovar_archival_material": [
-                  "omit_assay_qc",
-                  "represents_recurrence",
+                  "feasibility_run_qc",
                   "sample_scope",
-                  "feasibility_run_qc"
+                  "omit_assay_qc",
+                  "represents_recurrence"
                 ],
                 "ovar_brca1_reliability": [
-                  "reliable_prediction",
                   "pathogenicity_vs_detection",
-                  "coverage_suffices",
-                  "hrd_overrides_variant"
+                  "hrd_overrides_variant",
+                  "reliable_prediction",
+                  "coverage_suffices"
                 ],
                 "ovar_confirmation_strategy": [
                   "discard_variant",
@@ -9495,12 +9495,12 @@
                 "score": 1,
                 "multi": true,
                 "answers": [
-                  "sample_scope",
-                  "feasibility_run_qc"
+                  "feasibility_run_qc",
+                  "sample_scope"
                 ],
                 "correct": [
-                  "sample_scope",
-                  "feasibility_run_qc"
+                  "feasibility_run_qc",
+                  "sample_scope"
                 ]
               },
               {
@@ -9658,12 +9658,12 @@
                 "score": 1,
                 "multi": true,
                 "answers": [
-                  "feasibility_run_qc",
-                  "sample_scope"
+                  "sample_scope",
+                  "feasibility_run_qc"
                 ],
                 "correct": [
-                  "feasibility_run_qc",
-                  "sample_scope"
+                  "sample_scope",
+                  "feasibility_run_qc"
                 ]
               },
               {
@@ -9823,12 +9823,12 @@
                 "score": 1,
                 "multi": true,
                 "answers": [
-                  "sample_scope",
-                  "feasibility_run_qc"
+                  "feasibility_run_qc",
+                  "sample_scope"
                 ],
                 "correct": [
-                  "sample_scope",
-                  "feasibility_run_qc"
+                  "feasibility_run_qc",
+                  "sample_scope"
                 ]
               },
               {
@@ -9978,7 +9978,7 @@
                 "score": 0,
                 "multi": false,
                 "answers": [
-                  "entity_confirmation"
+                  "familial_risk"
                 ],
                 "correct": [
                   "therapy_evidence"
@@ -9990,11 +9990,11 @@
                 "score": 0,
                 "multi": true,
                 "answers": [
-                  "represents_recurrence"
+                  "omit_assay_qc"
                 ],
                 "correct": [
-                  "feasibility_run_qc",
-                  "sample_scope"
+                  "sample_scope",
+                  "feasibility_run_qc"
                 ]
               },
               {
@@ -10232,8 +10232,8 @@
                   "therapy_evidence"
                 ],
                 "ovar_archival_material": [
-                  "feasibility_run_qc",
-                  "sample_scope"
+                  "sample_scope",
+                  "feasibility_run_qc"
                 ],
                 "ovar_brca1_reliability": [
                   "pathogenicity_vs_detection"
@@ -10249,26 +10249,26 @@
               },
               "optionOrder": {
                 "ovar_clinical_question": [
-                  "resistance_cause",
-                  "familial_risk",
                   "entity_confirmation",
-                  "therapy_evidence"
+                  "therapy_evidence",
+                  "resistance_cause",
+                  "familial_risk"
                 ],
                 "ovar_archival_material": [
-                  "omit_assay_qc",
-                  "feasibility_run_qc",
+                  "sample_scope",
                   "represents_recurrence",
-                  "sample_scope"
+                  "feasibility_run_qc",
+                  "omit_assay_qc"
                 ],
                 "ovar_brca1_reliability": [
-                  "pathogenicity_vs_detection",
                   "hrd_overrides_variant",
+                  "pathogenicity_vs_detection",
                   "reliable_prediction",
                   "coverage_suffices"
                 ],
                 "ovar_confirmation_strategy": [
-                  "ctdna_confirmation",
                   "discard_variant",
+                  "ctdna_confirmation",
                   "release_with_comment",
                   "plasma_replaces_hrd"
                 ]
@@ -10564,12 +10564,12 @@
                 "score": 1,
                 "multi": true,
                 "answers": [
-                  "feasibility_run_qc",
-                  "sample_scope"
+                  "sample_scope",
+                  "feasibility_run_qc"
                 ],
                 "correct": [
-                  "feasibility_run_qc",
-                  "sample_scope"
+                  "sample_scope",
+                  "feasibility_run_qc"
                 ]
               },
               {
@@ -10727,12 +10727,12 @@
                 "score": 1,
                 "multi": true,
                 "answers": [
-                  "sample_scope",
-                  "feasibility_run_qc"
+                  "feasibility_run_qc",
+                  "sample_scope"
                 ],
                 "correct": [
-                  "sample_scope",
-                  "feasibility_run_qc"
+                  "feasibility_run_qc",
+                  "sample_scope"
                 ]
               },
               {
@@ -11047,7 +11047,7 @@
                 "score": 0,
                 "multi": false,
                 "answers": [
-                  "resistance_cause"
+                  "familial_risk"
                 ],
                 "correct": [
                   "therapy_evidence"
@@ -11062,8 +11062,8 @@
                   "represents_recurrence"
                 ],
                 "correct": [
-                  "feasibility_run_qc",
-                  "sample_scope"
+                  "sample_scope",
+                  "feasibility_run_qc"
                 ]
               },
               {
@@ -11072,7 +11072,7 @@
                 "score": 0,
                 "multi": false,
                 "answers": [
-                  "reliable_prediction"
+                  "coverage_suffices"
                 ],
                 "correct": [
                   "pathogenicity_vs_detection"
@@ -11301,8 +11301,8 @@
                   "therapy_evidence"
                 ],
                 "ovar_archival_material": [
-                  "sample_scope",
-                  "feasibility_run_qc"
+                  "feasibility_run_qc",
+                  "sample_scope"
                 ],
                 "ovar_brca1_reliability": [
                   "pathogenicity_vs_detection"
@@ -11318,27 +11318,27 @@
               },
               "optionOrder": {
                 "ovar_clinical_question": [
-                  "therapy_evidence",
-                  "familial_risk",
                   "resistance_cause",
-                  "entity_confirmation"
+                  "familial_risk",
+                  "entity_confirmation",
+                  "therapy_evidence"
                 ],
                 "ovar_archival_material": [
-                  "sample_scope",
-                  "omit_assay_qc",
                   "feasibility_run_qc",
-                  "represents_recurrence"
+                  "represents_recurrence",
+                  "sample_scope",
+                  "omit_assay_qc"
                 ],
                 "ovar_brca1_reliability": [
-                  "coverage_suffices",
                   "pathogenicity_vs_detection",
                   "hrd_overrides_variant",
-                  "reliable_prediction"
+                  "reliable_prediction",
+                  "coverage_suffices"
                 ],
                 "ovar_confirmation_strategy": [
-                  "ctdna_confirmation",
-                  "discard_variant",
                   "release_with_comment",
+                  "discard_variant",
+                  "ctdna_confirmation",
                   "plasma_replaces_hrd"
                 ]
               }
@@ -11633,12 +11633,12 @@
                 "score": 1,
                 "multi": true,
                 "answers": [
-                  "sample_scope",
-                  "feasibility_run_qc"
+                  "feasibility_run_qc",
+                  "sample_scope"
                 ],
                 "correct": [
-                  "sample_scope",
-                  "feasibility_run_qc"
+                  "feasibility_run_qc",
+                  "sample_scope"
                 ]
               },
               {
@@ -11796,12 +11796,12 @@
                 "score": 1,
                 "multi": true,
                 "answers": [
-                  "feasibility_run_qc",
-                  "sample_scope"
+                  "sample_scope",
+                  "feasibility_run_qc"
                 ],
                 "correct": [
-                  "feasibility_run_qc",
-                  "sample_scope"
+                  "sample_scope",
+                  "feasibility_run_qc"
                 ]
               },
               {
@@ -11961,12 +11961,12 @@
                 "score": 1,
                 "multi": true,
                 "answers": [
-                  "feasibility_run_qc",
-                  "sample_scope"
+                  "sample_scope",
+                  "feasibility_run_qc"
                 ],
                 "correct": [
-                  "feasibility_run_qc",
-                  "sample_scope"
+                  "sample_scope",
+                  "feasibility_run_qc"
                 ]
               },
               {
@@ -12116,7 +12116,7 @@
                 "score": 0,
                 "multi": false,
                 "answers": [
-                  "familial_risk"
+                  "entity_confirmation"
                 ],
                 "correct": [
                   "therapy_evidence"
@@ -12141,7 +12141,7 @@
                 "score": 0,
                 "multi": false,
                 "answers": [
-                  "coverage_suffices"
+                  "reliable_prediction"
                 ],
                 "correct": [
                   "pathogenicity_vs_detection"
@@ -12153,7 +12153,7 @@
                 "score": 0,
                 "multi": false,
                 "answers": [
-                  "discard_variant"
+                  "plasma_replaces_hrd"
                 ],
                 "correct": [
                   "ctdna_confirmation"
@@ -12387,28 +12387,28 @@
               },
               "optionOrder": {
                 "ovar_clinical_question": [
+                  "familial_risk",
                   "resistance_cause",
-                  "entity_confirmation",
                   "therapy_evidence",
-                  "familial_risk"
+                  "entity_confirmation"
                 ],
                 "ovar_archival_material": [
                   "feasibility_run_qc",
-                  "represents_recurrence",
                   "omit_assay_qc",
-                  "sample_scope"
+                  "sample_scope",
+                  "represents_recurrence"
                 ],
                 "ovar_brca1_reliability": [
                   "pathogenicity_vs_detection",
-                  "hrd_overrides_variant",
                   "reliable_prediction",
+                  "hrd_overrides_variant",
                   "coverage_suffices"
                 ],
                 "ovar_confirmation_strategy": [
-                  "discard_variant",
+                  "release_with_comment",
                   "ctdna_confirmation",
                   "plasma_replaces_hrd",
-                  "release_with_comment"
+                  "discard_variant"
                 ]
               }
             }
@@ -12865,12 +12865,12 @@
                 "score": 1,
                 "multi": true,
                 "answers": [
-                  "sample_scope",
-                  "feasibility_run_qc"
+                  "feasibility_run_qc",
+                  "sample_scope"
                 ],
                 "correct": [
-                  "sample_scope",
-                  "feasibility_run_qc"
+                  "feasibility_run_qc",
+                  "sample_scope"
                 ]
               },
               {
@@ -13197,7 +13197,7 @@
                 "score": 0,
                 "multi": true,
                 "answers": [
-                  "omit_assay_qc"
+                  "represents_recurrence"
                 ],
                 "correct": [
                   "feasibility_run_qc",
@@ -13210,7 +13210,7 @@
                 "score": 0,
                 "multi": false,
                 "answers": [
-                  "reliable_prediction"
+                  "coverage_suffices"
                 ],
                 "correct": [
                   "pathogenicity_vs_detection"
@@ -13222,7 +13222,7 @@
                 "score": 0,
                 "multi": false,
                 "answers": [
-                  "plasma_replaces_hrd"
+                  "discard_variant"
                 ],
                 "correct": [
                   "ctdna_confirmation"
@@ -13457,26 +13457,26 @@
               "optionOrder": {
                 "ovar_clinical_question": [
                   "therapy_evidence",
-                  "entity_confirmation",
+                  "resistance_cause",
                   "familial_risk",
-                  "resistance_cause"
+                  "entity_confirmation"
                 ],
                 "ovar_archival_material": [
-                  "omit_assay_qc",
                   "represents_recurrence",
+                  "omit_assay_qc",
                   "feasibility_run_qc",
                   "sample_scope"
                 ],
                 "ovar_brca1_reliability": [
+                  "pathogenicity_vs_detection",
                   "coverage_suffices",
-                  "reliable_prediction",
                   "hrd_overrides_variant",
-                  "pathogenicity_vs_detection"
+                  "reliable_prediction"
                 ],
                 "ovar_confirmation_strategy": [
+                  "plasma_replaces_hrd",
                   "ctdna_confirmation",
                   "discard_variant",
-                  "plasma_replaces_hrd",
                   "release_with_comment"
                 ]
               }
@@ -13934,12 +13934,12 @@
                 "score": 1,
                 "multi": true,
                 "answers": [
-                  "sample_scope",
-                  "feasibility_run_qc"
+                  "feasibility_run_qc",
+                  "sample_scope"
                 ],
                 "correct": [
-                  "sample_scope",
-                  "feasibility_run_qc"
+                  "feasibility_run_qc",
+                  "sample_scope"
                 ]
               },
               {
@@ -14254,7 +14254,7 @@
                 "score": 0,
                 "multi": false,
                 "answers": [
-                  "resistance_cause"
+                  "familial_risk"
                 ],
                 "correct": [
                   "therapy_evidence"
@@ -14269,8 +14269,8 @@
                   "omit_assay_qc"
                 ],
                 "correct": [
-                  "sample_scope",
-                  "feasibility_run_qc"
+                  "feasibility_run_qc",
+                  "sample_scope"
                 ]
               },
               {
@@ -14291,7 +14291,7 @@
                 "score": 0,
                 "multi": false,
                 "answers": [
-                  "release_with_comment"
+                  "plasma_replaces_hrd"
                 ],
                 "correct": [
                   "ctdna_confirmation"
@@ -14526,27 +14526,27 @@
               "optionOrder": {
                 "ovar_clinical_question": [
                   "entity_confirmation",
-                  "familial_risk",
+                  "resistance_cause",
                   "therapy_evidence",
-                  "resistance_cause"
+                  "familial_risk"
                 ],
                 "ovar_archival_material": [
+                  "sample_scope",
                   "omit_assay_qc",
                   "represents_recurrence",
-                  "sample_scope",
                   "feasibility_run_qc"
                 ],
                 "ovar_brca1_reliability": [
+                  "hrd_overrides_variant",
                   "coverage_suffices",
                   "reliable_prediction",
-                  "hrd_overrides_variant",
                   "pathogenicity_vs_detection"
                 ],
                 "ovar_confirmation_strategy": [
-                  "plasma_replaces_hrd",
                   "ctdna_confirmation",
+                  "discard_variant",
                   "release_with_comment",
-                  "discard_variant"
+                  "plasma_replaces_hrd"
                 ]
               }
             }
@@ -15168,12 +15168,12 @@
                 "score": 1,
                 "multi": true,
                 "answers": [
-                  "sample_scope",
-                  "feasibility_run_qc"
+                  "feasibility_run_qc",
+                  "sample_scope"
                 ],
                 "correct": [
-                  "sample_scope",
-                  "feasibility_run_qc"
+                  "feasibility_run_qc",
+                  "sample_scope"
                 ]
               },
               {
@@ -15335,11 +15335,11 @@
                 "score": 0,
                 "multi": true,
                 "answers": [
-                  "omit_assay_qc"
+                  "represents_recurrence"
                 ],
                 "correct": [
-                  "sample_scope",
-                  "feasibility_run_qc"
+                  "feasibility_run_qc",
+                  "sample_scope"
                 ]
               },
               {
@@ -15595,25 +15595,25 @@
               "optionOrder": {
                 "ovar_clinical_question": [
                   "resistance_cause",
-                  "entity_confirmation",
+                  "familial_risk",
                   "therapy_evidence",
-                  "familial_risk"
+                  "entity_confirmation"
                 ],
                 "ovar_archival_material": [
                   "sample_scope",
                   "represents_recurrence",
-                  "feasibility_run_qc",
-                  "omit_assay_qc"
+                  "omit_assay_qc",
+                  "feasibility_run_qc"
                 ],
                 "ovar_brca1_reliability": [
                   "pathogenicity_vs_detection",
-                  "coverage_suffices",
                   "reliable_prediction",
-                  "hrd_overrides_variant"
+                  "hrd_overrides_variant",
+                  "coverage_suffices"
                 ],
                 "ovar_confirmation_strategy": [
-                  "release_with_comment",
                   "discard_variant",
+                  "release_with_comment",
                   "plasma_replaces_hrd",
                   "ctdna_confirmation"
                 ]
@@ -16237,12 +16237,12 @@
                 "score": 1,
                 "multi": true,
                 "answers": [
-                  "sample_scope",
-                  "feasibility_run_qc"
+                  "feasibility_run_qc",
+                  "sample_scope"
                 ],
                 "correct": [
-                  "sample_scope",
-                  "feasibility_run_qc"
+                  "feasibility_run_qc",
+                  "sample_scope"
                 ]
               },
               {
@@ -16407,8 +16407,8 @@
                   "omit_assay_qc"
                 ],
                 "correct": [
-                  "feasibility_run_qc",
-                  "sample_scope"
+                  "sample_scope",
+                  "feasibility_run_qc"
                 ]
               },
               {
@@ -16417,7 +16417,7 @@
                 "score": 0,
                 "multi": false,
                 "answers": [
-                  "coverage_suffices"
+                  "hrd_overrides_variant"
                 ],
                 "correct": [
                   "pathogenicity_vs_detection"
@@ -16429,7 +16429,7 @@
                 "score": 0,
                 "multi": false,
                 "answers": [
-                  "plasma_replaces_hrd"
+                  "release_with_comment"
                 ],
                 "correct": [
                   "ctdna_confirmation"
@@ -16449,9 +16449,9 @@
       "detail": {
         "uniqueOrders": 23,
         "correctPositions": [
-          1,
-          0,
           3,
+          0,
+          1,
           2
         ]
       }

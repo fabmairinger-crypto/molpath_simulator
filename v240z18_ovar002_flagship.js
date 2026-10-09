@@ -225,7 +225,9 @@ render=function(){applyCaseLogic();const out=PREV_RENDER.apply(this,arguments);s
 try{window.render=render}catch(_){ }
 const PREV_I18N_AFTER=window.MolPathI18nAfterApply;
 window.MolPathI18nAfterApply=function(l){try{if(typeof PREV_I18N_AFTER==='function')PREV_I18N_AFTER(l)}catch(_){ }applyCaseLogic();stamp();};
-function boot(){styles();applyCaseLogic();stamp();try{if(typeof render==='function')render()}catch(err){console.error(O18_VERSION+' OVAR_002 flagship boot failed',err)}setTimeout(stamp,100)}
+// A6.15: initialize every flagship, render an inactive one only when loaded later.
+const parserTimeBoot=document.readyState==='loading';
+function boot(){styles();applyCaseLogic();stamp();try{if((!parserTimeBoot||active())&&typeof render==='function')render()}catch(err){console.error(O18_VERSION+' OVAR_002 flagship boot failed',err)}setTimeout(stamp,100)}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot,{once:true});else setTimeout(boot,0);
 
 window.MolPathOVAR002Flagship=Object.freeze({

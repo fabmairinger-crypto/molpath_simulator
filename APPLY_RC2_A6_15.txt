@@ -1,0 +1,16 @@
+MolPath rc2 A6.15 — inaktive Flagship-Start-Render vermeiden
+Basis: vollständiger funktionierender A6.14-Build.
+
+Diesmal werden ACHT JS-DATEIEN ersetzt; index.html bleibt die aus A6.14.
+
+1. Die acht gleichnamigen vorhandenen JS-Dateien sichern.
+2. Alle acht v240z*_flagship.js aus dem Delta in den A6.14-Hauptordner kopieren.
+3. Alle anderen vorhandenen Dateien beibehalten. qa/ und Dokumente sind Begleitmaterial.
+4. Strg+F5: Loader -> Startseite -> Bibliothek prüfen.
+5. CRC1/CRC2, NSCLC2, MET_NGS_003, OVAR1/OVAR2, CNS1 und IO1 öffnen.
+6. Moderne Timeline/Rücknavigation, DE -> EN -> DE und Asset-Anzeigen prüfen.
+7. OVAR1: beide Gates, Bestätigung, Abschluss/Score/TAT.
+8. Konsole auf neue Fehler prüfen.
+
+Rollback: die acht gesicherten A6.14-Dateien wiederherstellen, Strg+F5.
+Das Delta ist kein vollständiger eigenständig startbarer Build.

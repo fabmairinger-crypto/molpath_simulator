@@ -222,7 +222,9 @@ function stamp(){ /* A6.3: historical version writer retired; provenance constan
 const PREV_I18N_AFTER=window.MolPathI18nAfterApply;
 window.MolPathI18nAfterApply=function(l){try{if(typeof PREV_I18N_AFTER==='function')PREV_I18N_AFTER(l)}catch(_){ }applyCaseLogic();stamp();};
 
-function boot(){styles();applyCaseLogic();stamp();try{if(typeof render==='function')render()}catch(err){console.error(M3_VERSION+' MET_NGS_003 flagship boot failed',err)}setTimeout(stamp,100)}
+// A6.15: initialize every flagship, render an inactive one only when loaded later.
+const parserTimeBoot=document.readyState==='loading';
+function boot(){styles();applyCaseLogic();stamp();try{if((!parserTimeBoot||active())&&typeof render==='function')render()}catch(err){console.error(M3_VERSION+' MET_NGS_003 flagship boot failed',err)}setTimeout(stamp,100)}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot,{once:true});else setTimeout(boot,0);
 
 window.MolPathMETNGS003Flagship=Object.freeze({version:M3_VERSION,base:'v2.4.0z15',caseId:M3_CASE,variant:M3_VARIANT,assetCount:9,baseline:['request form','oncology letter','H&E metastasis'],testGated:{variant:['variant viewer','NGS VUS report'],her2_ihc:['HER2 IHC 1+'],her2_fish:['HER2/ERBB2 FISH non-amplified'],vus_literature_review:['curation workspace'],complete:['integrated MTB report']},completion:['erbb2_variant_ngs|broad_pan_panel','her2_ihc','her2_fish','vus_literature_review'],guardrail:'direct_her2_therapy never creates positive/actionable evidence'});
