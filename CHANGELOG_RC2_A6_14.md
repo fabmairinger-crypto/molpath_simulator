@@ -1,0 +1,9 @@
+# A6.14 — neun wiederholte Start-Render zusammengeführt
+
+Die LAB-Blöcke v240u/v/w/x/y und RES-Blöcke v240z2/z3/z4/z5 registrierten jeweils einen DOMContentLoaded-Callback, der ausschließlich renderCasePicker(), renderKpi() und render() aufrief. Falldaten und Deep Dives werden in diesen Blöcken vorher synchron beim Laden registriert. Der letzte RES-Block v240z6 behält den gemeinsamen Parser-Start-Refresh; spätere Sprach-, UI- und Flagship-Callbacks bleiben aktiv. Nur die neun früheren Parser-Registrierungen entfallen. Die jeweiligen Boot-Funktionen und der setTimeout-Fallback bei späterem Nachladen bleiben unverändert.
+
+Instrumentierter Startlauf: vollständige Core-Render 57 -> 48; DOMContentLoaded-Callbacks 89 -> 80; geplante Callbacks 1.018 -> 847; Timeline-Aufrufe 100 -> 82. Die moderne Timeline wird weiterhin aktualisiert, ihre acht tatsächlichen DOM-Schreibvorgänge im Test bleiben gleich. Observer-Anzahl, i18n-Hook-Frames und spätere Sprachwechsel entsprechen A6.13. Dies sind VM-Aufrufzahlen, keine reale Browserzeit.
+
+Nur index.html geändert: neun gezielte Registrierungsänderungen, keine Render-Funktionen, Styles, Falldaten, Gate-Regeln, Übersetzungen, Assets oder Lade-Reihenfolgen geändert. Moderne Timeline mit aktueller Schrittaufteilung bleibt erhalten. 254 Runtime-, 720 OVAR-Gate-, 77 CRC/LAB-, 40 Timeline-, 28 Registrierungs- und sieben Startup-Lifecycle-Checks bestanden; 100 Syntaxeinheiten ohne Fehler.
+
+Home-HTML, Sichtbarkeit und Timeline nach dem simulierten Load/Loader-Abbau entsprechen A6.13. Der Home-Observer wird im Test manuell zugestellt; der echte Browsercheck bleibt offen. Der vorhandene Startup-Cover wartet auf load, danach 360 ms, zwei Frames und 280 ms Ausblendung; außerdem besteht der 4.500-ms-Failsafe. Diese Zeiten und der Asset-Load wurden nicht verändert.

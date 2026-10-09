@@ -1,7 +1,781 @@
 {
-  "root": "/workspace/scratch/1f1f0706e0d2/work/a6_12/candidate",
+  "startupRenders": [
+    {
+      "actor": "index:inline:0:main",
+      "caseId": "MTB_NSCLC_001_v0_6",
+      "step": "intake",
+      "readyState": "loading"
+    },
+    {
+      "actor": "index:inline:1:v20b1LayoutHotfix",
+      "caseId": "MTB_NSCLC_001_v0_6",
+      "step": "intake",
+      "readyState": "loading"
+    },
+    {
+      "actor": "index:inline:2:v20b5SafeLayoutPatch",
+      "caseId": "MTB_NSCLC_001_v0_6",
+      "step": "intake",
+      "readyState": "loading"
+    },
+    {
+      "actor": "index:inline:3:v21Batch1ContentExpansionFix",
+      "caseId": "MTB_NSCLC_001_v0_6",
+      "step": "intake",
+      "readyState": "loading"
+    },
+    {
+      "actor": "index:inline:5:v214CaseSwitchWireFix",
+      "caseId": "MTB_NSCLC_001_v0_6",
+      "step": "intake",
+      "readyState": "loading"
+    },
+    {
+      "actor": "index:inline:6:v216OvarPhaseScoreFix",
+      "caseId": "MTB_NSCLC_001_v0_6",
+      "step": "intake",
+      "readyState": "loading"
+    },
+    {
+      "actor": "index:inline:28:v240y1_lab_c4_c5_schema_hotfix",
+      "caseId": "MTB_NSCLC_001_v0_6",
+      "step": "intake",
+      "readyState": "loading"
+    },
+    {
+      "actor": "DOMContentLoaded:i18n/core.js:boot",
+      "caseId": "MTB_NSCLC_001_v0_6",
+      "step": "intake",
+      "readyState": "interactive"
+    },
+    {
+      "actor": "DOMContentLoaded:index:inline:8:v230bSignatureDeepDiveExpansion:boot",
+      "caseId": "MTB_NSCLC_001_v0_6",
+      "step": "intake",
+      "readyState": "interactive"
+    },
+    {
+      "actor": "DOMContentLoaded:i18n/legacy/legacy_v230c_signature_deepdive.js:boot",
+      "caseId": "MTB_NSCLC_001_v0_6",
+      "step": "intake",
+      "readyState": "interactive"
+    },
+    {
+      "actor": "DOMContentLoaded:index:inline:9:v240b_nsclc_premium_hotfix:boot",
+      "caseId": "MTB_NSCLC_001_v0_6",
+      "step": "intake",
+      "readyState": "interactive"
+    },
+    {
+      "actor": "DOMContentLoaded:index:inline:10:v240c_nsclc_premium_ui_polish:mp24cBoot",
+      "caseId": "MTB_NSCLC_001_v0_6",
+      "step": "intake",
+      "readyState": "interactive"
+    },
+    {
+      "actor": "DOMContentLoaded:index:inline:21:v240r_signature_legal_hotfix:boot",
+      "caseId": "MTB_NSCLC_001_v0_6",
+      "step": "intake",
+      "readyState": "interactive"
+    },
+    {
+      "actor": "DOMContentLoaded:i18n/legacy/legacy_v240t_signature_i18n.js:boot",
+      "caseId": "MTB_NSCLC_001_v0_6",
+      "step": "intake",
+      "readyState": "interactive"
+    },
+    {
+      "actor": "DOMContentLoaded:index:inline:23:v240u_lab_b1_preanalytics_deepdive_patch:v240uBoot",
+      "caseId": "MTB_NSCLC_001_v0_6",
+      "step": "intake",
+      "readyState": "interactive"
+    },
+    {
+      "actor": "DOMContentLoaded:index:inline:24:v240v_lab_b2_run_qc_deepdive_patch:v240vBoot",
+      "caseId": "MTB_NSCLC_001_v0_6",
+      "step": "intake",
+      "readyState": "interactive"
+    },
+    {
+      "actor": "DOMContentLoaded:index:inline:25:v240w_lab_b3_postanalytics_deepdive_patch:v240wBoot",
+      "caseId": "MTB_NSCLC_001_v0_6",
+      "step": "intake",
+      "readyState": "interactive"
+    },
+    {
+      "actor": "DOMContentLoaded:index:inline:26:v240x_lab_b4_c4_deepdive_patch:v240xBoot",
+      "caseId": "MTB_NSCLC_001_v0_6",
+      "step": "intake",
+      "readyState": "interactive"
+    },
+    {
+      "actor": "DOMContentLoaded:index:inline:27:v240y_lab_b5_digital_data_lims_deepdive_patch:v240yBoot",
+      "caseId": "MTB_NSCLC_001_v0_6",
+      "step": "intake",
+      "readyState": "interactive"
+    },
+    {
+      "actor": "DOMContentLoaded:index:inline:29:v240z2_res_r1_deepdive:v240z2Boot",
+      "caseId": "MTB_NSCLC_001_v0_6",
+      "step": "intake",
+      "readyState": "interactive"
+    },
+    {
+      "actor": "DOMContentLoaded:index:inline:30:v240z3_res_r2_deepdive:v240z3Boot",
+      "caseId": "MTB_NSCLC_001_v0_6",
+      "step": "intake",
+      "readyState": "interactive"
+    },
+    {
+      "actor": "DOMContentLoaded:index:inline:31:v240z4_res_r3_deepdive:v240z4Boot",
+      "caseId": "MTB_NSCLC_001_v0_6",
+      "step": "intake",
+      "readyState": "interactive"
+    },
+    {
+      "actor": "DOMContentLoaded:index:inline:32:v240z5_res_r4_deepdive:v240z5Boot",
+      "caseId": "MTB_NSCLC_001_v0_6",
+      "step": "intake",
+      "readyState": "interactive"
+    },
+    {
+      "actor": "DOMContentLoaded:index:inline:33:v240z6_res_r5_deepdive:v240z6Boot",
+      "caseId": "MTB_NSCLC_001_v0_6",
+      "step": "intake",
+      "readyState": "interactive"
+    },
+    {
+      "actor": "DOMContentLoaded:i18n/legacy/legacy_v240z7_res_t1_i18n.js:v240z7Boot",
+      "caseId": "MTB_NSCLC_001_v0_6",
+      "step": "intake",
+      "readyState": "interactive"
+    },
+    {
+      "actor": "DOMContentLoaded:i18n/legacy/legacy_v240z8_res_t2_i18n.js:v240z8Boot",
+      "caseId": "MTB_NSCLC_001_v0_6",
+      "step": "intake",
+      "readyState": "interactive"
+    },
+    {
+      "actor": "DOMContentLoaded:i18n/legacy/legacy_v240z9_res_t3_i18n.js:v240z9Boot",
+      "caseId": "MTB_NSCLC_001_v0_6",
+      "step": "intake",
+      "readyState": "interactive"
+    },
+    {
+      "actor": "DOMContentLoaded:i18n/legacy/legacy_v240z10_res_t4_i18n.js:v240z10Boot",
+      "caseId": "MTB_NSCLC_001_v0_6",
+      "step": "intake",
+      "readyState": "interactive"
+    },
+    {
+      "actor": "DOMContentLoaded:i18n/legacy/legacy_v240z10a_res_t4_hotfix.js:v240z10aBoot",
+      "caseId": "MTB_NSCLC_001_v0_6",
+      "step": "intake",
+      "readyState": "interactive"
+    },
+    {
+      "actor": "DOMContentLoaded:index:inline:34:v240z11_global_baseline_polish:z11Boot",
+      "caseId": "MTB_NSCLC_001_v0_6",
+      "step": "intake",
+      "readyState": "interactive"
+    },
+    {
+      "actor": "DOMContentLoaded:v240z13_crc002_flagship.js:boot",
+      "caseId": "MTB_NSCLC_001_v0_6",
+      "step": "intake",
+      "readyState": "interactive"
+    },
+    {
+      "actor": "DOMContentLoaded:v240z14_crc001_flagship.js:boot",
+      "caseId": "MTB_NSCLC_001_v0_6",
+      "step": "intake",
+      "readyState": "interactive"
+    },
+    {
+      "actor": "DOMContentLoaded:v240z15_nsclc002_flagship.js:boot",
+      "caseId": "MTB_NSCLC_001_v0_6",
+      "step": "intake",
+      "readyState": "interactive"
+    },
+    {
+      "actor": "DOMContentLoaded:v240z16_metngs003_flagship.js:boot",
+      "caseId": "MTB_NSCLC_001_v0_6",
+      "step": "intake",
+      "readyState": "interactive"
+    },
+    {
+      "actor": "DOMContentLoaded:v240z17_ovar001_flagship.js:boot",
+      "caseId": "MTB_NSCLC_001_v0_6",
+      "step": "intake",
+      "readyState": "interactive"
+    },
+    {
+      "actor": "DOMContentLoaded:v240z18_ovar002_flagship.js:boot",
+      "caseId": "MTB_NSCLC_001_v0_6",
+      "step": "intake",
+      "readyState": "interactive"
+    },
+    {
+      "actor": "DOMContentLoaded:v240z19_cns001_flagship.js:boot",
+      "caseId": "MTB_NSCLC_001_v0_6",
+      "step": "intake",
+      "readyState": "interactive"
+    },
+    {
+      "actor": "DOMContentLoaded:v240z20_io001_flagship.js:boot",
+      "caseId": "MTB_NSCLC_001_v0_6",
+      "step": "intake",
+      "readyState": "interactive"
+    },
+    {
+      "actor": "DOMContentLoaded:v250b_method_focus_filter.js:boot",
+      "caseId": "MTB_NSCLC_001_v0_6",
+      "step": "intake",
+      "readyState": "interactive"
+    },
+    {
+      "actor": "DOMContentLoaded:v250b_signature_taxonomy_freeze.js:install",
+      "caseId": "MTB_NSCLC_001_v0_6",
+      "step": "intake",
+      "readyState": "interactive"
+    },
+    {
+      "actor": "timer:DOMContentLoaded:i18n/legacy/legacy_v223_v224_runtime.js:anonymous",
+      "caseId": "MTB_NSCLC_001_v0_6",
+      "step": "intake",
+      "readyState": "complete"
+    },
+    {
+      "actor": "timer:DOMContentLoaded:i18n/legacy/legacy_v223_v224_runtime.js:anonymous",
+      "caseId": "MTB_NSCLC_001_v0_6",
+      "step": "intake",
+      "readyState": "complete"
+    },
+    {
+      "actor": "timer:DOMContentLoaded:i18n/legacy/legacy_v223_v224_runtime.js:anonymous",
+      "caseId": "MTB_NSCLC_001_v0_6",
+      "step": "intake",
+      "readyState": "complete"
+    },
+    {
+      "actor": "timer:DOMContentLoaded:i18n/legacy/legacy_v223_v224_runtime.js:anonymous",
+      "caseId": "MTB_NSCLC_001_v0_6",
+      "step": "intake",
+      "readyState": "complete"
+    },
+    {
+      "actor": "timer:DOMContentLoaded:i18n/legacy/legacy_v223_v224_runtime.js:anonymous",
+      "caseId": "MTB_NSCLC_001_v0_6",
+      "step": "intake",
+      "readyState": "complete"
+    },
+    {
+      "actor": "timer:DOMContentLoaded:i18n/legacy/legacy_v223_v224_runtime.js:anonymous",
+      "caseId": "MTB_NSCLC_001_v0_6",
+      "step": "intake",
+      "readyState": "complete"
+    },
+    {
+      "actor": "timer:DOMContentLoaded:i18n/legacy/legacy_v223_v224_runtime.js:anonymous",
+      "caseId": "MTB_NSCLC_001_v0_6",
+      "step": "intake",
+      "readyState": "complete"
+    },
+    {
+      "actor": "timer:DOMContentLoaded:i18n/legacy/legacy_v223_v224_runtime.js:anonymous",
+      "caseId": "MTB_NSCLC_001_v0_6",
+      "step": "intake",
+      "readyState": "complete"
+    },
+    {
+      "actor": "timer:DOMContentLoaded:i18n/legacy/legacy_v223_v224_runtime.js:anonymous",
+      "caseId": "MTB_NSCLC_001_v0_6",
+      "step": "intake",
+      "readyState": "complete"
+    },
+    {
+      "actor": "timer:DOMContentLoaded:i18n/legacy/legacy_v223_v224_runtime.js:anonymous",
+      "caseId": "MTB_NSCLC_001_v0_6",
+      "step": "intake",
+      "readyState": "complete"
+    },
+    {
+      "actor": "timer:DOMContentLoaded:i18n/legacy/legacy_v223_v224_runtime.js:anonymous",
+      "caseId": "MTB_NSCLC_001_v0_6",
+      "step": "intake",
+      "readyState": "complete"
+    },
+    {
+      "actor": "timer:DOMContentLoaded:i18n/legacy/legacy_v223_v224_runtime.js:anonymous",
+      "caseId": "MTB_NSCLC_001_v0_6",
+      "step": "intake",
+      "readyState": "complete"
+    },
+    {
+      "actor": "timer:DOMContentLoaded:i18n/legacy/legacy_v223_v224_runtime.js:anonymous",
+      "caseId": "MTB_NSCLC_001_v0_6",
+      "step": "intake",
+      "readyState": "complete"
+    },
+    {
+      "actor": "timer:DOMContentLoaded:i18n/legacy/legacy_v223_v224_runtime.js:anonymous",
+      "caseId": "MTB_NSCLC_001_v0_6",
+      "step": "intake",
+      "readyState": "complete"
+    },
+    {
+      "actor": "timer:DOMContentLoaded:i18n/legacy/legacy_v223_v224_runtime.js:anonymous",
+      "caseId": "MTB_NSCLC_001_v0_6",
+      "step": "intake",
+      "readyState": "complete"
+    },
+    {
+      "actor": "timer:DOMContentLoaded:i18n/legacy/legacy_v223_v224_runtime.js:anonymous",
+      "caseId": "MTB_NSCLC_001_v0_6",
+      "step": "intake",
+      "readyState": "complete"
+    },
+    {
+      "actor": "timer:DOMContentLoaded:v250b_responsive_shell.js:anonymous",
+      "caseId": "MTB_NSCLC_001_v0_6",
+      "step": "intake",
+      "readyState": "complete"
+    },
+    {
+      "actor": "timer:DOMContentLoaded:v250b_signature_taxonomy_freeze.js:install",
+      "caseId": "MTB_NSCLC_001_v0_6",
+      "step": "intake",
+      "readyState": "complete"
+    },
+    {
+      "actor": "timer:timer:timer:timer:DOMContentLoaded:v250b_signature_taxonomy_freeze.js:install",
+      "caseId": "MTB_NSCLC_001_v0_6",
+      "step": "intake",
+      "readyState": "complete"
+    },
+    {
+      "actor": "timer:timer:timer:timer:timer:timer:timer:DOMContentLoaded:v250b_signature_taxonomy_freeze.js:install",
+      "caseId": "MTB_NSCLC_001_v0_6",
+      "step": "intake",
+      "readyState": "complete"
+    },
+    {
+      "actor": "timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:DOMContentLoaded:v250b_signature_taxonomy_freeze.js:install",
+      "caseId": "MTB_NSCLC_001_v0_6",
+      "step": "intake",
+      "readyState": "complete"
+    },
+    {
+      "actor": "timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:DOMContentLoaded:v250b_signature_taxonomy_freeze.js:install",
+      "caseId": "MTB_NSCLC_001_v0_6",
+      "step": "intake",
+      "readyState": "complete"
+    },
+    {
+      "actor": "timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:DOMContentLoaded:v250b_signature_taxonomy_freeze.js:install",
+      "caseId": "MTB_NSCLC_001_v0_6",
+      "step": "intake",
+      "readyState": "complete"
+    },
+    {
+      "actor": "timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:DOMContentLoaded:v250b_signature_taxonomy_freeze.js:install",
+      "caseId": "MTB_NSCLC_001_v0_6",
+      "step": "intake",
+      "readyState": "complete"
+    },
+    {
+      "actor": "timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:DOMContentLoaded:v250b_signature_taxonomy_freeze.js:install",
+      "caseId": "MTB_NSCLC_001_v0_6",
+      "step": "intake",
+      "readyState": "complete"
+    },
+    {
+      "actor": "timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:DOMContentLoaded:v250b_signature_taxonomy_freeze.js:install",
+      "caseId": "MTB_NSCLC_001_v0_6",
+      "step": "intake",
+      "readyState": "complete"
+    },
+    {
+      "actor": "timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:DOMContentLoaded:v250b_signature_taxonomy_freeze.js:install",
+      "caseId": "MTB_NSCLC_001_v0_6",
+      "step": "intake",
+      "readyState": "complete"
+    },
+    {
+      "actor": "timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:DOMContentLoaded:v250b_signature_taxonomy_freeze.js:install",
+      "caseId": "MTB_NSCLC_001_v0_6",
+      "step": "intake",
+      "readyState": "complete"
+    },
+    {
+      "actor": "timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:timer:DOMContentLoaded:v250b_signature_taxonomy_freeze.js:install",
+      "caseId": "MTB_NSCLC_001_v0_6",
+      "step": "intake",
+      "readyState": "complete"
+    }
+  ],
+  "bootCallbacks": [
+    {
+      "actor": "DOMContentLoaded:molpath_version.js:applyVersion",
+      "corePaint": 0
+    },
+    {
+      "actor": "DOMContentLoaded:i18n/core.js:boot",
+      "corePaint": 1
+    },
+    {
+      "actor": "DOMContentLoaded:i18n/legacy/legacy_v223_v224_runtime.js:labelVersion",
+      "corePaint": 0
+    },
+    {
+      "actor": "DOMContentLoaded:i18n/legacy/legacy_v223_v224_runtime.js:labelVersion",
+      "corePaint": 0
+    },
+    {
+      "actor": "DOMContentLoaded:i18n/legacy/legacy_v223_v224_runtime.js:anonymous",
+      "corePaint": 0
+    },
+    {
+      "actor": "DOMContentLoaded:i18n/legacy/legacy_v223_v224_runtime.js:anonymous",
+      "corePaint": 0
+    },
+    {
+      "actor": "DOMContentLoaded:i18n/legacy/legacy_v223_v224_runtime.js:anonymous",
+      "corePaint": 0
+    },
+    {
+      "actor": "DOMContentLoaded:i18n/legacy/legacy_v223_v224_runtime.js:anonymous",
+      "corePaint": 0
+    },
+    {
+      "actor": "DOMContentLoaded:i18n/legacy/legacy_v223_v224_runtime.js:anonymous",
+      "corePaint": 0
+    },
+    {
+      "actor": "DOMContentLoaded:i18n/legacy/legacy_v223_v224_runtime.js:anonymous",
+      "corePaint": 0
+    },
+    {
+      "actor": "DOMContentLoaded:i18n/legacy/legacy_v223_v224_runtime.js:anonymous",
+      "corePaint": 0
+    },
+    {
+      "actor": "DOMContentLoaded:i18n/legacy/legacy_v223_v224_runtime.js:anonymous",
+      "corePaint": 0
+    },
+    {
+      "actor": "DOMContentLoaded:i18n/legacy/legacy_v223_v224_runtime.js:anonymous",
+      "corePaint": 0
+    },
+    {
+      "actor": "DOMContentLoaded:i18n/legacy/legacy_v223_v224_runtime.js:anonymous",
+      "corePaint": 0
+    },
+    {
+      "actor": "DOMContentLoaded:i18n/legacy/legacy_v223_v224_runtime.js:anonymous",
+      "corePaint": 0
+    },
+    {
+      "actor": "DOMContentLoaded:i18n/legacy/legacy_v223_v224_runtime.js:anonymous",
+      "corePaint": 0
+    },
+    {
+      "actor": "DOMContentLoaded:i18n/legacy/legacy_v223_v224_runtime.js:anonymous",
+      "corePaint": 0
+    },
+    {
+      "actor": "DOMContentLoaded:i18n/legacy/legacy_v223_v224_runtime.js:anonymous",
+      "corePaint": 0
+    },
+    {
+      "actor": "DOMContentLoaded:i18n/legacy/legacy_v223_v224_runtime.js:anonymous",
+      "corePaint": 0
+    },
+    {
+      "actor": "DOMContentLoaded:i18n/legacy/legacy_v223_v224_runtime.js:anonymous",
+      "corePaint": 0
+    },
+    {
+      "actor": "DOMContentLoaded:i18n/legacy/legacy_v223_v224_runtime.js:anonymous",
+      "corePaint": 0
+    },
+    {
+      "actor": "DOMContentLoaded:index:inline:7:v230UiPolishPatch:boot",
+      "corePaint": 0
+    },
+    {
+      "actor": "DOMContentLoaded:index:inline:8:v230bSignatureDeepDiveExpansion:boot",
+      "corePaint": 1
+    },
+    {
+      "actor": "DOMContentLoaded:i18n/legacy/legacy_v230c_signature_deepdive.js:boot",
+      "corePaint": 1
+    },
+    {
+      "actor": "DOMContentLoaded:index:inline:9:v240b_nsclc_premium_hotfix:boot",
+      "corePaint": 1
+    },
+    {
+      "actor": "DOMContentLoaded:index:inline:10:v240c_nsclc_premium_ui_polish:mp24cBoot",
+      "corePaint": 1
+    },
+    {
+      "actor": "DOMContentLoaded:index:inline:11:v240e_lab_run_002_qa_hotfix:qa240eBoot",
+      "corePaint": 0
+    },
+    {
+      "actor": "DOMContentLoaded:index:inline:12:v240f_lab_run_002_premium:lab24Boot",
+      "corePaint": 0
+    },
+    {
+      "actor": "DOMContentLoaded:index:inline:13:v240h_res_omics_001_qa_hotfix:res24hBoot",
+      "corePaint": 0
+    },
+    {
+      "actor": "DOMContentLoaded:index:inline:14:v240i_res_omics_001_premium:res24iBoot",
+      "corePaint": 0
+    },
+    {
+      "actor": "DOMContentLoaded:index:inline:15:v240l_performance_signature_filter:boot",
+      "corePaint": 0
+    },
+    {
+      "actor": "DOMContentLoaded:index:inline:16:v240m_a1_deepdive_patch:boot",
+      "corePaint": 0
+    },
+    {
+      "actor": "DOMContentLoaded:index:inline:17:v240n_a2_crc_deepdives:v240nBoot",
+      "corePaint": 0
+    },
+    {
+      "actor": "DOMContentLoaded:index:inline:18:v240o_a3_hrd_deepdives:v240oBoot",
+      "corePaint": 0
+    },
+    {
+      "actor": "DOMContentLoaded:index:inline:19:v240p_a4_io_deepdives:v240pBoot",
+      "corePaint": 0
+    },
+    {
+      "actor": "DOMContentLoaded:index:inline:20:v240q_a5_a6_mtb_freeze:v240qBoot",
+      "corePaint": 0
+    },
+    {
+      "actor": "DOMContentLoaded:index:inline:21:v240r_signature_legal_hotfix:boot",
+      "corePaint": 1
+    },
+    {
+      "actor": "DOMContentLoaded:index:inline:22:v240s-met-deepdive:v240sBoot",
+      "corePaint": 0
+    },
+    {
+      "actor": "DOMContentLoaded:i18n/legacy/legacy_v240t_signature_i18n.js:boot",
+      "corePaint": 1
+    },
+    {
+      "actor": "DOMContentLoaded:index:inline:23:v240u_lab_b1_preanalytics_deepdive_patch:v240uBoot",
+      "corePaint": 1
+    },
+    {
+      "actor": "DOMContentLoaded:index:inline:24:v240v_lab_b2_run_qc_deepdive_patch:v240vBoot",
+      "corePaint": 1
+    },
+    {
+      "actor": "DOMContentLoaded:index:inline:25:v240w_lab_b3_postanalytics_deepdive_patch:v240wBoot",
+      "corePaint": 1
+    },
+    {
+      "actor": "DOMContentLoaded:index:inline:26:v240x_lab_b4_c4_deepdive_patch:v240xBoot",
+      "corePaint": 1
+    },
+    {
+      "actor": "DOMContentLoaded:index:inline:27:v240y_lab_b5_digital_data_lims_deepdive_patch:v240yBoot",
+      "corePaint": 1
+    },
+    {
+      "actor": "DOMContentLoaded:i18n/legacy/legacy_v240z_lab_i18n.js:anonymous",
+      "corePaint": 0
+    },
+    {
+      "actor": "DOMContentLoaded:index:inline:29:v240z2_res_r1_deepdive:v240z2Boot",
+      "corePaint": 1
+    },
+    {
+      "actor": "DOMContentLoaded:index:inline:30:v240z3_res_r2_deepdive:v240z3Boot",
+      "corePaint": 1
+    },
+    {
+      "actor": "DOMContentLoaded:index:inline:31:v240z4_res_r3_deepdive:v240z4Boot",
+      "corePaint": 1
+    },
+    {
+      "actor": "DOMContentLoaded:index:inline:32:v240z5_res_r4_deepdive:v240z5Boot",
+      "corePaint": 1
+    },
+    {
+      "actor": "DOMContentLoaded:index:inline:33:v240z6_res_r5_deepdive:v240z6Boot",
+      "corePaint": 1
+    },
+    {
+      "actor": "DOMContentLoaded:i18n/legacy/legacy_v240z7_res_t1_i18n.js:v240z7Boot",
+      "corePaint": 1
+    },
+    {
+      "actor": "DOMContentLoaded:i18n/legacy/legacy_v240z8_res_t2_i18n.js:v240z8Boot",
+      "corePaint": 1
+    },
+    {
+      "actor": "DOMContentLoaded:i18n/legacy/legacy_v240z9_res_t3_i18n.js:v240z9Boot",
+      "corePaint": 1
+    },
+    {
+      "actor": "DOMContentLoaded:i18n/legacy/legacy_v240z10_res_t4_i18n.js:v240z10Boot",
+      "corePaint": 1
+    },
+    {
+      "actor": "DOMContentLoaded:i18n/legacy/legacy_v240z10a_res_t4_hotfix.js:v240z10aBoot",
+      "corePaint": 1
+    },
+    {
+      "actor": "DOMContentLoaded:index:inline:34:v240z11_global_baseline_polish:z11Boot",
+      "corePaint": 1
+    },
+    {
+      "actor": "DOMContentLoaded:v240z13_crc002_flagship.js:boot",
+      "corePaint": 1
+    },
+    {
+      "actor": "DOMContentLoaded:v240z14_crc001_flagship.js:boot",
+      "corePaint": 1
+    },
+    {
+      "actor": "DOMContentLoaded:v240z15_nsclc002_flagship.js:boot",
+      "corePaint": 1
+    },
+    {
+      "actor": "DOMContentLoaded:v240z16_metngs003_flagship.js:boot",
+      "corePaint": 1
+    },
+    {
+      "actor": "DOMContentLoaded:v240z17_ovar001_flagship.js:boot",
+      "corePaint": 1
+    },
+    {
+      "actor": "DOMContentLoaded:v240z18_ovar002_flagship.js:boot",
+      "corePaint": 1
+    },
+    {
+      "actor": "DOMContentLoaded:v240z19_cns001_flagship.js:boot",
+      "corePaint": 1
+    },
+    {
+      "actor": "DOMContentLoaded:v240z20_io001_flagship.js:boot",
+      "corePaint": 1
+    },
+    {
+      "actor": "DOMContentLoaded:v250b_labpost001_flagship.js:install",
+      "corePaint": 0
+    },
+    {
+      "actor": "DOMContentLoaded:v250b_labdoc001_flagship.js:install",
+      "corePaint": 0
+    },
+    {
+      "actor": "DOMContentLoaded:v250b_reshyp001_flagship.js:install",
+      "corePaint": 0
+    },
+    {
+      "actor": "DOMContentLoaded:v250b_reseth001_flagship.js:install",
+      "corePaint": 0
+    },
+    {
+      "actor": "DOMContentLoaded:v250b_responsive_shell.js:anonymous",
+      "corePaint": 0
+    },
+    {
+      "actor": "DOMContentLoaded:v250b_asset_modal_hotfix.js:boot",
+      "corePaint": 0
+    },
+    {
+      "actor": "DOMContentLoaded:v250b_home_screen.js:start",
+      "corePaint": 0
+    },
+    {
+      "actor": "DOMContentLoaded:v250b_method_focus_filter.js:boot",
+      "corePaint": 1
+    },
+    {
+      "actor": "DOMContentLoaded:v250b_metngs001_course_flagship.js:install",
+      "corePaint": 0
+    },
+    {
+      "actor": "DOMContentLoaded:v250b_metngs002_course_flagship.js:install",
+      "corePaint": 0
+    },
+    {
+      "actor": "DOMContentLoaded:v250b_metrna001_course_flagship.js:install",
+      "corePaint": 0
+    },
+    {
+      "actor": "DOMContentLoaded:v250b_metlb001_course_flagship.js:install",
+      "corePaint": 0
+    },
+    {
+      "actor": "DOMContentLoaded:v250b_metngs004_course_flagship.js:install",
+      "corePaint": 0
+    },
+    {
+      "actor": "DOMContentLoaded:v250b_labrun001_course_flagship.js:install",
+      "corePaint": 0
+    },
+    {
+      "actor": "DOMContentLoaded:v250b_labpre001_course_flagship.js:install",
+      "corePaint": 0
+    },
+    {
+      "actor": "DOMContentLoaded:v250b_resimpl001_course_flagship.js:install",
+      "corePaint": 0
+    },
+    {
+      "actor": "DOMContentLoaded:v250b_reseth002_course_flagship.js:install",
+      "corePaint": 0
+    },
+    {
+      "actor": "DOMContentLoaded:v250b_resrole001_course_flagship.js:install",
+      "corePaint": 0
+    },
+    {
+      "actor": "DOMContentLoaded:v260rc1_mtb_cns_003_asset_upgrade.js:install",
+      "corePaint": 0
+    },
+    {
+      "actor": "DOMContentLoaded:v260rc1_mtb_hem_001_asset_upgrade.js:install",
+      "corePaint": 0
+    },
+    {
+      "actor": "DOMContentLoaded:v260rc1_lab_run_004_asset_upgrade.js:install",
+      "corePaint": 0
+    },
+    {
+      "actor": "DOMContentLoaded:v260rc1_met_fish_001_asset_i18n_upgrade.js:install",
+      "corePaint": 0
+    },
+    {
+      "actor": "DOMContentLoaded:v260rc1_res_val_001_signature_asset_i18n_upgrade.js:install",
+      "corePaint": 0
+    },
+    {
+      "actor": "DOMContentLoaded:v260rc1_case_consistency_curation_i18n.js:anonymous",
+      "corePaint": 0
+    },
+    {
+      "actor": "DOMContentLoaded:v250b_signature_taxonomy_freeze.js:install",
+      "corePaint": 1
+    }
+  ],
+  "root": "/workspace/scratch/1f1f0706e0d2/work/a6_13/candidate",
   "boot": {
-    "timelineWrites": 107,
+    "timelineWrites": 8,
     "timelineCalls": 100,
     "corePaint": 57,
     "afterApplyFrames": 264,
@@ -12,7 +786,7 @@
     "DOMContentLoadedCallbacks": 89
   },
   "final": {
-    "timelineWrites": 131,
+    "timelineWrites": 19,
     "timelineCalls": 124,
     "corePaint": 69,
     "afterApplyFrames": 504,
@@ -25,7 +799,7 @@
     {
       "lang": "de",
       "delta": {
-        "timelineWrites": 2,
+        "timelineWrites": 0,
         "timelineCalls": 2,
         "corePaint": 1,
         "afterApplyFrames": 20,
@@ -39,7 +813,7 @@
     {
       "lang": "en",
       "delta": {
-        "timelineWrites": 2,
+        "timelineWrites": 1,
         "timelineCalls": 2,
         "corePaint": 1,
         "afterApplyFrames": 20,
@@ -53,7 +827,7 @@
     {
       "lang": "ro",
       "delta": {
-        "timelineWrites": 2,
+        "timelineWrites": 1,
         "timelineCalls": 2,
         "corePaint": 1,
         "afterApplyFrames": 20,
@@ -67,7 +841,7 @@
     {
       "lang": "el",
       "delta": {
-        "timelineWrites": 2,
+        "timelineWrites": 1,
         "timelineCalls": 2,
         "corePaint": 1,
         "afterApplyFrames": 20,
@@ -81,7 +855,7 @@
     {
       "lang": "es",
       "delta": {
-        "timelineWrites": 2,
+        "timelineWrites": 1,
         "timelineCalls": 2,
         "corePaint": 1,
         "afterApplyFrames": 20,
@@ -95,7 +869,7 @@
     {
       "lang": "fr",
       "delta": {
-        "timelineWrites": 2,
+        "timelineWrites": 1,
         "timelineCalls": 2,
         "corePaint": 1,
         "afterApplyFrames": 20,
@@ -109,7 +883,7 @@
     {
       "lang": "ru",
       "delta": {
-        "timelineWrites": 2,
+        "timelineWrites": 1,
         "timelineCalls": 2,
         "corePaint": 1,
         "afterApplyFrames": 20,
@@ -123,7 +897,7 @@
     {
       "lang": "tr",
       "delta": {
-        "timelineWrites": 2,
+        "timelineWrites": 1,
         "timelineCalls": 2,
         "corePaint": 1,
         "afterApplyFrames": 20,
@@ -137,7 +911,7 @@
     {
       "lang": "ar",
       "delta": {
-        "timelineWrites": 2,
+        "timelineWrites": 1,
         "timelineCalls": 2,
         "corePaint": 1,
         "afterApplyFrames": 20,
@@ -151,7 +925,7 @@
     {
       "lang": "fa",
       "delta": {
-        "timelineWrites": 2,
+        "timelineWrites": 1,
         "timelineCalls": 2,
         "corePaint": 1,
         "afterApplyFrames": 20,
@@ -165,7 +939,7 @@
     {
       "lang": "uk",
       "delta": {
-        "timelineWrites": 2,
+        "timelineWrites": 1,
         "timelineCalls": 2,
         "corePaint": 1,
         "afterApplyFrames": 20,
@@ -179,7 +953,7 @@
     {
       "lang": "de",
       "delta": {
-        "timelineWrites": 2,
+        "timelineWrites": 1,
         "timelineCalls": 2,
         "corePaint": 1,
         "afterApplyFrames": 20,

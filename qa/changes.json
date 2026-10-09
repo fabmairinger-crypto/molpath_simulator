@@ -1,19 +1,72 @@
 {
-  "base_sha256": "2b1e5a86f0c91b62412a2e96138f1d6ecea9311b85aea697e9c1873c198f3aeb",
-  "sha256": "49562dce07e46e0ef6a498b0987f839e14ecd0d3879707ae1013f0190558dfb5",
-  "script": "v240z11_global_baseline_polish",
+  "base_sha256": "49562dce07e46e0ef6a498b0987f839e14ecd0d3879707ae1013f0190558dfb5",
+  "sha256": "f564eea1b79c059a6da5725daccd65be4f15bcc1e86d3899a3c11deec9a7cbb8",
   "changes": [
     {
-      "old": "function z11RenderTimeline(){",
-      "new": "const z11TimelineCache=new WeakMap();\nfunction z11RenderTimeline(){"
+      "script": "v240u_lab_b1_preanalytics_deepdive_patch",
+      "name": "v240uBoot",
+      "function_unchanged": "function v240uBoot(){try{renderCasePicker();renderKpi();if(typeof render==='function')render()}catch(_){}}",
+      "old": "if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',v240uBoot,{once:true});else setTimeout(v240uBoot,0);",
+      "new": "// A6.14: parser-time LAB/RES refresh is owned by the retained v240z6Boot.\nif(document.readyState!=='loading')setTimeout(v240uBoot,0);"
     },
     {
-      "old": "    root.innerHTML=arr.map(([id,label],i)=>{",
-      "new": "    const html=arr.map(([id,label],i)=>{"
+      "script": "v240v_lab_b2_run_qc_deepdive_patch",
+      "name": "v240vBoot",
+      "function_unchanged": "function v240vBoot(){try{renderCasePicker();renderKpi();if(typeof render==='function')render()}catch(_){}}",
+      "old": "if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',v240vBoot,{once:true});else setTimeout(v240vBoot,0);",
+      "new": "// A6.14: parser-time LAB/RES refresh is owned by the retained v240z6Boot.\nif(document.readyState!=='loading')setTimeout(v240vBoot,0);"
     },
     {
-      "old": "}).join('');\n    const act=root.querySelector('.active');",
-      "new": "}).join('');\n    // Retain existing buttons only while both desired markup and actual DOM agree.\n    const previous=z11TimelineCache.get(root);\n    if(!previous||previous.html!==html||root.innerHTML!==previous.dom){\n      root.innerHTML=html;\n      z11TimelineCache.set(root,{html,dom:root.innerHTML});\n    }\n    const act=root.querySelector('.active');"
+      "script": "v240w_lab_b3_postanalytics_deepdive_patch",
+      "name": "v240wBoot",
+      "function_unchanged": "function v240wBoot(){try{renderCasePicker();renderKpi();if(typeof render==='function')render()}catch(_){}}",
+      "old": "if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',v240wBoot,{once:true});else setTimeout(v240wBoot,0);",
+      "new": "// A6.14: parser-time LAB/RES refresh is owned by the retained v240z6Boot.\nif(document.readyState!=='loading')setTimeout(v240wBoot,0);"
+    },
+    {
+      "script": "v240x_lab_b4_c4_deepdive_patch",
+      "name": "v240xBoot",
+      "function_unchanged": "function v240xBoot(){try{renderCasePicker();renderKpi();if(typeof render==='function')render()}catch(_){}}",
+      "old": "if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',v240xBoot,{once:true});else setTimeout(v240xBoot,0);",
+      "new": "// A6.14: parser-time LAB/RES refresh is owned by the retained v240z6Boot.\nif(document.readyState!=='loading')setTimeout(v240xBoot,0);"
+    },
+    {
+      "script": "v240y_lab_b5_digital_data_lims_deepdive_patch",
+      "name": "v240yBoot",
+      "function_unchanged": "function v240yBoot(){try{renderCasePicker();renderKpi();if(typeof render==='function')render()}catch(_){}}",
+      "old": "if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',v240yBoot,{once:true});else setTimeout(v240yBoot,0);",
+      "new": "// A6.14: parser-time LAB/RES refresh is owned by the retained v240z6Boot.\nif(document.readyState!=='loading')setTimeout(v240yBoot,0);"
+    },
+    {
+      "script": "v240z2_res_r1_deepdive",
+      "name": "v240z2Boot",
+      "function_unchanged": "function v240z2Boot(){try{if(typeof renderCasePicker==='function')renderCasePicker();if(typeof renderKpi==='function')renderKpi();if(typeof render==='function')render()}catch(_){}}",
+      "old": "if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',v240z2Boot,{once:true});else setTimeout(v240z2Boot,0);",
+      "new": "// A6.14: parser-time LAB/RES refresh is owned by the retained v240z6Boot.\nif(document.readyState!=='loading')setTimeout(v240z2Boot,0);"
+    },
+    {
+      "script": "v240z3_res_r2_deepdive",
+      "name": "v240z3Boot",
+      "function_unchanged": "function v240z3Boot(){try{if(typeof renderCasePicker==='function')renderCasePicker();if(typeof renderKpi==='function')renderKpi();if(typeof render==='function')render()}catch(_){}}",
+      "old": "if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',v240z3Boot,{once:true});else setTimeout(v240z3Boot,0);",
+      "new": "// A6.14: parser-time LAB/RES refresh is owned by the retained v240z6Boot.\nif(document.readyState!=='loading')setTimeout(v240z3Boot,0);"
+    },
+    {
+      "script": "v240z4_res_r3_deepdive",
+      "name": "v240z4Boot",
+      "function_unchanged": "function v240z4Boot(){try{if(typeof renderCasePicker==='function')renderCasePicker();if(typeof renderKpi==='function')renderKpi();if(typeof render==='function')render()}catch(_){}}",
+      "old": "if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',v240z4Boot,{once:true});else setTimeout(v240z4Boot,0);",
+      "new": "// A6.14: parser-time LAB/RES refresh is owned by the retained v240z6Boot.\nif(document.readyState!=='loading')setTimeout(v240z4Boot,0);"
+    },
+    {
+      "script": "v240z5_res_r4_deepdive",
+      "name": "v240z5Boot",
+      "function_unchanged": "function v240z5Boot(){try{if(typeof renderCasePicker==='function')renderCasePicker();if(typeof renderKpi==='function')renderKpi();if(typeof render==='function')render()}catch(_){}}",
+      "old": "if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',v240z5Boot,{once:true});else setTimeout(v240z5Boot,0);",
+      "new": "// A6.14: parser-time LAB/RES refresh is owned by the retained v240z6Boot.\nif(document.readyState!=='loading')setTimeout(v240z5Boot,0);"
     }
+  ],
+  "payload": [
+    "index.html"
   ]
 }

@@ -1,0 +1,119 @@
+{
+  "status": "PASS",
+  "total": 28,
+  "passed": 28,
+  "checks": [
+    {
+      "name": "v240uBoot parser registration removed without eager work",
+      "pass": true
+    },
+    {
+      "name": "v240uBoot late-load fallback unchanged interactive",
+      "pass": true
+    },
+    {
+      "name": "v240uBoot late-load fallback unchanged complete",
+      "pass": true
+    },
+    {
+      "name": "v240vBoot parser registration removed without eager work",
+      "pass": true
+    },
+    {
+      "name": "v240vBoot late-load fallback unchanged interactive",
+      "pass": true
+    },
+    {
+      "name": "v240vBoot late-load fallback unchanged complete",
+      "pass": true
+    },
+    {
+      "name": "v240wBoot parser registration removed without eager work",
+      "pass": true
+    },
+    {
+      "name": "v240wBoot late-load fallback unchanged interactive",
+      "pass": true
+    },
+    {
+      "name": "v240wBoot late-load fallback unchanged complete",
+      "pass": true
+    },
+    {
+      "name": "v240xBoot parser registration removed without eager work",
+      "pass": true
+    },
+    {
+      "name": "v240xBoot late-load fallback unchanged interactive",
+      "pass": true
+    },
+    {
+      "name": "v240xBoot late-load fallback unchanged complete",
+      "pass": true
+    },
+    {
+      "name": "v240yBoot parser registration removed without eager work",
+      "pass": true
+    },
+    {
+      "name": "v240yBoot late-load fallback unchanged interactive",
+      "pass": true
+    },
+    {
+      "name": "v240yBoot late-load fallback unchanged complete",
+      "pass": true
+    },
+    {
+      "name": "v240z2Boot parser registration removed without eager work",
+      "pass": true
+    },
+    {
+      "name": "v240z2Boot late-load fallback unchanged interactive",
+      "pass": true
+    },
+    {
+      "name": "v240z2Boot late-load fallback unchanged complete",
+      "pass": true
+    },
+    {
+      "name": "v240z3Boot parser registration removed without eager work",
+      "pass": true
+    },
+    {
+      "name": "v240z3Boot late-load fallback unchanged interactive",
+      "pass": true
+    },
+    {
+      "name": "v240z3Boot late-load fallback unchanged complete",
+      "pass": true
+    },
+    {
+      "name": "v240z4Boot parser registration removed without eager work",
+      "pass": true
+    },
+    {
+      "name": "v240z4Boot late-load fallback unchanged interactive",
+      "pass": true
+    },
+    {
+      "name": "v240z4Boot late-load fallback unchanged complete",
+      "pass": true
+    },
+    {
+      "name": "v240z5Boot parser registration removed without eager work",
+      "pass": true
+    },
+    {
+      "name": "v240z5Boot late-load fallback unchanged interactive",
+      "pass": true
+    },
+    {
+      "name": "v240z5Boot late-load fallback unchanged complete",
+      "pass": true
+    },
+    {
+      "name": "final RES refresh still registered with once=true",
+      "pass": true
+    }
+  ]
+}

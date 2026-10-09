@@ -1,0 +1,89 @@
+{
+  "status": "PASS_BROWSER_OPEN",
+  "runtime": 254,
+  "gates": 720,
+  "remaining": 77,
+  "timeline": 40,
+  "startup_registration": 28,
+  "startup_lifecycle": 7,
+  "syntax": {
+    "syntaxChecks": 100,
+    "errors": []
+  },
+  "exact_runtime_reference_fields": [
+    "preBootHash",
+    "afterBootHash",
+    "finalHash",
+    "counts",
+    "bootUiState",
+    "displayPhases",
+    "reportPhases",
+    "contentTrace",
+    "phases"
+  ],
+  "unchanged_files": 64,
+  "removed_refresh_callbacks": [
+    {
+      "actor": "DOMContentLoaded:index:inline:23:v240u_lab_b1_preanalytics_deepdive_patch:v240uBoot",
+      "corePaint": 1
+    },
+    {
+      "actor": "DOMContentLoaded:index:inline:24:v240v_lab_b2_run_qc_deepdive_patch:v240vBoot",
+      "corePaint": 1
+    },
+    {
+      "actor": "DOMContentLoaded:index:inline:25:v240w_lab_b3_postanalytics_deepdive_patch:v240wBoot",
+      "corePaint": 1
+    },
+    {
+      "actor": "DOMContentLoaded:index:inline:26:v240x_lab_b4_c4_deepdive_patch:v240xBoot",
+      "corePaint": 1
+    },
+    {
+      "actor": "DOMContentLoaded:index:inline:27:v240y_lab_b5_digital_data_lims_deepdive_patch:v240yBoot",
+      "corePaint": 1
+    },
+    {
+      "actor": "DOMContentLoaded:index:inline:29:v240z2_res_r1_deepdive:v240z2Boot",
+      "corePaint": 1
+    },
+    {
+      "actor": "DOMContentLoaded:index:inline:30:v240z3_res_r2_deepdive:v240z3Boot",
+      "corePaint": 1
+    },
+    {
+      "actor": "DOMContentLoaded:index:inline:31:v240z4_res_r3_deepdive:v240z4Boot",
+      "corePaint": 1
+    },
+    {
+      "actor": "DOMContentLoaded:index:inline:32:v240z5_res_r4_deepdive:v240z5Boot",
+      "corePaint": 1
+    }
+  ],
+  "metrics": {
+    "before": {
+      "timelineWrites": 8,
+      "timelineCalls": 100,
+      "corePaint": 57,
+      "afterApplyFrames": 264,
+      "observersCreated": 5,
+      "observersObserved": 5,
+      "observerDisconnects": 0,
+      "scheduled": 1018,
+      "DOMContentLoadedCallbacks": 89
+    },
+    "after": {
+      "timelineWrites": 8,
+      "timelineCalls": 82,
+      "corePaint": 48,
+      "afterApplyFrames": 264,
+      "observersCreated": 5,
+      "observersObserved": 5,
+      "observerDisconnects": 0,
+      "scheduled": 847,
+      "DOMContentLoadedCallbacks": 80
+    }
+  },
+  "loader_home_parity": "exact Home HTML/visibility and timeline HTML/class after simulated load and manually delivered Home observer",
+  "limits": "Node VM and DOM fixtures; no live browser, live MutationObserver delivery or elapsed-time measurement. Startup cover timing/fallback and assets untouched."
+}

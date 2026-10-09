@@ -1,0 +1,9 @@
+const fs=require('fs'),path=require('path'),vm=require('vm'),assert=require('assert');
+const run=__dirname,changes=JSON.parse(fs.readFileSync(path.join(run,'changes.json'),'utf8')),checks=[];
+function execute(row,registration,readyState){const callbacks=[],timers=[],calls=[];const ctx=vm.createContext({document:{readyState,addEventListener(type,fn,options){callbacks.push({type,fn,options})}},setTimeout(fn,ms){timers.push({fn,ms})},renderCasePicker(){calls.push('picker')},renderKpi(){calls.push('kpi')},render(){calls.push('render')}});vm.runInContext(row.function_unchanged+'\n'+registration,ctx);return {callbacks,timers,calls}}
+for(const row of changes.changes){
+ const before=execute(row,row.old,'loading'),after=execute(row,row.new,'loading');assert.strictEqual(before.callbacks.length,1);assert.strictEqual(after.callbacks.length,0);assert.strictEqual(after.timers.length,0);checks.push({name:row.name+' parser registration removed without eager work',pass:true});
+ for(const state of ['interactive','complete']){const x=execute(row,row.old,state),y=execute(row,row.new,state);assert.strictEqual(x.timers.length,1);assert.strictEqual(y.timers.length,1);assert.strictEqual(y.timers[0].ms,0);x.timers[0].fn();y.timers[0].fn();assert.deepStrictEqual(y.calls,x.calls);checks.push({name:row.name+' late-load fallback unchanged '+state,pass:true})}
+}
+const candidate=fs.readFileSync(path.join(run,'candidate/index.html'),'utf8');assert(candidate.includes("document.addEventListener('DOMContentLoaded',v240z6Boot,{once:true})"));checks.push({name:'final RES refresh still registered with once=true',pass:true});
+const result={status:'PASS',total:checks.length,passed:checks.length,checks};fs.writeFileSync(path.join(run,'startup_registration_qa.json'),JSON.stringify(result,null,2));console.log(JSON.stringify({status:result.status,total:result.total}));

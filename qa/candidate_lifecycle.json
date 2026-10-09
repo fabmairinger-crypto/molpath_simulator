@@ -1,0 +1,45 @@
+{
+  "checks": [
+    {
+      "name": "cover exists after DOMContentLoaded",
+      "pass": true
+    },
+    {
+      "name": "load settle fade removes cover",
+      "pass": true
+    },
+    {
+      "name": "one Home handoff observer awaits cover removal",
+      "pass": true
+    },
+    {
+      "name": "Home handoff observer disconnected",
+      "pass": true
+    },
+    {
+      "name": "Home is visible after cover removal",
+      "pass": true
+    },
+    {
+      "name": "canonical unchanged through load and Home handoff",
+      "pass": true
+    },
+    {
+      "name": "no startup errors",
+      "pass": true
+    }
+  ],
+  "total": 7,
+  "passed": 7,
+  "errors": [],
+  "home": {
+    "html": "\n<div class=\"mph-shell\">\n  <div class=\"mph-top\">\n    <div class=\"mph-mini-brand\"><img src=\"assets/logos/logo_patho.png\" alt=\"\"><span>MolPath Simulator</span></div>\n    <div class=\"mph-lang\"><label for=\"mpHomeLang\">Sprache</label><select id=\"mpHomeLang\" aria-label=\"Sprache\"><option value=\"de\" selected>Deutsch</option><option value=\"en\" >English</option><option value=\"ro\" >Română</option><option value=\"el\" >Ελληνικά</option><option value=\"es\" >Español</option><option value=\"fr\" >Français</option><option value=\"ru\" >Русский</option><option value=\"tr\" >Türkçe</option><option value=\"ar\" >العربية</option><option value=\"fa\" >فارسی</option><option value=\"uk\" >Українська</option></select></div>\n  </div>\n  <section class=\"mph-hero\">\n    <div>\n      <div class=\"mph-eyebrow\">Molekularpathologie · Lernen · Entscheiden</div>\n      <h1>MolPath Simulator</h1>\n      <p class=\"mph-sub\">Interaktives Training für molekulare Pathologie, Labor/QM und translationale Forschung.</p>\n      <div class=\"mph-actions\"><button class=\"mph-btn primary\" type=\"button\" data-action=\"start\">Simulator starten</button><button class=\"mph-btn\" type=\"button\" data-action=\"library\">Fallbibliothek öffnen</button></div>\n      <div class=\"mph-stats\"><span class=\"mph-stat\"><b>91</b> Fälle</span><span class=\"mph-stat\"><b>3</b> Bereiche</span><span class=\"mph-stat\"><b>11</b> Sprachen</span></div>\n    </div>\n    <div class=\"mph-logo-zone\"><img class=\"mph-logo\" src=\"assets/logos/logo_patho.png\" alt=\"Institut für Pathologie Bochum\"></div>\n  </section>\n  <section class=\"mph-manual-card\" aria-label=\"Flight Operations Manual\">\n    <div class=\"mph-manual-icon\">FOM</div>\n    <div class=\"mph-manual-copy\"><div class=\"mph-manual-kicker\">Vollständige Operationsreferenz · v0.6</div><strong>Flight Operations Manual</strong><span>Vollständiges Cockpit-Handbuch und operative Referenz für MTB, LAB, RES und Methods Focus.</span></div>\n    <div class=\"mph-manual-actions\"><button class=\"mph-btn primary\" type=\"button\" data-action=\"manual-open\">Manual öffnen</button><button class=\"mph-btn\" type=\"button\" data-action=\"manual-download\">PDF herunterladen</button></div>\n  </section>\n  <section class=\"mph-grid\" aria-label=\"Hilfe\">\n    <button class=\"mph-card\" type=\"button\" data-action=\"how\"><span class=\"mph-card-icon\">◎</span><strong>So funktioniert’s</strong><span>Kurzanleitung für den ersten Einstieg und die wichtigsten Bedienelemente.</span></button>\n    <button class=\"mph-card\" type=\"button\" data-action=\"tutorial\"><span class=\"mph-card-icon\">➜</span><strong>Geführtes Tutorial</strong><span>In sieben Schritten vom Fallkontext bis zum Debrief.</span></button>\n    <button class=\"mph-card\" type=\"button\" data-action=\"modes\"><span class=\"mph-card-icon\">⌬</span><strong>Simulationsbereiche</strong><span>MTB, LAB und RES – welcher Bereich trainiert was?</span></button>\n    <button class=\"mph-card\" type=\"button\" data-action=\"news\"><span class=\"mph-card-icon\">✦</span><strong>Was ist neu?</strong><span>Aktuelle Änderungen und neue Funktionen im Simulator.</span></button>\n  </section>\n  <footer class=\"mph-foot\"><span>Ausbildung und Simulation · keine medizinische Entscheidungsunterstützung</span><span class=\"mph-version\">v2.6.0-rc1</span></footer>\n</div>\n<div class=\"mph-dialog-layer\" aria-hidden=\"true\"><div class=\"mph-dialog\" role=\"dialog\" aria-modal=\"true\"><div class=\"mph-dialog-head\"><h2 id=\"mphDialogTitle\"></h2><button type=\"button\" class=\"mph-x\" data-action=\"close-dialog\" aria-label=\"Schließen\">×</button></div><div class=\"mph-dialog-body\" id=\"mphDialogBody\"></div></div></div>\n<div class=\"mph-manual-layer\" aria-hidden=\"true\" role=\"dialog\" aria-modal=\"true\" aria-label=\"Flight Operations Manual\"><header class=\"mph-manual-head\"><div class=\"mph-manual-head-title\"><b>Flight Operations Manual</b><span>v0.6 · v2.6.0-rc1</span></div><div class=\"mph-manual-tools\"><button class=\"mph-manual-tool\" type=\"button\" data-action=\"manual-prev\" title=\"Zurück\">‹</button><span class=\"mph-manual-page-label\" id=\"mphManualPageLabel\"></span><button class=\"mph-manual-tool\" type=\"button\" data-action=\"manual-next\" title=\"Weiter\">›</button><button class=\"mph-manual-tool\" type=\"button\" data-action=\"manual-zoom-out\" title=\"Verkleinern\">−</button><button class=\"mph-manual-tool\" type=\"button\" data-action=\"manual-zoom-in\" title=\"Vergrößern\">+</button><a class=\"mph-manual-tool mph-manual-download\" href=\"docs/fom/MolPath_Flight_Operations_Manual_v0.6.pdf\" download=\"MolPath_Flight_Operations_Manual_v0.6.pdf\" title=\"PDF herunterladen\">⇩</a><button class=\"mph-manual-tool\" type=\"button\" data-action=\"manual-close\" title=\"Manual schließen\">×</button></div></header><div class=\"mph-manual-body\" id=\"mphManualBody\"><img class=\"mph-manual-page\" id=\"mphManualPage\" alt=\"Flight Operations Manual\"></div></div>",
+    "hidden": false
+  },
+  "timeline": {
+    "html": "<button type=\"button\" class=\"z11-top-step blue active  clickable\" onclick=\"gotoStep('intake')\" aria-current=\"step\" title=\"Auftrag\"><span class=\"z11-top-marker\">1</span><span class=\"z11-top-label\">Auftrag</span></button><button type=\"button\" class=\"z11-top-step blue   locked\" disabled  title=\"Anamnese\"><span class=\"z11-top-marker\">2</span><span class=\"z11-top-label\">Anamnese</span></button><button type=\"button\" class=\"z11-top-step green   locked\" disabled  title=\"Histo/IHC\"><span class=\"z11-top-marker\">3</span><span class=\"z11-top-label\">Histo/IHC</span></button><button type=\"button\" class=\"z11-top-step orange   locked\" disabled  title=\"Material\"><span class=\"z11-top-marker\">4</span><span class=\"z11-top-label\">Material</span></button><button type=\"button\" class=\"z11-top-step purple   locked\" disabled  title=\"Clinical Reasoning\"><span class=\"z11-top-marker\">5</span><span class=\"z11-top-label\">Clinical Reasoning</span></button><button type=\"button\" class=\"z11-top-step teal   locked\" disabled  title=\"Anforderung\"><span class=\"z11-top-marker\">6</span><span class=\"z11-top-label\">Anforderung</span></button><button type=\"button\" class=\"z11-top-step teal   locked\" disabled  title=\"Laborlauf\"><span class=\"z11-top-marker\">7</span><span class=\"z11-top-label\">Laborlauf</span></button><button type=\"button\" class=\"z11-top-step blue   locked\" disabled  title=\"Befund\"><span class=\"z11-top-marker\">8</span><span class=\"z11-top-label\">Befund</span></button><button type=\"button\" class=\"z11-top-step pink   locked\" disabled  title=\"MTB\"><span class=\"z11-top-marker\">9</span><span class=\"z11-top-label\">MTB</span></button>",
+    "className": "z11-top-timeline z11-domain-mtb"
+  },
+  "canonicalHash": "fadce9004be5fa0324e560678763d8434e0670d34f82e9b5ac213b7dc58f02b0",
+  "limit": "actual ordered scripts, simulated load/clock; Home observer delivered manually after real cover-removal handler in DOM double; no live browser assertion"
+}

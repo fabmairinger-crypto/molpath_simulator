@@ -1,0 +1,14 @@
+MolPath rc2 A6.14 — wiederholte Start-Render zusammenführen
+Basis: vollständiger funktionierender A6.13-Build.
+
+1. Bisherige index.html sichern.
+2. NUR index.html aus diesem Delta im A6.13-Hauptordner ersetzen.
+3. Alle vorhandenen JS-, Sprach- und Asset-Dateien beibehalten.
+4. Strg+F5: Loader -> moderne Startseite -> Bibliothek prüfen.
+5. 91 Fälle, Signature-/Kurs-/Methods-Filter und DE -> EN -> DE prüfen.
+6. MTB-, LAB-, RES-Timeline: moderne Aufteilung/Farben und Rücknavigation.
+7. OVAR1: beide Gates, Bestätigung und Abschluss/Score/TAT.
+8. Konsole auf neue Fehler prüfen. Ladezeit bei gleichem Browser vergleichen.
+
+Rollback: gesicherte index.html wiederherstellen, Strg+F5.
+Das Delta ist kein vollständiger eigenständig startbarer Build.

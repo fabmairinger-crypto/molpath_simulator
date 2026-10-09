@@ -165,7 +165,7 @@
     }
   ],
   "writes": {
-    "baseline": 74,
+    "baseline": 39,
     "candidate": 39
   },
   "limit": "isolated actual timeline script with DOM serialization fixture and synthetic labels; complete actual-language rendering is covered separately by ordered runtime QA"
